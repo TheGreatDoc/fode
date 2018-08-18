@@ -1,0 +1,44 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš muže v kovové zbroji.}
+{101}{}{Vidíš Luka.}
+{102}{}{Vidíš muže nosícího kovové brnìní se znakem blesku.}
+{103}{}{Ahoj, }
+{104}{}{. Já jsem Luke, co pro tebe mùžu udìlat?}
+{105}{}{Odkud znáš moje jméno?}
+{106}{}{Jakto, že znáš moje jméno?}
+{107}{}{Joshua se zmínil, že si se zastavil v poboèce v Denu. Øíkal, že jsi malá ryba, která dìlá velké vlny.}
+{108}{}{Tamtamy fungujou rychle a spolehlivì. Prý jsi malá ryba, která dìlá velký vlny.}
+{109}{}{Co to znamená?}
+{110}{}{Co tím myslíš?}
+{111}{}{Pøitahuješ pozornost mnoha lidí. Mìl bys být opatrný.}
+{112}{}{Pokraèuj.}
+{113}{}{Pokraèuj, poslouchám.}
+{114}{}{Myslím, že to pro tuto chvíli staèí. Mìl bys jít za svými obchody.}
+{115}{}{To samé mi øekl Joshua. Potøebuju se tì na nìco zeptat.}
+{116}{}{Poèkej, potøebuju se tì na nìco zeptat.}
+{117}{}{To samé mi øekl Joshua. Mùžu ti položit nìjaké otázky?}
+{118}{}{Poèkej, potøebuju se Tì zeptat na nìjaké otázky.}
+{119}{}{Joshua ti dovolil jednu otázku; Taky ti povolím jen jednu. Jaká bude?}
+{120}{}{No dobøe, povolím ti jednu otázku. Jaká bude?}
+{121}{}{Víš, kde bych mohl najít GECK?}
+{122}{}{Víš, kde bych mohl najít Vault 13?}
+{123}{}{Kdo k èertu jste chlapi?}
+{124}{}{Víš, kde bych mohl najít GECK?}
+{125}{}{Víš, kde bych mohl najít Vault 13?}
+{126}{}{Kdo k èertu jste chlapi?}
+{127}{}{Ano, taky vìøím, že Vault 13 nikdy nezmizel. Mìl by si být schopný ho najít. Hodnì štìstí,}
+{128}{}{Poèkej! Kde je ten Vault?}
+{129}{}{Poèkej chvíli! Kde je ten Vault?}
+{130}{}{Ano, jeho lokace je uložena v poèítaèových systémech Vaultu 15, východnì odtud. Hodnì štìstí,}
+{131}{}{.}
+{132}{}{Díky.}
+{133}{}{My jsme Bratrstvo oceli. Není tu nic víc než ti øíkám v tenhle moment. Hodnì štìstí, }
+{134}{}{Poèkej! Potøebuju vìdìt víc!}
+{135}{}{Poèkej, teï nemùžeš odejít!}
+{136}{}{Znovu tì zdravím. Už ti více neøeknu.}
+{137}{}{. Hmm... Jistì si prodìlal dlouhou cestu od obyèejného èlena kmene. Mìl bys nìkdy navštívit naší poboèku v San Franciscu. Mìl bys to najít. A teï, když mì omluvíš, musím už jít.}
+{138}{}{Znovu tì zdravím. Už ti nemám co øíct.}
+{139}{}{Poèkej...}
+{140}{}{To je soukromá kanceláø.}
+{141}{}{Tady není nic pro Tebe.}
+{142}{}{Tohle je soukromý pozemek, takže vypadni.}

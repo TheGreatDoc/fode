@@ -1,0 +1,33 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Проститутка}
+{200}{}{Вы видите проститутку.}
+{200}{}{Вы видите шлюху.}
+{210}{}{Вы видите местами симпатичную женщину, одетую в вызывающие одежды. Типичная шлюха.}
+{210}{}{Вы видите шлюху. Она вам подмигивает.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Prostitute}
+{200}{}{You see a prostitute.}
+{210}{}{You see an attractive woman in seductive clothes. Typical whore.}
+{210}{}{You see a whore. She gives you a wink.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Prostytutka}
+{200}{}{widzicie prostytutke.}
+{200}{}{widzicie prostytutke.}
+{210}{}{widzicie miejscami sympatyczna kobiete, ubrana w wyzywajace odzieze. Typowa prostytutka.}
+{210}{}{widzicie prostytutke. Ona wam mruga porozumiewawczo.}
+{1000}{}{Initial preferences}
+

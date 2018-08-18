@@ -1,0 +1,34 @@
+//
+// FOnline: 2238
+// Rotators
+//
+// spawner_container_h.fos
+//
+
+#ifndef __SPAWNER_CONTAINER_H__
+#define __SPAWNER_CONTAINER_H__
+
+#define CONTINUOUS_CONTAINER_WEAPON_SG_T1_1             (1)
+#define ONCE_CONTAINER_SG_LOW_31						(2)
+
+
+#define SPAWNER_RESERVED_MAX                  (2)
+// above that can be used runtime
+
+
+shared interface IItemSpawner
+{
+    IItemSpawner@ Lock(uint16 min, uint16 max);
+    IItemSpawner@ SpawnTime(uint min, uint max);
+    IItemSpawner@ AddItem(uint16 pid, uint chance, uint min, uint max);
+    IItemSpawner@ AddItem(uint16 pid, uint chance);
+    IItemSpawner@ SetSeparate(bool separate);
+    IItemSpawner@ Clear();
+};
+
+#ifndef __SPAWNER_CONTAINER_MODULE__
+import void          MakeSpawnerContainer(Item& item, uint type) from "spawner_container";
+import IItemSpawner@ GetSpawner(uint num) from "spawner_container";
+import IItemSpawner@ MakeSpawner(uint num) from "spawner_container";
+#endif
+#endif

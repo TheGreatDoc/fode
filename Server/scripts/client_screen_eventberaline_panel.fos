@@ -1,0 +1,310 @@
+#include "_colors.fos"
+#include "_time.fos"
+#include "_defines.fos"
+
+#ifdef __SERVER
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "guard_nec_events.fos"
+#include "guard_red_events.fos"
+void RemoveSpawnedCritter(Critter& cr, Critter@ killer)
+{
+	DeleteNpc(cr);
+}
+
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import void server_message(string@ message) from "server_scripts";
+import bool GetFreeHex(Map& map, uint radius, uint16& hx, uint16& hy) from "caravan";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+import bool CheckIfDEV(Critter&player) from "server_scripts";
+import bool CheckIfGM(Critter&player) from "server_scripts";
+import int BerlinFlag(int flag) from "map_bearline";
+
+const uint[][] __BerlinNPCSpawnPositionsForAttack={
+//FLAG 2
+{
+51,148,3,
+50,159,3,
+94,233,4
+},
+//FLAG 1
+{
+323,139,1, 
+324,150,1,
+314,132,1
+},
+//FLAG 3
+{
+247,495,5,
+270,500,5,
+285,486,5
+}
+};
+
+const uint[][] __BerlinFlagAttackPositions={
+/*FLAG 2*/	{
+				127,201,2,
+				133,201,2,
+				194,198,3,
+				135,188,3,
+				135,181,3,
+				123,187,3,
+				97,177,0,
+				119,171,5
+				
+			},
+/*FLAG 1*/	{
+				246,114,3,
+				246,118,3,
+				245,133,2,
+				225,131,3,
+				225,111,0,
+				227,144,5,
+				234,119,2,
+				231,131,2
+			},
+/*FLAG 3*/	{
+				236,427,5,
+				250,438,2,
+				230,434,2,
+				229,430,3,
+				231,409,0,
+				256,409,5,
+				243,423,2,
+				242,433,2
+			}
+};
+void unsafe_AttackStart(Critter& player, int flag, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(BerlinFlag(flag)==0) return;
+	else if(BerlinFlag(flag)>0) AttackStart(true,flag);
+	else AttackStart(false,flag);
+}
+
+void AttackStart(bool who, int flag) //red attack who==true, blue attack who==false
+{
+	Map @map=GetMapByPid(MAP_berlincity,0);
+	if(@map==null) return;
+	
+	for(int j=0; j<Random(2,3);j++)
+	{
+		for(uint i=0; i<__BerlinNPCSpawnPositionsForAttack[flag].length(); i+=3)
+		{
+			uint pid;
+			if(who) pid=5101;
+			else pid=5001;
+			Critter@ spawncr=map.AddNpc(pid,__BerlinNPCSpawnPositionsForAttack[flag][i],__BerlinNPCSpawnPositionsForAttack[flag][i+1],__BerlinNPCSpawnPositionsForAttack[flag][i+2],null,null,null);
+			
+			if(!valid(spawncr)) return;
+			if(who) _RedInit(spawncr, false);
+			else _NecInit(spawncr, false);
+			spawncr.ShowCritterDist1=35;
+			int roll=Random(1,4);
+			if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+			else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+			else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+			else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+			spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+			uint index=Random(0,(__BerlinFlagAttackPositions[flag].length()/3)-1)*3;
+			//Log("Index:"+index);
+			spawncr.SetHomePos(__BerlinFlagAttackPositions[flag][index]+Random(-4,4),__BerlinFlagAttackPositions[flag][index+1]+Random(-4,4),__BerlinFlagAttackPositions[flag][index+2]);
+		}
+	}
+}
+
+void _NecInit(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.ParamBase[PLAYER_MAIN_FACTION]=2;
+	npc.StatBase[ST_TEAM_ID]=TEAM_BLUE;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_NO_PUSH] =1;
+	npc.ShowCritterDist1=Random(46,66);
+	npc.SetEvent(CRITTER_EVENT_ATTACKED,"BlueAttacked");
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"BlueMessage");
+}
+
+void _RedInit(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.ParamBase[PLAYER_MAIN_FACTION]=1;
+	npc.StatBase[ST_TEAM_ID]=TEAM_RED;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_NO_PUSH] =1;
+	npc.ShowCritterDist1=Random(46,66);
+	npc.SetEvent(CRITTER_EVENT_ATTACKED,"RedAttacked");
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"RedMessage");
+}
+
+#endif
+
+#ifdef __CLIENT
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+int[] positions;
+
+IGUIElementTextOpt@ ChoseFlag;
+IGUIElementButtonOpt@ ChoseFlagOne;
+IGUIElementButtonOpt@ ChoseFlagTwo;
+IGUIElementButtonOpt@ ChoseFlagThree;
+
+class BerlinDominationStartButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("eventsys_calls@unsafe_EventBerlinStart",0,0,0,null,null);
+	}
+}
+
+class BerlinDominationEndButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("eventsys_calls@unsafe_EventBerlinEnd",0,0,0,null,null);
+	}
+}
+
+class BerlinDominationAttackFlagButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_EVENT_B_PANEL,0,0,0);
+		ShowChoseFlagScreen();
+	}
+}
+
+class BerlinDominationChoseFlagButtonOneClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("client_screen_eventberaline_panel@unsafe_AttackStart",0,0,0,null,null);
+		HideChoseFlagScreen();
+	}
+}
+
+class BerlinDominationChoseFlagButtonTwoClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("client_screen_eventberaline_panel@unsafe_AttackStart",1,0,0,null,null);
+		HideChoseFlagScreen();
+	}
+}
+
+class BerlinDominationChoseFlagButtonThreeClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("client_screen_eventberaline_panel@unsafe_AttackStart",2,0,0,null,null);
+		HideChoseFlagScreen();
+	}
+}
+
+void InitEventBearlinePanelScreen()
+{
+	GUI_CreateScreen(CLIENT_SCREEN_EVENT_B_PANEL,"chat.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_EVENT_B_PANEL,"Event Beraline panel", 0, 28)
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	GUI_AddText(CLIENT_SCREEN_EVENT_B_PANEL,"Berlin Domination:", 30, 50)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(150,10);
+	
+	BerlinDominationStartButtonClass BerlinDominationStartButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_B_PANEL, 30,65)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Start", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BerlinDominationStartButton);
+	
+	BerlinDominationEndButtonClass BerlinDominationEndButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_B_PANEL, 150,65)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("End", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BerlinDominationEndButton);
+	
+	//uruchomienie wybierania flagi	
+	BerlinDominationAttackFlagButtonClass BerlinDominationAttackFlagButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_B_PANEL,30,100)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Attack", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BerlinDominationAttackFlagButton);
+	
+	
+	//wybranie flagi
+	positions=GetIniValues2("LeaveConfirmNameOpt",null);
+	@ChoseFlag=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"Chose flags to attack.", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(505,10)
+	  .Visible(false);
+	positions=GetIniValues2("LeaveTrueButtonOpt",null);
+	
+	BerlinDominationChoseFlagButtonOneClass BerlinDominationChoseFlagButton;
+	@ChoseFlagOne=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0]+30,positions[1])
+		.Text("1", FONT_FAT, COLOR_GREEN,COLOR_LGREEN,0)
+		.ClickableZone(27,19)
+		.CallbackMouseClick(BerlinDominationChoseFlagButton);
+	ChoseFlagOne.Hide();
+	
+	BerlinDominationChoseFlagButtonTwoClass BerlinDominationChoseFlagButtonTwo;
+	@ChoseFlagTwo=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0],positions[1])
+		.Text("2", FONT_FAT, COLOR_RED,COLOR_LRED,0)
+		.ClickableZone(27,19)
+		.CallbackMouseClick(BerlinDominationChoseFlagButtonTwo);
+	ChoseFlagTwo.Hide();
+	
+	BerlinDominationChoseFlagButtonThreeClass BerlinDominationChoseFlagButtonThree;
+	@ChoseFlagThree=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0]+2*30,positions[1])
+		.Text("3", FONT_FAT, COLOR_BLUE,COLOR_LGREEN,0)
+		.ClickableZone(27,19)
+		.CallbackMouseClick(BerlinDominationChoseFlagButtonThree);
+	ChoseFlagThree.Hide();
+	
+}
+
+void ShowChoseFlagScreen()
+{
+	ChoseFlag.setText("Chose flag for attack");
+	ChoseFlag.setVisible(true);
+	ChoseFlagOne.Show();
+	ChoseFlagTwo.Show();
+	ChoseFlagThree.Show();
+}
+
+void HideChoseFlagScreen()
+{
+	ChoseFlag.setVisible(false);
+	ChoseFlagOne.Hide();
+	ChoseFlagTwo.Hide();
+	ChoseFlagThree.Hide();
+	ShowScreen(CLIENT_SCREEN_EVENT_B_PANEL,0,0,0);
+}
+#endif

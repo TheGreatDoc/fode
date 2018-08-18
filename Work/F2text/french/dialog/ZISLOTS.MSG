@@ -1,0 +1,211 @@
+# quick looks
+# unknown
+{100}{}{Tu vois une étrange machine.}
+# normal
+{101}{}{Tu vois une machine à sous.}
+# high roller
+{102}{}{Tu vois une machine à sous scintillante.}
+# jackpot
+{103}{}{Tu vois une machine à sous étincelante.}
+
+# examines
+# unknown
+{130}{}{Elle a trois yeux et un bras.}
+# bet amount
+{140}{}{La mise minimale est de }
+{141}{}{.}
+# normal
+{150}{}{Tu jures que tu la vois te regarder du coin de ton oeil.}
+{151}{}{Son châssis brillant et sa poignée dorée étincellent de façon aguichante.}
+# high roller
+{165}{}{Elle est destinée aux flambeurs.}
+# jackpot
+{180}{}{Ses possibilités de gains élevés sont très attrayantes.}
+
+# slot machine first play message
+{200}{}{(Ta main frémit au moment où tu saisis tes caps. La machine continue à te murmurer.) *Viens, mon chou... c'est ça... allez viens... ne me fais pas languir...*}
+{201}{}{Tu vois une machine à sous. Son châssis brillant et sa poignée dorée brillent de façon aguichante. La fente des pièces te fait signe et tu te sens rougir d'avance.}
+{202}{}{(Ta main frémit au moment où tu saisis tes caps. La machine continue à te murmurer.) *Viens, mon chou... c'est ça... prends la poignée... fermement... allez viens...*}
+
+# insert coin messages
+{250}{}{Insère }
+{251}{}{ $.}
+{252}{}{Joue tes derniers }
+{253}{}{.}
+{254}{}{Ca suffit pour aujourd'hui.}
+{255}{}{Tu es à sec. Tu dois arrêter pour cette nuit. (Pars.)}
+{256}{}{Ca suffit pour ce soir.}
+{257}{}{Tu es à sec. Tu dois arrêter pour aujourd'hui. }
+{258}{}{Ca suffit ! JE M'EN VAIS !}
+{259}{}{Ca suffit ! JE M'EN VAIS !}
+
+# this is the message for when the machine is played
+{500}{}{Les rouleaux de la machine tournent... }
+# this goes between every symbol, example:   "cherry... orange... melon... "
+{599}{}{...}
+
+# pay off types
+{600}{}{Rien.}
+{601}{}{Une cerise.}
+{602}{}{Deux cerises.}
+# Three [symbol].
+{603}{}{Trois }
+{613}{}{.}
+{604}{}{JACKPOT !}
+{605}{}{DOUBLE JACKPOT !!!}
+
+# payoff amount message
+{700}{}{Tu as gagné }
+{701}{}{.}
+# symbol types
+# singular
+{1001}{}{cerise}
+{1002}{}{orange}
+{1003}{}{prune}
+{1004}{}{cloche}
+{1005}{}{barre}
+{1006}{}{melon}
+{1007}{}{sept}
+# plural
+{1101}{}{cerises}
+{1102}{}{oranges}
+{1103}{}{prunes}
+{1104}{}{cloches}
+{1105}{}{barres}
+{1106}{}{melons}
+{1107}{}{sept}
+
+# float messages
+{2000}{}{*Viens jouer avec moi une seconde, cow-boy.*}
+{2001}{}{*Salut matelot.*}
+{2002}{}{*Insère un cap, tire le manche. Je serai gentille avec toi.*}
+{2003}{}{*Tic... Tic... Tiiiiic...*}
+{2004}{}{*Ding*}
+{2005}{}{*Bing*}
+{2006}{}{*Kaaa-ching*}
+{2007}{}{*Zzzzzzz*}
+{2008}{}{*Dring dring*}
+{2009}{}{*Ding dong ding*}
+{2010}{}{*Hé, ma beauté. Viens jouer avec moi une seconde.*}
+{2011}{}{*Salut beauté.*}
+{2012}{}{*Oh, c'est-i' pas mignon ça ! Pourquoi ne viens-tu pas jouer avec moi ?*}
+
+# 3.  NO MONEY (WTG, 9)
+# no money to play
+{2175}{}{(Tu fixes la machine à sous et tu t'aperçois que tu n'as pas assez pour jouer. Maudite soit ta pauvreté ! Une autre fois peut-être...)}
+{2176}{}{Pars.}
+# won jackpot block
+{2185}{}{(Le voyant « HORS SERVICE » de la machine clignote.)}
+{2186}{}{Pars.}
+
+# 4. RETARD (WTG)
+{2100}{}{Tu vois une étrange boîte en métal doré avec trois yeux et un bras. C'est l'une des plus jolies choses que tu aies jamais vues.}
+{2101}{}{Moi }
+{2102}{}{ qui toi ?}
+{2103}{}{Je veux M'MAN.}
+{2104}{}{ veux ARR-YO. Moi vouloir rentrer à la maison.}
+{2105}{}{(Serre-lui la main)}
+{2106}{}{toi étrange mutant}
+{2107}{}{Que l'Abri soit loué ! Que l'Abri soit loué !}
+{2108}{}{Est-ce que tu es une puce d'eau ?}
+{2109}{}{Va-t'en, va chercher d'autres objets brillants.}
+{2110}{}{Pars.}
+
+# 5.  RETARD TALKS TO SLOT MACHINE (4, 5)
+{2130}{}{L'étrange jolie boîte en métal doré avec trois yeux et un bras ne répond pas.}
+{2131}{}{MOI }
+{2132}{}{ ! TOI, REPONDRE A MOI !!}
+{2133}{}{(Serre-lui la main)}
+{2134}{}{Moi enfant de l'habitant de l'Abri. Toi parler à moi MAINTENANT}
+{2135}{}{toi étrange mutant}
+{2136}{}{Toi être puce d'eau ?}
+{2137}{}{Va-t'en, va chercher d'autres objets brillants}
+{2138}{}{(Pars.)}
+
+# 6.  RETARD PULLS HANDLE (4, 5)
+{2151}{}{Tu attrapes son bras et le secoues chaleureusement. Tu entends alors un *bzzzzzzz* et la boîte parle ! « Veuillez... insérer de l'argent. »}
+{2152}{}{Aaahhhhh ! Robot ! Robot ! Viiiiite }
+{2153}{}{Pars.}
+
+# slot machine taunts loss
+# male
+{2200}{}{(Tu l'entends se moquer de toi.)}
+{2201}{}{*Héhéhé, pourquoi n'abandonnes-tu pas, mon ange ?*}
+{2202}{}{*Tu devrais peut-être laisser quelqu'un d'autre tirer ma poignée.*}
+# any
+{2204}{}{(Tu entends la machine se moquer de toi.)}
+{2205}{}{(La machine à sous pousse des gloussements.)}
+{2206}{}{*Allez minable, ne renonce pas si vite !*}
+# female
+{2207}{}{*J'ai eu ce que je voulais de toi, ma beauté. Pourquoi ne renonces-tu pas ?*}
+{2208}{}{*Camelote !*}
+{2209}{}{*Ne laisse pas la porte du casino te botter le cul à la sortie.*}
+
+# slot machine taunts win
+# male [3X - 1X]
+{2247}{}{*Oooooh ! C'est ça, mon chou ! Oh, oui ! Oui ! Oui ! Encore ! Plus vite ! Plus fort ! Qu'est-ce tu attends ?!! Encore !*}
+{2248}{}{*C'est ça, mon chou... continue à tirer la poignée... plus vite, plus fort, plus vite... allez...*}
+{2249}{}{*Allez, mon chou... ça arrive à tout le monde au moins une fois... essaie encore... allez...*}
+# any
+{2250}{}{*N'abandonne pas encore, mon coeur ! J'ai plus que jamais besoin de toi !*}
+# female [1X - 3X]
+{2251}{}{*Allez, mon ange... essaie encore... prends la poignée... tiens-la fermement... allez...*}
+{2252}{}{*C'est ça, mon ange... continue à tirer la poignée... plus vite, plus fort, plus vite... allez...*}
+{2253}{}{*Oooooooooooh ! C'est ça, mon chou ! Oh, oui encore ?!! Oui, oui encore ?!! Encore ! Tire plus fort cette fois ! Plus fort !*}
+
+# 13. DRUNK, HIGH OR OTHERWISE FUCKED UP (WTG)
+{2280}{}{(Tu vois une machine à sous. Son châssis brillant et sa poignée dorée étincellent de façon aguichante sous les lumières de New Reno. La fente des pièces te fait signe et tu te sens rougir d'avance. Au moment où tu la regardes, l'une des trois fenêtres te fait un clin d'oeil. De la fente, tu entends une voix gutturale.) *Et bien, ma parole ! Bonjouur, toi. Tu vas montrer à une fille ce que tu sais faire ?*}
+{2281}{}{(Tu vois une machine à sous. Son châssis solide et rugueux et sa poignée dorée étincellent comme un dieu du soleil sous les lumières de New Reno. Sa fente te fait des signes aguicheurs et tu sens tes joues te brûler d'avance. Tout à coup, au moment où tu la regardes, une voix masculine te susurre de la fente des pièces.) *Ca fait longtemps que j'ai pas vu une femme aussi belle par ici. Tu veux tenter ta chance ? *}
+{2282}{}{::Pince-toi::}
+{2283}{}{Heu... bonjour ?}
+{2284}{}{::Respire à fond, éloigne-toi.:: }
+
+# 14. DRUNK CONVERSATION 1 (13)
+{2300}{}{*Je suis toujours là, ma belle.* (La machine à sous baisse la voix.) *Ecoute, viens... tu veux pas miser ? *}
+{2301}{}{*Je suis toujours là, mon chou.* (La machine à sous baisse la voix.) *T'es un sacré beau gars, tu sais ? Allez, viens... tu veux pas mettre quelques caps ici ?*}
+{2302}{}{Quiiiii *toi* ?}
+{2303}{}{Bien chûr que che vais micher}
+{2304}{}{Je ferais mieux de partir avant que je te mette quelque chose que tu regretteras. (Pars.)}
+{2305}{}{::Respire à fond, éloigne-toi.:: (Pars.)}
+
+# 15. DRUNK 2 (14)
+{2320}{}{*Je suis ton homme idéal.* (La machine à sous te fait un clin d'oeil.) *Donne-moi quelques caps et je te ferai des choses qu'aucun autre homme ne t'a JAMAIS faites.*}
+{2321}{}{*Je suis ta femme idéale, mon chou. Tout ce que je demande, c'est un peu d'attention. Tu veux bien m'en donner ? Allez, seulement un ou deux jetons ?*}
+{2322}{}{On pourrait pas juchte parler ?}
+
+# 16. DRUNK 3 (15)
+{2340}{}{*Bien sûr que si, mon ange.* (La machine à sous à l'air sympathique.) *Qu'est-ce qui tracasse ta jolie petite tête ?*}
+{2341}{}{*Bien sûr que si, mon chou.* (La machine à sous à l'air sympathique.) *Qu'est-ce qui te tracasse, beau gars ?*}
+{2342}{}{Moi vouloir M'MAN et retourner à ARROYO et moi... trouve pas le JEK et... *sniff*}
+{2343}{}{Moi vouloir M'MAN et Arroyo a été ATTAQUE et moi... sais pas où ils sont... et... *sniff*}
+{2344}{}{Moi devoir réparer grand bateau... et je sais pas COMMENT... et ma-ma-ma maman est PARTIE et... *sniff*}
+{2345}{}{J'ai terminé l'jeu... et mainnant je sais pas quoi faire et... j'ai peur que tout soit FINI et... *sniff*}
+{2346}{}{C'est ce Vaullout deuuux, ça prend pas en charge ma carte 3D Fxxxx et j'ai dépensé plein *d'thunes* pour l'acheter et *sniff*}
+{2347}{}{J'ai essayé d'avoir un bon personnage mais je crois que j'ai *pas bien* réparti les points... et maintenant j'ai un personnage à la con... et... *sniff*}
+{2348}{}{J'suis en train de parler à une machine à sous, ça va vraiment mal...}
+
+# 17. DRUNK 4 (16)
+{2370}{}{*Allez, allez... ne te fais plus de soucis... laisse-moi m'occuper de tout. Allez, pose ta tête sur moi. Voilà, c'est bien. Pleure, ça te soulagera.*}
+{2371}{}{*Allez, allez... ne te fais plus de soucis, mon chou... laisse-moi m'occuper de tout. Allez, pose ta belle petite tête sur moi. Voilà, c'est bien. Laisse-toi aller.*}
+{2372}{}{Merci, machine à sous *sniff* t'es la meilleure !!}
+{2373}{}{T'es la seule personne *gentille* que j'ai rencontrée jusqu'à présent, tous les autres sont si méchants et i' z'essaient de me *faire mal* et de prendre mes sous et...*sniff*}
+
+# 18. DRUNK 5 (17)
+{2380}{}{*Ca va aller, mon ange. J'suis pas tranquille de te voir partir comme ça quand tu es dans cet état.*}
+{2381}{}{(Tu poses ta tête fatiguée sur la machine.)}
+{2382}{}{*Ca va aller, mon chou ? J'suis pas tranquille de te voir partir comme ça quand tu es dans cet état.*}
+{2383}{}{Ca va aller... merci de m'avoir parlé, machine à sous, je t'aiiiiime !!!!}
+
+# 19. DRUNK 6 (18)
+{2400}{}{*Tu es la seule héroïne qu'on a vue dans ce monde de pacotille de salauds et de voleurs ! Fais attention à toi, tu entends, ma chérie ? * (La machine se retourne.) *Tu ferais mieux de partir si tu ne veux pas voir un homme pleurer.*}
+{2401}{}{(Une larme semble se former sur l'une des fenêtres.)}
+{2402}{}{*Tu es le seul héros qu'on a vu dans ce monde de pacotille de salauds et de voleurs ! Tu... tu fais bien attention à toi, d'accord, mon chéri ? * (La machine se retourne.) *Tu ferais mieux de partir avant que je ne me mette à sangloter.*}
+{2403}{}{Au revoiiiiir}
+
+# rollin' messages
+{3000}{}{Allez, }
+{3001}{}{ ! Bébé a besoin d'une nouvelle paire de chaussures !}
+{3002}{}{! Papa a besoin d'un nouveau fusil à plasma !}
+
+# can't play
+{4000}{}{On dirait que quelqu'un bloque la machine.}

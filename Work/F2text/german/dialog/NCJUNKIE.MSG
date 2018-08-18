@@ -1,0 +1,134 @@
+# QUICK LOOKS
+{100}{}{Du siehst einen völlig kaputten Jetie.}
+{101}{}{Du siehst einen hyperaktiven Jetie.}
+
+# EXAMINES
+# 1. [MALE, CRASH AND BURN]
+{150}{}{Du siehst einen völlig kaputten Jetie. Er bewegt sich sehr langsam.}
+{151}{}{Du siehst einen völlig kaputten Jetie. Er sieht krank aus.}
+{152}{}{Du siehst einen völlig kaputten Jetie. Er ist so dünn, daß er aussieht, als könne er von einem Windstoß umgeweht werden.}
+{153}{}{Du siehst einen völlig kaputten Jetie. Er sieht dich mit roten Augen an.}
+{154}{}{Du siehst einen völlig kaputten Jetie. Seine Augen sind so blutunterlaufen, daß er aussieht, als könne er blutige Tränen weinen. }
+{155}{}{Du siehst einen völlig kaputten Jetie. Bei jeder Bewegung zuckt er zusammen, als würde er mit Nadeln gestochen.}
+{156}{}{Du siehst einen völlig kaputten Jetie. Er hat Ringe unter den Augen und einen schmerzverzerrten Gesichtsausdruck.}
+# 2. [MALE, HIGH ON JET]
+{160}{}{Du siehst einen Jetie. Er sieht glücklich aus.}
+{161}{}{Du siehst einen Jetie. Er lächelt vor sich hin und bewegt sich zu einer unhörbaren Musik.}
+{162}{}{Du siehst einen Jetie. Er stiert ins Leere.}
+{163}{}{Du siehst einen Jetie. Er lächelt und winkt etwas zu, das sich hinter deinem Ohr befinden muß.}
+{164}{}{Du siehst einen Jetie. Er faßt sich dauernd ins Gesicht und murmelt vor sich hin. }
+{165}{}{Du siehst einen Jetie. Trotz der Ringe unter seinen Augen lächelt er, als habe er gerade im Lotto gewonnen.}
+# 3. [FEMALE, CRASH AND BURN]
+{170}{}{Du siehst einen völlig kaputten Jetie. Sie bewegt sich sehr langsam.}
+{171}{}{Du siehst einen völlig kaputten Jetie. Sie sieht aus, als habe sie schon monatelang nichts mehr gegessen.}
+{172}{}{Du siehst einen völlig kaputten Jetie. Sie ist so dünn, daß sie aussieht, als könne sie von einem Windstoß umgeweht werden.}
+{173}{}{Du siehst einen völlig kaputten Jetie. Ihre Augen sehen aus wie durchgebrannte Sicherungen.}
+{174}{}{Du siehst einen völlig kaputten Jetie. Sie sieht dich hungrig an.}
+{175}{}{Du siehst einen völlig kaputten Jetie mit blutunterlaufenen Augen.}
+{176}{}{Du siehst einen völlig kaputten Jetie. Bei jeder Bewegung zuckt sie zusammen, als würde sie mit Nadeln gestochen.}
+{177}{}{Du siehst einen völlig kaputten Jetie. Sie hat Ringe unter den Augen und einen schmerzverzerrten Gesichtsausdruck.}
+# 4. [FEMALE, HIGH ON JET]
+{180}{}{Du siehst einen Jetie. Sie sieht glücklich aus.}
+{181}{}{Du siehst einen Jetie. Sie lacht und weint gleichzeitig.}
+{182}{}{Du siehst einen Jetie. Sie lächelt und tanzt zu einer unhörbaren Melodie.}
+{183}{}{Du siehst einen Jetie. Sie stiert ins Leere und seufzt.}
+{184}{}{Du siehst einen Jetie. Sie lächelt und winkt etwas genau hinter deinem Ohr zu.}
+{185}{}{Du siehst einen Jetie. Sie kratzt dauernd ihre Handrücken.}
+{186}{}{Du siehst einen Jetie. Sie windet sich hin und her und kann kaum aufrecht stehen.}
+{187}{}{Du siehst einen Jetie. Trotz ihrer abgerissenen Erscheinung lächelt sie, als habe sie gerade im Lotto gewonnen.}
+
+# FLOAT DIALOGUE:
+# 5. JETIE=WASTED; ENCLAVE DESTROYED IS TRUE
+{200}{}{::Jubelt und zuckt dann zusammen::}
+
+# 6. JETIE=STONED; ENCLAVE DESTROYED IS TRUE
+{211}{}{Du bist das beste...äh, irgendwas. Du bist das beste IRGENDWAS!}
+{212}{}{, du bist besser als JET!}
+
+# 7. JETIE = WASTED
+{220}{}{Mein Kopf...}
+{221}{}{So...kann ich nicht... weitermachen...}
+{222}{}{Haste Jules gesehen? Ich brauch Jet.}
+
+# 8. JETIE = HIGH
+{243}{}{Zu viele Lichter! Brennen mir in den Augen, brennen mir in den Augen...}
+{244}{}{Lichter sind...zu hell... ::Fängt an zu weinen::}
+{245}{}{Ganz nette Straße. Ganz nette Wand. Ganz nett stoned.}
+{246}{}{Wow...wo ist denn der Himmel hin...?}
+{247}{}{Wenn meine Kleider jetzt noch länger mit mir reden, dann ziehe ich sie aus.}
+
+# 9. JETIE=WASTED; ENCLAVE DESTROYED IS TRUE
+{272}{}{Noch lange nicht. Ich war zu zu, um mitzukriegen, was du gemacht hast. Aber es war bestimmt cool.}
+{273}{}{Hatte die Enklave Jet?}
+{274}{}{Chris Avellone hat mich entwickelt und Tom French hat das Skript geschrieben. Technisch betrachtet bin ich für mein Jet benutzen also nicht verantwortlich.}
+
+# 10. JETIE=STONED; ENCLAVE DESTROYED IS TRUE
+{291}{}{Du bist das beste...äh, irgendwas. Du bist das beste IRGENDWAS!}
+{292}{}{, du bist besser als JET!}
+{293}{}{Ich LIEBE dich! Du bist ein HELD. EIN VERDAMMTER HELD. ICH KÖNNTE DICH ZU TODE DRÜCKEN.}
+{294}{}{Chris Avellone hat mich entwickelt und Tom French hat das Skript geschrieben. Technisch betrachtet bin ich für mein Jet benutzen also nicht verantwortlich.}
+
+# CLICK DIALOGUE:
+# 11. JETIE = WASTED, PLAYER = POWER ARMOR
+{322}{}{Puh, mein Delirium wird ja immer schlimmer. Jetzt reden schon Leute aus Metall mit mir.}
+{323}{}{::Klopft an deine Rüstung:: Hallo? Jemand zu Hause?}
+
+# 12. JETIE = WASTED, PLAYER = SLAVER
+{353}{}{Ich bin dein Sklave, wenn du mir ein bißchen Jet gibst.}
+
+# 13. JETIE = WASTED, PLAYER = PRIZEFIGHTER OR MADE MAN
+{360}{}{Bist du der Kämpfer? Haste paar Chips, die ich leihen kann?}
+
+# 14. JETIE = MALE, WASTED, PLAYER = NO REP OR PORN STAR
+{380}{}{He, Typ? Kannste mir fliegen helfen?}
+{381}{}{Dad?}
+{382}{}{Och Mensch, nur 'n paar Chips.}
+{383}{}{Haste paar Chips über?}
+{384}{}{He, Schwester? Kannste mir fliegen helfen?}
+{385}{}{Los, Mädel, nur 'n paar Chips.}
+{386}{}{He, äh...haste 'n bißchen Jet, Miss?}
+{387}{}{Mama?}
+
+# 15. JETIE = FEMALE, WASTED, PLAYER = MALE, NO REP OR PORN STAR
+{420}{}{He, Typ? Kannste mir fliegen helfen?}
+{421}{}{Psssscht. Kannst du mir was Jet besorgen?}
+{422}{}{Kann ich mir 'n paar Chips leihen...? Die kriegste wieder.}
+{423}{}{He, äh...haste mal ein bißchen Jet? Mann, ich muß FLIEGEN, kapiert?}
+{424}{}{He, äh...haste 'n bißchen Jet, Schwester?}
+{425}{}{Schwester, ich muß FLIEGEN, kapiert?}
+{426}{}{Nee, Schwester, ich bin clean. Äh...wieso denn? Willste was kaufen?}
+
+# 16. ANY STONED REACTION, POWER ARMOR
+{452}{}{Wow. Ein Metallmensch. Und er redet mit mir.}
+{453}{}{Ich brauch noch was Jet, bevor ich überhaupt daran denken würde, mich mit dir anzulegen.}
+
+# 17. ANY STONED REACTION, ANY SLAVER OR PRIZEFIGHTER
+{470}{}{He, wasiss los, Sklavenhändler?!}
+{471}{}{Krieg mich doch, Sklavenhändler!}
+{472}{}{Willste dich mit mir anlegen, Sklavenhändler? Ich bin ein Kraftwerk voll mit Jet! Ich mach dich FERTIG!}
+{473}{}{Willste mit mir fliegen?}
+{474}{}{He, Typ, was is' los?!}
+{475}{}{Willste dich mit mir anlegen, Typ? Ich bin ein Kraftwerk voll mit Jet! Ich mach dich FERTIG!}
+
+# 18. ANY STONED REACTION TO MADE MAN
+{500}{}{Hoho! Mafioso im Anmarsch!}
+{501}{}{Ich kann dich da unten kaum sehen, Gangster, so zu wie ich bin.}
+
+# 19. ANY STONED REACTION TO DRUGGED PLAYER
+{520}{}{Puhh...wo bist DU denn drauf? Kann ich was abhaben?}
+{521}{}{Und ich hab gedacht, *ich* wär fertig.}
+
+# 20. ROBOBRAIN OR MARCUS
+{530}{}{Schau jetzt nicht hin, Mann, aber da folgt dir ein Gehirn in einer Kiste.}
+{531}{}{Oh Mann. Ich muß was Schlechtes genommen haben...Hier rennen ja überall Mutanten herum.}
+
+# 21. STONED MALE REACTION TO COMP: SULIK OR NO REP AT ALL
+{562}{}{Boah. Weiß dein Freund, daß ihm ein Knochen aus der Nase wächst?}
+{563}{}{Willst du hiervon was?! Na?}
+
+# use jet on Jetie dialog
+{601}{}{Mmmm...}
+
+# endings for middle insertion dialogs
+{796}{}{! VERDAMMT!! WAS KOMMT JETZT DRAN, BABY?!!!}
+{871}{}{-Familie? Kannst du mir was Jet besorgen?}

@@ -1,0 +1,38 @@
+[comment]
+Ваши комментарии / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0#
+2 1010@
+2 2000 NOT_ANSWER_CLOSE_DIALOG 0&
+
+[russ]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Преддиалоговые установки}
+{1010}{}{-}
+{2000}{}{Wow, money is falling from sky!@@Wohooooo!@@Oh my god, I must get another one! NOW!!@@Ehm,want to fly like a dragon?@@Wow, money is falling from sky!}
+
+[engl]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Wow, money is falling from sky!@@Wohooooo!@@Oh my god, I must get another one! NOW!!@@Ehm,want to fly like a dragon?@@Wow, money is falling from sky!}
+
+[pols]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{Widzisz mężczyznę. Ma bardzo zwężone źrenice. Ćpun.}
+{210}{}{Widzisz mężczyznę. Ma bardzo zwężone źrenice. Ćpun.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Ludzie! Pieniądze z nieba!@@Jeeeeeeeeeej!@@O mój Boże, muszę wziąć następne! TERAZ!!@@Chcesz polatać jak smok?@@Pieniądze z nieeeebaaa!}

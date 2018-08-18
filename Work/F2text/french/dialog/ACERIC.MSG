@@ -1,0 +1,8 @@
+{100}{}{Tu vois ton neveu Feargus, en pleurs, comme d'habitude.}
+{2100}{}{Tu vois ton neveu Feargus.}
+{101}{}{Wahh !!! S'il te plaît, répare le puits.}
+{102}{}{Wahh !!! J'ai très soif mais le puits est cassé !}
+{103}{}{Wahh !!! Le puits a vraiment besoin d'être réparé.}
+{104}{}{Hé, merci d'avoir réparé le puits !}
+{105}{}{Fais attention.}
+{106}{}{Le puits est réparé. Tu es formidable !}

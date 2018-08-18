@@ -1,0 +1,7 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš žoldáka.}
+{101}{}{Je èas výcviku, hoši!}
+{102}{}{Snadný cíl.}
+{103}{}{Utíkej... mám rád pohyblivé cíle.}
+{104}{}{Zóna smrti!}
+{105}{}{Potvrzen nepøátelský kontakt.}

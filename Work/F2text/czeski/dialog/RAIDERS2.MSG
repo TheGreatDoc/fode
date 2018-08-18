@@ -1,0 +1,5 @@
+#tento soubor pøeložil Raptor...xraptor.@email.cz
+{100}{}{Vstoupil jsi do tmavé jeskynì na úpatí jednoho z kopcù.}
+{101}{}{Ocitl jsi se v labyrintu jeskyni èerných jako smùla. Ve tmì slyšíš cvakání klepet škorpiónù.}
+{102}{}{Tyto jeskynì vypadají, ze slouží za ukryt bandám banditù.}
+{103}{}{Nasel jsi doupì banditù.}

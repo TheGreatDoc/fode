@@ -1,0 +1,3 @@
+GLIBC_2.15 {
+    __fdelt_chk; __fdelt_warn;
+};

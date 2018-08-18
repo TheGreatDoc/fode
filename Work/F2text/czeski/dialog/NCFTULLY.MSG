@@ -1,0 +1,395 @@
+#tento soubor pøeloil Vladimir "SIR QWERTY" Sojka - http://qwerty.moje.cz
+# 0. QUICK LOOK (WTG)
+{100}{}{Vidíš otce Tullyho.}
+
+# 0. LOOK (WTG)
+{150}{}{Vidíš postaršího mue v hnìdém hábitu, okolo kterého se šíøí znaènı opar alkoholu. Ctihodná má asi 'nakoupeno'.}
+{151}{}{Vidíš otce Tullyho. Vypadá, e u si nìkde dal do trumpety.}
+
+# 1. FLOAT: NORMAL COMMENTS (WTG)
+{200}{}{Teï jsem pokøtìnej skrz naskrz.}
+{201}{}{Všechny eny by mì odteï mìly zdravit svatım políbením.}
+{202}{}{Vymıtím ze sebe ïábla chlastem, kdy budu muset.}
+{203}{}{Opravdové kázání nemá slov...}
+{204}{}{Cítím, jak mnou prostupuje Duch Svatı.}
+{205}{}{K ïasu, zaèínám støízlivìt. Potøebuju drink.}
+{206}{}{Proè se ta zpropadená podlaha tolik houpe...}
+{207}{}{S lahvinkou šòapsu ovládám všechny jazyky.}
+{208}{}{Ještì jedna štamprle a ten ïábel v mé hlavì se pozvrací.}
+{209}{}{Aaach. U hodinu jsem nemìl ani loka...}
+{210}{}{Je èas orat se ve jménu boím. Jak Zákon káe.}
+{211}{}{Pøipíjím na všechny svaté.}
+
+# 2. FLOAT PORN STAR [FEMALE] (WTG)
+{220}{}{Chs'š v'dìt jakse církef dívá na 'rální sex?}
+{221}{}{Jaké rouhání! Satanovo sémì! Eh... co dìláš dnes veèer?}
+{222}{}{Ty dìvko! Couro! Pelešnice! Eh...co dìláš nes-ka veèer?}
+
+# 3.  INTRO, FALLOUT2 FLAG = ENCLAVE_DESTROYED (WTG)
+{225}{}{...kzevede? Gdo jzte? }
+{226}{}{Buïzdrrrrv... co pro tebe mùe dobrı Otec Tully udìlat tentokrt... }
+{227}{}{Ty seš náš splaš... saps... Spasitel! S'HRRRDINA!!!}
+{228}{}{Já hrdı-na..}
+{229}{}{Hrdina}
+{230}{}{Ano, zapletl jsem se s Enklávou. Oni si zaèali -- já to skonèil. Ale nevykládejte si to špatnì, Otèe. Jsem jen obyèejnı èlovìk, kterı se snaí nìjak protlouct tímto nehostinnım svìtem... nejsem ádnı hrdina.}
+{231}{}{Ano, zapletla jsem se s Enklávou. Oni si zaèali -- já to skonèila. Ale nevykládejte si to špatnì, Otèe. Jsem jen obyèejnı èlovìk, kterı se snaí nìjak protlouct tímto nehostinnım svìtem... nejsem ádnı hrdina.}
+{232}{}{Radši u pùjdu, Otèe. Bylo mi ctí vás cíti..eh, potkat.}
+
+# 4.  I GOT A HINTBOOK FOR YOU (3)
+{235}{}{Take teï jsi Hrdina. Nìco bych tu pro tebe mìl. Nejdøív jsem netušil, na co by to mohlo bıt dobrá, ale myslím, e tobì se to bude hodit.}
+{236}{}{To beru}
+{237}{}{To nepotøebuju... chci jenom vyjít na èerstvı vzduch.}
+{238}{}{Jistì. Beru cokoliv, Otèe. No, témìø cokoliv.}
+{239}{}{Er... ne, díky Otèe. U musím bìet.}
+
+# 5.  HERE'S THE HINTBOOK (4)
+{240}{}{(Tully pøistoupí k jedné lavici, vylomí z ní prkno a z díry vytáhne jakısi umatlanı paperback.) Tady to je.
+ Je pravda trochu ušpinìnı, ale... (Pøedává ti ho.)}
+{241}{}{Dííky}
+{242}{}{Díky, Otèe. Moná.}
+
+# 6.  NO HINTBOOK/POST HINTBOOK (3, 5)
+{245}{}{Seš teï hrrrdina. Zslouiš ssito. Jenom málo paøanù dokydlilo tuhle hru tak daleko. Jsem na tebe pyšnı. Celı New Reno je na tebe pyšnı.}
+{246}{}{Díkes, 'tèe. Sbooohem}
+{247}{}{Díky Otèe. Dávejte na sebe pozor, slyšíte mì? A nechlastejte.}
+
+# 7.  INTRO (WTG)
+{250}{}{Zdravíííííèko, synu. Co pro tebe mùe Otec Tully udìlat za takové pøekrásné noci, která dnes bezesporu je?}
+{251}{}{Zdravííííèko, synu. Co pro tebe mùe Otec Tully udìlat v takovı pøekrásnı den?}
+{252}{}{Hi-hi. Smrdíte jako lihovar. Ne, vlastnì smrdíte jako chcanky, co z lihovaru teèou.}
+{253}{}{Svítí, sluníèko svítí...}
+{254}{}{Krááásnááá noc, zdá se mi o tobì moooc.}
+{255}{}{Hmm, víte Otèe, on je ale bílı den.}
+{256}{}{Hmm, víte Otèe, ona u je ale noc.}
+{257}{}{Kdo jste?}
+{258}{}{Jste opilı?}
+{259}{}{'Otec' Tully? Dìláte i rozvody?}
+{261}{}{Heleïte, ctihodnı Otèe, mám tu nìjaké pitivo. Mùeme si na chvilku promluvit...?}
+{262}{}{To nic. Sorry.}
+
+# 8.  HEE HEE. YOU STINK LIKE STILL. YOU STINK LIKE PEE (7)
+{270}{}{(Pøièichává si k podpaí a pak ke svému hávu.) No jo, já vánì dost smrdim, e jo? Namouduši, máš recht, smrdim jako pochcanej lihovar! Musim se dát dohromady, ne mì chytne ta Wrightová...}
+{271}{}{Mìjte se, pane Pochcánku.}
+
+# 9.  UH, ACTUALLY, IT'S NIGHT/DAY TIME, FATHER (7)
+{275}{}{Ksakru, musel jsem zaspat... jináè bych si urèitì všimnul... o èem sem to sakra mluvil?}
+
+# 10. WHO ARE YOU? (7, 9)
+{290}{}{Otec Tully, k vašim slubám. Jsem rádcem ve vìcech duchovních pro všechny dobré li... tedy, pro všechny obèany New Rena.}
+{291}{}{To máte v popisu práce, bıt poøád takhle oralı?}
+{292}{}{Mám pár otázek ohlednì New Rena...}
+{295}{}{Aha. Díky, e jste si udìlal èas.}
+
+# 11. ARE YOU DRUNK? (7, 9, 10)
+{300}{}{Samozøejmì e ne! KDYSI, kdysi jsem se oddával alkoholu, ale Hnutí za ukáznìnost mi pomohlo zbavit se toho odporného zlozvyku!}
+{301}{}{Hnutí za --?}
+{302}{}{Och. Já jsem si --}
+{303}{}{Zbavit se --?}
+
+# 12.  TEMPERANCE UNION/MISSUS WRIGHT (16)
+{305}{}{Hnutí za ukáznìnost, paní Wrightová... to je to samı. Snaí se oèistit New Reno. Prokázala mi medvìdí slubu.}
+{306}{}{To jistì. Ještì mám pár otázek...}
+
+# 13.  QUESTIONS . . . (10, 12, 16, 20)
+{315}{}{Otázky? Musím øíct, e toho moc nevim, ale ptejte se.}
+{316}{}{Slyšel jste nìkdy o Vaultu 13?}
+{317}{}{Jsem tady proto, abych nalezl lidi ze svého kmene. Byli uneseni z naší vesnice.}
+{318}{}{Neumíte náhodou opravit	ropnı tanker, co?}
+{319}{}{U jste nìkdy slyšel o pøedmìtu zvaném GECK?}
+{320}{}{Mùete mi øíct nìco málo o New Renu?}
+{323}{}{Asi se stavím znova a budete trochu víc pøi smyslech.}
+
+# 14.  I'M ON A QUEST TO FIND THE GECK . . . (13)
+{325}{}{Tedy... Reno... je... teda, je... jaksi... um, ejo...}
+{326}{}{GECK? Ne, nikdá jsem vo tom neslyšel...}
+{327}{}{Vault tøináct? Fakt nevim...no, toti, smìrem na severovıchod je nìjakı mìsto na Vaultu stavìnı, moná myslíš todle? Hmmmm... jinak teda...}
+{328}{}{Co takhle otrokáøství? Slyšel jsem, e takhle získávají spoustu...um...zboí...}
+{329}{}{Tanker? Taková vìc na vodu plna barelù...? O tom moc nevim... um... um...}
+{330}{}{Ano...?}
+
+# 15.  YES . . . ? (14)
+{335}{}{Promiòte e se ptám, ale nemìl byste u sebe nìjakou lahvinku? Potøebuju jich pár pro bohosluby... a, eh, trochu mi vyschlo v krku.}
+{336}{}{Jistì. Tady máte.}
+{337}{}{Ne, teï právì ne, bohuel.}
+{338}{}{Mùu jít nìco sehnat, jestli chcete.}
+
+# 16. ARE YOU DRUNK? (11)
+{440}{}{Ale teï jsem poèestnı èlovìk, kterı na alkohol ani nepomyslí, to všechno díky paní Wrightové... bùh jí ehnej. Nenapil jsem se u skoro...uh, mìsíc. Nebo to byl tıden? A, dy je to jedno. }
+{441}{}{øekl bych, ze spíš ten tıden. Heleïte, chtìl bych vìdìt pár vìcí...}
+{442}{}{Ani nepomyslí, co? Kolik prstù vám ukazuju?}
+{443}{}{Hnutí za ukáznìnost?}
+{444}{}{Paní Wrightová?}
+{445}{}{Stavím se, a budete zase støízlivı.}
+
+# 17. ROB THE POOR BOX (27)
+{450}{}{(Tully se dopotácí k bedınce na almuny vedle pódia, a zašmátrá uvnitø.) }
+{451}{}{Uh... hmmnn. (Zøejmì nemùe nic najít) Tak asi pøece jenom nemám ani floka.}
+{452}{}{Hmnnn. Tady máš... (Vrazí ti do ruky pár mincí.) Bùh ehnej všem chudım. Utra je ve jménu Boím.}
+{453}{}{Stejnì díky Otèe. Podívám se vám po nìjaké pálence.}
+{454}{}{Díky Otèe. Za chvíli jsem tu s pálenkou.}
+
+# 18. BISHOP, THE SCOOP (30)
+{460}{}{Nevìnuje ani chvilku enì a své dceøi...není divu e obì jsou teï pìknì divokı. He-he... pøi zpovìdi se dovíš úplnì všechno, ejo...}
+{461}{}{Oh, a co øíkal Bishop pøi zpovìdi?}
+{462}{}{Oh, a co øíkala paní Bishopová pøi zpovìdi?}
+{463}{}{Co øíkala paní Bishopová pøi zpovìdi? Nemluvila o mnì, e ne... toti, ne e by bylo o èem mluvit. Všechno to jsou li.}
+{464}{}{Oh, a co øíkala Bishopova dcera pøi zpovìdi?}
+{465}{}{Uh, co øíkala Bishopova dcera pøi zpovìdi? Nic o mnì, ejo... toti, nic špatného o mnì, jsem chtìl øíct.}
+{466}{}{To si umím pøedstavit. Mohu se vás ještì na nìco zeptat, Otèe?}
+
+# 19. BISHOP AND VAULT CITY (32)
+{470}{}{Jasnì e ne, ve Vault City mu øekli, a si to strèí víškam. Take...zanedlouho poté je Vault City vystaveno sérii nájezdù. Rychlıch a smrtících. A najednou se objeví Bishop a povídá jim, "MOHL BYCH vám pomoci, KDY SE pøipojíte k New Renu."}
+{471}{}{Hmmm. Co dalšího mi mùete o Bishopovıch øíci?}
+{472}{}{Aha, take vydíráni je Bishopova taktika? Pár nájezdù, pár mrtvıch, a Vault City je hned pøipraveno kamarádíèkovat se s New Renem. Ne moc vytøíbená strategie, ale pøináší své ovoce. Co dalšího mi mùete o Bishopovıch øíci?}
+{473}{}{To je podivná taktika... toti, bylo pøece nasnadì, e Vault City mùe hledat pomoc u nìkoho dalšího pøedtím, ne by ustoupilo Bishopovu nátlaku. Co dalšího mi mùete o Bishopovıch øíci?}
+{474}{}{To je podivná taktika...toti, bylo pøece nasnadì, e Vault City mùe hledat pomoc u nìkoho dalšího... tøeba NCR...pøedtím, ne by ustoupilo Bishopovu nátlaku. Co dalšího mi mùete o Bishopovıch øíci?}
+{475}{}{Mohu se vás ještì zeptat na pár vìcí, Otèe?}
+{476}{}{Velmi zajímavé, Otèe. Díky za váš èas.}
+
+# 20.  HOW MANY FINGERS AM I HOLDING UP? (16)
+{480}{}{(Zírá na tvou ruku.) Šest? Nebo to jsou tøi...}
+{481}{}{Velmi dobøe. Obojí je správnì. Zajímalo by mì pár vìcí...}
+{482}{}{Dìláte také rozvody?}
+{484}{}{Stavím se, a budete zase støízlivı.}
+
+# 21. CAN YOU DO DIVORCES? (7, 9, 10, 13, 20)
+{490}{}{A mì peklo pohltí, se ví, e dìlaá! Reno bylo Mekkou všech rozvodù ještì pøed Pohromou.}
+{491}{}{Tohle je ta ába, s kterou se chceš rozvést?}
+{492}{}{Tohle je ten kanec, co ho u nemùeš vystát?}
+{493}{}{(Na chvíli znejistí, kdy vás oba vidí. Pak ale jen pokrèí rameny a mohutnì si pøihne.)}
+{494}{}{Jo to je. Mùeme u zaèít?}
+{495}{}{Moná... ještì si to chci rozmyslet. Ale moná se vrátim.}
+
+# 22. YOU BET. CAN WE START NOW? (21)
+{500}{}{No, vypadá to, e jsem nìkam zaloil knihu se všemi øíkáními a formalitami...}
+{501}{}{Zapomeòte na knihu. Tady je chlast. Nemùete si nìco vymyslet?}
+{502}{}{Tady je trochu chlastu. Nemùete si prostì nìco vymyslet?}
+{503}{}{K èertu s knihou. Kdy vám pøinesu lahvinku, myslíte, e byste si mohl prostì nìco vymyslet?}
+{504}{}{Kdy vám pøinesu lahvinku, myslíte, e byste si mohl prostì nìco vymyslet?}
+{505}{}{Nu dobrá. Tøeba ji ještì najdete.}
+
+# 23. IF I BRING YOU A BOTTLE, CAN YOU JUST MAKE SOMETHING UP? (22)
+{510}{}{Tedy, to by nebylo správné... teda pokud by ten chlast nebyla FAKT klasa.}
+{511}{}{ádné strachy. Hned jsem zpátky.}
+{512}{}{Mùu jít nìjakı splašit. Ale budu potøebovat nìjakı peníze.}
+
+# 24. HERE'S SOME HOOCH. CAN YOU JUST MAKE SOMETHING UP? (22)
+{520}{}{No jasnì! Jenom mì nechte odkašlat a jdeme na to... (Kopne do sebe celou láhev s omraèující rychlostí.)...nu dobrá, stoupnìte si oba sem vedle sebe...}
+{521}{}{Stoupnìte si sem...}
+
+# 25. NO HOOTCH ON ME, I'M AFRAID (15, 28)
+{530}{}{Och. Tak dobøe. Za zeptání nic nedáš... take... uh...promiòte, kdo jste øíkal, e jste?}
+{531}{}{Ale mohl bych pro vás nìkde nìco splašit, pokud chcete.}
+
+# 26. I COULD GO SNAG SOME, IF YOU WANT (15, 25, 28)
+{540}{}{To je ale nápad! Bùh ti tøikrát ehnej! Eh... náhodou znám JEDNO místo, je to ve Vıchodní ètvrti, ve staré eleznièní stanici, tam prodávají pøesnì tu 'svìcenou vodu', kterou potøebuju.}
+{541}{}{Dobrá. Hned jsem s ní zpátky.}
+{542}{}{Dobra. Pùjdu ji sehnat, ale potøebuju nìjaké peníze.}
+
+# 27. I'LL NEED SOME chipS TO BUT HOOTCH (23, 26)
+{550}{}{Jistì, jistì... peòauze, peòauze... kde bych mohl mít nìjaké... (jeho pohled spoèine na pokladnièce pro chudé vedle pódia.) Ah! e mì to døív nenapadlo...Momentíèek...}
+{551}{}{Trpìlivì èekáš, zatímco si Otec 'vyzvedává' peníze.}
+{552}{}{Uh, to je dobrı Otèe. Ba to zatáhnu ze svıho.}
+
+# 28.  MAIN QUESTION NODE (18, 19, 33, 34, 35, 36, 37, 40, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57)
+{560}{}{(Otec Tully se zadívá na - teï u prázdnou - láhev ve svıch rukou.) Pøíteli, nechci bıt nezdvoøilı, ale nemìl bys ještì jeden takovı vıbornı lektvaru? Z toho všeho mluvení mi vyschlo v ústech.}
+
+# 29. BROUGHT SOME HOOCH. CAN I TALK TO YOU . . . ? (7, 9, 10)
+{570}{}{Tisíceré díky! (Vezme od tebe láhev a pøihne si.) Ahhh... promiòte... o èem jsem to sakra mluvil?}
+{571}{}{Ech... ale ale, copak to tu máme! (Bere si láhev.) Víte, vìtšinou vùbec nepiju, ale pro tentokrát snad... (Vypije pùlku na ex.)... ahhhh... um, omlouvám se, o èem jsme to mluvili?}
+{572}{}{Eh... to je od vás šlechetné! (Bere od tebe láhev.) Vìtšinou tolik vùbec nepiju, ejo... (HLUBOKİ doušek.) Ahhhh... pardon, co jsem to øíkal?}
+{573}{}{Mluvil jste o Bishopovì rodinì.}
+{574}{}{Mluvil jste o Wrightovì rodinì.}
+{575}{}{Mluvil jste o Mordinovıch.}
+{576}{}{Mluvil jste o Salvatorovıch.}
+{578}{}{Mluvil jste o smrti Richarda Wrighta.}
+{579}{}{Vrátím se, a budete støízlivı.}
+
+# 30. TALK TO ME ABOUT FAMILY BISHOP . . . (19, 29, 33, 34, 35)
+{590}{}{Ech? Tedy Bishopové, ano... jsou mocichtiví, mají to v krvi. Pravda je, e starej John Bishop je tak zaneprázdnìn ovládáním všeho a všech, e ani neví co se dìje u nìj doma...}
+{591}{}{U nìj doma?}
+
+# 31. OH, WHAT DOES MR. BISHOP SAY IN THE CONFESSIONAL . . . ? (18)
+{600}{}{No, moc toho zas nebylo, ale slyšel jsem VÌCI venku povídat o starım Bishopovi. Mizera mazanej. Má prej kovovı koule, to musí pìknì zvonit, kdy... Prej má prsty v tìch nájezdech na Vault City... u jsi o nich slyšel?}
+{601}{}{Ne.}
+{602}{}{Ano.}
+{603}{}{Otèe, mluvte potichu. Tyhle øeèi vám tady mùou vyslouit kudlu v zádech...}
+{604}{}{Podívejte, asi se vrátím, a budete zase støízlivı.}
+
+# 32. NO/YES/KEEP YOUR VOICE DOWN (31)
+{610}{}{(Ignoruje tì.) No hele, pøed pár mìsíci starı Bishop vypravil karavanu do Vault City, a navrhl 'sòatek z rozumu' mezi Vault City a New Renem.}
+{611}{}{Byl 'sòatek' uzavøen?}
+{612}{}{Hádám, e se nedohodli, co?}
+
+# 33. WHAT DOES MRS. BISHOP SAY IN CONFESSIONAL? (18)
+{620}{}{Vìtšinou to, co bys mohl oèekávat od zanedbávané enušky, s tìlem, jeho køivky by na první pohled vyrajcovaly i slepého. Samé sprosárny, cizoloství a tak. No øekni sám, VIDÌL jsi její nárazníky?!}
+{621}{}{Ech... co mi mùete dál øíci o Bishopovıch, Otèe?}
+{622}{}{Ano ano, má pìknı 'nárazníky'. Tedy... aspoò jsem to slyšel povídat. Ech, co mi mùete dál øíci o Bishopovıch, Otèe?}
+{623}{}{Er... nezmiòovala se náhodou s KİM cizoloila, e ne Otèe?}
+{625}{}{To teda má. Nu, díky za váš èas.}
+
+# 34. OH, WHAT DOES BISHOP'S DAUGHTER SAY IN THE CONFESSIONAL? (18)
+{630}{}{Ááhá, náš malı andílek, roztomilá Angela? Spíš malı ÏÁBLÍK je to! Ta holka má pod sukní nejspíš tucet rarachù a mezi nohama dálnici. Poøád se tu producíruje jak flundra, má nìco skoro s kadım a furt do sebe láduje ten sajrajt Jet...}
+{631}{}{Skoro s kadı? Neøíkala pøesnì s kım?}
+{632}{}{Jet?}
+{633}{}{To vypadá na bájeènou rodinku. Co mi mùete øíci dál o Bishopovıch?}
+{634}{}{Mám ještì pár otázek, Otèe...}
+{635}{}{Myslím, e dìti zùstanou dìtmi. Díky, e jste si udìlal èas.}
+
+# 35. DID SHE SAY WHO? (33, 34)
+{640}{}{S kım? Samozøejmì, e øíkala, ale vyjmenovat ty, s kterımi nic nemìla by bylo mnohem rychlejší. Jmenovala snad všechny, ještì se tím chlubí. Hele... jake se vlastnì jmenuješ?}
+{641}{}{To je jedno... co mi ještì mùete øíct o Bishopovıch, Otèe?}
+{642}{}{Já? My øadoví bratøi v celibátu nemáme jména. Ale Otèe, ještì by mì zajímalo...}
+{643}{}{Já? My øadové sestry v celibátu nemáme jména. Ale Otèe, ještì by mì zajímalo...}
+{644}{}{Ještì se stavím, Otèe.}
+
+# 36. JET? (34, 48, 49, 50, 56)
+{650}{}{Ïáblovo semeno! Vìèné zatracení! Hnilobnı vımìšek pøímo ze Satanova prsu!}
+{651}{}{Take... vy asi nemáte Jet moc v lásce, co?}
+{652}{}{Hu, jasnì. Ze Satanova prsu. Mùu se vás ještì na nìco zeptat, Otèe?}
+{653}{}{Díky za informace. Ještì se uvidíme Otèe.}
+
+# 37. SO . . . YOU DON'T LIKE JET? (36)
+{660}{}{Ta droga bude naše smrt. Nevzpomínám si na ádnou jinou... (Napije se a øíhne.)... kterı by páchala tolik škody... zabíjí duši i tìlo. Zpropadení Mordinové...}
+{661}{}{Co s tím mají spoleèného Mordinové?}
+{663}{}{Pøíštì vám tu láhev nedám hned. Zatím se mìjte.}
+
+# 38. TALK TO ME ABOUT FAMILY WRIGHT (29)
+{670}{}{He he! Wrightovi, jo? (Ušklíbne se a pøimhouøí oèi.) Nìco ti o Wrightovıch øeknu - je to napùl banda beznadìjnıch oralù a napùl tìch nejøádnìjších obèanù!}
+{671}{}{Vánì?}
+{672}{}{U jsem slyšel dost. Dík za váš èas.}
+
+# 39. FAMILY WRIGHT, 2 (38, 40, 41, 42, 43)
+{680}{}{No jo, ta Wrightova rodina prostì chrlí jedno dítì za druhım ...starej Orville Wright musí nejspíš chtít zdvojnásobit populaci. Doufám, e to všechno Wrightova utáhne. He-he. Jo paneèku, a co se od nich èlovìk dozví pøi zpovìdi...}
+{681}{}{Opravdu? No a co povídala paní Wrightová pøi zpovìdi?}
+{682}{}{Opravdu? No a co vám povídal starej Orville Wright pøi zpovìdi?}
+{683}{}{Co ovládá Wrightova rodina v New Renu?}
+{684}{}{Ohó, nepochybuji, e to jsou samé pikantnosti. Moná si o nich promluvíme nìkdy pøíštì.}
+
+# 40. OH, WHAT DOES MISSUS WRIGHT SAY IN THE CONFESSIONAL? (39, 42)
+{690}{}{ETHYL Wrightová? Bùh ehnej té dobré enì! Pomohla mi pøestat s pitím a zaèít sekat dobrotu. (Dlouze se napije.) Vymıtila ze mì všechnu høíšnost, všechnu... uh, heee... o èem jsem to sakra mluvil?}
+{691}{}{O zpovìdi paní Wrightové...}
+{692}{}{Mluvil jste o Wrightovì rodinì...}
+{693}{}{To je jedno. Ještì jsem se chtìl zeptat...}
+{694}{}{Myslím, e to stejnì nebylo dùleité. Dìkuji vám za informace.}
+
+# 41. ABOUT MISSUS WRIGHT IN THE CONFESSIONAL? (40)
+{700}{}{Jo jasnì jasnì. Take u zpovìdi toho moc nenapovídá. Vìtšinou se viní ze šlapání na brouky... nebo se rozkecá o tom bájeèném sexu, kterı si uívá s tim jejim. Hehe. (Pøihne si.) Zboòuji zpovìdi.}
+{701}{}{Ještì jsem se chtìl na nìco zeptat ohlednì Wrightovıch...}
+{702}{}{Rozumím. Mìl bych ještì pár otázek...}
+{703}{}{To by asi staèilo. Díky za váš èas .}
+
+# 42. WHAT DOES MR. WRIGHT IN THE CONFESSIONAL? (39, 43)
+{710}{}{Orville? Nese mnoho viny na svıch bedrech. Dovedeš si to pøedstavit? Slíbil svı enì, e skoncuje s alkoholem, a pøitom má schovanou palírnu pod zastávkou vlaku za jejich barákem! Jestli na to Wrightová pøijde, zbije ho jak ito...}
+{711}{}{He-he, mìl bych tu takovou lahùdku - Slíbil svı enì, e skoncuje s alkoholem, a pøitom má schovanou palírnu pod zastávkou vlaku za jejich barákem! Jestli na to Wrightová pøijde, zbije ho jak ito...}
+{712}{}{Povìzte mi o paní Wrightové...}
+{713}{}{Povìzte mi více o Wrightovıch...}
+{715}{}{Ukrytá palírna pod zastávkou za domem øíkáte? Zajímavé, Otèe. Dìkuji za informace.}
+
+# 43. WHAT DO THE WRIGHTS CONTROL? (39)
+{720}{}{Vùbec nic! (Pøihne si.) Jsou nejslabší rodinou ve mìstì, jenom pálí chlast. Vydìlají na tom jen pár šlupek.
+ Ostatní rodiny jim za to platí tolik, e se sotva uiví.}
+{721}{}{Odkud ten alkohol je?}
+{722}{}{Zajímavé. Øeknìte mi více o Wrightovıch...}
+{724}{}{Velmi zajímavé, Otèe. Díky za informace.}
+
+# 44. TALK TO ME ABOUT FAMILY MORDINO (29, 37)
+{730}{}{Mordinové? (Udìlá z prstù V.) Jsou dva. (Zvedne ruku.) Malı Jeíš... (Zase pøipaí.) ...a Velkı Jeíš. Otec a syn. Mají pod kontrolou distribuci drog a sí pasákù v Renu.}
+{731}{}{Øeknìte mi o Velkém Jeíši.}
+{732}{}{Øeknìte mi o Malém Jeíši.}
+{733}{}{Take oni vyrábìjí drogy a všechny dìvky v Renu šlapou pro nì?}
+
+# 45. TELL ME ABOUT BIG JESUS (44, 46)
+{740}{}{Jeíš? Je to takovej srá...(Lokne si a zašplouchá s douškem mezi zuby.) Jede v Jetu, otrokáøství a prostituci. Jediná horší osoba je ten jeho zadìlanej synek.}
+{741}{}{Jeho syn?}
+{742}{}{Take Jeíš Mordino Starší má pod kontrolou vìtšinu prostituce a obchodu s drogami?}
+{743}{}{Pìkná rodinka. Mohu se vás ještì na nìco zeptat, Otèe?}
+{744}{}{Jakı otec, takovı syn. Dìkuji za váš èas.}
+
+# 46. TELL ME ABOUT LITTLE JESUS (44, 45)
+{750}{}{Malej Jeíš? Parchant! Je jak štìnice, ije z tatíkovy práce. Byl by zatracenej prùšvih, kdyby to tu vzal do rukou. To by neukoèíroval, drogy, dìvky, všechno by šlo do hajzlu.}
+{752}{}{Take Mordinovi jsou zdrojem všech drog a prostituce v Renu?}
+{754}{}{No, dík za øeè.}
+
+# 47. MORDINO BUSINESS (44, 45, 46)
+{760}{}{(Tully na tebe zírá.) }
+{761}{}{Jasssnì... (Usmìje se a oblízne si rty.)... dìvky... (Zaène naznaèovat pohyb na krku flašky.)}
+{762}{}{Ah, Otèe? A co drogy?}
+{763}{}{No tak snad abych radši šel. Díky za vaše slova, Otèe.}
+
+# 48. DRUGS? (47)
+{770}{}{Eh? Drogy? ...jo, drogy. Jet. Ta špína. Ty strašnı vìci, co se kolem toho dìjou.Redding... ty Stáje. (Lokne si.) Všechno jen kvùli prachùm...}
+{772}{}{Co je s Reddingem?}
+{773}{}{Co je se Stájemi?}
+{775}{}{Zajímavé. Díky za váš èas, Otèe.}
+
+# 49. REDDING? (48, 50)
+{780}{}{(Dvìma prsty naznaèuje chùzi.) Jet se lifruje z New Rena do Reddingu. A zlato se zas lifruje z Reddingu k Mordinovi. (Zhluboka si pøihne.) A kdy horník chcíp, Mordino se zas mìl líp.}
+{782}{}{Co e jste to øíkal o Stájích?}
+{784}{}{Take Mordinové prodávají Jet do Reddingu, co?Zajímavé. Díky, Otèe.}
+
+# 50. STABLES? (48, 49)
+{790}{}{Mordinové mají... farmu... za mìstem. Drej si tam otroky. Testují... na nich.. to svinstvo - Jet. Likvidujou je po stádech. (Otøepe se hnusem.) Jen Mordinové vìdí, kde stojí Stáje.}
+{792}{}{Co e jste to øíkal o Reddingu??}
+{794}{}{Mordinové testují Jet na otrocích, hm? Zajímavé. Díky, Otèe.}
+
+# 51. TALK TO ME ABOUT FAMILY SALVATORE (29)
+{800}{}{Mluvil jsem o Salvátorech? (Zamrká, pokrèí rameny, napije se.) Nemùu si vzpomenout, co jsem to øíkal. Tahle rodina je tichá jak plíivá smrt. Radši se jim vyhni, jinak.. víš co, e jo?}
+{803}{}{No radši mi to ani neøíkejte, Otèe. Mùu se vás zeptat na nìco jiného?}
+{804}{}{Asi se vrátím, a budete støízlivı.}
+
+# 52. [YES/NO] SALVATORE (51)
+{810}{}{(Opilecky se zapotácí.) Protoe maj zbranì jako oheò z nebes, zbranì, které ještì nikdo z New Rena doposud nevidìl. Støílí svazky svìtelnıch paprskù, pøefikne to chlápka vejpùl - u se pak jen škube v køeèích.}
+{811}{}{Svìtelné paprsky?}
+{812}{}{Svìtelné paprsky? Myslíte laserové zbranì?}
+{814}{}{Jéje... moná bych se mohl pokusit nìjakou dostat. Tak fajn, dìkuji vám za informace.}
+
+# 53. LASERS (52)
+{820}{}{Tak jsem to slyšel - lej-zry... ale podle mnì jsou to ïáblovy vynálezy. Nic ne vìci k zabíjení!}
+{821}{}{Jistì, Otèe. Ïáblovy nástroje a tak. Co si ostatní rodiny myslí o tìch Salvátorech?}
+{823}{}{Ïáblovy nástroje jo? Moná bych se mohl pokusit nìjaké dostat. Tak fajn, dìkuji vám za informace.}
+
+# 54. TELL ME MORE ABOUT THE SALVATORES (52, 53)
+{830}{}{Jeden Salvátor s takovou vìcí povradí tucet chlapù... ostatní rodiny se s nimi pokoušely bojovat, ale nikdo nemìl šanci. Je lepší nechat je na pokoji.}
+{831}{}{Otèe, kdo tyhle Salvátory vede?}
+{833}{}{Jak myslíte. Dìkuji vám, Otèe.}
+
+# 55. WHO'S IN CHARGE? (54)
+{840}{}{Louie... LOUIS... Salvátor to vede. (Pøihne si a zakašle.) Je to mrzák. Potøebuje k dıchání flašku s kyslíkem... má kompletnì zasvinìnı plíce. Zùstává v nejvyšším poschodí svıho baráku a nikdy nevychází ven.}
+{841}{}{Zajímavé. Mùu se vás ještì na nìco zeptat, Otèe?}
+{842}{}{Hmmmm. Tak kyslíková láhev, øíkáte? Zajímavé. Dìkuji vám, Otèe.}
+
+# 56. TELL ME ABOUT RICHARD . . . (29)
+{850}{}{Ten chudák... Jet ho odlouèil od jeho rodiny, to teda jo. To zatracenı svinstvo! Nejhorší zabiják mysli, jakej kdy byl vynalezenej...}
+{852}{}{Víte, kde sehnal Richard Jet, kterı ho zabil?}
+{853}{}{Mìl bych ještì nìjaké otázky...}
+{854}{}{Rozumím. Dìkuji za øeè, Otèe.}
+
+# 57. WHERE RICHARD GOT THE JET . . . (56)
+{860}{}{No tak to mohl dostat od kohokoliv v New Renu! Pøes ulici je lékárnickej krám vedenej jednim dealerem. Jestlie ho neseeneš, mùeš se zeptat kohokoliv na ulici! Zablbanej Jet!}
+{862}{}{Lékárna pøes ulici. Omrknu to. Díky za váš èas, Otèe.}
+
+# 101. FLOAT TEXT FOR DIVORCE (WTG?)
+{957}{}{Jo fajn, tak poslouchej...}
+{958}{}{::GRND::}
+{959}{}{::Sosá z flašky::}
+{960}{}{...zmocnìn k tomuto úkonu, rozvádím vás. A vás bùh provází}
+{961}{}{Teï mùete klidnì nakopat svou nevìstu... svého enicha. Cokoliv se vám zachce.}
+{962}{}{::Rozmáchne se ke kopanci::}
+{963}{}{Ughhhhh}
+{964}{}{::CHRCHLY CHRCHL::}
+
+# 102. CLICK TEXT AFTER TULLY HAS PASSED OUT (WTG)
+{967}{}{::CHRCHLIJÓ - CHRCHLY::}
+{968}{}{Oh, zastavte tu Wrajtovou, stavte... ::frrrrky::}
+{969}{}{Zzzastvte, pani Wrajtovou, sem stoho, s kostelu!}
+{970}{}{Hroššnice, høíšníce... no to je teda hlina}
+{971}{}{No jasssòje sem sstøízlivej}
+
+# 103. Going to go pass out
+{1000}{}{Bùh ti ehnej... *BLÉÉÉÉÉÉÁÁÁÁBRRR*! Tfujtayxl!}
+{1001}{}{Pøehnal sem to trochu s tim chlastem... JEÍŠI, *BLIJÓÓÓÓ*.}
+{1002}{}{Ach boe, *DGHLEBBRR*}
+{1003}{}{Svatá Trojko, jak si na tom nebi, u se snad nikdy tolik nevoeru.}
+{1004}{}{Radši si zejtra pøivstanu a pùjdu ke zpovìdi.}
+{1005}{}{Moná si radìji na chvilku lehnUUHUHHHH *HUHLYHLEWWW*.}

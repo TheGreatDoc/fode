@@ -1,0 +1,77 @@
+# quick look
+{100}{}{Du siehst einen Kasino-Besucher.}
+
+# examines
+{150}{}{Du siehst einen der Kasino-Besucher. Er sieht müde aus.}
+{151}{}{Du siehst einen der Kasino-Besucher. Er hat einen goldenen Glanz in den Augen.}
+{152}{}{Du siehst einen der Kasino-Besucher. Er verbirgt sein Gesicht in den Händen.}
+{153}{}{Du siehst einen der Kasino-Besucher. Er sieht etwas beschwipst aus.}
+{154}{}{Du siehst einen der Kasino-Besucher. Er zwinkert dir grinsend zu und torkelt dann weg.}
+{155}{}{Du siehst einen der Kasino-Besucher. Er versucht, die Aufmerksamkeit der Serviererin auf
+ sich zu lenken.}
+{156}{}{Du siehst eine der Kasino-Besucherinnen. Sie sieht müde aus.}
+{157}{}{Du siehst eine der Kasino-Besucherinnen. Sie hat einen goldenen Glanz in den Augen.}
+{158}{}{Du siehst eine der Kasino-Besucherinnen. Sie verbirgt ihr Gesicht in den Händen.}
+{159}{}{Du siehst eine der Kasino-Besucherinnen. Sie sieht etwas beschwipst aus.}
+{160}{}{Du siehst eine der Kasino-Besucherinnen. Sie zwinkert dir grinsend zu und torkelt dann
+ weg.}
+{161}{}{Du siehst eine der Kasino-Besucherinnen. Sie versucht, die Aufmerksamkeit des Kellners
+ auf sich zu lenken.}
+
+# float
+{202}{}{Toll, wie du diese Enklaven-Spinner abgebrannt hast! Ganz toll!}
+
+# POWER ARMOR
+{206}{}{Oh-oh. Aus dem Weg.}
+
+# PLAYER IS MADE MAN
+{223}{}{Oh-oh. Aus dem Weg.}
+{224}{}{Wo wir gerade von gefährlichem Aussehen sprachen...}
+{225}{}{*Schluck*}
+
+# ANY TO PRIZEFIGHTER
+{235}{}{Hey, Champ! Dein letzter Kampf war toll!}
+{236}{}{Wie groß bist 'n so?}
+
+# PORN STAR, FEMALE
+{244}{}{Wow. Sieh dir das an.}
+{245}{}{Würdest du dir *das* ansehen?}
+
+# PORN STAR MALE
+{268}{}{Aber hallooooo, du Hengst.}
+{269}{}{Brauchst du 'n Partner für deinen nächsten Film?}
+
+# ROBOBRAIN
+{278}{}{Ist das ein einarmiger Bandit?}
+
+# NORMAL
+{281}{}{Roll die Knochen.}
+{282}{}{Baby braucht ein neues Paar Schuhe...}
+{283}{}{Mist! Ich hatte *53* Chips und dann...}
+{284}{}{Sind schon alle meine Chips weg?}
+{285}{}{Komm schon, 7!}
+{286}{}{Ich hab nur 60 Chips verloren. In den ersten fünf Minuten jedenfalls.}
+{287}{}{Rot 23! Rot 23! Komm schon...Rot 23...}
+{288}{}{50 Chips auf Schwarz 15...}
+
+# ENCLAVE DESTORYED
+{321}{}{Toll, wie du diese Enklaven-Spinner abgebrannt hast! Ganz toll!}
+
+# POWER ARMOR
+{340}{}{Kann ich diese Würfel gegen deine Rüstung reiben, damit sie mir Glück bringt?}
+{341}{}{Wenn du glaubst, daß mich diese Rüstung einschüchtert, hast du recht.}
+
+# MADE MAN
+{353}{}{Tut mir leid, war ich dir im Weg? Ich verlasse die Stadt.}
+{354}{}{Sieh mal, bitte...ich will keinen Ärger.}
+
+# PORN STAR
+{372}{}{Ich liiiiieeebe deine Filme.}
+{373}{}{Mist. So viele Kurven und ich steh ohne Bremsen da.}
+
+{503}{}{!}
+{504}{}{! Du Hintern treten! Du HINTERN treten!}
+{505}{}{! Du bist so GELDig!}
+{625}{}{!}
+{630}{}{! Du Hintern treten! Du HINTERN treten!}
+{631}{}{! Du bist so GELDig!}

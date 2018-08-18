@@ -1,0 +1,69 @@
+#tento soubor prelozil Tomas "LOCKHEAR" Jurecka
+{100}{}{Vidíš postaršího muže s hlubokými vráskami po tváøi.}
+{101}{}{Vidíš Johna MacRae.}
+{102}{}{Hej Ty, ještì jsem Tì tu pøedtím nikdy nevidìl. Jsem MacRae -- mám to tu na starost. Co pro Tebe mohu udìlat?}
+{103}{}{Hledám Vault.}
+{104}{}{Vypadá to že chceš odsud vypadnout, že jo?}
+{105}{}{Tak co tu máš?}
+{106}{}{Dìje se tu nìco zvláštního?}
+{107}{}{Ug Gugu}
+{108}{}{Dnes nic, díky.}
+{109}{}{Vault? Jediný Vault který znám, je uvnitø mìsta. Velká tmavá ïoura...nemùžeš to minout, vìø mi.}
+{110}{}{Tak co tu máš k pití?}
+{111}{}{Dìje se tu nìco zvláštního?}
+{112}{}{Díky za nasmìrování. Nashle.}
+{113}{}{Standardní ceny. Pivèo za $20, støik whisky za $30. Žádné speciality. Chceš nìco?}
+{114}{}{Víš nìco o Vaultu?}
+{115}{}{Vezmu si to pivèo.}
+{116}{}{Dám si støik.}
+{117}{}{Dìje se tu nìco, co stojí za povšimnutí?}
+{118}{}{Dnes nic, díky. Nashle.}
+{119}{}{Tady? Poøád ty samé staré vìci. Obèas mnì to nudí až k pláèi. Proè, hledáš snad nìco zvláštního?}
+{120}{}{Tak co tu máš k pití?}
+{121}{}{Víš nìco o Vaultu?}
+{122}{}{Nemùže to být až tak špatné.}
+{123}{}{Nic. Nashle.}
+{124}{}{Ach...asi Tì bili do hlavy pøíliš èasto, To vidím. Promiò, ale nemluvím s imbecily.}
+{125}{}{Tady to máš. Jen se napij. To je totiž jediná zábava, kterou zažiješ v této díøe do prdele.}
+{126}{}{Nemùže to být až tak špatné.}
+{127}{}{Dík za drink. Asi už pùjdu.}
+{128}{}{Podívej. Ptal jsem se Tì, jestli chceš drink, takže øíkám, kolik to bude stát. Vìtšina lidí tento proces pochopí. Jestli nemáš prachy, tak bys taky nemìl nic chtít.}
+{129}{}{Promiò. Myslím, že nìjaké peníze mám. Když nevidím stav svého konta na obrazovce, tak mi to dìlá obèas problémy, víš?}
+{130}{}{Jo,to je jasné... Jdu pryè.}
+{131}{}{Obchody nic moc. Obèané toho moc nevypijí, ale aspoò pár panákù prodám kupcùm. Každý další bastard, který se se mnou bude handrkovat o cenì drinku, si bude doma prohlížet otisky mých bot na svém pozadí.}
+{132}{}{Zní to, jako bys toho tady mìl už až po krk.}
+{133}{}{To je mi líto. Co víš o Vaultu?}
+{134}{}{Všichni dìlámy chyby...nìkdy èastìji než ostatní. Takže co potøebuješ?}
+{135}{}{Dìje se tu nìco zvláštního?}
+{136}{}{Dnes nic, díky. Nashle.}
+{137}{}{Pøál bych si opustit toto ïábelské místo.}
+{138}{}{Tak proè normálnì neodejdeš?}
+{139}{}{Nechat se pohltit pustinou? A sám? Jsem hodnì znudìný, ale ne pako.}
+{140}{}{Za chvíli budu odcházet. Proè bys nemohl jít se mnou?}
+{141}{}{Dobrá, hodnì štìstí.}
+{142}{}{...Vypadá to, že už máš dost lidí, kteøí Tì následují.}
+{143}{}{Dobrá, takže hodnì štìstí.}
+{144}{}{Víš, není to tak špatný nápad. Mùžeš se mnou poèítat.}
+{145}{}{Ano, copak?}
+{146}{}{Chci, abys mi šel z cesty.}
+{147}{}{Jak se máš?}
+{148}{}{Zkus si ošetøit rány.}
+{149}{}{Chci, abys tu poèkal, než se pro Tebe vrátím.}
+{150}{}{Ty! Buaaaguu!}
+{151}{}{Zatím to je vše.}
+{152}{}{OK, myslím, že je to vše. Jdeme.}
+{153}{}{OK, to je fajn. Vše je zalátáno.}
+{154}{}{To bylo posilující, ale myslím že bych snesl ještì pár léèení.}
+{155}{}{Využil jsem všechno co mám a znám, ale stále mi není pøíliš dobøe. Nemáš pár stimpakù navíc?}
+{156}{}{Poskytni si první pomoc.}
+{157}{}{Nevadí.}
+{158}{}{OK.}
+{159}{}{OK, poèkám tu.}
+{160}{}{Nevadí.}
+{161}{}{OK.}
+{162}{}{Jdeme dál.}
+{163}{}{OK.}
+{164}{}{Koukej, teï máš dost lidí, kteøí se Ti courají za šosem.}
+{165}{}{Ano, jasòaèka.}
+{166}{}{No...Myslím, že pùjdu.}
+{167}{}{Myslím, že se tu ještì nìjakou dobu zdržím.}

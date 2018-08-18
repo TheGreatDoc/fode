@@ -1,0 +1,60 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš vìdce.}
+{101}{}{Vidíš èlena Enklávského vìdeckého personálu.}
+{102}{}{Vidíš èlena protichemické jednotky Spojených Státù.}
+{103}{}{Pøál bych si, aby tyto výsledky dávaly smysl.}
+{104}{}{To je blbost!}
+{105}{}{Tato data jsou správná.}
+{106}{}{Tyto body dávají dobrou køivku.}
+{107}{}{Jaká je standardní odchylka?}
+{108}{}{Èekám, až bude tato smìs v rovnováze.}
+{109}{}{Tenhle spektrometr je nìjaký pokurvený.}
+{110}{}{Kde sakra jsou udržbáøi, když je èlovìk potøebuje?}
+{111}{}{Kalibrace IR-spektrometru hotová.}
+{112}{}{Jak pokraèuje ta rekrystalizace?}
+{113}{}{Tyto slouèeniny jsou hotové, doktore.}
+{114}{}{Výborná práce.}
+{115}{}{Projekt pokraèuje podle plánu.}
+{116}{}{To jsou vynikající výsledky.}
+{117}{}{Co teï?}
+{118}{}{Ta radiace mi asi znièí celou práci.}
+{119}{}{Tak další pokus.}
+{120}{}{Teï nemùžu ukonèit moji práci.}
+{121}{}{Nikdy to nebudu dìlat bez štítu.}
+{122}{}{Jestli to nerozdýchám tak mì asi natáhne.}
+{123}{}{Jak mùžou oèekávat, že mùžu pracovat bez energie?}
+{124}{}{Vypadá to, že mùj experiment je v hajzlu.}
+{125}{}{Tak to je pøíliš.}
+{126}{}{Mìli nás upozornit, že budou zkoušet havarijní systémy.}
+{127}{}{Moje plíce jsou v jednom ohni.}
+{128}{}{Nevidím! Kdo sakra vypnul ta svìtla?}
+{129}{}{(Zakašlání)}
+{130}{}{(Zaprskání, zakašlání)}
+{131}{}{Moje hrdlo krvácí!}
+{132}{}{Moje oèi jsou v jednom ohni!}
+{133}{}{Dìlá se mi špatnì.}
+{134}{}{Na to abych tu stál, se cítím sále hùø a hùø.}
+{135}{}{Ale neeeeeeeee.}
+{136}{}{Vidím svìtlo....už jdu mami.}
+{137}{}{Nikoho nevidím.}
+{138}{}{To musí být další bezpeènostní cvièení.}
+{139}{}{Copak nejsou ti vojáci ze všech tìch cvièných poplachù unavení?}
+{140}{}{Ne už nééé - to je už podruhé v tomto mìsíci.}
+{141}{}{Nebudu tu pracovat mezi takovými idioty.}
+{142}{}{Všichni se tu cítí, jako by byli strašnì dùležití.}
+{143}{}{Jaká ztráta èasu.}
+{144}{}{Vypadá to, jako by sem vniknul vetøelec.}
+{145}{}{Jak se sem ten vetøelec dostal!}
+{146}{}{Jakto, že jsme toho vetøelce nevidìli pøicházet.}
+{147}{}{Zase jeden falešný poplach. Sakra.}
+{148}{}{Tak na tyhle píèoviny nemám èas.}
+{149}{}{Co chceš?}
+{150}{}{Nevidíš, že tu pracuji?}
+{151}{}{Vypadni. Mám práci.}
+{152}{}{Nemáš nic lepšího na práci?}
+{153}{}{Nehodlám ti odpovídat na žádné otázky týkající se našich pokusù.}
+{154}{}{Co kurva chceš?}
+{155}{}{Vypadni.}
+{156}{}{Jdi otravovat nìkoho jiného.}
+{157}{}{Ano?}
+{158}{}{Tato práce je velice choulostivá, takže vypadni.}

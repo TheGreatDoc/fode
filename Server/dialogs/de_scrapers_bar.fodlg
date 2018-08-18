@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Klient Baru}
+{210}{}{Widzisz klieta baru. Wyglada jak by siedzial tu juz od dluzszego czasu.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Wypierdalaj z tad@@Znowu piles?@@Wypij ze mna@@Uwazaj, barman lubi szczac do piwa.@@Smakuje jak siury.@@Myslales moze ... Ze ty i ja... razem... gdzies...?@@Teraz nie mam czasu.@@Ty ciagle tu?@@Czemu zycie jest do bani?@@Przestan klikac mnie w glowe!@@I co z tego? Edi tez z nim spal.@@Wydaje mi sie ze wszyscy na nas patrza.@@Nie stoj kolo mnie, pomysla ze jestesmy razem.@@Zajebista imprezka co nie!@@Harry kto?@@Jaki suplement?@@Syfilis? Myslalem, ze juz cos takiego mam.@@Chcesz dolaczyc?@@Piwo dla wszystkich!@@Wiem ze masz zultaczke.@@Znam cie?@@Chyba jestem chory.@@Nie wygladasz za dobrze.@@Odejsz odemnie.@@Myslalem, ze ja jestem brzydki.@@Lepiej zobacz sie w lustrze.@@Mowil Ci ktos, jak jestes brzydki?@@Mowil Ci ktos, ze jestes piekny?@@On mnie nie kocha.@@Widzial ktos moje klucze?@@Ktore to jest piwo?@@Pssss pssyy... gdzies tam stoji dev.@@Pssss pssyy... nie obracaj sie.@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Loda? nie ma chuja!@@Ja Cie zaraz zaczepie... Spierdalaj@@Skad moglem wiedziec ze ma 14 lat@@Nie wiedzialem ze miala 15 lat@@Kto jest glodny?@@Ten browar smakuje jak woda z kanalow@@Niechce byc nie mily ale masz nie swiezy oddech@@Mowil ci ktos ze wygladasz jak szczur?@@OMG Szczur!... Ohhh... a nie to tylko ty@@Powiem ci cos w sekrecie... Skipper Ivan ma uklad z REF}
+
+[engl]
+{100}{}{Bar patron}
+{210}{}{You look at another thirsty soul.@@You see a bar patron. @@Looks like this person's had enough booze today.@@You see a devotee of Bacchus. You know what that stands for, right?}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co kurwa?@@Bleeeh, I had enough. @@I've heard that Berlin's much larger than Scrapers, just imagine how fucking big it might be.@@Just a glass more and I'm done.@@...Aesienajebalem...@@Bartender, this ain't no fuckin' beer, kurwa!@@Wanna go out?@@Pole-Land? Where's that?@@Ja pierdole, I'm so fockin' wasted.@@Barman, gdzie do chuja my bier?@@Czego?@@What do you want?@@Ta zdzira fuckin' stole my money.@@I heard Ivan's into some shady business...@Ever been to Bherlynn?.@@Nie rozumiem.@@Let's drink to the death!@@Danzig? I think I heard that name before...@@I heard this place was called Tricity a very long time ago.@@Wypierdalaj, I don't wanna get syphilis.@@Chuj, I'm not leavin'.@@No more vodka?@@I've been to Lawndawn once, crowded as fuck.@@Was is das, do chuja?@@Govoriesh pa ruski?@@All sorts of scum frequent this place.@@Damn' you're ugly.@@I wish I could leave this God-forsaken city.@@Scapers ain't that bad...when you're drunk.@@Why are you botherin' me?@@"Noch ist Pole'en' nicht verloren"... was is Polen anyway?@@Ports attract the worst kind of people... like you.@@Where's the toilet?@@Nieno, I've had enough of jerks for one day.@@Get the fuck wpizdu.@@I heard stories about those def-klavs...@@We don't care about the REF. At least not for now.@@I think I'm gonna puke... buzz off.@@She was 12???@@This city's got world's oldest hookers, I tell you.@@Anybody want some more vodka?@@Jebane, sewer-piss beer.@@Get away from me, your breath's shit.@@What a ratface.@@Those fucking rats won't let me sleep.@@Everybody, come and see this, a talking rat!@@I think skipper Ivan's got a deal with the REF.@@En-eee-ceee? What's that?}
+
+[russ]
+{100}{}{Bar patron}
+{210}{}{You look at another thirsty soul.@@You see a bar patron. @@Looks like this person's had enough booze today.@@You see a devotee of Bacchus. You know what that stands for, right?}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co kurwa?@@Bleeeh, I had enough. @@I've heard that Berlin's much larger than Scrapers, just imagine how fucking big it might be.@@Just a glass more and I'm done.@@...Aesienajebalem...@@Bartender, this ain't no fuckin' beer, kurwa!@@Wanna go out?@@Pole-Land? Where's that?@@Ja pierdole, I'm so fockin' wasted.@@Barman, gdzie do chuja my bier?@@Czego?@@What do you want?@@Ta zdzira fuckin' stole my money.@@I heard Ivan's into some shady business...@Ever been to Bherlynn?.@@Nie rozumiem.@@Let's drink to the death!@@Danzig? I think I heard that name before...@@I heard this place was called Tricity a very long time ago.@@Wypierdalaj, I don't wanna get syphilis.@@Chuj, I'm not leavin'.@@No more vodka?@@I've been to Lawndawn once, crowded as fuck.@@Was is das, do chuja?@@Govoriesh pa ruski?@@All sorts of scum frequent this place.@@Damn' you're ugly.@@I wish I could leave this God-forsaken city.@@Scapers ain't that bad...when you're drunk.@@Why are you botherin' me?@@"Noch ist Pole'en' nicht verloren"... was is Polen anyway?@@Ports attract the worst kind of people... like you.@@Where's the toilet?@@Nieno, I've had enough of jerks for one day.@@Get the fuck wpizdu.@@I heard stories about those def-klavs...@@We don't care about the REF. At least not for now.@@I think I'm gonna puke... buzz off.@@She was 12???@@This city's got world's oldest hookers, I tell you.@@Anybody want some more vodka?@@Jebane, sewer-piss beer.@@Get away from me, your breath's shit.@@What a ratface.@@Those fucking rats won't let me sleep.@@Everybody, come and see this, a talking rat!@@I think skipper Ivan's got a deal with the REF.@@En-eee-ceee? What's that?}

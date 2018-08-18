@@ -1,0 +1,8 @@
+{100}{}{Un rocher.}
+{101}{}{Un conduit d'aération camouflé.}
+{102}{}{}
+
+{110}{}{Ca ne fait rien.}
+{120}{}{Tu ne peux pas remonter par le conduit d'aération.}
+
+{200}{}{Un conduit d'aération.}

@@ -1,0 +1,9 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Terminál je odpojen.}
+{101}{}{Vloení kódu 3... P... C... F... 1...6.}
+{102}{}{*Pííp*}
+{103}{}{Pohotovostní lékaøská lékarnièka aktivována.}
+{104}{}{*uk*}
+{105}{}{Prosím odeberte stimpaky ze spodního šuplíku.}
+{106}{}{Obsah: 2 stimpaky a jeden superstim.}
+{107}{}{Terminál se odhlašuje.}

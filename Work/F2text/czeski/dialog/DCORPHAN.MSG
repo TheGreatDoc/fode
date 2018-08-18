@@ -1,0 +1,67 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš dítì.}
+
+{150}{}{Vidíš malého sirotka.}
+
+{200}{}{Nìjaké drobné?}
+{201}{}{Co?}
+{202}{}{Nic nedìlám!}
+
+{210}{}{To je Tubbyho místo.}
+{211}{}{Tubby prodává špatné vìci.}
+{212}{}{Tubby není moc hodný.}
+{213}{}{Tubby legraènì páchne.}
+
+{220}{}{To je Flickovo obchod.}
+{221}{}{Flick je hodný.}
+{222}{}{Flick prodává mnoho rùzných vìcí}
+{223}{}{Nezapomò Flicka pozdravit.}
+
+{230}{}{To je Frankieho místo.}
+{231}{}{Jsi Frankieho kámoš?}
+{232}{}{Tohle místo odpornì zapáchá.}
+{233}{}{Frankieho drinky jsou drahé... jsem slyšel.}
+
+{240}{}{Becky je tak hodná.}
+{241}{}{Tohle je Rebeèino místo.}
+{242}{}{Becky má nejlepší ceny pití... co jsem slyšel.}
+{243}{}{Rebecca mì nenechá hrát její hry.}
+{244}{}{Becky je tak hezká.}
+{245}{}{Už jsi se setkal s Rebeccou? Pøál bych si, aby byla mou matkou.}
+
+{250}{}{Haló, paní, nemáte nìjaký drobný?}
+{251}{}{Haló, pane, nemáte nìjaký drobný?}
+
+{270}{}{Budete tam, stát nebo pùjdete dovnitø?}
+{271}{}{Ahoj.}
+{272}{}{Jsem hladový.}
+{273}{}{Hej, ty! Tubby má poøád otevøeno. Zajdi.}
+
+{280}{}{Jdeš dovnitø nebo co??}
+{281}{}{Pojï si prohlídnout Flickovo teritorium.}
+{282}{}{Ahoj.}
+{283}{}{Hej, ty tam! Zkoukni Flickovo obchod.}
+
+{290}{}{Tak, jdeš dovnitø?}
+{291}{}{Ahoj.}
+{292}{}{Nedìlej to.}
+{293}{}{Hej! Frankie má skvìlej matroš.}
+
+{300}{}{Mìl bys jít dovnitø, Becky je fakt koèka.}
+{301}{}{Koukám.}
+{302}{}{Jé, ty si hezkej.}
+{303}{}{Ahoj.}
+{304}{}{Jak se jmenuješ?}
+{305}{}{Becky by ses líbil.}
+{306}{}{Hej! Pojï se na ní podívat.}
+
+{310}{}{Ahhhh! Dej mi pokoj.}
+{311}{}{Pomoc, jsem utiskován!}
+{312}{}{Násilí je v tomhle systému bìžnou záležitostí.}
+{313}{}{Nic jsem neudìlal}
+{314}{}{Ahhhh!}
+{315}{}{Minuli mì.}
+{316}{}{To jsi ty.}
+{317}{}{Ne!}
+{318}{}{Nech toho.}
+{319}{}{Nic jsem ti neudìlal!}

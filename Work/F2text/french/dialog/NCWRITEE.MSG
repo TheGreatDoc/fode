@@ -1,0 +1,94 @@
+# QUICK LOOK
+{100}{}{Tu vois un des fils Wright.}
+{101}{}{Tu vois une des filles Wright.}
+
+# 0. LOOK [MALE]
+{150}{}{Tu vois un jeune homme qui semble en colère. Il s'évertue à se donner un air dur.}
+{151}{}{Tu vois un des fils Wright. Il semble avoir quelques armes et paraît un peu jeune pour savoir quoi en faire.}
+{152}{}{Tu vois un des fils Wright. Il te lance un regard furieux... en vain.}
+{153}{}{Tu vois un des fils Wright. On dirait qu'il ferait mieux de faire quelque chose... Autre  chose.}
+# 1. LOOK [FEMALE]
+{160}{}{Tu vois une jeune femme au visage sévère. Elle essaie de se donner un air dur.}
+{161}{}{Tu vois une des filles Wright. Elle semble avoir quelques armes et paraît un peu jeune pour savoir quoi en faire.}
+{162}{}{Tu vois une des filles Wright. Elle fait semblant de ne pas te voir, mais approche sa main de son étui à revolver.}
+{163}{}{Tu vois une des filles Wright. Elle a l'air plus dangereuse qu'un serpent à sonnettes.}
+{164}{}{Tu vois une des filles Wright. Elle a l'air plus dangereuse qu'un serpent à sonnettes et, curieusement, tu trouves ça excitant.}
+
+# 2. CLICK/FLOAT DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{215}{}{J'ai entendu dire que tu avais brisé cette Enclave au sud. Quelle courage !}
+
+# 3. FLOAT DIALOGUE: POWER ARMOR
+{225}{}{Comment tu fais pour aller aux toilettes avec ce truc-là ?}
+
+# 4. FLOAT/CLICK DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=WRIGHT [ARMED]
+{231}{}{Ne joue pas avec cette arme, OK ?}
+
+# 5. FLOAT/CLICK DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=WRIGHT [SNEAK]
+{236}{}{Pourquoi tu rôdes dans le coin comme ça ?}
+
+# 6. FLOAT/CLICK [MALE, MADE MAN, FA = WRIGHT, NORM]
+{240}{}{Salut !}
+
+# 7. FLOAT/CLICK [MALE, MADE MAN, FA = NOT WRIGHT, ARMED]
+{245}{}{C'est l'un des }
+
+# 8. FLOAT/CLICK [FEMALE, MADE MAN, FA = NOT WRIGHT, ARMED]
+{250}{}{C'est l'un des }
+
+# 9. FLOAT/CLICK [MALE/FEMALE, MADE MAN, FA = NOT WRIGHT, SNEAK]
+{255}{}{C'est l'un des }
+
+# 10. FLOAT/CLICK [MALE/FEMALE, MADE MAN, FA = NOT WRIGHT]
+{261}{}{Fiche le camp ! Toi et ta famille, vous n'êtes pas les bienvenus ici !}
+
+# 11. FLOAT/CLICK [SLAVER, ARMED]
+{265}{}{Lâche ton arme, sale esclavagiste, ou on te tire dessus !}
+
+# 12. FLOAT/CLICK [SLAVER, SNEAK]
+{270}{}{Qu'est-ce que tu fabriques ici ? Tu veux te faire tuer, esclavagiste ?}
+
+# 13. FLOAT/CLICK [FEMALE/MALE, PRIZEFIGHTER/PORN STAR/NO REP, ARMED]
+{275}{}{Lâche ton arme ! Tout de suite !!}
+
+# 14. FLOAT/CLICK [FEMALE/MALE, PRIZEFIGHTER/PORN STAR/NO REP, SNEAK]
+{280}{}{Qu'est-ce que tu fais là ?! Tu vas te faire tuer !}
+
+# 15. FLOAT AND CLICK (ANY) TO [COMPANION: ROBOBRAIN]
+{289}{}{Ca, un robot ? Je n'en avais jamais vu de pareil.}
+
+# 16. FLOAT (ANY) TO [COMPANION: MARCUS]
+{296}{}{C'est un mutant ?}
+
+# 17. FLOAT/CLICK [FEMALE/MALE, NORM]
+{311}{}{Regarde où tu mets les pieds. C'est le territoire de la famille Wright.}
+
+# 19. CLICK DIALOGUE: POWER ARMOR
+{323}{}{Un réfrigérateur ambulant. On aura tout vu.}
+
+# 20. CLICK [FEMALE/MALE, MADE MAN, FA = WRIGHT OR PRIZEFIGHTER]
+{335}{}{Comment ça va, }
+{350}{}{C'est toi le combattant, }
+
+# 22. CLICK [PORN STAR]
+{362}{}{Alors, c'est comment dans les films ? Maman ne me laisse pas d'aller voir tes films.}
+
+# 24. [FEMALE/MALE/, NO REP/SLAVER, REACTION NEUTRAL +]
+{387}{}{Regarde où tu mets les pieds. C'est le territoire de la famille Wright.}
+
+# 25. CLICK [SLAVER, BAD REACTION]
+{392}{}{Ne t'approche pas, esclavagiste. Si tu dois traiter avec papa, fais-le et fiche le camp.}
+{393}{}{Je t'ai à l'oeil, esclavagiste, alors fais attention à ce que tu fais, compris ?}
+
+# 26. [FEMALE/MALE, NO REP, REACTION < NEUTRAL]
+{414}{}{Je t'ai à l'oeil, alors fais attention à ce que tu fais, compris ?}
+
+# 27. CLICK/FLOAT: LENNY
+{427}{}{Je vous conseille, à toi et ton ami goule, de partir avant que les ennuis ne commencent.}
+
+# END OF LINES
+{1240}{}{. Que deviens-tu ?}
+{1245}{}{  ! Appelle les autres !}
+{1250}{}{  ! Appelle les autres !}
+{1255}{}{ qui rôde dans le coin ! Appelle les autres !}
+{1335}{}{ ? Des problèmes avec quelqu'un en ville ?}
+{1350}{}{, hein ? Tu te débrouilles bien sur le ring, mieux que qui que ce soit dans le coin.}

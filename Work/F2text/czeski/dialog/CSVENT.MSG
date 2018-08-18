@@ -1,0 +1,9 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Balvan.}
+{101}{}{Zamaskovaná ventilaèní šachta.}
+{102}{}{}
+
+{110}{}{Tohle oèividnì nefunguje.}
+{120}{}{Nemùžeš jít zpátky do ventilaèní šachty.}
+
+{200}{}{Ventilaèní šachta.}

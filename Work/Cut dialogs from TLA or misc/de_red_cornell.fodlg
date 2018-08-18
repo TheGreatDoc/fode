@@ -1,0 +1,77 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p de_talk_officer = 0 R _var p de_talk_officer + 1 #
+6 1020 D _var p de_talk_officer ! 0 R _script dialog@r_SayMessageDelayed 3 1 0 2 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+5 2030 @
+3 3000 None 0 #
+0 3010 R _param p REPUTATION_RED - 5 @
+4 4000 None 0 #
+0 4010 @
+5 5000 None 0 #
+0 5010 R _param p REPUTATION_RED + 5 @
+6 6000 None 0 &
+
+[engl]
+{100}{}{Cornell}
+{1000}{}{Predialogue installations}
+{1010}{}{First Time.}
+{1020}{}{next}
+{2000}{}{SOLDIER! Who the Fuck allowed you to Sleep While duty?!}
+{2010}{}{Err... It was... I had...}
+{2020}{}{Sorry Sir, won't happen again.}
+{2030}{}{Sir! It is my Bad and I'm ready to Get my punishment. It will never Happen again, Sir!}
+{3000}{}{THE FUCK ALLOWED YOU! AND NOW MOVE YOUR FUCKING ASS TO THE FRONT AND FIGHT AGAINST THESE SHITHEADS!}
+{3010}{}{Yes Sir!}
+{4000}{}{I DON'T WANT TO HEAR YOUR SORRY! I WANT TO SEE YOU SHOOTING SOME GODDAMN (opponent name) SUCKERS! HEAD OUT, NOW!}
+{4010}{}{Yes Sir!}
+{5000}{}{Soldier, If I would have time to give you punishment you Would be already laying on the Ground bleeding and Suffering. Grab your Weapon and Head out, And Hell, don't Dare to sleep again during Duty.}
+{5010}{}{Yes Sir!}
+{6000}{}{ }
+{100000001}{}{Don't do anything stupid, and everybody will be okay.@@I'm watching you.@@Don't violate the rules.@@You steal - I kill.@@Don't even try to set a finger on anybody!}
+
+[pols]
+{100}{}{Cornell}
+{1000}{}{Predialogue installations}
+{1010}{}{First Time.}
+{1020}{}{next}
+{2000}{}{SOLDIER! Who the Fuck allowed you to Sleep While duty?!}
+{2010}{}{Err... It was... I had...}
+{2020}{}{Sorry Sir, won't happen again.}
+{2030}{}{Sir! It is my Bad and I'm ready to Get my punishment. It will never Happen again, Sir!}
+{3000}{}{THE FUCK ALLOWED YOU! AND NOW MOVE YOUR FUCKING ASS TO THE FRONT AND FIGHT AGAINST THESE SHITHEADS!}
+{3010}{}{Yes Sir!}
+{4000}{}{I DON'T WANT TO HEAR YOUR SORRY! I WANT TO SEE YOU SHOOTING SOME GODDAMN (opponent name) SUCKERS! HEAD OUT, NOW!}
+{4010}{}{Yes Sir!}
+{5000}{}{Soldier, If I would have time to give you punishment you Would be already laying on the Ground bleeding and Suffering. Grab your Weapon and Head out, And Hell, don't Dare to sleep again during Duty.}
+{5010}{}{Yes Sir!}
+{6000}{}{ }
+{100000001}{}{Nie rob glupich rzeczy, a wszyscy beda zdrowi.@@Przygladam ci sie.@@Nie przeszkadzaj.@@Bedziesz krasc - zabije w miejscu.@@Sprobuj tylko palcem dotknij kogokolwiek!}
+
+[russ]
+{100}{}{Cornell}
+{1000}{}{Predialogue installations}
+{1010}{}{First Time.}
+{1020}{}{next}
+{2000}{}{SOLDIER! Who the Fuck allowed you to Sleep While duty?!}
+{2010}{}{Err... It was... I had...}
+{2020}{}{Sorry Sir, won't happen again.}
+{2030}{}{Sir! It is my Bad and I'm ready to Get my punishment. It will never Happen again, Sir!}
+{3000}{}{THE FUCK ALLOWED YOU! AND NOW MOVE YOUR FUCKING ASS TO THE FRONT AND FIGHT AGAINST THESE SHITHEADS!}
+{3010}{}{Yes Sir!}
+{4000}{}{I DON'T WANT TO HEAR YOUR SORRY! I WANT TO SEE YOU SHOOTING SOME GODDAMN (opponent name) SUCKERS! HEAD OUT, NOW!}
+{4010}{}{Yes Sir!}
+{5000}{}{Soldier, If I would have time to give you punishment you Would be already laying on the Ground bleeding and Suffering. Grab your Weapon and Head out, And Hell, don't Dare to sleep again during Duty.}
+{5010}{}{Yes Sir!}
+{6000}{}{ }
+{100000001}{}{Don't do anything stupid, and everybody will be okay.@@I'm watching you.@@Don't violate the rules.@@You steal - I kill.@@Don't even try to set a finger on anybody!}
+

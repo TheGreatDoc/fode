@@ -1,0 +1,206 @@
+#tento soubor pøeloil Somnambulus - somnambulus@hotmail.com, http://www.geocities.com/Area51/Vault/4193/
+{100}{}{Vidíš menšího mue s vlasy èernımi jako smùla.}
+{101}{}{Vidíš Ascortiho, starostu Reddingu.}
+{102}{}{Vidíš dobøe obleèeného mue s potmìšilıma oèima.}
+{103}{}{Pokraèuj svoji cestou, pøíteli.}
+{104}{}{Pokud jsi tu abys zkusil svoje štìstí, jsi vítán.}
+{105}{}{Hraj nebo vypadni.}
+{106}{}{Tohle místo patøí mnì a já tu nechci ádnı bordel.}
+{107}{}{Mìl bys zkusit tamty stoly, balíku.}
+{108}{}{Mìl bys zkusit támhlety dírky, Náèelníku. Je tam fùra prima kouzel.}
+{109}{}{Spláchni to ohnivou vodou, indiáne.}
+{110}{}{Ahoj. Vítej do šastného mìsta Reddingu...a vítej i v mém kasínu. Tady u Ascortiho
+ vyhrává kadı. Já jsem Ascorti, majitel tohohle kasina a starosta našeho krásného mìsta.}
+{111}{}{Co pro tebe mùe starosta Ascorti udìlat?}
+{112}{}{Byla by tu v Reddingu pro mnì nìjaká práce?}
+{113}{}{Dìje se tu nìco zajímavého?}
+{114}{}{Slyšel jsi nìkdy o nìèem jménem GECK?}
+{115}{}{Èím jsi a co tu dìláš?}
+{116}{}{Jen se tu tak rozhlíím, starosto. Uvidíme se pozdìji. Sbohem.}
+{117}{}{Vedu tohle kasíno, a také pomáhám øídit bìh tohohle mìsta. Starám se o úøední listiny a tak.}
+{118}{}{Listiny? O jaké listiny tu jde?}
+{119}{}{Rozumím. Rád bych se zeptal ještì na nìco, starosto.}
+{120}{}{No tøeba o takové jako je ta od Velkého Wanamingo Dolu, kterı bych od tebe rád koupil. Chceš mi ho u prodat?}
+{121}{}{Mùe bıt. Kolik nabídneš?}
+{122}{}{Moná. Ale rád bych se nejdøív na nìco zeptal.}
+{123}{}{Poøád ještì o tom pøemıšlím. Sbohem, starosto.}
+{124}{}{No, momentálnì jde jen o jednu listinu. Tu kterou jsem ti prodal. Pamatuješ? Tu od Velkého Wanamingo Dolu.}
+{125}{}{Aha tuhletu. Teï u si vzpomínám. Ale rád bych se tì nejdøív na nìco zeptal, starosto.}
+{126}{}{Samozøejmì - myslel jsem, e máš ještì nìjaké další. No , radši pùjdu vyèistit tu šachtu. Mìj se.}
+{127}{}{Jen tamto lejstro k Velkému Wanamingo Dolu, kterı jsi mi prodal zpátky. Pamatuješ?}
+{128}{}{Jasnì, e jo. Uh, rád bych se zeptal ještì na nìco, starosto.}
+{129}{}{Ano, samozøejmì. Chtìl jsem se jen ujistit. Sbohem, starosto Ascorti.}
+{130}{}{Všechny druhy soukromého majetku. Právì teï mám na prodej listinu od šviháka Jima.}
+{131}{}{Co je to?}
+{132}{}{To vìøím, ale nejdøív bych se tì rád na nìco zeptal, starosto.}
+{133}{}{Hmm, myslím, e se nejdøív porozhlédnu po mìstì, starosto. Sbohem.}
+{134}{}{Je to kupní smlouva na Velkı Wanamingo Dùl, kterı leí nedaleko od mìsta. Je na prodej jen za
+ $1,000. Speciální nabídka, dneska je tvùj šastnı den.}
+{135}{}{To zní zajímavì. Øekni mi o tom víc.}
+{136}{}{Hmm a v èem je háèek, starosto?}
+{137}{}{Nemyslím, e to chci koupit právì teï, starosto. Chci se ještì na nìco zeptat.}
+{138}{}{OK, uvnitø je plnı strašlivì nebezpeènıch pøíšer. Dokud ty nebudou pryè, je dùl bezcennı.
+ Pokud ho koupíš - a vyèistíš od tìch tvorù - odkoupím pak od tebe dùl zpátky a ty na tom budeš mít slušnı profit.}
+{139}{}{Profit? A jak velkı?}
+{140}{}{Proè to tam nevyèistíš sám, kdy se na tom dá tak vydìlat?}
+{141}{}{Pøíšery? A co je to za pøíšery?}
+{142}{}{ádnı háèek. Tedy v podstatì ádnı. Budeš jen muset vypudit pár nezvanıch nájemníkù, kteøí
+ se tam usídlili. Pro nìkoho jako jsi ty by to ale nemìl bıt problém. Pokud tì to zajímá, mùu ti o tom øíct víc.}
+{143}{}{Okay, vezmu to. Øekni mi víc.}
+{144}{}{Nemyslím, e by mì tenhle druh kšeftu zajímal, starosto. Dovol mi a se tì zeptám na nìco jiného.}
+{145}{}{Rozumím. Myslím, e tu èest pøenechám nìkomu jinému. Sbohem, starosto.}
+{146}{}{Krucinál, víc ne dvojnásobek. Øekl bych, e takhle vysoko tvojí námahu ještì nikdo neocenil. Víc ti nabídnout
+ opravdu nemùu. Na tom dole se ještì musí udìlat spousta práce a vloit do nìj hodnì prostøedkù, ne zaène
+ zase vydìlávat.}
+{147}{}{To zní dobøe. A kolik, e to bylo?}
+{148}{}{Nemyslím, e právì tohle chci. Chci se zeptat na nìco jiného, starosto.}
+{149}{}{$1,000 za vlastnickou listinu k Velkému Wanamingo Dolu. Bereš to?}
+{150}{}{Dobøe, koupím ty papíry.}
+{151}{}{Rád bych to lejstro koupil, ale právì teï nemám dost penìz. Chci se ale zeptat na nìco jiného.}
+{152}{}{Nemyslím, e to chci koupit právì teï. Chci se ale zeptat na nìco jiného.}
+{153}{}{Moná nìkdy jindy, starosto. Sbohem.}
+{154}{}{OK teï pùjdu a zaznamenám vlastnická práva k Wanamingo Dolu na tvé jméno. Dej mi vìdìt a to tam vyèistíš, a já to
+ od tebe odkoupím zpátky.}
+{155}{}{To udìlám. Teš se ale chci zeptat ještì na nìco jiného.}
+{156}{}{Okay. Brzy nashledanou, starosto.}
+{157}{}{Já to udìlat nemùu. Nejsem èlovìk vyhledávající nebezpeèí. Znám svoje schopnosti
+ a boj není moje silná stránka. Ale ty, ty vypadáš dost drsnì. Pro tebe to bude jen procházka.}
+{158}{}{Moná. A kolik nabízíš za odkoupení té listiny zpátky, a to tam vyèistím?}
+{159}{}{Moná jo, moná ne. Budu o tom pøemıšlet. Dovol a se teï zeptám na nìco jiného, starosto.}
+{160}{}{Nemyslím, e bych na to právì teï mìl èas. Sorry, pane starosto. Sbohem.}
+{161}{}{Tak, u jsi ten dùl vyèistil?}
+{162}{}{U je to hotovo.}
+{163}{}{Ještì ne, ale pracuju na tom. Zatím dovol abych se tì zeptal na nìco jiného.}
+{164}{}{Dìlám na tom. Sbohem, starosto Ascorti.}
+{165}{}{Víš, myslím, e jsi nedostal VŠECHNY ty zatracenı Wanamingos. Radši se vra a poøádnì to tam prohlídni. 
+ Dokud nebude poslední z nich mrtvı, tak to od tebe zpátky neodkoupím.}
+{166}{}{Rozumím. Chci se ale nejdøív na nìco zeptat, starosto.}
+{167}{}{Dobøe, pùjdu teda a ještì jednou to tam prohledám.}
+{168}{}{Odvedl jsi skvìlou práci, kdy jsi vymlátil všechny ty zatracenı Wanamingos, ale bohuel máš ještì jeden problém.}
+{169}{}{Problém? A jakı?}
+{170}{}{Celı dùl je vyèištìnı. Díky moc. Tak co prodáš mi ty papíry? Dám ti za nì 2,500 babek.}
+{171}{}{Nemyslím. Prozatím si ho ještì nechám. Sbohem, starosto.}
+{172}{}{To se vsaï. Budu štìstím bez sebe, a se toho zbavím, Ascorti.}
+{173}{}{Øíkáme jim Wanamingos. Je to nìjakı zatracenı druh hnusnıch bestií s pøíšernımi èelistmi a sosáky
+ nebo nìèím podobnım. Nejsou moc chytøí ale nablízko jsou dìsivì nebezpeèní.}
+{174}{}{Rozumím. A ty chceš, abych tì jich zbavil?}
+{175}{}{Pøesnì tak. Vìdìl jsem, e nejsi tak hloupı jak vypadáš.}
+{176}{}{Aha. A tohle všechno musím udìlat pro tìch mizernıch 1,000 $?}
+{177}{}{Vypadá to tam teï tak domácky, e u se tam nìkdo nastìhoval. Hnusnej tıpek jménem Frog Morton, uh,
+ i s celou svoji bandou, jak jsem slyšel.}
+{178}{}{Proè mu øíkají Frog (ába) Morton?}
+{179}{}{A co je to ten mùj problém?}
+{180}{}{Bezva, a co s tím mùu udìlat?}
+{181}{}{Øekl bych, e je to kvùli jeho povìsti. Donutí prı kadého kuòkat bolestí. Je to mizernı parchant.
+ Nikdo ho nebude postradat...a ty budeš hrdina. Chceš se stát hrdinou, není-li pravda?}
+{182}{}{Moná, ale poøád mi není jasné proè je to mùj problém.}
+{183}{}{Jo, jasnì. Co s tím mám udìlat?}
+{184}{}{Myslím, e tam budu muset trochu uklidit. Vrátím se a nakopu pár zadkù,
+ starosto.}
+{185}{}{No, dokud nebude dùl úplnì prázdnı nemùu tam poslat horníky a rozjet tìbu. Take, jestli mi ho chceš prodat
+ zpátky, je to i tvùj problém.}
+{186}{}{Proè mu øíkají Frog (ába) Morton?}
+{187}{}{Skvìlı. A co s tím mùu udìlat?}
+{188}{}{Radši se tedy dám do práce. Sbohem, starosto.}
+{189}{}{Myslím, e by ses mìl vrátit do Wanamingo Dolu a zlikvidovat Froga a jeho bandu. A to udìláš
+ , vra se sem a já od tebe ten dùl s radostí koupím.}
+{190}{}{Nic není zadarmo, co? OK, starosto. Uvidíme se pozdìji. Teï mám nìjakou nevyøízenou práci.}
+{191}{}{U mi prodáš zpátky ty papíry k Wanamingo Dolu?}
+{192}{}{Jasná vìc, starosto. A kolik, e to bylo?}
+{193}{}{Ještì ne, starosto. Sbohem.}
+{194}{}{Slyšel jsem, e ses rozhodl pomoct šerifovi. Vıbornì. Nemùu pøipustit, aby si stará Rooneyová ponechala svùj nádhernı dùm.}
+{195}{}{To myslíš tu plechovou pøedraenou chatrè, kterou jsi jí pronajal?}
+{196}{}{To urèitì. A kolik ti dluí?}
+{197}{}{Dobøe, uvidím co se dá dìlat. Teï se chci zeptat na nìco jiného.}
+{198}{}{Jo. A jinak, co ty jsi vlastnì zaè?}
+{199}{}{Radìji bych to nazval útulnım provzdušnìnım domkem s pøirozenım vìtráním. A cena tomu odpovídá.}
+{200}{}{To vìøím. Kolik ti ten nájemce dluí?}
+{201}{}{Hmm, radši u pùjdu, starosto. Sbohem.}
+{202}{}{Poèkej musím se podívat...vdova Rooneyová mi dluí...jo, tady je to, 120. To je ono. 120 babek.}
+{203}{}{A to je všechno? To za ní klidnì zaplatím.}
+{204}{}{To není tak moc. Chci se ale zeptat na nìco jiného.}
+{205}{}{Uvidím, co mùu udìlat pro to, aby ti to zaplatila. Sbohem.}
+{206}{}{Tím je to vyøešenı. Teï u zase bydlí. Díky za vyrovnání toho úètu.}
+{207}{}{No problemo. Teï se ale chci zeptat na nìco jinıho.}
+{208}{}{Myslím, e nìkteøí lidé jsou jednoduše velkomyslnìjší ne jiní. Sbohem, starosto.}
+{209}{}{Díky za vyèištìní mého majetku, šerife. Teï to mùu pronajmout nìkomu, kdo mùe zaplatit.}
+{210}{}{Necítím se moc dobøe, e jsem to udìlal.}
+{211}{}{To má smysl. }
+{212}{}{Proè ne? To bys mìl. Vykopnutím vdovy Rooneyové, jsi mi umonil dál platit
+ moje zamìstnance. Kdybych jim neplatil, jejich rodiny by hladovìly. A to by bylo správné?}
+{213}{}{Myslím, e ne. Takhle jsem o tom neuvaoval. Ale stejnì z toho nemám dobrı pocit.}
+{214}{}{No nevypadá to, e bys tu nìjak strádal. Jsem si jistı, e tvoje kasíno slušnì vydìlává.}
+{215}{}{To chce velké sebezapøení, aby èlovìk jednal vdycky správnì, zvláš kdy to pak v jednom zanechává
+ špatnı pocit. Mìl jsi tvrdou práci, a udìlal jsi to dobøe. Dej si na mì jedno pivo.}
+{216}{}{Díky, starosto; to je od tebe moc pìknı.}
+{217}{}{Nemyslím, e s tebou chci pít. Ani teï ani jindy. Sbohem.}
+{218}{}{No problemo. Tìšilo mì, e jsem pomohl místnímu zákonu.}
+{219}{}{Ještì jednou díky, starosto. Chci se ještì na nìco zeptat.}
+{220}{}{Díky, starosto. Uvidíme se pozdìji. Sbohem.}
+{221}{}{Teï moná, ale ádné štìstí netrvá vìènì. Musím myslet i na budoucnost. Dluím to
+ mım lidem - a taky sám sobe samozøejmì.}
+{222}{}{Myslím, e to je férové.}
+{223}{}{Jde ti jen o vlastní pupek. U jsem slyšel dost. Sbohem.}
+{224}{}{Chtìl jsem ti znovu podìkovat za to co jsi udìlal pro vdovu Rooneyovou. Opravdu mi bylo proti srsti
+ vykopnout tu starou chudìru z jejího domku.}
+{225}{}{Ale pøesto jsi to chtìl udìlat. No nic, pojïme se bavit o nìèem jiném.}
+{226}{}{Nìjak jsem tušil, e øekneš právì tohle. Sbohem, starosto.}
+{227}{}{S vdovou Rooneyovou jsi zašel moc daleko. Pro nikoho nepøedstavovala ádnou hrozbu. Proè jsi jí musel
+ zabít?}
+{228}{}{Ale mohla bıt.}
+{229}{}{Byla to nehoda.}
+{230}{}{Mohla bıt? Nebyla nic, jen neškodná stará dáma. Jsi vyloenej cvok. Padej
+ odsud.}
+{231}{}{To mluvíš se mnou?}
+{232}{}{Stejnì jsem zrovna chtìl z tıhle barabizny vypadnout. Mìj se.}
+{233}{}{Nehoda? Poøád ještì nenašli všechny kusy jejího tìla. Mìl by sis dávat pozor,
+ aby se ti podobné nehody nestávaly. Škodí to obchodu.}
+{234}{}{Rozumím. Chci se zeptat na nìco jiného, starosto.}
+{235}{}{Pøíštì budu opatrnìjší.}
+{236}{}{Jo, s tebou mluvím. Nebo snad vidíš ještì nìkoho, kdo by mìl aludek na to, aby se s tebou bavil? A teï do prdele
+ vypadni z mého baru.}
+{237}{}{TO MLUVÍŠ SE MNOU?}
+{238}{}{U jdu, u jdu.}
+{239}{}{Co? Jsi hluchej nebo jen blbej? Jo, JÁ mluvím s TEBOU. A teï odsud vypadni!}
+{240}{}{Hmm, musíš opravdu mluvit se mnou, protoe tu nikoho jiného okolo nevidím.}
+{241}{}{Dobøe. Jdu pryè. Nevzrušuj se zbyteènì. Sbohem.}
+{242}{}{To je kadı z tvého kmene takovı pitomec? To bude asi ono. Chceš si zatancovat? Tak jdeme na to. Stráe!}
+{243}{}{Jo mluvíš se mnou a mì se vùbec nezamlouvá co brebtáš.}
+{244}{}{Oho, hej...uklidnìte se, hoši. Já u jdu.}
+{245}{}{Slyšel jsem, ze dìláš pro Earla Mariona, dokud na tom nebude líp. To budeš mít nìjakou dobu
+ plné ruce práce. Teï tu pro tebe ádná lepší práce ve mìstì není.}
+{246}{}{Rozumím. Chci se tedy zeptat na nìco jiného, pane Ascorti.}
+{247}{}{Hej, povìz mi nìco o tìch majitelích dolù.}
+{248}{}{Stejnì dìkuju, starosto. Sbohem.}
+{249}{}{Slyšel jsem, ze sis vedl zatracenì dobøe pøi vypomáhání šerifu Marionovi. Mìsto je od té doby krásnì klidné. Opravdu mì nenapadá nic, kde bys mohl vyuít svoje schopnosti.}
+{250}{}{Díky, starosto. Od tebe si toho zvláštì cením. Chci se teï zeptat na nìco jiného.}
+{251}{}{Hej, povìz mi nìco o tìch majitelích dolù.}
+{252}{}{Stejnì dìkuju. Sbohem.}
+{253}{}{Pokud vím, tak šerif Earl Marion hledá nìkoho, aby ho zastupoval dokud
+ se mu neuzdraví noha. Mùeš si s ním promluvit. Jeho kanceláø je pøes ulici na jih odsud.}
+{254}{}{Díky za tip. Ale ne pùjdu, chci se ještì na nìco zeptat.}
+{255}{}{Hej, povìz mi nìco o tìch majitelích dolù.}
+{256}{}{Moná se tedy porozhlídnu okolo. Díky.}
+{257}{}{No, je tu ten šerif a potom taky majitelé dolu hledají nìkoho, kdo by jim pøinesl nìjakou souèástku do jedné dùlní mašiny.}
+{258}{}{Co je s tím šerifem?}
+{259}{}{Co je s tìmi majiteli dolù?}
+{260}{}{Zajímavé. Dovol, abych se zeptal na nìco jiného, starosto.}
+{261}{}{Moná se trochu porozhlídnu kolem. Díky a sbohem.}
+{262}{}{Sakra, to je pøesnı. Dozvìdìl jsem se, e u máš ten èip.}
+{263}{}{OK, povìz mi teda o tom šerifovi.}
+{264}{}{Jasnì, to jsem byl já. Øekni mi o nìèem jiném, starosto.}
+{265}{}{Oh, já myslel, e to bylo nìco jiného. Tak teda sbohem.}
+{266}{}{Moc o tom nevím. Spíš by sis mìl zajít popovídat buï s "Nebezpeènım" Danem McGrewem z dolu Morningstar nebo s Marge LeBarge z dolu Kokoweef. Oba najdeš na sever odtud.}
+{267}{}{Díky. A teï, co je s tím šerifem?}
+{268}{}{Diky. Teï se chci ale zeptat na nìco jiného.}
+{269}{}{Moná tam zajdu a promluvím s nimi. Díky, starosto. Sbohem.}
+{270}{}{V poslední dobì se naše dodávky zlata zaèínají opoïovat, protoe horníci tráví moc èasu "lítáním" na Jetu.}
+{271}{}{Skoro všichni horníci tráví víc èasu "lítáním" na Jetu ne tìbou zlata...a tak naše ceny rostou a naše dovozy jdou dolù. Obojí je pro obchod špatnı.}
+{272}{}{Na to aby fungovala tìba zaèínají bıt všichni pøíliš závislí na Jetu. Naše pravidelné dodávky zlata poklesly témìø o desetinu a díky tomu jsme museli zvednout i ceny. Tohle nemùe dlouho vydret.}
+{273}{}{Vypadá to e všichni dostali nìjakou špatnou dávku Jetu. Všichni, kdo pravidelnì uívali Jet, prochází nìjakou masivní detoxikací. Øekl bych, e je to nìco uvnitø jich samotnıch. Nevím, co se stalo, ale myslím, e nastávají lepší èasy.}
+{274}{}{Všechno u je skoro v normálu. Všichni, kdo byli závislí na Jetu u se z toho dostali. Naše tìba a harmonogram dodávek je u taky zpátky v normálu. Vypadá to, e to nejhorší u je za námi.}
+{275}{}{Hmm. To je zajímavé. Chci se teï ale zeptat na nìco jiného, starosto Ascorti.}
+{276}{}{Vidím. Diky za informace, starosto. Sbohem.}
+{277}{}{GECK? Myslím, e pomocí jednoho z nich postavili Vault City. Všechny tyhle staré Vaulty by mìly aspoò jeden mít, ale tady okolo ádnı Vault není.}
+{278}{}{Aha. Chci se teï ale zeptat na nìco jiného, starosto.}
+{279}{}{Budu tedy hledat dál. Díky, starosto Ascorti.}

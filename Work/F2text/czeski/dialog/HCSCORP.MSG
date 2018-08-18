@@ -1,0 +1,19 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{No podívejme! To je radškorpión!}
+{101}{}{Pøi bliší prohlídce zjišuješ, e škorpión má malé brıle a taky vypadá docela inteligentnì.}
+{102}{}{::klap:: ::klap klak::}
+{103}{}{Mohu vám s nìèím pomoci? Rušíte mì v mıch experimentech!}
+{104}{}{::rychle:: ::klap klap klap::}
+{105}{}{Co? Copak s ním chceš?}
+{106}{}{Syèím!}
+{107}{}{Hodnı chlapec! Zùstaò!}
+{108}{}{[zdraví tì srdeènì]}
+{109}{}{[dìlá na tebe gesta klepety]}
+{110}{}{[vypadá pøátelsky]}
+{111}{}{Neotravuj ho prosím tì, má za sebou pernı den.}
+{112}{}{Je teï trochu unavenı.}
+{113}{}{::rychle::}
+{114}{}{::klik::}
+{115}{}{::klik-klak::}
+{116}{}{::zaostøit::}
+{117}{}{Pøi bliší prohlídce zjišuješ, e škorpión je docela inteligentní!}

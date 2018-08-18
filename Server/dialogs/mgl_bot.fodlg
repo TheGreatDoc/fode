@@ -1,0 +1,53 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+0 3010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{MGL Security robot SR4-61 Mk.II
+Status: Energy Save Mode
+Control: Connection lost
+Energy: 12%}
+{2010}{}{attempt to reconnect}
+{3000}{}{Reconnecting . . . . . . . . . . . . . . . . . . 
+failed}
+{3010}{}{Exit}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{MGL robot ochronny SR4-61 Mk.II
+status: oszczednosc energii
+control: utracone polaczenie
+energy: batteria: 12%}
+{2010}{}{dostep do przeladowania}
+{3000}{}{przeladowanie . . . . . . . . . . . . . . . . . . 
+nieudane}
+{3010}{}{wyjscie}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{MGL Security robot SR4-61 Mk.II
+status: energy save mode
+control: Connection lost
+energy: battery: 12%}
+{2010}{}{attempt to reconnect}
+{3000}{}{Reconnecting . . . . . . . . . . . . . . . . . . 
+failed}
+{3010}{}{exit}

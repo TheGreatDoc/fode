@@ -1,0 +1,15 @@
+{100}{}{Du siehst einen Mann in einer Lederrüstung.}
+{101}{}{Du siehst Kaga.}
+{102}{}{Er trägt eine Lederrüstung und hat die dumme Angewohnheit, in der dritten Person über
+ sich selbst zu sprechen.}
+{103}{}{Das ist jetzt das letzte Mal, daß Kaga und du sich treffen.}
+{104}{}{Wenn Kaga dich getötet hat, leg Kaga Arroyo in Schutt und Asche.}
+{105}{}{Spür den Zorn Kagas!}
+{106}{}{Ich bin der große Kaga!}
+{107}{}{Mich sollen alle fürchten.}
+{108}{}{Kaga wird deinen Kopf als Trophäe tragen.}
+{109}{}{Gib auf und dein Tod wird kurz und schmerzlos sein.}
+{110}{}{Kaga wird wiederkommen!}
+{111}{}{Der große Kaga ist unsterblich!}
+{112}{}{Du hast Glück, daß Kaga gerade anderswo zu tun hat.}
+{113}{}{Wir werden uns wiedersehen!}

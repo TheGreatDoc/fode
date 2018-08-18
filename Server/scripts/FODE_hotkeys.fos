@@ -1,0 +1,41 @@
+#include "_client_defines.fos"
+#include "_defines.fos"
+#include "_macros.fos"
+
+
+
+void ChosenReload_slot1()
+{
+		if(__ConsoleActive == true) return;
+		CritterCl@ cr = GetChosen();
+        ItemCl@ item = cr.GetItem(0,SLOT_HAND1);
+        if(!valid(item)) return;
+		if(GetCurrentMapPid() == 0) return;
+        uint[] Reload = { CHOSEN_USE_ITEM, item.Id, 0, TARGET_SELF_ITEM, 0, ITEM_MODE_RELOAD, 0 };
+        SetChosenActions(Reload);
+}
+
+void ChosenReload_slot2()
+{
+        if(__ConsoleActive == true) return;
+		CritterCl@ cr = GetChosen();
+        ItemCl@ item = cr.GetItem(0,SLOT_HAND2);
+        if(!valid(item)) return;
+		if(GetCurrentMapPid() == 0) return;
+        uint[] Reload = { CHOSEN_USE_ITEM, item.Id, 0, TARGET_SELF_ITEM, 0, ITEM_MODE_RELOAD, 0 };
+        SetChosenActions(Reload);
+}
+
+void Lecznik()
+{
+		CritterCl@ cr = GetChosen();
+		uint[] First_Aid = { CHOSEN_USE_SKL_ON_CRITTER, SK_FIRST_AID, cr.Id, 0, 0, 0, 0 };
+		SetChosenActions(First_Aid);
+}
+
+void Doktornik()
+{
+		CritterCl@ cr = GetChosen();
+		uint[] Doktorek = { CHOSEN_USE_SKL_ON_CRITTER, SK_DOCTOR, cr.Id, 0, 0, 0, 0 };
+		SetChosenActions(Doktorek); 
+}

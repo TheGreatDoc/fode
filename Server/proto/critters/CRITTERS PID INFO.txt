@@ -1,0 +1,11 @@
+Todelete	//PID	10-1210
+Citizen		//PID	3001-3100,3501-3600
+Bandits		//PID	3101-3200
+Soldiers	//PID	3201-3400
+Moobs		//PID	4001-4026
+Special		//PID	4101-4106 & 2002 explosive barrel
+FactionBLUE	//PID	5001-5100
+FactionRED	//PID	5101-5200
+Merc		//PID	6000-6049
+Ghouls		//PID	6050-6100
+EncountersNPC //7000

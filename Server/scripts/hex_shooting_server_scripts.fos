@@ -1,0 +1,1136 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "utils_for_array.fos"
+#include "combat.fos"
+
+#define FLAMER_MAX_DIST 				(5)
+//import void QuakeScreen(Map& map) from "effects";
+//import void CommenceExplosion(AttackStruct &attack, Map@ map, uint16 tx, uint16 ty, Critter@ target, uint weapPid, bool isCritical, uint intentionallyId, bool isRocket, CombatRes[]& results) from "combat";
+
+void CombatAttackByHexShooting(Critter& cr, int target_HexX, int target_HexY, ProtoItem& weapon, uint8 weaponMode, ProtoItem@ ammo)
+{
+  uint8 use=_WeaponModeUse(weaponMode);
+  uint8 aim=HIT_LOCATION_UNCALLED;
+  Item@ realWeapon=_CritGetItemHand(cr);
+  Map@ map=cr.GetMap();
+  int wpnMaxDist=_WeaponMaxDist(weapon,use);
+  int skillNum=_WeaponSkill(weapon,use);
+  int skillVal=cr.Skill[skillNum];
+  uint8 weaponSubtype=
+        ( skillNum == SK_SMALL_GUNS || skillNum == SK_BIG_GUNS || skillNum == SK_ENERGY_WEAPONS ) ? WS_GUN : ( ( skillNum == SK_THROWING ) ? WS_THROWING : ( skillNum == SK_UNARMED ) ? WS_MELEE : WS_UNARMED );
+  bool isRanged=true;
+  bool isUnarmed=false;
+  bool isHthAttack=false;
+  uint16 ammoRound=_WeaponRound(weapon,use);
+  bool wpnIsRemoved=_WeaponRemove(weapon,use);
+  uint16 hx=cr.HexX;
+  uint16 hy=cr.HexY;
+  uint16 tx=target_HexX;
+  uint16 ty=target_HexY;
+  uint16 weapPid=weapon.ProtoId;
+  uint16 ammoPid=0;
+  if (valid(ammo)) ammoPid=ammo.ProtoId;
+  bool isBurst=(ammoRound>1);
+  if (isBurst) aim=HIT_LOCATION_UNCALLED;
+  int dmgType=_WeaponDmgType(weapon,use);
+
+  bool isGrenade=weaponSubtype == WS_THROWING && (dmgType==DAMAGE_PLASMA || dmgType==DAMAGE_EMP || dmgType==DAMAGE_EXPLODE); // like in fo2
+  bool isFlamethrower=(weapPid==PID_FLAMER_DE) || (weapPid==PID_IMPROVED_FLAMETHROWER_DE) || (weapPid==PID_FIRE_GECKO_FLAME_WEAPON_DE) || (weapPid==PID_CANNONF) || (weapPid==PID_FLAMERN_DE);
+  bool isRocket=( ammoPid == PID_EXPLOSIVE_ROCKET_DE ) || ( ammoPid == PID_ROCKET_AP_DE ) || ( ammoPid == PID_ROBO_ROCKET_AMMO_DE ) || ( ammoPid == PID_RRAD ) || ( ammoPid == PID_RELE ) || ( ammoPid == PID_40x46_DE );
+
+  bool eyeDamage=cr.Damage[DAMAGE_EYE]!=0;
+  int weaponPerk=weapon.Weapon_Perk;
+  bool crIsPlayer=cr.IsPlayer();
+  bool isHit=false;
+  bool isCritical=false;
+  bool hitRandomly=false;
+  uint critfailFlags=0;
+  bool isSneak = false;
+  bool useNormal=false;
+  bool useHex=false;
+  Critter@ normalTarget;
+
+  CombatRes[] results;
+
+  int acmod=0;
+
+  if(!map.IsTurnBased() && map.IsTurnBasedAvailability()) map.BeginTurnBased(cr);
+
+  if(cr.Mode[MODE_HIDE]!=0)
+  {
+    cr.ModeBase[MODE_HIDE]=0;
+    isSneak=true;
+  }
+
+  cr.SetDir(GetDirection(hx,hy,tx,ty));
+
+  int crTimeout=BATTLE_TIMEOUT(cr);
+  if(cr.Timeout[TO_BATTLE]<crTimeout-__FullSecond) cr.TimeoutBase[TO_BATTLE]=crTimeout;
+
+   if(((!isUnarmed)||(!isHthAttack))&&cr.ParamBase[PLAYER_PROFESSION]!=4 ) cr.TimeoutBase[TO_SNEAK]=SNEAK_TIMEOUT(cr);
+
+  if(crIsPlayer)
+  {
+    if (weaponSubtype == WS_GUN) cr.AddScore(SCORE_SHOOTER,1);
+    else if (skillNum==SK_THROWING) cr.AddScore(SCORE_MELEE,1);
+  }
+
+  if(!crIsPlayer) AI_TrySayCombatText(cr,COMBAT_TEXT_ATTACK);
+
+  int baseToHit=skillVal;
+  if (eyeDamage) baseToHit-=25;
+  //if (cr.Perk[PE_VAMPIRE_ACCURACY]>0 && IS_NIGHT(__Hour)) baseToHit+=13;
+  if (!isUnarmed)
+  {
+    if (cr.Trait[TRAIT_ONE_HANDER]!=0) baseToHit+=(FLAG(weapon.Flags,ITEM_TWO_HANDS)?-40:20);
+
+    int handlingStrength=cr.Stat[ST_STRENGTH];
+    int reqStrength=weapon.Weapon_MinStrength;
+    if (handlingStrength<reqStrength) baseToHit-=(reqStrength-handlingStrength)*20;
+
+    if (weaponPerk == WEAPON_PERK_ACCURATE) baseToHit+=20;
+  }
+
+  AttackStruct attack;
+  @attack.Attacker=cr;
+  @attack.RealWeapon=realWeapon;
+  attack.Hx=hx;
+  attack.Hy=hy;
+  attack.Aim=aim;
+  attack.IsBurst=isBurst;
+  //attack.BloodyMess=cr.Trait[TRAIT_BLOODY_MESS]!=0;
+  attack.CombatMessage=true;
+  attack.scoreUnarmed=(weaponSubtype==WS_UNARMED);
+  attack.WeaponPerk=(isUnarmed && weapon.Weapon_UnarmedArmorPiercing)?WEAPON_PERK_PENETRATE:weaponPerk;
+  attack.WeaponSubtype=weaponSubtype;
+  attack.DmgMin=_WeaponDmgMin(weapon,use);
+  attack.DmgMax=_WeaponDmgMax(weapon,use);
+  attack.DmgType=dmgType;
+  attack.BonusDmg=0;
+
+  if(attack.IsBurst)
+  {
+	if(GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY)==1)
+	{
+		cr.Say(SAY_NETMSG,"combat.fos: wep 1 hex damage before "+attack.DmgMin+"-"+attack.DmgMax);
+		attack.DmgMin=attack.DmgMin/2.3;
+		attack.DmgMax=attack.DmgMax/2.3;
+		cr.Say(SAY_NETMSG,"combat.fos: wep 1 hex damage after "+attack.DmgMin+"-"+attack.DmgMax);
+	}
+	if (weaponPerk == WEAPON_PERK_REDUCED_FALLOFF)
+	{
+    if(GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY)<=15)
+    {
+	  cr.Say(SAY_NETMSG,"combat.fos: wep damage before "+attack.DmgMin+"-"+attack.DmgMax);
+		attack.DmgMin=attack.DmgMin*((100.f-(2*GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		attack.DmgMax=attack.DmgMax*((100.f-(2*GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		cr.Say(SAY_NETMSG,"combat.fos: wep damage after "+attack.DmgMin+"-"+attack.DmgMax);
+    } 
+	else
+    {
+	    cr.Say(SAY_NETMSG,"combat.fos: wep damage before "+attack.DmgMin+"-"+attack.DmgMax);
+		attack.DmgMin=attack.DmgMin*0.71*((100.f-(GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		attack.DmgMax=attack.DmgMax*0.71*((100.f-(GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		cr.Say(SAY_NETMSG,"combat.fos: wep damage after "+attack.DmgMin+"-"+attack.DmgMax);
+    }	
+  }
+	else
+	{
+		cr.Say(SAY_NETMSG,"combat.fos: wep damage before "+attack.DmgMin+"-"+attack.DmgMax);
+		attack.DmgMin=attack.DmgMin*((100.f-(2*GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		attack.DmgMax=attack.DmgMax*((100.f-(2*GetDistantion(cr.HexX,cr.HexY,target_HexX,target_HexY))+1.f)/100.f);
+		cr.Say(SAY_NETMSG,"combat.fos: wep damage after "+attack.DmgMin+"-"+attack.DmgMax);
+	}
+  }
+  if(attack.DmgMin<0) attack.DmgMin=0;
+  if(attack.DmgMax<0) attack.DmgMax=0;
+
+  if (isHthAttack) attack.DmgMax+=cr.Stat[ST_MELEE_DAMAGE];
+  if (weaponSubtype == WS_GUN) attack.BonusDmg+=cr.Perk[PE_BONUS_RANGED_DAMAGE]*3;
+  attack.DmgMul=2;
+  
+  if(valid(ammo))
+  {
+    attack.DRMod=ammo.Ammo_DRMod;
+    attack.DMMod=ammo.Ammo_DmgMult;
+    attack.DDMod=ammo.Ammo_DmgDiv;
+    if(attack.DMMod==0) attack.DMMod=1;
+    if(attack.DDMod==0) attack.DDMod=1;
+  }
+
+  int toHit = baseToHit;
+  toHit-=isHthAttack?(GetHitAim(aim)/2):GetHitAim(aim);
+
+  int distmod1=2;
+  int distmod2=0;
+
+  if (weaponPerk==WEAPON_PERK_LONG_RANGE) distmod1=4;
+  else if (weaponPerk==WEAPON_PERK_SCOPE_RANGE)
+  {
+    distmod1=5;
+    distmod2=8;
+  }
+
+  int perception=cr.Stat[ST_PERCEPTION];
+  int dist=GetDistantion(hx,hy,target_HexX,target_HexY);
+  int acc=dist;
+  int accloss=(crIsPlayer?(perception-2)*distmod1:(perception*distmod1));
+  int sharpshooter=0;
+  //int sharpshooter=cr.StatBase[PE_SHARPSHOOTER]*2;
+
+  if (!isHthAttack)
+  {
+    if (dist < distmod2) acc+=distmod2;
+      else acc-=accloss;
+    if (-2*perception > acc) acc = -2*perception;
+    acc-=sharpshooter;
+    if (acc>0 && eyeDamage) acc*=3;
+    acc*=-4;
+    toHit+=acc;
+    int blockers=map.GetCrittersPath(hx, hy, tx, ty, 0.0f, dist, FIND_LIFE, null);
+    toHit-=10*blockers;
+  }
+  acmod=0;
+  if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+  if (acmod>0) toHit-=acmod;
+
+  toHit=CLAMP(toHit,5,95);
+
+  int margin=toHit-Random(1,98);
+
+  if (margin<0)
+  {
+    if (cr.Mode[MODE_INVULNERABLE]==0)
+    {
+      isCritical = ((-margin)/10 >= Random(1,100));
+
+      if (!isCritical)
+        isCritical= (Random(0,1)==0 && (cr.Trait[TRAIT_JINXED]!=0 ));
+      if (isCritical)
+      {
+        int roll = Random(1,100) - 5*(cr.Stat[ST_LUCK]-5);
+        if (roll <= 20) roll = 0;
+        else if (roll <=50) roll = 1;
+        else if (roll <=75) roll = 2;
+        else if (roll <=95) roll = 3;
+        else  roll = 4;
+
+        critfailFlags=CriticalFailureTable[5*weapon.Weapon_CriticalFailture+roll];
+        if (critfailFlags==0) isCritical=false;
+        hitRandomly=FLAG(critfailFlags,MF_HIT_RANDOMLY);
+      }
+    }
+  }
+  else
+  {
+    isHit=true;
+	//if (isHthAttack && cr.Perk[PE_SLAYER]!=0) isCritical=true;
+    //else 
+	if(GetHitAim(aim) == 0) isCritical = Random(1,100) <= (cr.Stat[ST_CRITICAL_CHANCE] - margin/10);
+	else if(GetHitAim(aim) >= 50) isCritical = Random(1,100) <= (cr.Stat[ST_CRITICAL_CHANCE]  + margin/10 + (GetHitAim(aim)*0.35)*2);
+	else if(GetHitAim(aim) <= 20) isCritical = Random(1,100) <= (cr.Stat[ST_CRITICAL_CHANCE]  + margin/10 + (GetHitAim(aim)*0.5)*2);
+	else isCritical = Random(1,100) <= (cr.Stat[ST_CRITICAL_CHANCE]  + margin/10 + (GetHitAim(aim)*0.45)*2);
+
+    //if (!isCritical && weaponSubtype==WS_GUN && cr.Perk[PE_SNIPER]!=0) isCritical = (Random(1,10) <= cr.Stat[ST_LUCK]);
+    if (!isCritical && isUnarmed) isCritical = Random(1,100) <= weapon.Weapon_UnarmedCriticalBonus;
+  }
+
+  hitRandomly=false;
+  cr.Action(ACTION_USE_WEAPON,(((!isHit && isCritical && !hitRandomly)?1:0)<<8)|(aim<<4)|use,realWeapon);
+
+  bool changedTarget = (hitRandomly);
+
+  if (!isHit && isCritical && !hitRandomly)
+  {
+    CriticalFailure(cr, weapon, use, ammo, critfailFlags, results);
+    return;
+  }
+
+  bool criticalHit = isHit && isCritical;
+
+  if ((weaponSubtype == WS_GUN) && !isBurst && !isRocket && !isFlamethrower)
+  {
+    if (isHit || changedTarget) {}
+    else
+    {
+      Critter@[] critsLine;
+      attack.Aim=HIT_LOCATION_UNCALLED;
+      baseToHit+=GetHitAim(aim);
+      map.GetCrittersPath(hx, hy, tx, ty, 0.0f, wpnMaxDist, FIND_LIFE_AND_KO, critsLine);
+      int bl=0;
+      bool anyHit=false;
+      for (int i=0, j=critsLine.length(); (i<j) && !anyHit ; i++)
+      {
+
+        // adjust tohit
+        dist=GetDistantion(hx, hy, critsLine[i].HexX, critsLine[i].HexY);
+        acc=dist;
+        toHit = baseToHit;
+        if (dist < distmod2) acc+=distmod2;
+          else acc-=accloss;
+        if (-2*perception > acc) acc = -2*perception;
+        acc-=sharpshooter;
+        if (acc>0 && eyeDamage) acc*=3;
+        acc*=-4;
+        toHit+=acc;
+        acmod=critsLine[i].Stat[ST_ARMOR_CLASS];
+        if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+        if (acmod>0) toHit-=acmod;
+        toHit-=10*bl;
+        if (critsLine[i].IsKnockout()) toHit+=40;
+          else bl++;
+        if (critsLine[i].GetMultihex()>0) toHit+=15;
+        toHit=CLAMP(toHit,5,95);
+        toHit/=3;
+      }
+      if (!anyHit) NotifyMiss(cr, results);
+    }
+  }
+  else if (isFlamethrower)
+  {
+		Critter@[] line1;
+		Critter@[] line2;
+		Critter@[] line3;
+		Critter@[] line4;
+		Critter@[] line5;
+		Critter@[] CrittersHit(0);
+		uint16 hx=0;
+		uint16 hy=0;
+		attack.Hx=tx;
+		attack.Hy=ty;
+		uint16 HexInLineX;
+		uint16 HexInLineY;
+		HexInLineX=cr.HexX;
+		HexInLineY=cr.HexY;
+		int HexDir=GetDirection(cr.HexX,cr.HexY,tx,ty);
+		if (HexDir==0)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}	
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,0,wpnMaxDist);
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,0.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-12.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-24.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,+18.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,+12.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}
+		if (HexDir==1)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}	
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,1,wpnMaxDist);
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-36.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-48.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-60.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-72.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-84.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}		
+		if (HexDir==2)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}			
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,2,wpnMaxDist);
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-96.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-108.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-120.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-132.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-144.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}		
+		if (HexDir==3)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}			
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,3,wpnMaxDist);
+		//map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-156.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-168.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-180.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-192.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-204.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-216.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}		
+		if (HexDir==4)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}			
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,4,wpnMaxDist);
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-228.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-240.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-252.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-264.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-276.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}		
+		if (HexDir==5)
+		{
+			
+		if(ammoPid==PID_NapalmAmmo_DE)
+		{      	
+		for( uint i = 0; i < 5; i++ ) // max range of effect. Always stops to animate if target in range more than 50 hexes from attacker
+            {    
+		map.MoveHexByDir(HexInLineX,HexInLineY,HexDir,1); //move hexes to target direction
+		uint16 NextHexX = HexInLineX, NextHexY = HexInLineY;
+		NapalmBlast( map, NextHexX, NextHexY, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) ); //apply effect
+			}
+		//NapalmBall( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+		}			
+			
+		map.GetHexCoord(cr.HexX,cr.HexY,hx,hy,5,wpnMaxDist);
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-288.0f,wpnMaxDist,FIND_LIFE_AND_KO,line1);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-300.0f,wpnMaxDist,FIND_LIFE_AND_KO,line2);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-312.0f,wpnMaxDist,FIND_LIFE_AND_KO,line3);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-324.0f,wpnMaxDist,FIND_LIFE_AND_KO,line4);		
+		map.GetCrittersPath(cr.HexX,cr.HexY,hx,hy,-336.0f,wpnMaxDist,FIND_LIFE_AND_KO,line5);
+		}		
+		
+	
+		for (int i=0,j=line1.length();i<j;i++)
+		{
+		if( !CritterExists( CrittersHit, line1[ i ] )) CrittersHit.insertLast( line1[ i ] ); //Sort critters in array
+		}
+		for (int i=0,j=line2.length();i<j;i++)
+		{
+		if( !CritterExists( CrittersHit, line2[ i ] )) CrittersHit.insertLast( line2[ i ] ); //Sort critters in array
+		}		
+		for (int i=0,j=line3.length();i<j;i++)
+		{
+		if( !CritterExists( CrittersHit, line3[ i ] )) CrittersHit.insertLast( line3[ i ] ); //Sort critters in array
+		}
+		for (int i=0,j=line4.length();i<j;i++)
+		{
+		if( !CritterExists( CrittersHit, line4[ i ] )) CrittersHit.insertLast( line4[ i ] ); //Sort critters in array
+		}
+		for (int i=0,j=line5.length();i<j;i++)
+		{
+		if( !CritterExists( CrittersHit, line5[ i ] )) CrittersHit.insertLast( line5[ i ] ); //Sort critters in array
+		}
+		//Apply damage
+		for (int i=0,j=CrittersHit.length();i<j;i++)
+		{
+        ApplyDamage(attack, CrittersHit[i], 1, false, true, results);
+		CrittersHit[i].StatBase[ST_BURN_STACK]+=4;
+		if(CrittersHit[i].Stat[ST_BURN_STACK]>12) CrittersHit[i].StatBase[ST_BURN_STACK]=12;
+		CrittersHit[i].StatBase[ST_BURN_LAST_ENEMY_ID]=attack.Attacker.Id;
+		CrittersHit[i].AddTimeEvent("cte_Burn",GetBurnDuration(CrittersHit[i]),CTE_BURN);
+		}
+		
+  }
+  else if ((weaponSubtype == WS_GUN) && isBurst)
+  {
+    if (changedTarget)
+    {
+      dist=GetDistantion(hx, hy, tx, ty);
+      acc=dist;
+      toHit = baseToHit;
+      if (dist < distmod2) acc+=distmod2;
+        else acc-=accloss;
+      if (-2*perception > acc) acc = -2*perception;
+      acc-=sharpshooter;
+      if (acc>0 && eyeDamage) acc*=3;
+      acc*=-4;
+      toHit+=acc;
+      acmod=0;
+      if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+      if (acmod>0) toHit-=acmod;
+      int blockers=map.GetCrittersPath(hx, hy, tx, ty, 0.0f, dist, FIND_LIFE, null);
+      toHit-=10*blockers;
+      toHit=CLAMP(toHit,10,95);
+    }
+
+    if (criticalHit)
+      toHit+=20;
+
+    int rounds=ammoRound;
+    if(valid(realWeapon) && realWeapon.AmmoCount<rounds) rounds=realWeapon.AmmoCount;
+    Critter@[] critsHit(0);
+    uint[] critsHitBullets(0);
+
+    int len_=0;
+    int volleyRounds = MAX((rounds/6),1);
+
+    int curRounds=0;
+    for (int i=0; i<volleyRounds; i++) { if (Random(1,100)<=toHit) curRounds++; }
+    if (curRounds!=0)
+    {
+      critsHitBullets.resize(1);
+      critsHitBullets[0]=curRounds;
+      len_++;
+    }
+    volleyRounds-=curRounds;
+
+    Critter@[] lineCentral;
+    map.GetCrittersPath(hx,hy,tx,ty,0.0f,wpnMaxDist,FIND_LIFE_AND_KO,lineCentral);
+
+    int bl=0;
+    curRounds=0;
+    for (int i=0,j=lineCentral.length();(i<j) && (volleyRounds > 0); i++)
+    {
+      toHit=baseToHit-10*bl;
+      dist=GetDistantion(hx,hy,lineCentral[i].HexX,lineCentral[i].HexY);
+      acc=dist;
+      if (dist < distmod2) acc+=distmod2;
+        else acc-=accloss;
+      if (-2*perception > acc) acc = -2*perception;
+      acc-=sharpshooter;
+      if (acc>0 && eyeDamage) acc*=3;
+      acc*=-4;
+      toHit+=acc;
+      acmod=lineCentral[i].Stat[ST_ARMOR_CLASS];
+      if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+      if (acmod>0) toHit-=acmod;
+      toHit=CLAMP(toHit,5,95);
+      if (lineCentral[i].IsKnockout()) toHit+=40;
+        else bl++;
+      if (lineCentral[i].GetMultihex()>0) toHit+=15;
+      for (curRounds=0;curRounds<volleyRounds;)
+      {
+        if (Random(1,100)<=toHit) curRounds++;
+          else break;
+      }
+      volleyRounds-=curRounds;
+      if (curRounds>0)
+      {
+        int crIndex=FindCritterInArray(critsHit, lineCentral[i]);
+        if (crIndex==-1)
+        {
+          critsHit.resize(len_+1);
+          @critsHit[len_]=lineCentral[i];
+          critsHitBullets.resize(len_+1);
+          critsHitBullets[len_]=0;
+          crIndex=len_;
+          len_++;
+        }
+        critsHitBullets[crIndex]+=curRounds;
+      }
+    }
+
+    bool threeLines=(GetDistantion(hx,hy,lineCentral[0].HexX,lineCentral[0].HexY)>1) && (ammoRound>3);
+
+    for (int lineCount=0,lineMax=(threeLines?1:3);lineCount<lineMax;lineCount++)
+    {
+      if (lineCount==0)
+      {
+        volleyRounds=rounds-(((rounds+1)/3)+(rounds/3));
+        volleyRounds-=MAX(rounds/6,1);
+      }
+      else
+      {  if (lineCount==1)
+           volleyRounds=(rounds+1)/3;
+         else
+           volleyRounds=rounds/3;
+      }
+
+      if (volleyRounds==0) continue;
+
+      bl=0;
+      for (int i=0,j=lineCentral.length();(i<j) && (volleyRounds > 0); i++)
+      {
+        toHit=baseToHit-10*bl;
+        dist=GetDistantion(hx,hy,lineCentral[i].HexX,lineCentral[i].HexY);
+        acc=dist;
+        if (dist < distmod2) acc+=distmod2;
+          else acc-=accloss;
+        if (-2*perception > acc) acc = -2*perception;
+        acc-=sharpshooter;
+        if (acc>0 && eyeDamage) acc*=3;
+        acc*=-4;
+        toHit+=acc;
+        acmod=lineCentral[i].Stat[ST_ARMOR_CLASS];
+        if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+        if (acmod>0) toHit-=acmod;
+        if (lineCentral[i].IsKnockout()) toHit+=40;
+        if (lineCentral[i].GetMultihex()>0) toHit+=15;
+        toHit=CLAMP(toHit,5,95);
+        bl++;
+        for (curRounds=0;curRounds<volleyRounds;)
+        {
+          if (Random(1,100)<=toHit) curRounds++;
+            else break;
+        }
+        volleyRounds-=curRounds;
+        if (curRounds>0)
+        {
+        int crIndex=FindCritterInArray(critsHit, lineCentral[i]);
+        if (crIndex==-1)
+        {
+          critsHit.resize(len_+1);
+          @critsHit[len_]=lineCentral[i];
+          critsHitBullets.resize(len_+1);
+          critsHitBullets[len_]=0;
+          crIndex=len_;
+          len_++;
+        }
+        critsHitBullets[crIndex]+=curRounds;
+        }
+      }
+    }
+	
+    if (threeLines)
+    {
+      volleyRounds=(rounds+1)/3;
+
+      if (volleyRounds>0)
+      {
+        uint8 leftDir=GetOffsetDir(hx,hy,tx,ty,89.0f);
+        uint16 sx=hx;
+        uint16 sy=hy;
+        uint16 ex=tx;
+        uint16 ey=ty;
+
+        map.MoveHexByDir(sx,sy,leftDir,1);
+        map.MoveHexByDir(ex,ey,leftDir,1);
+
+        Critter@[] lineLeft;
+        map.GetCrittersPath(sx,sy,ex,ey,0.0f,wpnMaxDist-1,FIND_LIFE_AND_KO,lineLeft);
+        int leftStart=0;
+        int leftLen=lineLeft.length();
+        while ((leftStart<leftLen) && (GetDistantion(hx,hy,lineLeft[leftStart].HexX,lineLeft[leftStart].HexY))<3) leftStart++;
+
+        for (int i=leftStart,j=leftLen;(i<j) && (volleyRounds > 0); i++)
+        {
+          dist=GetDistantion(hx,hy,lineLeft[i].HexX,lineLeft[i].HexY);
+          bl=map.GetCrittersPath(hx,hy,lineLeft[i].HexX,lineLeft[i].HexY,0.0f,dist,FIND_LIFE,null)-1;
+          toHit=baseToHit-10*bl;
+          acc=dist;
+          if (dist < distmod2) acc+=distmod2;
+          else acc-=accloss;
+          if (-2*perception > acc) acc = -2*perception;
+          acc-=sharpshooter;
+          if (acc>0 && eyeDamage) acc*=3;
+          acc*=-4;
+          toHit+=acc;
+          acmod=lineLeft[i].Stat[ST_ARMOR_CLASS];
+          if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+          if (acmod>0) toHit-=acmod;
+          if (lineLeft[i].IsKnockout()) toHit+=40;
+          if (lineLeft[i].GetMultihex()>0) toHit+=15;
+          toHit=CLAMP(toHit,5,95);
+          for (curRounds=0;curRounds<volleyRounds;)
+          {
+            if (Random(1,100)<=toHit) curRounds++;
+              else break;
+          }
+          volleyRounds-=curRounds;
+          if (curRounds>0)
+          {
+            int crIndex=FindCritterInArray(critsHit, lineLeft[i]);
+            if (crIndex==-1)
+            {
+              critsHit.resize(len_+1);
+              @critsHit[len_]=lineLeft[i];
+              critsHitBullets.resize(len_+1);
+              critsHitBullets[len_]=0;
+              crIndex=len_;
+              len_++;
+            }
+            critsHitBullets[crIndex]+=curRounds;
+          }
+        }
+      }
+
+      volleyRounds=(rounds)/3;
+
+      if (volleyRounds>0)
+      {
+        uint8 rightDir=GetOffsetDir(hx,hy,tx,ty,-89.0f);
+
+        uint16 sx=hx;
+        uint16 sy=hy;
+        uint16 ex=tx;
+        uint16 ey=ty;
+
+        map.MoveHexByDir(sx,sy,rightDir,1);
+        map.MoveHexByDir(ex,ey,rightDir,1);
+
+        Critter@[] lineRight;
+        map.GetCrittersPath(sx,sy,ex,ey,0.0f,wpnMaxDist-1,FIND_LIFE_AND_KO,lineRight);
+        int rightStart=0;
+        int rightLen=lineRight.length();
+        while ((rightStart<rightLen) && (GetDistantion(hx,hy,lineRight[rightStart].HexX,lineRight[rightStart].HexY))<3) rightStart++;
+        for (int i=rightStart,j=rightLen;(i<j) && (volleyRounds > 0); i++)
+        {
+          dist=GetDistantion(hx,hy,lineRight[i].HexX,lineRight[i].HexY);
+          bl=map.GetCrittersPath(hx,hy,lineRight[i].HexX,lineRight[i].HexY,0.0f,dist,FIND_LIFE,null)-1;
+          toHit=baseToHit-10*bl;
+          acc=dist;
+          if (dist < distmod2) acc+=distmod2;
+          else acc-=accloss;
+          if (-2*perception > acc) acc = -2*perception;
+          acc-=sharpshooter;
+          if (acc>0 && eyeDamage) acc*=3;
+          acc*=-4;
+          toHit+=acc;
+          acmod=lineRight[i].Stat[ST_ARMOR_CLASS];
+          if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+          if (acmod>0) toHit-=acmod;
+          if (lineRight[i].IsKnockout()) toHit+=40;
+          if (lineRight[i].GetMultihex()>0) toHit+=15;
+          toHit=CLAMP(toHit,5,95);
+          for (curRounds=0;curRounds<volleyRounds;)
+          {
+            if (Random(1,100)<=toHit) curRounds++;
+              else break;
+          }
+          volleyRounds-=curRounds;
+          if (curRounds>0)
+          {
+            int crIndex=FindCritterInArray(critsHit, lineRight[i]);
+            if (crIndex==-1)
+            {
+              critsHit.resize(len_+1);
+              @critsHit[len_]=lineRight[i];
+              critsHitBullets.resize(len_+1);
+              critsHitBullets[len_]=0;
+              crIndex=len_;
+              len_++;
+            }
+            critsHitBullets[crIndex]+=curRounds;
+          }
+        }
+      }
+    }
+
+    for (int i=0,j=len_;i<j;i++)
+      ApplyDamage(attack, critsHit[i], 1, false, true, results);
+
+    if (!changedTarget && !attack.TargetHit) NotifyMiss(cr, results);
+  }
+  else if (isRocket || (weaponSubtype==WS_THROWING))
+  {
+    bool exploding=isRocket || isGrenade;
+
+    if (isHit || changedTarget)
+    {
+      if (exploding)
+        CommenceExplosionByHexShooting(attack, map, tx, ty, null, weapPid, criticalHit, 0, isRocket, results);
+    }
+    else
+    {
+      attack.Aim=HIT_LOCATION_UNCALLED;
+      baseToHit+=GetHitAim(aim);
+
+      if (weaponSubtype == WS_THROWING) sharpshooter=0;
+      uint16 bx=0;
+      uint16 by=0;
+      uint16 pbx=0;
+      uint16 pby=0;
+
+      Critter@[] critsLine;
+      map.GetCrittersPath(hx, hy, tx, ty, 0.0f, wpnMaxDist, FIND_LIFE_AND_KO, critsLine, pbx, pby, bx, by);
+
+      int bl=0;
+      bool anyHit=false;
+      for (int i=0, j=critsLine.length(); (i<j) && !anyHit ; i++)
+      {
+        dist=GetDistantion(hx, hy, critsLine[i].HexX, critsLine[i].HexY);
+        acc=dist;
+        toHit = baseToHit;
+        if (dist < distmod2) acc+=distmod2;
+          else acc-=accloss;
+        if (-2*perception > acc) acc = -2*perception;
+        acc-=sharpshooter;
+        if (acc>0 && eyeDamage) acc*=3;
+        acc*=-4;
+        toHit+=acc;
+        acmod=critsLine[i].Stat[ST_ARMOR_CLASS];
+        if (valid(ammo)) acmod += ammo.Ammo_ACMod;
+        if (acmod>0) toHit-=acmod;
+        toHit-=10*bl;
+        if (critsLine[i].IsKnockout()) toHit+=40;
+          else bl++;
+        if (critsLine[i].GetMultihex()>0) toHit+=15;
+        toHit=CLAMP(toHit,5,95);
+        toHit/=3;
+        if (Random(1,100)<=toHit)
+        {
+          tx=critsLine[i].HexX;
+          ty=critsLine[i].HexY;
+          @normalTarget=critsLine[i];
+          anyHit=true;
+        }
+      }
+
+      if (anyHit)
+      {
+        useNormal=true;
+
+        if (exploding)
+          CommenceExplosionByHexShooting(attack, map, tx, ty, null, weapPid, false, 0, isRocket, results);
+      }
+      else
+      {
+        useHex=true;
+        NotifyMiss(cr, results);
+        if (isGrenade)
+        {
+          tx=target_HexX;
+          ty=target_HexY;
+          int newdist=GetDistantion(hx,hy,tx,ty)+1;
+          map.MoveHexByDir(tx,ty,Random(0,5),Random(1,newdist/2));
+          newdist=GetDistantion(hx,hy,tx,ty);
+          map.GetCrittersPath(hx, hy, tx, ty, 0.0f, newdist, FIND_LIFE, null, tx, ty, bx, by);
+        }
+        else
+        {
+          if (isRocket)
+          {
+            tx=bx;
+            ty=by;
+          }
+          else
+          {
+            tx=pbx;
+            ty=pby;
+          }
+        }
+
+        if (exploding)
+          CommenceExplosionByHexShooting(attack, map, tx, ty, null, weapPid, false, 0, isRocket, results);
+      }
+    }
+	
+  }
+  else
+    cr.Say(SAY_NETMSG, "Combat error: weapon PID="+weapPid+" not handled, please send bug report.");
+
+  FlushResults(results);
+
+  if (_WeaponEffect(weapon,use)!=0)
+  {
+    if (useHex)
+      map.RunFlyEffect(_WeaponEffect(weapon,use),cr,null,hx,hy,tx,ty);
+    else
+      map.RunFlyEffect(_WeaponEffect(weapon,use),cr,null,hx,hy,tx,ty);
+  }
+
+  if(ammoRound>0 && valid(realWeapon) && cr.Mode[MODE_UNLIMITED_AMMO]==0)
+  {
+    if(realWeapon.AmmoCount<=ammoRound) realWeapon.AmmoCount=0;
+      else realWeapon.AmmoCount-=ammoRound;
+    realWeapon.Update();
+  }
+
+  if(valid(realWeapon))
+  {
+    if(realWeapon.IsDeteriorable()) DeteriorateItem(cr,realWeapon,(MAX_SKILL_VAL-skillVal)/3);
+
+    if(wpnIsRemoved && cr.Mode[MODE_UNLIMITED_AMMO]==0)
+    {
+      bool placeOnHex=(skillNum==SK_THROWING && !isGrenade);
+      if(realWeapon.IsStackable())
+      {
+        if(placeOnHex) map.AddItem(tx,ty,weapPid,1);
+
+        if(realWeapon.GetCount()>1)
+          realWeapon.SetCount(realWeapon.GetCount()-1);
+        else
+          DeleteItem(realWeapon);
+      }
+      else
+      {
+        MoveItem(realWeapon,0,map,tx,ty);
+      }
+    }
+  }
+
+  return;
+}
+
+void CommenceExplosionByHexShooting(AttackStruct &attack, Map@ map, uint16 tx, uint16 ty, Critter@ target, uint weapPid, bool isCritical, uint intentionallyId, bool isRocket, CombatRes[]& results)
+{
+  uint radius=isRocket?3:2;
+  bool isFlamethrower=(weapPid==PID_FLAMER_DE) || (weapPid==PID_IMPROVED_FLAMETHROWER_DE) || (weapPid==PID_FIRE_GECKO_FLAME_WEAPON_DE) || (weapPid==PID_CANNONF) || (weapPid==PID_FLAMERN_DE);
+  if(weapPid==PID_MOLOTOV_COCKTAIL_DE) 
+  {
+	  MolotovBlast( map, tx, ty, PID_FIRE_HEX, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+	  map.RunEffect(PID_EXPLODE_FIRE_SMALL,tx,ty,2);
+  }
+  else if (weapPid==PID_FRAG_GRENADE_DE || weapPid==PID_HOLY_HAND_GRENADE_DE) map.RunEffect(PID_EXPLODE_FIRE_SMALL,tx,ty,2);
+  else if (weapPid==PID_PULSE_GRENADE_DE) map.RunEffect(PID_EXPLODE_EMP,tx,ty,2);
+  else if (weapPid==PID_PLASMA_GRENADE_DE) map.RunEffect(PID_EXPLODE_PLASMA,tx,ty,2);
+  else if( weapPid == PID_SMOKE_GRENADE )
+        SmokeBlast( map, tx, ty, PID_SMOKE, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+  else if( weapPid == PID_MUSTARD_GAS_GRENADE )
+        SmokeBlast( map, tx, ty, PID_MUSTARD_GAS, ( valid( attack.Attacker ) ? attack.Attacker.Id : 0 ) );
+  else if (isRocket) map.RunEffect(PID_EXPLODE_ROCKET,tx,ty,3);
+  else map.RunEffect(PID_EXPLODE_FIRE_BIG,tx,ty,3);
+  if( weapPid == PID_MUSTARD_GAS_GRENADE || weapPid == PID_SMOKE_GRENADE )
+        return;
+
+  QuakeScreen(map);
+  Critter@[] critsHit;
+  map.GetCrittersHex(tx, ty, radius, FIND_LIFE_AND_KO, critsHit);
+  attack.Hx=tx;
+  attack.Hy=ty;
+
+  for (int i=0,j=critsHit.length();i<j;i++)
+  {
+	ApplyDamage(attack, critsHit[i], 1, false, true, results);
+		if(weapPid==PID_MOLOTOV_COCKTAIL_DE)
+			{
+				map.GetCrittersHex(tx, ty, radius, FIND_LIFE_AND_KO, critsHit);
+				critsHit[i].StatBase[ST_BURN_STACK]+=4;
+				if(critsHit[i].Stat[ST_BURN_STACK]>12) critsHit[i].StatBase[ST_BURN_STACK]=12;
+				critsHit[i].StatBase[ST_BURN_LAST_ENEMY_ID]=attack.Attacker.Id;
+				critsHit[i].AddTimeEvent("cte_Burn",GetBurnDuration(critsHit[i]),CTE_BURN);
+			}
+			if(weapPid==PID_PULSE_GRENADE_DE)
+			{
+				Item@ armor = critsHit[i].GetItem(0, SLOT_ARMOR);
+				if( valid(armor) && ((armor.GetProtoId()==PID_PA) ||
+								(armor.GetProtoId()==PID_PAMKII) ||
+								(armor.GetProtoId()==PID_APA) ||
+								(armor.GetProtoId()==PID_MECHSUITG1) ||
+								(armor.GetProtoId()==PID_MECHSUITG2) ||
+								(armor.GetProtoId()==PID_MECHSUITB1) ||
+								(armor.GetProtoId()==PID_MECHSUITB2)) )
+					{
+						critsHit[i].ParamBase[ST_CURRENT_AP]-=100;		
+					}
+			}
+  }
+	
+}
+
+int GetHexShootingHitChance(Critter @cr, uint16 HexX, uint16 HexY)
+{
+	Map @map=cr.GetMap();
+	if(@map==null) return 0;
+	
+	uint8 weaponMode=0;
+	ProtoItem @weapon=cr.GetSlotProto(SLOT_HAND1,weaponMode);
+	
+	int use         = _WeaponModeUse(weaponMode);
+	int hitLocation = _WeaponModeAim(weaponMode);
+	if(use > 2) return 0;
+
+    if(!cr.IsLife()) return 0;
+
+    Item@ realWeapon = _CritGetItemHand(cr);
+    ProtoItem@ ammo = null;
+
+    if(valid(realWeapon) && _WeaponRound(weapon, use) > 0)
+    {
+        if(realWeapon.AmmoCount == 0) return 0;
+        @ammo=GetProtoItem(realWeapon.AmmoPid);
+    }
+
+    uint skillNum = _WeaponSkill(weapon, use);
+    int wpnMaxDist = _WeaponMaxDist(weapon, use);
+    if(skillNum == SK_THROWING) wpnMaxDist = MIN(wpnMaxDist, 3 * MIN(int(10), cr.Stat[ST_STRENGTH]));
+
+    int dist = GetDistantion(cr.HexX,cr.HexY,HexX,HexY);
+    if(dist > wpnMaxDist) return 0;
+
+    int toHit = int(cr.Skill[skillNum]);
+    int weaponPerk = weapon.Weapon_Perk;
+    int blockers = 0;
+
+    if(skillNum != SK_UNARMED)
+    {
+        int distmod1 = 2;
+        int distmod2 = 0;
+        if(weaponPerk == WEAPON_PERK_LONG_RANGE) distmod1 = 4;
+        else if(weaponPerk == WEAPON_PERK_SCOPE_RANGE)
+        {
+            distmod1 = 5;
+            distmod2 = 8;
+        }
+
+        int perception = cr.Stat[ST_PERCEPTION];
+        int acc = dist;
+
+        if(dist < distmod2) acc += distmod2;
+        else
+        {
+            if(cr.IsPlayer())
+				acc -= (perception - 2) * distmod1;
+            else
+				acc -= perception * distmod1;
+        }
+
+        if(-2 * perception > acc) acc = -2 * perception;
+
+        if(acc >= 0)
+        {
+            if(cr.Damage[DAMAGE_EYE]!=0)
+				acc *= -12;
+            else
+				acc *= -4;
+        }
+        else acc *= -4;
+
+        toHit += acc;
+
+        blockers = map.GetCrittersPath(cr.HexX, cr.HexY, HexX, HexY, 0.0f, dist, FIND_LIFE, null);
+        toHit -= 10 * blockers;
+    }
+
+    if(!(weapon.Weapon_IsUnarmed) && cr.Trait[TRAIT_ONE_HANDER] != 0 && valid(realWeapon))
+        toHit += (FLAG(weapon.Flags, ITEM_TWO_HANDS) ? -40 : 20);
+
+    int handlingStrength = cr.Stat[ST_STRENGTH];
+    int reqStrength = weapon.Weapon_MinStrength;
+    if(handlingStrength < reqStrength) toHit -= (reqStrength - handlingStrength) * 20;
+    if(weaponPerk == WEAPON_PERK_ACCURATE) toHit += 20;
+
+    if(cr.Damage[DAMAGE_EYE] != 0) toHit -= 25;
+
+    toHit = CLAMP(toHit, 5, 95);
+
+    return toHit;
+}
+
+void unsafe_shoot_to_hex(Critter& cr, int hx, int hy, int, string@, int[]@)
+{
+	if(!cr.IsFree()) return;
+	Item @weapon=cr.GetItem(0,SLOT_HAND1);
+	if(@weapon==null) return;
+	
+	
+	bool IsGrenade=(weapon.GetProtoId()==PID_FRAG_GRENADE_DE ||
+					weapon.GetProtoId()==PID_HOLY_HAND_GRENADE_DE ||
+					weapon.GetProtoId()==PID_PULSE_GRENADE_DE ||
+					weapon.GetProtoId()==PID_PLASMA_GRENADE_DE ||
+					weapon.GetProtoId()==PID_MOLOTOV_COCKTAIL_DE);
+	bool IsRocketLauncher=(weapon.GetProtoId()==120 ||
+						   weapon.GetProtoId()==PID_ROCKETRAD_DE ||
+						   weapon.GetProtoId()==PID_ROCKETELE_DE ||
+						   weapon.GetProtoId()==PID_ROCKET_LAUNCHER_DE);
+	bool IsSGLauncher=(weapon.GetProtoId()==PID_M32_DE ||
+						weapon.GetProtoId()==PID_M32S_DE);
+						
+	bool isFlamethrower=(weapon.GetProtoId()==PID_FLAMER_DE) ||
+						(weapon.GetProtoId()==PID_IMPROVED_FLAMETHROWER_DE) ||
+						(weapon.GetProtoId()==PID_FIRE_GECKO_FLAME_WEAPON_DE) ||
+						(weapon.GetProtoId()==PID_CANNONF) ||
+						(weapon.GetProtoId()==PID_FLAMERN_DE);
+	
+	uint8 weaponMode=0;
+	cr.GetSlotProto(SLOT_HAND1,weaponMode);
+	uint maxDist = _WeaponMaxDist(GetProtoItem(weapon.GetProtoId()),weaponMode);
+	uint GrenadeMaxDist = cr.Stat[ST_STRENGTH]*3;
+	if(GrenadeMaxDist>15) GrenadeMaxDist=15;
+	if(GetDistantion(cr.HexX,cr.HexY,hx,hy)>maxDist && (weapon.GetProtoId()==PID_M32_DE || weapon.GetProtoId()==PID_M32S_DE) || GetDistantion(cr.HexX,cr.HexY,hx,hy)>GrenadeMaxDist) return;
+
+	
+	if(!IsGrenade && !IsRocketLauncher && !IsSGLauncher && !isFlamethrower) return;
+	Map@ map=cr.GetMap();
+	if(!valid(map)) return;
+	
+	uint16 temp_x=cr.HexX;
+	uint16 temp_y=cr.HexY;
+	
+	while(temp_x!=hx || temp_y!=hy)
+	{
+		if(!map.IsHexRaked(temp_x,temp_y)) return;
+		map.MoveHexByDir(temp_x,temp_y,GetDirection(temp_x,temp_y,hx,hy),1);
+	}
+	//Deleting AP from critter
+	if(IsGrenade && weapon.GetProtoId()!=120)
+	{
+		if(cr.ParamBase[ST_CURRENT_AP]<400) return;
+		cr.ParamBase[ST_CURRENT_AP]-=400;
+	}
+	else if(IsRocketLauncher && weapon.GetProtoId()!=120)
+	{
+		if(weapon.AmmoCount==0 || cr.ParamBase[ST_CURRENT_AP]<800) return;
+		cr.ParamBase[ST_CURRENT_AP]-=800;
+	}
+	else if(IsSGLauncher && weapon.GetProtoId()!=120)
+	{
+		if(weapon.AmmoCount==0 || cr.ParamBase[ST_CURRENT_AP]<600) return;
+		cr.ParamBase[ST_CURRENT_AP]-=600;
+	}
+	else if(isFlamethrower && weapon.GetProtoId()!=120)
+	{
+		if(weapon.AmmoCount==0 || cr.ParamBase[ST_CURRENT_AP]<600) return;
+		cr.ParamBase[ST_CURRENT_AP]-=600;
+	}
+	cr.SetDir(GetDirection(cr.HexX,cr.HexY,hx,hy));
+	//Wait zone after start animation
+	if(weapon.GetProtoId()==PID_MOLOTOV_COCKTAIL_DE) 
+	{	
+	cr.Animate(ANIM1_UNARMED,ANIM2_THROW,weapon,false,false);
+		cr.PlaySound( "molotov.wav", true );
+	}
+	else if(IsGrenade) cr.Animate(ANIM1_UNARMED,ANIM2_THROW,weapon,false,false);
+	else if(IsRocketLauncher) cr.Animate(ANIM1_ROCKET_LAUNCHER,ANIM2_RELOAD,weapon,false,false);
+	else if(IsSGLauncher)
+		{
+		cr.Animate(ANIM1_SHOOTGUN,ANIM2_PREPARE_WEAPON,weapon,false,true);
+		cr.Animate(ANIM1_SHOOTGUN,ANIM2_SINGLE,weapon,false,true);
+		}
+	else if(isFlamethrower) 
+	{
+		cr.Animate(ANIM1_FLAMER,ANIM2_PREPARE_WEAPON,weapon,false,true);
+		cr.Animate(ANIM1_FLAMER,ANIM2_FLAME,weapon,false,true);
+		cr.Animate(ANIM1_FLAMER,ANIM2_TURNOFF_WEAPON,weapon,false,true);
+	}
+	if(weapon.GetProtoId()!=120) cr.Wait(1200);
+	//Sound play zone
+	if(IsGrenade) map.PlaySound("WAP1XXX1.ACM",cr.HexX,cr.HexY,0);
+	else if(IsRocketLauncher) map.PlaySound("WAN1XXX1",cr.HexX,cr.HexY,0);
+	else if(IsSGLauncher) map.PlaySound("WAR1XXX1",cr.HexX,cr.HexY,0);
+	else if(isFlamethrower) map.PlaySound("wai1xxx1",cr.HexX,cr.HexY,0);
+	
+	CombatRes[] results;
+	CombatAttackByHexShooting(cr,hx,hy,GetProtoItem(weapon.GetProtoId()),weaponMode,GetProtoItem(weapon.AmmoPid));
+}
+
+bool CritterExists( Critter@[] crs, Critter@ cr )
+{
+for( uint i = 0; i < crs.length(); i++ )
+if( crs[ i ].Id == cr.Id ) return true;
+return false;
+}

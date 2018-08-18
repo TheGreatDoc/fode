@@ -1,0 +1,221 @@
+// Author: rifleman17
+#include "_macros.fos"
+import int GetDeteriorationProcent(Item& item) from "repair";
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+
+// Дверь, которая зпкроется через 2 игровые минуты илии через некоторое число реальных секунд , указанное в val3
+void _DoorAutoCloseInit(Item& door, bool firstTime)
+{
+	door.SetEvent(ITEM_EVENT_SKILL,"e_UseAutoCloseDoor");
+}
+
+bool e_UseAutoCloseDoor(Item& door, Critter& cr, int skill)
+{
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(door.Val3 == 0? 2 : door.Val3), "e_AutoCloseDoor", door.Id, true);
+	return false;
+}
+
+uint e_AutoCloseDoor(uint[]@ val)
+{
+	Item@ door = GetItem(val[0]);
+	if(not valid(door))
+	{
+		return 0;
+	}
+	if(!FLAG(door.LockerCondition,LOCKER_ISOPEN)) return 0;
+	uint16 x = 0;
+	uint16 y = 0;
+	Map@ map = door.GetMapPosition(x, y);
+	if(not valid(map))
+	{
+		return 0;
+	}
+
+	Critter@ cr = map.GetCritter(x,y);
+	if(valid(cr))
+	{
+		if(cr.IsLife())
+		{
+			return REAL_MINUTE(3);
+		}else
+		{
+			// Попытка сдвинуть труп. Если не получится, дверь поверх трупа закроется
+			cr.TransitToMap(map.Id, x-1,y,cr.Dir);
+		}
+	}
+
+	if(door.LockerClose()) return 0;
+
+	return REAL_MINUTE(3);
+}
+
+// Дверь, которая не открывается стандартными способами
+void _ClosedDoorInit(Item& door, bool firstTime)
+{
+	door.SetEvent(ITEM_EVENT_SKILL,"_UseDoor");
+}
+
+bool _UseDoor(Item& door, Critter& cr, int skill)
+{
+	return true;
+}
+
+// Дверь, при использовании которой открывается диалог
+void _DialogDoorInit(Item& door, bool firstTime)
+{
+	door.SetEvent(ITEM_EVENT_SKILL,"_UseDialogDoor");
+}
+
+bool _UseDialogDoor(Item& door, Critter& cr, int skill)
+{
+	RunDialog(cr, door.Val3, door.HexX, door.HexY, false);
+	return true;
+}
+
+// Голодиск с номером, присвоенном в Val0
+void _HoloInit(Item & item, bool firstTime)
+{
+	if(item.GetProtoId()!=PID_HOLODISK) return;
+	item.HolodiskNumber = item.Val0;
+	item.SetScript("");
+	item.Update();
+
+}
+
+// Настройка автоматического удаления предмета через икс часов
+void SetDeleteItem(Item& item, uint delHours)
+{
+	CreateTimeEvent(__FullSecond + delHours*60*60, "e_DeleteItem", item.Id, true);
+}
+
+uint e_DeleteItem(uint[]@ val)
+{
+	Item@ item = GetItem(val[0]);
+	if(valid(item))
+		DeleteItem(item);
+	return 0;
+}
+
+// Охраняемая дверь или другой предмет
+// в Val0 - пишется время автоматического закрытия двери, в реальных минутах, если больше 0, дверь будет автоматически закрываться
+// обратите внимание, игрок может застрять за дверью, если пройдет внутрь, а она захлопнется
+// в Val1 прописывается номер роли НПЦ которые будут говорить, должно быть отличным от ноля
+// если скрипт только на одно использование - в Val2 - нужно указать любое значение, это может использоваться для охраняемых предметов, например оружия
+#define STR_DONTOUCH     (540)
+
+
+void _GuardedItemInit(Item& item, bool firstTime)
+{
+	item.SetEvent(ITEM_EVENT_SKILL,"_GuardedItemSkill");
+}
+
+bool _GuardedItemSkill(Item& item, Critter& cr, int skill)
+{
+	Map@ map = cr.GetMap();
+	if(!valid(map))
+		return false;
+	int  role = item.Val1;
+	bool reset = (item.Val2 > 0 ? true : false);
+	if(cr.IsPlayer())
+	{
+		uint guards = map.GetNpcCount(role, FIND_LIFE|FIND_ONLY_NPC);
+		if(guards == 0)
+		{	
+			if(reset)
+			{
+				item.SetEvent(ITEM_EVENT_SKILL, "");
+				item.SetScript(null);
+			}
+			if(item.GetType() == ITEM_TYPE_DOOR || item.GetType() == ITEM_TYPE_CONTAINER)
+			{
+				if(item.Val0 > 0)
+					CreateTimeEvent(__FullSecond + REAL_MINUTE(item.Val0 == 0? 2 : item.Val0), "e_AutoCloseDoor", item.Id, true);
+			}
+			return false;
+		}
+		Critter@ guard = map.GetNpc(role, FIND_LIFE|FIND_ONLY_NPC, Random(0, guards-1));
+		if(valid(guard))
+		{
+			GameVar@ counter = GetUnicumVar(UVAR_guarded_item_skill, guard.Id, cr.Id);
+			if(valid(counter))
+			{
+				if(counter < 2)
+				{
+					NpcPlane@[] planes;
+					if(guard.GetPlanes(AI_PLANE_ATTACK, planes) > 0)
+					{
+						for(uint i = 0, l= planes.length(); i < l; i++)
+						{
+							if(planes[i].Attack_TargId == cr.Id)
+							{
+								if(reset)
+								{
+									item.SetEvent(ITEM_EVENT_SKILL, "");
+									item.SetScript(null);
+								}
+								return false;
+							}
+						}
+					}
+					counter = counter.GetValue() + 1;
+					guard.SayMsg(SAY_SHOUT, TEXTMSG_TEXT, STR_DONTOUCH, "$pname" + GetPlayerName(cr.Id));
+				}else{
+					counter = 0;
+					AddAttackPlane(guard, 0, cr,true);
+				}
+			}
+		}		
+		return true;
+	}
+	else
+	{
+		// Нпц такие двери открыть тоже не смогут
+		return true;
+	}
+}
+
+
+bool berlin_bunker_terminal(Critter& player, Scenery& terminal, int skill, Item@ item)
+{
+	Map@ map=player.GetMap();
+	if(!valid(map)) return true;
+	Item@ polesilowe=map.GetItem(144,52, PID_EB_LONG_HOR);
+	if(player.IsPlayer() && valid(polesilowe))
+	{
+		DeleteItem(polesilowe);
+		uint[] values={map.Id};
+		CreateTimeEvent(__FullSecond+REAL_SECOND(5), "e_berlin_bunker_terminal", values, true);
+	}
+	return true;
+}
+
+uint e_berlin_bunker_terminal(uint[]@ values)
+{
+	Map@ map=GetMap(values[0]);
+	if(!valid(map)) return 0;
+	map.AddItem( 144, 52, PID_EB_LONG_HOR, 1);
+	return 0;
+}
+
+bool berlin_bunker_terminal2(Critter& player, Scenery& terminal, int skill, Item@ item)
+{
+	Map@ map=player.GetMap();
+	if(!valid(map)) return true;
+	Item@ polesilowe=map.GetItem(138,80, PID_EB_LONG_HOR);
+	if(player.IsPlayer() && valid(polesilowe))
+	{
+		DeleteItem(polesilowe);
+		uint[] values={map.Id};
+		CreateTimeEvent(__FullSecond+REAL_SECOND(5), "e_berlin_bunker_terminal2", values, true);
+	}
+	return true;
+}
+
+uint e_berlin_bunker_terminal2(uint[]@ values)
+{
+	Map@ map=GetMap(values[0]);
+	if(!valid(map)) return 0;
+	map.AddItem( 138, 80, PID_EB_LONG_HOR, 1);
+	return 0;
+}

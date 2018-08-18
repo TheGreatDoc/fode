@@ -1,0 +1,45 @@
+[comment]
+Aaoe eiiiaioa?ee / Your comments.
+
+[data]
+lang=russ engl pols germ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 &
+
+[russ]
+{100}{}{Citizen.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a citizen.}
+{210}{}{You see a citizen.}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{I think I'm Radiated.@@Don't get any Wrong Ideas!@@Don't Stare at me Like that!@@Please don't Hurt my Family.@@Please, I need food.@@Hello.@@Hi.@@Do you need something?@@Anything's wrong?@I don't have the Time to talk right now, Sorry.}
+
+[engl]
+{100}{}{Citizen.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a citizen.}
+{210}{}{You see a citizen.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{I think I'm Radiated.@@Don't get any Wrong Ideas!@@Don't Stare at me Like that!@@Please don't Hurt my Family.@@Please, I need food.@@Hello.@@Hi.@@Do you need something?@@Anything's wrong?@I don't have the Time to talk right now, Sorry.}
+
+[pols]
+{100}{}{Citizen.}
+{110}{}{avatar_kipelov.png}
+{200}{}{Widzisz mieszkańca tutejszej miejscowości.}
+{210}{}{Widzisz mieszkańca tutejszej miejscowości.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Cholera, chyba jestem napromieniowany.@@Nie podejmuj pochopnych wniosków!@@Nie patrz na mnie tak!@@Nie rób krzywdy mojej rodzinie.@@Masz jakieś żarcie?@@Witaj.@@Cześć.@@Potrzebujesz czegoś?@@Wszystko w porządku?@Wybacz, nie mam czasu na rozmowę.}
+
+[germ]
+{100}{}{none}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{I think I'm Radiated.@@Don't get any Wrong Ideas!@@Don't Stare at me Like that!@@Please don't Hurt my Family.@@Please, I need food.@@Hello.@@Hi.@@Do you need something?@@Anything's wrong?@I don't have the Time to talk right now, Sorry.}
+

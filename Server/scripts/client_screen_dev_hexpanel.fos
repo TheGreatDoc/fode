@@ -1,0 +1,409 @@
+//Client GUI DEV Panel
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+IGUIScreenOpt @DEVHexPanelOpt;
+IGUIElementEditBoxOpt @SpawnItemEditBoxOpt;
+IGUIElementEditBoxOpt @SpawnItemCountEditBoxOpt;
+IGUIElementEditBoxOpt @SpawnCritterEditBoxOpt;
+IGUIElementEditBoxOpt @SpawnCritterCountEditBoxOpt;
+IGUIElementEditBoxOpt @TeleportPlayerEditBoxOpt;
+IGUIElementEditBoxOpt @ServerMessageEditBoxOpt;
+IGUIElementEditBoxOpt @TeleportToPlayerEditBoxOpt;
+uint16 PointedX;
+uint16 PointedY;
+
+class TeleportButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Teleport",PointedX,PointedY,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+	}
+}
+
+class GlobalMapButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_GlobalMap",0,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+	}
+}
+
+class SpawnItemButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		SpawnItemEditBoxOpt.Text("");
+		SpawnItemEditBoxOpt.setFocused(true);
+		SpawnItemCountEditBoxOpt.Text("1");
+		SpawnItemCountEditBoxOpt.setFocused(false);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_SPAWN_ITEM,0,0,0);
+	}
+}
+
+class SpawnCritterButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		SpawnCritterEditBoxOpt.Text("");
+		SpawnCritterEditBoxOpt.setFocused(true);
+		SpawnCritterCountEditBoxOpt.Text("1");
+		SpawnCritterCountEditBoxOpt.setFocused(false);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_SPAWN_CRITTER,0,0,0);
+	}
+}
+
+class TeleportPlayersButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportPlayers",PointedX,PointedY,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+	}
+}
+
+class RemoveItemsFromGroundButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_RemoveItemsFromGround",0,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+	}
+}
+
+class TeleportPlayerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		TeleportPlayerEditBoxOpt.Text("");
+		TeleportPlayerEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_TELEPORT_PLAYER,0,0,0);
+	}
+}
+
+class ServerMessageButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ServerMessageEditBoxOpt.Text("");
+		ServerMessageEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_SERVER_MESSAGE,0,0,0);
+	}
+}
+
+class TeleportToPlayerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		TeleportToPlayerEditBoxOpt.Text("");
+		TeleportToPlayerEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_DEV_HEXPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER,0,0,0);
+	}
+}
+
+class SpawnItemButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=SpawnItemEditBoxOpt.getText();
+		int pid=0;
+		StrToInt(str,pid);
+		string @str2=SpawnItemCountEditBoxOpt.getText();
+		int count=0;
+		StrToInt(str2,count);
+		int[]count_tab={count};
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SpawnItem",PointedX,PointedY,pid,null,count_tab);
+		HideScreen(CLIENT_SCREEN_DEV_SPAWN_ITEM,0,0,0);
+	}
+}
+
+class SpawnCritterButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=SpawnCritterEditBoxOpt.getText();
+		int pid=0;
+		if(str=="u") pid=5101;
+		else if(str=="n") pid=5001;
+		else StrToInt(str,pid);
+		string @str2=SpawnCritterCountEditBoxOpt.getText();
+		int count=0;
+		StrToInt(str2,count);
+		int[]count_tab={count};
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SpawnCritter",PointedX,PointedY,pid,null,count_tab);
+		HideScreen(CLIENT_SCREEN_DEV_SPAWN_CRITTER,0,0,0);
+	}
+}
+
+class TeleportPlayerButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportPlayer",PointedX,PointedY,0,TeleportPlayerEditBoxOpt.getText(),null);
+		HideScreen(CLIENT_SCREEN_DEV_TELEPORT_PLAYER,0,0,0);
+	}
+}
+
+class ServerMessageButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_server_message",0,0,0,ServerMessageEditBoxOpt.getText(),null);
+		HideScreen(CLIENT_SCREEN_DEV_SERVER_MESSAGE,0,0,0);
+	}
+}
+
+class TeleportToPlayerButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportToPlayer",0,0,0,TeleportToPlayerEditBoxOpt.getText(),null);
+		HideScreen(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER,0,0,0);
+	}
+}
+
+void InitDEVHexPanel()
+{
+	@DEVHexPanelOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_HEXPANEL,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_HEXPANEL,"DEV Panel\nFree hex", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	TeleportButtonClass TeleportButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Teleport", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportButton);
+	
+	GlobalMapButtonClass GlobalMapButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Global Map", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(GlobalMapButton);
+	
+	SpawnItemButtonClass SpawnItemButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,55)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Spawn item", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(SpawnItemButton);
+	
+	SpawnCritterButtonClass SpawnCritterButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,70)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Spawn crit.", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(SpawnCritterButton);
+	
+	TeleportPlayersButtonClass TeleportPlayersButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,85)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Tp. players", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportPlayersButton);
+	
+	RemoveItemsFromGroundButtonClass RemoveItemsFromGroundButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,100)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Remove items", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(RemoveItemsFromGroundButton);
+	
+	TeleportPlayerButtonClass TeleportPlayerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,115)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Tp. player", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportPlayerButton);
+	
+	ServerMessageButtonClass ServerMessageButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,130)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Server msg.", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ServerMessageButton);
+	
+	TeleportToPlayerButtonClass TeleportToPlayerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_HEXPANEL, 0,145)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("To player", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportToPlayerButton);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_SPAWN_ITEM,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SPAWN_ITEM,"Item PID:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SpawnItemEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SPAWN_ITEM,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SPAWN_ITEM,"Count:", 0, 36)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SpawnItemCountEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SPAWN_ITEM,30,46)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	SpawnItemButtonClass2 SpawnItemButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SPAWN_ITEM, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("SPAWN", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SpawnItemButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_SPAWN_CRITTER,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SPAWN_CRITTER,"Critter PID:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SpawnCritterEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SPAWN_CRITTER,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SPAWN_CRITTER,"Count:", 0, 36)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SpawnCritterCountEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SPAWN_CRITTER,30,46)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	SpawnCritterButtonClass2 SpawnCritterButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SPAWN_CRITTER, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("SPAWN", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SpawnCritterButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_TELEPORT_PLAYER,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_TELEPORT_PLAYER,"Enter player name.", 0, 20)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@TeleportPlayerEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_TELEPORT_PLAYER,30,37)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TeleportPlayerButtonClass2 TeleportPlayerButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_TELEPORT_PLAYER, 80,57)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("TELEPORT", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TeleportPlayerButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_SERVER_MESSAGE,"big_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SERVER_MESSAGE,"Enter server message.", 0, 13)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@ServerMessageEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SERVER_MESSAGE,30,24)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,25)
+		.Margins(3,0,3,0)
+		.MaxLen(800)
+		.BackgroundPic("editbox_big.png");
+	
+	ServerMessageButtonClass2 ServerMessageButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SERVER_MESSAGE, 80,119)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("SEND", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(ServerMessageButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER,"Enter player name.", 0, 20)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@TeleportToPlayerEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER,30,37)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TeleportToPlayerButtonClass2 TeleportToPlayerButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_TELEPORT_TO_PLAYER, 80,57)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("TELEPORT", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TeleportToPlayerButton2);
+}

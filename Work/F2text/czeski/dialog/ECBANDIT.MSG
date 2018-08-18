@@ -1,0 +1,24 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš banditu.}
+{101}{}{Vidíš banditu.}
+{102}{}{Vidíš lupièe.}
+{103}{}{Vidíš lapku.}
+{104}{}{Vidíš vandráka.}
+
+{200}{}{Vzdej se!}
+{201}{}{Peníze, nebo život.}
+{202}{}{To je pøepadení.}
+{203}{}{Dej mi všechny své cennosti.}
+{205}{}{Dej pracky nahoru.}
+{206}{}{Dej ty pracky vzhùru.}
+{207}{}{Jen žádnou paniku. Za chvilku bude po všem.}
+{208}{}{Podívejme se tam na ty ruce.}
+{209}{}{Kryjte mì, chlapi.}
+
+{210}{}{Nedìlej si to ještì horší.}
+{211}{}{Odevzdejte mi koøist.}
+{212}{}{Na nì chlapi!}
+{213}{}{Všechny je pobijte.}
+{214}{}{Slibuji ti rychlou smrt.}
+{215}{}{Vzhùru do nebe.}
+{216}{}{Ani se nehni.}

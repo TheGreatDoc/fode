@@ -1,0 +1,316 @@
+#tento soubor pøeloil Vladimir "SIR QWERTY" Sojka - http://qwerty.moje.cz
+# 0. QUICK LOOK (WTG)
+{100}{}{Vidíš paní Wrightovou.}
+
+# 0. LOOK (ETHYL FOUND STILL)
+{150}{}{Vidíš podsaditìjší enu se smutnım vırazem ve tváøi. Vypadá sklesle a obèas si povzdychne.}
+{151}{}{Vidíš paní Wrightovou. Vypadá sklesle a obèas si povzdychne.}
+
+# 1. LOOK (ETHYL IS NORMAL)
+{175}{}{Vidíš boubelatou rùolící enu. Je v dobré náladì a nìco si pobrukuje.}
+{176}{}{Vidíš paní Wrightovou. Je v dobré náladì a nìco si brouká.}
+
+# 2. SPIRITS CRUSHED (WTG)
+{200}{}{*Ach jo*}
+{201}{}{Jak mi to jenom mohl udìlat?}
+
+# 3. DAY/NIGHT FLOAT (WTG)
+{205}{}{Další krásnı den v našem krásném Renu!}
+{206}{}{::Pohvizduje si zatímco ty pracuješ... ::}
+{207}{}{Tak do práce! To je pøece potìšení, dìlat práci a dìlat ji dobøe!}
+{208}{}{::Hmmmm-hmmm-hmmm-hm-hm -hmmmm::}
+{209}{}{Další krásná noc v našem krásném Renu!}
+
+# 5. NORMAL INTRO (WTG)
+{210}{}{(ena pøekvapenì vyskoèí.) Boínku, vy jste mì ale vystrašil! (Zamourá na tebe.) Ano ?}
+{211}{}{(Paní Wrightová pøekvapenì vyskoèí.) Boe! Vy jste mì ale vystrašil! (Zamourá na tebe.) Ááá, to jste zase vy!}
+{212}{}{Co, coe?}
+{213}{}{Vítejte, dobrı den!}
+{214}{}{Ty ne máma... Mami? Mamiii...?! Mami! Já jít hledat máma.}
+{215}{}{Kdo jste?}
+{216}{}{Všiml jsem si, jak si tu tak broukáte madam a myslel jsem, e se zastavím na kus øeèi. Dneska máme pøekrásné poèasí, e?}
+{217}{}{Promiòte. Spletla jsem si vás s nìkım jinım.}
+
+# 6. WHO WHO? HELLO, HELLO! (MRS. WRIGHT HAS STUFF) (5)
+{220}{}{(Vypadá zmatenì a mìøí si tì od hlavy k patì.) }
+{222}{}{(Zaloví v záhybech svıch rozmìrnıch šatù, vytáhne nìjaké vìci a vtiskne ti je do dlanì.) Tady máš, synku. Vezmi si to.}
+{223}{}{Díky moc}
+{224}{}{Odejdeš}
+
+# 7. WHO WHO? HELLO, HELLO! (MRS. WRIGHT HAS NOTHING) (5)
+{230}{}{(Ach vy chudáèku! Máte urèitì úpal... }
+{231}{}{Ach vy neboáku... nemáte kam jít? }
+{232}{}{(Zaloví v kapsách.) Ké bych tak pro vás mìla nìjaké jídlo nebo pití...}
+
+# 8. CHARISMA INTRO = WHO ARE YOU? (5)
+{240}{}{Ano, to máme. (Usmìje se.) Jsem paní Ethyl Wrightová, hlava Hnutí za ukáznìnost v New Renu. A kdo jste vy?}
+{241}{}{Jsem poutník a hledám GECK. Neslyšela jste nìkdy o nìjakém?}
+{242}{}{Jsem poutník hledající místo nazıvané Vault 13. Nevíte, kde to je?}
+{243}{}{Hnutí za ukáznìnost?}
+{244}{}{Paní Wrightová? Není váš manel hlavou rodiny Wrightù?}
+{245}{}{Vy jste Richardova matka, e? Doneslo se mi, e nedávno zemøel.}
+{246}{}{Je mi líto, ale musím u bìet.}
+
+# 9. WHO ARE YOU? (5)
+{250}{}{Já? Jsem paní Ethyl Wrightová, hlava Hnutí za ukáznìnost tady v New Renu. (Prohlíí si tì.) A kdo jste vy?}
+{251}{}{Já jsem }
+{1251}{}{. Rád bych se zeptal na nìkolik vìcí ohlednì New Rena...}
+{252}{}{Jsem poutník a zajímalo by mì pár vìcí o New Renu...}
+{254}{}{Rád bych si tu s vámi dál povídal, ale u musím jít.}
+
+# 10. I AM A SIMPLE TRAVELLER/I AM [X] (9)
+{260}{}{Ale ne! Ty jsi DIVOCH, e? Tvùj pøízvuk tì prozradil! (Zaène mluvit víc nahlas a pooommmaalluu.)
+ TAK TEDY -- VÍTÁM TÌ V NAŠEM MÌSTÌ!}
+{261}{}{Co ty øíkat? Já obyèejnı divoch. Nerozumìt tebe.}
+{262}{}{Nejsem ani hluchı, ani hloupı. Rozumím vám kadé slovo, nemusíte se mnou mluvit jako s primitivem.}
+{263}{}{Uh, díky. Mám nìjaké otázky ohlednì New Rena...}
+{264}{}{U MUSÍM JÍT.}
+
+# 11. WHAT YOU SAY? MEA NOA UNDERSTANDA YOUA (10)
+{270}{}{ØÍKALA JSEM, *JÁ*... (Ukazuje na sebe.) ...TÌ VÍTÁM... (Ukazuje na tebe.) ... v... (Ukáe na mìsto okolo.) ...MÌSTÌ TISÍCE SVÌTEL!}
+{272}{}{Moná si myslíte, e tohle high-tech brnìní na mì jen tak spadlo cestou, co ? Hele, pøestaòte se mnou mluvit jak s dubem, jo?}
+{273}{}{Myslíte, e tahle zbraò je nìjakı kmenovı talisman, kterı musím vláèet všude s sebou nebo co? Pøestaòte na mì hulákat jak na tupce, ok?}
+{274}{}{JÁ JÍT NEBO ZABÍT TY JÁ MUSETI.}
+
+# 12. WOMAN, I AM NEITHER DEAF NOR STUPID . . . (10)
+{280}{}{Ach! Promiòte! (Vypadá vystrašenì.) Pardon, pardoon! Já jsem jenom myslela e... e... no to je jedno, nechme to bıt.
+ Co pro vás mohu udìlat?}
+{281}{}{Rád bych se zeptal na pár vìcí ohlednì New Rena...}
+{282}{}{Nic se nestalo. Musím u stejnì jít.}
+
+# 13. HAVE YOU SEEN A GARDEN O' EDEN CREA KIT? TUNED DOWN VOICE (8, 24)
+{290}{}{(Zamourá a zamraèí se.) Prosím? G.E.- co? Ne, o takové vìci jsem nikdy neslyšela, lituji.}
+{291}{}{A co...}
+{292}{}{Tak nic, já pùjdu.}
+
+# 14. HAVE YOU HEARD OF A PLACE CALLED VAULT 13? (8, 24)
+{300}{}{Vault 13? (Vypadá zmatenì.) Ne, vánì, nikdy jsem... poèkat. Teï si vzpomínám. Nìjakı Vault JE nìkde odtud na severovıchod.
+ To je to co hledáte?}
+{301}{}{Ne, to není ono. Ale moná mi mùete pomoci s jinımi otázkami...}
+{302}{}{Moná. Mùete mi ještì s nìèím pomoci...?}
+{303}{}{Moná. Nashle... a dík za informace.}
+
+# 15. TEMPERANCE UNION . . . (8, 24)
+{310}{}{Ale jistì! (Hrozí ti prstem.) New Reno je krásné mìsto, ale je tu také mnoho høíchu - všechno to pochází z démona alkoholu... nebo jak tomu vy divoši øíkáte... (Dramaticky se odmlèí)... OHNIVÁ VODA!}
+{311}{}{Ááá, my "primitivové" tomu také øíkáme ETHYLalkohol.}
+{312}{}{Ano, ale co to Hnutí za ukáznìnost? Jak je to s ním?}
+{313}{}{Musím u jít. Myslím, e mì moji soukmenovci u shánìjí.}
+
+# 16. TEMPERANCE UNION, VOL 2 . . . (15, 18, 19, 20, 50)
+{315}{}{(Plete nesmysly.) }
+{316}{}{Hnutí za ukáznìnost je tu proto, aby pomáhalo lidem odvrátit se od chlastu k perspektivnímu a smysluplnému ivotu.}
+{317}{}{Ó. A co tøe --}
+{318}{}{Jako napøí --}
+
+# 17. PEOPLE LIKE GAMBLING, DRINKING AND WHORING 1. . . (50)
+{320}{}{(Vypadá šokovanì.) Urèitì se mılíš. I takovı divoch jako ty nemùe vánì mys--}
+{321}{}{Není nic lepšího, ne trocha toho grupáèe, hodit partièku mariáše, vyrochnit se v hnoji a veèer si vypít vìdro kysaného oslího mlíka. Tak ije pravı èlen KMENE!}
+{322}{}{Není nic lepšího, ne trocha toho grupáèe, hodit partièku mariáše, vyrochnit se v hnoji a veèer si vypít vìdro kysaného oslího mlíka. Tak ije správná èlenka KMENE!}
+{323}{}{Nechám to na vaší pøedstavivosti. Kdy tak vidím ty moné odpovìdi vıše, myslím, e to tak bude lepší.}
+{324}{}{U šamanova kolíku! Všechny ty tøi "neøesti" k smrti rád provozuji! Pokud mono NAJEDNOU!}
+
+# 18. BUT PEOPLE LIKE GAMBLING, DRINKING AND WHORING . . . (17, 50)
+{325}{}{U Milouše Jakeše a jeho matky! Nevím, co vy divoši provozujete za ohavné orgie ve svıch brlozích neøesti, ale tady v New Renu je to jiní! My jsme CIVILIZOVANÍ lidé!}
+{326}{}{U nás ve vesnici nemáme ádné ty ïábelské ohavnosti, které jste jmenovala. Moná bychom vás "civilizované" lidi mohli ledacos nauèit.}
+{327}{}{Kdo všechno je èlenem vaší organizace?}
+{328}{}{Èím se ta vaše organizace zabıvá?}
+{329}{}{Jistì. Díky za vaše postøehy. Sbohem.}
+
+# 19. WHO'S ALL IN YOUR ORGANIZATION? (18, 50)
+{330}{}{(Zamyslí se.) Tøeba Otec Tully.}
+{331}{}{(Zamyslí se.) Dobrı páter Tully byl našim èlenem. Ne umøel.}
+{332}{}{Eh, Otec Tully je nejhorší piják 'ohnivé vody', jakı kdy spatøil svìtlo tohohle svìta. Jenom z toho smradu, co z nìj táhnul, jsem se skoro pøioral.}
+{333}{}{Otec Tully?}
+{335}{}{U jsem se dozvìdìl dost. Radši u pùjdu.}
+
+# 20. TULLY IS A DRUNKARD (19)
+{340}{}{Tak, a teï mì dobøe poslouchej. (Zamraèí se.) Takovéhle pomluvy tu nehodlám trpìt. Chudák Otec mìl sice s pitím problémy, ale skrzevá pomoc našeho Hnuti se s tím u vypoøádal a jeho duše je èistá jako lilium!}
+{341}{}{Vím naprosto urèitì, e dobrı Otec pùjde... ne, pobìí jako ohaø k nejbliší pípì... pokud se u nezpil do bezvìdomí.}
+{342}{}{To není pomluva. Velkı duchovní vùdce New Rena je asi tak bez høíchu jako... jako New Reno.}
+{343}{}{Dobøe, u mlèím. Take èím se Hnutí zabıvá?}
+{344}{}{Aha, tak to je dobøe. Nashle.}
+
+# 21. TULLY? (19)
+{345}{}{O ano, Otec Tully, duchovní vùdce New Rena. Stará se o jedinı kostel, kterı tady v New Renu máme. Toho prostì MUSÍTE vidìt. Je tak povznášející vidìt nìkoho tak bohabojného!}
+{346}{}{Dobøe, moná za ním zajdu. Èím se tedy Hnutí za ukáznìnost zabıvá?}
+{347}{}{Hmm, pùjdu se za ním podívat.}
+
+# 22. SUPER OFFENSIVE (18, 20)
+{350}{}{Hmf! e vám není hanba! Myslím, e byste mìl odejít a víckrát se sem u nevracet.}
+{351}{}{Taky øešení.}
+{352}{}{Nu dobrá.}
+
+# 23. ISN'T YOUR HUSBAND THE HEAD OF FAMILY WRIGHT? (8, 24)
+{355}{}{Ano, je, to je. (Znovu si tì zmìøí pohledem.) Vy snad znáte mého mue?}
+{356}{}{Ano, znám ho. Wrightova rodina kontroluje veškerı obchod s alkoholem v New Renu.}
+{357}{}{Neznáme se osobnì, ale vím, e Wrightova rodina kontroluje veškerı obchod s alkoholem v New Renu.}
+{358}{}{Ne.}
+{359}{}{Ne, neznám. Zatím nashle.}
+
+# 24. NO, I DON'T KNOW YOUR HUSBAND/2nd INTRO (WTG, 12, 13, 14, 24, 29, 30, 31, 32, 34)
+{360}{}{Aha. (Zamrká.) Take co pro vás mohu udìlat?}
+{361}{}{Take co chcete vìdìt?}
+{362}{}{(Pøekvapenì vyskoèí.) Boe vy jste mì ale vystrašil! (Zarazí se.) Heleïme se koho to k nám zase vítr zavál!}
+{363}{}{Co jste to pøedtím øíkala o Hnutí za ukáznìnost?}
+{364}{}{Hledám GECK.}
+{365}{}{Hledám místo s názvem Vault 13.}
+{366}{}{Nemılím-li se, váš manel je hlavou rodiny Wrightù?}
+{368}{}{Nic zvláštního. Radìji pùjdu.}
+{369}{}{Promiòte mi, ale hroznì pospíchám. Sbohem.}
+
+# 25. I KNOW HE DEALS IN ALCOHOL . . . (23)
+{375}{}{(Zamraèí se.) Co to je za bláboly? "Obchod s alkoholem v New Renu?" Vím, ze mùj mu se rád napije, ale u se toho zlozvyku zbavil...}
+{376}{}{Jo, stejnì jako se zbavil všech, co mu kdy stáli pøi obchodování v cestì.}
+{377}{}{Ethyl, moná jste si toho JEŠTÌ nevšimla, ale váš manel je hlavou mafie, která má na starosti distribuci alkoholu v New Renu. To, e se obèas napije, je zøejmì jeho NEJMENŠÍ zloèin.}
+{378}{}{Aha, tak to byl jinı pan Wright. Omlouvám se. Sbohem.}
+
+# 26. YOUR HUSBAND IS THE LEADER OF AN INFLUENTIAL CRIME FAMILY HERE IN NEW RENO . . . (25)
+{380}{}{Coe... mùj ty Tondo kudrnatej! U sta hromù! (Zhluboka se nadechne.)}
+{381}{}{To je VELICE váné obvinìní, mladı mui.}
+{382}{}{To je VELICE váné obvinìní, mladá dámo.}
+{383}{}{Uvìdomuji si, e --}
+{384}{}{Podívejte mladá dámo, moná byste m--}
+
+# 27. YOUR HUSBAND IS THE LEADER OF AN INFLUENTIAL CRIME FAMILY HERE IN NEW RENO . . . (51)
+{385}{}{Ne, VY poslouchejte! Není tajemstvím, e mùj manel KDYSI vlastnil soukromou palírnu. NICMÉNÌ pøísahal, e je jen pro jeho vlastní potøebu a NA MOJE PØÁNÍ se jí ihned zbavil!}
+{386}{}{Ne, opravdu? Moná byste --}
+{387}{}{Helejte se, on --}
+
+# 28. I WISH NO HARM ON YOUR HUSBAND, I ONLY WISH TO HELP HIM BREAK THE EVIL STRANGLEHOLD OF ALCOHOL . . . (52)
+{390}{}{(Zamraèí se a dá si ruce v bok.) Já se o tom pøesvìdèím, to si tedy pište! A jestli zjistím, e jsou to všechno li, bude pro vás nejlepší kdy okamitì opustíte mìsto. Poèkejte na mì zítra ráno pøed kostelem a uvidíme.}
+{392}{}{Dobøe. Budu tam. Zatím nashle.}
+
+# 29. RICHARD WRIGHT (8, 24)
+{395}{}{(Posmutní.) Ano, mùj syn Richard... on... ano, opustil nás. Já... hmmm. Ano. (Sklopí oèi.) On...}
+{396}{}{Prı se pøedávkoval Jetem... je to pravda?}
+{397}{}{To je mi moc líto. Jako bych nic neøekl. Ještì by mì zajímalo...}
+{398}{}{To je mi moc líto. Radši u pùjdu.}
+
+# 30. RICHARD WRIGHT: JET? (29)
+{400}{}{(Zatne zuby.) To ïáblovo sémì! Vdycky jsem si myslela, e jsem ho nauèila, aby se ani nepøiblioval k takovému svinstvu, ale on...}
+{401}{}{Mùete mi øíci, kde mohl tolik Jetu sehnat?}
+
+# 31. RICHARD WRIGHT: JET 2? (30)
+{405}{}{Já nevím! (Zatne ruce v pìst.) Prodávají ten JED na kadém rohu! VŠUDE, kam se jen podíváš, se ten šmejd válí...!}
+{406}{}{Znáte konkrétnì nìjaké dealery?}
+{407}{}{Je mi to líto. Jako bych nic neøekl. Ještì by mì zajímalo...}
+
+# 32. DO YOU KNOW ANY SPECIFIC DEALERS? (31)
+{410}{}{Ne osobnì. Mají dost rozumu, aby utekli kdykoliv se pøiblíím... ale houfují se jako mouchy na Ulice panen, pøed branou do mìsta a u kasina.}
+{411}{}{Aha. Ještì by mì zajímalo...}
+
+# 35. PORN STAR INTRO (WTG)
+{1415}{}{(Pøekvapenì vyskoèí.) Panenko skákavá! (Pohlédne na tebe a pak se zamraèí.) Taková nestydatost!}
+{415}{}{Odstup, démone prostopášnosti! Ty, je smilníš ve filmu a nièíš lidskou mravnost!}
+{416}{}{Jaká nestydatost! e máš ale drzost vrátit se sem! Ty, je smilníš ve filmu a nièíš lidskou mravnost!}
+{417}{}{Coe to? Já, je mìlním ve filcu mravencovitost èehoe?}
+{418}{}{Jéééjej! Velká slova! Velká cizí slova! Rychle pryè!}
+{419}{}{Jo, to jsem já. Máš zájem, kotì? Mám rád takové maca.. mohutné eny, jako jsi ty. (Svùdnì zamrkáš.) Uvolnìte si trochu ty tìsnı podvazky a mùem jít na to.}
+{420}{}{Podívejte, byl jsem mladı a potøeboval peníze...}
+{421}{}{Vidím, e si budeme rozumìt. Zatím nashle.}
+
+# 36. INTERESTED IN A JOB? I LIKE BIG WOMEN LIKE YOU. (35)
+{425}{}{Ven! Okamitì vypadnìte!}
+{426}{}{Já jít! Já hned jít!}
+{427}{}{No jo, no jo, u padám!}
+{428}{}{No bóe. Mìli by ti pøerušit krevní obìh hodnì tupou kudlou.}
+
+# 37. BAD INTRO (WTG)
+{1430}{}{(Pøekvapenì vyskoèí.) Boíèku!}
+{430}{}{(Podívá se na tebe a pak zpozoruje tvé otrokáøské ocejchování. Její hlas zní jako kdy se lámou skály.) }
+{1431}{}{(Pøekvapenì vyskoèí.) Boe mùj! (Podívá se na tebe a zpraí tì pohledem.)}
+{431}{}{Ano?}
+{432}{}{Zase vy. My dva si nemáme o èem promluvit.}
+{433}{}{Já... eh... Já... chtít... uh... já hledat...uh ...sakra! Já nesnášet hloupı já! Já nesnášet!}
+{434}{}{Já... uh... Tøpytítko!}
+{435}{}{Mám nìjaké otázky...}
+{436}{}{Vidím, e s vámi u ádná øeè nebude. Sbohem.}
+
+# 38. BAD REACTION. (37)
+{440}{}{Aha. Myslím, e vám nemohu v nièem pomoci. Sbohem.}
+{441}{}{Aha. Myslím, e vám nemohu v nièem pomoci. Dobrou noc.}
+{442}{}{::Pokrèí rameny a odchází.::}
+{443}{}{Tak se mìjte. Sbohem.}
+{444}{}{Tak se mìjte. Dobrou noc.}
+
+# 39. MEET OUTSIDE CHURCH 1 . . . (WTG, 28)
+{450}{}{(Vidíš paní Wrightovou. Vypadá znièenì.)}
+{451}{}{Uh...jste v poøádku Ethyl?}
+{452}{}{Tak... co jste zjistila?}
+{453}{}{A-há! Tak mìl jsem pravdu nebo jo?}
+{454}{}{To je mi líto. Ještì se vrátím.}
+
+# 40. ETHYL, ARE YOU OKAY? (39)
+{460}{}{Všechno byla pravda... úplnì všechno. (Vzdychne) On se té kolony palírny. Ani náhodou! (Zamraèí se.) A já jsem mu vìøila, ale ten alkohol ho donutil mi LHÁT! *Lhát své vlastní enì!*}
+{461}{}{::Necháváš jí vymluvit.::}
+{462}{}{Ano, Ethyl... další dùkaz toho, jak je alkohol ïábelskı. Nutí lidi dìlat hrozné vìci. Zvláš kdy se k tomu nachomejtnou Peníze a Moc.}
+{463}{}{Asi chcete bıt teï chvíli sama... Vrátím se pozdìji.}
+
+# 41. MEET OUTSIDE CHURCH 1 . . . (40)
+{470}{}{(Zhluboka se nadechne.) Ale JÁ ho donutím dodret slib, i kdybych tu palírnu mìla vyhodit vlastnoruènì do luftu. A pak si s Orvillem pìknì popovídám! Uvidíme, co na to ten skunk øekne!}
+{471}{}{Netrapte se tím, paní Wrightová. U jsem se o to postaral.}
+{472}{}{Kde je ta palírna? Já ji znièím za vás.}
+{473}{}{Ne, nechte to na mnì. Je pod eleznièní stanicí, e ano? Já si s tím poradím.}
+{474}{}{Dobrı nápad. Moná byste to mìla pøece jen udìlat vy.}
+{475}{}{Zatím nashle.}
+
+# 42. GO GET "EM . . . (41)
+{1480}{}{Ty bys ji znièil? Tak... tak dobøe... (Nadechne se..)}
+{480}{}{...je v podzemí eleznièní stanice u nás za barákem!}
+{481}{}{Rozbij ji na kousíèky! Rozmetej na atomy! A nezbyde ani støípek!}
+{482}{}{Stani se...}
+
+# 43. GO GET "EM . . . (41.)
+{490}{}{To taky udìlám, u ïasa! (Vyhrne si rukávy. K tvému pøekvapení má svaly jako bedòák od Roulink Stounù.) Díky, e jsi mi otevøel oèi, cizinèe. Já u donutím svého mue SEKAT dobrotu, i kdybych mu mìla NASEKAT na holou.}
+{491}{}{Pìknì si tu pomstu uijte.}
+
+# 44. MEET OUTSIDE CHURCH 2 . . . (WTG)
+{500}{}{(Vidíš Ethyl. Jak tì vidí pøicházet, s nadìji k tobì vzhlédne.) U jsi...?}
+{501}{}{Srovnal jsem jí se zemí. Nezbylo z ní ani zblo. O všechno jsem se postaral.}
+{502}{}{Ještì ne. Kdee je ta palírna?}
+{503}{}{Ne, ještì jsem nemìl èas. Vrátím se a s tím budu hotov.}
+
+# 45. GO GET "EM 2. . . (44)
+{510}{}{Je ve sklepì eleznièní stanice u nás za barákem! Rozbij ji na kousíèky! Rozmetej na atomy! A nezbyde ani støípek!}
+{512}{}{Vrátím se hned jak s tím budu hotov.}
+
+# 46. VICTORY. . . (41, 44)
+{515}{}{(Do oèí jí vhrknou slzy.) Díky, cizinèe. Po dnešku je dobro tady v New Renu zase o trochu silnìjší. Nevím, jak ti podìkovat...}
+{516}{}{To nestálo za øeè. Dávejte na sebe pozor, paní Wrightová.}
+{517}{}{No, mám zrovna hluboko do kapsy...}
+
+# 47. VICTORY. . . (46)
+{520}{}{To mùeme lehce napravit. Pojï se mnou.}
+{521}{}{(Následuješ ji.)}
+{522}{}{To nestálo za øeè. Dávejte na sebe pozor, paní Wrightová.}
+
+# 48. VICTORY. . . (47)
+{525}{}{Tady se podívej. Všechno, co najdeš v té skøíòce, je tvoje. Trocha penìz na cestu... a takovou zvláš uiteènou vìcièku, která dokáe táhnout i toho nezabednìnìjšího osla. Dìkuji ti za vše co jsi pro mì udìlal.}
+{526}{}{Díky MOC, paní Wrightová.}
+
+# 49. FLOAT: AFTER COMPLETED MISSION (WTG)
+{530}{}{Díky za tvoji pomoc, a ije }
+{1530}{}{! Já u se postarám, aby Wrightova rodina odteï ila èestnım a spoøádanım ivotem.}
+
+# 50. TEMPERANCE UNION, VOL 2 . . . (16)
+{535}{}{Základy New Rena nemùou stát na hazardu, alkoholu a prostituci! Ne ne! Ne dokud je Ethyl Wrightová u vesla! Nic takového!}
+{536}{}{Ale lidé MILUJÍ hazard, chlast a dìvky. Tak tøeba já urèitì.}
+{539}{}{Promiòte, ale právì jsem si vzpomnìl, e musím vyøídit naléhavou záleitost, která nemùe bıt odloena.}
+
+# 51. YOUR HUSBAND IS THE LEADER OF AN INFLUENTIAL CRIME FAMILY HERE IN NEW RENO . . . (26)
+{540}{}{(Vybuchne.) Moná je ve vašem kmeni normální pomlouvat veøejnì ostatní, ale tady v New Renu tedy ne! Musíš mít poøádnou drzost, pøijít sem k nám a pøede mnou tu nestydatì pomlouvat mého manela!}
+{541}{}{Poslechnìte, já jen øíkám, e...}
+{542}{}{Pravda bolí. Myslím, e brzo budete hodnì nešastná. Sbohem.}
+{543}{}{Jak chcete. Sbohem.}
+
+# 52. YOUR HUSBAND IS THE LEADER OF CRIME FAMILY (27)
+{545}{}{Navíc se rozhodl mi pomoci zbavovat další závislé nešastníky toho odporného zlozvyku. Taková ohavnost jenom TVRDIT, e mùj manel prodává alkohol ostatním...}
+{546}{}{...je èistá pravda. Paní Wrightová, váš manel obchoduje s alkoholem po celém New Renu a podporuje tím alkoholismus. Dìlá to z mìsta ještì horší místo pro ivot, ne je. Pomozte mi tomu uèinit pøítr jednou provdy.}
+{547}{}{Jdìte se podívat do eleznièní stanice, jestli mi nevìøíte. Uvidíte, co tím myslím.}
+{548}{}{Vidím, e s vámi nebude ádná øeè, dokud vám to nebudu moci dokázat.}
+
+# 53. GO GET 'EM 2. . . (42)
+{550}{}{Ale nezapomeòte, nechci abyste nìjak ublíil mım dìtem, ádné zbranì! Oni nejsou zlé, jenom jsou... na špatné cestì. Budu se muset postarat o jejich nápravu...}
+{551}{}{Dobøe, nebojte se... nikomu neublíím.}
+{552}{}{Vrátím se, a s tím budu hotov. Nejdøív si ale musím zaøídit pár vìcí.}
+{553}{}{Eh, to nemohu zaruèit... moná byste mìla na tu práci sehnat nìkoho jiného.}

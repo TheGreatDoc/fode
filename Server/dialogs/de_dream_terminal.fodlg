@@ -1,0 +1,242 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+5 2030 @
+3 3000 None 1 #
+6 3010 @
+4 4000 None 1 #
+6 4010 @
+5 5000 None 1 #
+6 5010 @
+6 6000 None 1 #
+10 6010 R _script server_scripts@faction_blue 0  #
+10 6020 R _script server_scripts@faction_red 0  #
+7 6030 @
+7 7000 None 1 #
+10 7010 R _script server_scripts@faction_blue 0  #
+10 7020 R _script server_scripts@faction_red 0  #
+8 7030 @
+8 8000 None 1 #
+10 8010 R _script server_scripts@faction_blue 0  #
+10 8020 R _script server_scripts@faction_red 0  #
+9 8030 @
+9 9000 None 1 #
+10 9010 R _script server_scripts@faction_blue 0  #
+10 9020 R _script server_scripts@faction_red 0  @
+10 10000 None 1 #
+11 10010 #
+12 10020 #
+13 10030 #
+14 10040 @
+11 11000 None 1 #
+15 11010 @
+12 12000 None 1 #
+15 12010 @
+13 13000 None 1 #
+15 13010 @
+14 14000 None 1 #
+15 14010 @
+15 15000 None 1 #
+16 15010 #
+16 15020 #
+16 15030 @
+16 16000 None 1 #
+17 16010 R _script server_scripts@dream_choose_activity_1 0  #
+17 16020 R _script server_scripts@dream_choose_activity_2 0  #
+17 16030 R _script server_scripts@dream_choose_activity_3 0  #
+17 16040 R _script server_scripts@dream_choose_activity_4 0  #
+17 16050 R _script server_scripts@dream_choose_activity_5 0  #
+17 16060 R _script server_scripts@dream_choose_activity_6 0  #
+17 16070 R _script server_scripts@dream_choose_activity_7 0  #
+17 16080 R _script server_scripts@dream_choose_activity_8 0  @
+17 17000 None 1 #
+0 17010 R _script server_scripts@dream_finish 0  #
+0 17020 R _script server_scripts@dream_finish 0  &
+
+[engl]
+{100}{}{Terminal}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Hello there, Wastelander. Thank you for coming. You must wonder what you're doing here, and... well, probably a lot of other unnecessary questions, right?}
+{2010}{}{Who the hell are you? Where am I? Who are those guys and why did you bring me here? I want answers, NOW, FOR FUCK'S SAKE!}
+{2020}{}{To be blunt, I don't give a fuck. This place sucks balls. And stinks. I suppose you live here with your lovely apes, having nice parties, putting their big guns into your holodisks. Nothing feels like it eh? Mmmmmh. So deep in the turbines?}
+{2030}{}{Yes. I don't wanna seem indiscreet, but I would like to know where I am and who you are exactly.}
+{3000}{}{Ah, another hotblooded dumbass. Not really interesting, but it can still be funny to watch your actions. You are good at stirring shit up, aren't you?}
+{3010}{}{You didn't even answer my questions!}
+{4000}{}{Oh, a crazy one. You tried to be funny, I guess. I am proud of my receptivity to humor, but well... even I didn't laugh at this. Anyways, unpredictability is always curious to observe. You want to see the world burn, don't you?}
+{4010}{}{You didn't even answer my questions!}
+{5000}{}{Ah, and yet you are able to remain calm. That's a good thing. You may prove yourself useful in the future. So, what's you goal in life?}
+{5010}{}{You didn't even answer my questions!}
+{6000}{}{True. And I won't, because you don't need to know anything about this place or myself. The sooner you respond, the sooner all of this will end. Think of it as a test. A simple test about your motives, just answer when I ask you to. You're here because you joined as a new recruit, one of the two more developed organizations of our laid-to-waste Europe. Tell me, who did you join up with?}
+{6010}{}{I joined NEC, the New European Commonwealth, who wants to restore ancient traditions and unify Europe into a powerful entity under their banner.}
+{6020}{}{I joined the peoples of REF, the Royal East Federation, who want to learn from the past and build a new world of tolerance and equality for all.}
+{6030}{}{I don't wanna answer.}
+{7000}{}{You have no other choice. Answer the questions or remain here forever. That's how it works.}
+{7010}{}{I joined NEC, the New European Commonwealth, who wants to restore ancient traditions and unify Europe into a powerful entity under their banner.}
+{7020}{}{I joined the peoples of REF, the Royal East Federation, who want to learn from the past and build a new world of tolerance and equality for all.}
+{7030}{}{I could also just remain silent, or shit all over your fucking terminal!}
+{8000}{}{And it would be totally useless.}
+{8010}{}{All right. I joined NEC, the New European Commonwealth, which... oh fuck this.}
+{8020}{}{Fine, fine. I joined REF, the Royal East... whatever.}
+{8030}{}{I will do it anyway! Gnnn! ... *splash*}
+{9000}{}{...}
+{9010}{}{God damn. Fine then, I will say it. I-joined-the-New-European-Commonwealth-which-wants-to-restore-ancient-traditions-and-unify-Europe-into-a-powerful-entity-under-their-fucking-blue-banner. Grr.}
+{9020}{}{God damn. Fine then, I will say it. I-joined-the-peoples-of-the-Royal-East-Federation-people-who-wants-to-learn-from-the-past-and-build-a-new-world-of-tolerance-and-equality-under-their-crimson-banner. Bleh.}
+{10000}{}{Fine. You see, it wasn't so difficult. It seems that you repeated this a lot. Do you really believe in what you just said?}
+{10010}{}{Of course I do. I joined to be a active actor of our future, and to have the opportunity of doing something greater.}
+{10020}{}{I don't know. I joined because it was the best thing to do. Life in the army is better than staying where I used to live. They say that job's dangerous, but our entire world is dangerous now, right?}
+{10030}{}{I don't. I just want to get all I can out of this. Future will tell if it was a good choice, or if it was a bad idea after all.}
+{10040}{}{I wanna burst as many asses as possible! Seriously, who cares about the rest?}
+{11000}{}{Interesting. You seem to to take your responsibilities seriously. You seek glory, righteousness, legitimacy for your actions. You're probably already lost, but who isn't?}
+{11010}{}{Can we go on with this? I'm tired and I'm fed up with all those questions. What's the point anyway?}
+{12000}{}{Interesting. Even if you know that you'll certainly die, you wanna take the risk, because life is better there than staying where you were. You're probably a fool. But you're also right. The world has gone mad, and it will stay that way for a long, long time. You're a fool among the fools, and yet you are at the right place.}
+{12010}{}{Can we go on? I'm really tired of this nonsense. Get to the point, whoever you are.}
+{13000}{}{Interesting. You want to achieve your own goals, no matter what the others believe. And you seem to rely on some kind of destiny. You may be of some use in the future.}
+{13010}{}{Are we done with this? I wanna get out.}
+{14000}{}{Interesting. With that way of thinking, you will certainly become the King of the Wasteland. At least for some time, until some bigger beast eats you for diner.}
+{14010}{}{You finished?. Is there any meaning to this, any point?}
+{15000}{}{The point? Who knows. Can't you tell it already?}
+{15010}{}{I suppose it's some kind of personality test from my superiors, even if I don't understand why. I mean, they read my whole story in the files I had to fill when I joined their ranks...}
+{15020}{}{You're probably some hallucination. Someone must have drugged me and I must be completely stoned in a gutter somewhere.}
+{15030}{}{I don't care! I don't care, I don't care, I don't care! You understand me? I DON'T CARE! Put an end to this torture or I'll really get medieval on your terminal!}
+{16000}{}{Don't worry. The truth will come when you'll be ready for it. Last question until I release you to your fate: who were you in your past life?}
+{16010}{}{I was a guard.}
+{16020}{}{I was a thief.}
+{16030}{}{I was a scout.}
+{16040}{}{I was a hunter.}
+{16050}{}{I was a representative of my village.}
+{16060}{}{I was a scavenger.}
+{16070}{}{I was a mechanic.}
+{16080}{}{I was a healer.}
+{17000}{}{I hope you will use your talents wisely. The Wasteland could use a person like yourself. Good luck.}
+{17010}{}{Finally...}
+{17020}{}{Thanks.}
+
+[pols]
+{100}{}{Terminal}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj wedrowcze. Dziekuje za przybycie. Zapewne zastanawiasz sie jak tu sie znalazles... Czyz nie?}
+{2010}{}{Kim Ty w ogole jestes? Skad sie tu wzialem? Kim byli Ci ludzie i dlaczego mnie tu przyprowadziles? Chce odpowiedzi! TERAZ!}
+{2020}{}{Wlasciwie to mnie to nie obchodzi. To miejsce jest beznadziejne. Przypuszczam, ze zyjesz tu sobie ze swoimi kochanymi malpami czubku. Niezle przyjecia tu sobie urzadzasz, ci goscie zapewne czesto wsadzaja swoje duze spluwy do twoich napedow. Mile uczucie?}
+{2030}{}{Tak. Nie chce byc nieuprzejmy, ale chcialbym wiedziec skad sie tu wzialem.}
+{3000}{}{Moze troche kultury? Swoja droga ogladanie Twoich reakcji jest dosyc zabawne. Wracajac do sprawy - wygladasz na kogos kto umie skopac czyjs tylek, czyz nie?}
+{3010}{}{Nie odpowiedziales na moje pytania!}
+{4000}{}{Wybitne poczucie humoru... tak mysle. Mnie to specjalnie nie bawi. Aczkolwiek nieprzewidywalne akcje zawsze czegos ucza. Wracajac do sprawy - Twoim marzeniem jest podbicie calego swiata, prawda? Masz przeciez w sobie poteznego ducha walki.}
+{4010}{}{Nie odpowiedziales na moje pytania!}
+{5000}{}{O, widze, ze umiesz zachowac spokoj. To dobra cecha. Na pewno bedziesz mogl tego dowiesc w przyszlosci. Jaki jest Twoj cel w zyciu?}
+{5010}{}{Nie odpowiedziales na moje pytania!}
+{6000}{}{Prawda, i nie zamierzam, poniewaz nie musisz wiedziec nic na ten temat. Im szybciej bedziesz odpowiadal, tym szybciej skonczymy. Potraktuj to jako maly test... test o sobie. Teraz sprobuj odpowiedziec na pytania, ktore Ci zadam. Jestes tu poniewaz dolaczyles jako rekrut do jednej z dwoch najwiekszych frakcji na pustkowiach Europy. Zatem powiedz mi: do ktorej frakcji dolaczyles?}
+{6010}{}{Dolaczylem do NEC - New European Commonwealth, ktorej zadaniem jest przywrocenie dawnych tradycji i zjednoczenie Europy w jedna potezna frakcje pod ich niebieska flaga.}
+{6020}{}{Dolaczylem do REF - Royal East Federation people, ktorych zadaniem jest zbudowanie nowego lepszego swiata pelnego tolerancji i rownosci pod ich czerwona flaga.}
+{6030}{}{Nie mam zamiaru odpowiadac.}
+{7000}{}{Nie masz innego wyboru. Odpowiedz na moje pytania albo zostan tu na zawsze.}
+{7010}{}{Dolaczylem do NEC - New European Commonwealth, ktorej zadaniem jest przywrocenie dawnych tradycji i zjednoczenie Europy w jedna potezna frakcje pod ich niebieska flaga.}
+{7020}{}{Dolaczylem do REF - Royal East Federation people, ktorych zadaniem jest zbudowanie nowego lepszego swiata pelnego tolerancji i rownosci pod ich czerwona flaga.}
+{7030}{}{Moge rowniez zamilczec albo wytrzec swoje gowno w ten caly gadajacy terminal.}
+{8000}{}{To by bylo totalnie bezsensowne.}
+{8010}{}{Ehhh... Dolaczylem do NEC - New European Commonwealth, ktorej zadaniem jest przywrocenie dawnych tradycji i zjednoczenie Europy w jedna potezna frakcje pod ich niebieska flaga.}
+{8020}{}{Ehhh... Dolaczylem do REF - Royal East Federation people, ktorych zadaniem jest zbudowanie nowego lepszego swiata pelnego tolerancji i rownosci pod ich czerwona flaga.}
+{8030}{}{No i co z tego? I tak to zrobie...}
+{9000}{}{...}
+{9010}{}{Dobra dobra. Niech Ci bedzie. Dolaczylem-do-NEC-New European-Commonwealth-ktorej-zadaniem-jest-przywrocenie-dawnych-tradycji-i-zjednoczenie-Europy-w-jedna-potezna-frakcje-pod-ich-niebieska-flaga.}
+{9020}{}{Dobra dobra, Niech Ci bedzie. Dolaczylem-do-REF-Royal-East-Federation-people-ktorych-zadaniem-jest-zbudowanie-nowego-lepszego-swiata-pelnego-tolerancji-i-rownosci-pod-ich-czerwona-flaga.}
+{10000}{}{W porzadku. Widzisz? To nie bylo takie trudne. Wyglada na to, ze w swoim zyciu wiele razy mowiles to zdanie. Na prawde wierzysz w to co powiedziales?}
+{10010}{}{Oczywiscie, ze tak. Dolaczylem aby byc jednym z tych, ktorzy przyczynia sie do powstania lepszej przyszlosci.}
+{10020}{}{Czy ja wiem. Dolaczylem poniewaz byla to jedna z lepszych opcji jakie mialem do wyboru. Zycie w armii jest lepsze niz tam skad pochodze. Niektorzy twierdza, ze ten zawod jest niebezpieczny, ja jednak twierdze, ze caly swiat jest niebezpieczny...}
+{10030}{}{Nie. Dolaczylem do armii bo mi sie to oplacalo. Przyszlosc pokaze czy byl to dobry wybor.}
+{10040}{}{Chce tylko skopac jak najwiecej tylkow. Serio, kogo obchodzi reszta?}
+{11000}{}{Interesujace. Wydajesz sie spelniac oczekiwania swojej frakcji. Szukasz chwaly, prawdy i sprawiedliwosci w swoich dzialaniach. Prawdopodobnie juz sie w tym wszystkim pogubiles, ale to nie jest dziwne.}
+{11010}{}{Czy mozemy juz skonczyc te dyskusje? Jestem troche zmeczony i zaczynam sie czuc zle z powodu tych wszystkich pytan. O co Ci tak w ogole chodzi?}
+{12000}{}{Interesujace. Pomimo tego, ze wiesz, ze prawdopodobnie zginiesz chcesz podjac sie ryzyka, poniewaz bycie w armii jest lepsze niz siedzenie w domu. Jestes prawdopodobnie glupcem, ale rowniez masz troche racji. Swiat oszalal. Jestes glupcem wsrod glupcow, i to jest wlasnie dobre miejsce.}
+{12010}{}{Czy mozemy juz skonczyc te dyskusje? Jestem troche zmeczony i zaczynam sie czuc zle z powodu tych wszystkich pytan. O co Ci tak w ogole chodzi?}
+{13000}{}{Interesujace. Chcesz jedynie spelniac wlasne cele bezwzgledny na innych. Zdajesz sie polegac na pewnego rodzaju przeznaczeniu. Pewnego dnia mozesz sie przydac.}
+{13010}{}{Czy mozemy juz skonczyc te dyskusje? Jestem troche zmeczony i zaczynam sie czuc zle z powodu tych wszystkich pytan. O co Ci tak w ogole chodzi?}
+{14000}{}{Interesujace. Z tym punktem widzenia, zostaniesz prawdopodobnie krolem pustkowi. Przynajmniej na chwile... dopoki jakas wieksza bestia nie zje Cie na drugie sniadanie.}
+{14010}{}{Czy mozemy juz skonczyc te dyskusje? Jestem troche zmeczony i zaczynam sie czuc zle z powodu tych wszystkich pytan. O co Ci tak w ogole chodzi?}
+{15000}{}{O co chodzi? Nie domyslasz sie ani troche?}
+{15010}{}{Przypuszczam, ze to jest jakis test osobowosci od moich przelozonych, nawet jesli nie kompletnie nie rozumiem jego celu. Czytali cala moja historie w swojej bazie danych, ktora musialem wypelnic zanim dolaczylem do armii..}
+{15020}{}{Jestes prawdopodobnie moja halucynacja. Ktos mi musial podrzucic jakies swinstwo do zarcia.}
+{15030}{}{Nie obchodzi mnie to! Nie obchodzi mnie to! Nie obchodzi! Rozumiesz? NIE OBCHODZI! Skonczmy to zanim sie kompletnie rozzloszcze!}
+{16000}{}{Nie przejmuj sie. Poznasz prawde kiedy bedziesz na to gotowy. Ostatnie pytanie zanim Cie wypuszcze w glab Twego przeznaczenia: kim byles zanim dolaczyles do armii?}
+{16010}{}{Bylem straznikiem.}
+{16020}{}{Bylem zlodziejem.}
+{16030}{}{Bylem zwiadowca.}
+{16040}{}{Bylem lowca.}
+{16050}{}{Bylem reprezentantem wioski, w ktorej mieszkalem.}
+{16060}{}{Bylem pustelnikiem.}
+{16070}{}{Bylem mechanikiem.}
+{16080}{}{Bylem medykiem.}
+{17000}{}{Mam nadzieje, ze wykorzystasz swoje talenty w dobrym celu. Pustkowiom Europy moze przydac sie ktos taki jak Ty. Powodzenia. -Program zakonczony-}
+{17010}{}{W koncu.}
+{17020}{}{Dzieki.}
+
+[russ]
+{100}{}{Terminal}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Hello there, Wastelander. Thanks for coming. You must wonder what you're doing here, and... well, probably a lot of other absurdities, don't you?}
+{2010}{}{Who the hell are you? Where am I? Who are these guys and why did you bring me here? I wanna answers, NOW, FOR FUCKING SAKE!}
+{2020}{}{In fact, I don't care at all. This place is ugly. I suppose you live here with your lovely apes, you freak? Nice parties, they probably put their big guns very often into your holodisks. Nice experience, yes. Mmmh. Does it feel good, deep into the turbines?}
+{2030}{}{Yes. I don't wanna seem indiscreet, but I would like to know where I am and who you are exactly.}
+{3000}{}{Ah, another warm-blooded dumbass. Not really interesting, but it can still be funny to watch your actions. You are good at kicking asses, don't you?}
+{3010}{}{You didn't even answer my questions!}
+{4000}{}{Oh, a crazy one. You tried to be funny, I guess. I am proud of my receptivity to humor, but well... even I didn't laugh at this. Anyways, unpredictability is always useful to observe. You wanna blow the whole world, don't you?}
+{4010}{}{You didn't even answer my questions!}
+{5000}{}{Ah, you are able of remaining calm. That's a good point to notice. You may prove yourself useful in the future. What's you goal in life?}
+{5010}{}{You didn't even answer my questions!}
+{6000}{}{True. And I won't, because you don't need to know anything about this place or myself. The sooner you respond, the sooner all of this will finish. Take it as a test. A simple test about your motives. Now, just answer when I ask you to. You're here because you joined as new recruit, one of the two more developed organizations of our European Wasteland. Tell me: who did you join?}
+{6010}{}{I joined NEC, the New European Commonwealth, who wants to restore ancient traditions and unify Europe into a powerful entity under their blue banner.}
+{6020}{}{I joined REF, the Royal East Federation people, who wants to learn from the past and build a new world of tolerance and equality under their red banner.}
+{6030}{}{I don't wanna answer.}
+{7000}{}{You have no other choice. Answer the questions or remain here forever. That's how it works.}
+{7010}{}{I joined NEC, the New European Commonwealth, who wants to restore ancient traditions and unify Europe into a powerful entity under their blue banner.}
+{7020}{}{I joined REF, the Royal East Federation people, who wants to learn from the past and build a new world of tolerance and equality under their red banner.}
+{7030}{}{I could also just remain silent, or spread your fucking terminal with my own shit!}
+{8000}{}{And it would be totally useless.}
+{8010}{}{All right. I joined NEC, the New European Commonwealth, who wants to restore ancient traditions and unify Europe into a powerful entity under their blue banner.}
+{8020}{}{All right. I joined REF, the Royal East Federation people, who wants to learn from the past and build a new world of tolerance and equality under their red banner.}
+{8030}{}{I will do it anyway! Gnnn! ... *splash*}
+{9000}{}{...}
+{9010}{}{God damn. Fine then, I will say it. I-joined-the-New-European-Commonwealth-who-wants-to-restore-ancient-traditions-and-unify-Europe-into-a-powerful-entity-under-their-blue-banner. Grr.}
+{9020}{}{God damn. Fine then, I will say it. I-joined-the-Royal-East-Federation-people-who-wants-to-learn-from-the-past-and-build-a-new-world-of-tolerance-and-equality-under-their-red-banner. Grr.}
+{10000}{}{Fine. You see, it wasn't so difficult. It seems that you repeated this sentence a lot of times. Do you really believe in that nice speech?}
+{10010}{}{Of course I do. I joined to be a active actor of our future, and to have the opportunity of doing something greater than my previous life.}
+{10020}{}{I don't know. I joined because it was the best thing to do. Life in the army is better than staying where I used to live. They say that job's dangerous, but our entire world is dangerous.}
+{10030}{}{I don't. I just want to get all I can out of this. Future will tell if it was a good choice, or if it was a bad idea after all.}
+{10040}{}{I wanna burst as many asses as possible ! Seriously, who cares about the rest?}
+{11000}{}{Interesting. You seem to want to take your responsibilities. You seek glory, righteousness, legitimacy for your actions. You're probably already lost, but who isn't?}
+{11010}{}{Can we go on with this? I'm tired and I'm beginning to feel bad with all these questions. What's the point anyway?}
+{12000}{}{Interesting. Even if you know that you'll certainly die, you wanna take the risk, because life is better there than staying home. You're probably a fool. But you're also right. The world has gone mad, and so for a long, long time. You're so a fool among the fools, and you are at your right place.}
+{12010}{}{Can we go on with this? I'm tired and I'm beginning to feel bad with all these questions. What's the point anyway?}
+{13000}{}{Interesting. You want to achieve your own goals, no matter what the others believe. And you seem to rely on some kind of destiny. You may be of some use one day.}
+{13010}{}{Can we go on with this? I'm tired and I'm beginning to feel bad with all these questions. What's the point anyway?}
+{14000}{}{Interesting. With that way of thinking, you will certainly become the King of the Wasteland. At least for a time, until some bigger beast eats you for his diner.}
+{14010}{}{Can we go on with this? I'm tired and I'm beginning to feel bad with all these questions. What's the point anyway?}
+{15000}{}{The point? Who knows. Don't you guess, at least a bit?}
+{15010}{}{I suppose it's some kind of personality test from my superiors, even if I don't understand why. I mean, they read my whole story in the files I had to fill to join the ranks...}
+{15020}{}{You're probably some hallucination. Someone must have drugged me and I must be completely stoned somewhere in a dirty gutter.}
+{15030}{}{I don't care! I don't care, I don't care, I don't care! You understand me? I DON'T CARE! Put an end to this torture until I really become mean!}
+{16000}{}{Don't worry. The truth will come when you'll be ready for it. Last question until I release you to your fate: what was your activity before you decided to join the army?}
+{16010}{}{I was a guard.}
+{16020}{}{I was a thief.}
+{16030}{}{I was a scout.}
+{16040}{}{I was a hunter.}
+{16050}{}{I was the representative of my village.}
+{16060}{}{I was a scavenger.}
+{16070}{}{I was a mechanic.}
+{16080}{}{I was a healer.}
+{17000}{}{I hope you will use your talents wisely. The Wasteland can have a use for a person like yourself. Good luck. -Program terminated-}
+{17010}{}{Finally.}
+{17020}{}{Thanks.}
+

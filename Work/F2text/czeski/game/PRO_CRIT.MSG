@@ -1,0 +1,503 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com
+{100}{}{Hrdina}
+{101}{}{}
+{200}{}{Hrdinka}
+{201}{}{}
+{300}{}{Vesnièan}
+{400}{}{Vesnièan}
+{500}{}{Radškorpión}
+{501}{}{Mutovaná miniverze škorpióna.}
+{600}{}{Radškorpión}
+{601}{}{Mutovanı škorpión.}
+{700}{}{Deathclaw}
+{701}{}{Mládì deathclawa.}
+{800}{}{Deathclaw}
+{801}{}{Mládì deathclawa.}
+{900}{}{Pes}
+{901}{}{Vypadá to na nìjaké smíšené plemeno.}
+{1000}{}{Brahmína}
+{1001}{}{Dvouhlavá zmutovaná kráva.}
+{1100}{}{Krysa}
+{1101}{}{Obyèejná obøí krysa.}
+{1200}{}{Mantis}
+{1201}{}{Mutovaná verze kudlanky náboné.}
+{1300}{}{Starší}
+{1400}{}{Hakunin}
+{1500}{}{Mynoc}
+{1600}{}{Masoravı plevel}
+{1601}{}{Masoravá rostlina.}
+{1700}{}{Chytrı otrok}
+{1800}{}{Hezkı otrok}
+{1900}{}{Zdravı otrok}
+{2000}{}{Zdravá otrokynì}
+{2100}{}{Silnı otrok}
+{2200}{}{Silná otrokynì}
+{2300}{}{Bojovnı otrok}
+{2400}{}{Bojovná otrokynì}
+{2500}{}{Mazanı otrok}
+{2600}{}{Mazaná otrokynì}
+{2700}{}{Otrok}
+{2800}{}{Otrokynì}
+{2900}{}{Anna}
+{3000}{}{Zavalitı bandita}
+{3100}{}{Svalnatá banditka}
+{3200}{}{Bandita. Specialista na chladné zbranì}
+{3300}{}{Banditka. Specialistka na chladné zbranì}
+{3400}{}{Podivuhodnì mrštnı bandita}
+{3500}{}{Nebezpeènì rychlá lupièka}
+{3600}{}{Ozbrojenı bandita}
+{3700}{}{Ozbrojená banditka}
+{3800}{}{Lupiè. Specialista na tìké zbranì}
+{3900}{}{Lupièka. Specialistka na tìké zbranì}
+{4000}{}{Zavalitı stránı}
+{4100}{}{Namakaná èlenka ochranky}
+{4200}{}{Stránı. Specialista na chladné zbranì}
+{4300}{}{Stráná. Specialistka na chladné zbranì}
+{4400}{}{Mrštnı stráce}
+{4500}{}{Mrštná strákynì}
+{4600}{}{Ozbrojenı èlen ochranky}
+{4700}{}{Ozbrojená èlenka ochranky}
+{4800}{}{Èlen ochranky. Specialista na tìké zbranì}
+{4900}{}{Èlenka ochranky. Specialistka na tìké zbranì}
+{5000}{}{Sirotek}
+{5100}{}{Sirotek}
+{5200}{}{Chlapec}
+{5300}{}{Dívenka}
+{5400}{}{Uboák}
+{5500}{}{Uboaèka}
+{5600}{}{Mizernı obchodník}
+{5700}{}{Mizerná obchodnice}
+{5800}{}{Prùmìrnı obchodník}
+{5900}{}{Prùmìrná obchodnice}
+{6000}{}{Mistr obchodník}
+{6100}{}{Skvìlá obchodnice}
+{6200}{}{Vic}
+{6300}{}{Hubenı rolník}
+{6400}{}{Vychrtlá farmáøka}
+{6500}{}{Tuctovı rolník}
+{6600}{}{Tuctová farmáøka}
+{6700}{}{Svalnatı rolník}
+{6800}{}{Silná farmáøka}
+{6900}{}{Slabı hlídaè. Specialista na chladné zbranì}
+{7000}{}{Slabouèká stráná. Specialistka na chladné zbranì}
+{7100}{}{Bojácnı stránı se støelnou zbraní}
+{7200}{}{Køehká stráná se støelnou zbraní}
+{7300}{}{Robot-opraváø}
+{7400}{}{Robot-opraváø Mark II}
+{7500}{}{Kyborg}
+{7600}{}{Robot typu "Oèko"}
+{7700}{}{Stránı robot}
+{7800}{}{Stránı robot Mark II}
+{7900}{}{Kyborg}
+{8000}{}{Malı geckon}
+{8100}{}{Odolnı malı geckon}
+{8200}{}{Dingo}
+{8201}{}{Zdivoèelé plemeno psa.}
+{8300}{}{Zlatı geckon}
+{8400}{}{Deathclaw}
+{8500}{}{Deathclawí potìr}
+{8600}{}{Odolnı zlatı geckon}
+{8700}{}{Lynette}
+{8800}{}{Dr. Troy}
+{8900}{}{John Cassidy}
+{9000}{}{Gregory}
+{9100}{}{Obèanka}
+{9200}{}{Obèan}
+{9300}{}{Obèanka z vyšší kasty}
+{9400}{}{Obèan z vyšší kasty}
+{9500}{}{Lovec}
+{9600}{}{Stopaøka}
+{9700}{}{Sulik}
+{9800}{}{Maida Bucknerová}
+{9900}{}{Torr}
+{10000}{}{Lumpy}
+{10100}{}{"Záøící" ghoul. Obsluha reaktoru}
+{10200}{}{Ghoul. Obsluha reaktoru}
+{10300}{}{Èlen ochranky reaktoru}
+{10400}{}{Zomak}
+{10500}{}{Skeeter}
+{10600}{}{Mozek}
+{10700}{}{Lenny}
+{10800}{}{Wooz}
+{10900}{}{Harold}
+{11000}{}{Krtèí potkan}
+{11100}{}{Obøí krtèí potkan}
+{11200}{}{Praseèí potkan}
+{11300}{}{Odolnı praseèí potkan}
+{11400}{}{Zesláblá brahmína}
+{11401}{}{Mutovaná dvouhlavá kráva.}
+{11500}{}{A.Pwr.Armor (don't use)}
+{11600}{}{Mutovanı potkan}
+{11601}{}{Odolná mutace potkana.}
+{11700}{}{Mutovanı krtèí potkan}
+{11701}{}{Zvláš houevnatá mutace krtèího potkana.}
+{11800}{}{Mutovanı praseèí potkan}
+{11801}{}{Nebezpeènì odolná mutace praseèího potkana.}
+{11900}{}{Supermutant}
+{12000}{}{Mocnı lidskı mutant}
+{12100}{}{Melchoir}
+{12200}{}{Hero Andro (don't use)}
+{12300}{}{Hero Andro (don't use)}
+{12400}{}{Hero Male (don't use)}
+{12500}{}{Hero Female (don't use)}
+{12600}{}{Hero Male (don't use)}
+{12700}{}{Hero Female (don't use)}
+{12800}{}{Hero Male (don't use)}
+{12900}{}{Hero Female (don't use)}
+{13000}{}{Hero Male (don't use)}
+{13100}{}{Hero Female (don't use)}
+{13200}{}{Hero Male (don't use)}
+{13300}{}{Hero Female (don't use)}
+{13400}{}{Stránı z Vault City}
+{13500}{}{Stráná z Vault City}
+{13600}{}{Kyberpes}
+{13700}{}{Stránı z NCR}
+{13800}{}{Stráná z NCR}
+{13900}{}{Stránı z NCR. Specialista na chladné zbranì}
+{14000}{}{Èlen otrokáøské ochranky}
+{14100}{}{Èlenka otrokáøské ochranky}
+{14200}{}{Obchodník - velmistr}
+{14300}{}{Obchodnice - velmistrynì}
+{14400}{}{Tandi}
+{14500}{}{Merc}
+{14600}{}{Ratch}
+{14700}{}{Skeeter}
+{14800}{}{Mikey}
+{14900}{}{Obchodník z NCR}
+{15000}{}{Majitel obchodu}
+{15100}{}{Gruthar}
+{15200}{}{Goris}
+{15300}{}{Krtèí gladiátor}
+{15400}{}{Krtèí gladiátor}
+{15500}{}{Krtèí gladiátor}
+{15600}{}{Krtèí gladiátor}
+{15700}{}{Krtèí gladiátor}
+{15800}{}{Krtèí gladiátor}
+{15900}{}{Úplnì vobyèejnej ghoul}
+{16000}{}{Myron}
+{16100}{}{Marcus}
+{16200}{}{Doktor Jones}
+{16300}{}{Davin}
+{16400}{}{Miria}
+{16500}{}{Laddie}
+{16600}{}{Rondo}
+{16700}{}{Nádeník}
+{16800}{}{Pacholek na ranèi}
+{16900}{}{Pomocník na ranèi}
+{17000}{}{Gorila}
+{17100}{}{Gorila}
+{17200}{}{Vystrašenı Mr. Handy}
+{17300}{}{Typickı "záøící" ghoul}
+{17400}{}{Dar}
+{17500}{}{Dalia}
+{17600}{}{Gordon}
+{17700}{}{test (don't use)}
+{17800}{}{Ghoul. Obsluha reaktoru}
+{17900}{}{Bìnı ghoul}
+{18000}{}{Matt}
+{18100}{}{Velitel oddílu lovcù odmìn (1-6)}
+{18200}{}{Lovec odmìn(1-6)}
+{18300}{}{Velitel oddílu lovcù odmìn (7-12)}
+{18400}{}{Lovec odmìn(7-12)}
+{18500}{}{Lovec odmìn(7-12)}
+{18600}{}{Velitel oddílu lovcù odmìn (13-18)}
+{18700}{}{Lovec odmìn(13-18)}
+{18800}{}{Lovec odmìn(13-18)}
+{18900}{}{Velitel oddílu lovcù odmìn (19-?)}
+{19000}{}{Lovec odmìn(19-?)}
+{19100}{}{Bess}
+{19101}{}{Dvouhlavá zmutovaná kráva.}
+{19200}{}{Balthas}
+{19300}{}{Grisham}
+{19400}{}{Phil}
+{19500}{}{Kuøe}
+{19600}{}{Karl}
+{19700}{}{Jonny}
+{19800}{}{Jo}
+{19900}{}{Zeke}
+{20000}{}{Butcher}
+{20100}{}{Petey}
+{20200}{}{Primitivní lovec}
+{20300}{}{Primitivní lovkynì}
+{20400}{}{Lidorout}
+{20500}{}{Lidoroutka}
+{20600}{}{Svatı mu}
+{20700}{}{Svatá ena}
+{20800}{}{Koèovník}
+{20900}{}{Nomád}
+{21000}{}{Koèovnice}
+{21100}{}{Nomádka}
+{21200}{}{Bandita}
+{21300}{}{Banditka}
+{21400}{}{Farmáø}
+{21500}{}{Farmáøka}
+{21600}{}{Mantis}
+{21700}{}{Otrokáø}
+{21800}{}{Otrokáøka}
+{21900}{}{Divoká brahmína}
+{22000}{}{Starousedlík}
+{22100}{}{Starousedlice}
+{22200}{}{Èlen patroly z Vault City}
+{22300}{}{Èlenka patroly z Vault City}
+{22400}{}{Silnı otrokáø}
+{22500}{}{Silná otrokáøka}
+{22600}{}{Blázni}
+{22700}{}{Mrchorouti}
+{22800}{}{Radioaktivní maniaci}
+{22900}{}{Radioaktivní mrchorouti}
+{23000}{}{Rybáø}
+{23100}{}{Rybáøka}
+{23200}{}{Divoch}
+{23300}{}{Divoška}
+{23400}{}{Pašerák alkoholu}
+{23500}{}{Podloudnice}
+{23600}{}{Prospektor}
+{23700}{}{Prospektorka}
+{23800}{}{Nájezdník}
+{23900}{}{Nájezdnice}
+{24000}{}{Ohnivı geckon}
+{24100}{}{Houevnatı ohnivı geckon}
+{24200}{}{Alien}
+{24300}{}{Odolnı Alien}
+{24400}{}{Malı odolnı deathclaw}
+{24500}{}{Houevnatı deathclaw}
+{24600}{}{Floater}
+{24700}{}{Hnusnı floater}
+{24800}{}{Kentaur}
+{24900}{}{Prùmìrnı kentaur}
+{25000}{}{Hlídka Enklávy}
+{25100}{}{Hlídka Enklávy}
+{25200}{}{Èlen vymahaèského gangu}
+{25300}{}{Èlenka gangu vymahaèù}
+{25400}{}{oldák}
+{25500}{}{oldaèka}
+{25600}{}{Nightkin}
+{25700}{}{Odolnı nightkin}
+{25800}{}{Houevnatı ghoul}
+{25900}{}{Mafián}
+{26000}{}{Yakuza}
+{26100}{}{Ranger z NCR}
+{26200}{}{Rangerka z NCR}
+{26300}{}{Záškodník}
+{26400}{}{Záškodnice}
+{26500}{}{Hezoun Lloyd}
+{26600}{}{Vorpal krysa}
+{26700}{}{Obyvatel Vaultu 13}
+{26800}{}{Obyvatelka Vaultu 13}
+{26900}{}{Stráce mostu}
+{27000}{}{Záhadnı cizinec}
+{27100}{}{Záhadná cizinka}
+{27200}{}{Hakeswill}
+{27300}{}{Velkej Jeíš Mordino}
+{27400}{}{Dumar}
+{27500}{}{Matka deathclawù}
+{27600}{}{Drak}
+{27700}{}{Lo Pan}
+{27800}{}{Hubologista}
+{27900}{}{Hubologistka}
+{28000}{}{Záhadnı cizinec}
+{28100}{}{Záhadnı cizinec}
+{28200}{}{Záhadnı cizinec}
+{28300}{}{Záhadnı cizinec}
+{28400}{}{Záhadnı cizinec}
+{28500}{}{Záhadnı cizinec}
+{28600}{}{Záhadnı cizinec}
+{28700}{}{Záhadnı cizinec}
+{28800}{}{Ochranka vymahaèù}
+{28900}{}{Vejce deathclawa}
+{29000}{}{Metzger}
+{29100}{}{Stránı Enklávy}
+{29200}{}{Stráná Enklávy}
+{29300}{}{Prezident}
+{29400}{}{Víceprezident}
+{29500}{}{Technik}
+{29600}{}{Vztekloun}
+{29700}{}{Dr. Fung}
+{29800}{}{Dítì}
+{29900}{}{Dítì}
+{30000}{}{Obchodník se zbranìmi}
+{30100}{}{Laboratorní technik Shi}
+{30200}{}{Strá Shi}
+{30300}{}{Pøíslušník Shi}
+{30400}{}{Èlenka Shi}
+{30500}{}{Èlen klanu Lo Pan}
+{30600}{}{Èlenka klanu Lo Pan}
+{30700}{}{Pøístavní dìlník}
+{30800}{}{Obchodník Shi}
+{30900}{}{Král Krysa}
+{31000}{}{Sulik - Místo 1}
+{31100}{}{Sulik - Místo 2}
+{31200}{}{Sulik - Místo 3}
+{31300}{}{Sulik - Místo 4}
+{31400}{}{Sulik - Místo 5}
+{31500}{}{Sulik - Místo 6}
+{31600}{}{Lenny - Místo 1}
+{31700}{}{Lenny - Místo 2}
+{31800}{}{Lenny - Místo 3}
+{31900}{}{Goris - Místo 1}
+{32000}{}{Goris - Místo 2}
+{32100}{}{Goris - Místo 3}
+{32200}{}{Goris - Místo 4}
+{32300}{}{Goris - Místo 5}
+{32400}{}{Goris - Místo 6}
+{32500}{}{Myron - Místo 1}
+{32600}{}{Myron - Místo 2}
+{32700}{}{Myron - Místo 3}
+{32800}{}{Myron - Místo 4}
+{32900}{}{Marcus - Místo 1}
+{33000}{}{Marcus - Místo 2}
+{33100}{}{Marcus - Místo 3}
+{33200}{}{Marcus - Místo 4}
+{33300}{}{Marcus - Místo 5}
+{33400}{}{Kyberpes - Místo 1}
+{33500}{}{Kyberpes - Místo 2}
+{33600}{}{Kyberpes - Místo 3}
+{33700}{}{Kyberpes - Místo 4}
+{33800}{}{Cassidy - Místo 1}
+{33900}{}{Cassidy - Místo 2}
+{34000}{}{Cassidy - Místo 3}
+{34100}{}{Cassidy - Místo 4}
+{34200}{}{Pes}
+{34300}{}{Pes - Místo 1}
+{34400}{}{Pes - Místo 2}
+{34500}{}{Pes - Místo 3}
+{34600}{}{Pes - Místo 4}
+{34700}{}{Pes - Místo 5}
+{34800}{}{Pes - Místo 6}
+{34900}{}{Kyborg - Místo 1}
+{35000}{}{Kyborg - Místo 2}
+{35100}{}{Kyborg - Místo 3}
+{35200}{}{Kyborg - Místo 4}
+{35300}{}{Kyborg - Místo 5}
+{35400}{}{Královna Alienù}
+{35500}{}{Èernı radškorpión}
+{35600}{}{Èernı radškorpión}
+{35700}{}{Spud}
+{35800}{}{Kapitán oldákù}
+{35900}{}{oldák}
+{36000}{}{oldaèka}
+{36100}{}{Stín-Kterı-Kráèí}
+{36200}{}{Punker}
+{36300}{}{Punkerka}
+{36400}{}{Marc}
+{36500}{}{Dave H.}
+{36600}{}{Kapitán A. Ron Meyers}
+{36700}{}{Chip}
+{36800}{}{AHS-9}
+{36900}{}{Stránı Hubologistù}
+{37000}{}{Stráná Hubologistù}
+{37100}{}{Juan}
+{37200}{}{Vikki}
+{37300}{}{Vic - Místo 1}
+{37400}{}{Vic - Místo 2}
+{37500}{}{Vic - Místo 3}
+{37600}{}{Vic - Místo 4}
+{37700}{}{Vic - Místo 5}
+{37800}{}{Vic - Místo 6}
+{37900}{}{Kyborg - Šimpanz}
+{38000}{}{Kyborg - Blbec}
+{38100}{}{Kyborg - Èlovìk}
+{38200}{}{Obøí mravenec}
+{38300}{}{Odolnı obøí mravenec}
+{38400}{}{Pária-pes}
+{38500}{}{Zurak}
+{38600}{}{Imbot}
+{38700}{}{Jimmy}
+{38800}{}{Wejungh}
+{38900}{}{Herb}
+{39000}{}{Loopal}
+{39100}{}{Jobe}
+{39200}{}{Smitty}
+{39300}{}{Rube}
+{39400}{}{Mistr Krall}
+{39500}{}{Ziggy}
+{39600}{}{Mistr Khung}
+{39700}{}{John Bishop}
+{39800}{}{Angela Bishopová}
+{39900}{}{Paní Bishopová}
+{40000}{}{Bishopova strá 1}
+{40100}{}{Bishopova strá 2}
+{40200}{}{Bishopovùv hrdloøez 1}
+{40300}{}{Bishopovùv hrdloøez 2}
+{40400}{}{Rozzuøená brahmína}
+{40500}{}{Malej Jeíš}
+{40600}{}{Velkej Jeíš}
+{40700}{}{Mordinùv maník 1}
+{40800}{}{Mordinùv maník 2}
+{40900}{}{Mordinùv maník 3}
+{41000}{}{Myronùv hlídaè 1}
+{41100}{}{Myronùv hlídaè 2}
+{41200}{}{Pan Wright}
+{41300}{}{Paní Wrightová}
+{41400}{}{Chris Wright}
+{41500}{}{Keith Wright}
+{41600}{}{Wrightùv syn 1}
+{41700}{}{Wrightùv syn 2}
+{41800}{}{Wrightova dcera 1}
+{41900}{}{Wrightova dcera 2}
+{42000}{}{Don Salvatore}
+{42100}{}{Mason}
+{42200}{}{Salvatorùv maník 1}
+{42300}{}{Salvatorùv maník 2}
+{42400}{}{Bìnı barman 1}
+{42500}{}{Bìnı barman 2}
+{42600}{}{Bìnı barman 3}
+{42700}{}{Boxer 1}
+{42800}{}{Boxer 2}
+{42900}{}{Boxer 3}
+{43000}{}{Boxer 4}
+{43100}{}{Mike dímaèka}
+{43200}{}{Holyfeld}
+{43300}{}{McKneely}
+{43400}{}{Stuart Malej}
+{43500}{}{Korsiètí bratøi}
+{43600}{}{Korsiètí bratøi}
+{43700}{}{Otec Tully}
+{43800}{}{Gorila 1}
+{43900}{}{Gorila 2}
+{44000}{}{Krupiérka}
+{44100}{}{Drogovı dealer/Šlapka1}
+{44200}{}{Drogovı dealer/Šlapka2}
+{44300}{}{Drogovı dealer/Šlapka3}
+{44400}{}{Drogovı dealer/Šlapka4}
+{44500}{}{McGee}
+{44600}{}{Sleèna Kitty}
+{44700}{}{Bìná šlapka 1}
+{44800}{}{Bìná dìvka 2}
+{44900}{}{Poøezanej Jimmy J}
+{45000}{}{Renesco}
+{45100}{}{Vìdec}
+{45200}{}{Eldridge}
+{45300}{}{Algernon}
+{45400}{}{Jules}
+{45500}{}{Byrokrat 1}
+{45600}{}{Byrokrat 2}
+{45700}{}{Obchodník 1}
+{45800}{}{Obchodník 2}
+{45900}{}{Strá 1}
+{46000}{}{Strá 2}
+{46100}{}{Strá 3}
+{46200}{}{Strá 4}
+{46300}{}{Voják 1}
+{46400}{}{Voják 2}
+{46500}{}{Voják 3}
+{46600}{}{Voják 4}
+{46700}{}{Serant Stark}
+{46800}{}{"Doktor" Andrew}
+{46900}{}{Barman}
+{47000}{}{Støelecká vì}
+{47001}{}{Automaticky se zamìøující otoèná støelecká víka vyzbrojená dvojitım plazmovım kanónem.}
+{47100}{}{K-9 (základna)}
+{47200}{}{K-9 (Místo 1)}
+{47300}{}{K-9 (Místo 2)}
+{47400}{}{K-9 (Místo 3)}
+{47500}{}{K-9 (Místo 4)}
+{47600}{}{Obyèejnı kyberpes}
+{47700}{}{Vejce Wanamingù}
+{47800}{}{Lo Panova strá}
+{47900}{}{Marjorie}
+{48000}{}{Auto-kanón}
+{48100}{}{Speciální Gecko potvora}
+{48200}{}{Grim Reaper}
+{48300}{}{Frank Horrigan}
+{48301}{}{Presidentùv bodyguard}

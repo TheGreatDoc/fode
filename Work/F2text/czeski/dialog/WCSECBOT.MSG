@@ -1,0 +1,10 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{103}{}{Tenhle robot nevypadá, že by s tebou chtìl komunikovat.}
+{104}{}{Tenhle robot je asi deaktivován.}
+{105}{}{Pozor! Vetøelec! Pozor! Vetøelec! }
+{106}{}{Znièit cíl!}
+{107}{}{Chyba v bìhu Bezpeènostního Systému!}
+{108}{}{Systémová Chyba!}
+
+{150}{}{Vypadá to, že se podaøilo deaktivovat tohoto robota.}
+{151}{}{Vypadá to, že se podaøilo zcela opravit tohoto robota.}

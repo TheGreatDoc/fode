@@ -1,0 +1,56 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_meat_sD ! 1 #
+3 1020 D _var p mgl_Frank = 3 D _var p mgl_meat_sD = 1 @
+2 2000 None 0 @
+3 3000 None 0 #
+4 3010 R _var p mgl_meat_sD = 2 @
+4 4000 None 0 #
+0 4010 &
+
+[engl]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@What the hell is this ?!@@ Stop disturbing me!}
+{3000}{}{Yes ?}
+{3010}{}{Frank sent me here, I have 3 pieces of meat for you.*** make it require and consume 3 piecies of meat***}
+{4000}{}{Ahh...great thank you, do you want to feed them? They are young, not dangerous.}
+{4010}{}{NO !}
+
+[pols]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Jestem zajety, daj mi spokoj.@@ Mam prace do wykonania.@@Tamte wyniki sa ekscytujace!@@Co to jest u diabla?!@@ Przestan mi przeszkadzac!}
+{3000}{}{Tak ?}
+{3010}{}{Frank mniue przyslal, mam tu 3 kawalki miesa dla Ciebie.*** make it require and consume 3 piecies of meat***}
+{4000}{}{Ahh wspaniale dziekuje, chcesz je nakarmic ? Sa mlode, nie sa niebespieczne.}
+{4010}{}{Nieee !}
+
+[russ]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@What the hell is this ?!@@ Stop disrupting me!}
+{3000}{}{Yes ?}
+{3010}{}{Frank send me, here i have 3 piecies of meat for you.*** make it require and consume 3 piecies of meat***}
+{4000}{}{Ahh great thank you, do you want to feed them ? They are young, not dangerous.}
+{4010}{}{NO !}
+

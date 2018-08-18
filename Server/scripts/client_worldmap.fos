@@ -1,0 +1,388 @@
+// Author: JohnPL
+// Draw images and text on world map
+
+#define WORLD_MAP_GRAPHICS
+
+#include "_defines.fos"
+#include "sprite.fos"
+
+#include "client_worldmap_h.fos"
+
+IWMElementOpt@[] wmElements;
+IWMElementOpt@[] wmElementsWithCallbacks; 
+
+class WMElement : IWMElementOpt
+{
+	WMElement()
+	{
+		InitWMElement();
+	}
+
+	void InitWMElement()
+	{
+		this.color = 0;
+		this.posX = 0;
+		this.posY = 0;
+		this.width = 0;
+		this.height = 0;
+		this.collisionTransparent = true;
+		this.visible = true;
+		this.isMouseDown = false;
+
+		@callbackMouseDown = null;
+		@callbackMouseClick = null;
+		@callbackMouseUp = null;
+		@callbackMouseMove = null;
+		@callbackUpdate = null;
+	}
+
+	bool MouseDown(int click)
+	{
+		if(@callbackMouseDown != null) 
+		{
+			callbackMouseDown.OnMouseDown(click);
+		}
+
+		isMouseDown = true;
+
+		return !collisionTransparent;
+	}
+
+	bool MouseUp(int click, bool isCollision)
+	{
+		if(@callbackMouseClick != null && isCollision) 
+		{
+			callbackMouseClick.OnMouseClick(click);
+		} 
+		else if(@callbackMouseUp != null && !isCollision)
+		{
+			callbackMouseUp.OnMouseUp(click);
+		}
+
+		isMouseDown = false;
+
+		return (!collisionTransparent && isCollision); 
+	}
+
+	void MouseMove()
+	{
+		if(@callbackMouseMove != null) 
+		{
+			callbackMouseMove.OnMouseMove();
+		}
+	}
+
+	void Draw()
+	{
+		;
+	}
+
+	void Update(uint dt)
+	{
+		if(@callbackUpdate != null) 
+		{
+			callbackUpdate.OnUpdate();
+		}
+	}
+
+	void SetCollisionTransparent(bool collisionTransparent)
+	{
+		this.collisionTransparent = collisionTransparent;
+	}
+
+	bool IsCollision(int mouseX, int mouseY)
+	{
+		int realPosX = posX / __GmapZoom + __GmapOffsetX;
+		int realPosY = posY / __GmapZoom + __GmapOffsetY;
+		int realW = width / __GmapZoom;
+		int realH = height / __GmapZoom;
+		return (mouseX >= realPosX) && (mouseX <= realPosX + width) && (mouseY >= realPosY) && (mouseY <= realPosY + height); 
+	}
+
+	uint color;
+
+	uint width;
+	uint height;
+	int posX;
+	int posY;
+	
+	bool visible;
+	bool collisionTransparent;
+	bool isMouseDown; //Mouse Down on element
+	
+	IWMElementCallbackUpdate@ callbackUpdate;
+	IWMElementCallbackMouseDown@ callbackMouseDown;
+	IWMElementCallbackMouseClick@ callbackMouseClick;
+	IWMElementCallbackMouseUp@ callbackMouseUp;
+	IWMElementCallbackMouseMove@ callbackMouseMove;
+}
+
+class WMImage : WMElement, IWMImageOpt
+{
+	IWMImageOpt@ CallbackUpdate(IWMElementCallbackUpdate@ callback) { @callbackUpdate=callback; addElementToCallbackList(this); return this; }
+	IWMImageOpt@ CallbackMouseDown(IWMElementCallbackMouseDown@ callback) { @callbackMouseDown=callback; addElementToCallbackList(this); return this; }
+	IWMImageOpt@ CallbackMouseClick(IWMElementCallbackMouseClick@ callback) { @callbackMouseClick=callback; addElementToCallbackList(this); return this; }
+	IWMImageOpt@ CallbackMouseUp(IWMElementCallbackMouseUp@ callback) { @callbackMouseUp=callback; addElementToCallbackList(this); return this; }
+	IWMImageOpt@ CallbackMouseMove(IWMElementCallbackMouseMove@ callback) { @callbackMouseMove=callback; addElementToCallbackList(this); return this; }
+
+	IWMImageOpt@ Image(string@ sprName) 
+	{
+		return Image(PT_ART_INTRFACE, sprName) ;
+	}
+
+	IWMImageOpt@ Image(int patch, string@ sprName) 
+	{
+		if(@sprName!=null){
+			this.image.Load(sprName, patch);
+			this.width  = image.Width;
+			this.height = image.Height;
+			if(image.Id==0) Message("ERROR: Ubable to load: "+sprName+".");
+		}
+
+		return this;
+	}
+
+	IWMImageOpt@ Color(uint color)
+	{
+		this.color = color;
+		return this;
+	}
+
+	IWMImageOpt@ Visible(bool visible) 
+	{
+		this.visible = visible;
+		return this;
+	}
+
+	IWMImageOpt@ Position(int x, int y) 
+	{
+		this.posX = x;
+		this.posY = y;
+		return this;
+	}
+	
+	IWMImageOpt@ Size(int w, int h) 
+	{
+		this.width  = w;
+		this.height = h;
+		return this;
+	}
+	
+	IWMImageOpt@ CollisionTransparent(bool collisionTransparent) 
+	{
+		this.collisionTransparent = collisionTransparent;
+		return this;
+	}
+
+	void Draw() 
+	{
+		if(this.image.Id != 0 && visible) 
+		{
+			DrawSprite(this.image.Id,-1, posX / __GmapZoom + __GmapOffsetX, posY / __GmapZoom + __GmapOffsetY, width / __GmapZoom, height / __GmapZoom, true, true, color); 
+		}
+	}
+
+	Sprite image;
+}
+
+class WMText : WMElement, IWMTextOpt
+{
+	WMText()
+	{
+		this.text = "";
+		this.font = FONT_FALLOUT;
+		this.downColor = COLOR_TEXT;
+		this.color = COLOR_TEXT;
+		this.flags = FT_CENTERX;
+	}
+
+	IWMTextOpt@ CallbackUpdate(IWMElementCallbackUpdate@ callback) { @callbackUpdate=callback; addElementToCallbackList(this); return this; }
+	IWMTextOpt@ CallbackMouseDown(IWMElementCallbackMouseDown@ callback) { @callbackMouseDown=callback; addElementToCallbackList(this); return this; }
+	IWMTextOpt@ CallbackMouseClick(IWMElementCallbackMouseClick@ callback) { @callbackMouseClick=callback; addElementToCallbackList(this); return this; }
+	IWMTextOpt@ CallbackMouseUp(IWMElementCallbackMouseUp@ callback) { @callbackMouseUp=callback; addElementToCallbackList(this); return this; }
+	IWMTextOpt@ CallbackMouseMove(IWMElementCallbackMouseMove@ callback) { @callbackMouseMove=callback; addElementToCallbackList(this); return this; }
+
+	IWMTextOpt@ Text(string@ text) 
+	{
+		this.text = text;
+		return this;
+	}
+	
+	IWMTextOpt@ Font(int font) 
+	{
+		this.font = font;
+		return this;
+	}
+	
+	IWMTextOpt@ Color(uint color) 
+	{
+		this.color = color;
+		return this;
+	}
+	
+	IWMTextOpt@ DownColor(uint downColor) 
+	{
+		this.downColor = downColor;
+		return this;
+	}
+	
+	IWMTextOpt@ Flags(int flags) 
+	{
+		this.flags = flags;
+		return this;
+	}
+	
+
+	IWMTextOpt@ Visible(bool visible) 
+	{
+		this.visible = visible;
+		return this;
+	}
+	
+	IWMTextOpt@ Position(int x, int y) 
+	{
+		this.posX = x;
+		this.posY = y;
+		return this;
+	}
+	
+	IWMTextOpt@ Size(int width, int height) 
+	{
+		this.width  = width;
+		this.height = height;
+		return this;
+	}
+	
+	IWMTextOpt@ CollisionTransparent(bool collisionTransparent) 
+	{
+		this.collisionTransparent = collisionTransparent;
+		return this;
+	}
+
+	void Draw() 
+	{
+		if(isMouseDown) 
+		{
+			DrawText(text, posX / __GmapZoom + __GmapOffsetX, posY / __GmapZoom + __GmapOffsetY, width / __GmapZoom, height / __GmapZoom, downColor, font, flags);
+		}
+		else
+		{
+			DrawText(text, posX / __GmapZoom + __GmapOffsetX, posY / __GmapZoom + __GmapOffsetY, width / __GmapZoom, height / __GmapZoom, color, font, flags);
+		}
+	}
+
+	string text;
+	int font;
+	uint downColor;
+	int flags;
+}
+
+void WM_Draw() {
+	for(uint i=0,j=wmElements.length();i<j;i++)
+	{
+		wmElements[i].Draw();
+	}
+}
+
+void WM_Update(uint dt) {
+	if(__GmapActive) {
+		for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+		{
+			wmElementsWithCallbacks[i].Update(dt);
+		}
+	}
+}
+
+bool WM_MouseDown(int click, int x, int y) {
+	if(__GmapActive) {
+		bool result = false;
+		for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+		{
+			if(wmElementsWithCallbacks[i].IsCollision(x, y)) 
+			{
+				result = wmElementsWithCallbacks[i].MouseDown(click);
+				if(result) return true;
+			}
+		}
+	}
+	return false;
+}
+
+bool WM_MouseUp(int click, int x, int y) {
+	if(__GmapActive) {
+		bool result = false;
+		for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+		{
+			result = wmElementsWithCallbacks[i].MouseUp(click, wmElementsWithCallbacks[i].IsCollision(x, y));
+			if(result) return true;
+		}
+	}
+	return false;
+}
+
+void WM_MouseMove() {
+	if(__GmapActive) {
+		for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+		{
+			wmElementsWithCallbacks[i].MouseMove();
+		}
+	}
+}
+
+IWMImageOpt@ WM_AddImage() {
+	IWMElementOpt@ element = WMImage();  
+	wmElements.insertLast(@element);
+	return cast<IWMImageOpt@>(element);
+}
+
+IWMTextOpt@ WM_AddText() {
+	IWMElementOpt@ element = WMText();  
+	wmElements.insertLast(@element);
+	return cast<IWMTextOpt@>(element);
+}
+
+// Delete world map element
+void WM_DeleteElement(IWMElementOpt@ element) {
+	for(uint i=0,j=wmElements.length();i<j;i++)
+	{
+		if(@element == @wmElements[i])
+		{
+			wmElements.removeAt(i);
+			break;
+		}
+	}
+
+	for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+	{
+		if(@element == @wmElementsWithCallbacks[i])
+		{
+			wmElementsWithCallbacks.removeAt(i);
+			break;
+		}
+	}
+}
+
+void WM_DeleteImage(IWMImageOpt@ image) {
+	WM_DeleteElement(cast<IWMElementOpt@>(@image));
+}
+
+void WM_DeleteText(IWMTextOpt@ text) {
+	WM_DeleteElement(cast<IWMElementOpt@>(@text));
+}
+
+
+// ---- Private ------------------------------------------
+
+void addElementToCallbackList(IWMElementOpt@ element) 
+{
+	for(uint i=0,j=wmElementsWithCallbacks.length();i<j;i++)
+	{
+		if(@element == @wmElementsWithCallbacks[i])
+		{
+			return; //if element is already in array, dont add in twice
+		}
+	}
+
+	wmElementsWithCallbacks.insertLast(@element);
+}
+

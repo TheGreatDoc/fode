@@ -1,0 +1,137 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš starého mue.}
+{101}{}{Vidíš Chrise, obsluhu èerpací stanice.}
+{102}{}{Vidíš starce obleèeného ve špinavém fialovém rouchu.}
+{103}{}{Zdravím tì, cizinèe. Och! Podívejme se na to krásnı auto. U léta jsem ádné nevidìl. Co pro tebe mùe starı Chris udìlat?}
+{104}{}{Zdravím tì, cizinèe. Nikdy jsem tì v tìchhle konèinách nevidìl. Co pro tebe mùe starı Chris udìlat?}
+{105}{}{Co bıt tohle za místo?}
+{106}{}{Hledat Navarro. To je tady?}
+{107}{}{Vidìl ty letìt tu ocelové ptáky?}
+{108}{}{Znát jméno Enkláva? Bıt oni zde?}
+{109}{}{Jen se tak dívat.}
+{110}{}{Co je tohle za místo?}
+{111}{}{Hledám Navarro. Jsem tu dobøe?}
+{112}{}{Nevidìl jsi tu nìkde létat vertibirdy?}
+{113}{}{Neslyšel jsi nìkdy o Enklávì? Mìlo by to bıt nìkde tady.}
+{114}{}{Jen se tu tak rozhlíím.}
+{115}{}{Tady bydlím já, Chris. Tohle je èerpací stanice - nikdy jsi takové nevidìl? Tøeba ve starıch èasopisech? To je pøesnì to, co tady mám já - èerpací stanice s obsluhou.}
+{116}{}{Hledat Navarro. To je tady?}
+{117}{}{Vidìl ty letìt tu ocelové ptáky?}
+{118}{}{Znát jméno Enkláva? Bıt oni zde?}
+{119}{}{Uh... asi jít.}
+{120}{}{Hledám Navarro. Jsem tu dobøe?}
+{121}{}{Nevidìl jsi tu nìkde létat vertibirdy?}
+{122}{}{Neslyšel jsi nìkdy o Enklávì? Mìlo by to bıt nìkde tady?}
+{123}{}{Promiò, ale musím u jít.}
+{124}{}{Navarro? U jsem o tom místì neslyšel dlouhá léta. Stará vojenská základna jihovıchodnì od San Franciska, tudí je to jiním smìrem odtud.}
+{125}{}{Tam já bıt. To nebıt Navarro.}
+{126}{}{Díky. Podívat se tam.}
+{127}{}{Ty mi lhát. Vyvolenı vìdìt, e tohle bıt Navarro. Ty øíct pravdu nebo ty litovat!}
+{128}{}{Tam jsem byl a to není Navarro.}
+{129}{}{Oukej. Podívám se tam. Díky.}
+{130}{}{Ty mi leš. Vím, e Navarro je tady. Øekni mi pravdu nebo budeš litovat!}
+{131}{}{Huh? Uh... No jistì, e mluvím pravdu. Slyšel jsem o tom mnohokrát mluvit! Navarro, vojenská základna se nachází jihovıchodnì od San Franciska.}
+{132}{}{Ty lhát. Nemám trpìlivost. Øíct mi pravdu nebo Vyvolenı s tebou zatoèit!}
+{133}{}{Leš. Na tohle nemám trpìlivost. Øekni mi pravdu nebo s tebou zatoèím.}
+{134}{}{Táhni k èertu! (ze záhubù roucha vymotal vysílaèku) Chceš vidìt, kdo s kım zatoèí? Mám tu pár chlapcù, kteøí ti ukáou novej vıznam toho slova! (chystá se vysílaèku zapnout)}
+{135}{}{Já zabít, ty mrtvı!}
+{136}{}{Co ty to dìlat?}
+{137}{}{Já odsud jít.}
+{138}{}{To byl špatnej tah, brácho.}
+{139}{}{Co si myslíš, e dìláš?}
+{140}{}{Hele já odsud radši v klidu vypadnu.}
+{141}{}{(mluví do vysílaèky) Poplach! Na stanici máme vetøelce! Poplach!}
+{142}{}{OK.}
+{143}{}{Mnoo, hezky jsme si popovídali. Dám ti jednu radu - tady není nic ne pustina a radiace. Civilizace je jinì odtud. Bıt tebou, zamíøím tím smìrem.}
+{144}{}{Díky.}
+{145}{}{Ocelové ptáky? Aha ty myslíš vertibirdy. A proè je hledáš zrovna tady?}
+{146}{}{Vertibirdy? To jsou moc zajímavé vìcièky. A proè je hledáš zrovna tady?}
+{147}{}{Šaman øíkat, e ptáci co unést vesnici letìt do Navarro. Tak ho Vyvolenı hledat.}
+{148}{}{Urèité lidi to zajímat. Snait se je pro nì najít.}
+{149}{}{Ty vìdìt o nich? Co všechno ty o nich vìdìt?}
+{150}{}{Šaman z mého kmene øíkal, e ty vertibirdy unesly naše lidi. Proto je chci najít.}
+{151}{}{Znám nìkteré lidi, kteøí se o vertibirdy zajímají. Snaím se je pro nì najít.}
+{152}{}{Take o tìch vertibirdech víš. Øekni mi všechno, co mùeš.}
+{153}{}{Šaman? Podívej, jestli váš šaman øíká, e vidìl nìjakou vìc, jak lítá a unáší lidi, tak se nejspíš jen moc naèuchal bylinek. Rozumíš?}
+{154}{}{Hakunin bıt velkı šaman. Jestlie øíct, e vidìt, tak to vidìt.}
+{155}{}{Hakunin byl velkı šaman. Jestlie øekl, e vidìl vertibirdy, tak je opravdu vidìl!}
+{156}{}{Mnoo, sice mi to nic neøíká, ale v pøípadì, e bych nìjakı vertibird vidìl, komu o tom mám øíct?}
+{157}{}{Øekneš mì. Bıt nablízku.}
+{158}{}{Øíct Shi.}
+{159}{}{Øíct Bratrstvu Oceli.}
+{160}{}{Øíct Hubologistùm.}
+{161}{}{Mùeš vybrat. Dát vìdìt Shi, Bratrstvu Oceli, nebo Hubologisti. Všichni mít zájem.}
+{162}{}{Øekneš to mì. Budu nablízku.}
+{163}{}{Dej vìdìt Shiùm.}
+{164}{}{Dej vìdìt Bratrstvu Oceli.}
+{165}{}{Dej vìdìt Hubologistùm.}
+{166}{}{Mùeš si dokonce vybrat. Mùeš dát vìdìt Shi, Bratrstvu Oceli, nebo dokonce Hubologistùm. Kadı z nich má o vertibirdy eminentní zájem.}
+{167}{}{Shi, jo? No dobøe, kdy chceš. Pošlu jim kdy tak zprávu do Èínské ètvrti. Ale teï mám nìco na práci.}
+{168}{}{Poèkej. Vyvolenı mít mocné pøátele. Ti øíkat, e Navarro tady. Ty øíct kde nebo ti Vyvolenı zatanèit váleènı tanec!}
+{169}{}{Poèkej minutku, kámo. Náhodou mám nìjaké dobré pøátele a ti øíkají, e Navarro je nìkde tady. Øekni mi kde nebo bude tanec!}
+{170}{}{Bratrstvo... Eh, jo, jasnì, e to udìlám. Ale teï mám nìco na práci.}
+{171}{}{Poèkej. Vyvolenı mít mocné pøátele. Ti øíkat, e Navarro tady. Ty øíct kde nebo ti Vyvolenı zatanèit váleènı tanec!}
+{172}{}{Poèkej minutku, kámo. Náhodou mám nìjaké dobré pøátele a ti øíkají, e Navarro je nìkde tady. Øekni mi, kde nebo bude tanec!}
+{173}{}{Hubologisti? Jo, jasnì, dám jim vìdìt, jestli nìco uvidím. Ale teï mám nìco na práci.}
+{174}{}{Poèkej. Vyvolenı mít mocné pøátele. Ti øíkat, e Navarro tady. Ty øíct kde nebo ti Vyvolenı zatanèit váleènı tanec!}
+{175}{}{Poèkej minutku, kámo. Náhodou mám nìjaké dobré pøátele a ti øíkají, e Navarro je nìkde tady. Øekni mi, kde nebo bude tanec!}
+{176}{}{Sakra, kdo si to má pamatovat... Uh, dobøe, kdybych nìco zjistil... no a teï mám nìco na práci.}
+{177}{}{Poèkej. Vyvolenı mít mocné pøátele. Ti øíkat, e Navarro tady. Ty øíct kde nebo ti Vyvolenı zatanèit váleènı tanec!}
+{178}{}{Poèkej minutku, kámo. Náhodou mám nìjaké dobré pøátele a ti øíkají, e Navarro je nìkde tady. Øekni mi, kde nebo bude tanec!}
+{179}{}{Uh... hej, poèkej chvilku. Já takhle mluvím jen proto abych vystrašil rùzné nezvané návštìvníky a tak. Nechci mít ádné problémy, o kterıch jsi tu mluvil.}
+{180}{}{Pak ty øíct Vyvolenému ta nejlepší cesta na základnu... hned!}
+{181}{}{Pak mi tedy poraï tu nejlepší cestu na základnu... a to hned!}
+{182}{}{To by mìlo bıt vchodem padacími dveømi v podlaze mojí místnosti. Tak u jdi a nech mì na pokoji.}
+{183}{}{Oukej, u jít.}
+{184}{}{V poøádku. Udìlám to.}
+{185}{}{No èas od èasu tu prolétávají. Obvykle letí od jihu smìrem od San Francisco. Jestli se zajímáš o vertibirdy, šel bych tímto smìrem.}
+{186}{}{Oukej, zkusit to tam.}
+{187}{}{Mít pøátele, kteøí Vyvoleného ádat, aby našel vertibirdy. Oni øíkat, e pøilétat právì odsud.}
+{188}{}{Oukej, podívám se tím smìrem.}
+{189}{}{Mám pøátele, kteøí mì poádali, abych našel vertibirdy. Øíkají, e pøilétají právì odsud.}
+{190}{}{Enkláva? To je nìjaká skupina nebo co? To mi vùbec nic neøíká. Co jim chceš?}
+{191}{}{Chtít se k nim pøidat.}
+{192}{}{Chci se k nim pøidat.}
+{193}{}{Pøidat se k nim? Jsi jen divoch! Proè si myslíš, e by chtìli nìkoho takového? A to u vùbec nemluvím o té tvé ozbrojené bandì}
+{194}{}{Pøidat se k nim? Jsi jen divoch! Proè si myslíš, e by chtìli takového køováka?.}
+{195}{}{Já mluvit vánì. Já pøidat se k Enkláva.}
+{196}{}{Já mluvit vánì. Já pøidat se k Enkláva.}
+{197}{}{Jsem voják. Chci se pøidat k Enklávì.}
+{198}{}{Jsem voják. Chci se pøidat k Enklávì.}
+{199}{}{Poèkej chvilku, chytrolíne. Snaíš se mi øíci, e jsi jeden z tìch vojákù, kteøí sem byli pøeloeni?}
+{200}{}{Poèkej chvíli. Snaíš se mi øíci, e jsi jeden z tìch vojákù, kteøí sem byli pøeloeni?}
+{201}{}{Uh... ochranka?}
+{202}{}{Najal jsem si ochranku!}
+{203}{}{Sákryš. Promiò mi to lhaní. Chodí nám sem spousta nováèkù a mım úkolem je oddìlit zrno od plev. Take jdi nahoru k bránì, projdi tam skrz stromy a øekni jim heslo. Je to 'Ovèí hlava.' Jo a neuhıbej z té cesty!}
+{204}{}{Díky!}
+{205}{}{Poèkej chvilku, chytrolíne. Snaíš se mi øíci, e jsi jeden z tìch vojákù, kteøí sem byli pøeloeni? V tom pøípadì proè nejdeš sám?}
+{206}{}{Poèkej chvíli. Snaíš se mi øíci, e jsi jeden z tìch vojákù, kteøí sem byli pøeloeni?}
+{207}{}{No... jo.}
+{208}{}{Ano, pøesnì tak.}
+{209}{}{Mnoo, nechci bıt hrubı nebo tak, ale tady to je soukromı pozemek. Jestli chcete nìkde do nìèeho šourat, tak to nedìlejte tady.}
+{210}{}{OK.}
+{211}{}{Zase zpátky? Co pro tebe mùe starı Chris udìlat tentokrát?}
+{212}{}{Ty øíct, e Navarro na jihu. Ty lháø! Já chtít pravdu tentokrát.}
+{213}{}{Øekl jsi mi, e Navarro je na jihu, starouši. Pøišel jsem z tebe vymlátit pravdu.}
+{214}{}{Vypadáš povìdomì. Myslím, e u jsem tì nìkde vidìl... ale ne, to není moné.}
+{215}{}{Vetøelec na stanici! Pošlete pomoc!}
+{216}{}{Spuste alarm!}
+{217}{}{Poplach! Poplach!}
+{218}{}{Chcípni, skunku!}
+{219}{}{Za to, e tì zabiju mì Enkláva vyznamená!}
+{220}{}{Chcípni primitive!}
+{221}{}{Co se to kurva...?!}
+{222}{}{Ty pouít tu vysílaèku a litovat!}
+{223}{}{Zkus pouít tu vysílaèku starouši a budeš litovat!}
+{224}{}{Táhni k èertu! (ze záhubù roucha vymotal vysílaèku). Chceš vidìt, kdo s kım zatoèí? Mám tu pár chlapcù, kteøí ti ukáou novej vıznam toho slova! (chystá se vysílaèku zapnout)}
+{225}{}{Já tì zabít!}
+{226}{}{Co ty to dìlat?}
+{227}{}{Já jít.}
+{228}{}{To byl špatnej tah, dìdouši.}
+{229}{}{Co si myslíš, e dìláš?}
+{230}{}{Hej, u odtud mizím.}
+{231}{}{Jo, správnì.}
+{232}{}{Vytáhl vysílaèku. Chystá se varovat celou základnu! Musím to s ním rychle vyøídit.}
+
+{800}{}{Pøelstil jsi Chrise a on ti vyzradil heslo.}
+{810}{}{Zabil jsi Chrise pøedtím ne stihl varovat základnu.}

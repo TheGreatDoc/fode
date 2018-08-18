@@ -1,0 +1,13 @@
+{100}{}{Du siehst einen Mann in einer Metallrüstung.}
+{101}{}{Du siehst Kaga.}
+{102}{}{Ja, es ist Kaga, der Nicht-so-Großartige. Er hat eine Metallrüstung an und will dich
+ töten.}
+{103}{}{Du schon wieder!}
+{104}{}{Ich bin's leid, dich ständig wiederzusehn.}
+{105}{}{Auserwähltes Wesen, pfff!}
+{106}{}{Bringen wir's zu Ende.}
+{107}{}{Du wirst es bereuen, jemals den Namen Kaga gehört zu haben!}
+{108}{}{Ich bin seit unserm letzten Treffen viel besser geworden.}
+{109}{}{Das wird noch zu 'ner schlechten Angewohnheit.}
+{110}{}{Kaga muß noch ein bißchen mehr üben.}
+{111}{}{Kaga wird wiederkommen.}

@@ -1,0 +1,295 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz, 
+{100}{}{Vidíš tenkého, nervóznì se tváøícího mue.}
+{101}{}{Vidíš "bezbolestného" doktora Johnsona, Reddingského lékaøe.}
+{102}{}{Vidíš mrtvolnì bledého, nervózního chlápka s vydutıma oèima.}
+{103}{}{Nejsi tak blbı jak jsem si myslel.}
+{104}{}{Tvùj vıraz troglodyta potvrzuje moje nejèernìjší obavy.}
+{105}{}{Máš nádhernì vyvinuté nadoènicové oblouky.}
+{106}{}{Zvláštní je, e i po tolika letech vysoké radiace se tvùj mozek zmenšil jenom takhle málo.}
+{107}{}{Tady neni jídlo. Vypadni!}
+{108}{}{Kšá, kšá!}
+{109}{}{Vra se do divoèiny, domorodèe.}
+{110}{}{Kdy jsou domorodci tak blbí jako brahmíny, mìli by bıt i tak uiteèní.}
+{111}{}{Tvé nohy tì zanesly k tomu správnému èlovìku. Jsem Johnson, doktor, a mùu tì dát do poøádku, pokud chceš.}
+{112}{}{Nazdárek. Tvùj kámoš zøejmì potøebuje lékaøskou pomoc. Já jsem "bezbolestnı" doktor Johnson a mùu se o nìj
+ postarat.}
+{113}{}{Zdá se mi, e nutnì potøebuješ lékaøskou pomoc. Já jsem doktor Johnson a klidnì to mùeš nechat na mì.}
+{114}{}{Ahoj, já jsem doktor Johnson. Zdá se mi ale, e na tom nejsi zrovna dvakrát nejlépe. Mám to spravit?}
+{115}{}{Ahoj, já jsem doktor Johnson. Klidnì bych se postaral o tvého pøítele, pokud bys mì nechal. Nevypadá moc dobøe.}
+{116}{}{Trápí-li tì nìco, neváhej a svìø se do mıch rukou. Urèitì to zvládnu. Jsem doktor Johnson.}
+{117}{}{Tak se mi zdá, e potøebuješ dát do kupy. Mohl bys mì tedy nechat dìlat mou práci. Bude to hned, jsem profesionál.}
+{118}{}{Tak copak se ti zase stalo? Jen nech starého dobrého Johnsona a se na to podívá.}
+{119}{}{Budu velice rád, kdy se o mne postaráš. Kolik to ale bude stát, doktore?}
+{120}{}{Právì sháním nìjaké lékaøské potøeby.}
+{121}{}{Dìkuji ti, ale nemyslím e léèba je nutná. Radši bych ti poloil pár otázek.}
+{122}{}{Rád tì poznávám, doktore. Nemyslím si ale, e potøebuji lékaøskou pomoc. Sbohem.}
+{123}{}{Za kompletní uzdravení si poèítám 50$.}
+{124}{}{Za uzdravení tvého pøítele chci jen 50$.}
+{125}{}{Tady máš peníze, doktore.}
+{126}{}{Bohuel si to právì nemùu dovolit. Snad pøíštì, doktore.}
+{127}{}{50$, heh? No, snad by se mi to nìjak podaøilo sehnat do pøíštì. Sbohem.}
+{128}{}{Mùu ti nabídnout "skupinové léèení". Vyléèím vás všechny najednou za pouhopouhıch 100$.}
+{129}{}{Tady máš ty peníze, doktore. Dej nás do poøádku.}
+{130}{}{Bohuel, tolik penìz asi dohromady nedám. Snad pøíštì, doktore.}
+{131}{}{100$, heh? Vrátím se, a to seenu. Zatím sbohem.}
+{132}{}{Ty se mi nìjak nezdáš. Nebude lehké tì opìt dostat do formy, ale za 100$ bych to snad nìjak zvládnul.
+ Co ty na to?}
+{133}{}{Ten tvùj kamarád se mi nìjak nezdá. Nebude lehké ho opìt dostat do formy, ale za 100$ bych to snad nìjak zvládnul.
+ Co ty na to?}
+{134}{}{Já souhlasím. Za tu hrstku zlaákù mi to stojí. Tady jsou.}
+{135}{}{Bohuel si to nemùu dovolit. Snad pøíštì, doktore. Sbohem.}
+{136}{}{100$? Snad se mi to nìjak podaøí sehnat do pøíštì. Zatím sbohem, doktore.}
+{137}{}{Koukám e sem pøišla partièka trosek. Jenome já jsem velice hodnı doktor. Mùu se vás tedy ujmout a pofoukat vám
+ bolístky. Bude vás to stát jenom 150$.}
+{138}{}{Dìkujeme, doktore, tady to je.}
+{139}{}{To si bohuel nemùeme zrovna teï dovolit. Je mi to líto, snad pøíštì. Sbohem.}
+{140}{}{150$? No, jenom doufám, e se mi ty peníze podaøí v blízké dobì sehnat. Zatím nashle.}
+{141}{}{Rád bych ti pomohl, ale nemáš dost penìz na pokrytí úètu. Lékaøské potøeby nìco stojí.}
+{142}{}{Eh, rychle, doktore. Potøebujeme lékaøskou pomoc.}
+{143}{}{Vrátím se, a budu mít peníze. Nashle.}
+{144}{}{No dobøe. Pro jednou. Ty peníze mi pøineseš pøíštì. OK?}
+{145}{}{Jednou jsem udìlal vıjimku, ale po druhé u to neudìlám. Teï ty peníze toti nutnì potøebuju. Tak u to na svìtì
+ hold chodí; nic nedostaneš zadarmo - mé sluby nevyjímaje.}
+{146}{}{Mnohokrát dìkuji, jsi moc hodnı. Pøíštì ti to zaplatím. Slibuju.}
+{147}{}{Nechci bıt na obtí. Radši se vrátím, a ty peníze seenu. Sbohem.}
+{148}{}{Máš pravdu. Moc rád bych u odešel, ale mám ještì pár otázek.}
+{149}{}{Dobøe, dobøe. Radši odejdu.}
+{150}{}{Je mi líto, bez penìz do hospody nelez. Nemùu vyléèit kadého, komu se zachce. Vra se, a budeš mít na zaplacení.}
+{151}{}{Nemám sice peníze, ale mám nìjaké vìci na prodej. Mùu je vymìnit za tvé sluby?}
+{152}{}{Ještì ne odejdu, rád bych se tì na nìco zeptal.}
+{153}{}{OK, dojdu si vyzvednout peníze. Zatím sbohem.}
+{154}{}{Co chceš vìdìt?}
+{155}{}{Co to bude teï?}
+{156}{}{Mám takovı dojem, e mám nìco pro vyøešení místního problému s Jetem.}
+{157}{}{Slyšel jsem, e Redding má poslední dobou problémy s exportem.}
+{158}{}{Hodila by se mi lékaøská pomoc.}
+{159}{}{Dìje se nìco zajímavého ve mìstì?}
+{160}{}{Proè ti øíkají "bezbolestnı" doktor Johnson?}
+{161}{}{Máš nìjaké lékaøské potøeby na prodej?}
+{162}{}{Jenom procházím kolem. Sbohem, doktore.}
+{163}{}{Vzpamatuj se! Tohle není ádné skladištì, ale lékaøská ordinace! Tady se neobchoduje se zboím! Tady se akceptuje
+ jedinì zlato. Take si dej èelem vzad a vra se, a nìjaké seeneš.}
+{164}{}{Dobøe, zapamatuju si to. Sbohem.}
+{165}{}{Nebylo by od vìci opatøit si pár vìcièek do budoucna, take uka co máš.}
+{166}{}{OK}
+{167}{}{Vlastnì mì jenom zajímalo, jestli tu taky nìco prodáváš. Ve skuteènosti mám pouze pár otázek.}
+{168}{}{No, nìjak jsem si to rozmyslel. Uvidíme se pozdìji, doktore.}
+{169}{}{Je to všechno co si chtìl?}
+{170}{}{Opravdu by se to tak dalo udìlat?}#-Tuhle vìtu v originále jsem moc nepochopil :-)
+{171}{}{Vlastnì, uka mi ještì jednou tvou nabídku.}
+{172}{}{Díky doktore. Mùu se ještì na nìco zeptat?}
+{173}{}{Alespoò prozatím. Sbohem.}
+{174}{}{Tak a máš to za sebou. Potøebuješ ještì nìco?}
+{175}{}{Zajisté. Mám ještì pár otázek.}
+{176}{}{Ne, to je všechno co, jsem chtìl. Díky a sbohem.}
+{177}{}{Nemìli bychom to nechat zajít tak daleko. Nìkterá zranìní mohou hnisat a vdycky je z toho gangréna.
+ Bohuel jsem poslední dobou nepouíval kudly tak, jak bych chtìl a trochu mi zrezavìly. Víš co ti øeknu, zatím se na
+to vykašli a nech to bıt. Snad s tím budu moct nìco udìlat pozdìji.}
+{178}{}{OK. Ale ještì ne úplnì zplesnivím, mi budeš muset zodpovìdìt pár otázeèek.}
+{179}{}{Vrátím se, jak si vzpomenu. Sbohem, doktore.}
+{180}{}{Poslední dobou tráví stále více horníkù svùj volnı èas "létáním" na Jetu. Pokud to takhle pùjde dál, produkce
+ reddingského zlata se nejspíš úplnì zastaví. Tahle situace se nejspíš líbí New Renu.}
+{181}{}{Vìtšina místních horníkù pracuje jenom proto, aby si mohli zase poøádnì šlehnout. Produkce reddingského zlata jde
+ rapidnì dolù. Pokud tahle situace pøetrvá, New Reno zaène ovládat Redding.}
+{182}{}{Všichni reddingští horníci dìlají pouze pro fet. Velice pochybuji, e by nìkdo z nich nepromrhal veškeré peníze
+ za ten zpropadenı Jet. Obavám se, e New Reno bude mít Redding brzo pod kontrolou, a mùu jenom doufat, e se tahle
+ situace vyøeší døív, ne se to opravdu stane.}#-Pøeloeno èistì odhadem :-)
+{183}{}{Co s tím má New Reno spoleèného?}
+{184}{}{Kde se tu všechen ten Jet bere?}
+{185}{}{Chápu. Mùu se zeptat ještì na pár vìcí?}
+{186}{}{Díky za informace. Sbohem, doktore.}
+{187}{}{Ahoj, já jsem "bezbolestnı" doktor Johnson. Mùu pro tebe nìco udìlat?}
+{188}{}{Co pro tebe mùe starı doktor Johnson udìlat?}
+{189}{}{Mùeš mi odpovìdìt na pár otázek.}
+{190}{}{Zajímám se o lékaøské potøeby. Nemáš nìjaké?}
+{191}{}{Doktore, slyšel jsem o nìjakıch speciálních podkoních implantátech. Nevíte o tom nìco?}
+{192}{}{Jenom se tu tak rozhlíím, doktore. Sbohem.}
+{193}{}{Mockrát ti dìkuji, díky tobì jsem mohl vyøešit místní problém s Jetem. To antidotum, které jsem podstrèil do
+ zásob, odvede urèitì skvìlou práci. Vsadím se, e za pár dní se lidi budou divit, jak to svinstvo mohli brát.}
+{194}{}{Jsem rád, e to klaplo. Za odmìnu mi zodpovìz pár otázek.}
+{195}{}{A nepodezøívají tì lidi, e jsi jim v Jetu prodal nìjaké svinstvo?}
+{196}{}{Tak to jsi mì opravdu potìšil. Teï mì ale omluv, jdu pomáhat lidem zas o dùm dál.}
+{197}{}{Díky za to antidotum, co jsi mi dal. Reddingské problémy s Jetem jsou u konce. Vypadá to, e New Reno bude
+ muset vymyslet jinı zpùsob k našemu podmanìní.}
+{198}{}{Rád jsem byl nápomocen. Jestli ti to nevadí, zeptám se ještì na pár vìcí.}
+{199}{}{Nepodezøívají tì lidi z toho, e jim v Jetu prodáváš svinstvo?}
+{200}{}{Co s tím má New Reno spoleèného?}
+{201}{}{Jsem rád, e to vyšlo, doktore. Zatím sbohem.}
+{202}{}{Prosím? Co máš na mysli?}
+{203}{}{Mám toti antidotum Jetu. Vyrobil ho doktor Troy z Vault City a já mám vyøešit problém závislosti na Jetu,
+ kterı tu máte.}
+{204}{}{Vlastnì nic. Radši mi ještì odpovìz na pár otázek.}
+{205}{}{Samozøejmì, to je pravda. Pøíliš Jetu, málo práce... ale kde jsi o tom slyšel?}
+{206}{}{McClure z Vault City mi to øekl.}
+{207}{}{Sem tam nìco vyslechnu v hospodì.}
+{208}{}{To není dùleité. Radši se tì ještì na nìco zeptám.}
+{209}{}{New Reno, jako hlavní a zároveò jedinı vırobce Jetu, si mùe dovolit prodávat Jet docela levnì, co má za následek
+ velikou dostupnost i spodní vrstvì obyvatel. Tímto zpùsobem si na Jet navykne celé mìsto, protoe, jak jistì víš, Jet je
+ vysoce návykovou látkou. Toto mìsto si potom bude muset Jet nìjak obstarat, co dává New Renu defacto 
+ kontrolu nad celou oblastí. Stejnì tak i nad Reddingem.}
+{210}{}{Rozumím. Mùu se tì ještì zeptat na pár vìcí?}
+{211}{}{Kdy nechceš aby New Reno ovládalo Redding, tak kdo se tu o to tedy bude starat?}
+{212}{}{Díky, e jsi my to vysvìtlil, doktore. Sbohem.}
+{213}{}{Všechen Jet, kterı zde seeneš, pochází od rodiny Mordinù z New Rena. Chodí vìtšinou ve velkıch baleních
+ a já ho pak nalévám do nádob, ve kterıch se prodává.}
+{214}{}{Z toho máš urèitì velkı zisk.}
+{215}{}{Urèitì máš New Reno velice rád.}
+{216}{}{Rozumím. Povìz mi ještì o nìèem.}
+{217}{}{Nemìl bys náhodou nìjakı Jet?}
+{218}{}{O tom pochybuju. Lidé jsou mi tak vdìèní za to, e Jet pøelévám do uivatelskıch ampulí, e vùèi mì nemají
+ ani špetku podezíravosti. Párkrát u jsem jim tam nìco šoupnul, a jak vidíš, jsem doktorem poøád a nejspíš ještì dlouho
+ budu.}
+{219}{}{Jsem rád, e nemáš problémy. Rád bych se tì ale ještì zeptal na pár vìcí.}
+{220}{}{Tak to ti pøeju. Vìci by byli urèitì jinak, kdyby lidé byli podezíravìjší. Sbohem.}
+{221}{}{Kadı by chtìl mít podíl na reddingském zlatì, take nejspíš budeme muset pøejít pod nìèí kontrolu. Já
+ jenom chci, aby to byl nìkdo, kdo dokáe pro Redding odvést dobrou práci.}
+{222}{}{A tím máš na mysli koho?}
+{223}{}{Podle mì by pro Redding bylo nejlepší, kdyby to tu spravovalo Vault City. Shodou okolností pocházím zrovna tam
+ odsud - take by to mohlo znít jako sobectví -, ale vìø mi. Jsem si jist, e Vault City dokáe vyjít vstøíc obèanùm
+ Reddingu.}
+{224}{}{Proè seš si tak jist?}
+{225}{}{Protoe ve Vault City se o všechno starají spravedlivım a lidskım zpùsobem, take by se tak mìli starat i o 
+Redding.}
+{226}{}{Vault City se o sice stará dobøe o svoje Obèany, ale stejnì tak nemá pøíliš v lásce ty, kteøí obèané nejsou.}
+{227}{}{Máš pravdu, to dává smysl.}
+{228}{}{Zdejší lidé vìdí, jaké by jim to pøineslo vıhody. Urèitì by nadvládu Vault City pøivítali s rozevøenım náruèím.}
+{229}{}{Rozumím, zeptám se Vás ještì na nìco.}
+{230}{}{Hmm, o tom nic nevím. Sbohem.}
+{231}{}{To si nemyslím. Vault City sice zajišuje Obèanùm zvláštní privilegia, ale jenom proto, e
+ jsou k tomu více zpùsobilí, ne ostatní. Mimoto, kadı se mùe stát obèanem, kdy splní zkoušky, které mu zadají.}
+{232}{}{Nejsem si ale jistı, jak budou zdejší lidé reagovat na pravidla, které jim Vault City zadá.}
+{233}{}{Jo, bezpochyby. Sbohem, doktore.}
+{234}{}{Plním nádoby s Jetem a pak je prodávám místním lidem. Nedìlám to pro peníze, ale pro lidi. Kdybych to neudìlal,
+ nìkteøí mastièkáøi by zaèali pøipravovat drogy s nesterilním, èi dokonce rezavım náèiním. Nemusíš mi to vìøit , ale já
+ jsem opracdu nikdy nechtìl, aby lidé byli nemocní.}
+{235}{}{Ty jsi ale milı, to bych od tebe neèekal. Mohl bys mi ještì odpovìdìt na pár otázek?}
+{236}{}{To je od tebe opravdu ušlechtilé.}
+{237}{}{Dopovíš mi to pozdìji, sbohem.}
+{238}{}{Trochu míò ironie by rozhodnì neuškodilo, ale budi. Klidnì si tomu øíkej ušlechtilost, pokud chceš, ale podle
+ mne to má své opodstatnìní. Majitelé dolù mne platí za udrování jejich horníkù zdravıch a práceschopnıch. Pokud bych
+ nechal nìkoho pracovat na Jetu, pravdìpodobnì by to nemìlo dobré následky a moje peníze by byly ta tam.}
+{239}{}{U chápu. Povìz mi ještì o nìèem jiném.}
+{240}{}{Díky, e jsi mi o tom povìdìl. Sbohem, doktore.}
+{241}{}{Doktor Troy? Toho znám. Je to neobyèejnì talentovanı lékaø. Kdy jsem byl ještì ve Vault City, pracoval jsem s ním.
+ Ale radši mi povìz nìco o tom antidotu.}
+{242}{}{Ty jsi pracoval ve Vault City?}
+{243}{}{Doktor Troy mi dal to andidotum a poslal mì ze tebou, e u budeš vìdìt co s tím.}
+{244}{}{Ano, tam jsem získal své lékaøské zkušenosti. Jsem Obèan Vault City. Postupem èasu jsem ale zjistil, e na svìtì
+ je spousta míst, kde potøebují mé lékaøské znalosti víc ne ve Vault City, a proto jsem tady. Teï ale zpìt k tomu antidotu
+ .}
+{245}{}{Doktor Troy mi dal to andidotum a poslal mì ze tebou, e u budeš vìdìt co s tím.}
+{246}{}{To opravdu vím. Staèí, kdy mi to dáš.}
+{247}{}{Tady to máš, doktore.}
+{248}{}{Ne tak rychle, doktore. Jakou to pro tebe má cenu?}
+{249}{}{Jenome mì se nìjak nechce dát to z rukou. Uvidíme se pozdìji.}
+{250}{}{Jakou to pro mì má cenu? Ty malej syèáku. Já tì...}
+{251}{}{Tak tohle by ti teda šlo. Nejdøív mi budeš vyhroovat a já se pak leknu a dám ti to zadarmo. Ani náhodou, 
+ mì nevystrašíš.}
+{252}{}{Dobøe, dobøe. Jenom jsem si dìlal legraci. Tady to máš.}
+{253}{}{Díky. Teï pùjdu a zajistím, aby horníci dostali v pøíští dávce Jetu nìco *extra*.}
+{254}{}{A nebudou tì z toho podezírat?}
+{255}{}{Moc rád jsem byl nápomocen. Rád bych se tì ale ještì zeptal na pár vìcí.}
+{256}{}{Vıbornì. Nesnáším pohled na všechny ty "piloty" Jetu, kteøí prolétají celı den. Pøeju ti hodnì štìstí
+  do budoucnosti.}
+{257}{}{No dobøe, dostal jsi mì. Dám ti za to 2000$. Víc nemám.}
+{258}{}{To by mohlo staèit, tady to máš.}
+{259}{}{Rasši si to ještì chvilku nechám. Sbohem, doktore.}
+{260}{}{To klidnì mùeš, ale nemysli si, e ze mì dostaneš víc penìz. Já toti opravdu víc nemám.}
+{261}{}{No dobrá. Vezmu si tìch 2000$. Tady máš to antidotum, doktore.}
+{262}{}{Nevadí. Sbohem.}
+{263}{}{Znám McClura. On èlenem koncilu Vault City. Co všechno ti povìdìl?}
+{264}{}{Øekl, e produkce dolù klesá a ceny stoupají.}
+{265}{}{Nejsem si jist, zda ti to mùu øíct.}
+{266}{}{Opravdu? A o èem se v tìch historkách vypráví?}
+{267}{}{O tom, e produkce dolù klesá a ceny stoupají.}
+{268}{}{Vlastnì jenom samé hovadiny. Radši mi ještì povìz o jinıch vìcech.}
+{269}{}{To je pravda. Zdejší horníci se poøád víc a víc vìnují Jetu namísto aby pracovali. Tím pádem je ménì zboí na vıvoz
+ a ceny se zvyšují. A tahle situace poøád neustává.}
+{270}{}{To není dobré. Povìz mi ještì radši o jinıch vìcech.}
+{271}{}{To nezní moc dobøe. Sbohem, doktore.}
+{272}{}{Vtip je v tom, e mí pacienti vìtšinou zemøou døív, ne je to zaène moc bolet. }
+{273}{}{No, to je velice, eh, komfortní. Jestli ti to nebude vadit, zeptám se tì ještì na nìco.}
+{274}{}{Myslím, e u radši pùjdu. Právì jsem si toti vzpomnìl e si ještì nìco musím vyøídit v, ehmmm, nìkde.
+ Sbohem, doktore.}
+{275}{}{Mùeš mi to øíct. Jsem doktor.}
+{276}{}{No jo. Tak dobøe. Øekl mi, e Reddingská produkce klesá a ceny stoupají.}
+{277}{}{Nìco u jsem o tom èetl. Není to tak tìká operace kdy máš lékaøské zkušenosti. A vybavení, samozøejmì.}
+{278}{}{Máš všechno, co potøebuješ k provedení operace?}
+{279}{}{Skoro. Mám na to zkušenosti a trénink, ale nemám materiál na implantáty.}
+{280}{}{No a co k tomu budeš potøebovat?}
+{281}{}{Budeme muset trošíèku improvizovat. Myslím, e všechen potøebnı materiál bych mohl pøipravit z klasického
+ kevlarového brnìní. To obsahuje jak obranné pláty, tak i termální èlánky, co je vše co potøebuju.}
+{282}{}{To je skvìlı. Take to mùeš udìlat?}
+{283}{}{Vlastnì ano - ale kdy toho do tebe dostanu moc, na kráse ti to zrovna dvakrát nepøidá.}
+{284}{}{O to se nestarám, já jenom sháním nìjakou ochranu. Take co pøesnì mùeš udìlat?}
+{285}{}{V úvahu pøipadají ètyøi rozdílné operace, které mùu provést. Take jako první tu jsou standartní
+ podkoní imlantáty, které ochraòují hlavnì proti fyzickému útoku, a pak tu jsou imlantáty typu Phoenix, ochraòující pøed árem.
+ Potom tu ještì mám rozšíøenou verzi obou základních. Musíš mít ovšem nejdøív tu základní, pokud budeš chtít i rozšíøenou.}
+{286}{}{O které operaci se toho chceš dozvìdìt víc?}
+{287}{}{Nìco takového není nic pro mne. Radši se tì zeptám ještì na pár jinıch vìcí.}
+{288}{}{Øekni mi víc o tìch implantátech. Rád bych se nechal operovat.}
+{289}{}{U toho vím dost, popøemıšlím o tom. Sbohem, doktore.}
+{290}{}{O které operaci se chceš dozvìdìt víc?}
+{291}{}{O standardních podkoních implantátech.}
+{292}{}{O implantátech typu Phoenix.}
+{293}{}{O rozšíøené verzi standartních implantátù.}
+{294}{}{O rozšíøené verzi imlantátù typu Phoenix.}
+{295}{}{Radši bych se tì zeptal na nìco jiného.}
+{296}{}{Podle mì u nepotøebuju poslouchat nic o operacích. Sbohem.}
+{297}{}{Podle toho, co jsem èetl, by ti mìly podkoní implantáty pøidat 5% odolnost vùèi vıbuchu a normálnímu zranìní - to
+ se samozøejmì pøièítá ke kvalitì brnìní, které nosíš. Operace zabere asi dva dny, bude stát 5000$ a budu na ní potøebovat
+ jedno kevlarové brnìní. Operaèní postup by mìl bıt jednoduchı, alespoò myslím. V kadém pøípadì ti na památku zbude
+ pár jizev, ale nebude to tak hrozné.}
+{298}{}{To zní skvìle doktore, jen do toho. U mám dost toho, jak do mì poøád nìkdo støílí a bodá, ale nejvíc nesnáším,
+ kdy mì vyhodí do vzduchu.}
+{299}{}{Øekni mi ještì nìco o jinıch operacích.}
+{300}{}{Vrátím se, a budu mít víc penìz. Zatím sbohem.}
+{301}{}{Vrátím se, a nìkde vyhrabu kevlarové brnìní. Uvidíme se pozdìji.}
+{302}{}{Rozmyslel jsem si to, ádnou operaci nepotøebuju. Sbohem.}
+{303}{}{Nejprve sice potøebuješ mít základní verzi podkoních implantátù, ne do tebe zašiju i jejich rozšíøenou verzi,
+ ale mùu ti hned teï øíct, co by to pro tebe znamenalo. Ta dobrá vìc je, e odolnost vùèi vıbuchu a normálnímu
+ zranìní se ti zvıší o 10% - to se samozøejmì pøièítá k brnìní, které nosíš -, ta špatná je, e nìkteré pláty zaènou
+ vyèuhovat ven, co ponìkud sníí tvoje osobní kouzlo. Nemusíš se ale bát, budu se snait, aby to bylo viditelné jen málo.
+ Operace zabere pár dní a bude tì stát celkem 30000 dolarù.}
+{304}{}{Rozšíøená verze standardních podkoních implantátù ti zaruèí celkem 10% odolnost vùèi vıbuchu a normálnímu zranìní
+ - k tomu se samozøejmì pøiètou kvality brnìní, které nosíš. Bohuel ale nìkteré pláty zaènou
+ vyèuhovat ven, co ponìkud sníí tvoje osobní kouzlo. Nemusíš se ale bát, budu se snait, aby to bylo viditelné jen málo.
+ Operace zabere pár dní a bude tì stát celkem 30000 dolarù}
+{305}{}{To zní skvìle doktore, jen do toho. Jsem pro kadou bitku, kdykoliv a kdekoliv. Tohle by se mi mohlo hodit.}
+{306}{}{Ještì mi povìz o nìjaké z jinıch operací.}
+{307}{}{Vrátím se, a budu mít víc penìz. Sbohem.}
+{308}{}{Vrátím se, a se mi nìkde podaøí sehnat kevlarové brnìní. Uvidíme se pozdìji, sbohem.}
+{309}{}{Díky doktore, ale u jsem si to rozmyslel. Sbohem.}
+{310}{}{Podle všeho by ti mìly implantáty typu Phoenix zaruèit 5% odolnost vùèi všem teplotním zranìním (oheò,
+ laser a plasma) . Operace tì bude stát pár dní,
+ jednu standardní kevlarovou zbroj (na teplo rozhánìjící membrány)8.000$. Nemusíš se znepokojovat, tahle operace tì bude
+ stát jenom pár jizev - alespoò podle toho co jsem èetl.}
+{311}{}{To je skvìlé doktore. Koneènì nebudu potøebovat opalovací krém. Jen to toho.}
+{312}{}{Radši mi ještì povìz o nìjaké jiné operaci.}
+{313}{}{Pøijdu zpìt, a se mi podaøí sehnat víc penìz. Sbohem.}
+{314}{}{Vrátím se, a nìkde najdu kevlarové brnìní. Uvidíme se pozdìji, sbohem.}
+{315}{}{Víš, doktore, já jsem si to rozmyslel. Sbohem.}
+{316}{}{Nejdøív sice budeš potøebovat základní verzi imlantátù Phoenix, ne si budeš moci dovolit tu rozšíøenou, ale u
+ teï ti mùu øíct, co to pro tebe bude znamenat. Rozšíøená verze ti zvedne odolnost vùèi áru (plasma, oheò a laser)
+ na 10% - k tomu se samozøejmì pøiètou kvality brnìní, které nosíš. Operace by trvala pár dní
+ a stále by tì 48.000$. Bohuel, po jejím dokonèení nebudeš tak charismatickı jako teï. Laicky øeèeno, nìkteré rozhanìèe
+ tepla, které budeš mít pod kùí, vylezou ven.}
+{317}{}{Rozšíøená verze ti zvedne odolnost vùèi áru (plasma, oheò a laser)
+ na 10% - k tomu se samozøejmì pøiètou kvality brnìní, které nosíš. Operace by trvala pár dní
+ a stále by tì 48.000$. Bohuel, po jejím dokonèení nebudeš tak charismatickı jako teï. Laicky øeèeno, nìkteré rozhanìèe
+ tepla, které budeš mít pod kùí, vylezou ven.}
+{318}{}{Zní to dobøe, doktore, jen do toho.}
+{319}{}{Ještì mi povìz nìco o jinıch operacích.}
+{320}{}{Teï odejdu a vrátím se teprve a seenu víc penìz. Sbohem.}
+{321}{}{Vrátím se, a nìkde vyhrabu kevlarové brnìní. Sbohem.}
+{322}{}{Zrovna ádnou operaci nepotøebuju. Nashledanou doktore.}
+{323}{}{Tak, u to je. Operace byla úspìšná. U se nemusíš trápit s nárazy a podlitinamy tak moc, jak pøedtím.
+ Všechny pooperaèní modøiny za pár dní splasknou.}
+{324}{}{Nemám ponìtí, jak se mùe pod tvojí kùi vejít tolik implantátù, ale pøesto se operace povedla. Nejenom e vypadáš
+ jako Frankenstein, ale jsi i tak houevnatı. Ještì nìco, vyhıbej se pøímému slunci, dokud ty nejvìtší strupy nezmizí.}
+{325}{}{Tak a je to hotovo, alespoò myslím. Implantáty typu Phoenix máš u v sobì. Všechny ty svìdící
+ modøiny a rány za pár tıdnù zmizí.}
+{326}{}{Tak u jsi se koneènì probral. Právì seš doslova nacpanej rozptylovaèi tepla a tepelnımi membránami.
+ Nevypadáš zrovna nejhùø, ale u to není to, co bıvalo. Nevšímej si tìch hnisavıch strupù, dokud sami nezmizej.}
+{327}{}{Mnohokrát ti dìkuji, doktore. Pokud dovolíš, zeptal bych se tì ještì na pár vìcí.}
+{328}{}{Díky za tvou práci doktore. U radši odejdu. Sbohem.}

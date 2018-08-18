@@ -1,0 +1,70 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Na tomto terminálu svítí zelené ukazatele, které stoupají a klesají nepravidelnì.}
+{101}{}{Vidíš lékaøský terminál Vault City. }
+{102}{}{Na tomto terminálu svítí zelené ukazatele, které stoupají a klesají nepravidelnì.}
+{103}{}{Nìjaké další informace by se daly odsud dostat, jen to chce vìdeètìjší pøístup.}
+{104}{}{Ani náhodou netušíš, jak tenhle terminál funguje.}
+{105}{}{Zatracené poèítaèe.}
+{106}{}{Ani náhodou netušíš, jak tenhle terminál funguje.}
+{107}{}{Zkur-ve-né po-èí-ta-èe}
+{108}{}{Jsi pøihlášen do lékaøské databáze Vault City. I když uživatelské rozhraní není moc srozumitelné, databáze se zdá být rozdìlená do nìkolika souborù.}
+{109}{}{Prohledat soubory: umístìní Vaultù.}
+{110}{}{Prohledat soubory: jakákoli zmínka o GECKu.}
+{111}{}{Prohledat lékaøskou databázi: cokoli zajímavého.}
+{112}{}{Odhlásit se z terminálu.}
+{113}{}{V databázi nejsou dostupné jakékoli informace o Vaultech. Vìtšinou jsou tady jen lékaøské informace vztahující se k anatomii, známým nemocem, lékùm, drogám atd. }
+{114}{}{Prohledat soubory: jakákoli zmínka o GECKu.}
+{115}{}{Prohledat lékaøskou databázi: cokoli zajímavého.}
+{116}{}{Odhlásit se z terminálu.}
+{117}{}{V databázi nejsou dostupné jakékoli informace o Vaultech. Vìtšinou jsou tady jen lékaøské informace vztahující se k anatomii, známým nemocem, lékùm, drogám atd.}
+{118}{}{Prohledat soubory: jakákoli zmínka o Vaultech}
+{119}{}{Prohledat lékaøskou databázi: cokoli zajímavého.}
+{120}{}{Odhlásit se z terminálu.}
+{121}{}{Prohledal jsi databázi, ale tìm doktorským kecùm nerozumíš ani za mák. Vìdìt jenom trošièku více o tìchhle vìcech, snad by ti to k nìèemu bylo.}
+{122}{}{Pokraèovat v prohledávání souborù.}
+{123}{}{Odhlásit se z terminálu.}
+{124}{}{Prohledal si databázi a jsi fascinován tím, co vidíš. To, kde jsou s výzkumem ve Vault City dnes tì zcela ohromilo. Ještì si nikdy nic takového nevidìl.}
+{125}{}{Prohledal si databázi znovu, ale nenalezl nic nového. Schémata implantátù byla tìmi nejcennìjšími informacemi, které zde jsou. Je sice možné, že je ještì nìco skryto, ale je to nepravdìpodobné.}
+{126}{}{Znovu a znovu si prohledal databázi ... nic nového. Možná, že když to udìláš ještì dvacetkrát, narazíš na nìco nového.}
+{127}{}{No ... kecali jsme. Už tady vážnì není nic nového. Snad by se dalo vyèíst nìco ukrytého na dnì archivù, když to ještì párkrát projedeš. Ha ha.}
+{128}{}{Hele... podívej. Vykašli se na to. Ještì je kus hry pøed tebou. Nemùžeš tady být navìky.}
+{129}{}{Fajn. Jenom pokraèuj. Uvidíme, koho to pøestane bavit døíve.}
+{130}{}{Stejnì jen marníš svùj èas.}
+{131}{}{Ty máš inteligenci na 4, že?}
+{132}{}{SKONÈI TO!}
+{133}{}{Proè si radìji nejdeš hrát s ostatníma?}
+{134}{}{Tady už NIC není!}
+{135}{}{Takže znova. Znovu si prohledal archiv a našel co... nic.}
+{136}{}{Prohledal si tento terminál 53 krát. Nalezl si pøesnì 0 nových informací.}
+{137}{}{No táááák! Zkus to ještì jednou! Neboj...}
+{138}{}{Okej, podivej. Máme tu jedno velké tajemství. Psssst! Musíš navštívit hlavní poèítaè ve tøetím patøe hned, když dohraješ tuhle hru. Teï se odhlas a mazej za ostatníma. }
+{139}{}{Prohledal si databázi znovu a nenalezl nic nového.}
+{140}{}{Pokraèovat v prohledávání databáze.}
+{141}{}{Prohledat databázi znovu a ujistit se, že tam není nic více, než víš.}
+{142}{}{Pokraèovat v prohledávání databáze.}
+{143}{}{Odhlásit se z terminálu.}
+{144}{}{Strávil si témìø hodinu studiem archivù. Jak se dostáváš hloubìji do databáze, nacházíš øadu starších archivù obsahujících schémata nìjakého druh "bojových implantátù".}
+{145}{}{Prostudovat informace o implantátech.}
+{146}{}{Schémata popisují detaily o implantaci speciálních termálních a protinárazových materiálù  na lidskou kostru, garantující vyšší odolnost jedince proti fyzickému poškození a horku. Zdá se to být docela komplikovaný proces.}
+{147}{}{Poznamenat si informace, prohledat databázi dále.}
+{148}{}{Zapsat informace, odhlásit se z terminálu.}
+{149}{}{Vrátil ses zpìt do hlavního menu. Seznam souborù a vyhledávacích programù je vypsán na obrazovce terminálu.}
+{150}{}{Prohledat: jakákoli zmínka o Vaultu 13.}
+{151}{}{Prohledat: jakákoli zmínka èi odkaz na GECK.}
+{152}{}{Prohledat lékaøskou databázi: cokoli zajímavého.}
+{153}{}{Odhlásit se z terminálu.}
+{200}{}{Dokonèil si studium lékaøské databáze Vault City.}
+{201}{}{Tvùj pøítel se sice snažil tì obeznámit s barveným pípajícím èímsi, ale ani náhodou netušíš jak to otevøít, takže tì to pøestane bavit a vzdáš to.}
+{202}{}{Odejít.}
+{203}{}{*Pííííp*}
+{204}{}{*Píííp-Píísk*}
+{205}{}{*Týýýýt-Pííp*}
+{206}{}{*Pííp-*Písk}
+{207}{}{*Pííp*}
+{208}{}{Pink!}
+{209}{}{Promiò, Dave. Tohle nedám.}
+{210}{}{Nebezpeèí! Will Robinson!}
+{211}{}{Tøicet sekund na vzdálení se na bezpeènou vzdálenost.}
+{212}{}{PINK! jsem øekl!}
+{213}{}{Prosím, vyjmìte kartu a odeberte hotovost.}
+{214}{}{Divná hra. Jediný zpùsob, jak vyhrát, je nehrát.}

@@ -1,0 +1,5 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš robota.}
+{101}{}{Tento robot je z velké èásti trvale poškozen. Jeho promáèknutý povrch je pokryt škrábanci, blátem, a potrhanými dráty.}
+{102}{}{}

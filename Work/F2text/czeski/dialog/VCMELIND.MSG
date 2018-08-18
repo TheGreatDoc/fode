@@ -1,0 +1,45 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš velmi odmìøenou enu. Na svùj vìk vypadá velice dobøe.}
+{101}{}{Vidíš Melindu, šéfa uvítací kanceláøe.}
+{102}{}{Ahoj. Nemyslím, e bych tì tady nìkdy pøedtím vidìla. Vítejte ve Vault City. Máš nìco s èím bych ti mohla pomoci?}
+{103}{}{Ano, s èím ti mohu pomoct?}
+{104}{}{To v tom oplocení je mìsto?}
+{105}{}{Hledám Vault.}
+{106}{}{Kdo jsi?}
+{107}{}{Ne dìkuji. Nashle.}
+{108}{}{Je t. t. to Valt Cit..ty?}
+{109}{}{Ne, ne... nenech se vodit za nos falešnım zdáním. Právì teï stojíš na pøedmìstí. Skuteèné mìsto se nachází na severu.}
+{110}{}{Jakı je rozdíl mezi tìmi dvìma oblastmi?}
+{111}{}{Mohu se zeptat na nìco jiného?}
+{112}{}{Díky za tvou ochotu a pomoc. Nashle.}
+{113}{}{Dì.. dìkuji}
+{114}{}{Náš Vault? Nachází se uprostøed mìsta. Aèkoliv, musím ti øíct, e pouze Obèanùm mìsta je povolen vstup do Vaultu.}
+{115}{}{Potøebuji se dostat do Vaultu.}
+{116}{}{Mohu se zeptat na nìco jiného?}
+{117}{}{Díky za tvou ochotu a pomoc. Nashle.}
+{118}{}{Mé jméno? Proè, jmenuji se Melinda. Jsem šéf uvítací kanceláøe ve Vault City.}
+{119}{}{Vypadá to jako tvrdá práce.}
+{120}{}{Mohu se zeptat na nìco jiného?}
+{121}{}{Díky za pomoc.}
+{122}{}{Pøedmìstí je prostor, kde chráníme ménì šastné lidi z okolního svìta. Mnoho lidí ije v rámci naší ochrany a to pøispívá k naší dobré povìsti. Vnitøní mìsto je tam kde ijí Obèané.}
+{123}{}{Proè pouze Obèané ijí ve Vnitøním mìstì?}
+{124}{}{Mohu se zeptat na nìco jiného?}
+{125}{}{Díky za pomoc.}
+{126}{}{Omlouvám se, ale jak u jsem øekla pouze Obèané mohou vstoupit do Vaultu. Nemohu ti zajistit pøístup. Promluv si s Wallacem, naším šéfem celníkù. On jedinı by ti mohl pomoci. Najdeš ho v jeho úøadu na severním konci pøedmìstí.}
+{127}{}{Mohu se zeptat na nìco jiného?}
+{128}{}{Díky za tvou ochotu a pomoc. Nashle.}
+{129}{}{Moje práce je prospìšná pro Vault City. Pro rozhovory s pøicházejícími mám speciální vıcvik. Mohu ti øíct jen o jedineènosti mìsta.}
+{130}{}{Aha, neøíkej, e to není nìkdy pìkná otrava.}
+{131}{}{Mohu se zeptat na nìco jiného?}
+{132}{}{Díky za pomoc.}
+{133}{}{Abychom vybudovali lepší budoucnost pro všechny musíme bıt ostraití pøi ochranì naší kultury pøed venkovními vlivy.}
+{134}{}{A tím myslíš se jako izolovat?}
+{135}{}{Nejvíc ze všeho na svìtì jsem  hrdá, e pracuji ve Vault City. Budeš mì muset omluvit, protoe mám velmi naléhavé jednání kterého se musím zúèastnit. Hezkı den.}
+{136}{}{Nedìláme to pro sebe, ale dìláme to pro dobro všech.}
+{137}{}{No jo, samozøejmì. Zdá se to jako hezká pohádka.}
+{138}{}{Mohu se zeptat na nìco jiného?}
+{139}{}{Díky za pomoc.}
+{140}{}{Zdá se e nejsi schopnı pochopit sílu naší myšlenky, kterou uskuteèòujeme.}
+{141}{}{Máš pravdu. Nemohu to pochopit, protoe to nedává vùbec ádnı smysl}
+{142}{}{Jen mì provází zvìdavost. Díky za pomoc.}
+{143}{}{Teï právì mám mnoho práce. Jestlie potøebuješ pomoct promluv si s mım zástupcem.}

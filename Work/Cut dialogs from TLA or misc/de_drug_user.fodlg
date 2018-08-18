@@ -1,0 +1,37 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 R _script dialog@r_SayMessageDelayed 3 1 0 2 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{Junkie}
+{200}{}{You see a junkie.@@You see a drug addict.@@You see a person who's seen a lot of fairies.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{Aaaaaa!Weeeeeee!@@Dragons, dragons everywhere!@@Quick, money is falling from the sky!@@Why are you looking at meeeeeee? Whyyyyy?!@@Please please, who's there, don't hurt me, hey who is it?!@@Wohooooo!@@Where am I...Aaaah my head!@@Gimme more, please!!@@Oh my god, I must get another one! NOW!!@@Hey, you! Yes you, come here and take a look at this!@@Ehm, wanna fly like a fly?@@You interested in sumfin' special?@@I have some gooooood shit.@@Wanna see the your insides in all colors?@@Here, I have good stuff@@Man, where did that fuckin' rabbit go?@@Oh yes, here it is, oh, what? Where?@@My eyeballs went for a walk, have you seen them?@@Sex, drugs and little ponies.@@"You are a perfect drug, a perfect drug..."}
+
+[pols]
+{100}{}{Д†pun}
+{200}{}{Widzisz Д‡puna.}
+{210}{}{Widzisz lokalnego Д‡puna jest tak naД‡pany, Ејe niewie co siД™ dzieje.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{Aaaaaa!Weeeeeee!@@There are so many dragons here@@Wow, money is falling from sky!@@Why are you looking at meee?Whyyy?!@@Please please, who's there, don't hurt me, hey who's it!?@@Wohooooo!@@Where am I...Aah my head!@@Give me more, please!!@@Oh my god, I must get another one! NOW!!@@Hey, you! Yes you, come here and take a look at this!@@Ehm,want to fly like a dragon?@@Maybe you are interested in something special?@@Wanna some good drugs?@@Want something really special?@@Here, I have good stuff.}
+
+[russ]
+{100}{}{Junkie}
+{200}{}{You see a junky.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{Aaaaaa!Weeeeeee!@@There are so many dragons here@@Wow, money is falling from sky!@@Why are you looking at meee?Whyyy?!@@Please please, who's there, don't hurt me, hey who's it!?@@Wohooooo!@@Where am I...Aah my head!@@Give me more, please!!@@Oh my god, I must get another one! NOW!!@@Hey, you! Yes you, come here and take a look at this!@@Ehm,want to fly like a dragon?@@Maybe you are interested in something special?@@Wanna some good drugs?@@Want something really special?@@Here, I have good stuff.}
+

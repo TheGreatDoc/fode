@@ -1,0 +1,564 @@
+[comment]
+
+
+[data]
+lang=russ main engl pols
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+5 2030 #
+6 2040 #
+7 2050 #
+8 2060 #
+12 2070 #
+13 2080 @
+3 3000 None 1 #
+65505 3010 #
+3 3020 R _item p PID_223_FMJ + 100 R _item p PID_223_PISTOL + 1 #
+3 3030 R _item p PID_44_FMJ_MAGNUM + 100 R _item p PID_44_MAGNUM_JHP + 100 R _item p PID_44_MAGNUM_SPEEDLOADER + 1 #
+3 3040 R _item p PID_10MM_PISTOL + 1 R _item p PID_10MM_AP + 100 R _item p PID_10MM_JHP + 100 #
+3 3050 R _item p PID_10MM_JHP + 100 R _item p PID_10MM_AP + 100 R _item p PID_10MM_SMG + 1 #
+3 3060 R _item p PID_14MM_AP + 100 R _item p PID_14MM_PISTOL + 1 #
+3 3070 R _item p PID_5MM_AP + 100 R _item p PID_5MM_JHP + 100 R _item p PID_ASSAULT_RIFLE_EXT_MAG + 1 #
+9 3080 @
+4 4000 None 1 #
+65505 4010 #
+4 4020 R _item p PID_AVENGER_MINIGUN + 1 R _item p PID_5MM_AP + 360 #
+4 4030 R _item p PID_5MM_AP + 360 R _item p PID_MINIGUN + 1 #
+4 4040 R _item p PID_ROCKET_AP + 15 R _item p PID_ROCKET_LAUNCHER + 1 #
+4 4050 R _item p PID_223_FMJ + 150 R _item p PID_LIGHT_SUPPORT_WEAPON + 1 #
+4 4060 R _item p PID_7_62MM_AMMO + 300 R _item p PID_M60 + 1 #
+4 4070 R _item p PID_IMPROVED_FLAMETHROWER + 1 R _item p PID_FLAMETHROWER_FUEL_MK_II + 40 @
+5 5000 None 1 #
+65505 5010 #
+5 5020 R _item p PID_LASER_RIFLE_EXT_CAP + 1 R _item p PID_MICRO_FUSION_CELL + 40 #
+5 5030 R _item p PID_PLASMA_RIFLE + 1 R _item p PID_MICRO_FUSION_CELL + 40 #
+5 5040 R _item p PID_PLASMA_PISTOL_EXT_CART + 1 R _item p PID_SMALL_ENERGY_CELL + 60 #
+5 5050 R _item p PID_LASER_PISTOL + 1 R _item p PID_SMALL_ENERGY_CELL + 60 @
+6 6000 None 1 #
+65505 6010 #
+6 6020 R _item p PID_CURED_LEATHER_ARMOR + 1 #
+6 6030 R _item p PID_LEATHER_ARMOR_MK_II + 1 #
+6 6040 R _item p PID_METAL_ARMOR_MK_II + 1 #
+6 6050 R _item p PID_TESLA_ARMOR + 1 #
+6 6060 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 #
+6 6070 R _item p PID_COMBAT_ARMOR_MK_II + 1 #
+6 6080 R _item p PID_PURPLE_ROBE + 1 @
+7 7000 None 1 #
+65505 7010 #
+7 7020 R _item p PID_FRAG_GRENADE + 10 #
+7 7030 R _item p PID_PLASMA_GRENADE + 10 #
+7 7040 R _item p PID_SUPER_SLEDGE + 1 #
+7 7050 R _item p PID_RIPPER + 1 R _item p PID_SMALL_ENERGY_CELL + 60 @
+8 8000 None 1 #
+65505 8010 #
+8 8020 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 #
+8 8030 R _item p PID_SUPER_STIMPAK + 5 #
+11 8040 @
+9 9000 None 1 #
+65505 9010 #
+9 9020 R _item p PID_COMBAT_SHOTGUN + 1 R _item p PID_SHOTGUN_SHELLS + 100 #
+9 9030 R _item p PID_44_MAGNUM_JHP + 100 R _item p PID_44_FMJ_MAGNUM + 100 R _item p PID_DESERT_EAGLE_EXT_MAG + 1 #
+9 9040 R _item p PID_7_62MM_AMMO + 100 R _item p PID_FN_FAL_HPFA + 1 #
+9 9050 R _item p PID_HK_CAWS + 1 R _item p PID_SHOTGUN_SHELLS + 100 #
+9 9060 R _item p PID_10MM_AP + 100 R _item p PID_10MM_JHP + 100 R _item p PID_HK_P90C + 1 #
+9 9070 R _item p PID_223_FMJ + 100 R _item p PID_HUNTING_RIFLE + 1 #
+10 9080 @
+10 10000 None 1 #
+65505 10010 #
+10 10020 R _item p PID_HN_AP_NEEDLER_CARTRIDGE + 100 R _item p PID_HN_NEEDLER_CARTRIDGE + 100 R _item p PID_NEEDLER_PISTOL + 1 #
+10 10030 D _param p ST_CURRENT_HP > 300 R _item p PID_2MM_EC_AMMO + 100 R _item p PID_PK12_GAUSS_PISTOL + 1 #
+10 10040 R _item p PID_SHOTGUN_SHELLS + 100 R _item p PID_PANCOR_JACKHAMMER + 1 #
+10 10050 R _item p PID_10MM_JHP + 100 R _item p PID_14MM_AP + 100 #
+10 10060 R _item p PID_JONNY_BB_GUN + 1 R _item p PID_BBS + 100 #
+10 10070 R _item p PID_SNIPER_RIFLE + 1 R _item p PID_223_FMJ + 40 @
+11 11000 None 1 #
+11 11010 R _item p PID_JET + 1 #
+11 11020 R _item p PID_NUKA_COLA + 1 #
+11 11030 R _item p PID_BUFFOUT + 1 #
+11 11040 R _item p PID_PSYCHO + 1 #
+11 11050 R _item p PID_CIGARETTES + 1 #
+65505 11060 #
+11 11070 R _item p PID_BEER + 1 @
+12 12000 None 1 #
+0 12010 R _item p PID_AVENGER_MINIGUN + 1 R _item p PID_5MM_AP + 720 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 R _item p PID_SUPER_STIMPAK + 5 #
+0 12020 R _item p PID_223_FMJ + 150 R _item p PID_ROCKET_AP + 10 R _item p PID_ROCKET_LAUNCHER + 1 R _item p PID_LIGHT_SUPPORT_WEAPON + 1 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 R _item p PID_SUPER_STIMPAK + 5 #
+0 12030 R _item p PID_223_FMJ + 40 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 R _item p PID_SUPER_STIMPAK + 5 R _item p PID_SNIPER_RIFLE + 1 #
+0 12040 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 R _item p PID_LASER_RIFLE_EXT_CAP + 1 R _item p PID_MICRO_FUSION_CELL + 40 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 R _item p PID_SUPER_STIMPAK + 5 #
+0 12050 R _item p PID_BROTHERHOOD_COMBAT_ARMOR + 1 R _item p PID_PLASMA_RIFLE + 1 R _item p PID_MICRO_FUSION_CELL + 40 R _item p PID_CIGARETTES + 1 R _item p PID_BUFFOUT + 1 R _item p PID_JET + 1 R _item p PID_PSYCHO + 1 R _item p PID_NUKA_COLA + 1 R _item p PID_SUPER_STIMPAK + 5 #
+65505 12060 @
+13 13000 None 1 #
+65505 13010 #
+0 13020 D _param p ST_LEVEL = 1 R _param p ST_EXPERIENCE + 1000 #
+0 13030 D _param p ST_LEVEL = 2 R _param p ST_EXPERIENCE + 2000 #
+0 13040 D _param p ST_LEVEL = 3 R _param p ST_EXPERIENCE + 3000 #
+0 13050 D _param p ST_LEVEL = 4 R _param p ST_EXPERIENCE + 4000 #
+0 13060 D _param p ST_LEVEL = 5 R _param p ST_EXPERIENCE + 5000 #
+0 13070 D _param p ST_LEVEL = 6 R _param p ST_EXPERIENCE + 6000 #
+0 13080 D _param p ST_LEVEL = 7 R _param p ST_EXPERIENCE + 7000 #
+0 13090 D _param p ST_LEVEL = 8 R _param p ST_EXPERIENCE + 8000 #
+0 13100 D _param p ST_LEVEL = 9 R _param p ST_EXPERIENCE + 9000 #
+0 13110 D _param p ST_LEVEL = 10 R _param p ST_EXPERIENCE + 10000 #
+0 13120 D _param p ST_LEVEL = 11 R _param p ST_EXPERIENCE + 11000 #
+0 13130 D _param p ST_LEVEL = 12 R _param p ST_EXPERIENCE + 12000 #
+0 13140 D _param p ST_LEVEL = 13 R _param p ST_EXPERIENCE + 13000 #
+0 13150 D _param p ST_LEVEL = 14 R _param p ST_EXPERIENCE + 14000 #
+0 13160 D _param p ST_LEVEL = 15 R _param p ST_EXPERIENCE + 15000 #
+0 13170 D _param p ST_LEVEL = 16 R _param p ST_EXPERIENCE + 16000 #
+0 13180 D _param p ST_LEVEL = 17 R _param p ST_EXPERIENCE + 17000 #
+0 13190 D _param p ST_LEVEL = 18 R _param p ST_EXPERIENCE + 18000 #
+0 13200 D _param p ST_LEVEL = 19 R _param p ST_EXPERIENCE + 19000 #
+0 13210 D _param p ST_LEVEL = 20 R _param p ST_EXPERIENCE + 20000 &
+
+[russ]
+{100}{}{Smithy}
+{210}{}{You see a tanned young man, wearing leather and lots of chains. His face is covered in scars.}
+{1000}{}{Predialogue installations}
+{1010}{}{-}
+{2000}{}{Pick your arms.}
+{2010}{}{Small Guns}
+{2020}{}{Big Guns}
+{2030}{}{Energy Weapons}
+{2040}{}{Armors}
+{2050}{}{Grenades and Melee Weapons}
+{2060}{}{Drugs and Medication}
+{2070}{}{Combat Sets}
+{2080}{}{Special Training(experience)}
+{3000}{}{Small Guns? Could you be more precise?}
+{3010}{}{>back<}
+{3020}{}{.223 Pistol}
+{3030}{}{.44 Magnum}
+{3040}{}{10mm Pistol}
+{3050}{}{10mm SMG}
+{3060}{}{14mm Pistol}
+{3070}{}{Assault Rifle}
+{3080}{}{>forward<}
+{4000}{}{Big Guns? Could you be more precise?}
+{4010}{}{>back<}
+{4020}{}{Avenger Minigun}
+{4030}{}{Minigun}
+{4040}{}{Rocket Launcher}
+{4050}{}{Light Support Weapon}
+{4060}{}{M60}
+{4070}{}{Improved Flamer}
+{5000}{}{Energy Weapons? Could you be more precise?}
+{5010}{}{>back<}
+{5020}{}{Laser Rifle (Ext. Cap)}
+{5030}{}{Plasma Rifle}
+{5040}{}{Plasma Pistol (Ext. Cap)}
+{5050}{}{Laser Pistol}
+{6000}{}{Armors? Could you be more precise?}
+{6010}{}{>back<}
+{6020}{}{Combat Leather Jacket}
+{6030}{}{Leather Armor MK2}
+{6040}{}{Metal Armor MK2}
+{6050}{}{Tesla Armor}
+{6060}{}{Brotherhood Armor}
+{6070}{}{Combat Armor MK2}
+{6080}{}{Robe}
+{7000}{}{Grenades and Melee Weapons? Could you be more precise?}
+{7010}{}{>back<}
+{7020}{}{Frag Grenades(10x)}
+{7030}{}{Plasma Grenades(10x)}
+{7040}{}{Super Sledgehammer}
+{7050}{}{Ripper}
+{8000}{}{Drugs and Medication? Could you be more precise?}
+{8010}{}{>back<}
+{8020}{}{Jet, Psycho, Buffout, Nuka-Cola, Cigarettes}
+{8030}{}{Super Stimpacks(5x)}
+{8040}{}{>specific drugs<}
+{9000}{}{Other Small Guns? Could you be more precise?}
+{9010}{}{>back<}
+{9020}{}{Combat Shotgun}
+{9030}{}{Desert Eagle}
+{9040}{}{FN FAL}
+{9050}{}{H&K CAWS}
+{9060}{}{HK P90c}
+{9070}{}{Hunting Rifle}
+{9080}{}{>forward<}
+{10000}{}{Other Small Guns? Could you be more precise?}
+{10010}{}{>back<}
+{10020}{}{Needler Pistol}
+{10030}{}{PPK12 Gauss Pistol}
+{10040}{}{Pancor Jackhammer}
+{10050}{}{Pipe Rifle}
+{10060}{}{Red Ryder BB Gun}
+{10070}{}{Sniper Rifle}
+{11000}{}{Looking for something specific?}
+{11010}{}{Jet}
+{11020}{}{Nuka-Cola}
+{11030}{}{Buffout}
+{11040}{}{Psycho}
+{11050}{}{Cigarettes}
+{11060}{}{>back<}
+{11070}{}{Beer}
+{12000}{}{Which pack do you want?}
+{12010}{}{Minigunner(Brotherhood Armor, Avenger Minigun, 720x 5mm AP, 240x 5mm JHP, drugs, 5x Super Stimpacks)}
+{12020}{}{Support(Brotherhood Armor, Light Support Weapon, 150x .223 FMJ, drugs, 5x Super Stimpacks, Rocket Launcher, 10x Rocket AP)}
+{12030}{}{Sniper(Brotherhood Armor, Sniper Rifle, 40x .223 FMJ, drugs, 5x Super Stimpacks)}
+{12040}{}{Energy Sniper(Brotherhood Armor, Laser Rifle (Ext. Cap), 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12050}{}{Plasma Gunner(Brotherhood Armor, Plasma Rifle, 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12060}{}{>back<}
+{13000}{}{Special training, you say?}
+{13010}{}{>back<}
+{13020}{}{Level Up(1->2, no perks)}
+{13030}{}{Level Up(2->3, perk available)}
+{13040}{}{Level Up(3->4, perk only for characters with Skilled)}
+{13050}{}{Level Up(4->5, no perks)}
+{13060}{}{Level Up(5->6, perk available)}
+{13070}{}{Level Up(6->7, no perks)}
+{13080}{}{Level Up(7->8, perk only for characters with Skilled)}
+{13090}{}{Level Up(8->9, perk available)}
+{13100}{}{Level Up(9->10, no perks)}
+{13110}{}{Level Up(10->11, no perks)}
+{13120}{}{Level Up(11->12, perk available(Skilled included))}
+{13130}{}{Level Up(12->13, no perks)}
+{13140}{}{Level Up(13->14, no perks)}
+{13150}{}{Level Up(14->15, perk available)}
+{13160}{}{Level Up(15->16, perk only for characters with Skilled)}
+{13170}{}{Level Up(16->17, no perks)}
+{13180}{}{Level Up(17->18, perk available)}
+{13190}{}{Level Up(18->19, no perks)}
+{13200}{}{Level Up(19->20, perk only for characters with Skilled)}
+{13210}{}{Level Up(20->21, perk available)}
+
+[main]
+{100}{}{Smithy}
+{210}{}{You see a tanned young man, wearing leather and lots of chains. His face is covered in scars.}
+{1000}{}{Predialogue installations}
+{1010}{}{-}
+{2000}{}{Pick your arms.}
+{2010}{}{Small Guns}
+{2020}{}{Big Guns}
+{2030}{}{Energy Weapons}
+{2040}{}{Armors}
+{2050}{}{Grenades and Melee Weapons}
+{2060}{}{Drugs and Medication}
+{2070}{}{Combat Sets}
+{2080}{}{Special Training(experience)}
+{3000}{}{Small Guns? Could you be more precise?}
+{3010}{}{>back<}
+{3020}{}{.223 Pistol}
+{3030}{}{.44 Magnum}
+{3040}{}{10mm Pistol}
+{3050}{}{10mm SMG}
+{3060}{}{14mm Pistol}
+{3070}{}{Assault Rifle}
+{3080}{}{>forward<}
+{4000}{}{Big Guns? Could you be more precise?}
+{4010}{}{>back<}
+{4020}{}{Avenger Minigun}
+{4030}{}{Minigun}
+{4040}{}{Rocket Launcher}
+{4050}{}{Light Support Weapon}
+{4060}{}{M60}
+{4070}{}{Improved Flamer}
+{5000}{}{Energy Weapons? Could you be more precise?}
+{5010}{}{>back<}
+{5020}{}{Laser Rifle (Ext. Cap)}
+{5030}{}{Plasma Rifle}
+{5040}{}{Plasma Pistol (Ext. Cap)}
+{5050}{}{Laser Pistol}
+{6000}{}{Armors? Could you be more precise?}
+{6010}{}{>back<}
+{6020}{}{Combat Leather Jacket}
+{6030}{}{Leather Armor MK2}
+{6040}{}{Metal Armor MK2}
+{6050}{}{Tesla Armor}
+{6060}{}{Brotherhood Armor}
+{6070}{}{Combat Armor MK2}
+{6080}{}{Robe}
+{7000}{}{Grenades and Melee Weapons? Could you be more precise?}
+{7010}{}{>back<}
+{7020}{}{Frag Grenades(10x)}
+{7030}{}{Plasma Grenades(10x)}
+{7040}{}{Super Sledgehammer}
+{7050}{}{Ripper}
+{8000}{}{Drugs and Medication? Could you be more precise?}
+{8010}{}{>back<}
+{8020}{}{Jet, Psycho, Buffout, Nuka-Cola, Cigarettes}
+{8030}{}{Super Stimpacks(5x)}
+{8040}{}{>specific drugs<}
+{9000}{}{Other Small Guns? Could you be more precise?}
+{9010}{}{>back<}
+{9020}{}{Combat Shotgun}
+{9030}{}{Desert Eagle}
+{9040}{}{FN FAL}
+{9050}{}{H&K CAWS}
+{9060}{}{HK P90c}
+{9070}{}{Hunting Rifle}
+{9080}{}{>forward<}
+{10000}{}{Other Small Guns? Could you be more precise?}
+{10010}{}{>back<}
+{10020}{}{Needler Pistol}
+{10030}{}{PPK12 Gauss Pistol}
+{10040}{}{Pancor Jackhammer}
+{10050}{}{Pipe Rifle}
+{10060}{}{Red Ryder BB Gun}
+{10070}{}{Sniper Rifle}
+{11000}{}{Looking for something specific?}
+{11010}{}{Jet}
+{11020}{}{Nuka-Cola}
+{11030}{}{Buffout}
+{11040}{}{Psycho}
+{11050}{}{Cigarettes}
+{11060}{}{>back<}
+{11070}{}{Beer}
+{12000}{}{Which pack do you want?}
+{12010}{}{Minigunner(Brotherhood Armor, Avenger Minigun, 720x 5mm AP, 240x 5mm JHP, drugs, 5x Super Stimpacks)}
+{12020}{}{Support(Brotherhood Armor, Light Support Weapon, 150x .223 FMJ, drugs, 5x Super Stimpacks, Rocket Launcher, 10x Rocket AP)}
+{12030}{}{Sniper(Brotherhood Armor, Sniper Rifle, 40x .223 FMJ, drugs, 5x Super Stimpacks)}
+{12040}{}{Energy Sniper(Brotherhood Armor, Laser Rifle (Ext. Cap), 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12050}{}{Plasma Gunner(Brotherhood Armor, Plasma Rifle, 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12060}{}{>back<}
+{13000}{}{Special training, you say?}
+{13010}{}{>back<}
+{13020}{}{Level Up(1-2, no perks)}
+{13030}{}{Level Up(2->3, perk available)}
+{13040}{}{Level Up(3->4, perk only for characters with Skilled)}
+{13050}{}{Level Up(4->5, no perks)}
+{13060}{}{Level Up(5->6, perk available)}
+{13070}{}{Level Up(6->7, no perks)}
+{13080}{}{Level Up(7->8, perk only for characters with Skilled)}
+{13090}{}{Level Up(8->9, perk available)}
+{13100}{}{Level Up(9->10, no perks)}
+{13110}{}{Level Up(10->11, no perks)}
+{13120}{}{Level Up(11->12, perk available(Skilled included))}
+{13130}{}{Level Up(12->13, no perks)}
+{13140}{}{Level Up(13->14, no perks)}
+{13150}{}{Level Up(14->15, perk available)}
+{13160}{}{Level Up(15->16, perk only for characters with Skilled)}
+{13170}{}{Level Up(16->17, no perks)}
+{13180}{}{Level Up(17->18, perk available)}
+{13190}{}{Level Up(18->19, no perks)}
+{13200}{}{Level Up(19->20, perk only for characters with Skilled)}
+{13210}{}{Level Up(20->21, perk available)}
+
+[engl]
+{100}{}{Smithy}
+{210}{}{You see a tanned young man, wearing leather and lots of chains. His face is covered in scars.}
+{1000}{}{Predialogue installations}
+{1010}{}{-}
+{2000}{}{Pick your arms.}
+{2010}{}{Small Guns}
+{2020}{}{Big Guns}
+{2030}{}{Energy Weapons}
+{2040}{}{Armors}
+{2050}{}{Grenades and Melee Weapons}
+{2060}{}{Drugs and Medication}
+{2070}{}{Combat Sets}
+{2080}{}{Special Training(experience)}
+{3000}{}{Small Guns? Could you be more precise?}
+{3010}{}{>back<}
+{3020}{}{.223 Pistol}
+{3030}{}{.44 Magnum}
+{3040}{}{10mm Pistol}
+{3050}{}{10mm SMG}
+{3060}{}{14mm Pistol}
+{3070}{}{Assault Rifle}
+{3080}{}{>forward<}
+{4000}{}{Big Guns? Could you be more precise?}
+{4010}{}{>back<}
+{4020}{}{Avenger Minigun}
+{4030}{}{Minigun}
+{4040}{}{Rocket Launcher}
+{4050}{}{Light Support Weapon}
+{4060}{}{M60}
+{4070}{}{Improved Flamer}
+{5000}{}{Energy Weapons? Could you be more precise?}
+{5010}{}{>back<}
+{5020}{}{Laser Rifle (Ext. Cap)}
+{5030}{}{Plasma Rifle}
+{5040}{}{Plasma Pistol (Ext. Cap)}
+{5050}{}{Laser Pistol}
+{6000}{}{Armors? Could you be more precise?}
+{6010}{}{>back<}
+{6020}{}{Combat Leather Jacket}
+{6030}{}{Leather Armor MK2}
+{6040}{}{Metal Armor MK2}
+{6050}{}{Tesla Armor}
+{6060}{}{Brotherhood Armor}
+{6070}{}{Combat Armor MK2}
+{6080}{}{Robe}
+{7000}{}{Grenades and Melee Weapons? Could you be more precise?}
+{7010}{}{>back<}
+{7020}{}{Frag Grenades(10x)}
+{7030}{}{Plasma Grenades(10x)}
+{7040}{}{Super Sledgehammer}
+{7050}{}{Ripper}
+{8000}{}{Drugs and Medication? Could you be more precise?}
+{8010}{}{>back<}
+{8020}{}{Jet, Psycho, Buffout, Nuka-Cola, Cigarettes}
+{8030}{}{Super Stimpacks(5x)}
+{8040}{}{>specific drugs<}
+{9000}{}{Other Small Guns? Could you be more precise?}
+{9010}{}{>back<}
+{9020}{}{Combat Shotgun}
+{9030}{}{Desert Eagle}
+{9040}{}{FN FAL}
+{9050}{}{H&K CAWS}
+{9060}{}{HK P90c}
+{9070}{}{Hunting Rifle}
+{9080}{}{>forward<}
+{10000}{}{Other Small Guns? Could you be more precise?}
+{10010}{}{>back<}
+{10020}{}{Needler Pistol}
+{10030}{}{PPK12 Gauss Pistol}
+{10040}{}{Pancor Jackhammer}
+{10050}{}{Pipe Rifle}
+{10060}{}{Red Ryder BB Gun}
+{10070}{}{Sniper Rifle}
+{11000}{}{Looking for something specific?}
+{11010}{}{Jet}
+{11020}{}{Nuka-Cola}
+{11030}{}{Buffout}
+{11040}{}{Psycho}
+{11050}{}{Cigarettes}
+{11060}{}{>back<}
+{11070}{}{Beer}
+{12000}{}{Which pack do you want?}
+{12010}{}{Minigunner(Brotherhood Armor, Avenger Minigun, 720x 5mm AP, 240x 5mm JHP, drugs, 5x Super Stimpacks)}
+{12020}{}{Support(Brotherhood Armor, Light Support Weapon, 150x .223 FMJ, drugs, 5x Super Stimpacks, Rocket Launcher, 10x Rocket AP)}
+{12030}{}{Sniper(Brotherhood Armor, Sniper Rifle, 40x .223 FMJ, drugs, 5x Super Stimpacks)}
+{12040}{}{Energy Sniper(Brotherhood Armor, Laser Rifle (Ext. Cap), 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12050}{}{Plasma Gunner(Brotherhood Armor, Plasma Rifle, 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12060}{}{>back<}
+{13000}{}{Special training, you say?}
+{13010}{}{>back<}
+{13020}{}{Level Up(1-2, no perks)}
+{13030}{}{Level Up(2->3, perk available)}
+{13040}{}{Level Up(3->4, perk only for characters with Skilled)}
+{13050}{}{Level Up(4->5, no perks)}
+{13060}{}{Level Up(5->6, perk available)}
+{13070}{}{Level Up(6->7, no perks)}
+{13080}{}{Level Up(7->8, perk only for characters with Skilled)}
+{13090}{}{Level Up(8->9, perk available)}
+{13100}{}{Level Up(9->10, no perks)}
+{13110}{}{Level Up(10->11, no perks)}
+{13120}{}{Level Up(11->12, perk available(Skilled included))}
+{13130}{}{Level Up(12->13, no perks)}
+{13140}{}{Level Up(13->14, no perks)}
+{13150}{}{Level Up(14->15, perk available)}
+{13160}{}{Level Up(15->16, perk only for characters with Skilled)}
+{13170}{}{Level Up(16->17, no perks)}
+{13180}{}{Level Up(17->18, perk available)}
+{13190}{}{Level Up(18->19, no perks)}
+{13200}{}{Level Up(19->20, perk only for characters with Skilled)}
+{13210}{}{Level Up(20->21, perk available)}
+
+[pols]
+{100}{}{Smithy}
+{210}{}{You see a tanned young man, wearing leather and lots of chains. His face is covered in scars.}
+{1000}{}{Predialogue installations}
+{1010}{}{-}
+{2000}{}{Pick your arms.}
+{2010}{}{Small Guns}
+{2020}{}{Big Guns}
+{2030}{}{Energy Weapons}
+{2040}{}{Armors}
+{2050}{}{Grenades and Melee Weapons}
+{2060}{}{Drugs and Medication}
+{2070}{}{Combat Sets}
+{2080}{}{Special Training(experience)}
+{3000}{}{Small Guns? Could you be more precise?}
+{3010}{}{>back<}
+{3020}{}{.223 Pistol}
+{3030}{}{.44 Magnum}
+{3040}{}{10mm Pistol}
+{3050}{}{10mm SMG}
+{3060}{}{14mm Pistol}
+{3070}{}{Assault Rifle}
+{3080}{}{>forward<}
+{4000}{}{Big Guns? Could you be more precise?}
+{4010}{}{>back<}
+{4020}{}{Avenger Minigun}
+{4030}{}{Minigun}
+{4040}{}{Rocket Launcher}
+{4050}{}{Light Support Weapon}
+{4060}{}{M60}
+{4070}{}{Improved Flamer}
+{5000}{}{Energy Weapons? Could you be more precise?}
+{5010}{}{>back<}
+{5020}{}{Laser Rifle (Ext. Cap)}
+{5030}{}{Plasma Rifle}
+{5040}{}{Plasma Pistol (Ext. Cap)}
+{5050}{}{Laser Pistol}
+{6000}{}{Armors? Could you be more precise?}
+{6010}{}{>back<}
+{6020}{}{Combat Leather Jacket}
+{6030}{}{Leather Armor MK2}
+{6040}{}{Metal Armor MK2}
+{6050}{}{Tesla Armor}
+{6060}{}{Brotherhood Armor}
+{6070}{}{Combat Armor MK2}
+{6080}{}{Robe}
+{7000}{}{Grenades and Melee Weapons? Could you be more precise?}
+{7010}{}{>back<}
+{7020}{}{Frag Grenades(10x)}
+{7030}{}{Plasma Grenades(10x)}
+{7040}{}{Super Sledgehammer}
+{7050}{}{Ripper}
+{8000}{}{Drugs and Medication? Could you be more precise?}
+{8010}{}{>back<}
+{8020}{}{Jet, Psycho, Buffout, Nuka-Cola, Cigarettes}
+{8030}{}{Super Stimpacks(5x)}
+{8040}{}{>specific drugs<}
+{9000}{}{Other Small Guns? Could you be more precise?}
+{9010}{}{>back<}
+{9020}{}{Combat Shotgun}
+{9030}{}{Desert Eagle}
+{9040}{}{FN FAL}
+{9050}{}{H&K CAWS}
+{9060}{}{HK P90c}
+{9070}{}{Hunting Rifle}
+{9080}{}{>forward<}
+{10000}{}{Other Small Guns? Could you be more precise?}
+{10010}{}{>back<}
+{10020}{}{Needler Pistol}
+{10030}{}{PPK12 Gauss Pistol}
+{10040}{}{Pancor Jackhammer}
+{10050}{}{Pipe Rifle}
+{10060}{}{Red Ryder BB Gun}
+{10070}{}{Sniper Rifle}
+{11000}{}{Looking for something specific?}
+{11010}{}{Jet}
+{11020}{}{Nuka-Cola}
+{11030}{}{Buffout}
+{11040}{}{Psycho}
+{11050}{}{Cigarettes}
+{11060}{}{>back<}
+{11070}{}{Beer}
+{12000}{}{Which pack do you want?}
+{12010}{}{Minigunner(Brotherhood Armor, Avenger Minigun, 720x 5mm AP, 240x 5mm JHP, drugs, 5x Super Stimpacks)}
+{12020}{}{Support(Brotherhood Armor, Light Support Weapon, 150x .223 FMJ, drugs, 5x Super Stimpacks, Rocket Launcher, 10x Rocket AP)}
+{12030}{}{Sniper(Brotherhood Armor, Sniper Rifle, 40x .223 FMJ, drugs, 5x Super Stimpacks)}
+{12040}{}{Energy Sniper(Brotherhood Armor, Laser Rifle (Ext. Cap), 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12050}{}{Plasma Gunner(Brotherhood Armor, Plasma Rifle, 40x Microfusion Cells, drugs, 5x Super Stimpacks)}
+{12060}{}{>back<}
+{13000}{}{Special training, you say?}
+{13010}{}{>back<}
+{13020}{}{Level Up(1-2, no perks)}
+{13030}{}{Level Up(2->3, perk available)}
+{13040}{}{Level Up(3->4, perk only for characters with Skilled)}
+{13050}{}{Level Up(4->5, no perks)}
+{13060}{}{Level Up(5->6, perk available)}
+{13070}{}{Level Up(6->7, no perks)}
+{13080}{}{Level Up(7->8, perk only for characters with Skilled)}
+{13090}{}{Level Up(8->9, perk available)}
+{13100}{}{Level Up(9->10, no perks)}
+{13110}{}{Level Up(10->11, no perks)}
+{13120}{}{Level Up(11->12, perk available(Skilled included))}
+{13130}{}{Level Up(12->13, no perks)}
+{13140}{}{Level Up(13->14, no perks)}
+{13150}{}{Level Up(14->15, perk available)}
+{13160}{}{Level Up(15->16, perk only for characters with Skilled)}
+{13170}{}{Level Up(16->17, no perks)}
+{13180}{}{Level Up(17->18, perk available)}
+{13190}{}{Level Up(18->19, no perks)}
+{13200}{}{Level Up(19->20, perk only for characters with Skilled)}
+{13210}{}{Level Up(20->21, perk available)}

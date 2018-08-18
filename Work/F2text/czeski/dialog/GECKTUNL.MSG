@@ -1,0 +1,10 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+#############################################################
+#  Message File: GeckTunl.msg                               #
+#                                                           #
+#  Created: August 14, 1998                                 #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+{100}{}{Vstoupil jsi do podzemních tunelù v Gecku.}

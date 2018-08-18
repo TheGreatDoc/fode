@@ -1,0 +1,21 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš zcestovalého èlovìka.}
+{101}{}{Vidíš kupce.}
+{102}{}{To je pøekvapení. V tìchto konèinách vidím èlovìka jen zøídkakdy.}
+{103}{}{Hej! Poèkej! Mám vìci, které by ti mohly pomoci na tvıch dalších cestách!}
+{104}{}{Hej! Máš nìco, co bys mohl vymìnit za tohle?}
+{105}{}{To je tvùj šastnı den. Pojï a podívej se, co mám na prodej.}
+
+{200}{}{Buï pozdraven poutníku! Na této trase moc lidí nepotkávám, ale vdy mì potìší získat nového zákazníka. Chceš obchodovat?}
+{201}{}{Hej, ty tam! Je skvìlé, e jsi se tady zastavil. Vìtšina lidí na této trase ani nezastaví. Nechtìl bys nìco vymìnit?}
+{202}{}{Nemìl bys zájem o malı obchod?}
+
+{250}{}{To by bylo dobré.}
+{251}{}{Promiò, musím pokraèovat v cestì.}
+{252}{}{Jo. Já mít zboí.!}
+{253}{}{Já jít.}
+
+{260}{}{Bylo pøíjemné s tebou obchodovat. A tì na tvıch cestách provází štìstí.}
+{261}{}{Sbohem.}
+
+{270}{}{Vítej zpátky. Chceš se mrknout co tu mám?}

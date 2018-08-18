@@ -1,0 +1,117 @@
+# 0. QUICK LOOK (ANY)
+{100}{}{Tu vois l'un des habitants de New Reno.}
+
+# 1. LOOK, MALE (WTG)
+{150}{}{Tu vois un homme en guenilles. Il a l'air de s'ennuyer.}
+{151}{}{Tu vois un homme en guenilles. Il a le regard morne.}
+{152}{}{Tu vois un homme en guenilles. On dirait qu'il a la gueule de bois.}
+{153}{}{Tu vois un homme en guenilles. Il a l'air d'en avoir marre.}
+{154}{}{Tu vois un homme en guenilles. Il t'a jeté un regard irrité avant de t'ignorer.}
+{155}{}{Tu vois un homme en guenilles. Il a l'air bourré.}
+
+# 2. LOOK, FEMALE (WTG)
+{160}{}{Tu vois une femme en guenilles. Elle a l'air de s'ennuyer.}
+{161}{}{Tu vois une femme en guenilles. Elle a un regard morne.}
+{162}{}{Tu vois une femme en guenilles. Elle est à des années lumières d'ici.}
+{163}{}{Tu vois une femme en guenilles. Elle a l'air un peu saoule.}
+{164}{}{Tu vois une femme en guenilles. Elle t'a jeté un regard irrité avant de t'ignorer.}
+{165}{}{Tu vois une femme en guenilles. Quand elle rencontre ton regard, elle ricane.}
+
+# 3. FLOAT (ANY) TO [FLAG: ENCLAVE DESTROYED] (WTG)
+{202}{}{C'est comme ça qu'on donne une leçon à l'Enclave !}
+{203}{}{Pas mal ta victoire contre l'Enclave, }
+
+# 4. FLOAT (ANY) TO [POWER ARMOR] (WTG)
+{215}{}{Oh Oh. Dégagez, dégagez.}
+
+# 5. FLOAT AND CLICK (FEMALE) TO [MALE, PORN STAR] (WTG)
+{240}{}{Hé, salut beauté !}
+{241}{}{Tu as besoin d'un partenaire pour ton prochain film ?}
+
+# 6. FLOAT (MALE) TO [FEMALE, PORN STAR] (WTG)
+{255}{}{Ouah ! Regardez-moi ça !}
+{256}{}{Meeeeeeerde.}
+
+# 7. FLOAT AND CLICK (ANY) TO [MALE, PRIZEFIGHTER] (WTG)
+{287}{}{Hé champion ! La dernière bataille était super !}
+
+# 8. FLOAT (ANY) TO [MADE MAN] (WTG)
+{308}{}{En parlant d'apparence dangereuse...}
+{309}{}{*Gulp*}
+
+# 9. FLOAT (ANY) TO [SLAVER] (WTG)
+{320}{}{Quoi de neuf avec les esclavagistes du coin ?}
+{321}{}{Bon dimanche, sous vos applaudissements.}
+{322}{}{Il faut que je sorte de cette ville.}
+{323}{}{Les esclavagistes ont intérêt à faire attention dans cette ville...}
+{324}{}{Je déteste cette foutue ville.}
+{325}{}{Je suis dans cette ville depuis trop longtemps.}
+{326}{}{Cette ville serait formidable sans... les esclavagistes.}
+
+# 10. FLOAT AND CLICK (ANY) TO [COMPANION: ROBOBRAIN] (WTG)
+{366}{}{C'est une machine à sous robotique ?}
+
+# 11. FLOAT (ANY) TO [COMPANION: MARCUS] (WTG)
+{376}{}{C'est un mutant ?}
+
+# 12. FLOAT (ANY) TO [COMPANION: BONE-NOSE] OR MALE TOWNSPERSON REACTION TO [COMPANION = FEMALE SPOUSE] (WTG)
+{385}{}{Ton ami a un os dans le nez.}
+{386}{}{Ce type a un os dans le nez de la taille de mon bras. Dingue...}
+{387}{}{Un autre primate.}
+{388}{}{Ca commence à chauffer à Reno, il est temps de partir.}
+{389}{}{Il faut que je sorte de cette ville.}
+{400}{}{Je déteste cette foutue ville.}
+{401}{}{Je suis dans cette ville depuis trop longtemps.}
+{402}{}{Cette ville serait formidable sans... les touristes.}
+{403}{}{Tu la vends cette femme ?}
+{404}{}{Combien pour cette femme qui est avec toi ?}
+
+# 13. FLOAT [NO REP] (WTG)
+{453}{}{Combien de tribales vont venir dans cette ville ?}
+{454}{}{Foutus touristes, va.}
+{455}{}{Encore un qu'est pas du coin.}
+{456}{}{Il faut que je sorte de cette ville.}
+{457}{}{Je suis dans cette ville depuis trop longtemps.}
+{458}{}{Cette ville serait formidable sans... les touristes.}
+
+# 14. CLICK (ANY) TO [FLAG: ENCLAVE DESTROYED] (WTG)
+{490}{}{C'est comme ça qu'on donne une leçon à l'Enclave !}
+{493}{}{Pas mal ta victoire contre l'Enclave, }
+
+# 15. CLICK (ANY) TO [POWER ARMOR) (WTG)
+{511}{}{Est-ce que je te faisais de l'ombre ? Je vais quitter la ville.}
+{512}{}{Si tu crois que cette armure m'intimide, et ben t'as raison.}
+
+# 16. CLICK (MALE) TO [FEMALE, PORN STAR] (WTG)
+{543}{}{Viens mon chou, on va discuter un petit peu.}
+{544}{}{Bon sang ! Visez-moi ces courbes !!!}
+
+# 17. CLICK (ANY) TO [MALE, MADE MAN) (WTG)
+{584}{}{Donne bien le bonjour à ton patron.}
+{585}{}{Ecoute, s'te plaît... Je ne veux pas de problème.}
+
+# 18. CLICK (ANY) TO [SLAVER] (WTG)
+{602}{}{Si tu cherches à vendre des esclaves, essaie chez les Mordino.}
+{603}{}{Cette ville serait formidable... s'il n'y avait pas les esclavagistes.}
+{604}{}{J'ai entendu dire qu'on testait les stimulants sur les esclaves au nord de New Reno.}
+{605}{}{Qu'est-ce que tu veux ?}
+{606}{}{Il faut que je sorte de cette ville.}
+{607}{}{Ecoute, je n'ai pas le temps de te causer pour le moment.}
+
+# 19. CLICK (ANY) TO [COMPANION: BONE-NOSE] OR MALE TOWNSPERSON TO (COMPANION: SPOUSE = FEMALE) (WTG)
+{655}{}{Ce type a un os dans le nez de la taille de mon bras. Dingue...}
+{656}{}{Je ne veux même pas savoir pourquoi ton ami a un os dans le nez.}
+{657}{}{Je déteste cette foutue ville.}
+{658}{}{Je suis ici depuis trop longtemps.}
+{659}{}{Cette ville serait formidable... s'il n'y avait pas les touristes.}
+{660}{}{Ecoute, je n'ai pas le temps de te parler pour le moment.}
+{661}{}{Tu la vends la femme, là ?}
+
+# 20. CLICK (ANY) TO [NO REP] (WTG)
+{700}{}{Va y avoir de l'action ce soir !}
+{701}{}{Il faut que je quitte cette ville.}
+{702}{}{Ecoute, j'ai pas le temps de te parler pour l'instant.}
+
+# endlines
+{1203}{}{ !}
+{1493}{}{ !}

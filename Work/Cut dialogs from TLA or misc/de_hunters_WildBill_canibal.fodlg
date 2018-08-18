@@ -1,0 +1,226 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+3 1010 D _param p PLAYER_PROFESSION ! 6 D _var p Hunters_Camp_Canibal < 3 #
+20 1020 D _param p PLAYER_PROFESSION = 6 #
+40 1030 D _var p Hunters_Camp_Canibal } 3 D _param p PLAYER_PROFESSION ! 6 @
+3 2000 None 1 #
+4 2010 D _item p PID_ENERGY_BARIER_ACCESS_CARD = 0 #
+30 2020 D _item p PID_ENERGY_BARIER_ACCESS_CARD ! 0 #
+12 2030 D _item p PID_LIGHTER ! 0 D _var p Hunters_Camp_Canibal = 1 #
+16 2040 D _var p Hunters_Camp_Canibal = 2 D _item p PID_SHIV_DE ! 0 D or D _item p PID_KNIFE_DE ! 0 D _var p Hunters_Camp_Canibal = 2 #
+0 2050 @
+4 3000 None 1 #
+5 3010 @
+5 4000 None 1 #
+6 4010 #
+0 4020 @
+6 5000 None 1 #
+7 5010 #
+0 5020 @
+7 6000 None 1 #
+8 6010 #
+0 6020 @
+8 7000 None 1 #
+14 7010 #
+15 7020 D _param p PLAYER_PROFESSION ! 0 #
+9 7030 D _var p Hunters_Camp = 0 #
+0 7040 @
+9 8000 None 1 #
+10 8010 @
+10 9000 None 1 #
+11 9010 R _var p Hunters_Camp_Canibal = 1 @
+11 10000 None 1 @
+12 11000 None 1 #
+0 11010 R _var p Hunters_Camp_Canibal = 3 R _item p PID_LIGHTER - 1 R _script quest_server_scripts@bounty_hunters_0_to_30 1 0 #
+0 11020 R _var p Hunters_Camp_Canibal = 3 R _item p PID_LIGHTER - 1 R _script quest_server_scripts@bounty_hunters_0_to_30 1 1 @
+13 12000 None 1 #
+0 12010 D _param p PLAYER_PROFESSION = 0 D _param p ST_KARMA < 0 R _param p PLAYER_PROFESSION = 6 R _item p PID_SHIV_DE - 1 R _var p Hunters_Camp_Canibal = 3 R _item p PID_KNIFE_DE - 1 #
+15 12020 @
+14 13000 None 1 #
+11 13010 R _var p Hunters_Camp_Canibal = 2 @
+15 14000 None 1 #
+0 14010 @
+16 15000 None 1 #
+13 15010 @
+20 16000 None 1 #
+0 16010 @
+30 17000 None 1 @
+40 18000 None 1 #
+13 18010 #
+0 18020 &
+
+[engl]
+{100}{}{Wild Bill}
+{110}{}{man37.png}
+{1000}{}{Predialogue installations}
+{1010}{}{for normal}
+{1020}{}{for canibal}
+{1030}{}{after lighter quest}
+{2000}{}{...?}
+{2010}{}{...?}
+{2020}{}{Hi.}
+{2030}{}{I've got the lighter you wanted.}
+{2040}{}{I've got a knife.}
+{2050}{}{[Walk away]}
+{3000}{}{...?}
+{3010}{}{You gonna talk or not?}
+{4000}{}{Bill ain't interested in a conversation.}
+{4010}{}{Now I know why the folks think you're a weirdo.}
+{4020}{}{Neither am I.}
+{5000}{}{Look who's talking. A bunch of grass eating mules, working themselves all the way into an early grave...}
+{5010}{}{I heard you ate one of the inmates. Is that true?}
+{5020}{}{Fuck you, psycho.}
+{6000}{}{Ate him?... Well, you could call it that, but there's way more to it than just consuming... I joined with him, made him part of me, then again his life started anew... but what could you know about that anyway?}
+{6010}{}{Joined with him? But... how? I want to know!}
+{6020}{}{I don't want to hear any more of this bullshit.}
+{7000}{}{You really want to?... Okay, then give ol' Bill a listen...
+It's in everyone of us... deep in the our inner selves... the truth is everyone desires it, but the so-called civilisation, society all that crap, they forbid it, call it a taboo, call it monstrosity... but still, you can feel drawn to it, deep inside...
+I can open your mind, I can give you a new life, teach you to see things you haven't seen before... If you really want to take a dive deep down into yourself, that is.}
+{7010}{}{Go on, I'm listening...}
+{7020}{}{Count me in! Man has to learn new things right?}
+{7030}{}{All right, but I want to achieve enlightment someplace better than here... It's just crawling with slaves, clinging to the old ways... you know what I mean.}
+{7040}{}{I've got enough excitement for today. Maybe some other time. }
+{8000}{}{}
+{8000}{}{error}
+{8010}{}{Sure thing, what's on your mind?}
+{9000}{}{I need... some fire, a lighter would do. Find one and bring it to me.}
+{9010}{}{There's no way I can smuggle a lighter here. Any hints?}
+{10000}{}{No idea. Think. Maybe some prisoner has one...}
+{11000}{}{Good job, my friend! I'll give you directions to our camp. Tell my brothers I'll be back soon... Just gotta take care of some things here first...}
+{11010}{}{Okay, I'm going. [Select location in Real-time]}
+{11020}{}{Enlightment, here I go... [Select location in Turn-based]}
+{12000}{}{You must know one thing... It's not life that surrounds you, you are the life that surrounds everything else... Channel it as energy for your being, open your mind for the pleasures of the human flesh... consume it, let it fill you, feel the fear, courage, anger and agony of the consumed souls... Let it become part of yourself, let it open the eyes that were long shut... Become enlightened!}
+{12010}{}{Now I understand... I am truly enlightened! [Profession Cannibal]}
+{12020}{}{Errr... Sorry, but I don't understand any of it.}
+{13000}{}{All right, but first you've gotta do something for old Bill. Get me a knife, any knife will do, just make sure it's sharp. You bring it, and then we'll talk.}
+{13010}{}{How am I supposed to get a knife in prison?}
+{14000}{}{I'm not gonna be able to give you what you ask until you are who you are... Remember, your heart has to be hard as a rock, yet as light as a feather, free of burdens you're carrying. Your soul has no room for enlightment right now.}
+{14010}{}{Eh...}
+{15000}{}{Quiet you moron!... Lemme see... What the fuck is this? It was supposed to be sharp, and this shit ain't ever been close to sharp in years... but I guess it's better than nothing for old Bill heh? Allrighty, let us continue...}
+{15010}{}{I can't wait...}
+{16000}{}{Bill welcomes you, enlightened one.}
+{16010}{}{Hello... and goodbye.}
+{17000}{}{Well well, judging from your plaque old Bill has a guest!... But Bill doesn't remember he invited any guests...}
+{18000}{}{Any news from the camp? What about your enlightment?}
+{18010}{}{You know I was thinking, maybe you would be a better guide for my enlightment after all...}
+{18020}{}{Not yet, but I'm on it.}
+
+[pols]
+{100}{}{Wild Bill}
+{110}{}{man37.png}
+{1000}{}{Predialogue installations}
+{1010}{}{for normal}
+{1020}{}{for canibal}
+{1030}{}{after lighter quest}
+{2000}{}{... ?}
+{2010}{}{...?}
+{2020}{}{Czesc}
+{2030}{}{Mam dla ciebie zapalniczke !}
+{2040}{}{Mam dla ciebie noz !}
+{2050}{}{[odejdz]}
+{3000}{}{...?}
+{3010}{}{Moze bys sie odezwal?}
+{4000}{}{Nie jestem zainteresowany rozmowa...}
+{4010}{}{...No to juz wiem dlaczego ludzie tutaj maja cie za dziwaka}
+{4020}{}{Ani ja...}
+{5000}{}{I kto to mowi? Banda trawozernych nieudacznikow machajacych caly dzien kilofem...}
+{5010}{}{Podobno zjadles jednego ze wspolwiezniow?}
+{5020}{}{Sam jestes nieudacznikiem lysy huju}
+{6000}{}{Zjadlem?... o tak... mozna to tak nazwac... i tak tego nie zrozumiesz wiec spierdalaj stad i wracaj skad przyszedles...}
+{6010}{}{Jestem tu bo chce zrozumiec...}
+{6020}{}{Sam spierdalaj lysy cwelu...}
+{7000}{}{Chcesz?... wiec sluchaj...
+To siedzi w kazdym z nas... gleboko w twojej podswiadomosci... cos czego zawsze pragneles ale nie byles pewny... wachales sie... lekales...
+Moge oswiecic twoj umysl, otworze go na nowe zycie, pozwole dostrzec rzeczy oczywiste ale niewidoczne do tej pory... Czy jestes na to gotow?}
+{7010}{}{Tak, slucham mistrzu...}
+{7020}{}{Jasne ze jestem ! jeszcze jeden fach w reku nikomu nie zaszkodzi.}
+{7030}{}{Tak, tylko chcialbym zeby moje oswiecenie mialo miejsce w miejscu lepszym niz to... Nie chce wchodzic w nowe zycie w miejscu pelnym bandy niewiercow... Moze znasz jakies bardziej ustronne miejsce?}
+{7040}{}{Moze nie dzisiaj. Za duzo wrazen jak na jeden dzien...}
+{8000}{}{Hmmm... Masz racje... w takim razie udasz sie do naszego obozu niedaleko stad. Moze nawet bedziesz mial przyjemnosc zostac oswiecony przez samego mistrza...
+Zanim jednak odejdziesz musisz cos dla mnei zrobic.}
+{8010}{}{Oczywiscie, do uslug}
+{9000}{}{Potrzebuje... ognia...mam pewna rzecz do zrobienia ale nie mam zapalniczki. Zalatw ja dla mnie i wroc tutaj.}
+{9010}{}{Nie przemyce zapalniczki tutaj. Jak mam ja zalatwic?}
+{10000}{}{Nie wiem, kombinuj. Moze ktorys z wiezniow tutaj ma...}
+{11000}{}{Dobra robota przyjacielu ! Mozesz sie udac do naszego obozu. Tu masz wspolrzedne. Powiedz naszym braciom ze zaniedlugo do nich wroce... tylko jeszcze cos musze zalatwic tu...}
+{11010}{}{... [Select locations in Real-time]}
+{11020}{}{... [Select locations in Turns-based]}
+{12000}{}{Musisz wiedziec jedno... to nie zycie cie otacza tylko to ty jestes zyciem co otacza cala reszte... pozwol zeby to wszystko stalo sie energia dla twojego istnienia, otworz umysl na korzysci z przyjmowania ludzkiego ciala... konsumuj je i pozwol zeby rozchodzilo sie w tobie, poczuj jak czyjas strach, odwage i ostatni oddech twojej ofiary, niech stanie sie teraz ona czescia ciebie, niech pozwoli ci otworzyc zamkniete do tej pory oczy.}
+{12010}{}{Teraz wszystko rozumiem... dziekuje za oswiecenie [PROFESJA KANIBAL]}
+{12020}{}{Eee... soorrry.... ale nic nie kumam.}
+{13000}{}{Dobrze ale zanim zaczne musisz zaltwic cos dla mnie. Przynies mi noz, obojetnie jaki, ma byc tylko ostry i nie za duzy... zalatwisz go bedziemy rozmawiac dalej.}
+{13010}{}{Skad mam zalatwic noz w wiezieniu?}
+{14000}{}{Nie jestem w stanie oswiecic twojego umyslu dopoki bedziesz tym kim teraz jestes. Pamietaj ze twoja serce musi byc twarde i zimne jak skala. Wroc jak zrzucisz ciezar ktory niesiesz w sobie. Na chwile obecna w twoim zyciu nie ma miejsca na kolejna profesje.}
+{14010}{}{Eh...}
+{15000}{}{Nie tak glosno baranie... pokaz go... Co to jest? mial byc ostry a ten nawet przy ostrym nie lezal od 100 lat ! ... ale dobra niech bedzie juz lepsze to niz nic. Mozemy kontynuowac nauke...}
+{15010}{}{Juz nie moge sie doczekac.}
+{16000}{}{Witam nowonarodzonego...}
+{16010}{}{Witam i zegnam}
+{17000}{}{Sadzac po indetyfikatorze jestes tu w gosciach... a ja nie przypominam sobie zebym zapraszal kogos na odwiedziny...}
+{18000}{}{Jakies wiesci z obozu i jak ida postepy w oswieceniu?}
+{18010}{}{Wiesz tak sobie mysle ze bedzie dla mnie zaszczytem jak jednak ty dokonasz oswiecenia.}
+{18020}{}{Jeszcze tam nie bylem ale pracuje nad tym wszsytkim.}
+
+[russ]
+{100}{}{Wild Bill}
+{110}{}{man37.png}
+{1000}{}{Predialogue installations}
+{1010}{}{for normal}
+{1020}{}{for canibal}
+{1030}{}{after lighter quest}
+{2000}{}{...?}
+{2010}{}{...?}
+{2020}{}{Hi.}
+{2030}{}{I've got the lighter you wanted.}
+{2040}{}{I've got a knife.}
+{2050}{}{[Walk away]}
+{3000}{}{...?}
+{3010}{}{You gonna talk or not?}
+{4000}{}{Bill ain't interested in a conversation.}
+{4010}{}{Now I know why the folks think you're a weirdo.}
+{4020}{}{Neither am I.}
+{5000}{}{Look who's talking. A bunch of grass eating mules, working themselves all the way into an early grave...}
+{5010}{}{I heard you ate one of the inmates. Is that true?}
+{5020}{}{Fuck you, psycho.}
+{6000}{}{Ate him?... Well, you could call it that, but there's way more to it than just consuming... I joined with him, made him part of me, then again his life started anew... but what could you know about that anyway?}
+{6010}{}{Joined with him? But... how? I want to know!}
+{6020}{}{I don't want to hear any more of this bullshit.}
+{7000}{}{You really want to?... Okay, then give ol' Bill a listen...
+It's in everyone of us... deep in the our inner selves... the truth is everyone desires it, but the so-called civilisation, society all that crap, they forbid it, call it a taboo, call it monstrosity... but still, you can feel drawn to it, deep inside...
+I can open your mind, I can give you a new life, teach you to see things you haven't seen before... If you really want to take a dive deep down into yourself, that is.}
+{7010}{}{Go on, I'm listening...}
+{7020}{}{Count me in! Man has to learn new things right?}
+{7030}{}{All right, but I want to achieve enlightment someplace better than here... It's just crawling with slaves, clinging to the old ways... you know what I mean.}
+{7040}{}{I've got enough excitement for today. Maybe some other time. }
+{8000}{}{}
+{8000}{}{error}
+{8010}{}{Sure thing, what's on your mind?}
+{9000}{}{I need... some fire, a lighter would do. Find one and bring it to me.}
+{9010}{}{There's no way I can smuggle a lighter here. Any hints?}
+{10000}{}{No idea. Think. Maybe some prisoner has one...}
+{11000}{}{Good job, my friend! I'll give you directions to our camp. Tell my brothers I'll be back soon... Just gotta take care of some things here first...}
+{11010}{}{Okay, I'm going. [Select location in Real-time]}
+{11020}{}{Enlightment, here I go... [Select location in Turn-based]}
+{12000}{}{You must know one thing... It's not life that surrounds you, you are the life that surrounds everything else... Channel it as energy for your being, open your mind for the pleasures of the human flesh... consume it, let it fill you, feel the fear, courage, anger and agony of the consumed souls... Let it become part of yourself, let it open the eyes that were long shut... Become enlightened!}
+{12010}{}{Now I understand... I am truly enlightened! [Profession Cannibal]}
+{12020}{}{Errr... Sorry, but I don't understand any of it.}
+{13000}{}{All right, but first you've gotta do something for old Bill. Get me a knife, any knife will do, just make sure it's sharp. You bring it, and then we'll talk.}
+{13010}{}{How am I supposed to get a knife in prison?}
+{14000}{}{I'm not gonna be able to give you what you ask until you are who you are... Remember, your heart has to be hard as a rock, yet as light as a feather, free of burdens you're carrying. Your soul has no room for enlightment right now.}
+{14010}{}{Eh...}
+{15000}{}{Quiet you moron!... Lemme see... What the fuck is this? It was supposed to be sharp, and this shit ain't ever been close to sharp in years... but I guess it's better than nothing for old Bill heh? Allrighty, let us continue...}
+{15010}{}{I can't wait...}
+{16000}{}{Bill welcomes you, enlightened one.}
+{16010}{}{Hello... and goodbye.}
+{17000}{}{Well well, judging from your plaque old Bill has a guest!... But Bill doesn't remember he invited any guests...}
+{18000}{}{Any news from the camp? What about your enlightment?}
+{18010}{}{You know I was thinking, maybe you would be a better guide for my enlightment after all...}
+{18020}{}{Not yet, but I'm on it.}
+

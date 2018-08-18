@@ -1,0 +1,153 @@
+// Author: Dagnir
+// "РЎРєСЂРёРїС‚" СЃ РїР°СЂР°РјРµС‚СЂР°РјРё РґР»СЏ РЅРїС†.
+// РџСЂРѕСЃС‚Рѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЃ РЅРёРјРё РґСЂР°С‚СЊСЃСЏ РїСЂРёРєРѕР»СЊРЅРµР№ Р±С‹Р»Рѕ.
+// РћР±С‹С‡РЅРѕ РїРѕСЃР»Рµ СЌС‚РёС… СЃС‚СЂРѕС‡РµРє РІРєР»СЋС‡Р°СЋС‚ РјР°РєСЂРѕСЃС‹:
+
+#include "_macros.fos"
+
+// Р’СЂРѕРґРµ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.
+
+/*
+	npc.StatBase[] = ;
+	npc.SkillBase[] = ;
+	npc.ModeBase[] = ;
+*/
+
+//Р–РёС‚РµР»Рё РјРёСЂРЅС‹Рµ.
+
+void _VillagerInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_CRITICAL_CHANCE] = 10;
+	npc.StatBase[ST_MELEE_DAMAGE] +=4;
+	npc.SkillBase[SK_UNARMED] = 60;
+	npc.SkillBase[SK_THROWING] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+}
+
+//РљСЂРµСЃС‚СЊСЏРЅРµ, РєРѕС‚РѕСЂС‹Рµ Р±РѕРјР¶Рё РІ РїР°Р»Р°С‚РєР°С….
+
+void _PeasantInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_MELEE_DAMAGE] += 3;
+	npc.SkillBase[SK_SMALL_GUNS] = 100;
+	npc.SkillBase[SK_UNARMED] = 50;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+}
+
+void _ChildInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_CRITICAL_CHANCE] = 20;
+	npc.SkillBase[SK_THROWING] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+}
+
+//Р’РѕРёРЅС‹, РѕС…РѕС‚РЅРёРєРё.
+
+void _WarriorInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_STRENGTH] = 8;
+	npc.StatBase[ST_ENDURANCE] = 8;
+	npc.StatBase[ST_LUCK] = 6;
+	npc.StatBase[ST_ACTION_POINTS] = 10;
+	npc.StatBase[ST_CRITICAL_CHANCE] = 20;
+	npc.StatBase[ST_MELEE_DAMAGE] = 6;
+	npc.SkillBase[SK_UNARMED] = 100;
+	npc.SkillBase[SK_THROWING] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_KILL_EXPERIENCE] = 80;
+	npc.StatBase[ST_BONUS_LOOK] = 10;
+}
+
+//РљСЂСѓС‚С‹Рµ РѕС…РѕС‚РЅРёРєРё.
+
+void _CoolWarriorInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_STRENGTH] = 8;
+	npc.StatBase[ST_ENDURANCE] = 10;
+	npc.StatBase[ST_LUCK] = 8;
+	npc.StatBase[ST_ACTION_POINTS] = 12;
+	npc.StatBase[ST_CRITICAL_CHANCE] = 90;
+	npc.StatBase[ST_MELEE_DAMAGE] = 8;
+	npc.SkillBase[SK_UNARMED] = 150;
+	npc.SkillBase[SK_THROWING] = 120;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_KILL_EXPERIENCE] = 100;
+	npc.StatBase[ST_BONUS_LOOK] = 20;
+}
+
+//Р’С‹С…РѕРґС†С‹, Р¶РёРІСѓС‰РёРµ СЃРЅР°СЂСѓР¶Рё.
+
+void _DwellerInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_MAX_LIFE] = 80;
+	npc.SkillBase[SK_SMALL_GUNS] = 150;
+	npc.SkillBase[SK_ENERGY_WEAPONS] = 130;
+	npc.SkillBase[SK_UNARMED] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_KILL_EXPERIENCE] = 80;
+}
+
+//Р’С‹С…РѕРґС†С‹, Р¶РёРІСѓС‰РёРµ РІРЅСѓС‚СЂРё, СЃР»Р°Р±Р°РєРё.
+
+void _TempleDwellerInit(Critter& npc, bool firstTime)
+{
+	npc.SkillBase[SK_ENERGY_WEAPONS] = 50;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_KILL_EXPERIENCE] = 30;
+}
+
+//РћС…СЂР°РЅР°
+
+void _GuardInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_ENDURANCE] = 8;
+	npc.StatBase[ST_AGILITY] = 8;
+	npc.StatBase[ST_LUCK] = 6;
+	npc.StatBase[ST_MAX_LIFE] += 20;
+	npc.StatBase[ST_MELEE_DAMAGE] += 5;
+	npc.SkillBase[SK_SMALL_GUNS] = 100;
+	npc.SkillBase[SK_BIG_GUNS] = 80;
+	npc.SkillBase[SK_UNARMED] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_BONUS_LOOK] = 15;
+}
+
+//РћС…СЂР°РЅР° РїРѕРєСЂСѓС‡Рµ.
+
+void _CoolGuardInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_ENDURANCE] = 8;
+	npc.StatBase[ST_AGILITY] = 8;
+	npc.StatBase[ST_LUCK] = 8;
+	npc.StatBase[ST_MAX_LIFE] = 150;
+	npc.StatBase[ST_ACTION_POINTS] += 4;
+	npc.StatBase[ST_CRITICAL_CHANCE] = 30;
+	npc.StatBase[ST_MELEE_DAMAGE] += 5;
+	npc.SkillBase[SK_SMALL_GUNS] = 130;
+	npc.SkillBase[SK_BIG_GUNS] = 120;
+	npc.SkillBase[SK_ENERGY_WEAPONS] = 100;
+	npc.SkillBase[SK_UNARMED] = 80;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_BONUS_LOOK] = 25;
+}
+
+//РњРёРЅРѕРє.
+
+void _MynocInit(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_STRENGTH] = 9;
+	npc.StatBase[ST_PERCEPTION] = 8;
+	npc.StatBase[ST_ENDURANCE] = 10;
+	npc.StatBase[ST_AGILITY] = 8;
+	npc.StatBase[ST_LUCK] = 8;
+	npc.StatBase[ST_MAX_LIFE] = 200;
+	npc.StatBase[ST_ACTION_POINTS] = 16;
+	npc.StatBase[ST_CRITICAL_CHANCE] = 50;
+	npc.StatBase[ST_MELEE_DAMAGE] += 8;
+	npc.SkillBase[SK_BIG_GUNS] = 120;
+	npc.SkillBase[SK_ENERGY_WEAPONS] = 150;
+	npc.SkillBase[SK_UNARMED] = 150;
+	npc.ModeBase[MODE_NO_ENEMY_STACK] = 1;
+	npc.StatBase[ST_BONUS_LOOK] = 40;
+}
+

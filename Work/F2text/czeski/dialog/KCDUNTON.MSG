@@ -1,0 +1,294 @@
+#Pøeloil birdman@post.cz, http://www.mujweb/cz/www/birdman, 0604 540689
+{100}{}{Vidíš jednoho ze dvou stejnì vypadajících muù--nejspíš dvojèata.
+ Oba jsou poøádnì svalnatí a mají zamraèenı vıraz.}
+{101}{}{Vidíš jedno z dvojèat, buï Chucka nebo Bucka Duntona. Jsou si však natolik podobni, e je témìø nemoné urèit, na kterého z nich se zrovna díváš.}
+{102}{}{Vidíš velkého, velmi svalnatého mue jeho oblièej je, zøejmì vrozenì,
+ zkroucenı do rváèského úšklebku. A zrovna tak vypadá jeho bratr.}
+
+{110}{}{Bude lepší, kdy potáhneš dál, nebo ti mùj bratr a já rozmlátíme ciferník na kaši.}
+{111}{}{Hele, nechte to plavat. Je to mùj zpùsob humoru. Opravdu se omlouvám. Nebijte mne, prosím.
+ A kromì toho, chci se vás na nìco zeptat.}
+{112}{}{Eh, promiòte, pánové. U odcházím.}
+{113}{}{Potøebuji nìjaké informace, a bylo by lepší, kdybys mi je øekl.}
+{114}{}{Ty a tvùj brácha? Bojíte se jít na mne po jednom? (ts, ts, ts)}
+
+{120}{}{Vypadni odsud, nebo z tebe udìláme sušenı maso.}
+{121}{}{Hele, opravdu se omlouvám. Takhle to nebylo myšleno. Jsem blbec. Pøijdu pozdìji, a
+ se trochu uklidníte.}
+{122}{}{Ehm, okej, promiòte. Nebijte mì. Prosím.}
+{123}{}{Vypadnu. Aspoò u se nebudu muset dívat na ty vaše sešklebenı ksichty.}
+
+{130}{}{Co od nás chceš vìdìt?}
+{131}{}{Tak na tohle ti nemáme co øíct. A co ksakru chceš?}
+{132}{}{No, copak od nás chceš, èlovìèe?}
+{133}{}{Neslyšel náhodou nìkterı z vás o vìci zvané Garden of Eden Creation Kit?}
+{134}{}{Chci obchodovat.}
+{135}{}{Nevíte o nìjaké práci?}
+{136}{}{Ehm, se kterım Duntonem právì mluvím?}
+{137}{}{Co víte o zabíjení brahmín?}
+{138}{}{Myslím, e u nic nepotøebuji.}
+
+{140}{}{Zacházíš za jistı meze. Bude lepší, kdy vypadneš ne ti dáme lekci.}
+{141}{}{Omlouvám se. Mım pøáním bylo, pracovat s vámi dvìma. Odcházím. Nashle.}
+{142}{}{Meze? Jaké meze? Pokud vím, pøišli jste s tím prvnì vy.}
+{143}{}{Vy dva jste pøíliš neschopní, abyste si sami udìlali, co je tøeba.}
+
+{150}{}{No, máme dobrı zboí. Naše celosvìtovì známé, famózní, Duntonovic Sušené maso. Vıborné a chutné -
+ dost dobré pro tebe.}
+{151}{}{Uh, to zní dobøe. }
+{152}{}{Sušené maso? To není zrovna to, co potøebuji. Povìzte mi nìco jiného.}
+{153}{}{Myslím, e nechci obchodovat. Nashle.}
+
+{160}{}{Dáváme jen jednu šanci, kámo.}
+{161}{}{Nemáme tu pro tebe ádnou práci.}
+{162}{}{Máme tu nìkoho, co vypadá, e by nám moh pomoct. (hé, hé, hé)}
+{163}{}{A to jako s èím, Chucku?}
+{164}{}{A to jako s èím, Bucku?}
+{165}{}{Ano? A s èím?}
+{166}{}{Perfektní. Ale, napøed mi nìco povìzte.}
+{167}{}{Hej, poèkejte - opravdu vám chci pomoci, pánové. Øeknìte mi znovu o té práci.}
+{168}{}{Hmm, mùu si za to já. A tak pùjdu. Nashle.}
+{169}{}{Okej. Èau.}
+
+{170}{}{Ty jeden bezcenej pytle geckonskej sraèek! Co nám sakra vùbec lezeš na voèi?}
+{171}{}{Chci se jen omluvit. Trochu se mi to nepovedlo. Neovládám zaplašování tak dobøe,
+ jako vy dva. Ale prosím, nìco od vás potøebuji.}
+{172}{}{Máte pravdu - mohlo to bıt provedeno lépe. Vy jste na tom líp. Zøejmì jste v zaplašování dobøí ji
+ od pøírody. Nìco ale potøebuji, prosím.}
+{173}{}{Geckonskı sraèky? To je tu øeè vo tom, co erete, anebo co máte místo mozku?}
+
+{180}{}{Zase zpátky, co? Tak s èím ti mùeme pomoct, náš obchodní paráku?}
+{181}{}{Nazdar kámo. To byla bezva bouda, co jsme ušili na toho tupce Torra, co? Tak, a teï ti
+ dáme tvùj podíl.}
+{182}{}{To máte pravdu, to nemìlo chybu. Dejte mi vìdìt, jestli budete nìkdy provádìt nìco podobnıho. Teï potøebuji
+ nìco jiného. }
+{183}{}{Jsem tu právì kvùli nìmu, paráci.}
+{184}{}{Za koho mì vy blbci máte? Za švindlujícího blbce? Proè si, vy zbabìlci, pro zmìnu netroufnete na nìkoho,
+ kdo se mùe bránit? Nashle.}
+{185}{}{Myslím, e nic nepotøebuji. Nashle.}
+
+{190}{}{OK - tady je $50 a navíc - nìco malého speciálnì pro tebe. Nìkolik kouskù Duntonovic
+ sušeného masa. Fakt díky, paráku.}
+{191}{}{Díky. Moment, mám na vás ještì pár dotazù.}
+{192}{}{Tyhle prachy dobøe pouiju. Mmm, (koušeš) chutné maso, velmi. Díky. Nashle.}
+
+{198}{}{OK, poslechni si tuhle nabídku. Potøebujeme trochu pomoci s ...ehm, osvobozením nìkolika brahmín od toho idiota Torra.
+ Mùeš ho nìjak ukecat nebo ho tøeba zmlátit do bezvìdomí - to je jedno... kadopádnì musíš odvést jeho pozornost. Ale moc mu neubliuj, nebo si to
+ všichni šerednì odskáèeme.}
+{199}{}{Teï, pamatuješ?  A díky. }
+{200}{}{Setkáme se na pastvinách brahmín, je to smìrem na vıchod, v 6:00 PM dnes veèer.}
+{201}{}{Setkáme se na pastvinách brahmín, je to smìrem na vıchod, v 6:00 PM zítra veèer.}
+{202}{}{OK, odvedu Torrovu pozornost. }
+{203}{}{OK, najdu Torra na pastvinách a odvedu jeho pozornost. }
+{204}{}{Nìco takového já neudìlám.}
+{205}{}{OK, budu tam. Nashle.}
+{206}{}{Mezitím se vás aspoò na nìco zeptám.}
+{207}{}{Nashle.}
+
+{208}{}{Jsem Chuck Dunton. Co seš zaè? Blbec?}
+{209}{}{Jsem Buck Dunton. Co seš zaè? Blbec?}
+{210}{}{Copak sem se od poslednì nìjak zmìnil? Jsem Chuck Dunton.}
+{211}{}{Copak sem se od poslednì nìjak zmìnil? Jsem Buck Dunton.}
+{212}{}{Ti to pomalu myslí, nebo co? Jsem Chuck Dunton.}
+{213}{}{Ti to pomalu myslí, nebo co? Jsem Buck Dunton.}
+{214}{}{Tobì to dycky dochází nìjakou oklikou, co? Zatracenej tupej barbare. Jsem Chuck, hlupáku.}
+{215}{}{Tobì to dycky dochází nìjakou oklikou, co? Zatracenej tupej barbare. Jsem Buck, hlupáku.}
+{216}{}{Jsem Nosatá Sally Duntonová. Líbí se ti mùj oblek? Ne, jsem Chuck Dunton, ty debilní barbare.}
+{217}{}{Jsem Nosatá Sally Duntonová. Líbí se ti mùj oblek? Ne, jsem Buck Dunton, ty debilní barbare.}
+{218}{}{Ehm, okej. Teï u vím. Sorry.}
+{219}{}{Klid. Mám to. Co takhle? Nìco od tebe potøebuji, ehm... pane Dunton.}
+{220}{}{Tak tedy, nìkdo z vás... nìco potøebuji vìdìt.}
+{221}{}{Oba vypadáte stejnì šerednì a hnusnì. A je mi naprosto jedno, na kterıho z Duntonù
+ právì øvu. Sbohem, kreténi.}
+{222}{}{Uh, dobrá. Povìzte mi radìji nìco o té práci.}
+
+{230}{}{Dám ti dobrou radu - bude lepší neøíkat nám NE. Protoe jestli tak neuèiníš,
+ mùeš nás velmi rozhnìvat. A nechtìj nás vidìt rozzlobenı.}
+{231}{}{Omlouvám se, u to nikdy nikomu z vás neøeknu. Slibuji, pane Dunton. Nashle.}
+{232}{}{Nebojte se, u to nikomu neøeknu. Nyní zase o nìèem jiném.}
+{233}{}{Chtít vás vidìt rozzlobené? Nepotøebuju se na vaše ksichty dívat vùbec. Nashle.}
+
+{240}{}{Bezva, s tebou se obchoduje jedna radost. He, he, he. Potøebuješ ještì nìco?}
+{241}{}{Hmm... chci ještì obchodovat.}
+{242}{}{Ano, já ano.}
+{243}{}{Ne, myslím, e to je vše, Chucku.}
+{244}{}{Ne, myslím, e to je vše, Bucku.}
+
+{250}{}{Zdravíme, paráku. Ještì poøád s tebou na noc poèítáme. Co pro tebe mùeme udìlat?}
+{251}{}{Ehm, já... u to nechci provést. Nechci vám v nìèem podobném pomáhat.}
+{252}{}{Jasnì. Budu tam. Chci se na nìco zeptat.}
+{253}{}{Jistì. Vím o tom. Nashle.}
+
+{259}{}{Áá, jestli tohle není náš statnı, silnı kámoš.}
+{260}{}{Zdravím. Máš pøipravenı ruce? Jdeme znovu na to?}
+{261}{}{Nazdárek, skrèku. Co dìláš v našem baru? Napøed se nám musíš pøedvést, pøetlaèovat se
+ s nìkım z nás. A jedinì pokud zvítìzíš, získáš právo zde zùstat. (ha ha ha)}
+{262}{}{Nedívej se tak zatracenì tvrdì. Proè nejdeš zápasit se mnou, Chuckem Duntonem, za právo pít
+ v našem baru?}
+{263}{}{Nedívej se tak zatracenì tvrdì. Proè nejdeš zápasit se mnou, Buckem Duntonem, za právo pít
+ v našem baru?}
+{264}{}{Hej ty, cukrouši s polobotkama. Pojï si vyslouit právo bıt v našem baru. Staèí zápasit
+ se mnou, Chuckem Duntonem.}
+{265}{}{Hej ty, cukrouši s polobotkama. Pojï si vyslouit právo bıt v našem baru. Staèí zápasit
+ se mnou, Buckem Duntonem.}
+
+{266}{}{Hleïme, tohle vypadá na vhodnıho kandidáta. Pojï se se mnou, Chuckem Duntonem,
+ pøetlaèovat, jestli tu chceš dostat nìco k pití.}
+{267}{}{Hleïme, tohle vypadá na vhodnıho kandidáta. Pojï se se mnou, Buckem Duntonem,
+ pøetlaèovat, jestli tu chceš dostat nìco k pití.}
+
+{268}{}{Nue pojïme se pøetlaèovat. Myslím, e to je jediná cesta, jak mít od vás pokoj.}
+{269}{}{Teï ne. Nechci se pøetlaèovat. Mám otázky.}
+{270}{}{Nechci se s váma pøetlaèovat. Jediné co chci, jsou informace.}
+{271}{}{Ehm, asi jsem ve špatném baru. Nashle.}
+
+{280}{}{Protentokrát jsi zvítìzil. Nebo v tom byl nìjakej podraz? Jsi sakra rychlej, jako kdy geckon švihne
+ ocasem. Nue, tvùj drink je na mì.}
+{281}{}{Díky. Moná byste mi mohli odpovìdìt na pár otázek.}
+{282}{}{Velkou roli v tom hrálo štìstí. Díky.}
+{283}{}{Nechci pivo, díky. Ale mám nìjaké otázky.}
+{284}{}{Nechte si svı pivo. Sbohem.}
+
+{290}{}{Dìkuj bohu, e jsem ti tu ruèièku nezlomil jak suchou haluz. (he, heek, he) Ale tenhle souboj
+ s tebou - to nic nebylo. Èekám na opravdovou vızvu.}
+{291}{}{To vám to mı ztrapòování, za jeden veèer nestaèilo?}
+{292}{}{Myslím, e to ještì jednou zkusím. A tentokrát vám ukáu.}
+{293}{}{Jejda. okej, okej, U dost o tom. Hele, chci se na nìco zeptat.}
+{294}{}{Radìji pùjdu. Nashle.}
+
+{300}{}{Nechceš se pøetlaèovat? Co, ty si myslíš, e jsi moc dobrej na nìkterıho z 
+ bratrù Duntonù?}
+{301}{}{Ne. Mám strach, e mi pøitom ublííte.}
+{302}{}{Snad pozdìji. Teï, potøebuji nìjaké informace.}
+{303}{}{No, to by rozhodl zápas. Ale nepochybuji o svém vítìzství. Nashle.}
+{304}{}{Vypadáte moc roztøesenì. Zápasím pouze s opravdovımi chlapy. Zmizte, tøasoøitky.}
+
+{310}{}{Co e to chceš? Hmmm... Nejbliší cesta jak získat Garden of Eden je jít do máminıch lázní a tam
+ za Jenny a jejími roztomilımi ruèkami. (hık, hıık, hık)}
+{311}{}{No, tak, dìkuju. Ehm. Mám další otázky, prosím.}
+{312}{}{Myslím, e to je vše. Nashle.}
+
+{320}{}{No, slyšel jsem, e tu jsou nìjací (hé, héé) lido-brouci zabíjející brahmíny, vıchodnì odsud. Ale èlovìk
+ nesmí hned vìøit všemu, co slyší. (hé, héé, hé).}
+{321}{}{Aha, no uvidíme; díky. Ještì se chci na nìco zeptat.}
+{322}{}{Myslím, e to je vše. Nashle.}
+
+{330}{}{Nazdárek. Chceš obchodovat? Nabízíme svìtovì proslulé Duntonovic sušené maso.}
+{331}{}{Ano? Chceš koupit sušenı maso nebo co?}
+{332}{}{To zní pìknì. Chci obchodovat.}
+{333}{}{Sušené maso? To zní zajímavì. Øeknìte mi o tom víc.}
+{334}{}{Momentálnì mám na vás jiné otázky.}
+{335}{}{Nic z toho zrovna nepotøebuji. Nashle.}
+{336}{}{Zajímají mì vaše brahmíny tam vzadu. Víte, vidím, e nemají všichni
+ stejné znaèkování.}
+
+{340}{}{Coe? Co tím sakra myslíš? Všichni jsou naši.}
+{341}{}{Co tím myslím? To, e nìkteré brahmíny mají úplnì jiné znaèkování ne vaše, co
+ se nìkdo snail dost nešikovnì zamaskovat.}
+{342}{}{Och, U to vidím. He-he, To byl mùj omyl. Radìji u pùjdu. Nashle.}
+{343}{}{No, vidím, e o brahmínách toho moc nevím. Asi je to jejich zbarvením nebo tak...
+ Máte hezké brahmíny.}
+
+{350}{}{Naše sušené maso je neuvìøitelná smìs jedenácti bylin a koøení. Musím øíct, e si po nìm kadı
+ olizuje prsty. Zvíøata ho mají také ráda. Budou tì pronásledovat, dokud nìjaké nedostanou. Musí to bıt
+ tím hnilobnım smradem.}
+{351}{}{Nic není dobré jako tohle. Nikde. Nemùeš bez nìj bıt. A mnoho lidí je rádo, e nìco takovıho existuje.}
+{352}{}{Je to LIDSKİ maso! Chichi, jenom jsem chtìl vìdìt, jak se budeš ksichtit. Není to lidskı maso, je ho tam jenom trocha. Chichi.}
+{353}{}{Není to jako nìco, co by vìtšina lidí normálnì jedla. Je to takové jiné. Ne lepší, ale jiné.}
+{354}{}{A pøi vırobì nedochází k ádnım krutostem na zvíøatech. Všechno je to maso, co jsem nìkde našli. Nìkdy nám trvá dost dlouho,
+ ne ho najdeme,  ale vìtšinou ho dostaneme domù døív, ne úplnì shnije.}
+{355}{}{A po dlouhım dni v brahmínní ohradì nìkdy seškrábem z bot další ingredienci, která masu dodává tu zvláštní chu.}
+{356}{}{A taky jsme zjistili, e omáèka, kterou vyrábíme osobnì, jestli mi rozumíš, dodává masu takovou domáckou pøíchu. }
+{357}{}{Je dìláno z nejménì šest mìsícù uleelého hovìzího, promíchaného s tìmi nejlepšími larvami ovádù.}
+{358}{}{Neuvìøitelné. Zní to, jako byste jedli vlastní sušené maso. Uh, chci øíct, kdo by ho nejedl? Mòam. Mòam}
+{359}{}{Opravdu? To je fascinující. Øeknìte mi víc.}
+{360}{}{Myslím, e prozatím to bylo vše. Nashle.}
+{361}{}{I kdybych tøeba umíral hlady, radìji si uøíznu pai, ne jíst vaše
+ sušené maso.}
+
+{370}{}{Doufám, e dohoda poøád platí? Chceš pomoci chránit ty ubohé malé brahmíny pøed
+ Torrem?}
+{371}{}{Co tu ksakru dìláš? A nechceš nám pomoci? Moná bychom pro tebe mìli práci,
+ jestli máš zájem.}
+{372}{}{Áno, mám zájem. Chci slyšet víc.}
+{373}{}{S vámi dvìma nechci nic mít. Nashle.}
+{374}{}{Co je to tam za jakési èásti broukù? Víte co to je?}
+
+{380}{}{Co blbneš hergot? Nevíš snad, proè tu jsi?}
+{381}{}{Ne nic takového. Pamatuju si. Dám se do toho.}
+{382}{}{Zbláznili jste se? Nìkdo tu je. Pøicházím vás varovat. Vsadím se, e nás právì
+ sleduje.}
+{383}{}{Vypadlo mi to; mohli bysme ty plány kvùli mnì projít znovu? Prosím.}
+{384}{}{Co je to tam za jakési èásti broukù? Víte co to je?}
+
+{390}{}{Èásti broukù? Mmm, ehm, ach, nevíme nic o ádnıch èástech broukù. O èem to vlastnì mluvíš?}
+{391}{}{Nue, mluvím o hromadì brouèích èástí. Koukaly z toho pøezky a øemínky, take to vypadá, e to
+ nìkdo pouívá jako kostımy. Všechno to bylo na hromadì kousek od vás.}
+{392}{}{Ehm, zapomeòte na to. Nashle.}
+
+{400}{}{Tak jo, znova. Musíš za Torrem}
+{401}{}{To zní dobøe, jdu na to.}
+{402}{}{S tímhle nechci nic mít; u padám, pánové. Nashle.}
+{403}{}{Zbláznili jste se? Nìkdo tu je. Pøicházím vás varovat. Vsadím se, e nás právì
+ sleduje.}
+{404}{}{Kdy se Torr ukáe, potøebujeme ho zabavit}
+{405}{}{ a dostat ho na chvíli odsud. Mùeš s ním vykládat nebo ho zmlátit do bezvìdomí... co já vím. Ale v ádném pøípadì ho nezabíjej,
+ nebo popudíš celej Klamath. Zatímco to budeš provádìt, my se vrhneme na brahmíny. Sejdeme se zítra v našem obchodì
+ a dostaneš svùj podíl.}
+
+{410}{}{Asi máš pravdu. (rychle se rozhlíejí) Nìco takovıho nemùem potøebovat.}
+{411}{}{Mùe to bıt tøeba jen nìjakı dítì, ale radìji pojïme domù.}
+
+{420}{}{Nikdo nás nesleduje. V tomto si dáváme pozor. A hele, nebojíš se tak náhodou? Zbabìlèe
+ posranej. }
+{421}{}{Sorry, to jsou jen nervy. V takovıch situacích se nedokáu chovat tak chladnokrevnì jako vy.}
+{422}{}{Sorry, jen panikaøím. Pojïme zpátky do práce.}
+{423}{}{Ne, se mnou u nic nebude. Odcházím. Nashle.}
+{424}{}{Pojïme zpátky do práce a dostaòme toho idiota Torra!}
+
+{430}{}{Jsi blázen. To jsou jenom zbytky nìjakıch radškorpionù co jsme zabili. Ano, to je ono.
+ V tom to bude. My, ehm, víš, pouíváme jejich jed jako jednu z tajnıch pøísad do našeho sušenıho masa.}
+{431}{}{Jo jasnì. A zrovna tak vám budu vìøit, e slunce vychází na západì.}
+{432}{}{Dobrá, jestli je to tak. To mi staèí. Nashle.}
+
+{440}{}{Bude lepší, kdy budeš dret klapaèku zavøenou, pokud víš co je pro tebe dobré.}
+{441}{}{Jó, ty myslíš tamto? Chtìli jsme ti o tom øíct, ale ještì nebyla vhodná chvíle. Šššt,
+ tiše.}
+{442}{}{Promiòte. U nic neøíkám. Zatím.}
+{443}{}{Aha, dobrá, padám pryè. Nashle.}
+{444}{}{Aha, hmm... dobrá budu mlèet. Víte, nudí mì poslouchat vrzání vašich
+ bot.}
+
+{449}{}{Nazdárek, balíku. }
+{450}{}{Jsem Chuck Dunton.}
+{451}{}{Jsem Buck Dunton.}
+{452}{}{Hnusná chláp.}
+{453}{}{ Vyvolenı!}
+
+{460}{}{Hnusná chláp? Coe? Koukám, e jsi zrovna takovej blbec jako Torr, co? To je bezvadnı, potøebujeme ve mìstì novı
+ vesnickı balíky. Torr u je moc okoukanej.}
+{461}{}{Torr okukanej?}
+
+{470}{}{Vyvolenı, co? Moná tak na rozbití huby, ne? Máma tì upustila hlavou na zem, co? Táhni odsud.}
+{471}{}{Ook! }
+{472}{}{ Vyvolenı!}
+
+{480}{}{Pøipraven? Dobrá, pojïme. Nemáme na to celou noc. A práce je hodnì.}
+{481}{}{Ano, jsem. Jdeme.}
+{482}{}{Samozøejmì e ano - dám tomu pasákovi koz lekci.}
+{483}{}{Myslím, e tohle nechci udìlat. Uvidíme se pozdìji. }
+
+{490}{}{Hele, poèkej a zajdeme dovnitø; tam mùeme bez obav mluvit.}
+{500}{}{Snaha byla, ale bratr Dunton zvítìzil.}
+{510}{}{Bratr Dunton byl po tìkém souboji poraen!}
+{520}{}{Ok.}
+
+{530}{}{Vypadni odsud. Nìkdo z nás u tu práci udìlá.}
+{531}{}{Och, OK. Myslím, e se do toho dáme. Tiše ale, nìkteøí lidé jsou šouralové. Zatím.}
+{532}{}{Torr pase své brahmíny severnì odtud, od centra.}
+{533}{}{Kdy je ten blbej osel Torr tady, bude lepší ho zlikvidovat.}
+
+{600}{}{I ten hloupı Torr je chytøejší ne vy, zlodìji!}
+{601}{}{ Pøipraven?}
+
+{700}{}{Brahmíny byly úspìšnì rozehnány.}

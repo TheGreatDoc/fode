@@ -1,0 +1,97 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _param p SK_GAMBLING < 20 D _var p Hunters_Camp_Prison_Iron { 0 #
+10 1020 D _param p SK_GAMBLING } 20 D or D _var p Hunters_Camp_Prison_Iron = 1 @
+2 2000 None 0 #
+7 2010 D _var p Hunters_Camp_Prison_Iron = 0 R _var p Hunters_Camp_Prison_Iron = -1 #
+3 2020 D _var p Hunters_Camp_Prison_Iron = -1 #
+0 2030 @
+3 3000 None 0 #
+4 3010 R _var p Hunters_Camp_Prison_Iron = 0 #
+5 3020 D _param p SK_SPEECH } 40 #
+6 3030 @
+4 4000 None 0 @
+5 5000 None 0 #
+0 5010 R _param p SK_GAMBLING = 20 @
+6 6000 None 0 #
+8 6010 R _var p World_Cocksucker = 0 R _var p Hunters_Camp_Prison_Iron = 1 R _script dialog@r_FlashEffect 0  #
+0 6020 @
+7 7000 None 0 @
+8 8000 None 0 @
+10 9000 None 0 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{resourcing <20}
+{1020}{}{resourcing >=20}
+{2000}{}{Nie widzisz ze jestem zajety?}
+{2010}{}{Mam dla ciebie 4 sztuki drewna...}
+{2020}{}{No wlasnie widze ze nie. Sluchaj bo jest sprawa.}
+{2030}{}{Widze...}
+{3000}{}{Czego chcesz?}
+{3010}{}{Potrzebuje twojej pomocy. Nie znam sie na tych kamieniach a musze szybko zebrac ich kilka zeby wydostac sie z tej dziury. Co chcesz w zamian za 4 grudki tego kamienia?}
+{3020}{}{Potrzebuje pomocy. Nie znam sie na tych kamieniach a nadodatek wszystkie dla mnie wygladaja tak samo. Czy mozesz mi pokazac ktore zawieraja troche rudy zelaza?}
+{3030}{}{Potrzebuje pomocy. Nie znam sie na tych kamieniach... wszystkie dla mnie wygladaja tak samo. Czy mozesz mi pomoc przy zbieraniu?... Na pewno jakos sie dogadamy.}
+{4000}{}{Potrzebuje drewna. Jesli wiesz jak ono wyglada to przyniesc mi 4 sztuki. Wtedy pogadamy co dalej.}
+{5000}{}{To nie takie trudne. Popatrz na ta skale... widzisz te przeswitujace srebrzyste fragmenty?... jesli tak to teraz poprostu szukaj tych skalek ktore maja ich najwiecej. I tyle w temacie... Skumales?}
+{5010}{}{Hmmyyy... Faktycznie... teraz wydaje sie to oczywiste. Chyba juz sam dam rade zebrac. W kazdym badz razie dzieki za pomoc.}
+{6000}{}{Dogadamy?... hmyy... mysle ze na pewno... zrobimy to tak... Ty pociagnisz mi laske a ja dam ci... powiedzmy... 4 skalki.}
+{6010}{}{...ehh... dobra... ale nie powiesz nikomu?}
+{6020}{}{Nie ma mowy. Jebaj sie !}
+{7000}{}{No popatrz ! nie jestes jednak taki glupi za jakiego cie mialem. Tu masz 4 skalki. Mysle ze to dobry uklad.}
+{8000}{}{Niezle suko...@@To chyba nie byl twoj pierwszy raz?@@Mowil ci ktos ze robisz to zawodowo?}
+{9000}{}{Zajmij sie kopaniem skalek lepiej.@@Mam swoja robote.@@Mozesz nie przeszkadzac?@@Idz kopac gdzie indziej.@@Ile masz zebrac?}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{resourcing <20}
+{1020}{}{resourcing /20}
+{2000}{}{Can't you see I'm busy?}
+{2010}{}{I have the four pieces of wood you wanted...}
+{2020}{}{No, but I can see you've nothing to do. Listen, there's something important we need to talk about.}
+{2030}{}{Yeah...}
+{3000}{}{What do you need?}
+{3010}{}{I need you to help with something. I'm not much of a miner, you see, but I need to get 4 pieces of iron ore to get out of this pit. How much will it cost me?}
+{3020}{}{I need your advice. I don't know much about all these rocks. In fact, they all look the same to me. Could you point me to the ones that contain some iron ore?}
+{3030}{}{I could use some assistance. These rocks... they all look so similar to me. Help me with mining, and I'll make it worth your while.}
+{4000}{}{I need wood. If you know where to find it, go get me four pieces. When you do, we'll talk some more.}
+{5000}{}{It's not too hard. Take a good look at this rock. Can you see all these shiny steely particles? Of course you can. Now all you need to do is look for the rocks that have the most of them. Got it?}
+{5010}{}{Yeah. Now that I know what to look for, I see it everywhere. I think I'll manage to take it from here. Thanks a lot.}
+{6000}{}{Sure. Let's see... you give me a blow job, I give you 4 pieces of iron ore. Sounds good?}
+{6010}{}{Uhhh... well... what the hell. This needs to stay between me and you though, understood?}
+{6020}{}{No fucking way. Go fuck yourself.}
+{7000}{}{Well, well, well. You're not as stupid as you look! Here's your ore. You've made a pretty good deal, eh?}
+{8000}{}{You did a fine job, bitch.@@Wasn't your first time, eh?@@You suck like a pro. Anyone ever told you that?}
+{9000}{}{You'd better go back to mining.@@I've plenty to do.@@Quit getting in my way.@@Get lost.@@How much ore do you need?}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{resourcing <20}
+{1020}{}{resourcing /20}
+{2000}{}{Can't you see I'm busy?}
+{2010}{}{I have the four pieces of wood you wanted...}
+{2020}{}{No, but I can see you've nothing to do. Listen, there's something important we need to talk about.}
+{2030}{}{Yeah...}
+{3000}{}{What do you need?}
+{3010}{}{I need you to help with something. I'm not much of a miner, you see, but I need to get 4 pieces of iron ore to get out of this pit. How much will it cost me?}
+{3020}{}{I need your advice. I don't know much about all these rocks. In fact, they all look the same to me. Could you point me to the ones that contain some iron ore?}
+{3030}{}{I could use some assistance. These rocks... they all look so similar to me. Help me with mining, and I'll make it worth your while.}
+{4000}{}{I need wood. If you know where to find it, go get me four pieces. When you do, we'll talk some more.}
+{5000}{}{It's not too hard. Take a good look at this rock. Can you see all these shiny steely particles? Of course you can. Now all you need to do is look for the rocks that have the most of them. Got it?}
+{5010}{}{Yeah. Now that I know what to look for, I see it everywhere. I think I'll manage to take it from here. Thanks a lot.}
+{6000}{}{Sure. Let's see... you give me a blow job, I give you 4 pieces of iron ore. Sounds good?}
+{6010}{}{Uhhh... well... what the hell. This needs to stay between me and you though, understood?}
+{6020}{}{No fucking way. Go fuck yourself.}
+{7000}{}{Well, well, well. You're not as stupid as you look! Here's your ore. You've made a pretty good deal, eh?}
+{8000}{}{You did a fine job, bitch.@@Wasn't your first time, eh?@@You suck like a pro. Anyone ever told you that?}
+{9000}{}{You'd better go back to mining.@@I've plenty to do.@@Quit getting in my way.@@Get lost.@@How much ore do you need?}

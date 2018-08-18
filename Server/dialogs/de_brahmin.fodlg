@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 R _script dialog@r_AnimalBrahminSound 0 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Brahmin}
+{210}{}{Widzisz przecietnego brahmina.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Moo!@@Mooooooo!@@Moo?@@MOO!!! MOO!!! MOOOOO!!!@@moo, moo, moo?@@Moo.}
+
+[engl]
+{100}{}{Brahmin}
+{210}{}{You see a usual domestic brahmin.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Moo!@@Mooooooo!@@Moo?@@MOO!!! MOO!!! MOOOOO!!!@@moo, moo, moo?@@Moo.}
+
+[russ]
+{100}{}{Brahmin}
+{210}{}{You see a usual domestic brahmin.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Moo!@@Mooooooo!@@Moo?@@MOO!!! MOO!!! MOOOOO!!!@@moo, moo, moo?@@Moo.}

@@ -1,0 +1,36 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{I'm busy, leave me alone.@@I have some work to do.@@Those results are exciting!@@What the hell is this?!@@Stop bugging me!@@Get lost dickhead!@@ Stop disturbing me!}
+
+[pols]
+{100}{}{specialist}
+{200}{}{Widzisz specjaliste.}
+{210}{}{Widzisz jednego ze specjalistow MGL.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Jestem zajety, zostaw mnie w spokoju.@@ Mam prace do zrobienia.@@Te wyniki sa ekscytyjace!@@Co to jest do cholery ?!@@ Przestan mi przeszkadzac!}
+
+[russ]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@What the hell is this ?!@@ Stop disrupting me!}
+

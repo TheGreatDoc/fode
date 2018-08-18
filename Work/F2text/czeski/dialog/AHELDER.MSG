@@ -1,0 +1,122 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com
+{100}{}{Vidíš Starší, vùdkyni vaší vesnice.}
+{101}{}{Tohle je Starší.}
+{102}{}{Teprve si uvìdomuješ, jak je vaše vùdkynì stará. Starší ne kdokoli jinı z celé vesnice. Ale pøesto má v sobì stále dost síly a energie, aby dokázala vést vesnici i v tìchto krutıch dobách.}
+{103}{aeld1}{Blahopøeji ti, Vyvolenı. Máš za sebou cestu Chrámem Zkoušek. Chceš tedy znát svùj úkol?}
+{104}{}{Co jste to na mne zkoušeli? Chtìli jste mì v tom chrámu oddìlat??}
+{105}{}{Jistì.}
+{106}{}{Hmm...ještì si to chci trochu promyslet.}
+{107}{aeld2a}{Jsem na tebe pyšná, Vyvolenı. Jen odvání dokáou pøekroèit svùj vlastní stín. A teï k vìci. Musíš najít Vault 13. Pamatuj si: Vault 13. Pøines nám GECK. Pro tebe ještì jednou: GECK. Tady máš záøící láhev. Dal nám jí Vic. Pamatuj si to jméno. Vic. Je to obchodník z Klamathu. Klamath. Jdi za Vicem. Najdi Vault 13. Najdi GECK. Pøines ho sem. A dej na sebe pozor, mé dítì.}
+{112}{aeld2b}{Musíš najít Vault. Najít Vault! Vault 13. Ach jo.}
+{113}{}{Uh.}
+{114}{aeld3}{Vyvolenı, chceš snad, abychom všichni zemøeli? Musíš najít posvátnı Vault!}
+{115}{}{Omlouvám se, ctihodná Starší. Nezklamu vás.}
+{116}{}{No jo, no jo. Hoï se do klídku, stará. A buï od té lásky a pøestaò na mì jeèet.}
+{117}{aeld4}{Proè jsi tu, Vyvolenı?}
+{118}{}{U vím, kde leí Vault 13!}
+{119}{}{Chci se vydat na tu svatou pou.}
+{120}{}{Potøebuju ještì pár informací.}
+{121}{}{Nehodlám spáchat sebevradu!}
+{122}{}{A coe to mám vlastnì udìlat?}
+{123}{}{U odcházím.}
+{124}{aeld5}{To je dobrá zpráva, ale to nás nezachrání. Musíš nám rychle pøinést GECK, nebo celá naše vesnice vymøe!}
+{125}{}{Potøebuju ještì pár informací.}
+{126}{}{Dobøe. U jdu.}
+{127}{aeld6}{Podaøilo se ti pøeít a to jediné je dùleité. Vyvolenı nesmí bıt slabı. K tobì se teï upírají naše nadìje. Chceš se tedy vydat na cestu?}
+{128}{}{Co mì nezabije, to mì posílí. Pøipravenìjší na cestu u ani bıt nemùu.}
+{129}{}{Musím si to ještì trochu promyslet.}
+{130}{}{Nehodlám spáchat sebevradu!}
+{131}{aeld7}{Dobøe mì tedy poslouchej. Musíš najít posvátnı Vault 13 a pøinést do vesnice GECK. Obchodník z Klamathu jménem Vic nám nedávno prodal láhev se symbolem svaté Tøináctky. Radím ti tedy zaèít tvé hledání právì u nìj. Ten pøístroj, kterı máš na ruce ti bude pøipomínat tvùj úkol. A a tì provází pøízeò bohù.}
+{133}{}{Ještì ne pùjdu, chci ti poloit pár otázek.}
+{134}{}{Sbohem. Slibuju, e kmen nezklamu.}
+{135}{aeld8}{Jak myslíš. Navštiv mì tedy, a se rozhodneš - ale nepøemıšlej moc dlouho.}
+{136}{}{Sbohem.}
+{137}{aeld9}{Bohuel ti asi moc nepomohu. Mnoho vìdomostí se nenávratnì ztratilo v propasti èasu. Jakou informaci hledáš?}
+{138}{aeld9b}{Co potøebuješ?}
+{139}{}{Øekni mi víc o té vìci zvané GECK.}
+{140}{}{Kudy se dostanu do Klamathu?}
+{141}{}{Kde leí Vault 13?}
+{142}{}{Kdy tak nad tím znova uvauju myslím, e u nic vìdìt nepotøebuju. Sbohem.}
+{143}{aeld10}{Je to posvátná relikvie - Souprava "Udìlej si svùj vlastní Ráj". Staré disky øíkají, e ona zpùsobí, e se zemì opìt zazelená. Zachrání nás. To je všechno, co vím.}
+{144}{}{Chci vìdìt ještì nìco.}
+{145}{}{Sbohem.}
+{146}{aeld11}{Klamath leí na vıchod odtud.}
+{147}{}{Jsou tu ještì další vìci, o kterıch se chci nìco dozvìdìt.}
+{148}{}{Pøipravenost je moje druhı jméno. Sbohem.}
+{149}{aeld12}{Posvátnı Vault 13? V tom ti nepomùu. Tohle vìdìl jen Zakladatel. Jeho pøíbìhy mluví o dlouhé a nebezpeèné cestì.}
+{150}{}{Rozumím. Hmm...ještì se chci na nìco zeptat.}
+{151}{}{Sbohem, Starší.}
+{152}{aeld13}{Nesmíme se bát! To by nás všechny znièilo! Vèetnì tebe. Prošel jsi Chrámem Zkoušek. Vìøíme ti. Potøebujeme tì.}
+{153}{}{Ne tak rychle, stará. Musím si to ještì promyslet!}
+{154}{}{Jak si pøeješ, Starší.}
+{155}{aeld14a}{Jsi zrádce. Za to zaplatíš.}
+{156}{aeld14b}{Jsi zrádce!}
+{157}{aeld14c}{Proè tohle dìláš?}
+{158}{aeld14d}{Vdycky jsem tušila, e se ve tvé duši skrıvá temnota!}
+{159}{aeld15}{Vezmi si tedy tuto láhev. Pochází ze svatého Vaultu 13. Pøed nedávnem nám ji prodal obchodník z Klamathu jménem Vic. On by tedy mohl vìdìt, kde leí Vault. Ach ano a moná taky budeš potøebovat nìco, èemu venku øíkají peníze. Tady máš.}
+{160}{}{Uh... ještì jednou prosím. Jakı e je mùj úkol?}
+{161}{}{Je tu ještì nìco, co mám vìdìt?}
+{162}{}{Popøej mi tedy štìstí, Starší. Udìlám, co bude v mıch silách.}
+{163}{aeld16}{Najdi v Klamathu Vica. Spoléháme na tebe.}
+{164}{aeld17}{Ráda tì zas vidím, mé dítì. Nechci bıt nepøíjemná, ale vidím, e tvùj úkol vypátrat místo, kde leí svatı Vault 13, stále není splnìnı. Prosím, nemarni èas. Pociujeme stále vìtší nedostatek. Jdi najít Vault!}
+{165}{}{Já u jít.}
+{166}{}{Dobrá, u jdu.}
+{167}{}{Nezklamu vás, Starší.}
+{168}{}{Hele, já na tom furt dìlám. Jasnı?}
+{169}{aeld18}{Znovu jsi zpátky a znovu bez GECKu. Naše pole pøestávají plodit, Vyvolenı. Naše vesnice zaèíná pociovat nedostatek jídla. Bì a najdi svatı Vault 13!}
+{170}{}{Oukej, já u jít.}
+{171}{}{Rozumím, Starší.}
+{172}{}{Nezklamu tebe ani náš kmen, Starší. Slibuji.}
+{173}{}{Hele bábo, jestli si myslíš, e bys to zvládla líp, tak si to bì klidnì zkusit sama... }
+{174}{aeld19}{Vìci jdou od deseti k pìti, Vyvolenı. Pokud má naše vesnice pøeít, potøebujeme svatı GECK. Naši lidé slábnou z hladu a zásoby jídla u na moc dlouho nepostaèí. Prosím, najdi posvátnı Vault a vra se k nám. Jdi hned.}
+{175}{}{Já jít.}
+{176}{}{Dobøe. U mizím.}
+{177}{}{Udìlám, co budu moci. Najdu GECK a zachráním vesnici.}
+{178}{}{U mì fakt neser, babizno! Dìlám, co mùu!}
+{179}{aeld20}{Máme se hùø ne kdy jindy, mé dítì. Naši lidé jsou nemocní, brahmíny umírají a nemáme u témìø ádné zásoby jídla. Nemoc, která postihla naší zemi, mùe bıt uzdravena jen s pomocí svatého GECKu. Jdi, pøines GECK a zachraò svùj kmen.}
+{180}{}{Rozumìt.}
+{181}{}{U jdu.}
+{182}{}{Odpus, Starší. Hned se vydám na cestu.}
+{183}{}{No jistì, to víš, e jo. U seš jak obehraná deska...}
+
+
+{200}{eeld1}{Vyvolenı! Kde se tu bereš?}
+{201}{}{Umbaj... kví?}
+{202}{}{Jdu vás zachránit.}
+{203}{}{Co se to tu ksakru dìje?}
+{204}{eeld2}{Ty zrùdo! Chceš mì taky zabít?}
+{205}{}{Uhhh?}
+{206}{}{Ne, to jsem pøece já. Vyvolenı!}
+{207}{}{Sklapni, ty stará dìvko! To jsem pøece já, Vyvolenı.}
+{208}{eeld3}{Ach díkybohu... Poslyš - sejdi dolù. Najdi stroj, kterı vyrábí energii. Zniè ten stroj. Zabij zlé lidi. Zabij je všechny! Kdy je zabiješ, vrátíme se všichni domù. A jestli ještì nemáš GECK, podívej se po nìm nìkde tady. Musíme mít GECK, abychom zachránili naší vesnici! Svoboda nic neznamená, nemáš-li domov, kam se mùeš vrátit. Rozumíš? Ach mùj Boe.}
+{209}{}{É -ju!}
+{210}{eeld4}{Dej pozor, a se nedotkneš té záøící stìny mezi námi. Myslím, e stroj, kterı jí napájí, je nìkde dole pod námi. Zniè ho, a mùeme utéct. Mimochodem, jak ses sem dostal?}
+{211}{}{Mám loï. }
+{212}{eeld5}{Do naší vesnice pøišli mui. Mìli stroje, které létají ve vzduchu, a do tìch nás naloili. Byli tam i jiní - ti byli z posvátného Vaultu 13! Zdálo se, e jsme zachránìni. Myslela jsem, e jdeme do ráje. (povzdech)}
+{213}{}{A potom?}
+{214}{eeld5a}{Potom nás pøivezli sem, do tohohle pekla. Mnoho z nás zabili nìèím, èemu øíkají ef-é-vé. A postupnì nás takhle znièí všechny! Víš, co musíš udìlat, Vyvolenı?}
+{215}{}{Ef-é-vé?}
+{216}{}{Jo.}
+{217}{}{Ne.}
+{218}{eeld6}{A znièíš ten stroj, dostaneme se ke tvé lodi. Najdeš nás tam. A teï si pospìš, dokud je ještì nìkdo z nás naivu. }
+{219}{}{Co se stalo?}
+{220}{}{Rozumím.}
+{221}{eeld7}{Musíš znièit ten stroj a pobít všechny ty ïábly. Setkáme se venku! A pokud stále ještì nemáš GECK, pokus se ho najít nìkde tady. Naše svoboda nebude k nièemu, nebudeme-li moci zachránit naší vesnici. A teï se dej do práce, Vyvolenı!}
+{222}{}{Sbohem.}
+{223}{eeld8}{Jsem poøád ještì Starší našeho kmene. Uvìdom si, s kım mluvíš! Omluv se, nebo ti u nebudu dál pomáhat.}
+{224}{}{Tak promiò, tak teda nejsi stará. Vo co teda de?}
+{225}{}{A jak bys mi asi tak chtìla z onoho svìta pomáhat? Zavøi hubu a chcípni.}
+{226}{eeld9}{Zmiz mi z oèí. Nejsi o nic lepší ne ti ïáblové tady. Lituji, e jsem tì kdy nazvala Vyvolenım...}
+{227}{eeld10}{Co tu dìláš? Kadá minuta, kterou tu ztrácíš, mùe stát ivot nìkterého z našich lidí. A nezapomeò na GECK! Musíme ho mít.}
+{228}{}{Bléh??}
+{229}{}{Kam, e to mám jít?}
+{230}{}{Chtìl jsem tì jen trochu vytoèit, babi. Neboj. Jsem s váma a jdu do toho.}
+{231}{eeld11}{(povzdech) Jdi dolù. Zabíjej. Zniè stroj. Bì!}
+{232}{eeld12}{Tak mì tentokrát poslouchej poøádnì! Sejdi o jedno patro dolù. Najdi stroj, kterı vyrábí energii. Zniè ho a pak mùeme utéct. Ti mui tady nesdílejí náš spoleènı sen, kterı nám pøedal Zakladatel. Jsou zlí a zkaení. A pokud stále ještì nemáš GECK, hledej ho nìkde tady. Naše svoboda je bezcenná, nemùeme-li zachránit naší vesnici. A teï jdi!}
+{233}{}{Jasná páka.}
+{234}{eeld13}{Tak tomu øíkají. Zabodávají lidem do kùe podivné jehly. Vypadá to trochu jako stimpaky, ale s èlovìkem se pak dìjí strašlivé vìci. Oni potom... (hlas jí selhal)}
+{235}{}{Co potom?}
+{236}{}{Nechceš to øíct? Udìlá se mi z toho asi blbì, e jo?}
+{237}{eeld13a}{Potom se zaène jejich kùe vzdouvat, jako kdyby se pod ní plazila klubka hadù. Pìní a praská. Krev se jim øine z uší a jejich jazyky otékají. Ti, kdo mají štìstí, se udusí. Ti, kdo mají smùlu, tuhle fázi pøeijí...}
+{238}{}{Za tohle mi ty svinì zaplatí!}
+{239}{}{To je teda fakt hustı. Coe to mám udìlat?}

@@ -1,0 +1,35 @@
+{100}{}{Du siehst das Schwarze Brett.}
+{101}{}{Du siehst das Schwarze Brett, an dem die Gesetze der NKR angeschlagen sind.}
+{102}{}{Es handelt sich um ein ganz gewöhnliches Schwarzes Brett, an dem diverse Zettel hängen.
+ Auf einem besonders auffallenden Blatt stehen die Gesetze der NKR.}
+{103}{}{Willkommen in der Neuen Kalifornischen Republik! Bevor du unsere schöne Stadt betrittst,
+ nimm dir bitte ein wenig Zeit und mache dich mit den folgenden Regeln und Vorschriften vertraut.}
+{104}{}{Waffen dürfen innerhalb der Stadt nicht offen getragen werden.}
+{105}{}{Personen, die unter dem Einfluß von Alkohol oder Jet stehen, werden verhaftet.}
+{106}{}{Sklaverei, Glücksspiel und Prostitution sind innerhalb der Stadt untersagt.}
+{107}{}{Die Unkenntnis der Gesetze ist keine Entschuldigung. Dummköpfe kriegen ebenso einen Tritt
+ in den Hintern wie Schlauköpfe.}
+{108}{}{Wenn dir diese Gesetze nicht in den Kram passen, dann verdrück dich schleunigst wieder
+ von hier!}
+{109}{}{Steck lieber deine Waffen weg. Wir meinen das so.}
+{110}{}{Das Befolgen der Gesetze zeugt einer guten Bürgerschaft.}
+{111}{}{zurück}
+{112}{}{Ich hab genug gelesen.}
+{113}{}{Sieht nicht allzu gut aus für deine Freizeitgewohnheiten.}
+{114}{}{Gut. Dann betteln einen wenigstens keine Alkis und Jeties an.}
+{115}{}{Zurück}
+{116}{}{Ich hab genug gelesen.}
+{117}{}{Tja, da geht der eine oder andere einträgliche Nebenerwerb flöten!}
+{118}{}{Die wollen hier offenbar eine ehrbare und anständige Gesellschaft schaffen.}
+{119}{}{Zurück}
+{120}{}{Ich hab genug gelesen.}
+{121}{}{Harte Worte. Vielleicht kann man was dazu tun, daß sie daran ersticken....diese
+ Moralapostel.}
+{122}{}{Gleichheit vor dem Gesetz ist eine feine Sache.}
+{123}{}{Zurück}
+{124}{}{Mir reicht's. Ich hab genug gelesen.}
+{125}{}{Du machst es sofort zu deinem obersten Anliegen, diesen Leuten ein bißchen Respekt
+ beizubringen.}
+{126}{}{Nicht besonders geschickt ausgedrückt, aber es ist klar, was gemeint ist.}
+{127}{}{Zurück}
+{128}{}{Mir reicht's. Ich hab genug gelesen.}

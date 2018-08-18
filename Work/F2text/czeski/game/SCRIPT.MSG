@@ -1,0 +1,8 @@
+##tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+# Messages from scripts
+#
+# strings
+#
+{20}{}{Smyèka}
+{21}{}{Testuji, jedna, dva, Somnambulus!}
+{22}{}{jo.  bezva!}

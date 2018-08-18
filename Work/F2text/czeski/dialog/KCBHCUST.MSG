@@ -1,0 +1,82 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš kohosi, kdo by mohl bıt lovec koešin.}
+{101}{}{Vidíš nìkoho, kdo relaxuje.}
+{102}{}{Vidíš místního štamgasta.}
+{103}{}{Vidíš pracujícího, kterı odpoèívá.}
+{104}{}{Vidíš osobu vychutnávající si svùj nápoj.}
+
+{106}{}{Vidíš místního štamgasta. Vypadá šastnì a spokojenì.}
+{107}{}{Vidíš místního štamgasta. Vypadá nasycenì a zdravì.}
+{108}{}{Vidíš štamgasta bavícího se s nìkım poblí.}
+{109}{}{Vidíš štamgasta tiše popíjejícího dbánek piva.}
+{110}{}{Vidíš štamgasta, kterı se buhvíèemu pro sebe smìje.}
+
+{120}{}{Seš ve špatnı krèmì, víš o tom?}
+{121}{}{Nepotøebujem tady nìkoho kdo dìlá potíe.}
+{122}{}{Barbaøi dycky znamenaj potíe.}
+{123}{}{Chlastej tak dlouho, dokud nebudeš tı koøalky úplnì plnej...}
+{124}{}{(mumly, mumly)...sorry, ale táh..ni vodsud (škyt) doprdele...}
+{125}{}{Další z Duntonovic gangu.}
+{126}{}{Na co èumíš?}
+{127}{}{Jenom uhni.}
+{128}{}{Kup nám všem rundu chlastu, nováèku.}
+{129}{}{Doufám, e se tu nepoch...}
+{130}{}{Nevypadáš jako kanibal.}
+{131}{}{Není tady pro tebe místo.}
+{132}{}{V poslední dobì je tady òák moc cizincù...}
+{133}{}{No, aspoò nemáš zuby vybroušenı do špice.}
+{134}{}{Seš ze sousedství, co?}
+{135}{}{Myslel sem, e máte všichni skrz nos kost.}
+{136}{}{(díva se na tebe a vrtí hlavou)}
+{137}{}{(nenápadnì dìlá na kohosi posuòky)}
+{138}{}{Ty seš urèitì zodpovìdnej za mrzaèení a zabíjení brahmín.}
+{139}{}{Jeden z našich lovcù je pohøešovanej, teïko u vím proè.}
+{140}{}{Tohle je urèitì ten lido-brouk co trápí brahmíny...}
+{141}{}{Tohle je urèitì ten duch z kaòonu.}
+{142}{}{Nenechte tu toho ducha jen tak procházet, sakra!}
+{143}{}{Bude lepší kdy necháš naše brahmíny na pokoji.}
+{144}{}{Na tebe si dám bacha.}
+
+{150}{}{Je pìkné vidìt tu novou tváø.}
+{151}{}{Myslím, e ti barbaøi nejsou konec koncù tak špatní.}
+{152}{}{Kup nám rundu pití!}
+{153}{}{Nazdárek.}
+{154}{}{Moh bys bejt Sulikovo dvojèe.}
+{155}{}{U jsi se bavil se Sulikem?}
+{156}{}{V poslední dobì jde lov dobøe.}
+{157}{}{Brzo se zmìní poèasí, myslím.}
+{158}{}{Dostala mì lovecká past, jine odsaï...}
+{159}{}{Jestli jsi chytrej, budeš se od bratrù Duntonovic dret dál.}
+{160}{}{Jestli jsi utahanı, zkus láznì.}
+{161}{}{Nasmìruj se na západ, do Loveckı ètvrti, esi chceš nìco vyrabovat.}
+{162}{}{Vítej pøíteli.}
+{163}{}{Rádi tì tu máme.}
+{164}{}{Klamath je místo pro tebe.}
+{165}{}{Jsem rádi, e tu jsi.}
+{166}{}{(pøipíjím na tebe)}
+{167}{}{(mrkne na tebe)}
+{168}{}{Necestuj v noci.}
+{169}{}{Tam vzadu venku je plno velkejch lido-broukù.}
+{170}{}{Jeden z našich nejlepších lovcù se ztratil.}
+
+{201}{}{Áááh, tohle mi poøádnì protáhne píšalu.}
+{202}{}{Dìkuji.}
+{203}{}{Mmm-mm, dobrı.}
+{204}{}{Nic není lepší ne Bucknerovic Nejlepší.}
+{205}{}{Díky za uvaøení.}
+{206}{}{Huzzah!}
+{207}{}{Barbaøi vìdí co je na ivotì to nejlepší.}
+{208}{}{Díky.}
+{209}{}{Dìkuji pøíteli.}
+{210}{}{Tak tohle jsem potøeboval, díky.}
+{211}{}{Dìkuju milionkrát!}
+{212}{}{Radìji mìj láhev pøed sebou....}
+{213}{}{Mockrát dìkuji, pøíteli.}
+{214}{}{OK!}
+{215}{}{Ano! Na tohle jsem èekal.}
+{216}{}{Myslel jsem, e na tohle se nikdy nezeptáš.}
+{217}{}{Dìkuju pøíteli.}
+{218}{}{Hmm, jako Sulik.}
+{219}{}{Díky.}
+{220}{}{Yeah!}

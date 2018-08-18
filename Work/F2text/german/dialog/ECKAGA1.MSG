@@ -1,0 +1,10 @@
+{100}{}{Du siehst einen spärlich bekleideten Mann.}
+{101}{}{Du siehst Kaga.}
+{103}{}{Er trägt Hosen und es sieht so aus, als komme er aus einer Sippe.}
+{104}{}{Ich hätte das Auserwählte Wesen sein sollen!}
+{105}{}{Wie kann es Arroyo wagen, mich aus der Sippe zu verstoßen.}
+{106}{}{Ich werd mich rächen!}
+{107}{}{Kaga wird dich ins Jenseits befördern.}
+{108}{}{Wir sehn uns noch!}
+{109}{}{Ich wurde noch nie zuvor besiegt!}
+{110}{}{Ich werd mich deiner Vernichtung widmen.}

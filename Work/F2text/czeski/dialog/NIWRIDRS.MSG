@@ -1,0 +1,7 @@
+#tenhle soubor pøeložil Birdman - birdman@post.cz, http://get.to/birdman
+# 1.  SEARCH 1 (WTG)
+{200}{}{S vìdomím, že je to Richardova místnost, zaèínáš opatrnì prohledávat skøíò.}
+{201}{}{Hej. Co je to? Hm, pod skøíní leží prázdná nádobka od Jetu.}
+{202}{}{Už tady nic není.}
+
+{250}{}{Máš... stopu. Zpod skøínì. Ve Wrightovic vile.}

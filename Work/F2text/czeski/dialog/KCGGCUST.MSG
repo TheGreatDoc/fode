@@ -1,0 +1,80 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš místního štamgasta, který si tì zvìdavì prohlíží.}
+{101}{}{Vidíš místního štamgasta pojídajícího nìjaké jídlo.}
+{102}{}{Vidíš místního štamgasta, popíjejícího džbánek piva.}
+{103}{}{Vidíš místního štamgasta.}
+
+{104}{}{Vidíš zátylek místního štamgasta. Nejspíš lovec kožešin.}
+{105}{}{Vidíš muže s drsným pohledem. Pravdìpodobnì lovec kožešin.}
+{106}{}{Vidíš pøírodou ošlehaného muže. Nejspíš to bude lovec kožešin anebo farmáø.}
+{107}{}{Vidíš muže v dobré kondici. Mohl by to být rolník nebo pasák brahmín.}
+
+{110}{}{Ty sem budeš dobøe zapadat.}
+{111}{}{Kup všem rundu chlastu, proè ne sakra?}
+{112}{}{Pøišel's sem na zápas s Duntonovejma?}
+{113}{}{Vypadáš, že pocházíš odnìkud ze severu.}
+{114}{}{Na co tak èumíš?}
+{115}{}{Na tvou èistokrevnost bych si nevsadil zlato. Ha, ha, ha.}
+{116}{}{Grk, mìl bych si dát další džbánek geckonskejch Chcánek.}
+{117}{}{Jestli potøebuješ prachy, bratøi Duntonovi hledají nìkoho na pomoc.}
+{118}{}{Nejseš zas tak špatnej, burane.}
+{119}{}{96 zelenejch flašek chcanek ve mnì, 96 flašek bude na zdi....}
+{120}{}{Pøišel jsem z jihu z Denu; je tam spoustu práce.}
+{121}{}{Dones sem další džbánky chlastu, Salvadore!}
+{122}{}{Lov jde ztìžka; musí bejt snadnìjší cesta jak si vydìlat.}
+{123}{}{Nejsem tak vohra... vožralej, jak si myslíš (škyt).}
+{124}{}{Hej kámo, tyhle kostky, z tebe udìlaj boháèe (chrasty, chrasty)}
+{125}{}{Ohlednì práce si promluv s Duntonovejma nebo s barmanem, kamaráde.}
+{126}{}{Vybral sis správnej flek na chlastání, pøíteli.}
+{127}{}{Ne, Bishope, nezkoušej to s tím nožem znova!}
+{128}{}{Pùjde nìkdo hrát kostky?}
+{129}{}{Je to fajn, že tu není ten vožralec Aldo.}
+{130}{}{Vždycky bereš brahmíny, co nepatøej tobì?}
+{131}{}{Sledujte toho Tajemnýho ducha! To je urèitì von!}
+{132}{}{V kaòonu na východì je nìco tajemnýho.}
+{133}{}{Lov je nebezpeèný; pøed nìkolika týdny se ztratil dobrej lovec.}
+{134}{}{Rád oblbuju toho hòupa Torra.}
+
+{140}{}{Podívejme kdo se pøišel podívat.}
+{141}{}{(mumly, mumly) ...koho nám sem èerti nesou... (mumly)}
+{142}{}{Nejsi tu náhodou ve špatný èásti mìsta?}
+{143}{}{Nepotøebujeme tu nìkoho tvýho druhu, barbare.}
+{144}{}{Možná, jestli všem koupíš drink, tak tì tu necháme.}
+{145}{}{Táhni jinam, barbare.}
+{146}{}{Na co tak blbì zíráš?}
+{147}{}{Duntonovi ti to vysvìtlí, barbare...}
+{148}{}{Tohle není pro tebe vhodnej flek na chlastání.}
+{149}{}{Tvoje maminka tu není chlapèe; zkus zajít do lázní.}
+{150}{}{Proè si nejdeš hrát nìkam jinam?}
+{151}{}{Máme tu pro tebe takový hezký kaòon, východnì odsud, zajdi se podívat.}
+{152}{}{Co tu chceš?}
+{153}{}{Lepší bude, když si budeš hledìt svýho.}
+{154}{}{Nejmenuješ se náhodou taky Torr? (he, he, he)}
+{155}{}{Jdi se napít za Aldem, jo?}
+{156}{}{Tohle není místo pro tebe.}
+{157}{}{S tebou se teda rozhodnì nenapiju.}
+{158}{}{Pche. (odplivne si na podlahu)}
+{159}{}{Není tu nic, na co dá èumìt.}
+{160}{}{Cítíš, že tì tu nechceme...he?}
+
+{162}{}{Zdržíš se, barbare?}
+{163}{}{Díky.}
+{164}{}{Nee!}
+{165}{}{Ecky, ecky, p'tang!}
+{166}{}{Pùjdu se vychcat.}
+{167}{}{Nic nenahradí geckonský Chcánky.}
+{168}{}{Díky za Chcánky.}
+{169}{}{Jooo!}
+{170}{}{Barbaøi vìdí co je na životì nejlepší.}
+{171}{}{Díky-ti.}
+{172}{}{Více Chcánek pro každýho!}
+{173}{}{Tohle potøebuju; díky.}
+{174}{}{Dìkuju milionkrát!}
+{175}{}{Radìji mít lobotomii...}
+{176}{}{Chcánky Zlatýho geckona!}
+{177}{}{Vpoøádku!}
+{178}{}{Miluju tyhle Chcánky.}
+{179}{}{Ty jsi dobrý barbar.}
+{180}{}{Hmm, èilý pohyby.}
+{181}{}{Jooo!}

@@ -1,0 +1,20 @@
+{100}{}{Tu vois quelqu'un en uniforme militaire.}
+{101}{}{Tu vois quelqu'un en uniforme militaire.}
+{102}{}{Tu vois quelqu'un en uniforme militaire, mais il a plutôt l'air d'un technicien que d'un soldat.}
+
+{103}{}{Salut. Comment ça va ?}
+{104}{}{" Reçu, je t'ai sur mon écran " - Désolé, mais je suis en plein travail pour l'instant.}
+{105}{}{Je n'ai pas le temps de parler pour l'instant.}
+{106}{}{Tu peux regarder, mais ne touche à rien.}
+
+{107}{}{As-tu perdu la tête pour te promener sans uniforme ? Mets-toi en tenue !}
+{108}{}{Si le sergent te voit sans uniforme, tu vas te faire incendier !}
+{109}{}{Qu'est-ce que tu fais sans uniforme ?}
+
+{110}{}{Alerte !! Nous sommes envahis ! Alerte !}
+{111}{}{Des envahisseurs ! Appelez la garde !}
+{112}{}{Garde ! Des envahisseurs à la tour de contrôle !}
+
+{113}{}{Qu'est-ce qui se passe ? On nous attaque ?}
+{114}{}{Pourquoi une alerte ? Qu'est-ce qui se passe ?}
+{115}{}{Mais qu'est-ce qui se passe, bon sang ?}

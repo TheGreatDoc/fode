@@ -1,0 +1,35 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Dziecko}
+{210}{}{Widzisz dziecko.}
+{210}{}{Widzisz male brudne dziecko owiniete w jakies szmaty. Spoglada na Ciebie glodnymi oczami.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Tata?@@"Kotki male dwa chcialy przejs przez rzeczke..."@@"Raz, dwa, trzy, cztery, piec, Raz zlapalem zywa rybe..."@@"Chinski smok, chinski smok, zionol ogniem, zionol ogniem, szczesliwego nowego roku..."@@Widziales mojego ojca?@@Gdzie jest moje mama?@@"Stary farmer, farme mial, Ee-l, Ee-l, O, Na tej farmie krowki mial, Ee-l, Ee-l, O..."@@Nie, nie przestane spiewac@@Ten mily pan chcial zebym z mnim poszedl@@Dlaczego ten pan chcial, zebym z nim poszedl?@@Jesli mi dasz cukierka, powiem Ci pewien sekret@@Wiem gdzie moj tata zakopal mame@@Nie mow nikomu ale za tym drzewem ktos zakopal skarb@@POMOCY, POMOCY, ZBOCZENIEC!@@POMOCY, On chce mnie porwac!@@ Masz pistolet kaliber 223?@@Moge Ci cos sprzedac@@Duzy jestes@@Moze jestes duzy, ale glupi jak brahmin@@Kon? Jaki kon?@@Ma ktos lizaka?@@Nie dziekuje@@Nie dzisiaj@@Dasz cukierka, to ci pokaze jak okrasc straznika@@Znam tajemne przejscie@@Moj tata widzial bialego brahmina@@Pan strasznie smierdzi@@Umiesz plywac?@@Nie mam mamusi@@Nie mam tatusia@@Mama szuka dlamnie nowego tatusia@@Mama mowila abym przyszedl sie tu pobawic, bo jakis pan przyjdzie cos naprawic@@Moja mama ma wielu przyjaciol@@Moja siostra to idiotka@@Moja siostra jest glupia, pokazuje wszystkim cycki za kapsle@@Mam starszego brata, wiec uwazaj@@Szkola, co to jest?@@Jesli mi powiesz co ma duze zeby i skacze, to dam ci prezent@@Dlaczego patrzysz na mnie tak zabawnie?@@Dlaczego patrzysz namnie takim dziwnym wzrokiem?@@Patrz co umiem robic z moja slina?@@Jestes kobieta?@@Jestes facetem?@@Nie chce juz wiecej braci@@Jak dorosne bede straznikiem...albo ochroniarzem...a moze rabusiem@@Wiedziales ze wspolczynik energi E ciala w spoczynku jest rowny masie nie w spoczynku. To dopiero ciekawa rozmowa. W kazdym razie jednostka transfuzji odpowiada masie jednostki tej energi.@@Oczywiste jest, ze nie@@Widziales gdzies mojego psa?@@Co ma trzy nogi i ogon?... trzy nogi pies@@Nie wiem@@Widziales jakiego duzego szczura zabilem?}
+
+[engl]
+{100}{}{Child}
+{210}{}{You see a child.}
+{210}{}{You see a little dirty child with some rags on him. He looks at you with hungry eyes.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Daddy?@@"Mary had a little lamb, little lamb, little lamb..."@@"One, two, three, four, five, once l caught a fish alive..."@@"Chinese dragon, chinese dragon, breathing fire, breathing fire, happy, happy New Year, happy, happy..."@@Have you seen mah dad?@@Where is my mommy?@@"Old MacDonald had a farm, Ee-l, Ee-l, Oh, And on his farm he had a cow, Ee-l, Ee-l, Oh..."@@No! I won't stop singing!@@That nice man wanted me to go with him.@@Why did that nice man want me to go with him?@@If you give me candy I'll tell you a secret.@@I know where my dad buried mom.@@Do not tell anyone but behind that tree someone buried a treasure.@@HELP, HELP... PERVERT!@@HELP, he wants to kidnap me!@@ Do you have a .223 Pistol?@@I can sell you something.@@You're so big...@@Maybe you're big but stupid like a brahmin.@@Horse? What horse?@@Have any lollipops?@@No, thank you.@@Not today.@@If you give me some candy I'll show you how to rob a guard.@@I know a secret passage.@@My dad saw a white brahmin!@@Sir, you smell terrible@@Can you swim?@@I don't have a mommy.@@What is a daddy?@@My mom's looking for a new daddy for me.@@My mother told me go out and play here, cos some strange man came to fix something for her.@@My mom has a lot of friends.@@My sister is so stupid.@@My sister is stupid and shows titties for money.@@I have a big brother, so watch out.@@School? What's that?@@If you guess what has large teeth and jumps around I'll give you a present.@@Why are you looking at me funny?@@You're a weirdo@@Look what I can do with my spit!@@You are a woman?@@You are a man?@@I don't want any more brothers.@@When I grow up I'll be a soldier... or a bodyguard... or maybe robber.@@Did you know that that the total internal energy E of a body at rest is equal to the product of its rest mass m and a suitable conversion factor to transform from units of mass to units of energy?@@Of course ...not.@@Have you seen my dog?@@What has three legs and a tail?... a three-legged dog!@@I don't know.@@Did you see that big rat I killed?}
+
+[russ]
+{100}{}{Child}
+{210}{}{You see a child.}
+{210}{}{You see a little dirty child with some rags on him. He looks at you with hungry eyes.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Daddy?@@"Mary had a little lamb, little lamb, little lamb..."@@"One, two, three, four, five, once l caught a fish alive..."@@"Chinese dragon, chinese dragon, breathing fire, breathing fire, happy, happy New Year, happy, happy..."@@Have you seen mah dad?@@Where is my mommy?@@"Old MacDonald had a farm, Ee-l, Ee-l, Oh, And on his farm he had a cow, Ee-l, Ee-l, Oh..."@@No! I won't stop singing!@@That nice man wanted me to go with him.@@Why did that nice man want me to go with him?@@If you give me candy I'll tell you a secret.@@I know where my dad buried mom.@@Do not tell anyone but behind that tree someone buried a treasure.@@HELP, HELP... PERVERT!@@HELP, he wants to kidnap me!@@ Do you have a .223 Pistol?@@I can sell you something.@@You're so big...@@Maybe you're big but stupid like a brahmin.@@Horse? What horse?@@Have any lollipops?@@No, thank you.@@Not today.@@If you give me some candy I'll show you how to rob a guard.@@I know a secret passage.@@My dad saw a white brahmin!@@Sir, you smell terrible@@Can you swim?@@I don't have a mommy.@@What is a daddy?@@My mom's looking for a new daddy for me.@@My mother told me go out and play here, cos some strange man came to fix something for her.@@My mom has a lot of friends.@@My sister is so stupid.@@My sister is stupid and shows titties for money.@@I have a big brother, so watch out.@@School? What's that?@@If you guess what has large teeth and jumps around I'll give you a present.@@Why are you looking at me funny?@@You're a weirdo@@Look what I can do with my spit!@@You are a woman?@@You are a man?@@I don't want any more brothers.@@When I grow up I'll be a soldier... or a bodyguard... or maybe robber.@@Did you know that that the total internal energy E of a body at rest is equal to the product of its rest mass m and a suitable conversion factor to transform from units of mass to units of energy?@@Of course ...not.@@Have you seen my dog?@@What has three legs and a tail?... a three-legged dog!@@I don't know.@@Did you see that big rat I killed?}

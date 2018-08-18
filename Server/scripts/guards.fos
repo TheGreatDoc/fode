@@ -1,0 +1,58 @@
+#include "_macros.fos"
+#include "_npc_pids.fos"
+#include "_defines.fos"
+#include "_bags.fos"
+#include "_teams.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+	
+void _GuardInit(Critter& guard, bool firstTime)
+{
+	guard.StatBase[ST_TEAM_ID]=TEAM_Guard;
+	guard.SetEvent(CRITTER_EVENT_IDLE,"_GuardIdle");
+	guard.SetEvent(CRITTER_EVENT_DEAD,"_GuardDead");
+	guard.SetEvent(CRITTER_EVENT_SMTH_DEAD,"_GuardSmthDead");
+	guard.SetEvent(CRITTER_EVENT_SMTH_ATTACK,"_GuardSmthAttack");
+	//guard.SetEvent(CRITTER_EVENT_PLANE_END,"_GuardPlaneEnd");
+}
+
+void _GuardIdle(Critter& guard)
+{
+	guard.StatBase[ST_CURRENT_AP]=guard.Stat[ST_ACTION_POINTS]*100;
+	guard.ClearEnemyStack();
+}
+
+void _GuardDead(Critter& guard, Critter@ killer)
+{
+	DeleteNpc(guard);
+}
+
+void _GuardSmthDead(Critter& guard, Critter& fromCrit, Critter@ killer)
+{
+	if(valid(killer) && killer.StatBase[ST_TEAM_ID]!=TEAM_Guard && !guard.CheckEnemyInStack(killer.Id))
+	{
+		guard.AddEnemyInStack(killer.Id);
+		AddAttackPlane(guard,0,killer,true);
+	}
+	if(guard.CheckEnemyInStack(fromCrit.Id)) guard.EraseEnemyFromStack(fromCrit.Id);
+}
+
+void _GuardSmthAttack(Critter& guard, Critter& fromCrit, Critter& target)
+{
+	if(fromCrit.StatBase[ST_TEAM_ID]!=TEAM_Guard && !guard.CheckEnemyInStack(fromCrit.Id))
+	{
+		guard.AddEnemyInStack(fromCrit.Id);
+		AddAttackPlane(guard,0,fromCrit,true);
+	}
+	if(fromCrit.StatBase[ST_TEAM_ID]==TEAM_Guard && fromCrit.CheckEnemyInStack(target.Id) && !guard.CheckEnemyInStack(target.Id))
+	{
+		guard.AddEnemyInStack(target.Id);
+		AddAttackPlane(guard,0,target,true);
+	}
+}
+
+/*
+int _GuardPlaneEnd(Critter& guard, NpcPlane& plane, int reason, Critter@ someCr, Item@ someItem)
+{
+	
+}*/

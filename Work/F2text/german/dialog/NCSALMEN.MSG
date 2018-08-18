@@ -1,0 +1,93 @@
+# QUICK LOOK
+{100}{}{Du siehst einen von Salvatores Männern.}
+
+# LOOK (IF THUG HAS LASER WEAPON.)
+{150}{}{Du siehst einen düster aussehenden Mann. Er runzelt die Stirn und stiert vor sich hin. Er hält eine seltsam aussehende Pistole in der Hand. }
+{151}{}{Du siehst einen düster aussehenden Mann. Er runzelt die Stirn und stiert vor sich hin.}
+{152}{}{Du siehst einen von Salvatores Männern. Er sieht aus, als hätte er sich schon jahrelang nicht mehr ausgeruht.}
+{153}{}{Du siehst einen von Salvatores Männern. Er stiert mit düsterem Gesichtsausdruck vor sich hin.}
+{154}{}{Du siehst einen von Salvatores Männern. Er sieht still und tödlich aus und schläft vielleicht. }
+{155}{}{Du siehst einen von Salvatores Männern. Er sieht still und tödlich aus und ist möglicherweise zu Tode gelangweilt. }
+
+# 2. FLOAT/CLICK DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{161}{}{Du hast ganz schön Nerven, der Enklave so einzuheizen.}
+
+# 3. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=SALVATORE, PRIZEFIGHTER, PORN STAR [SNEAK]
+{172}{}{Mußt du ein Weilchen untertauchen?}
+
+# 4. FLOAT DIALOGUE: PLAYER = MADE MAN, FA=NOT SALVATORE
+{183}{}{Raus hier, und zwar sofort. }
+{184}{}{Wenn du nicht gerade Ärger suchst, solltest du besser hier abhauen.}
+
+# 6. FLOAT DIALOGUE: POLITE [ARMED]
+{196}{}{Steck die Waffe weg.}
+
+# 7. FLOAT DIALOGUE: FEMALE, PORN STAR, POLITE [ARMED]
+{200}{}{Mädel, ich muß dich leider bitten, die Waffe wegzustecken.}
+
+# 8. FLOAT DIALOGUE: SLAVER [ARMED]
+{206}{}{Hier drin sind keine Waffen gestattet, du Sklaventreiber.}
+
+# 9. FLOAT DIALOGUE: SLAVER [SNEAK]
+{210}{}{Du da! Sklavenhändler! Schleich hier nicht rum!}
+
+# 10. FLOAT DIALOGUE: NORMAL [ARMED]
+{216}{}{Hier drin sind keine Waffen gestattet.}
+
+# 11. FLOAT DIALOGUE: NORMAL [SNEAK]
+{220}{}{Du da! Schleich hier nicht rum!}
+
+# 12. FLOAT DIALOGUE: COMPANION: ROBOBRAIN
+{226}{}{Keine Roboter. Raus mit dem Ding.}
+
+# 13. FLOAT DIALOGUE: COMPANION: MARCUS
+{230}{}{Hier drin sind keine Mutanten gestattet. Raus mit ihm, und zwar sofort.}
+
+# 15. CLICK DIALOGUE: POWER ARMOR
+{235}{}{Wie gehst du denn mit dem Ding aufs Klo?}
+
+# 16. CLICK [MADE MAN, FA = SALVATORE]
+{241}{}{Hallo, der Herr.}
+{242}{}{Hallo, die Dame.}
+
+# 18. CLICK [MALE/FEMALE, MADE MAN, FA = NOT SALVATORE]
+{275}{}{Du gehst besser, bevor es noch Ärger gibt.}
+
+# 19. CLICK [MALE/FEMALE, PRIZEFIGHTER]
+{285}{}{Wo hast du gelernt, so zu kämpfen? Du bist ja teuflisch gut.}
+{286}{}{Hey, Champ! Dein letzter Kampf war toll!}
+
+# 20. CLICK [MALE, PORN STAR]
+{306}{}{Das ist hier kein Nacktfilmstudio, Liebster.}
+
+# 21. CLICK [PORN STAR, FEMALE]
+{315}{}{Jetzt nicht, Süße. Die Geschäfte, du weißt schon.}
+
+# 22. FLOAT DIALOGUE: SLAVER [ARMED]
+{327}{}{Weg mit der Waffe, Sklavenhändler.}
+
+# 23. FLOAT DIALOGUE: SLAVER [SNEAK]
+{330}{}{Schleich hier nicht rum, Sklavenhändler.}
+
+# 24. FLOAT DIALOGUE: NORMAL [ARMED]
+{336}{}{Hier drin sind keine Waffen gestattet.}
+
+# 25. FLOAT DIALOGUE: NORMAL [SNEAK]
+{340}{}{Schleich hier nicht rum, sonst kriegst du Ärger.}
+
+# 26. [SLAVER, IF BAD REACTION]
+{345}{}{Ich bin nicht der Richtige für Gespräche über Sklavenhandel. Red mal mit Mason.}
+
+# 27. [SLAVER, GOOD REACTION]
+{355}{}{Wenn du ein paar Sklaven verkaufen willst, solltest du mit dem Chef reden. }
+
+# 28. CLICK [FEMALE/MALE, NO REP, GOOD REACTION]
+{360}{}{Suchst du Arbeit? Red mal mit Mason.}
+
+# 29. CLICK [NO REP, BAD REACTION]
+{366}{}{Ich hab im Moment keine Zeit zum Reden.}
+
+# 30. CLICK/FLOAT: LENNY
+{381}{}{Wenn dieser Ghul immer noch da steht, wenn ich mich gleich umdrehe, verbrennen wir ihn.}
+
+# END OF LINES

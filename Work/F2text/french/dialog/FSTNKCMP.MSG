@@ -1,0 +1,28 @@
+{100}{}{Tu vois un ordinateur PoséidoNet.}
+{101}{}{Tu vois un ordinateur PoséidoNet.}
+{102}{}{Tu vois un ordinateur PoséidoNet.}
+
+
+{103}{}{::bip:: Problème de fonctionnement du terminal. Installation de NavComp requise. ::bip::}
+{104}{}{-terminé-}
+{105}{}{Bienvenue sur PoséidoNet. Ce terminal est réservé aux transmissions entre un pétrolier - le PMV Valdez - et une installation portuaire. Commande ?}
+{106}{}{Lancement.}
+{107}{}{Vérifier état.}
+{108}{}{Déconnexion}
+{109}{}{-Réservoirs de carburant : Vides- -Cale : Vide- -Ordinateur de navigation : Non opérationnel- -Câbles d'amarrage : Attachés-}
+{110}{}{-retour-}
+{111}{}{Déconnexion}
+{112}{}{- Réservoirs de carburant : Pleins- -Cale : Vide- -Ordinateur de navigation : Non opérationnel- -Câbles d'amarrage : Attachés -}
+{113}{}{-retour-}
+{114}{}{Déconnexion}
+{115}{}{ERREUR : Réservoirs de carburant vides.}
+{116}{}{ERREUR : Ordinateur de navigation non opérationnel.}
+
+{117}{}{Réservoirs de carburant : Vides - -Cale : Vide - -Ordinateur de navigation : Opérationnel - -Câbles d'amarrage : Attachés}
+{118}{}{Réservoirs de carburant : Vides - -Cale : Vide - -Ordinateur de navigation : Opérationnel - -Câbles d'amarrage : Attachés}
+
+{119}{}{Tu vois un ordinateur de navigation PoséidoNet.}
+
+{129}{}{[Tu lances rapidement la séquence de largage et les roquettes du navire quittent la plate-forme.]}
+{130}{}{-terminé-}
+{131}{}{Ordinateur de navigation en ligne.}

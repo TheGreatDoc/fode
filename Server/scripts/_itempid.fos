@@ -1,0 +1,1491 @@
+#ifndef __ITEM_PID__
+#define __ITEM_PID__
+
+#define IS_WORK_BENCH #(pid)		(((pid)>=PID_WORK_BENCH_I && pid<=PID_WORK_BENCH_VI) || ((pid)>=PID_BLACKSMITH_FURNANCE_I && pid<=PID_SMALL_BLACKSMITH_FURNANCE_) || ((pid)>=PID_PRODUCTION_MACHINE_I && pid<=PID_PRODUCTION_MACHINE_VI))
+
+/******************************************************************
+***************       Armors  DE                         ***************
+******************************************************************/
+
+//DE 1st GROUP ARMORS
+
+#define PID_LEATHER_JACKET_DE                  (4833)
+#define PID_LEATHER_ARMOR_DE                   (4834)
+#define PID_LEATHER_ARMOR_MK_II_DE             (4835)
+#define PID_CURED_LEATHER_ARMOR_DE             (4836)
+#define PID_METAL_ARMOR_DE                     (4837)
+#define PID_METAL_ARMOR_MK_II_DE               (4838)
+#define PID_TESLA_ARMOR_DE                     (4839)
+#define PID_PURPLE_ROBE_DE                     (4840)
+#define PID_KEEPBRIGE_ROBE_DE                  (4841) // PID_BRIDGEKEEPERS_ROBE
+#define PID_NAVY_ROBE_DE                       (4842)
+#define PID_JUMPSUIT_DE                        (4810)
+#define PID_FAKE_JUMPSUIT_DE                   (4811)
+#define PID_JUMPSUIT_B_DE                      (4812)
+#define PID_ROBE_2_DE                          (4813)
+#define PID_ROBE_3_DE                          (4814)
+#define PID_JUMPSUIT_R1_DE                     (4815)
+#define PID_ROBE_D_DE                          (4816)
+#define PID_ENVIRONMENTAL_DE                   (4817)
+#define PID_LEATHER_GECKO_DE                   (4818)
+#define PID_JUMPSUIT_BR_DE                     (4819)
+#define PID_JUMPSUIT_G_DE                      (4820)
+#define PID_JUMPSUIT_R2_DE                     (4821)
+#define PID_JUMPSUIT_B2_DE                     (4822)
+#define PID_JUMPSUIT_R3_DE                     (4823)
+#define PID_JUMPSUIT_D_DE                      (4824)
+#define PID_COAT_DE                            (4825)
+#define PID_FT_FRANK_DE                        (4826)
+#define PID_FT_ENCLAV_DE                       (4827)
+#define PID_FT_COMBAT_DE                       (4828)
+#define PID_FT_PA_DE                           (4829)
+#define PID_SCOUTARMOR                         (4830)
+#define PID_BUGGYARMOR                         (4831)
+#define PID_HUMMERARMOR                        (4832)
+#define PID_DARKROBE						   (4844)
+
+
+//combat
+
+
+
+#define PID_CA_1                               (4300)
+#define PID_CA_2                               (4301)
+#define PID_CA_3                               (4302)
+#define PID_CA_4                               (4303)
+#define PID_CA_5                               (4304)
+#define PID_CA_6                               (4305)
+#define PID_CA_7                               (4306)
+#define PID_CA_8                               (4307)
+#define PID_CA_9                               (4308)
+#define PID_CA_10                              (4309)
+#define PID_CA_11                              (4310)
+#define PID_CAMKII_1                           (4320)
+#define PID_CAMKII_2                           (4321)
+#define PID_CAMKII_3                           (4322)
+#define PID_CAMKII_4                           (4323)
+#define PID_CAMKII_5                           (4324)
+#define PID_CAMKII_6                           (4325)
+#define PID_CAMKII_7                           (4326)
+#define PID_CAMKII_8                           (4327)
+#define PID_CAMKII_9                           (4328)
+#define PID_CAMKII_10                          (4329)
+#define PID_CAMKII_11                          (4330)
+#define PID_THERMAL_CA                         (4340)
+#define PID_REACTIV_CA                         (4341)
+#define PID_NEC_CA                             (4343)
+#define PID_ULS_CA                             (4344)
+#define PID_PA                                 (4360)
+#define PID_PAMKII                             (4361)
+#define PID_APA                                (4362)
+
+#define PID_MECHSUITG1                         (4363)
+#define PID_MECHSUITG2                         (4364)
+#define PID_MECHSUITB1                         (4365)
+#define PID_MECHSUITB2                         (4366)
+#define PID_MECHSUITD1                         (4367)
+
+
+/******************************************************************
+***************       Weapons   DE                  ***************
+******************************************************************/
+
+#define PID_ZIP_GUN_DE                         (10007)          //(300) //
+#define PID_9MM_MAUSER_DE                      (10005)          //(122) //
+#define PID_44_MAGNUM_REVOLVER_DE              (10008)          //(313) //
+#define PID_44_MAGNUM_SPEEDLOADER_DE           (10009)          //(398) //
+#define PID_SPRINGER_RIFLE_DE                  (10016)          //(299) //
+#define PID_RED_RYDER_BB_GUN_DE                (10013)          //(161) //
+#define PID_RED_RYDER_LE_BB_GUN_DE             (10014)          //(162) //
+#define PID_JONNY_BB_GUN_DE                    (10015)          //(261) //
+#define PID_SHOTGUN_DE                         (10012)          //(94)  //
+#define PID_COLT1911_DE                        (10115)
+#define PID_M32_DE                             (10117)
+#define PID_M32S_DE                            (10118)
+#define PID_REM870_DE                          (10119)
+#define PID_M16_DE                             (10116)
+#define PID_M16_SPECIAL_DE                     (10163)
+#define PID_M16S_DE                            (10124)
+#define PID_COLT1_DE                           (10018)
+#define PID_COLT1K1_DE                         (10019)
+#define PID_COLT1K2_DE                         (10020)
+#define PID_COLT2_DE                           (10021)
+#define PID_COLT2K1_DE                         (10022)
+#define PID_COLT2K2_DE                         (10023)
+#define PID_COLT3_DE                           (10024)
+#define PID_COLT3K1_DE                         (10025)
+#define PID_COLT3K2_DE                         (10026)
+#define PID_AIRPISTOL_DE                       (10027)
+
+#define PID_FLARE_DE                           (10415)          //(79)  //
+#define PID_ACTIVE_FLARE_DE                    (10416)          //(205) //
+#define PID_PLANT_SPIKE_DE                     (10410)          //(365) //
+#define PID_THROWING_KNIFE_DE                  (10446)          //(45)  //
+#define PID_ROCK_DE                            (10411)          //(19)  //
+#define PID_GOLD_NUGGET_DE                     (10412)          //(423) //
+#define PID_URANIUM_ORE_DE                     (10413)          //(426) //
+#define PID_REFINED_ORE_DE                     (10414)          //(486) //
+#define PID_MOLOTOV_COCKTAIL_DE                (10409)          //(159) //
+#define PID_KNIFE_DE                           (10400)          //(4)   //
+#define PID_COMBAT_KNIFE_DE                    (10435)          //(236) //
+#define PID_LIL_JESUS_WEAPON_DE                (10438)          //(517) //
+#define PID_SHIV_DE                            (10405)          //(383) //
+#define PID_SWITCHBLADE_DE                     (10403)          //(319) //
+#define PID_WAKIZASHI_BLADE_DE                 (10436)          //(522) //
+#define PID_ELI_KNIFE_DE                       (10447)          //(595) //
+#define PID_SPEAR_DE                           (10440)          //(7)   //
+#define PID_SHARP_SPEAR_DE                     (10437)          //(280) //
+#define PID_SHARPENED_POLE_DE                  (10404)          //(320) //
+#define PID_CLUB_DE                            (10401)          //(5)   //
+#define PID_CROWBAR_DE                         (10402)          //(20)  //
+#define PID_WRENCH_DE                          (10441)          //(384) //
+#define PID_SLEDGEHAMMER_DE                    (10439)          //(6)   //
+#define PID_LOUISVILLE_SLUGGER_DE              (10442)          //(386) //
+#define PID_SUPER_SLEDGE_DE                    (10471)          //(115) //
+#define PID_HOLY_HAND_GRENADE_DE               (10478)
+#define PID_KNIFED_DE                          (10470)
+
+#define PID_BOXING_GLOVES_DE                   (10407)          //(292) //
+#define PID_PLATED_BOXING_GLOVES_DE            (10408)          //(293) //
+#define PID_BRASS_KNUCKLES_DE                  (10406)          //(21)  //
+#define PID_SPIKED_KNUCKLES_DE                 (10443)          //(234) //
+
+#define PID_10MM_PISTOL_DE                     (10001)          //(8)   //
+#define PID_14MM_PISTOL_DE                     (10100)          //(22)  //
+#define PID_DESERT_EAGLE_DE                    (10003)          //(18)  //
+#define PID_DESERT_EAGLE_EXT_MAG_DE            (10004)          //(404) //
+#define PID_HUNTING_RIFLE_DE                   (10010)          //(10)  //
+#define PID_SCOPED_HUNTING_RIFLE_DE            (10011)          //(287) //
+#define PID_ELEPHANT_GUN_DE                    (10157)          //(592) //
+#define PID_10MM_SMG_DE                        (10002)          //(9)   //
+#define PID_SAWED_OFF_SHOTGUN_DE               (10017)          //(385) //
+#define PID_COMBAT_SHOTGUN_DE                  (10109)          //(242) //
+#define PID_HK_CAWS_DE                         (10110)          //(268) //
+#define PID_MAUSER_SMG_DE                      (10006)          //(578) //
+
+#define PID_FLAMER_DE                          (10200)          //(11)  //
+
+#define PID_LASER_PISTOL_DE                    (10300)          //(16)  //
+#define PID_MAGNETO_LASER_PISTOL_DE            (10302)          //(402) //
+#define PID_PLASMA_PISTOL_DE                   (10337)          //(24)  //
+#define PID_PLASMA_PISTOL_EXT_CART_DE          (10338)          //(406) //
+
+#define PID_FRAG_GRENADE_DE                    (10445)          //(25)  //
+
+#define PID_CATTLE_PROD_DE                     (10473)          //(160) //
+#define PID_SUPER_CATTLE_PROD_DE               (10474)          //(399) //
+#define PID_RIPPER_DE                          (10472)          //(116) //
+#define PID_PARALIZ_DE                         (10417)
+#define PID_POWER_FIST_DE                      (10444)          //(235) //
+#define PID_RAD_SPEAR							(10479)
+#define PID_ENE_SPEAR							(10480)
+
+#define PID_223_PISTOL_DE                      (10151)          //(241) //
+#define PID_ASSAULT_RIFLE_DE                   (10104)          //(23)  //
+#define PID_ASSAULT_RIFLE_EXT_MAG_DE           (10105)          //(405) //
+#define PID_INDEPENDENT_DE                     (10111)          //(353) //
+#define PID_TOMMY_GUN_DE                       (10101)          //(283) //
+#define PID_HK_G11_DE                          (10152)          //(352) //
+#define PID_GREASE_GUN_DE                      (10102)          //(332) //
+#define PID_MP5_DE                             (10114)          //(7065)//
+
+#define PID_IMPROVED_FLAMETHROWER_DE           (10201)          //(400) //
+#define PID_ROCKET_LAUNCHER_DE                 (10270)          //(13)  //
+#define PID_MINIGUN_DE                         (10202)          //(12)  //
+#define PID_M60_DE                             (10235)          //(387) //
+#define PID_M240_DE                            (10274)
+#define PID_UKM_DE                             (10275)
+#define PID_PKS_DE                             (10276)
+
+#define PID_RADRIFLE_DE                        (10379)
+#define PID_DAMRIFLE_DE                        (10380)
+#define PID_SOLAR_SCORCHER_DE                  (10301)          //(390) //
+#define PID_LASER_RIFLE_DE                     (10335)          //(118) //
+#define PID_LASER_RIFLE_EXT_CAP_DE             (10336)          //(401) //
+#define PID_PLASMA_RIFLE_DE                    (10370)          //(15)  //
+#define PID_RADPISTOL_DE                       (10339)
+#define PID_DAMPISTOL_DE                       (10340)
+
+#define PID_PLASMA_GRENADE_DE                  (10476)          //(26)  //
+#define PID_PULSE_GRENADE_DE                   (10477)          //(27)  //
+#define PID_MEGA_POWER_FIST_DE                 (10475)          //(407) //
+
+#define PID_NEEDLER_PISTOL_DE                  (10103)          //(388) //
+#define PID_PK12_GAUSS_PISTOL_DE               (10154)          //(394) //
+#define PID_SNIPER_RIFLE_DE                    (10156)          //(143) //
+#define PID_FN_FAL_DE                          (10106)          //(351) //
+#define PID_FN_FAL_NIGHT_SCOPE_DE              (10107)          //(403) //
+#define PID_FN_FAL_HPFA_DE                     (10108)          //(500) //
+#define PID_M72_GAUSS_RIFLE_DE                 (10158)          //(392) //
+#define PID_AK47_NORMAL1_DE                    (10112)          //(7061)//
+#define PID_AK47_TACTICAL1_DE                  (10113)          //(7062)//
+#define	PID_AK47_NORMAL2_DE						(10120)
+#define	PID_AK47_TACTICAL2_DE					(10121)
+#define	PID_ASSAULT_RIFLE_SCOPE_DE				(10122)
+#define	PID_ASSAULT_RIFLE_EXT_MAG_SCOPE_DE		(10123)
+#define PID_AK47_SPECIAL_DE                    (10161)          //(7063)//
+#define PID_AK47_TACTICAL3_DE                  (10162)          //(7064)//
+#define PID_DRAGUNOV1_DE                       (10159)          //(7080)//
+#define PID_DRAGUNOV2_DE                       (10160)          //(7081)//
+#define PID_PANCOR_JACKHAMMER_DE               (10155)          //(354) //
+#define PID_HK_P90C_DE                         (10150)          //(296) //
+#define PID_HK_G11E_DE                         (10153)          //(391) //
+
+#define PID_AVENGER_MINIGUN_DE                 (10236)          //(389) //
+#define PID_VINDICATOR_MINIGUN_DE              (10273)          //(395) //
+#define PID_BOZAR_DE                           (10272)          //(350) //
+#define PID_LIGHT_SUPPORT_WEAPON_DE            (10271)          //(355) //
+#define PID_FLAMERN_DE                         (10237)          //(7144)//
+ 
+#define PID_TURBO_PLASMA_RIFLE_DE              (10371)          //(233) //
+#define PID_YK32_PULSE_PISTOL_DE               (10373)          //(396) //
+#define PID_YK42B_PULSE_RIFLE_DE               (10374)          //(397) //
+#define PID_ROCKETRAD_DE                       (10377)          //(7129)//
+#define PID_ROCKETELE_DE                       (10378)          //(7130)//
+#define PID_GATLING_LASER_DE                   (10372)          //(28)  //
+#define PID_ALIEN_LASER_PISTOL_DE              (10375)          //(120) //
+#define PID_PHAZER_DE                          (10376)          // Small Energy
+#define PID_HYPERBOLOID						   (10381)			//Hyperboloid prototype
+
+#define PID_SMOKE_GRENADE                   (10448) 
+#define PID_MUSTARD_GAS_GRENADE             (10449)
+#define PID_SIGNAL_PISTOL                   (10164)
+
+// Special (ROBOT)
+#define PID_ROBO_ROCKET_LAUNCHER_DE            (10500)
+#define PID_DEATHCLAW_CLAW_1_DE                (10504)
+#define PID_DEATHCLAW_CLAW_2_DE                (10505)
+#define PID_FIRE_GECKO_FLAME_WEAPON_DE         (10506)
+#define PID_SPECIAL_BOXER_WEAPON_DE            (10503)
+#define PID_GUN_TURRET_WEAPON_DE               (10512)
+#define PID_EYEBALL_FIST_1_DE                  (10501)
+#define PID_EYEBALL_FIST_2_DE                  (10502)
+#define PID_DUAL_MINIGUN_DE                    (10509)
+#define PID_HEAVY_DUAL_MINIGUN_DE              (10510)
+#define PID_HEAVY_DUAL_MINIGUN_LONG_RANGE_DE   (10511)
+#define PID_END_BOSS_KIFE_DE                   (10507)
+#define PID_END_BOSS_PLASMA_GUN_DE             (10508)
+
+//// Mech
+#define PID_CANNONM                            (10513)
+#define PID_CANNONF                            (10514)
+#define PID_CANNONL                            (10515)
+#define PID_CANNONSP                           (10517)
+
+#define PID_SCRATCHERS_TEETH                   (10516)
+
+//// Firebal
+#define PID_GREENBALL                          (1033)
+#define PID_REDBALL                            (1034)
+#define PID_VIOLETBALL                         (1035)
+
+//// Hidden NPC guns
+#define PID_H_10MM_PISTOL_DE                     (10551)
+#define PID_H_10MM_SMG_DE                        (10552)
+#define PID_H_DESERT_EAGLE_DE                    (10553)
+#define PID_H_HUNTING_RIFLE_DE                   (10554)
+#define PID_H_ASSAULT_RIFLE_DE                   (10555)
+#define PID_H_COMBAT_SHOTGUN_DE                  (10556)
+#define PID_H_AK47_DE                            (10557)
+#define PID_H_M16_DE                             (10558)
+#define PID_H_FLAMER_DE                          (10559)
+#define PID_H_MINIGUN_DE                         (10560)
+#define PID_H_ROCKET_LAUNCHER_DE                 (10561)
+#define PID_H_LIGHT_SUPPORT_WEAPON_DE            (10562)
+#define PID_H_UKM_DE                             (10563)
+#define PID_H_PKS_DE                             (10564)
+#define PID_H_KNIFE_DE                           (10565)
+#define PID_H_CLUB_DE                            (10566)
+#define PID_H_CROWBAR_DE                         (10567)
+#define PID_H_COMBAT_KNIFE_DE                    (10568)
+#define PID_H_SLEDGEHAMMER_DE                    (10569)
+#define PID_H_SPEAR_DE                           (10570)
+#define PID_H_WRENCH_DE                          (10571)
+#define PID_H_SPIKED_KNUCKLES_DE                 (10572)
+#define PID_H_POWER_FIST_DE                      (10573)
+#define PID_H_RIPPER_DE                          (10574)
+#define PID_H_SHOTGUN_DE                         (10575)
+#define PID_H_SAWED_OFF_SHOTGUN_DE               (10576)
+
+
+//----------------------------------------------------------
+//                   I            II            III
+//----------------------------------------------------------
+//  SG          10001-10099   10100-10149   10150-10199
+//----------------------------------------------------------
+//  BG          10200-10234   10235-10269   10270-10299
+//----------------------------------------------------------
+//  EN          10300-10334   10335-10369   10370-10399
+//----------------------------------------------------------
+//  Mele,Throw  10400-10434   10435-10469   10470-10499   
+//----------------------------------------------------------
+//  Crit weapon 10500-10550
+//----------------------------------------------------------
+
+
+
+
+/******************************************************************
+***************       Ammo  DE                         ***************
+******************************************************************/
+
+
+// Bullets
+
+#define PID_10MM_JHP_DE                        (700)
+#define PID_10MM_AP_DE                         (701)
+#define PID_44_MAGNUM_JHP_DE                   (702)
+#define PID_44_FMJ_MAGNUM_DE                   (703)
+#define PID_5MM_JHP_DE                         (704)
+#define PID_5MM_AP_DE                          (705)
+#define PID_9JHP_DE                            (706)
+#define PID_9AP_DE                             (707)
+#define PID_9MM_BALL_DE                        (708)
+#define PID_9MM_AMMO_DE                        (709)
+#define PID_45_ACP_DE                          (710)
+#define PID_45_CALIBER_AMMO_DE                 (711)
+#define PID_SHOTGUN_SHELLS_DE                  (712)
+#define PID_223_FMJ_DE                         (713)
+#define PID_14MM_AP_DE                         (714)
+#define PID_762X39_DE                          (715)
+#define PID_762x51_DE                          (716)
+#define PID_762X54_DE                          (717)
+#define PID_762X54G_DE                         (718)
+#define PID_40x46_DE                           (719)
+#define PID_700_NITRO_EXPRESS_DE               (720) 
+#define PID_HN_NEEDLER_CARTRIDGE_DE            (721)
+#define PID_HN_AP_NEEDLER_CARTRIDGE_DE         (722)
+#define PID_BBS_DE                             (723)
+#define PID_4_7MM_CASELESS_DE                  (724)
+#define PID_2MM_EC_AMMO_DE                     (725)
+#define PID_DARTS_DE      		               (738)
+#define PID_HNADV_DE      		               (739)
+#define PID_NAILS_DE      		               (740)
+#define PID_223_JHP_DE      		           (741)
+#define PID_223_AP_DE      		               (742)
+#define PID_SIGNAL_ROCKET             		   (743)
+
+// Energy, Fuel ,Rocket
+
+#define PID_SMALL_ENERGY_CELL_DE               (726)
+#define PID_MICRO_FUSION_CELL_DE               (727)
+#define PID_RADAMMO_DE                         (728)
+#define PID_ENEAMMO_DE                         (729)
+#define PID_FLAMETHROWER_FUEL_DE               (730)
+#define PID_FLAMETHROWER_FUEL_MK_II_DE         (731)
+#define PID_NapalmAmmo_DE                      (732)
+#define PID_EXPLOSIVE_ROCKET_DE                (733)
+#define PID_ROCKET_AP_DE                       (734)
+#define PID_RRAD                               (735)
+#define PID_RELE                               (736)
+
+
+// Special Crit
+
+#define PID_ROBO_ROCKET_AMMO_DE                (737)
+
+
+
+
+
+/******************************************************************
+***************       Misc  DE                         ***************
+******************************************************************/
+//Bonfire scenery
+#define	PID_FIREBARREL			(7775)
+#define	PID_FIREBARREL_ACTIVE	(2001)
+#define	PID_WOODFIRE			(7774)
+#define	PID_WOODFIRE_ACTIVE		(7934)
+
+// Body parts
+#define PID_TANGLERS_HAND                      (114)
+#define PID_BONES                              (251) // PID_ANNA_BONES
+#define PID_CLIFTON_EYE                        (282)
+#define PID_CYBERNETIC_BRAIN                   (321)
+#define PID_HUMAN_BRAIN                        (322)
+#define PID_CHIMP_BRAIN                        (323)
+#define PID_ABNORMAL_BRAIN                     (324)
+#define PID_GOLD_TOOTH                         (429)
+#define PID_MASTICATORS_EAR                    (485)
+#define PID_DECOMPOSING_BODY                   (507) // PID_FN_FAL_HPFA_DE
+
+// body drugs
+#define PID_PLAYERS_EAR                        (484)
+#define PID_DIXON_EYE                          (281)
+#define PID_LIVER_MEET                         (7183)
+#define PID_HEART_MEET                         (7184)
+#define PID_BLOOD_MEET                         (7185)
+#define PID_BRAIN_MEET                         (7186)
+
+// Fuel
+#define PID_FUELF                              (7144)
+#define PID_FUELE                              (7145)
+#define PID_BAREL1_FUEL                         (4261)	//scenery item
+#define PID_BAREL1_FUEL_EMPTY                   (4262)	//scenery item
+#define PID_BAREL2_FUEL                         (4263)	//scenery item
+#define PID_BAREL2_FUEL_EMPTY                   (4264)	//scenery item
+#define PID_BAREL3_FUEL                         (4265)	//scenery item
+#define PID_BAREL3_FUEL_EMPTY                   (4266)	//scenery item
+
+#define PID_CYLINDER1                          (7061)
+#define PID_CYLINDER2                          (7062)
+#define PID_CYLINDER3                          (7063)
+
+#define PID_EXPLOSIVE_GIFT1                    (10481)
+#define PID_EXPLOSIVE_GIFT2                    (10482)
+
+// Medic
+#define PID_DEFIBRIL                           (7494)
+
+// Padlock
+#define PID_LOCK1                          (970) // old padlock
+#define PID_LOCK2                          (971) // rusty padlock
+#define PID_LOCK3                          (980) // patent lock
+#define PID_LOCK4                          (4134) // good door lock
+#define PID_LOCK5                          (4135)
+#define PID_LOCK6                          (4136)
+
+// Instrument
+#define PID_DRUM							(7443)
+#define PID_TRUMPET							(7444)
+#define PID_GUITAR							(7445)
+
+// Stone
+#define PID_STONE3							(7559)
+#define PID_STONE4							(7560)
+#define PID_STONE5							(7561)
+#define PID_STONE6							(7562)
+#define PID_STONE7							(7563)
+
+// Ghoul item light
+#define PID_LIGHTED_GHOUL					(7586)
+
+/******************************************************************
+***************       Container   DE                   ***************
+******************************************************************/
+
+
+#define PID_AUTO1_BAG                          (881) // TIR
+#define PID_AUTO3_BAG                          (885) // TIR
+#define PID_AUTO4_BAG                          (887) // TIR
+#define PID_AUTO5_BAG                          (925) // TIR
+#define PID_AUTO6_BAG                          (889) // TIR
+#define PID_AUTO7_BAG                          (891) // TIR
+#define PID_AUTO8_BAG                          (893) // TIR
+#define PID_AUTO13_BAG                         (900) // TIR
+#define PID_AUTO17_BAG                         (905) // TIR
+#define PID_AUTO19_BAG                         (908) // TIR
+#define PID_AUTO22_BAG                         (912) // TIR
+
+
+#define PID_PWLOCK                             (7230) // szafka na sіupie
+#define PID_WALLOCKER                          (7217) // duza szafka na sciane
+#define PID_CBLOCKER                           (7208) // szafka pod komputerem bazy
+#define PID_FALOCK1                            (7221) // apteczka scienna
+#define PID_FALOCK2                            (7156) // apteczka scienna
+#define PID_WALLOCK1                           (7157) // mala szafka scienna
+#define PID_WALLOCK2                           (7158) // mala szafka scienna
+
+#define PID_DEAD_BLUESHIRT_0                   (7160)
+#define PID_DEAD_BLUESHIRT_1                   (7161)
+#define PID_DEAD_BLUESHIRT_2                   (7162)
+
+
+
+/******************************************************************
+***************       Crafting   DE                   ***************
+******************************************************************/
+
+#define PID_NUKEMACHINE1					(3820)
+#define PID_NUKEMACHINE2					(3821)
+
+#define PID_RED                                (4052)
+#define PID_BLUE                               (4053)
+#define PID_IRON_ORE                           (4054)
+#define PID_SMALL_CHUNK_OF_IRON_ORE            (4055)
+#define PID_BIG_CHUNK_OF_IRON_ORE_CHUNK        (4056)
+#define PID_GOOD_QUALITY_IRON_ORE_CHUNK        (4057)
+#define PID_RARE_IRON_ORE                      (4058)
+#define PID_COMMON_MINERAL                     (4059)
+#define PID_MINERAL_SULFUR                     (4060)
+#define PID_HIGHT_QUALITY_MINERAL              (4061)
+#define PID_COAL                               (4062)
+#define PID_SCRAP                              (4063)
+#define PID_NORMAL_METAL_PARTS                 (4064)
+#define PID_OLD_METAL_PARTS                    (4065)
+#define PID_RUSTED_METAL_PARTS                 (4066)
+#define PID_GOOD_METAL_PARTS                   (4067)
+#define PID_HIGHT_QUALITY_METAL_PARTS          (4068)
+#define PID_RARE_METAL_PARTS                   (4069)
+#define PID_COMMON_METAL_ALLOY                 (4070)
+#define PID_GOOD_METAL_ALLOY                   (4071)
+#define PID_PURIFIED_METAL_ALLOY               (4072)
+#define PID_HIGHT_QUALITY_METAL_ALLOY          (4073)
+#define PID_RARE_METAL_ALLOY                   (4074)
+#define PID_GOLD                               (4075)
+#define PID_URANIUM                            (4076)
+#define PID_REFINED_URANIUM                    (4077)
+#define PID_SCREWS                             (4078)
+#define PID_COMPENSATING_SPRING                (4079)
+#define PID_BARREL                             (4080)
+#define PID_WOOD                               (4081)
+#define PID_GUNPOWDER_CLASS_I                  (4082)
+#define PID_GUNPOWDER_CLASS_II                 (4083)
+#define PID_GUNPOWDER_CLASS_III                (4084)
+#define PID_SCOPE                              (4085)
+#define PID_SMALL_SCOPE                        (4086)
+#define PID_STRONG_SCOPE                       (4087)
+#define PID_PLASMA_DIFFUSER                    (4088)
+#define PID_PACKAGE_OF_PARTS                   (4089)
+#define PID_ELECTRONIC_PACKAGE                 (4090)
+#define PID_C4                                 (4091)
+#define PID_METEORITE_FRAGMENT                 (4092)
+#define PID_PAINT_IN_A_CAN                     (4093)
+#define PID_SCREWDRIVER_CROSS1                  (4094)
+#define PID_SCREWDRIVER_FLAT1                   (4095)
+#define PID_TOBACCO                            (4096)
+#define PID_KEY_PACKAGE                        (4097)
+#define PID_EZTENDED_KEY_PACK                  (4098)
+#define PID_BRAHMIN_LEATHER                    (4099)
+#define PID_GECKO_LEATHER                      (4100)
+#define PID_GOLDEN_GECKO_SKIN                  (4101)
+#define PID_FIRE_GECKO_LEATHER                 (4102)
+#define PID_ELECTRIC_METER                     (4103)
+#define PID_FUSE                               (4104)
+#define PID_SUNGLASSES_I                       (4105)
+#define PID_SUNGLASSES_II                      (4106)
+#define PID_SUNGLASSES_III                     (4107)
+#define PID_SUNGLASSES_IV                      (4108)
+#define PID_SUNGLASSES_V                       (4109)
+#define PID_ELECTRONIC_PARTS                   (4110)
+#define PID_HUMAN_MEAT                         (4111)
+#define PID_ELECTRIC_MOTOR                     (4112)
+#define PID_TRANSFORMER                        (4113)
+#define PID_AMPLIFIER_OF_MOLECULES             (4114)
+#define PID_BLUE_CHIP                          (4115)
+#define PID_GREEN_CHIP                         (4116)
+#define PID_RED_CHIP                           (4117)
+#define PID_YELLOW_CHIP                        (4118)
+#define PID_BIO_GEL_II                         (4119)
+#define PID_BIO_GEL_III                        (4120)
+#define PID_YELLOW_FLOWER                      (4121)
+#define PID_WHITE_FLOWER                       (4122)
+#define PID_TUBE1                              (4123)
+#define PID_TUBE2                              (4124)
+#define PID_TUBE3                              (4125)
+#define PID_RARE_MINERAL                       (4126)
+#define PID_PART_OF_ROPE						(534) // Кусок веревки
+#define PID_FLINT								(278)
+#define PID_PID_SCREWDRIVER_CROSS2				(4137)
+#define PID_PID_SCREWDRIVER_FLAT2				(4138)
+#define PID_PID_SCREWDRIVER_FLAT3				{4139)
+#define PID_CAR_ENERGY_CELL_CONTROLLER			(4140)
+#define PID_COOKED_MEAT							(4143)
+
+
+//#define PID_                (4144)
+//#define PID_                (4145)
+//#define PID_                (4146)
+//#define PID_                (4147)
+//#define PID_                (4148)
+//#define PID_                (4149)
+//#define PID_                (4150)
+//#define PID_                (4151)
+//#define PID_                (4152)
+//#define PID_                (4153)
+//#define PID_                (4154)
+//#define PID_                (4155)
+//#define PID_                (4156)
+//#define PID_                (4157)
+//#define PID_                (4158)
+//#define PID_                (4159)
+//#define PID_                (4160)
+//#define PID_                (4161)
+//#define PID_                (4162)
+//#define PID_                (4163)
+//#define PID_                (4164)
+//#define PID_                (4165)
+//#define PID_                (4166)
+//#define PID_                (4167)
+//#define PID_                (4168)
+//#define PID_                (4169)
+//#define PID_                (4170)
+//#define PID_                (4171)
+//#define PID_                (4172)
+//#define PID_                (4173)
+//#define PID_                (4174)
+//#define PID_                (4175)
+//#define PID_                (4176)
+//#define PID_                (4177)
+//#define PID_                (4178)
+//#define PID_                (4179)
+//#define PID_                (4180)
+//#define PID_                (4181)
+//#define PID_                (4182)
+//#define PID_                (4184)
+//#define PID_                (4185)
+//#define PID_                (4186)
+//#define PID_                (4187)
+//#define PID_                (4188)
+//#define PID_                (4189)
+//#define PID_                (4189)
+//#define PID_                (4190)
+//#define PID_                (4191)
+//#define PID_                (4192)
+//#define PID_                (4193)
+//#define PID_                (4194)
+//#define PID_                (4195)
+//#define PID_                (4196)
+//#define PID_                (4197)
+//#define PID_                (4198)
+
+
+#define PID_DE_PRIMITIVE_TOOL                  (4199)
+#define PID_PICKAXE                        (4200)
+
+#define PID_HIDDEN_NEAR_WORKBENCH              (4260)
+
+//Gathering fruit
+#define PID_DE_TREE_FRUIT_1                    (4258)
+#define PID_DE_TREE_FRUIT_2                    (4259)
+#define PID_DE_TREE_FRUIT_1_EMPTY              (7023)
+#define PID_DE_TREE_FRUIT_2_EMPTY              (7024)
+#define PID_DE_FRUIT_1                         (4127)
+#define PID_DE_FRUIT_2                         (4128)
+
+//Gathering plant
+#define PID_DE_PLANT_TOBACCO                   (4131)
+#define PID_DE_PLANT_TOBACCO_EMPTY             (4132)
+#define PID_DE_PLANT_FIBER                     (4129)
+#define PID_DE_PLANT_FIBER_EMPTY               (4130)
+#define PID_DE_FIBER                           (4133)
+
+
+#define PID_BLACKSMITH_FURNANCE_I              (4201)
+#define PID_BLACKSMITH_FURNANCE_II             (4202)
+#define PID_BLACKSMITH_FURNANCE_III            (4203)
+#define PID_SMALL_BLACKSMITH_FURNANCE_         (4204)
+#define PID_COMPUTER_I                         (4205)
+#define PID_COMPUTER_II                        (4206)
+#define PID_COMPUTER_III                       (4207)
+//#define PID_                (4208)
+#define PID_DAMAGED_TERMINAL_I                 (4209)
+#define PID_DAMAGED_TERMINAL_II                (4210)
+#define PID_DAMAGED_TERMINAL_III               (4211)
+#define PID_DAMAGED_TERMINAL_IV                (4212)
+#define PID_WORK_BENCH_I                       (4213)
+#define PID_WORK_BENCH_II                      (4214)
+#define PID_WORK_BENCH_III                     (4215)
+#define PID_WORK_BENCH_IV                      (4216)
+#define PID_WORK_BENCH_V                       (4217)
+#define PID_WORK_BENCH_VI                      (4218)
+#define PID_GAS_BOTTLES                        (4219)
+#define PID_CAR_WRECK_I                        (4220)
+#define PID_CAR_WRECK_II                       (4221)
+#define PID_PRODUCTION_MACHINE_I               (4222)
+#define PID_PRODUCTION_MACHINE_II              (4223)
+#define PID_PRODUCTION_MACHINE_III             (4224)
+#define PID_PRODUCTION_MACHINE_IV              (4225)
+#define PID_PRODUCTION_MACHINE_V               (4226)
+#define PID_PRODUCTION_MACHINE_VI              (4227)
+#define PID_COAL_ORE_I                         (4228)
+#define PID_COAL_ORE_II                        (4229)
+#define PID_IRON_ORE_DEPOSITS_I                (4230)
+#define PID_IRON_ORE_DEPOSITS_II               (4231)
+#define PID_BIG_CHUNK_OF_IRON_ORE              (4232)
+#define PID_SULFUR_ORE_DEPOSITS_I              (4233)
+#define PID_SULFUR_ORE_DEPOSITS_II             (4234)
+#define PID_IRON_ORE_DEPOSITS_III              (4235)    //HQ
+#define PID_IRON_ORE_DEPOSITS_IV               (4236)    //HQ
+#define PID_MINERAL_DEPOSITS_I                 (4237)
+#define PID_MINERAL_DEPOSITS_II                (4238)
+#define PID_MINERAL_DEPOSITS_III               (4254)    //HQ
+#define PID_MINERAL_DEPOSITS_IV                (4255)    //HQ
+#define PID_BIG_MINERAL_DEPOSITS               (4239)
+#define PID_IRON_ORE_DEPOSITS_V                (4240)    //Good
+#define PID_IRON_ORE_DEPOSITS_VI               (4241)    //Good
+#define PID_BIG_IRON_DEPOSITS                  (4242)
+#define PID_URANIUM_DEPOSITS_I                 (4243)
+#define PID_URANIUM_DEPOSITS_II                (4244)
+#define PID_ROCK_I                             (4245)    //Gold
+#define PID_ROCK_II                            (4246)    //Gold
+#define PID_SMALL_DEPOSITS_I                   (4247)    //Rare
+#define PID_SMALL_DEPOSITS_II                  (4248)    //Rare
+#define PID_TREE_I                             (4249)
+#define PID_TREE_II                            (4250)
+#define PID_TRUNCATED_STUMP                    (4251)
+#define PID_TREE_III                           (4252)
+#define PID_TREE_IV                            (4253)
+#define PID_TREE_V                             (4256)
+#define PID_TREE_VI                            (4257)
+#define PID_WOODPILE							(4267)
+#define PID_PALM_I                             (7931)
+#define PID_PALM_II                            (7932)
+#define PID_CUTPALM                            (7966)
+
+/******************************************************************
+***************       Drugs                         ***************
+******************************************************************/
+
+// Preparations
+#define PID_STIMPAK                         (40)
+#define PID_RADAWAY                         (48)
+#define PID_ANTIDOTE                        (49)
+#define PID_RAD_X                           (109)
+#define PID_SUPER_STIMPAK                   (144)
+#define PID_JET_ANTIDOTE                    (260)
+#define PID_HEALING_POWDER                  (273)
+#define PID_HYPO                            (525)
+
+// Alcohol
+#define PID_NUKA_COLA                       (106)
+#define PID_BEER                            (124)
+#define PID_BOOZE                           (125)
+#define PID_GAMMA_GULP_BEER                 (310)
+#define PID_ROENTGEN_RUM                    (311)
+#define PID_ROT_GUT                         (469)
+
+// Drug
+#define PID_MENTATS                         (53)
+#define PID_BUFFOUT                         (87)
+#define PID_PSYCHO                          (110)
+#define PID_JET                             (259)
+
+// Other
+#define PID_MUTATED_FRUIT                   (71)
+#define PID_IGUANA_ON_A_STICK               (81)
+#define PID_MEAT_ON_A_STICK                 (103)
+#define PID_COOKIE                          (378)
+
+// Special
+#define PID_HYPO_POISON                     (334)
+#define PID_MUTATED_TOE                     (473)
+#define PID_KITTY_SEX_DRUG_AGILITY          (480)  // + 1 agility for 1 hr
+#define PID_KITTY_SEX_DRUG_INTELLIGENCE     (481)  // + 1 iq for 1 hr
+#define PID_KITTY_SEX_DRUG_STRENGTH         (482)  // + 1 strength for 1 hr
+#define PID_MONUMENT_CHUNCK                 (424)
+#define PID_BOX_OF_DOUGHNUTS                (594)
+
+
+/******************************************************************
+***************       Implants & Special Items      ***************
+******************************************************************/
+//  Implants
+
+// Blue
+
+#define PID_IB1A                (7600)
+#define PID_IB1B                (7601)
+#define PID_IB1C                (7602)
+#define PID_IB2A                (7603)
+#define PID_IB2B                (7604)
+#define PID_IB2C                (7605)
+#define PID_IB3A                (7606)
+#define PID_IB3B                (7607)
+#define PID_IB3C                (7608)
+#define PID_IB4A                (7609)
+#define PID_IB4B                (7610)
+#define PID_IB4C                (7611)
+#define PID_IB5A                (7612)
+#define PID_IB5B                (7613)
+#define PID_IB5C                (7614)
+#define PID_IB6A                (7615)
+#define PID_IB6B                (7616)
+#define PID_IB6C                (7617)
+#define PID_IB7A                (7618)
+#define PID_IB7B                (7619)
+#define PID_IB7C                (7620)
+#define PID_IB8A                (7621)
+#define PID_IB8B                (7622)
+#define PID_IB8C                (7623)
+
+// Green
+
+#define PID_IG1A                (7624)
+#define PID_IG1B                (7625)
+#define PID_IG2A                (7626)
+#define PID_IG2B                (7627)
+#define PID_IG3A                (7628)
+#define PID_IG3B                (7629)
+#define PID_IG3C                (7630)
+#define PID_IG4A                (7631)
+#define PID_IG4B                (7632)
+#define PID_IG5A                (7633)
+#define PID_IG5B                (7634)
+#define PID_IG6A                (7635)
+#define PID_IG6B                (7636)
+#define PID_IG6C                (7637)
+#define PID_IG7A                (7638)
+#define PID_IG7B                (7639)
+
+// Red
+
+#define PID_IR1                 (7640)
+#define PID_IR2                 (7641)
+#define PID_IR3                 (7642)
+#define PID_IR4                 (7643)
+#define PID_IR5                 (7644)
+#define PID_IR6                 (7645)
+#define PID_IR7                 (7646)
+#define PID_IR8                 (7647)
+#define PID_IR9                 (7648)
+#define PID_IR10                (7649)
+#define PID_IR11                (7650)
+
+// Special Items
+
+// Vests
+
+#define PID_BULETVEST                (7123)
+#define PID_BULETVESTSWAT            (7338)
+
+// Bags
+
+#define PID_BAGSMALL             (7176)
+#define PID_BAGMEDIUM            (7177)
+#define PID_BAGLARGE             (7121)
+
+// Binoculars
+
+#define PID_BINOCLOW                   (7694)
+#define PID_BINOCMED                   (7695)
+#define PID_BINOCBETTERMED             (7696)
+#define PID_BINOHIGH                   (7697)
+
+// Other
+
+#define PID_MAPOUT                     (523)
+#define PID_GASMASK                   (7035)
+#define PID_COMBATHELMET              (7036)
+#define PID_METALMASK                 (7105)
+#define PID_BASEBALLCAP               (7106)
+#define PID_BALACLAVA                 (7699)
+
+/******************************************************************
+***************       Container                     ***************
+******************************************************************/
+
+#define PID_FRIDGE                          (42)
+#define PID_ICE_CHEST_LEFT                  (43)
+#define PID_ICE_CHEST_RIGHT                 (44)
+#define PID_BAG                             (46)
+#define PID_BACKPACK                        (90)
+#define PID_BROWN_BAG                       (93)
+#define PID_FOOTLOCKER_CLEAN_LEFT           (128)
+#define PID_FOOTLOCKER_RUSTY_LEFT           (129)
+#define PID_FOOTLOCKER_CLEAN_RIGHT          (130)
+#define PID_FOOTLOCKER_RUSTY_RIGHT          (131)
+#define PID_LOCKER_CLEAN_LEFT               (132)
+#define PID_LOCKER_RUSTY_LEFT               (133)
+#define PID_LOCKER_CLEAN_RIGHT              (134)
+#define PID_LOCKER_RUSTY_RIGHT              (135)
+#define PID_WALL_LOCKER_CLEAN_LEFT          (136)
+#define PID_WALL_LOCKER_CLEAN_RIGHT         (137)
+#define PID_WALL_LOCKER_RUSTY_LEFT          (138)
+#define PID_WALL_LOCKER_RUSTY_RIGHT         (139)
+#define PID_CONTAINER_WOOD_CRATE            (180)
+#define PID_VAULT_DWELLER_BONES             (211)
+#define PID_SMALL_POT                       (243)
+#define PID_TALL_POT                        (244)
+#define PID_CHEST                           (245)
+#define PID_LEFT_ARROYO_BOOKCASE            (246)
+#define PID_RIGHT_ARROYO_BOOKCASE           (247)
+#define PID_OLIVE_POT                       (248)
+#define PID_FLOWER_POT                      (249)
+#define PID_HUMAN_BONES                     (250)
+#define PID_CRASHED_VERTI_BIRD              (330)
+#define PID_GRAVESITE_1                     (344)
+#define PID_GRAVESITE_2                     (345)
+#define PID_GRAVESITE_3                     (346)
+#define PID_GRAVESITE_4                     (347)
+#define PID_LG_LT_AMMO_CRATE                (367)
+#define PID_SM_LT_AMMO_CRATE                (368)
+#define PID_LG_RT_AMMO_CRATE                (369)
+#define PID_SM_RT_AMMO_CRATE                (370)
+#define PID_LF_GRAVESITE_1                  (374)
+#define PID_LF_GRAVESITE_2                  (375)
+#define PID_LF_GRAVESITE_3                  (376)
+#define PID_HIDDEN_CONTAINER                (467)
+
+// From Misc
+#define PID_ALIEN_SIDE                      (107)
+#define PID_ALIEN_FORWARD                   (108)
+#define PID_STONE_HEAD                      (425)
+#define PID_WAGON_RED                       (434)
+#define PID_WAGON_GREY                      (435)
+#define PID_CAR_TRUNK                       (455)
+#define PID_WALL_SAFE                       (501)
+#define PID_FLOOR_SAFE                      (502)
+#define PID_POOL_TABLE_1                    (510)
+#define PID_POOL_TABLE_2                    (511)
+#define PID_POOL_TABLE_3                    (512)
+#define PID_POOL_TABLE_4                    (513)
+#define PID_POOL_TABLE_5                    (514)
+#define PID_POOL_TABLE_6                    (515)
+#define PID_POOR_BOX                        (521)
+
+#define PID_EB_LONG_HOR                     (850)
+#define PID_EB_LONG_VERT                    (851)
+
+#define PID_EB_SHORT_HOR1                   (855)
+#define PID_EB_SHORT_HOR1_RED               (857)
+#define PID_EB_SHORT_VERT1                  (856)
+#define PID_EB_SHORT_VERT1_RED              (858)
+
+#define PID_EB_SHORT_HOR2                   (859)
+#define PID_EB_SHORT_HOR2_RED               (861)
+#define PID_EB_SHORT_VERT2                  (860)
+#define PID_EB_SHORT_VERT2_RED              (862)
+
+#define PID_EB_SHORT_HOR3                   (863)
+#define PID_EB_SHORT_HOR3_RED               (865)
+#define PID_EB_SHORT_VERT3                  (864)
+#define PID_EB_SHORT_VERT3_RED              (866)
+#define PID_EB_EMITTER_HOR1                 (867)
+#define PID_EB_EMITTER_VERT1                (868)
+#define PID_EB_EMITTER_HOR2                 (869)
+#define PID_EB_EMITTER_VERT2                (870)
+#define PID_EB_EMITTER_HOR3                 (871)
+#define PID_EB_EMITTER_VERT3                (872)
+
+#define PID_EB_BLOCKER                      (852)
+#define PID_EB_TRIGGER                      (854)
+
+// New
+#define PID_BOOKCASE_0                      (60)
+#define PID_BOOKCASE_1                      (61)
+#define PID_BOOKCASE_2                      (62)
+#define PID_BOOKCASE_3                      (63)
+#define PID_BOOKCASE_4                      (64)
+#define PID_BOOKCASE_5                      (65)
+#define PID_DESK_0                          (66)
+#define PID_DESK_1                          (67)
+#define PID_DRESSER_0                       (68)
+#define PID_DRESSER_1                       (69)
+#define PID_DRESSER_2                       (70)
+#define PID_BOOKSELF_0                      (145)
+#define PID_BOOKSELF_1                      (146)
+#define PID_BOOKSELF_2                      (147)
+#define PID_BOOKSELF_3                      (149)
+#define PID_SHELVES_0                       (151)
+#define PID_SHELVES_1                       (152)
+#define PID_SHELVES_2                       (153)
+#define PID_SHELVES_3                       (155)
+#define PID_WORKBENCH                       (157)
+#define PID_TOOL_BOARD                      (158)
+#define PID_IGUANA_STAND                    (165)
+#define PID_TABLE_0                         (166)
+#define PID_TABLE_1                         (167)
+#define PID_STUFF_0                         (168)
+#define PID_STUFF_1                         (169)
+#define PID_STUFF_2                         (170)
+#define PID_STUFF_3                         (171)
+#define PID_STUFF_4                         (172)
+#define PID_STUFF_5                         (173)
+#define PID_STUFF_6                         (174)
+#define PID_STUFF_7                         (175)
+#define PID_STUFF_8                         (176)
+#define PID_STUFF_9                         (177)
+#define PID_STUFF_10                        (178)
+#define PID_STUFF_11                        (179)
+#define PID_DESK_3                          (181)
+#define PID_DESK_4                          (182)
+#define PID_DESK_5                          (183)
+#define PID_DESK_6                          (184)
+#define PID_DESK_7                          (185)
+#define PID_DESK_8                          (186)
+#define PID_DESK_9                          (187)
+#define PID_LOCKER_7                        (188)
+#define PID_LOCKER_8                        (189)
+#define PID_BOX_0                           (197)
+#define PID_BOX_1                           (198)
+#define PID_BOX_2                           (199)
+#define PID_BOX_3                           (200)
+#define PID_BOX_4                           (201)
+#define PID_BOX_5                           (202)
+#define PID_BOX_6                           (203)
+#define PID_BOX_7                           (204)
+#define PID_REMAINSOF_GIZMO                 (213)
+#define PID_DESK_10                         (214)
+#define PID_DEAD_REDSHIRT_0                 (526)
+#define PID_DEAD_REDSHIRT_1                 (527)
+#define PID_DEAD_REDSHIRT_2                 (528)
+#define PID_MINING_MACHINE                  (529)
+
+
+// Car bags
+
+#define PID_HUMMER_BAG                      (801)
+#define PID_VERTIBIRD_BAG                   (809)
+#define PID_HIGHWAYMAN_BAG                  (817)
+#define PID_BUGGY_BAG                       (818)
+#define PID_SCOUT_BAG                       (819)
+#define PID_BOAT_BAG                        (822)
+
+
+
+/******************************************************************
+***************       Keys                          ***************
+******************************************************************/
+
+// From Misc
+#define PID_KEY                             (82)
+#define PID_KEYS                            (83)
+#define PID_RED_PASS_KEY                    (96)
+#define PID_BLUE_PASS_KEY                   (97)
+#define PID_NUKE_KEY                        (105)
+#define PID_YELLOW_PASS_KEY                 (223)
+#define PID_TEMPLE_KEY                      (438)
+#define PID_JAIL_KEY                        (456) // PID_CELL_DOOR_KEY
+#define PID_KEYG                            (414)
+#define PID_KEY4  		                    (7111)
+#define PID_KEY5                            (7112)
+#define PID_KEY6                            (7113)
+
+
+
+#define PID_WOREK_Z_PIASKIEM				(7937)
+/******************************************************************
+***************       Misc.                         ***************
+******************************************************************/
+
+// Money
+#define PID_BOTTLE_CAPS                     (41)
+#define PID_MORNING_STAR_MINE               (420)
+#define PID_KOKOWEEF_MINE_SCRIP             (494)
+#define PID_REAL_BOTTLE_CAPS                (41) // 519 ujednolicenie
+
+
+// Basic parts
+#define PID_PUMP_PARTS                      (98)  // Trash
+#define PID_SCORPION_TAIL                   (92)
+#define PID_ROPE                            (127)
+#define PID_BROC_FLOWER                     (271)
+#define PID_XANDER_ROOT                     (272)
+#define PID_GECKO_PELT                      (276)
+#define PID_GOLDEN_GECKO_PELT               (277)
+#define PID_MEAT_JERKY                      (284)
+#define PID_RADSCORPION_PARTS               (285)
+#define PID_FIREWOOD                        (286)
+#define PID_HYPODERMIC_NEEDLE               (318)
+#define PID_EMPTY_JET                       (416)
+#define PID_BOTTLE_GLASS                    (542) // Empty glass bottle
+#define PID_BOTTLE_EMPTY                    (532) // Пустая бутылка
+#define PID_METAL_TRASH                     (475) // Металлический мусор
+#define PID_GUNPOWDER                       (535) // Коробка пороха
+#define PID_METAL_ORE                       (536) // Железная руда
+#define PID_MINERAL                         (537) // Минерал
+#define PID_TUBE                            (538) // Металлическая труба
+#define PID_STEEL                           (50)  // Сталь
+#define PID_BRAHMIN_SKIN                    (4099) // Шкура брамина
+#define PID_MEAT                            (539) // Мясо
+#define PID_CIGARETTES                      (541) // Сигареты
+#define PID_RAGS                            (572) // Кусок материи
+#define PID_NITROGLYCERIN                   (573) // Нитроглицерин
+#define PID_CHEMICALS                       (574) // Химикаты
+#define PID_TNT                             (575) // Тротил
+#define PID_HEXOGEN                         (576) // Гексоген
+#define PID_PLASTIC_EXPLOSIVES_DULL         (577) // Пластит без детонатора
+
+// Self-special parts
+#define PID_MOTOR                           (89)
+#define PID_MOTIVATOR                       (229)
+#define PID_PLASMA_TRANSFORMER              (307)
+#define PID_MINE_PART                       (419)
+#define PID_EXPLOSIVE_SWITCH                (454)
+#define PID_ROBOT_MOTIVATOR                 (364)
+#define PID_EXCAVATOR_CHIP                  (422)
+#define PID_NAVCOM_PARTS                    (479)
+#define PID_K9_MOTIVATOR                    (488)
+
+// Special parts
+#define PID_WATER_CHIP                      (55)
+#define PID_CAR_FUEL_CELL_CONTROLLER        (253) // For car
+#define PID_CAR_FUEL_INJECTION              (254) // For car
+#define PID_HY_MAG_PART                     (258)
+#define PID_ROBOT_PARTS                     (269)
+#define PID_COMPUTER_VOICE_MODULE           (356)
+#define PID_V15_COMPUTER_PART               (377)
+
+
+// Plans
+#define PID_DR_HENRY_PAPERS                 (340)
+#define PID_VERTIBIRD_PLANS                 (446)
+
+// Chips
+#define PID_MEM_CHIP_BLUE                   (503) // PID_BLUE_MEMORY_MODULE
+#define PID_MEM_CHIP_GREEN                  (504) // PID_GREEN_MEMORY_MODULE
+#define PID_MEM_CHIP_RED                    (505) // PID_RED_MEMORY_MODULE
+#define PID_MEM_CHIP_YELLOW                 (506) // PID_YELLOW_MEMORY_MODULE
+#define PID_DERMAL_PIP_BOY_DISK             (499)
+#define PID_PIP_BOY_MEDICAL_ENHANCER        (516)
+
+// Tools
+    // Tech
+#define PID_MULTI_TOOL                      (75)  // +25 repair
+#define PID_SUPER_TOOL_KIT                  (308) // +50 repair
+#define PID_OIL_CAN                         (412) // 100% repair
+#define PID_LOCKPICKS                       (84)  // +25 lockpick simple
+#define PID_EXP_LOCKPICK_SET                (410) // +50 lockpick simple
+#define PID_ELECTRONIC_LOCKPICKS            (77)  // +25 lockpick electronic
+#define PID_ELEC_LOCKPICK_MKII              (411) // +50 lockpick electronic
+
+    // Medical
+#define PID_FIRST_AID_KIT                   (47)  // +25 first aid
+#define PID_FIELD_MEDIC_KIT                 (408) // +50 first aid
+#define PID_DOCTORS_BAG                     (91)  // +25 doctor ( in spec. slot:  +25 doctor & +25 first aid )
+#define PID_PARAMEDICS_BAG                  (409) // +50 doctor
+#define PID_MEDICAL_SUPPLIES                (428)
+#define PID_BIO_GEL                         (440)
+#define PID_VACCINE                         (593)
+
+    // Other
+#define PID_SHOVEL                          (289) // Лопата
+#define PID_PLANK                           (297) // Лом
+#define PID_AXE                             (543) // Топор
+#define PID_WELDING                         (565)
+#define PID_WELDING_USED                    (566)
+
+    // Special
+#define PID_GEIGER_COUNTER                  (52)
+#define PID_ACTIVE_GEIGER_COUNTER           (207) // Active
+#define PID_STEALTH_BOY                     (54)
+#define PID_ACTIVE_STEALTH_BOY              (210) // Active
+#define PID_MOTION_SENSOR                   (59)
+#define PID_ACTIVE_MOTION_SENSOR            (208) // Active
+
+// Books
+#define PID_BIG_BOOK_OF_SCIENCE             (73)
+#define PID_DEANS_ELECTRONICS               (76)
+#define PID_FIRST_AID_BOOK                  (80)
+#define PID_SCOUT_HANDBOOK                  (86)
+#define PID_GUNS_AND_BULLETS                (102)
+#define PID_CATS_PAW                        (225)
+#define PID_TECHNICAL_MANUAL                (228)
+#define PID_CHEMISTRY_MANUAL                (237)
+#define PID_CATS_PAW_ISSUE_5                (331)
+#define PID_BECKY_BOOK                      (471)
+#define PID_HUBOLOGIST_BOOK                 (571)
+
+#define PID_BOOKJUNK						(4144)
+
+#define PID_BOOKSG                          (7054)
+#define PID_BOOKBG                          (7055)
+#define PID_BOOKEN1                         (7056)
+#define PID_BOOKEN2                         (7057)
+#define PID_BOOKU                           (7068)
+#define PID_BOOKD                           (7069)
+#define PID_BOOKMW                          (7070)
+#define PID_BOOKR                           (7071)
+#define PID_BOOKT                           (7072)
+#define PID_BOOKL                           (7073)
+
+
+//BASES
+#define PID_PLAN1                           (7074)	// "Blue" Cave
+#define PID_PLAN2                           (7075)	// "Black" Bunker
+#define PID_PLAN3                           (7076)	// "Green" 3xTent
+#define PID_PLAN4                           (7077)	// "Red" Brick House
+#define PID_PLAN5                           (7078)	// "White" Gas Station
+#define PID_PLAN6                           (7079)	// "Yellow" Ranch
+#define PID_PLAN7                           (4141)	// "Sand" Clay house
+#define PID_PLAN8                           (4142)	// "Violet" ...
+#define PID_BASE_LOCATION_MAP               (7146)	// use item map show location
+
+
+// Dolls
+#define PID_SMALL_STATUETTE                 (224)
+#define PID_MR_NIXON_DOLL                   (491)
+#define PID_BLOW_UP_DOLL                    (508)
+#define PID_POPPED_BLOW_UP_DOLL             (509)
+
+// Other
+#define PID_LIGHTER                         (101) // Zippo
+#define PID_FLOWER                          (117)
+#define PID_WATER_FLASK                     (126)
+#define PID_BOX_OF_NOODLES                  (226)
+#define PID_FROZEN_DINNER                   (227)
+#define PID_RUBBER_BOOTS                    (262)
+#define PID_CHEEZY_POOFS                    (295)
+#define PID_BLUE_CONDOM                     (314)
+#define PID_GREEN_CONDOM                    (315)
+#define PID_RED_CONDOM                      (316)
+#define PID_COSMETIC_CASE                   (317)
+#define PID_DICE                            (325) // Play dice
+#define PID_LOADED_DICE                     (326) // Play dice
+#define PID_DECK_OF_CARDS                   (436) // Play cards
+#define PID_MARKED_DECK_OF_CARDS            (437) // Play cards
+
+// Special
+#define PID_BRIEFCASE                       (72)
+#define PID_MUTAGENIC_SYRUM                 (329) // Иньекция от мутации
+#define PID_HEART_PILLS                     (333) // Таблетки от серца
+#define PID_SPECTACLES                      (415) // Eye glasses
+#define PID_OXYGEN_TANK                     (417)
+#define PID_POISON_TANK                     (418)
+#define PID_HOWITZER_SHELL                  (430) // Ammo of turret in SAD
+#define PID_MIRROR_SHADES                   (433) // Eye glasses
+#define PID_POCKET_LINT                     (439) // Trash
+#define PID_BALL_GAG                        (470) // Кляп
+#define PID_DAISIES                         (474) // Горшок с цветами
+#define PID_BOTTLE_FULL                     (533) // Полная бутылка
+
+#define PID_DOG_TAGS                        (56)
+#define PID_ELECTRONIC_BUG                  (57)
+#define PID_FUZZY_PAINTING                  (78)
+#define PID_GOLD_LOCKET                     (99)
+#define PID_TAPE_RECORDER                   (104)
+#define PID_URN                             (112)
+#define PID_NECKLACE                        (119) // Ожерелье
+#define PID_PSYCHIC_NULLIFIER               (123)
+#define PID_BLACK_COC_BADGE                 (141) // Habbology
+#define PID_RED_COC_BADGE                   (142) // Habbology
+#define PID_BARTER_TANDI                    (212)
+#define PID_ANNA_GOLD_LOCKET                (252)
+#define PID_DAY_PASS                        (255) // Vault-City
+#define PID_FAKE_CITIZENSHIP                (256) // Vault-City
+#define PID_CORNELIUS_GOLD_WATCH            (257)
+#define PID_VIC_RADIO                       (266)
+#define PID_VIC_WATER_FLASK                 (267)
+#define PID_TROPHY_OF_RECOGNITION           (275)
+#define PID_NEURAL_INTERFACE                (279)
+#define PID_CLIPBOARD                       (301)
+#define PID_DECK_OF_TRAGIC_CARDS            (304) // Play cards
+#define PID_TALISMAN                        (309)
+#define PID_SLAG_MESSAGE                    (263)
+#define PID_PART_REQUISITION_FORM           (312)
+#define PID_EASTER_EGG                      (327)
+#define PID_MAGIC_8_BALL                    (328)
+#define PID_MOORE_BAD_BRIEFCASE             (335)
+#define PID_MOORE_GOOD_BRIEFCASE            (336)
+#define PID_PRESIDENTIAL_PASS               (341) // Ncr
+#define PID_RANGER_PIN                      (342) // Ncr
+#define PID_RANGER_MAP                      (343)
+#define PID_GECK                            (366)
+#define PID_STABLES_ID_BADGE                (413) // Пропуск в канюшни
+#define PID_RAMIREZ_BOX_CLOSED              (431)
+#define PID_RAMIREZ_BOX_OPEN                (432)
+#define PID_BLONDIE_DOG_TAG                 (441) // Бирка
+#define PID_ANGEL_EYES_DOG_TAG              (442) // Бирка
+#define PID_TUCO_DOG_TAG                    (443) // Бирка
+#define PID_REBEL_TAG                       (579) // Бирка рейнджеров
+#define PID_RAIDERS_MAP                     (444)
+#define PID_SHERIFF_BADGE                   (445) // Значек шерифа
+#define PID_ACCOUNT_BOOK                    (448) // Книга по разборкам в Нью-Рено
+#define PID_TORN_PAPER_1                    (450) // Part1 password
+#define PID_TORN_PAPER_2                    (451) // Part2 password
+#define PID_TORN_PAPER_3                    (452) // Part3 password
+#define PID_PASSWORD_PAPER                  (453) // All password
+#define PID_ELRON_FIELD_REP                 (457) // Отчет Хаббологов
+#define PID_SMITTY_MEAL                     (468) // Еда Смитти
+#define PID_ENLIGHTENED_ONE_LETTER          (476) // Доклад
+#define PID_FALLOUT_2_HINTBOOK              (483)
+#define PID_MOUSE_SKIN                      (540) // Шкура мыши
+#define PID_CHOSEN_HOLO                     (549)
+#define PID_CHOSEN_HOLO_DECODED             (550)
+#define PID_LETTER_TO_LIN                   (551)
+#define PID_LETTER_TO_TODD                  (552)
+#define PID_EDWARD_REPORT                   (553)
+#define PID_LETTER_TO_CASSIDY               (554)
+#define PID_LETTER_TO_SINDY                 (555)
+#define PID_FIRE_GECKO_PELT                 (556)
+#define PID_DANTON_POISON                   (557)
+#define PID_ARROYO_SYRINGE                  (560)
+#define PID_DEATH_STAR_PLANS                (561)
+#define PID_FALLOUT_3_HOLO                  (562)
+#define PID_FAKE_GECK                       (563)
+#define PID_USED_GECK                       (564)
+#define PID_FAKE_LETTER                     (600)
+#define PID_POT                             (601)
+
+// Special keys
+#define PID_ACCESS_CARD                     (140)
+#define PID_SECURITY_CARD                   (221)
+#define PID_TRAPPER_TOWN_KEY                (298)
+#define PID_YELLOW_REACTOR_KEYCARD          (305)
+#define PID_RED_REACTOR_KEYCARD             (306)
+#define PID_V15_KEYCARD                     (373)
+#define PID_PRES_ACCESS_KEY                 (495)
+#define PID_TANKER_FOB                      (492)
+
+// Holodisks
+#define PID_BROTHERHOOD_TAPE                (164)
+#define PID_DISK_FEV                        (190)
+#define PID_DISK_SECURITY                   (191)
+#define PID_DISK_ALPHA_EXPERIMENT           (192)
+#define PID_DISK_DELTA_EXPERIMENT           (193)
+#define PID_DISK_VREES_EXPERIMENT           (194)
+#define PID_DISK_MUTANT_TRANSMISSIONS       (196)
+#define PID_DISK_BROTHERHOOD_HISTORY        (215)
+#define PID_DISK_MAXSON_HISTORY             (216)
+#define PID_DISK_MAXSON_JOURNAL             (217)
+#define PID_DISK_VAULT_RECORDS              (230)
+#define PID_DISK_MILITARY_BASE_SEC_CODE     (231)
+#define PID_DISK_REGULATOR_TRANSMISSIONS    (238)
+#define PID_HOLODISK_FAKE_V13               (294)
+#define PID_GECKO_DATA_DISK                 (302)
+#define PID_REACTOR_DATA_DISK               (303)
+#define PID_LYNETTE_HOLO                    (337)
+#define PID_WESTIN_HOLO                     (338)
+#define PID_SPY_HOLO                        (339)
+#define PID_BISHOPS_HOLODISK                (447)
+#define PID_ENCLAVE_HOLODISK_5              (458)
+#define PID_ENCLAVE_HOLODISK_1              (459)
+#define PID_ENCLAVE_HOLODISK_2              (460)
+#define PID_ENCLAVE_HOLODISK_3              (461)
+#define PID_ENCLAVE_HOLODISK_4              (462)
+#define PID_EVACUATION_HOLODISK             (463)
+#define PID_EXPERIMENT_HOLODISK             (464)
+#define PID_MEDICAL_HOLODISK                (465)
+#define PID_PASSWORD_HOLODISK               (466)
+#define PID_ELRON_MEMBER_HOLO               (472)
+#define PID_BROADCAST_HOLODISK              (477)
+#define PID_SIERRA_MISSION_HOLODISK         (478)
+#define PID_NCR_HISTORY_HOLODISK            (490)
+#define PID_ELRON_TEACH_HOLO                (493)
+
+// Other, Inventory pic n/a
+#define PID_WATCH                           (88)
+#define PID_MISC_BOOKCASE_0                 (148)
+#define PID_MISC_BOOKCASE_1                 (150)
+#define PID_MISC_SHELVES_0                  (154)
+#define PID_MISC_SHELVES_1                  (156)
+#define PID_DISK_BROTHERHOOD_HONOR_CODE     (195)
+#define PID_BARTER_LIGHT_HEALING            (218)
+#define PID_BARTER_MEDIUM_HEALING           (219)
+#define PID_BARTER_HEAVY_HEALING            (220)
+#define PID_SMITH_COOL_ITEM                 (264)
+#define PID_CAR_FUEL_CELL                   (288)
+
+// Traps, active see in Misc2
+#define PID_DYNAMITE                        (51) // Has timer
+#define PID_PLASTIC_EXPLOSIVES              (85)
+#define PID_MINE                            (544)
+
+// Craft recipes
+#define PID_CHITIN_ARMOR_RECIPE             (597)
+
+/******************************************************************
+***************       Misc2                         ***************
+******************************************************************/
+
+// Special
+#define PID_HOLODISK                        (58)
+#define PID_RADIO                           (100)
+#define PID_MEMO                            (487) // PID_MEMO_FROM_FRANCIS
+
+// Cars
+#define PID_HUMMER                          (800) // Car
+#define PID_BUGGY                           (802) // Car
+#define PID_SCOUT                           (805) // Car
+#define PID_VERTIBIRD                       (808) // Big Car
+#define PID_HIGHWAYMAN                      (816) // Car
+#define PID_BOAT                            (821) // Boat
+#define PID_AUTO1                           (880) // TIR
+#define PID_AUTO2                           (882) // TIR
+#define PID_AUTO3                           (884) // TIR
+#define PID_AUTO4                           (886) // TIR
+#define PID_AUTO5                           (898)
+#define PID_AUTO6                           (888)
+#define PID_AUTO7                           (890)
+#define PID_AUTO8                           (892)
+#define PID_AUTO9                           (894)
+#define PID_AUTO10                          (895)
+#define PID_AUTO11                          (896)
+#define PID_AUTO12                          (897)
+#define PID_AUTO13                          (899)
+#define PID_AUTO14                          (901)
+#define PID_AUTO15                          (902)
+#define PID_AUTO16                          (903)
+#define PID_AUTO17                          (904)
+#define PID_AUTO18                          (906)
+#define PID_AUTO19                          (907)
+#define PID_AUTO20                          (909)
+#define PID_AUTO21                          (910)
+#define PID_AUTO22                          (911)
+#define PID_AUTO23                          (913)
+#define PID_MOTORBIKE3                      (914)
+#define PID_MOTORBIKE4                      (916)
+#define PID_MOTORBIKE5                      (918)
+#define PID_MOTORBIKE6                      (919)
+#define PID_MOTORBIKE7                      (920)
+#define PID_MOTORBIKE8                      (922)
+#define PID_MOTORBIKE9                      (923)
+#define PID_HIGHWAYMAN_2					(926)
+#define PID_HIGHWAYMAN_3					(928)
+#define PID_HIGHWAYMAN_4					(929)
+#define PID_HIGHWAYMAN_5					(930)
+#define PID_HIGHWAYMAN_6					(931)
+#define PID_HIGHWAYMAN_7					(932)
+#define PID_HIGHWAYMAN_8					(933)
+#define PID_HIGHWAYMAN_9					(934)
+#define PID_HIGHWAYMAN_10					(935)
+#define PID_AUTO24							(936)
+
+
+// Traps
+#define PID_ACTIVE_DYNAMITE                 (206)
+#define PID_TOGGLE_SWITCH                   (222)
+#define PID_ACTIVE_PLASTIC_EXPLOSIVE        (209)
+#define PID_ACTIVE_MINE                     (545)
+
+// Manufacture, Still
+#define PID_STILL_B_BROKEN                  (810)
+#define PID_STILL_S_BROKEN                  (811)
+#define PID_STILL_B                         (812) // Beer still
+#define PID_STILL_B_ACTIVE                  (813)
+#define PID_STILL_S                         (814) // Booz (Schlager) still
+#define PID_STILL_S_ACTIVE                  (815)
+
+// Barricades stuff
+#define PID_SANDBAG_1                       (580)
+#define PID_SANDBAG_2                       (581)
+#define PID_SANDBAG_3                       (582)
+#define PID_SANDBAG_4                       (583)
+#define PID_SANDBAG_5                       (584)
+#define PID_SANDBAG_EMPTY                   (587)
+
+// Other
+#define PID_WANTED_SIGN                     (3228)
+#define PID_UNVISIBLE_BLOCK                 (820)
+#define PID_POSTMAN_LETTER                  (548)
+
+#define PID_ENERGY_BARIER_ACCESS_CARD       (853)
+
+// Player Locations special items
+#define PID_KOTW_BEER                       (588)
+#define PID_KOTW_GRAIL                      (589)
+#define PID_KOTW_STATUETTE                  (590)
+
+/******************************************************************
+***************       Effects                       ***************
+******************************************************************/
+//Smoke
+#define PID_SMOKE                           (606)
+#define PID_MUSTARD_GAS                     (607)
+#define PID_FIRE_HEX						(608)			//Fire hex from flamer and molotovs
+
+// Explode
+#define PID_EXPLODE_FIRE_BIG                (4027)
+#define PID_EXPLODE_FIRE_SMALL              (4028)
+#define PID_EXPLODE_PLASMA                  (4029)
+#define PID_EXPLODE_EMP                     (4008)
+#define PID_EXPLODE_ROCKET                  (4011)
+#define PID_EXPLODE_BLAZEXPL				(4050)  //BLAZEXPL.fos animation for hyperboloid
+#define PID_EXPLODE_INCEDIARY_AMMO			(4904)
+// Flying
+#define PID_FLYING_ROCKET                   (4001)
+#define PID_FLYING_PLASMA_BALL              (4002)
+#define PID_FLYING_KNIFE                    (4006)
+#define PID_FLYING_SPEAR                    (4007)
+#define PID_FLYING_LASER_BLAST              (4009)
+#define PID_FLYING_PLASMA_BLAST             (4010)
+#define PID_FLYING_ELECTRICITY_BOLT         (4013)
+#define PID_FLYING_BLUE_LASER				(4051) //changed 50 and 51 anim for flying dog and etc in generic.fopro
+#define PID_FLYING_SMALL_TRACE				(4903)
+
+//flags
+#define PID_BLUE_FLAG                       (7989)
+#define PID_RED_FLAG                        (7988)
+
+#endif  // __ITEM_PID__

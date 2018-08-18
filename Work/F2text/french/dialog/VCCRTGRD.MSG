@@ -1,0 +1,14 @@
+{100}{}{Tu vois un garde à l'air sévère.}
+{101}{}{Tu vois un garde de la Cité de l'Abri à l'air vicieux.}
+{102}{}{Mêle-toi de tes oignons.}
+{103}{}{Maintenant, je crois qu'il est temps de partir.}
+{104}{}{T'as un air qui m'revient pas.}
+{105}{}{Fais gaffe.}
+{106}{}{Salut, Citoyen.}
+{107}{}{Enchanté, Citoyen.}
+{108}{}{Ca bosse dur, Citoyen ?}
+{109}{}{Après toi, Citoyen.}
+{110}{}{Salut, voyageur.}
+{111}{}{Mêle-toi de ce qui te regarde.}
+{112}{}{On ne traîne pas.}
+{113}{}{Va voir Wallace si tu veux entrer dans la Cité.}

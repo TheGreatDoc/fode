@@ -1,0 +1,88 @@
+#include "_defines.fos"
+#include "_macros.fos"
+
+void unsafe_tactic_normal(Critter& cr, int, int, int, string@, int[]@)
+{
+	if (cr.StatBase[ST_TACTIC]==1)//tactic defensive
+	{	
+		cr.ModeBase[MODE_NO_RUN] = 0;
+		cr.StatBase[ST_NORMAL_RESIST]-=15;
+		cr.StatBase[ST_TACTIC]=0;
+	}
+
+	else if (cr.StatBase[ST_TACTIC]==2)//tactic agressive
+	{
+		if(cr.Trait[TRAIT_FAST_SHOT]==0) cr.ModeBase[MODE_NO_AIM] = 0;
+		cr.StatBase[ST_CRITICAL_CHANCE]-=15;
+		cr.StatBase[ST_NORMAL_RESIST]+=5;
+		cr.StatBase[ST_TACTIC]=0;
+	}
+}
+
+void unsafe_tactic_defensive(Critter& cr, int, int, int, string@, int[]@)
+{
+	if(__FullSecond<uint(cr.ParamBase[PLAYER_TIMEOUT_TACTICAL])) return;
+	int second=cr.SkillBase[SK_TACTICAL_FIGHTING]/1.5;
+	if((cr.StatBase[ST_TACTIC]==0 || cr.StatBase[ST_TACTIC]==2) && second>0) CreateTimeEvent(__FullSecond+REAL_SECOND(second),"e_tactic_defensive",cr.Id,true);
+	else return;
+	cr.ParamBase[PLAYER_TIMEOUT_TACTICAL]=int(__FullSecond+REAL_MINUTE(8)-REAL_MINUTE(int(cr.SkillBase[SK_TACTICAL_FIGHTING]/100)));
+	cr.Say(SAY_SERVER_NOTE_2,"Activated tactical skill: defense");
+	if (cr.StatBase[ST_TACTIC]==0)//tactic normal
+	{
+		cr.ModeBase[MODE_NO_RUN] = 1;
+		cr.StatBase[ST_NORMAL_RESIST]+=15;
+		cr.StatBase[ST_TACTIC]=1;
+	}
+
+	else if (cr.StatBase[ST_TACTIC]==2)//tactic agressive
+	{	
+		if(cr.Trait[TRAIT_FAST_SHOT]==0) cr.ModeBase[MODE_NO_AIM] = 0;
+		cr.ModeBase[MODE_NO_RUN] = 1;
+		cr.StatBase[ST_CRITICAL_CHANCE]-=15;
+		cr.StatBase[ST_NORMAL_RESIST]+=20;
+		cr.StatBase[ST_TACTIC]=1;
+	}
+
+}
+
+uint e_tactic_defensive(uint[]@ values)
+{
+	Critter@cr=GetCritter(values[0]);
+	unsafe_tactic_normal(cr,0,0,0,null,null);
+	cr.Say(SAY_SERVER_NOTE_2,"Finish active skill.");
+	return 0;
+}
+
+void unsafe_tactic_agressive(Critter& cr, int, int, int, string@, int[]@)
+{
+	if(__FullSecond<uint(cr.ParamBase[PLAYER_TIMEOUT_TACTICAL])) return;
+	int second=cr.SkillBase[SK_TACTICAL_FIGHTING]/1.5;
+	if((cr.StatBase[ST_TACTIC]==0 || cr.StatBase[ST_TACTIC]==1) && second>0) CreateTimeEvent(__FullSecond+REAL_SECOND(second),"e_tactic_agressive",cr.Id,true);
+	else return;
+	cr.ParamBase[PLAYER_TIMEOUT_TACTICAL]=int(__FullSecond+REAL_MINUTE(8)-REAL_MINUTE(int(cr.SkillBase[SK_TACTICAL_FIGHTING]/100)));
+	cr.Say(SAY_SERVER_NOTE_2,"Activated tactical skill: agressive");
+	if (cr.StatBase[ST_TACTIC]==0)//tactic normal
+	{		
+		cr.ModeBase[MODE_NO_AIM] = 1;
+		cr.StatBase[ST_CRITICAL_CHANCE]+=15;
+		cr.StatBase[ST_NORMAL_RESIST]-=5;
+		cr.StatBase[ST_TACTIC]=2;
+	}
+
+	else if (cr.StatBase[ST_TACTIC]==1)//tactic agressive
+	{
+		cr.ModeBase[MODE_NO_AIM] = 1;
+		cr.ModeBase[MODE_NO_RUN] = 0;
+		cr.StatBase[ST_CRITICAL_CHANCE]+=15;
+		cr.StatBase[ST_NORMAL_RESIST]-=20;
+		cr.StatBase[ST_TACTIC]=2;
+	}
+}
+
+uint e_tactic_agressive(uint[]@ values)
+{
+	Critter@cr=GetCritter(values[0]);
+	unsafe_tactic_normal(cr,0,0,0,null,null);
+	cr.Say(SAY_SERVER_NOTE_2,"Finish active skill.");
+	return 0;
+}

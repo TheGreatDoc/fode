@@ -1,0 +1,12 @@
+{100}{}{Du siehst einen Mann in einer MK II-Powerrüstung. Er sieht nicht gerade freundlich aus.}
+{101}{}{Du siehst Kaga in einer MK II-Powerrüstung.}
+{102}{}{Ein großer Klumpen Metall mit Armen und Waffen.}
+{103}{}{Langsam hab ich die Verfolgung satt. Laßt uns das Ganze zu Ende bringen.}
+{104}{}{Jetzt siehst du Kaga zum letzten Mal.}
+{105}{}{Du bist kein Gegner für Kaga.}
+{106}{}{Ich freu mich drauf, dich ins Jenseits zu befördern.}
+{107}{}{Du warst ein würdiger Gegner.}
+{108}{}{Dieser Teil der Öde braucht keinen Samariter wie dich.}
+{109}{}{Wenn ich dich getötet hab, bin ich der gefürchtetste Mensch in diesem Teil der Öde.}
+{110}{}{Ich freu mich schon drauf, nach Arroyo zurückzukehren...und es niederzubrennen.}
+{111}{}{Kaga wird berühmt werden, wenn er dich getötet hat.}

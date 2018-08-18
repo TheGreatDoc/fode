@@ -1,0 +1,12 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+#############################################################
+#  Message File: Geckpwpl.msg                               #
+#                                                           #
+#  Created: September 2, 1998                               #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+{100}{}{Vstoupil jsi do jaderné elektrárny v Gecku.}
+{200}{}{Znièil jsi reaktor.}
+{300}{}{Robot opravil jadernou elektrárnu.}

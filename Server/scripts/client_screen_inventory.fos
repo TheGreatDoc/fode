@@ -1,0 +1,67 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "_defines.fos"
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+IGUIElementImageOpt@ slot_A;
+IGUIElementImageOpt@ slot_B;
+IGUIElementImageOpt@ slot_C;
+IGUIElementImageOpt@ slot_SPEC;
+IGUIElementButtonOpt@ myvisible;
+int[] position;
+
+class MyVisibleButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		CritterCl@ cr=GetChosen();
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_myvisible",0,0,0,null,null);
+		if(cr.ParamBase[CRITER_VISIBLE]==1) myvisible.Text("Visible ON",FONT_FAT, COLOR_SAND);
+		else myvisible.Text("Visible OFF",FONT_FAT, COLOR_SAND);
+	}
+}
+
+void InitInvSlot()
+{
+	position=GetIniValues2("SlotAlock",null);
+	@slot_A=
+	GUI_AddImage(CLIENT_SCREEN_INVENTORY, "lock.png", PT_ART_INTRFACE, position[0], position[1]);
+	slot_A.setVisible(true);
+	position=GetIniValues2("SlotBlock",null);
+	@slot_B=
+	GUI_AddImage(CLIENT_SCREEN_INVENTORY, "lock.png", PT_ART_INTRFACE, position[0], position[1]);
+	slot_B.setVisible(true);
+	position=GetIniValues2("SlotClock",null);
+	@slot_C=
+	GUI_AddImage(CLIENT_SCREEN_INVENTORY, "lock.png", PT_ART_INTRFACE, position[0], position[1]);
+	slot_C.setVisible(true);
+	position=GetIniValues2("SlotSpecLock",null);
+	@slot_SPEC=
+	GUI_AddImage(CLIENT_SCREEN_INVENTORY, "LockBig.png", PT_ART_INTRFACE, position[0], position[1]);
+	slot_SPEC.setVisible(true);
+	
+	MyVisibleButtonClass MyVisibleButton;
+	@myvisible=
+	GUI_AddButton(CLIENT_SCREEN_INVENTORY, 10,10)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("Visible", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(MyVisibleButton);
+	myvisible.setVisible(false);
+}
+
+void ShowSlotInv()
+{
+	CritterCl@ cr=GetChosen();
+	if(!valid(cr)) return;
+	if(cr.ParamBase[ST_SLOT_A]!=0) slot_A.setVisible(false);
+	if(cr.ParamBase[ST_SLOT_B]!=0) slot_B.setVisible(false);
+	if(cr.ParamBase[ST_SLOT_C]!=0) slot_C.setVisible(false);
+	if(cr.ParamBase[ST_SLOT_HEAD]!=0) slot_SPEC.setVisible(false);
+	//if(jakis warunek) myvisible.setVisible(true);
+	
+}

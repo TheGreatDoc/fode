@@ -1,0 +1,25 @@
+#include "_macros.fos"
+
+#  pragma bindfunc "int SqlQueryti(string&,int,string&,string&,string&,string&,string&) -> MySqlConnect.dll SqlQueryti"
+
+#define SERVER_IP	("91.239.67.93")
+#define SERVER_PORT	(3306)
+#define BD_NAME		("fonline")
+#define USER_NAME	("fonline")
+#define PASSWORD	("wBfKhDhjcw6EfDeb")
+
+
+
+void testmysql()
+	{
+		string result;
+		string ServerIp = SERVER_IP;
+		string BdName = BD_NAME;
+		string username = USER_NAME;
+		string pass = PASSWORD;
+		string query = "SELECT * FROM `test`";
+		
+		int r = SqlQueryti(ServerIp,SERVER_PORT,username,pass,BdName,query,result);
+		if (r == 0)	Log("success connect");
+		else Log(result);
+	}

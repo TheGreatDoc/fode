@@ -1,0 +1,95 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+
+int[] __Old_VillageFlags={0,0,0,0};
+int[] __Old_VillageFlagsPositions={
+165,191
+};
+void Old_VillageFlagsUpdate()
+{
+	Map @Old_Village=GetMapByPid(670,0);
+	if(@Old_Village!=null)
+	{
+		Critter @[]crs;
+		Item @[]items;
+		int ULSs,NECs;
+		for(uint j=0; j<__Old_VillageFlagsPositions.length(); j+=2)
+		{
+			crs.resize(0);
+			items.resize(0);
+			Old_Village.GetCrittersHex(__Old_VillageFlagsPositions[j],__Old_VillageFlagsPositions[j+1],5,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+			ULSs=0; NECs=0;
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1) ULSs++;
+				if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2) NECs++;
+			}
+			if(ULSs>NECs) __Old_VillageFlags[j/2]-=(ULSs-NECs)*3;
+			else __Old_VillageFlags[j/2]+=(NECs-ULSs)*3;
+			__Old_VillageFlags[j/2]=CLAMP(__Old_VillageFlags[j/2],-100,100);
+			Old_Village.GetItems(__Old_VillageFlagsPositions[j],__Old_VillageFlagsPositions[j+1],items);
+			if(@items!=null && items.length()>0)
+			{
+				int current_flag=0;
+				if(items[0].GetProtoId()==7988) current_flag=-1;
+				else if(items[0].GetProtoId()==7989) current_flag=1;
+				int flag_processed=0;
+				if(__Old_VillageFlags[j/2]<=-30) flag_processed=-1;
+				else if(__Old_VillageFlags[j/2]>=30) flag_processed=1;
+				if(current_flag!=flag_processed)
+				{
+					DeleteItem(items[0]);
+					if(flag_processed==0) Old_Village.AddItem(__Old_VillageFlagsPositions[j],__Old_VillageFlagsPositions[j+1],7987,1);
+					else if(flag_processed==-1)
+					{
+						Old_Village.AddItem(__Old_VillageFlagsPositions[j],__Old_VillageFlagsPositions[j+1],7988,1);
+					}
+					else if(flag_processed==1)
+					{
+						Old_Village.AddItem(__Old_VillageFlagsPositions[j],__Old_VillageFlagsPositions[j+1],7989,1);
+					}
+				}
+				
+				if(flag_processed==-1)
+				{
+					
+				}
+				else if(flag_processed==1)
+				{
+					
+				}
+			}
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(__Old_VillageFlags[j/2]==-100) {}
+				else if(__Old_VillageFlags[j/2]==100) {}
+				else if(__Old_VillageFlags[j/2]<=-30) crs[i].Say(SAY_NETMSG,"REF Flag: "+(-__Old_VillageFlags[j/2])+"%");
+				else if(__Old_VillageFlags[j/2]>=30) crs[i].Say(SAY_NETMSG,"NEC Flag: "+__Old_VillageFlags[j/2]+"%");
+				else if(__Old_VillageFlags[j/2]==0) crs[i].Say(SAY_NETMSG,"neutral");
+				else if(__Old_VillageFlags[j/2]<0) crs[i].Say(SAY_NETMSG,"neutral "+(-__Old_VillageFlags[j/2])+"% REF");
+				else if(__Old_VillageFlags[j/2]>0) crs[i].Say(SAY_NETMSG,"neutral "+__Old_VillageFlags[j/2]+"% NEC");
+			}
+		}
+		Critter @[]all_crs;
+		Old_Village.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,all_crs);
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			all_crs[i].ParamBase[OLDVILLAGE_FLAG]=__Old_VillageFlags[0];
+		}
+	}
+}
+
+void Old_VillageFlagsSendStatus()
+{
+	Map @Old_Village=GetMapByPid(670,0);
+	if(@Old_Village!=null)
+	{
+		Critter @[]all_crs;
+		Old_Village.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,all_crs);
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			all_crs[i].ParamBase[OLDVILLAGE_FLAG]=__Old_VillageFlags[0];
+		}
+	}
+}

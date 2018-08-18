@@ -1,0 +1,270 @@
+#Tenhle soubor pøeloil Birdman, Birdman@post.cz, http://www.mujweb.cz/www/birdman, 0604 540689
+# 0. QUICK LOOK (KNOW_NIKKI)
+{100}{}{Vidíš Milou Nikki.}
+
+# 0. QUICK LOOK (DON'T KNOW_NIKKI)
+{125}{}{Vidíš jednu z rozdavaèek karet v kasinu.}
+
+# 0. LOOK [MALE, KNOW NIKKI] (WTG)
+{150}{}{Vidíš Milou Nikki.}
+{000}{}{Vidíš Milou Nikki. Mrká na tebe.}
+{000}{}{Vidíš Milou Nikki. Naznaèuje ti, a pøijdeš a zahraješ si.}
+{000}{}{Vidíš Milou Nikki. Mason byl dobrı jako její osel.}
+{000}{}{Vidíš Milou Nikki. Její obleèení stìí zakrıvá její tìlo.}
+{000}{}{Vidíš Milou Nikki. Mason byl dobrı jako její osel.}
+{000}{}{Vidíš Milou Nikki. Její obleèení stìí zakrıvá její tìlo.}
+
+# 1. LOOK [FEMALE, KNOW NIKKI] (WTG)
+{160}{}{Vidíš Milou Nikki. Naznaèuje ti, a pøijdeš a zahraješ si.}
+{000}{}{Vidíš Milou Nikki. Její obleèení stìí zakrıvá její tìlo.}
+{000}{}{Vidíš Milou Nikki. Její obleèení stìí zakrıvá její tìlo.}
+
+# 2. LOOK (MALE, DON'T KNOW NIKKI) (WTG)
+{170}{}{Vidíš jednu z rozdavaèek karet v kasinu.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Mrká na tebe.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Naznaèuje ti, a pøijdeš a zahraješ si.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Má pár hezkejch kamínkù.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Její obleèení stìí zakrıvá její tìlo.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Voní opravdu nááádhernì.}
+
+# 3. LOOK (FEMALE, DON'T KNOW NIKKI) (WTG)
+{180}{}{Vidíš jednu z rozdavaèek karet v kasinu. Naznaèuje ti, a pøijdeš a zahraješ si.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Její obleèení stìí zakrıvá její tìlo.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Její obleèení stìí zakrıvá její tìlo.}
+{000}{}{Vidíš jednu z rozdavaèek karet v kasinu. Naznaèuje ti, a pøijdeš a zahraješ si.}
+
+# 4. FLOAT [ENCLAVE_DESTROYED = TRUE] (WTG)
+{200}{}{::Vítání::}
+{000}{}{::Polesk::}
+{000}{}{::Hvízd::}
+{000}{}{[X]! Vítej v kasinu, hrdino!}
+{000}{}{Myslím, e bys na nás mìl zapomenout, protoe zachraòuješ svìt.}
+
+# 5. FLOAT [MADE MAN, SAME CASINO] (WTG)
+{210}{}{Dobrı den, [MM]. Mohu vám s nìèím pomoci?}
+{000}{}{Kdy budete pozdìji hledat malou spoleènost...}
+{000}{}{Hej Vy... (mrkne)... chcete si zahrát?}
+{000}{}{Vypadá... (tøese se)... nebezpeènì.}
+{000}{}{Vítejte v kasinu, [MM].}
+{000}{}{Mùete za mì ztratit u vašeho šéfa slovo?}
+{000}{}{Dobrı den. Dejte mi vìdìt, kdy Vám budu moci s nìèím pomoci.}
+{000}{}{Chcete si zahrát?}
+{000}{}{Vypadá... (tøese se)... nebezpeènì.}
+
+# 7. FLOAT [MADE MAN, WRONG CASINO] (WTG)
+{220}{}{Vypadáte jako nìkdo, kdo chce riskovat svùj ivot.}
+{000}{}{Uh, myslím e prostì jen vešel do špatného kasina...}
+{000}{}{Kdy neodešel pøedtím, ne ho chlapci vidìli...}
+{000}{}{Uh-oh. Problémy...}
+{000}{}{Vypadáte jako ena, která chce riskovat svùj ivot.}
+{000}{}{Uh, myslím e prostì jen vešla do špatného kasina...}
+{000}{}{Kdy neodešla pøedtím, ne ji chlapci vidìli...}
+
+# 9. FLOAT [PRIZEFIGHTER] (WTG)
+{230}{}{Hej, chcete utratit nìjakı drobnı?}
+{000}{}{Hej, (mrkne)... chcete si zahrát?}
+{000}{}{Hej, (smìje se)... chcete chytit svou šanci?}
+{000}{}{Kdy budete pozdìji hledat malou spoleènost...}
+{000}{}{Divím se, e na nìj mám mluvit...}
+{000}{}{Hej, [PF]. Nechcete utratit trochu drobnıch?}
+{000}{}{Jestli chcete vyhrát nìjakı drobnı, pøišel jste na správné místo.}
+{000}{}{Nejlepší kasino v New Renu. Dokonce na SVÌTÌ.}
+{000}{}{Paní Štìstìna je dnes doma... nic a potom vítìzí!}
+{000}{}{Jdìte vpravo nahoru, [PF], vyhrát nìjakı drobnı.}
+{000}{}{Chcete další drink?}
+{000}{}{Vítejte v kasinu, [PF].}
+{000}{}{Dobrı den, [PF]. Dejte mi vìdìt, kdy budete chtít pomoct.}
+{000}{}{Chcete si zahrát, [PF]?}
+{000}{}{Vítejte v kasinu, [PF].}
+
+# 11. FLOAT [PORN STAR] (WTG)
+{250}{}{Hej, vy od filmu. Chcete utratit nìjakı drobnı?}
+{000}{}{Hej, [PS]... (mrkne)... chcete si zahrát?}
+{000}{}{Hej, [PS]... (usmìje se)... chcete chytit svou šanci?}
+{000}{}{Jestli chcete vyhrát nìjakı drobnı, pøišel jste na správné místo.}
+{000}{}{Nejlepší kasino v New Renu. Dokonce na SVÌTÌ.}
+{000}{}{Paní Štìstìna je dnes doma... nic a potom vítìzí!}
+{000}{}{Jdìte vpravo nahoru, [PF], vyhrát nìjakı drobnı.}
+{000}{}{Chcete další drink?}
+{000}{}{Vítejte v kasinu, [PS].}
+{000}{}{Hej, paní "Filmová Hvìzda". Chcete utratit svou vıplatu?}
+{000}{}{Tancujete dnes veèer?}
+
+# 13. FLOAT [NO REP] (WTG)
+{270}{}{Hej, tady. Chcete utratit nìjakı drobnı?}
+{000}{}{Hej, (mrkne)... chcete si zahrát?}
+{000}{}{Hej, (usmìje se)... chcete chytit svou šanci?}
+{000}{}{Jestli chcete vyhrát nìjakı drobnı, pøišel jste na správné místo.}
+{000}{}{Nejlepší kasino v New Renu. Dokonce na SVÌTÌ.}
+{000}{}{Paní Štìstìna je dnes doma... nic a potom vítìzí!}
+{000}{}{Jdìte vpravo nahoru, vyhrát nìjakı drobnı.}
+{000}{}{Chcete další drink, miláèku?}
+{000}{}{Vítej v kasinu, miláèku.}
+{000}{}{Tento stùl je volnı, kdy si budete chtít zahrát...}
+{000}{}{Hej tady. Chcete riskovat nìjakı drobnı?}
+{000}{}{Chcete si zahrát?}
+{000}{}{Vítejte v kasinu.}
+
+# 15.  PLACE YOUR BETS (WTG, 22, 23)
+{290}{}{Dobøe, jste blázen e tu jste, ale vlote tedy svoji sázku. Minimální èástka je 5 etonù. Vlote svoji sázku...}
+{000}{}{Um... vlote svou sázku... minimální èástka je 5 etonù. Vlote svou sázku...}
+{000}{}{Vlote svou sázku, pane. minimální èástka je 5 etonù. Vlote svou sázku...}
+{000}{}{Vlote svou sázku, madam. minimální èástka je 5 etonù. Vlote svou sázku...}
+{000}{}{Vlote svou sázku, minimální èástka je 5 etonù. Vlote svou sázku...}
+{000}{}{Má sázka je vìtší ne vaše}
+{000}{}{Já hrát kostky v kalhotách}
+{000}{}{Co je to za hru? Mohu vsadit geckoní kùi? Dostal jsem geckona... ooooh... krásnı pohled na nìj!}
+{000}{}{Máte [C] etonù. Vsadíte 5 etonù?}
+{000}{}{Vsadíte 15 etonù?}
+{000}{}{Vsadíte 25 etonù?}
+{000}{}{Vsadíte 50 etonù?}
+{000}{}{Jsi Nikki?}
+{000}{}{Tak jak, Nikki?}
+{000}{}{Ach, je toho na mì moc. Odejdu.}
+{000}{}{Dnes u ádné sázky, dík.}
+
+# 16.  RETARD (15)
+{310}{}{Uh, dobøe, pane. Brzy se vrate.}
+{000}{}{Uh, dobøe, madam. Brzy se vrate.}
+{000}{}{Um... slyšela jsem, e tady vysávají mozky. Moná bys to mìl zkontrolovat venku.}
+{000}{}{Pááá-páááá}
+{000}{}{Dobrota. [X] mohl jste vdy pouít novı pøedmìt z inventáøe.}
+{000}{}{Uh... mozky... co to?}
+
+# 17. POOR MAN (15)
+{320}{}{Dobøe, pane. Brzy se vrate.}
+{000}{}{Dobøe, madam. Brzy se vrate.}
+{000}{}{5 etonù? Je to na vás moc? Pane, jste ve špatném mìstì.}
+{000}{}{5 etonù? Je to na vás moc? Pane, jste ve špatném mìstì.}
+{000}{}{5 etonù? Je to na vás moc? Madam, jste ve špatném mìstì.}
+{000}{}{5 etonù? Je to na vás moc? Madam, jste ve špatném mìstì.}
+{000}{}{Vrátím, díky.}
+{000}{}{Moná, ale nejménì *já* tu nebudu ít.}
+
+# 18. LOOOOOOSER (15)
+{330}{}{Promiòte, pane. Pøíštì budete mít jistì více štìstí.}
+{000}{}{Promiòte, madam. Pøíštì budete mít jistì více štìstí.}
+{000}{}{Promiòte, pøíštì budete mít více štìstí.}
+{000}{}{Máte [C] etonù. Chcete hrát dál?}
+{000}{}{Za to mùe tenhle den.}
+{000}{}{Za to mùe tahle noc.}
+
+# 19. WINNER (15)
+{340}{}{Vıhra! Gratuluji, pane!}
+{000}{}{Vıhra! Gratuluji, madam!}
+{000}{}{Vıhra!}
+{000}{}{Máte [C] etonù. Chcete hrát dál?}
+{000}{}{Za to mùe tenhle den.}
+{000}{}{Za to mùe tahle noc.}
+
+# 20. WINNER x2 (15)
+{350}{}{Vıhra! Zdvojnásobil jste své peníze! Gratuluji, pane!}
+{000}{}{Vıhra! Zdvojnásobila jste své peníze! Gratuluji, madam!}
+{000}{}{Vıhra! Zdvojnásobil jste své peníze!}
+{000}{}{Máte [C] etonù. Chcete hrát dál?}
+{000}{}{Za to mùe tenhle den.}
+{000}{}{Za to mùe tahle noc.}
+
+# 21. WINNER x3 (15)
+{360}{}{Vıhra! Ztrojnásobil jste své peníze! Dnes veèer je v tomto domì štìstí! Gratuluji, pane!}
+{000}{}{Vıhra! Ztrojnásobila jste své peníze! Dnes veèer je v tomto domì štìstí! Gratuluji, madam!}
+{000}{}{Vıhra! Ztrojnásobil jste své peníze!}
+{000}{}{Máte [C] etonù. Chcete hrát dál?}
+{000}{}{Za to mùe tenhle den.}
+{000}{}{Za to mùe tahle noc.}
+
+# 22. YOU NIKKI? (15)
+{370}{}{Co teï chcete? Jste tu, abyste tu jenom zabíjel èas, nebo vloíte sázku?}
+{000}{}{Jsem ta, kterou si pøeješ mít. Vloíš teï sázku?}
+{000}{}{Jsem ta, kterou si pøeješ mít. Vloíš teï sázku?}
+{000}{}{Vlo sázku.}
+{000}{}{Jooo. Vsadím se, e víš kde je Hezoun Lloyd.}
+{000}{}{Joo. Vsadím se, e ty a Hezoun Lloyd, kradete peníze od pana Salvatora. Tìko ti vìøit, e sis nevšimla, jak ho celou dobu okrádá.}
+{000}{}{Víš, e se nìkdo jmenuje Hezoun Lloyd?}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 23. YOU NIKKI (NICE)? (22)
+{380}{}{Jo, slyšela jsem, e je MRTVİ. Je to to, co jsi chtìl slyšet, zabijáku?! He?! Teï vloíš sázku nebo mì nasereš bıèím hovnem nìjak víc?}
+{000}{}{Ne. U vloíš tu sázku?}
+{000}{}{Vlo sázku.}
+{000}{}{Joo. Vsadím se, e víš kde je Hezoun Lloyd.}
+{000}{}{Joo, vsadím se, e ty a Hezoun Lloyd oba kradete peníze od pana Salvatora. Tìko ti vìøit, e jsi si nevšimla, jak ho celou dobu okrádá.}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 24.  KNOW WHERE LLOYD IS? (22, 23)
+{390}{}{Mìl bys ZATRATIT tuto sázku, ale jestli jsi blbı jako jsi ošklivı, mìl bys pravdìpodobnì sázet jinak. Nevidìla jsem toho flákaèe od té doby, co se nechal zatáhnout do toho podvodu s panem Salvatorem.}
+{000}{}{Mìl bys zatratit tuto sázku. Nevidìla jsem toho flákaèe od té doby, co se nechal zatáhnout do toho podvodu s panem Salvatorem.}
+{000}{}{Mìla bys zatratit tuto sázku. Nevidìla jsem toho flákaèe od té doby, co se nechal zatáhnout do toho podvodu s panem Salvatorem.}
+
+{000}{}{Moná jsi mì napoprvé neslyšela, tak znovu: Kde je Lloyd?}
+{000}{}{Krásnì podezøelé, e sis nevšimla, jak ho okrádá celou dobu. Mìla jsi dìlat slepou za úplatek?}
+{000}{}{Fajn. Promluvíme si pozdìji, Nikki.}
+
+# 25. KNOW WHERE LLOYD IS? (24)
+{400}{}{ØÍKALA jsem ti, e nevím kde je. Teï se podívej, PRACUJI tu, tak se vra do jakékoliv z tvıch jeskyní --}
+{000}{}{ØÍKALA jsem ti, e nevím kde je. Teï se podívej, PRACUJI tu, tak se vra do jakékoliv z tvıch jeskyní --}
+{000}{}{Nikki, Nikki... Ztrácím tu TRPÌLIVOST. Kdy mi neøekneš, kde Lloyd je, ztratím také své nervy.}
+{000}{}{Nikki, nevím co se mezi tebou a Lloydem stalo. Ale víš co? NEPOTØEBUJI to vìdìt. Øeknu panu Salvatorovi jenom co tuším.}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v kradení. Øekni mi, kde je Lloyd, a já ti dám polovinu toho co vzal: 500 etonù.}
+{000}{}{Krásnì podezøelé, e sis nevšimla, jak ho okrádá celou dobu. Mìla jsi dìlat slepou za úplatek?}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 26. I'M GOING TO HAVE TO GET ROUGH (25)
+{410}{}{Dotkneš se mì a pan Salvator ti bude seškrabávat z kùe, dokud budeš ivı.}
+{000}{}{Salvator tì nebude chránit. Rozdavaèi karet, jako jsi ty, jsou za tucet etonù. Nepøešlapuj poøád okolo a øekni mi, kde je Lloyd. JINAK...}
+{000}{}{Salvator tì nebude chránit.  Je mrtvı. Nepøešlapuj poøád okolo a øekni mi, kde je Lloyd. JINAK...}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v okrádání. Øekni mi, kde je Lloyd, a já ti dám polovinu toho co vzal: 500 etonù.}
+{000}{}{Krásnì podezøelé, e sis nevšimla, jak ho okrádá celou dobu. Mìla jsi dìlat slepou za úplatek?}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 27. I'M GOING TO TELL MR. SAL WHAT I SUSPECT (25)
+{420}{}{O èem teï mluvíš?}
+{000}{}{Nikki, jestli mi hned všechno neøekneš, øeknu Panu Salvatorovi, e v tom jedeš, a je to pravda nebo ne.}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v okrádání. Øekni mi, kde je Lloyd, a já ti dám polovinu toho, co vzal: 500 etonù.}
+{000}{}{Krásnì podezøelé, e sis nevšimla, jak ho okrádá celou dobu. Mìla jsi dìlat slepou za úplatek?}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 28. INTIMIDATE NIKKI (25, 26, 27, 29)
+{430}{}{Podívej se, ØÍKÁM, e nevím, kde je. Ale *moná* jsem slyšela, e pouívá pokoj u Desperada. Moná ho tam nìkde najdeš. Teï, pokud ti to nebude vadit, se vrátím zpátky do práce.}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v okrádání. Øekni mi, kde je Lloyd, a já ti dám polovinu toho, co vzal: 500 etonù.}
+{000}{}{Krásnì podezøelé, e sis nevšimla, jak ho celou dobu okrádá. Mìla jsi dìlat slepou za úplatek?}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 29. FAIL TO INTIMIDATE NIKKI (30)
+{440}{}{Podívej, ZAÈALA jsem tu pracovat teprve pøed nedávnem a nepoznám kadé èísílko na kartì a dva kousky odcizí, kdy vstoupí. Mám teda kliku na takovı hovada, jako jsi ty.}
+{000}{}{Aha, tak takhle jste to mìli s Lloydem vymyšlenı?}
+{000}{}{Tak jsi tu zaèala pracovat, huh? Krásnì pøíhodné. Dobøe, to je všechno co potøebuji vìdìt. Øekni Lloydovi, e je mrtvı mu.}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v okrádání. Øekni mi, kde je Lloyd, a já ti dám polovinu toho, co vzal: 500 etonù.}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 30. ACCUSE NIKKI OF SNEAKY SHIT (22, 23, 24, 25, 26, 27, 28)
+{450}{}{No jasnì, šlehneš si dost Jetu a všechno se zdá podezøelı, nebo ne?}
+{000}{}{To JE podezøelı. Mìla jsi Lloyda odhadnout, co je zaè, hned jak se objevil v tomhle kasinu.}
+{000}{}{Nikki, já vím, e jsi pomáhala Lloydovi v okrádání. Øekni mi, kde je Lloyd, a já ti dám polovinu toho, co vzal: 500 etonù.}
+{000}{}{Promluvíme si pozdìji, Nikki.}
+
+# 31. NIKKI PISSED (25, 26, 27, 28, 29, 30)
+{460}{}{Bì z této herny pryè. Není nic dalšího, co bych ti øekla.}
+{000}{}{Není nic dalšího co bych ti øekla. Kliï se odsud.}
+{000}{}{Teï moná ne. Pozdìji si ale promluvíme, Nikki. Poèítej s tím.}
+
+# 32. NIKKI BRIBED (25, 26, 27, 28, 29, 30)
+{470}{}{Øíkáš to tak kluzce... ale to dìlá had taky. MONÁ vím, kde je Lloyd, MONÁ nevím. Máš 500 etonù?}
+{000}{}{Moná. Záleí na tom, co pro mì máš.}
+
+# 33. GO ON . . . (32)
+{480}{}{MONÁ, e ten Lloyd ještì má, to, co mi patøí, není jistı, e mi to bude chtít dát. Take MONÁ - za 500 - bych ti MONÁ øekla, kde se právì teï poflakuje.}
+{000}{}{Dobøe. Tady je 500 etonù. Øekni mi, kde je.}
+{000}{}{Je to pøehnanı poadavek za samé "moná". Najdu ho na vlastní pìst.}
+
+# 34. NIKKI SETS PLAYER UP (33)
+{490}{}{(Bere si úplatek) Mrkni se do kotelny v Desparadovì suterénu. To je místo, kam ten èubèí syn utekl, kdy se to profláklo.}
+{000}{}{Pak je všechno v poøádku. Pozdìji, Nikki.}
+
+# 35. NIKKI TELLS PLAYER NOT TO AROUSE SUSPICION (WTG)
+{500}{}{Nechtìl bys odtud u vypadnout?! Lidé nás nesmí vidìt spolu tak dlouho, aby nezaèali kecat. Rozumìl jsi?}
+{000}{}{V poøádku. Pozdìji, Nikki.}
+
+# 36. NIKKI PISSED 2 (33)
+{510}{}{Jdi do háje! Nemám nic dalšího, co bych ti øekla.}
+{000}{}{Zlomila jsi mé srdce. Pozdìji, Nikki.}

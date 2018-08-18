@@ -1,0 +1,35 @@
+[comment]
+dialog dla guarda der
+pid:526,
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0#
+2 1010@
+2 2000 NOT_ANSWER_CLOSE_DIALOG 0&
+
+[russ]
+{100}{}{Солдат Рэбублики Пустынной Европы.}
+{200}{}{Видишь солдата Республики Пустынной Европы.}
+{210}{}{Видишь хорошо обученного солдата. Выглядывает на лицо готовое умереть за Рэпубликэ Пустынной Европы.}
+{1000}{}{Преддиалоговые установки}
+{1010}{}{-}
+{2000}{}{}
+
+[engl]
+{100}{}{DER woman guard}
+{200}{}{You see a DER woman guard.}
+{210}{}{You see an athletic woman wearing combat armor. She looks able to kick the shit out of any man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{}
+
+[pols]
+{100}{}{Їoіnierz Rebubliki Pustynnej Europy.}
+{200}{}{Widzisz kobiete, їoіnierza Republiki Pustynnej Europy.}
+{210}{}{Widzisz wysportowan№ kobiete, walacz№c№ po stronie Republiki.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{}

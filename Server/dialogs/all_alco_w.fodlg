@@ -1,0 +1,31 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Алкоголичка}
+{200}{}{Вы видите пьяную женщину.}
+{210}{}{Вы видите пьяную вдрабадан женщину в лохмотьях. Ее жалкий вид вызывает у вас отвращение.}
+{210}{}{Накидавшаяся алкоголичка. "Пьющая женщина - это отвратительно", думаете вы.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Drunken woman}
+{200}{}{You see a drunken woman.}
+{210}{}{You see a woman, drunk as a skunk. She's disgusting.}
+{210}{}{Drunken woman. You quickly realize that drunken women are disgusting.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Drunken woman}
+{200}{}{Widzisz pijaną kobietę}
+{210}{}{Widzisz kobietę, najebana już od rana. Jest ochydna.}
+{210}{}{Pijana kobieta. Szybko zdajesz sobie sprawę, że upite kobiety są obrzydliwe.}
+{1000}{}{Initial preferences}
+

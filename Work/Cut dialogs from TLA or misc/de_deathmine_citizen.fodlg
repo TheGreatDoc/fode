@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Wiesniak}
+{210}{}{Widzisz mieszkanca Death Mine.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?}
+
+[engl]
+{100}{}{Mine resident}
+{210}{}{You see a Death Mine resident.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hey.?@@The ore is getting harder to dig every day.@@How's it going?@@I'd be better off in Berlin.@@Oh yea?@@I imagine there are worse places than this... Right?@@My back is fucking killing me.@@No time to talk, got some work to do.@@What's a ref?@@Another fortune seeker, sheesh.@@London? What's that?@@I've seen some NEC scouts the other day.@@REF guys don't venture here... usually.@@Mining all day, drinking all nite.@@Ever been to Berlin?@@I don't give a damn about politcs.@@Something on your mind, stranger?@@Dig anything lately?@@Fucking rocks.@@Er...@@I need to get laid.@@Don't look at me like that.@@I need a new pick.@@When I'm done, I'm gonna pack this shit up and headin' to Bearline.@@This place ain't for pussies.@@This place ain't safe.@@Never been across the mountains.@@Luigi?@@Fuck this shit, I'm going back to my tent.@@I heard there's an oasis far north from Bearline.@@I could use some help you know?@@I used to be a soldier, and I tell you, mining is like a search-and-destroy mission.@@It's hard to make a living on this pile of rocks.@@Why the fuck should I care?@@Well, well, what do we have here?@@Everyday's the same.@@And you are...?@@NEC? Never heard of it.@@The story goes like that: rich get richer, poor get poorer.@@This is pointless.@@Why am I even talking to you?@@So what?@@No doves fly here.@@What the fuck is that?@@Heard anything interesting?}
+
+[russ]
+{100}{}{Mine resident}
+{210}{}{You see a Death Mine resident.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hey.?@@The ore is getting harder to dig every day.@@How's it going?@@I'd be better off in Berlin.@@Oh yea?@@I imagine there are worse places than this... Right?@@My back is fucking killing me.@@No time to talk, got some work to do.@@What's a ref?@@Another fortune seeker, sheesh.@@London? What's that?@@I've seen some NEC scouts the other day.@@REF guys don't venture here... usually.@@Mining all day, drinking all nite.@@Ever been to Berlin?@@I don't give a damn about politcs.@@Something on your mind, stranger?@@Dig anything lately?@@Fucking rocks.@@Er...@@I need to get laid.@@Don't look at me like that.@@I need a new pick.@@When I'm done, I'm gonna pack this shit up and headin' to Bearline.@@This place ain't for pussies.@@This place ain't safe.@@Never been across the mountains.@@Luigi?@@Fuck this shit, I'm going back to my tent.@@I heard there's an oasis far north from Bearline.@@I could use some help you know?@@I used to be a soldier, and I tell you, mining is like a search-and-destroy mission.@@It's hard to make a living on this pile of rocks.@@Why the fuck should I care?@@Well, well, what do we have here?@@Everyday's the same.@@And you are...?@@NEC? Never heard of it.@@The story goes like that: rich get richer, poor get poorer.@@This is pointless.@@Why am I even talking to you?@@So what?@@No doves fly here.@@What the fuck is that?@@Heard anything interesting?}

@@ -1,0 +1,57 @@
+# quick look
+{100}{}{Du siehst einen tollwütigen Boxfan.}
+
+# examine
+{150}{}{Du siehst einen wild aussehenden Mann. Er brüllt sich über irgend etwas die Seele aus dem
+ Leib.}
+{151}{}{Du siehst einen tollwütigen Boxfan. Er schreit nach Blut.}
+{152}{}{Du siehst eine wild aussehende Frau. Sie brüllt sich über irgend etwas die Seele aus dem
+ Leib.}
+{153}{}{Du siehst einen tollwütigen Boxfan. Sie schreit nach Blut.}
+
+# 1. FLOAT DIALOGUES [FAN=MALE, PC NOT A PRIZEFIGHTER]
+{201}{}{Jaaaaaaaaaaaaaaa!}
+{202}{}{Töte ihn, }
+{1202}{}{!}
+
+# 2. FLOAT DIALOGUES [FAN=MALE, PC = FEMALE OR MALE PRIZEFIGHTER]
+{256}{}{Du bist der Beste }
+{1256}{}{! Gib's ihm!}
+{257}{}{Töte ihn, }
+{1257}{}{!}
+
+# 3. FLOAT DIALOGUES [FAN=FEMALE, PC = PRIZEFIGHTER]
+{287}{}{Meine Güte! }
+{1287}{}{! Ein Autogramm!}
+{288}{}{Schlag mich! Schlag mich! Ich will meinen Kindern sagen können, daß du mich geschlagen
+ hast!}
+{289}{}{Du bist der Beste }
+{1289}{}{! Gib's ihm!}
+{290}{}{Töte ihn, }
+{1290}{}{!}
+
+# 4. CLICK DIALOGUES [FAN=FEMALE OR MALE, PC NOT A PRIZEFIGHTER]
+{324}{}{ ist der beste Boxchampion, den ich je gesehen habe.}
+
+# 5. CLICK DIALOGUES [FAN=MALE, PC = PRIZEFIGHTER]
+{351}{}{Ich hab etwas Schweiß von dir in einem Glas zu Hause.}
+{352}{}{Meine Güte! }
+{1352}{}{! Ein Autogramm!}
+{353}{}{Schlag mich! Schlag mich! Ich will meinen Kindern sagen können, daß du mich geschlagen
+ hast!}
+{354}{}{Du bist der Beste }
+{1354}{}{! Gib's ihm!}
+{355}{}{Du bist der Beste, }
+{1355}{}{!}
+
+# 6. CLICK DIALOGUES [FAN=FEMALE, PC = PRIZEFIGHTER]
+{385}{}{Meine Güte! }
+{1385}{}{! Ein Autogramm!}
+{386}{}{Schlag mich! Schlag mich! Ich will meinen Kindern sagen können, daß du mich geschlagen
+ hast!}
+{387}{}{Du bist der Beste }
+{1387}{}{! Gib's ihm!}
+{388}{}{Töte ihn, !}
+{1388}{}{!}
+{389}{}{Du bist der Beste, }
+{1389}{}{!}

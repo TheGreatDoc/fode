@@ -1,0 +1,6 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Nacházíš se na pastvinách pro brahmíny.}
+
+{200}{}{Brahmíny byli úspìšnì ochránìny.}
+{202}{}{Nepovedlo se ti pomoci Torrovi a ochránit všechny brahmíny.}

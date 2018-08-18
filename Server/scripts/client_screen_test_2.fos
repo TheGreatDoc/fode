@@ -1,0 +1,52 @@
+// Client GUI mod v0.3
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+
+class ShowButton : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		::ShowScreen(CLIENT_SCREEN_TEST_2,3,3,3);
+	}
+}
+
+
+void InitTestScreen2()
+{
+	ShowButton aShowButton;
+	IGUIElementOpt@ przyciskUkazujacyOkno=  cast<IGUIElementOpt>(GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, 120, 0)
+		.UpPic("opbtnoff.frm")
+		.DownPic("opbtnon.frm")
+		.Text("Show Test", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(aShowButton));
+	przyciskUkazujacyOkno.setAbsolutePosition(true);
+
+	GUI_CreateScreen(CLIENT_SCREEN_TEST_2,"prfxout.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+		.CloseOnMiss(true)
+		.SizeByMultipleImages(10, 20);
+
+	GUI_AddButton(CLIENT_SCREEN_TEST_2, 20, 10)
+		.UpPic("opbtnoff.frm")
+		.DownPic("opbtnon.frm")
+		.Text("Avant", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1);;
+
+	GUI_AddButton(CLIENT_SCREEN_TEST_2, 20, 50)
+		.UpPic("opbtnoff.frm")
+		.DownPic("opbtnon.frm")
+		.Text("Cubic2k", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1);
+
+	GUI_AddButton(CLIENT_SCREEN_TEST_2, 20, 90)
+		.UpPic("opbtnoff.frm")
+		.DownPic("opbtnon.frm")
+		.Text("Daxman", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1);
+}

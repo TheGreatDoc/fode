@@ -1,0 +1,50 @@
+[comment]
+Ksiadz w nec, druga czesc pierwszego qesta NEC.
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 D _var p de_quest_nec_start = 30 R _script quest_server_scripts@first_quest_blue_30_to_80 0  #
+0 2020 @
+3 3000 None 0 #
+0 3010 #
+0 3020 &
+
+[pols]
+{100}{}{Priest}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Czego tu szukasz przybyszu.}
+{2010}{}{Przyszal mnie Albert mam wiadomosc dla ciebie.}
+{2020}{}{Nic tylko przechodze.}
+{3000}{}{Dziekuje, wroc do niego moze sypnie ci cos grosza.}
+{3010}{}{Ok, musze isc.}
+{3020}{}{Dzieki narazie.}
+
+[engl]
+{100}{}{Priest}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Welcome, welcome in the house of God! What are you loking for, wastelander?}
+{2010}{}{I have a message for you, Father, Albert sent me.}
+{2020}{}{Nothing, just passing by.}
+{3000}{}{Thank you, son. Go back to him, maybe he'll reward you for this.}
+{3010}{}{Ok, I need to go.}
+{3020}{}{Thank you, goodbye.}
+
+[russ]
+{100}{}{Priest}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{What are you loking westlander?}
+{2010}{}{Albert send me, i have message for you.}
+{2020}{}{Nothing, i am just passing.}
+{3000}{}{Back to him, maybe give you something money.}
+{3010}{}{ok, i need to go}
+{3020}{}{Thank you, bey}
+

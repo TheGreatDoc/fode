@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Klient Baru}
+{200}{}{Widzisz klieta baru. Wyglada jak by siedzial tu juz od dluzszego czasu.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say on head}
+{2000}{}{Slyszalem wielokrotnie, ze w Moskwie maja lepsze piwo@@NEC... REF... co za roznica?@@London? Bezpieczne miejsce, ale browar jest do pizdy@@Wypierdalaj z tad@@Znowu piles?@@Wypij ze mna@@Uwazaj, barman lubi szczac do piwa.@@Smakuje jak siury.@@Myslales moze ... Ze ty i ja... razem... gdzies...?@@Teraz nie mam czasu.@@Ty ciagle tu?@@Czemu zycie jest do bani?@@Przestan klikac mnie w glowe!@@I co z tego? Edi tez z nim spal.@@Wydaje mi sie ze wszyscy na nas patrza.@@Nie stoj kolo mnie, pomysla ze jestesmy razem.@@Zajebista imprezka co nie!@@Harry kto?@@Jaki suplement?@@Syfilis? Myslalem, ze juz cos takiego mam.@@Chcesz dolaczyc?@@Piwo dla wszystkich!@@Wiem ze masz zultaczke.@@Znam cie?@@Chyba jestem chory.@@Nie wygladasz za dobrze.@@Odejsz odemnie.@@Myslalem, ze ja jestem brzydki.@@Lepiej zobacz sie w lustrze.@@Mowil Ci ktos, jak jestes brzydki?@@Mowil Ci ktos, ze jestes piekny?@@On mnie nie kocha.@@Widzial ktos moje klucze?@@Ktore to jest piwo?@@Pssss pssyy... gdzies tam stoji dev.@@Pssss pssyy... nie obracaj sie.@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Loda? nie ma chuja!@@Ja Cie zaraz zaczepie... Spierdalaj@@Skad moglem wiedziec ze ma 14 lat@@Nie wiedzialem ze miala 15 lat@@Kto jest glodny?}
+
+[engl]
+{100}{}{Bar patron.}
+{200}{}{You see a typical barfly.@@You see a bar patron.@@You someone who's had enough booze for today.@@You see a completely intoxicated person.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say on head}
+{2000}{}{I heard they gots better beer in Bearline.@@Bollocks!@@NEC... REF... who cares? All I want is to get wasted in peace.@@London? Good place to work, bad place to drink.@@Fuck off.@@Ain't got a quid@@Is that a roach in my drink?@@Drink some with me,lads!@@There's more water than beer.@@Tastes like dog piss.@@Any plans for tonite?@@I don't have time for your antics.@@This is my tenth beer, and I'm still sober.@@Why does everything have to be so hard?@@Someone nicked my beer!@@Whoa, did you see her knockers?@@Stop botherin' meh you twat.@@So what? Everyone slept with her.@@I don't have time to waffle.@@Bugger off, you're ruining my evening.@@Amazing party! Pukefest!@@What's a tea?@@Nuka cola is stronger than this shit.@@Syphilis? You new here?@@I'm bladdered,@@Wanna join me?@@Time is never wasted when you're wasted all the time.@@What's that on your face?@@Do I know you?@@My intestines cry for help...@@Draft beer, not people.@@Get lost, punk!@@What an arsehole.@@You'd better take a look in the mirror...@@God's not dead, he's drunk.@@Anyone tell you that you're pretty?@@Bonkers, I'm outta cash.@@Has anyone seen my shoes?@@Hyia, mate!@@I want more beer!@@Shut your piehole, the Devs are watching.@@Pssssst, over here.@@Ever drank a rat cocktail?@@Blowjob? What am I gonna get outta this?@@I don't feel so good.@@I swear, she said she was 18!@@Where did the ladies go?@@Who's thirsty, mates?}
+
+[russ]
+{100}{}{Bar patron.}
+{200}{}{You see a typical barfly.@@You see a bar patron.@@You someone who's had enough booze for today.@@You see a completely intoxicated person.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say on head}
+{2000}{}{I heard they gots better beer in Bearline.@@Bollocks!@@NEC... REF... who cares? All I want is to get wasted in peace.@@London? Good place to work, bad place to drink.@@Fuck off.@@Ain't got a quid@@Is that a roach in my drink?@@Drink some with me,lads!@@There's more water than beer.@@Tastes like dog piss.@@Any plans for tonite?@@I don't have time for your antics.@@This is my tenth beer, and I'm still sober.@@Why does everything have to be so hard?@@Someone nicked my beer!@@Whoa, did you see her knockers?@@Stop botherin' meh you twat.@@So what? Everyone slept with her.@@I don't have time to waffle.@@Bugger off, you're ruining my evening.@@Amazing party! Pukefest!@@What's a tea?@@Nuka cola is stronger than this shit.@@Syphilis? You new here?@@I'm bladdered,@@Wanna join me?@@Time is never wasted when you're wasted all the time.@@What's that on your face?@@Do I know you?@@My intestines cry for help...@@Draft beer, not people.@@Get lost, punk!@@What an arsehole.@@You'd better take a look in the mirror...@@God's not dead, he's drunk.@@Anyone tell you that you're pretty?@@Bonkers, I'm outta cash.@@Has anyone seen my shoes?@@Hyia, mate!@@I want more beer!@@Shut your piehole, the Devs are watching.@@Pssssst, over here.@@Ever drank a rat cocktail?@@Blowjob? What am I gonna get outta this?@@I don't feel so good.@@I swear, she said she was 18!@@Where did the ladies go?@@Who's thirsty, mates?}

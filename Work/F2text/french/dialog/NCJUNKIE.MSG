@@ -1,0 +1,134 @@
+# QUICK LOOKS
+{100}{}{Tu vois un junkie qui a l'air mal en point.}
+{101}{}{Tu vois un junkie qui a l'air hyperactif.}
+
+# EXAMINES
+# 1. [MALE, CRASH AND BURN]
+{150}{}{Tu vois un junkie qui a l'air mal en point. Il se déplace très lentement.}
+{151}{}{Tu vois un junkie qui a l'air mal en point. Il doit être malade.}
+{152}{}{Tu vois un junkie qui a l'air mal en point. Il est maigre comme un clou.}
+{153}{}{Tu vois un junkie qui a l'air mal en point. Il te dévisage d'un oeil trouble.}
+{154}{}{Tu vois un junkie qui a l'air mal en point. Il a les yeux si injectés qu'on croirait qu'il va pleurer du sang.}
+{155}{}{Tu vois un junkie qui a l'air mal en point. Au moindre geste, il grimace comme si on lui enfonçait des aiguilles dans tout le corps.}
+{156}{}{Tu vois un junkie qui a l'air mal en point. Il a des poches sous les yeux et semble souffrir.}
+# 2. [MALE, HIGH ON JET]
+{160}{}{Tu vois un junkie. Il sourit d'extase.}
+{161}{}{Tu vois un junkie. Il a un vague sourire et danse sur un rythme inaudible.}
+{162}{}{Tu vois un junkie. Il regarde dans le vague.}
+{163}{}{Tu vois un junkie. Il sourit et adresse un salut à quelque chose juste derrière toi.}
+{164}{}{Tu vois un junkie. Il n'arrête pas de se toucher la figure et de marmonner.}
+{165}{}{Tu vois un junkie. Il a des cernes, mais il sourit comme s'il venait de gagner au loto.}
+# 3. [FEMALE, CRASH AND BURN]
+{170}{}{Tu vois une junkie qui a l'air mal en point. Elle se déplace très lentement.}
+{171}{}{Tu vois une junkie qui a l'air mal en point. On dirait qu'elle n'a pas mangé depuis des mois.}
+{172}{}{Tu vois une junkie qui a l'air mal en point. Elle est maigre comme un clou.}
+{173}{}{Tu vois une junkie qui a l'air mal en point, les yeux morts.}
+{174}{}{Tu vois une junkie qui a l'air mal en point. Elle te regarde d'un air affamé.}
+{175}{}{Tu vois une junkie qui a l'air mal en point. Elle a les yeux injectés de sang.}
+{176}{}{Tu vois une junkie qui a l'air mal en point. Au moindre geste, elle grimace comme si on lui enfonçait des aiguilles dans tout le corps.}
+{177}{}{Tu vois une junkie qui a l'air mal en point. Elle a des poches sous les yeux et semble souffrir.}
+# 4. [FEMALE, HIGH ON JET]
+{180}{}{Tu vois une junkie. Elle sourit d'extase.}
+{181}{}{Tu vois une junkie. Elle pleure en souriant.}
+{182}{}{Tu vois une junkie. Elle sourit et danse sur un rythme inaudible.}
+{183}{}{Tu vois une junkie. Elle regarde dans le vague et soupire.}
+{184}{}{Tu vois une junkie. Elle sourit et adresse un salut à quelque chose juste derrière toi.}
+{185}{}{Tu vois une junkie. Elle se gratte sans cesse le dos de la main.}
+{186}{}{Tu vois une junkie. Elle oscille dans tous les sens et tient à peine debout.}
+{187}{}{Tu vois une junkie. Malgré ses habits en haillons, elle sourit, comme si elle venait de gagner au loto.}
+
+# FLOAT DIALOGUE:
+# 5. JUNKIE=WASTED; ENCLAVE DESTROYED IS TRUE
+{200}{}{::Crie de joie, puis grimace::}
+
+# 6. JUNKIE=STONED; ENCLAVE DESTROYED IS TRUE
+{211}{}{Tu es la vedette... heu, la vedette machin. Tu es la vedette MACHIN !}
+{212}{}{, tu es mieux que le JET !}
+
+# 7. JUNKIE = WASTED
+{220}{}{Ma tête...}
+{221}{}{Ca... ça ne peut plus durer comme ça...}
+{222}{}{Tu as vu Jules dans le coin ? Il me faut ma dose.}
+
+# 8. JUNKIE = HIGH
+{243}{}{Trop de lumière, ça me brûle les yeux, ça brûle...}
+{244}{}{La lumière... trop vive... ::Fond en larmes::}
+{245}{}{Jolie rue. Joli mur. Joli trip.}
+{246}{}{Oh... où est passé le ciel... ?}
+{247}{}{Si mes fringues arrêtent pas de me parler, il va falloir que je me désape.}
+
+# 9. JUNKIE=WASTED; ENCLAVE DESTROYED IS TRUE
+{272}{}{Super. Je planais trop pour voir ce que tu as fait, mais j'imagine que c'était bien.}
+{273}{}{L'Enclave a du Jet ?}
+{274}{}{Je n'existe que d'après la création de Chris Avellone et un scénario de Tom French. Techniquement, je ne suis donc pas responsable de mon besoin de Jet permanent.}
+
+# 10. JUNKIE=STONED; ENCLAVE DESTROYED IS TRUE
+{291}{}{Tu es la vedette... heu, la vedette machin. Tu es la vedette MACHIN !}
+{292}{}{, tu es mieux que le JET !}
+{293}{}{JE T'AIME ! Tu es HEROIQUE ! CARREMENT HEROIQUE. VIENS, QUE JE T'EMBRASSE !}
+{294}{}{Je n'existe que d'après la création de Chris Avellone et un scénario de Tom French. Techniquement,\ je ne suis donc pas responsable de mon besoin de Jet permanent.}
+
+# CLICK DIALOGUE:
+# 11. JUNKIE = WASTED, PLAYER = POWER ARMOR
+{322}{}{Oh, mes hallus sont de pire en pire. Maintenant, je vois des gens en métal qui me parlent !}
+{323}{}{::Tape sur ton armure:: Allô ? Y a quelqu'un ?}
+
+# 12. JUNKIE = WASTED, PLAYER = SLAVER
+{353}{}{Je serai ton esclave si tu me donnes un peu de Jet.}
+
+# 13. JUNKIE = WASTED, PLAYER = PRIZEFIGHTER OR MADE MAN
+{360}{}{C'est toi la bête de combat ? T'as des jetons à me prêter ?}
+
+# 14. JUNKIE = MALE, WASTED, PLAYER = NO REP OR PORN STAR
+{380}{}{Hé, frérot, tu peux m'aider à planer ?}
+{381}{}{P'pa ?}
+{382}{}{Allez, s'te plaît, juste quelques jetons...}
+{383}{}{T'aurais pas quelques jetons ?}
+{384}{}{Hé, la frangine, tu peux m'aider à planer ?}
+{385}{}{Allez, mam'zelle, juste quelques jetons...}
+{386}{}{Hé, heu, t'aurais un peu de Jet, mam'zelle ?}
+{387}{}{M'man ?}
+
+# 15. JUNKIE = FEMALE, WASTED, PLAYER = MALE, NO REP OR PORN STAR
+{420}{}{Hé, frérot, tu peux m'aider à planer ?}
+{421}{}{Pssst. Tu peux me passer un peu de Jet ?}
+{422}{}{Je peux t'emprunter quelques jetons... ? Je te les rendrai.}
+{423}{}{Hé, heu, tu aurais un peu de Jet ? Mec, il faut que je *plane*, tu vois ce que je veux dire ?}
+{424}{}{Hé, heu, la frangine, t'aurais un peu de Jet ?}
+{425}{}{Dis, j'ai besoin de planer, tu vois ce que je veux dire ?}
+{426}{}{Non, j'ai arrêté la dope. Pourquoi, tu achètes ?}
+
+# 16. ANY STONED REACTION, POWER ARMOR
+{452}{}{Oh ! Un humain en métal ! Et qui me parle !!}
+{453}{}{J'aurais besoin de quelques doses de Jet en plus pour songer à te chercher des crosses.}
+
+# 17. ANY STONED REACTION, ANY SLAVER OR PRIZEFIGHTER
+{470}{}{Hé, l'esclavagiste, quoi de neuf ?}
+{471}{}{Essaie de me rattraper, esclavagiste !}
+{472}{}{Tu me cherches des crosses, sale esclavagiste ? Je suis un réacteur gonflé au Jet ! Je vais te botter le train !}
+{473}{}{Tu veux planer avec moi ?}
+{474}{}{Hé, champion, quoi de neuf ?}
+{475}{}{Tu me cherches des crosses, champion ? Je suis un réacteur au Jet ! Je vais te botter les fesses !}
+
+# 18. ANY STONED REACTION TO MADE MAN
+{500}{}{Oh ! Un membre de gang à l'horizon !}
+{501}{}{Je te vois à peine, tout là-bas, gangster, je plane trop haut.}
+
+# 19. ANY STONED REACTION TO DRUGGED PLAYER
+{520}{}{Ouf ! A quoi tu planes, toi ? Tu en as un peu pour moi ?}
+{521}{}{Je croyais que c'était *moi* qui avais la tête à l'envers.}
+
+# 20. ROBOBRAIN OR MARCUS
+{530}{}{Mec, ne te retourne pas, là, mais il y a un cerveau dans une boîte qui te suit.}
+{531}{}{Ouf ! J'ai dû prendre une vraie saloperie... Je vois des mutants partout !}
+
+# 21. STONED MALE REACTION TO COMP: SULIK OR NO REP AT ALL
+{562}{}{Oooh hé ! Ton ami, là, il sait qu'il a un os qui lui sort du nez ?}
+{563}{}{Tu en veux un peu ? Hein ?}
+
+# use jet on junkie dialog
+{601}{}{Hum...}
+
+# endings for middle insertion dialogs
+{796}{}{ ! D'ENFER !!! ET ENSUITE, BEBE, ET ENSUITE ???}
+{871}{}{ ? Tu peux me filer un peu de Jet ?}

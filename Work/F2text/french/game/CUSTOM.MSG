@@ -1,0 +1,69 @@
+#
+# Messages used in gdialog.c for custom NPC combat control.
+#
+{0}{}{Rafales}
+{1}{}{Fuite}
+{2}{}{Armes préf.}
+{3}{}{Distance}
+{4}{}{Cible}
+{5}{}{Stimulants}
+
+{10}{}{Fait}
+{11}{}{Annuler}
+
+#
+# Burst options.
+#
+{99}{}{Non applicable.}
+{100}{}{Toujours !}
+{101}{}{Peu importe si je me fais toucher.}
+{102}{}{Attention à ne pas me toucher.}
+{103}{}{Fais bien attention à ne pas me toucher.}
+{104}{}{Attention à ne surtout pas me toucher.}
+
+#
+# Run away options.
+#
+{200}{}{Si tu es un horrible lâche.}
+{201}{}{Si ton doigt te fait mal.}
+{202}{}{Si tu saignes un peu.}
+{203}{}{Si tu ne te sens pas bien.}
+{204}{}{Si tu as besoin d'un garrot.}
+{205}{}{Jamais !}
+
+#
+# Weapon pref options.
+#
+{300}{}{Aucune}
+{301}{}{De rixe}
+{302}{}{De rixe plutôt que longue portée}
+{303}{}{Longue portée plutôt que de rixe}
+{304}{}{Longue portée}
+{305}{}{Pas d'arme}.
+
+#
+# Distance options.
+#
+{400}{}{Reste près de moi.}
+{401}{}{A l'attaque !}
+{402}{}{Canarde l'ennemi.}
+{403}{}{En lâché.}
+{404}{}{Reste où tu es.}
+
+#
+# Attack who options.
+#
+{500}{}{Mon attaquant.}
+{501}{}{Le plus fort.}
+{502}{}{Le plus faible.}
+{503}{}{Qui tu veux.}
+{504}{}{Le plus proche.}
+
+#
+# Chem use options.
+#
+{600}{}{Je ne prends rien.}
+{601}{}{Stimpacks dès que ça fait mal.}
+{602}{}{Stimpacks quand ça fait très mal.}
+{603}{}{En utiliser par moment.}
+{604}{}{En prendre à tout moment.}

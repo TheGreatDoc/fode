@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Mieszkaniec}
+{210}{}{Widzisz mieszkanca industrial center.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?}
+
+[engl]
+{100}{}{Inhabitant}
+{210}{}{You see inhabitant of this industrial center.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Get lost.@@I give a fuck.@@Worst place to live, I tell ya.@@Gett outta here if you don't wanna get shot. @@Yeah, so?@@You with NEC or somethin'?@@No shit.@@Merde...@@C'est impossible!@@I don't trust you.@@Safe? Here?@@I don't have time for your bullshit.@@Buzz off.@@Funny you.@@NEC, freck.@@Yeah, I'm so happy I'm gonna puke.@@Not really in the mood for a chat.@@Welcome to the shittiest place on earth.@@Do I know you, stranger?@@Spare some change?@@You have smokes?@@Got a light?@@What's that?@@What are you doing here, you lost!@@Don't stare at me like that!@@Those damn fleas won't lemme sleep.@@Pigrats for dinner?@@I never seen you before, you new?@@Buzz off.@@Dogshit everywhere, fuck.@@The world has ended, but misery hasn't.@@I can't sleep with all that racket.@@I wonder how could it be that this place hasn't been torn to pieces already.@@Gangs often show up here  sometimes.@@Who are you?@@I'll give you a piece of advice, get the fuck outta here as fast as you can.@@What do you want?@@I don't trust you.@@I long for a brahmin steak...@@Ever been to Bearline?@@I heard Bearline is thriving.@@Ever been to Lunn Donne?@@What I'm doing is my business, get outta my sight.@@Who cares? The meat is tasty.@@This place is goin' down under.@@Hi there.@@Fuck, fuckin' fuckedity fuck.@@I just love this place. Not.@@I wish I could leave this shithole.@@I ain't got time for ya.@@Go pester someone else.@@You smell like teen spirit.@@I always wanted to see Loandone.@@You've mistaken me with someone else, mister.@@Bugger.@@Leave me be!}
+
+[russ]
+{100}{}{Inhabitant}
+{210}{}{You see inhabitant of this industrial center.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Get lost.@@I give a fuck.@@Worst place to live, I tell ya.@@Gett outta here if you don't wanna get shot. @@Yeah, so?@@You with NEC or somethin'?@@No shit.@@Merde...@@C'est impossible!@@I don't trust you.@@Safe? Here?@@I don't have time for your bullshit.@@Buzz off.@@Funny you.@@NEC, freck.@@Yeah, I'm so happy I'm gonna puke.@@Not really in the mood for a chat.@@Welcome to the shittiest place on earth.@@Do I know you, stranger?@@Spare some change?@@You have smokes?@@Got a light?@@What's that?@@What are you doing here, you lost!@@Don't stare at me like that!@@Those damn fleas won't lemme sleep.@@Pigrats for dinner?@@I never seen you before, you new?@@Buzz off.@@Dogshit everywhere, fuck.@@The world has ended, but misery hasn't.@@I can't sleep with all that racket.@@I wonder how could it be that this place hasn't been torn to pieces already.@@Gangs often show up here  sometimes.@@Who are you?@@I'll give you a piece of advice, get the fuck outta here as fast as you can.@@What do you want?@@I don't trust you.@@I long for a brahmin steak...@@Ever been to Bearline?@@I heard Bearline is thriving.@@Ever been to Lunn Donne?@@What I'm doing is my business, get outta my sight.@@Who cares? The meat is tasty.@@This place is goin' down under.@@Hi there.@@Fuck, fuckin' fuckedity fuck.@@I just love this place. Not.@@I wish I could leave this shithole.@@I ain't got time for ya.@@Go pester someone else.@@You smell like teen spirit.@@I always wanted to see Loandone.@@You've mistaken me with someone else, mister.@@Bugger.@@Leave me be!}

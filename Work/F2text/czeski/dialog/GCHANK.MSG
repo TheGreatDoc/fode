@@ -1,0 +1,62 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš ozáøeného ghoula s ustaranım vırazem ve tváøi.}
+{101}{}{Vidíš ozáøeného ghoula Hanka, pracuje v elektrárnì jako dìlník.}
+{102}{}{Vidíš ozáøeného ghoula, jak kontroluje nìjaké pøístroje.}
+
+{110}{}{Ahoj, já jsem Hank. Starám se o vnitøek jádra reaktoru. I kdy tu vìtšinou není moc práce.}
+{111}{}{Ahoj, je hezké, e jsi mì znovu navštívil. Tak blízko jádra je pøíjemnì teplouèko, e jo? Vìtšinu hezounù to ale nezajímá.}
+{112}{}{Ahoj, Hanku. Potøebuju se dostat dovnitø do reaktoru.}
+{113}{}{Hanku, mám od Harolda zprávu o chlazení. Mìl by ses na ni podívat. Tady je.}
+{114}{}{Nazdar Hanku. Jenom procházím. Zatím.}
+
+{120}{}{He, he. Tak to bych ti neradil, hezoune. Usmaíš se na škvarek. Já mám teplíèko rád, ale tobì to fakt nedoporuèuju. Je tam fakt dost hic a taky radiace. Kvùli tomu hezouni co postavili tohle místeèko, pouívali na údrbu robota.}
+{121}{}{Robota?}
+{122}{}{Aha, díky. Zatím.}
+
+{130}{}{Tak se na to mrkneme. Podle tohohle, je to chlazení dost pøepísknutı. Myslel jsem, e kdy ho vypnu, tak se mi to okamitì roztaví pod rukama, ale asi ne. Radši bych to mìl jít vypnout hned teï.}
+{131}{}{Podle zprávy je naše chlazení zbyteènì velkı. Radši bych ho mìl jít hned vypnout, co myslíš?}
+{132}{}{Myslí ti to, Hanku. Já u musím jít. Mìj se.}
+{133}{}{Kdy o tom tak pøemıšlím, moná bys mìl chvilku poèkat. Ne vypneš to chlazení, ještì si pùjdu promluvit s Haroldem. Zatím.}
+
+{140}{}{Jasnì, hezounci co to tady postavili se taky nechtìli usmait, tak sem dali robota. Je urèenı k tomu, aby provádìl bìnou údrbu. Ovládá se dálkovì z terminálu v západní místnosti.}
+{141}{}{To je perfektní. Mohlo by se to hodit.}
+{142}{}{Na to se musím podívat. Zatím.}
+
+{150}{}{Hezká vìcièka, co máš u sebe. Pøesnì tohle potøebujeme.}
+{151}{}{To mám radost. Chceš ji nainstalovat?}
+{152}{}{To jo, ale mì se hodí taky. Nashle.}
+
+{160}{}{Rád bych ti pomohl, ale fakt nevím, jak nainstalovat nìco takovıho. Víš, já vìtšinou jenom sleduju tady ty pøístroje. Ale zkus Festuse. Je to náš génius pøes souèástky -- zeptej se jeho.}
+{161}{}{A kde Festuse najdu?}
+{162}{}{A nešlo by to udìlat nìjak jinak?}
+{163}{}{Fajn. Mìj se.}
+
+{170}{}{Tak co øíkal Festus? Nainstaluje tu souèástku?}
+{171}{}{A kde vlastnì je?}
+{172}{}{A nešlo by to udìlat nìjak jinak?}
+{173}{}{Ještì ne. Moná se do toho pustím osobnì. Zatím.}
+
+{180}{}{Právì jdeš pøiblinì odtamtud. Je v øídící místnosti. Nemùeš ho minout... je to smraïoch, ufòukanec, co sotva zvládá svoje nabubøelı ego. Ale snad by ti mohl pomoct.}
+{181}{}{Díky. Mìj se.}
+
+{190}{}{No, kdy zvládneš ovládání robota, mùeš to nainstalovat i bez cizí pomoci. Nebo prostì jdi dovnitø a nainstaluj to osobnì.}
+{191}{}{Robota?}
+{192}{}{Nainstalovat to osobnì?}
+
+{200}{}{Víš, poslední dobou to nedìlá dobrotu. Poøád se to nìjak pøehøívá. Ale stejnì to nepouíváme, take se ani nesnaíme opravit na tom tepelnı štít. Jestli ale pøijdeš na ovládací kódy a nebudeš to moc pøehánìt moná se ti podaøí, aby to dìlalo to co má.}
+{201}{}{Dík. Zatím.}
+
+{210}{}{Díky za opravení reaktoru.}
+{211}{}{Jak to vypadá s tím chlazením?}
+{212}{}{Díky za pomoc.}
+
+{220}{}{Ještì jsem to neslyšel takhle bzuèet.}
+{221}{}{Vrní jako koátko.}
+{222}{}{Jede lépe, ne kdy jindy.}
+
+{230}{}{Stùj tady a hlavnì na nic nesahej.}
+{231}{}{Jak ses sem dostal?}
+{232}{}{Proè se neprojdeš, tøeba támhletìma dveøma?. hnoucí díra, hezká-fakt hezká. He, he.}
+
+{300}{}{Pøesvìdèil jsi Hanka aby spustil pøehøátí reaktoru.}
+{900}{}{Nevidíš, e nemám èas?}

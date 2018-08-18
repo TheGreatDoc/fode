@@ -1,0 +1,45 @@
+[comment]
+Aaoe eiiiaioa?ee / Your comments.
+
+[data]
+lang=russ engl pols germ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 &
+
+[russ]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{Do you have a Problem?@@Fuck off!@@Either Buy something or Get the Fuck Off here!@@Need something?@@Tell your little Friends I have the Best Stuff here!}
+
+[engl]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Do you have a problem? My warez can take care of it.@@Fuck off!@@Either buy something or get the fuck outta here!@@Need a fix?@@Tell your little friends I have the best stuff!@@Need a quick fix?}
+
+[pols]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Do you have a Problem?@@Fuck off!@@Either Buy something or Get the Fuck Off here!@@Need something?@@Tell your little Friends I have the Best Stuff here!}
+
+[germ]
+{100}{}{none}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{Do you have a Problem?@@Fuck off!@@Either Buy something or Get the Fuck Off here!@@Need something?@@Tell your little Friends I have the Best Stuff here!}
+

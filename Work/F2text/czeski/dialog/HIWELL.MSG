@@ -1,0 +1,67 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš Broken Hillskou mìstskou studnu.}
+{101}{}{Mìstská studna je postavena ze starıch rozbitıch cihel. Táhne z ní pìknej smrad.}
+{102}{}{Pamatujíce se, co øíkal Typhon o pokladu, nìkde na "nenaleznutelném místì" a o "nìèem co nechce bıt nalezeno", sis poøádnì provìøil vchod do studny. Na jednom místì, jsi zahlédl cihlu, která trochu vyènívá z obloení.}
+{103}{}{Ahojky! Pokládku!}
+{104}{}{Cha-cha! Budu bohatej!}
+{105}{}{Lehce si vytáhl cihlu ze zdi a upøel si pohled do temnoty na svou koøist.}
+{106}{}{Kdepak to asi bude?}
+{107}{}{Hmm... tady je tma jak v prdeli.}
+{108}{}{Zahodil's kousek cihly, aby sis uvolnil ruce.}
+{109}{}{Jupíííí! Penízky.}
+{110}{}{Haha! Je èas vybrat svùj vklad!}
+{111}{}{Náhle jsi zahlédl provázek mizící ve tmì. Na jednom jeho konci je uvázanı nìjakı pytlíèek a na druhém cihla, kterou si zahodil. Jeliko jsi zbrklej tak budeš mít pìknej prd a né poklad.}
+{112}{}{Do prdelní díry!}
+{113}{}{Sakra! To smrdí!}
+{114}{}{Jasnì, e to smrdí. Asi budeš muset najít jinou cestu, jak dostat poklad ze studny. Jsi trochu velkı, abys slezl do studny. Asi budeš potøebovat nìèí pomoc.}
+{115}{}{Na to, abys tam vlezl jsi moc velkı.}
+{116}{}{To asi né, na to sem moc velkı.}
+{117}{}{O...pøíteli, to není...uh...to, co sem mìl zrovna na mysli.}
+{118}{}{Pojï, prcku!}
+{119}{}{Malı lidé, já mám rád malé lidi.}
+{120}{}{Smìle dovnitø, Skøítku Dzine.}
+{121}{}{Vedeš si skvìle! Jenom to vydr.}
+{122}{}{V pohodì. U sem....BUCH...dole. Trochu to tu smrdí! OK. Sem tu... ANO!}
+{123}{}{Máš prašulky?!}
+{124}{}{Máš je?!}
+{125}{}{Jasòaèka u je mám! Mùj boe! Ten pytlík je ale VELKİ! Ten staroch neertoval. Musí v tom bejt pìkná vata!}
+{126}{}{NAVAL!!!}
+{127}{}{Pøiva ho na provaz! Vytáhnu tì!}
+{128}{}{Ale no tak! A ty pak uteèeš i s mım podílem? To si nemyslím! Jen mì nech a to spoèítám.}
+{129}{}{OK.}
+{130}{}{Co dìlat. Stejnì neuteèeš.}
+{131}{}{Otvírám to. Je to... je to nádherné! A jak to svítí! To je prostì...prostì.... och...}
+{132}{}{Jakı och?}
+{133}{}{Øíkal jsi 'och'? Proè øíkáš 'och'?}
+{134}{}{Tak... zapomeò na to! [chichot]... podívej se sám.}
+{135}{}{[Micky uvázal pytel na provaz a tys ho vytáhl nahoru, je fakt tìkı... Micky asi udìlal chybu.]}
+{136}{}{Podívej, podívej!}
+{137}{}{Podíváme se copak to tu máme.}
+{138}{}{[Bláznivì rychle jsi otevøel pytlík a adrenalin v tobì divoce pumpoval. Otoèil's látku vzhùru nohama, abys objevil.....]}
+{139}{}{??????}
+{140}{}{Co je to?}
+{141}{}{10000 víèek.}
+{142}{}{Víèek?!}
+{143}{}{Víèka od flašek?!}
+{144}{}{Tak to docela, nasere. Ale furt lepší, ne drátem do oka. Tak jdem!}
+{145}{}{Ten starej ghoul si z nás udìlal srandu! Ha Ha!}
+{146}{}{Ten starej prd mì docela doral! Chtìl, abych se zdroval hledáním cetek tady kolem, aby se mi mohl smát!}
+{147}{}{Uh... pøíteli? Potøebuju pomoct!}
+{148}{}{No urèitì vìdìl... e s tím trochu èasu strávím, asi tolik, abych mu dìlal pìknıho kašpárka!}
+{149}{}{Hele... podívej. Je tady pár docela zajímavejch pohádek o tomhle místì. Mohl by sis pospíšit?}
+{150}{}{Typhon moná ví, e u jsou dneska k nièemu, e jo?}
+{151}{}{Krucinál! Leze na mì! POMOC!}
+{152}{}{Je od tebe fakt pìkné, es mi pomohl. On si chudák staroch asi opravdu myslel, e mì to udìlá šastnìjším, asi na nìj a tak zlej. ::povzdech:: Ale dost u o tom, ještì bych se nìkam rád podíval.}
+{153}{}{::Kník::}
+{154}{}{U o tu studnu nemám strach.}
+{155}{}{Hmmmm... Mám takovej divnej pocit, e jsem si nìco zapomnìl v tı studnì. No radìji se podívám.}
+{156}{}{Mùe mi nìkdo odsud laskavì pomoct?}
+{157}{}{POMOC!!!}
+{158}{}{Ooooch! Mám hlad!}
+{159}{}{Leze na mì! Ó Boe!}
+{160}{}{Stejnì tì nakonec dostanu!}
+{161}{}{O mùj boe!!}
+{162}{}{[písk] Kdy se bojím [brrrr] zpívám si tuhle veselou písnièku... [písk]}
+{163}{}{Tak...blázním...právì...teï!}
+{164}{}{Pøedpokládám, e by bylo docela na èase, zeptat se na tu tajnou chodbu.}
+{165}{}{Co se to tam nahoøe dìje?}

@@ -1,0 +1,27 @@
+# 0. LOOK
+{150}{}{Tu vois un mécanicien couvert de graisse. }
+{151}{}{Tu vois un des gars de « A l'entrecôte ».}
+{152}{}{Tu vois un mécanicien à l'air sournois. Tu peux à peine distinguer ses traits sous la graisse et l'huile.}
+
+# 1. FLOAT OR CLICK DIALOGUES [POWER ARMOR] (WTG)
+{200}{}{Ca alors ! *Gulp* Regardez ce qui vient d'entrer !}
+
+# 2. FLOAT/CLICK TEXT [PORN STAR/CHR > 5, FEMALE] (WTG)
+{221}{}{Oh. On n'a pas beaucoup de visiteurs. Qu'est-ce qu'on peut faire pour toi, ma pt'ite ? }
+{5221}{}{ ?}
+{220}{}{Bon sang ! Toutes ces courbes et moi qui n'aie pas de freins !!!}
+
+# 3. FLOAT/CLICK DIALOGUES [PRIZEFIGHTER] (WTG)
+{245}{}{Je t'ai vu te battre sur le ring. Dis donc, t'as un sacré bon crochet du droit !}
+{246}{}{T'as pas l'air si coriace pour un boxeur professionnel.}
+
+# 4. FLOAT/CLICK DIALOGUES [MADE MAN] (WTG)
+{265}{}{J'espère que tout va bien, mademoiselle.}
+{266}{}{J'espère que tout va bien, m'sieur.}
+
+# 5. FLOAT OR CLICK DIALOGUES [CAR RECOVERED] (WTG)
+{300}{}{Je m'excuse pour ce malentendu avec le bandit.}
+{301}{}{J'ai pitié de l'idiot qui a laissé traîner cette Highwayman.}
+
+# 6. FLOAT DIALOGUES [WARNING] (WTG)
+{331}{}{Mais bon sang de bon dieu, t'approche pas de cette bagnole !!}

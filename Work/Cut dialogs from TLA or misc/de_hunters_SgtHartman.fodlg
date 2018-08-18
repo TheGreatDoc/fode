@@ -1,0 +1,160 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Hunters_Camp = -1 #
+7 1020 D _var p Hunters_Camp } 0 @
+2 2000 None 1 #
+3 2010 D _param p ST_LEVEL < 10 D or D _param p ST_KARMA < 100 #
+4 2020 D _param p ST_LEVEL } 10 D _param p ST_KARMA } 100 #
+0 2030 #
+65507 2040 @
+3 3000 None 1 #
+0 3010 @
+4 4000 None 1 #
+5 4010 #
+0 4020 @
+5 5000 None 1 #
+6 5010 @
+6 6000 None 1 #
+0 6010 R _script quest_server_scripts@bounty_hunters_start 0  @
+7 7000 None 1 #
+8 7010 D _var p Hunters_Camp = 50 #
+9 7020 D _var p Hunters_Camp = 80 #
+10 7030 D _var p Hunters_Camp = 100 #
+11 7040 D _var p Hunters_Camp = 100 D _param p PLAYER_PROFESSION = 0 #
+0 7050 D _var p Hunters_Camp ! 100 #
+0 7060 D _var p Hunters_Camp = 100 @
+8 8000 None 1 #
+0 8010 R _script quest_server_scripts@bounty_hunters_50_to_70 0  @
+9 9000 None 1 #
+0 9010 D _param p PLAYER_PROFESSION = 0 R _param p PLAYER_PROFESSION = 1 R _script quest_server_scripts@bounty_hunters_80_to_100 0  #
+0 9020 D _param p PLAYER_PROFESSION ! 0 R _script quest_server_scripts@bounty_hunters_80_to_100 0  #
+0 9030 @
+10 10000 None 1 #
+0 10010 @
+11 11000 None 1 #
+0 11010 R _param p PLAYER_PROFESSION = 1 &
+
+[pols]
+{100}{}{Sierz. Hartman}
+{110}{}{man10.png}
+{200){}{Widisz dobrze zbudowanego faceta w srednim wieku. Wieksza czesc jego twarzy ozdobiona jest bliznami.}
+{1000}{}{Predialogue installations}
+{1010}{}{nowy}
+{1020}{}{stary}
+{2000}{}{Witam w obozie lowcow glow jestem sierz.Hartman. Jestes przejazdem czy przybywasz w jakies sprawie?}
+{2010}{}{Chcialem dolaczyc do was.}
+{2020}{}{Szukam punktu rekrutacyjnego... chcialbym dolaczyc do lowcow.}
+{2030}{}{jestem...sam nie wiem po co...}
+{2040}{}{Wpadlem ci powiedziec ze masz paskudny ryj ale nie martw sie... twoja stara ma gorszy.}
+{3000}{}{Stoisz przed nim ale wybacz chlopcze potrzebujemy mezczyzn a nie cioty... Wroc jak troche zmezniejesz i twoja karma bedzie na jakims przyzwoitym poziomie.}
+{3010}{}{...}
+{4000}{}{Znakomicie ! Wybrales odpowiedni moment szukamy rekruta na stanowisko mlodszego straznika, jestes chetny?}
+{4010}{}{Oczywiscie.}
+{4020}{}{Chyba jednak nie...}
+{5000}{}{Znakomicie ! Zanim jednak dolaczysz do nas musisz wykazac sie sie ze jestes wstanie podolac wyzwaniom.}
+{5010}{}{Jak?}
+{6000}{}{Niedawno zlapalismy jednego z tych psycho kanibali. Jeszcze go nie przesluchalismy ale wiemy ze ma gdzies tu w okolicy tymczasowa baze. Twoim zadaniem bedzie znalezc ja i zrobic rozpoznanie. Jesli trzeba bedzie uzyc sily nie wachaj sie. Te smiecie nie oszczedzaja nikogo i niczego.
+Powodzenia !}
+{6010}{}{Przyda mi sie...}
+{7000}{}{Witam ponownie. Jakies wiesci?}
+{7010}{}{Znalazlem oboz kanibali. Maja swoja nore kilka godzin na polnocny-zachod stad. Naliczylem ponad 10-ciu uzbrojonych ludzi. Niezle sie urzadzili w jednym z opuszczonych budynkow ale z tego co zauwazyle zamierzaja za niedlugo stamtad zwiewac. Chyba wiedza ze wpadlismy na ich trop.}
+{7020}{}{Misja wykonana. Oboz kanibali przeszedl do histori!}
+{7030}{}{Wpadlem sie dowiedziec czy jest jakas dodatkowa robota do wykonania,}
+{7040}{}{Przemyslalem to wszystko i jestem gotow dolaczyc do was.}
+{7050}{}{Wciaz nad tym pracuje.}
+{7060}{}{Nic specialnego. Wpadlem tylko sie przywitac.}
+{8000}{}{Dobra robota! W takim razie mam dla ciebie nowe wytyczne. Wroc tam spowrotem i upewnij sie ze juz wiecej nie opuszcza tego miejsca !}
+{8010}{}{Masz to jak w banku!}
+{9000}{}{Znakomicie! Tak jak obiecalem... witamy w rodzinie lowcow glow. Jesli bedziesz mial wiecej pytan wal smialo.}
+{9010}{}{Dzieki [PROFESJA BOUNTY HUNTER]}
+{9020}{}{Dzieki... tylko chwilo nie moge jeszcze dolaczyc do was ale jak tylko rozwiaze swoje sprawy to tu wroce. Tak wiec do zobaczenia.}
+{9030}{}{Wiesz co jednak doszedlem do wniosku ze nie chce narazie dolaczac do was. Mam pewne rzeczy ktore musze jeszcze zrobic.}
+{10000}{}{Chwilowo nic nie mam. Ale dobrze ze pytasz.}
+{10010}{}{Ok, narazie.}
+{11000}{}{W takim razie witam w rodzinie}
+{11010}{}{Dzieki [PROFESJA BOUNTY HUNTER]}
+
+[engl]
+{100}{}{Sergeant Hartman}
+{110}{}{man10.png}
+{200){}{You see a middle aged, tough looking man. Scars decorate most of his face.}
+{1000}{}{Predialogue installations}
+{1010}{}{nowy}
+{1020}{}{stary}
+{2000}{}{Welcome to Bounty Hunters Camp! I'm Sergeant Hartman, you're passing through or looking for something?}
+{2010}{}{I'm looking for recruitment office, could you please direct me to it?}
+{2020}{}{I just want to join you guys.}
+{2030}{}{Well... I'm here for... Damn, not sure what I'm here for actually.}
+{2040}{}{I just dropped in to say you're a shitface... but don't worry, your mommy looks even worse.}
+{3000}{}{Recruitment office? That's a good one! Come here people, this wuss is looking for a recruitment office! Sorry, but what we need is a tough sonuvabitch, not some fucking wimp like you. Come back when you have a decent amount of experience under your belt, now scram.}
+{3010}{}{...}
+{4000}{}{Good! You come in at a right moment, it happens that we need a replacement. Are you in?}
+{4010}{}{Sure I am!}
+{4020}{}{Replacement? On second thought...}
+{5000}{}{Now you're talking. But before you join us you'll have to prove your worth, it will require wits and some fuckin muscle.}
+{5010}{}{And I do this... how?}
+{6000}{}{Recently, we've captured one of those cannibals. We haven't questioned him yet but we're pretty damn sure his rathole should be nearby. Your job is to find and scout the area. Don't hesitate to use some direct approach, those bastards don't spare anything or anyone. Good luck.}
+{6010}{}{Yeah, I'll need it...}
+{7000}{}{Hey there, any news?}
+{7010}{}{I've found cannibals hideout. It's a couple of hours walk, northwest from here. There are around ten armed guys there. Actually they've got a really nice place in one of the abandoned buildings, though they seemed to be startled. I think they suspect we've got their trail.}
+{7020}{}{Mission accomplished sir, those cannibals are history!}
+{7030}{}{I just came to see if there's any additional work.}
+{7040}{}{I've made up my mind and I'm ready to join you guys.}
+{7050}{}{Still working on it.}
+{7060}{}{I just came to say hello.}
+{8000}{}{Good job! Now you'll have to make sure they'll stay in that place. Like, for eternity, you know the drill.}
+{8010}{}{You've got it!}
+{9000}{}{Now, that's what I like to hear. On behalf of Bounty Hunters, I welcome you in our modest group. I've you gots any questions, shoot.}
+{9010}{}{Great, thanks! [BOUNTY HUNTER Profession]}
+{9020}{}{Thanks... it's just that I just join you guys right now. I'll settle my things and get back to you.}
+{9030}{}{I changed my mind. I don't want to join your bunch, I've got other stuff that needs to get done.}
+{10000}{}{I don't have anything for you right now, but it's good to know you're interested.}
+{10010}{}{Okay, see you.}
+{11000}{}{In that case, welcome to the fold!}
+{11010}{}{Thanks! [BOUNTY HUNTER profession]}
+
+[russ]
+{100}{}{Sergeant Hartman}
+{110}{}{man10.png}
+{200){}{You see a middle aged, tough looking man. Scars decorate most of his face.}
+{1000}{}{Predialogue installations}
+{1010}{}{nowy}
+{1020}{}{stary}
+{2000}{}{Welcome to Bounty Hunters Camp! I'm Sergeant Hartman, you're passing through or looking for something?}
+{2010}{}{I'm looking for recruitment office, could you please direct me to it?}
+{2020}{}{I just want to join you guys.}
+{2030}{}{Well... I'm here for... Damn, not sure what I'm here for actually.}
+{2040}{}{I just dropped in to say you're a shitface... but don't worry, your mommy looks even worse.}
+{3000}{}{Recruitment office? That's a good one! Come here people, this wuss is looking for a recruitment office! Sorry, but what we need is a tough sonuvabitch, not some fucking wimp like you. Come back when you have a decent amount of experience under your belt, now scram.}
+{3010}{}{...}
+{4000}{}{Good! You come in at a right moment, it happens that we need a replacement. Are you in?}
+{4010}{}{Sure I am!}
+{4020}{}{Replacement? On second thought...}
+{5000}{}{Now you're talking. But before you join us you'll have to prove your worth, it will require wits and some fuckin muscle.}
+{5010}{}{And I do this... how?}
+{6000}{}{Recently, we've captured one of those cannibals. We haven't questioned him yet but we're pretty damn sure his rathole should be nearby. Your job is to find and scout the area. Don't hesitate to use some direct approach, those bastards don't spare anything or anyone. Good luck.}
+{6010}{}{Yeah, I'll need it...}
+{7000}{}{Hey there, any news?}
+{7010}{}{I've found cannibals hideout. It's a couple of hours walk, northwest from here. There are around ten armed guys there. Actually they've got a really nice place in one of the abandoned buildings, though they seemed to be startled. I think they suspect we've got their trail.}
+{7020}{}{Mission accomplished sir, those cannibals are history!}
+{7030}{}{I just came to see if there's any additional work.}
+{7040}{}{I've made up my mind and I'm ready to join you guys.}
+{7050}{}{Still working on it.}
+{7060}{}{I just came to say hello.}
+{8000}{}{Good job! Now you'll have to make sure they'll stay in that place. Like, for eternity, you know the drill.}
+{8010}{}{You've got it!}
+{9000}{}{Now, that's what I like to hear. On behalf of Bounty Hunters, I welcome you in our modest group. I've you gots any questions, shoot.}
+{9010}{}{Great, thanks! [BOUNTY HUNTER Profession]}
+{9020}{}{Thanks... it's just that I just join you guys right now. I'll settle my things and get back to you.}
+{9030}{}{I changed my mind. I don't want to join your bunch, I've got other stuff that needs to get done.}
+{10000}{}{I don't have anything for you right now, but it's good to know you're interested.}
+{10010}{}{Okay, see you.}
+{11000}{}{In that case, welcome to the fold!}
+{11010}{}{Thanks! [BOUNTY HUNTER profession]}

@@ -1,0 +1,6 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš nekompromisního èlena Vùdcovy armády.}
+{101}{}{Vùdce øíká pøiveïte všechny primitivy.}
+{102}{}{Všichni primitivové musí být znièeni.}
+{103}{}{Rozmáèkni primitiva!}
+{104}{}{Já chci slyšet ten èvachtavý zvuk.}

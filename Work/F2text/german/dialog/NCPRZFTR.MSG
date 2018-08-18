@@ -1,0 +1,6 @@
+{100}{}{Du siehst }
+{101}{}{.}
+
+{150}{}{Er sieht ziemlich normal aus.}
+{151}{}{Sieht nicht sehr stark aus.}
+{152}{}{Wurde sicher als Kind oft verprügelt.}

@@ -1,0 +1,19 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš ponìkud baculatìjší, blonïatou sekretáøku ve velmi pøiléhavém obleèení.}
+{101}{}{Vidíš prezidentovu "osobní asistentku".}
+{102}{}{Vidíš baculatou, ale ne neatraktivní kur..., uh, sekretáøku. Má ponìkud neupravený úèes.}
+{103}{}{Ano? Co potøebuješ kocourku?}
+{104}{}{NE!! Teï ne, právì mám vyèištìné obleèení.}
+{105}{}{Tak co chcete pane "dùležitý"?}
+{106}{}{Neøíkají mi "SILIKONKO" pro nic za nic!}
+{107}{}{Umím psát na stroji, mimo jiné.}
+{108}{}{Mìl bys nejdøív zaklepat, než sem vtrhneš.}
+{109}{}{Potøebuji nìjaký dobrý ústní deodorant.}
+{110}{}{Kde je tu èistírna?}
+{111}{}{Myslím, že je èas na povýšení.}
+{112}{}{Flákají se všichni z prezidentovy ochranky, jako teï ty?}
+{113}{}{Pøijï pozdìji. Za chvilku budu asi dost zaneprázdnìná.}
+{114}{}{Myslím, že si dnes obleèení vyprat nepùjdu - he, he možná se mi to jednou bude hodit.}
+{115}{}{Prezident øíká, že skvìle líbám.}
+{116}{}{Nešmíruješ mì, že ne?}
+{117}{}{Kde jsou moje chránièe kolen? He, he, jen tak kecám.}

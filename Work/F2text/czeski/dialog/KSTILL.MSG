@@ -1,0 +1,11 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#kontrola&debugging by Birdman, Birdman@post.cz, http://www.mujweb.cz/www/birdman, 0604 540689
+
+{100}{}{Vidíš destilaèní pøístroj.}
+{101}{}{Vidíš destilaèní pøístroj. Vypadá funkènì.}
+
+{110}{}{Podle zvukù co slyšíš, je jasné, že pøístroj teï pracuje správnì. Získáváš }
+{111}{}{ zkušenostních bodù za doplnìní paliva v destilaèním pøístroji.}
+{120}{}{Nic to nedìlá.}
+{130}{}{Destilaèní pøístroj pracuje, ale ta whisky z nìj chutná špatnì.}
+{140}{}{V destilaèním pøístroji už není pro další døevo místo.}

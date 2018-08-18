@@ -1,0 +1,213 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 D _var p de_quest_gecko_perk = -1 D _param p PE_GECKO_SKINNING > 0 #
+5 2030 D _var p de_quest_gecko_perk = 0 D _item p PID_BRAHMIN_SKIN } 14 D _param p PE_GECKO_SKINNING = 0 R _script quest_server_scripts@geckon_skin_perk_0_to_100 0  R _item p PID_BRAHMIN_SKIN - 14 R _param p PE_GECKO_SKINNING = 1 #
+65506 2040 #
+0 2050 @
+3 3000 None 0 #
+4 3010 D _var p de_quest_gecko_perk = -1 #
+10 3020 #
+12 3030 #
+0 3040 @
+4 4000 None 0 #
+7 4010 D _var p de_quest_gecko_perk = -1 R _script quest_server_scripts@geckon_skin_perk_start 0  R _var p de_quest_gecko_perk = 0 #
+12 4020 #
+0 4030 @
+5 5000 None 0 #
+12 5010 #
+0 5020 @
+6 6000 None 0 #
+12 6010 #
+8 6020 D _item p PID_BOTTLE_CAPS } 700 R _item p PID_BOTTLE_CAPS - 700 R _param p PE_FIRE_GECKO_SKINNING = 1 #
+9 6030 D _param p SK_SPEECH } 110 D _item p PID_BOTTLE_CAPS } 500 R _item p PID_BOTTLE_CAPS - 500 R _param p PE_FIRE_GECKO_SKINNING = 1 @
+7 7000 None 0 #
+12 7010 #
+0 7020 @
+8 8000 None 0 #
+12 8010 #
+0 8020 @
+9 9000 None 0 #
+12 9010 #
+0 9020 @
+10 10000 None 0 #
+11 10010 #
+0 10020 #
+12 10030 @
+11 11000 None 0 #
+12 11010 #
+0 11020 @
+12 12000 None 0 #
+3 12010 #
+4 12020 D _var p de_quest_gecko_perk = -1 #
+5 12030 D _var p de_quest_gecko_perk = 0 D _item p PID_BRAHMIN_SKIN } 14 D _param p PE_GECKO_SKINNING = 0 R _script quest_server_scripts@geckon_skin_perk_0_to_100 0  R _item p PID_BRAHMIN_SKIN - 14 R _param p PE_GECKO_SKINNING = 1 #
+6 12040 D _var p de_quest_gecko_perk = 100 D _param p PE_GECKO_SKINNING ! 0 D _param p PE_FIRE_GECKO_SKINNING ! 1 #
+65506 12050 #
+0 12060 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Witaj, nie widzialem cie tu wczesniej. W czym Ci moge pomuc?}
+{2010}{}{Co to za miejsce?}
+{2020}{}{Wygladasz jakbys potrzebowal pomocy.}
+{2030}{}{Mam dla ciebie te skory.}
+{2040}{}{Pohandlujmy}
+{2050}{}{Narazie}
+{3000}{}{To nasz oboz, nie widac. Polujemy na geckony. Nie jest to najbardziej dochodowe zajecie, ale da sie wyzyc. Nikt z nas nie narzeka.}
+{3010}{}{Jestem wam wstanie jakos pomoc ?}
+{3020}{}{Sorka ze pytam, ale z kad ta twoje blizny na twarzy?}
+{3030}{}{Chce zapytac o cos innego.}
+{3040}{}{Dobra, musze znikac.}
+{4000}{}{ Wsumie mamy maly problem z namiotami. Chodzi o to ze brakuje nam skor Brahminow, aby polatac dziury. Jakbys mogl nas zaopatrzyc w powiedzmy 14 sztuk. To naucze cie jak uzyskac skore z martwych gekonow. Zainteresownay ?}
+{4010}{}{Zdobede dla ciebie te skory. }
+{4020}{}{Musze sie jeszcze zastanowic.}
+{4030}{}{Nie mam teraz czasu.}
+{5000}{}{Wielkie dzieki, wkoncu bedzie troche prywatnosci. Ale do rzeczy. Wpierw upewni sie ze Geckon jest napewno martwy. Niechcesz przeciez niskiej jakosci skory. Jakbys nie byl pewny, to poderzni gardlo. Zaczni od brzucha i rozcinaj w strone glowy, nastepnie w przeciwna strone. Pozniej juz tylko podcinaj gorna warstwe skory az uwolnisz ja od ciala. I gotowe.}
+{5010}{}{Wielkie dzieki, mam jeszcze pytanie?}
+{5020}{}{Wielkie dzieki, i ide polowac.}
+{6000}{}{Naucze Cie, ale wiesz nie ma nic za darmo. Ostatnio krucho u nas z kapslami, ale 700 zalatwi sprawe.}
+{6010}{}{Musze sie jeszcze zastanowic.}
+{6020}{}{Prosze o to twoje kapsle. (give Perk)}
+{6030}{}{Wiem jak ciezko w tych czasach, ale pamietasz pomoglem juz wam z namiotami. Co powiesz na 500 kapsli. }
+{7000}{}{Bardzo sie ciesze. Zobaczysz oplaci Ci sie.}
+{7010}{}{Jeszcze jedno.}
+{7020}{}{Do zobaczenia.}
+{8000}{}{ Dziekuje Ci bardzo. Bardzo wiele tobie zawdzieczamy. Jesli chodzi o ogniste gekony. Dzialasz tak jak przy zwyklych,}
+{8010}{}{Bym zapomnial ...}
+{8020}{}{Musze isc}
+{9000}{}{Masz racje. Bardzo wiele Ci zawdzieczamy. A wiec jesli chodzi o ogniste gekony. Dzialasz tak jak przy zwyklych,
+ale musisz podciac wiecej niz tylko gorna warstwe. To luski beda sie jej trzymac nawet po dlugim czasie. Lecz twoje ruchy musza byc bardziej spokojne.}
+{9010}{}{Bym zapomnial ...}
+{9020}{}{Dzieki i narazie.}
+{10000}{}{Pewnego dnia poszlismy polowac niedaleko z tad tuz za wzgorzem na polnocy. Jednak te cwane bestie tak jakby myslaly jakos bardziej intensywnie. Zatakowaly nas z 2 stron. Bylo nas tylko 3 tego dnia. Wywolaly u nas spore zamieszanie. Zanim sie spostrzeglem odgrodzily mnie od mojich kompanow.}
+{10010}{}{I co dalej sie stalo.}
+{10020}{}{ Musze isc}
+{10030}{}{ Niewazne, chce o spytac o cos innego.}
+{11000}{}{Powalily mnie zanim zdazylem wycelowac z mojego Hunting Rilfe. Zabilem jednego podcinajac mu aorte. Zlapalem go i staralem sie nim zaslaniac przed reszta ciosow. Lecz niektore dosiegly mojej twarzy, nie zauwazylem ich przez ta tryskajaca krew.  Z tad te blizny. Naszczescie moji wspoltowarzysze uporali sie zreszta i w sama pore udalo im sie mnie uratowac. Od tamtego dnia zadko chodzimy w taka mala ilosc osob.}
+{11010}{}{Ciesze sie ze jestes caly, ale chce o innego spytac.}
+{11020}{}{Dobrze ze nie byles sam. Do zobaczenia.}
+{12000}{}{No co jeszcze chcesz wiedziec. }
+{12010}{}{Co to za miejsce?}
+{12020}{}{Wygladasz jakbys potrzebowal pomocy.}
+{12030}{}{Mam dla ciebie te skory.}
+{12040}{}{Powiesz mi jak uzyskac skore z Ognistych Gekonow?}
+{12050}{}{Pohandlujmy}
+{12060}{}{Narazie}
+
+[engl]
+{100}{}{William}
+{200}{}{You see man, he's got many scars on his head.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Hello, I didn't see you here. How can I help you?}
+{2010}{}{What's this place?}
+{2020}{}{You seems like you need help.}
+{2030}{}{I have those hides for you. }
+{2040}{}{Lets trade}
+{2050}{}{Bye}
+{3000}{}{This is our camp, don't you see? We are hunting on geckons. It's not so good, but you can earn money from it. No one from us is crying.}
+{3010}{}{ Can I help you?}
+{3020}{}{Sorry for asking, but from where you have those scars on face?}
+{3030}{}{I want to ask something other.}
+{3040}{}{ Good, I need to go.}
+{4000}{}{Well, we have small problem with tents. We need some hides from Brahmins, for repairing holes. If you can deliver us about 14, I can learn you how to obtain hides from dead geckons. Interested?}
+{4010}{}{I will get those hides for you.}
+{4020}{}{I need to decide.}
+{4030}{}{I don't have time.}
+{5000}{}{Many thanks, at least I'll have some private space. But back to deal. First, you must be sure that Geckon is really dead.You don't want to have bad quality of hides. If you're not sure, then cut the neck. Start from stomach and open it in way of head, then in opposite way. Later just only cut the layer of leather until you'll release the body. Aaand done.}
+{5010}{}{Big thanks, and I have one more question.}
+{5020}{}{Big thanks, I am going to hunt.}
+{6000}{}{ I'll teach you, but it won't be for free.These times, we don't have so many caps, but for 700 caps will be good.}
+{6010}{}{I need to decide first.}
+{6020}{}{ Here, there are your caps.}
+{6030}{}{ know how hard it's in these times, but do you remember how I helped you with those tents? What about 500 caps?}
+{7000}{}{I am so happy. You'll see that it's good.}
+{7010}{}{One more please.}
+{7020}{}{Good bye.}
+{8000}{}{Thank you very much.I owe you now. And about those fire geckos. You are doing it almost same, just you must cut more than only upper layer of skin. Those scales will keep on it even after long time. But your movements must be more sensitive. Without using your strengh. Your knife must be really sharp for this task. And everything will go smoothly.}
+{8010}{}{I would forgot it ...}
+{8020}{}{Need to go}
+{9000}{}{You have right. We owe you. And what is going with those hides?You are doing it almost same, just you must cut more than only upper layer of skin. Those scales will keep on it even after long time. But your movements must be more sensitive.}
+{9010}{}{Oh,I would forget ...}
+{9020}{}{Thanks, and goodbye.}
+{10000}{}{Certain day, we went for hunting near from here on the north. So, those monsters we're even more smart than we thought.They attacked us from two ways. We were only 3 that day. They gave us strong embarrassment. Only while I was looking somewhere else they divided me from my friends.}
+{10010}{}{What happed next?}
+{10020}{}{I need to go}
+{10030}{}{Not important, I want to ask something other.}
+{11000}{}{They knocked me so quickly that I didn't even aimed them from my Hunting Rifle.I killed one cutting his aorte.I catched him and I tried to cover myself with him against others.Some reached my face, but I didn't saw it because of that squirting blood. From where those scars? Fortunately, my colleagues contacted with others and in short time they managed to save me. From that day, we aren't hunting with small amount of people.}
+{11010}{}{I am happy that you're in one piece, but I want to ask something other.}
+{11020}{}{Its good that you wasn't there alone.Goodbye.}
+{12000}{}{So what do you want to know now? }
+{12010}{}{What is this place?}
+{12020}{}{You looks like you need help.}
+{12030}{}{I have those hides for you. }
+{12040}{}{ Can you tell me how to obtain hides from Fire Geckos?}
+{12050}{}{Lets trade.}
+{12060}{}{Bye}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Witaj, nie widzialem cie tu wczesniej. W czym Ci moge pomuc?}
+{2010}{}{Witaj, nie widzialem cie tu wczesniej. W czym Ci moge pomuc?}
+{2020}{}{Wygladasz jakbys potrzebowal pomocy.}
+{2030}{}{Mam dla ciebie te skory.}
+{2040}{}{Pohandlujmy}
+{2050}{}{Narazie}
+{3000}{}{To nasz oboz, nie widac. Polujemy na geckony. Nie jest to najbardziej dochodowe zajecie, ale da sie wyzyc. Nikt z nas nie narzeka.}
+{3010}{}{Jestem wam wstanie jakos pomoc ?}
+{3020}{}{Sorka ze pytam, ale z kad ta twoje blizny na twarzy?}
+{3030}{}{Chce zapytac o cos innego.}
+{3040}{}{Dobra, musze znikac.}
+{4000}{}{ Wsumie mamy maly problem z namiotami. Chodzi o to ze brakuje nam skor Brahminow, aby polatac dziury.
+   Jakbys mogl nas zaopatrzyc w powiedzmy 14 sztuk. To naucze cie jak uzyskac skore z martwych gekonow. Zainteresownay ?}
+{4010}{}{Zdobede dla ciebie te skory. }
+{4020}{}{Musze sie jeszcze zastanowic.}
+{4030}{}{Nie mam teraz czasu.}
+{5000}{}{Wielkie dzieki, wkoncu bedzie troche prywatnosci. Ale do rzeczy. Wpierw upewni sie ze Geckon jest napewno martwy.
+   Niechcesz przeciez niskiej jakosci skory. Jakbys nie byl pewny, to poderzni gardlo. Zaczni od brzucha i rozcinaj w strone
+   glowy, nastepnie w przeciwna strone. Pozniej juz tylko podcinaj gorna warstwe skory az uwolnisz ja od ciala. I gotowe.}
+{5010}{}{Wielkie dzieki, mam jeszcze pytanie?}
+{5020}{}{Wielkie dzieki, i ide polowac.}
+{6000}{}{Naucze Cie, ale wiesz nie ma nic za darmo. Ostatnio krucho u nas z kapslami, ale 700 zalatwi sprawe.}
+{6010}{}{Musze sie jeszcze zastanowic.}
+{6020}{}{Prosze o to twoje kapsle. (give Perk)}
+{6030}{}{Wiem jak ciezko w tych czasach, ale pamietasz pomoglem juz wam z namiotami. Co powiesz na 500 kapsli. }
+{7000}{}{Bardzo sie ciesze. Zobaczysz oplaci Ci sie.}
+{7010}{}{Jeszcze jedno.}
+{7020}{}{Do zobaczenia.}
+{8000}{}{ Dziekuje Ci bardzo. Bardzo wiele tobie zawdzieczamy. Jesli chodzi o ogniste gekony. Dzialasz tak jak przy zwyklych,}
+{8010}{}{Bym zapomnial ...}
+{8020}{}{Musze isc}
+{9000}{}{Masz racje. Bardzo wiele Ci zawdzieczamy. A wiec jesli chodzi o ogniste gekony. Dzialasz tak jak przy zwyklych,}
+{9010}{}{Bym zapomnial ...}
+{9020}{}{Dzieki i narazie.}
+{10000}{}{Pewnego dnia poszlismy polowac niedaleko z tad tuz za wzgorzem na polnocy. Jednak te cwane bestie tak jakby myslaly jakos bardziej intensywnie. Zatakowaly nas z 2 stron. Bylo nas tylko 3 tego dnia. Wywolaly u nas spore zamieszanie. Zanim sie spostrzeglem odgrodzily mnie od mojich kompanow.}
+{10010}{}{ Ciesze sie ze jestes caly, ale chce o cos innego spytac.}
+{10020}{}{Dobrze ze nie byles sam. Do zobaczenia.}
+{10030}{}{ Niewazne, chce o spytac o cos innego.}
+{11000}{}{Powalily mnie zanim zdazylem wycelowac z mojego Hunting Rilfe. Zabilem jednego podcinajac mu aorte.
+   Zlapalem go i staralem sie nim zaslaniac przed reszta ciosow. Lecz niektore dosiegly mojej twarzy, nie zauwazylem ich przez ta tryskajaca krew.  Z tad te blizny. Naszczescie moji wspoltowarzysze uporali sie zreszta i w sama pore udalo im sie mnie uratowac.
+   Od tamtego dnia zadko chodzimy w taka mala ilosc osob.}
+{11010}{}{Ciesze sie ze jestes caly, ale chce o innego spytac.}
+{11020}{}{Dobrze ze nie byles sam. Do zobaczenia.}
+{12000}{}{No co jeszcze chcesz wiedziec. }
+{12010}{}{Co to za miejsce?}
+{12020}{}{Wygladasz jakbys potrzebowal pomocy.}
+{12030}{}{Mam dla ciebie te skory.}
+{12040}{}{Powiesz mi jak uzyskac skore z Ognistych Gekonow?}
+{12050}{}{Pohandlujmy}
+{12060}{}{Narazie}
+

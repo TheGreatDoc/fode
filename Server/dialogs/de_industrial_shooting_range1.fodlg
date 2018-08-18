@@ -1,0 +1,44 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+0 2010 R _script dialog@r_GoToShootingRange 0  #
+0 2020 &
+
+[pols]
+{100}{}{Stra¿nik strzelnicy}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog}
+{2000}{}{Witam
+Pamietaj jesli chcesz skorzystac z strzelnicy musisz zostawic najpierw caly twoj sprzet gdzies w bezpiecznym miejscu. Nie wpuszczam nikogo z prywatnym sprzetem. Wszystko co potrzeba znajdziesz na dole.
+A wiec... czy jestes juz gotow?}
+{2010}{}{Jestem gotow !}
+{2020}{}{Wroce pozniej.}
+
+[engl]
+{100}{}{Shooting Range Guard}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog}
+{2000}{}{Welcome
+Remember if you want to benefit from shooting first you have to leave your whole equipment somewhere in a safe place. Do not let anyone with a private equipment. Everything you need can be found on the down.
+So...  Are you ready?}
+{2010}{}{I'm ready !}
+{2020}{}{I'll be back later.}
+
+[russ]
+{100}{}{Shooting Range Guard}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog}
+{2000}{}{Welcome
+Remember if you want to benefit from shooting first you have to leave your whole equipment somewhere in a safe place. Do not let anyone with a private equipment. Everything you need can be found on the down.
+So...  Are you ready?}
+{2010}{}{I'm ready !}
+{2020}{}{I'll be back later.}
+

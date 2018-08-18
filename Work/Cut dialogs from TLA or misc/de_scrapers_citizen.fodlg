@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Obywatel Scrapers}
+{210}{}{Widzisz obywatela Scrapers.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?@@Witamy w  Srapers@@Uwazaj szczury!@@Pare lat temu padalo 10 dni woda z kanalu zalala ulice. Pamietam wszedzie bylo gowno i szczury@@Widziales kiedys cos tak duzego?@@Slyszalem ze z ostatniego pietra wiezy widac morze@@Kiedys te ulice byly bardziej bezpieczne@@Dam ci rade, nie probuj plywac w kanale@@Slyszalem wielokrotnie ze w kanalach oprocz szczurow zyja gule@@Moja tesciowa zna 101 przepisow na szczura@@Widziales bialego szczura?@@Jesli jestes zainteresowany transportem do Dark Waters pogadaj z Ivanem@@Powiem ci cos w tajemnicy... Skipper Ivan ma uklady z NEC}
+
+[engl]
+{100}{}{Scrapers commoner}
+{210}{}{You see a resident of Scrapers.@@This person seems to have been living here for centuries.@@You see a Scrapers inhabitant.@@}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Witaj, stranger.@@Co?@@Dzien dobry.@@Kurwa fucking rats.@@If you're heading west, talk to Ivan the skipper.@@No shit.@@Flea stew, yummy!@@Pole'n? What's that?@@Kretyn.@@Was?@@Das interresiert mich nicht.@@NEC, REF, they're all the same to me.@@Never heard of that, sorry.@@Leave me alone.@@We live off the the sea.@@I heard that Ivan is up to no good...@@Masz szluga?@@Have a smoke?@@Got a cig maybe?@@I heard Ivan has some contacts within REF.@@You need to sail west? Talk to that Ivan guy.@@Don't look at me.@@I heard some crazy stories about deathclaws in the east.@@You're in Scrapers City, not Berlin, dumbass.@@Ever been to Bearline?@@I've always wanted to get to Moscow, and see them mutant freaks.@@Mute-ants? How about that.@@This place is falling apart.@@Something's rotten in the state of Scrapers...@@I need a car. You have one?@@Stop following me!@@Wonder how this place looked before the war...@@I'm just passing by, don't ask me questions.@@You lost?@@Ja pierdole...you again?@@I'm just trying to live here.@@No, I ain't know nothing.@@I have no idead wchatcha talking about.@@This is the right place if you wanna rot in the gutter.@@The sea's been very unpredictable lately.@@Hear them seagulls? Rats with wings, they shit all over the place.@@Do me a favor and get lost.@@Looking for me?@@New to Scrapers?@@Watch out for dem rats.@@A few years ago there was this huge storm, and all that sewage poured into the streets. Shit and dead rats all over the place.@@Have you ever seen something so big?@@You can have a good look at the sea from the tower.@@I remember the time when these streets were soaked in blood.@@Don't try to swim here, gonna lose yer skin.@@People talk about ghouls in the sewers.@@I heard some nasty folk lives down below us.@@Don't go to the sewers without a gun.@@I know a lot about rats... And ways to cook'em.@@Did you see that white rat?@@My mother used to tell me stories there are rats so big, they can eat a grown man.@@I don't like that Ivan guy. There's something fishy about him.}
+
+[russ]
+{100}{}{Scrapers commoner}
+{210}{}{You see a resident of Scrapers.@@This person seems to have been living here for centuries.@@You see a Scrapers inhabitant.@@}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Witaj, stranger.@@Co?@@Dzien dobry.@@Kurwa fucking rats.@@If you're heading west, talk to Ivan the skipper.@@No shit.@@Flea stew, yummy!@@Pole'n? What's that?@@Kretyn.@@Was?@@Das interresiert mich nicht.@@NEC, REF, they're all the same to me.@@Never heard of that, sorry.@@Leave me alone.@@We live off the the sea.@@I heard that Ivan is up to no good...@@Masz szluga?@@Have a smoke?@@Got a cig maybe?@@I heard Ivan has some contacts within REF.@@You need to sail west? Talk to that Ivan guy.@@Don't look at me.@@I heard some crazy stories about deathclaws in the east.@@You're in Scrapers City, not Berlin, dumbass.@@Ever been to Bearline?@@I've always wanted to get to Moscow, and see them mutant freaks.@@Mute-ants? How about that.@@This place is falling apart.@@Something's rotten in the state of Scrapers...@@I need a car. You have one?@@Stop following me!@@Wonder how this place looked before the war...@@I'm just passing by, don't ask me questions.@@You lost?@@Ja pierdole...you again?@@I'm just trying to live here.@@No, I ain't know nothing.@@I have no idead wchatcha talking about.@@This is the right place if you wanna rot in the gutter.@@The sea's been very unpredictable lately.@@Hear them seagulls? Rats with wings, they shit all over the place.@@Do me a favor and get lost.@@Looking for me?@@New to Scrapers?@@Watch out for dem rats.@@A few years ago there was this huge storm, and all that sewage poured into the streets. Shit and dead rats all over the place.@@Have you ever seen something so big?@@You can have a good look at the sea from the tower.@@I remember the time when these streets were soaked in blood.@@Don't try to swim here, gonna lose yer skin.@@People talk about ghouls in the sewers.@@I heard some nasty folk lives down below us.@@Don't go to the sewers without a gun.@@I know a lot about rats... And ways to cook'em.@@Did you see that white rat?@@My mother used to tell me stories there are rats so big, they can eat a grown man.@@I don't like that Ivan guy. There's something fishy about him.}

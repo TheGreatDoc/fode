@@ -1,0 +1,4 @@
+{100}{}{Aaaaaiiiee!}
+{101}{}{Quieeeetsch!}
+{102}{}{Ratter-Ratter-Ratter}
+{103}{}{Iiiiiiiihhhh!}

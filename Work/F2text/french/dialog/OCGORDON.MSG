@@ -1,0 +1,80 @@
+{100}{}{Tu vois un homme mince portant une longue aube. Il semble en pleine réflexion.}
+{101}{}{Tu vois le gardien de l'autel.}
+{102}{}{Tu vois un homme mince portant une longue aube. Il a près de cinquante ans et n'est pas marqué par les années. Il semble méditer.}
+{103}{}{Bienvenue. Je suis Gordon, le gardien de l'autel. Que puis-je faire pour toi ?}
+{104}{}{L'autel ?}
+{105}{}{Moi poser questions ?}
+{106}{}{Euh... Pas me souvenir. Au revoir.}
+{107}{}{C'est un plaisir de faire ta connaissance Gordon. Je suis } # continued 177
+{108}{}{Tu appelles ça un autel ? Celui à qui il est dédié doit se retourner dans sa tombe !}
+{109}{}{Eh bien, excuse-moi de t'avoir dérangé. Je m'en vais.}
+{110}{}{Oui. Un autel est un lieu de vénération généralement dédié à un dieu, un saint ou une autre forme de puissance.}
+{111}{}{Ah. OK. Moi poser questions ?}
+{112}{}{OK. Au revoir.}
+{113}{}{Mais certainement, vas-y.}
+{114}{}{Qu'est ce que tu voudrais savoir ?}
+{115}{}{Pour qui autel ?}
+{116}{}{Combien de temps toi être ici ?}
+{117}{}{Griffemorts mauvais ?}
+{118}{}{Pourquoi toi rester ?}
+{119}{}{Moi partir maintenant.}
+{120}{}{A qui est dédié cet autel ?}
+{121}{}{Depuis combien de temps es-tu ici ?}
+{122}{}{Que peux-tu me dire sur les Griffemorts?}
+{123}{}{Pourquoi restes-tu ici ?}
+{124}{}{Merci, Gordon. Au revoir.}
+{125}{}{Cet autel est dédié à un héros sans nom connu comme l'Habitant de l'Abri. Lui, ou elle, a sauvé tous ceux qui ont vécu ici depuis plusieurs décennies. Nous ne savons pas ce que cette personne est devenue, mais elle est toujours dans nos coeurs et dans nos esprits.}
+{126}{}{C'est bien.}
+{127}{}{Moi te remercier. Bye.}
+{128}{}{La bonne blague ! Un autel dédié à quelqu'un dont personne ne se souvient !}
+{129}{}{Je vois. Eh bien, j'ai d'autres questions.}
+{130}{}{Très louable, Gordon. Puis-je encore te poser quelques questions ?}
+{131}{}{J'ai toujours vécu dans cet abri. Et je suis gardien de l'autel depuis très longtemps.}
+{132}{}{Toi ici avant Griffemorts ?}
+{133}{}{Ah. Besoin savoir plus.}
+{134}{}{Moi devoir partir maintenant.}
+{135}{}{Tu es un homme très dévoué. Puis-je te poser d'autres questions ?}
+{136}{}{Ca fait longtemps alors. Puis-je te poser d'autres questions ?}
+{137}{}{C'est ta vie que tu gâches, mec !}
+{138}{}{Alors tu étais là lorsque les Griffemorts ont pris le pouvoir ?}
+{139}{}{Non, je n'étais pas là. Je suis parti il y a quelques mois pour voir la statue de l'Habitant de l'Abri érigée dans la cour centrale de la RNC (la République de Nouvelle Californie, à l'est d'ici). Lorsque je suis revenu à l'abri, les Griffemorts étaient déjà là. Inutile de dire que ça a été un choc. Mais, je suis convaincu qu'ils ne sont pas responsables de ce qui est arrivé à mes concitoyens. Si tu veux d'autres renseignements sur le sujet, tu peux aller voir Goris, à la bibliothèque.}
+{140}{}{OK, merci.}
+{141}{}{OK, au revoir.}
+{142}{}{Je m'en souviendrai.}
+{143}{}{Ce n'est pas à toi de me dire où je dois me rendre et qui je dois rencontrer.}
+{144}{}{Merci de ton aide. J'ai encore des questions à te poser.}
+{145}{}{Ca fait maintenant plusieurs mois que je vis avec les Griffemorts. Ils semblent honorables et ils se comportent bien avec moi et les autres humains qui vivent ici. Je leur fais confiance et avec le temps, je crois que toi aussi, tu leur feras confiance.}
+{146}{}{Euh... OK.}
+{147}{}{Hum. Moi partir maintenant.}
+{148}{}{Je préfère leur accorder le bénéfice du doute pour le moment.}
+{149}{}{Tu peux faire confiance aux lézards si tu veux, mais je préfère ne pas me prononcer pour le moment, merci.}
+{150}{}{Merci. Je dois en savoir plus.}
+{151}{}{Ma place est ici à l'autel. Je ne partirai pas de mon plein gré si je devais partir.}
+{152}{}{Ah.}
+{153}{}{Moi partir maintenant.}
+{154}{}{OK.}
+{155}{}{Tu es soit dévoué soit idiot. Et j'opte pour idiot !}
+{156}{}{Ton dévouement est admirable.}
+{157}{}{Tu es une personne très impolie et grossière. Si un des gardes était avec nous, tu la ramènerais peut-être pas autant.}
+{158}{}{Je t'ai déjà dit que je ne supporterais pas ton insolence. Tu as visiblement choisi de ne pas en tenir
+ compte. (Gordon regarde en direction de la porte.) Gardes ! A l'autel, s'il vous plaît !}
+{159}{}{Alors tu continues à te conduire en ordure. (Gordon fait un signe au garde Griffemort) Garde, fais sortir cette ordure.}
+{160}{}{Ramène ton pantin ! Je vais vous écraser tous les deux en un clin d'oeil.}
+{161}{}{Excuse-moi, je vais me taire.}
+{162}{}{Excuse-moi, Gordon. Excuse mon emportement, je t'en prie.}
+{163}{}{Excuse-moi, j'ai eu un moment d'égarement. Pardonne-moi, s'il te plaît.}
+{164}{}{Oh, pardon.}
+{165}{}{J'ai hâte de me taper quelques lézards !}
+{166}{}{Gardes ! A l'autel !}
+{167}{}{}
+{168}{}{}
+{169}{}{Alors, tu es de retour. Eh bien, je me suis déjà débarrassé de toi une fois et je peux recommencer. Gardes ! A l'autel ! Cette ordure est de retour !}
+{170}{}{}
+{171}{}{}
+{172}{}{Rebonjour. Que puis-je faire pour toi ?}
+{173}{}{Poser question ?}
+{174}{}{Moi venir ici avant ? Pardon. Moi devoir partir.}
+{175}{}{Je voulais encore te parler.}
+{176}{}{Juste dire bonjour.}
+
+{177}{}{. Puis-je te poser quelques questions ?}

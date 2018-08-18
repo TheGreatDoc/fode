@@ -1,0 +1,115 @@
+#include "_macros.fos"
+#include "_ai.fos"
+#include "_teams.fos"
+#include "_maps.fos"
+#include "_vars.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import void server_message(string@ message) from "server_scripts";
+import bool GetFreeHex(Map& map, uint radius, uint16& hx, uint16& hy) from "caravan";
+
+void RaidersInit()
+{
+	CreateTimeEvent(__FullSecond+REAL_SECOND(30),"e_NpcAttack",false);
+}
+
+
+uint e_NpcAttack(uint[]@ values)
+{
+	int x=1;
+	uint16 hx=143;
+	uint16 hy=167;
+	int count=1;
+	int chosemap=Random(4,4);
+	Map @ map = GetMapByPid(678,0);
+	hx=143;
+	hy=167;
+	count=Random(20,30);
+	if (numberofraiders<1)
+	{
+		for (int i=0;i<=count;i++)
+		{
+			GetFreeHex(map,4,hx,hy);
+			Critter@ npc=map.AddNpc(Random(3101,3112),hx,hy,1,null,null,null);
+			npc.ShowCritterDist1=20;
+			npc.StatBase[ST_CRITICAL_CHANCE]==70;
+			npc.StatBase[ST_TEAM_ID] = TEAM_RaiderAttack;
+			//npc.SetEvent(CRITTER_EVENT_ATTACKED,"Attacked");
+			npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"EventShowCritter");
+			int stuff=Random(1,5);
+			int counter;
+			uint i=0;
+			if (stuff==1)
+			{
+				npc.StatBase[ST_AI_ID] = AIPACKET_LONG_DISTANCE; //for bg burster
+				npc.AddItem(PID_DRAGUNOV2_DE ,1);
+				npc.AddItem(PID_FLAMETHROWER_FUEL_MK_II_DE,Random(30,40));		
+				counter=Random(0,100); if(counter>0) npc.AddItem(PID_BOTTLE_CAPS,counter);
+				counter=Random(0,2); if(counter>0) npc.AddItem(PID_STIMPAK,counter);
+			}
+			else if (stuff==2)
+			{
+				npc.StatBase[ST_AI_ID] = AIPACKET_LONG_DISTANCE; //for bg burster
+				npc.AddItem(PID_DRAGUNOV2_DE ,1);
+				npc.AddItem(PID_762X39_DE,Random(30,60));					
+				counter=Random(0,100); if(counter>0) npc.AddItem(PID_BOTTLE_CAPS,counter);
+				counter=Random(0,2); if(counter>0) npc.AddItem(PID_STIMPAK,counter);
+			}
+			else if (stuff==3)
+			{
+				npc.StatBase[ST_AI_ID] = AIPACKET_LONG_DISTANCE; //for bg burster
+				npc.AddItem(PID_DRAGUNOV2_DE ,1);
+				npc.AddItem(PID_RADAMMO_DE,Random(15,30));					
+				counter=Random(0,100); if(counter>0) npc.AddItem(PID_BOTTLE_CAPS,counter);
+				counter=Random(0,2); if(counter>0) npc.AddItem(PID_STIMPAK,counter);
+			}
+			else if (stuff==4)
+			{
+				npc.StatBase[ST_AI_ID] = AIPACKET_LONG_DISTANCE; //for bg burster
+				npc.AddItem(PID_DRAGUNOV2_DE ,1);
+				npc.AddItem(PID_762X54_DE,Random(120,240));					
+				counter=Random(0,100); if(counter>0) npc.AddItem(PID_BOTTLE_CAPS,counter);
+				counter=Random(0,2); if(counter>0) npc.AddItem(PID_STIMPAK,counter);			
+			}
+				else
+			{	
+				npc.StatBase[ST_AI_ID] = AIPACKET_LONG_DISTANCE; //for bg burster
+				npc.AddItem(PID_DRAGUNOV2_DE ,1);
+				npc.AddItem(PID_223_FMJ_DE,Random(30,60));					
+				counter=Random(0,100); if(counter>0) npc.AddItem(PID_BOTTLE_CAPS,counter);
+				counter=Random(0,2); if(counter>0) npc.AddItem(PID_STIMPAK,counter);
+			}
+		}
+	}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(90,300)),"e_NpcAttack",false);
+	return 0;
+}
+
+bool Attacked(Critter& npc, Critter& attacker)
+{
+	if(attacker.StatBase[ST_TEAM_ID]!=TEAM_RaiderAttack)
+	{
+		npc.SendMessage(124,attacker.Id,MESSAGE_TO_ALL_ON_MAP);
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,attacker,true);
+		return true;
+	}
+	return false;
+}
+
+void EventShowCritter(Critter &cr, Critter &cr2)
+{
+	if(cr2.StatBase[ST_TEAM_ID]==TEAM_Guard)
+	{
+	AddAttackPlane(cr,0,cr2,true);
+	AddAttackPlane(cr2,0,cr,true);
+	}
+	if(cr2.StatBase[ST_TEAM_ID]==TEAM_Citizen)
+	{
+	AddAttackPlane(cr,0,cr2,true);
+	}
+			
+}
+
+

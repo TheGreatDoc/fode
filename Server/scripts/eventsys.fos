@@ -1,0 +1,585 @@
+#include "_macros.fos"
+#include "_ai.fos"
+#include "_teams.fos"
+#include "_maps.fos"
+#include "_vars.fos"
+#include "_colors.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import void server_message(string@ message) from "server_scripts";
+import bool GetFreeHex(Map& map, uint radius, uint16& hx, uint16& hy) from "caravan";
+import void BerlinFlagsClear() from "map_bearline";
+
+void EventsInit()
+{
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_StartNextEvent",false);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(10),"e_PlayersTown",false);
+}
+
+bool IsEvent()
+{
+	if(__IsTc==false && __EventBerlin==false && __EventDeathMine==false && __EventOldVillage==false && __EventOldFields==false && __EventDistrictX==false && __EventFuryTown==false && __EventScrapersCity==false && __EventChurchDefense==false) return false;
+	else return true;
+}
+
+uint e_StartNextEvent(uint[]@ values)
+{
+	if(__AutoEvent==true && !IsEvent())
+	{
+		int EventNumber=Random(1,6);
+		switch(EventNumber)
+		{
+			case 1:
+				e_EventBerlinStart(null);
+				break;
+			case 2:
+				e_EventDeathMineStart(null);
+				break;
+			case 3:
+				e_EventOldVillageStart(null);
+				break;
+			case 4:
+				e_EventOldFieldsStart(null);
+				break;
+			case 5:
+				e_EventFuryTownStart(null);
+				break;
+			case 6:
+				e_EventScrapersCityStart(null);
+				break;
+			case 7:
+				e_EventDistrictXStart(null);
+				break;	
+		}
+	}
+	else CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//Bearline
+uint e_EventBerlinStart(uint[]@ values)
+{
+	if(IsEvent()) return 0;
+	__EventBerlin=true;
+	Map @ map = GetMapByPid(MAP_berlincity,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Bearline has begun\nPrepare for the fight!");
+	for(uint i=0; i<45; i++)
+			{
+				uint[] time_val={45-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_occupationberlin_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(45),"e_EventBerlinStop",false);
+	return 0;
+}
+
+uint e_EventBerlinStop(uint[]@ values)
+{
+	__EventBerlin=false;
+	Map @ map = GetMapByPid(MAP_berlincity,0);
+	Location@ loc = map.GetLocation();
+	if(valid(loc)) loc.Color = COLOR_CHANGE_ALPHA(COLOR_DGREEN, 70);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+		if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1 || crs[i].ParamBase[PLAYER_MAIN_FACTION]==2) crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	BerlinFlagsClear();
+	server_message("Battle in Bearline has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//Death Mine
+uint e_EventDeathMineStart(uint[]@ values)
+{
+	__EventDeathMine=true;
+	Map @ map = GetMapByPid(678,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+		if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Death Mine has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_deathmine_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventDeathMineStop",false);
+	return 0;
+}
+
+uint e_EventDeathMineStop(uint[]@ values)
+{
+	__EventDeathMine=false;
+	server_message("Battle in Death Mine has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//OldVillage
+uint e_EventOldVillageStart(uint[]@ values)
+{
+	__EventOldVillage=true;
+	Map @ map = GetMapByPid(670,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Old Village has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_OldVillage_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventOldVillageStop",false);
+	return 0;
+}
+
+uint e_EventOldVillageStop(uint[]@ values)
+{
+	__EventOldVillage=false;
+	server_message("Battle in Old Village has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//OldFields
+uint e_EventOldFieldsStart(uint[]@ values)
+{
+	__EventOldFields=true;
+	Map @ map = GetMapByPid(685,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Old Fields has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_OldFields_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventOldFieldsStop",false);
+	return 0;
+}
+
+uint e_EventOldFieldsStop(uint[]@ values)
+{
+	__EventOldFields=false;
+	server_message("Battle in Old Fields has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//DistrictX
+uint e_EventDistrictXStart(uint[]@ values)
+{
+	__EventDistrictX=true;
+	Map @ map = GetMapByPid(672,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in District X has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_DistrictX_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventDistrictXStop",false);
+	return 0;
+}
+
+uint e_EventDistrictXStop(uint[]@ values)
+{
+	__EventDistrictX=false;
+	server_message("Battle in District X has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+//FuryTown
+uint e_EventFuryTownStart(uint[]@ values)
+{
+	__EventFuryTown=true;
+	Map @ map = GetMapByPid(709,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Fury Town has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_FuryTown_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventFuryTownStop",false);
+	return 0;
+}
+
+uint e_EventFuryTownStop(uint[]@ values)
+{
+	__EventFuryTown=false;
+	server_message("Battle in Fury Town has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+//ScrapersCity
+uint e_EventScrapersCityStart(uint[]@ values)
+{
+	__EventScrapersCity=true;
+	Map @ map = GetMapByPid(694,0);
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_NPC|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+	if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)crs[i].ToDead(ANIM2_DEAD_EXPLODE,crs[i]);
+	}
+	server_message("Battle in Scrapers City has begun\nPrepare for the fight!");
+	for(uint i=0; i<30; i++)
+			{
+				uint[] time_val={30-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_ScrapersCity_message",time_val,false);
+			}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(30),"e_EventScrapersCityStop",false);
+	return 0;
+}
+
+uint e_EventScrapersCityStop(uint[]@ values)
+{
+	__EventScrapersCity=false;
+	server_message("Battle in Scrapers City has ended");
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(Random(100,200)),"e_StartNextEvent",false);
+	return 0;
+}
+
+uint e_deathmine_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(678,0);
+					Item@[] flag;
+					Critter@[]crs;
+					map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+					for(uint i=0; i<crs.length(); i++)
+					{
+						if(valid(map.GetItem(188,148, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(188,148, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+					}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Death Mine!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+			
+uint e_occupationberlin_message(uint[]@ values)
+			{
+			if(!__EventBerlin) return 0;
+			Map @ map = GetMapByPid(MAP_berlincity,0);
+					Item@[] flag;
+					Critter@[]crs;
+					map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+					for(uint i=0; i<crs.length(); i++)
+					{
+						if(valid(map.GetItem(124,186, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(124,186, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						if(valid(map.GetItem(233,131, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(233,131, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						if(valid(map.GetItem(242,431, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(242,431, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+					}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Bearline!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+			
+uint e_OldVillage_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(670,0);
+					Item@[] flag;
+					Critter@[]crs;
+					map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+					for(uint i=0; i<crs.length(); i++)
+					{
+						if(valid(map.GetItem(127,134, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(127,134, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+					}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Old Village!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+uint e_OldFields_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(685,0);
+					Item@[] flag;
+					Critter@[]crs;
+					map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+					for(uint i=0; i<crs.length(); i++)
+					{
+						if(valid(map.GetItem(127,214, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(127,214, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+					}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Old Fields!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+			
+uint e_DistrictX_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(672,0);
+					Item@[] flag;
+					Critter@[]crs;
+					map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+					for(uint i=0; i<crs.length(); i++)
+					{
+						if(valid(map.GetItem(111,186, PID_RED_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+						else if(valid(map.GetItem(111,186, PID_BLUE_FLAG)))
+						{
+							if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+						}
+					}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in District X!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+			
+uint e_FuryTown_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(709,0);
+				Item@[] flag;
+				Critter@[]crs;
+				map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+				for(uint i=0; i<crs.length(); i++)
+				{
+					if(valid(map.GetItem(160,145, PID_RED_FLAG)))
+					{
+						if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+					}
+					else if(valid(map.GetItem(160,145, PID_BLUE_FLAG)))
+					{
+						if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+					}
+				}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Fury Town!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+uint e_ScrapersCity_message(uint[]@ values)
+			{
+				Map @ map = GetMapByPid(694,0);
+				Item@[] flag;
+				Critter@[]crs;
+				map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+				for(uint i=0; i<crs.length(); i++)
+				{
+					if(valid(map.GetItem(270,187, PID_RED_FLAG)))
+					{
+						if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1)crs[i].ParamBase[HONOR_POINTS]+=10;
+					}
+					else if(valid(map.GetItem(270,187,PID_BLUE_FLAG)))
+					{
+						if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2)crs[i].ParamBase[HONOR_POINTS]+=10;
+					}
+				}
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							findcr.Say(SAY_SERVER_MESSAGE_TC,"!!Great battle in Scrapers City!!\n"+">>"+values[0]+" minutes left<<");
+						}
+					}
+				}
+				return 0;
+			}
+			
+uint e_PlayersTown(uint[]@ values)
+{
+	Critter@[] crs;
+	int cr_count=0;
+	//moscow
+	GameVar@ varmoscow=GetGlobalVar(GVAR_de_moscow_players);
+	cr_count=GetMapByPid(699,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	cr_count+=GetMapByPid(731,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	cr_count+=GetMapByPid(733,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	varmoscow=cr_count;
+	cr_count=0;
+	//london
+	GameVar@ varlondon=GetGlobalVar(GVAR_de_london_players);
+	cr_count=GetMapByPid(711,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	varlondon=cr_count;
+	cr_count=0;
+	//district X
+	//GameVar@ vardistrict=GetGlobalVar(GVAR_de_district_x_players);
+	//cr_count=GetMapByPid(672,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	//vardistrict=cr_count;
+	//cr_count=0;
+	//FURY_TOWN
+	GameVar@ varfury_town=GetGlobalVar(GVAR_de_fury_town_players);
+	cr_count=GetMapByPid(709,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	cr_count+=GetMapByPid(684,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	varfury_town=cr_count;
+	cr_count=0;
+	//OLD_VILLAGE
+	GameVar@ varoldvillage=GetGlobalVar(GVAR_de_old_village_players);
+	cr_count=GetMapByPid(670,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	varoldvillage=cr_count;
+	cr_count=0;
+	//LIGHT_TOWN 
+	//GameVar@ varlight_town=GetGlobalVar(GVAR_de_light_town_players);
+	//cr_count=GetMapByPid(667,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	//cr_count+=GetMapByPid(671,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	//varlight_town=cr_count;
+	//cr_count=0;
+	//BEAR_LINE
+	GameVar@ varberlin=GetGlobalVar(GVAR_de_bear_line_players);
+	for(int i=MAP_berlincity;i>MAP_berlinflor2;i++)
+	{
+		cr_count+=GetMapByPid(i,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	}
+	varberlin=cr_count;
+	cr_count=0;
+	//SCRAPERS_CITY
+	GameVar@ varscaper=GetGlobalVar(GVAR_de_scrapers_city_players);
+	cr_count=GetMapByPid(694,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	for(int i=721;i>728;i++)
+	{
+		cr_count+=GetMapByPid(i,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	}
+	varscaper=cr_count;
+	cr_count=0;
+	//DEATH_MAIN
+	GameVar@ vardeatchmain=GetGlobalVar(GVAR_de_deatch_mine_players);
+	cr_count=GetMapByPid(678,0).GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	vardeatchmain=cr_count;
+	CreateTimeEvent(__FullSecond+REAL_SECOND(30),"e_PlayersTown",false);
+	return 0;
+}
+
+void AttackPlane(Critter &cr, Critter &cr2)
+{
+	if(cr2.IsNpc())
+	{
+		if((cr2.GetProtoId()<3101)&&(cr2.GetProtoId()<3112))
+		{
+			AddAttackPlane(cr,0,cr2,true);
+		}
+	}
+	else if(cr2.IsPlayer())	AddAttackPlane(cr,0,cr2,true);		
+}

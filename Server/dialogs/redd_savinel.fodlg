@@ -1,0 +1,31 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Савинелли}
+{200}{}{Вы видите мужчину с давно не мытой головой. Он присыпан пылью.}
+{210}{}{Перед вами Энрико Савинелли, тот самый тип, который заведует караванами, идущими из Нью-Рино в Реддинг и обратно.}
+{210}{}{Вы видите невысокого, нервного мужчину с волосами, зачесанными назад.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Savinelly}
+{200}{}{You see a man with greasy hairs. He covered with dust.}
+{210}{}{You see Savinelly, New Reno – Redding chief caravaneer.}
+{210}{}{You see a low, nervous guy with slicked back hair.}
+{1000}{}{Predialogue installations}
+
+[pols]
+{100}{}{Savinelly}
+{200}{}{You see a man with greasy hairs. He covered with dust.}
+{210}{}{You see Savinelly, New Reno – Redding chief caravaneer.}
+{210}{}{You see a low, nervous guy with slicked back hair.}
+{1000}{}{Predialogue installations}
+

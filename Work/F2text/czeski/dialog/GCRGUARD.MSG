@@ -1,0 +1,72 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš nìkoho, jehož kùže byla velice škaredì popálena. Vypadá to, že tu drží stráž.}
+{101}{}{Vidíš ghoula, který je tu na stráži.}
+{102}{}{Vidíš nìkoho, jehož kùže vypadá, že byla popálena radiací. Tak vysoká radiace by ho mìla zabít, ale vypadá to, že mu to nevadí. Vypadá to, že tu je na stráži.}
+
+{110}{}{Radši bys už nemìl krást.}
+{111}{}{Vy hezouni tu nejste vítáni. Už byste se nemìli znovu pokoušet nìco ukrást.}
+{112}{}{Myslel sis, že mi mùžeš nìco ukrást z mojí kapsy?}
+{113}{}{Nech to bejt, jinak jsi na kaši.}
+{114}{}{Já bejt tebou, už bych to podruhé nedìlal.}
+{115}{}{To, že Ti urazím obì ruce, to bude jenom zaèátek.}
+{116}{}{Ty nejsi zrovna pøátelskej?}
+{117}{}{Hledám nìjakej dùvod, abych se do Tebe nepustil. Teï mi ho dáváš sám?}
+
+{120}{}{Kurvadrát, co se tu k èertu poøád potloukáš kolem?}
+{121}{}{Jestli se snažíš tady tudy proplížit, tak to si mìl být mnohem tišší než teï.}
+{122}{}{Hele, nejsi náhodou zlodìj.}
+{123}{}{Ty jsi fakt dobrej ve svým oboru. He, he.}
+{124}{}{Blbeèku, choï pøece normálnì.}
+{125}{}{Další uteèenec z Ministerstva Hloupého Chození.}
+{126}{}{Já tì vidím. A víš co, já Ti rozmlátím palici.}
+{127}{}{To znamená, že jsi mì ani nevidìl?}
+{128}{}{Co to bylo? Tohle není žádná prdel. Tohle vyžaduje maximální nasazení.}
+{129}{}{Hehe, opravdu se pokoušíš bejt tichej?}
+
+{130}{}{Tyhle dveøe vedou do oblasti s omezeným pøístupem. Budeš potøebovat žlutou vstupní kartu, aby ses tam dostal.}
+{131}{}{Potøebuješ žlutou vstupní kartu, abys mohl jít dál.}
+{132}{}{Mìl by sis promluvit s Haroldem, jestli chceš žlutou vstupní kartu.}
+{133}{}{Když není klíè, nemùžeš vstoupit.}
+{134}{}{Nemùžeš projít tìmahle dveøma bez žluté vstupní karty, chlape.}
+
+{140}{}{Rád bych vidìl tvoje povolení.}
+{141}{}{Heej, hezoune.}
+{142}{}{Jestli se tu nìco posere, hned budeme vìdìt komu nakopat prdel.}
+{143}{}{Radši bys tam nemìl chodit. Pro takový, jako jsi ty, je tam moc velký horko.}
+{144}{}{Mnoo, tenhle klíè vypadá jako ten správnej.}
+
+{150}{}{Žádnej klíè, žádnej vstup.}
+{151}{}{Tohle je støežený území a je zde omezený pøístup.}
+{152}{}{Radši tam nedìlej žádný vylomeniny.}
+{153}{}{Abys prošel tìmito dveømi, budeš potøebovat èervenou vstupní kartu.}
+{154}{}{Radši se zeptej Harolda na èervenou vstupní kartu, jestli se tam chceš dostat.}
+
+{160}{}{Radši by ses tam nemìl dívat.}
+{161}{}{Vítej u kontroly.}
+{162}{}{Nièeho se tam nedotýkej.}
+{163}{}{Jestli se tam nìco stane, my si Tì najdeme.}
+{164}{}{Jestli budou problémy -- vlastní máma tì nepozná.}
+
+{170}{}{To sem sakra pøekvapenej, že vidím hezouna jako jsi ty právì tady.}
+{171}{}{Vypadá to, že se tu zaèínáš malièko pøipalovat.}
+{172}{}{Hmm, miluju únik radiace -- ty taky, že jo?}
+{173}{}{Nièeho se tu nedotýkej.}
+{174}{}{Nech být svý nenechavý pracky a nebude žádnej problém.}
+
+{180}{}{Neber si vìci bez povolení.}
+{181}{}{Nemùžeš si odtud vzít nic bez žádanky.}
+{182}{}{Promluv si s Jeremym nebo Haroldem, jestli nìco chceš.}
+{183}{}{Nic se odtud neodnáší bez žádanky.}
+{184}{}{Není žádanka, není vybavení.}
+
+{190}{}{Sledujeme každej tvùj krok, hezoune.}
+{191}{}{Nevadí ti tady ten vysokej stupeò radiace?}
+{192}{}{Sledujeme tvoje kroky.}
+{193}{}{Jestli se tu nìco stane, budeš první, za kým pùjdeme.}
+{194}{}{Úsmìv do sledovací kamery.}
+
+{200}{}{Co to sakra dìláš s tìma dveøma?}
+{201}{}{Nech to bejt a vypadni odsud.}
+{202}{}{Eee, tak tohle urèitì nevypadá jako vstupní karta.}
+{203}{}{Jestli se o to pokusíš ještì jednou, budeme Tì muset zabít.}
+{204}{}{Ty fakt musíš bejt blbìjší než vypadáš, když to zkoušíš pøímo pøed námi.}

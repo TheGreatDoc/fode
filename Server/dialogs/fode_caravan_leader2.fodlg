@@ -1,0 +1,46 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p caravan_job ! 0 D _var p caravan_job ! 1 D _var p caravan_job ! 8 D _var p caravan_job ! 9 D _var p caravan_job ! 10 D _var p caravan_job ! 11 #
+3 1020 D _var p caravan_job ! 2 D _var p caravan_job ! 3 D _var p caravan_job ! 4 D _var p caravan_job ! 5 D _var p caravan_job ! 6 D _var p caravan_job ! 7 @
+2 2000 None 0 #
+0 2010 #
+0 2020 @
+3 3000 None 0 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{part of caravan}
+{1020}{}{not part of caravan}
+{2000}{}{Hey there. We're going back in @lexem caravan_time_left@ minutes. If you want you can follow us again, you will get your pay doubled then.}
+{2010}{}{I am ready. (Get in the caravan)}
+{2020}{}{I'll pass from here.}
+{3000}{}{Can I help you?@@Move along.@@Nothing to see here.@@Continue your business, stranger.@@Hello, babyface.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{part of caravan}
+{1020}{}{not part of caravan}
+{2000}{}{Witaj. Wracamy za @lexem caravan_time_left@ minut. Jeśli chcesz z nami iść, dostaniesz podwójną zapłatę.}
+{2010}{}{Jestem gotowy. (Wejdź do karawany)}
+{2020}{}{Wybacz, nie mogę.}
+{3000}{}{Pomóć ci w czymś?@@Ruchy, ruchy.@@Nie ma tu nic ciekawego.@@Rób swoje, przybyszu.@@Witaj, żółtodziobie.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{part of caravan}
+{1020}{}{not part of caravan}
+{2000}{}{Hey there. We're going back in @lexem caravan_time_left@ minutes. If you want you can follow us again, you will get your pay doubled then.}
+{2010}{}{I am ready. (Get in the caravan)}
+{2020}{}{I'll pass from here.}
+{3000}{}{Can I help you?}
+

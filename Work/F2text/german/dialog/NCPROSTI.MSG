@@ -1,0 +1,114 @@
+# QUICK LOOK
+{100}{}{Du siehst eine Prostituierte.}
+
+# EXAMINE
+{150}{}{Du siehst eine...Dame der Nacht. Ihre zerlumpten Kleider sind verführerisch um ihren Körper drapiert.}
+{151}{}{Du siehst eine Prostituierte. Sie zwinkert dir zu.}
+{152}{}{Du siehst eine Prostituierte. Ihre Augen sehen aus wie verglühende Kohlen.}
+{153}{}{Du siehst eine Prostituierte. Sie riecht wie Blumen.}
+{154}{}{Du siehst eine Prostituierte. Sie riecht wie Mutter.}
+{155}{}{Du siehst eine Prostituierte. Es ist dir ein Rätsel, wie die zerrissenen Lumpen ihre Brüste verdecken können.}
+{156}{}{Du siehst eine Prostituierte. Sie sieht aus, als ob sie ihre Freier umbringt und auffrißt.}
+{157}{}{Du siehst eine Prostituierte. Sie taxiert dich wie ein Juwelier.}
+{158}{}{Du siehst eine Prostituierte. Ihre zerlumpten Kleider sind verführerisch um ihren Körper drapiert.}
+
+# 1. [NO REP]
+{1223}{}{Ich bin Leichtzuham. Und wer bist du?}
+{1224}{}{Ja, die SIND echt.}
+{1225}{}{Ja, die SIND echt und NEIN, du kannst dich nicht selbst überzeugen.}
+{1226}{}{Möchtest du dein Bettzeug mit jemandem teilen?}
+{1227}{}{Suchst du 'n bißchen Action?}
+{1228}{}{Du weißt nicht was Liebe ist, bis du die Liebe in Reno kennenlernst.}
+{1229}{}{Möchtest du eine Verabredung?}
+{1230}{}{Hab gehört, es gab Schwierigkeiten in der Geschäftsstraße...}
+{1231}{}{Suchst du Unterhaltung?}
+{1232}{}{Möchtest du tanzen?}
+{1233}{}{Du weißt nicht was Liebe ist, bis du die Liebe in Reno kennenlernst.}
+{1234}{}{Brauchst du einen Freund für den Abend? Oder nur für zehn Minuten?}
+{1235}{}{Möchtest du 'n bißchen Spaß?}
+{1236}{}{Möchtest du in die Stadt gehen?}
+{1237}{}{Du hast die Knete, ich hab die Zeit.}
+{1238}{}{Wenn ich hinterher mit dir reden soll, kostet's extra.}
+{1239}{}{Wenn ich nach der Liebe wach bleiben soll, kostet's extra.}
+{1240}{}{Vergiß die Spielautomaten. Bei mir ist die Gewinnauszahlung VIEL besser.}
+{1241}{}{Ich bin nicht billig, aber dafür was Besonderes.}
+{1242}{}{Letzte Nacht kam ich mir vor wie beim Marathon...}
+{1243}{}{Keine Küsse. So sind die Regeln.}
+{1244}{}{Vergiß die Spielautomaten. Bei mir ist die Gewinnauszahlung VIEL besser.}
+{1245}{}{Ich hab 'ne Freundin, wenn du's gern doppelt magst.}
+{1246}{}{Nimmst du 'ne einsame Dame mit in die Stadt?}
+{1247}{}{Äh, natürlich bin ich eine Frau. Schau einfach nicht auf den Adamsapfel.}
+{1248}{}{Bin total erschöpft seit dieser letzten Tagung...}
+{1249}{}{Ich bin Jungfrau. Ich bin nur nicht sehr gut darin.}
+{1250}{}{Ich höre, in den Familien braut sich wieder was zusammen.}
+{1251}{}{Ich brauche Hilfe, um aus diesem Kleid herauszukommen.}
+{1252}{}{Sie nennen mich nicht umsonst die Glücksmarie.}
+{1253}{}{Magst du mal Spaß mit einer Dame haben?}
+{1254}{}{Sei vorsichtig, es ist das erste Mal. Für heute.}
+{1255}{}{::Purrrrr::}
+{1256}{}{::Rrrrraurrr::}
+{1257}{}{Du bringst meinen Geigerzähler zum Ausschlagen.}
+{1258}{}{::Pfeift::}
+{1259}{}{Beißen kostet extra.}
+{1260}{}{Willste mal ordentlich Dampf ablassen?}
+
+# SPECIAL CAT'S PAW WHORE DIALOGS START
+# 0. QUICK LOOK
+{3100}{}{Du siehst ein Mädchen aus dem Cat's Paw.}
+
+# EXAMINES
+{3150}{}{Du siehst eine...Dame der Nacht. Ihre zerlumpten Kleider sind verführerisch um ihren Körper drapiert.}
+{3151}{}{Du siehst ein Mädchen aus dem Cat's Paw. Sie zwinkert dir zu.}
+{3151}{}{Du siehst ein Mädchen aus dem Cat's Paw. Ihre Augen sehen aus wie verglühende Kohlen.}
+{3152}{}{Du siehst ein Mädchen aus dem Cat's Paw. Sie riecht wie Blumen.}
+{3153}{}{Du siehst ein Mädchen aus dem Cat's Paw. Sie riecht wie Mutter.}
+{3154}{}{Du siehst ein Mädchen aus dem Cat's Paw. Es ist dir ein Rätsel, wie die zerrissenen Lumpen ihre Brüste verdecken können.}
+{3155}{}{Du siehst ein Mädchen aus dem Cat's Paw. Sie sieht aus, als ob sie ihre Freier umbringt und auffrißt.}
+{3156}{}{Du siehst ein Mädchen aus dem Cat's Paw. Sie taxiert dich wie ein Juwelier.}
+{3157}{}{Du siehst ein Mädchen aus dem Cat's Paw. Ihre zerlumpten Kleider sind verführerisch um ihren Körper drapiert.}
+
+#1. SOME OTHER RANDOM FLOAT TEXT [ANY DISTANCE] (WTG)
+{3200}{}{Oh, Goott! Oh Goott! OhGoottohGoottohGoott...ooooooh Goooott.}
+{3201}{}{Ja! Ja! Jaaaaaaaaaa JaJaJaJa Ja Ja JAAA! Gezahlt wird beim Kassierer.}
+{3202}{}{Beeil dich. Die Uhr läuft.}
+{3203}{}{Brauchst du ein Taschentuch?}
+{3204}{}{Gib's mir, Fr...Ni...Sco...äh, 'tschuldige, wie war noch dein Name?}
+{3205}{}{Oh Gott, oh Gott, oh Gott! Sind wir JETZT fertig?}
+{3206}{}{Huoa. DAS kostet extra.}
+{3207}{}{Ja! Du bist Kolumbus, ich bin Amerika!}
+{3208}{}{Oh, Gott, das war das Beste. Runter jetzt, aber dalli. Gezahlt wird beim Kassierer.}
+{3209}{}{Schon drin?}
+{3210}{}{Ja, du BIST der Bunkerbewohner. Ja, DU hast den Wasserchip gefunden und den MEISTER bezwungen. Du bist ein HELD.}
+{3211}{}{Du bist so rauh, du bist wie eine gehärtete Powerrüstung.}
+{3212}{}{*Huff*}
+{3213}{}{*Puff*}
+{3214}{}{Nein, ich werde die Mickymaus-Ohren NICHT aufsetzen.}
+{3215}{}{Ja, ja, du bist riesig.}
+
+# END LINES
+{2175}{}{. Ihr wißt schon - hat der Enklave in den Hintern getreten.}
+{2178}{}{! Was 'ne Art, der Enklave eins überzuziehen!}
+{2181}{}{. Ihr wißt schon - hat der Enklave in den Hintern getreten.}
+{2195}{}{!}
+{2197}{}{! Kannst du mir einen Job im Studio besorgen?}
+{2210}{}{.}
+{2263}{}{! Los, Hengst!}
+{2264}{}{ tritt so viele Hintern, man könnte meinen, er war ein Stiefel in einem früheren Leben.}
+{2268}{}{?}
+{2272}{}{?}
+{2278}{}{! Los, Mädel!}
+{2279}{}{?}
+{2280}{}{ tritt so viele Hintern, man könnte meinen, sie war ein Stiefel in einem früheren Leben.}
+{2285}{}{.}
+{2292}{}{...}
+{2293}{}{?}
+{2294}{}{...hiiier, Schätzchen...}
+{2295}{}{.}
+{2855}{}{?}
+{2858}{}{?}
+{2861}{}{?}
+{2865}{}{, du Liebesgott...was hast du vor?}
+{2867}{}{! Wie geht es dir?}
+{2868}{}{. Kann ich dir mit...*irgend etwas* helfen?}
+{2870}{}{.}
+{2873}{}{, du kleine Verführerin...was hast du vor?}

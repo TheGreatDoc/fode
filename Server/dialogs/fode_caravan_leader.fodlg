@@ -1,0 +1,290 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 D _var p caravan_job = 0 #
+4 2030 D _var p caravan_job = 1 #
+5 2040 D _var p caravan_job = 2 #
+5 2050 D _var p caravan_job = 3 #
+6 2060 D _var p caravan_job = 4 #
+8 2070 D _var p caravan_job = 5 #
+9 2080 D _var p caravan_job = 6 #
+0 2090 @
+3 3000 None 0 #
+4 3010 D _var p caravan_job = 1 #
+5 3020 D _var p caravan_job = 2 #
+5 3030 D _var p caravan_job = 3 #
+6 3040 D _var p caravan_job = 4 #
+8 3050 D _var p caravan_job = 5 #
+9 3060 D _var p caravan_job = 6 #
+0 3070 @
+4 4000 None 0 #
+3 4010 #
+0 4020 @
+5 5000 None 0 #
+7 5010 D _var p caravan_job < 9 D _var p caravan_job > 8 R _var p caravan_job = 11 #
+7 5020 D _var p caravan_job < 7 D _var p caravan_job > 2 R _var p caravan_job = 7 #
+4 5030 D _var p caravan_job ! 2 D _var p caravan_job ! 3 D _var p caravan_job ! 4 D _var p caravan_job ! 5 D _var p caravan_job ! 6 D _var p caravan_job ! 7 #
+8 5040 D _var p caravan_job = 5 #
+9 5050 D _var p caravan_job = 6 #
+0 5060 @
+6 6000 None 0 #
+8 6010 D _var p caravan_job = 5 #
+9 6020 D _var p caravan_job = 6 #
+0 6030 @
+7 7000 None 0 #
+0 7010 @
+8 8000 None 0 #
+0 8010 #
+5 8020 D _var p caravan_job = 3 #
+5 8030 D _var p caravan_job = 9 #
+6 8040 D _var p caravan_job = 4 #
+6 8050 D _var p caravan_job = 10 @
+9 9000 None 0 #
+14 9010 #
+15 9020 #
+16 9030 #
+17 9040 #
+18 9050 #
+0 9060 @
+10 10000 None 0 #
+0 10010 @
+11 11000 None 0 #
+0 11010 D _var p caravan_job_boxes ! 10 #
+12 11020 D _var p caravan_job_boxes = 10 R _var p caravan_job_boxes = 0 R _item p PID_BOTTLE_CAPS + 100 @
+12 12000 None 0 #
+0 12010 @
+13 13000 None 0 #
+0 13010 @
+14 14000 None 0 #
+0 14010 R _var p caravan_job_target = 1 @
+15 15000 None 0 #
+0 15010 R _var p caravan_job_target = 2 @
+16 16000 None 0 #
+0 16010 R _var p caravan_job_target = 3 @
+17 17000 None 0 #
+0 17010 R _var p caravan_job_target = 4 @
+18 18000 None 0 #
+0 18010 R _var p caravan_job_target = 5 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{start conversation}
+{2000}{}{What do you need?}
+{2010}{}{Who are you guys?}
+{2020}{}{Do you need any mercenaries?}
+{2030}{}{Do you need any mercenaries?}
+{2040}{}{Got any job?}
+{2050}{}{Need some help again?}
+{2060}{}{Need some help again?}
+{2070}{}{When will be the next travel?}
+{2080}{}{When will be the next travel?}
+{2090}{}{Nothing, bye.}
+{3000}{}{We are the @lexem caravan_name@. A Caravan-business in europe.}
+{3010}{}{Do you need any mercenaries?}
+{3020}{}{Got any job?}
+{3030}{}{Need some help again?}
+{3040}{}{Need some help again?}
+{3050}{}{When will be the next travel?}
+{3060}{}{When will be the next travel?}
+{3070}{}{Alright, that's all I wanted to know.}
+{4000}{}{Ask my boss. He is the guy with the green jacket.}
+{4010}{}{And who are you guys?}
+{4020}{}{Okay, bye.}
+{5000}{}{Hmm, you could load some boxes on the caravan. I will give you some caps, so I don't have to do it on my own.}
+{5010}{}{I'll do it.}
+{5020}{}{I'll do it.}
+{5030}{}{I thought more of some protection while traveling.}
+{5040}{}{Actually, I'd like to know when you will move out the next time.}
+{5050}{}{Actually, I'd like to know when you will move out the next time.}
+{5060}{}{Nah, better not.}
+{6000}{}{Hmmm, not now. Come back later, maybe then.}
+{6010}{}{Then when will be the next travel?}
+{6020}{}{Then when will be the next travel?}
+{6030}{}{Okay.}
+{7000}{}{Good. Take them out of the carport and put them on the car.}
+{7010}{}{Fine.}
+{8000}{}{The next travel will be on @lexem caravan_next_travel@.}
+{8010}{}{Okay, bye.}
+{8020}{}{Anything else to do at the moment?}
+{8030}{}{Anything else to do at the moment?}
+{8040}{}{Anything else to do at the moment?}
+{8050}{}{Anything else to do at the moment?}
+{9000}{}{It is today. Which caravan would you like to follow?}
+{9010}{}{I'll take the one to Windy Roads.}
+{9020}{}{I'll take the one to Dark Waters.}
+{9030}{}{I'll take the one to Light Town.}
+{9040}{}{I'll take the one to Bear line.}
+{9050}{}{I'll take the one to Nights City.}
+{9060}{}{I changed my mind. Maybe I will come back later.}
+{10000}{}{Okay, we're on.}
+{10010}{}{(You follow them)}
+{11000}{}{Have you finished yet?}
+{11010}{}{In a bit...}
+{11020}{}{Yes, just finished the last box.}
+{12000}{}{Good. Here's your payment. Check back later for more work. (He gives you a dirty bag of caps)}
+{12010}{}{I will. See you around.}
+{13000}{}{Here we are. You did all you could do. Here's your payment. (He gives you a dirty bag of caps)}
+{13010}{}{Thanks. See you soon.}
+{14000}{}{Okay, we're on.}
+{14010}{}{(You follow them)}
+{15000}{}{Okay, we're on.}
+{15010}{}{(You follow them)}
+{16000}{}{Okay, we're on.}
+{16010}{}{(You follow them)}
+{17000}{}{Okay, we're on.}
+{17010}{}{(You follow them)}
+{18000}{}{Okay, we're on.}
+{18010}{}{(You follow them)}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{start conversation}
+{2000}{}{Czego potrzebujesz?}
+{2010}{}{Kim jesteście?}
+{2020}{}{Potrzebujecie najemników?}
+{2030}{}{Potrzebujecie najemników?}
+{2040}{}{Macie prace?}
+{2050}{}{Potrzebujecie ponownej pomocy?}
+{2060}{}{Potrzebujecie ponownej pomocy?}
+{2070}{}{Kiedy następna podróż?}
+{2080}{}{Kiedy następna podróż?}
+{2090}{}{Nic, żegnaj.}
+{3000}{}{Gdzie są @lexem caravan_name@. Biznesowa karawana Europy.}
+{3010}{}{Potrzebujecie najemników?}
+{3020}{}{Macie prace?}
+{3030}{}{Potrzebujecie ponownej pomocy?}
+{3040}{}{Potrzebujecie ponownej pomocy?}
+{3050}{}{Kiedy następna podróż?}
+{3060}{}{Kiedy następna podróż?}
+{3070}{}{Dobra, to tyle co chciałem wiedzieć.}
+{4000}{}{Spytaj szefa. To ten koleś w zielonej kurtce.}
+{4010}{}{Kim jesteście?}
+{4020}{}{Dobrze, żegnaj.}
+{5000}{}{Hmm.. Możesz załadować skrzynki na karawanę. Za tą robotę dam ci trochę kapsli.}
+{5010}{}{Zrobię to.}
+{5020}{}{Zrobię to.}
+{5030}{}{Myśle, że potrzebuję więcej ochrony podczas podróży.}
+{5040}{}{Aktualnie, potrzebuję wiedzieć kiedy wyruszacie.}
+{5050}{}{Aktualnie, potrzebuję wiedzieć kiedy wyruszacie.}
+{5060}{}{Nie, lepiej nie.}
+{6000}{}{Hmm, nie teraz. Wrócę później.}
+{6010}{}{Więc kiedy będzie następna podróż?}
+{6020}{}{Więc kiedy będzie następna podróż?}
+{6030}{}{Ok.}
+{7000}{}{Dobrze. Weź skrzynki i połóż je na aucie}
+{7010}{}{Okej.}
+{8000}{}{Następna podróź będzie @lexem caravan_next_travel@.}
+{8010}{}{Okej, bywaj.}
+{8020}{}{Jest coś do roboty?}
+{8030}{}{Jest coś do roboty?}
+{8040}{}{Jest coś do roboty?}
+{8050}{}{Jest coś do roboty?}
+{9000}{}{Tak, którą karawanę wybierasz?}
+{9010}{}{Wybieram karawanę do Windy Roads.}
+{9020}{}{Wybieram karawanę do Dark Waters.}
+{9030}{}{Wybieram karawanę do Light Town.}
+{9040}{}{Wybieram karawanę do Bear line.}
+{9050}{}{Wybieram karawanę do Nights City.}
+{9060}{}{Zmieniłem zdanie. Wrócę kiedy indziej.}
+{10000}{}{Ok.}
+{10010}{}{(Chodź z nami)}
+{11000}{}{Skończyłeś już?}
+{11010}{}{Prawie...}
+{11020}{}{Tak, skończyłem.}
+{12000}{}{Dobra, oto twoja zapłata. Wróć później po więcej roboty. (Daje ci worek z kapslami)}
+{12010}{}{Okej, żegnaj.}
+{13000}{}{Dobra, oto twoja zapłata. Wróć później po więcej roboty. (Daje ci worek z kapslami)}
+{13010}{}{Dzięki, do zobaczenia.}
+{14000}{}{Dobra, lecimy.}
+{14010}{}{(Chodź z nami)}
+{15000}{}{Dobra, lecimy.}
+{15010}{}{(Chodź z nami)}
+{16000}{}{Dobra, lecimy.}
+{16010}{}{(Chodź z nami)}
+{17000}{}{Dobra, lecimy.}
+{17010}{}{(Chodź z nami)}
+{18000}{}{Dobra, lecimy.}
+{18010}{}{(Chodź z nami)}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{start conversation}
+{2000}{}{What do you need?}
+{2010}{}{Who are you guys?}
+{2020}{}{Do you need any mercenaries?}
+{2030}{}{Do you need any mercenaries?}
+{2040}{}{Got any job?}
+{2050}{}{Need some help again?}
+{2060}{}{Need some help again?}
+{2070}{}{When will be the next travel?}
+{2080}{}{When will be the next travel?}
+{2090}{}{Nothing, bye.}
+{3000}{}{We are the @lexem caravan_name@. A Caravan-business in europe.}
+{3010}{}{Do you need any mercenaries?}
+{3020}{}{Got any job?}
+{3030}{}{Need some help again?}
+{3040}{}{Need some help again?}
+{3050}{}{When will be the next travel?}
+{3060}{}{When will be the next travel?}
+{3070}{}{Alright, that's all I wanted to know.}
+{4000}{}{Ask my boss. He is the guy with the green jacket.}
+{4010}{}{And who are you guys?}
+{4020}{}{Okay, bye.}
+{5000}{}{Hmm, you could load some boxes on the caravan. I will give you some caps, so I don't have to do it on my own.}
+{5010}{}{I'll do it.}
+{5020}{}{I'll do it.}
+{5030}{}{I thought more of some protection while traveling.}
+{5040}{}{Actually, I'd like to know when you will move out the next time.}
+{5050}{}{Actually, I'd like to know when you will move out the next time.}
+{5060}{}{Nah, better not.}
+{6000}{}{Hmmm, not now. Come back later, maybe then.}
+{6010}{}{Then when will be the next travel?}
+{6020}{}{Then when will be the next travel?}
+{6030}{}{Okay.}
+{7000}{}{Good. Take them out of the carport and put them on the car.}
+{7010}{}{Fine.}
+{8000}{}{The next travel will be on @lexem caravan_next_travel@.}
+{8010}{}{Okay, bye.}
+{8020}{}{Anything else to do at the moment?}
+{8030}{}{Anything else to do at the moment?}
+{8040}{}{Anything else to do at the moment?}
+{8050}{}{Anything else to do at the moment?}
+{9000}{}{It is today. Which caravan would you like to follow?}
+{9010}{}{I'll take the one to Windy Roads.}
+{9020}{}{I'll take the one to Dark Waters.}
+{9030}{}{I'll take the one to Light Town.}
+{9040}{}{I'll take the one to Bear line.}
+{9050}{}{I'll take the one to Nights City.}
+{9060}{}{I changed my mind. Maybe I will come back later.}
+{10000}{}{Okay, we're on.}
+{10010}{}{(You follow them)}
+{11000}{}{Have you finished yet?}
+{11010}{}{In a bit...}
+{11020}{}{Yes, just finished the last box.}
+{12000}{}{Good. Here's your payment. Check back later for more work. (He gives you a dirty bag of caps)}
+{12010}{}{I will. See you around.}
+{13000}{}{Here we are. You did all you could do. Here's your payment. (He gives you a dirty bag of caps)}
+{13010}{}{Thanks. See you soon.}
+{14000}{}{Okay, we're on.}
+{14010}{}{(You follow them)}
+{15000}{}{Okay, we're on.}
+{15010}{}{(You follow them)}
+{16000}{}{Okay, we're on.}
+{16010}{}{(You follow them)}
+{17000}{}{Okay, we're on.}
+{17010}{}{(You follow them)}
+{18000}{}{Okay, we're on.}
+{18010}{}{(You follow them)}
+

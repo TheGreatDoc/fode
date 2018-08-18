@@ -1,0 +1,59 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+# Player uses a skill on the door
+# Unlock Door
+{170}{}{Zruènì odemykáš skøíòku.}
+{171}{}{Díky tvým malým zkušenostem se zámek skøíòky zasekl.}
+{172}{}{Nepodaøilo se ti tu skøíòku odemknout.}
+
+# Unlock Door
+{173}{}{ zkušenì odemyká skøíòku.}
+{174}{}{ díky nedostatku zkušeností zablokoval zámek skøíòky.}
+{175}{}{ nedokázal skøíòku odemknout.}
+
+# Player uses an item on the door
+{176}{}{Vylamuješ zámek dveøí.}
+{177}{}{Když ses pokoušel vylomit zámek, poranil sis záda, a to ti ubralo nìkolik bodù.}
+
+# The following set of lines is to be translated as:
+# You strain your back while trying to bust the lock and
+# take [x] points of damage.
+
+{178}{}{Když ses pokoušel vylomit zámek, poranil sis záda a to ti ubralo }
+{179}{}{ bodù.}
+{180}{}{Na to, abys pøekonal tento zámek, jsi pøíliš slabý.}
+
+# NPC uses an item on the door
+# The following lines are prepended by the NPC's name
+{181}{}{ vylomil zámek dveøí.}
+{182}{}{ si poranil záda, když se pokoušel vylomit zámek, což ho stálo nìkolik bodù.}
+
+# The following line set of lines is to be translated as:
+# NPC strains his back while trying to bust the lock and
+# takes [x] points of damage
+
+{183}{}{ si poranil záda, když se pokoušel vylomit zámek, což ho stálo }
+{184}{}{ bodù.}
+
+{185}{}{ je pøíliš slabý na to, aby vylomil zámek.}
+{186}{}{ si poranil záda, když se pokoušel vylomit zámek, což ho stálo nìkolik bodù.}
+
+# The following line set of lines is to be translated as:
+# NPC strains her back while trying to bust the lock and
+# takes [x] points of damage
+
+{187}{}{ si poranila záda, když se pokoušela vylomit zámek, což jí stálo }
+{188}{}{ bodù.}
+
+# Lock Door
+{189}{}{Rychle zamykáš zámek.}
+{190}{}{Nepovedlo se ti zámek zamknout.}
+
+# Lock Door
+{191}{}{ úspìšnì zamkl zámek.}
+{192}{}{ nedokázal zamknout zámek.}
+
+{203}{}{Zdá se, že je zamèeno.}
+
+{800}{}{Získal jsi FOB.}
+{810}{}{Získal jsi plány vertibirdu.}
+{820}{}{Získal jsi K-9 motivátor.}

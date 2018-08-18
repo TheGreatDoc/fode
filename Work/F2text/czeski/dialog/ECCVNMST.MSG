@@ -1,0 +1,68 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš vedoucího karavany.}
+{101}{}{Díky Šaj-hulúdovi, že ses sem dostal. Zdá se, že je to èím dál tìžší dostat se z místa na místo bez toho, aby byl èlovìk nìkým nebo nìèím pøepaden.}
+{102}{}{Co pro tebe mohu udìlat?}
+{103}{}{Kam máte namíøeno?}
+{104}{}{Co vezete?}
+{105}{}{Nashle.}
+{106}{}{Ug.}
+{107}{}{Právì jsem vyzvedl zásilku z }
+{108}{}{ a mám namíøeno do }
+{109}{}{.}
+
+# Town Names
+{198}{}{New Reno}
+{199}{}{Denu}
+{200}{}{Arroyo}
+{201}{}{Reddingu}
+{202}{}{Vault City}
+{203}{}{NCR}
+{204}{}{Broken Hills}
+{205}{}{Gecko}
+{206}{}{San Francisca}
+{207}{}{Modocu}
+{208}{}{Klamathu}
+{209}{}{Vaultu 15}
+
+{110}{}{Co vezete?}
+{111}{}{Nashle.}
+{112}{}{Vezeme }
+
+# Cargo for the Caravan
+{150}{}{Léky.}
+{151}{}{Zlatou rudu.}
+{152}{}{Uranovou rudu.}
+{153}{}{Farmáøské zboží.}
+{154}{}{Drogy.}
+{155}{}{Otroky.}
+{156}{}{Rùzné vìci.}
+
+{113}{}{Myslíš, že bych od tebe mohl nìco koupit?}
+{114}{}{Kam máš namíøeno?}
+{115}{}{Nashle.}
+{116}{}{No, nevím proè bys nemohl. Uvážím-li, že jsi nám pomohl, když bylo nejhùø, a tak. Jasnì. Proè ne. Tady je moje nabídka.}
+{117}{}{[Obchod]}
+{118}{}{Zmìnil jsem názor.}
+{119}{}{Já už jsem tì nìkde vidìl. Do prdele! Tvoje fotka je všude na tìch plakátech "hledá se". Podívej, my nechceme mít žádné potíže. Ty si jdi vlastní cestou a my pùjdeme zase svou. Nikomu neøeknu, že jsme tì vidìli. Ale teï už jdi!}
+{120}{}{Hej! Tvoje fotka je na všech plakátech "hledá se". Neboj se, já tì neudám. Pokud si dobøe pamatuju, je po mnì na nìkolika místech taky vyhlášeno pátrání. Takže, tys chtìl obchodovat...}
+{121}{}{[Obchod]}
+{122}{}{To je dobrý. Musíme už jít. Neboj se. Neøeknu jim, že jsem tì vidìl.}
+{123}{}{Poèkej chvilku! Už jsem o tobì slyšel. Ty jsi ten dobrodinec, co chodí kolem, zachraòuje lidi a pomáhá jim. Nemáme rádi typy jako jsi ty, takže odpal!}
+{124}{}{Slyšel jsem hodnì dobrého o èlovìku, který vypadá jako ty. Myslím, že spolu mùžeme smìnit nìjaké zboží. Podívej co tady mám.}
+{125}{}{[Obchod]}
+{126}{}{Nashle.}
+{127}{}{Už jsem o tobì slyšel. Tak ty jsi ten postrach, který tu všude kolem dìlá ten binec. Je mi ctí se s tebou setkat, a potøást rukou. Jenom myšlenka na všechno, co se o tobì povídá, mi vhání slzy do oèí. Bude mou ctí s tebou obchodovat.}
+{128}{}{Obchod]}
+{129}{}{Nashle}
+{130}{}{Øíká se, že nìkdo tobì podobný dìlá v poslední dobì problémy. Nechci obchodovat s tobì podobnými. Je mi líto.}
+{131}{}{Nevím, proè tì hledají a po pravdì øeèeno mì to ani  moc nezajímá. Neobchodujeme s tobì podobnými.}
+{132}{}{Proè nedìláš dobrodiní nìkde jinde?}
+{133}{}{Èlovìk s tvou povìstí si jistì najde zásoby jinde.}
+{134}{}{Èím se zabýváš?}
+{135}{}{Kam máš namíøeno?}
+{136}{}{Co vezete?}
+{137}{}{Nashle.}
+{138}{}{Ug.}
+{139}{}{To je fajn. Tak se mìj.}
+
+{300}{}{Díky za obchod.}

@@ -1,0 +1,53 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš záda lovce.}
+{101}{}{Vidíš statného lovce.}
+{102}{}{Vidíš lovce geckonù.}
+
+{200}{}{Ty sem pìknì zapadneš.}
+{201}{}{Kup rundu chlastu. Tak bude to sakra?}
+{202}{}{Pøišel sis to rozdat s Duntonovejma?}
+{203}{}{Vypadáš jako bys pøišel odnìkud ze severu.}
+{204}{}{Na co se tak díváš?}
+{205}{}{Na tvou èistokrevnost bych si nevsadil zlato. Ha, ha, ha.}
+{206}{}{Ugh, dal bych si další džbánek chcanek.}
+{207}{}{Jestli potøebuješ prachy, Duntonovi hledají nìjakou pomoc.}
+{208}{}{Nejseš tak úplnì špatnej barbar.}
+{209}{}{96 zelenejch flašek Chcanek ve mnì, 96 flašek bude na zdi....}
+{210}{}{Pøišel jsem z jihu z Denu; je tam spoustu práce.}
+{211}{}{Dones sem další džbánky chlastu, Salvadore!}
+{212}{}{Lov jde ztìžka; musí bejt snadnìjší cesta jak si vydìlat.}
+{213}{}{Nejsem tak vohra... vožralej, jak si myslíš (hyk).}
+{214}{}{Hej kámo, tyhle kostky, z tebe udìlaj boháèe (míchá kostky)}
+{215}{}{Ohlednì práce si promluv s Duntonovejma nebo s barmanem, kamaráde.}
+{216}{}{Vybral sis správnej flek na chlastání, pøíteli.}
+{217}{}{Ne, Bishope, nezkoušej to s tím nožem znova!}
+{218}{}{Pùjde nìkdo hrát kostky?}
+{219}{}{Je to fajn, že tu není ten vožralec Aldo.}
+{220}{}{Vždycky bereš brahmíny co nejsou tvé?}
+{221}{}{Sledujte toho Velkýho ducha!}
+{222}{}{V kaòonu na východì je nìco tajemnýho.}
+{223}{}{Lov je nebezpeèný; pøed nìkolika týdny se ztratil dobrej lovec.}
+{224}{}{Rád oblbuju toho hòupa Torra.}
+
+{300}{}{Podívejme kdo se pøišel podívat.}
+{301}{}{(mumly, mumly) ...koho nám sem èerti nesou... (mumly)}
+{302}{}{Nezdá se ti, že tu seš špatnì?}
+{303}{}{Nepotøebujeme tu nìkoho tvýho druhu, barbare.}
+{304}{}{Možná, jestli všem koupíš chlast, tak tì tu necháme.}
+{305}{}{Táhni jinam, barbare.}
+{306}{}{Na co tak blbì zíráš?}
+{307}{}{Duntonovi ti to vysvìtlí, barbare...}
+{308}{}{Tady pro tebe není vhodný místo na chlastání.}
+{309}{}{Tvoje maminka tu není chlapèe; zkus zajít do lázní.}
+{310}{}{Proè si nejdeš hrát nìkam jinam?}
+{311}{}{Máme tu pro tebe takový hezký kaòon, východnì odsud, zajdi se podívat.}
+{312}{}{Co tu chceš?}
+{313}{}{Lepší bude, když si budeš hledìt svýho.}
+{314}{}{Nejmenuješ se náhodou taky Torr? (he, he, he)}
+{315}{}{Jdi se napít za Aldem, jo?}
+{316}{}{Tohle není místo pro tebe.}
+{317}{}{S tebou se teda rozhodnì nenapiju.}
+{318}{}{Pche. (odplivne si na podlahu)}
+{319}{}{Není tu nic, na co se dá èumìt.}
+{320}{}{Citíš, že tì tu nechceme...he?}

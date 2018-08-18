@@ -1,0 +1,693 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "_teams.fos"
+#include "utils_for_array.fos"
+#include "factions.fos"
+#include "prefixes.fos"
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import void DropRadiation(Critter& cr) from "radiation";
+import void DropPoison(Critter& cr) from "poison";
+import void DropDrugEffects(Critter& cr) from "drugs";
+
+uint []tc_maps_ids={709,670,685,678};
+uint []tc_maps_timeouts={0,0,0,0};
+string []tc_maps_names={"FURY TOWN","OLD VILLAGE","OLD FIELDS","DEATH MINE"};
+
+class AMMO
+{
+	int PID;
+	int Count;
+	AMMO(int ammo_pid, int ammo_count)
+	{
+		PID=ammo_pid;
+		Count=ammo_count;
+	}
+};
+
+bool CheckIfDEV(Critter& player)
+{
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && PREFIXES[i][1]=="DEV")
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+void try_town_control(Critter& player, Critter@ npc)
+{
+	if(__IsTc && player.StatBase[PLAYER_FACTION]==__TcFactionId)
+	{
+		npc.Say(SAY_NORM_ON_HEAD,"Ok, ok. I'm getting stuff. Just give me a moment.");
+	}
+	else if(start_town_control(player,npc))
+	{
+		npc.Say(SAY_NORM_ON_HEAD,"Allright. Just don't kill me. I'll get the stuff.");
+	}
+	else npc.Say(SAY_NORM_ON_HEAD,"Don't waste my time.");
+}
+
+bool start_town_control(Critter& cr, Critter@ npc)
+{
+	Map@ map=cr.GetMap();
+	if(!valid(map)) return false;
+	uint mapPid = map.GetProtoId();
+	if(tc_maps_ids.length()!=tc_maps_timeouts.length() || tc_maps_timeouts.length()!=tc_maps_names.length())
+	{
+		cr.Say(SAY_NETMSG,"Error: Town Control");
+		return false;
+	}
+	int MapIndex=-1;
+	for(uint i=0; i<tc_maps_ids.length(); i++)
+	{
+		if(mapPid==tc_maps_ids[i])
+		{
+			MapIndex=i;
+			break;
+		}
+	}
+	if(__IsTc)
+	{
+		cr.Say(SAY_NETMSG,"There is another occupation active in this moment.");
+	}
+	else if(MapIndex==-1)
+	{
+		cr.Say(SAY_NETMSG,"You cannot attack this place.");
+	}
+	else if(__EventBerlin==true || __EventDeathMine==true || __EventOldVillage==true || __EventOldFields==true || __EventDistrictX==true || __EventFuryTown==true || __EventScrapersCity==true || __EventChurchDefense==true)
+	{
+		cr.Say(SAY_NETMSG,"There is an event active in this moment.");
+	}
+	else
+	{
+		if(cr.ParamBase[PLAYER_FACTION]==0)
+		{
+			cr.Say(SAY_NETMSG,"You cannot start occupation because you are not in a faction.");
+			return false;
+		}
+		if(tc_maps_timeouts[MapIndex]>__FullSecond)
+		{
+			cr.Say(SAY_NETMSG,"This place has no resources at the moment.");
+			return false;
+		}
+		int FactionMembers=0;
+		Critter@[]crs;
+		map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+		for(uint i=0; i<crs.length(); i++)
+		{
+			if((crs[i].ParamBase[PLAYER_FACTION]==cr.ParamBase[PLAYER_FACTION])&&(cr.ParamBase[PLAYER_FACTION] != -1))
+				FactionMembers++;
+		}
+		if(FactionMembers<3)
+		{
+			cr.Say(SAY_NETMSG,"There must be at least 3 players from your faction to start occupation.");
+			return false;
+		}
+		else
+		{
+			__TcFactionId=cr.ParamBase[PLAYER_FACTION];
+			__TcFactionName=FACTIONS[cr.ParamBase[PLAYER_FACTION]];
+			__TcCityName="UNDEFINED";
+			__TcMapId=cr.GetMap().Id;
+			__TcCurrentId++;
+			__TcCityName=tc_maps_names[MapIndex];
+			__IsTc=true;
+			//tc_maps_timeouts[MapIndex]=__FullSecond+REAL_MINUTE(180);
+			
+			//test for guard city defense
+			Map@ map = cr.GetMap();
+			Critter@[]crs;
+			Critter@[]enemy;
+			map.GetCritters(0,FIND_ALL|FIND_LIFE_AND_KO,crs);
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==__TcFactionId) enemy.insertLast(crs[i]);
+			}
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(crs[i].StatBase[ST_TEAM_ID]==TEAM_Guard)
+				{
+					for(uint y=0; y<enemy.length(); y++)
+					{
+						if(enemy[y].ParamBase[PLAYER_FACTION]==cr.ParamBase[PLAYER_FACTION])
+						{
+							AddAttackPlane(crs[i],0,enemy[y],true);
+							break;
+						}
+					}
+				}
+			}
+			
+			for(uint i=0; i<12; i++)
+			{
+				uint[] time_val={12-i,__TcCurrentId};
+				CreateTimeEvent(__FullSecond+REAL_MINUTE(i),"e_town_control_message",time_val,false);
+			}
+			uint16 hx=cr.HexX,hy=cr.HexY;
+			uint citizenid=0;
+			uint contenerid=0;
+			uint[] values={map.Id,hx,hy,__TcCurrentId,MapIndex,npc.Id,citizenid,contenerid,uint(__TcFactionId)};
+			CreateTimeEvent(__FullSecond+REAL_MINUTE(4),"e_town_control_stuff1_respawn",values,false);
+			CreateTimeEvent(__FullSecond+REAL_MINUTE(8),"e_town_control_stuff2_respawn",values,false);
+			CreateTimeEvent(__FullSecond+REAL_MINUTE(12),"e_town_control_stuff3_respawn",values,false);
+			CreateTimeEvent(__FullSecond+REAL_MINUTE(25),"respawn_npc",values,false);
+			
+			return true;
+		}
+	}
+	return false;
+}
+
+uint e_town_control_message(uint[]@ values)
+{
+	if(!__IsTc || values[1]!=__TcCurrentId) return 0;
+	for(int i=0; i<PLAYERS_COUNT; i++)
+	{
+		string@ str=GetPlayerName(i);
+		if(@str!=null)
+		{
+			Critter @findcr=GetPlayer(str);
+			if(@findcr!=null)
+			{
+				findcr.Say(SAY_SERVER_MESSAGE_TC,"!! Faction "+__TcFactionName+" is occupying "+__TcCityName+" !!\n"+">>"+values[0]+" minutes left<<");
+			}
+		}
+	}
+	return 0;
+}
+
+uint e_town_control_stuff1_respawn(uint[]@ values)
+{
+	if(!__IsTc || values[3]!=__TcCurrentId) return 0;
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_SUPER_STIMPAK,
+		PID_NUKA_COLA,
+		PID_MENTATS,
+		PID_BUFFOUT,
+		PID_PSYCHO,
+		PID_JET,
+		PID_CIGARETTES,
+		PID_LEATHER_ARMOR_DE,
+		PID_LEATHER_GECKO_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_TESLA_ARMOR_DE,
+		PID_CA_1,
+		PID_10MM_SMG_DE,
+		PID_DESERT_EAGLE_DE,
+		PID_MP5_DE,
+		PID_M16_DE,
+		PID_AK47_NORMAL1_DE,
+		PID_ASSAULT_RIFLE_DE,
+		PID_COMBAT_SHOTGUN_DE,
+		PID_COLT1_DE,
+		PID_FLAMER_DE,
+		PID_M60_DE,
+		PID_10MM_JHP_DE,
+		PID_10MM_AP_DE,
+		PID_44_MAGNUM_JHP_DE,
+		PID_44_FMJ_MAGNUM_DE,
+		PID_5MM_JHP_DE,
+		PID_5MM_AP_DE,
+		PID_9JHP_DE,
+		PID_9AP_DE,
+		PID_SHOTGUN_SHELLS_DE,
+		PID_223_FMJ_DE,
+		PID_45_ACP_DE,
+		PID_762X39_DE,
+		PID_762x51_DE,
+		PID_762X54_DE,
+		PID_40x46_DE,
+		PID_SMALL_ENERGY_CELL_DE,
+		PID_FLAMETHROWER_FUEL_DE,
+		PID_EXPLOSIVE_ROCKET_DE
+
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		100,
+		100,
+		100,
+		40,
+		100,
+		100,
+		100,
+		100,
+		50,
+		50,
+		40,
+		100,
+		100,
+		100,
+		8,
+		50,
+		40,
+		4
+	};
+	Map@ map=GetMap(values[0]);
+	if(valid(map))
+	{
+		for(int i=0; i<8; i++)
+		{
+			int roll=Random(0,SPAWN_ITEM_PIDS.length()-1);
+			map.AddItem(values[1],values[2],SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+		}
+	}
+	tc_maps_timeouts[values[4]]=__FullSecond+REAL_MINUTE(25);
+	return 0;
+}
+
+uint e_town_control_stuff2_respawn(uint[]@ values)
+{
+	if(!__IsTc || values[3]!=__TcCurrentId) return 0;
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_SUPER_STIMPAK,
+		PID_NUKA_COLA,
+		PID_MENTATS,
+		PID_BUFFOUT,
+		PID_PSYCHO,
+		PID_JET,
+		PID_CIGARETTES,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_DE,
+		PID_METAL_ARMOR_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_TESLA_ARMOR_DE,
+		PID_TESLA_ARMOR_DE,
+		PID_CA_1,
+		PID_CA_2,
+		PID_14MM_PISTOL_DE,
+		PID_HK_CAWS_DE,
+		PID_M16S_DE,
+		PID_AK47_NORMAL2_DE,
+		PID_223_PISTOL_DE,
+		PID_MINIGUN_DE,
+		PID_M240_DE,
+		PID_ROCKET_LAUNCHER_DE,
+		PID_FLAMER_DE,
+		PID_FRAG_GRENADE_DE,
+		PID_10MM_JHP_DE,
+		PID_10MM_AP_DE,
+		PID_44_MAGNUM_JHP_DE,
+		PID_44_FMJ_MAGNUM_DE,
+		PID_5MM_JHP_DE,
+		PID_5MM_AP_DE,
+		PID_9JHP_DE,
+		PID_9AP_DE,
+		PID_SHOTGUN_SHELLS_DE,
+		PID_14MM_AP_DE,
+		PID_223_FMJ_DE,
+		PID_45_ACP_DE,
+		PID_762X39_DE,
+		PID_762x51_DE,
+		PID_762X54_DE,
+		PID_40x46_DE,
+		PID_SMALL_ENERGY_CELL_DE,
+		PID_FLAMETHROWER_FUEL_DE,
+		PID_EXPLOSIVE_ROCKET_DE
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		4,
+		4,
+		4,
+		4,
+		4,
+		4,
+		4,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		75,
+		75,
+		75,
+		30,
+		75,
+		75,
+		75,
+		75,
+		50,
+		25,
+		50,
+		40,
+		75,
+		75,
+		75,
+		10,
+		75,
+		35,
+		4
+	};
+	Map@ map=GetMap(values[0]);
+	if(valid(map))
+	{
+		for(int i=0; i<4; i++)
+		{
+			int roll=Random(0,SPAWN_ITEM_PIDS.length()-1);
+			map.AddItem(values[1],values[2],SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+		}
+	}
+	tc_maps_timeouts[values[4]]=__FullSecond+REAL_MINUTE(40);
+	return 0;
+}
+
+uint e_town_control_stuff3_respawn(uint[]@ values)
+{
+	if(!__IsTc || values[3]!=__TcCurrentId) return 0;
+	tc_maps_timeouts[values[4]]=__FullSecond+REAL_MINUTE(75);
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_TESLA_ARMOR_DE,
+		PID_CA_1,
+		PID_CA_1,
+		PID_CA_2,
+		PID_CA_2,
+		PID_CAMKII_1,
+		PID_HK_P90C_DE,
+		PID_SNIPER_RIFLE_DE,
+		PID_M32_DE,
+		PID_223_PISTOL_DE,
+		PID_LIGHT_SUPPORT_WEAPON_DE,
+		PID_LASER_RIFLE_DE,
+		PID_UKM_DE,
+		PID_PKS_DE,
+		PID_223_PISTOL_DE,
+		PID_LIGHT_SUPPORT_WEAPON_DE,
+		PID_LASER_RIFLE_DE,
+		PID_UKM_DE,
+		PID_PLASMA_GRENADE_DE,
+		PID_5MM_JHP_DE,
+		PID_5MM_AP_DE,
+		PID_9JHP_DE,
+		PID_9AP_DE,
+		PID_SHOTGUN_SHELLS_DE,
+		PID_14MM_AP_DE,
+		PID_223_FMJ_DE,
+		PID_45_ACP_DE,
+		PID_762X39_DE,
+		PID_762x51_DE,
+		PID_762X54_DE,
+		PID_40x46_DE,
+		PID_762X54G_DE,
+		PID_SMALL_ENERGY_CELL_DE,
+		PID_MICRO_FUSION_CELL_DE,
+		PID_FLAMETHROWER_FUEL_DE,
+		PID_EXPLOSIVE_ROCKET_DE,
+		PID_ROCKET_AP_DE,
+		PID_CAR_ENERGY_CELL_CONTROLLER
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		10,
+		250,
+		250,
+		250,
+		250,
+		200,
+		150,
+		200,
+		200,
+		150,
+		150,
+		150,
+		20,
+		12,
+		100,
+		100,
+		120,
+		22,
+		16,
+		1
+	};
+	Map@ map=GetMap(values[0]);
+	if(valid(map))
+	{
+		for(int i=0; i<3; i++)
+		{
+			int roll=Random(0,SPAWN_ITEM_PIDS.length()-1);
+			map.AddItem(values[1],values[2],SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+		}
+	}
+	for(int i=0; i<PLAYERS_COUNT; i++)
+	{
+		string@ str=GetPlayerName(i);
+		if(@str!=null)
+		{
+			Critter @findcr=GetPlayer(str);
+			if(@findcr!=null)
+			{
+				findcr.Say(SAY_SERVER_MESSAGE_TC,"!! Faction "+__TcFactionName+" has successfully occupied "+__TcCityName+" !!");
+			}
+		}
+	}
+	__IsTc = false;
+	__TcCityName="UNDEFINED";
+	Critter@ npc=GetCritter(values[5]);
+	int []SPAWN_SPECIAL_ITEM=
+	{
+			PID_ROCKETRAD_DE,
+			PID_ROCKETELE_DE,
+			PID_DRAGUNOV1_DE,
+			PID_PA,
+			PID_THERMAL_CA,
+			PID_THERMAL_CA,
+			PID_THERMAL_CA,
+			PID_REACTIV_CA,
+			PID_REACTIV_CA,
+			PID_REACTIV_CA
+	};
+	AMMO []SPAWN_SPECIATL_ITEM_AMMO={
+			AMMO(PID_RRAD,30),
+			AMMO(PID_RELE,30),
+			AMMO(PID_762X54_DE,40)
+	};
+	uint roll=Random(0,SPAWN_SPECIAL_ITEM.length()-1);
+	if(roll<SPAWN_SPECIATL_ITEM_AMMO.length()) npc.AddItem(SPAWN_SPECIATL_ITEM_AMMO[roll].PID,SPAWN_SPECIATL_ITEM_AMMO[roll].Count);
+	npc.ModeBase[MODE_NO_LOOT]= 0;
+	npc.AddItem(SPAWN_SPECIAL_ITEM[roll],1);
+	
+	
+	int []SPAWN_SPECIAL_ITEM_CITIZEN=
+	{
+			PID_PA,
+			PID_PAMKII,
+	};
+	Critter@[] critters;
+	if(!valid(map)) return 0;
+	Item@[] containers;
+	//citizen spawn
+	map.GetCritters(0,FIND_LIFE_AND_KO|FIND_ONLY_NPC,critters);
+	roll=Random(0,critters.length()-1);
+	if (critters[roll].StatBase[ST_TEAM_ID] == TEAM_Citizen)
+	{
+		npc.AddItem(SPAWN_SPECIAL_ITEM_CITIZEN[roll],1);
+		values[6]=critters[roll].Id;
+	}
+	else values[6]=0;
+		
+	map.GetItemsByType(ITEM_TYPE_CONTAINER, containers);
+	roll=Random(0,containers.length()-1);
+	values[7]=containers[roll].Id;
+	Item@[] items;
+	if(valid(containers[roll])) return 0;
+	ClearItemsContainers(containers[roll]);
+	int []SPAWN_SPECIAL_ITEM_CONTAINER=
+	{
+			PID_DRAGUNOV1_DE,
+			PID_PA,
+			PID_PK12_GAUSS_PISTOL_DE,
+			PID_DRAGUNOV2_DE,
+			PID_VINDICATOR_MINIGUN_DE,
+			PID_TURBO_PLASMA_RIFLE_DE,
+			PID_YK42B_PULSE_RIFLE_DE,
+			PID_GATLING_LASER_DE
+	};
+	containers[roll].AddItem(SPAWN_SPECIAL_ITEM_CONTAINER[Random(0,SPAWN_SPECIAL_ITEM_CONTAINER.length()-1)],1,0);
+	
+	
+	CreateTimeEvent(__FullSecond+REAL_SECOND(25),"e_town_control_stuff4_respawn",values,false);
+	return 0;
+}
+
+
+uint e_town_control_stuff4_respawn(uint[]@ values)
+{
+	Critter@ npc=GetCritter(values[5]);
+	if(valid(npc)) {
+		Item@[] items;
+		if(npc.GetItems(-1, items)>0)
+		{
+			for(uint i=0,l=items.length();i<l;i++)
+			{
+				DeleteItem(items[i]);
+			}
+		}
+		npc.ModeBase[MODE_NO_LOOT]= 1;
+	}
+	CreateTimeEvent(__FullSecond+REAL_SECOND(150),"e_town_control_stuff4_respawn_2",values,false);
+	return 0;
+}
+
+uint e_town_control_stuff4_respawn_2(uint[]@ values)
+{	
+	Critter@ citizen=GetCritter(values[6]);
+	if(!valid(citizen)) return 0;
+	Item@[] items;
+	if(citizen.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+	else
+	{
+		Log("Town Control loot citizen success by faction: "+FACTIONS[values[8]]);
+	}
+	
+	Item@ contener=GetItem(values[7]);
+	if(!valid(contener)) return 0;
+	ClearItemsContainers(contener,values[8]);
+	
+	return 0;
+}
+
+void ClearItemsContainers(Item & item,uint FactionId)
+{
+	Item@[] items;
+	if(item.GetItems(0, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+	else
+	{
+		Log("Town Control loot container success by faction: "+FACTIONS[FactionId]);
+	}
+}
+
+void ClearItemsContainers(Item & item)
+{
+	Item@[] items;
+	if(item.GetItems(0, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+}
+
+uint respawn_npc(uint[]@ values)
+{	
+	Critter@[] critters;
+	Map@ map=GetMap(values[0]);
+	if(!valid(map)) return 0;
+	map.GetCritters(0,FIND_DEAD|FIND_ONLY_NPC,critters);
+	for(uint i=0; i<critters.length();i++)
+	{
+		critters[i].ToLife();
+		critters[i].StatBase[ST_CURRENT_HP]+=1000;//critters[i].StatBase[ST_MAX_LIFE];
+		DropRadiation(critters[i]);
+		DropPoison(critters[i]);
+		DropDrugEffects(critters[i]);
+		critters[i].DamageBase[DAMAGE_LEFT_LEG]=0;
+		critters[i].DamageBase[DAMAGE_RIGHT_LEG]=0;
+		critters[i].DamageBase[DAMAGE_LEFT_ARM]=0;
+		critters[i].DamageBase[DAMAGE_RIGHT_ARM]=0;
+		critters[i].DamageBase[DAMAGE_EYE]=0;
+		critters[i].ClearEnemyStack();
+	}
+	return 0;
+}

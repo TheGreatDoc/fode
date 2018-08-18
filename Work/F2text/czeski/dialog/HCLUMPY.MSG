@@ -1,0 +1,44 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš ghoula, kterı leí pøímo pod tvım nárazníkem.}
+{101}{}{To je Lumpy. Doufáš, e bude v pohodì.}
+{102}{}{Vidíš ghoula, kterej vypadá, jakoby ho nìco hodnì bolelo. Moná, umìt lépe øídit, nikdy by se to nestalo.}
+{103}{}{Oooooh! To bolí!}
+{104}{}{Au! Mùj koneèník!}
+{105}{}{Nevidìl náhodou nìkdo mùj moèovı mìchıø?}
+{106}{}{Moje koule! Moje koule!}
+{107}{}{Elizabeth koneènì jdu za tebou!}
+{108}{}{Doktora...}
+{109}{}{Mùe mi nìkdo pomoct? Nemùu nìjak pøeèíst SPZ.}
+{110}{}{Hej, chlape!}
+{111}{}{Hej, enská!}
+{112}{}{Jmenuju se Lumpy. Nevadilo by ti, kdybys mi odsud pomohl?}
+{113}{}{Jejky. Jsi celej, Lumpy? Tady máš ruku, pøišroubuj si jí zpátky.}
+{114}{}{Krucinál, zabili Ken..Lumpyho .. teda .. seš v pohodì?}
+{115}{}{To fakt nebylo naschvál...}
+{116}{}{Ale, dík za optání. Kdy nebudu poèítat tìch pár otevøenıch zlomenin a znaèku tvıho auta vraenou pár cenákù v mım zadku, tak je mi fajn.}
+{117}{}{Och. Nepotøebuješ pomoct?}
+{118}{}{To je sranda. Mìj se.}
+{119}{}{Tak jo, buï v klidu. Potøebuješ pomoct?}
+{120}{}{Díky bohu. Vypadalo to na docela váné problémy. Tak jo, uvidíme se.}
+{121}{}{[Lumpy se tiše podíval do tvıch oèí. Mrkl. A zase mrkl.]}
+{122}{}{Ach... blbá otázka. Ano?}
+{123}{}{Budu to brát jako ano.}
+{124}{}{Ano, máš zatracenou pravdu! Mùu se sotva hıbat! Myslíš, e by ses mohl pøestat øehtat. Mám pìknı odøeniny. Ale stejnì se to nedá srovnat s tou nehodou, co se stala pøed lety dole na jihu kdy se otoèil náklaïák s Colou. To bys mìl vidìt chlapèe, zátky byly všude!}
+{125}{}{Aaahhh. Srandovníííí! <nucenı smích, aby to udìlalo Lumpymu radost>}
+{126}{}{Wow! Vybav si nìkoho, kdo v tı dobì bìel pøes pouš! To mohl bejt boháè!}
+{127}{}{To se vsaï. Arrgh! Oww! Nemám rád, kdy s nìkım musím konverzovat zpod jeho auta, take bych docela ocenil, kdybys mi odsud laskavì pomohl.}
+{128}{}{Jsi si jistı?}
+{129}{}{Jsi si úplnì jistı? Vdy se nemùeš hıbat.}
+{130}{}{No, o to strach nemám. Všechno by mìlo bıt nakonec v poøádku.}
+{131}{}{OK. Pøøípravéén!}
+{132}{}{Tak jo. Pøiprav se!}
+{133}{}{Take, <krk>! Kde tì k èertu uèili øídit?}
+{134}{}{To já.}
+{135}{}{No, jsem spíš samouk.}
+{136}{}{Vidím. Veøím tomu.}
+{137}{}{Oh. Jsi celı?}
+{138}{}{Tak... dobrá já... hmmmm. Jsi...jsi v pohodì?}
+{139}{}{Ale já sem jim øíkal. 'Potøebujem dopravní znaèky', jene oni neposlouchali!? Neeeee...nebudeme poslouchat starocha Lumpyho!}
+
+# Player float
+{200}{}{Sakra, spadl sem do hovna!}

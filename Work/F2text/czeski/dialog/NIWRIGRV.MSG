@@ -1,0 +1,11 @@
+#tenhle soubor pøeložil Birdman - birdman@post.cz, http://get.to/birdman
+# 0. LOOK HEADSTONE
+{100}{}{Náhrobní kámen má na sobì vytesaný nápis: "Zde leží náš milovaný syn, Richard Wright. Nezapomeneme."}
+
+# 1.  DISPLAY (WTG)
+{200}{}{V rakvi vidíš tìlo mladíka.}
+{201}{}{Prozkoumáváš hrob Richarda Wrighta. Z tìla vychází hnilobný zápach.}
+{202}{}{Ten puch. Tak je cítit jed radškorpiónù. Ten kluk neumøel na pøedávkování... nìkdo ho otrávil.}
+{203}{}{Nìco na tom smradu mi nesedí, je mi povìdomý...ale co to je...}
+
+{300}{}{Objeven dùležitý fakt: Richard Wright byl otráven.}

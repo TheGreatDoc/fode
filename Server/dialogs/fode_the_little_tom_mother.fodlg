@@ -1,0 +1,302 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p quest_the_little_tom = 0 #
+4 1020 D _var p quest_the_little_tom = 2 #
+10 1030 D _var p quest_the_little_tom = 1 #
+18 1040 D _var p quest_the_little_tom = 6 #
+18 1050 D _var p quest_the_little_tom = 8 #
+19 1060 D _var p quest_the_little_tom = 3 #
+19 1070 D _var p quest_the_little_tom = 4 #
+24 1080 D _var p quest_the_little_tom = 5 R _script quest_server_scripts@the_little_tom_5_to_end 0  @
+2 2000 None 0 #
+3 2010 #
+4 2020 R _var p quest_the_little_tom = 2 #
+0 2030 @
+3 3000 None 0 #
+5 3010 #
+4 3020 R _var p quest_the_little_tom = 2 @
+4 4000 None 0 #
+5 4010 #
+0 4020 @
+5 5000 None 0 #
+6 5010 #
+0 5020 @
+6 6000 None 0 #
+7 6010 #
+0 6020 @
+7 7000 None 0 #
+8 7010 R _var p quest_the_little_tom = 1 R _script quest_server_scripts@the_little_tom_0_to_1 0  @
+8 8000 None 0 #
+0 8010 #
+9 8020 @
+9 9000 None 0 #
+0 9010 @
+10 10000 None 0 #
+0 10010 #
+11 10020 @
+11 11000 None 0 #
+0 11010 #
+12 11020 D _param p ST_CHARISMA > 7 D _var p quest_the_little_tom_inv = 0 R _item p PID_SHOTGUN + 1 R _item p PID_SHOTGUN_SHELLS + 30 R _item p PID_STIMPAK + 3 R _var p quest_the_little_tom_inv + 1 @
+12 12000 None 0 #
+0 12010 @
+13 13000 None 0 #
+0 13010 #
+14 13020 @
+14 14000 None 0 #
+15 14010 @
+15 15000 None 0 #
+16 15010 R _var p quest_the_little_tom = 6 #
+17 15020 @
+16 16000 None 0 #
+0 16010 @
+17 17000 None 0 #
+0 17010 @
+18 18000 None 0 #
+0 18010 @
+19 19000 None 0 #
+20 19010 @
+20 20000 None 0 #
+21 20010 @
+21 21000 None 0 #
+22 21010 R _var p quest_the_little_tom = 4 R _param p ST_CURRENT_HP - 10 R _param n ST_CURRENT_HP = -21 #
+22 21020 R _var p quest_the_little_tom = 4 R _param p ST_CURRENT_HP - 10 R _param n ST_CURRENT_HP = -21 @
+22 22000 None 0 #
+0 22010 @
+23 23000 None 0 #
+0 23010 R _var p quest_the_little_tom - 8 @
+24 24000 None 0 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first time talk}
+{1020}{}{set up on first talk}
+{1030}{}{accept quest but no procress}
+{1040}{}{broken together}
+{1050}{}{kid is lost in cave}
+{1060}{}{talked to matt, no further decision, but ending quest already}
+{1070}{}{decided to leave the kid at matt}
+{1080}{}{here is your child}
+{2000}{}{*sob*}
+{2010}{}{Hey, what's wrong?}
+{2020}{}{Stop crying!}
+{2030}{}{(Leave)}
+{3000}{}{(She wipes some tears but doesn't look at you) They took... my son...}
+{3010}{}{Who did?}
+{3020}{}{Yeah, and you're next.}
+{4000}{}{Fuck you!! Piss off!! Get out of my sight!!!!}
+{4010}{}{Hey, sorry, I didn't mean it, okay? Now, tell me who did it.}
+{4020}{}{(Do as she says)}
+{5000}{}{A couple of bandits did. They stormed into my house and shot around. Then they... took my son and pulled him out of my house. Then they left... (She begins to cry again)}
+{5010}{}{I'll try to look for him and bring him back.}
+{5020}{}{Uhhuh. (Leave)}
+{6000}{}{You really would? (She looks you in the eyes) This isn't a joke?}
+{6010}{}{Yes, I will find him.}
+{6020}{}{I got to think about it. (Slowly move backwards)}
+{7000}{}{Oh my... thank you so much!! (She gives you a hug) Please, bring him back in once. And give these raiders what they deserve!}
+{7010}{}{Promised. Where did they brought him?}
+{8000}{}{They have a house, not to far from here in the north. Histories say that there is a cave you can enter from the building. Maybe he is there. Please hurry.}
+{8010}{}{Okay, goodbye.}
+{8020}{}{Before I go... what do I get?}
+{9000}{}{Everything! Everything I have! Just please bring him back.}
+{9010}{}{Sounds good. See you later.}
+{10000}{}{Why haven't you brought him here yet?! What happened??}
+{10010}{}{I haven't had the chance to look for him yet, but I won't give up. Stay tuned.}
+{10020}{}{I need something to prepare for a possible fight. Do you have something I could use?}
+{11000}{}{Hmm, no, not really...}
+{11010}{}{Okay then. Wish me luck.}
+{11020}{}{Are you sure? It is about the life of your son.}
+{12000}{}{Aah, how could I forget? I have a couple of stimpaks and a shotgun. (She walks to the kitchen and comes back with a bag) Here, hopefully this will help.}
+{12010}{}{Great! I will go now. Prepare to see your son again.}
+{13000}{}{Why haven't you brought him here yet?! What happened??}
+{13010}{}{I haven't had the chance to look for him yet, but I won't give up. Stay tuned.}
+{13020}{}{Actually, I've found him. But it seems like you lied to me. Tell me about your past.}
+{14000}{}{You found him?!?! Bring him here!! NOW!
+}
+{14010}{}{Tell. Me. About. Your. Past.}
+{15000}{}{I left my man, I didn't like him anymore, then I moved in this city, and now my child is kidnapped. NOW GET MY SON HERE!
+}
+{15010}{}{You're a liar. It will be the best to leave it like this. Go and kill yourself if you want.}
+{15020}{}{Okay okay, I will. Just a moment.}
+{16000}{}{(She screams and breaks together)
+}
+{16010}{}{My job is done here. (Leave)}
+{17000}{}{MOVE ALREADY!
+}
+{17010}{}{(Move already)}
+{18000}{}{(She cries and does not notice you)
+}
+{18010}{}{(Exit)}
+{19000}{}{Why haven't you brought him here yet?! What happened??
+}
+{19010}{}{He won't come back. You're a liar.}
+{20000}{}{WHAAT?!
+}
+{20010}{}{He will stay with his father. End of story.}
+{21000}{}{(She grabs a knife, wields it in front of you and cries) Bring him back or I will kill you!
+}
+{21010}{}{Get over it.}
+{21020}{}{Yo! Chill out bitch!}
+{22000}{}{(She stabs you and cuts herself next)
+}
+{22010}{}{Die you crazy bitch.}
+{23000}{}{Why haven't you brought him here yet?! What happened??
+}
+{23010}{}{Your kid probably will starve soon. There is no way to help him.}
+{24000}{}{Thank you for save Tom}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first time talk}
+{1020}{}{set up on first talk}
+{1030}{}{accept quest but no procress}
+{1040}{}{broken together}
+{1050}{}{kid is lost in cave}
+{1060}{}{talked to matt, no further decision, but ending quest already}
+{1070}{}{decided to leave the kid at matt}
+{1080}{}{here is your child}
+{2000}{}{*sob*}
+{2010}{}{Hej, co się dzieje?}
+{2020}{}{Przestań płakać!}
+{2030}{}{(Wyjdź)}
+{3000}{}{(Otarła łzy, lecz nadal na ciebie nie patrzy) Oni... zabrali mojego syna...}
+{3010}{}{Kto?}
+{3020}{}{Ta.. ty jesteś następna.}
+{4000}{}{Pierdol się i zejdź mi z oczu!!!!}
+{4010}{}{Wybacz, nie o to mi chodziło. A teraz powiedź mi, kto to zrobił.}
+{4020}{}{(Tak jak mówiła)}
+{5000}{}{Zrobili to bandyci. Wpadli do domu i zaczęli strzelać. Później.. zabrali go i uciekli..(Zaczyna ponownie płakać)}
+{5010}{}{Spóbuję go odnaleźć i sprowadzić do domu}
+{5020}{}{Aha. (Odejdź)}
+{6000}{}{Naprawdę? (Patrzy ci prosto w oczy) Nie żartujesz?}
+{6010}{}{Tak, znajdę go.}
+{6020}{}{Pomyślę o tym. (Powoli oddalasz się)}
+{7000}{}{O mój... Dziękuję ci!! (Całuje cię) Proszę, przynieś go w jednym kawałku. A, i nie zapomnij dać im nauczki!}
+{7010}{}{Obiecuję. Gdzie go zaprowadzili?}
+{8000}{}{Mają dom, niedaleko stąd, na północ. Niektórzy mówią, że jest tam jaskinia, do której da się wejść przez budynek. Możliwe, że tam są. Proszę, pospiesz się.}
+{8010}{}{Dobrze. Do zobaczenia}
+{8020}{}{Zanim pójdę.. co za to dostanę?}
+{9000}{}{Wszystko! Tylko proszę, znajdź go.}
+{9010}{}{Brzmi nieźle, do zobaczenia.}
+{10000}{}{Jeszcze go nie znalazłeś? O co chodzi?!}
+{10010}{}{Nie miałem zbytnio czasu, aby go poszukać, ale spokojnie, jeszcze się nie poddałem.}
+{10020}{}{Potrzebuję przygotować się do walki. Masz coś, co mogę użyć?}
+{11000}{}{Hmm, raczej nie...}
+{11010}{}{Dobra, życz mi szczęścia}
+{11020}{}{Na pewno? Chodzi o życie twojego syna...}
+{12000}{}{Ah, jak mogłam zapomnieć? Mam kilka stimpacków i shotgun. (Idzie do kuchni, po czym wraca z torbą) Proszę, mam nadzieję, że pomoże.}
+{12010}{}{Świetnie. Idę to załatwić. Przygotuj się na to, że zobaczysz syna.}
+{13000}{}{Jeszcze go nie znalazłeś? Co się stało?}
+{13010}{}{Nie miałem zbytnio czasu, aby go poszukać, ale spokojnie, jeszcze się nie poddałem. Musisz być cierpliwa.}
+{13020}{}{Znalazłem go. Lecz niestety, dowiedziałem się, że mnie okłamałaś. Powiedz mi o swojej przeszłości.}
+{14000}{}{Znalazłeś go? Przyprowadź mojego syna! TERAZ!}
+{14010}{}{Najpierw powiedz mi o swojej przeszłości.}
+{15000}{}{Zostawiłam mojego męża. Nie lubiłam go. Później przeniosłam się do tego miasta. A TERAZ ODDAJ MOJEGO SYNA!}
+{15010}{}{Jesteś kłamczuchą. Nie dostaniesz swojego syna. Idź się powieś.}
+{15020}{}{Dobra dobra, poczekaj.}
+{16000}{}{(Krzyczy i niszczy wszystko dookoła)}
+{16010}{}{Moja robota kończy się tutaj. (Odejdź)}
+{17000}{}{Rusz się!}
+{17010}{}{(Rusz się)}
+{18000}{}{(Płacze i nie zwraca na ciebie uwagi.)}
+{18010}{}{(Wyjdź)}
+{19000}{}{Jeszcze go nie znalazłeś? O co chodzi?}
+{19010}{}{On już nie wróci. Okłamałaś mnie.}
+{20000}{}{CO?!}
+{20010}{}{Zostanie z ojcem. To koniec twoich kłamstw.}
+{21000}{}{(Podnosi nóż, lecąc w twoją stronę i płacząc jednocześnie) Oddaj mi go albo cię zabije!}
+{21010}{}{(Robisz unik)}
+{21020}{}{Eej! Spokojnie, dziwko!}
+{22000}{}{(Zadaje ci cios nożem, po czym tnie sama siebie)}
+{22010}{}{Gin, jebnięta kurwo.}
+{23000}{}{Jeszcze go nie znalazłeś? O co chodzi?}
+{23010}{}{Twoje dziecko będzie głodować. Nic mu już nie pomoże.}
+{24000}{}{Dziękuję za uratowanie Tom'a.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first time talk}
+{1020}{}{set up on first talk}
+{1030}{}{accept quest but no procress}
+{1040}{}{broken together}
+{1050}{}{kid is lost in cave}
+{1060}{}{talked to matt, no further decision, but ending quest already}
+{1070}{}{decided to leave the kid at matt}
+{1080}{}{here is your child}
+{2000}{}{*sob*}
+{2010}{}{Hey, what's wrong?}
+{2020}{}{Stop crying!}
+{2030}{}{(Leave)}
+{3000}{}{(She wipes some tears but doesn't look at you) They took... my son...}
+{3010}{}{Who did?}
+{3020}{}{Yeah, and you're next.}
+{4000}{}{Fuck you!! Piss off!! Get out of my sight!!!!}
+{4010}{}{Hey, sorry, I didn't mean it, okay? Now, tell me who did it.}
+{4020}{}{(Do as she says)}
+{5000}{}{A couple of bandits did. They stormed into my house and shot around. Then they... took my son and pulled him out of my house. Then they left... (She begins to cry again)}
+{5010}{}{I'll try to look for him and bring him back.}
+{5020}{}{Uhhuh. (Leave)}
+{6000}{}{You really would? (She looks you in the eyes) This isn't a joke?}
+{6010}{}{Yes, I will find him.}
+{6020}{}{I got to think about it. (Slowly move backwards)}
+{7000}{}{Oh my... thank you so much!! (She gives you a hug) Please, bring him back in once. And give these raiders what they deserve!}
+{7010}{}{Promised. Where did they brought him?}
+{8000}{}{They have a house, not to far from here in the north. Histories say that there is a cave you can enter from the building. Maybe he is there. Please hurry.}
+{8010}{}{Okay, goodbye.}
+{8020}{}{Before I go... what do I get?}
+{9000}{}{Everything! Everything I have! Just please bring him back.}
+{9010}{}{Sounds good. See you later.}
+{10000}{}{Why haven't you brought him here yet?! What happened??}
+{10010}{}{I haven't had the chance to look for him yet, but I won't give up. Stay tuned.}
+{10020}{}{I neet something to prepare for a possible fight. Do you have something I could use?}
+{11000}{}{Hmm, no, not really...}
+{11010}{}{Okay then. Wish me luck.}
+{11020}{}{Are you sure? It is about the life of your son.}
+{12000}{}{Aah, how could I forget? I have a couple of stimpaks and a shotgun. (She walks to the kitchen and comes back with a bag) Here, hopefully this will help.}
+{12010}{}{Great! I will go now. Prepare to see your son again.}
+{13000}{}{Why haven't you brought him here yet?! What happened??}
+{13010}{}{I haven't had the chance to look for him yet, but I won't give up. Stay tuned.}
+{13020}{}{Actually, I've found him. But it seems like you lied to me. Tell me about your past.}
+{14000}{}{You found him?!?! Bring him here!! NOW!
+}
+{14010}{}{Tell. Me. About. Your. Past.}
+{15000}{}{I left my man, I didn't like him anymore, then I moved in this city, and now my child is kidnapped. NOW GET MY SON HERE!
+}
+{15010}{}{You're a liar. It will be the best to leave it like this. Go and kill yourself if you want.}
+{15020}{}{Okay okay, I will. Just a moment.}
+{16000}{}{(She screams and breaks together)
+}
+{16010}{}{My job is done here. (Leave)}
+{17000}{}{MOVE ALREADY!
+}
+{17010}{}{(Move already)}
+{18000}{}{(She cries and does not notice you)
+}
+{18010}{}{(Exit)}
+{19000}{}{Why haven't you brought him here yet?! What happened??
+}
+{19010}{}{He won't come back. You're a liar.}
+{20000}{}{WHAAT?!
+}
+{20010}{}{He will stay with his father. End of story.}
+{21000}{}{(She grabs a knife, wields it in front of you and cries) Bring him back or I will kill you!
+}
+{21010}{}{Get over it.}
+{21020}{}{Yo! Chill out bitch!}
+{22000}{}{(She stabs you and cuts herself next)
+}
+{22010}{}{Die you crazy bitch.}
+{23000}{}{Why haven't you brought him here yet?! What happened??
+}
+{23010}{}{Your kid probably will starve soon. There is no way to help him.}
+{24000}{}{Thank you for save Tom}
+

@@ -1,0 +1,9 @@
+{100}{}{Tu vois un terminal avec une puce à eau en état de marche.}
+{101}{}{Tu vois un terminal avec une puce à eau en dysfonctionnement.}
+{102}{}{Tu as cassé la puce à eau... Ca prendra de 100 à 150 jours avant que cet Abri fonctionne à nouveau. On dirait que cette pensée te rassure.}
+ 
+{103}{}{Oups.}
+{104}{}{*Beep*}
+{105}{}{*Bee-Oop*}
+{106}{}{*Beep* *Bee-Oop*}
+

@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Straznik kopalnie}
+{210}{}{Widzisz straznika kopalni.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Nie ma na co patrzec@@Spadaj z tad@@Wypierdalaj z tad@@To tylko moja robota@@...Jebani turysci@@Chcesz tu strzelac?@@Moze razem postrzelamy?@@Prosze bardzo...strzelaj ...zapewniam odpowiem tym samym@@Przestan klikac@@Twoja stara@@Twoj stary tez@@Hej, pamietam Cie@@Ostatni raz wpakowalem Ci dwa strzaly@@Chcesz dotknac mojej broni?@@Wiem ze cos knujesz@@Cos sie dzisiaj swieci. Czuje to@@Susan?@@Kto?@@Peter Parker?@@O moj Boze, znowu ty@@Czego chcesz?@@Czego chcesz czlowieku?@@Pfff ...haha ...dobry dowcip, teraz zamiataj z tad@@Widze cie@@Nienawidze tej Roboty@@Witaj@@Dzien dobry@@Piekny dzien by kogos postrzelic@@Dobry dzien by zabic jakis zlodzieji@@Masz siostre?@@Wydaje cala dniowke na Nuke Cola@@Chyba bedzie padac@@"I've been watching you A la la la la"...@@Znam kolesia jak ty... kawal gnoja@@Znamy sie?@@Nie nawidze tego koloru@@Niebieski, niebieski, niebieski... wszedzie ten niebieski@@O moj Boze jestes kobieta?@@Szalenstwo? To jest SPARTA!@@Wiem ze masz wscieklizne@@Ani kroku wiecej@@Moglbys sie czasem umyc@@Uzyj stimpacka jak sie slabo czujesz@@To moj ostatni dzien w tej robocie, wiec uwazaj co robisz@@Slyszales to?@@Wygladam jak informacja?@@Nie, nie umowie sie z toba@@Nie, nie umowie sie z toba po pracy@@Zadziwiajace..@@Ostroznie@@Europa schodzi na psy@@Nie mow nikomu ale najebalem sie@@Piles cos?@@Chyba jestem chory@@Jesli nie tu to gdzie?@@Lepiej nie idz do zaswiatow@@Widziales tego nowego kolesia?@@Widziales ta nowa dziwewczyne?@@Dam Ci dobra rade, nie spij lepiej z ta ruda dziwka Alicja@@Lepiej nic nie mow@@Matka Cie nie uczyla, ze starsi maja pierszenstwo?@@Dobry Boze, wszedzie tylko nie tutaj..@@Nie stoj tu zadlugo, jeszcze pomysla ze jestesmy razem@@Ty ciagle tutaj@@Nie wygladasz za dobrze, lepiej odejdz odemnie@@O moj Boze! A nie to tylko twoja twarz@@WTF?@@Mowil Ci ktos jak jestes brzydki?@@Glupi dev mowil zebym tu stal caly dzien@@Nie obracaj sie albo Cie zastrzele@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Co do kurwy?}
+
+[engl]
+{100}{}{Mine Guard}
+{210}{}{You see a Mine guard.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{There is nothing to see here. Get!@@Walk. Slowly.@@Get the fuck outta my sight.@@Job like a job, what else?@@Fucking tramps.@@I just love shooting... Wanna be my next target, no?@@I eat shitheads like you for breakfast.@@One shot and you're dead.@@Stop clicking!@@My dead ma' looks better than you.@@Someone piss into yer drink?@@Here again?@@Why does it always have to be me?@@You, wanna get a new asshole?@@I'm keeping an eye on you.@@Did someone fart?@@You ain't worth talking to.@@Who?@@Nooo, not you again.@@What do you want, punk?@@Need something? Don't ask me then.@@Hey, people, we have a comedian here!@@I see you. And I don't like you.@@This - worst of all jobs, ever.@@Fuck this shit, I need a raise.@@Good day.@@Nice day to spill some blood.@@You're not some looter are you?@@Wanna meet my sis'?@@They ain't pain' me crap.@@Shove it.@@Jeez, don't show your face again!@@You look like some other jerk I knew.@@Do I know you?@@Wait, you're a woman?@@Nah.@@The fuck happened to you?@@Don't come any closer.@@Man, you sure do stink.@@I need to get wasted.@@Another boring watch...@@Did you hear that?@@Do I look like a guide? Move it.@@No, I'm not going anywhere.@@Hook up with some other people.@@Stupid...@@This place has seen better days.@@I've been drinking, so what?@@Keep moving.@@I don't feel too good.@@Not here, not now.@@Have you seen this new guy?@@You saw that new gal?@@People are people, so why should it be... How did that go?@@Shut your mouth and move along.@@Momma didn't teach you any manners?@@Fuck me, Jesus...@@Anywhere but here, anyone but you.@@You're still here, and I'm getting pissed.@@You don't look too good, better get away from me.@@Someone fried your face or what?@@Whatta fuck?@@Anyone tell you that you're so fuckin' ugly?@@Stupid Dev told me stand here all day...@@One sudden move, and You'll regret it.@@What the...?}
+
+[russ]
+{100}{}{Mine Guard}
+{210}{}{You see a Mine guard.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{There is nothing to see here. Get!@@Walk. Slowly.@@Get the fuck outta my sight.@@Job like a job, what else?@@Fucking tramps.@@I just love shooting... Wanna be my next target, no?@@I eat shitheads like you for breakfast.@@One shot and you're dead.@@Stop clicking!@@My dead ma' looks better than you.@@Someone piss into yer drink?@@Here again?@@Why does it always have to be me?@@You, wanna get a new asshole?@@I'm keeping an eye on you.@@Did someone fart?@@You ain't worth talking to.@@Who?@@Nooo, not you again.@@What do you want, punk?@@Need something? Don't ask me then.@@Hey, people, we have a comedian here!@@I see you. And I don't like you.@@This - worst of all jobs, ever.@@Fuck this shit, I need a raise.@@Good day.@@Nice day to spill some blood.@@You're not some looter are you?@@Wanna meet my sis'?@@They ain't pain' me crap.@@Shove it.@@Jeez, don't show your face again!@@You look like some other jerk I knew.@@Do I know you?@@Wait, you're a woman?@@Nah.@@The fuck happened to you?@@Don't come any closer.@@Man, you sure do stink.@@I need to get wasted.@@Another boring watch...@@Did you hear that?@@Do I look like a guide? Move it.@@No, I'm not going anywhere.@@Hook up with some other people.@@Stupid...@@This place has seen better days.@@I've been drinking, so what?@@Keep moving.@@I don't feel too good.@@Not here, not now.@@Have you seen this new guy?@@You saw that new gal?@@People are people, so why should it be... How did that go?@@Shut your mouth and move along.@@Momma didn't teach you any manners?@@Fuck me, Jesus...@@Anywhere but here, anyone but you.@@You're still here, and I'm getting pissed.@@You don't look too good, better get away from me.@@Someone fried your face or what?@@Whatta fuck?@@Anyone tell you that you're so fuckin' ugly?@@Stupid Dev told me stand here all day...@@One sudden move, and You'll regret it.@@What the...?}

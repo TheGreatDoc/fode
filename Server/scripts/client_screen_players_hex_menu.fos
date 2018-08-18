@@ -1,0 +1,147 @@
+//Client GUI Players menu
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+IGUIScreenOpt @PlayersHexMenuOpt;
+uint16 PlayersMenuPointedX;
+uint16 PlayersMenuPointedY;
+
+class MercMoveToButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("players_menu_server_scripts@unsafe_MercMoveTo",PlayersMenuPointedX,PlayersMenuPointedY,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class MercStopButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("players_menu_server_scripts@unsafe_MercStop",0,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class MercWaitButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("players_menu_server_scripts@unsafe_MercWait",0,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class CommandMoveToButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_command",COMMAND_MOVE,PlayersMenuPointedX,PlayersMenuPointedY,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class CommandAttackButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_command",COMMAND_ATTACK,PlayersMenuPointedX,PlayersMenuPointedY,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class CommandDefendButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_command",COMMAND_DEFEND,PlayersMenuPointedX,PlayersMenuPointedY,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+class CommandNoneButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_command",COMMAND_NONE,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,0,0,0);
+	}
+}
+
+void InitPlayersHexMenu()
+{
+	@PlayersHexMenuOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_PLAYERS_HEX_MENU,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_PLAYERS_HEX_MENU,"Players menu\nFree hex", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	MercMoveToButtonClass MercMoveToButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Merc MOVE", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MercMoveToButton);
+	
+	MercStopButtonClass MercStopButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Merc STOP", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MercStopButton);
+	
+	MercWaitButtonClass MercWaitButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,55)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Merc WAIT", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MercWaitButton);
+	
+	GUI_AddText(CLIENT_SCREEN_PLAYERS_HEX_MENU,"Squad Commands", 0, 75)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,10);
+	
+	CommandMoveToButtonClass CommandMoveToButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,75+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("MOVE", FONT_FALLOUT, COLOR_LBLUE2, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(CommandMoveToButton);
+	
+	CommandAttackButtonClass CommandAttackButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,90+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("ATTACK", FONT_FALLOUT, COLOR_LRED2, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(CommandAttackButton);
+	
+	CommandDefendButtonClass CommandDefendButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,105+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("DEFEND", FONT_FALLOUT, COLOR_RGB(128,20,255), COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(CommandDefendButton);
+	
+	CommandNoneButtonClass CommandNoneButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_HEX_MENU, 0,120+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("NONE", FONT_FALLOUT, COLOR_GRAY, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(CommandNoneButton);
+}

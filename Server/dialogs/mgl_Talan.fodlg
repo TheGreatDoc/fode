@@ -1,0 +1,301 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_soul_ex_machina < 10 #
+24 1020 D _var p mgl_soul_ex_machina } 10 @
+2 2000 None 0 #
+3 2010 D _var p mgl_talan1 = 0 R _var p mgl_talan1 = 1 #
+4 2020 D _var p mgl_talan2 = 0 R _var p mgl_talan2 = 1 #
+8 2030 D _var p mgl_talan2 = 1 #
+13 2040 D _var p mgl_talan1 = 1 D _var p mgl_soul_ex_machina = 0 #
+21 2050 D _var p mgl_talan2 = 1 #
+5 2060 D _var p mgl_talan2 = 1 #
+7 2070 D _var p mgl_talan2 = 1 #
+0 2080 #
+23 2090 D _var p mgl_soul_ex_machina = 1 #
+26 2100 D _var p mgl_soul_ex_machina = 4 @
+3 3000 None 0 #
+2 3010 @
+4 4000 None 0 #
+5 4010 #
+7 4020 #
+2 4030 @
+5 5000 None 0 #
+6 5010 @
+6 6000 None 0 #
+2 6010 @
+7 7000 None 0 #
+2 7010 @
+8 8000 None 0 #
+9 8010 @
+9 9000 None 0 #
+10 9010 @
+10 10000 None 0 #
+11 10010 @
+11 11000 None 0 #
+12 11010 @
+12 12000 None 0 #
+2 12010 @
+13 13000 None 0 #
+22 13010 @
+22 14000 None 0 #
+14 14010 #
+2 14020 @
+14 15000 None 0 #
+15 15010 @
+15 16000 None 0 #
+16 16010 @
+16 17000 None 0 #
+18 17010 D _param p ST_LEVEL } 15 #
+2 17020 #
+25 17030 D _param p ST_LEVEL < 15 @
+18 18000 None 0 #
+19 18010 @
+25 19000 None 0 #
+2 19010 @
+19 20000 None 0 #
+20 20010 @
+20 21000 None 0 #
+0 21010 R _var p mgl_soul_ex_machina = 2 #
+0 21020 R _var p mgl_soul_ex_machina = 1 @
+21 22000 None 0 #
+2 22010 @
+23 23000 None 0 #
+0 23010 R _var p mgl_soul_ex_machina = 2 #
+0 23020 @
+24 24000 None 0 @
+26 25000 None 0 #
+27 25010 R _var p mgl_soul_ex_machina = 5 @
+27 26000 None 0 #
+0 26010 &
+
+[engl]
+{100}{}{John Talan}
+{200}{}{You see John Talan.}
+{210}{}{You see one of MGL scientist John Talan.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Yes?}
+{2010}{}{Hello, who are you?}
+{2020}{}{Tell me, what exactly is this place.}
+{2030}{}{Tell me, how exactly your technology works?}
+{2040}{}{You said ex-leader of FEV mutations research, why ex ?}
+{2050}{}{I noticed you are calling D.I. It, other are calling D.I. Her.}
+{2060}{}{Tell me more about virus}
+{2070}{}{Tell me about D.I.}
+{2080}{}{See you later.}
+{2090}{}{About that work, I think i could do that for you, and for that deathclaw. Just tell me again what i have to do.}
+{2100}{}{When i was setting this sedatives doses i got catched by D.I.}
+{3000}{}{I'm John Talan. I'm ex leader of FEV mutations research and current leader of DNA manipulation Laboratory. And you are ?}
+{3010}{}{I'm @pname@, uh . .wastelander, I have a few questions.}
+{4000}{}{This is DNA manipulation laboratory,There we are manipulating DNA and RNA  of lower organisms, especially our MFVRD virus. Genetic manipulation device is right there * nods to large device behind glass*. It's connected right to D.I., it's also being controlled strictly by D.I. We are here more like observers, hehe. D.I. is brain of Technology of creation, and genetic manipulation device is it's hand.}
+{4010}{}{tell me more about virus.}
+{4020}{}{Tell me more about D.I.}
+{4030}{}{I have some general questions}
+{5000}{}{MFVRD virus, Modified Flu Virus for Rewriting DNA. It's totally remade flu virus. we are using it as tool for rewriting higger organisms  genetic code. Our MFVRD virus contains pattern of DNA what it is supposed to write in target cell. MFVRD invades stem cell of organism fetus, rewrites it's DNA with our pattern and then dies and is safely absorbed by invades stem cell.}
+{5010}{}{So it is something like FEV virus ?}
+{6000}{}{No. Difference between our MFVRD virus and FEV virus is, that our virus changes DNA to what WE want. FEV virus is changing DNA to what IT wants. It's interesting how FEV works, it seems it's really doing what it has in it's name, it's making victim to evolve, to evolve fast. Next thing is MFVRD virus unlike FEV is not able to rewrite normal cell's DNA.}
+{6010}{}{I see, i have more questions.}
+{7000}{}{D.I. Divine Inteligence is A.I. that partly controlls MGL and helps with and sometimes even runs researches and experiments, But it's main purpose is to control and help developing of Technlogy of creation. it's indispensable part of Technology of creation, it hold's whole MGL knowledge about DNA, and it probabaly is only computer on West Coast that is able to make all those complex callculatins to compute DNA model.}
+{7010}{}{I Have more questions.}
+{8000}{}{As i said, almost everyting is controlled by D.I. First of all D.I. has to create DNA model, it takes lot of time, i remmber devolping our first brand new organism took D.I. about 24 years of calculations. That's really very complex process. Well after D.I. has DNA model, system takes 1 MFVRD virus from storage and places it into reaction chambeer there in our Genetic modification device.}
+{8010}{}{continue}
+{9000}{}{In reaction chaber then becomes very complex electro-chemical play. After few hours virus has inside itself attached DNA pattern of our organism. After this we feed virus with our synthetic protein to multiply it. Then we inject virus into fetus, We are using some reptiles fetuses, i'm not sure which one, that is not important because after process there remains only shells from cells filled with our DNA. }
+{9010}{}{continue}
+{10000}{}{So after we inject virus into fetus, it searches for original stem cells. when virus finds one, it invades it, eraises original DNA, replaces it with our pattern,  then dies and is absorbed by host stem cell. We are injecting only few hundrets of viruses, because we are using fetus in early stage of grow, but we always inject twice viruses as is predicted number of stem cells to be absolutely sure it rewrites all cells.}
+{10010}{}{continue}
+{11000}{}{When all cells are rewrited rest of viruses stay idle and die because it has not access to our syntehic protein that keeps them alive. After this, Fetus has no longer signs of it's orin, and it grows by our DNA, by our blueprint into organism D.I. calculated and created for us. This all is happening inside Genetic manipulation device and fetus continues it's grow in it, till it is able to survive without support of special enviroment. }
+{11010}{}{continue}
+{12000}{}{Unfortunately nothing we created lived long enough to leave Gen manipulation tank. Last experimental organism lived for about 12 days and then died on some kind of organs  fetus failure. Still it was huge progress, because pervious version lived only for 9 or 10 seconds heh. D.I. is now working on third version of this organism.}
+{12010}{}{Interesting, really very interesting, i have more questions.}
+{13000}{}{I Left that position. because don't like tortuering. And that is exactly  what is happeding there right now, unnecessary tortuering of inteligent organism. Damn even here i can sometimes hear screaming of that creature, begging for merciful death. I can't even sleep with feeling i participated on it.}
+{13010}{}{Inteligent organism ?}
+{14000}{}{Yes. Few weeks ago we captured creature, that was inteligent as human. Was talking and thinking like human. It's some kind of Inteligent "Deathclaw" if is that right name outsiders use. And what we did ? we tied it up to table and started doing nasty experiments. And I was leader of this mess.}
+{14010}{}{So why you didn't do anything to stop it ?}
+{14020}{}{I see, i have more questions.}
+{15000}{}{I did, i talked to Harris. I Always knew research is above everything for him, but this time, this time it  has nothing to do with research, so I came to him and i tried to explain it to him.}
+{15010}{}{continue}
+{16000}{}{And he said: "Johnny you know MGL vaules progress and research that leads to it above everything else " Ethics is inhibitor of progress" that's though what made MGL what it is, remember it.We cannot stop our research only because you can't stand screeming of some mutated animal."}
+{16010}{}{And?  what did you said ?}
+{17000}{}{What i said? I said: "Go fuck yourself Harris!" And then i said that i'm leaving current position and taht I'm moving to DNA lab.I think he didn't kick me from MGL probably only due to I was born here, so we know each other since childhood.}
+{17010}{}{What would you do now ?}
+{17020}{}{heh nice, i want to ask you something}
+{17030}{}{What would you do now ?}
+{18000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . .  Maybe you could help me ?}
+{18010}{}{Uh well. . . . tell me plan first.}
+{19000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . . .*he stares at you for a while* . . . nothing.}
+{19010}{}{I have more questions.}
+{20000}{}{Just please, maybe. . . .  let me think. . . . . . . Yes look just go to laboratory, there is control computer in front of creature. only thing you need to do is to triple doses of Exircin-15, it's strong sedative, it should stop hearth of that poor creature. Those drugs control computers were always a bit unreliable, so  we could seduce suspission on cmputer failure.}
+{20010}{}{But there is surely someone who is guarding it.}
+{21000}{}{Yes yes,  Peter. . . . . You know what, tell him I want to talk with him, he would make me perfect alibi, and you would have few minutes to play a bit with that computer. Please do this for me , and for that poor creature. I. . . . . . . . . I don't have much caps to pay you, but i will give you whatever i have.}
+{21010}{}{Well. . . . . . Ok, I will do it. }
+{21020}{}{Sorry, i don't want to risk they could catch me.}
+{22000}{}{Well, I know it's AI with everything what belongs to it. But somehoew, It somehow didn't convinced me that it, it's "feelings" are something more then just some, programmed mathematical formulas to simulate human reactions in any situation. Even after all those years i spent cooperating with it, I didn't noticed proof good enough for me to belive it has. . . . . . . . . . soul.}
+{22010}{}{I see, i want to ask you something.}
+{23000}{}{Just go to laboratory, tell Peter i want to talk with him, and then go to that computer in front of that creature, triple doses of Exircin-15. And then get out of there and back to me.}
+{23010}{}{Ok, i'll try}
+{23020}{}{Uh rather not sorry.}
+{24000}{}{You still have the audacity to come here, and to look in my eyes ?! Hah, Maybe it's punishment for all things i was participating here.}
+{25000}{}{What ? Damn, we don't have much time, you my friend leave this place immidietaly, i .. i'm doomed.}
+{25010}{}{no, no, no, I tried to explain to D.I. Why are we doing this. And then without saing a word D.I. gave me authorized access.***make it give 1250 caps***}
+{26000}{}{. . . . .  Soul ex machina. . .  after all those years. . . . . Look's like i all that time i was wrong about. . .  Her. And you my friend. I thank you and i'm sure that poor creature would be grateful to, here take this is everything i have.}
+{26010}{}{exit}
+
+
+[pols]
+{100}{}{John Talan}
+{200}{}{You see John Talan.}
+{210}{}{You see one of MGL scientist John Talan.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Yes ?}
+{2010}{}{hello, who are you ?}
+{2020}{}{Tell me, what exactly is this place}
+{2030}{}{tell me how exactly this your Creation technology work ?}
+{2040}{}{You said ex leader of FEV mutations research why ex ?}
+{2050}{}{I noticed you are calling D.I. It, other are calling D.I. Her.}
+{2060}{}{Tell me more about virus}
+{2070}{}{Tell me about D.I.}
+{2080}{}{See you later.}
+{2090}{}{About that work, I think i could do that for you, and for that deathclaw. Just tell me again what i have to do.}
+{2100}{}{When i was setting this sedatives doses i got catched by D.I.}
+{3000}{}{I'm John Talan. I'm ex leader of FEV mutations research and current leader of DNA manipulation Laboratory. And you are ?}
+{3010}{}{I'm @pname@, uh . .wastelander, I have a few questions.}
+{4000}{}{This is DNA manipulation laboratory,There we are manipulating DNA and RNA  of lower organisms, especially our MFVRD virus. Genetic manipulation device is right there * nods to large device behind glass*. It's connected right to D.I., it's also being controlled strictly by D.I. We are here more like observers, hehe. D.I. is brain of Technology of creation, and genetic manipulation device is it's hand.}
+{4010}{}{tell me more about virus.}
+{4020}{}{Tell me more about D.I.}
+{4030}{}{I have some general questions}
+{5000}{}{MFVRD virus, Modified Flu Virus for Rewriting DNA. It's totally remade flu virus. we are using it as tool for rewriting higger organisms  genetic code. Our MFVRD virus contains pattern of DNA what it is supposed to write in target cell. MFVRD invades stem cell of organism fetus, rewrites it's DNA with our pattern and then dies and is safely absorbed by invades stem cell.}
+{5010}{}{So it is something like FEV virus ?}
+{6000}{}{No. Difference between our MFVRD virus and FEV virus is, that our virus changes DNA to what WE want. FEV virus is changing DNA to what IT wants. It's interesting how FEV works, it seems it's really doing what it has in it's name, it's making victim to evolve, to evolve fast. Next thing is MFVRD virus unlike FEV is not able to rewrite normal cell's DNA.}
+{6010}{}{I see, i have more questions.}
+{7000}{}{D.I. Divine Inteligence is A.I. that partly controlls MGL and helps with and sometimes even runs researches and experiments, But it's main purpose is to control and help developing of Technlogy of creation. it's indispensable part of Technology of creation, it hold's whole MGL knowledge about DNA, and it probabaly is only computer on West Coast that is able to make all those complex callculatins to compute DNA model.}
+{7010}{}{I Have more questions.}
+{8000}{}{As i said, almost everyting is controlled by D.I. First of all D.I. has to create DNA model, it takes lot of time, i remmber devolping our first brand new organism took D.I. about 24 years of calculations. That's really very complex process. Well after D.I. has DNA model, system takes 1 MFVRD virus from storage and places it into reaction chambeer there in our Genetic modification device.}
+{8010}{}{continue}
+{9000}{}{In reaction chaber then becomes very complex electro-chemical play. After few hours virus has inside itself attached DNA pattern of our organism. After this we feed virus with our synthetic protein to multiply it. Then we inject virus into fetus, We are using some reptiles fetuses, i'm not sure which one, that is not important because after process there remains only shells from cells filled with our DNA. }
+{9010}{}{continue}
+{10000}{}{So after we inject virus into fetus, it searches for original stem cells. when virus finds one, it invades it, eraises original DNA, replaces it with our pattern,  then dies and is absorbed by host stem cell. We are injecting only few hundrets of viruses, because we are using fetus in early stage of grow, but we always inject twice viruses as is predicted number of stem cells to be absolutely sure it rewrites all cells.}
+{10010}{}{continue}
+{11000}{}{When all cells are rewrited rest of viruses stay idle and die because it has not access to our syntehic protein that keeps them alive. After this, Fetus has no longer signs of it's orin, and it grows by our DNA, by our blueprint into organism D.I. calculated and created for us. This all is happening inside Genetic manipulation device and fetus continues it's grow in it, till it is able to survive without support of special enviroment. }
+{11010}{}{continue}
+{12000}{}{Unfortunately nothing we created lived long enough to leave Gen manipulation tank. Last experimental organism lived for about 12 days and then died on some kind of organs  fetus failure. Still it was huge progress, because pervious version lived only for 9 or 10 seconds heh. D.I. is now working on third version of this organism.}
+{12010}{}{Interesting, really very interesting, i have more questions.}
+{13000}{}{I Left that position. because don't like tortuering. And that is exactly  what is happeding there right now, unnecessary tortuering of inteligent organism. Damn even here i can sometimes hear screaming of that creature, begging for merciful death. I can't even sleep with feeling i participated on it.}
+{13010}{}{Inteligent organism ?}
+{14000}{}{Yes. Few weeks ago we captured creature, that was inteligent as human. Was talking and thinking like human. It's some kind of Inteligent "Deathclaw" if is that right name outsiders use. And what we did ? we tied it up to table and started doing nasty experiments. And I was leader of this mess.}
+{14010}{}{So why you didn't do anything to stop it ?}
+{14020}{}{I see, i have more questions.}
+{15000}{}{I did, i talked to Harris. I Always knew research is above everything for him, but this time, this time it  has nothing to do with research, so I came to him and i tried to explain it to him.}
+{15010}{}{continue}
+{16000}{}{And he said: "Johnny you know MGL vaules progress and research that leads to it above everything else " Ethics is inhibitor of progress" that's though what made MGL what it is, remember it.We cannot stop our research only because you can't stand screeming of some mutated animal."}
+{16010}{}{And?  what did you said ?}
+{17000}{}{What i said? I said: "Go fuck yourself Harris!" And then i said that i'm leaving current position and taht I'm moving to DNA lab.I think he didn't kick me from MGL probably only due to I was born here, so we know each other since childhood.}
+{17010}{}{What would you do now ?}
+{17020}{}{heh nice, i want to ask you something}
+{17030}{}{What would you do now ?}
+{18000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . .  Maybe you could help me ?}
+{18010}{}{Uh well. . . . tell me plan first.}
+{19000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . . .*he stares at you for a while* . . . nothing.}
+{19010}{}{I have more questions.}
+{20000}{}{Just please, maybe. . . .  let me think. . . . . . . Yes look just go to laboratory, there is control computer in front of creature. only thing you need to do is to triple doses of Exircin-15, it's strong sedative, it should stop hearth of that poor creature. Those drugs control computers were always a bit unreliable, so  we could seduce suspission on cmputer failure.}
+{20010}{}{But there is surely someone who is guarding it.}
+{21000}{}{Yes yes,  Peter. . . . . You know what, tell him I want to talk with him, he would make me perfect alibi, and you would have few minutes to play a bit with that computer. Please do this for me , and for that poor creature. I. . . . . . . . . I don't have much caps to pay you, but i will give you whatever i have.}
+{21010}{}{Well. . . . . . Ok, I will do it. }
+{21020}{}{Sorry, i don't want to risk they could catch me.}
+{22000}{}{Well, I know it's AI with everything what belongs to it. But somehoew, It somehow didn't convinced me that it, it's "feelings" are something more then just some, programmed mathematical formulas to simulate human reactions in any situation. Even after all those years i spent cooperating with it, I didn't noticed proof good enough for me to belive it has. . . . . . . . . . soul.}
+{22010}{}{I see, i want to ask you something.}
+{23000}{}{Just go to laboratory, tell Peter i want to talk with him, and then go to that computer in front of that creature, triple doses of Exircin-15. And then get out of there and back to me.}
+{23010}{}{Ok, i'll try}
+{23020}{}{Uh rather not sorry.}
+{24000}{}{You still have the audacity to come here, and to look in my eyes ?! Hah, Maybe it's punishment for all things i was participating here.}
+{25000}{}{What ? Damn, we don't have much time, you my friend leave this place immidietaly, i .. i'm doomed.}
+{25010}{}{no, no, no, I tried to explain to D.I. Why are we doing this. And then without saing a word D.I. gave me authorized access.
+
+***make it give 1250 caps***}
+{26000}{}{. . . . .  Soul ex machina. . .  after all those years. . . . . Look's like i all that time i was wrong about. . .  Her. And you my friend. I thank you and i'm sure that poor creature would be grateful to, here take this is everything i have.}
+{26010}{}{exit}
+
+[russ]
+{100}{}{John Talan}
+{200}{}{You see John Talan.}
+{210}{}{You see one of MGL scientist John Talan.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Yes ?}
+{2010}{}{hello, who are you ?}
+{2020}{}{Tell me, what exactly is this place}
+{2030}{}{tell me how exactly this your Creation technology work ?}
+{2040}{}{You said ex leader of FEV mutations research why ex ?}
+{2050}{}{I noticed you are calling D.I. It, other are calling D.I. Her.}
+{2060}{}{Tell me more about virus}
+{2070}{}{Tell me about D.I.}
+{2080}{}{See you later.}
+{2090}{}{About that work, I think i could do that for you, and for that deathclaw. Just tell me again what i have to do.}
+{2100}{}{When i was setting this sedatives doses i got catched by D.I.}
+{3000}{}{I'm John Talan. I'm ex leader of FEV mutations research and current leader of DNA manipulation Laboratory. And you are ?}
+{3010}{}{I'm @pname@, uh . .wastelander, I have a few questions.}
+{4000}{}{This is DNA manipulation laboratory,There we are manipulating DNA and RNA  of lower organisms, especially our MFVRD virus. Genetic manipulation device is right there * nods to large device behind glass*. It's connected right to D.I., it's also being controlled strictly by D.I. We are here more like observers, hehe. D.I. is brain of Technology of creation, and genetic manipulation device is it's hand.}
+{4010}{}{tell me more about virus.}
+{4020}{}{Tell me more about D.I.}
+{4030}{}{I have some general questions}
+{5000}{}{MFVRD virus, Modified Flu Virus for Rewriting DNA. It's totally remade flu virus. we are using it as tool for rewriting higger organisms  genetic code. Our MFVRD virus contains pattern of DNA what it is supposed to write in target cell. MFVRD invades stem cell of organism fetus, rewrites it's DNA with our pattern and then dies and is safely absorbed by invades stem cell.}
+{5010}{}{So it is something like FEV virus ?}
+{6000}{}{No. Difference between our MFVRD virus and FEV virus is, that our virus changes DNA to what WE want. FEV virus is changing DNA to what IT wants. It's interesting how FEV works, it seems it's really doing what it has in it's name, it's making victim to evolve, to evolve fast. Next thing is MFVRD virus unlike FEV is not able to rewrite normal cell's DNA.}
+{6010}{}{I see, i have more questions.}
+{7000}{}{D.I. Divine Inteligence is A.I. that partly controlls MGL and helps with and sometimes even runs researches and experiments, But it's main purpose is to control and help developing of Technlogy of creation. it's indispensable part of Technology of creation, it hold's whole MGL knowledge about DNA, and it probabaly is only computer on West Coast that is able to make all those complex callculatins to compute DNA model.}
+{7010}{}{I Have more questions.}
+{8000}{}{As i said, almost everyting is controlled by D.I. First of all D.I. has to create DNA model, it takes lot of time, i remmber devolping our first brand new organism took D.I. about 24 years of calculations. That's really very complex process. Well after D.I. has DNA model, system takes 1 MFVRD virus from storage and places it into reaction chambeer there in our Genetic modification device.}
+{8010}{}{continue}
+{9000}{}{In reaction chaber then becomes very complex electro-chemical play. After few hours virus has inside itself attached DNA pattern of our organism. After this we feed virus with our synthetic protein to multiply it. Then we inject virus into fetus, We are using some reptiles fetuses, i'm not sure which one, that is not important because after process there remains only shells from cells filled with our DNA. }
+{9010}{}{continue}
+{10000}{}{So after we inject virus into fetus, it searches for original stem cells. when virus finds one, it invades it, eraises original DNA, replaces it with our pattern,  then dies and is absorbed by host stem cell. We are injecting only few hundrets of viruses, because we are using fetus in early stage of grow, but we always inject twice viruses as is predicted number of stem cells to be absolutely sure it rewrites all cells.}
+{10010}{}{continue}
+{11000}{}{When all cells are rewrited rest of viruses stay idle and die because it has not access to our syntehic protein that keeps them alive. After this, Fetus has no longer signs of it's orin, and it grows by our DNA, by our blueprint into organism D.I. calculated and created for us. This all is happening inside Genetic manipulation device and fetus continues it's grow in it, till it is able to survive without support of special enviroment. }
+{11010}{}{continue}
+{12000}{}{Unfortunately nothing we created lived long enough to leave Gen manipulation tank. Last experimental organism lived for about 12 days and then died on some kind of organs  fetus failure. Still it was huge progress, because pervious version lived only for 9 or 10 seconds heh. D.I. is now working on third version of this organism.}
+{12010}{}{Interesting, really very interesting, i have more questions.}
+{13000}{}{I Left that position. because don't like tortuering. And that is exactly  what is happeding there right now, unnecessary tortuering of inteligent organism. Damn even here i can sometimes hear screaming of that creature, begging for merciful death. I can't even sleep with feeling i participated on it.}
+{13010}{}{Inteligent organism ?}
+{14000}{}{Yes. Few weeks ago we captured creature, that was inteligent as human. Was talking and thinking like human. It's some kind of Inteligent "Deathclaw" if is that right name outsiders use. And what we did ? we tied it up to table and started doing nasty experiments. And I was leader of this mess.}
+{14010}{}{So why you didn't do anything to stop it ?}
+{14020}{}{I see, i have more questions.}
+{15000}{}{I did, i talked to Harris. I Always knew research is above everything for him, but this time, this time it  has nothing to do with research, so I came to him and i tried to explain it to him.}
+{15010}{}{continue}
+{16000}{}{And he said: "Johnny you know MGL vaules progress and research that leads to it above everything else " Ethics is inhibitor of progress" that's though what made MGL what it is, remember it.We cannot stop our research only because you can't stand screeming of some mutated animal."}
+{16010}{}{And?  what did you said ?}
+{17000}{}{What i said? I said: "Go fuck yourself Harris!" And then i said that i'm leaving current position and taht I'm moving to DNA lab.I think he didn't kick me from MGL probably only due to I was born here, so we know each other since childhood.}
+{17010}{}{What would you do now ?}
+{17020}{}{heh nice, i want to ask you something}
+{17030}{}{What would you do now ?}
+{18000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . .  Maybe you could help me ?}
+{18010}{}{Uh well. . . . tell me plan first.}
+{19000}{}{. . . . . . .Nothing, I can't. . . .  I can't do anything. If that creature would die to some "unknown reasons" I would end kicked out in wasteland. That would be my end i know that for sure. But. . . . I also can't stand this feeling like i'm one of those tortures. . . . . . .. May. . . .*he stares at you for a while* . . . nothing.}
+{19010}{}{I have more questions.}
+{20000}{}{Just please, maybe. . . .  let me think. . . . . . . Yes look just go to laboratory, there is control computer in front of creature. only thing you need to do is to triple doses of Exircin-15, it's strong sedative, it should stop hearth of that poor creature. Those drugs control computers were always a bit unreliable, so  we could seduce suspission on cmputer failure.}
+{20010}{}{But there is surely someone who is guarding it.}
+{21000}{}{Yes yes,  Peter. . . . . You know what, tell him I want to talk with him, he would make me perfect alibi, and you would have few minutes to play a bit with that computer. Please do this for me , and for that poor creature. I. . . . . . . . . I don't have much caps to pay you, but i will give you whatever i have.}
+{21010}{}{Well. . . . . . Ok, I will do it. }
+{21020}{}{Sorry, i don't want to risk they could catch me.}
+{22000}{}{Well, I know it's AI with everything what belongs to it. But somehoew, It somehow didn't convinced me that it, it's "feelings" are something more then just some, programmed mathematical formulas to simulate human reactions in any situation. Even after all those years i spent cooperating with it, I didn't noticed proof good enough for me to belive it has. . . . . . . . . . soul.}
+{22010}{}{I see, i want to ask you something.}
+{23000}{}{Just go to laboratory, tell Peter i want to talk with him, and then go to that computer in front of that creature, triple doses of Exircin-15. And then get out of there and back to me.}
+{23010}{}{Ok, i'll try}
+{23020}{}{Uh rather not sorry.}
+{24000}{}{You still have the audacity to come here, and to look in my eyes ?! Hah, Maybe it's punishment for all things i was participating here.}
+{25000}{}{What ? Damn, we don't have much time, you my friend leave this place immidietaly, i .. i'm doomed.}
+{25010}{}{no, no, no, I tried to explain to D.I. Why are we doing this. And then without saing a word D.I. gave me authorized access.
+
+***make it give 1250 caps***}
+{26000}{}{. . . . .  Soul ex machina. . .  after all those years. . . . . Look's like i all that time i was wrong about. . .  Her. And you my friend. I thank you and i'm sure that poor creature would be grateful to, here take this is everything i have.}
+{26010}{}{exit}
+

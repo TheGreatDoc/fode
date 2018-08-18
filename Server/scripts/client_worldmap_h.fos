@@ -1,0 +1,101 @@
+// Author: JohnPL
+// Client World Map Graphics header
+
+#ifndef __CLIENT_WORLD_MAP_GRAPHICS__
+#define __CLIENT_WORLD_MAP_GRAPHICS__
+
+#include "_client_defines.fos"
+#include "_colors.fos"
+
+#ifndef WORLD_MAP_GRAPHICS
+
+	// Add element on world map
+	import IWMImageOpt@			WM_AddImage() from "client_worldmap";
+	import IWMTextOpt@			WM_AddText() from "client_worldmap";
+
+	// Delete world map element
+	import void WM_DeleteImage(IWMImageOpt@ image)  from "client_worldmap"; 
+	import void WM_DeleteText(IWMTextOpt@ text)  from "client_worldmap"; 
+
+	#define ZONE_X #(x) (x * 50)
+	#define ZONE_Y #(y) (y * 50)
+
+#endif // WORLD_MAP_GRAPHICS
+
+//compatybilty list:
+#define WORLD_MAP_GRAPHICS
+#define WORLD_MAP_GRAPHICS_VERSION 1
+
+interface IWMElementOpt
+{
+	bool MouseDown(int click);
+	bool MouseUp(int click, bool IsCollision);
+	void MouseMove();
+	void Draw();
+	void Update(uint dt);
+	void SetCollisionTransparent(bool collisionTransparent);
+
+	bool IsCollision(int mouseX, int mouseY);
+}
+
+interface IWMElementCallbackUpdate		{ void OnUpdate(); }
+interface IWMElementCallbackMouseDown		{ void OnMouseDown(int click); }  /// mouse down on element
+interface IWMElementCallbackMouseClick		{ void OnMouseClick(int click); } /// mouse down on elemnt, and up on element
+interface IWMElementCallbackMouseUp		{ void OnMouseUp(int click); } /// mouse down on elemnt, and up outside element
+interface IWMElementCallbackMouseMove		{ void OnMouseMove(); }
+
+interface IWMImageOpt
+{
+	IWMImageOpt@ CallbackUpdate(IWMElementCallbackUpdate@ callback);		// default null
+	IWMImageOpt@ CallbackMouseDown(IWMElementCallbackMouseDown@ callback);		// default null
+	IWMImageOpt@ CallbackMouseClick(IWMElementCallbackMouseClick@ callback);	// default null
+	IWMImageOpt@ CallbackMouseUp(IWMElementCallbackMouseUp@ callback);	 	// default null
+	IWMImageOpt@ CallbackMouseMove(IWMElementCallbackMouseMove@ callback);		// default null
+	
+	IWMImageOpt@ Image(string@ sprName);
+	IWMImageOpt@ Image(int patch, string@ sprName);
+
+	IWMImageOpt@ Color(uint color);
+	IWMImageOpt@ Visible(bool visible);
+	IWMImageOpt@ Position(int x, int y);   
+	IWMImageOpt@ Size(int w, int h);    
+	IWMImageOpt@ CollisionTransparent(bool collisionTransparent);    
+}
+
+interface IWMTextOpt 
+{
+	IWMTextOpt@ CallbackUpdate(IWMElementCallbackUpdate@ callback);                   // default null
+	IWMTextOpt@ CallbackMouseDown(IWMElementCallbackMouseDown@ callback);             // default null
+	IWMTextOpt@ CallbackMouseClick(IWMElementCallbackMouseClick@ callback);           // default null
+	IWMTextOpt@ CallbackMouseUp(IWMElementCallbackMouseUp@ callback);           // default null
+	IWMTextOpt@ CallbackMouseMove(IWMElementCallbackMouseMove@ callback);		    // default null
+
+	IWMTextOpt@ Text(string@ text);
+	IWMTextOpt@ Font(int font);
+	IWMTextOpt@ Color(uint color);
+	IWMTextOpt@ DownColor(uint color);
+	IWMTextOpt@ Flags(int flags);
+
+	IWMTextOpt@ Visible(bool visible);
+	IWMTextOpt@ Position(int x, int y);
+	IWMTextOpt@ Size(int width, int height);
+	IWMTextOpt@ CollisionTransparent(bool collisionTransparent);    
+}
+
+#endif // __CLIENT_WORLD_MAP_GRAPHICS__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

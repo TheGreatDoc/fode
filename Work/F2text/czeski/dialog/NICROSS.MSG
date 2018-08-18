@@ -1,0 +1,5 @@
+#tenhle soubor pøeložil Birdman - birdman@post.cz, http://get.to/birdman
+{100}{}{Vidíš znaèku. Je na ní napsané 'Odpadky.'}
+{101}{}{Uh...je to znaèka.}
+{102}{}{Hej, nìkdo pod tu znaèku zahrabal nìjaké peníze.}
+{103}{}{Už tady nic není, škoda.}

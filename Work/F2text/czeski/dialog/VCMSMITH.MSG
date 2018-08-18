@@ -1,0 +1,68 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš otrhaného zemìdìlce.}
+{101}{}{Vidíš Smithe.}
+{102}{}{Nemyslím si cizinèe, že bych tì už nìkdy potkal. Jmenuji se Smith. Potøebuješ s nìèím poradit?}
+{103}{}{Chceš nìco jiného?}
+{104}{}{Mùžeš mi vyprávìt o Vault City?}
+{105}{}{Co tady kolem hledáš?}
+{106}{}{Hledám Vault.}
+{107}{}{Pomùžu ti s tím pluhem.}
+{108}{}{Moje žena øíká, že doba je zlá.}
+{109}{}{Nic, jen procházím kolem. Sbohem.}
+{110}{}{Um... Waga Nu-kik?}
+{111}{}{No, to co tady okolo vidíš není skuteèné Vault City... právì stojíš na mìstském pøedmìstí.}
+{112}{}{Proè nejsi ve mìstì?}
+{113}{}{Co tady dìláš?}
+{114}{}{Mohu se zeptat na nìco jiného?}
+{115}{}{Díky. Nashle.}
+{116}{}{Já a moje rodina pracujeme na farmì na pøedmìstí. Není to tak špatné. Aèkoliv nevím jak ještì dlouho.}
+{117}{}{V èem je problém?}
+{118}{}{Proè nejste ve mìstì?}
+{119}{}{Mohu se zeptat na nìco jiného?}
+{120}{}{Jo, èas jsou peníze. Sbohem.}
+{121}{}{To je to, velký pøíteli.  Musím už jít.}
+{122}{}{Mluvíš o Vaultu uvnitø mìsta? Jen jednou jsem ho vidìl... je uvnitø mìsta, vstup je z boku útesu. Alespoò si to myslím. Jenom Obèany nechají projít dovnitø skrz bránu.}
+{123}{}{Mohu se zeptat na nìco jiného?}
+{124}{}{Díky na návod. Sbohem.}
+{125}{}{Já a moje rodina nepatøíme k tìm, které nechají bez problému projít dovnitø. Tak žijeme alespoò pod jejich ochranou.}
+{126}{}{Proè jsi se nepøestìhoval do mìsta?}
+{127}{}{Ochranou? Jaký druh ochrany? }
+{128}{}{Mohu se zeptat na nìco jiného?}
+{129}{}{Chápu. No, dìkuji ti za tvùj èas. Sbohem.}
+{130}{}{Jo, je to tìžké bez pluhu. S mojí ženou jsme to zkoušeli, ale v zemìdìlství to jde pomalu.}
+{131}{}{Potøebuješ pomoci?}
+{132}{}{Mohu se zeptat na nìco jiného?}
+{133}{}{Hm, je mi líto, když to slyším. Sbohem.}
+{134}{}{Jistì.}
+{135}{}{No, my jsme z pustiny... jako ty. Vše co mùžeme udìlat je pøijmout ochranu Vault City.}
+{136}{}{Jaký je to druh ochrany?}
+{137}{}{Mohu se zeptat na nìco jiného?}
+{138}{}{Díky. Sbohem.}
+{139}{}{Chrání nás pøed pustinou a jejími obyvateli, ale stojí to naši rodinu docela dost. A bez pluhu... no, snad si s tím nìjak poradíme.}
+{140}{}{Mohu ti pomoci s tím pluhem?}
+{141}{}{Mohu se zeptat na nìco jiného?}
+{142}{}{Hm, je mi líto, když to slyším. Sbohem.}
+{143}{}{Já a moje žena nebudeme mluvit s takovými jako jsi ty.}
+{144}{}{Marie, drž se dál od tohoto "pøítele".}
+{145}{}{Chceš pomoci lidem jako jsme my? Nemùžeme ti mnoho nabídnout, ale budeme ti vdìèní.}
+{146}{}{Fuj! Za to si toho koupím! Jestliže nemáš peníze, jdi se bodnout.}
+{147}{}{Žádnej problém. Když mùžu pomùžu.}
+{148}{}{Mohu se zeptat na nìco jiného?}
+{149}{}{Budu o tom pøemýšlet. Zatím nashle.}
+{150}{}{No, máme tak sto padesát ušetøeno, pomùže-li to. Ale nebudeme schopni zaplatit naší další splátku jestliže nebude pluh bìhem pøíštího týdne opraven.}
+{151}{}{Sto padesát bude staèit}
+{152}{}{Neboj se o své peníze. Stejnì ti pomohu.}
+{153}{}{Nikdy... nemùžu ti pomoci. Nashle.}
+{154}{}{No, dìkuji ti za tvou pomoc, cizinèe.}
+{155}{}{Víš kde mùžu najít pluh?}
+{156}{}{Jeden je poblíž obchodu se zbranìmi a støelivem. Harry by ho mohl prodat.}
+{157}{}{Dobøe, pùjdu se po nìm podívat.}
+{158}{}{Našel jsi pluh?}
+{159}{}{Bohužel zatím ne.}
+{160}{}{Myslím si, že to pro tebe nebudu schopný udìlat.}
+{161}{}{No, mùžeme pracovat i bez pluhu, ale bude to trvat trochu déle. Ale zas né o moc.}
+{162}{}{Mùj tatínek mi øekl, že na lidí jako jsi ty si mám dávat pozor... vypadni odsud. Padej!}
+{163}{}{Z celého srdce ti dìkuji.  Mám tady nìco, co mi dal mùj tatínek než odešel z tohoto svìta. Se strážemi, které nás ochraòují to už nebudeme potøebovat... ale tobì se to možná bude hodit.}
+{164}{}{Dìkuji mnohokrát. Jsem si jist, že se mi to bude hodit. Mìj se hezky.}
+{165}{}{Díky za pomoc, cizinèe. Jsme ti vdìèní.}
+{166}{}{Našel jsi pluh pro pana Smithe a jeho rodinu.}

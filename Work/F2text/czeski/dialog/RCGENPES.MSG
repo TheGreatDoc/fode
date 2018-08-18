@@ -1,0 +1,131 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš reddingského obèana.}
+{101}{}{Vidíš reddingského obèana.}
+{102}{}{Vidíš horníka.}
+{103}{}{Vidíš reddingského farmáøe.}
+{104}{}{Vidíš místního mue.}
+{105}{}{Vidíš reddingskou enu.}
+{106}{}{Vidíš místní enu.}
+{107}{}{Vidíš místní enu.}
+{108}{}{Vidíš enu, která zaruèenì pracuje v dolech.}
+{109}{}{Vidíš farmáøku.}
+{110}{}{Hledáš nìkoho?}
+{111}{}{Vítej ve velkém mìstì.}
+{112}{}{Ahoj.}
+{113}{}{Zùstaneš v Reddingu dlouho?}
+{114}{}{Poprvé v Reddingu, co?}
+{115}{}{Nechceme tu mít potíe.}
+{116}{}{Budeme na tebe dohlíet.}
+{117}{}{Nazdar, cizinèe.}
+{118}{}{Co se stalo?}
+{119}{}{Jak se Ti vede?}
+{120}{}{Pøeju pìknı den.}
+{121}{}{Škyt.}
+{122}{}{Ahoj.}
+{123}{}{Vidíš mue s chlazenım nápojem v ruce.}
+{124}{}{Vidíš mue pijícího pivo.}
+{125}{}{Tento chlápek u toho má hodnì vypitého.}
+{126}{}{Vidíš násosku.}
+{127}{}{Tento chlapík vypadá velice šastnì.}
+{128}{}{Vidíš enu s chlazenım nápojem v ruce.}
+{129}{}{Vidíš enu pijící pivo.}
+{130}{}{Tato sleèinka u toho má hodnì vypitého.}
+{131}{}{Vidíš násosku.}
+{132}{}{Tato ena je asi opilá.}
+{133}{}{Ahoj, cizinèe.}
+{134}{}{Nazdárek.}
+{135}{}{Hmmm.}
+{136}{}{Hyk.}
+{137}{}{Glo-glo-glo.}
+{138}{}{Díky, cizinèe.}
+{139}{}{Jáøku, to neni špatné na domorodce.}
+{140}{}{To jsem potøeboval.}
+{141}{}{Mmm-hmmm.}
+{142}{}{Díky.}
+{143}{}{Jsi mùj nejlepší pøítel.}
+{144}{}{Èau kámo}
+{145}{}{Jsi nejlepší.}
+{146}{}{Domorodci jsou taky lidi.}
+{147}{}{Nic jako pøátelé, jasnì?}
+{148}{}{Chce se mi zpívat...}
+{149}{}{Odvolávám všechno, co jsem o tobì døív øekl.}
+{150}{}{Jsi opravdovı kámoš.}
+{151}{}{Domorodci jsou také lidi.}
+{152}{}{Hip, hip, hurá domorodcùm.}
+{153}{}{./~ Jsem pìknì vysušenı... ./~}
+{154}{}{./~ 99 lahví piva na stìnì, 99 láhví piva... ./~}
+{155}{}{Vidíš mue jdoucího domù.}
+{156}{}{Tento mu zrovna jí maso.}
+{157}{}{Tento mu si zašívá oblek.}
+{158}{}{Tento mu odpoèívá.}
+{159}{}{Tento mu odpoèívá u sebe doma.}
+{160}{}{Vidíš enu jdoucí domù.}
+{161}{}{Tato ena jí maso.}
+{162}{}{Tato ena si zašívá oblek.}
+{163}{}{Tato ena odpoèívá.}
+{164}{}{Tato ena relaxuje u sebe doma.}
+{165}{}{Ahoj.}
+{166}{}{Co tady dìláš?}
+{167}{}{Nikdo tì sem nezval.}
+{168}{}{Vypadni, tohle není dùm pro domorodce.}
+{169}{}{Vypadni! Zmiz!}
+{170}{}{Co dìláš u mì doma?}
+{171}{}{Vidíš reddingského horníka.}
+{172}{}{Vidíš horníka.}
+{173}{}{Vidíš unaveného horníka.}
+{174}{}{Vidíš kopaèe zlata.}
+{175}{}{Vidíš špinavou osobu.}
+{176}{}{Tato osoba musí bıt horník.}
+{177}{}{./~ Kadım dnem starší a zadluenìjší./~}
+{178}{}{Mám špínu všude.}
+{179}{}{To je hrozné.}
+{180}{}{Musíme kopat.}
+{181}{}{Nejdøív kopeme, potom zhebneme.}
+{182}{}{Proè není zlato úplnì všude?}
+{183}{}{Vidíš rozèilenou osobu.}
+{184}{}{Tato osoba je velice nervózní.}
+{185}{}{Vidíš osobu dívající se do ringu.}
+{186}{}{Tato osoba si patrnì dala povzbuzováka.}
+{187}{}{Vidíš nìkoho, kdo asi dává hodnì penìz do zápasení.}
+{188}{}{Tato osoba vypadá rozèilenì.}
+{189}{}{Dostaò ho!}
+{190}{}{Tohle bude moje extra vıplata.}
+{191}{}{Jo!}
+{192}{}{Zabít, zabít, zabít!}
+{193}{}{Podøízni mu krk!}
+{194}{}{Zmrzaè ho, bastarda!}
+{195}{}{Do nìj, do nìj!}
+{196}{}{Neboj se ho!}
+{197}{}{Poøádnì!}
+{198}{}{To je ono!}
+{199}{}{Z toho zbohatnu!}
+{200}{}{Vyhraju na nové boty!}
+{201}{}{Neboj se, nezastavuj!}
+{202}{}{Prackou, blbe! Prackou!}
+{203}{}{Dora ho!}
+{204}{}{Bojuj!}
+{205}{}{Vidíš malého chlapce.}
+{206}{}{Tento špinavého malého chlapce.}
+{207}{}{Vidíš mladíka.}
+{208}{}{Vidíš mladíka se zaprášenou košilí.}
+{209}{}{Vidíš zablácené dítì.}
+{210}{}{Vidíš mladíka šourajícího se v nose.}
+{211}{}{Vidíš dítì, které na tebe upøenì hledí.}
+{212}{}{Vidíš malého chlapce.}
+{213}{}{Vidíš malou dívku.}
+{214}{}{Vidíš roztomilé malé dìvèe.}
+{215}{}{Dobrı den, pane.}
+{216}{}{Co dìláte, pane?}
+{217}{}{Jste kanibal?}
+{218}{}{Utíkejte, utíkejte!}
+{219}{}{Jednou jsem si šáhnul na mrtvého geckona.}
+{220}{}{Jíte lidi?}
+{221}{}{Mì se zdálo, e máte na hlavì parohy.}
+{222}{}{Odkud jste?}
+{223}{}{Jste zdaleka?}
+{224}{}{e mì nechytíte!}
+{225}{}{Haf, haf, haf, haf, haf!}
+{226}{}{Vypadáte legraènì.}
+{227}{}{Pìknì smrdíte.}
+{228}{}{Dobrı den, paní.}
+{229}{}{Co dìláte, paní?}

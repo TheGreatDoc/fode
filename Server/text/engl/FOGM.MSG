@@ -1,0 +1,3067 @@
+
+#
+# Local map
+#
+
+# Name, (pid + 1) * 10 + 0
+# Music, (pid + 1) * 10 + 5
+# Ambient, (pid + 1) * 10 + 6
+# NoLogOut, (pid + 1) * 10 + 7
+
+# Map 0, Global, base 10
+{10}{}{Глобальная карта}
+{15}{}{FODE_Globe-trot.ogg}
+#{15}{}{23world}
+#{15}{}{03 - A Way To Anywhere.ogg}
+#{15}{}{04 - 12h. Dusk.ogg}
+#{15}{}{08 - Blue Grass.ogg}
+#{15}{}{12 - Kill Klesk.ogg}
+{16}{}{blank:100}
+
+# Map 1, base 20
+{20}{}{Arroyo Temple Entrance}
+{25}{}{17arroyo}
+{26}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+# Map 2, base 30
+{30}{}{Arroyo}
+{35}{}{17arroyo}
+{36}{}{gntlwin1:25, gntlwind:25, animal1:20, laughter:15, animal:20, winddoor:20, gustwin1:5, gustwin1:5}
+# Map 3, base 40
+{40}{}{Arroyo garden}
+{45}{}{17arroyo}
+{46}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+# Map 4, base 50
+{50}{}{Arroyo Bridge}
+{55}{}{17arroyo}
+{56}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+# Map 5, base 60
+{60}{}{Arroyo temple}
+{65}{}{13carvrn}
+{66}{}{electri1:15, electric:15, gntlwin1:20, gntlwind:20}
+
+# Map 6, base 70
+{70}{}{Den Business}
+{75}{}{05RAIDER}
+{76}{}{dogbark:10, dogbark1:10, gntlwind:20, gntlwin1:20, blank:40}
+# Map 7, base 80
+{80}{}{Den Carstop}
+{85}{}{05RAIDER}
+{86}{}{dogbark:10, dogbark1:10, gntlwind:20, gntlwin1:20, blank:40}
+
+# Map 8, base 90
+{90}{}{Klamath Canyon}
+{95}{}{03wrldmp}
+{96}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+# Map 9, base 100
+{100}{}{Klamath Downtown}
+{105}{}{03wrldmp}
+{106}{}{laughter:10, laughte1:10, gntlwind:30, gntlwin1:20, brdchir1:10, brdchirp:20}
+# Map 10, base 110
+{110}{}{Klamath Mall}
+{115}{}{03wrldmp}
+{116}{}{animal:20, gntlwind:30, gntlwin1:20, brdchir1:10, brdchirp:20}
+# Map 11, base 120
+{120}{}{Klamath Vic's toilet}
+{125}{}{12junktn}
+{126}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 12, base 130
+{130}{}{Klamath Toxic Caves}
+{135}{}{13carvrn}
+{136}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+# Map 13, base 140
+{140}{}{Klamath Trapping Caves}
+{145}{}{03wrldmp}
+{146}{}{gntlwin1:20, gntlwind:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 14, base 150
+{150}{}{Klamath Grazing Area}
+{155}{}{03wrldmp}
+{156}{}{gntlwin1:20, gntlwind:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 15, base 160
+{160}{}{Vault City Courtyard}
+{165}{}{22vcity}
+{166}{}{blank:40, brdchirp:25, brdchir1:25, potspans:5, potspan1:5}
+# Map 16, base 170
+{170}{}{Vault City Downtown}
+{175}{}{22vcity}
+{176}{}{blank:40, brdchirp:25, brdchir1:25, potspans:5, potspan1:5}
+
+# Map 18, base 190
+{190}{}{Modoc Large}
+{195}{}{18modoc}
+{196}{}{brdchir1:25, brdchirp:25, chimes:15, chimes1:15, dogbark:10, dogbark1:10}
+
+# Map 20, base 210
+{210}{}{Vault City Vault Level 1}
+{215}{}{22vcity}
+{216}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 21, base 220
+{220}{}{Vault City Vault Level 2}
+{225}{}{22vcity}
+{226}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 22, base 230
+{230}{}{Vault City Vault Level 3}
+{235}{}{22vcity}
+{236}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 24, base 250
+{250}{}{Barter ground}
+{255}{}{01hub}
+{256}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, laughter:15, vulture:10}
+
+# Map 25, base 260
+{260}{}{Sierra Army Depot: The Battlefield}
+{265}{}{08vats}
+{266}{}{gntlwind:30, gntlwin1:30, gustwind:10, gustwin1:10, vulture:10, vulture1:10}
+# Map 26, base 270
+{270}{}{Sierra Army Depot: Powersub}
+{275}{}{08vats}
+{276}{}{gntlwind:30, gntlwin1:30, gustwind:10, gustwin1:10, vulture:10, vulture1:10}
+# Map 27, base 280
+{280}{}{Sierra Army Depot: Levels 1}
+{285}{}{08vats}
+{286}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 28, base 290
+{290}{}{Sierra Army Depot: Level 2}
+{295}{}{08vats}
+{296}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 29, base 300
+{300}{}{Sierra Army Depot: Level 3}
+{305}{}{08vats}
+{306}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 30, base 310
+{310}{}{Sierra Army Depot: Level 4}
+{315}{}{08vats}
+{316}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 31, base 320
+{320}{}{Gecko Settlement}
+{325}{}{12junktn}
+{326}{}{electri1:20, electric:20, gntlwind:20, gntlwin1:20, steam:20, steam1:20}
+# Map 32, base 330
+{330}{}{Gecko Power Plant}
+{335}{}{12junktn}
+{336}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 33, base 340
+{340}{}{Gecko Junkyard}
+{345}{}{12junktn}
+{346}{}{gntlwind:20, gntlwin1:20, winddoor:20, winddoo1:20, animal:20, animal1:20}
+
+# Map 34, base 350
+{350}{}{Vault 15 Enter}
+{355}{}{14necro}
+{356}{}{gntlwin1:25, gntlwind:25, dogbark:20, dogbark1:20, gustwind:5, gustwin1:5}
+# Map 35, base 360
+{360}{}{Vault 15 Door}
+{365}{}{14necro}
+{366}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 36, base 370
+{370}{}{Vault 15 Level 1}
+{375}{}{14necro}
+{376}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 37, base 380
+{380}{}{Vault 15 Level 2}
+{385}{}{14necro}
+{386}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 38, base 390
+{390}{}{Vault 15 Level 3}
+{395}{}{14necro}
+{396}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+
+# Map 39, base 400
+{400}{}{Gecko Dungeon}
+{405}{}{12junktn}
+{406}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+
+# Map 42, base 430
+{430}{}{NCR: Downtown}
+{435}{}{01hub}
+{436}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+# Map 43, base 440
+{440}{}{NCR: Council}
+{445}{}{01hub}
+{446}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+# Map 44, base 450
+{450}{}{NCR: Westin Ranch}
+{455}{}{01hub}
+{456}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+# Map 45, base 460
+{460}{}{NCR: Bazaar}
+{465}{}{01hub}
+{466}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+
+# Map 48, base 490
+{490}{}{New Reno basement}
+{495}{}{19reno}
+{496}{}{water1:20, water:20, drunklaf:20, chemical:15, chemica1:15, steam:15, shots1:15, blank:30}
+
+# Map 49, base 500
+{500}{}{Military Base Entrance}
+{505}{}{07desert}
+{506}{}{gntlwin1:20, gntlwind:20, dogbark:20, dogbark:20, gustwin1:10, gustwind:10}
+# Map 50, base 510
+{510}{}{Military Base Level 1}
+{515}{}{mbase12}
+{516}{}{elevato1:25, elevator:25, electri1:15, electric:15, clank:10, clank1:10}
+# Map 51, base 520
+{520}{}{Military Base Level 2}
+{525}{}{mbase12}
+{526}{}{elevato1:25, elevator:25, electri1:15, electric:15, clank:10, clank1:10}
+# Map 52, base 530
+{530}{}{Military Base Level 3}
+{535}{}{mbase34}
+{536}{}{elevato1:25, elevator:25, electri1:15, electric:15, clank:10, clank1:10}
+# Map 53, base 540
+{540}{}{Military Base Level 4}
+{545}{}{mbase34}
+{546}{}{elevato1:25, elevator:25, electri1:15, electric:15, clank:10, clank1:10}
+
+# Map 54, base 550
+{550}{}{New Reno 1}
+{555}{}{19reno}
+{556}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 55, base 560
+{560}{}{New Reno 2}
+{565}{}{19reno}
+{566}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 56, base 570
+{570}{}{New Reno 3}
+{575}{}{19reno}
+{576}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 57, base 580
+{580}{}{New Reno 4}
+{585}{}{19reno}
+{586}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 58, base 590
+{590}{}{New Reno Chop Shop}
+{595}{}{19reno}
+{596}{}{clank:20, clank1:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 59, base 600
+{600}{}{New Reno Eldrige's basement}
+{605}{}{19reno}
+{606}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+
+# Map 60, base 610
+{610}{}{Vault 13 outside}
+{615}{}{07desert}
+{616}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 61, base 620
+{620}{}{Vault 13 carvern}
+{625}{}{08vats}
+{626}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 62, base 630
+{630}{}{Redding Downtown}
+{635}{}{24redd}
+{636}{}{saloon:25, saloon1:25, gustwind:10, laughter:20, footste1:10, footstep:10}
+# Map 63, base 640
+{640}{}{Redding Mine Entrance}
+{645}{}{24redd}
+{646}{}{animal1:20, animal:20, elevator:15, ore:15, mechpump:20, ore1:10}
+# Map 64, base 650
+{650}{}{Wanamingo Mine Entrance}
+{655}{}{24redd}
+{656}{}{animal1:20, animal:20, elevator:15, ore:15, mechpump:20, ore1:10}
+
+# Map 70, base 710
+{710}{}{Primal Tribe}
+{715}{}{primal.ogg}
+{716}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 71, base 720
+{720}{}{Vault 13 level 1}
+{725}{}{08vats}
+{726}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 72, base 730
+{730}{}{Vault 13 level 2}
+{735}{}{08vats}
+{736}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 73, base 740
+{740}{}{Vault 13 level 3}
+{745}{}{08vats}
+{746}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 74, base 750
+{750}{}{Vault 13 back exit}
+{755}{}{07desert}
+{756}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 75, base 760
+{760}{}{Cathedral: Enter}
+{765}{}{16follow}
+{766}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 76, base 770
+{770}{}{Cathedral: Main}
+{775}{}{16follow}
+{776}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 77, base 780
+{780}{}{Cathedral: Level1}
+{785}{}{16follow}
+{786}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 78, base 790
+{790}{}{Cathedral: Level2}
+{795}{}{16follow}
+{796}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 79, base 800
+{800}{}{Cathedral: Level3}
+{805}{}{16follow}
+{806}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 81, base 820
+{820}{}{Klamath Rat Caves level 1}
+{825}{}{13carvrn}
+{826}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+# Map 82, base 830
+{830}{}{Klamath Rat Caves level 2}
+{835}{}{13carvrn}
+{836}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+# Map 83, base 840
+{840}{}{Klamath Rat Caves level 3}
+{845}{}{13carvrn}
+{846}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 84, base 850
+{850}{}{New Reno Desperado 1st floor}
+{855}{}{19reno}
+{856}{}{clank:20, clank1:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 85, base 860
+{860}{}{New Reno Desperado basement}
+{865}{}{19reno}
+{866}{}{clank:20, clank1:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 86, base 870
+{870}{}{New Reno Shark club 1st floor}
+{875}{}{19reno}
+{876}{}{clank:20, clank1:20, laughter:15, laughte1:15, shots1:15, shots:10}
+# Map 87, base 880
+{880}{}{New Reno Shark club 2nd floor }
+{885}{}{19reno}
+{886}{}{clank:20, clank1:20, blank:15, shots1:15, shots:10}
+# Map 88, base 890
+{890}{}{New Reno Hidden ring}
+{895}{}{19reno}
+{896}{}{clank:20, clank1:20, blank:15}
+# Map 89, base 900
+{900}{}{New Reno Salvatore's bar 1st floor}
+{905}{}{19reno}
+{906}{}{clank:20, clank1:20, blank:15, shots1:15}
+
+# Map 90, base 910
+{910}{}{Hub Judgement Farm}
+{915}{}{07desert}
+{916}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 91, base 920
+{920}{}{Hubologists laboratory ground}
+{925}{}{07desert}
+{926}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 92, base 930
+{930}{}{Hubologists laboratory}
+{935}{}{08vats}
+{936}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 93, base 940
+{940}{}{Dappo lost caravan encounter}
+{945}{}{07desert}
+{946}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 94, base 950
+{950}{}{Modoc farm}
+{955}{}{07desert}
+{956}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 95, base 960
+{960}{}{Mutants cave}
+{965}{}{07desert}
+{966}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 96, base 970
+{970}{}{Mutants cave outdoor}
+{975}{}{07desert}
+{976}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 97, base 980
+{980}{}{Mutants cave outdoor}
+{985}{}{07desert}
+{986}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 98, base 990
+{990}{}{Modoc vampire farm}
+{995}{}{07desert}
+{996}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 99, base 1000
+{1000}{}{Wanamingo carvern}
+{1005}{}{13carvrn.acm}
+{1006}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 100, base 1010
+{1010}{}{Atoll}
+{1015}{}{07desert}
+{1016}{}{seawind1:25, seawind:25, waves1:10, seagull:15, seagull1:15, waves:10}
+
+# Map 101 base 1020
+{1020}{}{NCR siege camp}
+{1025}{}{05raider}
+{1026}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, shots1:15, vulture:10}
+
+# Map 102 base 1030
+{1030}{}{NCR siege camp}
+{1035}{}{05raider}
+{1036}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, shots1:15, vulture:10}
+
+# Map 103 base 1040
+{1040}{}{NCR siege camp}
+{1045}{}{05raider}
+{1046}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, shots1:15, vulture:10}
+
+# Map 104 base 1050
+{1050}{}{NCR siege camp}
+{1055}{}{05raider}
+{1056}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, shots1:15, vulture:10}
+
+# Map 105 base 1060
+{1060}{}{NCR siege camp}
+{1065}{}{05raider}
+{1066}{}{gntlwin1:25, gntlwind:25, gustwind:10, dogbark1:10, shots1:15, vulture:10}
+
+# Map 106 base 1070
+{1070}{}{NCR siege camp cave}
+{1075}{}{05raider}
+{1076}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 107 base 1080
+{1080}{}{Arroyo Raiders' camp 1.}
+{1085}{}{07desert}
+{1086}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 108 base 1090
+{1090}{}{Arroyo Raiders' camp 2.}
+{1095}{}{07desert}
+{1096}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 109, base 1100
+{1100}{}{Navarro Entrance}
+{1105}{}{14necro}
+{1106}{}{gntlwin1:25, gntlwind:25, gustwind:10, blank:40}
+# Map 110, base 1110
+{1110}{}{Navarro Base}
+{1115}{}{14necro}
+{1116}{}{gntlwin1:25, gntlwind:25, gustwind:10, blank:40}
+# Map 111, base 1120
+{1120}{}{Navarro Sub1}
+{1125}{}{14necro}
+{1126}{}{gntlwin1:25, gntlwind:25, gustwind:10, blank:40}
+# Map 112, base 1130
+{1130}{}{Navarro Sub2}
+{1135}{}{14necro}
+{1136}{}{gntlwin1:25, gntlwind:25, gustwind:10, blank:40}
+
+# Map 113, base 1140
+{1140}{}{Modoc vampire cave}
+{1145}{}{08vats}
+{1146}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 115, base 1160
+{1160}{}{Broken Hills}
+{1165}{}{08vats}
+{1166}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 116, base 1170
+{1170}{}{Broken Hills Basement}
+{1175}{}{08vats}
+{1176}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 117, base 1180
+{1180}{}{Broken Hills Mine}
+{1185}{}{08vats}
+{1186}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 118, base 1190
+{1190}{}{Broken Hills Dungeon}
+{1195}{}{08vats}
+{1196}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 119, base 1200
+{1200}{}{Broken Hills Far Caves}
+{1205}{}{08vats}
+{1206}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 120, base 1210
+{1210}{}{Broken Hills Far Far Caves}
+{1215}{}{08vats}
+{1216}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 135, base 1360
+{1360}{}{San Fran Tanker}
+{1365}{}{21sf}
+{1366}{}{seawind1:25, clang:10, waves1:15, clangl:15, waves:15, seawind:20}
+# Map 136, base 1370
+{1370}{}{San Fran Dock}
+{1375}{}{21sf}
+{1376}{}{seawind1:25, seawind:25, waves1:10, seagull:15, seagull1:15, waves:10}
+# Map 137, base 1380
+{1380}{}{San Fran China}
+{1385}{}{21sf}
+
+{1386}{}{seawind1:25, seawind:25, chimes1:15, chimes:15, blank:20}
+# Map 138, base 1390
+{1390}{}{Shuttle Outside}
+{1395}{}{21sf}
+{1396}{}{seawind1:25, seawind:25, blank:50}
+# Map 139, base 1400
+{1400}{}{Shi Temple}
+{1405}{}{21sf}
+{1406}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 142, base 1430
+{1430}{}{SF hubbology base}
+{1435}{}{14necro}
+{1436}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 143, base 1440
+{1440}{}{Tanker low level}
+{1445}{}{13carvrn}
+{1446}{}{blank:50, seawind1:25, clang:10, waves1:15, clangl:15, waves:15, seawind:20}
+# Map 144, base 1450
+{1450}{}{Tanker top level}
+{1455}{}{21sf}
+{1456}{}{seawind1:25, clang:10, waves1:15, clangl:15, waves:15, seawind:20}
+# Map 145, base 1460
+{1460}{}{Shi Emperor}
+{1465}{}{21sf}
+{1466}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 146, base 1470
+{1470}{}{SF brotherhood base}
+{1475}{}{16follow}
+{1476}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 150, base 1510
+{1510}{}{Robots Special Encounter}
+{1515}{}{07desert}
+# Map 151, base 1530
+{1520}{}{Toxic Special Encounter}
+{1525}{}{08vats}
+# Map 152, base 1530
+{1530}{}{Star Trek Shuttle Special Encounter}
+{1535}{}{07desert}
+# Map 153, base 1540
+{1540}{}{Bunker BoS Special Encounter}
+{1545}{}{07desert}
+# Map 154, base 1550
+{1550}{}{Truck Nuka-Cola Special Encounter}
+{1555}{}{07desert}
+# Map 155, base 1560
+{1560}{}{Guardian of Forever Special Encounter}
+{1565}{}{16follow}
+# Map 156, base 1570
+{1570}{}{Ufo Special Encounter}
+{1575}{}{07desert}
+# Map 157, base 1580
+{1580}{}{Cafe Special Encounter}
+{1585}{}{01hub}
+
+########ToDo: Fill the rest of special encs.################
+
+# Map 169 base 1700
+{1700}{}{Mad Scientist's Lab Special Encounter}
+{1705}{}{07desert}
+{1706}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 170 base 1710
+{1710}{}{Mad Scientist's Lab Special Encounter Bunker}
+{1715}{}{09glow}
+# Map 171, base 1720
+{1720}{}{Пристанище Детей Пустоши}
+{1725}{}{07desert}
+{1725}{}{05 - Anesthetic.ogg}
+{1725}{}{07 - Echelon.ogg}
+{1725}{}{11 - Face to Face.ogg}
+{1725}{}{13 - Killadrone.ogg}
+{1725}{}{17 - Trinity.ogg}
+{1726}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 172, base 1730
+{1730}{}{Knight Of The Wasteland base. Ground level}
+{1735}{}{07desert}
+# Map 173, base 1740
+{1740}{}{Knight Of The Wasteland base. First level}
+{1745}{}{07desert}
+# Map 174, base 1750
+{1750}{}{Knight Of The Wasteland base. Second level}
+{1755}{}{07desert}
+# Map 175, base 1760
+{1760}{}{Knight Of The Wasteland base. Third level}
+{1765}{}{07desert}
+# Map 176, base 1770
+{1770}{}{Strange house. Ground}
+{1775}{}{07desert}
+# Map 177, base 1780
+{1780}{}{Strange house. Bunker}
+{1785}{}{08vats}
+{1786}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 178, base 1790
+{1790}{}{Trapper house. Ground}
+{1795}{}{07desert}
+# Map 179, base 1800
+{1800}{}{Trapper house. Basement}
+{1805}{}{07desert}
+# Map 180, base 1810
+{1810}{}{Doll holodisk cave. Ground}
+{1815}{}{07desert}
+# Map 181, base 1820
+{1820}{}{Doll holodisk cave. Cave}
+{1825}{}{07desert}
+# Map 185, base 1860
+{1860}{}{Abandoned doughnut warehouse}
+{1865}{}{07desert}
+# Map 186, base 1870
+{1870}{}{Abandoned doughnut warehouse - basement}
+{1875}{}{07desert}
+# Map 187, base 1880
+{1880}{}{Android lab entrance}
+{1885}{}{02 - Into The Dust.ogg}
+{1886}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 188, base 1890
+{1890}{}{Android lab basement}
+{1895}{}{12 - Kill Klesk.ogg}
+{1896}{}{electri1:15, electric:15, clank:10, clank1:10}
+
+# Map 190, base 1910
+{1910}{}{City Encounter 1}
+{1915}{}{10labone}
+{1915}{}{05 - Anesthetic.ogg}
+{1915}{}{07 - Echelon.ogg}
+{1915}{}{11 - Face to Face.ogg}
+{1915}{}{13 - Killadrone.ogg}
+{1915}{}{17 - Trinity.ogg}
+{1916}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 191, base 1920
+{1920}{}{City Encounter 2}
+{1925}{}{10labone}
+{1925}{}{05 - Anesthetic.ogg}
+{1925}{}{07 - Echelon.ogg}
+{1925}{}{11 - Face to Face.ogg}
+{1925}{}{13 - Killadrone.ogg}
+{1925}{}{17 - Trinity.ogg}
+{1926}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 192, base 1930
+{1930}{}{City Encounter 3}
+{1935}{}{10labone}
+{1935}{}{05 - Anesthetic.ogg}
+{1935}{}{07 - Echelon.ogg}
+{1935}{}{11 - Face to Face.ogg}
+{1935}{}{13 - Killadrone.ogg}
+{1935}{}{17 - Trinity.ogg}
+{1936}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 193, base 1940
+{1940}{}{City Encounter 4}
+{1945}{}{10labone}
+{1945}{}{05 - Anesthetic.ogg}
+{1945}{}{07 - Echelon.ogg}
+{1945}{}{11 - Face to Face.ogg}
+{1945}{}{13 - Killadrone.ogg}
+{1945}{}{17 - Trinity.ogg}
+{1946}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 194, base 1950
+{1950}{}{City Encounter 5}
+{1955}{}{10labone}
+{1955}{}{05 - Anesthetic.ogg}
+{1955}{}{07 - Echelon.ogg}
+{1955}{}{11 - Face to Face.ogg}
+{1955}{}{13 - Killadrone.ogg}
+{1955}{}{17 - Trinity.ogg}
+{1956}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 195, base 1960
+{1960}{}{City Encounter 5}
+{1965}{}{10labone}
+{1965}{}{05 - Anesthetic.ogg}
+{1965}{}{07 - Echelon.ogg}
+{1965}{}{11 - Face to Face.ogg}
+{1965}{}{13 - Killadrone.ogg}
+{1965}{}{17 - Trinity.ogg}
+{1966}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 196, base 1970
+{1970}{}{City Encounter 5}
+{1975}{}{10labone}
+{1975}{}{05 - Anesthetic.ogg}
+{1975}{}{07 - Echelon.ogg}
+{1975}{}{11 - Face to Face.ogg}
+{1975}{}{13 - Killadrone.ogg}
+{1975}{}{17 - Trinity.ogg}
+{1976}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 198, base 1980
+{1980}{}{City Encounter 5}
+{1985}{}{10labone}
+{1985}{}{05 - Anesthetic.ogg}
+{1985}{}{07 - Echelon.ogg}
+{1985}{}{11 - Face to Face.ogg}
+{1985}{}{13 - Killadrone.ogg}
+{1985}{}{17 - Trinity.ogg}
+{1986}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 201, base 2020
+{2020}{}{Raiders entrance}
+{2025}{}{05raider}
+{2026}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 202, base 2030
+{2030}{}{Raiders cave 1}
+{2035}{}{05raider}
+{2036}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+# Map 203, base 2040
+{2040}{}{Raiders cave 2}
+{2045}{}{05raider}
+{2046}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+# Map 204, base 2050
+{2050}{}{Raiders base}
+{2055}{}{05raider}
+{2056}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+# Map 205, base 2060
+{2060}{}{Raiders entrance 2}
+{2065}{}{05raider}
+{2066}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 210, base 2110
+{2110}{}{Replication Bank Den}
+{2115}{}{09 - D.S.Brudge.ogg}
+{2115}{}{10 - Dystopian Dream.ogg}
+{2115}{}{15 - Phagocyte Disaster.ogg}
+{2116}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2117}{}{NoLogOut}
+# Map 211, base 2120
+{2120}{}{Replication Bank Klamath}
+{2125}{}{09 - D.S.Brudge.ogg}
+{2125}{}{10 - Dystopian Dream.ogg}
+{2125}{}{15 - Phagocyte Disaster.ogg}
+{2126}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2127}{}{NoLogOut}
+# Map 212, base 2130
+{2130}{}{Replication Bank Redding}
+{2135}{}{09 - D.S.Brudge.ogg}
+{2135}{}{10 - Dystopian Dream.ogg}
+{2135}{}{15 - Phagocyte Disaster.ogg}
+{2136}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2137}{}{NoLogOut}
+# Map 213, base 2140
+{2140}{}{Replication Bank Modoc}
+{2145}{}{09 - D.S.Brudge.ogg}
+{2145}{}{10 - Dystopian Dream.ogg}
+{2145}{}{15 - Phagocyte Disaster.ogg}
+{2146}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2147}{}{NoLogOut}
+# Map 214, base 2150
+{2150}{}{Replication Bank NewReno}
+{2155}{}{09 - D.S.Brudge.ogg}
+{2155}{}{10 - Dystopian Dream.ogg}
+{2155}{}{15 - Phagocyte Disaster.ogg}
+{2156}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2157}{}{NoLogOut}
+# Map 215, base 2160
+{2160}{}{Replication Bank Gecko}
+{2165}{}{09 - D.S.Brudge.ogg}
+{2165}{}{10 - Dystopian Dream.ogg}
+{2165}{}{15 - Phagocyte Disaster.ogg}
+{2166}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2167}{}{NoLogOut}
+# Map 216, base 2170
+{2170}{}{Replication Bank BrokenHills}
+{2175}{}{09 - D.S.Brudge.ogg}
+{2175}{}{10 - Dystopian Dream.ogg}
+{2175}{}{15 - Phagocyte Disaster.ogg}
+{2176}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2177}{}{NoLogOut}
+
+# Map 217, base 2180
+{2180}{}{Replication Bank NCR}
+{2185}{}{09 - D.S.Brudge.ogg}
+{2185}{}{10 - Dystopian Dream.ogg}
+{2185}{}{15 - Phagocyte Disaster.ogg}
+{2186}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2187}{}{NoLogOut}
+# Map 218, base 2190
+{2190}{}{Replication Bank SF}
+{2195}{}{09 - D.S.Brudge.ogg}
+{2195}{}{10 - Dystopian Dream.ogg}
+{2195}{}{15 - Phagocyte Disaster.ogg}
+{2196}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2197}{}{NoLogOut}
+# Map 219, base 2200
+{2200}{}{Replication Bank VaultCity}
+{2205}{}{09 - D.S.Brudge.ogg}
+{2205}{}{10 - Dystopian Dream.ogg}
+{2205}{}{15 - Phagocyte Disaster.ogg}
+{2206}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+{2207}{}{NoLogOut}
+# Map 220, base 2210
+{2210}{}{Replication Ground}
+{2215}{}{07desert}
+{2216}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 221, base 2220
+{2220}{}{Replication 1}
+{2225}{}{16 - Stranglet.ogg}
+{2226}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 222, base 2230
+{2230}{}{Replication 2}
+{2235}{}{16 - Stranglet.ogg}
+{2236}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 223, base 2240
+{2240}{}{Replication 3}
+{2245}{}{16 - Stranglet.ogg}
+{2246}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 224, base 2250
+{2250}{}{Replication 4}
+{2255}{}{16 - Stranglet.ogg}
+{2256}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 225, base 2260
+{2260}{}{Hell}
+{2265}{}{02 - Into The Dust.ogg}
+{2265}{}{06 - Cluster Decay.ogg}
+{2266}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 226, base 2270
+{2270}{}{Hell Outside}
+{2275}{}{14necro}
+{2276}{}{gntlwin1:25, gntlwind:25, electri1:15, elevato1:15, blank:30}
+# Map 227, base 2280
+{2280}{}{Hell level 1}
+{2285}{}{02mstrlr}
+{2286}{}{steam:20, steam:15, pebble:15, drunklaf:20, laughter:15, water:20, blank:15}
+# Map 228, base 2290
+{2290}{}{Hell level 2}
+{2295}{}{13carvrn}
+{2296}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 229, base 2300
+{2300}{}{Hell level 3}
+{2305}{}{02mstrlr}
+{2306}{}{animal:20, steam:20, chemical:15, chemica1:15, steam:15, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 230, base 2310
+{2310}{}{Hell corridor}
+{2315}{}{14necro}
+{2316}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 231, base 2320
+{2320}{}{Hell Bunker}
+{2325}{}{14necro}
+{2326}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 232, base 2330
+{2330}{}{Hell Mines}
+{2335}{}{13carvrn}
+{2336}{}{clang:10, animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 233, base 2340
+{2340}{}{Hell FOrest}
+{2345}{}{14necro}
+{2346}{}{gustwind:20, clang:1, clang:1, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 234, base 2350
+{2350}{}{Hell Pipbiy assembly}
+{2355}{}{06 - Cluster Decay.ogg}
+{2356}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+# Map 235, base 2360
+{2360}{}{Hell Bottom}
+{2365}{}{02mstrlr}
+{2366}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+# Map 236, base 2370
+{2370}{}{Hell Bottom}
+{2375}{}{02mstrlr}
+{2376}{}{animal:20, pebble:15, pebble1:15, water1:20, water:20, blank:15}
+
+# Map 240, base 2410
+{2410}{}{Warehouse}
+{2415}{}{06 - Cluster Decay.ogg}
+{2416}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 241, base 2420
+{2420}{}{Warehouse}
+{2425}{}{06 - Cluster Decay.ogg}
+{2426}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 242, base 2430
+{2430}{}{Warehouse}
+{2435}{}{06 - Cluster Decay.ogg}
+{2436}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 243, base 2440
+{2440}{}{Warehouse}
+{2445}{}{06 - Cluster Decay.ogg}
+{2446}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 244, base 2450
+{2450}{}{Warehouse}
+{2455}{}{06 - Cluster Decay.ogg}
+{2456}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 245, base 2460
+{2460}{}{Warehouse}
+{2465}{}{06 - Cluster Decay.ogg}
+{2466}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 246, base 2470
+{2470}{}{Warehouse}
+{2475}{}{06 - Cluster Decay.ogg}
+{2476}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 247, base 2480
+{2480}{}{Warehouse}
+{2485}{}{06 - Cluster Decay.ogg}
+{2486}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 250, base 2500
+{2510}{}{Sid and Nancy}
+{2515}{}{07desert}
+{2516}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+
+# Map 252, base 2530
+{2530}{}{City, Build by GECK.}
+{2535}{}{22vcity}
+{2536}{}{blank:40, brdchirp:25, brdchir1:25, potspans:5, potspan1:5}
+
+# Map 253, base 2540
+{2540}{}{City, Build by GECK - warehouse.}
+{2545}{}{22vcity}
+{2546}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 260, base 2610
+{2610}{}{Intro}
+{2615}{}{17arroyo}
+{2616}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 261, base 2620
+{2620}{}{Intro - initialization}
+{2625}{}{02 - Into The Dust.ogg}
+{2625}{}{06 - Cluster Decay.ogg}
+{2625}{}{06 - Stranglet.ogg}
+{2626}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 301, base 3020
+{3020}{}{Desert Encounter 1}
+{3025}{}{07desert}
+{3025}{}{05 - Anesthetic.ogg}
+{3025}{}{07 - Echelon.ogg}
+{3025}{}{11 - Face to Face.ogg}
+{3025}{}{13 - Killadrone.ogg}
+{3025}{}{17 - Trinity.ogg}
+{3026}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 302, base 3030
+{3030}{}{Desert Encounter 2}
+{3035}{}{07desert}
+{3035}{}{05 - Anesthetic.ogg}
+{3035}{}{07 - Echelon.ogg}
+{3035}{}{11 - Face to Face.ogg}
+{3035}{}{13 - Killadrone.ogg}
+{3035}{}{17 - Trinity.ogg}
+{3036}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 303, base 3040
+{3040}{}{Desert Encounter 3}
+{3045}{}{07desert}
+{3045}{}{05 - Anesthetic.ogg}
+{3045}{}{07 - Echelon.ogg}
+{3045}{}{11 - Face to Face.ogg}
+{3045}{}{13 - Killadrone.ogg}
+{3045}{}{17 - Trinity.ogg}
+{3046}{}{gustwind:20, gustwin1:20, rattle:15, rattle1:15, vulture:15, vulture1:15}
+# Map 304, base 3050
+{3050}{}{Desert Encounter 4}
+{3055}{}{07desert}
+{3055}{}{05 - Anesthetic.ogg}
+{3055}{}{07 - Echelon.ogg}
+{3055}{}{11 - Face to Face.ogg}
+{3055}{}{13 - Killadrone.ogg}
+{3055}{}{17 - Trinity.ogg}
+{3056}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 305, base 3060
+{3060}{}{Desert Encounter 5}
+{3065}{}{07desert}
+{3065}{}{05 - Anesthetic.ogg}
+{3065}{}{07 - Echelon.ogg}
+{3065}{}{11 - Face to Face.ogg}
+{3065}{}{13 - Killadrone.ogg}
+{3065}{}{17 - Trinity.ogg}
+{3066}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 306, base 3070
+{3070}{}{Desert Encounter 6}
+{3075}{}{07desert}
+{3075}{}{05 - Anesthetic.ogg}
+{3075}{}{07 - Echelon.ogg}
+{3075}{}{11 - Face to Face.ogg}
+{3075}{}{13 - Killadrone.ogg}
+{3075}{}{17 - Trinity.ogg}
+{3076}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 307, base 3080
+{3080}{}{Desert Encounter 7}
+{3085}{}{07desert}
+{3085}{}{05 - Anesthetic.ogg}
+{3085}{}{07 - Echelon.ogg}
+{3085}{}{11 - Face to Face.ogg}
+{3085}{}{13 - Killadrone.ogg}
+{3085}{}{17 - Trinity.ogg}
+{3086}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 308, base 3090
+{3090}{}{Desert Encounter 8}
+{3095}{}{07desert}
+{3095}{}{05 - Anesthetic.ogg}
+{3095}{}{07 - Echelon.ogg}
+{3095}{}{11 - Face to Face.ogg}
+{3095}{}{13 - Killadrone.ogg}
+{3095}{}{17 - Trinity.ogg}
+{3096}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 309, base 3100
+{3100}{}{Desert Encounter 9}
+{3105}{}{07desert}
+{3105}{}{05 - Anesthetic.ogg}
+{3105}{}{07 - Echelon.ogg}
+{3105}{}{11 - Face to Face.ogg}
+{3105}{}{13 - Killadrone.ogg}
+{3105}{}{17 - Trinity.ogg}
+{3106}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 310, base 3110
+{3110}{}{Desert Encounter 10}
+{3115}{}{07desert}
+{3115}{}{05 - Anesthetic.ogg}
+{3115}{}{07 - Echelon.ogg}
+{3115}{}{11 - Face to Face.ogg}
+{3115}{}{13 - Killadrone.ogg}
+{3115}{}{17 - Trinity.ogg}
+{3116}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 311, base 3120
+{3120}{}{Desert Encounter 11}
+{3125}{}{07desert}
+{3125}{}{05 - Anesthetic.ogg}
+{3125}{}{07 - Echelon.ogg}
+{3125}{}{11 - Face to Face.ogg}
+{3125}{}{13 - Killadrone.ogg}
+{3125}{}{17 - Trinity.ogg}
+{3126}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 312, base 3130
+{3130}{}{Desert Encounter 12}
+{3135}{}{07desert}
+{3135}{}{05 - Anesthetic.ogg}
+{3135}{}{07 - Echelon.ogg}
+{3135}{}{11 - Face to Face.ogg}
+{3135}{}{13 - Killadrone.ogg}
+{3135}{}{17 - Trinity.ogg}
+{3136}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 331, base 3320
+{3320}{}{Mountain Encounter 1}
+{3325}{}{07desert}
+{3325}{}{05 - Anesthetic.ogg}
+{3325}{}{07 - Echelon.ogg}
+{3325}{}{11 - Face to Face.ogg}
+{3325}{}{13 - Killadrone.ogg}
+{3325}{}{17 - Trinity.ogg}
+{3326}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 332, base 3330
+{3330}{}{Mountain Encounter 2}
+{3335}{}{07desert}
+{3335}{}{05 - Anesthetic.ogg}
+{3335}{}{07 - Echelon.ogg}
+{3335}{}{11 - Face to Face.ogg}
+{3335}{}{13 - Killadrone.ogg}
+{3335}{}{17 - Trinity.ogg}
+{3336}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 333, base 3340
+{3340}{}{Mountain Encounter 3}
+{3345}{}{07desert}
+{3345}{}{05 - Anesthetic.ogg}
+{3345}{}{07 - Echelon.ogg}
+{3345}{}{11 - Face to Face.ogg}
+{3345}{}{13 - Killadrone.ogg}
+{3345}{}{17 - Trinity.ogg}
+{3346}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 334, base 3350
+{3350}{}{Mountain Encounter 4}
+{3355}{}{07desert}
+{3355}{}{05 - Anesthetic.ogg}
+{3355}{}{07 - Echelon.ogg}
+{3355}{}{11 - Face to Face.ogg}
+{3355}{}{13 - Killadrone.ogg}
+{3355}{}{17 - Trinity.ogg}
+{3356}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 335, base 3360
+{3360}{}{Mountain Encounter 5}
+{3365}{}{07desert}
+{3365}{}{05 - Anesthetic.ogg}
+{3365}{}{07 - Echelon.ogg}
+{3365}{}{11 - Face to Face.ogg}
+{3365}{}{13 - Killadrone.ogg}
+{3365}{}{17 - Trinity.ogg}
+{3366}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 336, base 3370
+{3370}{}{Mountain Encounter 6}
+{3375}{}{07desert}
+{3375}{}{05 - Anesthetic.ogg}
+{3375}{}{07 - Echelon.ogg}
+{3375}{}{11 - Face to Face.ogg}
+{3375}{}{13 - Killadrone.ogg}
+{3375}{}{17 - Trinity.ogg}
+{3376}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 337, base 3380
+{3380}{}{Mountain Encounter 7}
+{3385}{}{07desert}
+{3385}{}{13 - Killadrone.ogg}
+{3386}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 348, base 3490
+{3490}{}{Cave Enconter 0 Enter}
+{3495}{}{07desert}
+{3495}{}{05 - Anesthetic.ogg}
+{3495}{}{07 - Echelon.ogg}
+{3495}{}{11 - Face to Face.ogg}
+{3495}{}{13 - Killadrone.ogg}
+{3495}{}{17 - Trinity.ogg}
+{3496}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 349, base 3500
+{3500}{}{Cave Enconter 0 Indoor}
+{3505}{}{07desert}
+{3506}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 350, base 3510
+{3510}{}{Cave Enconter 1 Enter}
+{3515}{}{07desert}
+{3515}{}{05 - Anesthetic.ogg}
+{3515}{}{07 - Echelon.ogg}
+{3515}{}{11 - Face to Face.ogg}
+{3515}{}{13 - Killadrone.ogg}
+{3515}{}{17 - Trinity.ogg}
+{3516}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 351, base 3520
+{3520}{}{Cave Enconter 1 Indoor}
+{3525}{}{07desert}
+{3526}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 352, base 3530
+{3530}{}{Cave Enconter 2 Enter}
+{3535}{}{07desert}
+{3535}{}{05 - Anesthetic.ogg}
+{3535}{}{07 - Echelon.ogg}
+{3535}{}{11 - Face to Face.ogg}
+{3535}{}{13 - Killadrone.ogg}
+{3535}{}{17 - Trinity.ogg}
+{3536}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 353, base 3540
+{3540}{}{Cave Enconter 2 Indoor}
+{3545}{}{07desert}
+{3546}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 354, base 3550
+{3550}{}{Cave Enconter 3 Enter}
+{3555}{}{07desert}
+{3555}{}{05 - Anesthetic.ogg}
+{3555}{}{07 - Echelon.ogg}
+{3555}{}{11 - Face to Face.ogg}
+{3555}{}{13 - Killadrone.ogg}
+{3555}{}{17 - Trinity.ogg}
+{3556}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 355, base 3560
+{3560}{}{Cave Enconter 3 Indoor}
+{3565}{}{07desert}
+{3566}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 356, base 3570
+{3570}{}{Cave Enconter 4 Enter}
+{3575}{}{07desert}
+{3575}{}{05 - Anesthetic.ogg}
+{3575}{}{07 - Echelon.ogg}
+{3575}{}{11 - Face to Face.ogg}
+{3575}{}{13 - Killadrone.ogg}
+{3575}{}{17 - Trinity.ogg}
+{3576}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 357, base 3580
+{3580}{}{Cave Enconter 4 Indoor}
+{3585}{}{07desert}
+{3586}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 358, base 3590
+{3590}{}{Cave Enconter 5 Enter}
+{3595}{}{07desert}
+{3595}{}{05 - Anesthetic.ogg}
+{3595}{}{07 - Echelon.ogg}
+{3595}{}{11 - Face to Face.ogg}
+{3595}{}{13 - Killadrone.ogg}
+{3595}{}{17 - Trinity.ogg}
+{3596}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 359, base 3600
+{3600}{}{Cave Enconter 5 Indoor}
+{3605}{}{07desert}
+{3606}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 371 base 3720
+{3720}{}{Ocean Encounter 1}
+{3725}{}{07desert}
+{3726}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 372 base 3730
+{3730}{}{Ocean Encounter 2}
+{3735}{}{07desert}
+{3736}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 373 base 3740
+{3740}{}{Ocean Encounter 3}
+{3745}{}{07desert}
+{3746}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 374 base 3750
+{3750}{}{Ocean Encounter 4}
+{3755}{}{07desert}
+{3756}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 375 base 3760
+{3760}{}{Ocean Encounter 5}
+{3765}{}{07desert}
+{3766}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 381 base 3820
+{3820}{}{Shoreline Encounter 1}
+{3825}{}{07desert}
+{3825}{}{05 - Anesthetic.ogg}
+{3825}{}{07 - Echelon.ogg}
+{3825}{}{11 - Face to Face.ogg}
+{3825}{}{13 - Killadrone.ogg}
+{3825}{}{17 - Trinity.ogg}
+{3826}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 382 base 38320
+{3830}{}{Shoreline Encounter 2}
+{3835}{}{07desert}
+{3835}{}{05 - Anesthetic.ogg}
+{3835}{}{07 - Echelon.ogg}
+{3835}{}{11 - Face to Face.ogg}
+{3835}{}{13 - Killadrone.ogg}
+{3835}{}{17 - Trinity.ogg}
+{3836}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 383 base 3840
+{3840}{}{Shoreline Encounter 3}
+{3845}{}{07desert}
+{3845}{}{05 - Anesthetic.ogg}
+{3845}{}{07 - Echelon.ogg}
+{3845}{}{11 - Face to Face.ogg}
+{3845}{}{13 - Killadrone.ogg}
+{3845}{}{17 - Trinity.ogg}
+{3846}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 384 base 3850
+{3850}{}{Shoreline Encounter 4}
+{3855}{}{07desert}
+{3855}{}{05 - Anesthetic.ogg}
+{3855}{}{07 - Echelon.ogg}
+{3855}{}{11 - Face to Face.ogg}
+{3855}{}{13 - Killadrone.ogg}
+{3855}{}{17 - Trinity.ogg}
+{3856}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 385 base 3860
+{3860}{}{Shoreline Encounter 5}
+{3865}{}{07desert}
+{3865}{}{05 - Anesthetic.ogg}
+{3865}{}{07 - Echelon.ogg}
+{3865}{}{11 - Face to Face.ogg}
+{3865}{}{13 - Killadrone.ogg}
+{3865}{}{17 - Trinity.ogg}
+{3866}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 386 base 3870
+{3870}{}{Shoreline Encounter 6}
+{3875}{}{07desert}
+{3875}{}{05 - Anesthetic.ogg}
+{3875}{}{07 - Echelon.ogg}
+{3875}{}{11 - Face to Face.ogg}
+{3875}{}{13 - Killadrone.ogg}
+{3875}{}{17 - Trinity.ogg}
+{3876}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 387 base 3880
+{3880}{}{Shoreline Encounter 7}
+{3885}{}{07desert}
+{3885}{}{05 - Anesthetic.ogg}
+{3885}{}{07 - Echelon.ogg}
+{3885}{}{11 - Face to Face.ogg}
+{3885}{}{13 - Killadrone.ogg}
+{3885}{}{17 - Trinity.ogg}
+{3886}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 388 base 3890
+{3890}{}{Shoreline Encounter 8}
+{3895}{}{07desert}
+{3895}{}{05 - Anesthetic.ogg}
+{3895}{}{07 - Echelon.ogg}
+{3895}{}{11 - Face to Face.ogg}
+{3895}{}{13 - Killadrone.ogg}
+{3895}{}{17 - Trinity.ogg}
+{3896}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 389 base 3900
+{3900}{}{Shoreline Encounter 9}
+{3905}{}{07desert}
+{3905}{}{05 - Anesthetic.ogg}
+{3905}{}{07 - Echelon.ogg}
+{3905}{}{11 - Face to Face.ogg}
+{3905}{}{13 - Killadrone.ogg}
+{3905}{}{17 - Trinity.ogg}
+{3906}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 390 base 3910
+{3910}{}{Shoreline Encounter 10}
+{3915}{}{07desert}
+{3915}{}{05 - Anesthetic.ogg}
+{3915}{}{07 - Echelon.ogg}
+{3915}{}{11 - Face to Face.ogg}
+{3915}{}{13 - Killadrone.ogg}
+{3915}{}{17 - Trinity.ogg}
+{3916}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 391 base 3920
+{3920}{}{Shoreline Encounter 11}
+{3925}{}{07desert}
+{3925}{}{05 - Anesthetic.ogg}
+{3925}{}{07 - Echelon.ogg}
+{3925}{}{11 - Face to Face.ogg}
+{3925}{}{13 - Killadrone.ogg}
+{3925}{}{17 - Trinity.ogg}
+{3926}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 392, base 3930
+{3930}{}{Cave Enconter 4 Indoor}
+{3935}{}{07desert}
+{3936}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+
+# Map 400, base 4010
+{4010}{}{Atom Church Ground}
+{4015}{}{10labone}
+{4015}{}{05 - Anesthetic.ogg}
+{4015}{}{07 - Echelon.ogg}
+{4015}{}{11 - Face to Face.ogg}
+{4015}{}{13 - Killadrone.ogg}
+{4015}{}{17 - Trinity.ogg}
+{4016}{}{gntlwin1:25, gntlwind:25, gustwind:10, rattle:15, rattle1:15, vulture:10}
+# Map 401, base 4020
+{4020}{}{Atom Church Level 1}
+{4025}{}{08vats}
+{4026}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+# Map 402, base 4030
+{4030}{}{Atom Church Reactor}
+{4035}{}{16follow}
+{4036}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 405, base 4060
+{4060}{}{Церковь Брока и Зандера}
+{4065}{}{16follow}
+{4066}{}{gntlwind:20, gntlwin1:20, gustwind:20, blank:40}
+# Map 406, base 4070
+{4070}{}{Церковь Брока и Зандера Под землей}
+{4075}{}{16follow}
+{4076}{}{blank:100}
+
+###############################################
+#                                             #
+#                Desert Europe                #
+#                                             #
+###############################################
+
+# Map 665, base 6660
+{6660}{}{Dream}
+{6665}{}{dream_ambience.ogg}
+{6666}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 666, base 6670
+{6670}{}{Old Armory}
+{6675}{}{FODE_Desert_Europe.ogg}
+{6675}{}{FODE_Main_Theme.ogg}
+{6675}{}{FODE_Main_Theme.ogg}
+{6676}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 667, base 6680
+{6680}{}{Light Town}
+{6685}{}{FODE_Desert_Europe.ogg}
+{6685}{}{FODE_Main_Theme.ogg}
+{6686}{}{brdchir1:25, brdchirp:25, chimes:15, chimes1:15, dogbark:10, dogbark1:10}
+
+# Map 668, base 6690
+{6690}{}{Town Station}
+{6695}{}{FODE_Desert_Europe.ogg}
+{6695}{}{FODE_Main_Theme.ogg}
+{6696}{}{brdchir1:25, brdchirp:25, chimes:15, chimes1:15, dogbark:10, dogbark1:10}
+
+# Map 669, base 6700
+{6700}{}{Green Point}
+{6705}{}{FODE_Desert_Europe.ogg}
+{6705}{}{FODE_Main_Theme.ogg}
+{6706}{}{gntlwin1:25, gntlwind:25, animal1:20, laughter:15, animal:20, winddoor:20, gustwin1:5, gustwin1:5}
+
+# Map 670, base 6710
+{6710}{}{Old Village}
+{6715}{}{FODE_Desert_Europe.ogg}
+{6715}{}{FODE_Main_Theme.ogg}
+{6716}{}{gntlwin1:25, gntlwind:25, animal1:20, laughter:15, animal:20, winddoor:20, gustwin1:5, gustwin1:5}
+
+# Map 671, base 6720
+{6720}{}{South Entrance}
+{6725}{}{FODE_Desert_Europe.ogg}
+{6725}{}{FODE_Main_Theme.ogg}
+
+# Map 672, base 6730
+{6730}{}{District X}
+{6735}{}{FODE_Desert_Europe.ogg}
+{6735}{}{FODE_Main_Theme.ogg}
+{6736}{}{dogbark:10, dogbark1:10, gntlwind:20, gntlwin1:20, blank:40}
+
+# Map 673, base 6740
+{6740}{}{Military Base}
+{6745}{}{FODE_Desert_Europe.ogg}
+{6745}{}{FODE_Main_Theme.ogg}
+
+# Map 674, base 6750
+{6750}{}{Mountain Mine}
+{6755}{}{FODE_Desert_Europe.ogg}
+{6755}{}{FODE_Main_Theme.ogg}
+{6756}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 677, base 6780
+{6780}{}{Mine Pit}
+{6785}{}{FODE_Desert_Europe.ogg}
+{6785}{}{FODE_Main_Theme.ogg}
+{6786}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 678, base 6790
+{6790}{}{Death Mine}
+{6795}{}{FODE_Desert_Europe.ogg}
+{6795}{}{FODE_Main_Theme.ogg}
+{6796}{}{dogbark:10, dogbark1:10, gntlwind:20, gntlwin1:20, blank:40}
+
+# Map 679, base 6800
+{6800}{}{Liverpool}
+{6805}{}{FODE_Desert_Europe.ogg}
+{6805}{}{FODE_Main_Theme.ogg}
+
+# Map 680, base 6810
+{6810}{}{Death Mine}
+{6815}{}{FODE_Desert_Europe.ogg}
+{6815}{}{FODE_Main_Theme.ogg}
+
+# Map 681, base 6820
+{6820}{}{Main Entrance}
+{6825}{}{FODE_Desert_Europe.ogg}
+{6825}{}{FODE_Main_Theme.ogg}
+
+# Map 682, base 6830
+{6830}{}{Main Entrance}
+{6835}{}{FODE_Desert_Europe.ogg}
+{6835}{}{FODE_Main_Theme.ogg}
+
+# Map 683, base 6840
+{6840}{}{brak definicji w locations}
+{6845}{}{FODE_Desert_Europe.ogg}
+{6845}{}{FODE_Main_Theme.ogg}
+
+# Map 684, base 6850
+{6850}{}{brak definicji w locations}
+{6855}{}{FODE_Desert_Europe.ogg}
+{6855}{}{FODE_Main_Theme.ogg}
+
+# Map 685, base 6860
+{6860}{}{Old Fields}
+{6865}{}{FODE_Desert_Europe.ogg}
+{6865}{}{FODE_Main_Theme.ogg}
+{6866}{}{brdchir1:20, brdchirp:20, dogbark:10, dogbark1:10, gntlwind:20, gntlwin1:20, blank:40}
+
+# Map 686, base 6870
+{6870}{}{Saints Street}
+{6875}{}{FODE_Desert_Europe.ogg}
+{6875}{}{FODE_Main_Theme.ogg}
+{6875}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 687, base 6880
+{6880}{}{East Entrance}
+{6885}{}{FODE_Desert_Europe.ogg}
+{6885}{}{FODE_Main_Theme.ogg}
+
+# Map 688, base 6890
+{6890}{}{brak definicji w locations}
+{6895}{}{FODE_Desert_Europe.ogg}
+{6895}{}{FODE_Main_Theme.ogg}
+
+# Map 689, base 6900
+{6900}{}{Industrial Center}
+{6905}{}{FODE_Desert_Europe.ogg}
+{6905}{}{FODE_Main_Theme.ogg}
+{6906}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 690, base 6910
+{6910}{}{Industrial}
+{6915}{}{FODE_Desert_Europe.ogg}
+{6915}{}{FODE_Main_Theme.ogg}
+{6916}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+# Map 691, base 6920
+{6920}{}{Dark Wood}
+{6925}{}{FODE_Desert_Europe.ogg}
+{6925}{}{FODE_Main_Theme.ogg}
+{6926}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 693, base 6940
+{6940}{}{Great Mine}
+{6946}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 694, base 6950
+{6950}{}{Scrapers City}
+{6956}{}{brdchir1:20, brdchirp:20, gntlwind:20, gntlwin1:20, gustwind:10, blank:10}
+
+# Map 695, base 6960
+{6960}{}{Main Entrance}
+{6965}{}{FODE_Ich_bin_ein_Odlander.ogg}
+{6966}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+
+# Map 696, base 6970
+{6970}{}{Ruins}
+{6975}{}{FODE_Ich_bin_ein_Odlander.ogg}
+{6976}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+
+# Map 697, base 6980
+{6980}{}{East Side}
+{6985}{}{FODE_Ich_bin_ein_Odlander.ogg}
+{6986}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+
+# Map 698, base 6990
+{6990}{}{North Side}
+{6995}{}{FODE_Ich_bin_ein_Odlander.ogg}
+{6996}{}{drunkla1:20, drunklaf:20, laughter:15, laughte1:15, shots1:15, shots:10}
+
+# Map 699, base 7000
+{7000}{}{Moscow}
+{7006}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30, potspans:5, potspan1:5}
+
+# Map 700, base 7010
+{7010}{}{Island}
+{7015}{}{sea.ogg}
+{7016}{}{seawind1:25, seawind:25, waves1:10, seagull:15, seagull1:15, waves:10}
+
+# Map 702, base 7030
+{7030}{}{Dark Waters}
+{7035}{}{sea.ogg}
+{7036}{}{seawind1:25, seawind:25, waves1:10, seagull:15, seagull1:15, waves:10, chimes1:15, chimes:15}
+
+# Map 703, base 7040
+{7040}{}{101 city}
+{7046}{}{gntlwin1:20, gntlwind:20, dogbark:20, dogbark:20, gustwin1:10, gustwind:10}
+
+# Map 705, base 7060
+{7060}{}{Wild Mine}
+{7066}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 706, base 7070
+{7070}{}{Coal Mine}
+{7075}{}{FODE_Desert_Europe.ogg}
+{7075}{}{FODE_Main_Theme.ogg}
+{7076}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 707, base 7080
+{7080}{}{Coal Mine cave1}
+{7086}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+
+# Map 708, base 7090
+{7090}{}{Coal Mine cave2}
+{7096}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+
+# Map 709, base 7100
+{7100}{}{Fury Town}
+{7106}{}{laughter:10, laughte1:10, gntlwind:30, gntlwin1:20, brdchir1:10, brdchirp:20}
+
+# Map 710, base 7110
+{7110}{}{Power Plant}
+{7116}{}{electri1:20, electric:20, gntlwind:20, gntlwin1:20, steam:20, steam1:20}
+
+# Map 711, base 7120
+{7120}{}{London}
+{7126}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30, potspans:5, potspan1:5}
+
+# Map 712, base 7130
+{7130}{}{NEC base}
+{7136}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+
+# Map 716, base 7170
+{7170}{}{Mountine Mine cave1}
+{7176}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+
+# Map 717, base 7180
+{7180}{}{Mountine Mine cave2}
+{7186}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+
+# Map 718, base 7190
+{7190}{}{Mine pit cave2}
+{7196}{}{puddle1:30, puddle:30, water:5, water1:5, pebble:5, pebble1:5}
+
+# Map 719, base 7200
+{7200}{}{Great Mine Cave}
+{7206}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 720, base 7210
+{7210}{}{Mine pit cave1}
+{7216}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 731, base 7320
+{7320}{}{Moscow Arsenal}
+{7326}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 733, base 7340
+{7340}{}{Moscow mine}
+{7346}{}{gntlwin1:25, gntlwind:25, animal1:20, animal:20, gustwind:5, gustwin1:5}
+
+# Map 741, base 7420
+{7420}{}{MGL}
+{7426}{}{gntlwin1:25, gntlwind:25, brdchir1:10, brdchirp:10, blank:30}
+
+# Map 746, base 7470
+{7470}{}{Empire Mine}
+{7476}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 750, base 7510
+{7510}{}{Power Plant under}
+{7516}{}{electri1:20, electric:20, gntlwind:20, gntlwin1:20, steam:20, steam1:20}
+
+# Map 752, base 7530
+{7530}{}{Hunters Camp}
+{7536}{}{laughter:10, laughte1:10, gntlwind:30, gntlwin1:20, brdchir1:10, brdchirp:20}
+
+
+## Bazy
+
+# Map 901, base 9020
+{9020}{}{Home 1}
+{9025}{}{FODE_Desert_Europe.ogg}
+{9025}{}{FODE_Main_Theme.ogg}
+{9026}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 902, base 9030
+{9030}{}{Home 2}
+{9035}{}{FODE_Desert_Europe.ogg}
+{9035}{}{FODE_Main_Theme.ogg}
+{9036}{}{squeak:10, water:20, water1:20, animal:20, pebble:20, squeak1:10}
+
+# Map 903, base 9040
+{9040}{}{Home 3}
+{9045}{}{FODE_Desert_Europe.ogg}
+{9045}{}{FODE_Main_Theme.ogg}
+{9046}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 904, base 9050
+{9050}{}{Home 3}
+{9055}{}{FODE_Desert_Europe.ogg}
+{9055}{}{FODE_Main_Theme.ogg}
+{9056}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 905, base 9060
+{9060}{}{Home 3}
+{9065}{}{FODE_Desert_Europe.ogg}
+{9065}{}{FODE_Main_Theme.ogg}
+{9066}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 906, base 9070
+{9070}{}{Home 3}
+{9075}{}{FODE_Desert_Europe.ogg}
+{9075}{}{FODE_Main_Theme.ogg}
+{9076}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 907, base 9080
+{9080}{}{Home 3}
+{9085}{}{FODE_Desert_Europe.ogg}
+{9085}{}{FODE_Main_Theme.ogg}
+{9086}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 908, base 9090
+{9090}{}{Home 3}
+{9095}{}{FODE_Desert_Europe.ogg}
+{9095}{}{FODE_Main_Theme.ogg}
+{9096}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 909, base 9100
+{9100}{}{Home 3}
+{9105}{}{FODE_Desert_Europe.ogg}
+{9105}{}{FODE_Main_Theme.ogg}
+{9106}{}{gntlwin1:30, gntlwind:30, gustwin1:10, gustwind:10, vulture:10, vulture1:10}
+
+# Map 920, base 9210
+{9210}{}{Home 3}
+{9215}{}{FODE_Desert_Europe.ogg}
+{9215}{}{FODE_Main_Theme.ogg}
+{9216}{}{electri1:15, electric:15, elevator:20, elevato1:15, steam:20, steam:15}
+
+
+###############################################
+#                                             #
+#              End Desert Europe              #
+#                                             #
+###############################################
+
+#
+# Global map
+#
+
+# Name, (pid + 100) * 1000 + 0
+# Info, (pid + 100) * 1000 + 5
+# Location picture, (pid + 100) * 1000 + 20
+# Tab picture, (pid + 100) * 1000 + 30
+# Count entires, (pid + 100) * 1000 + 90
+# Entire X name, (pid + 100) * 1000 + 100 + X*10 + 1
+# Entire X pic x, (pid + 100) * 1000 + 100 + X*10 + 2
+# Entire X pic y, (pid + 100) * 1000 + 100 + X*10 + 3
+
+# Den, pid 1, base 101000
+{101000}{}{Den}
+{101005}{}{The town of gangsters and slavers.}
+{101020}{}{art\intrface\twnden.frm}
+{101030}{}{art\intrface\WM_DEN.FRM}
+{101090}{}{3}
+{101101}{}{West Side}
+{101102}{}{140}
+{101103}{}{278}
+{101111}{}{Carpark}
+{101112}{}{80}
+{101113}{}{260}
+{101121}{}{East Side}
+{101122}{}{280}
+{101123}{}{380}
+
+# Klamath, pid 2, base 102000
+{102000}{}{Klamath}
+{102005}{}{This town is also known as "Town of trappers". Every hunter can find a job here since there are huge gecko herds around.}
+{102020}{}{art\intrface\twnklama.frm}
+{102030}{}{art\intrface\WM_KLAM.FRM}
+{102090}{}{3}
+{102101}{}{Downtown}
+{102102}{}{309}
+{102103}{}{203}
+{102111}{}{Mall}
+{102112}{}{155}
+{102113}{}{264}
+{102121}{}{Trapping Caves}
+{102122}{}{292}
+{102123}{}{315}
+
+# Modoc, pid 3, base 103000
+{103000}{}{Modoc}
+{103005}{}{A little farmers town. Brahmins and agricultural output.}
+{103020}{}{art\intrface\twnmodoc.frm}
+{103030}{}{art\intrface\WM_MODOC.FRM}
+{103090}{}{2}
+{103101}{}{Town south}
+{103102}{}{350}
+{103103}{}{150}
+{103111}{}{Town north}
+{103112}{}{350}
+{103113}{}{100}
+
+# Vault City, pid 4, base 104000
+{104000}{}{Vault City}
+{104005}{}{The first city that was built with GECK.}
+{104020}{}{art\intrface\twnvcity.frm}
+{104030}{}{art\intrface\WM_VLTCT.FRM}
+{104090}{}{2}
+{104101}{}{Courtyard}
+{104102}{}{350}
+{104103}{}{264}
+{104111}{}{Inner City}
+{104112}{}{147}
+{104113}{}{160}
+#{104121}{}{Vault}
+#{104122}{}{292}
+#{104123}{}{315}
+
+# Gecko, pid 5, base 105000
+{105000}{}{Gecko}
+{105005}{}{A town of ghouls. An unique atomic power station is located here. The surroundings are highly radioactive.}
+{105020}{}{art\intrface\twngecko.frm}
+{105030}{}{art\intrface\WM_GECKO.FRM}
+{105090}{}{3}
+{105101}{}{Settlement}
+{105102}{}{155}
+{105103}{}{246}
+{105111}{}{Reactor}
+{105112}{}{51}
+{105113}{}{169}
+{105121}{}{Landfill}
+{105122}{}{282}
+{105123}{}{173}
+
+# Broken Hills, pid 6, base 106000
+{106000}{}{Broken Hills}
+{106005}{}{A town uniting humans, ghouls and mutants. Serious racism issues are present.}
+{106020}{}{art\intrface\twnbrokn.frm}
+{106030}{}{art\intrface\WM_HILLS.FRM}
+{106090}{}{1}
+{106101}{}{Downtown}
+{106102}{}{125}
+{106103}{}{276}
+
+# New Reno, pid 7, base 107000
+{107000}{}{New Reno}
+{107005}{}{The town of casino, drugs and harlotry.}
+{107020}{}{art\intrface\twnreno.frm}
+{107030}{}{art\intrface\WM_RENO.FRM}
+{107090}{}{5}
+{107101}{}{South side}
+{107102}{}{230}
+{107103}{}{300}
+{107111}{}{Center of the city}
+{107112}{}{230}
+{107113}{}{210}
+{107121}{}{West side}
+{107122}{}{100}
+{107123}{}{210}
+{107131}{}{East side}
+{107132}{}{360}
+{107133}{}{210}
+{107141}{}{GAS station}
+{107142}{}{360}
+{107143}{}{100}
+
+# SAD, pid 8, base 108000
+{108000}{}{Sierra}
+{108005}{}{Sierra Army Depot.}
+{108020}{}{art\intrface\twnsad.frm}
+{108030}{}{art\intrface\WM_ARMY.FRM}
+{108090}{}{1}
+{108101}{}{Sierra}
+{108102}{}{130}
+{108103}{}{150}
+
+# Vault 15, pid 9, base 109000
+{109000}{}{Vault 15}
+{109005}{}{This vault must have been remaining closed during 50 years after beginning of Great War. Its habitats ideologies were completely opposed. This vault was opened at Spring, 2141.}
+{109020}{}{art\intrface\twnv15.frm}
+{109030}{}{art\intrface\WM_VLT15.FRM}
+{109090}{}{1}
+{109101}{}{Enter}
+{109102}{}{180}
+{109103}{}{273}
+
+# NCR, pid 10, base 110000
+{110000}{}{NCR}
+{110005}{}{This town belongs to the one of new states originated after US breakdown. Created by people from vaults 13 and 15. Full of aristocracy.}
+{110020}{}{art\intrface\twnncr.frm}
+{110030}{}{art\intrface\WM_NCR.FRM}
+{110090}{}{2}
+{110101}{}{Bazaar}
+{110102}{}{240}
+{110103}{}{210}
+{110111}{}{Suburb}
+{110112}{}{100}
+{110113}{}{100}
+
+# Cathedral, pid 11, base 111000
+{111000}{}{Cathedral}
+{111020}{}{art\intrface\twnmap11.frm}
+{111030}{}{art\intrface\wm_cathedral.frm}
+{111090}{}{1}
+{111101}{}{Enter}
+{111102}{}{73}
+{111103}{}{341}
+
+# Military Base, pid 12, base 112000
+{112000}{}{Mariposa Military Base}
+{112005}{}{A US military base. The entrance is blocked. Supposedly it's the place where deadly FEV virus tests were running.}
+{112020}{}{art\intrface\twnmilbs.frm}
+{112030}{}{art\intrface\WM_MLTRY.FRM}
+{112090}{}{1}
+{112101}{}{Entrance}
+{112102}{}{125}
+{112103}{}{58}
+
+# Redding, pid 13, base 113000
+{113000}{}{Redding}
+{113005}{}{A miners town.}
+{113020}{}{art\intrface\twnredng.frm}
+{113030}{}{art\intrface\WM_RED.FRM}
+{113090}{}{2}
+{113101}{}{Downtown}
+{113102}{}{200}
+{113103}{}{255}
+{113111}{}{Wanamingo mine}
+{113112}{}{130}
+{113113}{}{200}
+
+# SF, pid 14, base 114000
+{114000}{}{San Francisco}
+{114005}{}{The biggest city of the USA. Center of trading and technologies. Own power station is present. People here invent new models of weapons and armor.}
+{114020}{}{art\intrface\twnsanfr.frm}
+{114030}{}{art\intrface\WM_SANFN.FRM}
+{114090}{}{3}
+{114101}{}{Downtown}
+{114102}{}{300}
+{114103}{}{200}
+{114111}{}{Shi}
+{114112}{}{350}
+{114113}{}{170}
+{114121}{}{Docks}
+{114122}{}{300}
+{114123}{}{150}
+
+# Navarro, pid 15, base 115000
+{115000}{}{Navarro}
+{115005}{}{An Enclave military base. Enclave was a powerful organization that proclaimed itself the government of USA.}
+{115020}{}{art\intrface\twnnavro.frm}
+{115030}{}{art\intrface\WM_NAVAR.FRM}
+{115090}{}{2}
+{115101}{}{GAS station}
+{115102}{}{51}
+{115103}{}{169}
+{115111}{}{Base}
+{115112}{}{282}
+{115113}{}{173}
+
+# Arroyo, pid 16, base 116000
+{116000}{}{Arroyo}
+{116005}{}{A wonder village built with GECK. A real Garden of Eden.}
+{116020}{}{art\intrface\twnarroy.frm}
+{116030}{}{art\intrface\WM_ARROY.FRM}
+{116090}{}{5}
+{116101}{}{Bridge}
+{116102}{}{350}
+{116103}{}{275}
+{116111}{}{Village}
+{116112}{}{280}
+{116113}{}{175}
+{116121}{}{Garden}
+{116122}{}{100}
+{116123}{}{150}
+{116131}{}{Temple entrance}
+{116132}{}{200}
+{116133}{}{90}
+
+# Primal Tribe, pid 17, base 117000
+{117000}{}{Primal Tribe}
+{117005}{}{Some primal tribe.}
+
+# Vault 13, pid 19, base 119000
+{119000}{}{Vault 13}
+{119005}{}{According to the legend, entrance to the Vault 13 is located here.}
+{119020}{}{art\intrface\twnv13.frm}
+{119030}{}{art\intrface\WM_VLT13.FRM}
+{119090}{}{2}
+{119101}{}{Outside}
+{119102}{}{350}
+{119103}{}{275}
+{119111}{}{Entrance}
+{119112}{}{280}
+{119113}{}{175}
+
+# Sacramento, pid 20, base 120000
+{120000}{}{Satter}
+{120005}{}{Fort Satter, build on the ruins of Sacramento city - once California capitol.}
+
+# Quest bunker, pid 21, base 121000
+{121000}{}{Bunker}
+{121005}{}{Location of the old research facility.}
+
+# Barter-ground, pid 22, base 123000
+{122000}{}{Barter ground}
+{122005}{}{Small caravaners' transshipment point, turned into trading Mecca by dealers who settled here. You can safely trade here with caravans from all parts of the Wasteland - use of weapons is forbidden by local rules and any conflicts are to be left outside.}
+{122030}{}{art\intrface\WM_BG.png}
+
+# Atoll, pid 23, base 123000
+{123000}{}{Atoll}
+{123005}{}{A weird construction on timber piles. Appears to be inhabited.}
+
+# Raiders, pid 24, base 124000
+{124000}{}{Рейдеры}
+{124005}{}{Когда-то тут располагалась база рейдеров, уничтоженных Избранным.}
+
+# Atom lost church, pid 25 base 125000
+{125000}{}{Atom Church}
+{125005}{}{You see an abandoned church.}
+
+# Church of Broc and Xander, pid 26 base 126000
+{126000}{}{Church of Broc and Xander}
+{126005}{}{This is the sanctuary of a welfaring and numerous religious confession.}
+
+# Replication 1, pid 40, base 140000
+{140000}{}{Replication 1}
+{140005}{}{You see Station of Replication.}
+
+# Replication 2, pid 41, base 141000
+{141000}{}{Replication 2}
+{141005}{}{You see Station of Replication.}
+
+# Replication 3, pid 42, base 142000
+{142000}{}{Replication 3}
+{142005}{}{You see Station of Replication.}
+
+# Replication 4, pid 43, base 143000
+{143000}{}{Replication 4}
+{143005}{}{You see Station of Replication.}
+
+# Replication Hell, pid 44, base 144000
+{144000}{}{Special Station of Replication}
+{144005}{}{You see the replication station for debtors commonly known as Hell.}
+{144030}{}{art\intrface\WM_HELL.png}
+
+# City, build by GECK, pid 45, base 145000
+{145000}{}{GECK City}
+{145005}{}{City, built by GECK.}
+{145020}{}{art\intrface\twn_geck.png}
+{145030}{}{art\intrface\WM_GECK.png}
+{145090}{}{2}
+{145101}{}{Main entrance}
+{145102}{}{375}
+{145103}{}{295}
+{145111}{}{Command center}
+{145112}{}{255}
+{145113}{}{170}
+
+# Desert encounter 1, pid 101, base 201000
+{201000}{}{Desert}
+{201005}{}{Ordinary desert.}
+
+# Desert encounter 2, pid 102, base 202000
+{202000}{}{Desert}
+{202005}{}{Ordinary desert.}
+
+# Desert encounter 3, pid 103, base 203000
+{203000}{}{Desert}
+{203005}{}{Ordinary desert.}
+
+# Desert encounter 4, pid 104, base 204000
+{204000}{}{Desert}
+{204005}{}{Ordinary desert.}
+
+# Desert encounter 5, pid 105, base 205000
+{205000}{}{Desert}
+{205005}{}{Ordinary desert.}
+
+# Desert encounter 6, pid 106, base 206000
+{206000}{}{Desert}
+{206005}{}{Ordinary desert.}
+
+# Desert encounter 7, pid 107, base 207000
+{207000}{}{Desert}
+{207005}{}{Ordinary desert.}
+
+# Desert encounter 8, pid 108, base 208000
+{208000}{}{Desert}
+{208005}{}{Ordinary desert.}
+
+# Desert encounter 9, pid 109, base 209000
+{209000}{}{Desert}
+{209005}{}{Ordinary desert.}
+
+# Desert encounter 10, pid 110, base 210000
+{210000}{}{Desert}
+{210005}{}{Ordinary desert.}
+
+# Desert encounter 11, pid 111, base 211000
+{211000}{}{Desert}
+{211005}{}{Ordinary desert.}
+
+# Desert encounter 12, pid 112, base 212000
+{212000}{}{Desert}
+{212005}{}{Ordinary desert.}
+
+# Mountain encounter 1, pid 121, base 221000
+{221000}{}{Mountains}
+{221005}{}{Area around the mountains.}
+
+# Mountain encounter 2, pid 122, base 222000
+{222000}{}{Mountains}
+{222005}{}{Area around the mountains.}
+
+# Mountain encounter 3, pid 123, base 223000
+{223000}{}{Mountains}
+{223005}{}{Area around the mountains.}
+
+# Mountain encounter 4, pid 124, base 224000
+{224000}{}{Mountains}
+{224005}{}{Area around the mountains.}
+
+# Mountain encounter 5, pid 125, base 225000
+{225000}{}{Mountains}
+{225005}{}{Area around the mountains.}
+
+# Mountain encounter 6, pid 126, base 226000
+{226000}{}{Mountains}
+{226005}{}{Area around the mountains.}
+
+# Mountain encounter 7, pid 127, base 227000
+{227000}{}{Mountains}
+{227005}{}{Area around the mountains.}
+
+# Cave encounter 0, pid 140, base 240000
+{240000}{}{Cave}
+{240005}{}{A cave in the mountains.}
+
+# Cave encounter 1, pid 141, base 241000
+{241000}{}{Cave}
+{241005}{}{A cave in the mountains.}
+
+# Cave encounter 2, pid 142, base 242000
+{242000}{}{Cave}
+{242005}{}{A cave in the mountains.}
+
+# Cave encounter 3, pid 143, base 243000
+{243000}{}{Cave}
+{243005}{}{A cave in the mountains.}
+
+# Cave encounter 4, pid 144, base 244000
+{244000}{}{Cave}
+{244005}{}{A cave in the mountains.}
+
+# Cave encounter 5, pid 145, base 245000
+{245000}{}{Cave}
+{245005}{}{A cave in the mountains.}
+
+# Cave encounter 6, pid 146, base 246000
+{246000}{}{Cave}
+{246005}{}{A cave in the mountains.}
+
+# City encounter 1, pid 161, base 261000
+{261000}{}{Ruins}
+{261005}{}{Ruins of a dead city.}
+
+# City encounter 2, pid 162, base 262000
+{262000}{}{Ruins}
+{262005}{}{Ruins of a dead city.}
+
+# City encounter 3, pid 163, base 263000
+{263000}{}{Ruins}
+{263005}{}{Ruins of a dead city.}
+
+# City encounter 4, pid 164, base 264000
+{264000}{}{Ruins}
+{264005}{}{Ruins of a dead city.}
+
+# City encounter 5, pid 165, base 265000
+{265000}{}{Ruins}
+{265005}{}{Ruins of a dead city.}
+
+# City encounter 6, pid 166, base 266000
+{266000}{}{Ruins}
+{266005}{}{Ruins of a dead city.}
+
+# City encounter 7, pid 167, base 267000
+{267000}{}{Ruins}
+{267005}{}{Ruins of a dead city.}
+
+# City encounter 8, pid 168, base 268000
+{268000}{}{Ruins}
+{268005}{}{Ruins of a dead city.}
+
+# Coast encounter , pid 181, base 281000
+{281000}{}{Coast}
+{281005}{}{Oceanic coast.}
+
+# Coast encounter 2, pid 182, base 282000
+{282000}{}{Coast}
+{282005}{}{Oceanic coast.}
+
+# Coast encounter 3, pid 183, base 283000
+{283000}{}{Coast}
+{283005}{}{Oceanic coast.}
+
+# Coast encounter 4, pid 184, base 284000
+{284000}{}{Coast}
+{284005}{}{Oceanic coast.}
+
+# Coast encounter 5, pid 185, base 285000
+{285000}{}{Coast}
+{285005}{}{Oceanic coast.}
+
+# Coast encounter 6, pid 186, base 286000
+{286000}{}{Coast}
+{286005}{}{Oceanic coast.}
+
+# Coast encounter 7, pid 187, base 287000
+{287000}{}{Coast}
+{287005}{}{Oceanic coast.}
+
+# Coast encounter 8, pid 188, base 288000
+{288000}{}{Coast}
+{288005}{}{Oceanic coast.}
+
+# Coast encounter 9, pid 189, base 289000
+{289000}{}{Coast}
+{289005}{}{Oceanic coast.}
+
+# Coast encounter 10, pid 190, base 290000
+{290000}{}{Coast}
+{290005}{}{Oceanic coast.}
+
+# Coast encounter 11, pid 191, base 291000
+{291000}{}{Coast}
+{291005}{}{Oceanic coast.}
+
+# Coast encounter 12, pid 192, base 292000
+{292000}{}{Coast}
+{292005}{}{Oceanic coast.}
+
+# Ocean encounter 1, pid 193, base 293000
+{293000}{}{Isle}
+{293005}{}{You see an isle. Perhaps, there is someone.}
+
+# Ocean encounter 2, pid 194, base 294000
+{294000}{}{Isle}
+{294005}{}{You see an isle. Perhaps, there is someone.}
+
+# Ocean encounter 3, pid 195, base 295000
+{295000}{}{Isle}
+{295005}{}{You see an isle. Perhaps, there is someone.}
+
+# Ocean encounter 4, pid 196, base 296000
+{296000}{}{Raft}
+{296005}{}{Вы видите дрейфующий плот.}
+
+# Ocean encounter 5, pid 197, base 297000
+{297000}{}{Raft}
+{297005}{}{Вы видите плот под парусом с людьми на борту.}
+
+# Wanamingo cavern , pid 202, base 302000
+{302000}{}{Cave ванаминго}
+{302005}{}{Тут, по словам шерифа, располагается логово ванаминго.}
+
+# Dead caravan, pid 203, base 303000
+{303000}{}{Остатки каравана Даппо}
+{303005}{}{Все караванщики мертвы.}
+
+# NCR siege camp, pid 205, base 305000
+{305000}{}{Raiders' camp}
+
+# NCR siege camp, pid 206, base 306000
+{306000}{}{Raiders' camp}
+
+# NCR siege camp, pid 207, base 307000
+{307000}{}{Raiders' camp}
+{307005}{}{Отсюда рейдеры производят нападения на караваны НКР и патрули Рейнджеров.}
+
+# NCR siege camp, pid 208, base 308000
+{308000}{}{Raiders' camp}
+
+# NCR siege camp, pid 209, base 309000
+{309000}{}{Raiders' camp}
+
+# Raiders' camp, pid 210, base 310000
+{310000}{}{Raiders' camp}
+{310010}{}{По словам Минока, где-то тут располагается лагерь рейдеров.}
+
+# Raiders' camp, pid 211, base 311000
+{311000}{}{Raiders' camp}
+{311005}{}{Тут в последний раз были замечены основные силы рейдеров.}
+
+# Nanci and Sid quest, pid 211, base 312000
+{312000}{}{Палатка наркодилеров}
+{312005}{}{Вы нашли то место, о котором вам сообщила Нэнси по рации.}
+
+# Modoc Farm, pid 213, base 313000
+{313000}{}{Ферма}
+{313005}{}{Ферма, на которой, по словам Джо завелась гигантская хищная оса.}
+
+# Mutants cave, pid 214, base 314000
+{314000}{}{Cave мутантов}
+{314005}{}{Логово мутантов обнаружено. Необходимо срочно сообщить о находке капитану Хартманну, пока мутанты не изменили место дислокации.}
+
+# Mutants cave, pid 215, base 315000
+{315000}{}{Cave мутантов}
+{315005}{}{В этом месте вас ожидают гвардейцы Города-Убежища. Зачистите пещеры от оборзевших мутантов.}
+
+# Vampire cave, pid 216, base 316000
+{316000}{}{Ранчо с браминами}
+{316005}{}{На этой ферме по ночам что-то происходит с браминами. Разберитесь в чем дело и сообщите Гришему в Модок.}
+
+# Vampire cave, pid 217, base 317000
+{317000}{}{Странная Cave}
+{317005}{}{У вас появился уникальный шанс исцелить вампира. Но ждать он будет недолго.}
+
+# Vampire cave, pid 218, base 318000
+{318000}{}{Небольшая ферма}
+{318005}{}{Именно здесь должны находиться те пресловутые враги Церкви Хаба.}
+
+# Hubologists lab, pid 219, base 319000
+{319000}{}{Лаборатория}
+{319005}{}{Случайно наткнуться на эту лабораторию очень сложно. Несмотря на то, что громадная тарелка выдает ее присутствие, она легко теряется среди остальных руин.}
+
+# Warehouse, pid 220, base 320000
+{320000}{}{Warehouse}
+{320005}{}{You see an abandoned warehouse.}
+{320030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 221, base 321000
+{321000}{}{Warehouse}
+{321005}{}{You see an abandoned warehouse.}
+{321030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 222, base 322000
+{322000}{}{Warehouse}
+{322005}{}{You see an abandoned warehouse.}
+{322030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 223, base 323000
+{323000}{}{Warehouse}
+{323005}{}{You see an abandoned warehouse.}
+{323030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 224, base 324000
+{324000}{}{Warehouse}
+{324005}{}{You see an abandoned warehouse.}
+{324030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 225, base 325000
+{325000}{}{Warehouse}
+{325005}{}{You see an abandoned warehouse.}
+{325030}{}{art\intrface\WM_WRHS.png}
+
+# Warehouse, pid 226, base 326000
+{326000}{}{Warehouse}
+{326005}{}{You see an abandoned warehouse.}
+{326030}{}{art\intrface\WM_WRHS.png}
+
+# Intro 1, pid 260, base 360000
+{360000}{}{Intro}
+{360005}{}{Intro location - you are not supposed to see this.}
+
+# Intro 2, pid 261, base 361000
+{361000}{}{Intro - initialization}
+{361005}{}{Intro location - you are not supposed to see this.}
+
+
+# Name, (pid + 100) * 1000 + 0
+# Info, (pid + 100) * 1000 + 5
+# Location picture, (pid + 100) * 1000 + 20
+# Tab picture, (pid + 100) * 1000 + 30
+# Count entires, (pid + 100) * 1000 + 90
+# Entire X name, (pid + 100) * 1000 + 100 + X*10 + 1
+# Entire X pic x, (pid + 100) * 1000 + 100 + X*10 + 2
+# Entire X pic y, (pid + 100) * 1000 + 100 + X*10 + 3
+
+
+# Old Armory, pid 666, base 766000
+{766000}{}{Old Armory}
+{766005}{}{}
+{766020}{}{art\intrface\wmpic\PIC_OA.png}
+{766030}{}{art\intrface\wmpic\TAB_OA.png}
+{766090}{}{1}
+{766101}{}{Main entrance}
+{766102}{}{400}
+{766103}{}{200}
+
+# Light Town, pid 667, base 767000
+{767000}{}{Light Town}
+{767005}{}{Small lit town. Besides many financial problems citizens are usually helping newcomers willingly.}
+{767020}{}{art\intrface\wmpic\PIC_LT.png}
+{767030}{}{art\intrface\wmpic\TAB_LT.png}
+{767090}{}{2}
+{767101}{}{North entrance}
+{767102}{}{170}
+{767103}{}{80}
+{767111}{}{South entrance}
+{767112}{}{430}
+{767113}{}{270}
+
+# Town Station, pid 668, base 768000
+{768000}{}{Town Station}
+{768005}{}{An old town station. A small group of people is still living here.}
+{768020}{}{art\intrface\wmpic\PIC_TS.png}
+{768030}{}{art\intrface\wmpic\TAB_TS.png}
+{768090}{}{2}
+{768101}{}{Main entrance}
+{768102}{}{430}
+{768103}{}{280}
+{768111}{}{North entrance}
+{768112}{}{280}
+{768113}{}{120}
+
+# Green Poin, pid 669, base 769000
+{769000}{}{Green Point}
+{769005}{}{One of the few green oases in this part of the world.}
+{769020}{}{art\intrface\wmpic\PIC_GP.png}
+{769030}{}{art\intrface\wmpic\TAB_GP.png}
+{769090}{}{1}
+{769101}{}{West side}
+{769102}{}{60}
+{769103}{}{200}
+
+# Old Village, pid 670, base 770000
+{770000}{}{Old Village}
+{770005}{}{A typical village.}
+{770020}{}{art\intrface\wmpic\PIC_OV.png}
+{770030}{}{art\intrface\wmpic\TAB_OV.png}
+{770090}{}{1}
+{770101}{}{North side}
+{770102}{}{250}
+{770103}{}{80}
+
+# District X, pid 672, base 772000
+{772000}{}{District X}
+{772005}{}{Sun Valley. It used to be a district of a huge city.}
+{772020}{}{art\intrface\wmpic\PIC_DX.png}
+{772030}{}{art\intrface\wmpic\TAB_DX.png}
+{772090}{}{5}
+{772101}{}{Main entrance}
+{772102}{}{50}
+{772103}{}{190}
+{772111}{}{North entrance}
+{772112}{}{150}
+{772113}{}{80}
+{772121}{}{Ruins}
+{772122}{}{315}
+{772123}{}{285}
+{772131}{}{East Rocks}
+{772132}{}{440}
+{772133}{}{260}
+{772141}{}{North entrance}
+{772142}{}{360}
+{772143}{}{80}
+
+# Mountain Mine, pid 674, base 774000
+{774000}{}{Mountain Mine}
+{774005}{}{Old abandoned iron mines.}
+{774020}{}{art\intrface\wmpic\PIC_MM.png}
+{774030}{}{art\intrface\wmpic\TAB_MM.png}
+{774090}{}{1}
+{774101}{}{Parking}
+{774102}{}{230}
+{774103}{}{280}
+
+# Mine Pit, pid 677, base 777000
+{777000}{}{Mine Pit}
+{777005}{}{Old minerals mine. It used to be one of the best mines.}
+{777020}{}{art\intrface\wmpic\PIC_MP.png}
+{777030}{}{art\intrface\wmpic\TAB_MP.png}
+{777090}{}{1}
+{777101}{}{Gate}
+{777102}{}{60}
+{777103}{}{280}
+
+# Death Mine, pid 678, base 778000
+{778000}{}{Death Mine}
+{778005}{}{This town was ruined by local bandits. Many battles were fought here.}
+{778020}{}{art\intrface\wmpic\PIC_DM.png}
+{778030}{}{art\intrface\wmpic\TAB_DM.png}
+{778090}{}{3}
+{778101}{}{South entrance}
+{778102}{}{230}
+{778103}{}{280}
+{778111}{}{East ruins}
+{778112}{}{430}
+{778113}{}{130}
+{778121}{}{North street}
+{778122}{}{260}
+{778123}{}{75}
+
+# Liverpool, pid 679, base 779000
+{779000}{}{Liverpool}
+{779005}{}{}
+{779020}{}{art\intrface\wmpic\PIC_LI.png}
+{779030}{}{art\intrface\wmpic\TAB_LI.png}
+{779090}{}{1}
+{779101}{}{Enter}
+{779102}{}{300}
+{779103}{}{280}
+
+# Death Square, pid 680, base 780000
+{780000}{}{Death Square}
+{780005}{}{Totally ruined city. Most of the citizens escaped to safer places.}
+{780020}{}{art\intrface\wmpic\PIC_DS.png}
+{780030}{}{art\intrface\wmpic\TAB_DS.png}
+{780090}{}{2}
+{780101}{}{Ruined house}
+{780102}{}{350}
+{780103}{}{195}
+{780111}{}{North street}
+{780112}{}{70}
+{780113}{}{80}
+
+# Fortress, pid 681, base 781000
+{781000}{}{Fortress}
+{781005}{}{Only some ruins. There were many battles fought here.}
+{781020}{}{art\intrface\wmpic\PIC_FO.png}
+{781030}{}{art\intrface\wmpic\TAB_FO.png}
+{781090}{}{1}
+{781101}{}{Main entrance}
+{781102}{}{70}
+{781103}{}{80}
+
+# Old Fields, pid 685, base 785000
+{785000}{}{Old Fields}
+{785005}{}{The largest economic center of eastern europe.}
+{785020}{}{art\intrface\wmpic\PIC_MI.png}
+{785030}{}{art\intrface\wmpic\TAB_MI.png}
+{785090}{}{2}
+{785101}{}{East side}
+{785102}{}{400}
+{785103}{}{90}
+{785111}{}{West side}
+{785112}{}{90}
+{785113}{}{200}
+
+# Atom Church Ruins, pid 686, base 786000
+{786000}{}{Atom Church Ruins}
+{786005}{}{Atom followers got away from here under the pressure of their enemies. Many died, many survived.}
+{786020}{}{art\intrface\wmpic\PIC_AC.png}
+{786030}{}{art\intrface\wmpic\TAB_AC.png}
+{786090}{}{2}
+{786101}{}{Saints Street}
+{786102}{}{160}
+{786103}{}{250}
+{786111}{}{East entrance}
+{786112}{}{400}
+{786113}{}{75}
+
+# Industrial Center, pid 689, base 789000
+{789000}{}{Industrial Area}
+{789005}{}{Once prosperous factory - now habitat of nearby plunderers.}
+{789020}{}{art\intrface\wmpic\PIC_IA.png}
+{789030}{}{art\intrface\wmpic\TAB_IA.png}
+{789090}{}{2}
+{789101}{}{Driveway}
+{789102}{}{400}
+{789103}{}{250}
+{789111}{}{North entrance}
+{789112}{}{70}
+{789113}{}{100}
+
+# Industrial, pid 690, base 790000
+{790000}{}{Old warehouse}
+{790005}{}{A small warehouse used as an unloading place. Despite its years it's still in use.}
+{790020}{}{art\intrface\wmpic\PIC_OW.png}
+{790030}{}{art\intrface\wmpic\TAB_OW.png}
+{790090}{}{1}
+{790101}{}{Main entrance}
+{790102}{}{70}
+{790103}{}{180}
+
+# Dark Wood, pid 691, base 791000
+{791000}{}{Dark Wood}
+{791005}{}{Unattractive small village. You can see here one of the few graveyards in this area.}
+{791020}{}{art\intrface\wmpic\PIC_DW.png}
+{791030}{}{art\intrface\wmpic\TAB_DW.png}
+{791090}{}{3}
+{791101}{}{Graveyard}
+{791102}{}{380}
+{791103}{}{80}
+{791111}{}{Forest}
+{791112}{}{350}
+{791113}{}{270}
+{791121}{}{Grey Rock}
+{791122}{}{70}
+{791123}{}{170}
+
+# Great Mine, pid 693, base 793000
+{793000}{}{Great Mine}
+{793005}{}{Huge mine controlled by NEC forces.}
+{793020}{}{art\intrface\wmpic\PIC_GM.png}
+{793030}{}{art\intrface\wmpic\TAB_GM.png}
+{793090}{}{1}
+{793101}{}{Main gate}
+{793102}{}{360}
+{793103}{}{260}
+
+# Scrapers City, pid 694, base 794000
+{794000}{}{Scrapers City}
+{794005}{}{The least damaged and restored old district one of the great European cities.}
+{794020}{}{art\intrface\wmpic\PIC_SC.png}
+{794030}{}{art\intrface\wmpic\TAB_SC.png}
+{794090}{}{3}
+{794101}{}{Old Center}
+{794102}{}{100}
+{794103}{}{120}
+{794111}{}{Silent street}
+{794112}{}{280}
+{794113}{}{120}
+{794121}{}{Guardhouse}
+{794122}{}{100}
+{794123}{}{250}
+
+# BearLine, pid 695, base 795000
+{795000}{}{BearLine}
+{795005}{}{The largest of the largest cities on this side of the globe.}
+{795020}{}{art\intrface\wmpic\PIC_BL.png}
+{795030}{}{art\intrface\wmpic\TAB_BL.png}
+{795090}{}{4}
+{795101}{}{Main Entrance}
+{795102}{}{70}
+{795103}{}{280}
+{795111}{}{Ruins}
+{795112}{}{410}
+{795113}{}{280}
+{795121}{}{East Side}
+{795122}{}{420}
+{795123}{}{100}
+{795131}{}{North side}
+{795132}{}{60}
+{795133}{}{90}
+
+# Moscow, pid 699, base 799000
+{799000}{}{Moscow}
+{799005}{}{Capital of REF.}
+{799020}{}{art\intrface\wmpic\PIC_MO.png}
+{799030}{}{art\intrface\wmpic\TAB_MO.png}
+{799090}{}{2}
+{799101}{}{Station}
+{799102}{}{100}
+{799103}{}{300}
+{799111}{}{Gate}
+{799112}{}{125}
+{799113}{}{110}
+
+# Island, pid 700, base 800000
+{800000}{}{Island}
+{800005}{}{Almost ...uninhabited island.}
+{800020}{}{art\intrface\wmpic\PIC_IS.png}
+{800090}{}{1}
+{800101}{}{Beach}
+{800102}{}{250}
+{800103}{}{163}
+
+# Dark Waters, pid 702, base 802000
+{802000}{}{Dark Waters}
+{802005}{}{Port city.}
+{802020}{}{art\intrface\wmpic\PIC_DA.png}
+{802030}{}{art\intrface\wmpic\TAB_DA.png}
+{802090}{}{1}
+{802101}{}{Long Street}
+{802102}{}{250}
+{802103}{}{230}
+
+# 101 Nights City, pid 703, base 803000
+{803000}{}{101 Nights City}
+{803005}{}{City to fight in Turn Base system.}
+{803020}{}{art\intrface\wmpic\PIC_NC.png}
+{803030}{}{art\intrface\wmpic\TAB_NC.png}
+{803090}{}{4}
+{803101}{}{Zone A}
+{803102}{}{100}
+{803103}{}{100}
+{803111}{}{Zone B}
+{803112}{}{400}
+{803113}{}{100}
+{803121}{}{Zone C}
+{803122}{}{100}
+{803123}{}{330}
+{803131}{}{Zone  D}
+{803132}{}{400}
+{803133}{}{330}
+
+# Wild Mine, pid 705, base 805000
+{805000}{}{Wild Mine}
+{805005}{}{Illegally exploited, abandoned mine.}
+{805020}{}{art\intrface\wmpic\PIC_WM.png}
+{805030}{}{art\intrface\wmpic\TAB_WM.png}
+{805090}{}{2}
+{805101}{}{Main entrance}
+{805102}{}{250}
+{805103}{}{163}
+{805111}{}{Ravine}
+{805112}{}{250}
+{805113}{}{163}
+
+# Coal Mine, pid 706, base 806000
+{806000}{}{Coal Mine}
+{806005}{}{}
+{806020}{}{art\intrface\wmpic\PIC_CM.png}
+{806030}{}{art\intrface\wmpic\TAB_CM.png}
+{806090}{}{2}
+{806101}{}{Eastern entrance}
+{806102}{}{100}
+{806103}{}{220}
+{806111}{}{Western entrance}
+{806112}{}{200}
+{806113}{}{180}
+
+# Nuclear Power Plant, pid 708, base 808000
+{808000}{}{Nuclear Power Plant}
+{808005}{}{Old rebuilt power plant.}
+{808020}{}{art\intrface\wmpic\PIC_PP.png}
+{808030}{}{art\intrface\wmpic\TAB_PP.png}
+{808090}{}{1}
+{808101}{}{Gate}
+{808102}{}{360}
+{808103}{}{230}
+
+# Fury Town, pid 709, base 809000
+{809000}{}{Fury Town}
+{809005}{}{One of the less secure areas.}
+{809020}{}{art\intrface\wmpic\PIC_FT.png}
+{809030}{}{art\intrface\wmpic\TAB_FT.png}
+{809090}{}{3}
+{809101}{}{Main entrance}
+{809102}{}{280}
+{809103}{}{170}
+{809111}{}{North side}
+{809112}{}{100}
+{809113}{}{80}
+{809121}{}{Backstreet}
+{809122}{}{80}
+{809123}{}{170}
+
+# Power Plant, pid 710, base 810000
+{810000}{}{Power Plant}
+{810005}{}{Old rebuild power plant.}
+{810020}{}{art\intrface\wmpic\PIC_PP.png}
+{810030}{}{art\intrface\wmpic\TAB_PP.png}
+{810090}{}{1}
+{810101}{}{Brama}
+{810102}{}{100}
+{810103}{}{200}
+
+# London, pid 711, base 811000
+{811000}{}{London}
+{811005}{}{Capital of NEC.}
+{811020}{}{art\intrface\wmpic\PIC_LO.png}
+{811030}{}{art\intrface\wmpic\TAB_LO.png}
+{811090}{}{2}
+{811101}{}{Main enter}
+{811102}{}{250}
+{811103}{}{230}
+{811111}{}{North entrance}
+{811112}{}{80}
+{811113}{}{80}
+
+# NEC Base, pid 712, base 812000
+{812000}{}{NEC Base}
+{812005}{}{Founded in dense forest base.}
+{812020}{}{art\intrface\wmpic\PIC_NB.png}
+{812030}{}{art\intrface\wmpic\TAB_NB.png}
+{812090}{}{1}
+{812101}{}{Checkpoint}
+{812102}{}{400}
+{812103}{}{230}
+
+# Federation Mine, pid 733, base 833000
+{833000}{}{Federation Mine}
+{833005}{}{Protect mine}
+{833020}{}{art\intrface\wmpic\PIC_FM.png}
+{833030}{}{art\intrface\wmpic\TAB_FM.png}
+{833090}{}{1}
+{833101}{}{Enter}
+{833102}{}{250}
+{833103}{}{163}
+
+# Mendel Genetic Laboratories, pid 741, base 841000
+{841000}{}{Mendel Genetic Laboratories}
+{841005}{}{Prewar Laboratories filled with prewar Knowledge and scientific equipement. Scientists here continue in work of their ancestors.}
+{841020}{}{art\intrface\wmpic\PIC_MG.png}
+{841030}{}{art\intrface\wmpic\TAB_MG.png}
+{841090}{}{1}
+{841101}{}{Enter}
+{841102}{}{250}
+{841103}{}{163}
+
+# Empire Mine, pid 746, base 846000
+{846000}{}{Empire Mine}
+{846005}{}{Small fraction mine.}
+{846020}{}{art\intrface\wmpic\PIC_EM.png}
+{846030}{}{art\intrface\wmpic\TAB_EM.png}
+{846090}{}{1}
+{846101}{}{Enter}
+{846102}{}{250}
+{846103}{}{163}
+
+# Hunters Camp, pid 752, base 852000
+{852000}{}{Hunters Camp}
+{852005}{}{Bounty hunter camp}
+{852020}{}{art\intrface\wmpic\PIC_HC.png}
+{852030}{}{art\intrface\wmpic\TAB_HC.png}
+{852090}{}{1}
+{852101}{}{Steel gate}
+{852102}{}{250}
+{852103}{}{163}
+
+#
+# BASES
+#
+
+
+# Home 1, pid 901, base 1001000
+{1001000}{}{Small cave}
+{1001005}{}{A small cave... unfortunately you cannot park your car here.}
+
+# Home 2, pid 902, base 1002000
+{1002000}{}{Medium-sized cave}
+{1002005}{}{Medium-sized cave with car parking.}
+
+# Home 3, pid 903, base 1003000
+{1003000}{}{Ranch}
+
+# Home 4, pid 904, base 1004000
+{1004000}{}{House on the road}
+
+# Home 5, pid 905, base 1005000
+{1005000}{}{Gas station in the forest}
+
+# Home 6, pid 906, base 1006000
+{1006000}{}{Tent camp in the swamps}
+
+# Home 7, pid 907, base 1007000
+{1007000}{}{Bunker}
+{1007005}{}{}
+{1007020}{}{art\intrface\wmpic\PIC_.png}
+{1007090}{}{2}
+{1007101}{}{Bunker entrance}
+{1007102}{}{250}
+{1007103}{}{230}
+{1007111}{}{Bunker inside}
+{1007112}{}{80}
+{1007113}{}{80}
+
+# Home 8, pid 908, base 1008000
+{1008000}{}{Small Tent}
+
+# Home 9, pid 909, base 1009000
+{1009000}{}{Clay house}
+
+
+#
+# Worldmap Encounter messages
+#
+
+{10000010}{}{You encounter: @lex who@.}
+{10000011}{}{You encounter: @lex who@ and @lex player@.}
+{10000012}{}{You encounter: @lex who@ and @lex player@ group.}
+{10000013}{}{You encounter: @lex player@.}
+{10000014}{}{You encounter: @lex player@ group.}
+{10000020}{}{Do you wish to encounter: @lex who@.}
+{10000021}{}{Do you wish to encounter: @lex who@ and @lex player@.}
+{10000022}{}{Do you wish to encounter: @lex who@ and @lex player@ group.}
+{10000023}{}{Do you wish to encounter: @lex player@.}
+{10000024}{}{Do you wish to encounter: @lex player@ group.}
+
+{10030000}{}{Spore plants}
+{10030010}{}{Some rats}
+{10030020}{}{Some pigrats}
+{10030030}{}{Rats and pigrats}
+{10030040}{}{Some molerats}
+{10030050}{}{Some white molerats}
+{10030060}{}{Small radscorpions}
+{10030070}{}{Some radscorpions}
+{10030080}{}{Radscorpions family}
+{10030090}{}{Some mantis}
+{10030100}{}{Some ants}
+{10030110}{}{Some silver geckos}
+{10030120}{}{Some golden geckos}
+{10030130}{}{Some fire geckos}
+{10030140}{}{Some floaters}
+{10030150}{}{Some centaurs}
+{10030160}{}{Floaters and centaurs}
+{10030170}{}{Some aliens}
+{10030180}{}{Small deathclaws}
+{10030190}{}{Some deathclaws}
+{10030200}{}{Deathclaws family}
+{10030210}{}{Some ghouls}
+{10030220}{}{NEC soldiers}
+{10030230}{}{REF soldiers}
+{10030240}{}{District X scouts}
+{10030250}{}{Sacred Militia}
+{10030260}{}{Furry warriors}
+{10030270}{}{Old village guards}
+{10030280}{}{Light town scouts}
+{10030290}{}{Scrapers police}
+{10030300}{}{Bounty hunters}
+{10030310}{}{Death Mine scouts}
+{10030320}{}{Some mutants}
+{10030330}{}{Some robots}
+{10030340}{}{REF and mutants}
+{10030350}{}{NEC and robots}
+{10030360}{}{Moscow caravan}
+{10030370}{}{London caravan}
+{10030380}{}{District X caravan}
+{10030390}{}{Scrapers caravan}
+{10030400}{}{Some old aliens}
+{10030410}{}{Deathclaws of the death}
+{10030420}{}{Psycho ghouls}
+{10030430}{}{Some brahmins}
+{10030440}{}{Bandits}
+{10030450}{}{Some dogs}
+{10030460}{}{Some rats and pigrats}
+{10030470}{}{Some rats and pigrats}
+{10030480}{}{Some pigrates}
+{10030490}{}{Some rats}
+{10030500}{}{NEC and raiders}
+{10030510}{}{REF and raiders}
+{10030520}{}{District scouts and raiders}
+{10030530}{}{Sacred militia and raiders}
+{10030540}{}{Furry warriors and raiders}
+{10030550}{}{Old village guards and raiders}
+{10030560}{}{Light town soldiers and raiders}
+{10030570}{}{Scrapers police and raiders}
+{10030580}{}{Bounty hunters and raiders}
+{10030590}{}{Death mine scouts and raiders}
+{10030600}{}{Mutants and raiders}
+{10030610}{}{Robots and raiders}
+{10030620}{}{REF, mutants and raiders}
+{10030630}{}{NEC, robots and raiders}
+{10030640}{}{Moscow caravan and raiders}
+{10030650}{}{London caravan and raiders}
+{10030660}{}{District caravan and raiders}
+{10030670}{}{Scrapers caravan and raiders}
+{10030680}{}{Mutants and robots}
+{10030690}{}{Some white aliens}
+{10030700}{}{Aliens and white aliens}
+{10030710}{}{Some aliens}
+{10030720}{}{Two radscorpions families}
+{10030730}{}{Radscorpions family and small radscorpions}
+{10030740}{}{Radscorpions family and radscorpions}
+{10030750}{}{Radscorpions and small radscorpions}
+{10030760}{}{Two small radscorpions groups}
+{10030770}{}{Two radscorpions groups}
+{10030780}{}{Two molerats groups}
+{10030790}{}{Molerats and white molerats}
+{10030800}{}{Two white molerats groups}
+{10030810}{}{Two floaters groups}
+{10030820}{}{Floaters and centaurs big party}
+{10030830}{}{Floaters and centaurs big party}
+{10030840}{}{Floaters and centaurs big party}
+{10030850}{}{Two centaurs groups}
+{10030860}{}{Floaters and centaurs big party.
+{10030870}{}{NEC and REF}
+{10030880}{}{Ghouls and bandits}
+{10030890}{}{Ghouls and deathclaw}
+{10030900}{}{REF and rats}
+{10030910}{}{REF and radscorpions family}
+{10030920}{}{REF and fire geckos}
+{10030930}{}{REF and small radscorpions}
+{10030940}{}{REF and radscorpions}
+{10030950}{}{REF, mutants and rats}
+{10030960}{}{REF, mutants and radscorpions family}
+{10030970}{}{REF, mutants and fire geckos}
+{10030980}{}{REF, mutants and radscorpions}
+{10030990}{}{REF, mutants and small radscorpions}
+{10031000}{}{NEC and rats}
+{10031010}{}{NEC and molerats}
+{10031020}{}{NEC and white molerats}
+{10031030}{}{NEC, robots and rats}
+{10031040}{}{NEC, robots and molerats}
+{10031050}{}{NEC, robots and white molerats}
+{10031060}{}{Mutants and rats}
+{10031070}{}{Mutants and radscorpions family}
+{10031080}{}{Mutants and fire geckos}
+{10031090}{}{REF and radscorpions}
+{10031100}{}{Mutants and small radscorpions}
+{10031110}{}{Death mine scouts and rats}
+{10031120}{}{Death mine scouts and molerats}
+{10031130}{}{Death mine scouts and white molerats}
+{10031140}{}{Death mine scouts and golden geckos}
+{10031150}{}{Scrapers police and rats}
+{10031160}{}{Scrapers police and molerats}
+{10031170}{}{Scrapers police and white molerats}
+{10031180}{}{Scrapers police and golden geckos}
+{10031190}{}{Scrapers police and dogs}
+{10031200}{}{Light town soldiers and rats}
+{10031210}{}{Light town soldiers and molerats}
+{10031220}{}{Light town soldiers white molerats}
+{10031230}{}{Light town soldiers golden geckos}
+{10031240}{}{Old village guards and rats}
+{10031250}{}{Old village guards and small radscorpions}
+{10031260}{}{Old village guards and radscorpions}
+{10031270}{}{Old village guards and radscorpions family}
+{10031280}{}{Old village guards and mantis}
+{10031290}{}{Furry warriors and rats}
+{10031300}{}{Furry warriors and molerats}
+{10031310}{}{Furry warriors and white molerats}
+{10031320}{}{Furry warriors and fire geckos}
+{10031330}{}{Furry warriors and dogs}
+{10031340}{}{Sacred Militia and rats}
+{10031350}{}{Sacred Militia and molerats}
+{10031360}{}{Sacred Militia and white molerats}
+{10031370}{}{Sacred Militia and mantis}
+{10031380}{}{Bounty hunters and rats}
+{10031390}{}{Bounty hunters and molerats}
+{10031400}{}{Bounty hunters and white molerats}
+{10031410}{}{Bounty hunters and golden geckos}
+{10031420}{}{Bounty hunters and dogs}
+{10031430}{}{District X scouts and rats}
+{10031440}{}{District X scouts and small radscorpions}
+{10031450}{}{District X scouts and radscorpions}
+{10031460}{}{District X scouts and radscorpions family}
+{10031470}{}{District X scouts and mantis}
+{10031480}{}{Raiders and rats}
+{10031490}{}{Raiders and molerats}
+{10031500}{}{Raiders and white molerats}
+{10031510}{}{Raiders and dogs}
+{10031520}{}{Raiders and small radscorpions}
+{10031530}{}{Raiders and radscorpions}
+{10031540}{}{Raiders and radscorpions family}
+{10031550}{}{Raiders and mantis}
+{10031560}{}{Raiders and golden geckos}
+{10031570}{}{Raiders and fire geckos}
+{10031580}{}{Raiders and silver geckos}
+{10031590}{}{Raiders and rats, pigrats}
+{10031600}{}{NEC Veterans}
+{10031610}{}{NEC Soldiers}
+{10031620}{}{NEC Recruits}
+{10031630}{}{REF Veterans}
+{10031640}{}{REF Soldiers}
+{10031650}{}{REF Recruits}
+{10031660}{}{NEC Veterans and REF Veterans}
+{10031670}{}{REF Soldiers and NEC Soldiers}
+{10031680}{}{REF Recruits and NEC Recruits}
+{10031690}{}{NEC Soldiers and REF Veterans}
+{10031700}{}{REF Soldiers and NEC Veterans}
+{10031710}{}{NEC Veterans and radscorpions}
+{10031720}{}{NEC Soldiers and Bandits}
+{10031730}{}{REF Veterans and radscorpions}
+{10031740}{}{REF Soldiers and Bandits}
+{10031750}{}{FuryTown Patrol}
+{10031760}{}{FuryTown Patrol, Bandits, Geckos, Radscorpions}
+{10031770}{}{FuryTown Patrol and NEC Soldiers}
+{10031780}{}{FuryTown Patrol, Bandits, Pigrats, Floaters}
+{10031800}{}{FuryTown Patrol and Bandits}
+{10031810}{}{FuryTown Patrol and Molerats}
+{10031820}{}{UnderKings Gang}
+{10031830}{}{UnderKings Gang and Bandits}
+{10031840}{}{UnderKings Gang and Geckos}
+{10031850}{}{UnderKings Gang and Molerats}
+{10031860}{}{UnderKings Gang and Rats}
+{10031870}{}{UnderKings Gang and Ghouls}
+{10031880}{}{UnderKings Gang, REF Soldiers, NEC Recruits}
+{10031890}{}{UnderKings Gang, Bandits, Ghouls}
+{10031900}{}{UnderKings Gang, Bandits, Ghouls, Deathclaws}
+{10031910}{}{GreenPoint Scouts}
+{10031920}{}{GreenPoint Scouts, Molerats, Radscorpions, Ants}
+{10031930}{}{GreenPoint Scouts, Molerats, Bandits, Ants}
+{10031940}{}{GreenPoint Scouts and Geckos}
+{10031950}{}{GreenPoint Scouts and Radscorpions}
+{10031960}{}{GreenPoint Scouts, Pigrats, Rats}
+{10031970}{}{GreenPoint Scouts and Bandits}
+{10031980}{}{BearLine Defenders}
+{10031990}{}{BearLine Defenders and Bandits}
+{10032000}{}{BearLine Defenders and Ghouls}
+{10032010}{}{BearLine Defenders and Molerats}
+{10032020}{}{BearLine Defenders, REF Soldiers, Bandits}
+{10032030}{}{BearLine Defenders and GreenPoint Scouts}
+{10032040}{}{BearLine Defenders and Geckos}
+{10032050}{}{Homeless}
+{10032060}{}{Homeless and Radscorpions}
+{10032070}{}{Homeless and Bandits}
+{10032080}{}{Miners}
+{10032090}{}{Miners and Dogs}
+{10032100}{}{Miners and Radscorpions}
+{10032110}{}{Miners and Ants}
+{10032120}{}{Miners and Bandits}
+{10032130}{}{Miners and Molerats}
+{10032140}{}{Messengers of death}
+{10032150}{}{Scratchers}
+{10032160}{}{Scratchers and Bandits}
+{10032170}{}{The NEC Army}
+{10032180}{}{The NEC Army and rats}
+{10032190}{}{The NEC Army and NEC Recruits}
+{10032200}{}{The NEC Army,NEC Recruits and Bandits}
+{10032210}{}{The REF Army}
+{10032220}{}{The REF Army and Molerats}
+{10032230}{}{The REF Army and REF Recruits}
+{10032240}{}{The REF Army, REF Recruits and Ghouls}
+{10032250}{}{Super Mutants with Ghouls}
+{10032260}{}{Super Mutants with Ghouls and fire geckos}
+{10032270}{}{Super Mutants with Ghouls, GreenPoint Scouts and Radscorpions}
+{10032280}{}{Super Mutants with Ghouls and NEC Veterans}
+{10032290}{}{Terrorist}
+{10032300}{}{Terrorist and Radscorpions}
+{10032310}{}{Terrorist and Ghouls}
+{10032320}{}{Terrorist and Gang}
+{10032330}{}{Gang}
+{10032340}{}{Gang and dogs}
+{10032350}{}{Rebellion of NEC}
+{10032360}{}{Rebellion of NEC and Radscorpions}
+{10032370}{}{Rebellion of NEC and Bandits}
+{10032380}{}{Rebellion of NEC, rats, brahmins and NEC Veterans}
+{10032390}{}{Rebellion of REF}
+{10032400}{}{Rebellion of REF and Radscorpions}
+{10032410}{}{Rebellion of REF and Bandits}
+{10032420}{}{Rebellion of REF, rats, brahmins and REF Veterans}
+{10032430}{}{Furry Town caravan}
+{10032440}{}{Furry Town caravan and Rats}
+{10032450}{}{Furry Town caravan and Bandits}
+{10032460}{}{Furry Town caravan and Geckos}
+{10032470}{}{Furry Town caravan and NEC Veterans}
+{10032480}{}{Old Village caravan}
+{10032490}{}{Old Village caravan and Molerats}
+{10032500}{}{Old Village caravan and Bandits}
+{10032510}{}{Old Village caravan and Centaurs}
+{10032520}{}{Death Mine caravan}
+{10032530}{}{Death Mine caravan and Ghouls}
+{10032540}{}{Death Mine caravan and Floaters with Centaurs}
+{10032550}{}{Death Mine caravan and Deathclaws}
+{10032560}{}{Old Fields caravan}
+{10032570}{}{Old Fields caravan and Geckos}
+{10032580}{}{Old Fields caravan and Bandits}
+{10032590}{}{Old Fields caravan and Molerats}
+{10032600}{}{Old Fields caravan and Supermutants}
+{10032610}{}{Scrapers City caravan}
+{10032620}{}{Scrapers City caravan and Pigrats}
+{10032630}{}{Scrapers City caravan and Radscorpions}
+{10032640}{}{Scrapers City caravan and Bandits}
+{10032650}{}{Scrapers City caravan and REF Veterans}
+{10032660}{}{BearLine caravan}
+{10032670}{}{BearLine caravan and NEC Veterans}
+{10032680}{}{BearLine caravan and Bandits}
+{10032690}{}{BearLine caravan and GreenPoint Scouts}
+
+
+
+
+
+
+
+

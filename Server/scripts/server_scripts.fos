@@ -1,0 +1,841 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "prefixes.fos"
+#include "_maps.fos"
+#include "_colors.fos"
+#include "_time.fos"
+#include "quests.fos"
+#include "_animation.fos"
+
+import void PlayMusic(Critter& cr, string& musicName, uint pos, uint repeat) from "media";
+import void r_AddMerc2Player(Critter & player, Critter @ npc) from "merc";
+import void first_military_step_red_start(Critter &cr, Critter @cr2) from "quest_server_scripts";
+import void first_quest_blue_start(Critter &cr, Critter @cr2) from "quest_server_scripts";
+import void PlayVideo(Critter& cr, string& videoName, bool canStop) from "media";
+
+bool CheckIfDEV(Critter& player)
+{
+	if( !player.IsPlayer() )
+		return( false );
+
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && PREFIXES[i][1]=="DEV")
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+bool CheckIfGM(Critter& player)
+{
+	if( !player.IsPlayer() )
+		return( false );
+
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && (PREFIXES[i][1]=="DEV" || PREFIXES[i][1]=="GM" ))
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+void unsafe_command(Critter& cr, int command, int HexX, int HexY, string@ message, int[]@)
+{
+	cr.ParamBase[PLAYER_COMMAND]=command;
+	cr.ParamBase[PLAYER_COMMAND_X]=HexX;
+	cr.ParamBase[PLAYER_COMMAND_Y]=HexY;
+}
+
+void server_message(string@ message)
+{
+	if(@message==null) return;
+	
+	for(int i=0; i<PLAYERS_COUNT; i++)
+	{
+		string@ str=GetPlayerName(i);
+		if(@str!=null)
+		{
+			Critter @findcr=GetPlayer(str);
+			if(@findcr!=null) findcr.Say(SAY_SERVER_MESSAGE,"SERVER MESSAGE:\n"+message);
+		}
+	}
+}
+
+void unsafe_server_message(Critter& cr, int, int, int, string@ message, int[]@)
+{
+	if(!CheckIfGM(cr)) return;
+	if(@message==null) return;
+	
+	for(int i=0; i<PLAYERS_COUNT; i++)
+	{
+		string@ str=GetPlayerName(i);
+		if(@str!=null)
+		{
+			Critter @findcr=GetPlayer(str);
+			if(@findcr!=null) findcr.Say(SAY_SERVER_MESSAGE,"SERVER MESSAGE:\n"+message);
+		}
+	}
+}
+
+bool FireCannon(Critter &cr, Scenery &sc, int skill, Item@ it)
+{
+	uint16 HexX=sc.HexX;
+	uint16 HexY=sc.HexY;
+	Map @map=cr.GetMap();
+	if(@map==null) return false;
+	map.MoveHexByDir(HexX,HexY,5,30);
+	HexX+=Random(0,10)-5;
+	HexY+=Random(0,10)-5;
+	
+	uint16 temp_x=sc.HexX;
+	uint16 temp_y=sc.HexY;
+	map.MoveHexByDir(temp_x,temp_y,5,1);
+	uint16 last_x=temp_x,last_y=temp_y;
+	while(temp_x!=HexX || temp_y!=HexY)
+	{
+		if(!map.IsHexRaked(temp_x,temp_y))
+		{
+			temp_x=last_x; temp_y=last_y;
+			break;
+		}
+		last_x=temp_x; last_y=temp_y;
+		map.MoveHexByDir(temp_x,temp_y,GetDirection(temp_x,temp_y,HexX,HexY),1);
+	}
+	//CommenceExplosionByHexShooting(Attack,map,temp_x,temp_y,null,PID_ROCKET_LAUNCHER_DE,false,0,true,results);
+	map.RunEffect(PID_EXPLODE_ROCKET,temp_x,temp_y,1);
+	return true;
+}
+
+void dream_trigger_0(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.ParamBase[DREAM_PROGRESS]==0)
+	{
+		PlayVideo(player,"FODE.ogv|FODE.ogg",true);
+		player.ParamBase[DREAM_PROGRESS]=1;
+		player.Say(SAY_NORM_ON_HEAD,"Where am I?");
+	}
+}
+
+void dream_trigger_1(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.ParamBase[DREAM_PROGRESS]==1)
+	{
+		player.ParamBase[DREAM_PROGRESS]=2;
+		player.GetMap().SetRain(130);
+		player.RunClientScript("_FlushScreen",int(0xFFFFFFFF),0,int(1000),null,null);
+		player.PlaySound("dream_flash.ogg",true);
+	}
+}
+
+void dream_trigger_2(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.ParamBase[DREAM_PROGRESS]==2)
+	{
+		player.ParamBase[DREAM_PROGRESS]=3;
+		player.GetMap().SetRain(0);
+		Critter @[]crs;
+		player.GetMap().GetCritters(0,FIND_ONLY_NPC|FIND_LIFE_AND_KO,crs);
+		for(uint i=0; i<crs.length(); i++) DeleteNpc(crs[i]);
+		player.RunClientScript("_FlushScreen",int(0xFFFFFFFF),0,int(1000),null,null);
+		player.PlaySound("dream_flash.ogg",true);
+		player.Say(SAY_NORM_ON_HEAD,"Ohhhh... My head");
+	}
+}
+
+void dream_trigger_3(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.ParamBase[DREAM_PROGRESS]==3)
+	{
+		player.ParamBase[DREAM_PROGRESS]=4;
+		player.GetMap().SetText(65,183,COLOR_SAY,"Did you hear that?");
+	}
+}
+
+void dream_teleport(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	int[]cr_id={player.Id};
+	CreateTimeEvent(__FullSecond+REAL_SECOND(3),"e_say_1",cr_id,false);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(5),"e_say_2",cr_id,false);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(9),"e_say_3",cr_id,false);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(12),"e_say_4",cr_id,false);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(16),"e_say_5",cr_id,false);
+	player.RunClientScript("_FlushScreen",int(0xFFFFFFFF),0,int(5000),null,null);
+	player.PlaySound("dream_flash.ogg",true);
+	player.TransitToHex(166,217,0);
+}
+
+bool dream_terminal(Critter& player, Scenery& terminal, int skill, Item@ item)
+{
+	if(player.IsPlayer() && skill==-1 && @item==null) RunDialog(player,40002,terminal.HexX,terminal.HexY,false);
+	return true;
+}
+
+uint e_say_1(uint[]@ values) {GetCritter(values[0]).GetMap().SetText(167,204,COLOR_SAY,"Another one...");return 0;}
+uint e_say_2(uint[]@ values) {GetCritter(values[0]).GetMap().SetText(176,218,COLOR_SAY,"Fool");return 0;}
+uint e_say_3(uint[]@ values) {GetCritter(values[0]).GetMap().SetText(162,201,COLOR_SAY,"Hahaha");return 0;}
+uint e_say_4(uint[]@ values) {GetCritter(values[0]).GetMap().SetText(174,217,COLOR_SAY,"Go away");return 0;}
+uint e_say_5(uint[]@ values) {GetCritter(values[0]).GetMap().SetText(166,230,COLOR_SAY,"What are you looking at?");return 0;}
+
+void dream_choose_main_faction_1(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_MAIN_FACTION]=1;}
+void dream_choose_main_faction_2(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_MAIN_FACTION]=2;}
+
+void dream_choose_activity_1(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=1;}
+void dream_choose_activity_2(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=2;}
+void dream_choose_activity_3(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=3;}
+void dream_choose_activity_4(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=4;}
+void dream_choose_activity_5(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=5;}
+void dream_choose_activity_6(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=6;}
+void dream_choose_activity_7(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=7;}
+void dream_choose_activity_8(Critter& player, Critter @cr) {player.ParamBase[DREAM_PLAYER_ACTIVITY]=8;}
+
+void faction_red(Critter& player, Critter @cr)
+{
+	player.ParamBase[PLAYER_MAIN_FACTION]=1;
+	player.ParamBase[REPUTATION_RED]=100;
+	player.ParamBase[REPUTATION_BLUE]=-100;
+}
+void faction_blue(Critter& player, Critter @cr)
+{
+	player.ParamBase[PLAYER_MAIN_FACTION]=2;
+	player.ParamBase[REPUTATION_RED]=-100;
+	player.ParamBase[REPUTATION_BLUE]=100;
+}
+void dream_red(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_moscow,0);
+	Location @loc=player.GetMap().GetLocation();
+	player.TransitToMap(map.Id,0);
+	if(loc.GetProtoId()==LOCATION_DE_DREAM) DeleteLocation(loc.Id);
+	first_military_step_red_start(player,null);
+}
+void dream_blue(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_london,0);
+	Location @loc=player.GetMap().GetLocation();
+	player.TransitToMap(map.Id,0);
+	if(loc.GetProtoId()==LOCATION_DE_DREAM) DeleteLocation(loc.Id);
+	first_quest_blue_start(player,null);
+}
+
+void dream_finish(Critter& player, Critter @cr)
+{
+	Location @loc=player.GetMap().GetLocation();
+	if(player.ParamBase[PLAYER_MAIN_FACTION]==1)
+	{
+		dream_red( player, cr);
+	}
+	else if(player.ParamBase[PLAYER_MAIN_FACTION]==2)
+	{
+		dream_blue( player, cr);
+	}
+	player.ParamBase[DREAM_PROGRESS]=5;
+	player.RunClientScript("_FlushScreen",int(0xFFFFFFFF),0,int(7000),null,null);
+	PlayMusic(player,"dream_finish.ogg",0,0);
+}
+
+void light_town_dan_trigger(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(!player.IsPlayer()) return;
+	if(1==1)
+	{
+		Map @map=player.GetMap();
+		if(@map==null) return;
+		Critter @[]crs;
+		map.GetCrittersHex(player.HexX,player.HexY,7,FIND_ONLY_NPC|FIND_LIFE_AND_KO,crs);
+		bool DanExists=false;
+		for(uint i=0; i<crs.length(); i++)
+		{
+			if(crs[i].ParamBase[ST_DIALOG_ID]==40006)
+			{
+				DanExists=true;
+				break;
+			}
+		}
+		if(DanExists) RunDialog(player,40006,player.HexX,player.HexY,false);
+	}
+}
+
+void unsafe_test_barrel(Critter& player, int x, int y, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	spawn_exploding_barrel(map,x,y);
+}
+
+void spawn_exploding_barrel(Map @map, int HexX, int HexY)
+{
+	Critter @spawncr=map.AddNpc(2002,HexX,HexY,0,null,null,null);
+	spawncr.StatBase[ST_DIALOG_ID]=40004;
+	spawncr.SetEvent(CRITTER_EVENT_DEAD,"exploding_barrel_explode");
+	spawncr.ModeBase[MODE_NO_DROP]=1;
+	spawncr.ModeBase[MODE_NO_LOOT]=1;
+}
+
+void exploding_barrel_explode(Critter& cr, Critter@ killer)
+{
+	Map @map=cr.GetMap();
+	if(@map==null) return;
+	map.PlaySound(Random(0,1)==0?"WHN1XXX1.ACM":"WHN1XXX2.ACM",cr.HexX,cr.HexY,0);
+	map.RunEffect(PID_EXPLODE_FIRE_SMALL,cr.HexX,cr.HexY,2);
+	int HexX=cr.HexX;
+	int HexY=cr.HexY;
+	DeleteNpc(cr);
+
+	Critter@[] critsHit;
+	map.GetCrittersHex(HexX,HexY,3,FIND_LIFE_AND_KO,critsHit);
+	for(uint i=0; i<critsHit.length(); i++)
+	{
+		if(@critsHit[i]==null) continue;
+		if(critsHit[i].StatBase[ST_CURRENT_HP]>50) critsHit[i].StatBase[ST_CURRENT_HP]-=50;
+		else
+		{
+			if(critsHit[i].GetProtoId()==cr.GetProtoId()) critsHit[i].ToDead(ANIM2_DEAD_BURN,killer);
+			else critsHit[i].ToDead(ANIM2_DEAD_BURN,killer);
+		}
+	}
+	
+}
+
+void merc_dealer_merc_1(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<20000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,20000);
+		Critter@ merc=map.AddNpc(6000,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.StatBase[ST_FREE_BARTER_PLAYER]=player.Id;
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_2(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<25000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,25000);
+		Critter@ merc=map.AddNpc(6001,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_COMBAT_KNIFE_DE,2);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_COMBAT_KNIFE_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_3(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<30000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,30000);
+		Critter@ merc=map.AddNpc(6002,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_14MM_PISTOL_DE,1);
+		merc.AddItem(PID_14MM_AP_DE,50);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_14MM_PISTOL_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_4(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<30000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,30000);
+		Critter@ merc=map.AddNpc(6003,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_AK47_NORMAL1_DE,1);
+		merc.AddItem(PID_762X39_DE,100);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_AK47_NORMAL1_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_5(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<35000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,35000);
+		Critter@ merc=map.AddNpc(6004,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_M60_DE,1);
+		merc.AddItem(PID_762x51_DE,150);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_M60_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_6(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<40000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,40000);
+		Critter@ merc=map.AddNpc(6005,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_MINIGUN_DE,1);
+		merc.AddItem(PID_5MM_JHP_DE,100);
+		merc.AddItem(PID_5MM_AP_DE,100);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_MINIGUN_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_7(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<45000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,45000);
+		Critter@ merc=map.AddNpc(6006,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+		merc.AddItem(PID_ROCKET_AP_DE,5);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_ROCKET_LAUNCHER_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+void merc_dealer_merc_8(Critter& player, Critter @cr)
+{
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	
+	if(player.CountItem(PID_BOTTLE_CAPS)<40000) cr.Say(SAY_NORM_ON_HEAD,"Come back when you have money.");
+	else if(player.ParamBase[ST_CHARISMA]<4) cr.Say(SAY_NORM_ON_HEAD,"You are too ugly.");
+	else
+	{
+		player.DeleteItem(PID_BOTTLE_CAPS,40000);
+		Critter@ merc=map.AddNpc(6007,player.HexX,player.HexY,player.Dir,null,null,null);
+		r_AddMerc2Player(player,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		merc.AddItem(PID_LASER_RIFLE_EXT_CAP_DE,1);
+		merc.AddItem(PID_MICRO_FUSION_CELL_DE,50);
+		merc.SetFavoriteItem(SLOT_HAND1,PID_LASER_RIFLE_EXT_CAP_DE);
+		merc.SetScript("merc@_MercInit");
+	}
+}
+
+bool base_terminal(Critter& player, Scenery& terminal, int skill, Item@ item)
+{
+	if(player.IsPlayer() && skill==-1 && @item==null)
+	{
+		bool access=false;
+		if(CheckIfGM(player)) access=true;
+        Map@ map=player.GetMap();
+		if(@map==null) return true;
+		uint mapPid = map.GetProtoId();
+		if(mapPid>=901 && mapPid<=910)
+		{
+			if(int(player.GetMap().GetLocation().Id)==player.ParamBase[PLAYER_BASE] || access)
+			{
+				RunDialog(player,40005,terminal.HexX,terminal.HexY,false);
+			}
+			else
+			{
+				map.SetTextMsg(terminal.HexX,terminal.HexY,COLOR_SAY,TEXTMSG_GAME,3000000700);
+			}
+		}
+	}
+	return true;
+}
+
+void base_terminal_invite(Critter& player, Critter @cr)
+{
+	player.RunClientScript("client_screen_base_terminal@ShowBaseTerminalInviteScreen",0,0,0,null,null);
+}
+
+void base_terminal_kick(Critter& player, Critter @cr)
+{
+	player.RunClientScript("client_screen_base_terminal@ShowBaseTerminalKickScreen",0,0,0,null,null);
+}
+
+void unsafe_invite_to_base(Critter& player, int, int, int, string@ name, int[]@)
+{
+	bool access=false;
+	if(CheckIfGM(player)) access=true;
+	if(@name==null)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000704);
+		return;
+	}
+	Critter @cr=GetPlayer(name);
+	uint crId=0;
+	crId=GetPlayerId(name);
+	Map @map=player.GetMap();
+	if(@cr==null && crId==0)
+	{
+		if(crId==0)
+		{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000705);
+		return;
+		}
+	}
+	if(@cr!=null)
+	{
+		if(@map==null)
+		{
+			return;
+		}
+		if(int(player.GetMap().GetLocation().Id)==player.ParamBase[PLAYER_BASE] || access)
+		{
+			cr.SetKnownLoc(true,map.GetLocation().Id);
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000707);
+			return;
+		}
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000706);
+		return;
+	}
+	else if(crId!=0)
+	{
+		GameVar @PlayerBaseInviteRequest=GetLocalVar(LVAR_player_base_invite_request,crId);
+		if(PlayerBaseInviteRequest==0)
+		{
+			PlayerBaseInviteRequest=map.GetLocation().Id;
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000708);
+		}
+		else player.Say(SAY_NETMSG,"Failed: player is long time offline");
+	}
+	
+}
+
+void unsafe_kick_from_base(Critter& player, int, int, int, string@ name, int[]@)
+{
+	bool access=false;
+	if(CheckIfGM(player)) access=true;
+	if(@name==null)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000704);
+		return;
+	}
+	Critter @cr=GetPlayer(name);
+	uint crId=0;
+	crId=GetPlayerId(name);
+	Map @map=player.GetMap();
+	if(@cr==null && crId==0)
+	{
+		if(crId==0)
+		{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000705);
+		return;
+		}
+	}
+	if(@cr!=null)
+	{
+	
+		if(@map==null)
+		{
+			return;
+		}
+		if(int(player.GetMap().GetLocation().Id)!=player.ParamBase[PLAYER_BASE] || access)
+		{
+		
+			if(cr.Id==player.Id)
+			{
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000709);
+				return;
+			}
+			cr.UnsetKnownLoc(true,map.GetLocation().Id);
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000708);
+			return;
+		}
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000706);
+		return;
+		
+	}
+	else if(crId!=0)
+	{
+		GameVar @PlayerBaseLeaveRequest=GetLocalVar(LVAR_player_base_leave_request,crId);
+		if(PlayerBaseLeaveRequest==0)
+		{
+			PlayerBaseLeaveRequest=map.GetLocation().Id;
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000708);
+		}
+		else player.Say(SAY_NETMSG,"Failed: player is long time offline");
+	}
+}
+//soldier to do
+void unsafe_pay_for_soldier(Critter& cr, int id, int, int, string@, int[]@)
+{
+	cr.ParamBase[PAY_FOR_SOLDIER]=__FullSecond+REAL_HOUR(5);
+}
+
+void little_dmg_hex(Critter& player, Scenery& sce, bool boo, uint8 dir)
+{
+	if(player.IsPlayer())
+	{
+		int hit=Random(1,3);
+		if(player.StatBase[ST_CURRENT_HP]>hit)
+		{
+			player.StatBase[ST_CURRENT_HP]-=hit;
+			player.Action(ACTION_DAMAGE,1,null);
+		}
+		else
+		{
+			player.Action(ACTION_DAMAGE,1,null);
+			player.ToDead(ANIM2_DEAD_PULSE,null);
+		}
+	}
+}
+
+void teleport_baza(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_DE_baza,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_townstation(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_townstation,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_moscow(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_moscow,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_darkwaters(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_darkwaters,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_london(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_london,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_lighttown(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_lighttown,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_oldvillage(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_oldvillage,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_districtx(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_districtx,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_mountainmine(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_mountainmine,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_minepit(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_minepit,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_deathmine(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_deathmine,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_oldfields(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_oldfields,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_industrial_center(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_industrial_center,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_industrial(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_industrial,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_coalmine(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_coalmine,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_scrapers(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_berlincity(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_berlincity,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_101(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_101,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_wildmine(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_wildmine,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_furytown(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_furytown,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_redbase(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_redbase,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_island(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_island,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_powerplant(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_powerplant,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_nec_base(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_nec_base,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_mgl(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_mgl,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_greenpoint(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_greenpoint,0);
+	player.TransitToMap(map.Id,0);
+}
+void teleport_hunterscamp(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_hunters_camp,0);
+	player.TransitToMap(map.Id,0);
+}
+
+//TELEPORT FROM HEX TO MAP
+void teleport_hex1(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.IsPlayer())
+	{
+		// POWER PLANT UNDER - COAL MINE UNDER2
+		if(player.GetMap().GetProtoId()==750) player.TransitToMap(GetMapByPid(708,0).Id,12);
+		else if(player.GetMap().GetProtoId()==708) player.TransitToMap(GetMapByPid(750,0).Id,12);
+	}
+}
+// LONDON UNDERGROUND TELEPORT DOOR TERMINAL
+void london_under_teleport(Critter& player, Critter @cr)
+{
+	if(player.GetMap().GetProtoId()==681)
+	{
+		Map @map=GetMapByPid(MAP_london_under2,0);
+		player.TransitToMap(map.Id,20);
+	}
+	else if(player.GetMap().GetProtoId()==745)
+	{
+		Map @map=GetMapByPid(MAP_london_under,0);
+		player.TransitToMap(map.Id,20);
+	}
+}
+// SCRAPERS TEC-TOWER ELEVATOR DIALOG
+void ScrapersElevator_trigger(Critter& player, Scenery& trigger, bool entered, uint8 dir)
+{
+	if(player.IsPlayer())RunDialog(player,21031,trigger.HexX,trigger.HexY,false);
+}
+
+void elevator_scrapers_lvl0(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl1(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl1,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl2(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl2,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl3(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl3,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl4(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl4,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl5(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl5,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl6(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl6,0);
+	player.TransitToMap(map.Id,10);
+}
+void elevator_scrapers_lvl7(Critter& player, Critter @cr)
+{
+	Map @map=GetMapByPid(MAP_scrapers_lvl7,0);
+	player.TransitToMap(map.Id,10);
+}

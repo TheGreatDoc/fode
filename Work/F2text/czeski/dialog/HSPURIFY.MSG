@@ -1,0 +1,13 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{To je poøádná mašina.}
+{101}{}{Èistiè vzduchu vydává žbluòkavé a skøípavé zvuky. Asi bude rozbitý. Možná potøebuje pár náhradních dílù..}
+{102}{}{Èistiè vzduchu bìží tiše. Vypadá to, že je vše v poøádku.}
+{110}{}{Tohle nejsou puzzle. Takže tímto dílem to asi nespravíš!}
+{120}{}{Povedlo se ti opravit èistiè vzduchu.}
+{125}{}{Právì se ti povedlo totálnì znièit èistiè vzduchu.}
+{129}{}{Spiklenci už nemùžou vyslat signál do výbušného spínaèe. Je ale neustále aktivní, proto ho radìji zahazuješ.}
+{130}{}{Už je to opraveno!}
+{131}{}{Žblunk}
+{132}{}{Cink}
+{133}{}{Bing}
+{134}{}{HnnnHnnnnnnn}

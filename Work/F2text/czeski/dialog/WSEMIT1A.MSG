@@ -1,0 +1,15 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Nenalézáš jediné použití tohoto emitoru.}
+{101}{}{Nevíš, jak by se dalo toto silové pole použít.}
+{102}{}{Dostáváš ránu zeslabeným silovým polem.}
+{103}{}{ dostává ránu zeslabeným silovým polem.}
+{107}{}{Dostáváš ránu silovým polem.}
+{108}{}{ dostává ránu silovým polem.}
+{109}{}{Nepodaøilo se ti oslabit silové pole.}
+{110}{}{ nezvládl oslabit silové pole.}
+{111}{}{Z reproduktorù slyšíš: Pozor! Vetøelec! Uvedení bezpeènostního systému v èinnost.}
+{112}{}{Silové pole deaktivováno.}
+{113}{}{ vypnul silové pole.}
+{114}{}{Silové pole aktivováno.}
+{115}{}{ zapnul silové pole.}
+{116}{}{Emitor silového pole je tvým pøièinìním znièen.}

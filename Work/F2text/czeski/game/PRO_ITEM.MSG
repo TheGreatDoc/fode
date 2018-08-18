@@ -1,0 +1,1024 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com
+{100}{}{Koené brnìní}
+{101}{}{Koené brnìní peèlivì vyrobené z brahmíní kùe.}
+{200}{}{Kovová zbroj}
+{201}{}{Vyleštìné ocelové pláty, nahrubo pospojované do nevzhledného brnìní.}
+{300}{}{Energo zbroj}
+{301}{}{Hermetickı hi-tech oblek s plnou vıbavou. Je opatøen hydraulickımi posilovaèi a napájen mikro-fúzním reaktorem s dostatkem paliva na stovky let.}
+{400}{}{Nù}
+{401}{}{Ostrá bodná a seèná zbraò.  Min SÍ: 2.}
+{500}{}{Tonfa}
+{501}{}{Univerzální armádní a policejní obušek.  Tìké døevo.  Min SÍ: 3.}
+{600}{}{Perlík}
+{601}{}{Velké kladivo s dlouhou rukojetí.  Oblíbená zbraò kováøù a návštìvníkù posiloven.  Min SÍ: 6.}
+{700}{}{Kopí}
+{701}{}{Velice ostrá bodná zbraò.  Násada je døevìná, hrot je vyroben z kalené oceli.  Min SÍ: 4.}
+{800}{}{10mm pistole}
+{801}{}{Samonabíjecí Colt 6520 ráe 10mm.  Kadı stisk spouštì automaticky nabíjí zbraò, dokud není zásobník prázdnı.  Neumoòuje støelbu dávkou.  Min SÍ: 3.}
+{900}{}{10mm samopal}
+{901}{}{Samopal H&K MP9 (10mm verze). Automatická zbraò støední velikosti, schopná støelby jednotlivımi ranami nebo dávkou.  Min SÍ: 4.}
+{1000}{}{Lovecká puška}
+{1001}{}{Poloautomatická puška Colt Rangemaster kalibr .223.  Neumoòuje støelbu dávkou.  Min SÍ: 5.}
+{1100}{}{Plamenomet}
+{1101}{}{Plamenomet model Flambe 450.  Chrlí proud extrémnì hoølavé tekutiny.  Vyaduje speciální náplò.  Min SÍ: 6.}
+{1200}{}{Gatling}
+{1201}{}{Osobní gatling Rockwell CZ53.  Nìkolikahlavòovı rotaèní kulomet. Støílí 5mm municí s kadencí více ne 60.000 ran za minutu.  Min SÍ: 7.}
+{1300}{}{Raketomet}
+{1301}{}{Raketomet Rockwell BigBazooka.  S luxusní 1.5 kg spouští.  Schopen støelby prùbojnımi nebo vıbušnımi raketami.  Min SÍ: 6.}
+{1400}{}{Vıbušná raketa}
+{1401}{}{Vysokorychlostní støela s vysoce brizantní hlavicí.}
+{1500}{}{Plazmová puška}
+{1501}{}{Plazmová puška Winchester model P94.  Tato zbraò futuristického vzezøení se supravodivou hlavní vystøeluje èástice pøehøáté plazmy.  Napájena mikro-fúzními èlánky.  Min SÍ: 6.}
+{1600}{}{Laserová pistole}
+{1601}{}{Laserová pistole Wattz 1000.  Civilní model, tedy s menší úèinností ne armádní nebo policejní varianty. Napájena pomocí malıch energetickıch èlánkù.  Min SÍ: 3.}
+{1700}{}{Kevlarová zbroj}
+{1701}{}{Hi-tech brnìní vyrobené z vysokohustotních defenzivních polymerù.}
+{1800}{}{Desert Eagle .44}
+{1801}{}{Starobylá pistole Desert Eagle. Èasté pouívání ve filmech pozdního 20. století z ní udìlalo jednu z nejpopulárnìjších pistolí všech dob.  Min SÍ: 4.}
+{1900}{}{Kámen}
+{1901}{}{Prostì kámen.  Upgradovanı model se vyrábí pod znaèkou ula-Inc.  Min SÍ: 1.}
+{2000}{}{Páèidlo}
+{2001}{}{Solidní kus tìkého kovu vyrobenı za úèelem vyuití pákového efektu.  Anebo k rozbíjení hlav.  Min SÍ: 5.}
+{2100}{}{Mosaznı boxer}
+{2101}{}{Základ je z mosazi, vlastní úderná plocha je ale vyrobena z kalené oceli. Náprstníkové krouky chrání ruku pøed poškozením a bìhem boje beze zbranì zpùsobují nepøíteli vìtší poranìní.  Min SÍ: 1.}
+{2200}{}{14mm pistole}
+{2201}{}{Automatická pistole Sig-Sauer 14mm.  Masivní zbraò urèená pro støelbu jednotlivımi ranami. Vıteèné ruèní zpracování.  Min SÍ: 4.}
+{2300}{}{Útoèná puška}
+{2301}{}{Univerzální 5mm útoèná puška Kalašnikov AK-112.  Stará armádní zbraò vyøazená v prùbìhu války.  Schopná støelby jednotlivımi ranami nebo dávkou, s pouitím vysokorychlostní 5mm munice.  Min SÍ: 5.}
+{2400}{}{Plazmová pistole}
+{2401}{}{Plazmová pistole Glock 86.  Navrena a vyrobena v Gaston Glock AI.  Støílí èástice pøehøáté plazmy.  Napájena malımi energetickımi èlánky.  Min SÍ: 4.}
+{2500}{}{Granát (Tøíštivı)}
+{2501}{}{Tøíštivı granát. Obsahuje malé mnoství vıbušniny, která rozerve pláš na velké mnoství zraòujících støepin. Nárazová pojistka.  Min SÍ: 3.}
+{2600}{}{Granát (Plazmovı)}
+{2601}{}{Magneticky uzavøená schránka s plazmou a iniciaèní vıbušninou. Pøi kontaktu vzniká oblak pøehøáté plasmy.  Min SÍ: 4.}
+{2700}{}{Granát (Pulsní)}
+{2701}{}{Elektromagnetickı pulsní granát vytváøející v místì exploze intenzivní elektromagnetické pole. Bez efektu na ivé tvory.  Nárazová pojistka.  Min SÍ: 4.}
+{2800}{}{Laserovı gatling}
+{2801}{}{Rotaèní laser H&K L30.  Urèen vıhradnì pro armádní pouití, na zaèátku války byl ve stádiu prototypu. Vìtší poèet hlavní umoòuje úèinnìjší chlazení. Napájen mikro-fúzními èlánky..  Min SÍ: 6.}
+{2900}{}{10mm JHP}
+{2901}{}{Munice.  Kalibr: 10mm, plášovaná expanzní støela}
+{3000}{}{10mm AP}
+{3001}{}{Munice.  Kalibr: 10mm, prùrazná støela.}
+{3100}{}{.44 Magnum JHP}
+{3101}{}{Plášované expanzní støely, kalibr .44.}
+{3200}{}{Náplò do plamenometu}
+{3201}{}{Tlaková nádoba obsahující vysoce hoølavou tekutinu pro plamenomet.}
+{3300}{}{14mm AP}
+{3301}{}{Velkoráová munice. Prùrazná 14mm.}
+{3400}{}{.223 FMJ}
+{3401}{}{Druh munice.  Kalibr .223, celoplášová expanzní støela.}
+{3500}{}{5mm JHP}
+{3501}{}{Zásobník lehké mikroráové munice.  Kalibr: 5mm, plášovaná expanzní støela.}
+{3600}{}{5mm AP}
+{3601}{}{Zásobník lehké mikroráové munice.  Kalibr: 5mm.  5mm prùrazná støela.}
+{3700}{}{Raketa AP}
+{3701}{}{Vysokorychlostní raketová støela. Hrot je vyroben ze slitiny titanu. Oproti expanzní raketì nese hlavice menší mnoství vıbušniny. Designována k proráení pancéøovanıch cílù.}
+{3800}{}{Malı energetickı èlánek}
+{3801}{}{Hermeticky uzavøenı zásobník energie.}
+{3900}{}{Mikro-fúzní èlánky}
+{3901}{}{Malá jednotka na vırobu energie.  V podstatì miniaturní fúzní elektrárna.}
+{4000}{}{Stimpak}
+{4001}{}{Injekce naplnìná léèebnımi a stimulaèními chemikáliemi. Po aplikaci témìø okamitì léèí drobná zranìní.}
+{4100}{}{Peníze}
+{4101}{}{Legální platidlo postapokalyptického svìta.}
+{4200}{}{Lednièka}
+{4201}{}{Lednièka s vestavìnım luxusním mrazákem. Bezfreonové provedení šetrné k ozónové vrstvì. Chladící médium u bohuel dávno vyteklo.}
+{4300}{}{Chladící box}
+{4301}{}{Starı chladící box. Izolaèní vrstva je tvoøena polystyrénem potaenım polyetylénovou fólií. Ideální pro na sobotní rodinnı piknik. A panty jsou stále funkèní!}
+{4400}{}{Chladící box}
+{4401}{}{Starı chladící box. Izolaèní vrstva je tvoøena polystyrénem potaenım polyetylénovou fólií. Ideální pro na sobotní rodinnı piknik. Panty jsou navíc stále v dobrém stavu.}
+{4500}{}{Vrhací nù}
+{4501}{}{Nù speciálnì vyváenı pro vrhání. Tichá zbraò. Vyroben z titanu a laserovì naostøen. Min SÍ: 3.}
+{4600}{}{Tlumok}
+{4601}{}{Pytel prùmìrné velikosti. Utkán z brahmíní srsti.}
+{4700}{}{Souprava první pomoci}
+{4701}{}{Malá souprava obsahující základní lékaøské vybavení.  Obinadla, náplasti, dezinfekèní prostøedky atp.}
+{4800}{}{RadAway}
+{4801}{}{Speciální chemikálie.  Zavádí se jako infúze do íly.  Váe na sebe radioaktivní èástice a pøirozenımi vyluèovacími cestami je odvádí z lymfatického systému.  Plnı úèinek vyaduje èas.}
+{4900}{}{Protijed}
+{4901}{}{Láhev obsahující podomácku vyrobenı protijed.  Mléènı roztok s plovoucími kousky radškorpioního masa.}
+{5000}{}{Reserved Item}
+{5001}{}{This is a reserved item. DO NOT USE.}
+{5100}{}{Dynamit}
+{5101}{}{Vysoce vıbušnı mix nitroglycerinu s hlinkou.  Vèetnì èasovaèe.  Díky pane Nobele.}
+{5200}{}{Geigerùv poèítaè}
+{5201}{}{Geiger-Mullerùv poèítaè.  Model Wattz Electronics C-Radz.  Detekuje pøítomnost a mnoství radioaktivních èástic}
+{5300}{}{Mentat}
+{5301}{}{Stimulátor mentálních pochodù neboli jedna z tzv. "chytrıch drog" 21. století. Zlepšuje pamì a zrychluje veškeré nervové procesy. Vysoce návykovı.}
+{5400}{}{Mizík}
+{5401}{}{Osobní zneviditelòovací zaøízení RobCo Mizík 3001.  Generuje modulované pole, které pøenáší odraené svìtlo z jedné strany objektu na druhou.}
+{5500}{}{Vodní èip}
+{5501}{}{Vault-Tec vodní èip pro øízení procesu dekontaminace a úpravy pitné vody. Obvykle bıvají zabalené po pìti v jedné krabici.}
+{5600}{}{Psí známky}
+{5601}{}{Sada vojenskıch identifikaèních známek. K pøeètení je jenom jméno Darkwater, jinak nic.}
+{5700}{}{Štìnice}
+{5701}{}{Miniaturní mikrofon a vysílaè.}
+{5800}{}{Holopáska}
+{5801}{}{Páska Wattz Electronics Holodisc.  Tahle je v opravdu špatném stavu.}
+{5900}{}{Detektor pohybu}
+{5901}{}{Detektor pohybu model Wattz Electronics C-U.  Speciálnì upravenım radarem zaznamená v okruhu nìkolika set metrù jakıkoli pohyb biologického materiálu. Máš-li jej ve svém inventáøi, znamená to rovnì zvıšení tvé schopnosti "Zálesák" o +20%.}
+{6000}{}{Knihovna}
+{6001}{}{Døevìná knihovna.}
+{6100}{}{Police}
+{6101}{}{Døevìné skøíòka s policemi.}
+{6200}{}{Knihovna}
+{6201}{}{Døevìná knihovna.}
+{6300}{}{Police}
+{6301}{}{Døevìné skøíòka s policemi.}
+{6400}{}{Knihovna}
+{6401}{}{Døevìná knihovna.}
+{6500}{}{Police}
+{6501}{}{Døevìné skøíòka s policemi.}
+{6600}{}{Stùl}
+{6601}{}{Døevìnı stùl.}
+{6700}{}{Stùl}
+{6701}{}{Døevìnı stùl.}
+{6800}{}{Prádelník}
+{6801}{}{Døevìnı prádelník.}
+{6900}{}{Skøíòka}
+{6901}{}{Døevìná skøíòka.}
+{7000}{}{Prádelník}
+{7001}{}{Døevìnı prádelník.}
+{7100}{}{Ovoce}
+{7101}{}{Podivnı kus ovoce.  Bez konzervaèních látek a potravinového barviva.}
+{7200}{}{Kuføík}
+{7201}{}{Kuføík, s nálepkou 'Made-in-the-USA'.  Koenı.  V dobrém stavu, ale èíselnı zámek je poškozen.}
+{7300}{}{Velká encyklopedie vìdy}
+{7301}{}{Øada knih obsahujících informace z mnoha odlišnıch vìdeckıch odvìtví.}
+{7400}{}{Koená bunda}
+{7401}{}{Èerná vesta z hrubé kùe.}
+{7500}{}{Univerzální kleštì}
+{7501}{}{Sada velmi uiteèného náøadí pro domácí kutily. Vèetnì kleští.}
+{7600}{}{Skripta elektroniky}
+{7601}{}{Studijní materiál pro studenty elektroniky.  Poznámka na obalu øíká - "Probuïte v sobì mladého elektrotechnika!"}
+{7700}{}{Elektronickı paklíè}
+{7701}{}{Wattz Electronics mikromanipulaèní elektronickı paklíè.  Pro odblokování elektronickıch zámkù a bezpeènostních systémù.}
+{7800}{}{Rozmazanı obraz}
+{7801}{}{Asi obraz nìjakého populárního zpìváka. Pøestoe je zøejmì hodnì starı, rám je stále ve skvìlém stavu.}
+{7900}{}{Svìtlice}
+{7901}{}{Svìtlice.  Po krátkou dobu vytváøí kruh intenzivního svìtla.  Papír je trochu omšelı, ale jinak je v dobrém stavu. Aktivuje se pootoèením horní èásti.}
+{8000}{}{Pøíruèka První pomoci}
+{8001}{}{Skripta popisující zásady první pomoci, vèetnì praktickıch ukázek.}
+{8100}{}{Leguán-na-špejli}
+{8101}{}{Leguán opeèenı ve vlastní kùi.}
+{8200}{}{Klíè}
+{8201}{}{Klíè. Urèitì se hodí do nìjakého zámku.}
+{8300}{}{Krouek na klíèe}
+{8301}{}{Nìkolik klíèù.}
+{8400}{}{Souprava paklíèù}
+{8401}{}{Sada zámeènického náøadí. Obsahuje paklíèe a šperháky potøebné k otevøení všech klasickıch i dozickıch zámkù.}
+{8500}{}{Plastická trhavina}
+{8501}{}{Kostka Cordexu, velmi nièivé a pøitom stabilní plastické trhaviny.  Vèetnì iniciaèní roznìtky s èasovaèem.}
+{8600}{}{Skautská pøíruèka}
+{8601}{}{Kniha o metodách a idejích skautingu. Plná praktickıch informací o ivotì ve volné pøírodì.}
+{8700}{}{Buffout}
+{8701}{}{Velmi úèinné steroidy.  Po dobu pùsobení zvyšují sílu a zrychlují reflexy. Vysoce návykové.}
+{8800}{}{Hodinky}
+{8801}{}{Hodinky drahého vzhledu.  Sice nefungují, ale stále vypadají velmi dobøe.}
+{8900}{}{Motor}
+{8901}{}{Elektrickı motor o vıkonu 40 koòskıch sil.}
+{9000}{}{Batoh}
+{9001}{}{Batoh s nìkolika kapsami.}
+{9100}{}{Doktorskı kuføík}
+{9101}{}{Tato tmavohnìdá brašna obsahuje nástroje a léky, které doktoøi pouívají pøi vıkonu svého povolání.}
+{9200}{}{Škorpióní ocas}
+{9201}{}{Nìkolik èlánkù ocasu radškorpionù.}
+{9300}{}{Pytel}
+{9301}{}{Pytel prùmìrné velikosti. Utkán z brahmíní srsti.}
+{9400}{}{Brokovnice}
+{9401}{}{Dvojhlavòová brokovnice Winchester Ovdovovaè ráe 12.  Krátká hlaveò, mahagonová paba.  Min SÍ: 4.}
+{9500}{}{Brokové náboje}
+{9501}{}{Munice do brokovnice. Toto støelivo je oznaèeno: "broky ráe 12, nevhodné pro dìti do tøí let."}
+{9600}{}{Èervená pøístupová karta}
+{9601}{}{Elektronickı bezpeènostní klíè oznaèenı èervenou barvou.}
+{9700}{}{Modrá pøístupová karta}
+{9701}{}{Elektronickı bezpeènostní klíè oznaèenı modrou barvou.}
+{9800}{}{Haraburdí}
+{9801}{}{Haraburdí. Ode všeho trochu.}
+{9900}{}{Zlatı medailón}
+{9901}{}{Velice cennı zlatı medailón.}
+{10000}{}{Vysílaèka}
+{10001}{}{Vojenskı komunikátor model 2043B. Vırobek Wattz Electronics.  Robustní a spolehlivı. Monost zakódování signálu.  Kompatibilní s interface RS-121.}
+{10100}{}{Zapalovaè}
+{10101}{}{Støíbrnı zapalovaè na propan-butan. Ve velmi dobrém stavu.}
+{10200}{}{Støelecká revue}
+{10201}{}{Odbornı èasopis, úzce zamìøenı na praktické pouívání støelnıch zbraní a obèasné mírnì tendenèní recenze.}
+{10300}{}{Leguán-na-špejli}
+{10301}{}{Mírnì zuhelnatìlé maso se zeleninou na vìtvièce.}
+{10400}{}{Magnetofon}
+{10401}{}{Magnetofon Zahraj-mi-to od Wattz Electronics.  Nahrává i pøehrává standardní 30 minutové Nahraj-to-jednou pásky s vysokou hustotou záznamu.}
+{10500}{}{Klíè}
+{10501}{}{Speciální druh klíèe.}
+{10600}{}{Nuka-Cola}
+{10601}{}{Láhev Nuka-Coly, oblíbeného softdrinku post-nukleárního svìta.  Nápoj je teplı a zvìtralı.}
+{10700}{}{Kosti}
+{10701}{}{Soubor podivnıch kostí.}
+{10800}{}{Kosti}
+{10801}{}{Sbírka podivnıch kostí.}
+{10900}{}{Rad-X}
+{10901}{}{Anti-radiaèní chemikálie na bázi jódu, zvyšující odolnost bunìèného jádra vùèi tvrdému záøení. Nutno aplikovat pøed vstupem do ozáøeného území. Bez známıch vedlejších efektù.}
+{11000}{}{Psycho}
+{11001}{}{Prostøedek s unikátním aplikaèním systémem obsahující neznámé chemikálie, pravdìpodobnì vojenského pùvodu. Všeobecnì se má za to, e jeho pouití zvyšuje bojové schopnosti vojákù.}
+{11100}{}{.44 magnum FMJ}
+{11101}{}{Zásobník munice ráe .44 magnum, celoplášová støela.}
+{11200}{}{Urna}
+{11201}{}{Nádherná zlatá urna s nápisem "Harriet". Obsahuje popel.}
+{11300}{}{Róba}
+{11301}{}{Roucho Dìtí Katedrály.}
+{11400}{}{Tanglerova ruka}
+{11401}{}{Robotickı manipulátor ve tvaru a podobì ruky.  Poškozen z dùvodu neodborného pokusu o rozebrání.}
+{11500}{}{Superkladivo}
+{11501}{}{Mohutnı perlík vyrobenı v dílnách Bratrstva Oceli, s pouitím nejmodernìjší dostupné zbrojní technologie.  Obsahuje setrvaèník kinetické energie, kterı umocòuje úder.  Min SÍ: 5.}
+{11600}{}{Rozparovaè}
+{11601}{}{Vibraèní nù znaèky Trhaè(tm).  Napájen malımi energetickımi èlánky. Jeho vibrující øetìzová èepel z nejkvalitnìjší oceli v nìkolika sekundách roztrhá a rozpárá svùj cíl.  Min SÍ: 4.}
+{11700}{}{Kvìtina}
+{11701}{}{Nádherná bílá kvìtina. Pravdìpodobnì nìjaká mutace lilie vonné.}
+{11800}{}{Laserová puška}
+{11801}{}{Laserová puška model Wattz 2000.  Mikro-fúzní èlánky poskytují laseru silnìjší vıkon a prodlouená hlaveò umoòuje delší dostøel.  Min SÍ: 6.}
+{11900}{}{Náhrdelník}
+{11901}{}{Draze vypadající náhrdelník vyrobenı ze støíbra a zlata se vsazenımi brilianty.}
+{12000}{}{Alien Blaster}
+{12001}{}{Podivná zbraò zjevnì mimozemského pùvodu. Zdá se ale, e mùe vyuívat malé energetické èlánky.  Min SÍ: 2.}
+{12100}{}{9mm náboje}
+{12101}{}{Sada pradávnıch nábojù ráe 9mm Para.  Chránìno tlustou vrstvou vazelíny proti vlivu okolního prostøedí. Standardní náboje.}
+{12200}{}{9mm Mauser}
+{12201}{}{Pistole Mauser M/96, ráe 9x19mm Parabellum. Ve vıborném stavu.  Neobyèejnì pøesná.  Min SÍ: 3.}
+{12300}{}{Psychickı anulátor}
+{12301}{}{Podivné zaøízení vytvoøené záhadnou technologií.}
+{12400}{}{Pivo}
+{12401}{}{Nìjakı druh podomácku vaøeného piva.}
+{12500}{}{Pálenka}
+{12501}{}{Starodávnı likér z pøedváleèné éry.}
+{12600}{}{Láhev na vodu}
+{12601}{}{Nádoba na pøechovávání vody i jinıch tekutin.}
+{12700}{}{Provaz}
+{12701}{}{Pevné a silné lano. Dlouhé asi 15 metrù.}
+{12800}{}{Botník}
+{12801}{}{Malá skøíòka.  Pøechovává vìci, stojí v nohách postele a dá se zamknout.}
+{12900}{}{Botník}
+{12901}{}{Malá skøíòka.  Pøechovává vìci, stojí v nohách postele a dá se zamknout.}
+{13000}{}{Botník}
+{13001}{}{Malá skøíòka.  Pøechovává vìci, stojí v nohách postele a dá se zamknout.}
+{13100}{}{Botník}
+{13101}{}{Malá skøíòka.  Pøechovává vìci, stojí v nohách postele a dá se zamknout.}
+{13200}{}{Šatní skøíòka}
+{13201}{}{Skøíò na vìci.}
+{13300}{}{Šatní skøíòka}
+{13301}{}{Skøíò na vìci.}
+{13400}{}{Šatní skøíòka}
+{13401}{}{Skøíò na vìci.}
+{13500}{}{Šatní skøíòka}
+{13501}{}{Skøíò na vìci.}
+{13600}{}{Šatní skøíòka}
+{13601}{}{Skøíò na vìci.}
+{13700}{}{Šatní skøíòka}
+{13701}{}{Skøíò na vìci.}
+{13800}{}{Šatní skøíòka}
+{13801}{}{Skøíò na vìci.}
+{13900}{}{Šatní skøíòka}
+{13901}{}{Skøíò na vìci.}
+{14000}{}{Pøístupová karta}
+{14001}{}{Bezpeènostní pøístupová karta.  Stále v provozuschopném stavu.}
+{14100}{}{Odznak Dìtí}
+{14101}{}{Odznak ve tvaru symbolu Dìtí Katedrály.  Na jedné stranì pozoruješ hrboly a zoubkování, které ti skoro pøipomíná klíè.}
+{14200}{}{Odznak Dìtí}
+{14201}{}{Odznak ve tvaru symbolu Dìtí Katedrály.  Na jedné stranì pozoruješ hrboly a zoubkování, které ti skoro pøipomíná klíè.}
+{14300}{}{Sniperská puška}
+{14301}{}{Odstøelovací puška, model DKS-501.  Vıborná projektilová zbraò s excelentním dostøelem.  Pùvodní ráe .308, nicménì takhle byla pøedìlána na bìnìjší kalibr .223.  Min SÍ: 5.}
+{14400}{}{Super Stimpak}
+{14401}{}{Pokroèilı léèebnı prostøedek. Velmi úèinnı.  Vzhledem ke koncentraci pouitıch chemickıch pøípravkù ale pùsobí po nìjaké dobì drobné škody na organismu.}
+{14500}{}{Knihovna}
+{14501}{}{Døevìná knihovna.}
+{14600}{}{Knihovna}
+{14601}{}{Døevìná knihovna.}
+{14700}{}{Knihovna}
+{14701}{}{Døevìná knihovna.}
+{14800}{}{Knihovna}
+{14801}{}{Døevìná knihovna.}
+{14900}{}{Knihovna}
+{14901}{}{Døevìná knihovna.}
+{15000}{}{Knihovna}
+{15001}{}{Døevìná knihovna.}
+{15100}{}{Police}
+{15101}{}{Øada døevìnıch regálù.}
+{15200}{}{Regály}
+{15201}{}{Øada døevìnıch polic.}
+{15300}{}{Police}
+{15301}{}{Øada døevìnıch regálù.}
+{15400}{}{Regály}
+{15401}{}{Øada døevìnıch polic.}
+{15500}{}{Police}
+{15501}{}{Øada døevìnıch regálù.}
+{15600}{}{Regály}
+{15601}{}{Øada døevìnıch polic.}
+{15700}{}{Ponk}
+{15701}{}{Starı, vyslouilı pracovní stùl. Dá se na nìm i dobøe sedìt.}
+{15800}{}{Deska s náøadím}
+{15801}{}{Tato deska obsahuje pestrou kolekci náøadí. Bohuel se ale nic z toho nedá sundat. Nejsou tam naprogramované ádné aktivní objekty.}
+{15900}{}{Molotovùv kokteil}
+{15901}{}{Zápalná láhev domácí vıroby. Min SÍ: 3.}
+{16000}{}{Elektrickı obušek}
+{16001}{}{Elektrickı pastıøskı obušek. Model "Farmáøùv nejlepší pøítel" od Wattz Electronics.  Napájena malımi energetickımi èlánky. Døíve se pouívala se pøedevším pro krocení bıkù, a to údery do citlivıch èástí jejich tìla. Min SÍ: 4.}
+{16100}{}{Vzduchovka Red Ryder}
+{16101}{}{Klasická vzduchovka Red Ryder, kterou si pøeje kadı hošík pod stromeèek.  Min SÍ: 3.}
+{16200}{}{Vzduchovka Red Ryder DeLuxe}
+{16201}{}{Omezená série vzduchovky Red Ryder.  Ruèní provedení.  Opravdová klasika.  Min SÍ: 3.}
+{16300}{}{Broky}
+{16301}{}{Krabice pøedváleènıch brokù.  Ve vıborném stavu.  Nerezová ocel.}
+{16400}{}{Páska o Bratrstvu}
+{16401}{}{Holodisk tıkající se Bratrstva Oceli.}
+{16500}{}{Stánek s leguány}
+{16501}{}{Domov Bobovıch Leguáních kouskù.  Co mùe bıt lepšího ne èerstvì opeèenı leguán?}
+{16600}{}{Stùl}
+{16601}{}{Normální stùl. Drí vìci nad zemí.}
+{16700}{}{Stùl}
+{16701}{}{Normální stùl. Drí vìci nad zemí.}
+{16800}{}{Vìci}
+{16801}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{16900}{}{Vìci}
+{16901}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17000}{}{Vìci}
+{17001}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17100}{}{Vìci}
+{17101}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17200}{}{Vìci}
+{17201}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17300}{}{Vìci}
+{17301}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17400}{}{Vìci}
+{17401}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17500}{}{Vìci}
+{17501}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17600}{}{Vìci}
+{17601}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17700}{}{Vìci}
+{17701}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17800}{}{Vìci}
+{17801}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{17900}{}{Vìci}
+{17901}{}{Tohle jsou rùzné pøedmìty, známé také pod pøezdívkou "vìci".}
+{18000}{}{Bedna}
+{18001}{}{Døevìná bedna plná nejrùznìjších vìcí.}
+{18100}{}{Stùl}
+{18101}{}{Obyèejnı stùl. Kdy jsi vidìl jeden, vidìl jsi je vlastnì všechny.}
+{18200}{}{Stùl}
+{18201}{}{Nièím neobvyklı stùl.}
+{18300}{}{Stùl}
+{18301}{}{Úplnì obyèejnı stùl.}
+{18400}{}{Stùl}
+{18401}{}{Normální stùl.}
+{18500}{}{Stùl}
+{18501}{}{Stùl. To jsi ještì nikdy ádnı nevidìl, e si ho tak prohlííš?}
+{18600}{}{Stùl}
+{18601}{}{Stùl je stùl je stùl. Pro ménì vzdìlané: To byla parafráze na "Rùe je rùe je rùe". Pro ty co ani teï nechápou: "Prostì na to zapomeòte".}
+{18700}{}{Stùl}
+{18701}{}{Vypadá to jako stùl a kupodivu to je stùl.}
+{18800}{}{Skøíòka}
+{18801}{}{Skøíòka.}
+{18900}{}{Skøíòka}
+{18901}{}{Skøíòka.}
+{19000}{}{FEV disk}
+{19001}{}{Holopáska obsahující biogenetické informace. Mùeš ho pouít ke vloení informací do tvého PipBoye.}
+{19100}{}{Bezpeènostní disk}
+{19101}{}{Holopáska nazvaná "Bezpeènostní záznamy".  Data na ní by se urèitì dala pøenést do tvého PipBoye.}
+{19200}{}{Experiment Alpha disk}
+{19201}{}{Na holopásce je napsáno: "Záznam experimentu Alpha"}
+{19300}{}{Experiment Delta disk}
+{19301}{}{Na holopásce je napsáno: "Záznam experimentu Delta"}
+{19400}{}{Disk s experimenty Vree}
+{19401}{}{Tato páska byla doplnìna o nejnovìjší lékaøské záznamy od Vree z Bratrstva Oceli. Mùe bıt pouita k pøenesení informací do tvého PIPBoye.}
+{19500}{}{Sbírka zákonù Bratrstva}
+{19501}{}{Holopáska s hrubì vyrytım symbolem Bratrstva Oceli. Pouij ji k pøenesení informací do tvého PipBoye.}
+{19600}{}{Vysílání mutantù}
+{19601}{}{Tato páska vypadá, jako by byla pouita k nahrání rádiové komunikace. Pouij pásku k pøenesení informací do tvého PipBoye.}
+{19700}{}{Schránka}
+{19800}{}{Schránka}
+{19900}{}{Schránka}
+{20000}{}{Schránka}
+{20100}{}{Schránka}
+{20200}{}{Schránka}
+{20300}{}{Schránka}
+{20400}{}{Schránka}
+{20500}{}{Svìtlice}
+{20501}{}{Svìtlice.  Papír je trochu omšelı, ale jinak je v dobrém stavu. Je zapálená.}
+{20600}{}{Dynamit}
+{20601}{}{Vysoce vıbušnı mix nitroglycerinu s hlinkou. Vèetnì èasovaèe, kterı...a do prèic! On tiká!}
+{20700}{}{Geigerùv poèítaè}
+{20701}{}{Geiger-Mullerùv poèítaè radioaktivních èástic.  Model Wattz Electronics C-Radz. Je zapnutı.}
+{20800}{}{Detektor pohybu}
+{20801}{}{Detektor pohybu model Wattz Electronics C-U.  Speciálnì upravenım radarem zaznamená v okruhu nìkolika set metrù jakıkoli pohyb biologického materiálu.  Je zapnutı.}
+{20900}{}{Plastická vıbušnina}
+{20901}{}{Kostka Cordexu, velmi nièivé a pøitom stabilní plastické trhaviny.  Vèetnì iniciaèního zápalníku s èasovaèem, kterı právì teï tichounce tiká.}
+{21000}{}{Mizík}
+{21001}{}{Osobní zneviditelòovací zaøízení RobCo Mizík 3001.  Generuje modulované pole, které pøenáší odraené svìtlo z jedné strany objektu na druhou.  Je zapnutı.}
+{21100}{}{Mrtvola}
+{21101}{}{Napùl rozloené tìlo.  Podle mnoství zlomenıch kostí usuzuješ, e zemøel po pádu z velké vıšky.  Na sobì má zetlelé zbytky modrého pyama.}
+{21200}{}{Tandi}
+{21201}{}{Smlouváš o propuštìní Tandi.}
+{21300}{}{Zbytky Gizma}
+{21301}{}{Gizmo, bıvalı zloèineckı bos Junktownu, je mrtev.  A taky pìknì zapáchá.}
+{21400}{}{Stùl}
+{21401}{}{Stùl. Po bliším prùzkumu ses rozhodnul, e je to opravdu stùl.}
+{21500}{}{Historie Bratrstva}
+{21501}{}{Holopáska obsahující informace vztahující se k Bratrstvu Oceli. Dá se pouít k vloení informací do tvého PIPBoye 2000.}
+{21600}{}{Maxsonova historie}
+{21700}{}{Maxsonùv deník}
+{21800}{}{Malé léèení}
+{21801}{}{Zvol tuto monost, pokud chceš vyléèit lehké poranìní.}
+{21900}{}{Støední léèení}
+{21901}{}{Zvol tuto monost, pokud chceš vyléèit støední poranìní.}
+{22000}{}{Velké léèení}
+{22001}{}{Zvol tuto monost, pokud chceš dostatek péèe na tìké poranìní.}
+{22100}{}{Bezpeènostní karta}
+{22101}{}{Klíèová karta s bezpeènostním provìøením zakódovanım velice jednoduchou elektronikou.}
+{22200}{}{Pøepínaè pole}
+{22201}{}{Elektronické vysílací zaøízení s velmi jednoduchım (a velkım) pøepínacím tlaèítkem. Zdá se, e bylo nedávno pøizpùsobeno pro velmi velké ruce.}
+{22300}{}{lutá pøístupová karta}
+{22301}{}{Elektronickı bezpeènostní klíè oznaèenı lutou barvou.}
+{22400}{}{Malá soška}
+{22401}{}{Vypadá to, e by to mohl bıt vyøezávanı Pipboy, ale nejsi si jistı.}
+{22500}{}{Èasopis "Koèièí Packa"}
+{22501}{}{Magazín pro pány.}
+{22600}{}{Krabice nudlí}
+{22601}{}{Na krabici je napsáno "Instantní špagety". Bùhví k èemu tohle døív slouilo.}
+{22700}{}{Malá zaprášená krabice s neznámım obsahem}
+{22701}{}{Televizní svaèinka.  Ale nevypadá na to, e by se dala jíst. A kdo ví, jestli to vùbec nìkdy  k jídlu bylo.}
+{22800}{}{Technickı manuál}
+{22801}{}{Návod na údrbu a opravy Energo zbroje T-51b.}
+{22900}{}{Malá souèástka}
+{22901}{}{Systolickı motivátor. Drobnohledná a velmi neobvyklá souèástka.}
+{23000}{}{Záznamy Vaultu}
+{23001}{}{Souhrn událostní a dùleitıch záznamù z poèítaèového systému Vaultu.  Pravdìpodobnì poškozeno.}
+{23100}{}{Bezpeènostní kód vojenské základny}
+{23101}{}{ }
+{23200}{}{Tvrzená Energo zbroj}
+{23201}{}{Energo zbroj model T-51b.  Speciální chemickı proces ještì více vylepšil obranné schopnosti tohoto hi-tech krunıøe.}
+{23300}{}{Plazmová puška Turbo}
+{23301}{}{Upravená plasmová puška Winchester P94.  Aby se urychlil proces vytváøení plasmové støely, je komora s plazmou pøedehøívána.  Min SÍ: 6.}
+{23400}{}{Boxer s ostny}
+{23401}{}{Vylepšená verze klasického mosazného boxeru.  Je úèinnìjší, protoe se bìhem boje beze zbranì zasekává soupeøùm do masa a zpùsobuje tak rozsáhlá trná poranìní.  Min SÍ: 1.}
+{23500}{}{Energo pìst}
+{23501}{}{Aktivní obrnìná rukavice typu "Ranaø". Vırobek firmy BeatCo. Mnohımi byla shledána jako vùbec nejúèinnìjší zbraò v boji zblízka. Napájena malımi energetickımi èlánky.  Min SÍ: 1.}
+{23600}{}{Bojovı nù}
+{23601}{}{Vysoce kvalitní nù znaèky Stallona.  Vırobek firmy SharpWit, Inc.  Ostrost je garantována po desetiletí pouívání!  Min SÍ: 2.}
+{23700}{}{Chemické urnály}
+{23701}{}{Náhodnı vıbìr literatury zabıvající se chemií.  Obzvláštì zajímavé jsou èlánky o molekulární chemii.}
+{23800}{}{Vysílání Regulátorù}
+{23801}{}{Holopáska s hlasovım záznamem.}
+{23900}{}{Zbroj Bratrstva}
+{23901}{}{Vylepšenı model kevlarového brnìní. Oproti bìnì dostupné verzi ji Bratrstvo Oceli v mnohém vylepšilo .}
+{24000}{}{Tesla zbroj}
+{24001}{}{Tato záøící zbroj poskytuje dokonalou ochranu proti energetickım útokùm. Tøí speciální Tesla cívky pohltí velké procento smìrovanıch energetickıch vıbojù.}
+{24100}{}{.223 pistole}
+{24101}{}{Upravená puška ráe .223, s upilovanou hlavní. Tohle je jedineèná støelná zbraò vyrobená s láskou a zruèností.  Min SÍ: 5.}
+{24200}{}{Opakovací brokovnice}
+{24201}{}{12-ranná bojová brokovnice Winchester, model "Masovı vrah". Ve vıborném stavu. Je vybavena pøídavnım tìsnìním "Pouštní špunt", které vıznamnì prodluuje ivotnost zbranì.  Min SÍ: 5.}
+{24300}{}{Nádoba}
+{24301}{}{Ruènì vyrobená nádoba z páleného jílu.}
+{24400}{}{Nádoba}
+{24401}{}{Ruènì vykrouená nádoba z páleného jílu.  Neglazurovaná.}
+{24500}{}{Truhla}
+{24501}{}{Døevìná truhla.}
+{24600}{}{Police}
+{24601}{}{Døevìná police s rùznımi vìcmi.}
+{24700}{}{Police}
+{24701}{}{Døevìná police s nejrùznìjšími vìcmi.}
+{24800}{}{Nádoba}
+{24801}{}{Ruènì vyrobená nádoba z páleného jílu.}
+{24900}{}{Nádoba}
+{24901}{}{Ruènì vykrouená nádoba z páleného jílu.  Bez glazury.}
+{25000}{}{Kosti}
+{25001}{}{Hromádka lidskıch kostí.}
+{25100}{}{Anniny kosti}
+{25101}{}{Tyto kosti vypadají, jakoby touily spoèinout v klidu a pokoji na posvìceném místì.}
+{25200}{}{Annin zlatı medailón}
+{25201}{}{Nádhernı medailónek z jemnì vytepaného zlata. Uvnitø je podobizna pøekrásné mladé dívky se smutnıma oèima.}
+{25300}{}{Kontrolér pøívodu energie}
+{25301}{}{Tento èip kontroluje tok energie do elektromotoru auta.  Je to jemná souèástka citlivá na prudké zmìny akcelerace, a to je i dùvod, proè ho vìtšina øidièù rychle spálila. Velmi cenná souèástka--pokud máš ovšem auto, do kterého ji mùeš zamontovat.}
+{25400}{}{Regulátor pøívodu energie}
+{25401}{}{Tento èip v závislosti na otáèkách a kroutícím momentu motoru optimalizuje pøívod energie. Tím umoòuje více ne zdvojnásobit akèní rádius automobilu bez nutnosti dobíjení. Nìkteøí øidièi si ho kdysi instalovali, ale vìtšina se o spotøebu svého auta nestarala. Vdy energie je levná a je jí dost, tak èeho se bát.}
+{25500}{}{Denní propustka}
+{25501}{}{Tento kousek pomaèkaného papíru ti umoòuje vstup do všech zón Vault City s vıjimkou samotného Vaultu.  Platí ovšem pouze po dobu od vıchodu do západu slunce.}
+{25600}{}{Falzifikát}
+{25601}{}{Listiny pøedstavující tvé zfalšované osvìdèení o obèanství. Vypadají ale dost pravì a vìøíš, e by mohly projít i hlubší provìrkou.}
+{25700}{}{Corneliovy zlaté hodinky}
+{25701}{}{Velice vzácné a starobylé kapesní hodinky. Vzpomínka na doby, které se u nikdy nevrátí.}
+{25800}{}{Hydroelektrickı regulátor}
+{25801}{}{Hydroelektrickı regulátor magnetosféry.}
+{25900}{}{Jet}
+{25901}{}{Velmi úèinnı metamfetamin, kterı pøímo stimuluje centrální nervovı systém. Poèáteèní euforie odezní po nìkolika minutách, ale bìhem této doby je konzument drogy naplnìn pøívalem síly a energie.}
+{26000}{}{Jet sérum}
+{26001}{}{Toto antisérum dokáe vyléèit závislost na Jetu.}
+{26100}{}{Jonnyho vzduchovka}
+{26101}{}{Vzduchovka znaèky Red Ryder.  Na pabì je vyškrábané jméno  'Jonny'. Min SÍ: 3.}
+{26200}{}{Gumové holínky}
+{26201}{}{Staré poctivé gumáky. Vypadají poøád ještì dost zachovale na to, aby vydrely nìjaké to svinstvo. Aspoò tedy po urèitou dobu.}
+{26300}{}{Dopis od Svìtloplachù}
+{26301}{}{Zpráva od vùdce Svìtloplachıch pro lidi z Modocu.}
+{26400}{}{Smithova bezva vìcièka}
+{26401}{}{LONG DESCRIPTION HERE.}
+{26500}{}{Bojová koená vesta}
+{26501}{}{Dùkladnì podšitá vesta z jemnì vydìlané kùe. Neobvyklá tím, e má dvì vrstvy. A se v ní ukáeš kdekoliv, staneš se jistì støedem pozornosti a budeš urèovat módní trend pro pøíští podzimní sezónu.}
+{26600}{}{Vicovo rádio}
+{26601}{}{Aèkoliv je tohle rádio nefunkèní, jinak vypadá docela zachovale. Moná by se z nìj daly nìkteré souèástky pouít i do jinıch pøijímaèù.}
+{26700}{}{Vicova láhev na vodu}
+{26701}{}{Tato památka na Vault 13 byla pravdìpodobnì pouívána k uchovávání nìjaké posvátné relikvie. Svaté èíslo 13 na pøední stranì je metaforou spojení tragické minulosti tvıch pøedkù s nadìjemi budoucnosti.}
+{26800}{}{H&K CAWS}
+{26801}{}{CAWS je zkratka pro Close Assault Weapons System (zbraòovı systém pro boj na krátkou vzdálenost). Tato brokovnice je skvìlım nástrojem. Její délka z ní èiní dobøe ovladatelnou zbraò a pøitom zaruèuje dostateènou kapacitu zásobníku pro vysokorychlostní brokovou munici. Min SÍ: 6.}
+{26900}{}{Èásti robota}
+{26901}{}{Souèástky ze znièeného robota.}
+{27000}{}{Robo raketomet}
+{27001}{}{Tento raketomet je souèástí svého zbraòového systému speciálního robota.}
+{27100}{}{Kvìtina Broc}
+{27101}{}{Tato nádherná kvìtina je základem pro vırobu léèivého prášku.}
+{27200}{}{Koøen Xander}
+{27201}{}{Právì tento koøen dává léèivému prášku jeho jedineèné vlastnosti. Je však velmi vzácnı a nalézt ho ve volné pøírodì se povede jen zøídka.}
+{27300}{}{Léèivı prášek}
+{27301}{}{Velice mocná léèivá magie - zpùsobuje ale bohuel malátnost a ospalost. Nevhodné pro øidièe a tìhotné nebo kojící eny.}
+{27400}{}{Robo raketa}
+{27401}{}{Pouitelné pouze pro speciálnì vybaveného robota.}
+{27500}{}{Trofej Poznání}
+{27501}{}{Tìká zlatá trofej s vyrytım nápisem: "Davovi od DC za to, e je právì takovı, jakı je."}
+{27600}{}{Kùe z geckona}
+{27601}{}{Suchá a ztvrdlá nevydìlaná kùe z geckona.}
+{27700}{}{Kùe ze zlatého Geckona}
+{27701}{}{Suchá a ztvrdlá nevydìlaná kùe ze zlatého geckona.}
+{27800}{}{Pazourek}
+{27801}{}{Kámen pouívanı k nabroušení kopí.}
+{27900}{}{Neurální interface}
+{27901}{}{Sada elektrod zabudovaná do sbìrné jednotky a pøipojená ke standardnímu poèítaèovému rozhraní.}
+{28000}{}{Naostøené kopí}
+{28001}{}{Velmi ostrá ruèní zbraò. Násada je døevìná a hrot z vybroušené kalené oceli. Min SÍ: 4.}
+{28100}{}{Dixonovo oko}
+{28101}{}{Malá nádobka z prùhledného plastu obsahující lidské oko plovoucí v nìjakém èirém roztoku. Na nálepce je napsáno: Plukovník Dixon.}
+{28200}{}{Cliftonovo oko}
+{28201}{}{Malá nádobka z prùhledného plastu obsahující lidské oko plovoucí v nìjakém èirém roztoku. Na nálepce stojí: Generál Clifton.}
+{28300}{}{Tomík}
+{28301}{}{Samopal Thompson M1928 alias "Tomík" je zlovìstnì vyhlíející zbraò. Kdykoliv ho dríš v ruce, cítíš najednou nutkání nasadit si klobouk s mìkkou krempou a své záprstní klouby ochladit dotekem vìrného boxera. V boji je "Tomík" dobøe krmen z 50ranného bubínkového zásobníku. Min SÍ: 6.}
+{28400}{}{Sušené maso}
+{28401}{}{Tyhle vysušené a kouøem vonící prouky zvíøecího masa zùstávají poivatelné a vıivné po léta a léta a léta....}
+{28500}{}{Klepeta}
+{28501}{}{Pár dutıch radškorpióních klepet svázanıch dohromady koenım øemenem se zlomenou pøezkou.}
+{28600}{}{Døevo na podpal}
+{28601}{}{Nìkolik svázanıch polen vèetnì tøísek...jen pod tím vším zapálit.}
+{28700}{}{Lovecká puška s teleskopem}
+{28701}{}{Není nic krásnìjšího, ne zblízka sledovat pøekvapenı vıraz vašeho cíle v okamiku, kdy ho zasáhla kulka. Optickı zamìøovaè s 20násobnım zvìtšením upevnìnı na vaší lovecké pušce vám to umoní. Pøesnost od prvního do posledního vıstøelu je zaruèena. Bez ohledu na typ hry, kterou právì hrajete. Min SÍ: 5.}
+{28800}{}{Energetické èlánky do auta}
+{28801}{}{Èlánky umoòující dobití automobilu.}
+{28900}{}{Lopata}
+{28901}{}{Nástroj vhodnı na zahrabávání mrtvol, vykopávání pokladù a jiné zahrádkáøské práce.}
+{29000}{}{Robo elektroobušek 1}
+{29001}{}{Zbraò robotù typu "Oèko". Zpùsobuje elektrické šoky.}
+{29100}{}{Robo elektroobušek 2}
+{29101}{}{Zbraò robotù typu "Oèko". Zpùsobuje elektrické šoky.}
+{29200}{}{Boxerské rukavice}
+{29201}{}{Pár starıch boxerskıch rukavic slabì páchnoucích potem. Urèitì u zaily hodnì zápasù:  zùstala na nich spousta krvavıch skvrn.}
+{29300}{}{Nadívané boxerské rukavice}
+{29301}{}{Ve vycpávce tìchto boxerskıch rukavicích nìkdo nešastnou náhodou "zapomnìl" pár ocelovıch destièek. Technicky vzato by to mohlo bıt povaováno za podvod, ale ty dáváš pøednost pozitivnímu myšlení. Dotyènı boxer si chtìl urèitì jen ochránit záprstní klouby pøed pohmodìním.}
+{29400}{}{Vault 13 Holodisk}
+{29401}{}{Holodisk s pøedpokládanou lokací Vaultu 13.}
+{29500}{}{Sırové oplatky}
+{29501}{}{Krabice oplatek se sırovou pøíchutí. Vypadají velice chutnì. Hmm...na obalu se dokonce dá ještì rozluštit jméno vırobce. Ale nesmíme ho øíct, byla by to skrytá reklama.}
+{29600}{}{HK P90c}
+{29601}{}{Samopal Heckler & Koch P90c byl do vızbroje zaøazen a bìhem války. Robustní a kompaktní design zbranì ji èiní velmi lehce ovladatelnou. HK P90c byl vdy cenìn pøedevším pro svou trvanlivost, spolehlivost a vysokou palebnou sílu. Min SÍ: 4.}
+{29700}{}{Kovová tyè}
+{29701}{}{Dlouhá ocelová tyè. Èekal jsi snad nìco jiného?}
+{29800}{}{Klíè od Lovecké ètvrti}
+{29801}{}{Obyèejnı klíè.}
+{29900}{}{Trubková puška}
+{29901}{}{Ruènì vyrobená jednoranná puška s primitivním závìrem. Min SÍ: 5.}
+{30000}{}{Zipka}
+{30001}{}{Ruènì vyrobená jednoranná pistole s primitivním závìrem. Min SÍ: 4.}
+{30100}{}{Report}
+{30101}{}{Plastikové desky s teplotními diagramy jaderného reaktoru.}
+{30200}{}{Gecko Holodisk}
+{30201}{}{Na štítku tohoto holodisku stojí: "Ekonomická data kolonie Gecko." Je obtíné v krátkosti interpretovat všechny ty grafy, tabulky a statistické vzorce, ale vìtšina informací potvrzuje vıhodnost vzájemné spolupráce Vault City a Gecko.}
+{30300}{}{Reaktor Holodisk}
+{30301}{}{Na štítku tohoto holodisku stojí: "Reaktor Gecko--vıkonnostní data." Holodisk obsahuje øadu èísel, která ti ale bohuel nic neøíkají. Urèitì je tu ale spousta informací, které musí bıt pro nìkoho dùleité.}
+{30400}{}{Balíèek karet "Tragic"}
+{30401}{}{Sada karet pro nìjakı druh spoleèenské hry. Zdá se, e tohle mùe bıt pìknì drahı koníèek, pokud to èlovìka chytne.}
+{30500}{}{lutá pøístupová karta--reaktor}
+{30501}{}{Elektronickı bezpeènostní klíè oznaèenı lutou barvou.}
+{30600}{}{Èervená pøístupová karta--reaktor}
+{30601}{}{Elektronickı bezpeènostní klíè oznaèenı èervenou barvou.}
+{30700}{}{Plazma-transformer}
+{30701}{}{Tøícestnı Plazma-transformer.}
+{30800}{}{Super náøadí}
+{30801}{}{Pøekrásnì poniklovaná souprava profesionálního náøadí.}
+{30900}{}{Talisman}
+{30901}{}{Talisman, kterı je poznávacím znamením stoupencù "Obrody".}
+{31000}{}{Gamma pivo}
+{31001}{}{Láhev piva znaèky "Lok". Kdy ji vypiješ, nebudeš si muset v noci, a pùjdeš na záchod, brát s sebou baterku!}
+{31100}{}{Roentgen Rum}
+{31101}{}{Láhev rumu. Ve tmì si s ní mùeš posvítit!}
+{31200}{}{ádanka}
+{31201}{}{Formuláø ádanky na souèástku.}
+{31300}{}{Revolver Magnum .44}
+{31301}{}{Kdy tak dríš v ruce nejmocnìjší støelnou zbraò starého svìta, která by mohla jedinou ranou rozcáknout tvùj mozek po okolí a tak ve vteøinì ukonèit tvé trmácení, nutí tì to poloit si jednu otázku. Jsem na tomto svìtì opravdu šastnı? Min SÍ: 5.}
+{31400}{}{Kondom (Modré balení)}
+{31401}{}{Kondom znaèky Jimmy Hats. Spolehlivı vırobek z nefalšovaného latexu. Je opatøen nástavcem, kterı zpùsobuje intenzivnìjší drádìní klitorisu.}
+{31500}{}{Kondom (Zelené balení)}
+{31501}{}{Kondom znaèky Jimmy Hats. Spolehlivı vırobek z nefalšovaného latexu. Obsahuje fosforeskující zeleò èíslo #2 a pro úèinnìjší ochranu je napuštìn spermicidním roztokem.}
+{31600}{}{Kondom (Èervené balení)}
+{31601}{}{Kondom znaèky Jimmy Hats. Spolehlivı vırobek z nefalšovaného latexu. Obsahuje fosforeskující èerveò èíslo #5 a je napuštìn chutnım skoøicovım aroma... ehm, teda aspoò jak jsi slyšel.}
+{31700}{}{Pudøenka}
+{31701}{}{Pøíruèní kosmetickı kuføík znaèky Mary May.}
+{31800}{}{Prázdná støíkaèka}
+{31801}{}{Prázdná injekèní støíkaèka.}
+{31900}{}{Vyskakovací nù}
+{31901}{}{Malı nù s ostøím vymršovanım pomocí pruiny. Kdy se zmáèkne tlaèítko na boku, vystøelí èepel s optimistickım "svissst" z rukojeti ven. Min SÍ: 1.}
+{32000}{}{Naostøená tyè}
+{32001}{}{Døevìná tyè na jednom konci naostøená a vypálená v ohni. Min SÍ: 4.}
+{32100}{}{Kybernetickı mozek}
+{32101}{}{Lidskı mozek rozšíøenı o elektronickı interface a s voperovanımi èipy.}
+{32200}{}{Lidskı mozek}
+{32201}{}{Typickı lidskı mozek. Stejnı jaké lze obvykle najít v lidskıch lebkách. Blééh.}
+{32300}{}{Opièí mozek}
+{32301}{}{Mozek nìjakého druhu velké opice. Pravdìpodobnì šimpanzí.}
+{32400}{}{Poškozenı mozek}
+{32401}{}{Vyøazenı lidskı mozek urèenı pro likvidaci. Tkáò nemá správnou barvou a levá hemisféra je podivnì propadlá.}
+{32500}{}{Kostky}
+{32501}{}{Dvojice obyèejnıch hracích kostek. Dala by se z nich udìlat hezká ozdoba pøedního skla do tvého auta.}
+{32600}{}{Falešné kostky}
+{32601}{}{Pár hracích kostek naditıch olovem a se zbroušenımi hranami. Bıt tebou, tak se s nimi v ádném kasinu nepøedvádím!}
+{32700}{}{Velikonoèní vejce}
+{32701}{}{Natvrdo uvaøené vejce pomalované pestrımi barvami. A protoe jsi tak skvìlı hledaè, vyhráváš hlavní cenu. Pokud jsi osoba enského pohlaví, máš právo strávit noc s hlavním koordinátorem pøekladu. Pošli mu e-mail na adresu somnambulus@hotmail.com. Pokud jsi kluk, zapomeò na to, e jsem nìco øekl a pokraèuj ve høe.}
+{32800}{}{Magická koule}
+{32801}{}{Tato èerná koule je nìjakı druh tajemného vìšteckého pøístroje... zdá se, e to malé okénko na ní je schopno prorokovat budoucnost! Pøedváleèné lidstvo muselo bıt geniální, kdy dokázalo stvoøit takovouhle vìc!}
+{32900}{}{Mutagenní sérum}
+{32901}{}{Podivná smìs organickıch chemikálií, která snad dokáe zvrátit mutagenní procesy lidského organismu.}
+{33000}{}{Zøícenı vertibird}
+{33001}{}{Vrak vertibirdu. Zdá se, e tu leí u celé mìsíce.}
+{33100}{}{"Koèièí Packa" série #5}
+{33101}{}{No to je opravdu vzácnı nález. Dnes u je tìké objevit páté èíslo tohoto magazínu. Tato série obsahuje reportá o všech energetickıch zbraních, a to vèetnì obrázkù.}
+{33200}{}{M3A1 "Vymazávaè" SMG}
+{33201}{}{Poté co armáda pøezbrojila na novìjší druhy zbraní, naplnil tento samopal arzenály Národní Gardy. Nicménì "Vymazávaè" byla natolik jednoduchá, spolehlivá a levná zbraò, e se jich nìkolik dosud pouívá. Min SÍ: 4.}
+{33300}{}{Tabletky}
+{33301}{}{Tyto pilulky uívají lidé, kteøí mají problémy se srdcem.}
+{33400}{}{Jed}
+{33401}{}{Injekèní støíkaèka naplnìná prudkım jedem.}
+{33500}{}{Mooreùv kuføík}
+{33501}{}{Thomas Moore tì poádal, abys tento kuføík z brahmíní kùe doruèil panu Bishopovi do New Reno. Je uzamèen bezpeènostním zámkem a nezdá se, e by šel otevøít.}
+{33600}{}{Mooreùv kuføík}
+{33601}{}{Thomas Moore tì poádal, abys tento kuføík z brahmíní kùe doruèil panu Bishopovi do New Reno. Je uzamèen bezpeènostním zámkem a nezdá se, e by šel otevøít.}
+{33700}{}{Holodisk od Lynette}
+{33701}{}{Holodisk, kterı ti dala Lynette.}
+{33800}{}{Holodisk od Westina}
+{33801}{}{Holodisk, kterı ti dal Westin.}
+{33900}{}{Holodisk o špiónovi v NCR}
+{33901}{}{Holodisk obsahující hlášení o termínech odchodu karavan z NCR a spoustu dalších bezpeènostních informací. Je adresován na Dariona a podepsán nìkım, kdo se oznaèil jako "F". Není divu, e se všemi tìmito informacemi byli bandité tak úspìšní.}
+{34000}{}{Doktorova lejstra}
+{34001}{}{Svazek velice detailních plánù Kybernetické Psí Robojednotky. S tìmito plány plus správnım vybavením by si èlovìk mohl sestrojit svého vlastního robo-psa.}
+{34100}{}{Presidentská propustka}
+{34101}{}{Nositel tohoto dokumentu je autorizován prezidentem New California Republic jako bezpeènostnì provìøenı v tøídì A-1. Propustka je opatøena vlastnoruèním podpisem presidenta Tandi.}
+{34200}{}{Odznak Rangera}
+{34201}{}{Odznak potvrzující, e jsi oficiálním èlenem organizace New California Rangers. Podívej -- má to hvìzdu, kruh a vùbec všechno, co má správnı odznáèek mít!}
+{34300}{}{Mapa Rangerù}
+{34301}{}{Obyèejná mapa okolní krajiny -- pro tebe nijak zvláš uiteèná -- ale jsou zde zakresleny pozice a kódové oznaèení základen Rangerù na severu zemì.}
+{34400}{}{Hrob}
+{34500}{}{Hrob}
+{34600}{}{Hrob}
+{34700}{}{Hrob}
+{34800}{}{Zdokonalená Energo zbroj}
+{34801}{}{Pláš tohoto aktivního napájeného brnìní se skládá z lehkıch kovovıch slitin, na klíèovıch místech navíc vyztuenıch keramickımi vlokami. Navíc je brnìní vybaveno vylepšenım modelem pomocnıch pohybovıch servomotorù.}
+{34900}{}{Zdokonalená Energo zbroj MKII}
+{34901}{}{Experimentální brnìní. Namísto obvyklé kombinace kovovıch a keramickıch èástí je kompletnì vyrobeno z keramickıch kompozitù. Zdá se bıt ještì odolnìjší ne standardní verze zdokonaleného Energo brnìní.}
+{35000}{}{Bozar}
+{35001}{}{Tato zbraò je vrcholovım vırobkem své vıvojové øady a snem kadého snipera. Je nutné ji udrovat v dokonalé èistotì, jinak je náchylná k poruchám. Její pøesnost a brutální úèinnost je ovšem dostateènım dùvodem  pro peèlivou údrbu. Neumoòuje støelbu jednotlivımi ranami. Min SÍ: 6.}
+{35100}{}{FN FAL}
+{35101}{}{Tato automatická puška je jednou nejpouívanìjších armádních zbraní v historii moderních válek. Je to univerzální zbraò, vhodná do jakéhokoliv terénu i taktické situace. Min SÍ: 5.}
+{35200}{}{H&K G11}
+{35201}{}{Tato zbraò je povaována za revoluèní vırobek v historii vıvoje lehkıch palnıch zbraní. Pouívá beznábojnicové støelivo, tvoøené blokem slisované spalitelné smìsi se zabudovanım projektilem. Vısledná váha i úspora místa umonila instalaci velkokapacitního zásobníku munice. Min SÍ: 5.}
+{35300}{}{XL70E3}
+{35301}{}{Experimentální zbraò vyvinutá bìhem války. Kompletnì vyrobená z vysokohustotních polymerù odolnıch vùèi tlaku, otìru i vysokım teplotám. Tato zbraò je témìø imunní vùèi povìtrnostním vlivùm. Je lehká, pøesná, s vysokou kadencí støelby a lze ji rozebrat i opravovat bez pouití jakıchkoli nástrojù. Min SÍ: 5.}
+{35400}{}{Pancor Jackhammer}
+{35401}{}{Jackhammer je navzdory svému jménu velmi lehce ovladatelná, plnì automatická brokovnice. Její charakteristickı, robustní vzhled, získanı umístìním zásobníku za spouští z ní dìlá skvìle vyváenou a velmi pøesnou zbraò. Min SÍ: 5.}
+{35500}{}{Lehkı kulomet}
+{35501}{}{Do návrhu této podpùrné pìchotní zbranì se bohuel vloudila konstrukèní chyba, která zpùsobila, e je vlee na zemi jen obtínì ovladatelná. Z tohoto dùvodu byla pøeøazena do vızbroje jednotek Národní Gardy. Nicménì si dokázala získat povìst spolehlivé a vzhledem ke své velikosti i velmi úèinné zbranì. Min SÍ: 6.}
+{35600}{}{Hlasovı modul}
+{35601}{}{Karta do poèítaèe s nìkolika neznámımi souèástkami a pøipojenım mikrofonem. Na štítku stojí: "Ovládací hlasovı modul. Vault-Tec."}
+{35700}{}{Kalibr .45}
+{35701}{}{Munice. Kalibr.45}
+{35800}{}{2mm EC}
+{35801}{}{munice.}
+{35900}{}{4.7mm beznábojnicová}
+{35901}{}{Munice. Kalibr: 4.7mm, beznábojnicová.}
+{36000}{}{9mm}
+{36001}{}{Munice. Kalibr: 9mm.}
+{36100}{}{HN jehlová munice}
+{36101}{}{Munice. Tento zásobník obsahuje jehlièkové náboje pro HN jehlovou pistoli. Kadı projektil tvoøí miniaturní injekèní støíkaèka zkonstruovaná tak, aby pøi nárazu vstøíkla do cíle celı svùj obsah.}
+{36200}{}{HN AP jehlová munice}
+{36201}{}{Munice. Tento zásobník obsahuje prùrazné náboje pro HN jehlovou pistoli. Hroty jehel jsou vyrobeny z neznámé kovové slitiny a jsou neuvìøitelnì ostré.}
+{36300}{}{7.62mm}
+{36301}{}{Munice. Kalibr: 7.62mm.}
+{36400}{}{Motivátor}
+{36401}{}{Hlavní øídící mechanismus robotickıch jednotek.}
+{36500}{}{Trn}
+{36501}{}{Semeno ve tvaru trnu se zpìtnımi háèky. Tyto trny vystøelují masoravé rostliny po své potenciální potravì nebo nositelích semen.}
+{36600}{}{GECK}
+{36601}{}{Garden of Eden Creation Kit neboli "Souprava k vytvoøení rajské zahrady". Tato jednotka bıvala èástí standardního vybavení Vaultù firmy Vault-Tec. GECK je projektován jako vıchozí zdroj pro znovuvybudování civilizace po jaderné válce. Staèí pøidat vodu a zamíchat.}
+{36700}{}{Bedna s municí}
+{36800}{}{Bedna s municí}
+{36900}{}{Bedna s municí}
+{37000}{}{Bedna s municí}
+{37100}{}{Paøát}
+{37101}{}{Paøát}
+{37200}{}{Paøát}
+{37201}{}{Paøát}
+{37300}{}{Klíè k Vaultu 15 }
+{37301}{}{Elektronickı bezpeènostní klíè oznaèenı èervenou barvou.}
+{37400}{}{Hrob}
+{37500}{}{Hrob}
+{37600}{}{Hrob}
+{37700}{}{Poèítaèové èásti z Vaultu 15}
+{37701}{}{Nejrùznìjší souèástky do computeru. Sen kadého poèítaèového nadšence.}
+{37800}{}{Sušenka}
+{37801}{}{Polomáèená èokoládová sušenka. Òam!}
+{37900}{}{Koené brnìní Mark II}
+{37901}{}{Zdokonalená verze základního koeného brnìní. Peèlivì ušito z vydìlané brahmíní kùe.}
+{38000}{}{Kovová zbroj Mark II}
+{38001}{}{Vyleštìné kovové pláty, zruènì pospojované do nìèeho, co pøipomíná støedovìké rytíøské brnìní.}
+{38100}{}{Kevlarová zbroj Mark II}
+{38101}{}{Zdokonalená verze hi-tech brnìní vyrobeného z vysokohustotních defenzívních polymerù. Pro vırobu tohoto brnìní byly pouity plasty s jinım indexem toku taveniny.}
+{38200}{}{Náplò do plamenometu MKII}
+{38201}{}{Pro vırobu této náplnì byl pouit speciální mix raketovıch urychlovaèù hoøení.}
+{38300}{}{Šídlo}
+{38301}{}{Podomácku vyrobená zbraò, nebezpeèná pøedevším tím, e ji lze snadno ukrıt. Její pøítomnost nemohou ostatní postavy detekovat. Min SÍ: 1.}
+{38400}{}{Francouzák}
+{38401}{}{Univerzální (francouzskı) klíè. Typickı nástroj pøedváleènıch automechanikù. Min SÍ: 3.}
+{38500}{}{Upilovaná brokovnice}
+{38501}{}{Nìkdo si dal tu námahu a odøízl z hlavnì téhle brokovnice pìknıch pár centimetrù. Tím se z ní stalo malé pøíruèní dìlo se širokım rozptylem, zvláštì úèinné pro boj na krátkou vzdálenost a proti skupinám protivníkù. Min SÍ: 4.}
+{38600}{}{Louisvillskı odpalovaè}
+{38601}{}{Baseballová pálka z tvrdého døeva. Symbol americké sebeobrany. Min SÍ: 4.}
+{38700}{}{M60}
+{38701}{}{Lehkı polní kulomet. Pro svou relativnì nízkou váhu, spolehlivost i vysokou kadenci støelby byl cenìn armádami celého svìta. Jeho primární funkcí je palebná podpora pìchoty, ale je pøizpùsoben i pro upevnìní na korbì vozidla. Min SÍ: 7.}
+{38800}{}{Jehlová pistole}
+{38801}{}{Jehlová pistole znaèky Bringham. Zajímavá je pøedevším tím, e pùvodnì nebyla projektována jako zbraò, nıbr jako vìdeckı nástroj. Jako støelivo slouí malé injekèní støíkaèky z tvrdého plastu. Min SÍ: 3.}
+{38900}{}{Gatling Avenger}
+{38901}{}{Firma Rockwell vytvoøila tuto zbraò jako náhradu za ji zastaralou verzi osobního gatlingu CZ53. Model "Avenger" zahrnuje rùzná konstrukèní vylepšení jako napøíklad úèinnìjší chlazení, zdokonalené vyhazování nábojnic a pochromování hlavní. To vše dává tomuto kulometu delší dosah i vìtší vradomatiènost. Min SÍ: 7.}
+{39000}{}{Solární scorcher}
+{39001}{}{Bez sluneèního svitu, kterı kontinuálnì dobíjí kondenzátory této zbranì, nejde s touhle vìcièkou zapálit ani sirku. Ale na plném sluneèním svìtle nebo pøi dostateèné intenzitì umìlého osvìtlení vyvinou experimentální fotoelektrické èlánky napájející scorcher tolik energie, e lehce zmìníš cokoliv ivého v køupavou peèínku. Min SÍ: 3.}
+{39100}{}{H&K G11E}
+{39101}{}{Tato zbraò je povaována za revoluèní vırobek v historii vıvoje lehkıch palnıch zbraní. Pouívá beznábojnicové støelivo, tvoøené lisovanım blokem spalitelné smìsi se zabudovanım projektilem. Vısledná váha i úspora místa umonila instalaci velkokapacitního zásobníku munice. Min SÍ: 6.}
+{39200}{}{M72 Gaussova puška}
+{39201}{}{Puška M72 je experimentální nìmeckı vırobek. Projektil je pohánìn pomocí elektromagnetického pole a jeho úsová rychlost se blíí polovièní rychlosti svìtla... pronikne témìø kadou pøekákou. Parametry pušky, jako jsou napø. dostøel, pøesnost i kinetická energie náboje, nesnesou srovnání s ádnou jinou zbraní. Min SÍ: 6.}
+{39300}{}{Fázer}
+{39301}{}{NEED LONG DESCRIPTION. Min SÍ: 3.}
+{39400}{}{PPK12 Gaussova pistole}
+{39401}{}{Experimentální nìmeckı vırobek. Jedineènı dostøel, pøesnost i kinetická energie náboje. Projektil je pohánìn vytváøenım elektromagnetickım polem a jeho úsová rychlost se blíí polovièní rychlosti svìtla. V podstatì neexistuje brnìní, kterım by nepronikl. Min SÍ: 4.}
+{39500}{}{Gatling Vindicator}
+{39501}{}{Tento rotaèní kulomet je vırobkem nìmecké firmy Rheinmetal AG. Vindicator dokáe ze svıch šesti karbonpolymerovıch hlavní vychrlit více ne 90.000 projektilù za minutu. Pouívá beznábojnicové støelivo. Tento vrchol zbrojaøského umìní Teutonù je obecnì povaován za koneènı mezník vıvoje støelnıch zbraò. Min SÍ: 7.}
+{39600}{}{YK32 pulsní pistole}
+{39601}{}{Elektrická pulsní zbraò. Vırobek energetického konsorcia Yuma Flats. Aèkoliv je velmi úèinná, nikdy nebyla povaována za praktickou zbraò. A to pøedevším zásluhou pøíliš rozmìrného designu a vysoké spotøeby energie. Min SÍ: 3.}
+{39700}{}{YK42B pulsní puška}
+{39701}{}{Elektrická pulsní zbraò. Vırobek energetického konsorcia Yuma Flats. Tento model byl na poèátku zamıšlen jako zdokonalená verze pistole YK32. Postupem èasu se ale pùvodní zámìr zvìtšit pouze dostøel a kapacitu zásobníku vyvinul v konstrukci zcela nové zbranì. Min SÍ: 3.}
+{39800}{}{.44 Magnum (Nabíjeè)}
+{39801}{}{Revolver .44 Magnum se speciálnì vyrobenım pøípravkem pro rychlejší nabíjení. Min SÍ: 5.}
+{39900}{}{Elektrickı obušek Super}
+{39901}{}{Elektrickı pastıøskı obušek. Model "Farmáøùv nejlepší pøítel" od Wattz Electronics. U této varianty byl úèinek elektrického šoku zvıšen pøidáním další baterie. Min SÍ: 4.}
+{40000}{}{Upravenı plamenomet}
+{40001}{}{Plamenomet model Flambe 450, upravená varianta. Chrlí krátkı proud extrémnì hoølavé tekutiny. Vyaduje speciální náplò. Tento typ byl pøizpùsoben k pouití zvláštního mixu raketovıch urychlovaèù, co má za následek lepší pøilnavost hoølaviny a její spalování pøi mnohem vyšší teplotì. Min SÍ: 6.}
+{40100}{}{Laserová puška (Roz. zás.)}
+{40101}{}{Laserová puška Wattz 2000. U této byl dobíjecí systém vylepšen instalací speciálního èipu, kterı zvyšuje efektivitu vyuití energie z mikrofúzního èlánku o 50%. Min SÍ: 6.}
+{40200}{}{Magneto-laserová pistole}
+{40201}{}{Laserová pistole Wattz 1000. Tento model byl zdokonalen instalací generátoru pøídavného elektromagnetického pole. Siloèáry pole paprsek "zahušují" a zvyšují tak mnoství emitované energie na jednotku plochy. Pøímım dùsledkem je vyšší penetrace laseru. Min SÍ: 3.}
+{40300}{}{FN FAL (Infrahled)}
+{40301}{}{Tato automatická puška je jednou nejpouívanìjších armádních zbraní v historii moderních válek. Je to univerzální zbraò vhodná do jakéhokoliv terénu i taktické situace. Tento model je vybaven infraèervenım zamìøovaèem pro zvıšení pøesnosti noèní støelby. Min SÍ: 5.}
+{40400}{}{Desert Eagle (Roz. zás.)}
+{40401}{}{Starobylá pistole Desert Eagle. Èasté pouívání ve filmech pozdního 20. století z ní udìlalo jednu z nejpopulárnìjších pistolí všech dob. Tato je za úèelem delší zábavy vybavena vìtším zásobníkem støeliva! Min SÍ: 4.}
+{40500}{}{Útoèná puška (Roz. zás.)}
+{40501}{}{Univerzální 5mm útoèná puška Kalašnikov AK-112. Tento model je vybaven pøídavnım zásobníkem munice. Min SÍ: 5.}
+{40600}{}{Plazmová pistole (Roz. zás.)}
+{40601}{}{Plazmová pistole Glock 86. U této byla provedena adjustace odstínìné magnetické komory s cílem sníit spotøebu energie. Tímto opatøením se podaøilo zdvojnásobit energetickou vıkonnost baterie. Z téhle pistole tedy mùeš vypálit víc vıstøelù ne ze standardní verze. Min SÍ: 4.}
+{40700}{}{Mega-Energo pìst}
+{40701}{}{Aktivní obrnìná rukavice "Ranaø". Vırobek firmy BeatCo. Mnohımi byla shledána jako vùbec nejúèinnìjší zbraò v boji zblízka. Tato sériová øada je vybavena vylepšenımi servomechanismy, zvyšujícími sílu úderu. Napájena malımi energetickımi èlánky. Min SÍ: 1.}
+{40800}{}{Vojenská souprava první pomoci}
+{40801}{}{Støednì velká souprava obsahující základní lékaøské vybavení.  Obinadla, náplasti, dezinfekèní prostøedky atp.}
+{40900}{}{Souprava Paramedik}
+{40901}{}{Vak s nástroji a chemikáliemi pouívanımi polními lékaøi. Všechno je vybráno a uzpùsobeno speciálnì pro léèení tìkıch poranìní.}
+{41000}{}{Rozšíøená sada paklíèù}
+{41001}{}{Koené pouzdro s jemnım zámeènickım náèiním. Obsahuje paklíèe a šperháky potøebné k otevøení všech klasickıch i dozickıch zámkù. Tato sada navíc obsahuje speciální náøadí pro zdolání sloitìjších mechanickıch zámkù.}
+{41100}{}{Elektronickı paklíè MKII}
+{41101}{}{Druhá generace mikromanipulaèního elektronického paklíèe od Wattz Electronics. Pro odblokování elektronickıch zámkù a bezpeènostních systémù. Verze Mark II obsahuje zdokonalenı software a multiplikátor rozhraní.}
+{41200}{}{Plechovka oleje}
+{41201}{}{Tøílitrovı kanystr starodávného syntetického lubrikantu Armor-Go. Jedná se o speciální olej pro mazání pohyblivıch èástí Energo zbroje.}
+{41300}{}{ID karta "Stájí"}
+{41301}{}{Identifikaèní vizitka. Ten èervenı prouek na ní tì oznaèuje jako "Vızkumníka."}
+{41400}{}{Klíè od chatrèe u Vaultu 15}
+{41401}{}{Obyèejnı klíè.}
+{41500}{}{Brıle}
+{41501}{}{Dioptrické brıle pro krátkozraké.}
+{41600}{}{Nádobka od Jetu}
+{41601}{}{Prázdná nádobka z pokoje Richarda Wrighta. Uvnitø je dosud nepatrné mnoství Jetu.}
+{41700}{}{Kyslíková bomba}
+{41701}{}{Tlaková nádoba s èistım kyslíkem. Souèást dıchací aparatury Dona Salvatore.}
+{41800}{}{Bomba s jedovatım plynem}
+{41801}{}{Na první pohled vypadá tahle tlaková nádoba jako obyèejná kyslíková bomba, ale na jejím spodku je vyleptána malá lebka a pod ní zkøíené kosti. Ovšem kdyby sis to tak pozornì neprohlédl, ani by sis toho symbolu nevšiml.}
+{41900}{}{Souèástky}
+{41901}{}{Balíèek souèástek. Na obalu je štítek s nápisem "Èistiè vzduchu GX-9 ". Pouitím svıch neuvìøitelnıch deduktivních schopností jsi usoudil, e se pravdìpodobnì jedná o èásti pro porouchanou èistièku vzduchu.}
+{42000}{}{Platidlo Morningstaru}
+{42001}{}{Malá plastiková mince. Platidlo horníkù z dolu Morningstar.}
+{42100}{}{Svatı Ruèní Granát}
+{42101}{}{Posvátná relikvie. Prastarı dùkaz boské moci.}
+{42200}{}{Èip pro rypadlo}
+{42201}{}{Øídící èip pro nìjakı druh velkého prùmyslového stroje. Zdá se, e je pod tím nánosem prachu a špíny, kterı ho pokrıvá, v podivuhodnì dobrém stavu.}
+{42300}{}{Zlatı nugget}
+{42301}{}{Valoun èistého zlata.}
+{42400}{}{Úlomek Monumentu}
+{42401}{}{Úlomek podivné kamenné sochy, kterou jsi našel v poušti. Aèkoliv by vìtšina obyvatel tvé vesnice nepochybovala o tom, e se jedná o svatou relikvii, ty z nìjakého dùvodu cítíš podezøení, es byl podveden.}
+{42500}{}{Kamenná hlava}
+{42501}{}{Obrovskı kamennı monument.}
+{42600}{}{Uranová ruda}
+{42601}{}{Úlomek surové uranové rudy.}
+{42700}{}{Ohnivı dech}
+{42800}{}{Lékaøské zásoby}
+{42801}{}{Krabice nejrùznìjších lékaøskıch pomùcek.}
+{42900}{}{Zlatı zub}
+{42901}{}{Tenhle zlatı zub patøil døív Julesovi. Teï je tvùj.}
+{43000}{}{Náboj do houfnice}
+{43001}{}{Dìlostøeleckı náboj. Ráe  75mm. Nábojnice je znaènì zkorodovaná, ale pøesto na ní lze rozeznat písmena EXP. 9-25-98.}
+{43100}{}{Zásilka pro Ramireze, zavøená}
+{43101}{}{Tento balík jsi dostal od Velkého Jeíše Mordina. Máš ho doruèit Ramirezovi do Stájí.}
+{43200}{}{Zásilka pro Ramireze, otevøená}
+{43201}{}{Tento balík jsi dostal od Velkého Jeíše Mordina. Máš ho doruèit Ramirezovi do Stájí. Je otevøenı a vyndal jsi z nìj všechen Jet, kterı tam byl.}
+{43300}{}{Sluneèní brıle}
+{43301}{}{Tvrïácky vyhlíející zrcadlové brıle proti slunci. Staèí jen, e je máš v inventáøi a u se cítíš skvìle.}
+{43400}{}{Pøívìs}
+{43401}{}{Nákladní vùz se zápøahem. Vyrobeno z vraku starodávného automobilu. Nezbytná vıbava kadé karavany.}
+{43500}{}{Pøívìs}
+{43501}{}{Nákladní vùz se zápøahem. Vyrobeno z vraku starodávného automobilu. Nezbytná vıbava kadé karavany.}
+{43600}{}{Sada karet}
+{43601}{}{Balíèek hracích karet.}
+{43700}{}{Sada cinknutıch karet}
+{43701}{}{Všechny karty v tomhle balíèku jsou srdcové královny! To musí bıt pro nìjakou hroznì nudnou hru.}
+{43800}{}{Klíè od Chrámu}
+{43801}{}{Klíè ke Chrámu v Arroyo.}
+{43900}{}{Chuchvalec nití}
+{43901}{}{Nìjakı bordel. To víš, nemùeš mít pokadé kliku.}
+{44000}{}{Bio-Med gel}
+{44001}{}{Sklenice Bio gelu. Tento roztok se hojnì pouívá v biologickıch laboratoøích.}
+{44100}{}{Blondieho vojenská známka}
+{44101}{}{Jméno pùvodního vlastníka bylo z plíšku vybroušeno a na jeho místo nìkdo vyškrábal "Blondie". Pod tímto jménem je èíslo "11."}
+{44200}{}{Andìlova vojenská známka}
+{44201}{}{Tato vojenská známka je evidována na jméno "Andìl". Pod jménem je vytlaèeno èíslo "16."}
+{44300}{}{Tucova vojenská známka}
+{44301}{}{Na tomhle odpornì páchnoucím kousku plechu je vylisováno jméno "Tuco Benedicto Pacifico Juan Maria Ramirez" a èíslo "27."}
+{44400}{}{Mapa banditù}
+{44401}{}{Pomaèkaná mapa pøedváleèné severní Kalifornie. Je na ní èervenì zakresleno New Reno a trasy okolních karavan. A daleko na vıchod od New Reno je velké èervené "X" a pod ním v krouku napsáno "Bandité".}
+{44500}{}{Šerifská hvìzda}
+{44501}{}{Odznak právoplatného šerifova pomocníka.}
+{44600}{}{Plány vertibirdu}
+{44601}{}{Svazek konstrukèních plánù vertibirdù.}
+{44700}{}{Bishopùv holodisk}
+{44701}{}{Tento holodisk obsahuje dùkazní informace o Bishopovì tajné dohodì s NCR. Bishop zjevnì najal jednotku banditù, aby útoèila na Vault City. Doufal, e tím donutí Vault City, aby poádalo NCR o vojenskou pomoc. Tento holodisk je pouze audio a neobsahuje ádná textová data. Vsadím se, e Vault City by tenhle holodisk moc a moc zajímal.}
+{44800}{}{Úèetní kniha}
+{44801}{}{V této úèetní knize jsou zaznamenány série mìsíèních plateb od Rodiny Bishopovıch pro polovojenskou jednotku najatıch ozbrojencù. Vıše platby pøímo závisela na mnoství a intenzitì útokù, které tito oldáci na Vault City provedli. Tahle kníka by mohla vedoucí pøedstavitele Vault City velice zajímat.}
+{44900}{}{Unused}
+{44901}{}{Unused}
+{45000}{}{Útrek papíru 1}
+{45001}{}{Kousek popsaného papíru. Vypadá to jako nìjakı druh kódu. Bohuel je ale tento kód nekompletní. Kdybys tak dokázal najít všechny tøi kousky papíru... Takhle dokáeš rozluštit jen: 1. Fyzika: heslo KSLJ, 2. Chemie: heslo TIU, 3. Biologie: heslo INTL}
+{45100}{}{Útrek papíru 2}
+{45101}{}{Kousek popsaného papíru. Vypadá to jako nìjakı druh kódu. Bohuel je ale tento kód nekompletní. Kdybys tak mìl všechny tøi kousky papíru... Takhle dokáeš rozluštit jen: KJ: Ken-Lee-9, ASPO- Lo-S, VR- Dnky-Pnch-}
+{45200}{}{Útrek papíru 3}
+{45201}{}{Kousek popsaného papíru. Vypadá to jako nìjakı druh kódu. Bohuel je ale tento kód nekompletní. Kdybys tak dokázal najít všechny tøi kousky papíru... Takhle dokáeš rozluštit jen: 7313, hi-S12908, 98790}
+{45300}{}{Papír s heslem}
+{45301}{}{Lístek sloenı ze tøí útrkù papíru ti koneènì odhalil plné znìní všech tøí kódù. Na papírku teï stojí: 1. Fyzika: heslo KSLJKJ: Ken-Lee-97313, 2. Chemie: heslo TIUASPO- Lo-Shi-S12908, 3. Biologie: heslo INTLVR- Dnky-Pnch-98790}
+{45400}{}{Rozbuška}
+{45401}{}{Tenhle pøepínaè je koneènı komponent odpalovacího zaøízení.}
+{45500}{}{Kufr auta}
+{45501}{}{Tenhle kufr je skvìlé místo pro uloení tvıch vìcí.}
+{45600}{}{Klíè ke dveøím cely}
+{45601}{}{Tento klíè se hodí do dveøí cely v Broken Hills.}
+{45700}{}{Hubologistova zpráva}
+{45701}{}{Polní report pro vedoucí pøedstavitele církve.}
+{45800}{}{V.Z. Holodisk 5}
+{45801}{}{Na štítku stojí: Zpráva pro hlavní stan - Dùvìrné.}
+{45900}{}{V.Z. Holodisk 1}
+{45901}{}{Na štítku stojí: Monitoring vysílání - checkpoint 1.}
+{46000}{}{V.Z. Holodisk 2}
+{46001}{}{Na štítku stojí: Monitoring vysílání - checkpoint 2.}
+{46100}{}{V.Z. Holodisk 3}
+{46101}{}{Na štítku stojí: Monitoring vysílání - checkpoint 3.}
+{46200}{}{V.Z. Holodisk 4}
+{46201}{}{Na štítku stojí: Monitoring vysílání - vızkumnı tım.}
+{46300}{}{Evakuaèní holodisk}
+{46301}{}{Na štítku stojí: Pokyny k opuštìní základny.}
+{46400}{}{Experimenty - holodisk}
+{46401}{}{Na štítku stojí: Zpráva o vızkumu.}
+{46500}{}{Medicína - holodisk}
+{46501}{}{Na štítku stojí: Lékaøské záznamy.}
+{46600}{}{Lístek s heslem}
+{46601}{}{Stránka vytrená z nìjakého notısku. Je na ní napsáno slovo "ÈAJKOVSKIJ".}
+{46700}{}{Jesseho kontejner}
+{46800}{}{Smittyho jídlo}
+{46801}{}{Nìjakı druh salátu a sendviè vyrobenı z nìèeho, co vypadá jako brahmíní maso zalité tuènou lutou omáèkou. To vše obloeno podivnou nakládanou zeleninou.}
+{46900}{}{Rot Gut}
+{46901}{}{Pøed válkou byl tohle buï velmi silnı likér nebo nìjakı druh èistícího prostøedku. Bùhví co je vlastnì pravda.}
+{47000}{}{Roubík}
+{47001}{}{Podivuhodná sexuální pomùcka. Jestli se potøebuješ ptát, k èemu se to pouívá, nemusí tì to zajímat.}
+{47100}{}{"Levandule"}
+{47101}{}{Romantická novela. Autorem je Dorothy Rixonová. Na obalu je ena leící v posteli a obsypaná stovkami kvìtin.}
+{47200}{}{Hubologist Holodisk}
+{47201}{}{Na štítku tohoto holodisku stojí: "Hubologie: Pravda mezi horami lí". Vypadá to, e holodisk by mohl bıt kompatibilní s tvım PIPBoyem.}
+{47300}{}{Mutovanı prst}
+{47301}{}{Tvùj šestı prst. Malá mutovaná èást tebe samotného. Kdy se tak díváš na ten malı amputovanı prst, máš z nìjakého dùvodu pocit hrozné ztráty.}
+{47400}{}{Petúnie}
+{47401}{}{Kvìtináè rozkvetlıch petúnií. No øekni, nejsou nádherné?}
+{47500}{}{Unused}
+{47501}{}{Unused}
+{47600}{}{Dopis pro "Osvíceného"}
+{47601}{}{Zpráva adresovaná AHS-9 do San Francisca. Je strašnì nudná. Samé tabulky, reporty, analızy a spousta náboenskıch vástù. Ètením téhle voloviny nehodláš ztrácet ani minutu.}
+{47700}{}{Rozhlasovı holodisk}
+{47701}{}{Na štítku stojí: "Zprávy stanice Galaxy News Network."}
+{47800}{}{Holodisk mise Sierra }
+{47801}{}{Na štítku stojí: "Zpráva o misi."}
+{47900}{}{Souèástky NavCom}
+{47901}{}{Souèástky do poèítaèe. Fakt, e je na nich napsáno "Poseidon Oil" a "Navigaèní computer" tì vede k závìru, e jsou urèeny pro navigaèní poèítaè spoleènosti Poseidon Oil.}
+{48000}{}{Bonus +1 Hbitost}
+{48100}{}{Bonus +1 Inteligence}
+{48200}{}{Bonus +1 Síla}
+{48300}{}{Fallout 2. Tipy a triky}
+{48301}{}{Kuròa! Tuhle kníku tak najít na zaèátku téhle mizerné hry!}
+{48400}{}{Tvoje ucho}
+{48401}{}{Tvùj ušní boltec. dímaèka ti ho bìhem boje ukousl a vyplivl ho na tvé bezvládnì leící tìlo. Jestli èteš tyhle øádky, znamená to, e si asi budeš chtít znovu naèíst pozici. Ovšem uvìdom si, e je docela moné, e tahle vìcièka mùe mít ve høe nìjaké zvláštní urèení.}
+{48500}{}{dímaèkovo ucho}
+{48501}{}{dímaèkovo ušní boltec. Ukousl jsi mu ho hned poté, cos ho srazil do bezvìdomí. Srdeènì ti k jeho poráce gratulujeme. Je to jedna z nejtvrdších NPC v téhle høe, zvláš proto, e pøi boji s ním nemùeš pouít ádné zbranì ani brnìní.}
+{48600}{}{Rafinovaná uranová ruda}
+{48601}{}{Úlomek uranové rudy. Tato však prošla nìjakım druhem rafinaèního procesu. Zdá se tìší ne pøedtím.}
+{48700}{}{Dopis od Francise}
+{48701}{}{"Vachy, Marcus poøád ještì nic neudìlal s tím rasistou Jacobem ani s tìmi jeho zatracenımi kamarádíèky. U znièili èistièku vzduchu... co víc ještì musí udìlat, aby se s nimi nìkdo zaèal zabıvat? Našel jsem tunely, kde se ta jejich parta tajnì schází. Myslím, e kdy se tam dole najde jedno nebo dvì tìla, mohlo by to Marcuse koneènì pøesvìdèit. Jestli do toho jdeš se mnou, dej mi vìdìt. A tentokrát u sakra nezapomeò tenhle dopis znièit!" -podpis Francis.}
+{48800}{}{Motivátor K-9}
+{48801}{}{Øídící mechanismus pro roboty série K-9.}
+{48900}{}{Speciální boxerská zbraò}
+{49000}{}{Holodisk s historií NCR}
+{49001}{}{Na štítku stojí: "Dìjiny NCR."}
+{49100}{}{Panenka pan Nixon}
+{49101}{}{Malá loutka panáèka s velkım èervenım nosem. Z nìjakého zvláštního dùvodu nevìøíš, e by tohle mohla bıt jen nevinná dìtská hraèka.}
+{49200}{}{Tanker FOB}
+{49201}{}{Dekódovaná vstupní karta umoòující vstup do všech zabezpeèenıch zón tankeru.}
+{49300}{}{Holodisk s teoriemi Hubologistù}
+{49301}{}{Na štítku stojí: "Uèení Hubologistù."}
+{49400}{}{Platidlo Kokoweef}
+{49401}{}{Malá plastiková mince. Oficiální platidlo horníkù z dolu Kokoweef.}
+{49500}{}{Presidentská karta}
+{49501}{}{Elektronickı bezpeènostní klíè s vyraenım prezidentskım znakem. Umoòuje deblokaci prezidentovıch pravomocí v poèítaèové síti Enklávy.}
+{49600}{}{Boxerské rukavice}
+{49601}{}{Pár starıch boxerskıch rukavic slabì páchnoucích potem. Urèitì u zaily hodnì zápasù:  zùstala na nich spousta krvavıch skvrn.}
+{49700}{}{Nadívané boxerské rukavice}
+{49701}{}{Ve vycpávce tìchto boxerskıch rukavicích nìkdo nešastnou náhodou "zapomnìl" pár ocelovıch destièek. Technicky vzato by to mohlo bıt povaováno za podvod, ale ty dáváš pøednost pozitivnímu myšlení. Dotyènı boxer si chtìl urèitì jen chránit záprstní klouby pøed pohmodìním.}
+{49800}{}{Plazmové dvojèe}
+{49801}{}{Zbraò kanónové vìe.}
+{49900}{}{Lingvistickı Pip Boy modul}
+{49901}{}{Tento lingvistickı Pip Boy modul obsahuje pamìovı holodisk, sklenìné mikrovlákno, plastovou èelenku a optickı senzor, kterı se umísuje nad pravé oko. Po upevnìní na hlavu a zapnutí pøístroje se data z holodisku postupnì pøenáší optickou cestou do uivatelovy pamìti. Holodisk obsahuje celou Websterovu encyklopedii a nìkolik slovníkù a zpùsobuje permanentní zvıšení øeèovıch schopností uivatele.}
+{50000}{}{FN FAL HPFA}
+{50100}{}{Nástìnnı sejf}
+{50200}{}{Trezor}
+{50300}{}{Modrı pamìovı modul}
+{50301}{}{Pamìovı "read only" modul. Zaznamenává medicínská data a je primárnì urèen pro lékaøské roboty. Konkrétnì tento modul obsahuje detaily o monostech zvıšení charismatu.}
+{50400}{}{Zelenı pamìovı modul}
+{50401}{}{Pamìovı "read only" modul. Zaznamenává medicínská data a je primárnì urèen pro lékaøské roboty. Konkrétnì tento modul obsahuje detaily o monostech zvıšení vnímání.}
+{50500}{}{Èervenı pamìovı modul}
+{50501}{}{Pamìovı "read only" modul. Zaznamenává medicínská data a je primárnì urèen pro lékaøské roboty. Konkrétnì tento modul obsahuje detaily o monostech zvıšení síly.}
+{50600}{}{lutı pamìovı modul}
+{50601}{}{Pamìovı "read only" modul. Zaznamenává medicínská data a je primárnì urèen pro lékaøské roboty. Konkrétnì tento modul obsahuje detaily o monostech zvıšení inteligence.}
+{50700}{}{Mrtvé tìlo}
+{50701}{}{Èásteènì rozloené tìlo nìjakého humanoidního tvora.}
+{50800}{}{Nafukovací panna}
+{50801}{}{Nafukovací pomùcka pro aktivní relaxaci. Tento model se jmenuje "Tandi".}
+{50900}{}{Znièená nafukovací panna}
+{50901}{}{Tato nafukovací panna má všechny švy totálnì roztrhané. Oèividnì byla velmi dobøe vyuita.}
+{51000}{}{Kuleèníkovı stùl}
+{51100}{}{Kuleèníkovı stùl}
+{51200}{}{Kuleèníkovı stùl}
+{51300}{}{Stùl pro kuleèník}
+{51400}{}{Kuleèníkovı stùl}
+{51500}{}{Kuleèníkovı stùl}
+{51600}{}{Lékaøskı Pip Boy modul}
+{51601}{}{Tento lékaøskı Pip Boy modul obsahuje pamìovı holodisk, sklenìné mikrovlákno, plastovou èelenku a optickı senzor, kterı se umísuje nad pravé oko. Po upevnìní na hlavu a zapnutí pøístroje se data z holodisku postupnì pøenáší optickou cestou do uivatelovy pamìti. Holodisk obsahuje nìkolik desítek lékaøskıch encyklopedií a uèebnic a zpùsobuje permanentní zvıšení doktorskıch schopností svého uivatele.}
+{51700}{}{"Malı Jeíš"}
+{51701}{}{Tento zákeønì vyhlíející nù patøil døíve Malému Jeíši Mordino. Na povrchu èepele je spousta škrábancù a záøezù, ale ostøí je jako bøitva. Na rukojeti je vyøezán nápis "Malı Jeíš."}
+{51800}{}{Kulometné dvojèe}
+{51801}{}{Zbraò kulometnıch vìí.}
+{51900}{}{Zátky}
+{51901}{}{Obyèejné zátky od lahví. Povídá se, e je v dávnıch èasech lidé pouívaly namísto penìz, ale podle tvého názoru je to jen povìst.}
+{52000}{}{Tìké kulometné dvojèe}
+{52001}{}{Zbraò kulometnıch vìí.}
+{52100}{}{Almunièka}
+{52101}{}{Malá kovová pokladnièka pouívaná pro sbìr penìních darù na chudé.}
+{52200}{}{Meè Wakizashi}
+{52201}{}{Krátkı meè mistrnì zhotovenı trpìlivım kováním zastudena. Zdá se, e byl pøizpùsoben speciálnì pro prosekávání brnìní.}
+{52300}{}{Geologická mapa}
+{52301}{}{Mapa pobøeí s vyznaèenımi geologickımi vrstvami.}
+{52400}{}{Róba Stráce mostu}
+{52401}{}{Tenhle páchnoucí špinavı odìv musí bıt vyroben z nìjakého zvláštního materiálu, kdy dokázal bez úhony pøeèkat to, co se stalo s tìlem Stráce. Všude po sobì má stopy po zbraních, které byly pouity proti jeho nositeli... bez efektu. Mimochodem, nenapadá tì jedinı rozumnı dùvod, proè má fialovou barvu.}
+{52500}{}{Hypo}
+{52501}{}{Nìjakı druh injekèního pøístroje. Vypadá ohromnì hi-tech. Druh náplnì neznáš, ale zbyla u jen jedna plná ampule.}
+{52600}{}{Mrtvı Èervenokošiláè}
+{52601}{}{Ten chlapík má na sobì podivnou èervenou uniformu, jakou jsi nikdy pøedtím nevidìl. Zdá se, e zemøel na celkovou dehydrataci organismu. Na jeho odznaku je napsáno Cpt. Kirk.}
+{52700}{}{Mrtvı Èervenokošiláè}
+{52701}{}{Ten chlapík má na sobì podivnou èervenou uniformu, jakou jsi nikdy pøedtím nevidìl. Zdá se, e zemøel na celkovou dehydrataci organismu. Na jeho odznaku je napsáno Lt. Sulu}
+{52800}{}{Mrtvı Èervenokošiláè}
+{52801}{}{Ten chlapík má na sobì podivnou èervenou uniformu, jakou jsi nikdy pøedtím nevidìl. Zdá se, e zemøel na celkovou dehydrataci organismu. Na jeho odznaku je napsáno Cpt. Pickard.}
+{52900}{}{Dùlní rypadlo}
+{53000}{}{Nù Velkého Zlého Bosse}
+{53100}{}{Plazmová zbraò Velkého Zlého Bosse}

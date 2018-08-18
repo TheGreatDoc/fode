@@ -1,0 +1,11 @@
+{100}{}{Du siehst einen Mann in einer Kampfrüstung.}
+{101}{}{Du siehst Kaga in einer Kampfrüstung.}
+{102}{}{Er trägt eine Kampfrüstung und hat scheinbar einige ziemlich gute Waffen.}
+{103}{}{Diesmal bin ich auf dich vorbereitet.}
+{104}{}{Das Auserwählte Wesen wird niemals nach Arroyo heimkehren!}
+{105}{}{Kaga wird dich vernichten!}
+{106}{}{Kaga fürchtet niemanden!}
+{107}{}{Beweg dich nicht, damit dich Kaga richtig treffen kann.}
+{108}{}{Wir sehn uns noch!}
+{109}{}{Du hast Kaga nicht zum letzten Mal gesehen.}
+{110}{}{Kaga muß einfach noch mehr üben.}

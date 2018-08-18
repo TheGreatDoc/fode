@@ -1,0 +1,238 @@
+{100}{}{Tu vois un homme en costume. Il regarde autour de lui. Il a l'air de te regarder, mais ce n'est pas le cas.}
+{101}{}{Tu vois le chef du Monde Libre, le président des Etats-Unis.}
+{102}{}{Tu vois un homme âgé, mince et nerveux qui semble aussi fatigué et usé que le costume qu'il porte.}
+{103}{}{Toi, là-bas. Qu'est-ce que tu fais hors du centre de reconditionnement ?}
+{104}{}{On se connaît ? Sur quel projet tu travailles ?}
+{105}{}{Pour qui tu te prends pour faire irruption dans mon bureau ?}
+{106}{}{Hein ?}
+{107}{}{Nan.}
+{108}{}{Salut.}
+{109}{}{Les sérums de test t'ont atteint, à ce que je vois. Je vais chercher de l'aide. Gardes !}
+{110}{}{Docteur, je crois que vous avez été exposé au FEV. J'appelle des secours. Gardes !}
+{111}{}{On va être un gentil mutant et ne pas bouger. Gardes !}
+{112}{}{D'accord.}
+{113}{}{Hmm, hmm. Salut.}
+{114}{}{Allez, on attend bien sagement.}
+{115}{}{Du calme. Quelqu'un va venir tout de suite.}
+{116}{}{Tout va bien.}
+{117}{}{Bon sang ! Est-ce que quelqu'un va venir chercher cette... personne ?}
+{118}{}{Gardes ! Il y a un débile dans mon bureau... Mais non, pas le vice-président !}
+{119}{}{Bonjour. Je suis le Président Richardson et je suis très fier de faire votre connaissance. Abri 13. Vous avez rendu un service inestimable à votre pays.}
+{120}{}{Président ? Mais vous êtes qui, au juste ?}
+{121}{}{Un service à mon pays ? Mais, enfin, qu'est-ce qui se passe ici, au juste ?}
+{122}{}{Hmm, j'ai dû me tromper de chemin en allant au labo. Je m'excuse, au revoir.}
+{123}{}{Bonjour Docteur, votre rapport est prêt ? Bonnes nouvelles, j'espère. Notre salut est entre les mains de votre équipe.}
+{124}{}{Toi, là, tu devrais être en train de travailler sur le Projet ! Le salut de l'humanité dépend de toi.}
+{125}{}{Qui es-tu ?}
+{126}{}{Le salut ? Qu'est-ce que c'est que cette histoire ?}
+{127}{}{Pardon. J'ai dû me gourer en retournant au labo. Salut.}
+{128}{}{C'est pas grave. Avec toutes ces piqûres d'inoculation, il y a de quoi perdre le sens de l'orientation.}
+{129}{}{Quelle inoculation ? Qu'est-ce que c'est que cette histoire ?}
+{130}{}{Je me sens un peu patraque. Mais ça me soulage de savoir que je peux être utile à mon pays !}
+{131}{}{Comment ? Bon, je crois que je ferais mieux de partir.}
+{132}{}{Je vais te faire escorter par un gars des services secrets.}
+{133}{}{Très aimable, mais je crois que je peux y arriver sans l'aide de qui que ce soit. Au revoir.}
+{134}{}{Ce serait gentil. Merci.}
+{135}{}{Pas de problème. (Dans l'interphone) Salut. J'aurais besoin d'un peu d'aide, ici.}
+{136}{}{Hmm. Ouah, merci m'sieur.}
+{137}{}{Je te conseille de pas appeler tes gardes si tu veux sortir d'ici vivant.}
+{138}{}{Ah... Très bien. On trouvera bien une solution. Qu'est-ce que tu veux  ?}
+{139}{}{Je veux savoir ce qui se mijote ici.}
+{140}{}{Je veux juste partir sans tapage. On ne touche pas à cette alarme avant que je sois loin d'ici. Ou alors...}
+{141}{}{Je m'en vais et je te prends en otage comme ça je sais que les miens peuvent partir en sécurité.}
+{142}{}{Tu crois vraiment pouvoir intimider le président des Etats-Unis ?}
+{143}{}{Sans aucun doute.}
+{144}{}{Peut-être pas, mais je te conseille de ne pas tenter de me faire obstacle.}
+{145}{}{Sache, pour ton information, que les gardes ont ordre de me tuer plutôt que de laisser quiconque mettre en péril le Projet. Ca ne servira à rien de me tuer.}
+{146}{}{Tu ne penses quand même pas que ça va marcher ? Si t'essayes de faire ça, mes gardes ont ordre de me tuer plutôt que de laisser quiconque mettre en péril le Projet. Je ne bougerai pas d'ici. Alors, tu me tues ou pas ?}
+{147}{}{Peut-être pas, mais je m'en vais. Ne touche pas à cette alarme.}
+{148}{}{Le projet ? Quel projet ?}
+{149}{}{Evidemment que oui. Et je sens que ça va me plaire.}
+{150}{}{Non, non, euh. On, on va...Qu'est-ce que tu veux, au juste ?}
+{151}{}{Je veux savoir ce qui se mijote ici.}
+{152}{}{Je veux savoir qui tu es au juste.}
+{153}{}{Je veux ta mort.}
+{154}{}{D'accord, pas de problème. Je reste là sagement. Ca m'a fait plaisir de te rencontrer. Au revoir.}
+{155}{}{C'est trop facile. Avant de partir, j'aimerais quand même savoir ce que tu fais là.}
+{156}{}{Fais gaffe !}
+{157}{}{Ce fut un plaisir M. le Président. Au revoir.}
+{158}{}{Ahhh. Ahhh. Gardes ? (cris) Gardes !}
+{159}{}{On dit bonne nuit, M. le Président.}
+{160}{}{Je suis le président des Etats-Unis d'Amérique. Le vice-président est dans le bureau d'à côté. Si tu étais d'ici, tu le saurais. Qui es-tu, et que viens tu faire ici ?}
+{161}{}{T'es le président de quels états unis ?}
+{162}{}{T'es complètement dingue.}
+{163}{}{Vice-président ? Tu parles du débile d'à côté ?}
+{164}{}{Quelle coincidence ! Moi je suis l'empereur de la planète Quetzl et je viens prendre possession de la Terre.}
+{165}{}{Bon, ben, je vais y aller, maintenant, monsieur, euh, le Président. Au revoir.}
+{166}{}{Heu, heu. Bien sûr, votre Eminence. Pourquoi ne pas commander... quelques rafraîchissements ? On pourrait discuter un peu. Essayer de s'entendre ?}
+{167}{}{Ce serait vraiment génial.}
+{168}{}{Belle tentative, M. le Président.}
+{169}{}{Euh, juste un instant. (Dans l'interphone) Je voudrais des rafraîchissements pour moi-même et un *invité surprise*. (Flattant le joueur fou) Un invité surprise très, très important. Tout de suite !!}
+{170}{}{Merci. En fait, t'es pas si mauvais bougre.}
+{171}{}{C'est pas malin. Maintenant, quelqu'un va devoir payer.}
+{172}{}{Il y a un dingue, ici, c'est sûr. Ah, oui, ça, c'est sûr.}
+{173}{}{Inutile de me regarder. C'est pas moi qui prétends être le Président d'une nation disparue bien avant notre naissance à tous les deux.}
+{174}{}{Je suis le représentant élu du peuple. Les Etats-Unis existent toujours. Que Dieu bénisse chacun d'entre nous. Il a juste fallu qu'on s'adapte un peu pour survivre après la guerre.}
+{175}{}{Je ne comprends pas. Qu'est-ce que c'est que cette histoire ?}
+{176}{}{Tu vois vraiment pas, hein ? Je vais te parler du salut de l'humanité. D'abord, un peu d'histoire...}
+{177}{}{Un peu d'histoire...}
+{178}{}{J'écoute, M. le Président...}
+{179}{}{D'abord, pourquoi avez-vous une base à Navarro ?}
+{180}{}{Un instant... J'ai vu certains de vos hélicos faire du trafic avec New Reno. Qu'est-ce qui se trame là-bas ?}
+{181}{}{Bon j'ai pas le temps d'écouter ces sornettes. Au revoir.}
+{182}{}{Bien le bonjour. Ravi de voir l'un de nos braves soldats. Mais, je suis assez occupé. Alors, en quoi le président des Etats-Unis peut-il t'être utile ?}
+{183}{}{Encore toi ? Qu'est-ce que tu veux ?}
+{184}{}{Je voudrais savoir ce qui se passe ici.}
+{185}{}{Je, euh, je contrôle cette zone, m'sieur. Contrôle de sécurité, ouais. Rien à signaler. Hmm, au revoir.}
+{186}{}{Bonjour. Je suis le président des Etats-Unis d'Amérique, à qui ai-je l'honneur... ?}
+{187}{}{Bonjour. Je suis le président des Etats-Unis d'Amérique, et je dois avouer que, de toute ma vie, j'ai rarement vu plus sinistre délégation de déjantés. Qui es-tu, au juste, pour oser m'interrompre de la sorte ?}
+{188}{}{Je voudrais bien savoir ce qui se passe ici.}
+{189}{}{Je suis ton bourreau.}
+{190}{}{Le Président ? Mais qu'est-ce que tu me chantes, là ?}
+{191}{}{Je ne sais plus où je suis. Mais, je vois que vous êtes très occupé, M. le Président. Il faut que j'y aille, maintenant. Au revoir.}
+{192}{}{C'est dommage. Une conversation avec un vrai mutant, comme toi, m'aurait donné une idée de ce qui se passe dans cet enfer radioactif qu'est le continent.}
+{193}{}{Mutant ? Pourquoi me traites-tu de mutant ?}
+{194}{}{Enfer radioactif ? Eh ben, tu sors pas souvent toi !}
+{195}{}{C'est ça. Assez causé. C'est l'heure de mourir.}
+{196}{}{Eh oui, on doit tous apprendre à supporter les déceptions. Au revoir.}
+{197}{}{Il y a eu une grande guerre bien avant notre naissance. Nos braves soldats se sont battus du Yukon au Yangt-Tseu-Kiang.}
+{198}{}{Ouais, j'suis au courant. La suite.}
+{199}{}{Le vice-président Bird a peut-être l'air d'un vieux gaga, mais j'te signale que c'est un héros national.}
+{200}{}{Pour vous, certainement.}
+{201}{}{C'est l'un des hommes les plus courageux qui soient. Il s'est porté volontaire pour tester l'antidote à la toxine FEV. Hélas, ça n'a pas vraiment marché comme on l'espérait.}
+{202}{}{Quoi, ce n'était pas ce que vous espériez ?}
+{203}{}{Ce sont les petits malins dans ton genre qui prouvent la supériorité des vrais humains sur les mutants.}
+{204}{}{Ca reste quand même un débile qui radote.}
+{205}{}{Pourquoi est-ce que tu me traites de mutant ?}
+{206}{}{Il peut encore se remettre. Ca pourrait même avoir des effets inattendus. Il a même fait des progrès d'élocution on dirait.}
+{207}{}{Tant mieux. Mais pourquoi me traiter de mutant ?}
+{208}{}{Parce que c'est vrai. L'ADN de ta tribu a changé depuis que votre ancêtre a quitté l'Abri. Inévitable. Avec toutes ces radiations...}
+{209}{}{Bon, d'accord, je suis un mutant. Mais je connais un gros malin qui sera bientôt un être humain mort, pure souche.}
+{210}{}{Ouais, on est des mutants. Et alors ?}
+{211}{}{Toutes les créatures changent. Ca s'appelle l'évolution. Sans ces changements, toi et moi, on serait à l'état de larves protoplasmiques.}
+{212}{}{Nous essayons de nous protéger au maximum des radiations. C'est ce qui sépare les humains, comme moi, des mutants comme toi.}
+{213}{}{Pourquoi tu me traites toujours de mutant ?}
+{214}{}{Assez parlé. Il est temps pour toi d'affronter le grand jury qui siège tout Là-Haut.}
+{215}{}{J'en ai tué pour moins que ça. Mais, aujourd'hui, je n'ai vraiment pas le temps. Salut.}
+{216}{}{On gagnait, en plus. Puis, il y a eu ces fichus Rouges. On n'a eu à peine le temps de récupérer nos hélicos.}
+{217}{}{On dirait que ça ne nous a pas servi à grand-chose.}
+{218}{}{En fait, non. Mais, ça a au moins eu le mérite de renvoyer le péril Rouge à l'âge de pierre.}
+{219}{}{Et nous avec.}
+{220}{}{Non. Pas vraiment. En fait on avait tout prévu. On était prêts.}
+{221}{}{Comment ça ?}
+{222}{}{On disposait de refuges qui devaient permettre la survie de la glorieuse civilisation américaine. Tout ça, avec les abris, ça faisait partie de notre Plan.}
+{223}{}{Ces satanés abris n'ont pas vraiment marché comme prévu. Beaucoup de gens y sont morts.}
+{224}{}{En fait, ils ont fonctionné presque comme on l'avait prévu. On pourrait appeler ça une expérience sociale à grande échelle.}
+{225}{}{Une expérience ?}
+{226}{}{Il s'agissait de tester l'humanité. Certains abris n'avaient pas assez de synthétiseurs de nourriture, d'autres n'abritaient que des hommes ou devaient s'ouvrir au bout de six mois seulement. Chaque abri créait des conditions uniques pour tester ses occupants.}
+{227}{}{Et l'Abri 13 ? A quoi il devait servir ?}
+{228}{}{Aah. L'Abri 13 était un cas à part. Il devait rester fermé jusqu'à ce qu'on ait besoin de ses sujets. Il s'agissait, en termes scientifiques, d'un groupe témoin.}
+{229}{}{Mais ils seraient tous morts, si mon ancêtre ne leur avait pas trouvé une puce d'eau de rechange. Ca ne cadre pas bien avec votre plan.}
+{230}{}{Un incident regrettable, et pas prévu. Cela dit, en l'occurrence, c'était plutôt bienvenu.}
+{231}{}{Comment ça?}
+{232}{}{En fait, on avait besoin de tester des sujets d'avant-guerre de souche humaine et non corrompus tels que tes ancêtres de l'Abri 13, et des mutants tout frais, comme les villageois d'Arroyo.}
+{233}{}{Pourquoi ?}
+{234}{}{Pour le Projet. Il est presque prêt. Le salut de l'humanité est à portée de main, et ce sont les Etats-Unis d'Amérique qui seront à l'origine de cette renaissance.}
+{235}{}{Renaissance ? Comment ça ?}
+{236}{}{La seule façon de sauver les humains et la démocratie, c'est d'éradiquer tous les mutants de la planète. Nous, les humains, nous reprendrons ce qui nous appartient de droit.}
+{237}{}{Le Projet va éliminer les mutants de notre beau pays. Et du reste de la planète. Une fois de plus, l'Amérique régentera le monde.}
+{238}{}{Moi aussi je suis un être humain.}
+{239}{}{Eradiquer ? C'est un peu radical. Vous comptez vous y prendre comment ?}
+{240}{}{On a trouvé une unité de recherche qui était opérationnelle il y a 70 ans. Une base militaire qui servait à faire des recherches sur un virus spécial.}
+{241}{}{Un virus ?}
+{242}{}{Oui, le virus FEV. À l'origine, il devait transformer les soldats en super-combattants. Mais ça n'a pas marché. Ils étaient forts, résistants, mais vraiment trop bêtes. Enfin, nos brillants chimistes l'ont modifié.}
+{243}{}{Modifié le virus ? Pourquoi ?}
+{244}{}{Pour en faire une arme vraiment meurtrière. Tout humanoide qui n'aura pas été vacciné contre ses effets au-delà d'un an après la première diffusion mourra. C'est ça, le Projet.}
+{245}{}{Mais c'est démentiel !}
+{246}{}{C'est le dernier, l'ultime espoir de l'humanité. On y travaille depuis des années.}
+{247}{}{Bon, alors vous avez tout ce poison, mais aucun moyen de le répandre.}
+{248}{}{On est à court de certains produits chimiques essentiels. On peut en trouver dans les labos clandestins de New Reno. Si les gangs de mutants utilisent nos armes pour s'entre-tuer, c'est ça de gagné.}
+{249}{}{Tout se goupille à votre avantage, hein ? Et ensuite ?}
+{250}{}{C'est simple. Navarro est une base isolée. Nos hélicos ont une autonomie limitée. Ils se ravitaillent là-bas.}
+{251}{}{Logique.}
+{252}{}{C'est ce que tu penses. Mais les tests menés sur tes congénères ont tous montré que vous êtes victimes de mutation. Heureusement que le Projet est prêt.}
+{253}{}{Pourquoi ?}
+{254}{}{Certains membres de ta tribu présentent des changements très intéressants. Si le danger pour la vraie humanité n'était pas si grand, j'aimerais bien les étudier. Mais c'est impossible.}
+{255}{}{Impossible ? Pourquoi ?}
+{256}{}{Oh, mais c'est l'un des avantages du virus FEV. On le libère ici et les courants se chargeront de le diffuser dans le monde entier. Il aura tout le temps d'éradiquer le moindre recoin de la planète.}
+{257}{}{OK. Mais pourquoi kidnapper les habitants de mon village et ceux de l'Abri 13 ?}
+{258}{}{il nous fallait des cobayes. Les gens de ton village descendent d'un peuple de l'Abri, et il fallait vérifier l'efficacité de la toxine du virus FEV. On teste ça et un vaccin contre le FEV sur les gens de l'Abri 13.}
+{259}{}{Vous ne testez pas l'inoculation sur mon peuple quand même ?}
+{260}{}{Ce n'est même pas nécessaire. On pourrait le faire, et ça marcherait, mais il n'y a aucune raison de faire ça.}
+{261}{}{Il ne t'est jamais venu à l'idée que ce que vous faites est sordide ?}
+{262}{}{Jamais. Le rôle d'un président, c'est aussi de prendre des décisions difficiles. Beaucoup de presqu'humains se sacrifieront pour l'humanité. Les humains domineront.}
+{263}{}{En aucun cas je ne peux te laisser faire ça !}
+{264}{}{Ce n'est pas parce que les gens n'ont pas tous une réplique exacte de ton ADN que ça te donne le droit de les exterminer !}
+{265}{}{Tu ne peux rien y faire. Les tests sont terminés et la toxine est prête à être répandue. Dans quelques heures, les gens de ton village seront les premiers à faire ce sacrifice ultime. Les autres mutants suivront. Un détail regrettable dans l'histoire de la race humaine...}
+{266}{}{Et si on faisait commencer ce détail par ton épitaphe, Monsieur le Président ?}
+{267}{}{Oh, cette décision ne me fait pas plaisir. S'il y avait un autre moyen... Mais il n'y en a pas. Rien n'est trop cher pour la survie de l'humanité. Si tu étais humain, tu partagerais mon avis.}
+{268}{}{C'est vraiment ce que tu crois, hein ?}
+{269}{}{Bien sûr. Même me tuer serait inutile. Rien ne peut arrêter la diffusion du virus.}
+{270}{}{Je vais peut-être juste trouver un moyen de te faire goûter à ton propre remède.}
+{271}{}{On verra ça plus tard. Là, j'ai à faire. Au revoir, Président Richardson.}
+{272}{}{Je ne suis pas de cet avis, Président. Je crois que ce sera utile. Je me sentirai beaucoup mieux après.}
+{273}{}{Tu peux essayer, mais bientôt les gens de l'Enclave et de Navarro seront inoculés.}
+{274}{}{Ce n'est pas encore fait ?}
+{275}{}{Il ne nous reste plus qu'à distribuer le matériel. Une question d'heures. En plus, l'Enclave est une unité étanche. Ni air, ni aucun polluant ne peuvent y entrer ou en sortir.}
+{276}{}{On verra. En attendant, je vais moi-même te mettre hors d'état de nuire !}
+{277}{}{Ce sera peut-être plus difficile que prévu. Mais si tu y arrives, j'aurai l'honneur de mourir en patriote et en serviteur de l'humanité.}
+{278}{}{Le moment des honneurs est arrivé.}
+{279}{}{Là, je vais te laisser cogiter sur ta mort prochaine. On ne touche pas à l'alarme. Salut.}
+{280}{}{Très touchant. Mais avec les changements radicaux que montrent les villageois de chez toi et les autres mutants, on est loin des progrès de l'évolution naturelle.}
+{281}{}{Nous sommes peut-être une version améliorée de cette race humaine. Tu n'y a jamais pensé ?}
+{282}{}{Très possible, en effet. Dans ce cas, notre mission est encore plus vitale à la survie de la race humaine.}
+{283}{}{Hein ? Comment-ça ?}
+{284}{}{Voilà comment il faut réagir. Que Dieu bénisse l'Amérique. Maintenant, tu devrais retourner à  ta cellule d'isolement.}
+{285}{}{Heu, très bien. Comme vous voudrez, monsieur.}
+{286}{}{Oh, j'arriverai bien à me débrouiller pour retrouver mon chemin. Au revoir.}
+{287}{}{Quoi, mais contre la toxine du FEV, bien sûr. C'est un beau sacrifice que vous faites là, toi et tes amis de l'Abri 13. Au nom du gouvernement des Etats-Unis et de toute l'humanité, merci. Maintenant, regagne ta cellule.}
+{288}{}{Toxine du FEV ? Qu'est-ce que c'est que cette histoire ? Mais, enfin, qu'est-ce qui se passe ici ?}
+{289}{}{Heu, très bien. Comme vous voudrez, monsieur.}
+{290}{}{Oh, j'arriverai bien à me débrouiller pour retrouver mon chemin. Au revoir.}
+{291}{}{Et alors ? Si on permet à ton espèce de prospérer, c'est la fin de notre belle race humaine. On ne peut laisser des monstres radioactifs anéantir les humains.}
+{292}{}{Je crois que tu as tendance à dramatiser un peu.}
+{293}{}{Pas du tout. Regarde un peu l'avenir. Bien sûr, mutants et humains peuvent s'entendre un moment, mais très vite, les humains crouleront sous le nombre. Non, il faut imposer des limites. La responsabilité commence ici.}
+{294}{}{Qu'est-ce que vous comptez faire contre cette « menace » ?}
+{295}{}{Je n'ai pas le temps d'écouter ton délire de malade sectaire. Salut.}
+{296}{}{Le gouvernement des Etats-Unis d'Amérique réfléchit à une solution depuis un bon moment.}
+{297}{}{Comment ? Qu'est-ce que tu fais ici ?}
+{298}{}{Je t'assure, je suis sain d'esprit. Tout comme ceux qui travaillent sur ce Projet. Nous nous consacrons au salut de l'humanité. Tu peux appeler folie le dévouement total à une cause, mais alors, c'est une folie divine.}
+{299}{}{Mais qu'est-ce que c'est que ces sornettes ? Qu'est-ce tu fais ici ?}
+{300}{}{Et si je me dévouais totalement à ton élimination immédiate ?}
+{301}{}{T'es dingue. Je n'ai pas de temps à perdre en divagations. Salut.}
+{302}{}{Je ne crois pas que cette vieille planète soit assez grande pour deux leaders. Si c'est nous ou vous... Et je crois que mon choix est fait.}
+{303}{}{Je ne crois pas que tu auras un jour à choisir.}
+{304}{}{En tant que représentant du pouvoir exécutif, ma tâche est d'assurer la survie et la prospérité des Etats-Unis et de l'humanité toute entière. Un lourd fardeau, certes, mais s'il signifie le retour de la Terre à nos enfants, alors c'est avec joie que j'accepte de le porter.}
+{305}{}{Comment tu comptes t'y prendre ? Qu'est-ce que tu fais ici ?}
+{306}{}{Je vais te décharger de ce fardeau. Définitivement.}
+{307}{}{Ca doit être sympa dans ta dimension. À plus tard, M. Maboul.}
+{308}{}{Vers le nord}
+{309}{}{Vers le nord-ouest}
+{310}{}{Vers l'ouest}
+{311}{}{Vers le sud-ouest}
+{312}{}{Vers le sud}
+{313}{}{Vers le sud-est}
+{314}{}{Vers l'est à partir d'ici}
+{315}{}{Vers le nord-est}
+{316}{}{Oui}
+{317}{}{Non}
+{318}{}{Ouille}
+{319}{}{(cri de douleur)}
+{320}{}{Pourquoi vous me parlez sur ce ton-là ?}
+{321}{}{Je n'en sais rien.}
+{322}{}{Tu n'es pas très sympa.}
+{323}{}{Merci.}
+{324}{}{C'est bien.}
+{325}{}{Ce n'est pas bien.}
+{326}{}{J'ai plutôt un bon pressentiment.}
+{327}{}{J'ai un mauvais pressentiment.}
+{328}{}{Vous êtes vraiment cinglés.}
+{329}{}{Mais de quoi tu parles ?}
+{330}{}{Mais, de quoi tu parles ?}
+{331}{}{Il y a sûrement un autre moyen.}
+{332}{}{Viens ici.}
+{333}{}{Je comprends pas.}
+{334}{}{Je ne sais pas.}
+{335}{}{Ca fait vraiment mal.}
+{336}{}{Ca fait super mal.}
+{337}{}{Ca doit faire mal.}

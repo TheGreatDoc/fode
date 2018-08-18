@@ -1,0 +1,47 @@
+// CARAVAN_WADE_REDD_VC
+
+	_SetupCaravan(CARAVAN_WADE_REDD_VC, CRV_TYPE_TWOWAY, 2, LVAR_q_redd_wade_caravan_escort, 5);
+	_SetupCaravanLeader(CARAVAN_WADE_REDD_VC, DIALOG_redd_wade, NPC_PID_Mercenary_1, BAG_VaultCity_Military, TEAM_QuestNpc, AIPACKET_PEASANTS, 8);
+	_SetupCaravanLiderPosition(CARAVAN_WADE_REDD_VC, LOCATION_Redding, MAP_redding_outer, 61, 52, true); 
+	_SetupCaravanLiderPosition(CARAVAN_WADE_REDD_VC, LOCATION_VaultCity, MAP_vcity_courtyard, 116, 62, false); 
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 675, 525);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 617, 578);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 457, 464);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 520, 208);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 578, 138);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 932, 138);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 969, 205);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 1045, 210);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 1084, 249);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 1175, 240);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 1228, 277);
+	_AddRoutePoint(CARAVAN_WADE_REDD_VC, 1225, 325);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC,  NPC_PID_Mercenary_7, DIALOG_crvg_common_male, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_SF_Caravan_VaultCityPatrolMale, TEAM_QuestNpc, 10, 0, 0, 15, true);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC,  NPC_PID_Mercenary_2, DIALOG_crvg_common_male, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_VaultCity_Military, TEAM_QuestNpc, 10, 0, 0, 45, false);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC,  NPC_PID_Mercenary_3, DIALOG_crvg_common_male, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_Caravan_BlackGuard, TEAM_QuestNpc, 10, 0, 0, 100, false);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC,  NPC_PID_Mercenary_4, DIALOG_crvg_common_male, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_Caravan_BlackGuard, TEAM_QuestNpc, 50, 0, 0, 5, false);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC, NPC_PID_Mercenary_5, DIALOG_crvg_common_female, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_SF_Caravan_VaultCityPatrolFemale, TEAM_QuestNpc, 10, 0, 0, 40, true);
+	_AddGuardInfo(CARAVAN_WADE_REDD_VC, NPC_PID_Mercenary_6, DIALOG_crvg_common_male, "caravan@_DefaultGuardInit", AIPACKET_BOUNTY_HUNTER, BAG_VaultCity_Military, TEAM_QuestNpc, 10, 0, 0, 75, false);
+	_SetupCaravanCabs(CARAVAN_WADE_REDD_VC, Random(2,3) );
+	// РѕСЃРЅРѕРІРЅРѕР№ РјР°СЂС€СЂСѓС‚
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_BOTTLE_CAPS, 200, 1000, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_BOTTLE_CAPS, 100, 200, 35, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_BOTTLE_CAPS, 1000, 2000, 10, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_GOLD_NUGGET_DE, 10, 20, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_GOLD_NUGGET_DE, 3, 5, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_GOLD_NUGGET_DE, 4, 7, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, 0, PID_FLARE_DE, 1, 3, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, 2, PID_FLARE_DE, 1, 3, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, 1, PID_FLARE_DE, 1, 3, 100, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_MORNING_STAR_MINE, 10, 30, 50, false);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_KOKOWEEF_MINE_SCRIP, 1, 20, 50, false);
+	// РѕР±СЂР°С‚РЅС‹Р№ РјР°СЂС€СЂСѓС‚	
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_BOTTLE_CAPS, 200, 400, 100, true);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_STIMPAK, 2, 5, 100, true);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_FIRST_AID_BOOK, 1, 2, 30, true);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_STIMPAK, 1, 4, 50, true);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_RADAWAY, 1, 2, 45, true);
+	_AddLootToCaravanCabs(CARAVAN_WADE_REDD_VC, -1, PID_STIMPAK, 2, 3, 90, true);
+	
+	_SheduleCaravan(CARAVAN_WADE_REDD_VC, 0, 9, 0, 12); 
+	

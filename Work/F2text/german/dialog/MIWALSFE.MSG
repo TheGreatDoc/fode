@@ -1,0 +1,9 @@
+{100}{}{Du siehst: Einen Wandsafe.}
+
+{110}{}{Der Safe ist verschlossen.}
+
+{200}{}{ öffnet den Wandsafe.}
+{201}{}{ verschließt den Wandsafe.}
+
+{210}{}{ kann den Wandsafe nicht verschließen.}
+{211}{}{ kann den Wandsafe nicht öffnen.}

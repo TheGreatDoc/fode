@@ -1,0 +1,186 @@
+{100}{}{Tu vois un homme au regard perçant qui ressemble à un homme d'affaires.}
+{101}{}{Tu vois un croupier de craps.}
+{102}{}{Il a un bâton et beaucoup de jetons. Tu pourrais tenter ta chance avec lui.}
+
+{103}{}{Fais tes paris. Nous avons un autre lanceur.}
+{104}{}{Combien vas-tu miser sur la PASSLINE ?}
+{105}{}{Combien vas-tu miser sur la DON'T PASSLINE ?}
+{106}{}{Combien vas-tu miser sur la COMELINE ?}
+{107}{}{Combien vas-tu miser sur la DON'T COMELINE ?}
+{108}{}{Combien vas-tu miser sur le FIELD ?}
+{157}{}{Combien vas-tu miser sur le PLACEBET ?}
+#options
+# 2 3 12 crap out. 7 11 win auto..
+
+{109}{}{Le point est suon}
+
+{110}{}{Pass line.}
+{111}{}{Don't Pass line.}
+
+{112}{}{Come line.}
+{113}{}{Don't Come line.}
+
+{114}{}{Mises de proposition...}
+{115}{}{Place tes mises...}
+{116}{}{Mise sur field}
+{118}{}{Jeter les dés}
+
+{119}{}{Mise Pass line fixée à :}
+{120}{}{Mise Don't pass line fixée à :}
+{121}{}{Mise Come line fixée à :}
+{122}{}{Mise Don't come line fixée à :}
+
+{123}{}{7 :}
+{124}{}{double 3 :}
+{125}{}{double 4 :}
+{126}{}{double 5 :}
+{127}{}{double 2 :}
+{128}{}{1&2 :}
+{129}{}{5&6 :}
+{130}{}{1&1 :}
+{131}{}{6&6 :}
+{132}{}{Craps :}
+
+{133}{}{Pls 4 :}
+{134}{}{Pls 5 :}
+{135}{}{Pls 6 :}
+{136}{}{Pls 8 :}
+{137}{}{Pls 9 :}
+{138}{}{Pls 10 :}
+
+{139}{}{Sur 4 :}
+{140}{}{Sur 5 :}
+{141}{}{Sur 6 :}
+{142}{}{Sur 8 :}
+{143}{}{Sur 9 :}
+{144}{}{Sur 10 :}
+
+{145}{}{Cote 4 :}
+{146}{}{Cote 5 :}
+{147}{}{Cote 6 :}
+{148}{}{Cote 8 :}
+{149}{}{Cote 9 :}
+{150}{}{Cote 10 :}
+
+{151}{}{Mise Field fixée à :}
+
+{152}{}{Quelle mise de PROPOSITION ?}
+{153}{}{Combien ?}
+{154}{}{Mises jet simple...}
+{155}{}{Mises Hardway...}
+{156}{}{Quel type de mise}
+
+#proposition bets
+{200}{}{dé de 7 (5 fois la mise)}
+{201}{}{double 3 (10 fois la mise)}
+{202}{}{double 4 (10 fois la mise)}
+{203}{}{double 5 (8 fois la mise)}
+{204}{}{double 2 (8 fois la mise)}
+{205}{}{1 & 2 (15 fois la mise)}
+{206}{}{5 & 6 (15 fois la mise)}
+{207}{}{1 & 1 (30 fois la mise)}
+{208}{}{6 & 6 (30 fois la mise)}
+{209}{}{Craps (8 fois la mise)}
+
+#place bets
+{299}{}{Quelle mise PLACE BET ?}
+{300}{}{sur 4 (1,8 fois la mise)}
+{301}{}{sur 5 (1,4 fois la mise)}
+{302}{}{sur 6 (1,16 fois la mise)}
+{303}{}{sur 8 (1,16 fois la mise)}
+{304}{}{sur 9 (1,4 fois la mise)}
+{305}{}{sur 10 (1,8 fois la mise)}
+
+{400}{}{En arrière...}
+
+{500}{}{$}
+{501}{}{.}
+
+#reward messages
+#pass line strings
+{600}{}{Sept paie la passline, le point est off.}
+{601}{}{Onze paie la passline.}
+{602}{}{Deux, craps perd la passline.}
+{603}{}{Trois, craps perd la passline.}
+{604}{}{Douze, craps perd la passline.}
+
+#don't pass line strings
+{610}{}{Sept perd la don't passline, le point est off.}
+{611}{}{Onze perd la don't passline.}
+{612}{}{Deux, craps paie la don't passline.}
+{613}{}{Trois, craps paie la don't passline.}
+{614}{}{Douze, craps pousse la don't passline.}
+
+#proposition begs
+{620}{}{Mise de proposition 7}
+{621}{}{Mise de proposition double 3}
+{622}{}{Mise de proposition double 4}
+{623}{}{Mise de proposition double 5}
+{624}{}{Mise de proposition double 2}
+{625}{}{Mise de proposition 1 et 2}
+{626}{}{Mise de proposition 5 et 6}
+{627}{}{Mise de proposition 1 et 1}
+{628}{}{Mise de proposition 6 et 6}
+{629}{}{Mise de proposition Craps 2,3,12}
+{630}{}{Perd !}
+{631}{}{Gagne !}
+
+#place bets
+{650}{}{La mise Placebet 4}
+{651}{}{La mise Placebet 5}
+{652}{}{La mise Placebet 6}
+{653}{}{La mise Placebet 8}
+{654}{}{La mise Placebet 9}
+{655}{}{La mise Placebet 10}
+
+#field bets
+{660}{}{La mise Field 2 gagne le double.}
+{661}{}{La mise Field 3 gagne.}
+{662}{}{La mise Field 4 gagne.}
+{663}{}{La mise Field 9 gagne.}
+{664}{}{La mise Field 10 gagne.}
+{665}{}{La mise Field 11 gagne.}
+{666}{}{La mise Field 12 gagne le triple.}
+{667}{}{La mise Field perd.}
+
+#flat bet
+{670}{}{Flat bet 4}
+{671}{}{Flat bet 5}
+{672}{}{Flat bet 6}
+{673}{}{Flat bet 8}
+{674}{}{Flat bet 9}
+{675}{}{Flat bet 10}
+
+{680}{}{Cote 4}
+{681}{}{Cote 5}
+{682}{}{Cote 6}
+{683}{}{Cote 8}
+{684}{}{Cote 9}
+{685}{}{Cote 10}
+
+{700}{}{Aucun point gagné.}
+{701}{}{Joue}
+{702}{}{Ne joue pas}
+
+{710}{}{Die1 :}
+{711}{}{Die2 :}
+
+{712}{}{Je regrette mais je dois partir.}
+{713}{}{Je regrette, je ne veux pas faire cette mise.}
+{714}{}{Le point est off.}
+
+#odds bet stuff
+{800}{}{Mise sur les numéros joués.}
+{801}{}{Choisis le multiplicateur de la cote. La cote est sur :}
+{802}{}{Cote x.}
+{803}{}{actuellement à :}
+{804}{}{Cote sur 4.}
+{805}{}{Cote sur 5.}
+{806}{}{Cote sur 6.}
+{807}{}{Cote sur 8.}
+{808}{}{Cote sur 9.}
+{809}{}{Cote sur 10.}
+{810}{}{Tu mises sur quel numéro ?}
+
+{1100}{}{Tu vois une femme au regard perçant qui ressemble à une femme d'affaires.}
+{1102}{}{Elle a un bâton et beaucoup de jetons. Tu pourrais tenter ta chance avec elle.}

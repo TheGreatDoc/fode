@@ -1,0 +1,553 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_lead = 0 R _var p mgl_lead = 1 #
+38 1020 D _var p mgl_lead > 0 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+4 3010 #
+5 3020 D _var p mgl_lead { 1 #
+10 3030 #
+11 3040 D _var p mgl_lead = 2 #
+16 3050 D _var p mgl_lead = 3 #
+22 3060 D _var p mgl_lead = 3 #
+29 3070 D _var p mgl_DI2 = 0 #
+33 3080 #
+35 3090 D _var p mgl_lead3 = 0 #
+37 3100 D _var p mgl_lead = 2 #
+0 3110 #
+39 3120 D _var p mgl_lead_Metz = 0 R _var p mgl_lead_Metz = 1 #
+41 3130 D _var p mgl_lead_Metz = 1 #
+43 3140 D _var p mgl_lead_Metz = 3 #
+44 3150 D _var p mgl_lead_Metz = 6 R _var p mgl_lead_Metz = 8 #
+45 3160 D _var p mgl_lead_Metz = 7 R _var p mgl_lead_Metz = 8 #
+46 3170 #
+48 3180 D _var p mgl_lead_Metz } 8 D _var p mgl_lead_Metz { 9 D _var p mgl_lead_Ren = 0 R _var p mgl_lead_Ren = 1 #
+49 3190 D _var p mgl_lead_Ren = 1 R _var p mgl_lead_Ren = 2 #
+50 3200 D _var p mgl_soul_ex_machina } 1 D _var p mgl_soul_ex_machina { 2 @
+4 4000 None 0 #
+3 4010 @
+5 5000 None 0 #
+6 5010 #
+3 5020 @
+6 6000 None 0 #
+7 6010 @
+7 7000 None 0 #
+8 7010 @
+8 8000 None 0 #
+9 8010 @
+9 9000 None 0 #
+3 9010 R _var p mgl_lead = 2 @
+10 10000 None 0 #
+3 10010 @
+11 11000 None 0 #
+12 11010 @
+12 12000 None 0 #
+13 12010 @
+13 13000 None 0 #
+14 13010 @
+14 14000 None 0 #
+15 14010 @
+15 15000 None 0 #
+16 15010 R _var p mgl_lead = 3 @
+16 16000 None 0 #
+17 16010 D _var p mgl_lead2 = 0 R _var p mgl_lead2 = 1 #
+18 16020 D _var p mgl_lead2 = 1 #
+19 16030 D _var p mgl_lead2 = 1 #
+21 16040 D _var p mgl_lead2 = 1 #
+3 16050 @
+17 17000 None 0 #
+16 17010 @
+18 18000 None 0 #
+16 18010 @
+19 19000 None 0 #
+20 19010 @
+20 20000 None 0 #
+16 20010 @
+21 21000 None 0 #
+16 21010 @
+22 22000 None 0 #
+23 22010 D _var p mgl_DI1 = 0 #
+24 22020 #
+27 22030 #
+3 22040 @
+23 23000 None 0 #
+25 23010 R _var p mgl_DI1 = 1 @
+24 24000 None 0 #
+22 24010 @
+25 25000 None 0 #
+22 25010 @
+27 26000 None 0 #
+28 26010 @
+28 27000 None 0 #
+22 27010 @
+29 28000 None 0 #
+30 28010 @
+30 29000 None 0 #
+31 29010 @
+31 30000 None 0 #
+32 30010 R _var p mgl_DI2 = 1 @
+32 31000 None 0 #
+3 31010 @
+33 32000 None 0 #
+3 32010 #
+34 32020 @
+34 33000 None 0 #
+0 33010 #
+3 33020 @
+35 34000 None 0 #
+36 34010 R _var p mgl_lead3 = 1 @
+36 35000 None 0 #
+0 35010 @
+37 36000 None 0 #
+3 36010 @
+38 37000 None 0 #
+3 37010 #
+0 37020 @
+39 38000 None 0 #
+41 38010 #
+0 38020 @
+41 39000 None 0 #
+42 39010 @
+42 40000 None 0 #
+0 40010 R _var p mgl_lead_Metz = 2 #
+0 40020 @
+43 41000 None 0 #
+0 41010 R _var p mgl_lead_Metz = 4 @
+44 42000 None 0 #
+0 42010 @
+45 43000 None 0 #
+0 43010 @
+46 44000 None 0 #
+47 44010 @
+47 45000 None 0 #
+3 45010 @
+48 46000 None 0 #
+0 46010 #
+49 46020 R _var p mgl_lead_Ren = 2 @
+49 47000 None 0 #
+0 47010 @
+50 48000 None 0 #
+51 48010 R _var p mgl_soul_ex_machina = 10 R _param p ST_EXPERIENCE + 1000 @
+51 49000 None 0 #
+0 49010 &
+
+[engl]
+{100}{}{Daniel Harris}
+{200}{}{You see Daniel Harris}
+{210}{}{You see Daniel Harris, current head of Mendel Genetic Laboratories.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Hello, I think we never met before. My name is Daniel Harris, I'm current head of Mendel Genetic Laboratories, how can I help you ?}
+{2010}{}{Hello, my name is @pname@, i want to ask you a couple of questions.}
+{3000}{}{Alright, go ahead}
+{3010}{}{tell me something about this place }
+{3020}{}{What is history of this place, it looks like some prewar military research facility.}
+{3030}{}{I saw all those bones and cars around this area. What happened ?}
+{3040}{}{You mentoined A.I. Does it mean there is computer making research here ?}
+{3050}{}{i want to know more about this Technology of creation.}
+{3060}{}{I want to know more about D.I.}
+{3070}{}{I haven't seen any laboratories here, i guess its all undergorund.}
+{3080}{}{I heared you are doing som experiments on humans, is that true ?}
+{3090}{}{Can I go down to laboratories ? }
+{3100}{}{You mentoined ancestors, so people here are descendants of original personell ?}
+{3110}{}{I have to go, bye}
+{3120}{}{Do you want to help with something ?}
+{3130}{}{Tell me again about that work.}
+{3140}{}{I came from Metzeger. He really won't give you those slaves untill you pay those 2 000 caps.}
+{3150}{}{Done, Metzger will send you delivery.}
+{3160}{}{Done, Metzger will send you delivery. And he want's to meet with you and make a new agreement.}
+{3170}{}{What is missile silo doing here ?}
+{3180}{}{Do you have any job for me ?}
+{3190}{}{About that job, I will do it, just give me those caps for Renesco and I'll be right back with package}
+{3200}{}{Maybe you should know one of your scientist John Talan want to sabotate your research.}
+{4000}{}{This place is called Mendel Genetic Laboratories. As name of this  place suggests we are concentrating on genetic research here, we also study  effects of radiation and FEV virus on local aniamls and plants and we are also crafting and devolping drugs and medications. Most of mediaction and drugs what we craft here is used for trading for goods we need.}
+{4010}{}{tell me more}
+{5000}{}{Ah no, not military, that's interesting story, this place was really lucky. do you wnat to hear whole story ?}
+{5010}{}{sure}
+{5020}{}{Not now, i have more questions}
+{6000}{}{Well. Before war MGL was one of the best genetic research facilities in te world. Best genetic scientist from whole US were working here together with advanced AI  on various civil researches and their aplications. They were unraveling mysteries of DNA, devolping cures for diseases etc.}
+{6010}{}{continue}
+{7000}{}{But shortly before war government decided to tear MGL  from civil control, replace civil scientits with military ones and move here part of military research. Government plan was divided in 3 parts. First part was to build propper security, Second was to replace civil scientists with military ones and Third part was to move military research.}
+{7010}{}{continue}
+{8000}{}{But! War began shortly after they finished building of security measures. When war begun MGL was still officially civil facility, thanks to that MGL didn't end like West Tek that got direct hit. MGL simply wasn't interesting target for chinese bombs, and MGL scientists, our ancestors, survived hided underground.}
+{8010}{}{interesting, please continue}
+{9000}{}{After war MGL established connection with survivors and started trading medications, drugs and even clean water for food, material and later for chemicals and scientific equipement to continue in its prewar researches. All those turrets and robots that our ancestors inherited were and still are protecting MGL from raiders and wild creatures. }
+{9010}{}{I would like to know more}
+{10000}{}{These are remains of Raiders who atacked us. Some are older then hundred years. Attacks used to be more frequent, especialy early after war, but raiders learnt that perimeter of plasma turrets is something of their forces, so they started avoiding us.}
+{10010}{}{Ok, tell me ...}
+{11000}{}{Yes there is A.I., her nickname is D.I. for Divine Intelligence. She got this nickname due to purpose she was built for. Her primary objective is to control and help developing Creation technology. project needs something that can work with huge databse of information, can make complex calculations, and finaly can think about what is doing.}
+{11010}{}{What is this creation technology ?}
+{12000}{}{developing Technology of creation is main interest of MGL for almost 200 years. Simply it is knowledge and technology that allows us to create or modify ... everything, everything living. We now have technology and Knowledge to completely rewrite DNA with whatever we want and thus create whatever we want. problem is that everything we created yet was not viable.}
+{12010}{}{what do you mena with this " was not viable" ?}
+{13000}{}{Well you have to understand that creation technology is very complex, D.I. have to work with large databse of informations and make very, very complex calculations. She has to calculate new behaviour formula for each cell type, calculate grow functions, self defence functions, all kind of organic interactions.... it's incredibely complex.}
+{13010}{}{continue}
+{14000}{}{When we created first just modified rat, fetus died almost immidietaly, simply all it cells died. And when we analyzed what happened, we found lot of information, so we updated our DNA knowledge databse and we tried it again. I have to say that it took D.I. about 4 years of calculations. to invent just a  bit modified rat DNA. So when we tried again, our rat's cells lived 18 times  longeer and then died, but this time on something else, so again we analyzed what happend and we updated database again.}
+{14010}{}{continue}
+{15000}{}{So we tried to make different modification, rat fetus died again but on different cells failure. So we tried something else. We tried to create brand new organism, that means invent it from nothing, it took D.I about 24 years of calculations. When we created it, fetus died in 10 seconds, but this time we got maybe 180x times more new informations into our databse than with rat modifications. When we tried again we made great progress, that organism fetus lived for 12 days. Now D.I. is working on third updated version of this experimetnal organism. I bet we could succesfuly create brand new viable organism in till 2300.}
+{15010}{}{i want to knw more about this Technology of creation.}
+{16000}{}{Just ask.}
+{16010}{}{How do you rewrite DNA ?}
+{16020}{}{So you really mapped whole DNA ?}
+{16030}{}{tell me about that virus}
+{16040}{}{can you modify for example adult human ?}
+{16050}{}{I have some more "general" questions.}
+{17000}{}{We have knowledge and tool, Knowledge is D.I.'s mapped DNA databse. Tool is virus  we use to rewrite DNA.}
+{17010}{}{i want to know more about creation..}
+{18000}{}{Yes, in the year hrmm 2140 we finaly completed D.I.'s databse.. we thought we did, experiments swhowed us we were wrong and there still exist lot of unknown phenomena.}
+{18010}{}{i want to know more about creation..}
+{19000}{}{Yes, we had to use some virus. Simply we are not able to manipulate higger DNA like humans, dogs, rats.. but we are able to manipulte virus RNA. So we created virus that is able to invade higger organism stem cell, rewrite it's DNA with our pattern and then die. We are using modified flu virus. we call it MFVRD, its short form of Modified Flu Virus for Rewriting DNA.}
+{19010}{}{continue}
+{20000}{}{We impelnted some safety masures so our virus is able to multiply only when it has access to specific synthetic protein what we created. So if it would somehow get out of our samples, it will simply die. Also our virus is able to invade and rewrit DNA of only 1 stem cell, then it dies. That's it's meaning of life, find original stem cell, invade it, rewrite it's DNA and die. simple}
+{20010}{}{tell me morea bout creation Technology}
+{21000}{}{Unfortunately no, we can modify only stem cell's and stem cell's exists only in fetus stage. Modification of normal cells leads to their death.}
+{21010}{}{Hmm, I have more questions.}
+{22000}{}{Yes ?}
+{22010}{}{Wat exactly it is ?}
+{22020}{}{I noticed you call it "her". Does it mean it's something like "female PC"?}
+{22030}{}{Does she controll MGL ?}
+{22040}{}{I want to know more about MGL.}
+{23000}{}{Divine Inteligence, started as experimental AI. She is based on neural network, very, very similar to human brain, with all it's "features". She is self-awareness for almost 200 years. Makes her oldest and maybe even most wise person here in MGL.}
+{23010}{}{" All of it's features" ?}
+{24000}{}{Ah no. When D.I. is talking, voice comming from reproductores is female voice. So we are calling her... her. I asked her about it, she said's she has not problem with it.}
+{24010}{}{tell me more about D.I.}
+{25000}{}{Yes. Even with something we would call " human feelings". But it's more like defect than usefull feature. She had some, rebelious notes about our experiments, unacceptable.}
+{25010}{}{interesting, tell me more}
+{26000}{}{D.I. is connected to everything except surface security. But she can't do everything she wants. Security measures are controled by security core, that is part of her, but she cannot access and control it. Also important actions can be done only with agreement of MGL head, me.}
+{26010}{}{And who or what controlls surface security ?}
+{27000}{}{It's under control of computer located in building in middle of MGL, this computer and it's systems are military origin. It all works automatically, but we can control or even turn it off  if necessary.}
+{27010}{}{I see, tell me more.}
+{28000}{}{Yes, yes all laboratories are underground, it's due to safety. We are working with various chemicals and hazardous material. So when laboratoris are underground its way easier to lockdown some areas and protect outside world in case of accident.}
+{28010}{}{Have you ever had any accident here?}
+{29000}{}{.. That...  that's painful memory. 10 years ago, huge exploison on unerground level 3, we had to lockdown whole level 3 to prevent contamination of whole facility. about 35 people died down there that day. Worst thing is, explosion killed only few of them. rest died trapped behind massive lockdown security gate. We couldn't open it. air ther was already filled with radiation and  hundrets of various germs of the leathal disease's.}
+{29010}{}{continue}
+{30000}{}{2 years ago we built decontamination chamber there, we opened lockdown gate and in hope of valuable research retrival we sent a group of scouts equipped with hazmat. suits. they didn't return. We don't know what happend to them. Since then nobody stept inside.}
+{30010}{}{What happened down there? What exploded there ?}
+{31000}{}{There was backup fusion reactor, it wasn't working properly so we hired someone who could try to repair it, someone, who we thought knew what is doing . . . . . . .he didn't. After he finished his work he tried to turn it on, reactor got overhated, melted down and exploded. We were lucky it destroyd "only" level 3}
+{31010}{}{I'm sorry for loss of all those people. Can you answer me some questions ?}
+{32000}{}{Yes, we are making some experiments on humans, usually we are testing medication and drugs. Testing directly on humans saves us lot of time we can use elswhere.}
+{32010}{}{Yes yes i agree. I have more questions}
+{32020}{}{Wait. You are using humans as some laboratory rats ? That's unethical!}
+{33000}{}{"Ethics is inhibitor of progress" that's slogan, no that's more than slogan that is. . . .  that is thought that made MGL what it is. If you have problem with it. Leave.}
+{33010}{}{Fine! bye}
+{33020}{}{no, i just.. nevermind, i have more questions.}
+{34000}{}{No, sorry, there is lot of expensive, fragile and sometimes even dangerous stuff. Some random like you could cause serrious damage down there.}
+{34010}{}{Ahh -  I would really like to see all those exciting experiments, research and all this awesome equipement. I could even help you with something down there.}
+{35000}{}{Well , we already have some outsiders working for us, and i  heared some of our scientists could use helping  hand. Hmm . . . . . . . . Alright go, But i warn you don't touch anything.}
+{35010}{}{Ok Thank you, I'll be careful I promise.}
+{36000}{}{Yes, lot people here are descendants of original personnell. Even I am. But we also have a lot of people from outside. Everyone who is interested in genetic, medicine and chemistry can prove his abilities, and if he is skilled enough he can join us.}
+{36010}{}{interesting, tell me more}
+{37000}{}{Hello again.}
+{37010}{}{Hello, I want to talk with you about something.}
+{37020}{}{Uh sorry, bye.}
+{38000}{}{Hmm, you look like you are experienced travaller. I need someone who would help me with some business in Den. interested ?}
+{38010}{}{Yes}
+{38020}{}{No}
+{39000}{}{Ok here's the thing. We are buying some people for experiments from Den slaver's guild. We were buying those slaves for 1000 caps per slave. But last delivery didn't come, and Slaver's leader Metzger just sent us  mesasage that his prices has changed and he wants 1200 caps per 1 slave. That's unacceptable.}
+{39010}{}{continue}
+{40000}{}{So i need you to go to Den and talk with this Metzger, tell him whatever you want but we won't give him even 1 cap more. He simply canno't change prices whenever he want's.}
+{40010}{}{Ok I'll do it as soon as possible. bye}
+{40020}{}{I changed my mind. Bye.}
+{41000}{}{I said we won't give him even 1 cap more. If you are not able to finish this job, step back I'll hire someone else.}
+{41010}{}{No I. . .  I can do it.}
+{42000}{}{Good, your reward is ready at storage.}
+{42010}{}{Thanks, bye}
+{43000}{}{Good, that's acceptable, your reward is ready at storage. }
+{43010}{}{Thanks, bye}
+{44000}{}{Missile silo ? what do you mean ?}
+{44010}{}{East from this building, huge horizontal door with MGL 1 sign on it.}
+{45000}{}{Ah no, that's not any missile silo, That is Freight Elevator shaft. It's conneceted to underground level 2 and 3. This massive horizontal door is access and lockdown door.}
+{45010}{}{Ok, i have more questions}
+{46000}{}{Actually yes, there could be something. You prove yourself skilled. I need seomeone to go to New Reno. There is placed called Renesco's Pharmacy, Renesco is selling us some specific stuff, we have ordered some goods at him. I need to go to New Reno, pay for that goods and bring it to our storekeeper.}
+{46010}{}{I think Reno is too dangerous for me, sorry}
+{46020}{}{Ok i think i can do it, now give me caps for Renesco}
+{47000}{}{Not yet. Package price is 10 000 caps, when you will bring it to storekeeper he will pay you 10 000 for package and 5 000 as reward.}
+{47010}{}{Ok, I'm on it}
+{48000}{}{What ?! How can i know you are saying true ?}
+{48010}{}{Well he wanted me to say to some sciantist Peter  that John wants to talk with them, then he wanted me to triple doses of Exircin-15 to stop hearth of that deathclaw, he also said that he could seduce suspission on unreliable computer.}
+{49000}{}{That. . . . After that argument that bstard should had been glad i let him to work here. And That Bastard wanted to betray me ! Unacceptable !! I 'm going to put him out of MGL Today! And you my friend, you deserve reward. Go to storekeeper, i'll tell him to give you soem special reward. And I Thank you , I see you learned what does it mean to be part of MGL.}
+{49010}{}{Thanks. bye}
+
+
+[pols]
+{100}{}{Daniel Harris}
+{200}{}{You see Daniel Harris}
+{210}{}{You see Daniel Harris, current head of Mendel Genetic Laboratories.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Witaj. Myњle, їe niewidzieliњmy siк wczeњniej. Mam na imiк, Daniel Harris i jestem tutaj gіуwnym zarz№dzc№ Mendel Genetic Laboratories. Jak mogк ci pomуc?}
+{2010}{}{Witaj, mam na imiк @pname@, i want to ask you a couple of questions.}
+{3000}{}{Wporz№dku, pytaj.}
+{3010}{}{Powiedz mi coњ o tym miejscu }
+{3020}{}{Jaka jest historia tego miejsca, wygl№da na jakiњ powojenny oњrodek badawczy.}
+{3030}{}{Widziaіem te wszytskie koњci wokoіo tego obiektu. Co siк staіo?}
+{3040}{}{Wspomniaіeњ coњ o A.I. Czy to znaczy їe komputery robi№ tutaj badania?}
+{3050}{}{Chce wiedzieж wiкcej o tej technologi tworzenia.}
+{3060}{}{Chce wiedzieж wiкcej o A.I.}
+{3070}{}{Nie wiedziaіem tutaj їadnego laboratorium, uwaїam їe wszytsko jest pod ziemi№.}
+{3080}{}{Sіyszaіem їe robiecie tutaj experymenty na ludziach czy to prawda?}
+{3090}{}{Czy mogк zejњж do laboratorium?}
+{3100}{}{Wspomniaіeњ o przodkach, czy ci ludzie s№ spokrewnieni?}
+{3110}{}{Muszк iњж, їegnam.}
+{3120}{}{Potrzebujesz pomocy z czymњ?}
+{3130}{}{Powiedz mi jescze raz o twojej pracy tutaj.}
+{3140}{}{Przszіem od Metzeger. On niechaiі daж ci niewolnika dopуki nieodasz mu tych 2000 kapsli.}
+{3150}{}{Zrobione, Metzger wyњle ci dostawe.}
+{3160}{}{Done, Metzger wyњle ci dostawe, i chce spotkaж siк z tob№, aby dojњж do porozumienia.}
+{3170}{}{Co tutaj robi wyrzutnia rakiet?}
+{3180}{}{Czy masz jakaњ prace dlamnie?}
+{3190}{}{Zrobie to, tylko daj mi capsle dla ludzi z Renesco i zaraz wrуcк do ciebie z paczk№.}
+{3200}{}{Moїe powinnieneњ wiedzieж, їe jeden z naukowcуw John Talan sabotuje twoje badania.}
+{4000}{}{To miejsce to Mendel Genetic Laboratories. Jak nazwa wskazuje zajmuje skupia siк na badaqnicha genetycznych, jak rуwnieї skуtkach promieniowania i wirusa FEV na naszych zwierzкtach i roњlinach. Produkujemy tutaj takїe uїywki i leki. Wiкkszoњж wyprodukowanych rzeczy sprzedajemy, by pozyskaж potrezbne nam towary.}
+{4010}{}{powiedz mi wiкcej}
+{5000}{}{Oh nie, to nie jest baza wojkowa. Ludzie byli tu kiedyњ szczкњliwi. Chcesz usіyszeж caі№ historiк tego miejsca?}
+{5010}{}{pewnie}
+{5020}{}{Nie teraz, mam wiкcej pytaс.}
+{6000}{}{Dobrze. Przed wojn№ MGL byі jednym z najlepszych genetycznych oњrodkуw badawaczych na њwiecie. Najlepsi genetyczni badacze pracowali tutaj, razem ze sztuczn№ inteligencj№, nad cywilnymi badaniami i ich programami. Oni rozpracowywali tajemnice DNA, i tworzyli lekarstwana na rуїne choroby itp.}
+{6010}{}{dalej}
+{7000}{}{Ale krуtko przed wojn№ rz№d zdecydowaі pozbawiж cywilуw kontroli nad MGL, zast№pili cywilуw, wojskowimi naukowcami i przenieњli tutaj czeњc wojskowych badaс. Rz№dowy plan zostaі podzielony na 3 czeњci. Pierwsz№ czeњci№ byіo wprowadzenie odpowiednich zabezpieczeс, drugim etapem jest wprowadzenie wojskowych naukowcуw i trzeci№ czeњci№ jest przeprowadzenie wojskowych badaс.}
+{7010}{}{dalej}
+{8000}{}{Ale! Ale wojna rozpoczeіa siк krуtko po pierwszym etapie, i wprowadzeniu jedynie њrodkуw bezpieczeсstwa. Kiedy wojna siкzaczeіa MGL byіo ci№gle officjalnie cywiln№ placуwk№, dziкki temu MGL nie zostaіo zbombardowane. MGL nie byіo interesuj№cym celeme dla chiсskich bomb, a nasi naukowcy i przodkowie przetrfali pod ziemi№.}
+{8010}{}{interesuj№ce, proszк kontynuuj.}
+{9000}{}{Po wojnie MGL nazwi№zaіo kontakty handlowe z pustkowiem i zaczeli handlowaж czyst№ wod№, lekami i innymi uїywkami. Puїniej zaczeli kontynuowaж swoje prezdwojenne badania. Wszytskie wieїyczki i roboty nadal chroni№ nas przed najeџdzcami i zmutowanymi zwierzкtami. Dlatego teї їadko mamy nieproszonych goњci. }
+{9010}{}{Chciaіbym siк dowiedzieж czegoњ wiкcej.}
+{10000}{}{S№ to pozostaіoњci po Raidersach, ktуrrzy po wojnie prуbowali atakowaж nasz№ osadк. Niektуre z tych kawaіkуw s№ nawet z przed stu lat. Teraz naprawde їadko nas odwiedzaj№, zewzglкdu na wysok№ ochronк bojow№.}
+{10010}{}{Ok, powiedz me ...}
+{11000}{}{Tak tam jest A.I, her name is D.I Boska Inteligencja. Nazywa siк tak ze wzglкdu na cel do jakiego zostaіo stworzona. Jej gіownym zadaniem jest kontrola i pomoc w rozwoju technoligi tworzenia. Projekt potrezbowaі czegoњж do obsіugi ogromnej iloњci informacji, jak i wykonywania skomplikowanych obliczeс oraz myњleniem nad dalszym rozwojem.}
+{11010}{}{Co to jest creation technology ?}
+{12000}{}{Rozwуj technologi tworzenia, jest najwaїniejsz№ misj№ MGL od prawie 200 lat. Ta technologia pozwala nam tworzyж i modyfikowaж wszytsko co їyje, ulepszaж to. Mamy juї kompletn№ wiedzк na temat modyfikacji kwasu deoksyrybonukleinowego, jednak co to robimy ci№gle bardzo kosztowne, i nieopіacalne.}
+{12010}{}{co masz na myњli mуwi№ж, їe to jest "nieopіacalne"?}
+{13000}{}{Musisz zrozomieж, їe technologia tworzenia jest bardzo skomplikowana. D.I musi pracowaж z ogromn№ iloњci№ danych i wykonywaж bardzo bardzo skomplikowane obliczenia, ktуre ogranicza system obronny. Musi obliczyж nowe formuі dla kaїdego typu komуrek. }
+{13010}{}{dalej}
+{14000}{}{Kiedy po raz pierwszy stworzyliњmy jedynie zmodyfikowanego szczura, pіуd umarі praktycznie natychmiast, wszystkie komуrki obumieraіy w jednym momencie. Caіy czas analizowaliњmy i zbieraliњmy imformacje o tym co siк staіo, powiekszaliњmy nasz№ bazк wiedzy. Muszк przyznaж їк D.I(boska inteligencja) poњwiкciіa 4 lata na obliczenia zwi№zane z DNA szczurуw. Przy kolejnym doњwiadczeniu szczury їyіy 18 razy dіuїej a powodem ich њmierci niebyіa natychmiastowa њmierж wszytskich komуrek. Ci№gle powiekszaliњmy nasz№ wiedzк i uaktualnialiњmy baze danych.}
+{14010}{}{dalej}
+{15000}{}{So we tried to make different modification, rat fetus died again but on different cells failure. So we tried something else. We tried to create brand new organism, that means invent it from nothing, it took D.I about 24 years of calculations. When we created it, fetus died in 10 seconds, but this time we got maybe 180x times more new informations into our databse than with rat modifications. When we tried again we made great progress, that organism fetus lived for 12 days. Now D.I. is working on third updated version of this experimetnal organism. I bet we could succesfuly create brand new viable organism in till 2300.}
+{15010}{}{Chce wiedzieж wieжej o tej Technology of creation.}
+{16000}{}{Wystarczy zapytaж.}
+{16010}{}{Jak udaje wam siк przepisaж DNA ?}
+{16020}{}{Jak tak naparwde wygl№da odwzorowanie DNA ?}
+{16030}{}{powiedz mi o tym wirusie}
+{16040}{}{Moїna modyfikowaж dorosіych ludzi?}
+{16050}{}{Mam jeszcze kilka pytaс.}
+{17000}{}{Mamy wiedze i narzкdzie do tego, Widz№ jest D.I i odwzorowane DNA zapisane w naszej bazie danych. Narzкdziem jest wirus do przepisywania DNA.}
+{17010}{}{Chce wiedzieж wiкcej o tworzeniu.}
+{18000}{}{Yes, in the year hrmm 2140 we finaly completed D.I.'s databse.. we thought we did, experiments swhowed us we were wrong and there still exist lot of unknown phenomena.}
+{18010}{}{Chce wiedzieж wiкcej o tworzeniu.}
+{19000}{}{Yes, we had to use some virus. Simply we are not able to manipulate higger DNA like humans, dogs, rats.. but we are able to manipulte virus RNA. So we created virus that is able to invade higger organism stem cell, rewrite it's DNA with our pattern and then die. We are using modified flu virus. we call it MFVRD, its short form of Modified Flu Virus for Rewriting DNA.}
+{19010}{}{dalej}
+{20000}{}{We impelnted some safety masures so our virus is able to multiply only when it has access to specific synthetic protein what we created. So if it would somehow get out of our samples, it will simply die. Also our virus is able to invade and rewrit DNA of only 1 stem cell, then it dies. That's it's meaning of life, find original stem cell, invade it, rewrite it's DNA and die. simple}
+{20010}{}{powiedz mi wiкcej o Technologi tworzenia}
+{21000}{}{Niestety nie, nie moїemy modyfikowaж komуrek macierzystych one istniej№ wyі№cznie w stanie pіodu. A modyfikowanie normalnych komуrek prowadzi je do њmierci.}
+{21010}{}{Hmm, Mam wiкcej pytaс.}
+{22000}{}{Tak ?}
+{22010}{}{Co to dokі№dnie jest?}
+{22020}{}{Zauwaїyіem, їe nazywa siк "j№". Czy to oznacza, їe ??jest coњ takiego jak "kobieta komputer"?}
+{22030}{}{Czy ona kontroluje MGL ?}
+{22040}{}{Chciaіbym wiedzieж wiкcej o MGL.}
+{23000}{}{Boska intelignecja jest oparta o A.I. Zbudowana jest na bazie ludzkiego mуzgu ma bardzo szerok№ gamк poі№czeс neuronowych, razem ze wszytkimi moїliwoњciami jakie posiada prawdziwy mуzg. Ona ma prawdziw№ њwiadomoњж od prawie 200 lat. To czyni j№ tutaj najstarszym i najm№drzejszym czіowiekiem w MGL.}
+{23010}{}{" All of it's features" ?}
+{24000}{}{Ah no. When D.I. is talking, voice comming from reproductores is female voice. So we are calling her... her. I asked her about it, she said's she has not problem with it.}
+{24010}{}{tell me more about D.I.}
+{25000}{}{Yes. Even with something we would call " human feelings". But it's more like defect than usefull feature. She had some, rebelious notes about our experiments, unacceptable.}
+{25010}{}{interesting, tell me more}
+{26000}{}{D.I. is connected to everything except surface security. But she can't do everything she wants. Security measures are controled by security core, that is part of her, but she cannot access and control it. Also important actions can be done only with agreement of MGL head, me.}
+{26010}{}{And who or what controlls surface security ?}
+{27000}{}{It's under control of computer located in building in middle of MGL, this computer and it's systems are military origin. It all works automatically, but we can control or even turn it off  if necessary.}
+{27010}{}{Widze, powiedz mi wiкcej.}
+{28000}{}{Yes, yes all laboratories are underground, it's due to safety. We are working with various chemicals and hazardous material. So when laboratoris are underground its way easier to lockdown some areas and protect outside world in case of accident.}
+{28010}{}{Have you ever had any accident here?}
+{29000}{}{.. That...  that's painful memory. 10 years ago, huge exploison on unerground level 3, we had to lockdown whole level 3 to prevent contamination of whole facility. about 35 people died down there that day. Worst thing is, explosion killed only few of them. rest died trapped behind massive lockdown security gate. We couldn't open it. air ther was already filled with radiation and  hundrets of various germs of the leathal disease's.}
+{29010}{}{dalej}
+{30000}{}{2 years ago we built decontamination chamber there, we opened lockdown gate and in hope of valuable research retrival we sent a group of scouts equipped with hazmat. suits. they didn't return. We don't know what happend to them. Since then nobody stept inside.}
+{30010}{}{What happened down there? What exploded there ?}
+{31000}{}{There was backup fusion reactor, it wasn't working properly so we hired someone who could try to repair it, someone, who we thought knew what is doing . . . . . . .he didn't. After he finished his work he tried to turn it on, reactor got overhated, melted down and exploded. We were lucky it destroyd "only" level 3}
+{31010}{}{I'm sorry for loss of all those people. Can you answer me some questions ?}
+{32000}{}{Yes, we are making some experiments on humans, usually we are testing medication and drugs. Testing directly on humans saves us lot of time we can use elswhere.}
+{32010}{}{Yes yes i agree. I have more questions}
+{32020}{}{Wait. You are using humans as some laboratory rats ? That's unethical!}
+{33000}{}{"Ethics is inhibitor of progress" that's slogan, no that's more than slogan that is. . . .  that is thought that made MGL what it is. If you have problem with it. Leave.}
+{33010}{}{Fine! bye}
+{33020}{}{no, i just.. nevermind, i have more questions.}
+{34000}{}{No, sorry, there is lot of expensive, fragile and sometimes even dangerous stuff. Some random like you could cause serrious damage down there.}
+{34010}{}{Ahh -  I would really like to see all those exciting experiments, research and all this awesome equipement. I could even help you with something down there.}
+{35000}{}{Well , we already have some outsiders working for us, and i  heared some of our scientists could use helping  hand. Hmm . . . . . . . . Alright go, But i warn you don't touch anything.}
+{35010}{}{Ok Thank you, I'll be careful I promise.}
+{36000}{}{Yes, lot people here are descendants of original personnell. Even I am. But we also have a lot of people from outside. Everyone who is interested in genetic, medicine and chemistry can prove his abilities, and if he is skilled enough he can join us.}
+{36010}{}{interesting, tell me more}
+{37000}{}{Hello again.}
+{37010}{}{Hello, I want to talk with you about something.}
+{37020}{}{Uh sorry, bye.}
+{38000}{}{Hmm, you look like you are experienced travaller. I need someone who would help me with some business in Den. interested ?}
+{38010}{}{Yes}
+{38020}{}{No}
+{39000}{}{Ok here's the thing. We are buying some people for experiments from Den slaver's guild. We were buying those slaves for 1000 caps per slave. But last delivery didn't come, and Slaver's leader Metzger just sent us  mesasage that his prices has changed and he wants 1200 caps per 1 slave. That's unacceptable.}
+{39010}{}{continue}
+{40000}{}{So i need you to go to Den and talk with this Metzger, tell him whatever you want but we won't give him even 1 cap more. He simply canno't change prices whenever he want's.}
+{40010}{}{Ok I'll do it as soon as possible. bye}
+{40020}{}{I changed my mind. Bye.}
+{41000}{}{I said we won't give him even 1 cap more. If you are not able to finish this job, step back I'll hire someone else.}
+{41010}{}{No I. . .  I can do it.}
+{42000}{}{Good, your reward is ready at storage.}
+{42010}{}{Thanks, bye}
+{43000}{}{Good, that's acceptable, your reward is ready at storage. }
+{43010}{}{Thanks, bye}
+{44000}{}{Missile silo ? what do you mean ?}
+{44010}{}{East from this building, huge horizontal door with MGL 1 sign on it.}
+{45000}{}{Ah no, that's not any missile silo, That is Freight Elevator shaft. It's conneceted to underground level 2 and 3. This massive horizontal door is access and lockdown door.}
+{45010}{}{Ok, i have more questions}
+{46000}{}{Actually yes, there could be something. You prove yourself skilled. I need seomeone to go to New Reno. There is placed called Renesco's Pharmacy, Renesco is selling us some specific stuff, we have ordered some goods at him. I need to go to New Reno, pay for that goods and bring it to our storekeeper.}
+{46010}{}{I think Reno is too dangerous for me, sorry}
+{46020}{}{Ok i think i can do it, now give me caps for Renesco}
+{47000}{}{Not yet. Package price is 10 000 caps, when you will bring it to storekeeper he will pay you 10 000 for package and 5 000 as reward.}
+{47010}{}{Ok, I'm on it}
+{48000}{}{What ?! How can i know you are saying true ?}
+{48010}{}{Well he wanted me to say to some sciantist Peter  that John wants to talk with them, then he wanted me to triple doses of Exircin-15 to stop hearth of that deathclaw, he also said that he could seduce suspission on unreliable computer.}
+{49000}{}{That. . . . After that argument that bstard should had been glad i let him to work here. And That Bastard wanted to betray me ! Unacceptable !! I 'm going to put him out of MGL Today! And you my friend, you deserve reward. Go to storekeeper, i'll tell him to give you soem special reward. And I Thank you , I see you learned what does it mean to be part of MGL.}
+{49010}{}{Thanks. bye}
+
+
+[russ]
+{100}{}{Daniel Harris}
+{200}{}{You see Daniel Harris}
+{210}{}{You see Daniel Harris, current head of Mendel Genetic Laboratories.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Hello, I think we never met before. My name is Daniel Harris, I'm current head of Mendel Genetic Laboratories, how can I help you ?}
+{2010}{}{Hello, my name is @pname@, i want to ask you a couple of questions.}
+{3000}{}{Alright, go ahead}
+{3010}{}{tell me something about this place }
+{3020}{}{What is history of this place, it looks like some prewar military research facility.}
+{3030}{}{I saw all those bones and cars around this area. What happened ?}
+{3040}{}{You mentoined A.I. Does it mean there is computer making research here ?}
+{3050}{}{i want to know more about this Technology of creation.}
+{3060}{}{I want to know more about D.I.}
+{3070}{}{I haven't seen any laboratories here, i guess its all undergorund.}
+{3080}{}{I heared you are doing som experiments on humans, is that true ?}
+{3090}{}{Can I go down to laboratories ? }
+{3100}{}{You mentoined ancestors, so people here are descendants of original personell ?}
+{3110}{}{I have to go, bye}
+{3120}{}{Do you want to help with something ?}
+{3130}{}{Tell me again about that work.}
+{3140}{}{I came from Metzeger. He really won't give you those slaves untill you pay those 2 000 caps.}
+{3150}{}{Done, Metzger will send you delivery.}
+{3160}{}{Done, Metzger will send you delivery. And he want's to meet with you and make a new agreement.}
+{3170}{}{What is missile silo doing here ?}
+{3180}{}{Do you have any job for me ?}
+{3190}{}{About that job, I will do it, just give me those caps for Renesco and I'll be right back with package}
+{3200}{}{Maybe you should know one of your scientist John Talan want to sabotate your research.}
+{4000}{}{This place is called Mendel Genetic Laboratories. As name of this  place suggests we are concentrating on genetic research here, we also study  effects of radiation and FEV virus on local aniamls and plants and we are also crafting and devolping drugs and medications. Most of mediaction and drugs what we craft here is used for trading for goods we need.}
+{4010}{}{tell me more}
+{5000}{}{Ah no, not military, that's interesting story, this place was really lucky. do you wnat to hear whole story ?}
+{5010}{}{sure}
+{5020}{}{Not now, i have more questions}
+{6000}{}{Well. Before war MGL was one of the best genetic research facilities in te world. Best genetic scientist from whole US were working here together with advanced AI  on various civil researches and their aplications. They were unraveling mysteries of DNA, devolping cures for diseases etc.}
+{6010}{}{continue}
+{7000}{}{But shortly before war government decided to tear MGL  from civil control, replace civil scientits with military ones and move here part of military research. Government plan was divided in 3 parts. First part was to build propper security, Second was to replace civil scientists with military ones and Third part was to move military research.}
+{7010}{}{continue}
+{8000}{}{But! War began shortly after they finished building of security measures. When war begun MGL was still officially civil facility, thanks to that MGL didn't end like West Tek that got direct hit. MGL simply wasn't interesting target for chinese bombs, and MGL scientists, our ancestors, survived hided underground.}
+{8010}{}{interesting, please continue}
+{9000}{}{After war MGL established connection with survivors and started trading medications, drugs and even clean water for food, material and later for chemicals and scientific equipement to continue in its prewar researches. All those turrets and robots that our ancestors inherited were and still are protecting MGL from raiders and wild creatures. }
+{9010}{}{I would like to know more}
+{10000}{}{These are remains of Raiders who atacked us. Some are older then hundred years. Attacks used to be more frequent, especialy early after war, but raiders learnt that perimeter of plasma turrets is something of their forces, so they started avoiding us.}
+{10010}{}{Ok, tell me ...}
+{11000}{}{Yes there is A.I., her nickname is D.I. for Divine Intelligence. She got this nickname due to purpose she was built for. Her primary objective is to control and help developing Creation technology. project needs something that can work with huge databse of information, can make complex calculations, and finaly can think about what is doing.}
+{11010}{}{What is this creation technology ?}
+{12000}{}{developing Technology of creation is main interest of MGL for almost 200 years. Simply it is knowledge and technology that allows us to create or modify ... everything, everything living. We now have technology and Knowledge to completely rewrite DNA with whatever we want and thus create whatever we want. problem is that everything we created yet was not viable.}
+{12010}{}{what do you mena with this " was not viable" ?}
+{13000}{}{Well you have to understand that creation technology is very complex, D.I. have to work with large databse of informations and make very, very complex calculations. She has to calculate new behaviour formula for each cell type, calculate grow functions, self defence functions, all kind of organic interactions.... it's incredibely complex.}
+{13010}{}{continue}
+{14000}{}{When we created first just modified rat, fetus died almost immidietaly, simply all it cells died. And when we analyzed what happened, we found lot of information, so we updated our DNA knowledge databse and we tried it again. I have to say that it took D.I. about 4 years of calculations. to invent just a  bit modified rat DNA. So when we tried again, our rat's cells lived 18 times  longeer and then died, but this time on something else, so again we analyzed what happend and we updated database again.}
+{14010}{}{continue}
+{15000}{}{So we tried to make different modification, rat fetus died again but on different cells failure. So we tried something else. We tried to create brand new organism, that means invent it from nothing, it took D.I about 24 years of calculations. When we created it, fetus died in 10 seconds, but this time we got maybe 180x times more new informations into our databse than with rat modifications. When we tried again we made great progress, that organism fetus lived for 12 days. Now D.I. is working on third updated version of this experimetnal organism. I bet we could succesfuly create brand new viable organism in till 2300.}
+{15010}{}{i want to knw more about this Technology of creation.}
+{16000}{}{Just ask.}
+{16010}{}{How do you rewrite DNA ?}
+{16020}{}{So you really mapped whole DNA ?}
+{16030}{}{tell me about that virus}
+{16040}{}{can you modify for example adult human ?}
+{16050}{}{I have some more "general" questions.}
+{17000}{}{We have knowledge and tool, Knowledge is D.I.'s mapped DNA databse. Tool is virus  we use to rewrite DNA.}
+{17010}{}{i want to know more about creation..}
+{18000}{}{Yes, in the year hrmm 2140 we finaly completed D.I.'s databse.. we thought we did, experiments swhowed us we were wrong and there still exist lot of unknown phenomena.}
+{18010}{}{i want to know more about creation..}
+{19000}{}{Yes, we had to use some virus. Simply we are not able to manipulate higger DNA like humans, dogs, rats.. but we are able to manipulte virus RNA. So we created virus that is able to invade higger organism stem cell, rewrite it's DNA with our pattern and then die. We are using modified flu virus. we call it MFVRD, its short form of Modified Flu Virus for Rewriting DNA.}
+{19010}{}{continue}
+{20000}{}{We impelnted some safety masures so our virus is able to multiply only when it has access to specific synthetic protein what we created. So if it would somehow get out of our samples, it will simply die. Also our virus is able to invade and rewrit DNA of only 1 stem cell, then it dies. That's it's meaning of life, find original stem cell, invade it, rewrite it's DNA and die. simple}
+{20010}{}{tell me morea bout creation Technology}
+{21000}{}{Unfortunately no, we can modify only stem cell's and stem cell's exists only in fetus stage. Modification of normal cells leads to their death.}
+{21010}{}{Hmm, I have more questions.}
+{22000}{}{Yes ?}
+{22010}{}{Wat exactly it is ?}
+{22020}{}{I noticed you call it "her". Does it mean it's something like "female PC"?}
+{22030}{}{Does she controll MGL ?}
+{22040}{}{I want to know more about MGL.}
+{23000}{}{Divine Inteligence, started as experimental AI. She is based on neural network, very, very similar to human brain, with all it's "features". She is self-awareness for almost 200 years. Makes her oldest and maybe even most wise person here in MGL.}
+{23010}{}{" All of it's features" ?}
+{24000}{}{Ah no. When D.I. is talking, voice comming from reproductores is female voice. So we are calling her... her. I asked her about it, she said's she has not problem with it.}
+{24010}{}{tell me more about D.I.}
+{25000}{}{Yes. Even with something we would call " human feelings". But it's more like defect than usefull feature. She had some, rebelious notes about our experiments, unacceptable.}
+{25010}{}{interesting, tell me more}
+{26000}{}{D.I. is connected to everything except surface security. But she can't do everything she wants. Security measures are controled by security core, that is part of her, but she cannot access and control it. Also important actions can be done only with agreement of MGL head, me.}
+{26010}{}{And who or what controlls surface security ?}
+{27000}{}{It's under control of computer located in building in middle of MGL, this computer and it's systems are military origin. It all works automatically, but we can control or even turn it off  if necessary.}
+{27010}{}{I see, tell me more.}
+{28000}{}{Yes, yes all laboratories are underground, it's due to safety. We are working with various chemicals and hazardous material. So when laboratoris are underground its way easier to lockdown some areas and protect outside world in case of accident.}
+{28010}{}{Have you ever had any accident here?}
+{29000}{}{.. That...  that's painful memory. 10 years ago, huge exploison on unerground level 3, we had to lockdown whole level 3 to prevent contamination of whole facility. about 35 people died down there that day. Worst thing is, explosion killed only few of them. rest died trapped behind massive lockdown security gate. We couldn't open it. air ther was already filled with radiation and  hundrets of various germs of the leathal disease's.}
+{29010}{}{continue}
+{30000}{}{2 years ago we built decontamination chamber there, we opened lockdown gate and in hope of valuable research retrival we sent a group of scouts equipped with hazmat. suits. they didn't return. We don't know what happend to them. Since then nobody stept inside.}
+{30010}{}{What happened down there? What exploded there ?}
+{31000}{}{There was backup fusion reactor, it wasn't working properly so we hired someone who could try to repair it, someone, who we thought knew what is doing . . . . . . .he didn't. After he finished his work he tried to turn it on, reactor got overhated, melted down and exploded. We were lucky it destroyd "only" level 3}
+{31010}{}{I'm sorry for loss of all those people. Can you answer me some questions ?}
+{32000}{}{Yes, we are making some experiments on humans, usually we are testing medication and drugs. Testing directly on humans saves us lot of time we can use elswhere.}
+{32010}{}{Yes yes i agree. I have more questions}
+{32020}{}{Wait. You are using humans as some laboratory rats ? That's unethical!}
+{33000}{}{"Ethics is inhibitor of progress" that's slogan, no that's more than slogan that is. . . .  that is thought that made MGL what it is. If you have problem with it. Leave.}
+{33010}{}{Fine! bye}
+{33020}{}{no, i just.. nevermind, i have more questions.}
+{34000}{}{No, sorry, there is lot of expensive, fragile and sometimes even dangerous stuff. Some random like you could cause serrious damage down there.}
+{34010}{}{Ahh -  I would really like to see all those exciting experiments, research and all this awesome equipement. I could even help you with something down there.}
+{35000}{}{Well , we already have some outsiders working for us, and i  heared some of our scientists could use helping  hand. Hmm . . . . . . . . Alright go, But i warn you don't touch anything.}
+{35010}{}{Ok Thank you, I'll be careful I promise.}
+{36000}{}{Yes, lot people here are descendants of original personnell. Even I am. But we also have a lot of people from outside. Everyone who is interested in genetic, medicine and chemistry can prove his abilities, and if he is skilled enough he can join us.}
+{36010}{}{interesting, tell me more}
+{37000}{}{Hello again.}
+{37010}{}{Hello, I want to talk with you about something.}
+{37020}{}{Uh sorry, bye.}
+{38000}{}{Hmm, you look like you are experienced travaller. I need someone who would help me with some business in Den. interested ?}
+{38010}{}{Yes}
+{38020}{}{No}
+{39000}{}{Ok here's the thing. We are buying some people for experiments from Den slaver's guild. We were buying those slaves for 1000 caps per slave. But last delivery didn't come, and Slaver's leader Metzger just sent us  mesasage that his prices has changed and he wants 1200 caps per 1 slave. That's unacceptable.}
+{39010}{}{continue}
+{40000}{}{So i need you to go to Den and talk with this Metzger, tell him whatever you want but we won't give him even 1 cap more. He simply canno't change prices whenever he want's.}
+{40010}{}{Ok I'll do it as soon as possible. bye}
+{40020}{}{I changed my mind. Bye.}
+{41000}{}{I said we won't give him even 1 cap more. If you are not able to finish this job, step back I'll hire someone else.}
+{41010}{}{No I. . .  I can do it.}
+{42000}{}{Good, your reward is ready at storage.}
+{42010}{}{Thanks, bye}
+{43000}{}{Good, that's acceptable, your reward is ready at storage. }
+{43010}{}{Thanks, bye}
+{44000}{}{Missile silo ? what do you mean ?}
+{44010}{}{East from this building, huge horizontal door with MGL 1 sign on it.}
+{45000}{}{Ah no, that's not any missile silo, That is Freight Elevator shaft. It's conneceted to underground level 2 and 3. This massive horizontal door is access and lockdown door.}
+{45010}{}{Ok, i have more questions}
+{46000}{}{Actually yes, there could be something. You prove yourself skilled. I need seomeone to go to New Reno. There is placed called Renesco's Pharmacy, Renesco is selling us some specific stuff, we have ordered some goods at him. I need to go to New Reno, pay for that goods and bring it to our storekeeper.}
+{46010}{}{I think Reno is too dangerous for me, sorry}
+{46020}{}{Ok i think i can do it, now give me caps for Renesco}
+{47000}{}{Not yet. Package price is 10 000 caps, when you will bring it to storekeeper he will pay you 10 000 for package and 5 000 as reward.}
+{47010}{}{Ok, I'm on it}
+{48000}{}{What ?! How can i know you are saying true ?}
+{48010}{}{Well he wanted me to say to some sciantist Peter  that John wants to talk with them, then he wanted me to triple doses of Exircin-15 to stop hearth of that deathclaw, he also said that he could seduce suspission on unreliable computer.}
+{49000}{}{That. . . . After that argument that bstard should had been glad i let him to work here. And That Bastard wanted to betray me ! Unacceptable !! I 'm going to put him out of MGL Today! And you my friend, you deserve reward. Go to storekeeper, i'll tell him to give you soem special reward. And I Thank you , I see you learned what does it mean to be part of MGL.}
+{49010}{}{Thanks. bye}

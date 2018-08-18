@@ -1,0 +1,133 @@
+# QUICK LOOK
+{100}{}{Du siehst einen von Bishops Männern.}
+
+# EXAMINES
+{150}{}{Du siehst einen rauh aussehenden Mann in Lederrüstung. Eine Menge Narben und Gewehrwunden
+ bedecken seinen Körper.}
+{151}{}{Du siehst einen von Bishops Männern. Er sucht die Gegend ab und fingert an seiner Waffe
+ herum.}
+
+# 1. FLOAT DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{200}{}{Hey! }
+
+# 2. FLOAT DIALOGUE: POWER ARMOR
+{205}{}{Wie zum Teufel gehst du mit dem Ding aufs Klo?}
+
+# 3. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [ARMED]
+{210}{}{Nettes Stück hast du da, }
+
+# 4. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [SNEAK]
+{215}{}{Äh, warum schleichst du denn hier rum, }
+{216}{}{Äh, hey, }
+
+# 5. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [NORMAL]
+{220}{}{Jo, }
+{221}{}{Hey, }
+{222}{}{Hey, }
+
+# 6. FLOAT/CLICK DIALOGUE: MADE MAN, FA=NOT BISHOP
+{229}{}{Du solltest besser abhauen, }
+
+# 8. FLOAT DIALOGUE: MALE, PRIZEFIGHTER [ARMED]
+{250}{}{Hey, Champ. Keine Waffen hier drin, OK?}
+
+# 9. FLOAT DIALOGUE: MALE, PRIZEFIGHTER AND MALE PORN STAR [SNEAK]
+{256}{}{Versuchst du, deinen Fans zu entkommen?}
+
+# 10. FLOAT DIALOGUE: MALE/FEMALE, PRIZEFIGHTER
+{260}{}{Jo, }
+{261}{}{Jo, }
+
+# 11. FLOAT DIALOGUE: PORN STAR [ARMED]
+{266}{}{Hey, }
+{267}{}{Jo, }
+
+# 13. FLOAT DIALOGUE: [PORN STAR, FEMALE] [SNEAK]
+{275}{}{Schätzchen, mit so 'nem Körper kannst du dich nirgendwo vorbeischleichen.}
+
+# 14. FLOAT DIALOGUE: [PORN STAR, NORMAL]
+{280}{}{Ich liebe deine Filme, }
+
+# 16. FLOAT DIALOGUE: SLAVER [ARMED]
+{296}{}{Pack die Waffe weg, Sklavenhändler, oder ich benutz dich als Zielübung.}
+
+# 17. FLOAT DIALOGUE: SLAVER [SNEAK]
+{301}{}{Hör auf, hier rumzuschleichen, Sklavenhändler, oder ich benutz dich als Zielübung.}
+
+# 18. FLOAT DIALOGUE: MALE/FEMALE, NO REP [ARMED]
+{306}{}{Pack die Waffe weg, du Sippenkröte, oder ich benutz dich als Zielübung.}
+
+# 19. FLOAT DIALOGUE: MALE/FEMALE, NO REP [SNEAK]
+{311}{}{Hör auf, hier rumzuschleichen, du Sippenkröte, oder ich benutz dich als Zielübung.}
+
+# 20. FLOAT DIALOGUE: COMPANION: ROBOBRAIN
+{315}{}{Bring diesen Roboter hier raus. Sofort.}
+
+# 21. FLOAT DIALOGUE: COMPANION: MARCUS
+{322}{}{Dieser Mutant verschwindet hier besser, oder wir hängen seinen Kopf an der Wand auf.}
+
+# 22. FLOAT DIALOGUE: MALE/FEMALE, NO REP
+{326}{}{Du mußt Reno lieben...}
+
+# 23. CLICK DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{330}{}{Ich dachte, der Präsident wär ein Mythos, so 'n Schreckmonster, mit dem man Kindern Angst
+ macht.}
+{331}{}{New Reno wurde von Chris Avellone entworfen und das Skript ist von Tom French. Man
+ munkelt, daß die beiden bald heiraten wollen.}
+{332}{}{Hab gehört, daß du die Enklave im Süden unten hochgenommen hast. Ganz schön mutig.}
+
+# 24. CLICK DIALOGUE: MALE/FEMALE, MADE MAN, SAME FAMILY
+{350}{}{Hey, }
+{351}{}{Jo, }
+{352}{}{Hey, }
+{356}{}{Nicht schlecht. Ich wünschte, ich hätte auch einen Fuß in der Tür vom Boß.}
+{357}{}{Soll ich dir irgendwas holen, Boß?}
+
+# 25. CLICK DIALOGUE: PRIZEFIGHTER
+{387}{}{Hey, Champ! Dein letzter Kampf war toll!}
+
+# 27. CLICK DIALOGUE: PORN STAR
+{400}{}{Hab gehört, daß Mrs. Bishop dich sucht. Paß auf, Freund.}
+{401}{}{Kannste mir 'n Job besorgen, Freund? Komm schon. Ich bin der König der Hengste.}
+{402}{}{Ich liebe deine Filme, }
+{403}{}{Wann kommste mal vorbei, mich besuchen?}
+
+# 29. CLICK DIALOGUE: [SLAVER]
+{420}{}{Wie läuft's denn so oben in Den?}
+{421}{}{Was issn die Tage so der übliche Preis für Sklaven?}
+
+# 30. CLICK DIALOGUE: MALE/FEMALE, NO REP (Good Reaction)
+{441}{}{Du suchst Arbeit? Du könntest ja mal mit Mr. Bishop reden.}
+
+# 31. CLICK DIALOGUE: MALE, NO REP (Bad Reaction)
+{445}{}{Hau ab, Sippentrottel.}
+{446}{}{Verzieh dich, Sippentrottel.}
+
+# 32. CLICK DIALOGUE: FEMALE, NO REP (Bad Reaction)
+{460}{}{Ich such gerade keine Sippentrottel. Komm später noch mal wieder.}
+{461}{}{Hau ab, Sippentrottel.}
+{462}{}{Verzieh dich, Sippentrottel.}
+
+# 34. FLOAT DIALOGUE: COMPANION: LENNY
+{492}{}{Wenn dieser Ghul hier nich' in 'ner Minute draußen is', isser noch toter als jetz' schon.}
+
+# END OF LINES
+{1200}{}{! Was 'ne Art, der Enklave eins überzuziehen!}
+{1210}{}{.}
+{1215}{}{?}
+{1216}{}{...warum die Geheimnistuerei?}
+{1220}{}{, wie läuft's?}
+{1221}{}{, was haste denn so gemacht?}
+{1222}{}{! Haste dich aus Ärger rausgehalten?}
+{1229}{}{. Sofort.}
+{1252}{}{! Du kannst hier drin keine Waffen sehen lassen, OK?}
+{1260}{}{. Paßt du auch gut auf dich auf?}
+{1261}{}{. Was issn los?}
+{1266}{}{! Du kannst hier drin keine Waffen sehen lassen, OK?}
+{1267}{}{! Tu die Waffe weg.}
+{1269}{}{! Du kannst hier drin deinen Vorbau zeigen, aber nich' deine Waffen, OK?}
+{1280}{}{!}
+{1350}{}{. Was issn los?}
+{1351}{}{. Wie läuft's?}
+{1352}{}{. Haste dich aus Ärger rausgehalten?}
+{1402}{}{!}

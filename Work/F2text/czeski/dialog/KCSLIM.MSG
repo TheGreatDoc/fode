@@ -1,0 +1,200 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš vytáhlého a hubeného lovce koešin.}
+{101}{}{Vidíš Èahouna Picketa, hlavu Lovecké ètvrti.}
+
+{110}{}{Hmm, koukám, e si zatím z tìch krys nedìláš pøíliš tìkou hlavu, co? Ale však poèkej, jak si s nimi nìco zaèneš, nebudeš mít klid.
+ A hlavnì dávej pozor, a je netaháš zase zpátky sem.}
+{111}{}{Hmm, koukám, e zatím asi nemáš z tìch krys pøíliš velké obavy. Ale však poèkej, budeš je mít, jak si s nimi
+ nìco zaèneš. A hlavnì dávej pozor, a je netaháš zase zpátky sem.}
+{112}{}{Neboj se. To nechci.}
+{113}{}{Dám pozor. A dìkuji ti.}
+{114}{}{Och, dobrá.}
+
+{120}{}{Nemùu vystát tyhle potvory. Snaím se si jich nevšímat a doufám, e
+ ony udìlají to samé. Hlavnì opatrnì, ano?}
+
+{130}{}{Ještì nìco ti povím. Zdá se, e èím hloubìji pùjdeš, tím vìtší krysy tam jsou.}
+
+{140}{}{Zdravím, domorodèe. Jmenuji se Èahoun Picket a mùeš se mnou mluvit o Lovecké ètvrti. Ale nepotøebujeme
+ zde jakékoliv problémy.}
+{141}{}{Zdravím, pøíteli. Všichni tì tu rádi vidí. Jmenuji se Èahoun Picket. Mùeš se mnou hovoøit
+ o Lovecké ètvrti.}
+{142}{}{Zdravím tì Èahoune. Jmenuji se }
+{143}{}{. Proè tomu tady øíkáte Lovecká ètvr?}
+{144}{}{Nevíš náhodou, kde by se dala najít vìc zvaná Garden of Eden Creation Kit?}
+{145}{}{Pìkné setkání, Èahoune. Trochu se tu porozhlédnu. Zatím...}
+
+{150}{}{Zdravím, jmenuji se Èahoun Picket. Mùeš se mì ptát na vìci o téhle èásti mìsta. }
+{151}{}{Gruk.}
+{152}{}{Ook, oople.}
+{153}{}{(ukáeš na sebe) Já }
+{154}{}{, mít hlad.}
+
+{160}{}{A nechceš náhodou øíct: "Hej, ty anténo! Kolik chytneš programù?" No dobrá, nìco ti povím. Tady
+ je klíè od dveøí za mnou. Za nimi jsou snad všechny druhy krys - a jedna velká, co jim
+ všem velí. Projdi tamtudy a zabij co mùeš. Jdeš na to?}
+{161}{}{Zdá se, e ta velká krysa, co tu snad kadıho kolem otravovala, zmizela. Ale
+ pochybuju, e idiot jako ty, by s tím mohl mít nìco spoleènıho.}
+{162}{}{OK. He, he, zabít krysy. He, he, he.}
+{163}{}{Ne! Krysy vadit! Ne. Právì odcházet.}
+
+{170}{}{A co chceš sakra teï?}
+{171}{}{Zdravíèko. Mùu ti s nìèím pomoci?}
+{172}{}{Potøebuji klíè od severní èásti Lovecké ètvrti. Chci se tam dostat.}
+{173}{}{Mám nìjaké otázky.}
+{174}{}{Zrovna nic nepotøebuji. Nashle.}
+
+{180}{}{V téhle èásti mìsta pøebıvají všichni, co loví geckony. Pokud je ovšem zrovna neloví (he).
+ Jenome máme problém se severními prostory, které jsou obléhány krysami. Z toho dùvodu, jsme museli
+ vstupy do této èásti zabarikádovat.}
+{181}{}{O èem chceš vìdìt?}
+{182}{}{Dá se tedy vùbec nìjak dostat do severních prostor?}
+{183}{}{Øekni mi o lovu geckonù.}
+{184}{}{Nevíš nìco o Garden of Eden Creation Kit?}
+{185}{}{Máte tu hodnì automobilù.}
+{186}{}{Krysy? Øekni mi o tìch krysách více.}
+{187}{}{Dìkuji za informace. To by asi tak bylo vše. Nashle.}
+
+{190}{}{Oh, myslíš GECK. co? Vidìl jsem inzerát v jednom starém èasopisu. Ale myslím, e u
+ ádné neexistují. Alespoò ne nìkde tady poblí.}
+{191}{}{Opravdu? Dobrá, øekni mi ještì nìco.}
+{192}{}{Och, dobrá; víc u nepotøebuji. Díky.}
+
+{200}{}{Sháníš se po klíèi od severní èásti Lovecké ètvrti? A na co ho potøebuješ?}
+{201}{}{Poøád chceš ten klíè? Proè?}
+{202}{}{Jsem pruzkumník; prohledávám místa, na která narazím. A mimochodem, co kdy je tam nìkde
+ zapomenutı GECK?}
+{203}{}{Pøicházím vyøešit váš problém s krysami.}
+{204}{}{Chci se zkusit dostat k automobilu co je za ohradou.}
+{205}{}{Pro ten klíè udìlám cokoliv. Opravdu se potøebuji dostat na druhou stranu
+ Lovecké ètvrti.}
+{206}{}{Ten klíè zas tak moc nepotøebuji. Vypadá to, e za tìmi dveømi není zrovna bezpeèno.}
+
+{210}{}{Tak jo, tady je klíè. Jenom tam neudìlej pøíliš velkı rozruch, aby se krysy moc nerozdrádily.
+ A MUSÍŠ za sebou dobøe zavøít dveøe.}
+{211}{}{To bylo nìjakıho køiku. Tady máš co jsem slíbil. A ujisti se, jestli tu nìkde nekouká
+ malı rùovı ocásek. (he, hehe, hehe)}
+{212}{}{Díky za klíè, Èahoune. Ještì ne pùjdu, mám na tebe nìjaké otázky.}
+{213}{}{Díky, Èahoune. Buï si jist, e za sebou dobøe zavøu. Nashle.}
+
+{220}{}{Jestli chceš ten klíè, musíš si ho od mne koupit.}
+{221}{}{Dobrá tedy. Budeme obchodovat.}
+{222}{}{Nechci obchodovat kvùli klíèi. Jestli mne to má nìco stát, tak mi ho aspoò pùjè. A buï si
+ jist, e za sebou dobøe zavøu.}
+{223}{}{Jestli mi dáš ten klíè, budeš se pak bát mnohem menšího poètu krys.}
+{224}{}{U ten klíè nechci. Nashle.}
+
+{230}{}{Myslím, e máš co jsi chtìl. A teï buï opatrnı.}
+{231}{}{Díky.}
+{232}{}{Jdeš tvrdì za svım. Doufám, e ti to stojí za to.}
+
+{240}{}{Myslím, e ten klíè a zas tak moc nepotøebuješ, e? Máš co jsi chtìl?}
+{241}{}{Oops; no... je v tom ještì nìco jiného.}
+{242}{}{Hej, Èahoune, Mám pár vìcí, na které se tì chci zeptat.}
+{243}{}{U od tebe nic nepotøebuji. Stejnì dìkuji.}
+
+{250}{}{Zabarikádovali jsme všechny vstupy do severní èásti mìsta vyjma jediného. A jen já mám od nìj klíè
+ -- pro pøípad, e by se tam nìkdo nutnì potøeboval dostat. Neumím si však pøedstavit, z jakého dùvodu
+ by tam kdo chtìl; Alespoò já tedy urèitì ne.}
+{251}{}{Zajímavé; øekni mi ještì nìco.}
+{252}{}{A zrovna já ten klíè od tebe potøebuji.}
+{253}{}{To je asi tak všechno. Nashle.}
+
+{260}{}{Zajímá tì lov? (Mìøí si tì od hlavy a k patì.)}
+{261}{}{[DÁLE]}
+
+{270}{}{Bıt tebou, tak bych to nezkoušel. Moná bys ses mohla, sleèinko, hezky ušpinit a ztrhat.
+ (he, heehe, hee) Ješte chceš nìco vìdìt?}
+{271}{}{Hmm, tak s tímhle si opravdu nechci špinit ruce. Povìz mi ještì nìco.}
+{272}{}{Mám chu si vyzkoušet, jak moc jsem dobrı lovec. A vsadím se, e bys mì toho mohl hodnì nauèit.}
+{273}{}{To by asi tak bylo všechno. Nashle.}
+
+{280}{}{Hmm, tak se na to podíváme...èím bych tak nejlíp... Geckoni se tu vyskytují dvou druzích  -- obyèejní a
+ zlatí. Ty obyèejné je pomìrnì snadné chytat a lovit. Urèitì lépe ne zlaté, ale za zlaté dostaneš více penìz.}
+{281}{}{Øekni mi více o zlatıch geckonech.}
+{282}{}{Zajímavé. Øekni mi ještì nìco.}
+{283}{}{To je asi všechno. Nashle.}
+
+{290}{}{Zlatí jsou pìknı potvory a dvakrát tak nebezpeèní ne ti obyèejní. A navíc, jakmile se ti jednou zakousnou
+ do nohy, tak se dokáou prohlodat a na kost. A to jsem ještì ani nezmínil jejich jed. Ale jejich kùe
+ vypadají opravdu hezky, a tak se za nì pochopitelnì platí víc. }
+{291}{}{Povídej dál.}
+
+{300}{}{Jeden opravdu dobrı lovec, RadaR se jmenuje, šel nìkam na sever. Prı hledat, odkud vlastnì pocházejí geckoni. Byl
+ pøesvìdèenı, e všichni pocházejí z jednoho místa. Jenome o nìm nikdo u nìkolik mìsícù neslyšel.}
+{301}{}{Co si myslíš, e se mu stalo?}
+
+{310}{}{Moná našel to místo, o kterém mluvil, a chce je tam všechny vymlátit. (he, heehe, he)
+ A nevrátí se, dokud to nedodìlá. Ale øeknu ti jedno; paní Bucknerová se utrápí, pokud
+ se jí brzy nevrátí. Víš, byli u víc ne jen pøátelé.}
+{311}{}{Zajímavé. Povìz mi ještì nìco.}
+{312}{}{To by tak asi bylo vše. Nashle.}
+
+{320}{}{Ano, máme tu velké mnoství nejrùznìjších automobilù. Èekají tu na své majitele a se vrátí ze svìta. Jenome to je to,
+ co se asi nikdy nestane. Tohle nejspíš opravdu nehrozí. A to je tu tøeba skuteènì nádhernı Highwayman s motorem od Chrysalis Motors. Vıchodnì odtud.
+  Ale tam kde zrovna je, se tedy rozhodnì nikdy nepodívám.}
+{321}{}{Highwayman? Hmm, zajímavé. Øekni mi ještì nìco.}
+{322}{}{To by bylo prozatím vše. Nashle.}
+
+{330}{}{Dobrá. Zezaèátku to bylo ještì snesitelné. Staèilo dupnout a krysy v miku zmizely. Ale jak šel èas,
+ zaèaly bıt èím dál otravnìjší a drzejší. Zabarikádovali jsme severní èást mìsta --
+ nebo Lovecké ètvrti, chceš-li -- ale beztak se vdycky nìjak dostaly skrz. Nakonec jsme zachovali jen jeden vchod,
+ a to dveøe v místnosti za mnou, ale ty jsou zamèeny.}
+{331}{}{Doma, máma vdycky pouila pánvièku a tou je rozmázla. Ale, povìz mi více o krysích
+ útocích.}
+{332}{}{Zajímavé. Povìz mi ještì nìco.}
+{333}{}{To je prozatím vše. Nashle.}
+
+{335}{}{Zezaèátku byly ty krysy celkem dobøe zvládnutelné. Staèilo se po nich nìèím ohnat a byl pokoj. Ale jak šel èas,
+ zaèaly bıt èím dál otravnìjší a drzejší. Zabarikádovali jsme severní èást mìsta,
+ ale stejnì se vdycky nìjak dostaly ven. Nakonec jsme zachovali jen jeden vchod,
+ a to dveøe v místnosti za mnou, ale ty jsou zamèeny.}
+{336}{}{No, jeden èas tu byl s krysami opravdu velkı problém, ale v poslední dobì, jich tu zase
+ tak moc není. Jako by se odsud všechny nìkam stáhly.}
+{337}{}{Doma, máma vdycky pouila pánvièku a tou je rozmázla. Ale, povìz mi více o krysích
+ útocích.}
+
+{340}{}{Lidé mizeli. Pomalu a tiše se ztráceli. Jednou jsme rozehnali menší skupinu a našli
+ nìkolik krvavıch chomáèù vlasù a hadrù. Stalo se to nìkdy ráno. No samozøejmì, byli
+ jsme pro nì pøece tou nejvhodnìjší potravou.
+ Slyšel jsem dokonce øeèi o nìjaké obrovské kryse.}
+{341}{}{Zajímavé. Na tohle by se snad mìl nìkdo podívat. Øekni, a máte klíè od
+ severní èásti Lovecké ètvrti?}
+{342}{}{Zajímavé. Povìz mi ještì nìco.}
+{343}{}{To by asi tak bylo vše. Nashle.}
+
+{350}{}{Hmm, sice nevypadáš nejlíp, ale kdyby ses snad vykoupala... Domnívám se, e bych ti ten klíè mohl
+ pùjèit na tak dlouho, jak dlouho budeš dávat ty mì. (he, heehee, hehe)}
+{351}{}{Ehm, takové roztomilé dìvèe? Jsem si jist, e ti ten klíè mùu klidnì dát.
+ Ale napøed musíš dát ty mì. (he, hehehe, hehe)}
+{352}{}{OK, ale myslím si, e ti øíkají Èahoun pøedevším kvùli tvé vıšce.}
+{353}{}{Uh, no...nemyslela jsem sice pøesnì tohle, ale...}
+{354}{}{Vymazala bych ti ten smích z tvıho ksichtu. Ale radìji pùjdu, ne se nìco stane. Nashle.}
+
+{360}{}{Mohl bych tì nauèit nìco o divoèinì. Ale bude tì to stát $100.}
+{361}{}{Vdy se rád podìlím o své zkušenosti s ostatními. Za pouhıch $50 tì mohu nauèit pár dobrıch trikù.}
+{362}{}{Tak dobrá, za ty peníze to stojí.}
+{363}{}{To je pøíliš drahé. Radìji mi povìz o nìèem jiném.}
+{364}{}{Myslím, e teï se nechci nic uèit. Nashle.}
+
+{370}{}{Lidé z tvého kmene jsou vìtšinou zemìdìlci, ne? Myslím, e uèit nìkoho jako tebe, by bylo zbyteèné mrhání èasem.}
+{371}{}{Pøece na tom nejsem zase tak špatnì? Tak dobrá, øekni mi nìco jiného.}
+{372}{}{V tom pøípadì radìji pùjdu. Nashle.}
+
+{380}{}{No, take tì mám nauèit pár vìcí o tom jak to chodí v divoèinì. Doufám, e to
+ všechno správnì vyuiješ. Pamatuj si co ti teï øeknu.}
+{381}{}{Jsi dobrı. Díky, Èahoune. 
+ A teï mi øekni více o tìchhle geckonech.}
+{382}{}{Díky za všechny rady, Èahoune.
+ Teï mi øekni ještì o nìèem jiném.}
+{383}{}{Díky za informace, Èahoune. Pùjdu si to teï všechno vyzkoušet. Nashle.}
+
+{390}{}{Povìz mi o tìchhle krysách.}
+
+{400}{}{Tvùj zátah na krysy se docela vyvedl.}
+{401}{}{Nazdárek. Pìknì se ije v prostøedí_bez_krys.}
+{402}{}{Jo. U tu zdaleka není tolik krys.}
+{403}{}{Jsem udiven. Kam se podìly všechny ty krysy?}
+{404}{}{Chválabohu, e je ta hlodavá paká pryè.}
+{405}{}{Nejsi ty náhodou Krysaø? Díky moc.}

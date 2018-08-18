@@ -1,0 +1,72 @@
+//autor: Garry599
+//totaly reworked: SEGA_RUS
+
+#include "_macros.fos"
+
+/// Valid Locks Pid's
+
+#define PID_LOCK1				(970)	// Old padlock 150
+#define PID_LOCK2				(980)	// Patent padlock 200
+#define PID_LOCK3				(971)	// Rusty padlock 100
+#define PID_LOCK4				(4134)	// Good door padlock 250
+#define	STR_CLOSING_LOCKER		(970)	// Message when sucsess locked
+
+void _LockInit(Item& item, bool firstTime)
+{
+	item.SetEvent(ITEM_EVENT_USE ,"_UsedOn");
+}
+
+bool _UsedOn(Item& item, Critter& crit, Critter@ onCritter, Item@ onItem, Scenery@ onScenery)
+{
+	if (valid(onItem) && (onItem.GetType() != ITEM_TYPE_CONTAINER || onItem.GetType() != ITEM_TYPE_CAR || onItem.GetType() != ITEM_TYPE_DOOR ))
+	{
+	if (onItem.LockerId > 0) return false;
+	Location@ Loc = crit.GetMap().GetLocation();
+	uint16 locPid = Loc.GetProtoId();
+	if ( !LOCATION_IS_BASE(locPid) ) return false;
+	int Difficiultly=0;
+	int KeyId=0;
+	int KeyCount=0;
+		if(item.GetProtoId()==PID_LOCK1)
+		{
+			KeyId=82; //ProtoID for key
+			KeyCount=1; //Count of duplicate keys for lock
+			_CritDeleteItem(crit, PID_LOCK1, 1);
+			Difficiultly=150; //locker difficultly
+		}
+		if(item.GetProtoId()==PID_LOCK2)
+		{
+			KeyId=414;
+			KeyCount=2;
+			_CritDeleteItem(crit, PID_LOCK2, 1);
+			Difficiultly=200;
+		}
+		if(item.GetProtoId()==PID_LOCK3)
+		{
+			KeyId=83;
+			KeyCount=1;
+			_CritDeleteItem(crit, PID_LOCK3, 1);
+			Difficiultly=100;
+		}
+		if(item.GetProtoId()==PID_LOCK4)
+		{
+			KeyId=7111;
+			KeyCount=1;
+			_CritDeleteItem(crit, PID_LOCK4, 1);
+			Difficiultly=250;
+		}
+		
+		crit.SayMsg(SAY_NETMSG,TEXTMSG_TEXT,STR_CLOSING_LOCKER);
+		crit.PlaySound("lock01.ogg",true);
+		onItem.LockerId=Random(1,65535);
+		onItem.LockerComplexity=Difficiultly;
+		for (int i=0,j=KeyCount;i<j;i++)
+		{
+			Item@ key=crit.AddItem(KeyId,1);
+			key.LockerId=onItem.LockerId;
+			key.Update();
+		}
+		return true;
+	}
+	return false;
+}

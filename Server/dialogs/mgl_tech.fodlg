@@ -1,0 +1,160 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_tech = 0 #
+7 1020 D _var p mgl_tech > 0 @
+2 2000 None 0 #
+3 2010 R _var p mgl_tech = 1 @
+3 3000 None 0 #
+4 3010 @
+4 4000 None 0 #
+5 4010 @
+5 5000 None 0 #
+6 5010 #
+0 5020 @
+6 6000 None 0 #
+0 6010 R _var p mgl_tech = 2 @
+7 7000 None 0 #
+6 7010 D _var p mgl_tech = 1 R _var p mgl_tech = 2 #
+8 7020 D _var p mgl_tech = 2 D _item p PID_ELECTRONIC_PARTS } 10 R _param p ST_EXPERIENCE + 1000 R _var p mgl_tech = 3 R _item p PID_ELECTRONIC_PARTS - 10 #
+10 7030 D _var p mgl_tech = 3 #
+13 7040 D _var p mgl_turets = 15 D _var p mgl_tech = 4 R _var p mgl_tech = 5 R _param p ST_EXPERIENCE + 2000 #
+0 7050 @
+8 8000 None 0 #
+9 8010 @
+9 9000 None 0 #
+0 9010 #
+10 9020 @
+10 10000 None 0 #
+11 10010 @
+11 11000 None 0 #
+0 11010 #
+12 11020 R _var p mgl_tech = 4 @
+12 12000 None 0 #
+0 12010 @
+13 13000 None 0 #
+0 13010 &
+
+[engl]
+{100}{}{Technician}
+{200}{}{You see technician.}
+{210}{}{You see technician, he looks very busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{If you are coming from our great employer you can turn around, go back and tell him that I'm not done yet. And I won't until I get all those god damn electronic parts which I requested for in last week. How the hell I suppose to repair that junk without parts?}
+{2010}{}{Uh, he didn't send me I just...}
+{3000}{}{So forgot what I said and get lost. I have a lot of work to do here.}
+{3010}{}{Hey, calm down. Maybe I could help you with something.}
+{4000}{}{Oh really, great! Do you know something about FI-8-VI control circuits, which are used in typical military sentry bots Mk.III?}
+{4010}{}{Uh...no...}
+{5000}{}{So you can't help me. Stop wasting my time and get lost.}
+{5010}{}{Wait, what about those electronic parts which you mentioned earlier? Maybe I could bring you some.}
+{5020}{}{Bye.}
+{6000}{}{Hmmm.... alright, bring me at least 10 sets of common electronic parts, I need them as soon as possible to fix that piece of shit. Someone should rip off head of that idiot who designed that piece of junk! Look on that connection pipes, it's a miracle that it works in some way!}
+{6010}{}{Ok, I'll try to bring it as soon as possible.}
+{7000}{}{It's you again! What do you want this time?!}
+{7010}{}{I can bring you some of those electronic parts.}
+{7020}{}{Hey, I have that electronic parts. *** make it require and consume 10 electronic parts***}
+{7030}{}{Tell me about that work.}
+{7040}{}{I just finished turrets maintenance.}
+{7050}{}{Nothing, bye.}
+{8000}{}{Great, show me. . . . . . . . .  yes, yes. . . . yes that's what I need. Now I might be able to fix this old piece of junk.}
+{8010}{}{Hey and where is my reward ?}
+{9000}{}{Reward? I didn't mentioned about any reward. But, I can give you something, if you would help me with another thing. What do you say?}
+{9010}{}{Forget it, bye.}
+{9020}{}{Hmm.. go ahead..}
+{10000}{}{Good. Listen, I had to make some turrets maintenance few weeks ago, but I simply didn't and I still don't have time to do that. I need someone who can do it instead of me.}
+{10010}{}{I'm not sure am I able to do this, I know nothing about turrets and such stuff.}
+{11000}{}{Well it's not maintenance, in fact it's just cleaning sensors and cooling system. I need you to clean all plasma turrets around facility. Can you do this for me ?}
+{11010}{}{No. Sorry, bye.}
+{11020}{}{Ok, I will do that.}
+{12000}{}{Good, come back when you finish it. I will send a message to storage and they give you some stuff. And be careful, don't touch any inner parts, it may trigger self defence system.}
+{12010}{}{Ok.}
+{13000}{}{Ok, thanks a lot. I will send message to storage, they will give you some medications.}
+{13010}{}{Bye.}
+
+[pols]
+{100}{}{technician}
+{200}{}{You see technician.}
+{210}{}{You see technician, he looks very busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{If you are comming from our great employer you can turn around, go back and tell him that I am not done yet. And i won't be before i will get all those god damn electronic parts i asked for last week. How the hell am i supposed to repair it without parts ?}
+{2010}{}{Uh he didn't send me i jus...}
+{3000}{}{So forgot what i said and get lost. I have lot of work to do here.}
+{3010}{}{Hey hey calm down, maybe i could help you with something.}
+{4000}{}{Oh really, great, do you know anything about FI-8-VI control circuits from classic military sentry bots Mk.III ?}
+{4010}{}{Uh no}
+{5000}{}{So you can't help me, stop wasting my time and get lost.}
+{5010}{}{Wait, what about those electronic parts you mentioned earlier ? maybe i could bring you some.}
+{5020}{}{Bye}
+{6000}{}{Hmmm.... alright bring me at least 10 sets of common electronic parts, i need them as soon as possible to fix this pice of junk.}
+{6010}{}{Ok i will try to bring it as soon as possible}
+{7000}{}{You are here again, what do you want this time ?!}
+{7010}{}{I could bring you some of those electronic parts you mentioner earlier.}
+{7020}{}{hey i ahve those electronic parts you wanted. *** make it require and consume 10 electronic parts***}
+{7030}{}{Tell me about that work.}
+{7040}{}{I just finished turrets maintenance.}
+{7050}{}{nothing, bye}
+{8000}{}{Great, show me. . . . . . . . .  yes yes. . . . yes thats what i need. Now i might be able to fix this overgrown can.}
+{8010}{}{Hey and what about reward ?}
+{9000}{}{Reward ? I didn't mention about any reward. But, i could give you something if you would help me with antoher thing. What do you say ?}
+{9010}{}{Forget it bye}
+{9020}{}{hrm, go ahead}
+{10000}{}{Good, Listen, I had to make some turrets maintenace few weeks ago, but i simply didn't and i still don't have time to do that. I need someone who would do this instead of me.}
+{10010}{}{I'm not sure if i would be able to do this, i know nothing about turrets you have here.}
+{11000}{}{Well it's not maintenance, in fact its just cleaning sensors, cooling ribs and such stuff. I Need you to clean all plasma turrets around facility. Could you do this for me ?}
+{11010}{}{No, sorry, bye}
+{11020}{}{Ok I'm going on it}
+{12000}{}{Good, come back when you will finish it, i would send message to storage to give you some medication. And be carefull, don't touch any inner parts, it could trigger self defence.}
+{12010}{}{ok}
+{13000}{}{Ok, thanks, i will send message to storage, they will give you some medications.}
+{13010}{}{bye}
+
+[russ]
+{100}{}{technician}
+{200}{}{You see technician.}
+{210}{}{You see technician, he looks very busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{If you are comming from our great employer you can turn around, go back and tell him that I am not done yet. And i won't be before i will get all those god damn electronic parts i asked for last week. How the hell am i supposed to repair it without parts ?}
+{2010}{}{Uh he didn't send me i jus...}
+{3000}{}{So forgot what i said and get lost. I have lot of work to do here.}
+{3010}{}{Hey hey calm down, maybe i could help you with something.}
+{4000}{}{Oh really, great, do you know anything about FI-8-VI control circuits from classic military sentry bots Mk.III ?}
+{4010}{}{Uh no}
+{5000}{}{So you can't help me, stop wasting my time and get lost.}
+{5010}{}{Wait, what about those electronic parts you mentioned earlier ? maybe i could bring you some.}
+{5020}{}{Bye}
+{6000}{}{Hmmm.... alright bring me at least 10 sets of common electronic parts, i need them as soon as possible to fix this pice of junk.}
+{6010}{}{Ok i will try to bring it as soon as possible}
+{7000}{}{You are here again, what do you want this time ?!}
+{7010}{}{I could bring you some of those electronic parts you mentioner earlier.}
+{7020}{}{hey i ahve those electronic parts you wanted. *** make it require and consume 10 electronic parts***}
+{7030}{}{Tell me about that work.}
+{7040}{}{I just finished turrets maintenance.}
+{7050}{}{nothing, bye}
+{8000}{}{Great, show me. . . . . . . . .  yes yes. . . . yes thats what i need. Now i might be able to fix this overgrown can.}
+{8010}{}{Hey and what about reward ?}
+{9000}{}{Reward ? I didn't mention about any reward. But, i could give you something if you would help me with antoher thing. What do you say ?}
+{9010}{}{Forget it bye}
+{9020}{}{hrm, go ahead}
+{10000}{}{Good, Listen, I had to make some turrets maintenace few weeks ago, but i simply didn't and i still don't have time to do that. I need someone who would do this instead of me.}
+{10010}{}{I'm not sure if i would be able to do this, i know nothing about turrets you have here.}
+{11000}{}{Well it's not maintenance, in fact its just cleaning sensors, cooling ribs and such stuff. I Need you to clean all plasma turrets around facility. Could you do this for me ?}
+{11010}{}{No, sorry, bye}
+{11020}{}{Ok I'm going on it}
+{12000}{}{Good, come back when you will finish it, i would send message to storage to give you some medication. And be carefull, don't touch any inner parts, it could trigger self defence.}
+{12010}{}{ok}
+{13000}{}{Ok, thanks, i will send message to storage, they will give you some medications.}
+{13010}{}{bye}
+

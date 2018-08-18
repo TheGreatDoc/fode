@@ -1,0 +1,384 @@
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used in PIPBOY.C
+#
+# (These MUST match "text message" enumeration on the top of PIPBOY.C)
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+
+#
+# Special holiday dates
+#
+{100}{}{Frohes Neues Jahr!}      # New years
+{101}{}{Schönen Valentinstag!}     # April fools
+{102}{}{Einen schönen Ersten April!}      # April fools
+{103}{}{Happy Ship Day!}            # Shipping day!
+{104}{}{Einen schönen Unabhängigkeitstag!}    # Independence day
+{105}{}{Frohes Halloween!}           # Halloween
+{106}{}{Ein schönes Erntedankfest!}    # Thanksgiving
+{107}{}{Frohe Weihnachten!}           # X-mas
+
+#
+# System messages
+#
+{200}{}{WEITER}
+{201}{}{ZURÜCK}
+{202}{}{STATUS}
+{203}{}{Keine Aufgabe zu erledigen.}
+{204}{}{TIPS}  # clues gone
+{205}{}{KARTENANSICHT}
+{206}{}{VIDEOARCHIV}
+{207}{}{DATEN}
+{208}{}{}
+{209}{}{}
+{210}{}{Status}
+{211}{}{DATEN}
+{212}{}{von}
+{213}{}{Seite}
+{214}{}{OK}
+{215}{}{An diesem Ort kannst du nicht ausruhen!}
+
+#
+# Alarm clock
+#
+{300}{}{WECKER}
+{301}{}{Trefferpunkte}
+{302}{}{Zehn Minuten ausruhen}
+{303}{}{Dreißig Minuten ausruhen}
+{304}{}{Eine Stunde ausruhen}
+{305}{}{Zwei Stunden ausruhen}
+{306}{}{Drei Stunden ausruhen}
+{307}{}{Vier Stunden ausruhen}
+{308}{}{Fünf Stunden ausruhen}
+{309}{}{Sechs Stunden ausruhen}
+{310}{}{Bis zum Morgen (06:00) ausruhen}
+{311}{}{Bis Mittag (12:00) ausruhen}
+{312}{}{Bis zum Abend (18:00) ausruhen}
+{313}{}{Bis Mitternacht (00:00) ausruhen}
+{314}{}{Bis zur Heilung ausruhen}
+
+#
+# Holodisk titles
+#
+{400}{}{Holo-Disk von Bunker 13}
+{401}{}{Militärbasis, Außen}
+{402}{}{Militärbasis, Ebene 1}
+{403}{}{Militärbasis, Ebene 2}
+{404}{}{Militärbasis, Ebene 3}
+{405}{}{Militärbasis, Ebene 4}
+{406}{}{Sierra-Basis, Protokoll}
+{407}{}{Sierra-Basis, Medizinische Aufzeichnungen}
+{408}{}{Sierra-Basis, Evakuierungsaufforderung}
+
+#
+# Movie archive titles
+# Order must match the list (see gmovie.h)
+#
+{500}{}{InterPlay-Logo}               # Not shown in Pipboy
+{501}{}{Intro}
+{502}{}{Rede der Älteren}
+{503}{}{Bergen der Bunkeranzüge}
+{504}{}{Arroyo-Versagen}
+{505}{}{Arroyo zerstört}
+{506}{}{Anlassen des Autos}
+{507}{}{Familie Cartucci}
+{508}{}{Anführer der Todeskrallen}
+{509}{}{Tanker zum Ladekran}
+{510}{}{Gefangene in Enklave}
+{511}{}{Ladekran explodiert}
+
+#
+# Things for the Mac version to speak
+#
+#
+{600}{}{Status}
+{601}{}{Tips}  # Clues gone
+{602}{}{Kartenansicht}
+{603}{}{Archive}
+{604}{}{Wecker}
+{605}{}{Du da du da dum di di dudly du dam dam dam du da du da du da du da du da du da du}
+{606}{}{Dein Rob Co PIPBoy 2000 grüßt dich.}
+{607}{}{Bis dann.}
+{608}{}{Aufwachen.}
+
+
+#
+# Status thread text
+#
+# Format:
+# 0 City name
+# 1 ... 9 thread/quest name
+#
+{700}{}{Bunker 13}
+{701}{}{Rebellengruppe beruhigen.}
+{702}{}{Mutantenanführer zerstören.}
+{703}{}{Mutantenquelle zerstören.}
+{704}{}{Steuerchip finden.}
+{705}{}{Wasserdieb finden.}
+#
+{710}{}{Unterirdischer Bunker}
+#
+{720}{}{Shady Sands}
+{721}{}{Jarvis vom Radskorpion-Gift heilen.}
+{722}{}{Gegengift herstellen.}
+{723}{}{Tandi von den Raiders retten.}
+{724}{}{Radskorpione aufhalten.}
+#
+{730}{}{Junktown}
+{731}{}{Saul helfen.}
+{732}{}{Killian umbringen.}
+{733}{}{Sinthia retten.}
+{734}{}{Trish retten.}
+{735}{}{Gizmo aufhalten.}
+{736}{}{Die Skulz ausheben.}
+#
+{740}{}{Raiders}
+#
+{750}{}{Nekropolis}
+{751}{}{Supermutanten an der Wasserstelle zerstören.}
+{752}{}{Die Wasserpumpe in Nekropolis reparieren.}
+#
+{760}{}{Hub}
+{761}{}{Todeskralle zerstören.}
+{762}{}{Jain beseitigen.}
+{763}{}{Händler beseitigen.}
+{764}{}{Verschollene Karawanen finden.}
+{765}{}{Halskette von den Händlern stehlen.}
+#
+{770}{}{Bruderschaft}
+{771}{}{Neuling werden.}
+{772}{}{Neuling aus dem Hub retten.}
+#
+{780}{}{Militärbasis}
+#
+{790}{}{Glow}
+{791}{}{Fallen für den Stützpunkt entschärfen.}
+{792}{}{Strom für den Glow einschalten.}
+#
+{800}{}{Knochengarten}
+{801}{}{Blade werden.}
+{802}{}{Medaillon für Romero abliefern.}
+{803}{}{Paket von den Gunrunners abliefern.}
+{804}{}{Kinderspion bei den Anhängern finden.}
+{805}{}{Hydrofarmen in Adytum reparieren.}
+{806}{}{Jason Zimmermann retten.}
+{807}{}{Angriffe der Gangs auf Adytum beenden.}
+#
+{810}{}{Kathedrale}
+
+
+#
+# Holodisk text
+#
+
+# GVAR_NCR_FAKE_VAULT13_HOLODISK
+#
+{1000}{}{Text hier eingeben.}
+{1001}{}{** DISK-ENDE**}
+
+# *** ***
+# GVAR_HOLODISK_MB_OUTSIDE
+{2000}{}{An: CHQ}
+{2001}{}{Unsere Wissenschaftler haben die Tests an der Probe beendet, }
+{2002}{}{die wir in der Basis gefunden haben. Es hat sich bestätigt, daß sie 99 % }
+{2003}{}{rein ist. Sie können die Probe in Kürze erwarten. Wie}
+{2004}{}{erwartet sind die Arbeiter schnell mutiert, sobald}
+{2005}{}{sie einer reinen Quelle ausgesetzt wurden. Schwere, doch akzeptable Verluste}
+{2006}{}{werden berichtet. Ich habe die Evakuierung der Basis angeordnet.}
+{2007}{}{Sobald die letzte Person sie verlassen hat, werden wir}
+{2008}{}{den Eingang zur Basis sprengen und die Schweine darin begraben.}
+{2009}{}{}
+{2010}{}{Oberst Sanders}
+{2011}{}{** DISK-ENDE**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_1
+{3000}{}{Dies ist der Bericht von Hauptmann Pickard von der Abwehrlinie 4.}
+{3001}{}{Der Kontakt mit den Kontrollpunkten 1 - 3 ist abgerissen, wir}
+{3002}{}{müssen das Schlimmste annehmen. Die Monster schwärmen}
+{3003}{}{die Minenschächte empor. Alle Anstrengungen, sie aufzuhalten, sind}
+{3004}{}{fehlgeschlagen. Wir versuchen, sie an dieser Stellung zu halten,}
+{3005}{}{so lange wir können.}
+{3006}{}{** DISK-ENDE**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_2
+{4000}{}{Kontrollpunkt 3 wird angegriffen. Wir haben vorsorglich die}
+{4001}{}{Minenaufzüge stillgelegt, aber ich kann hören, wie sie}
+{4002}{}{den Minenschacht hochkommen. Scheiße! Riesige, widerliche}
+{4003}{}{grüne Wesen klettern aus den unteren Ebenen.}
+{4004}{}{Sowas muß der Traum unserer Führung sein. Eine Art}
+{4005}{}{Supersoldat; wenn wir sie erschießen, klettern zwei weitere aus}
+{4006}{}{dem Minenschacht, und die erschossenen stehen auf und}
+{4007}{}{greifen uns an! Wir brauchen Verstär_}
+{4008}{}{** DISK-ENDE**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_3
+{5000}{}{Feldwebel Bracks berichtet von Kontrollpunkt 3. Alles ist}
+{5001}{}{normal, genau wie gestern und vorgestern.}
+{5002}{}{Ich verstehe nicht, warum die Führung will, daß wir diese}
+{5003}{}{armen Bergleute bewachen. Die sind so ausgemergelt und schwach, daß}
+{5004}{}{sie kaum eine Spitzhacke heben können. Egal, die Schreibtischhengste}
+{5005}{}{waren vor kurzem mit einer Art Probe da. Sie}
+{5006}{}{schienen ziemlich aufgeregt zu sein. Weißt du, ob sie gefunden haben,}
+{5007}{}{was sie gesucht haben? Vielleicht können wir endlich von diesem}
+{5008}{}{elenden Standort weg, ich krieg's noch mit den Nerven.}
+{5009}{}{Wart mal 'ne Sekunde, da kommt eine weitere Ladung den}
+{5010}{}{Minenschacht hoch. Mein Gott! Was ist das? Sie schwärmen über }
+{5011}{}{unsere Stellung aus, schick Hilfe, ich wiederhole, hier ist Kontrollpunkt 3,}
+{5012}{}{schick Hil_}
+{5013}{}{** DISK-ENDE**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_4
+{6000}{}{Die Ausgrabung verläuft nach Plan. Den }
+{6001}{}{alten Blaupausen der Basis nach, sollten wir bald im}
+{6002}{}{Containerbereich sein. Verstärktes Vorkommen des FEV-Virus}
+{6003}{}{in den Luft- und Bodenproben, die wir genommen}
+{6004}{}{haben, zum Glück filtern unsere Anzüge das Virus heraus. Sag}
+{6005}{}{den Mitgliedern der Enklave, daß sie bald eine reine}
+{6006}{}{Probe des mutierten Gens bekommen.}
+{6007}{}{**END-PAR**}
+#
+{6008}{}{Ich habe auch Änderungen an den Bergleuten beobachtet.}
+{6009}{}{Sie zeigen Anzeichen zunehmender Stärke und}
+{6010}{}{Widerstandskraft sowie eine leichte Änderung der Hautfarbe, offenkundig}
+{6011}{}{Zeichen des FEV. Die Männer werden nervös, da}
+{6012}{}{auch sie die Änderung bemerkt haben. Obwohl ich die}
+{6013}{}{Anzahl der Wachen erhöht habe, fürchte ich, daß wir, wenn die Arbeiter}
+{6014}{}{vollständig mutieren, zahlenmäßig weit unterlegen sind. Da wir nur}
+{6015}{}{die örtliche Bevölkerung als Arbeitskräfte einsetzen, hoffe ich,}
+{6016}{}{daß eine vollständige Mutation nicht eintreten wird,}
+{6017}{}{solange sie nicht direkt einer reinen Quelle ausgesetzt sind (eingetaucht werden),}
+{6018}{}{oder solange sie dem Virus nicht längere Zeit ausgesetzt sind. Sie}
+{6019}{}{erinnern sich sicher, daß geringe Mengen des Virus in der ganzen}
+{6020}{}{Region entdeckt wurden. Untersuchungen an Versuchspersonen, die }
+{6021}{}{in diesem Gebiet leben, haben gezeigt, daß sie eine gewisse}
+{6022}{}{Toleranz gegenüber dem FEV-Virus entwickelt haben. Trotzdem rate ich zur}
+{6023}{}{Vorsicht, da ein derartiger Kontakt mit dem FEV-Virus}
+{6024}{}{nie in unsere Berechnungen eingegangen ist. Ich rate dazu,}
+{6025}{}{den Eingang zur Basis so zu präparieren, daß er einstürzt,}
+{6026}{}{sobald eine reine Probe vorhanden ist. Das wird die}
+{6027}{}{betroffenen Bergleute in der Basis einschließen und verhindern, daß}
+{6028}{}{feindlich gesonnene Personen das Virus bekommen, sobald wir weg sind.}
+{6029}{}{** DISK-ENDE**}
+#
+{7000}{}{Sierra Armeedepot - F & E}
+{7001}{}{Behandelnder Arzt - Dr. Hannibal Lector}
+{7002}{}{Persönliches Protokoll}
+{7003}{}{}
+{7004}{}{28. Nov. 2120}
+{7005}{}{Heute haben mir die Jungs im Biolager einen tollen Streich}
+{7006}{}{gespielt. Einer der Scherzbolde hat die}
+{7007}{}{Einstellungen an meinem automatischen Organentnehmer geändert. Junge,}
+{7008}{}{war ich überrascht, als der Gefreite Callow den OP}
+{7009}{}{ohne Dickdarm verließ. Zum Glück war er schon}
+{7010}{}{tot, sonst hätte ich ein Problem. Ich habe die Maschine so}
+{7011}{}{verdrahtet, daß sie nur noch Hirne entnimmt, damit dies}
+{7012}{}{nicht mehr passiert. Ich krieg die Kerle noch ran!}
+{7013}{}{}
+{7014}{}{29. Nov. 2120}
+{7015}{}{Ich habe die Leber des Gefreiten Callow entfernt und gekocht. Dann}
+{7016}{}{ließ ich sie runter zu den Jungs ins Biolager schicken}
+{7017}{}{mit Bohnen und einem netten Chianti. Die glauben, es}
+{7018}{}{sei ein spezielles Dankeschön für ihre gute Arbeit}
+{7019}{}{gewesen. Ich liebe meinen Job.}
+{7020}{}{}
+{7021}{}{30. Nov. 2120}
+{7022}{}{Ich habe einen neuen Drogencocktail aus Buffout und Psychos}
+{7023}{}{an einem meiner Patienten ausprobiert. Zusammen mit einigen speziellen}
+{7024}{}{Verstärkern, mit denen ich herumprobiert habe, waren die Ergebnisse}
+{7025}{}{vielversprechend, wenn auch etwas außer Kontrolle. Der Proband wurde}
+{7026}{}{gewalttätig und konnte aus dem Zimmer ausbrechen.}
+{7027}{}{Zum Glück waren die neuen Sicherheitsroboter zur Stelle}
+{7028}{}{und schafften es, ihn ruhig zu stellen. Ich muß die}
+{7029}{}{Techniker bitten, die Tür auszutauschen.}
+{7030}{}{}
+{7031}{}{1. Dez. 2120}
+{7032}{}{Mein Lieblingsproband ist gestorben. Ich hatte ihn auf eine}
+{7033}{}{ständige Diät von Mentats mit meinen}
+{7034}{}{speziellen Verstärkern gesetzt. Sein IQ stieg innerhalb weniger Wochen}
+{7035}{}{von 39 auf 200. Es trifft mich sehr, denn}
+{7036}{}{er war einer der wenigen, mit denen ich}
+{7037}{}{richtig reden konnte. Ich werde ihn sehr vermissen.}
+{7038}{}{}
+{7039}{}{5. Dez. 2120}
+{7040}{}{Wir glauben, das neue kybernetische Gehirn ist endlich}
+{7041}{}{fertig. Wir haben noch ein paar Tests gemacht, doch es}
+{7042}{}{sieht vielversprechend aus.}
+{7043}{}{}
+{7044}{}{6. Dez. 2120}
+{7045}{}{Die Robotik ist nicht allzu glücklich, daß ihr teurer}
+{7046}{}{Computer so modifiziert wird, daß er die Sicherheit der }
+{7047}{}{Basis für die Evakuierung leitet. Ich bin auch}
+{7048}{}{nicht eben begeistert, da Skynet bei der Entwicklung}
+{7049}{}{des neuen kybernetischen Gehirns unschätzbare Dienste geleistet hat.}
+{7050}{}{}
+{7051}{}{9. Dez. 2120}
+{7052}{}{Die Evakuierung wurde vorverlegt. Das Timing könnte nicht schlechter sein;}
+{7053}{}{wir wollten gerade mit der Installation}
+{7054}{}{des neuen kybernetischen Gehirns beginnen. Es heißt,}
+{7055}{}{die Evakuierung sei nur vorübergehend, d.h. ich}
+{7056}{}{muß meine Forschungen fortsetzen, wenn ich zurückkomme. Das}
+{7057}{}{ist wahrscheinlich mein letztes Protokoll für lange Zeit,}
+{7058}{}{da ich so viel wie möglich von meinen Forschungsarbeiten}
+{7059}{}{zusammensammeln muß.}
+{7060}{}{** DISK-ENDE**}
+#
+{8000}{}{5. Dez. 2120}
+{8001}{}{Sierra Armeedepot - Krankenstube}
+{8002}{}{Behandelnder Arzt - Dr. Solomon}
+{8003}{}{Patient - Obergefreiter Dixon}
+{8004}{}{Unfallbericht Nr. 8332-523D}
+{8005}{}{}
+{8006}{}{Der Patient versuchte, eine Angriffsmine im Lagerraum}
+{8007}{}{scharfzumachen als Teil der Evakuierungsmaßnahmen}
+{8008}{}{des Sierra Armeedepots. Die Mine explodierte vorzeitig}
+{8009}{}{und verletzte Obergefreiten Dixon und General}
+{8010}{}{Clifton schwer. Obergefreiter Dixon erlitt schwere}
+{8011}{}{Fleischwunden an Händen, Brust und im Gesichtsbereich.}
+{8012}{}{Die rechte Hand wurde vollständig abgetrennt,}
+{8013}{}{und wir waren nicht in der Lage, die zugehörigen Teile}
+{8014}{}{zu finden. Schwere Punkturwunden im Brust- und}
+{8015}{}{Gesichtsbereich erforderten ausgiebige }
+{8016}{}{Operationen. Insgesamt 32 Minenfragmente wurden entfernt.}
+{8017}{}{Das rechte Auge war irreparabel geschädigt. Per Operation}
+{8018}{}{wurde das rechte Auge des Obergefreiten Dixon}
+{8019}{}{entfernt. Wir hoffen, daß wir das geschädigte}
+{8020}{}{aber noch lebende Auge in ein neues, experimentelles}
+{8021}{}{biomedizinisches Gel einlegen können, damit es}
+{8022}{}{sich regeneriert und wir es hoffentlich zu einem}
+{8023}{}{späteren Zeitpunkt wieder einsetzen können.}
+{8024}{}{Dieses experimentelle Bio-Gel wirkt}
+{8025}{}{vielversprechend, da es das Wachstum lebender Zellen stimuliert.}
+{8026}{}{Es ist jedoch bedauerlich, daß wir dieses neue Gel}
+{8027}{}{unter derartigen Umständen testen müssen.}
+{8028}{}{** DISK-ENDE**}
+#
+{9000}{}{9. November 2120}
+{9001}{}{Dringlich}
+{9002}{}{Rundschreiben}
+{9003}{}{}
+{9004}{}{Nachricht an die gesamte Mannschaft. Die Evakuierung des Sierra}
+{9005}{}{Armeedepots wurde um 1 Woche vorverlegt.}
+{9006}{}{Die Installation der Sicherheits- und Abwehrmaßnahmen}
+{9007}{}{muß bis zu diesem Zeitpunkt abgeschlossen sein. Der gesamte Trupp}
+{9008}{}{muß sich aufgrund der geänderten Befehle mit den Abteilungsleitern in}
+{9009}{}{Verbindung setzen. Während dieser Zeit werden die Sicherheitsmaßnahmen}
+{9010}{}{strengstens umgesetzt, Kennungsmarken müssen jederzeit}
+{9011}{}{getragen werden.}
+{9012}{}{}
+{9013}{}{Auf Anweisung von General Clifton}
+{9014}{}{** DISK-ENDE**}
+
+
+
+
+
+
+
+
+# -
+{12084}{}{                                                     0173 - 0198}

@@ -1,0 +1,239 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš houževnatou starší ženu s unaveným úsmìvem.}
+{101}{}{Vidíš Ardin Bucknerovou, majitelku hospody U Bucknerové.}
+{102}{}{Vidíš šikovnou a èilou ženu, které bude asi tak kolem 50 let.}
+
+{110}{}{Jsem ti velmi zavázána za nalezení mého RadaRa -- mnohokrát ti dìkuji! Myslela jsem si že je mrtev. Velice mì rozlobil, takhle si odejít!
+ Když je zpìt, myslím že nebudeme více potøebovat Sulika.}
+{111}{}{Geckon kousl RadaRa. RadaR je tvým dlužníkem.}
+{112}{}{Pomùžu vždy, když je tøeba. A líbí se mi, že jste nechali jít Sulika.}
+{113}{}{Myslím, že pøesto zatím stále dává pøednost Vám pøed geckonama. A teï mi ještì nìco povìzte, prosím.}
+{114}{}{No, nebuïte na nìj tak pøísná. On asi nìkdy nepøemýšlí nad tím, co dìlá, víte? Nashle.}
+
+{120}{}{Slyšela jsem ze jsi zranil mého chlapce Toora. Nevím pøesnì co se stalo, ale nechci tì tu v okolí více vidìt.
+ A teï vypadni.}
+
+{130}{}{Zdravím. Moje jméno je Ardin Bucknerová a toto je mùj dùm.}
+{131}{}{Arggg.... Blurp.... dob-yt-èák}
+{132}{}{Pìkný, pìkný domek.}
+
+{140}{}{Pøipomínáš mi mého chlapce Torra. Vsadím se, že byste se k sobì hodili. Proè už za ním dávno nebìžíš a nepovídáš si s ním? Nashle.}
+
+{150}{}{Zdravím. Jmenuji se Ardin Bucknerová a tohle je mùj dùm. Povìz, nevidìl jsi tu nìkde v okolí mìsta
+ lovce kožešin RadaRa? (A napùl pro sebe) Už je hroznì dlouho pryè. Nikdy jsem mu nemìla dovolit pouštìt se do nìèeho
+ tak bláznivého.}
+{151}{}{RadaR? Ne, nevím nic o lovci takového jména. Povìzte mi o nìm víc.}
+{152}{}{Teï potøebuji nìco jiného.}
+{153}{}{Zdravím, Ardin. Myslím, že pùjdu zase dál. Nashle.}
+
+{160}{}{O tomhle si promluv s mojí dcerou, Maidou. V poslední dobì pøíliš nesleduji co se
+ tu dìje. Jsem hodnì zamìstnána vedením svého podniku.}
+{161}{}{Ach, dobrá, udìlám to. Ale teï, ještì informace o nìèem jiném.}
+{162}{}{Tak dobrá, pùjdu si promluvit s ní. Nashle.}
+
+{170}{}{Hlavnì neplánuj nìjaké hlouposti. Co tedy chceš?}
+{171}{}{V èem ti mùžu být nápomocna, pøíteli?}
+{172}{}{Øeknìte mi o RadaRovi, lovci kožešin.}
+{173}{}{Je tu nìkdo, s kým by se dalo hovoøit o místních novinkách a událostech?}
+{174}{}{Potøebuji pokoj, prosím.}
+{175}{}{Potøebujeme pokoj, prosím.}
+{176}{}{Chci nìco nakoupit.}
+{177}{}{Domnívám se, že zrovna teï, nepotøebuji nic. Nashle.}
+
+{180}{}{Nuže, mezi mnou a RadaRem vznikla velká náklonnost. Koneènì jsem si myslela, že ho pøimìju souhlasit,
+ aby se zde usadil a pomohl mi s mojí živností. Ale øekl mi, že napøed si ještì potøebuje zajít zjistit
+ poslední vìc.}
+{181}{}{Jakou vìc?}
+
+{190}{}{Já zde pouze nabízím pokoje. Jestli chceš nakupovat nebo obchodovat, promluv si s mojí dcerou, Maidou.}
+{191}{}{Aha, tak dobøe. Povìzte mi ještì nìco.}
+{192}{}{Dìkuji. Nashle.}
+
+{200}{}{Právì teï máme plno. Sorry.}
+{201}{}{Napøed se podívám. Ano, myslím, že se právì uvolnil jeden pokoj. Bude to za $25.}
+{202}{}{Vezmu si ho. Zde je $25. Dìkuji.}
+{203}{}{No, zrovna teï ho nepotøebuji. Øeknìte mi ještì nìco.}
+{204}{}{Konec koncù...nepotøebuji pokoj. Nashle.}
+
+{210}{}{Obávám se, že tvé kapsy jsou prázdné.}
+{211}{}{Oops. Teï jako by se mi rozsvítilo, máte pravdu. Ale ještì nìco jiného, prosím.}
+{212}{}{Omlouvám se. Bude lépe, když pøijdu až budu mít víc. Nashle.}
+
+{220}{}{Dìkuji ti. Dìkuji ti za nalezení mého chlapce. Myslela jsem, že toho hlupáèka už nikdy neuvidím.}
+{221}{}{Torr pøítel.}
+{222}{}{Rádo se stalo.}
+{223}{}{Nezmiòoval se tu nìkdo o odmìnì?}
+
+{230}{}{Dìkuji ti. Myslím, že by ti možná neuškodil nìkdo, aspoò prùmìrnì inteligentní, aby ti pomáhal ...takového -
+ spoleèníka na cesty. Promluvím si s Maidou ohlednì propuštìní Sulika.}
+{231}{}{Jsem ráda. Teï jen nevím jak ti vyjádøit svùj dík.}
+{232}{}{Torr pøítel }
+{233}{}{Žádné díky nejsou potøeba. Byla to samozøejmost.}
+{234}{}{Nuže, vìzte, že peníze jsou vždycky ta správná cesta, jak øíci - dìkuji.}
+{235}{}{Jestli byste dokázala rozmluvit Maidì ten Sulikùv dluh, byla by odmìna dostateèná.}
+{236}{}{. Sulik pøítel?}
+
+{240}{}{Promluvím s Maidou ohlednì vìcí kolem Sulika. Možná, že bys s ní mìl také
+ promluvit.}
+{241}{}{Maida propustila Sulika. Maida být }
+{242}{}{Dìkuji vám. Myslím, že Sulik ocení, jestli mu odpustíte jeho dluh. Hned si pùjdu
+ promluvit s Maidou. Nashle.}
+{243}{}{Mám radost, že už Sulika nepotøebujete. Ještì by mne však nìco zajímalo.}
+{244}{}{ pøítel.}
+
+{250}{}{Nemám mnoho, ale tady je $100. Pøála bych si, aby to bylo více, ale pøišli jsme o vìtšinu brahmín
+ a nejsme na tom nejlíp. Je mi líto.}
+{251}{}{Dìkuji paní Bucknerová. Nashle.}
+{252}{}{V tom pøípadì, možná... víte, pøemýšlím o jiné odmìnì.}
+
+{260}{}{Dobrá, jistì musí být nìco, èím bych ti prokázala svoji vdìènost. Hmm, zaøídím,
+ aby byl odpuštìn Sulikùv dluh. Je volný a mùže jít. Vidím, že ne se všemi domorodci jsou potíže.}
+{261}{}{To zní dobøe. Nashle.}
+{262}{}{Hmm, možná... víte, pøemýšlím o jiné odmìnì.}
+
+{270}{}{Už nevím co si myslet. Mùj chlapec Torr se ztratil. Pøála bych si, aby mi ho nìkdo pomohl
+ najít. Už je to dost dlouho, co odešel z domu.}
+{271}{}{Torr?}
+{272}{}{Co se stalo?}
+{273}{}{To je sice hezké, dámo, ale teï potøebuju nìco já od Vás.}
+{274}{}{Dobrá, pomùžu Vám, ale až budete ménì zaneprázdnìná. Pøijdu pozdìji. Nashle.}
+
+{280}{}{Odešel vèera veèer. Dostala jsem na nìj zlost, že kvùli jeho špatnému hlídání pøicházíme o poslední brahmíny. Už jsme si
+ nemohli dovolit ztratit ani jednoho, ale on øíkal, že je všechny odvlekli lido-brouci. Blázínek jeden.}
+{281}{}{Torr jít kam?}
+{282}{}{Myslím, že bratøi Duntonovic mají možná nìco spoleèného se ztrácením brahmín. A nemìla byste být na Torra tak
+ pøísná. Kam si myslíte, že mohl jít?}
+{283}{}{Kam si myslíte, že mohl jít?}
+
+{290}{}{No, vyhýbavì mi øíkal, že hodlá jít tam, kde žijí ti lido-brouci. Jak asi víš, máme tu
+ kaòon, východnì odsud, v místech, kde paseme brahmíny. Nedávno odtam pøicházely podivné, cize znìjící
+ hlasité zvuky. }
+{291}{}{Zvuky?}
+
+{300}{}{Dìkuji ti za slib, že zkusíš najít mého syna. Doufám, že ho najdeš. Už mám o nìj
+ strach. Spìchej prosím.}
+{301}{}{Ok.}
+
+{310}{}{Už jsi našel mého syna? Nevím, co když už tøeba nemùže dlouho vydržet? Prosím, najdi
+ mi ho.}
+{311}{}{Torr?}
+{312}{}{Nebojte se, ještì to nevzdávám. Ale než pùjdu... napøed nìco chci.}
+{313}{}{Pøicházím se jen podívat, jestli se už náhodou nevrátil. Budu pokraèovat v hledání. Nashle.}
+
+{320}{}{Torr si byl jist odkud jsou ti lido-brouci, o kterých tvrdil, že unášejí naše brahmíny. Øíkal
+ taky nìco o tom, že nám všem ukáže, a že není takový hlupák, jak si všichni myslí. Pøeji si však, aby mi nìkdo pøivedl mého syna zpátky.}
+{321}{}{Torr kaòon. }
+{322}{}{Ne jít Torr.}
+{323}{}{Zní mi to tak, že tenhle kaòon je dobré místo, kde zaèít hledat. Pùjdu se podívat po vašem chlapci,
+ paní Bucknerová.}
+{324}{}{Pomùžu kdykoliv je to nutné -- samozøejmì, pokud zrovna nemám nìco dùležitìjšího. Torr bude jistì v poøádku.
+ Nashle.}
+{325}{}{ jít Torr.}
+
+{330}{}{No vìc... øíkal tomu úkol. Tvrdil, že asi ví odkud pocházejí všichni Zlatí geckonové,
+ a že se tam vydá, ujistit se co je na tom pravdy. Domníval se, že se jedná o nìjaký druh magického pramene, nebo možná
+ skryté jeskynì èi vault nebo tak nìco...}
+{331}{}{Hmmm.}
+
+{340}{}{No, nejsem si tak úplnì jistá jestli to povídám pøesnì tak jak øíkal, ale byl rozrušený když odcházel. Nemìla
+ jsem ho nechat odejít. Má už dva týdny zpoždìní, dávno tu mìl být...mám o nìj velký strach.}
+{341}{}{Pomùžu Vám. A snad ho pro Vás najdu.}
+{342}{}{Lituji Vás, když to tak poslouchám. Ale mohu se zeptat na nìco jiného?}
+{343}{}{To je velmi zlé, paní Bucknerová. Ale tøeba od vás jen utekl. A asi taky vím proè.
+ Nashle. }
+
+{350}{}{Och, dìkuji ti. Vyznaèím ti na mapì to místo o kterém hovoøil. Pevnì doufám, že
+ ho najdeš. Pro nìkoho to nic není, ale já ho miluji a chybí mi víc, než by si kdo dokázal vùbec pøedstavit. Prosím,
+ najdi mi ho.}
+{351}{}{Udìlám co budu moci. Ale mám ještì pár otázek.}
+{352}{}{Vydám ze sebe to nejlepší, paní Bucknerová. Nashle.}
+{353}{}{Víte, tak s tímhle nechci nic mít. Nashle.}
+
+{360}{}{Tak našel jsi už mého RadaRa?}
+{361}{}{Bohužel, paní Bucknerová. Stále po nìm pátrám. Mám teï nìjaké otázky.}
+{362}{}{Ne, právì se na to chystám. Nashle.}
+
+{370}{}{Myslím, že se mému synáèkovi Torrovi pøihodilo nìco strašného. Poèítala jsem s tebou (vzlyk),
+ že mi ho jistojistì najdeš. Ten ubohý, prostoduchý chlapec. Nevím, proè jsem s tebou tak poèítala.}
+{371}{}{Myslela jsem, že mi pomùžeš najít mého nehodného chlapce, Torra. Taková dobrá duše to byla a teï
+ je jistì mrtev. Bude mi tak chybìt.}
+{372}{}{Omlouvám se, paní Bucknerová. Nebylo v mých silách, ho najít. Ehm, chci ještì nìco
+ jiného.}
+{373}{}{Možná by Vám mohlo staèit, když donesu, co z nìj zbylo. Nashle.}
+{374}{}{Torr? Kdo Torr? (krèíš rameny) Nashle.}
+{375}{}{Promiòte -- pomùžu, když to jde, ale opravdu se nedalo nic dìlat. Ehm, nechci kazit tuhle pochmurnou atmosféru,
+ ale chci ještì nìco jiného.}
+{376}{}{Myslím, že bude lépe pøijít jindy. Nashle.}
+
+{380}{}{No, ani mne to tak nepøekvapuje. Ach, plakala jsem o svého ubohého chlapce,
+ a ke všemu to nebyla jeho chyba. (vzlyk) Dostanu tyhle Duntonovi. V tomhle zašli pøíliš daleko.}
+{381}{}{Tak za to se Vám omlouvám. Prosím, kam myslíte, že Torr šel?}
+
+{390}{}{Ok.}
+
+{400}{}{Tak jak je to s mým RadaRem?}
+{401}{}{Kdo? Ach,... zatím nevím kam šel. Ehm, øeknìte mi o nìèem.}
+{402}{}{Je mrtev. Roztrhán a sežrán geckony.}
+{403}{}{Já, ehm, no, nìco vím... Øíkal, že uteèe s jinou ženou. No, mìla jste si ho víc hlídat! Vzal Vám roha. Pùjdu.}
+{404}{}{Ehm, já, ehm, to víte... Ehm, ne. Poøád po nìm pátrám. Jistì se zde bìhem pár dní objeví. Ehm, nashle.}
+
+{410}{}{Sežrán geckony? Tak tomuhle neuvìøím. Geckoni by nikdy nemohli roztrhat mého RadaRa, na nìco takového je pøíliš dobrý lovec. Musíš se mýlit.}
+{411}{}{Ach, asi máte pravdu. Promiòte za takové zmatky. Ještì nìco, prosím.}
+{412}{}{Kdepak, ještì poøád to vidím jasnì pøed sebou. Èi to, co z nìj zbylo. Nebyl to hezký pohled, to mi vìøte. No, uvidíme se pozdìji. Nashle.}
+{413}{}{Tak jo. Dostala jste mì. Ha, ha, Jen Vás tak tahám za nos, ehm, nohu. Jojo, tak je to. Dobrá, nashle.}
+
+{420}{}{Myslela jsem, že na ty jejich ubohý triky nikdo nenaletí! Mùj ubohý malý Torr. Hned se o ty dva rváèe postarám. Tohle už znovu nezkusí. Dìkuji ti.}
+{421}{}{Vždy pomùžu, je-li to možné, madam. Ještì mám nìjaké otázky.}
+{422}{}{Tihle Duntonovic mì taky pìknì trápí. Tìší mne že se o nì postaráte. Nashle.}
+
+{500}{}{Myslím, že vaše brahmíny plaší bratøi Duntonovic. Jenom vìdìt jak, madam.}
+{510}{}{Nevidìl jsi nìkde v okolí za mìstem lovce kožešin jménem RadaR? (napùl pro sebe) Už je hroznì dlouho
+ pryè. Nikdy jsem ho nemìla nechat se pouštìt do nìèeho tak bláznivého.}
+{520}{}{Dìkujeme ti za pomoc s našimi problémy. Díky.}
+{530}{}{Jenom mne zajímá, co se tu ještì všechno dìje.}
+
+{600}{}{Hroznì moc ti dìkuji.}
+{610}{}{Hroznì moc dìkuji. Pøivedl jsi mi zpìt syna Torra a mého RadaRa. Nevím jak ti podìkovat.}
+{620}{}{Našel jsi mého syna Torra. Moc ti dìkuji.}
+{630}{}{Našel jsi mého RadaRa. Dìkuji, Hroznì moc ti dìkuji.}
+{640}{}{Pomùžu Vám z tìch potíží. Je hanba ztratit dva lidi, které máte navíc tak ráda.}
+{650}{}{Torr jen potøebuje èas od èasu trochu pomoci. Tìší mne, že ho máte zpìt.}
+{660}{}{RadaR mìl tentokrát velké štìstí. Musíte mu øíci, aby byl více opatrný.}
+{670}{}{Vždycky pomùžu, paní Bucknerová. Ještì se chci na nìco zeptat.}
+{680}{}{Gurrrrg bloop?}
+{690}{}{Nemám o tom dobré mínìní, madam. Nashle.}
+
+{700}{}{Torr je mrtev.}
+{710}{}{RadaR je mrtev.}
+{720}{}{Já, ehm, Já nevím kde jsou. Mohu mít nìjaké otázky?}
+{730}{}{Oba jsou mrtví.}
+{740}{}{Torr zmizel? Co tím myslíš?}
+{750}{}{Nevím kde je. Chci se ještì na nìco zeptat... a kdo ví, tøeba se bìhem našeho povídání vrátí.}
+{760}{}{Stále po nìm pátrám. Bude lépe zase v tom pokraèovat. Nashle.}
+{770}{}{Stále po nìm pátrám. Bude lépe zase v tom pokraèovat. Nashle.}
+{780}{}{Já, ehm, nevím kde je. Hmm... èas bìží. Pùjdu.}
+{790}{}{Chci se ještì na nìco zeptat.}
+{800}{}{No, èeká na mne spousta práce. Dám se do toho. Nashle.}
+{810}{}{Urrrrrgh.}
+
+{900}{}{Našel jsi už mého syna, Torra? Mám o nìj velký strach.}
+{910}{}{Našel jsi už mého RadaRa?}
+{920}{}{Našel jsi už mého syna, Torra, nebo pøítele, lovce RadaRa?}
+{930}{}{Mùj nehodný syn Torr utekl.}
+
+{940}{}{Nevìøím ti.}
+{942}{}{Och, je to pravda. Teï už pravdìpodobnì slouží jako potrava èervùm - no dobrá, pár zbytkù se èasem promìní v
+ geckonský sraèky. Asi Vás zraòuji... takže - uvidíme se pozdìji.}
+{943}{}{Ehm, byl to od mne asi špatný *žertík*, omlouvám se.}
+
+{950}{}{Nechci s tebou mluvit.}
+{951}{}{Zmiz odtud.}
+{952}{}{Sakra, domorodci. Budou problémy.}
+{953}{}{Zmiz odsud, ty primitive.}
+{954}{}{Nebudu zde tolerovat nìkoho jako ty.}
+{955}{}{Nic ode mne nedostaneš, burane.}
+{956}{}{Už jsi tu napáchal dost škod.}
+{957}{}{Nech mì o samotì.}
+{958}{}{Ty hloupý potížisto, jdi odsuï pryè.}
+{959}{}{Už tì mám dost. Vypadni.}

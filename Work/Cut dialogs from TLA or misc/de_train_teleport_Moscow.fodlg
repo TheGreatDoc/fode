@@ -1,0 +1,55 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+0 2020 @
+3 3000 None 0 #
+0 3010 D _item p PID_BOTTLE_CAPS } 100 R _script dialog@r_TeleportToMap 0  #
+0 3020 &
+
+[engl]
+{100}{}{Ticket seller}
+{110}{}{man33.png}
+{210}{}{You see a young man in a strange uniform. The patch on his arm reads: "Federation Rail Service".}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Hurry up, will you? The train to Town Station leaves soon. Do you want to buy a ticket?.@@Welcome newcomer. Do you wanna take the train to Town Station?}
+{2010}{}{Yes, I do.}
+{2020}{}{No, thanks.}
+{3000}{}{The ticket costs 100 coins.}
+{3010}{}{Okay, here's your money.@@Here's 100 coins.}
+{3020}{}{I don't have enough... Maybe I'll catch another train later.@@Actually I was thinking of staying here for longer.}
+
+[pols]
+{100}{}{Federation Rail Service}
+{110}{}{man33.png}
+{210}{}{Mіody mкїczyzna w dziwnym mundurze.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Pospiesz sie poci№g zaraz przyjedzie. Jesteњ zainteresowany transportem do Town Station?@@Witaj przybyszu. Opuszczasz juz Moskwe?}
+{2010}{}{Tak}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Koszt podrуzy poci№giem to 100 kapsli.@@Naleїy siк 100 kapsli}
+{3010}{}{Prosze.@@O to 100 kapsli.}
+{3020}{}{Nie mam tyle.@@Moїe innym razem.}
+
+[russ]
+{100}{}{none}
+{110}{}{man12.png}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj.Jestes zainteresowany transportem na druga strone}
+{2010}{}{Tak}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Koszt to 100 kapsli.@@Dawaj 100 kapsli}
+{3010}{}{Prosze.@@O to 100 kapsli.}
+{3020}{}{Nie mam tyle.}
+

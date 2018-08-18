@@ -1,0 +1,95 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p lost_papers ! 1 #
+3 1020 D _var p lost_papers = 1 @
+2 2000 None 0 @
+3 3000 None 0 #
+4 3010 #
+4 3020 #
+5 3030 R _var p lost_papers = 3 #
+4 3040 #
+0 3050 @
+4 4000 None 0 #
+4 4010 #
+4 4020 #
+5 4030 R _var p lost_papers = 3 #
+4 4040 #
+0 4050 @
+5 5000 None 0 #
+0 5010 &
+
+[pols]
+{100}{}{Box}
+{200}{}{You see a box.}
+{210}{}{Seems to be one of those, stable, quadratic, three-dimensional boxes to put stuff in.}
+{1000}{}{Predialogue installations}
+{1010}{}{nothing}
+{1020}{}{lost papers running ( var lost_papers == 1 )}
+{2000}{}{ @@ }
+{3000}{}{(As you open the box, dozens of papers come in your way)}
+{3010}{}{(Szukaj w pierwszej kupce)}
+{3020}{}{(Szukaj w drugiej kupce)}
+{3030}{}{(Szukaj w trzeciej kupce)}
+{3040}{}{(Szukaj w czwartej kupce)}
+{3050}{}{(Poddaj się)}
+{4000}{}{(You dig deeper, just to find your hands empty)}
+{4010}{}{(Szukaj w pierwszej kupce)}
+{4020}{}{(Szukaj w drugiej kupce)}
+{4030}{}{(Szukaj w tzeciej kupce)}
+{4040}{}{(Szukaj w czwartej kupce)}
+{4050}{}{(Poddaj się))}
+{5000}{}{(Znajdujesz odpowiednie dokumenty. Resztę wsadzasz do skrzynki i zamykasz ją)}
+{5010}{}{Świetnie...}
+
+[engl]
+{100}{}{Box}
+{200}{}{You see a box.}
+{210}{}{Seems to be one of those, stable, quadratic, three-dimensional boxes to put stuff in.}
+{1000}{}{Predialogue installations}
+{1010}{}{nothing}
+{1020}{}{lost papers running ( var lost_papers == 1 )}
+{2000}{}{ @@ }
+{3000}{}{(As you open the box, dozens of papers come in your way)}
+{3010}{}{(Serach the first stack)}
+{3020}{}{(Serach the second stack)}
+{3030}{}{(Serach the third stack)}
+{3040}{}{(Serach the fourth stack)}
+{3050}{}{(Give up)}
+{4000}{}{(You dig deeper, just to find your hands empty)}
+{4010}{}{(Search the first stack)}
+{4020}{}{(Search the second stack)}
+{4030}{}{(Search the third stack)}
+{4040}{}{(Search the fourth stack)}
+{4050}{}{(Give up)}
+{5000}{}{(You notice a big bundle of papers with a huge IDENTIFICATION APPLICATIONS on the first page. After confirming your thoughts you grab some of the documents and close the box)}
+{5010}{}{Sweet....}
+
+[russ]
+{100}{}{Box}
+{200}{}{You see a box.}
+{210}{}{Seems to be one of those, stable, quadratic, three-dimensional boxes to put stuff in.}
+{1000}{}{Predialogue installations}
+{1010}{}{nothing}
+{1020}{}{lost papers running ( var lost_papers == 1 )}
+{2000}{}{ @@ }
+{3000}{}{(As you open the box, dozens of papers come in your way)}
+{3010}{}{(Serach the first stack)}
+{3020}{}{(Serach the second stack)}
+{3030}{}{(Serach the third stack)}
+{3040}{}{(Serach the fourth stack)}
+{3050}{}{(Give up)}
+{4000}{}{(You dig deeper, just to find your hands empty)}
+{4010}{}{(Search the first stack)}
+{4020}{}{(Search the second stack)}
+{4030}{}{(Search the third stack)}
+{4040}{}{(Search the fourth stack)}
+{4050}{}{(Give up)}
+{5000}{}{(You notice a big bundle of papers with a huge IDENTIFICATION APPLICATIONS on the first page. After confirming your thoughts you grab some of the documents and close the box)}
+{5010}{}{Sweet....}

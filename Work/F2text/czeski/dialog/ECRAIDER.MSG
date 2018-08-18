@@ -1,0 +1,24 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš drsnì vypadajícího èlovìka.}
+{101}{}{Vidíš jezdce.}
+
+{200}{}{Vstoupil jsi neoprávnìnì na naše území. Za to zemøeš!}
+{201}{}{Jak jsi se mohl opovážit pøijít nezván!}
+{202}{}{Chcípni tuláku!}
+{203}{}{Na tvé smrti bych mìl nìco vydìlat.}
+{204}{}{Prchej trpaslíku!}
+{205}{}{Znáš správný postup, pane.}
+{206}{}{Beze svìdkù.}
+{207}{}{Kryj mì.}
+{208}{}{Bez milosti!}
+{209}{}{Ten muž øíká, že nikdo nezùstane naživu.}
+{210}{}{Biskup øíká, že cizím je vstup zakázán.}
+{211}{}{Teï dostaneme zaplaceno!}
+
+
+{300}{}{Vidíš Froga Mortona.}
+{301}{}{Vidíš Toada Mortona.}
+{302}{}{Vidíš Newta Mortona.}
+{303}{}{Vidíš Snakea Mortona.}
+
+{305}{}{Zabil jsi mého bratra! Teï zabiju já tebe!}

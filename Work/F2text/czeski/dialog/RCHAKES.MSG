@@ -1,0 +1,56 @@
+#Tento soubor pøeložil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš vysokého muže s velkým bøichem.}
+{101}{}{Vidíš Hakeswilla, Morningstarského horníka.}
+{102}{}{Vidíš tlustého muže s nažloutlou kùží a velikou jizvou na krku.}
+{103}{}{Co si myslíš že dìláš?}
+{104}{}{Hakeswill tì nauèí. To uvidíš.}
+{105}{}{Zavšivìný šmejde.}
+{106}{}{Mìl by ses chovat lépe.}
+{107}{}{Miluješ svou matku?}
+{108}{}{Já se tì nìjak zbavím.}
+{109}{}{Není místo, kde by tì mìli rádi.}
+{110}{}{Však my si s tebou už nìjak poradíme.}
+{111}{}{Na co èumíš?}
+{112}{}{Vypadni, dokud se ještì držím na uzdì.}
+{113}{}{Já si tì nìkdy podám.}
+{114}{}{Nemùžeš mì zabít, nemùžeš.}
+{115}{}{Já odsud odejdu. Uvidíš to na vlastní oèi.}
+{116}{}{Byla to jenom blbá èubka.}
+{117}{}{To co jem provedl té èubce je nic oproti tomu co provedu tobì.}
+{118}{}{Schoval jsem si na tebe nádhernì ostrý høebík}
+{119}{}{Jsem obrovská silná obluda. Tady mì moc dlouho neudržíte.}
+{120}{}{To jsi nemìl dìlat.}
+{121}{}{Hakeswill má milující matku.}
+{122}{}{Já se u Lou postarám.}
+{123}{}{Seš tvrdší než vypadáš.}
+{124}{}{Zatracené kurvy, všechny jsou to samý. Kde mám bøitvu?}
+{125}{}{Slyšel jsem, že si nìkdo chce promluvit se starým Hakeswillem. Nìkdo kdo ho chce pøedat do rukou spravedlnosti. Je
+ to tak?}
+{126}{}{Hledám horníka, který poøezal Louino dìvèe. Zdá se, že jsi se právì pøiznal.}
+{127}{}{Jistì, pøináším spravedlnost. Spravedlnost ráže 10mm.}
+{128}{}{Možná. Co víš o té záležitosti?}
+{129}{}{Ne pane, heh, heh. To nechci udìlat. Na-nashledanou, pane.}
+{130}{}{Poøezal jsem èubku. Udìlala velikou chybu.}
+{131}{}{Udìlala chybu?}
+{132}{}{Nestarám se o to, co udìlala ona. Poøezal jsi jí a to je hlavní. Já se za ní pomstím.}
+{133}{}{Ty jsi udìlal chybu, ty zmrde. A já se postarám o to, abys sedìl do konce svého života.}
+{134}{}{Ty mì zavøeš za møíže? Dobrá, pùjdu dobrovolnì. Ta èubka už dostala co si zasloužila a nemá smysl si pøidìlávat
+ další problém. Ale mì nesmíš ublížit, já jsem nepøemožitelný. Radši zavøi nìkoho jiného. To bude lepší pro nás oba.}
+{135}{}{Co udìlám, to je moje vìc. Jsem šerif a právì tì zatýkám. Nìjaké námitky?}
+{136}{}{Nikoho jiného zavírat nebudu. A abych zajistil že se už tady nebude øádit s bøitvou, tak tì rovnou zabiju.}
+{137}{}{Nehodlám si znepøátelit všechny morningstarské horníky, takže tì nechám odejít jenom s výstrahou. Ale pokud ještì
+ nìkoho zabiješ, tak si mne opravdu nepøej.}
+{138}{}{Dìkuji Vám, pane. Dìkuji. Hakeswill bude opatrný, pane. Dìkuji.}
+{139}{}{Dìkuji Vám, paní. Dìkuji. Hakeswill bude opatrný, paní. Dìkuji.}
+{140}{}{To doufám, že budeš opatrný. Nechci zase slyšet o nìèem podobném. Sbohem.}
+{141}{}{Utahovala si z mé matky. Nikdo nebude pomlouvat mou matku. Ona je jediný hodný èlovìk na tomto shnilém svìtì.}
+{142}{}{Nezajímá mì, proè jsi jí to udìlal. Pùjdeš se mnou do vìzení.}
+{143}{}{Tvoje matka si mìla vèas vzít antikoncepci.}
+{144}{}{Utahovala si z tvojí matky? To sice není nic pøíjemného, ale tohle si jí dìlat nemusel.}
+{145}{}{Jenomže už jsem to udìlal. Já vím že to byla blbost, ale zpìt už to nevrátím. Moc toho lituji a slibuji že už to
+ víckrát neudìlám.}
+{146}{}{Za to, že jsi jí uøízl pùlku oblièeje, bych tì zavøít mìl, ale když toho opravdu lituješ... Jdi! Vypadni odsud a už
+ se sem nikdy nevracej.}
+{147}{}{V tom máš naprostou pravdu. Na cele totiž budeš úplnì sám.}
+{148}{}{Doufám že ostatní horníci nemají takové úchylky jako ty. A pokud mají, tak je snad zmírní tento odstrašující
+ pøípad... (vytahuješ zbraò)}

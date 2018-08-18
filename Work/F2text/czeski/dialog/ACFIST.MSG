@@ -1,0 +1,35 @@
+#tento soubor pøeložil Miskot...mhoferek@telecom.cz
+{100}{}{Vidíš Lucase.}
+{101}{}{Lucas je pøední váleèník tvého kmene.}
+{102}{}{Tak tady jsi, Vyvolený. Hmmm...jak jsi na tom se svým posláním?}
+{103}{}{Jde to skvìle.}
+{104}{}{Ne moc dobøe.}
+{105}{}{He?!}
+{106}{}{Musím se k tomu co nejdøív vrátit.}
+{107}{}{Možná, že by se ti hodilo nìkolik rad od zkušeného bojovníka.}
+{108}{}{Jistì. S èím mi mùžeš pomoci?}
+{109}{}{Ani ne. Jsem docela dobrý.}
+{110}{}{Dobrá odpovìï, blbeèku. A teï buï zticha, právì trénuju.}
+{111}{}{Dobrá.}
+{112}{}{Umím dobøe bojovat beze zbranì. Myslíš, že se to dokážeš nauèit?}
+{113}{}{Co mì mùžeš nauèit?}
+{114}{}{Pøeji ti dobrý vítr v zádech Vyvolený.}
+{115}{}{Sbohem.}
+{116}{}{Hmmm -- zùstaò tu se mnou jeden den a nauèím tì, jak tvrdìji a úèinnìji udeøit.}
+{117}{}{Dobrá. Jdeme na to.}
+{118}{}{Promiò, zrovna teï nemám èas.}
+{119}{}{Umíš už všechno, co jsem tì mohl nauèit, Vyvolený. Hodnì štìstí ve tvém poslání.}
+{120}{}{Oukej.}
+{121}{}{Hm. Vyvolený, chybí ti víc obratnosti. Nemohu tì nic nauèit.}
+{122}{}{Ó, oukej.}
+{123}{}{Vyvolený, chybí ti rychlost pohybu. Mùj trénink ti nepomùže.}
+{124}{}{Oukej.}
+{125}{}{Ty se toho musíš o zápasení nauèit mnohem víc, než tì budu moci zaèít trénovat.}
+{126}{}{Aha.}
+{127}{}{Mohu tì nauèit jeden velmi mocný kop. Potrvá nám to jeden den.}
+{128}{}{Dobrá.}
+{129}{}{Mohu tì nauèit dost, aby se ti lépe zápasilo. Potrvá nám to jeden den.}
+{130}{}{Dobrá.}
+{131}{}{Šlo ti to dobøe, Vyvolený. Pøeji ti dobrý vítr v zádech.}
+{132}{}{Dìkuji ti za pomoc.}
+{133}{}{Nauèil jsem tì už všechno, co tì nauèit mohu, Vyvolený.  Hodnì štìstí na tvé výpravì.}

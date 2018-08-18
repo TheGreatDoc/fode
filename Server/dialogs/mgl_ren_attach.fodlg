@@ -1,0 +1,50 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 D _var p mgl_lead_Ren = 2 @
+3 3000 None 0 #
+4 3010 @
+4 4000 None 0 #
+0 4010 R _var p mgl_lead_Ren = 3 R _item p PID_mgl_chem_stuff + 1 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to renesco In New Reno***}
+{2010}{}{I'm here from MGL, You should have some package ready for me. *** Make it requre but not consume 10 000 caps***}
+{3000}{}{Yes, i have it here somewhere. . . . . . . . . . . . . . .  Yes here it is. It's for 12 000 caps.}
+{3010}{}{Wait. Harris said it's for 10 000 caps.}
+{4000}{}{Uh, yes you are right, excuse me my memory. OF course 10 000 caps.}
+{4010}{}{Here are your caps. Bye. *** Make it require and consume  10 000 caps****}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to renesco In New Reno***}
+{2010}{}{Jestem tu z MGL, powinienes miec pewna przesylke gotowa dla mnie. *** Make it requre but not consume 10 000 caps***}
+{3000}{}{Taks, mam to gdzies tu. . . . . . . . . . . . . . .  Tak, jest. Jest za 12 000 caps.}
+{3010}{}{Czekaj. Harris powiedzial ze to jest za 10 000 caps.}
+{4000}{}{Uh, tak masz racje, przepraszam za moja pamiec. Oczywiscie 10 000 caps.}
+{4010}{}{Oto Twoe Capsle. Czesc. *** Make it require and consume  10 000 caps****}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to renesco In New Reno***}
+{2010}{}{I'm here from MGL, You should have some package ready for me. *** Make it requre but not consume 10 000 caps***}
+{3000}{}{Yes, i have it here somewhere. . . . . . . . . . . . . . .  Yes here it is. It's for 12 000 caps.}
+{3010}{}{Wait. Harris said it's for 10 000 caps.}
+{4000}{}{Uh, yes you are right, excuse me my memory. OF course 10 000 caps.}
+{4010}{}{Here are your caps. Bye. *** Make it require and consume  10 000 caps****}
+

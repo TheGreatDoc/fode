@@ -1,0 +1,212 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidí mrzutì vypadající enu.}
+{101}{}{Vidíš Jackpot Jane, správkyni zvíøecích bojù.}
+{102}{}{Vidíš enu s inteligentníma oèima. }
+{103}{}{Ahoj kámo. Pøišel jsi se podívat na zápas?}
+{104}{}{Eeee. Ošklivé.}
+{105}{}{To je fakt pìkné.}
+{106}{}{Á, u chápu. Ty musíš bıt novı ve mìstì, co? Já jsem Jackpot Jane a uzavírám sázky, tıkající se zítøejších soubojù.
+ Mùu pro tebe nìco udìlat?}
+{107}{}{(pøikyvuješ) Ano, ano. ( vyndáváš svojí penìenku).}
+{108}{}{Béé? Gaga. Sbohem, ošklivko.}
+{109}{}{Dobrı nápad. Vra se sem zítra a jestli tvùj favorit vyhraje zápas, dám ti tvojí vıhru. Platí?}
+{110}{}{OK. Pár penìz navíc se mi rozhodnì bude hodit. Uvidíme se pozdìji.}
+{111}{}{Vyhrál?}
+{112}{}{Dobøe... Nashle.}
+{113}{}{Ne, bohuel ne. Ale opravdu se hodnì snail. Poslyš, nechceš si vsadit na další zápas?}
+{114}{}{Ty váháš? (vytahuješ penìenku)}
+{115}{}{Ach jo. Sbohem.}
+{116}{}{Opravdu lituji, ale nedostaneš nic, co jsi vsadil. Vra se, a seeneš zese nìjaké prachy a vsaï si znova.}
+{117}{}{Dobrá, dobrá. Nashle.}
+{118}{}{Podívaná je v dobytèí ohradì kadı všední den okolo poledne.}
+{119}{}{Teï se nebojuje. Bojuje se v dobytèí ohradì a v poledne.}
+{120}{}{Teï se nic nedìje.}
+{121}{}{Poèkej do poledne, to se zaène bojovat. Nebo mùeš odejít.}
+{122}{}{Nazdar. Jdi se podívat do dobytèí ohrady.}
+{123}{}{To vypadá slibnì. Jdou si pìknì po krku.}
+{124}{}{Vıbornì! Klidnì mùeš øíct, e jeden z nich je u minulostí.}
+{125}{}{Dobøe, dobøe. Ty v ohradì se asi pìknì nenávidí.}
+{126}{}{Tihle dva mají opravdu velikou vıdr. Zajímalo by mì, jak dlouho jim to vydrí.}
+{127}{}{Dej mu poøádnì do tlamy!}
+{128}{}{Vıbornì. Do nìj! Do nìj!}
+{129}{}{Vıbornì. Do nìj! Do nìj!}
+{130}{}{Ou, to byla zákeøná rána!}
+{131}{}{To je opravdu maso.}
+{132}{}{Skvìlı tah. Vıborná práce tlapek.}
+{133}{}{Pracují i tìlem. Dneska se to tu pìknì rozjelo!}
+{134}{}{Skvìlá kombinace. Jenom se navzájem pokousejte!}
+{135}{}{To je ono. Jedna rána, druhá rána a soupeø lehne!}
+{136}{}{Tyhle dvì pomalé nuly koneènì zaèaly nìco dìlat!}
+{137}{}{Podívej na to! Tolik krve a oni po sobì ještì jdou. To je ale boj.}
+{138}{}{Tohle je poøádná akce na kterou se pøijde podívat spousta lidí. Klasika je klasika.}
+{139}{}{Jo, poøádná rána pøímo do sanice. To bude další krvavé zranìní!}
+{140}{}{Vidìl jsi, jak daleko ta krev støíkala? To je síla!}
+{141}{}{Sleduj jak urvané maso lítá na všechny strany!}
+{142}{}{Jen se podívej, urvané maso je všude! Tihle dva si asi mají co øíct.}
+{143}{}{Ahoj, já jsem Jackpot Jane a vedu zvíøecí boje tady ve mìstì. U mì si mùeš vsadit na jednoho z bojovníkù,
+ popøípadì si tu vyzvednout vıhru. Bojuje se zvíøe proti zvíøeti.}
+{144}{}{Jen pojï a vsaï si. Co to bude?}
+{145}{}{Eh, co se tady dìje?}
+{146}{}{Chci si vsadit. Kdo zápasí?}
+{147}{}{Myslím, e tyhle souboje jsou pøedem nacvièené.}
+{148}{}{Jenom se rozhlíím. Nashle.}
+{149}{}{To je zcela prosté. Tahle zvíøata chytneme a zavøeme. Ani si klece moc neuijí a u jdou do
+ ringu. Nic víc, ádné úskoky. Èistá síla Matky Pøírody.}
+{150}{}{Co s tím má Matka Pøíroda spoleèného?}
+{151}{}{Mùu na tom nìjak vydìlat peníze?}
+{152}{}{Pøijïte a uvidíte zápas století!}
+{153}{}{Vsaïte své peníze na vítìze!}
+{154}{}{Uvidíte velikı zápas zvíøat!}
+{155}{}{Vsaïte si pøed uzavøením sázek! Neváhejte!}
+{156}{}{Dejte si pozor na cákající krev a vnitønosti. Správa není zodpovìdná za skvrny.}
+{157}{}{Ve høe jsou tisíce dolarù!}
+{158}{}{Vyhrajte spousty zlata! Tady a teï!}
+{159}{}{Pojïte a uvidíte zápas dne!}
+{160}{}{Divoké pøíšery bojují, zatímco vy vyhráváte peníze!}
+{161}{}{Pøineste si poloprázdné penìenky a odejdete s plnımi!}
+{162}{}{Jdi do háje.}
+{163}{}{Nemám zájem.}
+{164}{}{Nech mì na pokoji.}
+{165}{}{Dr se dál od mé ohrady.}
+{166}{}{Nezajímám se o tvé peníze.}
+{167}{}{Øíkala jsem, e dvì potvory nastoupí proti sobì a zachvátí je obrovská zuøivost, která nebyla na Zemi k vidìní
+ od dob obrovskıch stvoøení.}
+{168}{}{Obrovskıch stvoøení?}
+{169}{}{A co potom?}
+{170}{}{Take jinak, kámo. Nebyla k vidìní od dob, co se obrovští ještìøi promenádovali po Zemi. U ti to došlo? Nebo seš tak natvrdlej?}
+{171}{}{Jo, u to chápu.}
+{172}{}{Velcí ještìøi mì dìsí. Radši vypadnu døív, ne nìjakého potkám. Díky za varování a sbohem.}
+{173}{}{Vsaï si na vısledek souboje. Pøijdeš ke mnì, já ti povím které dvì potvory budou zápasit 
+a ty si na jednu z nich vsadíš.}
+{174}{}{A potom co?}
+{175}{}{To je prosté. Kdy tvoje potvora vyhraje, dostaneš dvojnásobek vsazenıch penìz. Naopak, kdy se odporouèí, tak tvoje
+ peníze budou patøit mì. Kadej den je obvykle nìkolik zápasù. Dokud bude potvor dost, mùeš si vsadit na kteroukoliv
+ z nich. Samozøejmì e v jednom souboji si mùeš vsadit jen na jednu. A aby to nebylo moc sloité, tak se sází po 100$.}
+{176}{}{OK. Zkusím si to. Kdo zápasí.}
+{177}{}{Dobøe, ale vsadím si a pøíštì. Zatím ahoj.}
+{178}{}{Èerstvì odchycenı }
+{179}{}{ a proti nìmu }
+{180}{}{. Bude to zajímavı souboj. Na koho si vsadíš?}
+{181}{}{Tohle bude opravdu nevraivı zápas. Bojuje nejlepší z nejlepších - }
+{182}{}{ a }
+{183}{}{. Na koho si vsadíš?}
+{184}{}{První na øadì je }
+{185}{}{, proti nìmu bojuje }
+{186}{}{. Mùe to bıt docela dobrı zápas. Na koho si vsadíš?}
+{187}{}{Šampión }
+{188}{}{ a proti nìmu nováèek }
+{189}{}{. Mùe to bıt zajímavé. Komu z nich nejvíc dùvìøuješ?}
+{190}{}{Take to je }
+{191}{}{ a proti nìmu starı dobrı }
+{192}{}{. Ještì si nevidìl souboj, jako bude tento. Na koho si vsadíš?}
+{193}{}{Mùj favorit je }
+{194}{}{.}
+{195}{}{}
+{196}{}{, na toho si vsadím.}
+{197}{}{Myslím e jednou vydrím nevsadit si.}
+{198}{}{U toho mám dneska dost. Uvidíme se nìkdy jindy. Sbohem.}
+{199}{}{Tady seš. Asi budeš chtít svojí vıhru, ne? (podává ti peníze) Tohle byl dnešní poslední zápas. Jestli chceš, pøijï
+ zase zítra.}
+{200}{}{Zase jsi tady? Chceš si snad vsadit na pøíští souboj?}
+{201}{}{Samozøejmì.}
+{202}{}{Myslím e jednou vydrím nevsadit si.}
+{203}{}{Podívej, jestli se ti to nelíbí, tak vypadni. Nikdo tì tu nebude postrádat. Rozumíš?}
+{204}{}{Jo. Rozumím.}
+{205}{}{Tebe se tak budu bát!}
+{206}{}{ vyhrál. }
+{207}{}{ nemìl sebemenší šanci. To je nìco!}
+{208}{}{Ou, bylo to tìsnı, ale }
+{209}{}{ vyhrál dnešní poslední bitku. Jestli chceš, pøijï zase zítra.}
+{210}{}{To bylo nìco. Na takovı souboj si u ani nevzpomínám. Vyhrál }
+{211}{}{. Vyplatím vıhry, a mùe zaèít další kolo.}
+{212}{}{ vyhrál tohle kolo. Vyplatím vıhry a mùe zaèít další.}
+{213}{}{A vítìzem se stává ... }
+{214}{}{ . Vyplatím vıhry a mùe zaèít další kolo.}
+{215}{}{Jenom chci øíct, e Ascorti se dneska veèer chystá shánìt maso na speciální *øízky*. Bude to trvat chvíli, zatímco
+ my budeme odvlékat mrtvoly z ohrady. }
+{216}{}{ vyhrál souboj. Vyplatím vıhry a mùe zaèít další kolo.}
+{217}{}{Vypadá to, e }
+{218}{}{ vyhrál. Nikdy jsem nevidìla tak roztrhaného soupeøe. Vyplatím vıhry a mùe zaèít další kolo.}
+{219}{}{Juchù! Vyhrál jsem.}
+{220}{}{Jo! To je ono!}
+{221}{}{Opravdu mám na to talent.}
+{222}{}{Vıbornì.}
+{223}{}{Do prdele. Prohrál jsem.}
+{224}{}{Nemám štìstí.}
+{225}{}{Moc jsem se nepøekonal.}
+{226}{}{Snad si pøíštì povedu lépe.}
+{227}{}{Ještì e jsem vsadil na nìj.}
+{228}{}{Jsem rád, e mám víc penìz.}
+{229}{}{To mì stálo dost penìz.}
+{230}{}{Byl to dobrı souboj. Ještì e jsem si vsadil.}
+{231}{}{OK, díky.}
+
+####
+# Fighter Names
+####
+
+# Fighter 1
+{300}{}{Keen Squeek}
+{301}{}{Vicky}
+{302}{}{Spike}
+{303}{}{Doug}
+{304}{}{Dimsdale}
+{305}{}{Marengo}
+{306}{}{Jackelope}
+{307}{}{Killer}
+{308}{}{Boss}
+
+# Fighter 2
+{310}{}{Tanker}
+{311}{}{Muttley}
+{312}{}{Spud}
+{313}{}{Larry}
+{314}{}{Joe}
+{315}{}{Kong}
+{316}{}{Gorgo}
+{317}{}{Willard}
+{318}{}{Ben}
+
+# Fighter 3
+{320}{}{Stumpy}
+{321}{}{Shredder}
+{322}{}{Ripper}
+{323}{}{Skree}
+{324}{}{Buban}
+{325}{}{Bongo}
+{326}{}{Jednookı}
+{327}{}{Spot}
+{328}{}{Lord Wiggler}
+
+# Fighter 4
+{330}{}{Lucky}
+{331}{}{Zoroaster Velikı}
+{332}{}{Shub}
+{333}{}{Usuthu}
+{334}{}{Growler}
+{335}{}{Puggsly}
+{336}{}{Precious}
+{337}{}{Fraggle}
+{338}{}{Noèní vrah}
+
+# Fighter 5
+{340}{}{Hammer}
+{341}{}{Secretariat}
+{342}{}{Warrior}
+{343}{}{Sancho Panza}
+{344}{}{Loki}
+{345}{}{Cerberus}
+{346}{}{Grendel}
+{347}{}{Oddiseus}
+{348}{}{pan Baggins}
+
+# Fighter 6
+{350}{}{Lightning}
+{351}{}{Percy}
+{352}{}{Flower}
+{353}{}{Rumplestiltskin}
+{354}{}{Shagrat}
+{355}{}{Muktar}
+{356}{}{McComb}
+{357}{}{Avellone}
+{358}{}{Zeb}

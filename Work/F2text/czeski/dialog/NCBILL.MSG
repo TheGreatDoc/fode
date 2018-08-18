@@ -1,0 +1,39 @@
+# Tento soubor pøeložil Radim "HIGHTOWER" Brix , hightower@angelfire.com
+{100}{}{Vidíš Billa.}
+
+# 0. LOOK (WTG)
+{150}{}{Vidíš chøadnoucího muže s hustým bílým oboèím. Vypadá jako by potøeboval drink.}
+
+# 1. FLOATS (WTG)
+{200}{}{::Kašlání::}
+{201}{}{::Strnulý pohled na barmana::}
+{202}{}{::Gestikulování pro další drink::}
+{203}{}{::Upøený pohled::}
+
+# 2. STUPID FLOATS (WTG)
+{210}{}{Vypadni, pitomèe.}
+
+# 3. NORMAL (WTG)
+{220}{}{(Muž se na tebe ani nepodíval, když jsi se k nìmu pøiblížil. Upøenì se dívá na zeï za barem.)}
+{221}{}{Uf, hej, slyšel si nìjaké dobré zvìsti nebo øeèi?}
+{222}{}{Hej, co si myslíš o tìchhle nových brýlích co nosím?}
+{223}{}{Hej, už jsi nìkdy nìkoho zabil?}
+{224}{}{(Nechat ho na pokoji.)}
+
+# 4. FALLOUT2 = ENCLAVE_DESTROYED (3)
+{230}{}{Co to je za zasranou otázku?}
+{231}{}{Ouha. Ustoupil jsi. Byl jsem jenom zvìdavý.}
+{232}{}{Oukej, no nevadí.}
+
+# 5. FALLOUT2 = ENCLAVE_DESTROYED (4, 6)
+{240}{}{Sám jsi ustoupil.}
+{241}{}{Ne, dokud nezbavím svìt takových sraèek, jako jsi ty.}
+
+# 6. FALLOUT2 = ENCLAVE_DESTROYED (3)
+{250}{}{(Muž se na tebe upøenì podíval.) Vypadáš jako idiot.}
+{251}{}{Ouha. Ustoupil jsi. Ptal jsem se pouze na tvùj názor.}
+{252}{}{Uh... díky za upøímnost.}
+
+# 7. What's going on?
+{260}{}{(Gestikuluje na tebe abys zavøel hubu a nechal ho dál pít.)}
+{261}{}{(Nechat ho na pokoji.)}

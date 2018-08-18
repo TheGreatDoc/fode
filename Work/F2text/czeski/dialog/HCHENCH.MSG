@@ -1,0 +1,21 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš drsòáka s velkou bouchaèkou.}
+{101}{}{Vidíš hlídaèe karavan z Broken Hills.}
+{102}{}{Vidíš osobu s velkou zbraní vlekoucího se ve vlastních stopách.}
+{103}{}{Øekni mi o nìjaký skupince banditù a na pøíští cestu si beru dynamit a vykouøím je jako krteèky.}
+{104}{}{Pro ochranu karavan bereme každou volnou ruku, teda pokud jí nemáš v kalhotech.}
+{105}{}{Ten chlap vypadá opravdu hodnì staøe.}
+{106}{}{Nebude nám vùbec vadit, když se pøidáš.}
+{107}{}{Ještì jednou nás nìkdo bude chtít obrat, tak mu strèím do prdele deštník a otevøu ho.}
+{108}{}{Jestli banditi ještì jednou nìco zkusí, tak tady asi všichni umøeme.}
+{109}{}{Z jakýpak díry si to vylez?}
+{110}{}{Koupíš mi rundu?}
+{111}{}{Jsem tak unaven hlídáním karavan, že už nemùžu ani mluvit.}
+{112}{}{Jestli nìco potøebuješ promluv si s vetešníkem Billem.}
+{113}{}{Myslím, že po tom všem, co jsme to tady zcivilizovali, jsme trochu blíž našemu cíli.}
+{114}{}{Tyhle války mezi lidma a mutantama už mì nudí. To nám to nestaèilo jednou?}
+{115}{}{Cože? Nevidíš, že odpoèívám?}
+{116}{}{Kdy odjíždí další karavana?}
+{117}{}{Hlídat, hlídat, hlídat... to je to jediný, co tady dìlám.}
+{118}{}{Myslím, že si potøebuju dáchnout.}
+{119}{}{Zasloužil bych dostat pøidáno, tohle je nebezpeèná práce.}

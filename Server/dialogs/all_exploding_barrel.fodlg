@@ -1,0 +1,22 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 &
+
+[engl]
+{100}{}{Gas cylinder}
+{1000}{}{Predialogue installations}
+
+[pols]
+{100}{}{Butla z gazem}
+{1000}{}{Predialogue installations}
+
+[russ]
+{100}{}{Gas cylinder}
+{1000}{}{Predialogue installations}
+

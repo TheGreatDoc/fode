@@ -1,0 +1,24 @@
+{100}{}{Du siehst eine Person mit einer starken Waffe.}
+{101}{}{Du siehst ein Mitglied der Handels- und Sicherheitsorganisation von  Broken Hills.}
+{102}{}{Du siehst eine Person mit einer starken Waffe, die von der Erde ganz staubig ist.}
+{103}{}{Ich sag Dir, noch eine Gruppe Highwaymänner und ich trage Dynamit auf der nächsten
+ Reise.}
+{104}{}{Könnte sicher etwas Hilfe bei den Karawanen gebrauchen.}
+{105}{}{Mann...die Arbeit bei der Einheits-Patrouille macht einen echt alt.}
+{106}{}{Also, ich sehe wie dieser Stammesmann kommt und... kein Problem.}
+{107}{}{Noch einmal "Regenbogen Patrouille" und ich bringe jemanden um.}
+{108}{}{Ich wette, wenn die Banditen noch schlimmer werden, sind wir nächstes Jahr alle tot.}
+{109}{}{Aus welchem Kuhdorf stammst Du?}
+{110}{}{Kaufst Du einem arbeitendem Menschen was zu trinken?}
+{111}{}{Ich bin zu müde von der Arbeit bei der Karawane, um zu reden.}
+{112}{}{Falls Du was brauchst, frag Bill, den Ausstatter.}
+{113}{}{Man sollte annehmen, daß wir nach dieser langer Zeit, in der wir versucht haben, das Ödland
+ zu zivilisieren, etwas näher am Ziel sein würden.}
+{114}{}{Ich hab diese Mensch/Mutanten-Zankerei satt. Sollten wir nicht mit gutem Beispiel voran
+ gehen?}
+{115}{}{Was willst Du? Siehst Du nicht, daß ich mich ausruhe?}
+{116}{}{Wann fährt die nächste Karawane los?}
+{117}{}{Patrouille, Patrouille, Patrouille... das ist alles, was ich hier tue.}
+{118}{}{Ich glaube, ich brauch ein Nickerchen.}
+{119}{}{Ich verdiene eine Beförderung. Das hier ist eine gefährliche Arbeit.}
+

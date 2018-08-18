@@ -1,0 +1,340 @@
+//Timeout by Galachad version 0.0.9
+//corrections by ison :)
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+#include "_msgstr.fos"
+
+IGUIElementTextOpt@ timeout;
+import int GetIniValue(string& iniKey, int defaultValue) from "ini_parser";
+import bool IsAutoAimActive() from "client_auto_aim";
+
+void TimeoutUpdate()
+{
+	if(timeout.isVisible())
+	{
+		int timeMENTATS;
+		int timeBUFFOUT;
+		int timePSYCHO;
+		int timeJET;
+		int timeRADX;
+		int timeNUKACOLA;
+		int timeBEER;
+		int timeDIXONEYE;
+		int timeCOOKIE;
+		int timeBRAINMEAT;
+		int timeHEARTMEAT;
+		int timeLIVERMEAT;
+		int timePLAYERSEAR;
+		int timeCIGARETTES;
+		int timeTACTICAL;
+		int timeParamedic;
+		int timeParamedicFa;
+		int timeFA;
+		int timeDOC;
+		int timeREPAIR;
+		int timeSCIEN;
+		int timeLOCK;
+		int timeSTEAL;
+		int timeBAT;
+		int timeREPLI;
+		int timeSNEAK;
+		CritterCl@ cr = GetChosen();
+		if(@cr==null)
+		{
+			timeout.setText("");
+			return;
+		}
+		timeMENTATS=(cr.ParamBase[PLAYER_TIMEOUT_MENTATS]-__FullSecond)/3;
+		timeBUFFOUT=(cr.ParamBase[PLAYER_TIMEOUT_BUFFOUT]-__FullSecond)/3;
+		timePSYCHO=(cr.ParamBase[PLAYER_TIMEOUT_PSYCHO]-__FullSecond)/3;
+		timeJET=(cr.ParamBase[PLAYER_TIMEOUT_JET]-__FullSecond)/3;
+		timeRADX=(cr.ParamBase[PLAYER_TIMEOUT_RAD_X]-__FullSecond)/3;
+		timeNUKACOLA=(cr.ParamBase[PLAYER_TIMEOUT_NUKA_COLA]-__FullSecond)/3;
+		timeBEER=(cr.ParamBase[PLAYER_TIMEOUT_BEER]-__FullSecond)/3;
+		timeDIXONEYE=(cr.ParamBase[PLAYER_TIMEOUT_DIXON_EYE]-__FullSecond)/3;
+		timeCOOKIE=(cr.ParamBase[PLAYER_TIMEOUT_COOKIE]-__FullSecond)/3;
+		timeBRAINMEAT=(cr.ParamBase[PLAYER_TIMEOUT_BRAIN_MEAT]-__FullSecond)/3;
+		timeHEARTMEAT=(cr.ParamBase[PLAYER_TIMEOUT_HEART_MEAT]-__FullSecond)/3;
+		timeLIVERMEAT=(cr.ParamBase[PLAYER_TIMEOUT_LIVER_MEAT]-__FullSecond)/3;
+		timePLAYERSEAR=(cr.ParamBase[PLAYER_TIMEOUT_PLAYERS_EAR]-__FullSecond)/3;
+		timeCIGARETTES=(cr.ParamBase[PLAYER_TIMEOUT_CIGARETTES]-__FullSecond)/3;
+		timeTACTICAL=(cr.ParamBase[PLAYER_TIMEOUT_TACTICAL]-__FullSecond)/3;
+		timeParamedic=(cr.ParamBase[PLAYER_TIMEOUT_PARAMEDIC]-__FullSecond)/3;
+		timeParamedicFa=(cr.ParamBase[PLAYER_TIMEOUT_PARAMEDIC_FA]-__FullSecond)/3;
+		timeFA=cr.Timeout[TO_SK_FIRST_AID]/3;
+		timeDOC=cr.Timeout[TO_SK_DOCTOR]/3;
+		timeREPAIR=cr.Timeout[TO_SK_REPAIR]/3;
+		timeSCIEN=cr.Timeout[TO_SK_SCIENCE]/3;
+		timeLOCK=cr.Timeout[TO_SK_LOCKPICK]/3;
+		timeSTEAL=cr.Timeout[TO_SK_STEAL]/3;
+		timeBAT=cr.Timeout[TO_BATTLE]/3;
+		timeREPLI=cr.Timeout[TO_REPLICATION]/3;
+		timeSNEAK=cr.Timeout[TO_SNEAK]/3;
+		string result="";
+		if(IsAutoAimActive()) result="\n\n\n\n";
+		if(GetCurrentMapPid()==695)
+		{
+			result+="Berlin North-East flag: ";
+			if(cr.ParamBase[BERLIN_FLAG1]<=-30) result+="REF "+(-cr.ParamBase[BERLIN_FLAG1])+"%\n";
+			else if(cr.ParamBase[BERLIN_FLAG1]>=30) result+="NEC "+cr.ParamBase[BERLIN_FLAG1]+"%\n";
+			else result+="neutral\n";
+			result+="Berlin North-West flag: ";
+			if(cr.ParamBase[BERLIN_FLAG2]<=-30) result+="REF "+(-cr.ParamBase[BERLIN_FLAG2])+"%\n";
+			else if(cr.ParamBase[BERLIN_FLAG2]>=30) result+="NEC "+cr.ParamBase[BERLIN_FLAG2]+"%\n";
+			else result+="neutral\n";
+			result+="Berlin South-East flag: ";
+			if(cr.ParamBase[BERLIN_FLAG3]<=-30) result+="REF "+(-cr.ParamBase[BERLIN_FLAG3])+"%\n";
+			else if(cr.ParamBase[BERLIN_FLAG3]>=30) result+="NEC "+cr.ParamBase[BERLIN_FLAG3]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==678)
+		{
+			result+="Death Mine flag: ";
+			if(cr.ParamBase[DEATHMINE_FLAG]<=-30) result+="REF "+(-cr.ParamBase[DEATHMINE_FLAG])+"%\n";
+			else if(cr.ParamBase[DEATHMINE_FLAG]>=30) result+="NEC "+cr.ParamBase[DEATHMINE_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==670)
+		{
+			result+="Old Village flag: ";
+			if(cr.ParamBase[OLDVILLAGE_FLAG]<=-30) result+="REF "+(-cr.ParamBase[OLDVILLAGE_FLAG])+"%\n";
+			else if(cr.ParamBase[OLDVILLAGE_FLAG]>=30) result+="NEC "+cr.ParamBase[OLDVILLAGE_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==685)
+		{
+			result+="Old Fields flag: ";
+			if(cr.ParamBase[OLDFIELDS_FLAG]<=-30) result+="REF "+(-cr.ParamBase[OLDFIELDS_FLAG])+"%\n";
+			else if(cr.ParamBase[OLDFIELDS_FLAG]>=30) result+="NEC "+cr.ParamBase[OLDFIELDS_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==672)
+		{
+			result+="Disctrict X flag: ";
+			if(cr.ParamBase[DISTRICTX_FLAG]<=-30) result+="REF "+(-cr.ParamBase[DISTRICTX_FLAG])+"%\n";
+			else if(cr.ParamBase[DISTRICTX_FLAG]>=30) result+="NEC "+cr.ParamBase[DISTRICTX_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==694)
+		{
+			result+="Scrapers City flag: ";
+			if(cr.ParamBase[SCRAPERSCITY_FLAG]<=-30) result+="REF "+(-cr.ParamBase[SCRAPERSCITY_FLAG])+"%\n";
+			else if(cr.ParamBase[SCRAPERSCITY_FLAG]>=30) result+="NEC "+cr.ParamBase[SCRAPERSCITY_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(GetCurrentMapPid()==709)
+		{
+			result+="Fury Town flag: ";
+			if(cr.ParamBase[FURYTOWN_FLAG]<=-30) result+="REF "+(-cr.ParamBase[FURYTOWN_FLAG])+"%\n";
+			else if(cr.ParamBase[FURYTOWN_FLAG]>=30) result+="NEC "+cr.ParamBase[FURYTOWN_FLAG]+"%\n";
+			else result+="neutral\n";
+			result+="\n";
+		}
+		if(timeMENTATS>0)
+		{
+			if(timeMENTATS>60)
+				result=result+ "Mentats"+": "+timeMENTATS/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Mentats"+": "+timeMENTATS+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeBUFFOUT>0)
+		{
+			if(timeBUFFOUT>60)
+				result=result+ "Buffout"+": "+timeBUFFOUT/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Buffout"+": "+timeBUFFOUT+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timePSYCHO>0)
+		{
+			if(timePSYCHO>60)
+				result=result+ "Psycho"+": "+timePSYCHO/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Psycho"+": "+timePSYCHO+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeJET>0)
+		{
+			if(timeJET>60)
+				result=result+ "Jet"+": "+timeJET/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Jet"+": "+timeJET+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeRADX>0)
+		{
+			if(timeRADX>60)
+				result=result+ "Rad X"+": "+timeRADX/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Rad X"+": "+timeRADX+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeNUKACOLA>0)
+		{
+			if(timeNUKACOLA>60)
+				result=result+ "Nuka Cola"+": "+timeNUKACOLA/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Nuka Cola"+": "+timeNUKACOLA+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeBEER>0)
+		{
+			if(timeBEER>60)
+				result=result+ "Beer"+": "+timeBEER/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Beer"+": "+timeBEER+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeDIXONEYE>0)
+		{
+			if(timeDIXONEYE>60)
+				result=result+ "Eye"+": "+timeDIXONEYE/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Eye"+": "+timeDIXONEYE+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeCOOKIE>0)
+		{
+			if(timeCOOKIE>60)
+				result=result+ "Cookie"+": "+timeCOOKIE/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Cookie"+": "+timeCOOKIE+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeBRAINMEAT>0)
+		{
+			if(timeBRAINMEAT>60)
+				result=result+ "Brain Meat"+": "+timeBRAINMEAT/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Brain Meat"+": "+timeBRAINMEAT+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeHEARTMEAT>0)
+		{
+			if(timeHEARTMEAT>60)
+				result=result+ "Heart Meat"+": "+timeHEARTMEAT/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Heart Meat"+": "+timeHEARTMEAT+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeLIVERMEAT>0)
+		{
+			if(timeLIVERMEAT>60)
+				result=result+ "Liver Meat"+": "+timeLIVERMEAT/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Liver Meat"+": "+timeLIVERMEAT+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timePLAYERSEAR>0)
+		{
+			if(timePLAYERSEAR>60)
+				result=result+ "Players Ear"+": "+timePLAYERSEAR/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Players Ear"+": "+timePLAYERSEAR+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeCIGARETTES>0)
+		{
+			if(timeCIGARETTES>60)
+				result=result+ "Cigarettes"+": "+timeCIGARETTES/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Cigarettes"+": "+timeCIGARETTES+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeFA>0)
+		{
+			if(timeFA>60)
+				result=result+ "First Aid"+": "+timeFA/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102301)+": "+timeFA+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeDOC>0)
+		{
+			if(timeDOC>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102311)+": "+timeDOC/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102311)+": "+timeDOC+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeREPAIR>0)
+		{
+			if(timeREPAIR>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102321)+": "+timeREPAIR/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102321)+": "+timeREPAIR+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeSCIEN>0)
+		{
+			if(timeSCIEN>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102331)+": "+timeSCIEN/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102331)+": "+timeSCIEN+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeLOCK>0)
+		{
+			if(timeLOCK>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102341)+": "+timeLOCK/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102341)+": "+timeLOCK+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeSTEAL>0)
+		{
+			if(timeSTEAL>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102351)+": "+timeSTEAL/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102351)+": "+timeSTEAL+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeBAT>0)
+		{
+				result=result+ GetMsgStr(TEXTMSG_GAME,102381)+": "+timeBAT+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeREPLI>0)
+		{
+			if(timeREPLI>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102411)+": "+timeREPLI/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102411)+": "+timeREPLI+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeSNEAK>0)
+		{
+			if(timeSNEAK>60)
+				result=result+ GetMsgStr(TEXTMSG_GAME,102431)+": "+timeSNEAK/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ GetMsgStr(TEXTMSG_GAME,102431)+": "+timeSNEAK+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeTACTICAL>0)
+		{
+			if(timeTACTICAL>60)
+				result=result+ "Tactical skills"+": "+timeTACTICAL/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Tactical skills"+": "+timeTACTICAL+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		if(timeParamedic>0)
+		{
+			if(timeParamedic>60)
+				result=result+ "Paramedic skills"+": "+timeParamedic/60+GetMsgStr(TEXTMSG_GAME,TIMEOUT_MINUTE)+"\n";
+			else
+				result=result+ "Paramedic skills"+": "+timeParamedic+GetMsgStr(TEXTMSG_GAME,TIMEOUT_SECOND)+"\n";
+		}
+		timeout.setText(result); 
+	}
+}
+
+void InitTimeoutInfo()    
+{
+	AppendIfaceIni("timeout.ini");
+	int x=GetIniValue("timeoutx",__ScreenWidth-250);
+	if(x==0)
+		x=__ScreenWidth-250;
+	int y=GetIniValue("timeouty",5);
+	if(y==0)
+		y=5;
+	@timeout = GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",0,0)    
+	.AbsolutePosition(x,y)
+	.TextOptions(FONT_FALLOUT,COLOR_GREEN,FT_BORDERED|FT_CENTERR)
+	.TextBoxSize(248,130);
+}
+
+void TimeOutChangeVisibility()
+{
+	if(timeout.isVisible())
+		timeout.setVisible(false);
+	else
+		timeout.setVisible(true);
+	timeout.setText("");
+}

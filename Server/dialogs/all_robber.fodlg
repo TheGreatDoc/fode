@@ -1,0 +1,31 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Грабитель}
+{200}{}{Вы видите грабителя.}
+{210}{}{Вы видите мужчину крепкого телосложения бандитской наружности, он хищно озирается по сторонам.}
+{210}{}{Кажется когда-то в далёкой северной стране таких людей называли гопниками...}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Robber}
+{200}{}{You see a robber.}
+{210}{}{You see a strong man who looks like some kind of robber. He is looking around rapaciously.}
+{210}{}{Long time ago in the far northern land such men were called "gopniks"...}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Robber}
+{200}{}{Widzisz rabusia.}
+{210}{}{Widzisz silnego mężczyznę Rozgląda się drapieżnie.}
+{210}{}{Dawno temu daleko na północy nazywani byla "gopniksami"...}
+{1000}{}{Initial preferences}
+

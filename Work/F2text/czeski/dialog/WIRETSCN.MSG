@@ -1,0 +1,8 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Pøístup povolen pro úroveò }
+{101}{}{Pøístup zamítnut}
+{102}{}{Neznámý vzor sítnice.}
+{103}{}{Porušení bezpeènosti na úrovni }
+
+{104}{}{Pøístup povolen pro úroveò 4.}
+{105}{}{Porušení bezpeènosti na úrovni 4.}

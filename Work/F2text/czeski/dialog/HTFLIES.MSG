@@ -1,0 +1,3 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Tolik much soustøedìných v jedné budovì jsi v životì nevidìl. Musí tu být pro nì nìco lákavého.}
+{101}{}{Tady je tìch much o troch ménì.}

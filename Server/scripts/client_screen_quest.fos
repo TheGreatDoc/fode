@@ -1,0 +1,274 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_time.fos"
+#include "_defines.fos"
+#include "quests.fos"
+
+import void AttachTabsToScreen(int screen) from "client_scripts";
+import void UpdatePipBoyPosition(int x, int y) from "client_scripts";
+import void GetPipBoyPosition(int &x, int &y) from "client_scripts";
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+import int GetIniValue(string& iniKey, int defaultValue) from "ini_parser";
+
+int []quest_progress;
+int []positions;
+int []positionssize;
+
+IGUIElementTextOpt @QuestTopTextOpt;
+IGUIElementTextOpt @QuestNameTextOpt;
+IGUIElementTextOpt @QuestDescriptionTextOpt;
+int QuestTopTextStartTime=0;
+int QuestNameTextStartTime=0;
+int QuestDescriptionTextStartTime=0;
+IGUIElementButtonOpt @QuestDescriptionBackButtonOpt;
+IGUIElementTextOpt @QuestFullDescriptionTextOpt;
+
+QuestDescriptionButtonClass []QuestDescriptionButton;
+
+void AddQuestNotification(string text1, string text2, string text3)
+{
+	QuestTopTextOpt.setVisible(true);
+	QuestTopTextOpt.TextOptions(FONT_FALLOUT, 0x01000000,FT_BORDERED);
+	QuestTopTextOpt.setText(text1);
+	QuestNameTextOpt.setVisible(true);
+	QuestNameTextOpt.TextOptions(FONT_FAT, 0x01000000,FT_BORDERED);
+	QuestNameTextOpt.setText(text2);
+	QuestDescriptionTextOpt.setVisible(true);
+	QuestDescriptionTextOpt.TextOptions(FONT_FALLOUT, 0x01000000,FT_BORDERED);
+	QuestDescriptionTextOpt.setText(text3);
+	QuestTopTextStartTime=__FullSecond;
+	QuestNameTextStartTime=__FullSecond;
+	QuestDescriptionTextStartTime=__FullSecond+REAL_SECOND(1);
+}
+
+void QuestNotificationUpdate()
+{
+	if(!QuestTopTextOpt.isVisible() && !QuestNameTextOpt.isVisible() && !QuestDescriptionTextOpt.isVisible()) return;
+	int alpha1=0;
+	if(QuestTopTextStartTime>int(__FullSecond))
+		alpha1=0;
+	else if(__FullSecond-QuestTopTextStartTime<=int(REAL_SECOND(3)))
+		alpha1=(__FullSecond-QuestTopTextStartTime)/float(REAL_SECOND(1))*(255.f/3.f);
+	else if(__FullSecond-QuestTopTextStartTime<=int(REAL_SECOND(7)))
+		alpha1=255;
+	else if(__FullSecond-QuestTopTextStartTime<=int(REAL_SECOND(10)))
+		alpha1=255-(__FullSecond-QuestTopTextStartTime-REAL_SECOND(7))/float(REAL_SECOND(1))*(255.f/3.f);
+	int alpha2=0;
+	if(QuestNameTextStartTime>int(__FullSecond))
+		alpha2=0;
+	else if(__FullSecond-QuestNameTextStartTime<=int(REAL_SECOND(3)))
+		alpha2=(__FullSecond-QuestNameTextStartTime)/float(REAL_SECOND(1))*(255.f/3.f);
+	else if(__FullSecond-QuestNameTextStartTime<=int(REAL_SECOND(7)))
+		alpha2=255;
+	else if(__FullSecond-QuestNameTextStartTime<=int(REAL_SECOND(10)))
+		alpha2=255-(__FullSecond-QuestNameTextStartTime-REAL_SECOND(7))/float(REAL_SECOND(1))*(255.f/3.f);
+	int alpha3=0;
+	if(QuestDescriptionTextStartTime>int(__FullSecond))
+		alpha3=0;
+	else if(__FullSecond-QuestDescriptionTextStartTime<=int(REAL_SECOND(3)))
+		alpha3=(__FullSecond-QuestDescriptionTextStartTime)/float(REAL_SECOND(1))*(255.f/3.f);
+	else if(__FullSecond-QuestDescriptionTextStartTime<=int(REAL_SECOND(6)))
+		alpha3=255;
+	else if(__FullSecond-QuestDescriptionTextStartTime<=int(REAL_SECOND(9)))
+		alpha3=255-(__FullSecond-QuestDescriptionTextStartTime-REAL_SECOND(6))/float(REAL_SECOND(1))*(255.f/3.f);
+	int col1=0;
+	col1|=alpha1; col1=col1<<8; col1|=255; col1=col1<<8;  col1|=255; col1=col1<<8; col1|=255;
+	int col2=0;
+	col2|=alpha2; col2=col2<<8; col2|=0; col2=col2<<8;  col2|=255; col2=col2<<8; col2|=0;
+	int col3=0;
+	col3|=alpha3; col3=col3<<8; col3|=255; col3=col3<<8;  col3|=255; col3=col3<<8; col3|=255;
+	QuestTopTextOpt.TextOptions(FONT_FALLOUT, col1,FT_BORDERED);
+	QuestNameTextOpt.TextOptions(FONT_FAT, col2,FT_BORDERED);
+	QuestDescriptionTextOpt.TextOptions(FONT_FALLOUT, col3,FT_BORDERED);
+	if(alpha1<0) QuestTopTextOpt.setVisible(false);
+	else QuestTopTextOpt.setVisible(true);
+	if(alpha2<0) QuestNameTextOpt.setVisible(false);
+	else QuestNameTextOpt.setVisible(true);
+	if(alpha3<0) QuestDescriptionTextOpt.setVisible(false);
+	else QuestDescriptionTextOpt.setVisible(true);
+}
+
+void HideAllQuestDescriptionButtons()
+{
+	for(uint i=0; i<QuestDescriptionButton.length(); i++)
+	{
+		QuestDescriptionButton[i].ButtonOpt.Hide();
+		QuestDescriptionButton[i].QuestIndex=-1;
+	}
+}
+
+class QuestDescriptionBackButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		QuestDescriptionBackButtonOpt.Hide();
+		QuestFullDescriptionTextOpt.setVisible(false);
+		for(uint i=0; i<QuestDescriptionButton.length(); i++)
+			if(QuestDescriptionButton[i].QuestIndex!=-1) if(quest_progress[QuestDescriptionButton[i].QuestIndex]>=0) QuestDescriptionButton[i].ButtonOpt.Show();
+	}
+}
+
+class QuestScreenClass : IGUIScreenCallbackMove
+{
+	void OnMove(int x, int y)
+	{
+		UpdatePipBoyPosition(x,y);
+	}
+}
+
+void InitQuestScreen()
+{
+	positions=GetIniValues2("QuestTopTextOpt",null);
+	positionssize=GetIniValues2("QuestTopTextOptSize",null);
+	@QuestTopTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, 0,FT_BORDERED)
+      .TextBoxSize(positionssize[0],positionssize[1])
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	positions=GetIniValues2("QuestNameTextOpt",null);
+	positionssize=GetIniValues2("QuestNameTextOptSize",null);
+	@QuestNameTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",positions[0],positions[1])
+	  .TextOptions(FONT_FAT, 0,FT_BORDERED)
+      .TextBoxSize(positionssize[0],positionssize[1])
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	positions=GetIniValues2("QuestDescriptionTextOpt",null);
+	positionssize=GetIniValues2("QuestDescriptionTextOptSize",null);
+	@QuestDescriptionTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, 0,FT_BORDERED)
+      .TextBoxSize(positionssize[0],positionssize[1])
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	QuestScreenClass QuestScreen;
+	GUI_CreateScreen(CLIENT_SCREEN_QUEST_LOG,"quest.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1)
+				.CallbackMove(QuestScreen);
+				
+	positions=GetIniValues2("QuestDescriptionButton",null);
+	positionssize=GetIniValues2("QuestDescriptionButtonZone",null);
+	QuestDescriptionButton.resize(QUESTS.length());
+	for(uint i=0; i<QuestDescriptionButton.length(); i++)
+	{
+		@QuestDescriptionButton[i].ButtonOpt=
+		GUI_AddButton(CLIENT_SCREEN_QUEST_LOG,positions[0],positions[1]+i*GetIniValue("QuestDescriptionButtonGap",21))
+			.ClickableZone(positionssize[0],positionssize[1])
+			.Text("UNDEFINED", FONT_FAT, COLOR_LGREEN, FT_BORDERED)
+			.CallbackMouseClick(QuestDescriptionButton[i]);
+	}
+	HideAllQuestDescriptionButtons();
+	
+	positions=GetIniValues2("QuestDescriptionBackButtonOpt",null);
+	QuestDescriptionBackButtonClass QuestDescriptionBackButton;
+	@QuestDescriptionBackButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_QUEST_LOG, positions[0],positions[1])
+		.UpPic("QuestBackOFF.png")
+		.DownPic("QuestBackON.png")
+		//.Text(GetMsgStr(TEXTMSG_GAME,3000000400), FONT_FAT, COLOR_LGRAY)
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000400), FONT_FAT, COLOR_DGREEN, COLOR_DDGREEN, FT_CENTERXY)
+		.TextShift(-3, 0, -3, 0)
+		.CallbackMouseClick(QuestDescriptionBackButton);
+	QuestDescriptionBackButtonOpt.Hide();
+	
+	positions=GetIniValues2("QuestFullDescriptionTextOpt",null);
+	positionssize=GetIniValues2("QuestFullDescriptionTextOptSize",null);
+	@QuestFullDescriptionTextOpt=
+	GUI_AddText(CLIENT_SCREEN_QUEST_LOG,"", positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED)
+      .TextBoxSize(positionssize[0],positionssize[1]);
+	
+	AttachTabsToScreen(CLIENT_SCREEN_QUEST_LOG);
+}
+
+class QuestDescriptionButtonClass : IGUIElementCallbackMouseClick
+{
+	IGUIElementButtonOpt @ButtonOpt;
+	int QuestIndex;
+	void OnMouseClick(int id, int click)
+	{
+		for(uint i=0; i<QuestDescriptionButton.length(); i++)
+			QuestDescriptionButton[i].ButtonOpt.Hide();
+		QuestDescriptionBackButtonOpt.Show();
+		QuestFullDescriptionTextOpt.setVisible(true);
+		string QuestDescription;
+		int num=1;
+		for(int i=0; i<=quest_progress[QuestIndex]; i++)
+		{
+			if(i==100) break;
+			if(IsMsgStr(TEXTMSG_QUEST,20000000+QuestIndex*100+i))
+			{
+				if(i<quest_progress[QuestIndex]) QuestDescription+=GetMsgStr(TEXTMSG_GAME,3000000401)+" ";
+				QuestDescription+=num+") "+GetMsgStr(TEXTMSG_QUEST,20000000+QuestIndex*100+i);
+				QuestDescription+="\n\n";
+				++num;
+			}
+		}
+		QuestFullDescriptionTextOpt.setText(QuestDescription);
+	}
+}
+
+void UpdateQuestList(string quest_progress_str)
+{
+	quest_progress.resize(0);
+	while(quest_progress_str.length()>0)
+	{
+		int space_index=-1;
+		for(uint i=0; i<quest_progress_str.length(); i++)
+		{
+			if(quest_progress_str[i]==" ")
+			{
+				space_index=i;
+					break;
+			}
+		}
+		if(space_index==-1)
+		{
+			int quest_progress_temp=-2;
+			StrToInt(substring(quest_progress_str,0,quest_progress_str.length()),quest_progress_temp);
+			if(quest_progress_temp!=-2) quest_progress.insertLast(quest_progress_temp);
+			break;
+		}
+		else
+		{
+			int quest_progress_temp=-2;
+			StrToInt(substring(quest_progress_str,0,space_index),quest_progress_temp);
+			if(quest_progress_temp!=-2) quest_progress.insertLast(quest_progress_temp);
+			quest_progress_str=substring(quest_progress_str,space_index+1,quest_progress_str.length()-space_index-1);
+		}
+	}
+	for(uint i=0; i<QuestDescriptionButton.length(); i++)
+	{
+		QuestDescriptionButton[i].ButtonOpt.Hide();
+		QuestDescriptionButton[i].QuestIndex=-1;
+	}
+	int CurrentIndex=0;
+	if(quest_progress.length()!=QuestDescriptionButton.length()) Message("Quest error");
+	else for(uint i=0; i<quest_progress.length(); i++)
+	{
+		if(quest_progress[i]>=0)
+		{
+			QuestDescriptionButton[i].ButtonOpt.Show();
+			QuestDescriptionButton[i].ButtonOpt.Position(40,45+CurrentIndex*21);
+			if(quest_progress[i]==100) QuestDescriptionButton[i].ButtonOpt.Text(QUESTS[i]+"  "+quest_progress[i]+"%", FONT_FAT, COLOR_GREEN, COLOR_LGREEN, FT_BORDERED);
+			else QuestDescriptionButton[i].ButtonOpt.Text(QUESTS[i]+"  "+quest_progress[i]+"%", FONT_FAT, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED);
+			QuestDescriptionButton[i].QuestIndex=i;
+			CurrentIndex++;
+		}
+	}
+	QuestDescriptionBackButtonOpt.Hide();
+	QuestFullDescriptionTextOpt.setVisible(false);
+	ChangeCursor(0);
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_QUEST_LOG,x,y);
+	ShowScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+}

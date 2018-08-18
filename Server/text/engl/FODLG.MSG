@@ -1,0 +1,1319 @@
+{10}{}{citzen type 1}
+{20}{}{Hero Female}
+{30}{}{Villager}
+{40}{}{Villager}
+{50}{}{Radscorpion}
+{51}{}{A small mutated scorpion.}
+{60}{}{Radscorpion}
+{61}{}{A mutated scorpion.}
+{70}{}{Deathclaw}
+{71}{}{An immature Deathclaw.}
+{80}{}{Deathclaw}
+{81}{}{An immature Deathclaw.}
+{90}{}{Dog}
+{91}{}{A canine, probably of a mixed breed.}
+{100}{}{Brahmin}
+{101}{}{A two headed, mutant cow.}
+{110}{}{Rat}
+{111}{}{A typical large rat.}
+{120}{}{Mantis}
+{121}{}{A mutated Mantis.}
+{130}{}{Elder}
+{140}{}{Hakunin}
+{150}{}{Mynoc}
+{160}{}{Spore Plant}
+{161}{}{A carnivorous plant.}
+{170}{}{cizen type1}
+{180}{}{cizen type1}
+{190}{}{cizen type1}
+{200}{}{cizen type1}
+{210}{}{Strong Slave}
+{220}{}{Strong Slave}
+{230}{}{Combat Slave}
+{240}{}{Combat Slave}
+{250}{}{Clever Slave}
+{260}{}{Clever Slave}
+{270}{}{dzikus}
+{280}{}{dzikus}
+{290}{}{Anna}
+{300}{}{Tough Thug}
+{310}{}{Tough Thug}
+{320}{}{dealer}
+{330}{}{Melee Thug}
+{340}{}{Agile Thug}
+{350}{}{Agile Thug}
+{360}{}{Gun Thug}
+{370}{}{Gun Thug}
+{380}{}{Big Gun Thug}
+{390}{}{Big Gun Thug}
+{400}{}{Tough Guard}
+{410}{}{Tough Guard}
+{420}{}{Melee Guard}
+{430}{}{Melee Guard}
+{440}{}{Agile Guard}
+{450}{}{Agile Guard}
+{460}{}{Gun Guard}
+{470}{}{Gun Guard}
+{480}{}{Big Gun Guard}
+{490}{}{Big Gun Guard}
+{500}{}{dziecko}
+{510}{}{dziecko}
+{520}{}{Child (Male)}
+{530}{}{Child (Female)}
+{540}{}{cpun}
+{550}{}{Loser}
+{560}{}{lysy sprzzedawca}
+{570}{}{Bad Merchant}
+{580}{}{Average Merchant}
+{590}{}{Average Merchant}
+{600}{}{Master Trader}
+{610}{}{citzen type 1}
+{620}{}{Vic}
+{630}{}{czarny w czerwonym}
+{640}{}{Weak Peasant}
+{650}{}{Average Peasant}
+{660}{}{Average Peasant}
+{670}{}{Strong Peasant}
+{680}{}{Strong Peasant}
+{690}{}{Weak Melee Guard}
+{700}{}{Weak Melee Guard}
+{710}{}{Weak Gun Guard}
+{720}{}{Weak Gun Guard}
+{730}{}{Repair Bot}
+{740}{}{Repair Bot Mark II}
+{750}{}{Robobrain}
+{760}{}{Floating Eye Bot}
+{770}{}{Sentry Bot}
+{780}{}{Sentry Bot Mark II}
+{790}{}{Robobrain}
+{800}{}{Little Gecko}
+{810}{}{Tough Lil Gecko}
+{820}{}{Wild Dog}
+{821}{}{A mixed breed feral dog.}
+{830}{}{Golden Gecko}
+{840}{}{Deathclaw}
+{850}{}{Deathclaw Spawn}
+{860}{}{Tough Golden Gecko}
+{870}{}{Blue Citzen}
+{880}{}{lekarz lysy}
+{890}{}{John Cassidy}
+{900}{}{facet w gajerku}
+{910}{}{Blue Citizen}
+{920}{}{Blue Citizen}
+{930}{}{citzen type 1}
+{940}{}{Up Class Citizen (M)}
+{950}{}{Trapper}
+{960}{}{Trapper}
+{970}{}{Sulik}
+{980}{}{Maida Buckner}
+{990}{}{Torr}
+{1000}{}{Lumpy}
+{1010}{}{ghoul bialy}
+{1020}{}{ghoul popsuty}
+{1030}{}{Reactor Guard}
+{1040}{}{Zomak}
+{1050}{}{Skeeter}
+{1060}{}{The Brain}
+{1070}{}{ghoul zdrowy}
+{1080}{}{Wooz}
+{1090}{}{Harold}
+{1100}{}{Mole Rat}
+{1110}{}{Greater Mole Rat}
+{1120}{}{Pig Rat}
+{1130}{}{Tough Pig Rat}
+{1140}{}{Weak Brahmin}
+{1141}{}{A two-headed, mutant cow.}
+{1150}{}{A.Pwr.Armor (don't use)}
+{1160}{}{Mutated Rat}
+{1161}{}{A tough mutant rat.}
+{1170}{}{Mutated Mole Rat}
+{1171}{}{A tough mutant mole rat.}
+{1180}{}{Mutated Pig Rat}
+{1181}{}{A tough mutant pig rat.}
+{1190}{}{Super Mutant}
+{1200}{}{Powerful Mutant}
+{1210}{}{Melchoir}
+{1220}{}{Hero Andro (don't use)}
+{1230}{}{kaptur fiolet}
+{1240}{}{Hero Male (don't use)}
+{1250}{}{Hero Female (don't use)}
+{1260}{}{Hero Male (don't use)}
+{1270}{}{Hero Female (don't use)}
+{1280}{}{Hero Male (don't use)}
+{1290}{}{Hero Female (don't use)}
+{1300}{}{Hero Male (don't use)}
+{1310}{}{Hero Female (don't use)}
+{1320}{}{Hero Male (don't use)}
+{1330}{}{Hero Female (don't use)}
+{1340}{}{Vault City Guard}
+{1350}{}{Vault City Guard}
+{1360}{}{Cyberdog}
+{1370}{}{NCR Guard}
+{1380}{}{NCR Guard}
+{1390}{}{NCR Melee Guard}
+{1400}{}{Slaver Guard}
+{1410}{}{Slaver Overseer}
+{1420}{}{Grand Master Trader}
+{1430}{}{Grand Master Trader}
+{1440}{}{Tandi}
+{1450}{}{Merc}
+{1460}{}{kaptur szary}
+{1470}{}{Skeeter}
+{1480}{}{Mikey}
+{1490}{}{NCR Bartender}
+{1500}{}{sprzedawca kurdupel}
+{1510}{}{Gruthar}
+{1520}{}{Goris}
+{1530}{}{Molerat Fighter}
+{1540}{}{Molerat Fighter}
+{1550}{}{Molerat Fighter}
+{1560}{}{Molerat Fighter}
+{1570}{}{Molerat Fighter}
+{1580}{}{Molerat Fighter}
+{1590}{}{Generic Ghoul}
+{1600}{}{Myron}
+{1610}{}{Marcus}
+{1620}{}{Doc Jones}
+{1630}{}{Davin}
+{1640}{}{Miria}
+{1650}{}{Laddie}
+{1660}{}{Rondo}
+{1670}{}{Ranch Hand}
+{1680}{}{Ranch Hand}
+{1690}{}{Ranch Hand}
+{1700}{}{Bouncer}
+{1710}{}{Bouncer}
+{1720}{}{Weak Mr. Handy}
+{1730}{}{Generic Glowing One}
+{1740}{}{Dar}
+{1750}{}{Dalia}
+{1760}{}{Gordon}
+{1770}{}{test (don't use)}
+{1780}{}{Reactor Ghoul}
+{1790}{}{Generic Ghoul}
+{1800}{}{Matt}
+{1810}{}{B. Hunter Lead (1-6)}
+{1820}{}{Bounty Hunter (1-6)}
+{1830}{}{B. Hunter Lead (7-12)}
+{1840}{}{Bounty Hunter (7-12)}
+{1850}{}{Bounty Hunter (7-12)}
+{1860}{}{B. Hunter Lead (13-18)}
+{1870}{}{Bounty Hunter (13-18)}
+{1880}{}{Bounty Hunter (13-18)}
+{1890}{}{B. Hunter Lead (19-?)}
+{1900}{}{Bounty Hunter (19-?)}
+{1910}{}{Bess}
+{1911}{}{A two headed, mutant cow.}
+{1920}{}{Balthas}
+{1930}{}{Grisham}
+{1940}{}{Phil}
+{1950}{}{Chicken}
+{1960}{}{Karl}
+{1970}{}{Jonny}
+{1980}{}{Jo}
+{1990}{}{Zeke}
+{2000}{}{rzeznik}
+{2010}{}{Petey}
+{2020}{}{Primitive Hunter}
+{2030}{}{Primitive Hunter}
+{2040}{}{Cannibal}
+{2050}{}{Cannibal}
+{2060}{}{Holy Man}
+{2070}{}{Holy Woman}
+{2080}{}{Nomad- Low}
+{2090}{}{Nomad- Med}
+{2100}{}{Nomad- Low}
+{2110}{}{Nomad- Med}
+{2120}{}{Bandit}
+{2130}{}{Bandit}
+{2140}{}{Farmer}
+{2150}{}{Farmer}
+{2160}{}{Mantis}
+{2170}{}{Slaver}
+{2180}{}{Slaver}
+{2190}{}{Wild Brahmin}
+{2200}{}{Homesteader}
+{2210}{}{Homesteader}
+{2220}{}{Vault City Patrol}
+{2230}{}{Vault City Patrol}
+{2240}{}{Strong Slaver}
+{2250}{}{Strong Slaver}
+{2260}{}{Crazies}
+{2270}{}{Scavengers}
+{2280}{}{Glow Crazies}
+{2290}{}{Glow Scavengers}
+{2300}{}{Fisherman}
+{2310}{}{Fisherwoman}
+{2320}{}{Wilder}
+{2330}{}{Wilder}
+{2340}{}{Bootlegger}
+{2350}{}{Bootlegger}
+{2360}{}{Prospector}
+{2370}{}{Prospector}
+{2380}{}{Raider}
+{2390}{}{Raider}
+{2400}{}{Fire Gecko}
+{2410}{}{Tough Fire Gecko}
+{2420}{}{Alien}
+{2430}{}{Tough Alien}
+{2440}{}{Sm Tough Deathclaw}
+{2450}{}{Tough Deathclaw}
+{2460}{}{Floater}
+{2470}{}{Nasty Floater}
+{2480}{}{Centaur}
+{2490}{}{Mean Centaur}
+{2500}{}{Enclave Patrol}
+{2510}{}{Enclave Patrol}
+{2520}{}{Press Gang}
+{2530}{}{Press Gang}
+{2540}{}{Mercenary}
+{2550}{}{Mercenary}
+{2560}{}{Nightkin}
+{2570}{}{Tough Nightkin}
+{2580}{}{Tough Ghoul}
+{2590}{}{Mobster}
+{2600}{}{Yakuza}
+{2610}{}{NCR Ranger}
+{2620}{}{NCR Ranger}
+{2630}{}{Maurader}
+{2640}{}{Maurader}
+{2650}{}{Pretty Boy Lloyd}
+{2660}{}{Vorpal Rat}
+{2670}{}{Vault 13 Man}
+{2680}{}{Vault 13 Woman}
+{2690}{}{Bridge Guardian}
+{2700}{}{Mysterious Stranger}
+{2710}{}{Mysterious Stranger}
+{2720}{}{Hakeswill}
+{2730}{}{Big Jesus Mordino}
+{2740}{}{Dumar}
+{2750}{}{Mother Deathclaw}
+{2760}{}{The Dragon}
+{2770}{}{Lo Pan}
+{2780}{}{Hubologist}
+{2790}{}{Hubologist}
+{2800}{}{Mysterious Stranger}
+{2810}{}{czarna skura}
+{2820}{}{czarna skora}
+{2830}{}{Mysterious Stranger}
+{2840}{}{Mysterious Stranger}
+{2850}{}{Mysterious Stranger}
+{2860}{}{Mysterious Stranger}
+{2870}{}{Mysterious Stranger}
+{2880}{}{Pres. Bodyguard}
+{2890}{}{Deathclaw Egg}
+{2900}{}{metal metzger}
+{2910}{}{Enclave Guard}
+{2920}{}{Enclave Guard}
+{2930}{}{President}
+{2940}{}{Vice President}
+{2950}{}{Technicion}
+{2960}{}{Badger}
+{2970}{}{Dr. Fung}
+{2980}{}{Kid}
+{2990}{}{Kid}
+{3000}{}{Gun Merchant}
+{3010}{}{Shi Lab Tech}
+{3020}{}{Shi Guard}
+{3030}{}{Shi Peasant}
+{3040}{}{sf}
+{3050}{}{sf}
+{3060}{}{Lo Pan Peasant}
+{3070}{}{Dock Worker}
+{3080}{}{Shi Merchant}
+{3090}{}{Keeng Ra'at}
+{3100}{}{Sulik - Stage 1}
+{3110}{}{Sulik - Stage 2}
+{3120}{}{Sulik - Stage 3}
+{3130}{}{Sulik - Stage 4}
+{3140}{}{Sulik - Stage 5}
+{3150}{}{Sulik - Stage 6}
+{3160}{}{Lenny - Stage 1}
+{3170}{}{Lenny - Stage 2}
+{3180}{}{Lenny - Stage 3}
+{3190}{}{Goris - Stage 1}
+{3200}{}{Goris - Stage 2}
+{3210}{}{Goris - Stage 3}
+{3220}{}{Goris - Stage 4}
+{3230}{}{Goris - Stage 5}
+{3240}{}{Goris - Stage 6}
+{3250}{}{Myron - Stage 1}
+{3260}{}{Myron - Stage 2}
+{3270}{}{Myron - Stage 3}
+{3280}{}{Myron - Stage 4}
+{3290}{}{Marcus - Stage 1}
+{3300}{}{Marcus - Stage 2}
+{3310}{}{Marcus - Stage 3}
+{3320}{}{Marcus - Stage 4}
+{3330}{}{Marcus - Stage 5}
+{3340}{}{Cyberdog - Stage 1}
+{3350}{}{Cyberdog - Stage 2}
+{3360}{}{Cyberdog - Stage 3}
+{3370}{}{Cyberdog - Stage 4}
+{3380}{}{Cassidy - Stage 1}
+{3390}{}{Cassidy - Stage 2}
+{3400}{}{Cassidy - Stage 3}
+{3410}{}{Cassidy - Stage 4}
+{3420}{}{Dogmeat}
+{3430}{}{Dogmeat - Stage 1}
+{3440}{}{Dogmeat - Stage 2}
+{3450}{}{Dogmeat - Stage 3}
+{3460}{}{Dogmeat - Stage 4}
+{3470}{}{Dogmeat - Stage 5}
+{3480}{}{Dogmeat - Stage 6}
+{3490}{}{Robobrain - Stage 1}
+{3500}{}{Robobrain - Stage 2}
+{3510}{}{Robobrain - Stage 3}
+{3520}{}{Robobrain - Stage 4}
+{3530}{}{Robobrain - Stage 5}
+{3540}{}{Queen Alien}
+{3550}{}{Black Radscorpion}
+{3560}{}{Black Radscorpion}
+{3570}{}{Spud}
+{3580}{}{Mercenary Captain}
+{3590}{}{metzger ale nie lysy}
+{3600}{}{Mercenary}
+{3610}{}{Shadow-Who-Walks}
+{3620}{}{Punk}
+{3630}{}{Punk}
+{3640}{}{Marc}
+{3650}{}{Dave H.}
+{3660}{}{Capt. A. Ron Meyers}
+{3670}{}{Chip}
+{3680}{}{AHS-9}
+{3690}{}{Hubologist Guard}
+{3700}{}{Hubologist Guard}
+{3710}{}{Juan}
+{3720}{}{Vikki}
+{3730}{}{Vic - Stage 1}
+{3740}{}{Vic - Stage 2}
+{3750}{}{Vic - Stage 3}
+{3760}{}{Vic - Stage 4}
+{3770}{}{Vic - Stage 5}
+{3780}{}{Vic - Stage 6}
+{3790}{}{RoboBrain - Chimp}
+{3800}{}{Robobrain - Abnormal}
+{3810}{}{Robobrain - Human}
+{3820}{}{Giant Ant}
+{3830}{}{Tough Giant Ant}
+{3840}{}{Pariah Dog}
+{3850}{}{Zurak}
+{3860}{}{sf}
+{3870}{}{Jimmy}
+{3880}{}{Wejungh}
+{3890}{}{Herb}
+{3900}{}{Loopal}
+{3910}{}{Jobe}
+{3920}{}{Smitty}
+{3930}{}{Rube}
+{3940}{}{Master Krall}
+{3950}{}{Ziggy}
+{3960}{}{Master Khung}
+{3970}{}{John Bishop}
+{3980}{}{Angela Bishop}
+{3990}{}{Mrs. Bishop}
+{4000}{}{Bishop's Guard 1}
+{4010}{}{Bishop's Guard 2}
+{4020}{}{Bishop's Thug 1}
+{4030}{}{Bishop's Thug 2}
+{4040}{}{Angry Brahmin}
+{4050}{}{Lil' Jesus}
+{4060}{}{Big Jesus}
+{4070}{}{Mordino Men 1}
+{4080}{}{Mordino Men 2}
+{4090}{}{Mordino Men 3}
+{4100}{}{Myron's Guard 1}
+{4110}{}{Myron's Guard 2}
+{4120}{}{old man}
+{4130}{}{Mrs. Wright}
+{4140}{}{Chris Wright}
+{4150}{}{Keith Wright}
+{4160}{}{Wright Son 1}
+{4170}{}{Wright Son 2}
+{4180}{}{Wright Daughter 1}
+{4190}{}{Wright Daughter 2}
+{4200}{}{Mr. Salvatore}
+{4210}{}{Mason}
+{4220}{}{Salvatore Thug 1}
+{4230}{}{Salvatore Thug 2}
+{4240}{}{Generic Bartender 1}
+{4250}{}{Generic Bartender 2}
+{4260}{}{Generic Bartender 3}
+{4270}{}{Boxer 1}
+{4280}{}{Boxer 2}
+{4290}{}{Boxer 3}
+{4300}{}{Boxer 4}
+{4310}{}{Mike the Masticator}
+{4320}{}{Holyfeld}
+{4330}{}{McKneely}
+{4340}{}{Stuart Little}
+{4350}{}{Corsican Brothers}
+{4360}{}{Corsican Bitches}
+{4370}{}{Father Tully}
+{4380}{}{Casino Bouncer 1}
+{4390}{}{Casino Bouncer 2}
+{4400}{}{Casino Girl}
+{4410}{}{Drug Dealer/Pimp1}
+{4420}{}{Drug Dealer/Pimp2}
+{4430}{}{Drug Dealer/Pimp3}
+{4440}{}{Drug Dealer/Pimp4}
+{4450}{}{McGee}
+{4460}{}{Miss Kitty}
+{4470}{}{Generic Slut 1}
+{4480}{}{Generic Slut 2}
+{4490}{}{Jagged Jimmy J}
+{4500}{}{Renesco}
+{4510}{}{Scientist}
+{4520}{}{Eldridge}
+{4530}{}{Algernon}
+{4540}{}{Jules}
+{4550}{}{Bureaucrat 1}
+{4560}{}{Bureaucrat 2}
+{4570}{}{Trader 1}
+{4580}{}{Trader 2}
+{4590}{}{Guard 1}
+{4600}{}{Guard 2}
+{4610}{}{Guard 3}
+{4620}{}{Guard 4}
+{4630}{}{Soldier 1}
+{4640}{}{Soldier 2}
+{4650}{}{Soldier 3}
+{4660}{}{Soldier 4}
+{4670}{}{Sgt. Stark}
+{4680}{}{"Doc" Andrew}
+{4690}{}{Bartender}
+{4700}{}{Gun Turret}
+{4701}{}{This is an automated gun turret equipped with a Dual Plasma Cannon.}
+{4710}{}{K-9 (base)}
+{4720}{}{K-9 (stage 1)}
+{4730}{}{K-9 (stage 2)}
+{4740}{}{K-9 (stage 3)}
+{4750}{}{K-9 (stage 4)}
+{4760}{}{Generic Cyberdog}
+{4770}{}{Wanamingo Egg}
+{4780}{}{Lo Pan Guard}
+{4790}{}{Marjorie}
+{4800}{}{Auto-Cannon}
+{4810}{}{Special Gecko Critter}
+{4820}{}{Grim Reaper}
+{4830}{}{Frank Horrigan}
+{4831}{}{The President's Body Guard}
+{4870}{}{Giant Wasp}
+{4880}{}{Beetle}
+{4890}{}{Rebel}
+{4900}{}{Deadly Beetle}
+{4910}{}{Engineer}
+{4920}{}{Enclave Infantry}
+{4930}{}{Engineer}
+{4940}{}{Brotherhood Soldier}
+{4950}{}{Special Ops Soldier}
+{4960}{}{Enclave Soldier}
+{4970}{}{Brotherhood paladin}
+{4980}{}{Regulator}
+{4990}{}{Bandit}
+{5000}{}{Bandit}
+{5010}{}{Raider}
+{5020}{}{Raider}
+{5030}{}{Raider}
+{5040}{}{Raider}
+{5050}{}{Giant wasp}
+{5051}{}{Огромное кровожадное насекомое}
+{5060}{}{Гвардеец}
+{5061}{}{Боец Гвардии ГУ}
+{5070}{}{Giant Bat}
+{5080}{}{Arroyo Patrol}
+{5090}{}{Arroyo Patrol}
+{5100}{}{Arroyo Patrol}
+{5110}{}{Fugitive}
+{5120}{}{Fugitive}
+{5130}{}{Fugitive}
+{5140}{}{Fugitive}
+{5150}{}{Fugitive}
+{5160}{}{Eli}
+{5170}{}{Champion}
+{5180}{}{Helacyton type  1}
+{5181}{}{A strange creature resembling Master's pets.}
+{5190}{}{Angry helacyton type  1}
+{5191}{}{A strange creature resembling Master's pets.}
+{5200}{}{Helacyton type  2}
+{5201}{}{A strange creature resembling Master's pets.}
+{5210}{}{Angry helacyton type  2}
+{5211}{}{A strange creature resembling Master's pets.}
+{5220}{}{Helacyton type  3}
+{5221}{}{A strange creature resembling Master's pets.}
+{5230}{}{Henrietta}
+{5231}{}{Skin of this animal looks like one big callus.}
+{5240}{}{Android}
+{5250}{}{Tim Cain}
+{5260}{}{ULS Guard}
+{5270}{}{ULS Guard}
+{5280}{}{Mutant Commoner}
+{5290}{}{Nightkin Commoner}
+{5300}{}{Flamethrower Fanatic}
+{5310}{}{Flamethrower Fanatic}
+{5320}{}{Mutant Soldier}
+{5330}{}{Nightkin Soldier}
+{5340}{}{Biohazzard Soldier}
+{5350}{}{Biohazzard Soldier}
+{5360}{}{ULS Elite Guard}
+{5370}{}{ULS Elite Guard}
+{5380}{}{ULS Veteran Warrior}
+{5390}{}{ULS Veteran Warrior}
+{5400}{}{ULS Initiate}
+{5410}{}{ULS Initiate}
+{5420}{}{ULS Defender}
+{5430}{}{ULS Defender}
+{5440}{}{ULS Protector}
+{5450}{}{ULS Protector}
+{5460}{}{ULS Shield}
+{5470}{}{ULS Shield}
+{5480}{}{ULS Strategist}
+{6010}{}{NEC Guard}
+{6020}{}{NEC Guard}
+{6030}{}{Mr Handy}
+{6040}{}{Robot Sentinel}
+{6050}{}{Humandroid}
+{6060}{}{Mr Handy Combat Model}
+{6070}{}{Robot Defender}
+{6080}{}{Heavy Assault Robot MKII}
+{6090}{}{NEC Elite Guard}
+{6100}{}{NEC Elite Guard}
+{6110}{}{NEC Veteran Warrior}
+{6120}{}{NEC Veteran Warrior}
+{6130}{}{NEC Recruit}
+{6140}{}{NEC Recruit}
+{6150}{}{NEC 3rd Class}
+{6160}{}{NEC 3rd Class}
+{6170}{}{NEC 2nd Class}
+{6180}{}{NEC 2nd Class}
+{6190}{}{NEC 1st Class}
+{6200}{}{NEC 1st Class}
+{6210}{}{NEC Colonel}
+{8000}{}{Child}
+{8001}{}{You see a little child. How lucky he is to live in such a wonderful world !}
+{8010}{}{Child}
+{8011}{}{You see a little child. She looks not happy. What a surprise !}
+{8020}{}{Giant Ant}
+{8021}{}{You see a relatively big insectoid creature. Wow, it has sharpened mandibles !}
+{8030}{}{Junkie}
+{8031}{}{You see a junkie. She seems high. How high !}
+{8040}{}{Junkie}
+{8041}{}{You see a junkie. He looks bad. Down of drugs, probably.}
+{8050}{}{Junkie}
+{8051}{}{You see a junkie. You don't wanna know where that stain on his clothes comes from.}
+{8060}{}{Junkie}
+{8061}{}{You see a junkie. This one has not much remaining time, for sure.}
+{8070}{}{Mantis}
+{8071}{}{You see a mantis. It's totally ugly.}
+{8080}{}{Pigrat}
+{8081}{}{You see a pigrat. This species should be extinct already.}
+{8090}{}{Prostitute}
+{8091}{}{You see a prostitute. Exotic one.}
+{8100}{}{Prostitute}
+{8101}{}{You see a prostitute. She even smells good. Yumee yumee.}
+{8110}{}{Prostitute}
+{8111}{}{You see a prostitute. This one has great big eyes.}
+{8120}{}{Radscorpion}
+{8121}{}{You see a little radscorpion. His claws are slamming perpetually.}
+{8130}{}{Radtoad}
+{8131}{}{You see a radiated frog. "How ridiculous, how delicious", some people say.}
+{8140}{}{Rat}
+{8141}{}{You see a rat. Dominant species on Earth, probably.}
+{8150}{}{Brahmin}
+{8151}{}{You see a Brahmin. Moo. Moo Moo Mooo.}
+{8160}{}{Commoner}
+{8170}{}{Commoner}
+{8180}{}{Commoner}
+{8190}{}{Commoner}
+{8200}{}{Commoner}
+{8210}{}{Commoner}
+{8220}{}{Commoner}
+{8230}{}{Commoner}
+{8240}{}{sf}
+{8250}{}{Commoner}
+{8260}{}{Employee}
+{8270}{}{Employee}
+{8280}{}{Employee}
+{8290}{}{Employee}
+{8291}{}{You see an employee. Nice clothes.}
+{8300}{}{Employee}
+{8301}{}{You see an employee. Nice dress.}
+{8310}{}{Employee}
+{8311}{}{You see an employee. Nice tee-shirt.}
+{8320}{}{Employee}
+{8330}{}{Employee}
+{8340}{}{Merchant}
+{8350}{}{Molerat}
+{8351}{}{A huge mutated burrowing animal.}
+{8360}{}{Peasant}
+{8370}{}{Peasant}
+{8380}{}{Peasant}
+{8390}{}{Peasant}
+{8400}{}{Peasant}
+{8410}{}{Peasant}
+{8420}{}{Peasant}
+{8430}{}{Peasant}
+{8440}{}{Savage Dog}
+{8441}{}{You see a savage bastard dog.}
+{8450}{}{Scientist}
+{8460}{}{Scientist}
+{8470}{}{Silver Gecko}
+{8471}{}{You see a silvered skin mutated lizard.}
+{8480}{}{Spore Plant}
+{8481}{}{You see an unfriendly moving plant. *sigh* Even plants are gangsters nowadays.}
+{8490}{}{Traveler}
+{8500}{}{Traveler}
+{8510}{}{<To delete>}
+{8520}{}{Traveler}
+{8530}{}{Traveler}
+{8540}{}{Traveler}
+{8550}{}{Traveler}
+{8560}{}{Traveler}
+{8570}{}{dzikus}
+{8580}{}{Tribal}
+{8590}{}{Tribal}
+{8600}{}{Tribal}
+{8610}{}{Tribal}
+{8620}{}{dzikus}
+{8630}{}{Albinos Molerat}
+{8631}{}{You see a pink voracious creature with glowing red eyes. Freaky !}
+{8640}{}{Baby Deathclaw}
+{8641}{}{You see a baby Deathclaw. Go back where you come from, damn error of nature !}
+{8650}{}{Carnivorous Spore Plant}
+{8651}{}{You see a plant. Its big jaw is snapping.}
+{8660}{}{Enraged Dog}
+{8661}{}{You see a giant dog.}
+{8670}{}{Ghoul Mercenary}
+{8680}{}{Ghoul Mercenary}
+{8690}{}{Ghoul Mercenary}
+{8700}{}{Giant Radscorpion}
+{8701}{}{You see a radscorpion. Poison is shining on its tail.}
+{8710}{}{Golden Gecko}
+{8711}{}{You see a Golden Gecko. His skin would make a fine suit.}
+{8720}{}{Raider}
+{8730}{}{Raider}
+{8740}{}{Raider}
+{8750}{}{Raider}
+{8760}{}{Raider}
+{8770}{}{Raider}
+{8780}{}{Raider}
+{8790}{}{Town Militia}
+{8800}{}{Town Militia}
+{8810}{}{Town Militia}
+{8820}{}{Town Militia}
+{8830}{}{Town Militia}
+{8840}{}{Town Militia}
+{8850}{}{Town Militia}
+{8860}{}{Town Militia}
+{8870}{}{Young Alien}
+{8871}{}{You see an Alien. He seems a bit smaller than usual ones.}
+{8880}{}{Centaur}
+{8881}{}{You see a Centaur.}
+{8890}{}{Deathclaw}
+{8891}{}{You see a Deathclaw.}
+{8900}{}{Faction Guard}
+{8910}{}{Faction Guard 2}
+{8920}{}{Faction Guard 3}
+{8930}{}{Faction Guard 4}
+{8940}{}{Faction Elite Soldier}
+{8950}{}{Faction Elite Soldier 2}
+{8960}{}{Faction Elite Soldier 3}
+{8970}{}{Faction Elite Soldier 4}
+{8980}{}{Fire Gecko}
+{8981}{}{You see a fire gecko.}
+{8990}{}{Floater}
+{8991}{}{You see a Floater.}
+{9000}{}{Gang Member}
+{9010}{}{Gang Member}
+{9020}{}{Gang Member}
+{9030}{}{Gang Member}
+{9040}{}{Gang Member}
+{9050}{}{Gang Member}
+{9060}{}{Gang Member}
+{9070}{}{Gang Member}
+{9080}{}{Gang Member}
+{9090}{}{Gang Member}
+{9100}{}{Gang Member}
+{9110}{}{Heavy Assault Robot}
+{9111}{}{You see a dysfunctioning robot. That seems not to make it unable to fight.}
+{9120}{}{Insane Ghoul}
+{9121}{}{You see a ghoul. A totally mad screaming ghoul.}
+{9130}{}{Mad Cyberdog}
+{9131}{}{You see a half-dog, half-robot creature.}
+{9140}{}{Mature Alien}
+{9141}{}{You see a powerful adult alien.}
+{9150}{}{Mercenary}
+{9160}{}{Mercenary}
+{9170}{}{Mercenary}
+{9180}{}{Mercenary}
+{9190}{}{Mercenary}
+{9200}{}{Mercenary}
+{9210}{}{Mercenary}
+{9220}{}{Mercenary}
+{9230}{}{Mercenary}
+{9240}{}{Mercenary}
+{9250}{}{Mercenary}
+{9260}{}{Mercenary}
+{9270}{}{Mercenary}
+{9280}{}{Mercenary}
+{9290}{}{Mercenary}
+{9300}{}{Mercenary}
+{9310}{}{Mobster}
+{9320}{}{Mobster}
+{9330}{}{Nightkin}
+{9331}{}{You see a Nightkin.}
+{9340}{}{Slaver}
+{9350}{}{Slaver}
+{9360}{}{Slaver}
+{9370}{}{lowca niewolnikow}
+{9380}{}{Red Citzen}
+{9381}{}{You see young man}
+{9390}{}{Red Ctizen}
+{9391}{}{You see young woman}
+{9400}{}{Grey Citzen}
+{9401}{}{You see young man}
+{9410}{}{Grey Citzen}
+{9411}{}{You see young woman.}
+{9420}{}{Dark Grey Citzen}
+{9421}{}{You see young man}
+{9430}{}{Dark Grey Citzen}
+{9431}{}{You see young woman.}
+{9440}{}{Tribal Champion}
+{9450}{}{Tribal Champion}
+{9460}{}{Tribal Champion}
+{9470}{}{Tribal Champion}
+{9480}{}{Tribal Champion}
+{9490}{}{Tribal Champion}
+{9500}{}{Tribal Champion}
+{9510}{}{War Dog}
+{9511}{}{You see a big obedient bastard dog.}
+{9520}{}{War Dog}
+{9521}{}{You see a half-dog, half-robot trained animal.}
+{9530}{}{Wastelander}
+{9540}{}{Wastelander}
+{9550}{}{Wastelander}
+{9560}{}{Wastelander}
+{9570}{}{Wastelander}
+{9580}{}{Wastelander}
+{9590}{}{Wastelander}
+{9600}{}{Wastelander}
+{9610}{}{Wastelander}
+{9620}{}{Wastelander}
+{9630}{}{Alien Matriarch}
+{9631}{}{You see a silver skinned angry alien.}
+{9640}{}{Ancient Centaur}
+{9641}{}{You see one of the biggest and uggliest centaurs ever.}
+{9650}{}{Faction Veteran Warrior}
+{9660}{}{Faction Veteran Warrior}
+{9670}{}{Ghoul Wanderer}
+{9671}{}{You see a lone ghoul warrior.}
+{9680}{}{Mighty Deathclaw}
+{9681}{}{You see a Deathclaw. It's a mountain, all made of muscle.}
+{9690}{}{Mother Deathclaw}
+{9691}{}{You see a Deathclaw. Obviously, the Mother of the horde in person.}
+{9700}{}{Grey Deathclaw}
+{9701}{}{You see a grey savage Deathclaw.}
+{9710}{}{Mutated Fire Gecko}
+{9711}{}{You see a caparisoned distorted fire gecko. Some smoke is always coming from his nostrils.}
+{9720}{}{Nightkin Sniper}
+{9721}{}{You see a giant Nightkin. He seems to fade as you look at him.}
+{9730}{}{Super Mutant Mastodon}
+{9731}{}{You see a gigantic monstrous heavy armored mutant.}
+{9740}{}{Tremendous Floater}
+{9741}{}{You see an unnatural horror of the Wasteland. Some putrid goo is dripping from his body.}
+{9750}{}{Wasteland Shadow}
+{9751}{}{You see someone. He looks human. You can't say more about it.}
+{9760}{}{Slave}
+{9761}{}{An enslaved child.}
+{9770}{}{Slave}
+{9771}{}{An enslaved child.}
+{9780}{}{Slave}
+{9781}{}{An enslaved man.}
+{9790}{}{Slave}
+{9791}{}{An enslaved woman.}
+{9800}{}{Technician}
+{9810}{}{Technician}
+{9820}{}{Dealer}
+{9830}{}{Dealer}
+{9840}{}{Dealer}
+{9850}{}{Dealer}
+{9860}{}{Dealer}
+{9870}{}{Militia}
+{9880}{}{Ghoul Citizen}
+{9890}{}{Citizen}
+{9900}{}{Citizen}
+{9910}{}{Citizen}
+{12000}{}{Replication Agent}
+{12010}{}{Unknown Soldier}
+{20000}{}{test char}
+{20010}{}{Good}
+{20020}{}{Exploding barrel}
+{20021}{}{Exploding barrel}
+{30010}{}{Inhabitant}
+{30011}{}{You see inhabitant of this place.}
+{30020}{}{Inhabitant}
+{30021}{}{You see inhabitant of this place.}
+{30030}{}{Inhabitant}
+{30031}{}{You see inhabitant of this place.}
+{30040}{}{Inhabitant}
+{30041}{}{You see inhabitant of this place.}
+{30050}{}{Inhabitant}
+{30051}{}{You see inhabitant of this place.}
+{30060}{}{Inhabitant}
+{30061}{}{You see inhabitant of this place.}
+{30070}{}{Inhabitant}
+{30071}{}{You see inhabitant of this place.}
+{30080}{}{Inhabitant}
+{30081}{}{You see inhabitant of this place.}
+{30090}{}{Dark Grey Citzen}
+{30091}{}{You see young woman.}
+{30210}{}{Inhabitant}
+{30211}{}{You see inhabitant of this place.}
+{30220}{}{Inhabitant}
+{30221}{}{You see inhabitant of this place.}
+{30230}{}{Inhabitant}
+{30231}{}{You see inhabitant of this place.}
+{30240}{}{Inhabitant}
+{30241}{}{You see inhabitant of this place.}
+{30250}{}{Inhabitant}
+{30251}{}{You see inhabitant of this place.}
+{30260}{}{Inhabitant}
+{30261}{}{You see inhabitant of this place.}
+{30270}{}{Inhabitant}
+{30271}{}{You see inhabitant of this place.}
+{30280}{}{Inhabitant}
+{30281}{}{You see inhabitant of this place.}
+{30290}{}{Inhabitant}
+{30291}{}{You see inhabitant of this place.}
+{30300}{}{Inhabitant}
+{30301}{}{You see inhabitant of this place.}
+{30310}{}{Inhabitant}
+{30311}{}{You see inhabitant of this place.}
+{30320}{}{Inhabitant}
+{30321}{}{You see inhabitant of this place.}
+{30330}{}{Inhabitant}
+{30331}{}{You see inhabitant of this place.}
+{30340}{}{Inhabitant}
+{30341}{}{You see inhabitant of this place.}
+{30350}{}{Inhabitant}
+{30351}{}{You see inhabitant of this place.}
+{30360}{}{Inhabitant}
+{30361}{}{You see inhabitant of this place.}
+{30370}{}{Inhabitant}
+{30371}{}{You see inhabitant of this place.}
+{30380}{}{Inhabitant}
+{30381}{}{You see inhabitant of this place.}
+{30390}{}{Inhabitant}
+{30391}{}{You see inhabitant of this place.}
+{30500}{}{Inhabitant}
+{30501}{}{You see inhabitant of this place.}
+{30510}{}{Inhabitant}
+{30511}{}{You see inhabitant of this place.}
+{30520}{}{Inhabitant}
+{30521}{}{You see inhabitant of this place.}
+{30530}{}{Inhabitant}
+{30531}{}{You see inhabitant of this place.}
+{30540}{}{Inhabitant}
+{30541}{}{You see inhabitant of this place.}
+{30600}{}{Inhabitant}
+{30601}{}{You see inhabitant of this place.}
+{30610}{}{Inhabitant}
+{30611}{}{You see inhabitant of this place.}
+{30620}{}{Inhabitant}
+{30621}{}{You see inhabitant of this place.}
+{30700}{}{Inhabitant}
+{30701}{}{You see inhabitant of this place.}
+{30710}{}{Inhabitant}
+{30711}{}{You see inhabitant of this place.}
+{30800}{}{Inhabitant}
+{30801}{}{You see inhabitant of this place.}
+{30810}{}{Inhabitant}
+{30811}{}{You see inhabitant of this place.}
+{30820}{}{Inhabitant}
+{30821}{}{You see inhabitant of this place.}
+{30830}{}{Inhabitant}
+{30831}{}{You see inhabitant of this place.}
+{30840}{}{Inhabitant}
+{30841}{}{You see inhabitant of this place.}
+{30850}{}{Inhabitant}
+{30851}{}{You see inhabitant of this place.}
+{30860}{}{Inhabitant}
+{30861}{}{You see inhabitant of this place.}
+{30870}{}{Whore}
+{30871}{}{You see a Woman. She's fucking for Caps in Reward.}
+{30880}{}{Whore}
+{30881}{}{You see a Woman. She's fucking for Caps in Reward.}
+{30890}{}{Whore}
+{30891}{}{You see a Woman. She's fucking for Caps in Reward.}
+{30900}{}{Villager}
+{30901}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{30910}{}{Villager}
+{30911}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{30920}{}{Villager}
+{30921}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{30930}{}{Villager}
+{30931}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30940}{}{Villager}
+{30941}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30950}{}{Villager}
+{30951}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30960}{}{Villager}
+{30961}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30970}{}{Villager}
+{30971}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30980}{}{Villager}
+{30981}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{30990}{}{Junkie}
+{30991}{}{You see an Junkie. She seems to be a Hopeless one.}
+{31000}{}{Junkie}
+{31001}{}{You see an Junkie. She seems to be a Hopeless one.}
+{31010}{}{Junkie}
+{31011}{}{You see an Junkie. She seems to be a Hopeless one.}
+{31020}{}{Junkie}
+{31021}{}{You see an Junkie. She seems to be a Hopeless one.}
+{31030}{}{Junkie}
+{31031}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31040}{}{Junkie}
+{31041}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31050}{}{Junkie}
+{31051}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31060}{}{Junkie}
+{31061}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31070}{}{Junkie}
+{31071}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31080}{}{Junkie}
+{31081}{}{You see an Junkie. He seems to be a Hopeless one.}
+{31090}{}{Homeless Man}
+{31091}{}{You see an Homeless Man.}
+{31100}{}{Homeless Man}
+{31101}{}{You see an Homeless Man.}
+{31110}{}{Homeless Man}
+{31111}{}{You see an Homeless Man.}
+{31120}{}{Homeless Man}
+{31121}{}{You see an Homeless Man.}
+{31130}{}{Savage}
+{31131}{}{You see an Savage.}
+{31140}{}{Savage}
+{31141}{}{You see an Savage.}
+{31150}{}{Homeless Woman}
+{31151}{}{You see an Homeless Woman.}
+{31160}{}{Homeless Woman}
+{31161}{}{You see an Homeless Woman.}
+{31170}{}{Homeless Woman}
+{31171}{}{You see an Homeless Woman.}
+{31180}{}{Villager}
+{31181}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{31190}{}{Villager}
+{31191}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{31200}{}{Villager}
+{31201}{}{You see an Villager. She seems to be Happy even in the Apocalypse.}
+{31210}{}{Villager}
+{31211}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31220}{}{Villager}
+{31221}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31230}{}{Villager}
+{31231}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31240}{}{Villager}
+{31241}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31250}{}{Villager}
+{31251}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31260}{}{Villager}
+{31261}{}{You see an Villager. He seems to be Happy even in the Apocalypse.}
+{31270}{}{Doctor Mirkov}
+{31271}{}{You see an Old Doctor with an Skinhead. Don't be a Baby, he's a Doctor...}
+{32010}{}{Soldier of the empire}
+{32011}{}{You see soldier of the empire.}
+{32020}{}{Soldier of the empire}
+{32021}{}{You see soldier of the empire.}
+{32110}{}{Federation Ranger}
+{32111}{}{You see Federation Ranger.}
+{32120}{}{Federation Ranger}
+{32121}{}{You see Federation Ranger.}
+{32210}{}{Bounty Hunters Soldier}
+{32211}{}{You see Bounty Hunters Soldier.}
+{32220}{}{Bounty Hunters Soldier}
+{32221}{}{You see Bounty Hunters Soldier.}
+{32310}{}{Light Town Soldier}
+{32311}{}{You see Light Town Soldier.}
+{32320}{}{Light Town Soldier}
+{32321}{}{You see Light Town Soldier.}
+{32330}{}{Light Town Soldier}
+{32331}{}{You see Light Town Soldier.}
+{32340}{}{Light Town Soldier}
+{32341}{}{You see Light Town Soldier.}
+{32350}{}{Light Town Soldier}
+{32351}{}{You see Light Town Soldier.}
+{32360}{}{Light Town Soldier}
+{32361}{}{You see Light Town Soldier.}
+{32410}{}{Scrapers Police}
+{32411}{}{You see Scrapers Police.}
+{32420}{}{Scrapers Police}
+{32421}{}{You see Scrapers Police.}
+{32430}{}{Scrapers Police}
+{32431}{}{You see Scrapers Police.}
+{32510}{}{Old Village Guard}
+{32511}{}{You see Old Village Guard}
+{32520}{}{Old Village Guard}
+{32521}{}{You see Old Village Guard.}
+{32530}{}{Old Village Guard}
+{32531}{}{You see Old Village Guard.}
+{32540}{}{Old Village Guard}
+{32541}{}{You see Old Village Guard.}
+{32610}{}{District Scout}
+{32611}{}{You see District Scout.}
+{32620}{}{District Scout}
+{32621}{}{You see District Scout.}
+{32710}{}{Local Security}
+{32711}{}{You see Local Security.}
+{32720}{}{Local Security}
+{32721}{}{You see Local Security.}
+{32730}{}{Local Security}
+{32731}{}{You see Local Security.}
+{32740}{}{Local Security}
+{32741}{}{You see Local Security.}
+{32750}{}{Local Security}
+{32751}{}{You see Local Security.}
+{32760}{}{Special Local Security}
+{32761}{}{You see Special Local Security.}
+{32770}{}{Special Local Security}
+{32771}{}{You see Special Local Security.}
+{32780}{}{Special Local Security}
+{32781}{}{You see Special Local Security.}
+{32790}{}{Special Local Security}
+{32791}{}{You see Special Local Security.}
+{32800}{}{Special Local Security}
+{32801}{}{You see Special Local Security.}
+{32810}{}{Sacred Militia}
+{32811}{}{You see Sacred Militia.}
+{32820}{}{Sacred Militia}
+{32821}{}{You see Sacred Militia.}
+{32830}{}{Sacred Militia}
+{32831}{}{You see Sacred Militia.}
+{32840}{}{Sacred Militia}
+{32841}{}{You see Sacred Militia.}
+{32850}{}{Sacred Militia}
+{32851}{}{You see Sacred Militia.}
+{32860}{}{Sacred Militia}
+{32861}{}{You see Sacred Militia.}
+{32900}{}{Scout of Death Mine}
+{32901}{}{You see Scout of Death Mine.}
+{32910}{}{Scout of Death Mine}
+{32911}{}{You see Scout of Death Mine.}
+{32920}{}{Scout of Death Mine}
+{32921}{}{You see Scout of Death Mine.}
+{33000}{}{Super Mutant}
+{33001}{}{You see Super Mutant.}
+{33010}{}{Super Mutant}
+{33011}{}{You see Super Mutant.}
+{33020}{}{Super Mutant}
+{33021}{}{You see Super Mutant.}
+{33030}{}{Super Mutant}
+{33031}{}{You see Super Mutant.}
+{33040}{}{Super Mutant}
+{33041}{}{You see super mutant}
+{33110}{}{Robot}
+{33111}{}{You see Robot.}
+{33120}{}{Robot}
+{33121}{}{You see Robot.}
+{33130}{}{Probe}
+{33131}{}{You see Probe.}
+{33140}{}{Caterpillar Rob}
+{33141}{}{You see Caterpillar Rob.}
+{33150}{}{Tactic Spider}
+{33151}{}{You see Tactic Spider.}
+{33160}{}{Spyder}
+{33161}{}{You see Spyder.}
+{33170}{}{Automatic Octopus}
+{33171}{}{You see Automatic Octopus.}
+{33210}{}{Fury Warrior}
+{33211}{}{You see Fury Warrior.}
+{33220}{}{Fury Warrior}
+{33221}{}{You see Fury Warrior.}
+{33310}{}{Ghoul}
+{33311}{}{You see ghoul}
+{33320}{}{Ghoul}
+{33321}{}{You see ghoul.}
+{33330}{}{Crazy Ghoul}
+{33331}{}{You see crazy ghoul.}
+{33340}{}{Ghoul}
+{33341}{}{You see ghoul.}
+{35270}{}{Caravan trader}
+{35271}{}{You see Man. It looks like something to afraid.}
+{35280}{}{Caravan merchant}
+{35281}{}{You see Women. It looks like something to afraid.}
+{35290}{}{Carawan businessman}
+{35291}{}{You see Man. It looks like something to afraid.}
+{35300}{}{Federation merchant}
+{35301}{}{You see Man. It looks like something to afraid.}
+{35310}{}{Empire merchant}
+{35311}{}{You see Man. It looks like something to afraid.}
+{40010}{}{Brahmin}
+{40011}{}{You see brahmin.}
+{40020}{}{Spore plant}
+{40021}{}{You see spore plant.}
+{40030}{}{Ant}
+{40031}{}{You see ant.}
+{40040}{}{Mant}
+{40041}{}{You see mant.}
+{40050}{}{Rat}
+{40051}{}{You see rat.}
+{40060}{}{Pigrat}
+{40061}{}{You see pigrat.}
+{40070}{}{Molerat}
+{40071}{}{You see molerat.}
+{40080}{}{White molerat}
+{40081}{}{You see white molerat.}
+{40090}{}{Small radscorpion}
+{40091}{}{You see small radscorpion.}
+{40100}{}{Radscorpion}
+{40101}{}{You see radscorion.}
+{40110}{}{Dog}
+{40111}{}{You see a dog.}
+{40120}{}{Silver gecko}
+{40121}{}{You see silver gecko.}
+{40130}{}{Golden gecko}
+{40131}{}{You see golden gecko.}
+{40140}{}{Fire gecko}
+{40141}{}{You see fire gecko.}
+{40150}{}{Small deathclaw}
+{40151}{}{You see small deathclaw.}
+{40160}{}{Grey deathclaw}
+{40161}{}{You see grey deathclaw.}
+{40170}{}{Deathclaw}
+{40171}{}{You see a deathclaw.}
+{40180}{}{Alien}
+{40181}{}{You see alien.}
+{40190}{}{White alien}
+{40191}{}{You see white alien.}
+{40200}{}{Centaur}
+{40201}{}{You see centaur.}
+{40210}{}{Floater}
+{40211}{}{You see floater.}
+{40220}{}{Dog}
+{40221}{}{You see a dog.}
+{40230}{}{Brown plant}
+{40231}{}{You see brown plant.}
+{40240}{}{Dog}
+{40241}{}{You see dog.}
+{40250}{}{Ant}
+{40251}{}{You see ant.}
+{40260}{}{Mutated centaur}
+{40261}{}{You see mutated centaur.}
+{41010}{}{Turrent}
+{41011}{}{Turrent}
+{41020}{}{Federation Commander}
+{41021}{}{Federation Commander}
+{41030}{}{Empire Officer}
+{41031}{}{Empire Officer}
+{41040}{}{Turrent}
+{41041}{}{Turrent}
+{41050}{}{Turrent}
+{41051}{}{Turrent}
+{41060}{}{Rozbitek}
+{41070}{}{Bankier}
+{41080}{}{Shield shooting}
+{41081}{}{Bluesute}
+{41090}{}{Shield shooting}
+{41091}{}{Combat Armor}
+{41100}{}{"ARMOR" Shield shooting}
+{41101}{}{Small armored shield}
+{41110}{}{"ARMOR" Shield shooting}
+{41111}{}{Small armored shield}
+{50010}{}{NEC Guard}
+{50020}{}{NEC Guard}
+{50030}{}{Mr Handy}
+{50040}{}{Robot Sentinel}
+{50050}{}{Humandroid}
+{50060}{}{Mr Handy Combat Model}
+{50070}{}{Robot Defender}
+{50080}{}{Heavy Assault Robot MKII}
+{50090}{}{NEC Elite Guard}
+{50100}{}{NEC Elite Guard}
+{50110}{}{NEC Veteran Warrior}
+{50120}{}{NEC Veteran Warrior}
+{50130}{}{NEC Recruit}
+{50140}{}{NEC Recruit}
+{50150}{}{NEC 3rd Class}
+{50160}{}{NEC 3rd Class}
+{50170}{}{NEC 2nd Class}
+{50180}{}{NEC 2nd Class}
+{50190}{}{NEC 1st Class}
+{50200}{}{NEC 1st Class}
+{50210}{}{NEC Colonel}
+{51010}{}{ULS Guard}
+{51020}{}{ULS Guard}
+{51030}{}{Mutant Commoner}
+{51040}{}{Nightkin Commoner}
+{51050}{}{Flamethrower Fanatic}
+{51060}{}{Flamethrower Fanatic}
+{51070}{}{Mutant Soldier}
+{51080}{}{Nightkin Soldier}
+{51090}{}{Biohazzard Soldier}
+{51100}{}{Biohazzard Soldier}
+{51110}{}{ULS Elite Guard}
+{51120}{}{ULS Elite Guard}
+{51130}{}{ULS Veteran Warrior}
+{51140}{}{ULS Veteran Warrior}
+{51150}{}{ULS Initiate}
+{51160}{}{ULS Initiate}
+{51170}{}{ULS Defender}
+{51180}{}{ULS Defender}
+{51190}{}{ULS Protector}
+{51200}{}{ULS Protector}
+{51210}{}{ULS Shield}
+{51220}{}{ULS Shield}
+{51230}{}{ULS Strategist}
+{60000}{}{Mercenary}
+{60001}{}{You see the smile on his face}
+{60010}{}{Mercenary}
+{60011}{}{You see the smile on his face.}
+{60020}{}{Mercenary}
+{60021}{}{You see the smile on his face.}
+{60030}{}{Mercenary}
+{60031}{}{You see the smile on his face.}
+{60040}{}{Mercenary}
+{60041}{}{You see the smile on his face.}
+{60050}{}{Mercenary}
+{60051}{}{You see the smile on his face.}
+{60060}{}{Mercenary}
+{60061}{}{You see the smile on his face.}
+{60070}{}{Mercenary}
+{60071}{}{You see the smile on his face.}
+{60500}{}{Crazy ghoul}
+{60501}{}{It looks as though he died 100 years ago.}
+{60510}{}{Crazy ghoul}
+{60511}{}{It looks as though he died 100 years ago.}
+{60520}{}{Crazy ghoul}
+{60521}{}{It looks as though he died 100 years ago.}
+{60530}{}{Crazy ghoul}
+{60531}{}{It looks as though he died 100 years ago.}
+{60540}{}{Crazy ghoul}
+{60541}{}{It looks as though he died 100 years ago.}
+{60550}{}{Luminescent Crazy ghoul}
+{60551}{}{It looks as though he died 100 years ago.}
+{60560}{}{Crazy ghoul}
+{60561}{}{It looks as though he died 100 years ago.}
+{70150}{}{UnderKings Gang}
+{70160}{}{UnderKings Gang}
+{70170}{}{UnderKings Gang}
+{70180}{}{Green Point Scouts}
+{70190}{}{Green Point Scouts}
+{70200}{}{Green Point Scouts}
+{70210}{}{BearLine Defender}
+{70220}{}{BearLine Defender}
+{70230}{}{BearLine Defender}
+{70240}{}{Homeless People}
+{70250}{}{Homeless People}
+{70260}{}{Homeless People}
+{70270}{}{Homeless People}
+{70280}{}{Miner}
+{70290}{}{Miner}
+{70300}{}{Miner}
+{70310}{}{OldVilage}
+{70320}{}{OldVIlage}
+{70330}{}{OldVIlage}
+{70340}{}{OldVIlage}
+{70410}{}{Messengers of death}
+{70420}{}{Messengers of death}
+{70430}{}{Scratcher}
+{70431}{}{You see a child prodigy of evolution and bioengineering.}

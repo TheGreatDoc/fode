@@ -1,0 +1,178 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+4 3010 #
+5 3020 D _var p mgl_scott = 0 R _var p mgl_scott = 1 #
+6 3030 D _var p mgl_scott } 1 #
+7 3040 D _var p mgl_scott } 1 #
+13 3050 D _var p mgl_scott = 2 R _var p mgl_scott = 3 R _var p mgl_scott_geck = 1 R _var p mgl_scott_BH = 1 #
+8 3060 D _var p mgl_scott = 1 #
+0 3070 #
+14 3080 D _var p mgl_scott = 3 D _var p mgl_scott_geck = 2 D _var p mgl_scott_BH = 2 D _item p PID_BROKEN_HILLS_GHOUL_BLOOD_SAMPLE } 1 D _item p PID_GECKO_GHOUL_BLOOD_SAMPLE } 1 R _var p mgl_scott = 4 R _var p mgl_scott_geck = 3 R _var p mgl_scott_BH = 3 R _item p PID_BROKEN_HILLS_GHOUL_BLOOD_SAMPLE - 1 R _item p PID_GECKO_GHOUL_BLOOD_SAMPLE - 1 R _param p ST_EXPERIENCE + 2000 @
+4 4000 None 0 #
+3 4010 @
+5 5000 None 0 #
+6 5010 #
+7 5020 @
+6 6000 None 0 #
+3 6010 @
+7 7000 None 0 #
+3 7010 @
+8 8000 None 0 #
+10 8010 #
+11 8020 D _param p SK_DOCTOR } 100 D _param p SK_FIRST_AID < 120 #
+11 8030 D _param p SK_DOCTOR < 100 D _param p SK_FIRST_AID } 120 #
+11 8040 D _param p SK_DOCTOR } 100 D _param p SK_FIRST_AID } 120 @
+10 9000 None 0 #
+0 9010 @
+11 10000 None 0 #
+12 10010 R _var p mgl_scott = 2 @
+12 11000 None 0 #
+13 11010 R _var p mgl_scott = 3 R _var p mgl_scott_geck = 1 R _var p mgl_scott_BH = 1 #
+0 11020 @
+13 12000 None 0 #
+0 12010 @
+14 13000 None 0 #
+0 13010 &
+
+[engl]
+{100}{}{doctor Scott}
+{200}{}{You see doctor Scott.}
+{210}{}{You see one of MGL scientist doctor Scott.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello, do you need something ?}
+{2010}{}{May i have a few questons ?}
+{3000}{}{Sure, go ahead.}
+{3010}{}{Who are you, and what are you doing here ?}
+{3020}{}{Tell me about your research.}
+{3030}{}{Tell me more about Ghouls}
+{3040}{}{Tell me more about super mutants}
+{3050}{}{I changed my mind, i will help you.***make it give 2 empty hypodermics***}
+{3060}{}{Can i help you with something ?}
+{3070}{}{I have to go, bye}
+{3080}{}{I have those blood samples for you.}
+{4000}{}{I'm doctor Scott, I'm studying effects of radiation and FEV on humans.}
+{4010}{}{tell me more..}
+{5000}{}{I study human mutations. 2 most common human mutations here in california are "Ghouls" and "super mutants" Ghouls are result of high radiation doses, while supermutants are result of mutation cased by FEV virus.}
+{5010}{}{Tell me more about Ghouls}
+{5020}{}{Tell me more about super mutants}
+{6000}{}{Ghouls are humanoids with burned, usually missing skin and rotted flesh. It's real mystery what weird mutation keeps them alive in such damaaged condition. All ghouls were humans with specific gen that saved them from death from high radiation and caused this ghoul mutation. they live many times longer than normal humans.}
+{6010}{}{I have more questions.}
+{7000}{}{Super mutants are result of FEV virus mutations. Many of them were created by someone who called himself "master". They are humans who survived fast enormous mutation caused by high doses of FEV. they are big, very strong and though with greenish skin, most of them has low inteligence. As you can see we are studing one of them right now.}
+{7010}{}{I have more questions.}
+{8000}{}{there is nothing right now you coul. . . . . . . . . well, there could be something, tell me do you have any basic doctor skills ?}
+{8010}{}{No.}
+{8020}{}{Yes}
+{8030}{}{Yes}
+{8040}{}{Yes}
+{9000}{}{So, nothing for you right now.}
+{9010}{}{bye}
+{10000}{}{Alright here's the thing. I'm making research about possible FEV effects already mutated ghouls, but i need samles of DNA from different ghouls population. I Already have sample from Necrpopolis, that's from ghoul that is working for us at reactors. But i need at least 2 different samples.}
+{10010}{}{Ok so what do you need from me ?}
+{11000}{}{I need you to bring me 2 blood samples from 2 ghouls from diferent locations. I'd suggest Gecko and Broken Hills. Do you think you could do this for me ?}
+{11010}{}{Will do.*** make it give 2 empty hypodermics***}
+{11020}{}{Uh sorry i hate needles and blood.}
+{12000}{}{Ok here take those empty hypodermics and don't try to take both samples from one location, i would run tests to check FEV concentrations to check if it's really from different location.}
+{12010}{}{Ok.}
+{13000}{}{Great show me, yes. good. I'll start working at it right now. Your reward is at storekeeper.}
+{13010}{}{bye}
+
+
+[russ]
+{100}{}{doctor Scott}
+{200}{}{You see doctor Scott.}
+{210}{}{You see one of MGL scientist doctor Scott.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello, do you need something ?}
+{2010}{}{May i have a few questons ?}
+{3000}{}{Sure, go ahead.}
+{3010}{}{Who are you, and what are you doing here ?}
+{3020}{}{Tell me about your research.}
+{3030}{}{Tell me more about Ghouls}
+{3040}{}{Tell me more about super mutants}
+{3050}{}{I changed my mind, i will help you.***make it give 2 empty hypodermics***}
+{3060}{}{Can i help you with something ?}
+{3070}{}{I have to go, bye}
+{3080}{}{I have those blood samples for you.}
+{4000}{}{I'm doctor Scott, I'm studying effects of radiation and FEV on humans.}
+{4010}{}{tell me more..}
+{5000}{}{I study human mutations. 2 most common human mutations here in california are "Ghouls" and "super mutants" Ghouls are result of high radiation doses, while supermutants are result of mutation cased by FEV virus.}
+{5010}{}{Tell me more about Ghouls}
+{5020}{}{Tell me more about super mutants}
+{6000}{}{Ghouls are humanoids with burned, usually missing skin and rotted flesh. It's real mystery what weird mutation keeps them alive in such damaaged condition. All ghouls were humans with specific gen that saved them from death from high radiation and caused this ghoul mutation. they live many times longer than normal humans.}
+{6010}{}{I have more questions.}
+{7000}{}{Super mutants are result of FEV virus mutations. Many of them were created by someone who called himself "master". They are humans who survived fast enormous mutation caused by high doses of FEV. they are big, very strong and though with greenish skin, most of them has low inteligence. As you can see we are studing one of them right now.}
+{7010}{}{I have more questions.}
+{8000}{}{there is nothing right now you coul. . . . . . . . . well, there could be something, tell me do you have any basic doctor skills ?}
+{8010}{}{No.}
+{8020}{}{Yes}
+{8030}{}{Yes}
+{8040}{}{Yes}
+{9000}{}{So, nothing for you right now.}
+{9010}{}{bye}
+{10000}{}{Alright here's the thing. I'm making research about possible FEV effects already mutated ghouls, but i need samles of DNA from different ghouls population. I Already have sample from Necrpopolis, that's from ghoul that is working for us at reactors. But i need at least 2 different samples.}
+{10010}{}{Ok so what do you need from me ?}
+{11000}{}{I need you to bring me 2 blood samples from 2 ghouls from diferent locations. I'd suggest Gecko and Broken Hills. Do you think you could do this for me ?}
+{11010}{}{Will do.*** make it give 2 empty hypodermics***}
+{11020}{}{Uh sorry i hate needles and blood.}
+{12000}{}{Ok here take those empty hypodermics and don't try to take both samples from one location, i would run tests to check FEV concentrations to check if it's really from different location.}
+{12010}{}{Ok.}
+{13000}{}{Great show me, yes. good. I'll start working at it right now. Your reward is at storekeeper.}
+{13010}{}{bye}
+
+
+[pols]
+{100}{}{doctor Scott}
+{200}{}{You see doctor Scott.}
+{210}{}{You see one of MGL scientist doctor Scott.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello, do you need something ?}
+{2010}{}{May i have a few questons ?}
+{3000}{}{Sure, go ahead.}
+{3010}{}{Who are you, and what are you doing here ?}
+{3020}{}{Tell me about your research.}
+{3030}{}{Tell me more about Ghouls}
+{3040}{}{Tell me more about super mutants}
+{3050}{}{I changed my mind, i will help you.***make it give 2 empty hypodermics***}
+{3060}{}{Can i help you with something ?}
+{3070}{}{I have to go, bye}
+{3080}{}{I have those blood samples for you.}
+{4000}{}{I'm doctor Scott, I'm studying effects of radiation and FEV on humans.}
+{4010}{}{tell me more..}
+{5000}{}{I study human mutations. 2 most common human mutations here in california are "Ghouls" and "super mutants" Ghouls are result of high radiation doses, while supermutants are result of mutation cased by FEV virus.}
+{5010}{}{Tell me more about Ghouls}
+{5020}{}{Tell me more about super mutants}
+{6000}{}{Ghouls are humanoids with burned, usually missing skin and rotted flesh. It's real mystery what weird mutation keeps them alive in such damaaged condition. All ghouls were humans with specific gen that saved them from death from high radiation and caused this ghoul mutation. they live many times longer than normal humans.}
+{6010}{}{I have more questions.}
+{7000}{}{Super mutants are result of FEV virus mutations. Many of them were created by someone who called himself "master". They are humans who survived fast enormous mutation caused by high doses of FEV. they are big, very strong and though with greenish skin, most of them has low inteligence. As you can see we are studing one of them right now.}
+{7010}{}{I have more questions.}
+{8000}{}{there is nothing right now you coul. . . . . . . . . well, there could be something, tell me do you have any basic doctor skills ?}
+{8010}{}{No.}
+{8020}{}{Yes}
+{8030}{}{Yes}
+{8040}{}{Yes}
+{9000}{}{So, nothing for you right now.}
+{9010}{}{bye}
+{10000}{}{Alright here's the thing. I'm making research about possible FEV effects already mutated ghouls, but i need samles of DNA from different ghouls population. I Already have sample from Necrpopolis, that's from ghoul that is working for us at reactors. But i need at least 2 different samples.}
+{10010}{}{Ok so what do you need from me ?}
+{11000}{}{I need you to bring me 2 blood samples from 2 ghouls from diferent locations. I'd suggest Gecko and Broken Hills. Do you think you could do this for me ?}
+{11010}{}{Will do.*** make it give 2 empty hypodermics***}
+{11020}{}{Uh sorry i hate needles and blood.}
+{12000}{}{Ok here take those empty hypodermics and don't try to take both samples from one location, i would run tests to check FEV concentrations to check if it's really from different location.}
+{12010}{}{Ok.}
+{13000}{}{Great show me, yes. good. I'll start working at it right now. Your reward is at storekeeper.}
+{13010}{}{bye}
+

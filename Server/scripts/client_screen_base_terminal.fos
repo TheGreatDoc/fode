@@ -1,0 +1,98 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+IGUIElementEditBoxOpt @BaseTerminalInvitePlayerEditBoxOpt;
+IGUIElementEditBoxOpt @BaseTerminalKickPlayerEditBoxOpt;
+
+void ShowBaseTerminalInviteScreen(int, int, int, string@, int[]@)
+{
+	ChangeCursor(0);
+	BaseTerminalInvitePlayerEditBoxOpt.Text("");
+	BaseTerminalInvitePlayerEditBoxOpt.setFocused(true);
+	HideScreen(CLIENT_SCREEN_BASE_TERMINAL_INVITE,0,0,0);
+	HideScreen(CLIENT_SCREEN_BASE_TERMINAL_KICK,0,0,0);
+	ShowScreen(CLIENT_SCREEN_BASE_TERMINAL_INVITE,0,0,0);
+}
+
+void ShowBaseTerminalKickScreen(int, int, int, string@, int[]@)
+{
+	ChangeCursor(0);
+	BaseTerminalKickPlayerEditBoxOpt.Text("");
+	BaseTerminalKickPlayerEditBoxOpt.setFocused(true);
+	HideScreen(CLIENT_SCREEN_BASE_TERMINAL_INVITE,0,0,0);
+	HideScreen(CLIENT_SCREEN_BASE_TERMINAL_KICK,0,0,0);
+	ShowScreen(CLIENT_SCREEN_BASE_TERMINAL_KICK,0,0,0);
+}
+
+class BaseInviteButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_invite_to_base",0,0,0,BaseTerminalInvitePlayerEditBoxOpt.getText(),null);
+		HideScreen(CLIENT_SCREEN_BASE_TERMINAL_INVITE,0,0,0);
+	}
+}
+
+class BaseKickButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("server_scripts@unsafe_kick_from_base",0,0,0,BaseTerminalKickPlayerEditBoxOpt.getText(),null);
+		HideScreen(CLIENT_SCREEN_BASE_TERMINAL_KICK,0,0,0);
+	}
+}
+
+void InitBaseTerminalScreen()
+{
+	GUI_CreateScreen(CLIENT_SCREEN_BASE_TERMINAL_INVITE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BASE_TERMINAL_INVITE,GetMsgStr(TEXTMSG_GAME,3000000701), 0, 27)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(334,10);
+	
+	@BaseTerminalInvitePlayerEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BASE_TERMINAL_INVITE,45,45)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	BaseInviteButtonClass BaseInviteButton;
+	GUI_AddButton(CLIENT_SCREEN_BASE_TERMINAL_INVITE, 97,80)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000702), FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BaseInviteButton);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BASE_TERMINAL_KICK,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BASE_TERMINAL_KICK,GetMsgStr(TEXTMSG_GAME,3000000701), 0, 27)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(334,10);
+	
+	@BaseTerminalKickPlayerEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BASE_TERMINAL_KICK,45,45)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	BaseKickButtonClass BaseKickButton;
+	GUI_AddButton(CLIENT_SCREEN_BASE_TERMINAL_KICK, 97,80)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000703), FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BaseKickButton);
+}

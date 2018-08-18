@@ -1,0 +1,53 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš shrbeného uboáka.}
+{101}{}{Vidíš Rattraye, hrbatého asistenta doktora Johnsona.}
+{102}{}{Vidíš shrbenou trosku. Vlasy má plné lupù.}
+{103}{}{Ratt uklízet dobøe, doktor.}
+{104}{}{Ratt je jenom bezcenná kupa masa. }
+{105}{}{Ratt bıt dobrı pomocník.}
+{106}{}{To urèitì. Vùbec nechápu, proè se s tebou ještì zdruji.}
+{107}{}{Ratt bıt velice uiteènı.}
+{108}{}{Mìl bys bıt ještì uiteènìjší, nebo se vrátíš na ulici.}
+{109}{}{Ne doktor, nevyhazovat Ratt! Ratt se polepšit. Ratt slibovat.}
+{110}{}{Dobøe, podíváme se jak uklízíš. Ale varuji tì.}
+{111}{}{Ratt bıt dobrı. Ratt vıbornı. }
+{112}{}{Dobrá, ukecal jsi mì. Uka co umíš.}
+{113}{}{Ratt èistit a èistit. Vyèistit celı dùm. Sníst všechny zlé brouky.}
+{114}{}{A to je další vìc. Nechci se dívat na tebe, jak jíš šváby, plotice a já nevím co ještì.}
+{115}{}{Doktor nechtít Ratt jíst brouky. Dobøe, Ratt nechat hezké brouky, aby moci jíst doktor.}
+{116}{}{Já je nechci jíst, ty cvoku. Já se jenom nechci dívat, jak je jíš ty.}
+{117}{}{Ratt nejíst brouky?}
+{118}{}{Pochopil. Nejíst brouky pøede mnou. Nehodlám poslouchat ten hnusnı køupavı zvuk.}
+{119}{}{Ratt nekousat brouky? Ratt je cucat.}
+{120}{}{NE! Já nechci, abys vıkal brouky, cucal je, lízal je, prostì nic.}
+{121}{}{Ratt nejíst brouky. Ratt nechat brouky ít.}
+{122}{}{Vıbornì. Koneènì jsem se doèkal. Take, chceš u mì uklízet regály, nebo ne?}
+{123}{}{Ano, doktor. Ratt èistit všechny vaše krásné, krásné regály. Krásné regály vyèistit.}
+{124}{}{Skvìlé. Co takhle zaèít u dveøí. Jsou docela zašpinìné.}
+{125}{}{Ratt vydrhnout dveøe pro hodnı doktor. U nebıt dlouho špinavé.}
+{126}{}{Hmm, asi si myslíš, e u zde mùeš zùstat. Je to tak?}
+{127}{}{Ne doktor, ne. Ratt jenom doufat.}
+{128}{}{Tak koukej pracovat a neflákej se. Nebo tì zbièuju. }
+{129}{}{NE! Doktor, nebièovat Ratt. Ratt hodnı.}
+{130}{}{Neboj se, nemám to v úmyslu. Akorát potøebuješ disciplínu, Rattrayi. A mùeš tady zùstat.}
+{131}{}{Ratt dìkovat doktor. Doktor bıt nejlepší.}
+{132}{}{Mùeš zùstat, jak dlouho chceš. Bùh ví, proè jsem pøijal takovou pøítì.}
+{133}{}{Doktor hodnı. Hodnı a milı.}
+{134}{}{Uh, ano. Souhlasím s tebou.}
+{135}{}{Já pracovat pro doktor.}
+{136}{}{Já vyèistit. Souhasit?}
+{137}{}{Heh, heh. Já najít jídlo.}
+{138}{}{Já najít plotici. Šavnatou.}
+{139}{}{Chtít ty taky plotici? Ratt se podìlit.}
+{140}{}{Doktor se o Ratt dobøe stará.}
+{141}{}{Ratt šklivı, ale doktor se o nìj dobøe starat.}
+{142}{}{Ratt bıt hlupák. Proè bıt takovı hlupák?}
+{143}{}{Ratt litovat. Ratt nevìdìt, co ty potøebovat.}
+{144}{}{Doktor øíct Ratt nemluvit s hosty.}
+{145}{}{Ratt nemít co øíct.}
+{146}{}{Ratt chtít pomoci.}
+{147}{}{Nevìdìt ty, kam doktor jít?}
+{148}{}{Ratt dlouho nevidìt doktor.}
+{149}{}{Doktor odejít.}
+{150}{}{Kdo teï starat o Ratt?}
+{151}{}{Ratt hlídat dùm, dokud doktor nevrátit.}

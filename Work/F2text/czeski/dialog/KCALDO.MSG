@@ -1,0 +1,132 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+#############################################################
+#  Message File: KCaldo.msg                                 #
+#                                                           #
+#       Body Type:                                          #
+#       Combat AI: Flee                                     #
+#       Weapons: None                                       #
+#       HP: 15                                              #
+#       Skills to note: Barter 50                           #
+#       Inventory: 2 bottles of booze, 1 bottle of beer     #
+#                  and 2 molotov cocktails                  #
+#  Log:                                                     #
+#                                                           #
+#  Created: January 27, 1998                                #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+#############################################################
+#  The following lines are for describing the NPC when      #
+#  glanced and and examined.                                #
+#############################################################
+{100}{}{Vidíš motajícího se mue obleèeného ve velmi špinavıch hadrech.}
+{101}{}{Vidíš Aldu, mue co vítá pøíchozí. Jeho dech je cítit a sem.}
+
+#############################################################
+#  The following lines are for the dialog which the NPC     #
+#  says. This will be disorganized because of the Design    #
+#  Tool.                                                    #
+#############################################################
+
+{200}{}{Zdravím, ještì jsem tì v Klamathu nikdy pøedtím nevidìl. Jsem Aldo, vítám nové pøíchozí. (škyt) Mım úkolem, je uvítat kadého nového ve mìstì a zodpovìdìt i nìjaké otázky tıkající se našeho malého mìsteèka. Vítej v Klamathu. (škyt) Kdo vlastnì jsi?}
+{201}{}{Uhhm, dìkuji za uvítáni. Jsem pouhı cestovatel.}
+{202}{}{Mé jméno je }
+{203}{}{ . Dìkuji za uvítání.}
+{204}{}{ z Arroya. Jsem Vyvolenı.}
+{205}{}{Nepotøebuješ znát mı jméno, nebo cokoliv o mì. Jdi mi z cesty, špinavej opilèe.}
+{206}{}{Nemyslím si, e mìsto jako je Klamath, by mìlo mít špinavé vítající opilce, nebo nìco takovıho.}
+
+{300}{}{Vyvolenı. Jak pozoruhodné }
+{301}{}{. Musíš bıt velmi dùleitı a mocnı mezi svımi lidmi. Jistì by nìkomu tvé velikosti (škyt) nevadilo, kdybych poádal o nìjaké drobné. (urp)}
+{302}{}{Tady máš drobnou radu - nech nìjakı èásek chlastu.}
+{303}{}{Drobnı, jo? Dobøe. Myslím, e $5 ti bude staèit, ne?}
+{304}{}{Dobøe, nechci se pøíèit místním zvyklostem. Je $5 dost? }
+{305}{}{Mìl bys dát drobnı ty mì, za to tvı otravování. Nebo zbavím Klamath tvé hnusné pøítomnosti.}
+{306}{}{Sorry, mám hluboko do kapsy -- není nic, co ti mohu dát.}
+
+{350}{}{Dobøe, pøíteli }
+{351}{}{, protoe jsi tady prvnì, a vypadáš na to, e potøebuješ (urp) nìjakou tu radu, jsem ti k dispozici. Ale vìz, e je zde slušností, ne se mne na nìco zeptáš, dát mi pøedtím nìjaké drobné.}
+{355}{}{Promiò, nemohu pro tebe postrádat nìjaké peníze.}
+
+{400}{}{Dobrá cizinèe. Protoe jsi tady prvnì, a vypadáš na to, e potøebuješ (urp) nìjakou tu radu, jsem ti k dispozici. Ale vìz, e je zde slušností, ne se mne na nìco zeptáš, dát mi pøedtím nìjaké drobné.}
+
+{450}{}{Dìkuji za peníze, pøíteli. (urp) Pùjdu si za nì koupit nìjakou (škyt) medicínu pro své vyprahlé
+ hrdlo. Pokládej se za oficiálnì (škyt) pøivítaného do mìsta Klamath. Máš nìjaké otázky
+ ohlednì naší (škyt) krásné metropole?}
+{451}{}{Ne díky, Myslím, e se jen porozhlédnu.}
+{452}{}{No, vlastnì...zajímalo by mì pár vìcí.}
+{453}{}{Aldo, hledám obchodníka, kterı prodává vìci z dávnıch èasù. Víš, opravdu staré vìci.}
+
+{500}{}{Ptej se, och dobrodinèe mùj.}
+{501}{}{Co dìlají lidé zde, v Klamathu?}
+{502}{}{Kde mohu obchodovat nebo sehnat nìjaká léèidla?}
+{503}{}{Øekni mi nìco o geckonech.}
+{504}{}{Kam chodíš kupovat svùj chlast?}
+{505}{}{Díky. Myslím, e to je všechno, co mne zajímalo.}
+{506}{}{Nevíš, kde se dá sehnat mocnı GECK?}
+
+{550}{}{Dìkuju za nic. Doufám, e se ve mìstì nezdrzíš pøíliš dlouho. Nepotøebujeme tu takové druhy lidí.
+ Argh. Ti barbaøi -- všichni jsou stejní.}
+
+{600}{}{Zde v Klamathu nìkteøí lidé farmaøí, nìkteøí pasou brahmíny, ale myslím, e vìtšina lidí
+ loví geckony.}
+{601}{}{Co je geckon?}
+{602}{}{Oh, dìkuji. Myslím, e to je všechno, co mne zajímalo.}
+{603}{}{To je zajímavé. Nicménì mám další otázku.}
+
+{650}{}{Geckon je velká ještìrka, kterou loví skupiny lovcù pro maso a také kvùli kùi. Ale musím podotknout, e chytit tyhle potvory dá hodnì práce - a také je to nebezpeèné. Mé doporuèení - vyhni se jim. Není to jen tak.}
+{651}{}{Oh, dìkuji. To by asi bylo všechno.}
+{652}{}{Hmm. Ještì nìco, Aldo.}
+
+{700}{}{Nakoupit nebo obchodovat mùeš buï U Bucknerové nebo U Zlatého Geckona. Obèas tam mívají i hojivé byliny -- ovšem, ty mi nepomáhají zlepšit mùj (škyt) stav. Ovšem varuji tì - obì zmínìné ivnosti jsou vedeny opravdovımi skrblíky. Jakmile se ti dostanou na zoubek, (škyt) vyjdeš ven jak oškubaná husa.}
+{701}{}{Oh, dìkuji. Myslím, e to je všechno, co mne zajímalo.}
+{702}{}{Áááh. Èerstvı vzduch mì vdycky osvìí. Hmm, mám na tebe další otázku.}
+
+{750}{}{Pokud vím, nemohl jsi mi tuhle dát nìjaké peníze pro oficiální uvítání, ale snad (škyt) budeš tentokrát štìdøejší, a já tì koneènì oficiálnì pøivítám v Klamathu.}
+{751}{}{Myslím, e mohu postrádat $5, abys mi u dal pokoj.}
+{752}{}{Nìco mi tu opravdu chybìlo. Tady je $5; A teï èekám na to uvítání.}
+{753}{}{Ne dìkuji, myslím, e nepotøebuji tvé oficiální uvítání.}
+{754}{}{Jen a nepøivítám já tebe. Pøesnìji - tvùj aludek se svım noem.}
+
+{800}{}{Zdravím pøíteli, rád tì zase vidím. Mùeš mi dát nìjaké peníze na trochu medicíny? Velmi mì škrábe hrdlo a poøád je (škyt) celé vyschlé. Tøeba bych dokonce mohl provést ještì jedno (urp) oficiální uvítání?}
+{801}{}{Jistì, vdycky mùu dát $5 pøíteli na medicínu.}
+{802}{}{Promiò Aldo, teï nemùu rozdávat peníze.}
+{803}{}{Myslím, e medicíny u máš dost. Mìl bys ten chlast ze sebe dostat ven, tøeba nìjakou tìší prací.}
+
+{810}{}{Tak ti teda dìkuju. Jak se mùeš tak nelidsky chovat k nìkomu takovému jako já? Sakra! (Aldo si odplivl ke tvım nohám, pøièem mu slina stékala po bradì)}
+{820}{}{Jsem si jistı, e tvoje štìdrost k nìkomu takovému jako jsem já, (škyt) ti urèitì pøinese štìstí. Doufám, e se zase brzy uvidíme.}
+{830}{}{Víš, mohl bych ty peníze pouít na medicínu. Cítím se velmi slabı - ale jestli mi nemùeš (kuc, kuc)
+ ádné dát (kuc), pochopím to. Snad pøíštì, jestli tu ovšem (kuc) ještì budu.}
+
+{850}{}{Máš na mysli moji medicínu? (škyt) Ah, tak tu jsem koupil buï U Zlatého geckona nebo U Bucknerové (urp). Ale teï u mi nic neprodají, dokud nezaplatím co jim dluím. Naštìstí pro
+ mì, Whiskey Bob obèas dìlá medicínu pro své dobré pøátele.}
+{851}{}{Ještì štìstí, e jsi svoji medicínu nakonec sehnal. Prozatím to je 
+ vše.}
+{852}{}{Zajímavé. Kde najdu Whiskey Boba?}
+{853}{}{Dìkuji Aldo. Povìz mi ještì nìco.}
+
+{860}{}{Whiskey Bob je obvykle (urp) U Bucknerové, hned tady vpravo, zde v centru. Myslím, e momentálnì není schopen peèovat o svùj destilátor. Take teï není zrovna nejspolehlivìjším zdrojem medicíny pro nìkoho takového (škyt), jako jsem já.}
+{861}{}{Díky za informace, Aldo. Myslím, e to je všechno, co mne zajímalo.}
+{862}{}{Myslím, e pøesto v nìm máš dalšího zásobitele. Uh, mohl bys oddechovat trochu ní? Ještì mám pár dotazù.}
+
+{870}{}{Zdravím, pøíteli -- vypadáš ponìkud zmatenı. Co potøebuješ, je mít tady ve mìstì pøítele. Já jsem Aldo. Vítám pøíchozí.}
+{871}{}{Pøítel? Heh, heh, }
+{872}{}{ rád pøítele.}
+{873}{}{Eee, (èmuch, èmuch) nìco tu smrdìt. Já jít pryè.}
+
+{880}{}{Jestlie mi dáš $20, budu tvùj pøítel a mohu tì ujistit, e všichni tady také. Takhle to chodí
+ ve velkıch mìstech.}
+{881}{}{Dvaa--cet? He?  Vééélkı mììs-to? He?}
+{882}{}{Dát hezkému chlapíkovi taková ta lutá koleèka? Eh.}
+
+{890}{}{GECK? Sákryš... myslíš asi geckony? Nikdy jsem neslyšel o GECKu, ale mohu ti nìco øíci o geckonech.}
+
+{900}{}{Starı zboí, jo? (urp) Ze všech obchodníkù, kterı znám, (škyt) obchoduje se starımi krámy (škyt) jenom Vic.}
+{901}{}{Vic? A kde by tak mohl bıt, tenhle Vic?}
+
+{910}{}{No (škyt), Vica jsem tu u nìjakou dobu nevidìl. Nejsem si jist kde by mohl bıt (urp), moná odjel nìkam pryè. Ale promluv si (urp) s Jenny. Najdeš ji v lázních. Ona a Vic byli takovı pìknı páreèek (škyt), a tak o nìm ledacos ví. He, he, he. Chápeš? No, však já jsem taky ještì neztratil svùj pùvab...}
+{911}{}{To je hezkı vìdìt, e ti nezáleí na tom, jak nízko klesneš, ale nemùeš ztratit co jsi nikdy nemìl. Ale
+ ted chci se zeptat ještì na nìco jiného.}
+{912}{}{Strašnì dìkuji, jsi jedineènı, Aldo. Myslím, e to je všechno, co mne zajímalo.}

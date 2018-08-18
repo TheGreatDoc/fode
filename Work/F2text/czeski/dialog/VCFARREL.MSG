@@ -1,0 +1,59 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv,
+ ale nemá vzadu ádné èíslo.}
+{101}{}{Vidíš úøedníka Holdena.}
+{102}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv,
+ ale nemá vzadu ádné èíslo.}
+{103}{}{::potlesk::}
+{104}{}{To je hrdina! Podívejte!}
+{105}{}{Úasné! To je hrdina, zde, ve Vault City!}
+{106}{}{Dobrı den, kapitáne.}
+{107}{}{Vault City má vdy navrch, kapitáne.}
+{108}{}{Dobrı den, Obèane.}
+{109}{}{Vault City má vdy navrch, Obèane.}
+{110}{}{Mutant! Stráe! Stráe!}
+{111}{}{Ghoul! Stráe! Stráe!}
+{112}{}{Ááá podívejme... tøi stimpaky, jedna dávka Rad-X...}
+{113}{}{Ještì poøád nemám udìlanı seznam vìcí pro vedoucího úøedníka Randala.}
+{114}{}{Podívejte: potøebuji prohlédnout sklad, udìlat seznam vìcí, zkontrolovat ho, a nakonec ho
+ ještì natáhnout do sítì...}
+{115}{}{Musím si zjistit, zda je dobøe zabezpeèeno to vìtší mnoství balíèkù První pomoci...}
+{119}{}{Promiòte, ale obchod je veèer zavøenı.}
+{120}{}{Pøijïte prosím ráno. Dìkujeme.}
+{121}{}{Zrovna pøebírám inventáø. Budeme otevírat ráno.}
+{122}{}{Mohu vám pomoci, kapitáne?}
+{123}{}{Mohu vám pomoci, Obèane?}
+{124}{}{Ano, co je?}
+{125}{}{Moct já ti pomoct}
+{126}{}{Odbelhat se pryè}
+{127}{}{Co je tohle za místo?}
+{128}{}{Mohu vidìt co máte na skladì?}
+{129}{}{Dnes nic, díky.}
+{130}{}{Bezvadné, další zkrachovalec... stráe! Mám tu venkovana, kterı musí bıt eskortován za bránu, hned!
+ Stráe!}
+{131}{}{NEMÍT RÁD STRÁ. ZEMØÍT}
+{132}{}{*Ach jo* Já jít se stráí}
+{133}{}{Bude lepší, kdy radìji zkusíte obchod na pøedmìstí. Tam pøijmou
+ kadého... vèetnì venkovanù.}
+{134}{}{Uh, dìkuji.}
+{135}{}{Budu si obchodovat kde chci já. Chápeš?}
+{136}{}{Dìkujeme vám. Vault City má vdy navrch, Obèane.}
+{137}{}{Dìkujeme vám. Vault City má vdy navrch, kapitáne.}
+{138}{}{Vault City má vdy navrch, Obèane.}
+{139}{}{Dobrı den, Obèane.}
+{140}{}{Tohle? Vdy tohle je koloniál B, a slouí tu pro dohled na skladování a distribuci léèiv
+ pro Vault City. Jsem úøedník Holden. S èím vám mohu bıt nápomocen, Obèane?}
+{141}{}{Tohle je koloniál B... vedeme tu distribuci léèiv pro
+ Vault City. Moná, e tohle není to co hledáte?}
+{142}{}{Mohu vidìt co máte na skladì?}
+{143}{}{Ne, tohle je pøesnì to co hledám. Mohu vidìt co máte na skladì?}
+{144}{}{Dnes nic, díky.}
+{145}{}{Snad moná. Nashle.}
+{150}{}{Tohle? Vdy tohle je úøad koloniál B, a slouí tu pro dohled na skladování a distribuci léèiv
+ pro Vault City. Jsem úøedník Holden. S èím vám mohu bıt nápomocen, kapitáne?}
+{151}{}{Hej! Zùstaòte kde jste!}
+{152}{}{To je to! Vy jste odsud!}
+
+{153}{}{Díky.}
+{154}{}{[pokraèování]}

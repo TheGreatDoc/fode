@@ -1,0 +1,126 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p de_quest_brahmin_perk_npc ! 0 #
+7 1020 D _var p de_quest_brahmin_perk_npc = 0 @
+2 2000 None 0 #
+3 2010 #
+8 2020 D _param p SK_SPEECH } 70 D _var p de_quest_brahmin_perk_npc = -1 D _param p PE_BRAHMIN_SKINNING = 0 #
+0 2030 #
+65506 2040 @
+3 3000 None 0 #
+4 3010 #
+5 3020 D _var p de_quest_brahmin_perk_npc = -1 D _param p PE_BRAHMIN_SKINNING = 0 @
+4 4000 None 0 #
+0 4010 @
+5 5000 None 0 #
+6 5010 @
+6 6000 None 0 #
+0 6010 D _param p PE_BRAHMIN_SKINNING = 0 D _var p de_quest_brahmin_perk_npc = -1 R _script quest_server_scripts@brahmin_skin_perk_start 0  #
+0 6020 #
+2 6030 #
+0 6040 @
+7 7000 None 0 #
+0 7010 D _item p PID_BOTTLE_CAPS } 100 D _item p PID_MOUSE_SKIN } 10 D _param p PE_BRAHMIN_SKINNING = 0 R _item p PID_BOTTLE_CAPS - 100 R _item p PID_MOUSE_SKIN - 10 R _script quest_server_scripts@brahmin_skin_perk_0_to_100 0  R _param p PE_BRAHMIN_SKINNING + 1 #
+0 7020 #
+0 7030 @
+8 8000 None 0 #
+0 8010 D _param p PE_BRAHMIN_SKINNING = 0 R _var p de_quest_brahmin_perk_npc = 100 R _script quest_server_scripts@brahmin_skin_perk_0_to_100 0  R _param p PE_BRAHMIN_SKINNING + 1 &
+
+[engl]
+{100}{}{Matt}
+{200}{}{You see a man dressed in a blood-stained mantle.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{Start quest done}
+{2000}{}{Hello there, stranger. You need sumthin'?}
+{2010}{}{What is this place?}
+{2020}{}{I want to know how to obtain brahmin hides, and you look just like a very nice guy who could help me out.}
+{2030}{}{I need to go now.}
+{2040}{}{Let us trade.}
+{3000}{}{Not much to say, just a regular slaughterhouse, and as you might have noticed, I'm the butcher here. We are required to supply the town with certain amount of meat. To be frank, lately the business's been quite good, and we usually have leftovers to trade with other towns or inviduals.}
+{3010}{}{Maybe I could help you with the deliveries?}
+{3020}{}{Do you know how to skin a brahmin? Could you teach me?}
+{4000}{}{Well, If you wanna help, talk to Jacob, he deals with that caravan business. You can find him in a tent in the southern part of the town.}
+{4010}{}{[Leave]}
+{5000}{}{Dayum, you sure are a strange fella. Sure as hell I know, why else would I be working here, huh? I could teach you, but this ain't gonna be a freebie. I want... let's say... 100 coins and a small favor.}
+{5010}{}{Which is...?}
+{6000}{}{I need mouse skins. Lemme think... around 10 would do. To tell ya the truth, it's not me who needs them, but my wife. You don't wanna know what for, so don't ask. Just bring'em skins to me, and we'll have a deal. And don't forget about 100 coins.}
+{6010}{}{Allright, I'll do it.}
+{6020}{}{I don't have the time for a mouse chase right now, gotta go.}
+{6030}{}{Lets talk about something else.}
+{6040}{}{I'm leaving.}
+{7000}{}{You remember our lil' deal? 10 mouse skins plus 100 caps, no less. By the way, did you enjoy chasing those mice?}
+{7010}{}{Don't ask. I just want to know how to obtain those Brahmin hides.[Give 10 skins and 100 coins]}
+{7020}{}{Shit, I forgot about the dough.}
+{7030}{}{See you later}
+{8000}{}{Well, allrighty then. First, you gotta make a small cut here...[You learn how to obtain brahmin hides]}
+{8010}{}{[Exit].}
+
+[pols]
+{100}{}{Matt }
+{200}{}{Widzisz mezczyzne w bialym kitlu zachlapanego krwia.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{Start quest done}
+{2000}{}{Witaj wedrowcze co Cie sprowadza do mojich skromnych progow.}
+{2010}{}{Opowiedz mi o tym miejscu.}
+{2020}{}{Chcialbym sie dowiedziec jak zdejmowac skore Brahmina. A ty wygladasz na rzyczliwa osobe ktora zna sie na swojim fachu. (70% speak)}
+{2030}{}{Musze sie zwijac}
+{2040}{}{Pohandlujmy}
+{3000}{}{Co tu duzo gadac. Typowa rzeznia typowe miejsce pracy. Zabijanie Brahminow to moje zadanie tutaj. Wiesz musimy zapewnic miastu wystarczajaca ilosc miesa. Choc ostatnio tak sie nam dobrze wiedzie, ze nawet sprzedajemy do innych miast lub podroznym.}
+{3010}{}{Moglbym pomoc przy transporcie.}
+{3020}{}{Wiesz jak sie sciaga skore z Brahmina.}
+{4000}{}{Ja sie tym nie zajmuje. Musisz pogadac z Jacobem. To on sie zajmuje karavanami. Znajdziesz go przy poludniowej bramie miasta w namiocie.}
+{4010}{}{EXIT}
+{5000}{}{Ale dziwne pytania zadajesz. Pewnie ze wiem wkoncu tu pracuje co nie. Powiem ci nawet, ze naucze cie za 100 capsli i pewna przysluge.}
+{5010}{}{Mianowicie ?}
+{6000}{}{Potrzebuje 10 mysich skor. Dokladniej moja zona. Nie chcesz wiedziec do czego. Przynies mi je i 100 capsli. I Cie naucze. }
+{6010}{}{Masz to jak w banku.(exit dialog)}
+{6020}{}{Wiesz musze spadac.}
+{6030}{}{Pogadajmy o czyms innym.}
+{6040}{}{Spadam z tad.}
+{7000}{}{Pamietasz nasza umowe, jeszcze 100 capsli do tego. Pozatym, chialo ci sie latac za tymi gigantycznymi myszami.}
+{7010}{}{Poprostu chce wiedziec jak sciagac skore z brahmina. (daj 10 skor i 100 kapli)}
+{7020}{}{Kurde zapomnialem o kasie. (exit)}
+{7030}{}{See you soon.}
+{8000}{}{Dobrze, naucze cie.}
+{8010}{}{EXIT}
+
+[russ]
+{100}{}{Matt}
+{200}{}{You see man in white mantle stained with blood.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{Start quest done}
+{2000}{}{Hello wastelander, what is bringing you to my humble threshold?}
+{2010}{}{Answer me about this place.}
+{2020}{}{I would like to know how to obtain Brahmin skin? And you looks like good person which must know it. (70% speak)}
+{2030}{}{I need to go.}
+{2040}{}{Lets trade}
+{3000}{}{Not too much to say. Just normal slaughterhouse. Killing brahmins is my job here. You know, we must deliver needed quantity of meat to city.
+But, in these times we are doing well, so we are also selling it to other towns or person.}
+{3010}{}{Can I help with transport?}
+{3020}{}{Do you know how to obtain brahmins skin?}
+{4000}{}{Its not my job. You must talk with Jacob. He is interested in caravans. You can find him in tent at south section of town.}
+{4010}{}{EXIT}
+{5000}{}{Your questions are so strange. Of course I know, I am working here. I can teach you, but you must give me 100 caps and help me.}
+{5010}{}{With?}
+{6000}{}{You need 10 mouse skins.Exactly my wife do. You don't want to know for what. Just bring it to me with 100 caps and I'll teach you.}
+{6010}{}{Deal.(exit dialog)}
+{6020}{}{I need to go.}
+{6030}{}{Lets talk about something other.}
+{6040}{}{I am leaving.}
+{7000}{}{Do you remember our deal? I told you 10 mouse skins+100 caps. By the way, did you enjoyed farming those mouse skins?}
+{7010}{}{I just want to know how to obtain skins from Brahmins.(give 10 skins and 100 caps)}
+{7020}{}{Shit, I forgot about money.(exit)}
+{7030}{}{See you soon.}
+{8000}{}{Well, i teach you}
+{8010}{}{EXIT (perk give)}
+

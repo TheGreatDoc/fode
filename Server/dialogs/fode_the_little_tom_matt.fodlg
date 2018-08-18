@@ -1,0 +1,142 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p quest_the_little_tom = 1 #
+2 1020 D _var p quest_the_little_tom = 2 #
+2 1030 D _var p quest_the_little_tom = 0 #
+9 1040 D _var p quest_the_little_tom = 3 @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+5 2030 @
+3 3000 None 1 #
+4 3010 #
+5 3020 @
+4 4000 None 1 #
+6 4010 R _var p quest_the_little_tom = 3 @
+5 5000 None 1 #
+7 5010 @
+6 6000 None 1 #
+7 6010 @
+7 7000 None 1 #
+8 7010 @
+8 8000 None 1 #
+0 8010 @
+9 9000 None 1 #
+10 9010 R _var p quest_the_little_tom = 4 R _script quest_server_scripts@the_little_tom_1_to_4 0  #
+11 9020 #
+0 9030 @
+10 10000 None 1 #
+0 10010 @
+11 11000 None 1 #
+10 11010 R _var p quest_the_little_tom = 4 R _script quest_server_scripts@the_little_tom_1_to_4 0  #
+65507 11020 R _var p quest_the_little_tom = 5 R _script quest_server_scripts@the_little_tom_1_to_5 0  &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{first talk}
+{1030}{}{first talk}
+{1040}{}{second talk}
+{2000}{}{Aah, a new face. I am Matt, leader of this small group. Who do I have the honor with?}
+{2010}{}{My name is @lexen name@, and I'd like to know something about what happened a couple of weeks ago. I heard you have a small children here. Can you tell me something about it?}
+{2020}{}{You are raiders who came to Old Vilage and kidnapped a small kid named Tom. Admit it.}
+{2030}{}{I am @lexem name@.}
+{3000}{}{My boy. He is everything I have in this world, besides my friends here. You see, one day my wife took him and left me. I didn't understand and I wanted to die. But I've found some friends, and they build up my hope again, and I theirs. Then, we made this gang, and now we're up to build everyone of ours life again. So, we've rescued him, finally. Why do you ask?}
+{3010}{}{Belive it or not, a woman told me that you guys are raiders and kidnapped her son, and I should bring him back.}
+{3020}{}{Just asking.}
+{4000}{}{We? Kidnappers? Raiding? Never! We are peacemakers. It is my son, and I cannot leave him with this crazy woman alone.}
+{4010}{}{I need to think about this.}
+{5000}{}{So, @lexem name@, what do you want?}
+{5010}{}{I've been told to bring the kid back to his mother.}
+{6000}{}{Then do so.}
+{6010}{}{Altought I've been told to bring the kid back to his mother.}
+{7000}{}{You won't.}
+{7010}{}{Why?}
+{8000}{}{Here it's safe for him.}
+{8010}{}{I will think about it.}
+{9000}{}{So, @lexem name@, have you made up your mind?}
+{9010}{}{Yes, you are right. It is the best for the boy to stay here. I wish you good luck in the future, Matt.}
+{9020}{}{Yes, you are wrong. I will bring the boy back to his mother. You guys obviously aren't good for the boy.}
+{9030}{}{Not yet.}
+{10000}{}{Thank you certainly. I was worried that you would not understand and try to kidnap him. But you understood, and I am very glad. We don't have anything left what we could give you, but I really thank you.}
+{10010}{}{I am glad to help. Goodbye.}
+{11000}{}{I see... I can't let you do that. If you really think this way, we need to fight. Rather I will be a good and dead father, than a bad living father.}
+{11010}{}{Hmmm... It seems like you really want the best for him. I take back what I said, you definitely are right.}
+{11020}{}{Well then. Bring it on.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{first talk}
+{1030}{}{first talk}
+{1040}{}{second talk}
+{2000}{}{A, nowa twarz. Jestem Matt. Z kim mam do czynienia?}
+{2010}{}{Nazywam się @lexen name@, chciałbym dowiedzieć sie trochę o przeszłości. Słyszałem, że masz dziecko. Możesz mi trochę o nim powiedzieć?}
+{2020}{}{Jesteście najeźdźcami którzy porwali Tom'a, czyż nie?}
+{2030}{}{Jestem @lexem name@.}
+{3000}{}{Mój chłopiec. Jedyna osobą którą mam, oprócz przyjaciół. Pewnego dnia żona wzięła go i uciekła. Nie rozumiałem tego. Chciałem popełnić samobójstwo. Lecz znalazłem przyjaciół, którzy pomogli mi się pozbierać. Potem zrobiliśmy ten właśnie gang. I.. znaleźliśmy go. Dlaczego pytasz?}
+{3010}{}{Wierzcie mi lub nie, matka powiedziała mi, że jesteście bandą porywaczy. Przyszedłem po jej syna.}
+{3020}{}{Tak tylko pytam.}
+{4000}{}{My? Porywacze? NIGDY. To jest mój syn, nie zostawie go z tą wariatką.}
+{4010}{}{Muszę pomyśleć.}
+{5000}{}{Więc, @lexem name@, o co chodzi?}
+{5010}{}{Mówiłem, że zabiorę dziecko i oddam je matce.}
+{6000}{}{Więc zrób to.}
+{6010}{}{Powiedziałem że oddam dziecko matce.}
+{7000}{}{Nie zrobisz tego.}
+{7010}{}{Dlaczego?}
+{8000}{}{Tutaj jest jego "bezpieczna przystań".}
+{8010}{}{Pomyślę nad tym.}
+{9000}{}{Więc, @lexem name@, jak tam twoje myśli?}
+{9010}{}{Masz racje. Lepiej, żeby został z Tobą. Powodzenia, Matt.}
+{9020}{}{Dziecko zostanie z matką. Atmosfera, którą tworzycie nie jest dobra dla dziecka.}
+{9030}{}{Jeszcze nie.}
+{10000}{}{Dziekuję. Obawiałem się, że będziesz na tyle głupi, że porwiesz mojego syna. Lecz zrozumiałeś. Jesteśmy ci bardzo wdzięczni. Niestety, nie mamy nic, co moglibysmy ci dać.}
+{10010}{}{Cieszę się, że mogłem pomóc}
+{11000}{}{Widzisz... nie mogę na to pozwolić. Jeśli chcesz go zabrać, będziemy walczyć. Wolę być dobrym ojcem ginąc za syna, niż żyć jako zły ojciec..}
+{11010}{}{Hmmm... wygląda na to, że chcesz wszystkiego, co najlepsza dla syna. Zmieniam zdanie, syn zostaje u Ciebie.}
+{11020}{}{Zatańczmy.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{first talk}
+{1030}{}{first talk}
+{1040}{}{second talk}
+{2000}{}{Aah, a new face. I am Matt, leader of this small group. Who do I have the honor with?}
+{2010}{}{My name is @lexem name@, and I'd like to know something about what happened a couple of weeks ago. I heard you have a small children here. Can you tell me something about it?}
+{2020}{}{You are raiders who came to Old Vilage and kidnapped a small kid named Tom. Admit it.}
+{2030}{}{I am @lexem name@.}
+{3000}{}{My boy. He is everything I have in this world, besides my friends here. You see, one day my wife took him and left me. I didn't understand and I wanted to die. But I've found some friends, and they build up my hope again, and I theirs. Then, we made this gang, and now we're up to build everyone of ours life again. So, we've rescued him, finally. Why do you ask?}
+{3010}{}{Belive it or not, a woman told me that you guys are raiders and kidnapped her son, and I should bring him back.}
+{3020}{}{Just asking.}
+{4000}{}{We? Kidnappers? Raiding? Never! We are peacemakers. It is my son, and I cannot leave him with this crazy woman alone.}
+{4010}{}{I need to think about this.}
+{5000}{}{So, @lexem name@, what do you want?}
+{5010}{}{Altought I've been told to bring the kid back to his mother.}
+{6000}{}{Then do so.}
+{6010}{}{Altought I've been told to bring the kid back to his mother.}
+{7000}{}{You won't.}
+{7010}{}{Why?}
+{8000}{}{Here it's safe for him.}
+{8010}{}{I will think about it.}
+{9000}{}{So, @lexem name@, have you made up your mind?}
+{9010}{}{Yes, you are right. It is the best for the boy to stay here. I wish you good luck in the future, Matt.}
+{9020}{}{Yes, you are wrong. I will bring the boy back to his mother. You guys obviously aren't good for the boy.}
+{9030}{}{Not yet.}
+{10000}{}{Thank you certainly. I was worried that you would not understand and try to kidnap him. But you understood, and I am very glad. We don't have anything left what we could give you, but I really thank you.}
+{10010}{}{I am glad to help. Goodbye.}
+{11000}{}{I see... I can't let you do that. If you really think this way, we need to fight. Rather I will be a good and dead father, than a bad living father.}
+{11010}{}{Hmmm... It seems like you really want the best for him. I take back what I said, you definitely are right.}
+{11020}{}{Well then. Bring it on.}
+

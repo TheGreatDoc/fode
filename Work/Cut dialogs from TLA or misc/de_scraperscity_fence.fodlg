@@ -1,0 +1,41 @@
+[comment]
+
+
+[data]
+lang=pols
+
+[dialog]
+&
+1 1000 None 1 #
+3 1010 #
+3 1020 @
+2 2000 None 1 #
+4 2010 #
+3 2020 #
+0 2030 @
+3 3000 None 1 #
+0 3010 #
+4 3020 @
+4 4000 None 1 #
+0 4010 #
+0 4020 @
+5 5000 None 1 &
+
+[pols]
+{100}{}{Fense}
+{1000}{}{Predialogue installations}
+{1010}{}{Answer text}
+{1020}{}{Answer text}
+{2000}{}{Co sprowadza cie do mnie?}
+{2010}{}{Wpadlem do ciebie po ammo.}
+{2020}{}{Przyslal mnie Adi. Podobno mozesz zalatwic kazda ilosc i rodzaj amunicji?}
+{2030}{}{Nic...@@Sory nie ten pokoj...@@Pomylka.}
+{3000}{}{Niech ten stary pierdola nie wygaduje takich bredni. Skonczyly sie czasy zalatwiania od reki wszystkiego na juz. Jest kryzys i coraz trudniej o ammo. Na chwile obecna moge jedynie zalatwic cos z: 5mm JHP, 10mm, .223FMJ(5,56 × 45 mm), 7.62x51mm, 7.62x39mm, Paliwo do miotacza i Rakiety.
+Wiec jak... jestes zainteresowany?}
+{3010}{}{Nie tym razem.@@Tak, ale chwilowo nie mam kasy.}
+{3020}{}{Tak...}
+{4000}{}{No to czego ci trzeba? Tylko odrazu mowie, nie bawie sie w detal. Sprzedaje w paczkach po 50 szt i albo bierzesz albo spierdalasz... cena za paczke 1000 kapsli.}
+{4010}{}{Chyba cie pojebalo!@@Wole czekac 2 tygodnie w kolejce po amunicje niz placic ci 3x tyle!}
+{4020}{}{Chwilowo nie mam kasy.@Cholera... Zapomnialem kase z pokoju.}
+{5000}{}{I pamietaj... nie znamy sie.}
+

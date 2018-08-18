@@ -1,0 +1,2 @@
+{100}{}{Du hast den Bunker der Bunkerstadt betreten.}
+

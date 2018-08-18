@@ -1,0 +1,95 @@
+[comment]
+
+
+[data]
+lang=pols engl
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _param p ST_AGE { 15 #
+3 1020 D _param p ST_AGE > 15 @
+2 2000 None 0 @
+3 3000 None 0 #
+65507 3010 #
+65506 3020 #
+4 3030 #
+0 3040 @
+4 4000 None 0 #
+65507 4010 #
+65506 4020 #
+5 4030 #
+6 4040 #
+0 4050 @
+5 5000 None 0 #
+65507 5010 #
+3 5020 #
+0 5030 @
+6 6000 None 0 #
+65506 6010 #
+7 6020 @
+7 7000 None 0 #
+0 7010 &
+
+[pols]
+{100}{}{Marek}
+{200}{}{Marek}
+{210}{}{Starzec. Widac ze duzo pil.}
+{220}{}{Marek}
+{230}{}{Lezy jak najebany}
+{240}{}{Marek}
+{250}{}{Martwy.}
+{260}{}{Marek}
+{270}{}{Obrzydliwy widok.}
+{1000}{}{Predialogue installations}
+{1010}{}{Za mlody}
+{1020}{}{W porzatku spoko.}
+{2000}{}{Bezyna nie jest dla malych dzieci.}
+{3000}{}{Witam O co chodzi ?}
+{3010}{}{Rozopierdole ta bude}
+{3020}{}{Pohandlujmy}
+{3030}{}{Mam sprawe ...}
+{3040}{}{Spadam z tad.}
+{4000}{}{Sluchaj czlowieku! Bezyna, albo cos konkretnego jak nie to wyjazd. Tu sie pracuje}
+{4010}{}{Podskakujesz}
+{4020}{}{Bezyne}
+{4030}{}{Nie da rady cos taniej}
+{4040}{}{Szukam pracy}
+{4050}{}{Spieprzam z tad}
+{5000}{}{To jest opodatkowany interes. Bierzesz albo spierdalaj. Zawsze sie trafi jakis balwan, co kurwa chce taniej. Wiecznie cos. Musze rzucic ta robote.}
+{5010}{}{Zajebie cie}
+{5020}{}{Dobra Dobra Uspokuj Sie}
+{5030}{}{Spieprzam z tad}
+{6000}{}{TO JEST !!! Stacja Bezynowa. Tu sie sprzedaje. Rozumiesz, tu ja i ty mozemy cos sprzedac. Wiec albo handlujesz albo Wyjazd.}
+{6010}{}{Dobra pokaz co masz}
+{6020}{}{Spieprzam z tad}
+{7000}{}{To na chuj, marnowales czas}
+{7010}{}{Odjeb sie czlowieku}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Answer text}
+{1020}{}{W porzatku spoko.}
+{2000}{}{Bezyna nie jest dla malych dzieci.}
+{3000}{}{Witam O co chodzi ?}
+{3010}{}{Rozopierdole ta bude}
+{3020}{}{Pohandlujmy}
+{3030}{}{Sluchaj mam sprawe ...}
+{3040}{}{Spadam z tad.}
+{4000}{}{Sluchaj czlowieku! Bezyna, albo cos konkretnego jak nie to wyjazd. Tu sie pracuje}
+{4010}{}{Podskakujesz}
+{4020}{}{Pohandlujmy}
+{4030}{}{Nie da rady cos taniej}
+{4040}{}{Szukam pracy}
+{4050}{}{Spieprzam z tad}
+{5000}{}{To jest opodatkowany interes. Bierzesz albo spierdalaj. Zawsze sie trafi jakis balwan, co kurwa chce taniej. Wiecznie cos. Musze rzucic ta robote}
+{5010}{}{Zajebie cie}
+{5020}{}{Dobra Dobra Uspokuj Sie}
+{5030}{}{Spieprzam z tad}
+{6000}{}{TO JEST !!! Stacja Bezynowa. Tu sie sprzedaje. Rozumiesz, tu ja i ty mozemy cos sprzedac. Wiec albo handlujesz albo Wyjazd.}
+{6010}{}{Dobra pokaz co masz}
+{6020}{}{Spieprzam z tad}
+{7000}{}{To na chuj, marnowales czas}
+{7010}{}{Odjeb sie czlowieku}
+

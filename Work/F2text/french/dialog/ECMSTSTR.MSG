@@ -1,0 +1,2 @@
+{100}{}{Tu vois une personne étrangère à l'air serviable.}
+{101}{}{Tu vois une personne étrangère à l'air mystérieux.}

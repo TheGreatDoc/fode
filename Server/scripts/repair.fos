@@ -1,0 +1,734 @@
+// Author: cvet
+
+#include "_macros.fos"
+#include "_msgstr.fos"
+
+
+
+void DeteriorateItem(Critter& cr, Item& item, int deteriorationCount) // Export
+{
+	if(deteriorationCount<=0 || not item.IsDeteriorable() || FLAG(item.BrokenFlags,BI_ETERNAL) || FLAG(item.BrokenFlags,BI_BROKEN)) return;
+
+	item.Deterioration+=deteriorationCount;
+	if(item.Deterioration>=MAX_DETERIORATION)
+	{
+		item.Deterioration=MAX_DETERIORATION;
+		item.BrokenCount++;
+
+		int brokenLvl=Random(0,item.BrokenCount/(MAX_BROKENS/4));
+
+		if(item.BrokenCount>=MAX_BROKENS || brokenLvl>=3) SETFLAG(item.BrokenFlags,BI_NOTRESC);
+		else if(brokenLvl==2) SETFLAG(item.BrokenFlags,BI_HIGHBROKEN);
+		else if(brokenLvl==1) SETFLAG(item.BrokenFlags,BI_NORMBROKEN);
+		else SETFLAG(item.BrokenFlags,BI_LOWBROKEN);
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_WEAPON_BROKEN);
+	}
+
+	item.Update();
+}
+
+void SetDeterioration(Item& item, int deteriorationProcent) // Export
+{
+	if(not item.IsDeteriorable()) return;
+	UNSETFLAG(item.BrokenFlags,BI_BROKEN);
+	deteriorationProcent=CLAMP(deteriorationProcent,0,100);
+	item.Deterioration=MAX_DETERIORATION*deteriorationProcent/100;
+	item.BrokenCount=MAX_BROKENS*deteriorationProcent/100;
+	if(deteriorationProcent==100) SETFLAG(item.BrokenFlags,BI_BROKEN);
+	item.Update();
+}
+
+int GetDeteriorationProcent(Item& item) // Export
+{
+	if(not item.IsDeteriorable()) return 0;
+	if(FLAG(item.BrokenFlags,BI_BROKEN)) return 100;
+	int value=item.Deterioration*100/MAX_DETERIORATION;
+	return CLAMP(value,0,100);
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//	Desert Europe
+//
+
+bool TryRepairItem(Critter& cr, Item& item) // Export
+{
+	if(not item.IsDeteriorable()) return true;
+	if(item.GetProtoId()>4359 && item.GetProtoId()<4363)  
+	{
+		cr.Say(SAY_NETMSG,"Npc should help you repair this");
+		return true;
+	}
+	if(cr.Timeout[TO_BATTLE]>0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_TIMEOUT_BATTLE_WAIT);
+		return true;
+	}
+
+	if(cr.Timeout[TO_SK_REPAIR]>0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_SKILL_WEARINESS);
+		return true;
+	}
+
+	if(FLAG(item.BrokenFlags,BI_ETERNAL) || FLAG(item.BrokenFlags,BI_NOTRESC))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_NO_RESC);
+		return true;
+	}
+
+	
+	bool item_is_broken = FLAG(item.BrokenFlags,BI_BROKEN);
+	bool item_need_service = (item.Deterioration > 0)? true : false;
+	
+	//check if repair needed
+	if(!item_is_broken && !item_need_service)
+	{
+		cr.Say(SAY_NETMSG, "It don't need repair.");
+		return true;
+	}
+	
+	// bonus from tools
+	int repair = cr.Skill[SK_REPAIR];
+	uint8 mode = 0;
+	uint16 activePid = cr.GetSlotProto(SLOT_HAND1,mode).ProtoId;
+	bool no_tool_in_hand = false;
+	if(activePid == PID_MULTI_TOOL)
+		repair += 25;
+	else if(activePid == PID_SUPER_TOOL_KIT)
+		repair += 50;
+	else if(activePid == PID_SCREWDRIVER_CROSS1)
+		repair += 15;
+	else if(activePid == PID_SCREWDRIVER_FLAT1)
+		repair += 15;
+	else if(activePid == PID_ELECTRIC_METER)
+		repair += 20;
+	else if(item_is_broken)
+	{
+		cr.Say(SAY_NETMSG, "You need a tool to repair a broken item.");
+		return true;
+	}
+	else
+		no_tool_in_hand = true;
+	
+	//difficulty bonus and material needed when broken
+	uint16 pid = item.GetProtoId();
+	switch(pid)
+	{
+	/* Weapons */
+		//hand made weapon
+		case PID_ZIP_GUN_DE:
+			repair += 50;
+			break;
+			
+		//low-tech weapon
+		case PID_9MM_MAUSER_DE:
+		case PID_44_MAGNUM_REVOLVER_DE:
+		case PID_44_MAGNUM_SPEEDLOADER_DE:
+		case PID_SPRINGER_RIFLE_DE:
+		case PID_RED_RYDER_BB_GUN_DE:
+		case PID_RED_RYDER_LE_BB_GUN_DE:
+		case PID_JONNY_BB_GUN_DE:
+		case PID_SHOTGUN_DE:
+		case PID_COLT1911_DE:
+		case PID_M32_DE:
+		case PID_M32S_DE:
+		case PID_REM870_DE:
+		case PID_M16_DE:
+		case PID_M16S_DE:
+		case PID_COLT1_DE:
+		case PID_COLT1K1_DE:
+		case PID_COLT1K2_DE:
+		case PID_COLT2_DE:
+		case PID_COLT2K1_DE:
+		case PID_COLT2K2_DE:
+		case PID_COLT3_DE:
+		case PID_COLT3K1_DE:
+		case PID_COLT3K2_DE:
+		case PID_10MM_PISTOL_DE:
+		case PID_14MM_PISTOL_DE:
+		case PID_DESERT_EAGLE_DE:
+		case PID_DESERT_EAGLE_EXT_MAG_DE:
+		case PID_HUNTING_RIFLE_DE:
+		case PID_SCOPED_HUNTING_RIFLE_DE:
+		case PID_ELEPHANT_GUN_DE:
+		case PID_10MM_SMG_DE:
+		case PID_SAWED_OFF_SHOTGUN_DE:
+		case PID_MAUSER_SMG_DE:
+		case PID_FLAMER_DE:
+		case PID_FLAMERN_DE:
+		case PID_INDEPENDENT_DE:
+		case PID_MP5_DE:
+		case PID_ROCKET_LAUNCHER_DE:
+		case PID_NEEDLER_PISTOL_DE:
+			repair += 25;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_SCRAP) > 1) cr.DeleteItem(PID_SCRAP, 2);
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 0) cr.DeleteItem(PID_RUSTED_METAL_PARTS, 1);
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 0) cr.DeleteItem(PID_GOOD_METAL_PARTS, 1);
+				else { cr.Say(SAY_NETMSG, "You need some scrap or metal parts."); return true;}
+			}
+			break;
+			
+		//middle-tech weapon
+		case PID_223_PISTOL_DE:
+		case PID_ASSAULT_RIFLE_DE:
+		case PID_ASSAULT_RIFLE_EXT_MAG_DE:
+		case PID_ASSAULT_RIFLE_SCOPE_DE:
+		case PID_ASSAULT_RIFLE_EXT_MAG_SCOPE_DE:
+		case PID_TOMMY_GUN_DE:
+		case PID_GREASE_GUN_DE:
+		case PID_AK47_NORMAL1_DE:
+		case PID_AK47_TACTICAL1_DE:
+		case PID_AK47_SPECIAL_DE:
+		case PID_AK47_TACTICAL3_DE:
+		case PID_PANCOR_JACKHAMMER_DE:
+		case PID_COMBAT_SHOTGUN_DE:
+		case PID_HK_CAWS_DE:
+		case PID_IMPROVED_FLAMETHROWER_DE:
+		case PID_MINIGUN_DE:
+		case PID_M60_DE:
+		case PID_M240_DE:
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_SCRAP) > 2) cr.DeleteItem(PID_SCRAP, 3);
+				else if(cr.CountItem(PID_SCREWS) > 0 && cr.CountItem(PID_SCRAP) > 0)
+				{	cr.DeleteItem(PID_SCREWS, 1);
+					cr.DeleteItem(PID_SCRAP, 1);
+				}
+				else if(cr.CountItem(PID_SCREWS) > 1) cr.DeleteItem(PID_SCREWS, 2);
+				else if(cr.CountItem(PID_SCREWS) > 0 && cr.CountItem(PID_COMPENSATING_SPRING) > 0)
+				{	cr.DeleteItem(PID_SCREWS, 1);
+					cr.DeleteItem(PID_COMPENSATING_SPRING, 1);
+				}
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 2) cr.DeleteItem(PID_RUSTED_METAL_PARTS, 3);
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 1) cr.DeleteItem(PID_GOOD_METAL_PARTS, 2);
+				else { cr.Say(SAY_NETMSG, "You need some scrap, screws, srping or metal parts."); return true;}
+			}
+			break;
+			
+		//high-tech weapon
+		case PID_UKM_DE:
+		case PID_PKS_DE:
+		case PID_RADRIFLE_DE:
+		case PID_DAMRIFLE_DE:
+		case PID_RADPISTOL_DE:
+		case PID_DAMPISTOL_DE:
+		case PID_PK12_GAUSS_PISTOL_DE:
+		case PID_SNIPER_RIFLE_DE:
+		case PID_FN_FAL_DE:
+		case PID_FN_FAL_NIGHT_SCOPE_DE:
+		case PID_FN_FAL_HPFA_DE:
+		case PID_M72_GAUSS_RIFLE_DE:
+		case PID_DRAGUNOV1_DE:
+		case PID_DRAGUNOV2_DE:
+		case PID_HK_P90C_DE:
+		case PID_HK_G11_DE:
+		case PID_HK_G11E_DE:
+		case PID_AVENGER_MINIGUN_DE:
+		case PID_BOZAR_DE:
+		case PID_LIGHT_SUPPORT_WEAPON_DE:
+		case PID_VINDICATOR_MINIGUN_DE:
+			repair -= 50;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_SCREWS) > 2 && cr.CountItem(PID_SCRAP) > 3)
+				{	cr.DeleteItem(PID_SCREWS, 3);
+					cr.DeleteItem(PID_SCRAP, 4);
+				}
+				else if(cr.CountItem(PID_SCREWS) > 3) cr.DeleteItem(PID_SCREWS, 4);
+				else if(cr.CountItem(PID_SCREWS) > 2 && cr.CountItem(PID_COMPENSATING_SPRING) > 0)
+				{	cr.DeleteItem(PID_SCREWS, 3);
+					cr.DeleteItem(PID_COMPENSATING_SPRING, 1);
+				}
+				else if(cr.CountItem(PID_SCREWS) > 2 && cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 1)
+				{	cr.DeleteItem(PID_SCREWS, 3);
+					cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 2);
+				}
+				else if(cr.CountItem(PID_SCREWS) > 2 && cr.CountItem(PID_GOOD_METAL_PARTS) > 1)
+				{	cr.DeleteItem(PID_SCREWS, 3);
+					cr.DeleteItem(PID_GOOD_METAL_PARTS, 2);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some screws, scrap, srping or metal parts."); return true;}
+			}
+			if(no_tool_in_hand)
+			{
+				cr.Say(SAY_NETMSG, "You need a tool to repair this stuff.");
+				return true;
+			}
+			break;
+			
+		//low-energy weapon
+		case PID_LASER_PISTOL_DE:
+		case PID_MAGNETO_LASER_PISTOL_DE:
+		case PID_PHAZER_DE:
+		case PID_ROCKETRAD_DE:
+		case PID_ROCKETELE_DE:
+			repair += 25;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_FUSE) > 0) cr.DeleteItem(PID_FUSE, 1);
+				else if(cr.CountItem(PID_ELECTRONIC_PARTS) > 0) cr.DeleteItem(PID_ELECTRONIC_PARTS, 1);
+				else if(cr.CountItem(PID_SCRAP) > 2) cr.DeleteItem(PID_SCRAP, 3);
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 1) cr.DeleteItem(PID_RUSTED_METAL_PARTS, 2);
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 1) cr.DeleteItem(PID_GOOD_METAL_PARTS, 2);
+				else { cr.Say(SAY_NETMSG, "You need some electronic parts or a fuse."); return true;}
+			}
+			break;
+		
+		//middle-energy weapon
+		case PID_PLASMA_PISTOL_DE:
+		case PID_PLASMA_PISTOL_EXT_CART_DE:
+		case PID_LASER_RIFLE_DE:
+		case PID_LASER_RIFLE_EXT_CAP_DE:
+		case PID_PLASMA_RIFLE_DE:
+		case PID_TURBO_PLASMA_RIFLE_DE:
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_ELECTRONIC_PARTS) > 1) cr.DeleteItem(PID_ELECTRONIC_PARTS, 2);
+				else if(cr.CountItem(PID_FUSE) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 0)
+				{	cr.DeleteItem(PID_FUSE, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 1);
+				}
+				else if(cr.CountItem(PID_SCRAP) > 1 && cr.CountItem(PID_ELECTRONIC_PARTS) > 0)
+				{	cr.DeleteItem(PID_SCRAP, 2);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 1);
+				}
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 0)
+				{	cr.DeleteItem(PID_RUSTED_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 1);
+				}
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 0)
+				{	cr.DeleteItem(PID_GOOD_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 1);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some electronic parts."); return true;}
+			}
+			break;
+		
+		//high-energy weapon
+		case PID_YK32_PULSE_PISTOL_DE:
+		case PID_YK42B_PULSE_RIFLE_DE:
+		case PID_GATLING_LASER_DE:
+			repair -= 50;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_ELECTRONIC_PARTS) > 3) cr.DeleteItem(PID_ELECTRONIC_PARTS, 4);
+				else if(cr.CountItem(PID_FUSE) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_FUSE, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else if(cr.CountItem(PID_SCRAP) > 1 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_SCRAP, 2);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_GOOD_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else { cr.Say(SAY_NETMSG, "You need electronic parts."); return true;}
+			}
+			if(no_tool_in_hand)
+			{
+				cr.Say(SAY_NETMSG, "You need a tool to repair this stuff.");
+				return true;
+			}
+			break;
+		
+		//unknow technology
+		case PID_ALIEN_LASER_PISTOL_DE:
+		case PID_SOLAR_SCORCHER_DE:
+			repair -= 100;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_ELECTRONIC_PARTS) > 5) cr.DeleteItem(PID_ELECTRONIC_PARTS, 6);
+				else if(cr.CountItem(PID_FUSE) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 4)
+				{	cr.DeleteItem(PID_FUSE, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 5);
+				}
+				else if(cr.CountItem(PID_FUSE) > 1 && cr.CountItem(PID_ELECTRONIC_PARTS) > 3)
+				{	cr.DeleteItem(PID_FUSE, 2);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 4);
+				}
+				else if(cr.CountItem(PID_SCRAP) > 3 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_SCRAP, 4);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 0 && cr.CountItem(PID_ELECTRONIC_PARTS) > 2)
+				{	cr.DeleteItem(PID_GOOD_METAL_PARTS, 1);
+					cr.DeleteItem(PID_ELECTRONIC_PARTS, 3);
+				}
+				else { cr.Say(SAY_NETMSG, "You need electronic parts."); return true;}
+			}
+			if(no_tool_in_hand)
+			{
+				cr.Say(SAY_NETMSG, "You need a tool to repair this stuff.");
+				return true;
+			}
+			break;
+			
+	/* Armors */
+		//low textile/leather
+		case PID_LEATHER_JACKET_DE:
+		case PID_LEATHER_ARMOR_DE:
+		case PID_LEATHER_ARMOR_MK_II_DE:
+		case PID_CURED_LEATHER_ARMOR_DE:
+		case PID_PURPLE_ROBE_DE:
+		case PID_KEEPBRIGE_ROBE_DE:
+		case PID_NAVY_ROBE_DE:
+		case PID_JUMPSUIT_DE:
+		case PID_FAKE_JUMPSUIT_DE:
+		case PID_JUMPSUIT_B_DE :
+		case PID_ROBE_2_DE :
+		case PID_ROBE_3_DE :
+		case PID_JUMPSUIT_R1_DE :
+		case PID_ROBE_D_DE :
+		case PID_LEATHER_GECKO_DE :
+		case PID_JUMPSUIT_BR_DE :
+		case PID_JUMPSUIT_G_DE :
+		case PID_JUMPSUIT_R2_DE :
+		case PID_JUMPSUIT_B2_DE :
+		case PID_JUMPSUIT_R3_DE :
+		case PID_JUMPSUIT_D_DE :
+		case PID_COAT_DE:
+			repair += 40;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_BRAHMIN_LEATHER) > 0) cr.DeleteItem(PID_BRAHMIN_LEATHER, 1);
+				else if(cr.CountItem(PID_GECKO_LEATHER) > 0) cr.DeleteItem(PID_GECKO_LEATHER, 1);
+				else if(cr.CountItem(PID_GOLDEN_GECKO_SKIN) > 0) cr.DeleteItem(PID_GOLDEN_GECKO_SKIN, 1);
+				else if(cr.CountItem(PID_FIRE_GECKO_LEATHER) > 0) cr.DeleteItem(PID_FIRE_GECKO_LEATHER, 1);
+				else { cr.Say(SAY_NETMSG, "You need a hide."); return true;}
+			}
+			break;
+			
+		//low metalic
+		case PID_METAL_ARMOR_DE:
+		case PID_METAL_ARMOR_MK_II_DE:
+			repair += 25;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_SCREWS) > 2) cr.DeleteItem(PID_SCREWS, 3);
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 0) cr.DeleteItem(PID_RUSTED_METAL_PARTS, 1);
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 0) cr.DeleteItem(PID_GOOD_METAL_PARTS, 1);
+				else if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 0) cr.DeleteItem(PID_RUSTED_METAL_PARTS, 1);
+				else if(cr.CountItem(PID_RARE_METAL_PARTS) > 0) cr.DeleteItem(PID_RARE_METAL_PARTS, 1);
+				else { cr.Say(SAY_NETMSG, "You need some screw or metal parts."); return true;}
+			}
+			break;
+		
+		//high metalic
+		case PID_TESLA_ARMOR_DE:
+			repair -= 10;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_SCREWS) > 3) cr.DeleteItem(PID_SCREWS, 4);
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_RUSTED_METAL_PARTS, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_GOOD_METAL_PARTS) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_GOOD_METAL_PARTS, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else if(cr.CountItem(PID_RARE_METAL_PARTS) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_RARE_METAL_PARTS, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some screw and metal parts."); return true;}
+			}
+			break;
+		
+		//low special
+		case PID_ENVIRONMENTAL_DE :
+			repair += 10;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_BRAHMIN_LEATHER) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_BRAHMIN_LEATHER, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else if(cr.CountItem(PID_GECKO_LEATHER) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_GECKO_LEATHER, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else if(cr.CountItem(PID_GOLDEN_GECKO_SKIN) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_GOLDEN_GECKO_SKIN, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else if(cr.CountItem(PID_FIRE_GECKO_LEATHER) > 0 && cr.CountItem(PID_SCREWS) > 0)
+				{	cr.DeleteItem(PID_FIRE_GECKO_LEATHER, 1);
+					cr.DeleteItem(PID_SCREWS, 1);
+				}
+				else { cr.Say(SAY_NETMSG, "You need a hide and screws."); return true;}
+			}
+			break;
+
+		//middle
+		case PID_CA_1:
+		case PID_CA_2:
+		case PID_CA_3:
+		case PID_CA_4:
+		case PID_CA_5:
+		case PID_CA_6:
+		case PID_CA_7:
+		case PID_CA_8:
+		case PID_CA_9:
+		case PID_CA_10:
+		case PID_CAMKII_1:
+		case PID_CAMKII_2:
+		case PID_CAMKII_3:
+		case PID_CAMKII_4:
+		case PID_CAMKII_5:
+		case PID_CAMKII_6:
+		case PID_CAMKII_7:
+		case PID_CAMKII_8:
+		case PID_CAMKII_9:
+		case PID_CAMKII_10:
+		case PID_THERMAL_CA:
+		case PID_REACTIV_CA:
+		case PID_NEC_CA:
+		case PID_ULS_CA:
+			repair -= 20;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_BRAHMIN_LEATHER) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_BRAHMIN_LEATHER, 1);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_GECKO_LEATHER) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_GECKO_LEATHER, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_GOLDEN_GECKO_SKIN) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_GOLDEN_GECKO_SKIN, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_FIRE_GECKO_LEATHER) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_FIRE_GECKO_LEATHER, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_RUSTED_METAL_PARTS) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_RUSTED_METAL_PARTS, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else if(cr.CountItem(PID_RARE_METAL_PARTS) > 1 && cr.CountItem(PID_SCREWS) > 1)
+				{	cr.DeleteItem(PID_RARE_METAL_PARTS, 2);
+					cr.DeleteItem(PID_SCREWS, 2);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some screws with hides or metal parts."); return true;}
+			}
+			break;
+		
+		//high
+		case PID_PA:
+		case PID_PAMKII:
+		case PID_APA:
+		case PID_FT_ENCLAV_DE:
+		case PID_FT_COMBAT_DE:
+		case PID_FT_PA_DE:
+			repair -= 50;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 2 && cr.CountItem(PID_SCREWS) > 2)
+				{	cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 3);
+					cr.DeleteItem(PID_SCREWS, 3);
+				}
+				else if(cr.CountItem(PID_RARE_METAL_PARTS) > 2 && cr.CountItem(PID_SCREWS) > 2)
+				{	cr.DeleteItem(PID_RARE_METAL_PARTS, 3);
+					cr.DeleteItem(PID_SCREWS, 3);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some screws and metal parts."); return true;}
+			}
+			if(no_tool_in_hand)
+			{
+				cr.Say(SAY_NETMSG, "You need a tool to repair this stuff.");
+				return true;
+			}
+			break;
+			
+		//high special
+		case PID_MECHSUITG1:
+		case PID_MECHSUITG2:
+		case PID_MECHSUITB1:
+		case PID_MECHSUITB2:
+		case PID_MECHSUITD1:
+		case PID_FT_FRANK_DE:
+			repair -= 100;
+			if(item_is_broken)
+			{
+				if(cr.CountItem(PID_HIGHT_QUALITY_METAL_PARTS) > 2 && cr.CountItem(PID_SCREWS) > 3)
+				{	cr.DeleteItem(PID_HIGHT_QUALITY_METAL_PARTS, 3);
+					cr.DeleteItem(PID_SCREWS, 4);
+				}
+				else if(cr.CountItem(PID_RARE_METAL_PARTS) > 2 && cr.CountItem(PID_SCREWS) > 3)
+				{	cr.DeleteItem(PID_RARE_METAL_PARTS, 3);
+					cr.DeleteItem(PID_SCREWS, 4);
+				}
+				else { cr.Say(SAY_NETMSG, "You need some screws and metal parts."); return true;}
+			}
+			if(no_tool_in_hand)
+			{
+				cr.Say(SAY_NETMSG, "You need a tool to repair this stuff.");
+				return true;
+			}
+			break;
+		
+		default: 
+			cr.Say(SAY_NETMSG, "Error : item not found. Report it to dev team.");
+			return true;
+	}
+	
+	// Repair, checks broken count for the penalty
+	if(FLAG(item.BrokenFlags,BI_BROKEN))
+	{
+		if(FLAG(item.BrokenFlags,BI_HIGHBROKEN)) repair-=100;
+		else if(FLAG(item.BrokenFlags,BI_NORMBROKEN)) repair-=75;
+		else if(FLAG(item.BrokenFlags,BI_LOWBROKEN)) repair-=25;
+
+		repair-=item.BrokenCount*50/MAX_BROKENS;
+		repair=CLAMP(repair,6,98);
+
+		if(repair>=Random(1,100))
+		{
+			item.Deterioration=0;
+			UNSETFLAG(item.BrokenFlags,BI_BROKEN);
+			cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_REPAIR_SUCC);
+			cr.StatBase[ST_EXPERIENCE]+=10 * item.BrokenCount + (100 - repair);
+		}
+		else
+		{
+			item.BrokenCount++;
+			if(item.BrokenCount>=MAX_BROKENS) SETFLAG(item.BrokenFlags,BI_NOTRESC);
+			cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_REPAIR_FAIL);
+		}
+	}
+	// Service
+	else
+	{
+		if(FLAG(item.BrokenFlags,BI_SERVICE)) repair-=25;
+		repair-=item.BrokenCount*50/MAX_BROKENS;
+		repair=CLAMP(repair,6,98);
+
+		if(repair>=Random(1,100))
+		{
+			SETFLAG(item.BrokenFlags,BI_SERVICE);
+			int cnt=repair*MAX_DETERIORATION/100;
+			if(cnt>item.Deterioration) item.Deterioration=0;
+			else item.Deterioration-=cnt;
+			
+			cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_SERVICE_SUCC);
+			cr.StatBase[ST_EXPERIENCE]+=20;
+		}
+		else
+		{
+			if(cr.StatBase[ST_LUCK] >= Random(1,10))
+			{
+				DeteriorateItem(cr,item,MAX_DETERIORATION/20);//low fail
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_SERVICE_FAIL);
+			}
+			else
+			{
+				DeteriorateItem(cr,item,MAX_DETERIORATION/5);//high fail
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_DETERIORATION_SERVICE_FAIL);
+			}
+		}
+	}
+
+	item.Update();
+	cr.TimeoutBase[TO_SK_REPAIR]=REPAIR_TIMEOUT(cr);
+	return true;
+}
+
+
+//naprawa PA u NPC
+#define KOSZT_JEDNOSTKOWY (500)
+#define FD_NO_MONEY_FOR_REPAIR (100)
+#define FD_SUCCESS_REPAIR	(22)
+
+uint dlg_r_repair_pa(Critter& cr, Critter@ npc)
+{
+	Item@[] items;
+	if(cr.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			if(items[i].GetProtoId()>4359 && items[i].GetProtoId()<4363)
+			{	
+				uint procent=GetDeteriorationProcent(items[i]);
+				uint cost=procent*KOSZT_JEDNOSTKOWY;
+				if(cost>0)
+				{
+					if(cr.CountItem(PID_BOTTLE_CAPS)>=cost) 
+					{	
+						cr.DeleteItem(PID_BOTTLE_CAPS,cost);
+						SetDeterioration(items[i],0);
+						//cr.RunClientScript("_FlushScreen",int(0x00000000),0,int(10000),null,null);
+						cr.PlaySound("TANKS.ACM",true);
+						cr.PlaySound("FIXSTILL.ACM",true);
+					}
+					else return FD_NO_MONEY_FOR_REPAIR;
+				}
+				
+			}
+		}
+	}
+	return FD_SUCCESS_REPAIR;
+}
+
+// dialog dla wyњwietlenia ceny naprawy
+void dlg_PriceRepair( Critter& cr, Critter@ npc, string@ lexems )
+{
+	uint cost=0;
+    Item@[] items;
+	if(cr.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			if(items[i].GetProtoId()>4359 && items[i].GetProtoId()<4363)
+			{	
+				uint procent=GetDeteriorationProcent(items[i]);
+				cost+=procent*KOSZT_JEDNOSTKOWY;				
+			}
+		}
+	}
+	if(not IS_DIALOG_GENERATED(lexems))
+        return;
+
+    lexems += "$price" +cost;
+	
+}
+
+
+// sprawdzenie czy potrzebna naprawa, moїna wykorzystaж do wyњwietlenia dialogu jeїeli potrzebna
+bool dlg_d_PrepareRepair(Critter& cr, Critter@ npc)
+{
+	bool needrepair=false;
+    Item@[] items;
+	if(cr.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			if(items[i].GetProtoId()>4359 && items[i].GetProtoId()<4363)
+			{	
+				if(GetDeteriorationProcent(items[i])>0) needrepair=true;				
+			}
+		}
+	}
+	return needrepair;
+}

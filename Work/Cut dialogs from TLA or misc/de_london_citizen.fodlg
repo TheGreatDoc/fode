@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Obywatel Londynu}
+{210}{}{Widzisz obywatela Londynu.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?}
+
+[engl]
+{100}{}{Commonwealth citizen}
+{210}{}{You see a London commoner.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Anarchy in the NEC!@@I have better things to do.@@Wicked!@@How's it going?@@Bollocks!@@I don't know what's the time, and I don't have any time.@@Really?@@There is no better place to live, they said... Wankers.@@I heard things are bad beyond the ol' Blighty.@@No time to talk right now.@@Well?@@Ever been to Bearline?@@What's that waffle all about?@@Living here is good... most of the time.@@People tell stories of REF spies skulking the sewers.@@I need some shaggin'.@@I keep meeting dodgy blokes lately...@@Margaret who?@@They say Dark Waters has been raided recently.@@Who's Albert?@@Hey there, have a smoke?@@Spare some change, mister?@@Where's the loo, I'm gonna shit my knickers!@@Got a light?@@Hey, you! Oh, it's not you I'm looking for.@@"London calling, to the faraway towns"...@@What's a tea?@@Can't stand those wankers.@@Can't sleep because of those fockin' fleas.@@What a tosser!@@Take care when going underground, chap.@@There no safer place than London these days.@@The walls keep us safe from the outside world.@@I've seen that sod giving the head.@@Five o'clock already?@@All those soldiers make me nervous.@@I heard stories of underground cars that the ancients used.@@Wonder how does life beyond the walls look like.@@They'll squeeze us to death with those damn taxes.@@You look like you've seen too much.@@And how did you get here?@@Ever heard that folk song about God saving the queen?@@Watch your tongue, walls have ears.@@This city has seen better days.@@NEC? It's great to be a part of it, now, I've gotta go.@@Don't talk to me.@@Don't let the soldiers overhear us.@@Go bother someone else.@@You wanna talk about the weather?@@You want a favor? No way.@@Look at that bloke.@@Looking for me? Hope not.@@Do not talk with that no-brainer, Albert.@@I used to be an adventurer like you, but then I tokk a bullet to the knee.}
+
+[russ]
+{100}{}{Commonwealth citizen}
+{210}{}{You see a London commoner.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Anarchy in the NEC!@@I have better things to do.@@Wicked!@@How's it going?@@Bollocks!@@I don't know what's the time, and I don't have any time.@@Really?@@There is no better place to live, they said... Wankers.@@I heard things are bad beyond the ol' Blighty.@@No time to talk right now.@@Well?@@Ever been to Bearline?@@What's that waffle all about?@@Living here is good... most of the time.@@People tell stories of REF spies skulking the sewers.@@I need some shaggin'.@@I keep meeting dodgy blokes lately...@@Margaret who?@@They say Dark Waters has been raided recently.@@Who's Albert?@@Hey there, have a smoke?@@Spare some change, mister?@@Where's the loo, I'm gonna shit my knickers!@@Got a light?@@Hey, you! Oh, it's not you I'm looking for.@@"London calling, to the faraway towns"...@@What's a tea?@@Can't stand those wankers.@@Can't sleep because of those fockin' fleas.@@What a tosser!@@Take care when going underground, chap.@@There no safer place than London these days.@@The walls keep us safe from the outside world.@@I've seen that sod giving the head.@@Five o'clock already?@@All those soldiers make me nervous.@@I heard stories of underground cars that the ancients used.@@Wonder how does life beyond the walls look like.@@They'll squeeze us to death with those damn taxes.@@You look like you've seen too much.@@And how did you get here?@@Ever heard that folk song about God saving the queen?@@Watch your tongue, walls have ears.@@This city has seen better days.@@NEC? It's great to be a part of it, now, I've gotta go.@@Don't talk to me.@@Don't let the soldiers overhear us.@@Go bother someone else.@@You wanna talk about the weather?@@You want a favor? No way.@@Look at that bloke.@@Looking for me? Hope not.@@Do not talk with that no-brainer, Albert.@@I used to be an adventurer like you, but then I tokk a bullet to the knee.}

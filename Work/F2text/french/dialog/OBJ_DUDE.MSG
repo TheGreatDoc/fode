@@ -1,0 +1,28 @@
+#############################################################
+#  Message File: obj_dude.msg                               #
+#                                                           #
+#  Log:                                                     #
+#                                                           #
+#  Created: April 14, 1998                                  #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+#############################################################
+#  The following lines are for describing the NPC when      #
+#  glanced and and examined.                                #
+#############################################################
+{100}{}{}
+{101}{}{}
+
+#############################################################
+
+{110}{}{Tes pieds te démangent beaucoup.}
+{120}{}{Tu as un gros oignon vraiment pas beau à voir sur chaque pied.}
+{130}{}{Tes chaussures te serrent trop les pieds. Tes orteils sont très enflammés.}
+{140}{}{Ces oignons sur les pieds sont tellement gros qu'on dirait qu'il t'a poussé des orteils supplémentaires. Mais au moins, ça ne te
+ démange plus.}
+{141}{}{Oh, mon dieu, c'est Bess !}
+
+{150}{}{Tu gagnes }
+{151}{}{ points d'expérience pour avoir trouvé le J.E.K.}

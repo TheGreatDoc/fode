@@ -1,0 +1,90 @@
+# QUICK LOOK
+{100}{}{Tu vois un videur de casino.}
+
+# LOOK
+{150}{}{Tu vois un videur de casino. T-Ray s'est vraiment surpassé en réalisant ce modèle.}
+{151}{}{Tu vois un videur de casino. Il a l'air costaud. Et en colère.}
+{152}{}{Tu vois un videur de casino. Il te regarde d'un air méfiant.}
+{153}{}{Tu vois un videur de casino. Tu croyais que seuls les modèles mutants pouvaient être aussi gros.}
+
+# 1. FLOAT DIALOGUE: POWER ARMOR
+{200}{}{Euh... il va falloir enlever cette armure... En fait, non, c'est pas grave.}
+
+# 2. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO, SNEAK
+{206}{}{Euh, vous êtes ici incognito monsieur ?}
+
+# 3. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO, SNEAK
+{211}{}{Euh, vous êtes ici incognito madame ?}
+
+# 4. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO, NIGHT
+{216}{}{Bonsoir, monsieur.}
+
+# 5. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO, NIGHT
+{221}{}{Bonsoir, madame.}
+
+# 6. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO
+{225}{}{Bonne journée, monsieur.}
+
+# 7. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO
+{230}{}{Bonne journée, madame.}
+
+# 8. FLOAT DIALOGUE: MALE, MADE MAN, NOT SAME CASINO
+{236}{}{Tu ferais mieux de partir. Tout de suite.}
+
+# 9. FLOAT DIALOGUE: FEMALE, MADE MAN, NOT SAME CASINO
+{241}{}{Tu ferais mieux de partir. Tout de suite.}
+
+# 10. FLOAT DIALOGUE: MALE, PRIZEFIGHTER/PORN STAR (ARMED)
+{245}{}{Monsieur, je regrette mais vous allez devoir laisser cette arme en lieu sûr.}
+
+# 11. FLOAT DIALOGUE: FEMALE, PRIZEFIGHTER (ARMED)
+{250}{}{Madame, je regrette mais vous allez devoir laisser cette arme en lieu sûr.}
+
+# 12. FLOAT DIALOGUE: PORN STAR, FEMALE (ARMED)
+{255}{}{Je regrette, mon chou, tu ne peux pas entrer avec une arme dans le casino. Hé, hé... t'as pas besoin de ça.}
+
+# 13. FLOAT DIALOGUE: PORN STAR, FEMALE (SNEAK)
+{260}{}{Avec un corps pareil, tu vas avoir du mal à te faufiler mon chou.}
+
+# 14. FLOAT DIALOGUE: MALE, NO REP (ARMED)
+{265}{}{Tribale, tu ferais mieux de laisser cette arme en lieu sûr. TOUT DE SUITE !}
+
+# 15. FLOAT DIALOGUE: MALE, NO REP (SNEAK)
+{270}{}{Tribale, tu ferais mieux d'arrêter ton petit manège à la noix. TOUT DE SUITE !}
+
+# 16. MYRON, MORDINO
+{275}{}{[A Myron] Hé, hé... Myron ! Ca fait un moment que je ne t'ai pas vu en dehors du labo.}
+
+# 17. MARCUS
+{282}{}{Ce mutant dégénéré n'a pas le droit d'être ici.}
+
+# 18. ROBOBRAIN
+{287}{}{Les droïdes, ils restent dehors.}
+
+# 19. CLICK DIALOGUES: MADE MAN, SAME CASINO
+{290}{}{Bienvenue au casino, monsieur.}
+{291}{}{Aucun problème aujourd'hui, madame.}
+
+# 21. CLICK DIALOGUE: MALE, PRIZEFIGHTER/PORN STAR
+{310}{}{Bienvenue au casino, monsieur.}
+
+# 22. CLICK DIALOGUE: FEMALE, PRIZEFIGHTER
+{315}{}{Bienvenue au casino, madame.}
+
+# 24. CLICK DIALOGUE: FEMALE, PORN STAR
+{322}{}{Tu as l'air mortel mon chou.}
+
+# 25. CLICK DIALOGUE: MALE, NO REP
+{330}{}{Le casino est à l'intérieur. Ne me parle pas.}
+
+# 26. CLICK DIALOGUE: FEMALE, NO REP (CUTE/UGLY)
+{337}{}{Je ne cherche pas les tribales pour l'instant. Compris.}
+
+# 28. FLOAT DIALOGUE: FLAG: ENCLAVE DESTROYED IS TRUE
+{345}{}{J'ai pas le droit de discuter en service, mais je dois dire que ça me fait plaisir que tu aies réglé leur compte à l'Enclave.}
+
+# 29. CLICK DIALOGUE: FLAG: ENCLAVE DESTROYED IS TRUE
+{350}{}{Dis donc, tu en as pour avoir éjecté l'Enclave comme ça !}
+
+# 30. FLOAT/CLICK DIALOGUE: LENNY
+{360}{}{Si ce goule mets les pieds ici, il va mourir une deuxième fois !}

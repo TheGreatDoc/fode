@@ -1,0 +1,28 @@
+# 0. LOOK
+{150}{}{Du siehst einen verschmierten Mechaniker.}
+{151}{}{Du siehst einen der Chop Shop Boys.}
+{152}{}{Du siehst einen zwielichtig aussehenden Mechaniker. Du kannst sein Gesicht kaum erkennen
+ unter dem ganzen Öl und der Schmiere.}
+
+# 1. FLOAT OR CLICK DIALOGUES [POWER ARMOR] (WTG)
+{200}{}{Heiliger Bimbam. *Schluck* Sieh mal, was da gerade reinspaziert ist.}
+
+# 2. FLOAT/CLICK TEXT [PORN STAR/CHR > 5, FEMALE] (WTG)
+{221}{}{Wow. Hier kommen nich' viele Besucher her. Was können wir für dich tun, Frollein }
+{5221}{}{?}
+{220}{}{Mist. So viele Kurven und ich steh ohne Bremsen da.}
+
+# 3. FLOAT/CLICK DIALOGUES [PRIZEFIGHTER] (WTG)
+{245}{}{Hab dich im Ring kämpfen gesehen. Sieht toll aus, dein rechter Haken.}
+{246}{}{Für 'n Preisboxer siehst du gar nicht so zäh aus.}
+
+# 4. FLOAT/CLICK DIALOGUES [MADE MAN] (WTG)
+{265}{}{Ich hoffe, es ist alles in Ordnung, Lady.}
+{266}{}{Ich hoffe, es ist alles in Ordnung, Mister.}
+
+# 5. FLOAT OR CLICK DIALOGUES [CAR RECOVERED] (WTG)
+{300}{}{Tut mir leid wegen des Mißverständnisses mit dem Räuber.}
+{301}{}{Mir tut der Idiot leid, der diesen Räuber liegengelassen hat.}
+
+# 6. FLOAT DIALOGUES [WARNING] (WTG)
+{331}{}{Laß BLOSS die Finger von dem Auto.}

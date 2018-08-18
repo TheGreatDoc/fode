@@ -1,0 +1,80 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš strážného. Tváøí se horlivì. Stráž je obleèena v kovovém krunýøi a nese mohutnou brokovnici.}
+{101}{}{Vidíš strážného z Vault City.}
+{102}{}{Ano? Co je to?}
+{103}{}{Jdu do velký ïoury na úpatí kopce.}
+{104}{}{Rád bych vstoupil do Vaultu.}
+{105}{}{Nic, promiò, že obtìžuji.}
+{106}{}{Je po šesté veèer. Musíš odejít.}
+{107}{}{Dobrá. Už jdu.}
+{108}{}{Dobrá. Ještì jednu minutku...}
+{109}{}{Musím ještì nìco dodìlat. Pùjdu až to dokonèím.}
+{110}{}{Umag Nak!?! Umag NAK!}
+{111}{}{Zavolám nìjaké stráže, aby tì doprovodili ven.}
+{112}{}{Dobrá. Tak jdem.}
+{113}{}{Brog Frup}
+{114}{}{Neobtìžuj se. Najdu si vlastní cestu.}
+{115}{}{Omlouvám se, ale rozkaz je zákon a zákon je rozkaz.}
+{116}{}{Dobøe... ale nejsem z toho štastný. Možná si budu muset stìžovat va vyšších místech...}
+{117}{}{No, zùstávám.}
+{118}{}{Nechci používat násilí pokud to nebude nevyhnutelné. Tak to nedìlej ještì obtížnìjší, než to je.}
+{119}{}{Dobøe, skvìle, výbornì... Pùjdu.}
+{120}{}{Jen se mì dotkni a budeš nosit koule za kloboukem.}
+{121}{}{Ahoj, Obèane. Mohu ti pomoci?}
+{122}{}{Rád bych vstoupil do Vaultu.}
+{123}{}{Jdu do velký ïoury na úpatí kopce.}
+{124}{}{Ne dìkuji.}
+{125}{}{Omlouvám se, pouze Obèani mají povolen vstup do Vaultu. Jsem si jist, že nerozumíš.}
+{126}{}{Pouze Obèané mohou vstoupit. Odejdi.}
+{127}{}{Dobrá.}
+{128}{}{Umgh}
+{129}{}{Jistì. Prosím jdìte dovnitø.}
+{130}{}{Díky!}
+{131}{}{Díky.}
+{132}{}{Ano? Mohu ti pomoci?}
+{133}{}{Rád bych vstoupil do Vaultu.}
+{134}{}{Nic, promiò, že obtìžuji.}
+{135}{}{Omlouvám se, pouze Obèani mají povolen vstup do Vaultu.}
+{136}{}{JÁ JSEM OBÈAN.}
+{137}{}{Omlouvám se... Nepoznal jsem tì. Mám rozkaz pouze Obèany nechat vstoupit do Vaultu.
+ Snad starostka Lynette ti mùže pomoci. Hezký den.}
+{138}{}{Ahoj, Kapitáne. Mohu ti pomoci?}
+{139}{}{Oh, dobøe.}
+{140}{}{Oh, jistì. Jen se dívám.}
+{141}{}{Umgh}
+{142}{}{Jo, cokoviv, Mungoth. Mluv podrobnìji.}
+{143}{}{Vy tam! Co dìlají ti ghoulové ve Vault City?!}
+{144}{}{Vy tam! Co dìlají ti mutanti ve Vault City?!}
+{145}{}{Breep-oop foop foop}
+{146}{}{Ghoulové? Kde?}
+{147}{}{Mutanti? Kde?}
+{148}{}{Je se mnou.}
+{149}{}{Cestuje se mnou. Jestliže nìkdo z vás má nìjaké rasistické problémy, bude lepší si vyjasnit situaci tady a teï.}
+{150}{}{Jestliže to stvoøení je s tebou, pak oba patøíte zpátky na pøedmìstí, ne do ulic Vault City.}
+{151}{}{Dobøe, pùjdeme pokojnì dál.}
+{152}{}{Proè se nás snažíte vyprovodit ven? Zaruèuju, že to bude pouèný zážitek.}
+{153}{}{Jak se tito tvorové mohli dostat až sem...?}
+{154}{}{Ty stvoøení.}
+{155}{}{Oba patøíte zpátky na pøedmìstí, ne do ulic Vault City.}
+{156}{}{JÁ S TEBOU NE KÁMOŠ! TY JSI BAKANEJ!}
+{157}{}{Pùjdeme na klidné místo}
+{158}{}{Dobøe, pùjdeme pokojnì dál.}
+{159}{}{Cestuje se mnou. Jestliže nìkdo z vás má nìjaké rasistické problémy, bude lepší si vyjasnit situaci tady a teï.}
+{160}{}{Stráže! Vetøelci ve mìstì!}
+{161}{}{Hrnghhhhhhhh!}
+{162}{}{Budeš mrtvý ještì pøed tím než dorazí tví pøátelé.}
+{163}{}{Hej! Jsi jeden z tìch co zvítìzil nad Enklávou!}
+{164}{}{Podívej, to je jeden z tìch co zvítìzil nad Enklávou!}
+{165}{}{Vítej ve Vault City.}
+{166}{}{Tvá bitva proti Enklávì zaujala dokonce i starostku.}
+{167}{}{Slyšel jsem, že jsi cestoval tak daleko na jih už do San Francisca. Je to pravda?}
+{168}{}{Je pravda, že U.S. stále bojuje ve válce?}
+{169}{}{Bylo by dobøe sepsat svou cestu do poèítaèe ve Vault City.}
+{170}{}{Jsi vítán ve Vault City tak dlouho jak jen budeš chtít.}
+{171}{}{Bylo by dobøe sepsat svou hrdinskou výpravu proti Enklávì a dát ji do rámu.}
+{172}{}{Kapitáne.}
+{173}{}{Vault City zvítìzilo, Kapitáne.}
+{174}{}{Ahoj, Kapitáne.}
+{175}{}{Vault City zvítìzilo, Kapitáne.}
+{176}{}{Obèane.}
+{177}{}{Ahoj, Kapitáne.}

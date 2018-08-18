@@ -1,0 +1,123 @@
+{100}{}{Tu vois un voyou.}
+{101}{}{Tu vois Joey. }
+
+{150}{}{Ce gars là n'a pas l'air très commode.}
+{151}{}{[PARLER]}
+{152}{}{Hé, je vais te tailler en pièces !}
+{153}{}{Ah ouais ? Essaye un peu pour voir !}
+{154}{}{Hé, attends une minute !}
+{155}{}{Si j'étais toi, je réfléchirais.}
+{156}{}{Qu'est-ce que tu veux ? Je devrais te tuer au lieu de t'écouter!}
+{157}{}{Je viens sauver une âme.}
+{158}{}{Est-ce que tu as pris un médaillon dans la maison hantée ?}
+{159}{}{Tant pis. On va se battre.}
+{160}{}{Rien. Je passais par là.}
+{161}{}{De quoi tu parles ?}
+{162}{}{As-tu volé un médaillon dans la maison hantée ?}
+{163}{}{Rien. Laisse tomber.}
+{164}{}{Laisse tomber. Je vais juste libérer ton âme de ses barrières terrestres.}
+{165}{}{Je ne sais pas de quoi tu parles...}
+{166}{}{Tu sais ce que t'as fait, t'as volé le médaillon d'une fille morte, et maintenant, son fantôme doit errer sur terre tant que tu n'as pas rendu le bijou.}
+{167}{}{Alors, je te le prendrai de force !}
+{168}{}{C'est absurde !}
+{169}{}{Ecoute, je te l'achète.}
+{170}{}{Donne-le moi ou je te le prendrai de force !}
+{171}{}{Si tu ne le rends pas tout de suite, elle viendra le chercher. On ne peut pas l'arrêter.}
+{172}{}{Je veux 50 $ pour ça.}
+{173}{}{D'accord, voilà l'argent.}
+{174}{}{Voilà 20 $. J'aurais pu le prendre sans rien te donner.}
+{175}{}{Non, j'ai changé d'avis. A plus.}
+{176}{}{Donne-le moi sinon je te tue !}
+{177}{}{D'accord, voilà le médaillon. Laisse-moi tranquille.}
+{178}{}{Avec plaisir.}
+{179}{}{Que je ne t'y reprenne plus !}
+{180}{}{Hé, t'as même pas l'argent !}
+{181}{}{Hou là ! Je reviens.}
+{182}{}{Alors, je crois qu'il va falloir que je te tue...}
+{183}{}{Hé ! Comment ça va depuis le temps ?}
+{184}{}{Pas mal, et toi ?}
+{185}{}{Pas très bien.}
+{186}{}{As-tu pris un médaillon dans la maison hantée ?}
+{187}{}{J'ai un problème existentiel.}
+{188}{}{Hé, salut ! Je m'appelle Joey. Qu'est-ce que tu fais sur mon territoire ?}
+{189}{}{Ton territoire ? Ca m'étonnerait.}
+{190}{}{Peut-être que c'est toi que je cherche...}
+{191}{}{Je pars. Salut.}
+{192}{}{Je cherche des renseignements.}
+{193}{}{Hé, mon chou. Tu cherches Joey ? Me voici.}
+{194}{}{Non, va-t'en.}
+{195}{}{Peut-être. Qu'est-ce que tu me proposes ?}
+{196}{}{Je voudrais des renseignements.}
+{197}{}{Non, il faut que je parte.}
+{198}{}{Hé, j'ai du Jet. C'est du bon, tout droit venu de New Reno. T'en veux ?}
+{199}{}{Pas question  ! Je touche pas à ça. Les champions ça se dope pas !}
+{200}{}{Combien ?}
+{201}{}{Non, je voudrais des renseignements.}
+{202}{}{Non, il faut que je parte. Salut.}
+{203}{}{Et si on se mettait à un peu d'action toi et moi ?}
+{204}{}{D'accord.}
+{205}{}{Même si tu étais le dernier être non mutant sur cette planète, tu pourrais toujours courir !!}
+{206}{}{Heu... non merci. Je voudrais autre chose.}
+{207}{}{Tu reviendras.}
+{208}{}{Peut-être.}
+{209}{}{N'y compte pas.}
+{210}{}{Attends ! Je peux te poser une question ?}
+{211}{}{Personne ne me parle sur ce ton !}
+{212}{}{Moi oui. Tu sais faire autre chose à part parler ?}
+{213}{}{Peu importe. T'as quelque chose à vendre ou tu veux juste tailler une bavette ?}
+{214}{}{Pardon. Je ne connais pas bien la région et je ne sais plus où je suis.}
+{215}{}{Qu'est-ce que tu veux ?}
+{216}{}{Je cherche un médaillon.}
+{217}{}{J'ai besoin d'en savoir plus sur la maison hantée.}
+{218}{}{C'est quoi l'histoire avec la vieille église et ces gardes ?}
+{219}{}{Est-ce que tous les habitants de cette ville sont des junkies ?}
+{220}{}{As-tu entendu parler de l'Abri ?}
+{221}{}{Heu, peu importe. A un de ces jours...}
+{222}{}{La famille Wright envoie ici des trucs de New Reno. Ne t'en approche pas ; les Wright ont des Uzi.}
+{223}{}{J'aimerais savoir autre chose.}
+{224}{}{Je peux te poser une autre question ?}
+{225}{}{D'accord, merci. Salut.}
+{226}{}{Que veux-tu savoir d'autre ?}
+{227}{}{Qui c'est la famille Wright ?}
+{228}{}{Où c'est New Reno ?}
+{229}{}{Qu'est-ce qu'ils envoient ici ?}
+{230}{}{J'aimerais te demander autre chose.}
+{231}{}{C'est ça. Salut.}
+{232}{}{Les Wright dirigent une partie de New Reno, avec d'autres grandes familles. Je ne sais pas grand chose sur eux, mais je sais que c'est le plus petit clan.}
+{233}{}{C'est pas négligeable. J'aimerais savoir autre chose.}
+{234}{}{Je peux te poser une autre question ?}
+{235}{}{D'accord, merci. Salut.}
+{236}{}{New Reno se trouve assez loin au sud. Les Wright empruntent une vieille route avec un panneau qui indique " Reno ".}
+{237}{}{Je crois que je peux trouver. J'aimerais savoir autre chose sur eux.}
+{238}{}{Je peux te poser une autre question ?}
+{239}{}{D'accord, merci. Salut.}
+{240}{}{De la bibine et de la came la plupart du temps. Les Wright échangent ça contre de l'argent, des munitions, d'autres alcools... tout ce qu'ils peuvent trouver. Moi je crois que les choses vont mal pour eux.}
+{241}{}{Intéressant. Mais dis-moi...}
+{242}{}{Je peux te poser une autre question ?}
+{243}{}{D'accord, merci. Salut.}
+{244}{}{Je te vends du Jet à 500 $, parce que c'est toi.}
+{245}{}{Non merci. Salut.}
+{246}{}{Non merci, mais j'aimerais te poser une question.}
+{247}{}{C'est trop !}
+{248}{}{D'accord, j'achète.}
+{249}{}{Je regrette. Si t'as pas le fric sur toi, reviens quand tu pourras te le permettre.}
+{250}{}{Attends, j'vais l'acheter.}
+{251}{}{Est-ce que je peux te poser une question ?}
+{252}{}{Salut.}
+{253}{}{Bon, 350 $, mais c'est mon dernier prix !}
+{254}{}{Laisse tomber. Je peux te poser une question ?}
+{255}{}{D'accord, j'achète.}
+{256}{}{Tant pis. Salut.}
+{257}{}{L'Abri ? Non, jamais entendu parler. C'est un stimulant ?}
+{258}{}{Non, imbécile !}
+{259}{}{Non, c'est un endroit. Je peux te poser une autre question?}
+{260}{}{Oui, c'est un stimulant merveilleux.}
+{261}{}{Non, salut.}
+{262}{}{Eh ben, ce Joey n'a pas beaucoup de conversation...}
+
+# 4. extra
+{300}{}{Sans doute que non. Au revoir.}
+
+# Addition for Node 17
+{350}{}{Tu dors ? Finalement Lara est une belle salope. Elle a flingué Tyler. J'ai entendu dire que Metzger était là pour ça. Bon je ferais mie}
+{351}{}{Tu dors ? Finalement Lara était une belle salope- c'est trop bête qu'elle soit morte. Effacée du groupe de Tyler. D'après ce que j'ai e}

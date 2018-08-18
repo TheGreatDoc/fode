@@ -1,0 +1,31 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Muž obleèen ve standardní vojenské bojové zbroji.}
+{101}{}{Vypadá zdráv, ovšem ponìkud zmaten.}
+{102}{}{Au, moje hlava.}
+{103}{}{Kdo jsi?}
+{104}{}{AU!}
+{105}{}{Já-já jsem Dobbs...vojín, první tøída.}
+{106}{}{Mohl bys mi øíct, jak ses sem dostal?}
+{107}{}{Ahoj.}
+{108}{}{Byl jsem v bitvì. Ano, bitvì. Všude kolem se støílelo, granáty vybuchovaly. Lidé umírali. Byl jsem zranìn, ale bojoval dále. Potom ... potom se objevil oslepující záblesk.}
+{109}{}{A co se stalo poté?}
+{110}{}{Ahoj.}
+{111}{}{Další vìc, kterou si pamatuji, je, že jsem vidìl své tìlo, jako bych byl nìkde nad ním. Slyšel jsem doktory, jak volají, že jsem mrtev a poté moje tìlo hodili na hromadu jiných mrtvých tìl. }
+{112}{}{A potom?}
+{113}{}{Ahoj.}
+{114}{}{Nìjací lide pøišli a odnesli mé tìlo do laboratoøe. Pak jsem slyšel, jak mluvil nìco o tom, že se pokusí mì zregenerovat ponoøením mého tìla do nìèeho, èemu øíkali Biomed Gel.}
+{115}{}{Ještì nìco?}
+{116}{}{Ahoj.}
+{117}{}{A potom jsem se probudil tady. Musím jít! Musím zpìt k mé jednotce.}
+{118}{}{Ahoj.}
+
+{200}{}{Kde to jsem?}
+{201}{}{Bolí mì hlava... ach.}
+{202}{}{Proè jsem v tomhle srabu?}
+
+{300}{}{Musím se vrátit zpìt k mé jednotce.}
+{301}{}{O ne! Jsem zranìn!}
+{302}{}{Kudy do pøední linie?}
+{303}{}{Tohle je pro tebe, Johny.}
+
+{400}{}{Vojín Dobbs prodìlal post-kryogenický syndrom.}

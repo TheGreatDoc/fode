@@ -1,0 +1,25 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš pevnì uzamèené dveøe.}
+{101}{}{Zdá se, že tyto dveøe jsou elektro-magneticky uzamèené. Možná je mùžeš otevøít
+ nìkde jinde.}
+
+{105}{}{Doèasnì jsi pøemostil (pøeklenul) elektrické pole.}
+{106}{}{ doèasnì pøemostìné (pøeklenuté) elektrické pole.}
+
+{110}{}{ Pokus o zneškodnìní elektrického pole se ti krutì nepovedl.}
+{111}{}{ velice nepodaøený pokus o zneškodnìní elektrického pole.}
+
+{115}{}{Nepodaøilo se ti zneškodnit elektrické pole.}
+{116}{}{ nepodaøený pokus o zneškodnìní elektrického pole.}
+
+{120}{}{Støetnul ses s elektrickým polem.}
+{121}{}{ støet s elektrickým polem.}
+
+{125}{}{S tìmito dveømi ani nehneš.}
+{126}{}{ je nemožné s tìmito dveømi pohnout.}
+
+{130}{}{Nepodaøilo se ti odemknout tyto dveøe.}
+{131}{}{ nepodaøený pokus o odemknutí dveøí.}
+
+{135}{}{Ovládáš zaøízení k otevírání dveøí.}
+{136}{}{ zaøízení k ovládání dveøí.}

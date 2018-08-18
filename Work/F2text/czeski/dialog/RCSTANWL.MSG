@@ -1,0 +1,71 @@
+#Tento soubor pøeložil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš muže v brnìní. Hloubavì se na tebe dívá.}
+{101}{}{Vidíš Stanwella, vùdce karavany Redding - NCR.}
+{102}{}{Vidíš hubeného, dlouhého muže v brnìní. Dívá se na tebe se zájmìm v oèích.}
+{103}{}{NCR nehodlá platit ubohým srabùm. Zmiz odsud.}
+{104}{}{Víš co si o tobì myslím. Zmiz mi z oèí.}
+{105}{}{Do nich!.}
+{106}{}{Jasnì, do nich.}
+{107}{}{Jsem Stanwell. Starám se o provoz karavany Redding - NCR. Vymìòujeme zlato za brahmíny. Naše cesty jsou ale dlouhé
+ a nebezpeèné, takže pøed každou jízdou sháním stráže. Dneska odjíždíme.}
+{108}{}{Lidé mi øíkají Stanwell. Starám se o provoz karavany Redding - NCR. Vymìòujeme zlato za brahmíny. Na své cesty 
+sháním stráže, takže vždycky rád uvidím jednoho nebo dva dobrovolníky navíc. Vyjíždíme odsud každý mìsíc 11., takže se stav
+, pokud budeš mít zájem.}
+{109}{}{Co pro tebe mùžu udìlat?}
+{110}{}{Bùù-bùù?}
+{111}{}{Chci se nechat najmout.}
+{112}{}{S èím že obchodujete?}
+{113}{}{Proè se èeká až do 11.?}
+{114}{}{To není nic pro mne. Sbohem.}
+{115}{}{Sakra. Nesnáším, když se to stane.}
+{116}{}{Stereotypní práce. Den ode dne.}
+{117}{}{Nic není tak jednoduché jak se zdá.}
+{118}{}{Kde je Ranger, když ho potøebuješ?}
+{119}{}{Chybovat je lidské.}
+{120}{}{Ty jsi ta nejhorší napodobenina strážného, kterou jsem kdy vidìl. Ty si neuhlídáš vlastní ponožku na noze, natož
+ pak celou karavanu.}
+{121}{}{Kliï se mi z oèí. Mìl jsi být lepší.}
+{122}{}{Opravdu si myslíš že bych odmìnil zlodìje? Mìl bys být rád, že jsem tì nenechal zlynèovat. Nedám Ti ani vindru.
+ Táhni odsud.}
+{123}{}{Zlodìj? Já že jsem zlodìj? Víš co mi mùžeš. Sbohem.}
+{124}{}{Však ty budeš brzo litovat, že jsi mì vyhodil. Sbohem.}
+{125}{}{Tahle jízda byla tak neúspìšná, že jsme ani nevydìlali tolik penìz, abysme ti mohli zaplatit. Samozøejmì že když
+ pøíštì udìláš svojí práci lépe, vìci se podstatnì zmìní.}
+{126}{}{Tak za to zaplatíš. Nikdo mì neošidí o peníze. Sbohem.}
+{127}{}{Bùh pøi vás vìtšinou stál víc než pøi ostatních. Teï tomu tak nebylo. Sbohem.}
+{128}{}{Neztratili jsme sice úplnì všechno, ale ztratili jsme víc, než si mùžeme dovolit. Kdybys odvedl lepší práci,
+ dostal bys víc než tìhle 500$.}
+{129}{}{No, poøád lepší než kopanec do prdele. Díky a sbohem.}
+{130}{}{Ty hajzle! Nikdo by neudìlal lepší práci než já a ty mì takhle odbydeš?. To jsi mì fakt nasral. Sbohem.}
+{131}{}{To nebylo vùbec špatné. Tady máš svých 2000$. Stav se až budeš zase shánìt práci.}
+{132}{}{Nevím jak dlouho bych ještì vydržel dívat se na brahmíní prdele. Sbohem.}
+{133}{}{Milerád se tu ještì ukážu. Sbohem.}
+{134}{}{Tohle byla opravdu dobrá jízda. Je opravdu poznat že jsi svou práci udìlal na jednièku. Tady máš 2000$ a pøíplatek
+ 500$ za dobrou práci.}
+{135}{}{Rád poznávám nìkoho kdo opravdu dokáže ocenit moje kvality. Díky a sbohem.}
+{136}{}{Nikdy nepohrdnu penìzi navíc. Díky a sbohem.}
+{137}{}{Nemùžu vyrazit, dokud nenaložíme plnou karavanu rudy. Všechno stihneme tak akorát za mìsíc, takže vyrážíme
+ pravidelnì jednou mìsíènì. Stav se jedenáctého, pokud budeš shánìt práci.}
+{138}{}{Musíme naložit spoustu brahmín ze vzdálených oblastí a to taky chvilku trvá. Proto vyjíždíme až 11. Stav se, pokud
+ budeš potøebovat práci.}
+{139}{}{S èím vlastnì obchodujete?}
+{140}{}{Povìz mi ještì o nìèem jiném.}
+{141}{}{Buï si jist že pøijdu. Sbohem.}
+{142}{}{Velice rád bych tì pøijal, ale jak už jsem øek, vyjíždíme až 11. Takže se stav, pokud budeš stále shánìt práci.}
+{143}{}{Proè až 11.?}
+{144}{}{A s èím vlastnì obchodujete?}
+{145}{}{Dobøe. Uvidíme se pozdìji. Sbohem.}
+{146}{}{Sorry kámo, už máme dost poskokù pracujících na této karavanì.}
+{147}{}{No, dobøe.}
+{148}{}{Vymìòujeme nejlepší brahmíny z NCR za reddingskou zlatou rudu. Prosté a jednoduché.}
+{149}{}{Aha. Chci se u vás nechat najmout jako stráž.}
+{150}{}{Povìz mi ještì o nìèem jiném.}
+{151}{}{Hmm, já už musím jít. Sbohem.}
+{152}{}{Jdeš právì vèas. Za pár hodin odjíždíme. Práce je dobøe placená - 2000$. Sháním ale jenom jednoho èlovìka, takže
+ ti zaplatím jenom za jednu osobu. Bereš to?}
+{153}{}{Jdeš právì vèas. Za pár hodin odjíždíme. Práce je dobøe placená - 2000$. Bereš to?}
+{154}{}{To zní dobøe. Jasnì že to beru.}
+{155}{}{Pøedstava že budu jíst každý den jenom brahmíní maso se mi nezamlouvá. Sbohem.}
+{156}{}{Ano, bùù-bùù máme dost, stejnì tak i jejich masa. A teï mi jdi z oèí, magore.}
+{157}{}{Už jdu. Sbohem.}
+{158}{}{Grrrr! Èerstvá krev!}

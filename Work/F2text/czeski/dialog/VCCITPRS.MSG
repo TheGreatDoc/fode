@@ -1,0 +1,9 @@
+# Tento soubor pøeložil Petr "Lee" Bulíø.......Level
+{100}{}{Vidíš vìznì.}
+{101}{}{Vidíš vìznì. Je to Obèan.}
+{102}{}{To nebyl moc dobrý nápad chtít znovu mluvit s Lynette.}
+{103}{}{Musím se z toho vyspat.}
+{104}{}{Snad se toho nestalo tolik, aby mi kvùli tomu vzali obèanství.}
+{105}{}{Moore mì práskl...}
+{106}{}{Jsem tu pro svoje vlastní dobro.}
+{107}{}{Tuhle lekci jsem potøeboval.}

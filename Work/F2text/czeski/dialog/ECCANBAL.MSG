@@ -1,0 +1,9 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš lidojeda.}
+{101}{}{Jíídlo!}
+{102}{}{Je naèase dát si nìco k jídlu!}
+{103}{}{Hmmm... bílé maso.}
+{104}{}{Mòam!}
+{105}{}{To je dobrota!}
+{106}{}{Vypadá to chutnì.}
+{107}{}{::Srk::}

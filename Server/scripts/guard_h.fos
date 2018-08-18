@@ -1,0 +1,19 @@
+#include "_teams.fos"
+
+void _GuardEventInit(Critter& npc)
+{
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"GuardMessage");
+	npc.SetEvent( CRITTER_EVENT_SMTH_DROP_ITEM, "_GuardSmthDropItem" );
+	npc.SetEvent(CRITTER_EVENT_DEAD,"_GuardDead");
+	npc.SetEvent(CRITTER_EVENT_ATTACKED,"_GuardsAttacked");
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_2,"EventShowCritterTc");
+}
+
+void EventShowCritterTc(Critter &cr, Critter &cr2)
+{
+	if(!__IsTc && cr.GetMap().GetProtoId()!=__TcMapId) return;
+	if(cr2.IsPlayer() && cr.StatBase[ST_TEAM_ID]==TEAM_Guard)
+	{
+		if(cr2.ParamBase[PLAYER_FACTION]==__TcFactionId) AddAttackPlane(cr,0,cr2,true);
+	}
+}

@@ -1,0 +1,287 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "guard_red_events.fos"
+#include "guard_nec_events.fos"
+#include "_colors.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+int[] __BerlinFlags={0,0,0,0};
+int[] __BerlinFlagsPositions={
+124,186,
+233,131,
+242,431
+};
+int[] __BerlinNPCSpawnPositions={
+162,281,
+168,159,
+170,373,
+319,376,
+322,434,
+434,480,
+358,240,
+297,135,
+216,157,
+226,276,
+271,355,
+87,234
+};
+
+void RemoveSpawnedCritter(Critter& cr, Critter@ killer)
+{
+	DeleteNpc(cr);
+}
+
+void BerlinFlagsUpdate()
+{
+	Map @Berlin=GetMapByPid(MAP_berlincity,0);
+	if(@Berlin!=null)
+	{
+		Critter @[]crs;
+		Item @[]items;
+		int ULSs,NECs;
+		for(uint j=0; j<__BerlinFlagsPositions.length(); j+=2)
+		{
+			crs.resize(0);
+			items.resize(0);
+			Berlin.GetCrittersHex(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],5,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+			Berlin.GetCrittersHex(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],5,FIND_ONLY_NPC|FIND_LIFE_AND_KO,crs);
+			ULSs=0; NECs=0;
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1) ULSs++;
+				if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2) NECs++;
+			}
+			if(ULSs>NECs) __BerlinFlags[j/2]-=(ULSs-NECs)*3;
+			else __BerlinFlags[j/2]+=(NECs-ULSs)*3;
+			__BerlinFlags[j/2]=CLAMP(__BerlinFlags[j/2],-100,100);
+			Berlin.GetItems(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],items);
+			if(@items!=null && items.length()>0)
+			{
+				int current_flag=0;
+				if(items[0].GetProtoId()==7988) current_flag=-1;
+				else if(items[0].GetProtoId()==7989) current_flag=1;
+				int flag_processed=0;
+				if(__BerlinFlags[j/2]<=-30) flag_processed=-1;
+				else if(__BerlinFlags[j/2]>=30) flag_processed=1;
+				if(current_flag!=flag_processed)
+				{
+					DeleteItem(items[0]);
+					if(flag_processed==0) Berlin.AddItem(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],7987,1);
+					else if(flag_processed==-1)
+					{
+						Berlin.AddItem(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],7988,1);
+						int npcs_added=0;
+						while(npcs_added<4)
+						{
+							uint16 hx=0,hy=0;
+							if(npcs_added==0)
+							{
+								hx=__BerlinFlagsPositions[j]+1;
+								hy=__BerlinFlagsPositions[j+1]+1;
+							}
+							else
+							{
+								hx=__BerlinFlagsPositions[j]+Random(0,30)-15;
+								hy=__BerlinFlagsPositions[j+1]+Random(0,30)-15;
+								if(!Berlin.IsHexPassed(hx,hy)) continue;
+							}
+							npcs_added++;
+							Critter@ spawncr=Berlin.AddNpc(NPC_PID_guardRED,hx,hy,Random(0,5),null,null,null);
+							spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+							spawncr.ModeBase[MODE_NO_DROP]=1;
+							spawncr.ModeBase[MODE_NO_LOOT]=1;
+							spawncr.ShowCritterDist1=30;
+							int roll=Random(1,4);
+							if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+							else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+							else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+							else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+							spawncr.ParamBase[PLAYER_MAIN_FACTION]=1;
+							spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+							spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+							if(npcs_added>2)
+							{
+								int[]enemy_flags_indexes;
+								for(uint l=0; l<__BerlinFlagsPositions.length(); l+=2)
+									if(__BerlinFlags[l/2]>=0) enemy_flags_indexes.insertLast(l/2);
+								if(enemy_flags_indexes.length()>0)
+								{
+									int rand=Random(0,enemy_flags_indexes.length()-1);
+									AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,__BerlinFlagsPositions[enemy_flags_indexes[rand]*2]+1,__BerlinFlagsPositions[enemy_flags_indexes[rand]*2+1]+1,0,false,0);
+								}
+							}
+						}
+					}
+					else if(flag_processed==1)
+					{
+						Berlin.AddItem(__BerlinFlagsPositions[j],__BerlinFlagsPositions[j+1],7989,1);
+						int npcs_added=0;
+						while(npcs_added<4)
+						{
+							uint16 hx=0,hy=0;
+							if(npcs_added==0)
+							{
+								hx=__BerlinFlagsPositions[j]+1;
+								hy=__BerlinFlagsPositions[j+1]+1;
+							}
+							else
+							{
+								hx=__BerlinFlagsPositions[j]+Random(0,30)-15;
+								hy=__BerlinFlagsPositions[j+1]+Random(0,30)-15;
+								if(!Berlin.IsHexPassed(hx,hy)) continue;
+							}
+							npcs_added++;
+							Critter@ spawncr=Berlin.AddNpc(NPC_PID_guardBLUE,hx,hy,Random(0,5),null,null,null);
+							spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+							spawncr.ModeBase[MODE_NO_DROP]=1;
+							spawncr.ModeBase[MODE_NO_LOOT]=1;
+							spawncr.ShowCritterDist1=30;
+							int roll=Random(1,4);
+							if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+							else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+							else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+							else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+							spawncr.ParamBase[PLAYER_MAIN_FACTION]=2;
+							spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+							spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+							if(npcs_added>2)
+							{
+								int[]enemy_flags_indexes;
+								for(uint l=0; l<__BerlinFlagsPositions.length(); l+=2)
+									if(__BerlinFlags[l/2]<=0) enemy_flags_indexes.insertLast(l/2);
+								if(enemy_flags_indexes.length()>0)
+								{
+									int rand=Random(0,enemy_flags_indexes.length()-1);
+									AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,__BerlinFlagsPositions[enemy_flags_indexes[rand]*2]+1,__BerlinFlagsPositions[enemy_flags_indexes[rand]*2+1]+1,0,false,0);
+								}
+							}
+						}
+					}
+				}
+				
+				if(flag_processed==-1)
+				{
+					
+				}
+				else if(flag_processed==1)
+				{
+					
+				}
+			}
+			for(uint i=0; i<crs.length(); i++)
+			{
+				if(__BerlinFlags[j/2]==-100) {}
+				else if(__BerlinFlags[j/2]==100) {}
+				else if(__BerlinFlags[j/2]<=-30) crs[i].Say(SAY_NETMSG,"REF Flag: "+(-__BerlinFlags[j/2])+"%");
+				else if(__BerlinFlags[j/2]>=30) crs[i].Say(SAY_NETMSG,"NEC Flag: "+__BerlinFlags[j/2]+"%");
+				else if(__BerlinFlags[j/2]==0) crs[i].Say(SAY_NETMSG,"neutral");
+				else if(__BerlinFlags[j/2]<0) crs[i].Say(SAY_NETMSG,"neutral "+(-__BerlinFlags[j/2])+"% REF");
+				else if(__BerlinFlags[j/2]>0) crs[i].Say(SAY_NETMSG,"neutral "+__BerlinFlags[j/2]+"% NEC");
+			
+			}
+		}
+		Critter @[]all_crs;
+		Berlin.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,all_crs);
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			all_crs[i].ParamBase[BERLIN_FLAG1]=__BerlinFlags[0];
+			all_crs[i].ParamBase[BERLIN_FLAG2]=__BerlinFlags[1];
+			all_crs[i].ParamBase[BERLIN_FLAG3]=__BerlinFlags[2];
+		}
+		all_crs.resize(0);
+		Berlin.GetCritters(0,FIND_ONLY_NPC|FIND_LIFE_AND_KO,all_crs);
+		int ULSNPCs=0;
+		int NECNPCs=0;
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			if(all_crs[i].ParamBase[PLAYER_MAIN_FACTION]==1) ULSNPCs++;
+			if(all_crs[i].ParamBase[PLAYER_MAIN_FACTION]==2) NECNPCs++;
+		}
+		if(ULSNPCs<3 && __BerlinNPCSpawnPositions.length()>0)
+		{
+			int rand1=Random(0,__BerlinNPCSpawnPositions.length()-1)/2;
+			int rand2=Random(0,__BerlinNPCSpawnPositions.length()-1)/2;
+			if(rand1!=rand2)
+			{
+				Critter@ spawncr=Berlin.AddNpc(NPC_PID_guardRED,__BerlinNPCSpawnPositions[rand1*2],__BerlinNPCSpawnPositions[rand1*2+1],Random(0,5),null,null,null);
+				spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+				spawncr.ModeBase[MODE_NO_DROP]=1;
+				spawncr.ModeBase[MODE_NO_LOOT]=1;
+				spawncr.ShowCritterDist1=30;
+				spawncr.AddItem(PID_AK47_NORMAL1_DE,1);
+				spawncr.ParamBase[PLAYER_MAIN_FACTION]=1;
+				spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+				spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+				AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,__BerlinNPCSpawnPositions[rand2*2]+1,__BerlinNPCSpawnPositions[rand2*2+1],0,false,0);
+			}
+		}
+		if(NECNPCs<3 && __BerlinNPCSpawnPositions.length()>0)
+		{
+			int rand1=Random(0,__BerlinNPCSpawnPositions.length()-1)/2;
+			int rand2=Random(0,__BerlinNPCSpawnPositions.length()-1)/2;
+			if(rand1!=rand2)
+			{
+				Critter@ spawncr=Berlin.AddNpc(NPC_PID_guardBLUE,__BerlinNPCSpawnPositions[rand1*2],__BerlinNPCSpawnPositions[rand1*2+1],Random(0,5),null,null,null);
+				spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+				spawncr.ModeBase[MODE_NO_DROP]=1;
+				spawncr.ModeBase[MODE_NO_LOOT]=1;
+				spawncr.ShowCritterDist1=30;
+				spawncr.AddItem(PID_AK47_NORMAL1_DE,1);
+				spawncr.ParamBase[PLAYER_MAIN_FACTION]=2;
+				spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+				spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+				AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,__BerlinNPCSpawnPositions[rand2*2]+1,__BerlinNPCSpawnPositions[rand2*2+1],0,false,0);
+			}
+		}
+	}
+	Location@ loc = Berlin.GetLocation();
+	if(valid(loc)) 
+	{
+		if(((__BerlinFlags[0]+__BerlinFlags[1]+__BerlinFlags[2])/3)>30) loc.Color = COLOR_CHANGE_ALPHA(COLOR_LBLUE2, 80);
+		else if(((__BerlinFlags[0]+__BerlinFlags[1]+__BerlinFlags[2])/3)<-30) loc.Color = COLOR_CHANGE_ALPHA(COLOR_LRED2, 80);
+		else loc.Color = COLOR_CHANGE_ALPHA(COLOR_DGREEN, 70);
+	}
+}
+
+void BerlinFlagsClear()
+{
+	Map @Berlin=GetMapByPid(MAP_berlincity,0);
+	if(@Berlin!=null)
+	{
+		for(uint i=0; i<__BerlinFlags.length()-1;i++) __BerlinFlags[i]=0;
+		BerlinFlagsUpdate();
+		Critter @[]all_crs;
+		Berlin.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,all_crs);
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			all_crs[i].ParamBase[BERLIN_FLAG1]=0;
+			all_crs[i].ParamBase[BERLIN_FLAG2]=0;
+			all_crs[i].ParamBase[BERLIN_FLAG3]=0;
+		}
+	}
+}
+
+void BerlinFlagsSendStatus()
+{
+	Map @Berlin=GetMapByPid(MAP_berlincity,0);
+	if(@Berlin!=null)
+	{
+		Critter @[]all_crs;
+		Berlin.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,all_crs);
+		for(uint i=0; i<all_crs.length(); i++)
+		{
+			all_crs[i].ParamBase[BERLIN_FLAG1]=__BerlinFlags[0];
+			all_crs[i].ParamBase[BERLIN_FLAG2]=__BerlinFlags[1];
+			all_crs[i].ParamBase[BERLIN_FLAG3]=__BerlinFlags[2];
+		}
+	}
+}
+
+int BerlinFlag(int flag)
+{
+	return __BerlinFlags[flag];
+}

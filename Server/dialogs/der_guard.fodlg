@@ -1,0 +1,35 @@
+[comment]
+dialog dla guarda der
+pid:526,
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0#
+2 1010@
+2 2000 NOT_ANSWER_CLOSE_DIALOG 0&
+
+[russ]
+{100}{}{Солдат Рэбублики Пустынной Европы.}
+{200}{}{Видишь солдата Республики Пустынной Европы.}
+{210}{}{Видишь хорошо обученного солдата. Выглядывает на лицо готовое умереть за Рэпубликэ Пустынной Европы.}
+{1000}{}{Преддиалоговые установки}
+{1010}{}{-}
+{2000}{}{}
+
+[engl]
+{100}{}{Desert Europe Republick Guard}
+{200}{}{You see a DER guard.}
+{210}{}{You see a DER professional guard. It looks like a person willing to die for DER.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{}
+
+[pols]
+{100}{}{Їoіnierz Rebubliki Pustynnej Europy.}
+{200}{}{Widzisz їoіnierza Republiki Pustynnej Europy.}
+{210}{}{Widzisz dobrze wyszkolonego їoіnierza. Wygl№da na osobк gotow№ umrzeж za Republike Pustynnej Europy.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{}

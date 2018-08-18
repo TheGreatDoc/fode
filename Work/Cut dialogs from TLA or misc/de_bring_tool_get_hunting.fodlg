@@ -1,0 +1,132 @@
+[comment]
+
+
+[data]
+lang=engl germ pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p bring_tool_recieve_hunting_rifle = 0 #
+5 1020 D _var p bring_tool_recieve_hunting_rifle = 1 #
+8 1030 D _var p bring_tool_recieve_hunting_rifle = 2 @
+2 2000 None 1 #
+3 2010 #
+0 2020 @
+3 3000 None 1 #
+4 3010 #
+0 3020 @
+4 4000 None 0 #
+0 4010 R _var p bring_tool_recieve_hunting_rifle = 1 R _script quest_server_scripts@thomas_wensdin_tool 0  #
+0 4020 @
+5 5000 None 0 #
+0 5010 #
+6 5020 D _item p PID_KEY_PACKAGE } 1 R _var p bring_tool_recieve_hunting_rifle = 2 R _item p PID_KEY_PACKAGE - 1 R _item p PID_HUNTING_RIFLE_DE + 1 R _item p PID_223_FMJ_DE + 50 R _param p ST_EXPERIENCE + 200 R _script quest_server_scripts@thomas_wensdin_tool_done 0  @
+6 6000 None 0 #
+7 6010 @
+7 7000 None 0 #
+0 7010 @
+8 8000 None 0 &
+
+[engl]
+{100}{}{Thomas Wensdin}
+{200}{}{You see: Thomas Wensdin.}
+{210}{}{You see a local citizen.}
+{1000}{}{Predialogue installations}
+{1010}{}{first}
+{1020}{}{got quest}
+{1030}{}{done quest}
+{2000}{}{Hey, I need your help!}
+{2010}{}{Oh, what happened?}
+{2020}{}{Sorry, can't do it right now.}
+{3000}{}{I am repairing some stuff, and I need a tool.}
+{3010}{}{And what will I get if I help you?}
+{3020}{}{None of my business.}
+{4000}{}{Well, you will get... A nice new hunting rifle plus some ammo.}
+{4010}{}{Okay then, be right back.}
+{4020}{}{No thanks.}
+{5000}{}{Did you bring that tool?}
+{5010}{}{No, I am still looking.}
+{5020}{}{Yes, I have it right here.}
+{6000}{}{Great! Here, take this.}
+{6010}{}{Thank you!}
+{7000}{}{No, thank you!}
+{7010}{}{[Close]}
+{8000}{}{Thanks again for the tool.@@Thank you for helping me out with that tool.@@Now where did I put that tool...@@Okay, maybe I need to pull this?.. hm, nope.@@Could you find me a manual for that tool?@@Hm, maybe here...@@Goddamnit, start working already!@@Why.. won't you.. work?!@@Hello.@@Can I help you?@@Nice day, isn't it?}
+
+[germ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first}
+{1020}{}{got quest}
+{1030}{}{done quest}
+{2000}{}{Hey, Ich brauche deine Hilfe!}
+{2010}{}{Oh, was ist passiert?}
+{2020}{}{Sorry, geht gerade nicht.}
+{3000}{}{Ich repariere gerade ein paar Sachen, und Ich brauche ein Werkzeug.}
+{3010}{}{Und was bekomme ich dafur?}
+{3020}{}{Geht mich nichts an.}
+{4000}{}{Nun, du bekommst... Ein neues nettes Jagdgewehr samt etwas Munition.}
+{4010}{}{Na dann, bin gleich wieder da.}
+{4020}{}{Nein danke.}
+{5000}{}{Hast du das Werkzeug besorgt?}
+{5010}{}{Nein, Ich bin noch am suchen.}
+{5020}{}{Ja, Ich habe es hier.}
+{6000}{}{Oh, super, hier nimm das.}
+{6010}{}{Dank dir!}
+{7000}{}{Dank dir auch!}
+{7010}{}{[Schlie?en]}
+{8000}{}{Danke nochmal fur das nette Werkzeug@@Dank dir dass du mir mit dem Werkzeug ausgeholfen hast@@Wo hab ich nur das Werkzeug hingelegt...@@Ok, vielleicht muss Ich hier dran ziehen?..hm..nein...@@Kannst du mir vielleicht eine Anleitung fur dieses Werkzeug beschaffen?@@Hm, vielleicht hier...@@Verdammt, funktionier doch endlich!@@Warum..willst du nicht... funktionieren?!@@Hallo@@Kann Ich dir helfen?@@Schoner Tag, nicht wahr?}
+
+[pols]
+{100}{}{Thomas Wensdin}
+{200}{}{You see: Thomas Wensdin.}
+{210}{}{You see a local citizen.}
+{1000}{}{Predialogue installations}
+{1010}{}{first}
+{1020}{}{got quest}
+{1030}{}{done quest}
+{2000}{}{Hey, I need your help!}
+{2010}{}{Oh, what happened?}
+{2020}{}{Sorry, can't right now.}
+{3000}{}{I am now repairing some stuff, and I need an repair tool.}
+{3010}{}{And what will I get from it?}
+{3020}{}{None of my business.}
+{4000}{}{Well, you will get... A new nice hunting rifle with some ammo.}
+{4010}{}{Okey then, be right back.}
+{4020}{}{No thanks.}
+{5000}{}{Did you bring that tool?}
+{5010}{}{No, I am still searching.}
+{5020}{}{Yes, I have it right here.}
+{6000}{}{Oh, great, here take this.}
+{6010}{}{Thank you!}
+{7000}{}{Thank you, too!}
+{7010}{}{[Close]}
+{8000}{}{Thanks again for the nice tool@@Thank you for helping me out with that tool@@Now where did I put that tool...@@Okay, maybe I need to pull this?.. hm, no...@@Can you find me some manual for this tool?@@Hm, maybe here...@@Goddamn work already!@@Why.. won't you.. work?!@@Hello@@Can I help you@@Good day, isn't it?}
+
+[russ]
+{100}{}{Thomas Wensdin}
+{200}{}{You see: Thomas Wensdin.}
+{210}{}{You see a local citizen.}
+{1000}{}{Predialogue installations}
+{1010}{}{first}
+{1020}{}{got quest}
+{1030}{}{done quest}
+{2000}{}{Hey, I need your help!}
+{2010}{}{Oh, what happened?}
+{2020}{}{Sorry, can't right now.}
+{3000}{}{I am now repairing some stuff, and I need an repair tool.}
+{3010}{}{And what will I get from it?}
+{3020}{}{None of my business.}
+{4000}{}{Well, you will get... A new nice hunting rifle with some ammo.}
+{4010}{}{Okey then, be right back.}
+{4020}{}{No thanks.}
+{5000}{}{Did you bring that tool?}
+{5010}{}{No, I am still searching.}
+{5020}{}{Yes, I have it right here.}
+{6000}{}{Oh, great, here take this.}
+{6010}{}{Thank you!}
+{7000}{}{Thank you, too!}
+{7010}{}{[Close]}
+{8000}{}{Thanks again for the nice tool@@Thank you for helping me out with that tool@@Now where did I put that tool...@@Okay, maybe I need to pull this?.. hm, no...@@Can you find me some manual for this tool?@@Hm, maybe here...@@Goddamn work already!@@Why.. won't you.. work?!@@Hello@@Can I help you@@Good day, isn't it?}
+

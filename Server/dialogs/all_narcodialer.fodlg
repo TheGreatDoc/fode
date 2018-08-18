@@ -1,0 +1,28 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Наркоторговец}
+{200}{}{Вы видите распространителя наркотиков.}
+{210}{}{Вы видите самодовольного уверенного в себе мужчину средних лет. Судя по всему, он толкает дурь. Его глаза хитро бегают по сторонам.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Drug dealer}
+{200}{}{You see a drug dealer.}
+{210}{}{You see some smug self-confident middle-aged man. Looks like he sells drugs. He is looking around cunningly.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Drug dealer}
+{200}{}{Widzisz dealera narkotyków.}
+{210}{}{Pewny siebie mężczyzna w średnim wieku. Wygląda na to, że handluje narkotykami. Od czasu do czasu ogląda się, pewnie za strażnikami.}
+{1000}{}{Initial preferences}
+

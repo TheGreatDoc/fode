@@ -1,0 +1,160 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+8 2020 #
+0 2030 @
+3 3000 None 0 #
+4 3010 @
+4 4000 None 0 #
+5 4010 @
+5 5000 None 0 #
+6 5010 @
+6 6000 None 0 #
+7 6010 @
+7 7000 None 0 #
+0 7010 @
+8 8000 None 0 #
+0 8010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{MGL Security Control
+Status: Online 
+Control: D.I.}
+{2010}{}{Check quarantine status}
+{2020}{}{Access security control}
+{2030}{}{Exit}
+{3000}{}{Quarantine status:
+Entire Labs : Not under quarantine lockdown
+Level1 local: No local quarantine lockdown
+Level2 local: No local quarantine lockdown
+Level3 local: No local quarantine lockdown
+Entire Level3: Under quarantine lockdown-exception
+
+         
+}
+{3010}{}{Hmm... let's take a closer look on level 3...}
+{4000}{}{Entire Level3: Under quarantine lockdown-exception
+Level 3: Ventilation: quarantine lockdown
+              Energy and water distribution shaft: quarantine lockdown
+              Freight elevator: quarantine lockdown
+              Access lockdown gate: quarantine lockdown-exception}
+{4010}{}{What is this exception ?}
+{5000}{}{Access lockdown gate: quarantine lockdown-exception
+Lockdown gate status: 
+Unlocked.
+Gate control connected to Decontamination chamber.
+Decontamination chamber under control of D.I. security core.
+                           
+}
+{5010}{}{Hmm D.I. are you here ?}
+{6000}{}{. . . . .  Yes , I'm here too, do you need anything ?
+                           
+}
+{6010}{}{Can i access level 3 ?}
+{7000}{}{Quarantine gate is unlocked, you can access laboratory from decontamination chamber. But It's dangerous there and i lost connection to inner systems. Only thing i know is the there is dangerous radiation and air filled with various disease germs. Access without some kind of Hazmat suit is suicide. Also I'm afraid all doors and security systems could be broken.
+}
+{7010}{}{Hmm Thanks for warning.}
+{8000}{}{Access Denied.
+}
+{8010}{}{exit}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Controla ochrony MGL
+status: on-line
+kontrola: D.I.}
+{2010}{}{Sprawdz status kwarantanny.}
+{2020}{}{Dostep do kontroli ochrony}
+{2030}{}{wyjscie}
+{3000}{}{Status kwarantanny
+Labolatoria : nie pod kwarantanna lokalna
+Poziom1 lokalnie: nie pod kwarantanna lokalna
+Poziom2 lokalnie: nie pod kwarantanna lokalna
+Poziom3 caly: kwarantanna, zblokowany wyjatek
+Poyiom3 lokalnie: nie pod kwarantanna lokalna
+         
+}
+{3010}{}{Hmm rozejzyjmy sie po poziomie 3}
+{4000}{}{Poziom3 caly: pod kwarantanna, zblokowany wyjatek
+Poziom 3: Wentylacja: zblokowana kwarantanna
+             Wal rozprowadzania energii i wody: zblokowane kwarantanna
+              Winda frachtowa: zblokowana kwarantanna
+             Dostep blokowania bramy: kwarantanna, zblokowany wyjatek}
+{4010}{}{Co to za wyjatek ?}
+{5000}{}{ Dostep blokowania bramy: kwarantanna, zblokowany wyjatek
+Status blokowania bramy: 
+Odblokowana.
+Kontrola bramy polaczona z komora odkazania.
+Komora odkazania pod kontrola rdzenia ochrony D.I.
+                           
+}
+{5010}{}{Hmm D.I. jestes tu ?}
+{6000}{}{. . . . .  Tak , jestem tu rowniez, czegos potrzebujesz ?
+                           
+}
+{6010}{}{Czy moge sie dostac na poziom 3 ?}
+{7000}{}{Brama kwarantanny jest odblokowana, mozesz dostac sie do laboratorium przez komore odkazania. Lecz to jest niebezpieczne i stracilem polaczenie z wewnetrznymi systemami. Jedyna rzecza jaka wiem to ze jest tam niebezpieczna radiacja i powietrze wypelnione roznymi zarazkami chorob. Dostep bez skafandra ochronnego- Hazmat suit jest samobojstwem. Poza tym obawiam sie ze wszystkie drzwi i systemy ochronne moga byc nieczynne.
+}
+{7010}{}{Hmm dzieki za ostrzezenie.}
+{8000}{}{Odmowa dostepu.
+}
+{8010}{}{wyjscie}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{MGL security control
+status: on-line
+control: D.I.}
+{2010}{}{Check quarantine status.}
+{2020}{}{Access security control}
+{2030}{}{exit}
+{3000}{}{Quarantine status
+Entire Labs : not under quarantine lockdown
+Level1 local: no local quarantine lockdown
+Level2 local: no local quarantine lockdwon
+Entire Level3: Under quarantine lockdown-exception
+Level3 local: no local quarantine lockdwon
+         
+}
+{3010}{}{Hmm let's take a closer look at level 3}
+{4000}{}{Entire Level3: Under quarantine lockdown-exception
+Level 3: Ventilation: quarantine lockdown
+              Energy and water distribution shaft: quarantine lockdown
+              Freight elevator: quarantine lockdown
+              Access lockdown gate: quarantine lockdown-exception}
+{4010}{}{What is this exception ?}
+{5000}{}{Access lockdown gate: quarantine lockdown-exception
+Lockdown gate status: 
+Unlocked.
+Gate control connected to Decontamination chamber.
+Decontamination chamber under control of D.I. security core.
+                           
+}
+{5010}{}{Hmm D.I. are you here ?}
+{6000}{}{. . . . .  Yes , I'm here too, do you need anything ?
+                           
+}
+{6010}{}{Can i access level 3 ?}
+{7000}{}{Quarantine gate is unlocked, you can access laboratory from decontamination chamber. But It's dangerous there and i lost connection to inner systems. Only thing i know is the there is dangerous radiation and air filled with various disease germs. Access without some kind of Hazmat suit is suicide. Also I'm afraid all doors and security systems could be broken.
+}
+{7010}{}{Hmm Thanks for warning.}
+{8000}{}{Access Denied.
+}
+{8010}{}{exit}
+

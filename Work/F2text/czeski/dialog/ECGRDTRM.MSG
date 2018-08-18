@@ -1,0 +1,8 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš terminál s funkèním vodním èipem.}
+{101}{}{Vidíš terminál s nefunkèním vodním èipem.}
+{102}{}{Pokazil jsi vodní èip... Vault vydrží bez vody asi 100 až 150 dní. To tì do urèité míry uklidòuje.}
+{103}{}{Ale ne.}
+{104}{}{*Píp*}
+{105}{}{*Pí....Oop*}
+{106}{}{*Píp* *Pí....Oop*}

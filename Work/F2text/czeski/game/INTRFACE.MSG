@@ -1,0 +1,8 @@
+#tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+#   Interface text from INTFACE.C
+#
+{100}{}{PLÍŽENÍ}
+{101}{}{LEVEL}
+{102}{}{ZÁVISLOST}
+{103}{}{OTRAVA}
+{104}{}{OZÁØENÍ}

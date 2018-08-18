@@ -1,0 +1,3 @@
+{100}{}{Tu effraies une volée de vautours qui se repaissent d'une bande de brahmines mortes.}
+{101}{}{Beurk ! Rien de pire que de la chair qui pourrit au soleil.}
+{102}{}{Bon dieu, c'est Bess !}

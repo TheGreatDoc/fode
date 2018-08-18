@@ -1,0 +1,8 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš terminál.}
+{101}{}{Zdá se, že terminál ovládá dveøe v této oblasti.}
+{102}{}{Slyšíš jak se nìjaké dveøe otevírají.}
+
+{110}{}{Pøipadá ti, že máš odtud nìco vytlaèit.}
+
+{120}{}{Elektrická podlaha zapnuta.}

@@ -1,0 +1,199 @@
+#tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+# Miscellaneous game engine messages.
+#
+# Defined in game.h
+#
+{0}{}{Opravdu chceš hru ukonèit?}
+{1}{}{Demo verze}
+{2}{}{Bude použit pøednastavený charakter.}
+{3}{}{Obrázek uložen.}
+{4}{}{Hra byla nahrána.}
+{5}{}{Hra byla uložena.}
+{6}{}{Èasový limit demoverze vypršel.}
+{7}{}{Bìhem souboje není Pipboy pøístupný!}
+{8}{}{Chyba pøi ukládání obrázku.}
+{9}{}{INTRO}
+{10}{}{NOVÁ HRA}
+{11}{}{NAÈÍST}
+{12}{}{NASTAVENÍ}
+{13}{}{AUTOØI}
+{14}{}{KONEC}
+{15}{}{Akèní body}
+{16}{}{Hit body}
+{17}{}{Detektor pohybu není nainstalován.}
+{18}{}{Detektor pohybu je vybitý.}
+{20}{}{Verze 1.02 - Copyright(c) 2000 FalloutIICZ team & LEVEL}
+
+{30}{}{Chceš hrát dál?}
+
+{50}{}{Ke spuštìní Falloutu potøebuješ CD!}
+
+#
+# Game config text. Defined in gconfig.c
+#
+{100}{}{Chyba pøi ukládání nastavení!}
+{101}{}{Nastavení hry nebylo uloženo.}
+#
+# Some radiation messages used in critter.c
+#
+{1000}{}{Zvedá se ti žaludek.}
+{1001}{}{Zvedl se ti žaludek a zaèínáš zvracet. Pøemáháš únavu.}
+{1002}{}{Cítíš únavu, velmi èasto zvracíš a stále èastìji si potøebuješ odpoèinout.}
+{1003}{}{Silnì krvácíš. Máš nemoc ze záøení, vlasy ti vypadávají po celých pramenech.}
+{1004}{}{Nepøetržitì silnì krvácíš. Ve tvých zvratcích se objevuje krev. Kùže se ti loupe o obnažuje až na holé maso.}
+{1005}{}{Trpíš silným vnitøním krvácením a vodnatými prùjmy. Cítíš se nafouklý a zmítáš se v témìø nepøetržité bolestivé agónii.}
+{1006}{}{Smrt vlivem nemoci z ozáøení.}
+{1007}{}{Zasažení silnou dávkou radiace.}
+{1008}{}{Geiger tiká.}
+{1009}{}{Geiger divoce tiká.}
+#
+# Message used in actions.c
+#
+{2000}{}{Sem se nemùžeš dostat.}
+{2001}{}{Zámek se zasekl.}
+#
+# poison messages from critter.c
+#
+{3000}{}{Otráva!}
+{3001}{}{Poškození zpùsobené jedem.}
+{3002}{}{Cítíš se o trochu lépe.}
+{3003}{}{Cítíš se lépe.}
+#
+# from queue.c
+#
+{4000}{}{Kvùli neodbornému zacházení výbušnina pøedèasnì explodovala.}
+#
+# from combatai.c
+#
+{5000}{}{používá:}
+{5001}{}{nemá náboje pro zbraò:}
+{5002}{}{nabíjí zbraò:}
+#
+# from gdialog.c - new tell me about stuff
+#
+{6000}{}{Zeptat se na co?}
+
+#
+# from pipboy.c -- Fallout 2
+#
+#// Fallout 2:  For Pipboy
+{7000}{}{Pipboy nebyl dosud nainstalován!}
+
+#
+# from anim.c -- Fallout 2
+#
+{8000}{}{Neseš toho pøíliš mnoho.}  # Carrying too much weight
+{8001}{}{%s je pøetížený.}
+
+#
+# from worldmap.c -- Fallout 2
+#
+{8500}{}{Získáváš %d zkuš. bodù za úspìšné použití schopnosti "ZÁLESÁK".}
+
+#
+# from party.c -- Fallout 2
+#
+{9000}{}{%s postupuje na vyšší úroveò.} # Party Member has gained experience/level
+# Individuals
+
+{9010}{}{Jù. Najednou se cítím nìjak zkušenìjší.} # pMMyron_PID
+{9011}{}{Další level, brouku! Další level!}
+{9012}{}{Cítím mocný pøíliv síly. Jako kdyby všechny moje schopnosti vzrostly o % procent.}
+{9013}{}{Cítím se odolnìjší. Silnìjší. Chytøejší. Jako kdybych si šlehnul.}
+
+{9020}{}{Áách! Cítím, že díky všem tìm novým zkušenostem vzrostla i moje síla!} # pMMarcus_PID
+{9021}{}{Aaah! Moje svaly... jsou najednou silnìjší... schopnosti... vzrostly.... postoupil jsem na další úroveò...}
+{9022}{}{Chci diplom a tu legraèní kosoètvercovou èepièku se støapcem, protože jsem právì odmaturoval!}
+{9023}{}{Hej, cítím se najednou nìjak mocnìjší! Znamená to taky, že dostanu pøidáno?}
+
+{9030}{}{Všechno se mi to najednou znova vybavuje...} # pMMacRae_PID
+{9031}{}{Hehe. Vypadá to, že i takový starý pes jako já, se mùže nauèit pár nových kouskù.}
+{9032}{}{Zdá se, že se mi všechno to toulání vyplatilo.}
+{9033}{}{Nauèil jsem se pár nových fíglù.}
+
+{9040}{}{Dìd nás uèí. My posloucháme.} # pMSulik_PID
+{9041}{}{Duchové nás nauèit mnoho nového, pøíteli.}
+{9042}{}{My se právì teï uèit.}
+{9043}{}{Do Sulika teï vstoupit mocný duch.}
+{9044}{}{My se teï stát èástí našeho Dìdka Kostìja, pøíteli.}
+{9045}{}{My teï být jako náš Dìdek Kostìj.}
+
+{9050}{}{Ach, mùj bože...z tohohle jsem se opravdu hodnì pouèil.} # pMLenny_PID
+{9051}{}{Tolik mrtvých...ach, mùj bože, leží na mnì veliká vina.}
+{9052}{}{Poøád ještì nemùžu uvìøit, že jsem dokázal pøežít tak dlouho.}
+
+{9060}{}{Haf!} # pMCyberdog_PID
+{9061}{}{Òaf!}
+{9062}{}{Haf!}
+{9063}{}{Òaf!}
+{9064}{}{Haf! Haf!}
+
+{9070}{}{Umím pár nových vìcí!} # pMDoc_PID
+{9071}{}{Umím pár nových vìcí!}
+
+{9080}{}{Myslím, že jsem získal nové znalosti!} # pMGoris_PID
+{9081}{}{Vìdìní je dar.}
+{9082}{}{Už bych mohl klidnì odmaturovat na støední škole... americké.}
+{9083}{}{Ve svých znalostech se už vyrovnám Grutharovi.}
+{9084}{}{Už jsem silnìjší než vìtšina z mého rodu.}
+{9085}{}{Teï jsem v mém rodì ten nejmocnìjší.}
+
+{9090}{}{Umím pár nových vìcí!} # pMDavin_PID
+{9091}{}{Umím pár nových vìcí!}
+
+{9100}{}{Umím pár nových vìcí!} # pMMaria_PID
+{9101}{}{Umím pár nových vìcí!}
+
+{9110}{}{Umím pár nových vìcí!} # pMLaddie_PID
+{9111}{}{Umím pár nových vìcí!}
+
+{9120}{}{ANALÝZA DAT KOMPLETNÍ. PROVÁDÍM UPGRADE SYSTÉMU.} # pMRoboBrain_PID  -- CyberBrain
+{9121}{}{KOMPLETACE NOVÝCH DAT UKONÈENA. UPRAVUJI ZAMÌØOVACÍ SYSTÉMY.}
+{9122}{}{ÚPRAVA SYSTÉMU DOKONÈENA.}
+{9123}{}{PROVÁDÍM PØEKALIBROVÁNÍ ZAMÌØOVACÍHO SYSTÉMU. PØESNOST ZÁSAHU ZVÝŠENA O 20%.}
+{9124}{}{DOSAŽEN OPTIMÁLNÍ VÝKON CELÉHO SYSTÉMU.}
+
+{9130}{}{Šéfe! Myslím, že tomu koneènì pøicházím na kloub.} # pMVic_PID
+{9131}{}{Zlepšuju se. Opravdu! Øíkal jsem ti, že tì nezklamu šéfe.}
+{9132}{}{Hej... poèkej... už jsem na to pøišel. Myslím, že musím prostì jen peèlivìji míøit.}
+{9133}{}{Vidíš šéfe! I starý pes se mùže nauèit nové kousky!}
+{9134}{}{Víš co se stalo, šéfe? Myslím, že jsem se zase nauèil nìco nového.}
+{9135}{}{Zaèínám v tom být docela dobrý. Já to øíkal, šéfe. Všechny dobré vìci chtìjí prostì jen trochu èasu.}
+
+{9140}{}{Umím pár nových vìcí!} # pMBess_PID
+{9141}{}{Umím pár nových vìcí!}
+
+{9150}{}{Umím pár nových vìcí!} # pMChicken_PID
+{9151}{}{Umím pár nových vìcí!}
+
+{9160}{}{Umím pár nových vìcí!} # pMKarl_PID
+{9161}{}{Umím pár nových vìcí!}
+
+{9170}{}{Umím pár nových vìcí!} # pMJonny_PID
+{9171}{}{Umím pár nových vìcí!}
+
+{9180}{}{Umím pár nových vìcí!} # pMLloyd_PID
+{9181}{}{Umím pár nových vìcí!}
+
+{9190}{}{Haf HAF!} # pMDogMeat_PID
+{9191}{}{Haf HAF VHÚÚÚ!}
+{9192}{}{Òaf HAF VHÚÚÚ!}
+{9193}{}{Haf HAF VHÚÚÚ!}
+{9194}{}{Òaf HAF VHÚÚÚ!}
+{9195}{}{Òaf-Vhúú!}
+
+{9200}{}{} # pMRoboBrain_PID -- Human
+
+{9210}{}{} # pMRoboBrain_PID -- Abnormal
+
+{9220}{}{} # pMRoboBrain_PID -- Chimp
+
+{9230}{}{} # pMPariahDog_PID
+
+{9240}{}{Inicializuji update programu, pane... upgrade ukonèen.}  # pMK9_PID
+{9241}{}{Upgraduji software, pane... verze 2.0 instalována.}
+{9242}{}{Provádím modifikaci hardwaru, pane... všechny systémy jsou funkèní.}
+{9243}{}{Provádím modifikace hardwaru, pane... všechny systémy bìží v optimálním režimu!}
+
+
+{9250}{}{} # pMCarTrunk_PID

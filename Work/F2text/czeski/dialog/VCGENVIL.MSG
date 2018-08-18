@@ -1,0 +1,17 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš venkovana.}
+{101}{}{Vidíš venkovana.}
+{102}{}{Nazdárek.}
+{103}{}{Dobrý den.}
+{104}{}{Vítáme tì v naší Vesnici.}
+{105}{}{Pøíšery, ochraòujte nás.}
+{106}{}{Rychle zpátky.}
+{107}{}{Tak mám dojem, že ty zbranì budeme potøebovat hodnì brzo.}
+{108}{}{Zdravíèko.}
+{109}{}{Odejdi!}
+{110}{}{Dej si èelem vzad, jo?!!}
+{111}{}{Vypadni odtud!}
+{112}{}{Nyní jsme v bezpeèí.}
+{113}{}{Díky.}
+{114}{}{Žehnám ti, poutníèe.}

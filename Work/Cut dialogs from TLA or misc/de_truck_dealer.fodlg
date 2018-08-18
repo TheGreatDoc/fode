@@ -1,0 +1,253 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+Dialog kupowania auta, auto jezeli jest miejsce respi sie punkcie respa samochodow w danym miescie. Dlatego moze byc to jakas malo lokacja z obstawa np. gasstation. Moze ona sie tez powtarzac, niema z tym problemu.
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+10 2020 R _script car_buy@r_CheckCar 1 0 #
+30 2030 #
+40 2040 R _script car_buy@r_CopyKey 1 0 #
+0 2050 @
+3 3000 car_buy@dlg_PrepareBuy 1 #
+3 3010 R _script car_buy@r_BuyTruck 1 0 #
+0 3020 @
+5 4000 None 1 @
+6 5000 None 1 @
+7 6000 None 1 #
+0 6010 @
+8 7000 None 1 #
+0 7010 @
+10 8000 car_buy@dlg_SellCar 1 #
+11 8010 R _script car_buy@r_SellCar 1 0 #
+0 8020 @
+11 9000 None 1 @
+30 10000 None 1 #
+31 10010 R _script car_buy@r_CheckCar 1 0 #
+32 10020 R _script car_buy@r_CheckCar 1 0 #
+33 10030 R _script car_buy@r_CheckCar 1 0 #
+34 10040 D _item p PID_CAR_ENERGY_CELL_CONTROLLER } 1 #
+35 10050 D _item p PID_CAR_ENERGY_CELL_CONTROLLER = 0 #
+65505 10060 @
+31 11000 car_buy@dlg_Fuel 1 #
+39 11010 R _script car_buy@r_DoFuel 1 0 #
+37 11020 #
+0 11030 @
+32 12000 car_buy@dlg_Wear 1 #
+39 12010 R _script car_buy@r_DoWear 1 0 #
+37 12020 #
+65505 12030 @
+33 13000 car_buy@dlg_Bio 1 #
+39 13010 R _script car_buy@r_DoBio 1 0 #
+37 13020 #
+65505 13030 @
+34 14000 car_buy@dlg_Energy 1 #
+39 14010 D _item p PID_CAR_ENERGY_CELL_CONTROLLER } 1 R _script car_buy@r_DoEnergy 1 0 #
+65505 14020 #
+0 14030 @
+35 15000 None 1 #
+0 15010 @
+37 16000 None 1 @
+38 17000 None 1 @
+39 18000 None 1 @
+40 19000 None 1 @
+100 20000 None 1 @
+101 21000 None 1 @
+102 22000 None 1 @
+103 23000 None 1 &
+
+[engl]
+{100}{}{Vladimir}
+{110}{}{man17.png}
+{200}{}{You see a nice-looking man... oh no, wait. You see Vladimir.}
+{210}{}{You see a old muscular man, wearing a sparse beard. He's standing, assumed a dignified air.}
+{210}{}{You see Vladimir. He looks good in those jeans.}
+{210}{}{You see Vladimir. He's flexing his muscles from time to time, humming something.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Hi! My name is Vladimir, this is my workshop. I buy, repair and modify various vehicles here but especially specializes in Truck. If you are interested I have a few of them in stock.
+I can help, if you have money, of course. Also I can make a copy of any key for 1000 coins.}
+{2010}{}{What units do you have in stock?}
+{2020}{}{I'd like to sell my car.}
+{2030}{}{What else can you offer to me?}
+{2040}{}{Make a copy of this key.}
+{2050}{}{Sorry, I'll visit you later.}
+{3000}{}{I can offer you Truck for @lex truck@.}
+{3010}{}{I'll buy Truck}
+{3020}{}{No, maybe next time.}
+{4000}{}{No money - no car. Come back when you have some cash.}
+{5000}{}{The garage is full of cars at the moment, come back when there is some free space.}
+{6000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{6010}{}{That's it! Bye.}
+{7000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{7010}{}{That's it. Bye.}
+{8000}{}{For your piece of junk I'll give you @lex sell_cost@ coins.}
+{8010}{}{Deal.}
+{8020}{}{Are you nuts? I'm not selling it.}
+{9000}{}{Excellent. Hey guys, make this beauty feel good! [Throws keys to the garage]}
+{10000}{}{Refuel, repair, and modify engine. For modify "biofuels engine" I have all needed parts, but if you want to modify the engine on the power supply the energy cells you will need to bring Energy Cell Controller.}
+{10010}{}{I'd like to fuel up my car.}
+{10020}{}{Repair my car.}
+{10030}{}{Spirit-friendly engine is exactly what I need. [Bio Engine]}
+{10040}{}{I wants install Energy Cell Controller. [Energy Engine]}
+{10050}{}{I wants install Energy Cell Controller but do not know where to find the needed parts for you.}
+{10060}{}{Ok, I'll keep that in my mind.}
+{11000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{11010}{}{Okay.}
+{11020}{}{I don't have enough money.}
+{11030}{}{I'll come back next time.}
+{12000}{}{Repair will cost you @lex wear_cost@ coins.}
+{12010}{}{Deal! Fix it.}
+{12020}{}{Nope. Too expensive.}
+{12030}{}{Next time, I think.}
+{13000}{}{Modify will cost you @lex bio_cost@ coins.}
+{13010}{}{No problem, start the work.}
+{13020}{}{Ooops... I forgot my money in the car.}
+{13030}{}{No, not today.}
+{14000}{}{Modify will cost you @lex energy_cost@ coins.}
+{14010}{}{Here you have money and Energy Cell Controler}
+{14020}{}{Ooops... I forgot something else.}
+{14030}{}{No, not today.}
+{15000}{}{How do I know? Look somewhere in the junkyard.}
+{15010}{}{Ehhh...}
+{16000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{17000}{}{There's no need for that.}
+{18000}{}{Done.}
+{19000}{}{One moment... Let's see... And now... Let's try this... Done! here, take it.}
+{20000}{}{Sorry, have important work to do now, come here later.}
+{21000}{}{Take the key in your hand, I can't understand what car are you talking about.}
+{22000}{}{I can't see your car, park it here.}
+{23000}{}{Take the key in your hand.}
+
+[pols]
+{100}{}{Vladimir}
+{110}{}{man17.png}
+{200}{}{You see a nice-looking man... oh no, wait. You see Vladimir.}
+{210}{}{You see a old muscular man, wearing a sparse beard. He's standing, assumed a dignified air.}
+{210}{}{You see Vladimir. He looks good in those jeans.}
+{210}{}{You see Vladimir. He's flexing his muscles from time to time, humming something.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Hi! My name is Vladimir, this is my workshop. I buy, repair and modify various vehicles here but especially specializes in Truck. If you are interested I have a few of them in stock.
+I can help, if you have money, of course. Also I can make a copy of any key for 1000 coins.}
+{2010}{}{What units do you have in stock?}
+{2020}{}{I'd like to sell my car.}
+{2030}{}{What else can you offer to me?}
+{2040}{}{Make a copy of this key.}
+{2050}{}{Sorry, I'll visit you later.}
+{3000}{}{I can offer you Truck for @lex truck@.}
+{3010}{}{I'll buy Truck}
+{3020}{}{No, maybe next time.}
+{4000}{}{No money - no car. Come back when you have some cash.}
+{5000}{}{The garage is full of cars at the moment, come back when there is some free space.}
+{6000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{6010}{}{That's it! Bye.}
+{7000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{7010}{}{That's it. Bye.}
+{8000}{}{For your piece of junk I'll give you @lex sell_cost@ coins.}
+{8010}{}{Deal.}
+{8020}{}{Are you nuts? I'm not selling it.}
+{9000}{}{Excellent. Hey guys, make this beauty feel good! [Throws keys to the garage]}
+{10000}{}{Refuel, repair, and modify engine. For modify "biofuels engine" I have all needed parts, but if you want to modify the engine on the power supply the energy cells you will need to bring Energy Cell Controller.}
+{10010}{}{I'd like to fuel up my car.}
+{10020}{}{Repair my car.}
+{10030}{}{Spirit-friendly engine is exactly what I need. [Bio Engine]}
+{10040}{}{I wants install Energy Cell Controller. [Energy Engine]}
+{10050}{}{I wants install Energy Cell Controller but do not know where to find the needed parts for you.}
+{10060}{}{Ok, I'll keep that in my mind.}
+{11000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{11010}{}{Okay.}
+{11020}{}{I don't have enough money.}
+{11030}{}{I'll come back next time.}
+{12000}{}{Repair will cost you @lex wear_cost@ coins.}
+{12010}{}{Deal! Fix it.}
+{12020}{}{Nope. Too expensive.}
+{12030}{}{Next time, I think.}
+{13000}{}{Modify will cost you @lex bio_cost@ coins.}
+{13010}{}{No problem, start the work.}
+{13020}{}{Ooops... I forgot my money in the car.}
+{13030}{}{No, not today.}
+{14000}{}{Modify will cost you @lex energy_cost@ coins.}
+{14010}{}{Here you have money and Energy Cell Controler}
+{14020}{}{Ooops... I forgot something else.}
+{14030}{}{No, not today.}
+{15000}{}{How do I know? Look somewhere in the junkyard.}
+{15010}{}{Ehhh...}
+{16000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{17000}{}{There's no need for that.}
+{18000}{}{Done.}
+{19000}{}{One moment... Let's see... And now... Let's try this... Done! here, take it.}
+{20000}{}{Sorry, have important work to do now, come here later.}
+{21000}{}{Take the key in your hand, I can't understand what car are you talking about.}
+{22000}{}{I can't see your car, park it here.}
+{23000}{}{Take the key in your hand.}
+
+[russ]
+{100}{}{Vladimir}
+{110}{}{man17.png}
+{200}{}{You see a nice-looking man... oh no, wait. You see Vladimir.}
+{210}{}{You see a old muscular man, wearing a sparse beard. He's standing, assumed a dignified air.}
+{210}{}{You see Vladimir. He looks good in those jeans.}
+{210}{}{You see Vladimir. He's flexing his muscles from time to time, humming something.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Hi! My name is Vladimir, this is my workshop. I buy, repair and modify various vehicles here but especially specializes in Truck. If you are interested I have a few of them in stock.
+I can help, if you have money, of course. Also I can make a copy of any key for 1000 coins.}
+{2010}{}{What units do you have in stock?}
+{2020}{}{I'd like to sell my car.}
+{2030}{}{What else can you offer to me?}
+{2040}{}{Make a copy of this key.}
+{2050}{}{Sorry, I'll visit you later.}
+{3000}{}{I can offer you Truck for @lex truck@.}
+{3010}{}{I'll buy Truck}
+{3020}{}{No, maybe next time.}
+{4000}{}{No money - no car. Come back when you have some cash.}
+{5000}{}{The garage is full of cars at the moment, come back when there is some free space.}
+{6000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{6010}{}{That's it! Bye.}
+{7000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{7010}{}{That's it. Bye.}
+{8000}{}{For your piece of junk I'll give you @lex sell_cost@ coins.}
+{8010}{}{Deal.}
+{8020}{}{Are you nuts? I'm not selling it.}
+{9000}{}{Excellent. Hey guys, make this beauty feel good! [Throws keys to the garage]}
+{10000}{}{Refuel, repair, and modify engine. For modify "biofuels engine" I have all needed parts, but if you want to modify the engine on the power supply the energy cells you will need to bring Energy Cell Controller.}
+{10010}{}{I'd like to fuel up my car.}
+{10020}{}{Repair my car.}
+{10030}{}{Spirit-friendly engine is exactly what I need. [Bio Engine]}
+{10040}{}{I wants install Energy Cell Controller. [Energy Engine]}
+{10050}{}{I wants install Energy Cell Controller but do not know where to find the needed parts for you.}
+{10060}{}{Ok, I'll keep that in my mind.}
+{11000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{11010}{}{Okay.}
+{11020}{}{I don't have enough money.}
+{11030}{}{I'll come back next time.}
+{12000}{}{Repair will cost you @lex wear_cost@ coins.}
+{12010}{}{Deal! Fix it.}
+{12020}{}{Nope. Too expensive.}
+{12030}{}{Next time, I think.}
+{13000}{}{Modify will cost you @lex bio_cost@ coins.}
+{13010}{}{No problem, start the work.}
+{13020}{}{Ooops... I forgot my money in the car.}
+{13030}{}{No, not today.}
+{14000}{}{Modify will cost you @lex energy_cost@ coins.}
+{14010}{}{Here you have money and Energy Cell Controler}
+{14020}{}{Ooops... I forgot something else.}
+{14030}{}{No, not today.}
+{15000}{}{How do I know? Look somewhere in the junkyard.}
+{15010}{}{Ehhh...}
+{16000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{17000}{}{There's no need for that.}
+{18000}{}{Done.}
+{19000}{}{One moment... Let's see... And now... Let's try this... Done! here, take it.}
+{20000}{}{Sorry, have important work to do now, come here later.}
+{21000}{}{Take the key in your hand, I can't understand what car are you talking about.}
+{22000}{}{I can't see your car, park it here.}
+{23000}{}{Take the key in your hand.}
+

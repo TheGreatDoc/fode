@@ -1,0 +1,8 @@
+//Prefixes for players
+//Prefix DEV grants additional panels in game
+
+string [][]PREFIXES=
+{
+	{"Koniko","DEV"},
+    {"Random","GM"},
+};

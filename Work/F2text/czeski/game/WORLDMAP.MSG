@@ -1,0 +1,2146 @@
+#tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used by town and world map
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+
+#
+# Town map entry-point selection names
+#
+# Format:
+#	city type.
+#	Up to 10 selection names
+#
+# Arroyo
+{200}{}{Most}
+{201}{}{Vesnice}
+{202}{}{Vstup do chramu}
+{203}{}{Lovecke uzemi}
+{204}{}{Vnitrek chramu}
+#
+# Den
+{210}{}{Zapadni strana}
+{211}{}{Vychodni strana}
+{212}{}{Obytna ctvrt}
+#
+# Klamath
+{220}{}{Centrum}
+{221}{}{Lovecka ctvrt}
+{222}{}{Krysi katakomby}
+{223}{}{Lesik}
+{224}{}{Pastviny}
+{225}{}{Souteska}
+#
+# Modoc
+{230}{}{Hlavni ulice}
+{231}{}{Hostinec}
+{232}{}{Pastviny Grishamovych brahmin}
+{233}{}{Farrelova zahrada}
+{234}{}{Jeskyne pod zachodem}
+{235}{}{Mestska studna}
+#
+# Vault City
+{240}{}{Predmesti}
+{241}{}{Vnitrni mesto}
+{242}{}{Senat}
+{243}{}{Vault}
+#
+# Gecko
+{250}{}{Osada}
+{251}{}{Elektrarna}
+{252}{}{Smetiste}
+{253}{}{Katakomby}
+#
+# Broken Hills
+{260}{}{Centrum}
+{261}{}{Kolonie}
+#
+# New Reno
+{270}{}{Ulice Pannen}
+{271}{}{Druha ulice}
+{272}{}{Obchodni ctvrt}
+{273}{}{Vychodni ctvrt}
+{274}{}{Cerpaci stanice}
+{275}{}{Boxersky ring}
+{276}{}{Predavaci zona}
+#
+# Sierra Army Base
+{280}{}{Bitevni plan}
+{281}{}{Sklad 1.patro: Ubikace}
+{282}{}{Sklad 2.patro: Sklady a dilny}
+{283}{}{Sklad 3.patro: Kyberneticka laborator}
+{284}{}{Sklad 4.patro: Biologicka laborator}
+#
+# Vault 15
+{290}{}{Squat}
+{291}{}{Squateri}
+{292}{}{Squateri}
+{293}{}{Vault 15}
+{294}{}{Vychodni vstup}
+#
+# New California Republic
+{300}{}{Bazar}
+{301}{}{Kongres}
+{302}{}{Centrum}
+{303}{}{Budova Kongresu}
+{304}{}{Westinuv ranc}
+{305}{}{Pastviny}
+#
+# Vault 13
+{310}{}{Jeskyne}
+{311}{}{Vault 13}
+#
+# Military Base
+{320}{}{Vstup}
+{321}{}{1. patro}
+{322}{}{2. patro}
+{323}{}{3. patro}
+{324}{}{4. patro}
+#
+# Redding
+{330}{}{Centrum}
+{331}{}{Dul Velky Wanamingo}
+{332}{}{Dul Velky Wanamingo}
+{333}{}{Hornicka kolonie}
+{334}{}{Podzemni tunely}
+{335}{}{Dulní chodby}
+#
+# San Francisco
+{340}{}{Cinska ctvrt}
+{341}{}{Pristav}
+{342}{}{Tanker}
+{343}{}{Pristavaci draha}
+{344}{}{Vnitrek raketoplanu}
+{345}{}{Zakladna Hubologistu}
+{346}{}{Chram Shi}
+#
+# Navarro
+{350}{}{Cerpaci stanice}
+{351}{}{Hlavni brana}
+#
+# The Enclave
+{360}{}{Pristavni dok}
+{361}{}{Vestibul}
+{362}{}{Velky Zly Boss}
+{363}{}{Kasarny}
+{364}{}{Mistnosti Presidenta}
+{365}{}{Reaktor}
+{366}{}{Soková terapie}
+#
+# Abbey
+{370}{}{Chybièka se vloudila}
+#
+# Primitive Tribe
+{380}{}{Chybièka se vloudila}
+#
+# Environmental Protection Agency
+{390}{}{Chybièka se vloudila}
+#
+# Modoc: Ghost Town Sub-Area
+{400}{}{Farma duchu}
+{401}{}{Podzemi}
+{402}{}{Podzemni jezero}
+#
+# Car Out of Gas
+{410}{}{Vybite auto}
+#
+# Destroyed Arroyo
+{420}{}{Zriceny most}
+#
+# Klamath Toxic Caves
+{430}{}{Toxicke jeskyne}
+#
+# Den Slave Runs
+{440}{}{Ohrada pro otroky}
+#
+# Raiders
+{450}{}{Studna}
+{451}{}{Sraz}
+{452}{}{Jeskynni vchod}
+#
+# Random Encounter Desert
+{460}{}{Poust}
+{461}{}{Pustina}
+{462}{}{Poust}
+{463}{}{Pustina}
+{464}{}{Poust}
+{465}{}{Step}
+{466}{}{Poust}
+{467}{}{Polopoust}
+{468}{}{Pustina}
+{469}{}{Poust}
+#
+# Random Encounter Mountain
+{470}{}{Hory}
+{471}{}{Jeskyne}
+{472}{}{Pahorky}
+{473}{}{Kaverna}
+{474}{}{Skalni sluj}
+{475}{}{Jeskyne}
+{476}{}{Jeskyne}
+{477}{}{Skalni sluj}
+{478}{}{Kopce}
+{479}{}{Pohori}
+#
+# Random Encounter City
+{480}{}{Zriceniny mesta}
+{481}{}{Opustene mesto}
+{482}{}{Znicene mesto}
+{483}{}{Trosky mesta}
+{484}{}{Rozbite mesto}
+{485}{}{Ruiny mesta}
+{486}{}{Trosky mesta}
+{487}{}{Znicene mesto}
+#
+# Random Encounter Coast
+{490}{}{Pobrezi}
+{491}{}{Plaz}
+{492}{}{Pusta plaz}
+{493}{}{Opustena plaz}
+{494}{}{Puste morské pobrezi}
+{495}{}{Breh}
+{496}{}{Morske pobrezi}
+{497}{}{Breh}
+{498}{}{Plaz}
+{499}{}{Pusta plaz}
+#
+# New Reno: Golgatha
+{500}{}{Golgotha}
+#
+# Special Encounter: Whale Encounter
+{510}{}{Mrtvy vorvan}
+#
+# Special Encounter: Tin Woodsman
+{520}{}{Rezivec}
+#
+# Special Encounter: Big Head
+{521}{}{Kamenna hlava}
+#
+# Special Encounter: Crashed Federation Shuttle
+{530}{}{Misto ztroskotani}
+#
+# Special Encounter: Unwashed Villagers
+{540}{}{Poust}
+#
+# Special Encounter: Bridge Guardian
+{550}{}{Most Smrti}
+#
+# Special Encounter: Cafe of Broken Dreams
+{560}{}{Kavarna "U ztracenych snu"}
+#
+# Special Encounter: Holy Hand Grenade 1
+{570}{}{Poust}
+#
+# Special Encounter: Holy Hand Grenade 2
+{580}{}{Jeskyne}
+#
+# Special Encounter: Guardian of Forever
+{590}{}{Portal Strazce Vecnosti}
+#
+# Special Encounter: se skládkou toxických odpadù
+{600}{}{Skladka toxickych odpadu}
+#
+# Special Encounter: Pariahs
+{610}{}{Pustina}
+#
+# Special Encounter: Mad Brahmin
+{620}{}{Stado brahmin}
+#
+# Caravan Encounters
+{630}{}{Poust}
+{631}{}{Kopce}
+#
+# Fake Vault 13 A
+{640}{}{Vault 13 kaverny}
+#
+# Fake Vault 13 B
+{650}{}{Jeskyne}
+#
+# Shadow Areas (Those which fit nowhere else
+{660}{}{Pobrezi}
+{661}{}{Pláz}
+{662}{}{Poust}
+{663}{}{Poust}
+{664}{}{Pustina}
+{665}{}{Hory}
+{666}{}{Kopce}
+{667}{}{Poust}
+{668}{}{Poust}
+#
+# New Reno Stables
+{670}{}{Staje}
+
+
+#
+# Terrain type names for world map hover button
+#
+{1000}{}{Poust}
+{1001}{}{Hory}
+{1002}{}{Mesto}
+{1003}{}{Pobrezi}
+{1004}{}{Neprozkoumano}  # Unknown/visited city
+
+
+# Misc messages
+{1500}{}{Získáváš 10.000 zkuš. bodù!}
+{1501}{}{Trosky}
+{1502}{}{Baterie auta je vybitá.}
+{1503}{}{Hmm...auto.  A nezdá se, že by bylo funkèní.}
+
+
+
+#
+# Worldmap Encounter messages
+#
+
+{2998}{}{Setkání}
+{2999}{}{Chceš se setkat}
+
+# Encounter Table 0
+{3000}{}{s bandou lupièù.}
+{3001}{}{s radškorpióny.}
+{3002}{}{s obøími krysami.}
+{3003}{}{s obchodníky.}
+{3004}{}{<s nìèím zvláštním>}
+
+# Encounter Table 1
+{3050}{}{s partou banditù.}
+{3051}{}{s nìkolika mantisy.}
+{3052}{}{se skupinou geckonù.}
+{3053}{}{s hejnem krtèích potkanù.}
+{3054}{}{s houfem radškorpiónù.}
+{3055}{}{s nìkolika velkými krysami.}
+{3056}{}{se obchodní výpravou.}
+{3057}{}{<nìèím zvláštním>}
+
+# Encounter Table 2
+{3100}{}{se spoleèenstvím banditù.}
+{3101}{}{s hejnem radškorpiónù.}
+{3102}{}{s hejnem velkých krys.}
+{3103}{}{s obchodním spoleèenstvím.}
+{3104}{}{<nìèím zvláštním>}
+
+# Encounter Table 3
+{3150}{}{s tlupou lotrù.}
+
+# Encounter Table 4
+{3200}{}{s bandou vrahù a darebákù.}
+
+# Encounter Table 5
+{3250}{}{se tlupou banditù.}
+
+# Encounter Table 6
+{3300}{}{s výpravou na váleèné stezce.}
+{3301}{}{se skupinou kanibalù.}
+{3302}{}{s nìkolika masožravými rostlinami a skupinkou støíbrných geckonù.}
+{3303}{}{se skupinou støíbrných geckonù.}
+{3304}{}{s lovci odmìn.}
+{3305}{}{s nìkolika lovci odmìn.}
+{3306}{}{s lovci lidí.}
+{3307}{}{se skupinkou lovcù odmìn.}
+{3308}{}{s tlupou lovcù odmìn.}
+{3309}{}{s bandou lovcù odmìn.}
+{3310}{}{s tlupou lovcù lidí.}
+{3311}{}{s lovci odmìn.}
+{3312}{}{s bandou lotrù vedených jedním z Mortonových bratrù.}
+{3313}{}{s hejnem škorpiónù.}
+{3314}{}{s nìkolika masožravými kytkami.}
+{3315}{}{se skupinkou praseèích potkanù.}
+{3316}{}{s hejnem krys.}
+{3317}{}{se skupinou lovcù bojujících s kanibaly.}
+{3318}{}{s houfem mravencù.}
+{3319}{}{s loveckou výpravou bojující s nìkolika škorpióny.}
+{3320}{}{se skupinkou praseèích potkanù.}
+{3321}{}{s malou skupinkou radškorpiónù.}
+{3322}{}{s malou skupinkou mravencù.}
+{3323}{}{s loveckou výpravou.}
+{3324}{}{se skupinou nomádù.}
+{3325}{}{s mužem hlídajícím most.}
+{3326}{}{s rytíøem krále Artuše bojujícím s krysou.}
+
+# Encounter Table 7
+{3350}{}{se skládkou toxických odpadù}
+{3351}{}{s podivným osamìlým psem.}
+{3352}{}{se stádem brahmín.}
+{3353}{}{s výpravou na váleèné stezce.}
+{3354}{}{s nìkolika lovci odmìn.}
+{3355}{}{s nìkolika lovci lidí.}
+{3356}{}{se skupinou lovcù odmìn.}
+{3357}{}{se skupinou lovcù lidí.}
+{3358}{}{s tlupou lovcù odmìn.}
+{3359}{}{s tlupou lovcù lidí.}
+{3360}{}{s bandou lovcù odmìn.}
+{3361}{}{s bandou lovcù lidí.}
+{3362}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3363}{}{s výpravou kanibalù.}
+{3364}{}{s masožravými rostlinami a nìkolika støíbrnými geckony.}
+{3365}{}{se skupinou støíbrných geckonù.}
+{3366}{}{se skupinou škorpiónù.}
+{3367}{}{se skupinou masožravých rostlin.}
+{3368}{}{se skupinou praseèích potkanù.}
+{3369}{}{se skupinou krys.}
+{3370}{}{se skupinou lovcù bojujících s kanibaly.}
+{3371}{}{se skupinou mravencù.}
+{3372}{}{se skupinou lovcù bojujících se škorpióny.}
+{3373}{}{s malou tlupou praseèích potkanù.}
+{3374}{}{s malým hejnem radškorpiónù.}
+{3375}{}{s nìkolika mravenci.}
+{3376}{}{s tlupou lovcù.}
+{3377}{}{s výpravou nomádù.}
+{3378}{}{s pozùstatky vorvanì.}
+{3379}{}{s obrovskou kamennou hlavou.}
+{3380}{}{se vrakem kosmické lodi.}
+{3381}{}{se portálem Strážce Vìènosti.}
+{3382}{}{s rytíøi krále Artuše.}
+{3383}{}{s nehybnì stojícím chlapíkem.}
+{3384}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 8
+{3400}{}{s výpravou na váleèné stezce.}
+{3401}{}{se skupinou kanibalù.}
+{3402}{}{s nìkolika masožravými rostlinami a skupinkou støíbrných geckonù.}
+{3403}{}{se skupinou støíbrných geckonù.}
+{3404}{}{s lovci odmìn.}
+{3405}{}{s nìkolika lovci odmìn.}
+{3406}{}{s lovci lidí.}
+{3407}{}{se skupinkou lovcù odmìn.}
+{3408}{}{s tlupou lovcù odmìn.}
+{3409}{}{s bandou lovcù odmìn.}
+{3410}{}{s tlupou lovcù lidí.}
+{3411}{}{s lovci odmìn.}
+{3412}{}{s bandou lotrù vedených jedním z Mortonových bratrù.}
+{3413}{}{s hejnem škorpiónù.}
+{3414}{}{s nìkolika masožravými rostlinami.}
+{3415}{}{se skupinkou praseèích potkanù.}
+{3416}{}{s hejnem krys.}
+{3417}{}{se skupinou lovcù bojujících s kanibaly.}
+{3418}{}{s houfem mravencù.}
+{3419}{}{s loveckou výpravou bojující s nìkolika škorpióny.}
+{3420}{}{se skupinkou praseèích potkanù.}
+{3421}{}{s malou skupinkou radškorpiónù.}
+{3422}{}{s malou skupinkou mravencù.}
+{3423}{}{s loveckou výpravou.}
+{3424}{}{se skupinou nomádù.}
+
+# Encounter Table 9
+{3450}{}{se skládkou toxických odpadù.}
+{3451}{}{s podivným osamìlým psem.}
+{3452}{}{se stádem brahmín.}
+{3453}{}{s tlupou psancù.}
+{3454}{}{s nìkolika lovci odmìn.}
+{3455}{}{se skupinkou lovcù odmìn.}
+{3456}{}{se skupinkou lovcù odmìn.}
+{3457}{}{se skupinkou lovcù odmìn.}
+{3358}{}{se skupinkou lovcù odmìn.}
+{3359}{}{se skupinkou lovcù odmìn.}
+{3360}{}{se skupinkou lovcù odmìn.}
+{3361}{}{se skupinkou lovcù odmìn.}
+{3362}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3463}{}{s nìkolika náboženskými fanatiky.}
+{3464}{}{s nìkolika geckony a krtèími potkany.}
+{3465}{}{s nìkolika geckony.}
+{3466}{}{se skupinkou radškorpiónù skrývajících se mezi masožravkami.}
+{3467}{}{s nìkolika masožravými rostlinami.}
+{3468}{}{s rodinkou radškorpiónù na procházce.}
+{3469}{}{se skupinou krtèích potkanù.}
+{3470}{}{s nìkolika náboženskými fanatiky bojujícími s váleènou výpravou divochù.}
+{3471}{}{s tlupou nomádù}
+{3472}{}{s pozùstatky vorvanì.}
+{3473}{}{s obrovskou kamennou hlavou.}
+{3474}{}{s vrakem kosmické lodi.}
+{3475}{}{s branou u Strážce Vìènosti.}
+{3476}{}{s rytíøi krále Artuše.}
+{3477}{}{s mužem ve zrezivìlém brnìní.}
+{3478}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 10
+{3500}{}{s tlupou psancù.}
+{3501}{}{s nìkolika náboženskými fanatiky.}
+{3502}{}{se skupinkou lovcù odmìn.}
+{3503}{}{se skupinkou lovcù odmìn.}
+{3504}{}{se skupinkou lovcù odmìn.}
+{3505}{}{se skupinkou lovcù odmìn.}
+{3506}{}{se skupinkou lovcù odmìn.}
+{3507}{}{se skupinkou lovcù odmìn.}
+{3508}{}{se skupinkou lovcù odmìn.}
+{3509}{}{se skupinkou lovcù odmìn.}
+{3510}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3511}{}{s nìkolika støíbrnými geckony skrývajícími se v porostu masožravých rostlin.}
+{3512}{}{s nìkolika geckony.}
+{3513}{}{s nìkolika radškorpióny skrývajícími se v porostu masožravých rostlin.}
+{3514}{}{s nìkolika masožravými kytkami.}
+{3515}{}{s rodinkou radškorpiónù.}
+{3516}{}{se skupinou krtèích potkanù.}
+{3517}{}{s nìkolika hubologisty odrážejícími útok váleèníkù.}
+{3518}{}{s nomádskou výpravou}
+{3519}{}{se strážcem Mostu Smrti.}
+{3520}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 11
+{3550}{}{se skládkou toxických odpadù}
+{3551}{}{s podivným osamìlým psem.}
+{3552}{}{se stádem brahmín.}
+{3553}{}{se smeèkou zlatých geckonù a s rodinkou radškorpiónù.}
+{3554}{}{s nìkolika bandity.}
+{3555}{}{se skupinou bezdomovcù.}
+{3556}{}{se smeèkou zlatých geckonù.}
+{3557}{}{se skupinkou lovcù odmìn.}
+{3558}{}{se skupinkou lovcù odmìn.}
+{3559}{}{se skupinkou lovcù odmìn.}
+{3560}{}{se skupinkou lovcù odmìn.}
+{3561}{}{se skupinkou lovcù odmìn.}
+{3562}{}{se skupinkou lovcù odmìn.}
+{3563}{}{se skupinkou lovcù odmìn.}
+{3564}{}{se skupinkou lovcù odmìn.}
+{3565}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3566}{}{s rodinkou radškorpiónù.}
+{3567}{}{s nìkolika masožravými rostlinami.}
+{3568}{}{s nìkolika bandity napadenými smeèkou zlatých geckonù.}
+{3569}{}{s nìkolika farmáøi bránícími se útoku geckonù.}
+{3570}{}{s nìkolika farmáøi bránícími se útoku zlatých geckonù.}
+{3571}{}{s nìkolika lovci bojujícími se zlatými geckony.}
+{3572}{}{s nìkolika lovci bránícími se útoku banditù.}
+{3573}{}{se skupinou honcù lovících geckony.}
+{3574}{}{s nìkolika bezdomovci, které právì napadli banditi.}
+{3575}{}{s nìkolika bezdomovci vraždícími pokojné farmáøe.}
+{3576}{}{se tlupou banditù útoèících na nìkolik farmáøù.}
+{3577}{}{s nìkolika farmáøi napadenými smeèkou škorpiónù.}
+{3578}{}{s loveckou výpravou napadenou nìkolika škorpióny.}
+{3579}{}{s lovci útoèícími na praseèí potkany.}
+{3580}{}{s farmáøi likvidujícími pøemnožení praseèích potkanù.}
+{3581}{}{s farmáøi.}
+{3582}{}{s loveckou výpravou.}
+{3483}{}{s pozùstatky vorvanì.}
+{3484}{}{s obrovskou kamennou hlavou.}
+{3485}{}{s vrakem kosmické lodi.}
+{3486}{}{s branou u Strážce Vìènosti.}
+{3487}{}{s rytíøi krále Artuše.}
+{3488}{}{s mužem ve zrezivìlém brnìní.}
+{3489}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 12
+{3600}{}{se smeèkou zlatých geckonù a rodinou radškorpiónù.}
+{3601}{}{s nìkolika bandity.}
+{3602}{}{s tlupou bezdomovcù.}
+{3603}{}{se smeèkou zlatých geckonù.}
+{3604}{}{se skupinkou lovcù odmìn.}
+{3605}{}{se skupinkou lovcù odmìn.}
+{3606}{}{se skupinkou lovcù odmìn.}
+{3607}{}{se skupinkou lovcù odmìn.}
+{3608}{}{se skupinkou lovcù odmìn.}
+{3609}{}{se skupinkou lovcù odmìn.}
+{3610}{}{se skupinkou lovcù odmìn.}
+{3611}{}{se skupinkou lovcù odmìn.}
+{3612}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3613}{}{s rodinou radškorpiónù.}
+{3614}{}{s porostem masožravých rostlin.}
+{3615}{}{s nìkolika bandity napadenými smeèkou zlatých geckonù.}
+{3616}{}{s farmáøi bránícími se smeèce geckonù.}
+{3617}{}{s farmáøi bránícími se smeèce zlatých geckonù.}
+{3618}{}{se skupinkou lovcù bojujícími se zlatými geckony.}
+{3619}{}{s lovci napadenými tlupou banditù.}
+{3620}{}{s výpravou lovcù lovící geckony.}
+{3621}{}{s nìkolika bezdomovci obtìžovanými skupinkou banditù.}
+{3622}{}{s tlupou bezdomovcù vraždících pokojné farmáøe.}
+{3623}{}{se skupinou banditù útoèících na pokojné farmáøe.}
+{3624}{}{s farmáøi obtìžovanými skupinou škorpiónù.}
+{3625}{}{se skupinkou lovcù bojujících s nìkolika škorpióny.}
+{3626}{}{se skupinkou lovcù bojujících s nìkolika krysami.}
+{3627}{}{s farmáøi likvidujícími pøemnožení praseèích potkanù.}
+{3628}{}{s nìkolika farmáøi.}
+{3629}{}{s loveckou výpravou.}
+{3630}{}{se strážcem Mostu Smrti.}
+{3631}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 13
+{3650}{}{se skládkou toxických odpadù}
+{3651}{}{s podivným osamìlým psem.}
+{3652}{}{se stádem brahmín.}
+{3653}{}{s obchodníkem a jeho ochrankou.}
+{3654}{}{se skupinkou lovcù odmìn.}
+{3655}{}{se skupinkou lovcù odmìn.}
+{3656}{}{se skupinkou lovcù odmìn.}
+{3657}{}{se skupinkou lovcù odmìn.}
+{3658}{}{se skupinkou lovcù odmìn.}
+{3659}{}{se skupinkou lovcù odmìn.}
+{3660}{}{se skupinkou lovcù odmìn.}
+{3661}{}{se skupinkou lovcù odmìn.}
+{3662}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3663}{}{s lovci.}
+{3664}{}{s kupeckou karavanou napadenou bandity.}
+{3665}{}{s lovci pøepadenými bandou lupièù.}
+{3666}{}{s kupeckou výpravou napadenou rodinou radškorpiónù.}
+{3667}{}{s lovci na lovu radškorpiónù.}
+{3668}{}{se skupinou radškorpiónù.}
+{3669}{}{s rodinkou krtèích potkanù.}
+{3670}{}{s bandity.}
+{3671}{}{s lovci na lovu zlatých geckonù.}
+{3672}{}{se skupinou škorpiónù bojujících se zlatými geckony.}
+{3673}{}{s rodinou škorpiónù bojujících s krtèími a praseèími potkany.}
+{3674}{}{s lovci a obchodníkem napadenými tlupou banditù.}
+{3675}{}{s nìkolika zlatými geckony.}
+{3676}{}{s lovci bojujícími s praseèími a krtèími potkany.}
+{3677}{}{s obchodní karavanou bojující s praseèími a krtèími potkany.}
+{3678}{}{s pozùstatky vorvanì.}
+{3679}{}{s obrovskou kamennou hlavou.}
+{3680}{}{s vrakem kosmické lodi.}
+{3681}{}{s branou u Strážce Vìènosti.}
+{3682}{}{s rytíøi krále Artuše.}
+{3683}{}{s mužem ve zrezivìlém brnìní.}
+{3684}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 14
+{3700}{}{se skládkou toxických odpadù}
+{3701}{}{s podivným osamìlým psem.}
+{3702}{}{se stádem brahmín.}
+{3703}{}{s bandou potulných zabijákù.}
+{3704}{}{se skupinkou lovcù odmìn.}
+{3705}{}{se skupinkou lovcù odmìn.}
+{3706}{}{se skupinkou lovcù odmìn.}
+{3707}{}{se skupinkou lovcù odmìn.}
+{3708}{}{se skupinkou lovcù odmìn.}
+{3709}{}{se skupinkou lovcù odmìn.}
+{3710}{}{se skupinkou lovcù odmìn.}
+{3711}{}{se skupinkou lovcù odmìn.}
+{3712}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3713}{}{s bandou lupièù.}
+{3714}{}{s bandou lupièù a potulných zabijákù.}
+{3715}{}{s nìkolika zlatými geckony a radškorpióny.}
+{3716}{}{s rodinkou zlatých geckonù.}
+{3717}{}{s rodinou krtèích potkanù.}
+{3718}{}{s velkou skupinou radškorpiónù.}
+{3719}{}{s místem hustì porostlým masožravými rostlinami.}
+{3720}{}{s bandou lupièù bojujících s potulnými zabijáky.}
+{3721}{}{s obchodnickou výpravou bránící se útoku potulných zabijákù.}
+{3722}{}{s obchodnickou výpravou bránící se útoku lupièù.}
+{3723}{}{s obchodnickou výpravou bránící se útoku radškorpiónù.}
+{3724}{}{s hejnem zlatých geckonù bojujících proti radškorpiónùm.}
+{3725}{}{s obchodníkem a nìkolika jeho strážci.}
+{3726}{}{s pozùstatky vorvanì.}
+{3727}{}{s obrovskou kamennou hlavou.}
+{3728}{}{s vrakem kosmické lodi.}
+{3729}{}{s branou u Strážce Vìènosti.}
+{3730}{}{s rytíøi krále Artuše.}
+{3731}{}{s mužem ve zrezivìlém brnìní.}
+{3732}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 15
+{3750}{}{s bandou potulných zabijákù.}
+{3751}{}{s bandou lupièù.}
+{3752}{}{s bandou lupièù a zabijákù.}
+{3753}{}{s nìkolika zlatými geckony a radškorpióny.}
+{3754}{}{se skupinkou lovcù odmìn.}
+{3755}{}{se skupinkou lovcù odmìn.}
+{3756}{}{se skupinkou lovcù odmìn.}
+{3757}{}{se skupinkou lovcù odmìn.}
+{3758}{}{se skupinkou lovcù odmìn.}
+{3759}{}{se skupinkou lovcù odmìn.}
+{3760}{}{se skupinkou lovcù odmìn.}
+{3761}{}{se skupinkou lovcù odmìn.}
+{3762}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3763}{}{s rodinkou zlatých geckonù.}
+{3764}{}{s rodinou krtèích potkanù.}
+{3765}{}{s velkou skupinou radškorpiónù.}
+{3766}{}{s místem hustì porostlým masožravými rostlinami.}
+{3767}{}{s bandou lupièù bojující proti zabijákùm.}
+{3768}{}{s obchodnickou výpravou bránící se útoku potulných zabijákù.}
+{3769}{}{s obchodnickou výpravou bránící se útoku lupièù.}
+{3770}{}{s obchodnickou výpravou bránící se útoku radškorpiónù.}
+{3771}{}{s hejnem zlatých geckonù bojujících proti radškorpiónùm.}
+{3772}{}{s obchodníkem a nìkolika jeho strážci.}
+{3773}{}{se strážcem Mostu Smrti.}
+{3774}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 16
+{3800}{}{se skládkou toxických odpadù}
+{3801}{}{s podivným osamìlým psem.}
+{3802}{}{se stádem brahmín.}
+{3803}{}{se skupinou otrokù a otrokáøù.}
+{3804}{}{se skupinkou lovcù odmìn.}
+{3805}{}{se skupinkou lovcù odmìn.}
+{3806}{}{se skupinkou lovcù odmìn.}
+{3807}{}{se skupinkou lovcù odmìn.}
+{3808}{}{se skupinkou lovcù odmìn.}
+{3809}{}{se skupinkou lovcù odmìn.}
+{3810}{}{se skupinkou lovcù odmìn.}
+{3811}{}{se skupinkou lovcù odmìn.}
+{3812}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3813}{}{se skupinou zabijákù.}
+{3814}{}{s bandou lupièù.}
+{3815}{}{s nìkolika zlatými geckony skrývajícími se v porostu masožravých rostlin.}
+{3816}{}{se smeèkou radškorpiónù a nìkolika krtèími potkany.}
+{3817}{}{se smeèkou radškorpiónù.}
+{3818}{}{se skupinou krtèích potkanù.}
+{3819}{}{s bandou lupièù útoèící na skupinu zabijákù.}
+{3820}{}{s výpravou otrokáøù pokoušející se pochytat a zotroèit nìkolik lidí.}
+{3821}{}{se skupinou otrokù a otrokáøù bojujících s lupièi.}
+{3822}{}{s nìkolika otroky a otrokáøi bojujícími proti zlatým geckonùm.}
+{3823}{}{s nìkolika radškorpióny útoèícími na bandu zuøivcù.}
+{3824}{}{s bandou zuøivcù.}
+{3825}{}{s pozùstatky vorvanì.}
+{3826}{}{s obrovskou kamennou hlavou.}
+{3827}{}{s vrakem kosmické lodi.}
+{3828}{}{s branou u Strážce Vìènosti.}
+{3829}{}{s rytíøi krále Artuše.}
+{3830}{}{s mužem ve zrezivìlém brnìní.}
+{3831}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 17
+{3850}{}{se skupinou otrokù a otrokáøù.}
+{3851}{}{se skupinou potulných zabijákù.}
+{3852}{}{s bandou lupièù.}
+{3853}{}{s nìkolika zlatými geckony skrývajícími se v porostu masožravých rostlin.}
+{3854}{}{se skupinkou lovcù odmìn.}
+{3855}{}{se skupinkou lovcù odmìn.}
+{3856}{}{se skupinkou lovcù odmìn.}
+{3857}{}{se skupinkou lovcù odmìn.}
+{3858}{}{se skupinkou lovcù odmìn.}
+{3859}{}{se skupinkou lovcù odmìn.}
+{3860}{}{se skupinkou lovcù odmìn.}
+{3861}{}{se skupinkou lovcù odmìn.}
+{3862}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3863}{}{se smeèkou radškorpiónù a nìkolika krtèími potkany.}
+{3864}{}{s hejnem radškorpiónù.}
+{3865}{}{se skupinou krtèích potkanù.}
+{3866}{}{s bandou lupièù bojující se skupinou potulných zabijákù.}
+{3867}{}{s výpravou otrokáøù pokoušející se pochytat a zotroèit nìkolik lidí.}
+{3868}{}{se skupinou otrokù a otrokáøù bojujících s lupièi.}
+{3869}{}{s nìkolika otroky a otrokáøi bojujícími proti zlatým geckonùm.}
+{3870}{}{se strážcem Mostu Smrti.}
+{3871}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 18
+{3900}{}{s nìkolika lupièi a zabijáky.}
+{3901}{}{s nìkolika zabijáky.}
+{3902}{}{s velkým hejnem zlatých geckonù.}
+{3903}{}{s nìkolika škorpióny ukrytými v porostu masožravých rostlin.}
+{3904}{}{se skupinkou lovcù odmìn.}
+{3905}{}{se skupinkou lovcù odmìn.}
+{3906}{}{se skupinkou lovcù odmìn.}
+{3907}{}{se skupinkou lovcù odmìn.}
+{3908}{}{se skupinkou lovcù odmìn.}
+{3909}{}{se skupinkou lovcù odmìn.}
+{3910}{}{se skupinkou lovcù odmìn.}
+{3911}{}{se skupinkou lovcù odmìn.}
+{3912}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3913}{}{s nìkolika lupièi bojujícími proti škorpiónùm.}
+{3914}{}{s nìkolika lupièi.}
+{3915}{}{s obchodní karavanou napadenou zabijáky.}
+{3916}{}{s obchodní karavanou napadenou lupièi.}
+{3917}{}{s nìkolika zabijáky napadenými masožravými rostlinami.}
+{3918}{}{s obchodní výpravou.}
+{3919}{}{se strážcem Mostu Smrti.}
+{3920}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 19
+{3950}{}{s nìkolika zabijáky.}
+{3951}{}{s nìkolika lupièi.}
+{3952}{}{s nìkolika tuláky.}
+{3953}{}{s nìkolika zlatými geckony a mantisy.}
+{3954}{}{se skupinkou lovcù odmìn.}
+{3955}{}{se skupinkou lovcù odmìn.}
+{3956}{}{se skupinkou lovcù odmìn.}
+{3957}{}{se skupinkou lovcù odmìn.}
+{3958}{}{se skupinkou lovcù odmìn.}
+{3959}{}{se skupinkou lovcù odmìn.}
+{3960}{}{se skupinkou lovcù odmìn.}
+{3961}{}{se skupinkou lovcù odmìn.}
+{3962}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{3963}{}{s nìkolika divokými brahmínami.}
+{3964}{}{s nìkolika škorpióny.}
+{3965}{}{s nìkolika pašeráky lihovin napadenými skupinou zabijákù.}
+{3966}{}{s nìkolika zabijáky útoèícími na skupinku tulákù.}
+{3967}{}{s nìkolika farmáøi a pašeráky lihovin.}
+{3968}{}{se skupinkou mantisù útoèící na nìkolik farmáøù.}
+{3969}{}{se bandou pašerákù útoèící na pokojné farmáøe.}
+{3970}{}{s nìkolika brahmínami obtìžovanými skupinkou mantisù.}
+{3971}{}{s nìkolika mantisy útoèícími na skupinku krtèích potkanù.}
+{3972}{}{s nìkolika pašeráky alkoholu.}
+{3973}{}{se skupinkou farmáøù.}
+{3974}{}{se stádem brahmín.}
+{3975}{}{se strážcem Mostu Smrti.}
+{3976}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 20
+{4000}{}{s nìkolika zabijáky, na které útoèí smeèka divokých psù.}
+{4001}{}{s nìkolika bandity bojujícími s divokými psy.}
+{4002}{}{s bandou lupièù.}
+{4003}{}{s bandou potulných zabijákù.}
+{4004}{}{se skupinkou lovcù odmìn.}
+{4005}{}{se skupinkou lovcù odmìn.}
+{4006}{}{se skupinkou lovcù odmìn.}
+{4007}{}{se skupinkou lovcù odmìn.}
+{4008}{}{se skupinkou lovcù odmìn.}
+{4009}{}{se skupinkou lovcù odmìn.}
+{4010}{}{se skupinkou lovcù odmìn.}
+{4011}{}{se skupinkou lovcù odmìn.}
+{4012}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4013}{}{s rojem mantisù ukrývajícím se mezi masožravými rostlinami.}
+{4014}{}{se smeèkou divokých psù ukrývající se v porostu masožravých rostlin.}
+{4015}{}{s rojem mantisù.}
+{4016}{}{se smeèkou divokých psù.}
+{4017}{}{s lupièi napadenými smeèkou divokých psù.}
+{4018}{}{s karavanou napadenou smeèkou divokých psù.}
+{4019}{}{s karavanou napadenou bandity.}
+{4020}{}{s karavanou napadenou lupièi.}
+{4021}{}{s karavanou.}
+{4022}{}{se strážcem Mostu Smrti.}
+{4023}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 21
+{4050}{}{se skládkou toxických odpadù}
+{4051}{}{s podivným osamìlým psem.}
+{4052}{}{se stádem brahmín.}
+{4053}{}{s nìkolika zabijáky, na které útoèí smeèka divokých psù.}
+{4054}{}{se skupinkou lovcù odmìn.}
+{4055}{}{se skupinkou lovcù odmìn.}
+{4056}{}{se skupinkou lovcù odmìn.}
+{4057}{}{se skupinkou lovcù odmìn.}
+{4058}{}{se skupinkou lovcù odmìn.}
+{4059}{}{se skupinkou lovcù odmìn.}
+{4060}{}{se skupinkou lovcù odmìn.}
+{4061}{}{se skupinkou lovcù odmìn.}
+{4062}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4063}{}{s nìkolika bandity bojujícími se smeèkou divokých psù.}
+{4064}{}{s bandou lupièù.}
+{4065}{}{s bandou potulných zabijákù.}
+{4066}{}{s rojem mantisù ukrývajícím se mezi masožravými rostlinami.}
+{4067}{}{se smeèkou divokých psù ukrývající se v porostu masožravých rostlin.}
+{4068}{}{s rojem mantisù.}
+{4069}{}{se smeèkou divokých psù.}
+{4070}{}{s lupièi napadenými smeèkou divokých psù.}
+{4071}{}{s karavanou napadenou smeèkou divokých psù.}
+{4072}{}{s karavanou napadenou bandity.}
+{4073}{}{s karavanou napadenou lupièi.}
+{4074}{}{s karavanou.}
+{4075}{}{s pozùstatky vorvanì.}
+{4076}{}{s obrovskou kamennou hlavou.}
+{4077}{}{s vrakem kosmické lodi.}
+{4078}{}{s branou u Strážce Vìènosti.}
+{4079}{}{s rytíøi krále Artuše.}
+{4080}{}{s mužem ve zrezivìlém brnìní.}
+{4081}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 22
+{4100}{}{s nìkolika zlatými geckony.}
+{4101}{}{s rojem mantisù.}
+{4102}{}{s nìkolika radškorpióny.}
+{4103}{}{s divokými brahmínami.}
+{4104}{}{se skupinkou lovcù odmìn.}
+{4105}{}{se skupinkou lovcù odmìn.}
+{4106}{}{se skupinkou lovcù odmìn.}
+{4107}{}{se skupinkou lovcù odmìn.}
+{4108}{}{se skupinkou lovcù odmìn.}
+{4109}{}{se skupinkou lovcù odmìn.}
+{4110}{}{se skupinkou lovcù odmìn.}
+{4111}{}{se skupinkou lovcù odmìn.}
+{4112}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4113}{}{s obchodníkem a jeho tìlesnou stráží bojujícími se zlatými geckony.}
+{4114}{}{s rojem mantisù masakrující potulné obchodníky.}
+{4115}{}{s rojem mantisù, kteøí napadli stádeèko divokých brahmín.}
+{4116}{}{s radškorpióny požírajícími mantisy.}
+{4117}{}{s radškorpióny vraždícími divoké brahmíny.}
+{4118}{}{s potulným obchodníkem a jeho tìlesnou stráží.}
+{4119}{}{se strážcem Mostu Smrti.}
+{4120}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 23
+{4150}{}{se skládkou toxických odpadù}
+{4151}{}{s podivným osamìlým psem.}
+{4152}{}{se stádem brahmín.}
+{4153}{}{s nìkolika zlatými geckony.}
+{4154}{}{se skupinkou lovcù odmìn.}
+{4155}{}{se skupinkou lovcù odmìn.}
+{4156}{}{se skupinkou lovcù odmìn.}
+{4157}{}{se skupinkou lovcù odmìn.}
+{4158}{}{se skupinkou lovcù odmìn.}
+{4159}{}{se skupinkou lovcù odmìn.}
+{4160}{}{se skupinkou lovcù odmìn.}
+{4161}{}{se skupinkou lovcù odmìn.}
+{4162}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4163}{}{s rojem mantisù.}
+{4164}{}{s radškorpióny.}
+{4165}{}{s divokými brahmínami.}
+{4166}{}{s obchodníkem a jeho tìlesnou stráží bojujícími se zlatými geckony.}
+{4167}{}{s rojem mantisù masakrujícím obchodní karavanu.}
+{4168}{}{s rojem mantisù, který napadl stádeèko divokých brahmín.}
+{4169}{}{s nìkolika radškorpióny požírajícími mantisy.}
+{4170}{}{s radškorpióny vraždícími divoké brahmíny.}
+{4171}{}{s potulným obchodníkem a jeho tìlesnou stráží.}
+{4172}{}{s pozùstatky vorvanì.}
+{4173}{}{s obrovskou kamennou hlavou.}
+{4174}{}{s vrakem kosmické lodi.}
+{4175}{}{s branou u Strážce Vìènosti.}
+{4176}{}{s rytíøi krále Artuše.}
+{4177}{}{s mužem ve zrezivìlém brnìní.}
+{4178}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 24
+{4200}{}{se skládkou toxických odpadù}
+{4201}{}{s podivným osamìlým psem.}
+{4202}{}{se stádem brahmín.}
+{4203}{}{s mutovanými krtèími potkany.}
+{4204}{}{se skupinkou lovcù odmìn.}
+{4205}{}{se skupinkou lovcù odmìn.}
+{4206}{}{se skupinkou lovcù odmìn.}
+{4207}{}{se skupinkou lovcù odmìn.}
+{4208}{}{se skupinkou lovcù odmìn.}
+{4209}{}{se skupinkou lovcù odmìn.}
+{4210}{}{se skupinkou lovcù odmìn.}
+{4211}{}{se skupinkou lovcù odmìn.}
+{4212}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4213}{}{s mutovanými praseèími potkany.}
+{4214}{}{s masožravými rostlinami.}
+{4215}{}{s poustevníkem a nìkolika psy bojujícími proti zmutovaným krtèím potkanùm.}
+{4216}{}{s poustevníkem bránícím se proti divokým psùm.}
+{4217}{}{s poustevníkem bránícím se proti praseèím potkanùm.}
+{4218}{}{s poustevníkem a jeho psy bránícím se proti krtèím potkanùm.}
+{4219}{}{s nìkolika krtèími potkany rvoucími se s praseèími potkany.}
+{4220}{}{s nìkolika krtèími potkany rvoucími se s masožravými rostlinami.}
+{4221}{}{s nìkolika praseèími potkany rvoucími se s divokými psy.}
+{4222}{}{s poustevníkem.}
+{4223}{}{s pozùstatky vorvanì.}
+{4224}{}{s obrovskou kamennou hlavou.}
+{4225}{}{s vrakem kosmické lodi.}
+{4226}{}{s branou u Strážce Vìènosti.}
+{4227}{}{s rytíøi krále Artuše.}
+{4228}{}{s mužem ve zrezivìlém brnìní.}
+{4229}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 25
+{4250}{}{se skupinkou krtèích potkanù.}
+{4251}{}{se skupinkou praseèích potkanù.}
+{4252}{}{s trsem masožravých rostlin.}
+{4253}{}{s poustevníkem a nìkolika psy bojujícími proti zmutovaným krtèím potkanùm.}
+{4254}{}{se skupinkou lovcù odmìn.}
+{4255}{}{se skupinkou lovcù odmìn.}
+{4256}{}{se skupinkou lovcù odmìn.}
+{4257}{}{se skupinkou lovcù odmìn.}
+{4258}{}{se skupinkou lovcù odmìn.}
+{4259}{}{se skupinkou lovcù odmìn.}
+{4260}{}{se skupinkou lovcù odmìn.}
+{4261}{}{se skupinkou lovcù odmìn.}
+{4262}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4263}{}{s poustevníkem bránícím se proti divokým psùm.}
+{4264}{}{s poustevníkem bránícím se proti praseèím potkanùm.}
+{4265}{}{s poustevníkem a jeho psy bránícím se proti krtèím potkanùm.}
+{4266}{}{s nìkolika krtèími potkany rvoucími se s praseèími potkany.}
+{4267}{}{s nìkolika krtèími potkany rvoucími se s masožravými rostlinami.}
+{4268}{}{s nìkolika praseèími potkany rvoucími se s divokými psy.}
+{4269}{}{s poustevníkem.}
+{4270}{}{se strážcem Mostu Smrti.}
+{4271}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 26
+{4300}{}{s výpravou otrokáøù doprovázenou loveckými psy.}
+{4301}{}{s bandou otrokáøù.}
+{4302}{}{s nìkolika zlatými geckony.}
+{4303}{}{se smeèkou divokých psù.}
+{4304}{}{se skupinkou lovcù odmìn.}
+{4305}{}{se skupinkou lovcù odmìn.}
+{4306}{}{se skupinkou lovcù odmìn.}
+{4307}{}{se skupinkou lovcù odmìn.}
+{4308}{}{se skupinkou lovcù odmìn.}
+{4309}{}{se skupinkou lovcù odmìn.}
+{4310}{}{se skupinkou lovcù odmìn.}
+{4311}{}{se skupinkou lovcù odmìn.}
+{4312}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4313}{}{s jednotkou Patroly kontrolující otrokáøe}
+{4314}{}{s tlupou otrokáøù bojující s nìkolika zlatými geckony.}
+{4315}{}{s jednotkou Patroly bojující s otrokáøskou výpravou.}
+{4316}{}{s jednotkou Patroly bránící se útoku zlatých geckonù.}
+{4317}{}{s jednotkou Patroly bránící se útoku divokých psù.}
+{4318}{}{s jednotkou Patroly.}
+{4319}{}{se strážcem Mostu Smrti.}
+{4320}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 27
+{4350}{}{se skládkou toxických odpadù}
+{4351}{}{s podivným osamìlým psem.}
+{4352}{}{se stádem brahmín.}
+{4353}{}{s tlupou otrokáøù doprovázenou smeèkou loveckých psù.}
+{4354}{}{se skupinkou lovcù odmìn.}
+{4355}{}{se skupinkou lovcù odmìn.}
+{4356}{}{se skupinkou lovcù odmìn.}
+{4357}{}{se skupinkou lovcù odmìn.}
+{4358}{}{se skupinkou lovcù odmìn.}
+{4359}{}{se skupinkou lovcù odmìn.}
+{4360}{}{se skupinkou lovcù odmìn.}
+{4361}{}{se skupinkou lovcù odmìn.}
+{4362}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4363}{}{s tlupou otrokáøù.}
+{4364}{}{s nìkolika zlatými geckony.}
+{4365}{}{se smeèkou divokých psù.}
+{4366}{}{s jednotkou Patroly kontrolující otrokáøe}
+{4367}{}{s tlupou otrokáøù bojující s nìkolika zlatými geckony.}
+{4368}{}{s jednotkou Patroly bojující s otrokáøskou výpravou.}
+{4369}{}{s jednotkou Patroly bránící se útoku zlatých geckonù.}
+{4370}{}{s jednotkou Patroly bránící se útoku divokých psù.}
+{4371}{}{s jednotkou Patroly.}
+{4372}{}{s pozùstatky vorvanì.}
+{4373}{}{s obrovskou kamennou hlavou.}
+{4374}{}{s vrakem kosmické lodi.}
+{4375}{}{s branou u Strážce Vìènosti.}
+{4376}{}{s rytíøi krále Artuše.}
+{4377}{}{s mužem ve zrezivìlém brnìní.}
+{4378}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 28
+{4400}{}{s vraždícími mrchožrouty.}
+{4401}{}{s ghoulskými mrchožrouty.}
+{4402}{}{s tlupou pomatencù.}
+{4403}{}{s šílenými ghouly.}
+{4404}{}{se skupinkou lovcù odmìn.}
+{4405}{}{se skupinkou lovcù odmìn.}
+{4406}{}{se skupinkou lovcù odmìn.}
+{4407}{}{se skupinkou lovcù odmìn.}
+{4408}{}{se skupinkou lovcù odmìn.}
+{4409}{}{se skupinkou lovcù odmìn.}
+{4410}{}{se skupinkou lovcù odmìn.}
+{4411}{}{se skupinkou lovcù odmìn.}
+{4412}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4413}{}{se skupinkou geckonù.}
+{4414}{}{se smeèkou divokých psù.}
+{4415}{}{s rodinkou radškorpiónù .}
+{4416}{}{s tlupou praseèích potkanù.}
+{4417}{}{se smeèkou mutovaných krys.}
+{4418}{}{s bandou mrchožroutù válèících s tlupou šílencù.}
+{4419}{}{s tlupou ghoulských mrchožroutù bojující se skupinkou maniakù}
+{4420}{}{s rodinou geckonù bojujících s nìkolika idioty.}
+{4421}{}{s nìkolika krysími mutanty, kteøí napadli ghoulské mrchožrouty.}
+{4422}{}{se strážcem Mostu Smrti.}
+{4423}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 29
+{4450}{}{se skládkou toxických odpadù}
+{4451}{}{s podivným osamìlým psem.}
+{4452}{}{se stádem brahmín.}
+{4453}{}{s vraždícími mrchožrouty.}
+{4454}{}{se skupinkou lovcù odmìn.}
+{4455}{}{se skupinkou lovcù odmìn.}
+{4456}{}{se skupinkou lovcù odmìn.}
+{4457}{}{se skupinkou lovcù odmìn.}
+{4458}{}{se skupinkou lovcù odmìn.}
+{4459}{}{se skupinkou lovcù odmìn.}
+{4460}{}{se skupinkou lovcù odmìn.}
+{4461}{}{se skupinkou lovcù odmìn.}
+{4462}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4463}{}{s ghoulskými mrchožrouty.}
+{4464}{}{s tlupou bláznù.}
+{4465}{}{s nìkolika ghoulskými blázny.}
+{4466}{}{s nìkolika geckony.}
+{4467}{}{se smeèkou divokých psù.}
+{4468}{}{s rodinkou radškorpiónù .}
+{4469}{}{s rodinkou mutovaných praseèích potkanù.}
+{4470}{}{s houfem krysích mutantù.}
+{4471}{}{s nìkolika mrchožrouty bojujícími s bandou idiotù.}
+{4472}{}{s tlupou ghoulských mrchožroutù bojující se skupinkou maniakù}
+{4473}{}{s rodinou geckonù bojujících s nìkolika idioty.}
+{4474}{}{s nìkolika krysími mutanty, kteøí napadli ghoulské mrchožrouty.}
+{4475}{}{s pozùstatky vorvanì.}
+{4476}{}{s obrovskou kamennou hlavou.}
+{4477}{}{s vrakem kosmické lodi.}
+{4478}{}{s branou u Strážce Vìènosti.}
+{4479}{}{s rytíøi krále Artuše.}
+{4480}{}{s mužem ve zrezivìlém brnìní.}
+{4481}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 30
+{4500}{}{s nìkolika lidožrouty.}
+{4501}{}{se skupinkou divochù.}
+{4502}{}{s výpravou na váleèné stezce.}
+{4503}{}{se skupinkou psancù.}
+{4504}{}{se skupinkou lovcù odmìn.}
+{4505}{}{se skupinkou lovcù odmìn.}
+{4506}{}{se skupinkou lovcù odmìn.}
+{4507}{}{se skupinkou lovcù odmìn.}
+{4508}{}{se skupinkou lovcù odmìn.}
+{4509}{}{se skupinkou lovcù odmìn.}
+{4510}{}{se skupinkou lovcù odmìn.}
+{4511}{}{se skupinkou lovcù odmìn.}
+{4512}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4513}{}{s rodinkou radškorpiónù.}
+{4514}{}{s krtèími potkany.}
+{4515}{}{se skupinkou rybáøù napadenou kanibaly.}
+{4516}{}{s kanibaly bojujícími proti divochùm.}
+{4517}{}{s divochy napadenými hejnem radškorpiónù.}
+{4518}{}{s rybáøi.}
+
+# Encounter Table 31
+{4550}{}{se skládkou toxických odpadù}
+{4551}{}{s podivným osamìlým psem.}
+{4552}{}{se stádem brahmín.}
+{4553}{}{s kanibaly.}
+{4554}{}{se skupinkou lovcù odmìn.}
+{4555}{}{se skupinkou lovcù odmìn.}
+{4556}{}{se skupinkou lovcù odmìn.}
+{4557}{}{se skupinkou lovcù odmìn.}
+{4558}{}{se skupinkou lovcù odmìn.}
+{4559}{}{se skupinkou lovcù odmìn.}
+{4560}{}{se skupinkou lovcù odmìn.}
+{4561}{}{se skupinkou lovcù odmìn.}
+{4562}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4563}{}{s vyvrženci.}
+{4564}{}{s divochy.}
+{4565}{}{s výpravou na váleèné stezce.}
+{4566}{}{s rodinkou geckonù ukrytých v porostu masožravých rostlin.}
+{4567}{}{s rodinkou geckonù a nìkolika radškorpióny.}
+{4568}{}{s rodinkou geckonù.}
+{4569}{}{s nìkolika radškorpióny ukrývajícími se v houštinì masožravých rostlin.}
+{4570}{}{s rodinkou škorpiónù.}
+{4571}{}{s nìkolika geckony útoèícími na skupinku vyvržencù.}
+{4572}{}{s nìkolika geckony útoèícími na skupinku divochù.}
+{4573}{}{s divochy napadenými radškorpióny.}
+{4574}{}{s poustevníkem napadeným radškorpióny.}
+{4575}{}{s poustevníkem.}
+{4576}{}{s pozùstatky vorvanì.}
+{4577}{}{s obrovskou kamennou hlavou.}
+{4578}{}{s vrakem kosmické lodi.}
+{4579}{}{s branou u Strážce Vìènosti.}
+{4580}{}{s rytíøi krále Artuše.}
+{4581}{}{s mužem ve zrezivìlém brnìní.}
+{4582}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 32
+{4600}{}{s kanibaly.}
+{4601}{}{s vyvrženci.}
+{4602}{}{s divochy.}
+{4603}{}{s výpravou na váleèné stezce.}
+{4604}{}{se skupinkou lovcù odmìn.}
+{4605}{}{se skupinkou lovcù odmìn.}
+{4606}{}{se skupinkou lovcù odmìn.}
+{4607}{}{se skupinkou lovcù odmìn.}
+{4608}{}{se skupinkou lovcù odmìn.}
+{4609}{}{se skupinkou lovcù odmìn.}
+{4610}{}{se skupinkou lovcù odmìn.}
+{4611}{}{se skupinkou lovcù odmìn.}
+{4612}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4613}{}{s rodinkou geckonù ukrytých v porostu masožravých rostlin.}
+{4614}{}{s rodinkou geckonù a nìkolika radškorpióny.}
+{4615}{}{s geckony.}
+{4616}{}{s nìkolika radškorpióny ukrývajícími se v houštinì masožravých rostlin.}
+{4617}{}{se skupinkou škorpiónù.}
+{4618}{}{s nìkolika geckony útoèícími na skupinku vyvržencù.}
+{4619}{}{s nìkolika geckony útoèícími na skupinku divochù.}
+{4620}{}{s divochy napadenými radškorpióny.}
+{4621}{}{s poustevníkem napadeným radškorpióny.}
+{4622}{}{s poustevníkem.}
+{4623}{}{se strážcem Mostu Smrti.}
+{4624}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 33
+{4650}{}{se skládkou toxických odpadù}
+{4651}{}{s podivným osamìlým psem.}
+{4652}{}{se stádem brahmín.}
+{4653}{}{s karavanou z Denu.}
+{4654}{}{se skupinkou lovcù odmìn.}
+{4655}{}{se skupinkou lovcù odmìn.}
+{4656}{}{se skupinkou lovcù odmìn.}
+{4657}{}{se skupinkou lovcù odmìn.}
+{4658}{}{se skupinkou lovcù odmìn.}
+{4659}{}{se skupinkou lovcù odmìn.}
+{4660}{}{se skupinkou lovcù odmìn.}
+{4661}{}{se skupinkou lovcù odmìn.}
+{4662}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4663}{}{s bandity a lupièi.}
+{4664}{}{s bandity.}
+{4665}{}{s lupièi.}
+{4666}{}{s karavanou z Reddingu napadenou bandity.}
+{4667}{}{s karavanou z New Reno napadenou lupièi.}
+{4668}{}{s karavanou z Denu napadenou bandity.}
+{4669}{}{s karavanou pøepadenou lupièi.}
+{4670}{}{s karavanou z Vault City napadenou karavanou z Denu.}
+{4671}{}{s lupièi a bandity bojujícími spolu navzájem.}
+{4672}{}{s karavanou z Vault City.}
+{4673}{}{s karavanou z Denu.}
+{4674}{}{s pozùstatky vorvanì.}
+{4675}{}{s obrovskou kamennou hlavou.}
+{4676}{}{s vrakem kosmické lodi.}
+{4677}{}{s branou u Strážce Vìènosti.}
+{4678}{}{s rytíøi krále Artuše.}
+{4679}{}{s mužem ve zrezivìlém brnìní.}
+{4680}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 34
+{4700}{}{s karavanou z Denu.}
+{4701}{}{s bandity a lupièi.}
+{4702}{}{s bandity.}
+{4703}{}{s lupièi.}
+{4704}{}{se skupinkou lovcù odmìn.}
+{4705}{}{se skupinkou lovcù odmìn.}
+{4706}{}{se skupinkou lovcù odmìn.}
+{4707}{}{se skupinkou lovcù odmìn.}
+{4708}{}{se skupinkou lovcù odmìn.}
+{4709}{}{se skupinkou lovcù odmìn.}
+{4710}{}{se skupinkou lovcù odmìn.}
+{4711}{}{se skupinkou lovcù odmìn.}
+{4712}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4713}{}{s karavanou z Reddingu napadenou bandity.}
+{4714}{}{s karavanou z New Reno napadenou lupièi.}
+{4715}{}{s karavanou z Denu napadenou bandity.}
+{4716}{}{s karavanou pøepadenou lupièi.}
+{4717}{}{s karavanou z Vault City napadenou karavanou z Denu.}
+{4718}{}{s lupièi a bandity bojujícími spolu navzájem.}
+{4719}{}{s karavanou z Vault City.}
+{4720}{}{s karavanou z Denu.}
+{4721}{}{se strážcem Mostu Smrti.}
+{4722}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 35
+{4750}{}{se skládkou toxických odpadù}
+{4751}{}{s podivným osamìlým psem.}
+{4752}{}{se stádem brahmín.}
+{4753}{}{s geckony a smeèkou vlkù.}
+{4754}{}{se skupinkou lovcù odmìn.}
+{4755}{}{se skupinkou lovcù odmìn.}
+{4756}{}{se skupinkou lovcù odmìn.}
+{4757}{}{se skupinkou lovcù odmìn.}
+{4758}{}{se skupinkou lovcù odmìn.}
+{4759}{}{se skupinkou lovcù odmìn.}
+{4760}{}{se skupinkou lovcù odmìn.}
+{4761}{}{se skupinkou lovcù odmìn.}
+{4762}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4763}{}{se zlodìji pùdy.}
+{4764}{}{s vlky.}
+{4765}{}{s geckony.}
+{4766}{}{s prospektory bojujícími se zlodìji pùdy.}
+{4767}{}{s lovci bojujícími s geckony.}
+{4768}{}{s pašeráky alkoholu napadenými vlky.}
+{4769}{}{s farmáøi napadenými zlodìji pùdy.}
+{4770}{}{s farmáøi bránícími se proti vlèí smeèce.}
+{4771}{}{s pašeráky lihovin.}
+{4772}{}{s lovci.}
+{4773}{}{s prospektory.}
+{4774}{}{s pozùstatky vorvanì.}
+{4775}{}{s obrovskou kamennou hlavou.}
+{4776}{}{s vrakem kosmické lodi.}
+{4777}{}{s branou u Strážce Vìènosti.}
+{4778}{}{s rytíøi krále Artuše.}
+{4779}{}{s mužem ve zrezivìlém brnìní.}
+{4780}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 36
+{4800}{}{s geckony a vlky.}
+{4801}{}{se zlodìji pùdy.}
+{4802}{}{s vlky.}
+{4803}{}{s geckony.}
+{4804}{}{se skupinkou lovcù odmìn.}
+{4805}{}{se skupinkou lovcù odmìn.}
+{4806}{}{se skupinkou lovcù odmìn.}
+{4807}{}{se skupinkou lovcù odmìn.}
+{4808}{}{se skupinkou lovcù odmìn.}
+{4809}{}{se skupinkou lovcù odmìn.}
+{4810}{}{se skupinkou lovcù odmìn.}
+{4811}{}{se skupinkou lovcù odmìn.}
+{4812}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4813}{}{s prospektory bojujícími se zlodìji pùdy.}
+{4814}{}{s lovci bojujícími s geckony.}
+{4815}{}{s pašeráky alkoholu napadenými vlky.}
+{4816}{}{s farmáøi napadenými zlodìji pùdy.}
+{4817}{}{s farmáøi bránícími se proti vlèí smeèce.}
+{4818}{}{s pašeráky alkoholu.}
+{4819}{}{s lovci.}
+{4820}{}{s prospektory.}
+{4821}{}{se strážcem Mostu Smrti.}
+{4822}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 37
+{4850}{}{s vlèí smeèkou a hejnem krtèích potkanù.}
+{4851}{}{s vlèí smeèkou a radškorpióny.}
+{4852}{}{s mutanty krtèích potkanù a skupinkou radškorpiónù}
+{4853}{}{se smeèkou geckonù.}
+{4854}{}{se skupinkou lovcù odmìn.}
+{4855}{}{se skupinkou lovcù odmìn.}
+{4856}{}{se skupinkou lovcù odmìn.}
+{4857}{}{se skupinkou lovcù odmìn.}
+{4858}{}{se skupinkou lovcù odmìn.}
+{4859}{}{se skupinkou lovcù odmìn.}
+{4860}{}{se skupinkou lovcù odmìn.}
+{4861}{}{se skupinkou lovcù odmìn.}
+{4862}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4863}{}{s vlèí smeèkou.}
+{4864}{}{se skupinkou mutantù krtèího potkana.}
+{4865}{}{s houfem radškorpiónù}
+{4866}{}{s vlèí smeèkou a tlupou geckonù.}
+{4867}{}{s krtèími potkany bojujícími proti geckonùm.}
+{4868}{}{s krtèími potkany bojujícími proti radškorpiónùm.}
+{4869}{}{se strážcem Mostu Smrti.}
+{4870}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 38
+{4900}{}{s bandou lupièù.}
+{4901}{}{s vlky.}
+{4902}{}{s karavanou pøepadenou lupièi.}
+{4903}{}{s karavanou pøepadenou lupièi.}
+{4904}{}{se skupinkou lovcù odmìn.}
+{4905}{}{se skupinkou lovcù odmìn.}
+{4906}{}{se skupinkou lovcù odmìn.}
+{4907}{}{se skupinkou lovcù odmìn.}
+{4908}{}{se skupinkou lovcù odmìn.}
+{4909}{}{se skupinkou lovcù odmìn.}
+{4910}{}{se skupinkou lovcù odmìn.}
+{4911}{}{se skupinkou lovcù odmìn.}
+{4912}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4913}{}{s karavanou pøepadenou lupièi.}
+{4914}{}{s karavanou pøepadenou lupièi.}
+{4915}{}{s karavanou.}
+{4916}{}{s karavanou.}
+{4917}{}{s karavanou.}
+{4918}{}{s karavanou.}
+{4919}{}{se strážcem Mostu Smrti.}
+{4920}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 39
+{4950}{}{se skládkou toxických odpadù}
+{4951}{}{s podivným osamìlým psem.}
+{4952}{}{se stádem brahmín.}
+{4953}{}{s bandou lupièù.}
+{4954}{}{se skupinkou lovcù odmìn.}
+{4955}{}{se skupinkou lovcù odmìn.}
+{4956}{}{se skupinkou lovcù odmìn.}
+{4957}{}{se skupinkou lovcù odmìn.}
+{4958}{}{se skupinkou lovcù odmìn.}
+{4959}{}{se skupinkou lovcù odmìn.}
+{4960}{}{se skupinkou lovcù odmìn.}
+{4961}{}{se skupinkou lovcù odmìn.}
+{4962}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{4963}{}{s vlèí smeèkou.}
+{4964}{}{s karavanou pøepadenou lupièi.}
+{4965}{}{s karavanou pøepadenou lupièi.}
+{4966}{}{s karavanou pøepadenou lupièi.}
+{4967}{}{s karavanou pøepadenou lupièi.}
+{4968}{}{s karavanou.}
+{4969}{}{s karavanou.}
+{4970}{}{s karavanou.}
+{4971}{}{s karavanou.}
+{4972}{}{s pozùstatky vorvanì.}
+{4973}{}{s obrovskou kamennou hlavou.}
+{4974}{}{s vrakem kosmické lodi.}
+{4975}{}{s branou u Strážce Vìènosti.}
+{4976}{}{s rytíøi krále Artuše.}
+{4977}{}{s mužem ve zrezivìlém brnìní.}
+{4978}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 40
+{5000}{}{s bandou lupièù napadenou vlèí smeèkou.}
+{5001}{}{s masožravými rostlinami a vlèí smeèkou.}
+{5002}{}{s bandou lupièù.}
+{5003}{}{s vlèí smeèkou.}
+{5004}{}{se skupinkou lovcù odmìn.}
+{5005}{}{se skupinkou lovcù odmìn.}
+{5006}{}{se skupinkou lovcù odmìn.}
+{5007}{}{se skupinkou lovcù odmìn.}
+{5008}{}{se skupinkou lovcù odmìn.}
+{5009}{}{se skupinkou lovcù odmìn.}
+{5010}{}{se skupinkou lovcù odmìn.}
+{5011}{}{se skupinkou lovcù odmìn.}
+{5012}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5013}{}{s hejnem radškorpiónù.}
+{5014}{}{s lupièi napadenými vlèí smeèkou.}
+{5015}{}{se strážcem Mostu Smrti.}
+{5016}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 41
+{5050}{}{se skládkou toxických odpadù}
+{5051}{}{s podivným osamìlým psem.}
+{5052}{}{se stádem brahmín.}
+{5053}{}{s bandou lupièù napadenou vlèí smeèkou.}
+{5054}{}{se skupinkou lovcù odmìn.}
+{5055}{}{se skupinkou lovcù odmìn.}
+{5056}{}{se skupinkou lovcù odmìn.}
+{5057}{}{se skupinkou lovcù odmìn.}
+{5058}{}{se skupinkou lovcù odmìn.}
+{5059}{}{se skupinkou lovcù odmìn.}
+{5060}{}{se skupinkou lovcù odmìn.}
+{5061}{}{se skupinkou lovcù odmìn.}
+{5062}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5063}{}{s masožravými rostlinami a vlèí smeèkou.}
+{5064}{}{s bandou lupièù.}
+{5065}{}{se smeèkou vlkù.}
+{5066}{}{s hejnem radškorpiónù.}
+{5067}{}{s lupièi napadenými vlèí smeèkou.}
+{5068}{}{s pozùstatky vorvanì.}
+{5069}{}{s obrovskou kamennou hlavou.}
+{5070}{}{s vrakem kosmické lodi.}
+{5071}{}{s branou u Strážce Vìènosti.}
+{5072}{}{s rytíøi krále Artuše.}
+{5073}{}{s mužem ve zrezivìlém brnìní.}
+{5074}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 42
+{5100}{}{se skládkou toxických odpadù}
+{5101}{}{s podivným osamìlým psem.}
+{5102}{}{se stádem brahmín.}
+{5103}{}{s hlídkou Enklávy.}
+{5104}{}{se skupinkou lovcù odmìn.}
+{5105}{}{se skupinkou lovcù odmìn.}
+{5106}{}{se skupinkou lovcù odmìn.}
+{5107}{}{se skupinkou lovcù odmìn.}
+{5108}{}{se skupinkou lovcù odmìn.}
+{5109}{}{se skupinkou lovcù odmìn.}
+{5110}{}{se skupinkou lovcù odmìn.}
+{5111}{}{se skupinkou lovcù odmìn.}
+{5112}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5113}{}{s pozùstatky vorvanì.}
+{5114}{}{s obrovskou kamennou hlavou.}
+{5115}{}{s vrakem kosmické lodi.}
+{5116}{}{s branou u Strážce Vìènosti.}
+{5117}{}{s rytíøi krále Artuše.}
+{5118}{}{s mužem ve zrezivìlém brnìní.}
+{5119}{}{se špinavými vesnièany pronásledujícími spammera.}
+{5120}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 43
+{5150}{}{s hlídkou Enklávy.}
+{5151}{}{se skupinkou lovcù odmìn.}
+{5152}{}{se skupinkou lovcù odmìn.}
+{5153}{}{se skupinkou lovcù odmìn.}
+{5154}{}{se skupinkou lovcù odmìn.}
+{5155}{}{se skupinkou lovcù odmìn.}
+{5156}{}{se skupinkou lovcù odmìn.}
+{5157}{}{se skupinkou lovcù odmìn.}
+{5158}{}{se skupinkou lovcù odmìn.}
+{5159}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5160}{}{se strážcem Mostu Smrti.}
+{5161}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 44
+{5200}{}{s hlídkou Enklávy.}
+{5201}{}{se skupinkou lovcù odmìn.}
+{5202}{}{se skupinkou lovcù odmìn.}
+{5203}{}{se skupinkou lovcù odmìn.}
+{5204}{}{se skupinkou lovcù odmìn.}
+{5208}{}{se skupinkou lovcù odmìn.}
+{5209}{}{se skupinkou lovcù odmìn.}
+{5210}{}{se skupinkou lovcù odmìn.}
+{5211}{}{se skupinkou lovcù odmìn.}
+{5212}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+
+# Encounter Table 45
+{5250}{}{se skládkou toxických odpadù}
+{5251}{}{s podivným osamìlým psem.}
+{5252}{}{se stádem brahmín.}
+{5253}{}{s alieny a deathclawy}
+{5254}{}{se skupinkou lovcù odmìn.}
+{5255}{}{se skupinkou lovcù odmìn.}
+{5256}{}{se skupinkou lovcù odmìn.}
+{5257}{}{se skupinkou lovcù odmìn.}
+{5258}{}{se skupinkou lovcù odmìn.}
+{5259}{}{se skupinkou lovcù odmìn.}
+{5260}{}{se skupinkou lovcù odmìn.}
+{5261}{}{se skupinkou lovcù odmìn.}
+{5262}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5263}{}{s malou armádou floaterù a kentaurù.}
+{5264}{}{s geckony plivajícími oheò.}
+{5265}{}{s velkou skupinou alienù.}
+{5266}{}{s deathclawy.}
+{5267}{}{s geckony plivajícími oheò.}
+{5268}{}{se skupinkou alienù.}
+{5269}{}{s tlupou kentaurù.}
+{5270}{}{s rojem floaterù.}
+{5271}{}{s pozùstatky vorvanì.}
+{5272}{}{s obrovskou kamennou hlavou.}
+{5273}{}{s vrakem kosmické lodi.}
+{5274}{}{s branou u Strážce Vìènosti.}
+{5275}{}{s rytíøi krále Artuše.}
+{5276}{}{s mužem ve zrezivìlém brnìní.}
+{5277}{}{se špinavými vesnièany pronásledujícími spammera.}
+{5278}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 46
+{5300}{}{s alieny a deathclawy}
+{5301}{}{s armádou floaterù a kentaurù.}
+{5302}{}{s geckony plivajícími oheò.}
+{5303}{}{s velkou skupinou alienù.}
+{5304}{}{se skupinkou lovcù odmìn.}
+{5305}{}{se skupinkou lovcù odmìn.}
+{5306}{}{se skupinkou lovcù odmìn.}
+{5307}{}{se skupinkou lovcù odmìn.}
+{5308}{}{se skupinkou lovcù odmìn.}
+{5309}{}{se skupinkou lovcù odmìn.}
+{5310}{}{se skupinkou lovcù odmìn.}
+{5311}{}{se skupinkou lovcù odmìn.}
+{5312}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5313}{}{s deathclawy.}
+{5314}{}{s geckony plivajícími oheò.}
+{5315}{}{s alieny.}
+{5316}{}{s tlupou kentaurù.}
+{5317}{}{s rojem floaterù.}
+{5318}{}{se strážcem Mostu Smrti.}
+{5319}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 47
+{5350}{}{s alieny a deathclawy}
+{5351}{}{s armádou floaterù a kentaurù.}
+{5352}{}{s geckony plivajícími oheò.}
+{5353}{}{s velkou skupinou alienù.}
+{5354}{}{se skupinkou lovcù odmìn.}
+{5355}{}{se skupinkou lovcù odmìn.}
+{5356}{}{se skupinkou lovcù odmìn.}
+{5357}{}{se skupinkou lovcù odmìn.}
+{5358}{}{se skupinkou lovcù odmìn.}
+{5359}{}{se skupinkou lovcù odmìn.}
+{5360}{}{se skupinkou lovcù odmìn.}
+{5361}{}{se skupinkou lovcù odmìn.}
+{5362}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5363}{}{s deathclawy.}
+{5364}{}{s geckony plivajícími oheò.}
+{5365}{}{s alieny.}
+{5366}{}{s tlupou kentaurù.}
+{5367}{}{s rojem floaterù.}
+
+# Encounter Table 48
+{5400}{}{se skládkou toxických odpadù}
+{5401}{}{s podivným osamìlým psem.}
+{5402}{}{se stádem brahmín.}
+{5403}{}{se smeèkou ohnivých geckonù.}
+{5404}{}{se skupinkou lovcù odmìn.}
+{5405}{}{se skupinkou lovcù odmìn.}
+{5406}{}{se skupinkou lovcù odmìn.}
+{5407}{}{se skupinkou lovcù odmìn.}
+{5408}{}{se skupinkou lovcù odmìn.}
+{5409}{}{se skupinkou lovcù odmìn.}
+{5410}{}{se skupinkou lovcù odmìn.}
+{5411}{}{se skupinkou lovcù odmìn.}
+{5412}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5413}{}{se smeèkou ohnivých geckonù.}
+{5414}{}{s velkým hejnem zlatých geckonù.}
+{5415}{}{s pozùstatky vorvanì.}
+{5416}{}{s obrovskou kamennou hlavou.}
+{5417}{}{s vrakem kosmické lodi.}
+{5418}{}{s branou u Strážce Vìènosti.}
+{5419}{}{s rytíøi krále Artuše.}
+{5420}{}{s mužem ve zrezivìlém brnìní.}
+{5421}{}{se špinavými vesnièany pronásledujícími spammera.}
+{5422}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 49
+{5450}{}{se smeèkou ohnivých geckonù.}
+{5451}{}{se smeèkou ohnivých geckonù.}
+{5452}{}{s velkým hejnem zlatých geckonù.}
+{5453}{}{se skupinkou lovcù odmìn.}
+{5454}{}{se skupinkou lovcù odmìn.}
+{5455}{}{se skupinkou lovcù odmìn.}
+{5456}{}{se skupinkou lovcù odmìn.}
+{5457}{}{se skupinkou lovcù odmìn.}
+{5458}{}{se skupinkou lovcù odmìn.}
+{5459}{}{se skupinkou lovcù odmìn.}
+{5460}{}{se skupinkou lovcù odmìn.}
+{5461}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5462}{}{se strážcem Mostu Smrti.}
+{5463}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 50
+{5500}{}{se smeèkou ohnivých geckonù.}
+{5501}{}{se smeèkou ohnivých geckonù.}
+{5502}{}{s velkým hejnem zlatých geckonù.}
+{5503}{}{se skupinkou lovcù odmìn.}
+{5504}{}{se skupinkou lovcù odmìn.}
+{5505}{}{se skupinkou lovcù odmìn.}
+{5506}{}{se skupinkou lovcù odmìn.}
+{5507}{}{se skupinkou lovcù odmìn.}
+{5508}{}{se skupinkou lovcù odmìn.}
+{5509}{}{se skupinkou lovcù odmìn.}
+{5510}{}{se skupinkou lovcù odmìn.}
+{5511}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+
+# Encounter Table 51
+{5550}{}{se skládkou toxických odpadù}
+{5551}{}{s podivným osamìlým psem.}
+{5552}{}{se stádem brahmín.}
+{5553}{}{se smeèkou deathclawù.}
+{5554}{}{se skupinkou lovcù odmìn.}
+{5555}{}{se skupinkou lovcù odmìn.}
+{5556}{}{se skupinkou lovcù odmìn.}
+{5557}{}{se skupinkou lovcù odmìn.}
+{5558}{}{se skupinkou lovcù odmìn.}
+{5559}{}{se skupinkou lovcù odmìn.}
+{5560}{}{se skupinkou lovcù odmìn.}
+{5561}{}{se skupinkou lovcù odmìn.}
+{5562}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5563}{}{se smeèkou ohnivých geckonù.}
+{5564}{}{s karavanou napadenou deathclawy.}
+{5565}{}{s karavanou napadenou deathclawy.}
+{5566}{}{s karavanou napadenou ohnivými geckony.}
+{5567}{}{s karavanou napadenou ohnivými geckony.}
+{5568}{}{s karavanou.}
+{5569}{}{s karavanou.}
+{5570}{}{s karavanou.}
+{5571}{}{s karavanou.}
+{5572}{}{s pozùstatky vorvanì.}
+{5573}{}{s obrovskou kamennou hlavou.}
+{5574}{}{s vrakem kosmické lodi.}
+{5575}{}{s branou u Strážce Vìènosti.}
+{5576}{}{s rytíøi krále Artuše.}
+{5577}{}{s mužem ve zrezivìlém brnìní.}
+{5578}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 52
+{5600}{}{se smeèkou deathclawù.}
+{5601}{}{se smeèkou ohnivých geckonù.}
+{5602}{}{s karavanou napadenou deathclawy.}
+{5603}{}{s karavanou napadenou deathclawy.}
+{5604}{}{se skupinkou lovcù odmìn.}
+{5605}{}{se skupinkou lovcù odmìn.}
+{5606}{}{se skupinkou lovcù odmìn.}
+{5607}{}{se skupinkou lovcù odmìn.}
+{5608}{}{se skupinkou lovcù odmìn.}
+{5609}{}{se skupinkou lovcù odmìn.}
+{5610}{}{se skupinkou lovcù odmìn.}
+{5611}{}{se skupinkou lovcù odmìn.}
+{5612}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5613}{}{s karavanou napadenou ohnivými geckony.}
+{5614}{}{s karavanou napadenou ohnivými geckony.}
+{5615}{}{s karavanou.}
+{5616}{}{s karavanou.}
+{5617}{}{s karavanou.}
+{5618}{}{s karavanou.}
+{5619}{}{se strážcem Mostu Smrti.}
+{5620}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 53
+{5650}{}{se skládkou toxických odpadù}
+{5651}{}{s podivným osamìlým psem.}
+{5652}{}{se stádem brahmín.}
+{5653}{}{s èleny Yakuzy.}
+{5654}{}{se skupinkou lovcù odmìn.}
+{5655}{}{se skupinkou lovcù odmìn.}
+{5656}{}{se skupinkou lovcù odmìn.}
+{5657}{}{se skupinkou lovcù odmìn.}
+{5658}{}{se skupinkou lovcù odmìn.}
+{5659}{}{se skupinkou lovcù odmìn.}
+{5660}{}{se skupinkou lovcù odmìn.}
+{5661}{}{se skupinkou lovcù odmìn.}
+{5662}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5663}{}{s gangem.}
+{5664}{}{se smeèkou vlkù.}
+{5665}{}{s bitkou mafiánù s èleny Yakuzy.}
+{5666}{}{s pøestøelkou mafiánù s poulièním gangem.}
+{5667}{}{s mafiány.}
+{5668}{}{s cestovatelem.}
+{5669}{}{s pozùstatky vorvanì.}
+{5670}{}{s obrovskou kamennou hlavou.}
+{5671}{}{s vrakem kosmické lodi.}
+{5672}{}{s branou u Strážce Vìènosti.}
+{5673}{}{s rytíøi krále Artuše.}
+{5674}{}{s mužem ve zrezivìlém brnìní.}
+{5675}{}{se špinavými vesnièany pronásledujícími spammera.}
+{5676}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 54
+{5700}{}{s èleny Yakuzy.}
+{5701}{}{s gangem.}
+{5702}{}{se smeèkou vlkù.}
+{5703}{}{s bitkou mafiánù s èleny Yakuzy.}
+{5704}{}{se skupinkou lovcù odmìn.}
+{5705}{}{se skupinkou lovcù odmìn.}
+{5706}{}{se skupinkou lovcù odmìn.}
+{5707}{}{se skupinkou lovcù odmìn.}
+{5708}{}{se skupinkou lovcù odmìn.}
+{5709}{}{se skupinkou lovcù odmìn.}
+{5710}{}{se skupinkou lovcù odmìn.}
+{5711}{}{se skupinkou lovcù odmìn.}
+{5712}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5713}{}{s pøestøelkou mafiánù s poulièním gangem.}
+{5714}{}{s mafiány.}
+{5715}{}{s cestovatelem.}
+{5716}{}{se strážcem Mostu Smrti.}
+{5717}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 55
+{5750}{}{s èleny Yakuzy.}
+{5751}{}{s gangem.}
+{5752}{}{se smeèkou vlkù.}
+{5753}{}{s bitkou mafiánù s èleny Yakuzy.}
+{5754}{}{se skupinkou lovcù odmìn.}
+{5755}{}{se skupinkou lovcù odmìn.}
+{5756}{}{se skupinkou lovcù odmìn.}
+{5757}{}{se skupinkou lovcù odmìn.}
+{5758}{}{se skupinkou lovcù odmìn.}
+{5759}{}{se skupinkou lovcù odmìn.}
+{5760}{}{se skupinkou lovcù odmìn.}
+{5761}{}{se skupinkou lovcù odmìn.}
+{5762}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5763}{}{s pøestøelkou mafiánù s poulièním gangem.}
+{5764}{}{s mafiány.}
+{5765}{}{s poutníkem.}
+
+# Encounter Table 56
+{5800}{}{se skládkou toxických odpadù}
+{5801}{}{s podivným osamìlým psem.}
+{5802}{}{se stádem brahmín.}
+{5803}{}{s bandou zloèincù a vlèí smeèkou.}
+{5804}{}{se skupinkou lovcù odmìn.}
+{5805}{}{se skupinkou lovcù odmìn.}
+{5806}{}{se skupinkou lovcù odmìn.}
+{5807}{}{se skupinkou lovcù odmìn.}
+{5808}{}{se skupinkou lovcù odmìn.}
+{5809}{}{se skupinkou lovcù odmìn.}
+{5810}{}{se skupinkou lovcù odmìn.}
+{5811}{}{se skupinkou lovcù odmìn.}
+{5812}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5813}{}{s bandou zlodìjù.}
+{5814}{}{se smeèkou vlkù.}
+{5815}{}{s hejnem radškorpiónù.}
+{5816}{}{s porostem masožravých rostlin.}
+{5817}{}{s hlídkou Jednoty bojující proti zlodìjùm.}
+{5818}{}{s hlídkou Jednoty bojující s vlèí smeèkou.}
+{5819}{}{s hlídkou Jednoty.}
+{5820}{}{s pozùstatky vorvanì.}
+{5821}{}{s obrovskou kamennou hlavou.}
+{5822}{}{s vrakem kosmické lodi.}
+{5823}{}{s branou u Strážce Vìènosti.}
+{5824}{}{s rytíøi krále Artuše.}
+{5825}{}{s mužem ve zrezivìlém brnìní.}
+{5826}{}{se špinavými vesnièany pronásledujícími spammera.}
+
+# Encounter Table 57
+{5850}{}{s bandou darebákù a vlèí smeèkou.}
+{5851}{}{s bandou zlodìjù.}
+{5852}{}{se smeèkou vlkù.}
+{5853}{}{s hejnem radškorpiónù.}
+{5854}{}{se skupinkou lovcù odmìn.}
+{5855}{}{se skupinkou lovcù odmìn.}
+{5856}{}{se skupinkou lovcù odmìn.}
+{5857}{}{se skupinkou lovcù odmìn.}
+{5858}{}{se skupinkou lovcù odmìn.}
+{5859}{}{se skupinkou lovcù odmìn.}
+{5860}{}{se skupinkou lovcù odmìn.}
+{5861}{}{se skupinkou lovcù odmìn.}
+{5862}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5863}{}{s lesíkem masožravých rostlin.}
+{5864}{}{s hlídkou Jednoty bojující proti zlodìjùm.}
+{5865}{}{s hlídkou Jednoty bojující s vlèí smeèkou.}
+{5866}{}{s hlídkou Jednoty.}
+{5867}{}{se strážcem Mostu Smrti.}
+{5868}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 58
+{5900}{}{s jednotkou žoldákù.}
+{5901}{}{s gangem vymahaèù.}
+{5902}{}{se stádem deathclawù.}
+{5903}{}{s tlupou ohnivých geckonù.}
+{5904}{}{se skupinkou lovcù odmìn.}
+{5905}{}{se skupinkou lovcù odmìn.}
+{5906}{}{se skupinkou lovcù odmìn.}
+{5907}{}{se skupinkou lovcù odmìn.}
+{5908}{}{se skupinkou lovcù odmìn.}
+{5909}{}{se skupinkou lovcù odmìn.}
+{5910}{}{se skupinkou lovcù odmìn.}
+{5911}{}{se skupinkou lovcù odmìn.}
+{5912}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5913}{}{s houfem alienù.}
+{5914}{}{s hubologisty bojujícími s žoldáky.}
+{5915}{}{s hubologisty bojujícími s gangem vymahaèù.}
+{5916}{}{s hubologisty.}
+
+# Encounter Table 59
+{5950}{}{s jednotkou žoldákù.}
+{5951}{}{s vymahaèským gangem.}
+{5952}{}{se stádem deathclawù.}
+{5953}{}{s tlupou ohnivých geckonù.}
+{5954}{}{se skupinkou lovcù odmìn.}
+{5955}{}{se skupinkou lovcù odmìn.}
+{5956}{}{se skupinkou lovcù odmìn.}
+{5957}{}{se skupinkou lovcù odmìn.}
+{5958}{}{se skupinkou lovcù odmìn.}
+{5959}{}{se skupinkou lovcù odmìn.}
+{5960}{}{se skupinkou lovcù odmìn.}
+{5961}{}{se skupinkou lovcù odmìn.}
+{5962}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{5963}{}{s houfem alienù.}
+{5964}{}{s hubologisty bojujícími s žoldáky.}
+{5965}{}{s hubologisty bojujícími s gangem vymahaèù.}
+{5966}{}{s hubologisty.}
+{5967}{}{se strážcem Mostu Smrti.}
+{5968}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 60
+{6000}{}{s jednotkou žoldákù.}
+{6001}{}{s vymahaèským gangem.}
+{6002}{}{se stádem deathclawù.}
+{6003}{}{s tlupou ohnivých geckonù.}
+{6004}{}{se skupinkou lovcù odmìn.}
+{6005}{}{se skupinkou lovcù odmìn.}
+{6006}{}{se skupinkou lovcù odmìn.}
+{6007}{}{se skupinkou lovcù odmìn.}
+{6008}{}{se skupinkou lovcù odmìn.}
+{6009}{}{se skupinkou lovcù odmìn.}
+{6010}{}{se skupinkou lovcù odmìn.}
+{6011}{}{se skupinkou lovcù odmìn.}
+{6012}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6013}{}{s houfem alienù.}
+{6014}{}{s hubologisty bojujícími s žoldáky.}
+{6015}{}{s hubologisty bojujícími s gangem vymahaèù.}
+{6016}{}{s hubologisty.}
+
+# Encounter Table 61
+{6050}{}{se skládkou toxických odpadù}
+{6051}{}{s podivným osamìlým psem.}
+{6052}{}{se stádem brahmín.}
+{6053}{}{s jednotkou žoldákù.}
+{6054}{}{se skupinkou lovcù odmìn.}
+{6055}{}{se skupinkou lovcù odmìn.}
+{6056}{}{se skupinkou lovcù odmìn.}
+{6057}{}{se skupinkou lovcù odmìn.}
+{6058}{}{se skupinkou lovcù odmìn.}
+{6059}{}{se skupinkou lovcù odmìn.}
+{6050}{}{se skupinkou lovcù odmìn.}
+{6061}{}{se skupinkou lovcù odmìn.}
+{6062}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6063}{}{s vymahaèským gangem.}
+{6064}{}{se stádem deathclawù.}
+{6065}{}{s tlupou ohnivých geckonù.}
+{6066}{}{s houfem alienù.}
+{6067}{}{s hubologisty bojujícími s žoldáky.}
+{6068}{}{s hubologisty bojujícími s gangem vymahaèù.}
+{6069}{}{s hubologisty.}
+{6070}{}{s pozùstatky vorvanì.}
+{6071}{}{s obrovskou kamennou hlavou.}
+{6072}{}{s vrakem kosmické lodi.}
+{6073}{}{s branou u Strážce Vìènosti.}
+{6074}{}{s rytíøi krále Artuše.}
+{6075}{}{s mužem ve zrezivìlém brnìní.}
+{6076}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6077}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 62
+{6100}{}{se skládkou toxických odpadù}
+{6101}{}{s podivným osamìlým psem.}
+{6102}{}{se stádem brahmín.}
+{6103}{}{s jednotkou žoldákù.}
+{6104}{}{se skupinkou lovcù odmìn.}
+{6105}{}{se skupinkou lovcù odmìn.}
+{6106}{}{se skupinkou lovcù odmìn.}
+{6107}{}{se skupinkou lovcù odmìn.}
+{6108}{}{se skupinkou lovcù odmìn.}
+{6109}{}{se skupinkou lovcù odmìn.}
+{6110}{}{se skupinkou lovcù odmìn.}
+{6111}{}{se skupinkou lovcù odmìn.}
+{6112}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6113}{}{se smeèkou deathclawù.}
+{6114}{}{se smeèkou ohnivých geckonù.}
+{6115}{}{s houfem alienù.}
+{6116}{}{s karavanou pøepadenou žoldáky.}
+{6117}{}{s karavanou napadenou žoldáky.}
+{6118}{}{s karavanou napadenou ohnivými geckony.}
+{6119}{}{s karavanou bránící se proti alienùm.}
+{6120}{}{s karavanou.}
+{6121}{}{s karavanou.}
+{6122}{}{s pozùstatky vorvanì.}
+{6123}{}{s obrovskou kamennou hlavou.}
+{6124}{}{s vrakem kosmické lodi.}
+{6125}{}{s branou u Strážce Vìènosti.}
+{6126}{}{s rytíøi krále Artuše.}
+{6127}{}{s mužem ve zrezivìlém brnìní.}
+{6128}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6129}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 63
+{6150}{}{s jednotkou žoldákù.}
+{6151}{}{se smeèkou deathclawù.}
+{6152}{}{se smeèkou ohnivých geckonù.}
+{6153}{}{s houfem alienù.}
+{6154}{}{se skupinkou lovcù odmìn.}
+{6155}{}{se skupinkou lovcù odmìn.}
+{6156}{}{se skupinkou lovcù odmìn.}
+{6157}{}{se skupinkou lovcù odmìn.}
+{6158}{}{se skupinkou lovcù odmìn.}
+{6159}{}{se skupinkou lovcù odmìn.}
+{6160}{}{se skupinkou lovcù odmìn.}
+{6161}{}{se skupinkou lovcù odmìn.}
+{6162}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6163}{}{s karavanou pøepadenou žoldáky.}
+{6164}{}{s karavanou napadenou žoldáky.}
+{6165}{}{s karavanou napadenou ohnivými geckony.}
+{6166}{}{s karavanou bránící se proti alienùm.}
+{6167}{}{s karavanou.}
+{6168}{}{s karavanou.}
+
+# Encounter Table 64
+{6200}{}{se skládkou toxických odpadù}
+{6201}{}{s podivným osamìlým psem.}
+{6202}{}{se stádem brahmín.}
+{6203}{}{s hlídkou Enklávy.}
+{6204}{}{se skupinkou lovcù odmìn.}
+{6205}{}{se skupinkou lovcù odmìn.}
+{6206}{}{se skupinkou lovcù odmìn.}
+{6207}{}{se skupinkou lovcù odmìn.}
+{6208}{}{se skupinkou lovcù odmìn.}
+{6209}{}{se skupinkou lovcù odmìn.}
+{6210}{}{se skupinkou lovcù odmìn.}
+{6211}{}{se skupinkou lovcù odmìn.}
+{6212}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6213}{}{se zbytky Vùdcovy armády.}
+{6214}{}{se smeèkou deathclawù.}
+{6215}{}{s rojem mantisù.}
+{6216}{}{s pozùstatky vorvanì.}
+{6217}{}{s obrovskou kamennou hlavou.}
+{6218}{}{s vrakem kosmické lodi.}
+{6219}{}{s branou u Strážce Vìènosti.}
+{6220}{}{s rytíøi krále Artuše.}
+{6221}{}{s mužem ve zrezivìlém brnìní.}
+{6222}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6223}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 65
+{6250}{}{s hlídkou Enklávy.}
+{6251}{}{se zbytky Vùdcovy armády.}
+{6252}{}{se smeèkou deathclawù.}
+{6253}{}{s rojem mantisù.}
+{6254}{}{se skupinkou lovcù odmìn.}
+{6255}{}{se skupinkou lovcù odmìn.}
+{6256}{}{se skupinkou lovcù odmìn.}
+{6257}{}{se skupinkou lovcù odmìn.}
+{6258}{}{se skupinkou lovcù odmìn.}
+{6259}{}{se skupinkou lovcù odmìn.}
+{6260}{}{se skupinkou lovcù odmìn.}
+{6261}{}{se skupinkou lovcù odmìn.}
+{6262}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6263}{}{se strážcem Mostu Smrti.}
+{6264}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 66
+{6300}{}{se skládkou toxických odpadù}
+{6301}{}{s podivným osamìlým psem.}
+{6302}{}{se stádem brahmín.}
+{6303}{}{s karavanou napadenou zbytky Vùdcovy armády.}
+{6304}{}{se skupinkou lovcù odmìn.}
+{6305}{}{se skupinkou lovcù odmìn.}
+{6306}{}{se skupinkou lovcù odmìn.}
+{6307}{}{se skupinkou lovcù odmìn.}
+{6308}{}{se skupinkou lovcù odmìn.}
+{6309}{}{se skupinkou lovcù odmìn.}
+{6310}{}{se skupinkou lovcù odmìn.}
+{6311}{}{se skupinkou lovcù odmìn.}
+{6312}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6313}{}{s karavanou napadenou zbytky Vùdcovy armády.}
+{6314}{}{s karavanou napadenou deathclawy.}
+{6315}{}{s karavanou.}
+{6316}{}{s karavanou.}
+{6317}{}{s karavanou.}
+{6318}{}{s pozùstatky vorvanì.}
+{6319}{}{s obrovskou kamennou hlavou.}
+{6320}{}{s vrakem kosmické lodi.}
+{6321}{}{s branou u Strážce Vìènosti.}
+{6322}{}{s rytíøi krále Artuše.}
+{6323}{}{s mužem ve zrezivìlém brnìní.}
+{6324}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6325}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 67
+{6350}{}{s karavanou napadenou zbytky Vùdcovy armády.}
+{6351}{}{s karavanou pøepadenou zbytky Vùdcovy armády.}
+{6352}{}{s karavanou napadenou deathclawy.}
+{6353}{}{s karavanou.}
+{6354}{}{se skupinkou lovcù odmìn.}
+{6355}{}{se skupinkou lovcù odmìn.}
+{6356}{}{se skupinkou lovcù odmìn.}
+{6357}{}{se skupinkou lovcù odmìn.}
+{6358}{}{se skupinkou lovcù odmìn.}
+{6359}{}{se skupinkou lovcù odmìn.}
+{6360}{}{se skupinkou lovcù odmìn.}
+{6361}{}{se skupinkou lovcù odmìn.}
+{6362}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6363}{}{s karavanou.}
+{6364}{}{s karavanou.}
+{6365}{}{se strážcem Mostu Smrti.}
+{6366}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 68
+{6400}{}{se smeèkou vlkù.}
+{6401}{}{s rojem mantisù.}
+{6402}{}{s rodinkou radškorpiónù .}
+{6403}{}{se skupinkou lovcù odmìn.}
+{6404}{}{se skupinkou lovcù odmìn.}
+{6405}{}{se skupinkou lovcù odmìn.}
+{6406}{}{se skupinkou lovcù odmìn.}
+{6407}{}{se skupinkou lovcù odmìn.}
+{6408}{}{se skupinkou lovcù odmìn.}
+{6409}{}{se skupinkou lovcù odmìn.}
+{6410}{}{se skupinkou lovcù odmìn.}
+{6411}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6412}{}{se strážcem Mostu Smrti.}
+{6413}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 69
+{6450}{}{se skládkou toxických odpadù}
+{6451}{}{s podivným osamìlým psem.}
+{6452}{}{se stádem brahmín.}
+{6453}{}{se smeèkou vlkù.}
+{6454}{}{se skupinkou lovcù odmìn.}
+{6455}{}{se skupinkou lovcù odmìn.}
+{6456}{}{se skupinkou lovcù odmìn.}
+{6457}{}{se skupinkou lovcù odmìn.}
+{6458}{}{se skupinkou lovcù odmìn.}
+{6459}{}{se skupinkou lovcù odmìn.}
+{6460}{}{se skupinkou lovcù odmìn.}
+{6461}{}{se skupinkou lovcù odmìn.}
+{6462}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6463}{}{s rojem mantisù.}
+{6464}{}{s rodinkou radškorpiónù.}
+{6465}{}{s pozùstatky vorvanì.}
+{6466}{}{s obrovskou kamennou hlavou.}
+{6467}{}{s vrakem kosmické lodi.}
+{6468}{}{s branou u Strážce Vìènosti.}
+{6469}{}{s rytíøi krále Artuše.}
+{6470}{}{s mužem ve zrezivìlém brnìní.}
+{6471}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6472}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 70
+{6500}{}{se skládkou toxických odpadù}
+{6501}{}{s podivným osamìlým psem.}
+{6502}{}{se stádem brahmín.}
+{6503}{}{s bandou záškodníkù.}
+{6504}{}{se skupinkou lovcù odmìn.}
+{6505}{}{se skupinkou lovcù odmìn.}
+{6506}{}{se skupinkou lovcù odmìn.}
+{6507}{}{se skupinkou lovcù odmìn.}
+{6508}{}{se skupinkou lovcù odmìn.}
+{6509}{}{se skupinkou lovcù odmìn.}
+{6510}{}{se skupinkou lovcù odmìn.}
+{6511}{}{se skupinkou lovcù odmìn.}
+{6512}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6513}{}{se smeèkou vlkù.}
+{6514}{}{s hejnem radškorpiónù.}
+{6515}{}{s karavanou bránící se proti bandì záškodníkù.}
+{6516}{}{s karavanou bránící se proti bandì záškodníkù.}
+{6517}{}{s karavanou napadenou vlky.}
+{6518}{}{s karavanou napadenou radškorpióny.}
+{6519}{}{s karavanou.}
+{6520}{}{s karavanou.}
+{6521}{}{s karavanou.}
+{6522}{}{s karavanou.}
+{6523}{}{s cestovatelem.}
+{6524}{}{s pozùstatky vorvanì.}
+{6525}{}{s obrovskou kamennou hlavou.}
+{6526}{}{s vrakem kosmické lodi.}
+{6527}{}{s branou u Strážce Vìènosti.}
+{6528}{}{s rytíøi krále Artuše.}
+{6529}{}{s mužem ve zrezivìlém brnìní.}
+{6530}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6531}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 71
+{6550}{}{s bandou záškodníkù.}
+{6551}{}{se smeèkou vlkù.}
+{6552}{}{s hejnem radškorpiónù.}
+{6553}{}{s karavanou bránící se proti bandì záškodníkù.}
+{6554}{}{se skupinkou lovcù odmìn.}
+{6555}{}{se skupinkou lovcù odmìn.}
+{6556}{}{se skupinkou lovcù odmìn.}
+{6557}{}{se skupinkou lovcù odmìn.}
+{6558}{}{se skupinkou lovcù odmìn.}
+{6559}{}{se skupinkou lovcù odmìn.}
+{6560}{}{se skupinkou lovcù odmìn.}
+{6561}{}{se skupinkou lovcù odmìn.}
+{6562}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6563}{}{s karavanou bránící se proti bandì záškodníkù.}
+{6564}{}{s karavanou napadenou vlky.}
+{6565}{}{s karavanou napadenou radškorpióny.}
+{6566}{}{s karavanou.}
+{6567}{}{s karavanou.}
+{6568}{}{s karavanou.}
+{6569}{}{s karavanou.}
+{6570}{}{s cestovatelem.}
+{6571}{}{se strážcem Mostu Smrti.}
+{6572}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 72
+{6600}{}{s oddílem dávno rozprášené Vùdcovy armády.}
+{6601}{}{s bandou záškodníkù.}
+{6602}{}{s jednotkou Rangerù bojující s èetou Vùdcovy armády.}
+{6603}{}{s jednotkou Rangerù napadenou záškodníky.}
+{6604}{}{se skupinkou lovcù odmìn.}
+{6605}{}{se skupinkou lovcù odmìn.}
+{6606}{}{se skupinkou lovcù odmìn.}
+{6607}{}{se skupinkou lovcù odmìn.}
+{6608}{}{se skupinkou lovcù odmìn.}
+{6609}{}{se skupinkou lovcù odmìn.}
+{6610}{}{se skupinkou lovcù odmìn.}
+{6611}{}{se skupinkou lovcù odmìn.}
+{6612}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6613}{}{s farmáøi bránícími se útoku jednotky Vùdcovy armády.}
+{6614}{}{s farmáøi bránícími se útoku záškodníkù.}
+{6615}{}{s oddílem Rangerù z NCR.}
+{6616}{}{s farmáøi.}
+{6617}{}{se strážcem Mostu Smrti.}
+{6618}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 73
+{6650}{}{se skládkou toxických odpadù}
+{6651}{}{s podivným osamìlým psem.}
+{6652}{}{se stádem brahmín.}
+{6653}{}{se zbytkem dávných Vùdcových armád.}
+{6654}{}{se skupinkou lovcù odmìn.}
+{6655}{}{se skupinkou lovcù odmìn.}
+{6656}{}{se skupinkou lovcù odmìn.}
+{6657}{}{se skupinkou lovcù odmìn.}
+{6658}{}{se skupinkou lovcù odmìn.}
+{6659}{}{se skupinkou lovcù odmìn.}
+{6660}{}{se skupinkou lovcù odmìn.}
+{6661}{}{se skupinkou lovcù odmìn.}
+{6662}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6663}{}{s bandou záškodníkù.}
+{6664}{}{s jednotkou Rangerù bojující s èetou Vùdcovy armády.}
+{6665}{}{s jednotkou Rangerù napadenou záškodníky.}
+{6666}{}{s farmáøi bránícími se útoku jednotky Vùdcovy armády.}
+{6667}{}{s farmáøi bránícími se útoku záškodníkù.}
+{6668}{}{s oddílem Rangerù z NCR.}
+{6669}{}{Nìjací farmáøi.}
+{6670}{}{s pozùstatky vorvanì.}
+{6671}{}{s obrovskou kamennou hlavou.}
+{6672}{}{s vrakem kosmické lodi.}
+{6673}{}{s branou u Strážce Vìènosti.}
+{6674}{}{s rytíøi krále Artuše.}
+{6675}{}{s mužem ve zrezivìlém brnìní.}
+{6676}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6677}{}{s kavárnou "U ztracených snù".}
+
+# Encounter Table 74
+{6700}{}{se oddílem Vùdcovy armády napadeným krtèími potkany.}
+{6701}{}{se zbytkem bájných Vùdcových armád.}
+{6702}{}{s rojem mantisù.}
+{6703}{}{s hejnem mutovaných krtèích potkanù.}
+{6704}{}{se skupinkou lovcù odmìn.}
+{6705}{}{se skupinkou lovcù odmìn.}
+{6706}{}{se skupinkou lovcù odmìn.}
+{6707}{}{se skupinkou lovcù odmìn.}
+{6708}{}{se skupinkou lovcù odmìn.}
+{6709}{}{se skupinkou lovcù odmìn.}
+{6710}{}{se skupinkou lovcù odmìn.}
+{6711}{}{se skupinkou lovcù odmìn.}
+{6712}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6713}{}{s hejnem radškorpiónù.}
+{6714}{}{se strážcem Mostu Smrti.}
+{6715}{}{s rytíøi krále Artuše napadenými krysou.}
+
+# Encounter Table 75
+{6750}{}{se skládkou toxických odpadù}
+{6751}{}{s podivným osamìlým psem.}
+{6752}{}{se stádem brahmín.}
+{6753}{}{se oddílem Vùdcovy armády napadeným krtèími potkany.}
+{6754}{}{se skupinkou lovcù odmìn.}
+{6755}{}{se skupinkou lovcù odmìn.}
+{6756}{}{se skupinkou lovcù odmìn.}
+{6757}{}{se skupinkou lovcù odmìn.}
+{6758}{}{se skupinkou lovcù odmìn.}
+{6759}{}{se skupinkou lovcù odmìn.}
+{6760}{}{se skupinkou lovcù odmìn.}
+{6761}{}{se skupinkou lovcù odmìn.}
+{6762}{}{s tlupou darebákù vedených jedním z Mortonových bratrù.}
+{6763}{}{se zbytkem dávných Vùdcových armád.}
+{6764}{}{s rojem mantisù.}
+{6765}{}{s hejnem mutovaných krtèích potkanù.}
+{6766}{}{s hejnem radškorpiónù.}
+{6767}{}{s pozùstatky vorvanì.}
+{6768}{}{s obrovskou kamennou hlavou.}
+{6769}{}{s vrakem kosmické lodi.}
+{6770}{}{s branou u Strážce Vìènosti.}
+{6771}{}{s rytíøi krále Artuše.}
+{6772}{}{s mužem ve zrezivìlém brnìní. }
+{6773}{}{se špinavými vesnièany pronásledujícími spammera.}
+{6774}{}{s kavárnou "U ztracených snù".}

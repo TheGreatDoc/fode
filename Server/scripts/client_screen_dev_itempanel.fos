@@ -1,0 +1,90 @@
+//Client GUI DEV Panel
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+IGUIScreenOpt @DEVItemPanelOpt;
+uint PointedItemId;
+
+class DeleteItemButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_DeleteItem",PointedItemId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_ITEMPANEL,0,0,0);
+	}
+}
+
+class TakeButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Take",PointedItemId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_ITEMPANEL,0,0,0);
+	}
+}
+
+class CloneButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Clone",PointedItemId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_ITEMPANEL,0,0,0);
+	}
+}
+
+class ShowItemContainerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_ItemCheckInv",PointedItemId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_ITEMPANEL,0,0,0);
+	}
+}
+
+void InitDEVItemPanel()
+{
+	@DEVItemPanelOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_ITEMPANEL,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_ITEMPANEL,"DEV Panel\nItem", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	DeleteItemButtonClass DeleteItemButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_ITEMPANEL, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Delete", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(DeleteItemButton);
+	
+	TakeButtonClass TakeButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_ITEMPANEL, 0,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Take", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TakeButton);
+	
+	CloneButtonClass CloneButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_ITEMPANEL, 0,55)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Clone to inv.", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(CloneButton);
+		
+	ShowItemContainerButtonClass ShowItemContainerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_ITEMPANEL, 0,70)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Show container", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ShowItemContainerButton);
+}

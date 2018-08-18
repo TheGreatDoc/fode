@@ -1,0 +1,6 @@
+{100}{}{Du siehst einen Claim-Besitzer.}
+{101}{}{Wir waren zuerst hier.}
+{102}{}{Such dir ein eigenes Claim.}
+{103}{}{Bloﬂ eine weitere Kugel.}
+{104}{}{Kann dich jetzt nich' gehn lassen.}
+{105}{}{Du hast einfach zu viel gesehn.}

@@ -1,0 +1,45 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+0 2010 R _script server_scripts@base_terminal_invite 0  #
+0 2020 R _script server_scripts@base_terminal_kick 0  #
+0 2030 &
+
+[engl]
+{100}{}{Base terminal}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Base access management terminal.
+Waiting for commands.}
+{2010}{}{Give access to player.}
+{2020}{}{Remove access from player.}
+{2030}{}{Done}
+
+[pols]
+{100}{}{Panel bazy}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Panel zarządzania dostępem do bazy.
+Oczekiwanie na komendy.}
+{2010}{}{Daj dostęp osobie.}
+{2020}{}{Zabierz dostęp osobie.}
+{2030}{}{Gotowe}
+
+[russ]
+{100}{}{Base terminal}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Base access management terminal.
+Waiting for commands.}
+{2010}{}{Give access to player.}
+{2020}{}{Remove access from player.}
+{2030}{}{Done}
+

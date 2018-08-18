@@ -1,0 +1,116 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#opraveno by Birdman, birdman@post.cz, http://www.mujweb.cz/www/birdman, 0604 540689
+{100}{}{Vidíš špinavého lovce s potrhanımi a krví potøísnìnımi šaty. Zdá se, e má poranìnou nohu.}
+{101}{}{Vidíš RadaRa, lovce koešin. Pokulhává a vypadá zbìdovanì.}
+{102}{}{Vidíš RadaRa, lovce koešin. Vypadá to, e je na tom teï mnohem lépe, ne v jeskyních.}
+{103}{}{Vidíš mue støedního vìku v potrhanıch a krví potøísnìnıch loveckıch šatech. Nevypadá zrovna
+ nejlépe.}
+{104}{}{Vidíš RadaRa, lovce koešin. Jeho zdravotní stav se zda bıt mnohem lepší, ne
+ jak na tom byl v jeskyních.}
+
+{110}{}{Zdravím tì, cizinèe. Øíkají mi RadaR. Jsem rád, e tì tu vidím. U jsem myslel, e tady v tìch jeskyních zemøu! Pøíliš jsem ty zatracené ještìrky podcenil, a tak mne zranily.}
+{111}{}{RadaR, he, he, he. Dób-ro.}
+{112}{}{Co tu vlastnì dìláš?}
+{113}{}{Hezké tì vidìt, RadaRe. A teï u pùjdu dál.}
+
+{120}{}{Bezvadnı. Další Torr. Já (ukazuje na sebe) potøebuju tebe (ukazuje na tebe) abys mi pomohl odtud
+ (pøedvádí rukou chùzi).}
+{121}{}{Jít? Teï? Dób-ro. }
+{122}{}{ jít. Ještìrka špatnej! Fuj fuj!}
+
+{130}{}{Ano! To je ono. Pùjdeme (znovu ukazuje rukou chùzi) spoleènì (plácne dlanìmi k sobì). A hned teï!}
+{131}{}{RadaR choditi s }
+{132}{}{ teï.}
+{133}{}{RadaR ne choditi s }
+{134}{}{. Nemìla ráda RadaR. Pá pá.}
+
+{140}{}{Hej! Poèkej! Nemùeš mne tu pøece nechat!}
+{141}{}{Och, sorry. Na co myslím?}
+{142}{}{Hmm, myslím, e ne.}
+{143}{}{Mùu a taky nechám. Jen se tu ještì porozhlédnu. Nashledanou.}
+
+{150}{}{Vdycky jsem chytil více Zlatıch geckonù tady, na sever a západ od Klamathu, ne kdekoliv jinde. Take jsem pøedpokládal,
+ e tu nìkde musejí mít svá rodištì.}
+{151}{}{Vypadá to, e jsi mìl pravdu.}
+
+{160}{}{Hroznì moc rád bych si s tebou vykládal, ale necítím se zrovna nejlíp. Take napøed
+ bych se rád dostal odtud a vykládat si mùeme pozdìji. Oukej?}
+{161}{}{Ach, ano. Promiò mi moji zvìdavost.}
+{162}{}{Jen jednu otázku, prosím. Co je tohle za jeskynì?}
+
+{170}{}{Tváøíš se, jakoby se ti zdálo, e na takové vìci nemám. Víš, pøišel jsem sem úplnì v poøádku, ale pak se jeden z tìch
+ zatracenejch geckonù dostal nepozorovanì za mì a poøádnì mì afnul  do nohy. Sotva jsem se dovlekl semhle.}
+{171}{}{Zajímalo by mne, jaktoe tì nedorazili?}
+
+{180}{}{To máš tak. Všiml jsem si, e neradi chodí skrz tu zelenou sraèku, co docela chápu. Poøádnì to pálí, kdy se ti dostane na kùi. Ale stejnì to ty potvory líou, jako by to bylo Bucknerovic Nejlepší.}
+{181}{}{Zajímavé.}
+
+{190}{}{Dost u planého povídání. Pojïme odsud. Poèítám, e kdy pùjdeme spolu, mohli bychom
+ to oba zvládnout. Rozhodnì potøebuji pomoc.}
+{191}{}{Ok. Pùjdeme spolu. Buï si jistı, e se v poøádku dostaneme do Klamathu. Tvoje pøítelkynì u se
+ urèitì nemùe doèkat tvého návratu.}
+{192}{}{Dobrá, OK. Ale nemusíš poøád kòuèet o pomoc.}
+
+{200}{}{V tìchto jeskyních nejspíš byly, dávno pøed válkou, nìjaké skladovací prostory. Podle mì je toho dole víc, ale
+ tady na tìch dveøích je nìjakı druh specielního tech-no-logického zámku. A je to jak chce, já u toho mám a po krk. Vypadneme odtud.}
+{201}{}{OK.}
+
+{210}{}{Uuf. Øekl bych, e jsem si v té jeskyni vyèerpal celé svoje ivotní štìstí. Stav se nìkdy do  hospody U Bucknerové,
+ a promluvíme si o nìjaké vhodné odmìnì za moji záchranu. A dìkuji ti.}
+{211}{}{Není zaè, RadaRe. Byla to pøece samozøejmost. Nashle.}
+{212}{}{OK, pro tebe všechno. Nashle.}
+{213}{}{No e jsi se koneènì o odmìnì zmínil. A stojí za to. Nashle.}
+
+{220}{}{Ááá, jestli tohle není mùj pøihlouplı pøítel. Dìkuju mnohokrát. A buï sbohem.}
+{221}{}{Zdravím tì, pøíteli. Znovu ti dìkuji za to, e jsi mne vytáhl z bryndy. Je nìco, co bych
+ pro tebe mohl udìlat?}
+{222}{}{Mohu pro tebe ještì nìco udìlat, pøíteli?}
+{223}{}{No, mám pár otázek ohlednì lovu geckonù.}
+{224}{}{Mám hodnì otázek tıkajících se této oblasti.}
+{225}{}{Je paní Bucknerová šastná, e jsi se vrátil?}
+{226}{}{Ne ne, zrovna odcházím. Promluvíme si pozdìji RadaRe. Nashle.}
+
+{230}{}{No rozhodnì ti dluím  za záchranu svı kùe. To nejmenší co pro tebe mohu udìlat je, e tì na oplátku nìco nauèím.}
+{231}{}{Nauèíš?}
+{232}{}{Dìkuju RadaRe. Ale více ocením nìjaké spropitné.}
+
+{240}{}{Protoe geckoni mì témìø dostali, nauèím tì, jak dostaneš ty je. Takhle se jim dostaneš na kobylku... (RadaR
+ pøedvádí) ...a kdy je zabiješ, mùeš jim takhle stáhnout kùi a prodat ji. OK?}
+{241}{}{Ugh. Pìkné, he, heh, he. Prodej. Heh, he, he. Sbohem.}
+{242}{}{Díky, tohle se mi bude hodit. Povìz mi ještì nìco.}
+{243}{}{Díky, es mi ukázal jak na to, RadaRe. Asi to hned pùjdu vyzkoušet. Nashle.}
+
+{250}{}{Myslím, ze o geckonech toho u víš dost. }
+{251}{}{He, he. Myslím, e bych se mohl spíš uèit já od tebe. Promiò, opravdu nevím co bych tì
+ tak mohl ještì nauèit.}
+{252}{}{Nue, myslím, e o geckonech toho vím daleko víc ne kdokoliv jinı. Víš, byl jsem odkojen geckoním mlékem.
+ Ale všechno ti øíct - to je na nìkolik hodin.}
+{253}{}{Chci znát všechno co mi mùeš o geckonech øíci.}
+{254}{}{Myslím, e o tomhle u dost. Povìz mi ještì nìco jiného.}
+{255}{}{Geckoním mlékem? Copak oni nejsou plazi?}
+
+{260}{}{Je toho daleko víc, ne kdy vùbec vyuiješ.}
+{261}{}{Uè mì, och velkı lovèe koešin.}
+{262}{}{Oh, ano. Jen do toho. Poslouchám.}
+{263}{}{Dobrá, oukej. Zaèni vykládat ty neuvìøitelnı báchorky. Jsem jedno ucho.}
+{264}{}{Asi to nepotøebuji vìdìt. Nashle.}
+
+{270}{}{Dobrá, tak podívej - zlatí geckonové a obyèejní geckonové jsou v podstatì ty samı potvory.
+ Snad jen s tím rozdílem, e zlatí jsou mnohem nebezpeènìjší pokud je vyprovokuješ... (a èas bìí, jak se uèíš vìci
+ o geckonech)}
+{271}{}{To bylo úasné. Myslím, e teï toho vím o geckonech mnohem více. Dìkuju a nashle.}
+
+{280}{}{Maida Bucknerová, dcera vdovy Bucknerové, je ta správná osoba, se kterou si mùeš vykládat o všemonıch drbech mìsta.}
+{281}{}{Ještì se chci na nìco zeptat.}
+{282}{}{Aha, no uvidíme. Dìkuji. Nashle.}
+
+{290}{}{Ó ano. Vdova Bucknerová je hroznì šastná, e mne má zpátky. Však, moná e u brzy bude paní RadaRová. A øíkala mi, e by tì
+ ráda nìèím podarovala. Velmi si cení tvého stateèného èinu.}
+{291}{}{Pøeji vám obìma štìstí. Ještì se chci na nìco zeptat.}
+{292}{}{To je velkolepé. Pùjdu si s ní promluvit. Nashle.}
+
+{300}{}{Poslyš, strašnì moc ti dìkuju. Radìji teï povalím rovnou do Klamathu. Uvidíme se tam.}
+{310}{}{A neboj se o mne. Tu cestu zpátky u v pohodì zvládnu.}
+
+{320}{}{Získáváš }
+{330}{}{ bodù zkušenosti za záchranu RadaRa.}

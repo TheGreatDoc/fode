@@ -1,0 +1,45 @@
+[comment]
+Aaoe eiiiaioa?ee / Your comments.
+
+[data]
+lang=russ engl pols germ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 &
+
+[russ]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{Good Day, isn't it?@@Hello there.@@Can I help you with Something?@@Don't ask me to Join you, I would not be a Good Soldier.@@I think I'm Radiated.@@Very Dry these Days...@@Please don't Hurt me.@@Everything's just so Hopeless...@@Don't starte at me Like that!}
+
+[engl]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Good Day, isn't it?@@Hello there.@@Can I help you with Something?@@Don't ask me to Join you, I would not be a Good Soldier.@@I think I'm Radiated.@@Very Dry these Days...@@Please don't Hurt me.@@Everything's just so Hopeless...@@Don't starte at me Like that!}
+
+[pols]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Good Day, isn't it?@@Hello there.@@Can I help you with Something?@@Don't ask me to Join you, I would not be a Good Soldier.@@I think I'm Radiated.@@Very Dry these Days...@@Please don't Hurt me.@@Everything's just so Hopeless...@@Don't starte at me Like that!}
+
+[germ]
+{100}{}{none}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{Good Day, isn't it?@@Hello there.@@Can I help you with Something?@@Don't ask me to Join you, I would not be a Good Soldier.@@I think I'm Radiated.@@Very Dry these Days...@@Please don't Hurt me.@@Everything's just so Hopeless...@@Don't starte at me Like that!}
+

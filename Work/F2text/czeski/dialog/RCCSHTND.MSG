@@ -1,0 +1,13 @@
+#tento soubor pøeložil Somnambulus - somnambulus@hotmail.com, http://www.geocities.com/Area51/Vault/4193/
+{100}{}{Vidíš vychrtlého pokladníka.}
+{101}{}{Vypadá, že by koupil cokoli, jen aby lidé v této hernì hráli.}
+
+{102}{}{Co chceš?}
+{103}{}{Chci vymìnit pár vìcí.}
+{104}{}{Nic.}
+{105}{}{Chci nìjaké další žetony.}
+{106}{}{Jdi spánembohem.}
+
+{107}{}{Ještì nìco?}
+{108}{}{Mám další vìci na výmìnu.}
+{109}{}{Chci další žetony.}

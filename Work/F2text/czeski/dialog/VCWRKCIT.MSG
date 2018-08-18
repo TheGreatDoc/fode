@@ -1,0 +1,72 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv,
+ ale nemá vzadu žádné èíslo.}
+{101}{}{Vidíš Obèana Vault City.}
+{102}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv,
+ ale nemá vzadu žádné èíslo.}
+{103}{}{::tlesk::}
+{104}{}{To je hrdina! Podívejte!}
+{105}{}{Úžasné! To je hrdina, zde, ve Vault City!}
+{106}{}{Dobrý den, kapitáne.}
+{107}{}{Vault City má vždy navrch, kapitáne.}
+{108}{}{Dobrý den, Obèane.}
+{109}{}{Vault City má vždy navrch, Obèane.}
+{110}{}{Mutant! Stráže! Stráže!}
+{111}{}{Ghoul! Stráže! Stráže!}
+{112}{}{Jak se ti povedlo se sem dostat?}
+{113}{}{Promiòte mi, máte Denní propustku? }
+{114}{}{Hmmmph. Další venkovan.}
+{115}{}{Vidím, že stále více a více venkovanù si nachází cestu skrze naše opevnìní...}
+{116}{}{Ve vašem zájmu doufám, že máte Denní propustku.}
+{117}{}{Zdá se, že jakmile se daly do obìhu Denní propustky skoro *žádný* venkovan se tu v poslední dobì neukázal...}
+{118}{}{Slyšel jsem o vašich stateèných èinech. Je to velká služba pro Vault City... a celý svìt.}
+{119}{}{Tv...j boj proti Enklávì zaujal dokonce i První Obèanku.}
+{120}{}{Slyšel jsem, že vaše cesty vedly velmi daleko. Až kamsi na jih do San... Fran... Ciska. Je to pravda?}
+{121}{}{Snad by Vault City *mohlo* pøivítat venkovany. }
+{122}{}{Je to pravda? Že starý svìt byl ovládán neustálou hrozbou války?}
+{123}{}{Sepište poznatky svého cestování do hlavního poèítaèe Vault City, aby si i další generace mohly o nich èíst.}
+{124}{}{Vítej a mùžeš zùstat jak dlouho chceš, hrdino.}
+{125}{}{Sepište své hrdinské èiny proti Enklávì do hezkého, pøehledného seznamu.}
+{126}{}{*Zív*... hrmnnn? Ano? Co je to?}
+{127}{}{Je ponìkud pozdì pro návštìvníky. }
+{128}{}{MNOHO Obèanù v tuto dobu spí.}
+{129}{}{Spí? Ne, ještì ne.}
+{130}{}{Prosím... pøijïte ráno. Musím na zítra zhotovit velký seznam.}
+{131}{}{Dobrý den, kapitáne.}
+{132}{}{Vault City má vždy navrch, kapitáne.}
+{133}{}{Máte rád nìjaké peèivo, kapitáne?}
+{134}{}{Nìco v nepoøádku, kapitáne?}
+{135}{}{Doufám, že žádný z tìch špinavých venkovanù nebude obtìžovat, kapitáne.}
+{136}{}{Máte nìjaké pøíbìhy z okolního svìta, kapitáne?}
+{137}{}{Dobrý den, Obèane.}
+{138}{}{Vault City má vždy navrch, Obèane.}
+{139}{}{Cítím dvojí plus. A ty?}
+{140}{}{Je vaší Obèanskou povinností udìlat a udržovat poøádek.}
+{141}{}{Strávil jsem vìtšinu dne vytváøením seznamù pro prokonsula, a pak jejich ovìøováním. Miluji tuhle
+ práci.}
+{142}{}{Pracuji v Seznamovém Úøadu. Mnoho ostatních také. My zde ve Vault City *milujeme* vytváøení seznamù.}
+{143}{}{Strávil jsem vìtšinu dne upravováním seznamù pro Seznamový Úøad. Je to dobrá, poèestná
+ a výnosná práce.}
+{144}{}{Slyšel jsem, že vaše cesty skuteènì vedly po celém svìtì. Jak vám bylo, mezi tìmi všemi špinavými
+ venkovany?}
+{145}{}{Och! Vy jste nový Obèan. Vítejte ve Vault City.}
+{146}{}{Zatímco tu budete, potøebujete nìjaké místo k pobytu?}
+{147}{}{Rada bere v potaz naše zájmy.}
+{148}{}{Musíme udržovat naše pøekrásné mìsto v èistotì.}
+{149}{}{Sluhové? Och, užíváme je na takové ty podøadnìjší práce.}
+{150}{}{Tohle vèerejší zasedání rady bylo velmi užiteèné. Udìlali jsme *mnoho* seznamù. My ve Vault City
+ totiž milujeme vytváøení seznamù.}
+{151}{}{Ano?}
+{152}{}{Mohu vám s nìèím pomoci...venkovane?}
+{153}{}{Promiòte, øíkal jste nìco?}
+{154}{}{Já? Jdu si po svém. Udìlejte to taky.}
+{155}{}{Mohu vidìt vaši Denní propustku, prosím?}
+{156}{}{Och...promiòte. Skoro jsem si vás spletl se služebnictvem.}
+{157}{}{Opravdu teï nemám èas klábosit s venkovanem. Prosím jdìte zase dál.}
+{158}{}{Mùžete prosím udržovat svùj odstup?}
+{159}{}{Prosím zùstaòte kde jste.}
+{160}{}{Sluhové nám pomáhají náš drahý èas vìnovat nìèemu dùležitìjšímu. Vìtšinou tvorbì seznamù.}
+{161}{}{Sluhové? Och, užíváme je na takové ty podøadnìjší práce.}
+{162}{}{Ano, cítím...eh, vidím, že nejsi Obèan. Venkovan že?}
+{163}{}{Ty nejsi Obèan? Venkovan? Jak otøesné.}

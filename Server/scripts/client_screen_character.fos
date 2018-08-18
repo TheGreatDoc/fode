@@ -1,0 +1,28 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "_defines.fos"
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+IGUIElementTextOpt@ nextlvl;
+
+int[] position; //ChaNextLevel=24 327 153 338
+
+void InitCharacterScreen()
+{
+	
+	@nextlvl = GUI_AddText(CLIENT_SCREEN_CHARACTER,"",0,0)    
+	.Position("ChaNextLevel")
+	.TextOptions(FONT_FALLOUT, COLOR_TEXT, FT_BORDERED);
+	
+}
+
+void SetNextLevelExp()
+{
+	CritterCl@ cr=GetChosen();
+	if(!valid(cr)) return;
+	uint level=cr.StatBase[ST_LEVEL];
+	nextlvl.setText(GetMsgStr(TEXTMSG_GAME,STR_CHA_NEXT_LEVEL_DE)+ (NUMERICAL_NUMBER(level)*1000)); 
+}

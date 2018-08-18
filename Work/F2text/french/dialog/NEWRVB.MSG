@@ -1,0 +1,69 @@
+# MAP ENTEREANCE MESSAGE
+{100}{}{Tu es sur une plaine déserte à l'extérieur de New Reno.}
+
+# 0. QUICK LOOK, BOXES (WTG)
+{110}{}{Tu vois plusieurs caisses remplies de produits chimiques.}
+
+# 0. LOOK, BOXES (WTG)
+{120}{}{Tu vois plusieurs caisses remplies de produits chimiques. Tu n'arrives pas à identifier ces produits, mais ils ont été emballés *très* soigneusement.}
+
+# 1. QUICK LOOK, VERTIBIRD (WTG)
+{130}{}{Tu vois un hélico.}
+
+# 1. QUICK LOOK, VERTIBIRD (WTG)
+{140}{}{Tu vois un hélico... une forme avancée d'hélicoptère. Malheureusement, tu ne sais pas comment il marche.}
+
+# 1. QUICK LOOK, VERTIBIRD (WTG)
+{150}{}{Tu n'as aucune idée de la façon dont ça fonctionne.}
+
+# 2. NORMAL ACTION SEQUENCE (WTG)
+{200}{}{(Ces mecs me donnent la chair de poule...)}
+{201}{}{(Tais-toi. Ils arrivent.)}
+{202}{}{*Zztttt* As-tu le cargo qu'on a demandé ? *Zzzttt**}
+{203}{}{Oui, les produits chimiques sont ici. Tu peux vérifier, si tu veux.}
+{204}{}{*Zztttt* Ce ne sera pas nécessaire. *Zzzttt**}
+{205}{}{*Zztttt* Tu sais ce qui arrivera si les produits chimiques ne répondent pas aux critères demandés. *Zzzttt**}
+{206}{}{Ouais, bien sûr. Heu, et tu as apporté les torches... ?}
+{207}{}{*Zztttt* Les armes laser sont dans notre quai de cargo. *Zzzttt**}
+{208}{}{*Zztttt* Pour nous assurer de ta coopération, nous te transmettrons la séquence\n d'armement une fois que les produits chimiques seront chargés. *Zzzttt**}
+{209}{}{Heu... bon... d'accord alors. Chargez, les garçons --}
+{210}{}{*Zztttt* Non. *Zzzttt**}
+{211}{}{*Zztttt* Nous allons charger le cargo. *Zzzttt**}
+{212}{}{Heu, bon... très bien. Bien sûr. Faites-leur de la place, les garçons.}
+{213}{}{D'accord ; on a fini ici. Le reste des gardes... toi aussi, la recrue... retournez à Reno. On vous rejoint.}
+
+# 3. FLOAT SEQUENCE: INTRUDER (WTG)
+{250}{}{Merde ! Quelqu'un nous surveillait !}
+{251}{}{A mort !}
+{252}{}{Il semblerait qu'on a un espion... !}
+{253}{}{*Zztttt* Mission annulée. Séquence à sûreté intégrée du Cargo engagée. *Zzzttt**}
+{254}{}{*Zztttt* Tuez les ennemis, puis retournez à la base. *Zzzttt**}
+
+# 4. FLOAT SEQUENCE: OUT OF POSITION WARNING (WTG)
+{300}{}{Ne t'approche pas de ces mecs en armure. Ils vont te massacrer.}
+{301}{}{Remets-toi en position.}
+{302}{}{Arrête de t'agiter... les gars en armure n'aiment pas ça.}
+
+# 5. FLOAT SEQUENCE: OUT OF POSITION, FINAL (WTG)
+{350}{}{Bon sang ! Qu'est-ce que tu fais, ordure ?!!}
+{351}{}{Retour à ton poste ! Qu'est-ce que tu fais, putain -- ?!!}
+{352}{}{*Zztttt* Mission annulée. Séquence à sûreté intégrée du Cargo engagée. *Zzzttt**}
+{353}{}{*Zztttt* Tuez les ennemis, puis retournez à la base. *Zzzttt**}
+
+# 6. VERTIBIRD SEQUENCE: (WTG)
+{400}{}{(On dirait qu'il y a une porte. Ouvre-la et monte.)}
+{401}{}{Ouais}
+{402}{}{(Tu pars.)}
+{403}{}{(Monter à bord de l'hélico.)}
+{404}{}{(Ne rien faire.)}
+
+# 7. VERTIBIRD: TAKE OFF (7)
+{450}{}{[La porte se referme derrière toi et l'hélico décolle ! Tu ne peux pas ouvrir la porte !]}
+{451}{}{Ooooh}
+{452}{}{Oh, merde...}
+
+# 8. DISPLAY TEXT: BOXES (WTG)
+{500}{}{Ces caisses sont remplies de boîtes de métal lourd. A en juger par le soin avec lequel elles ont été emballées, tu soupçonnes qu'elles contiennent un genre de produits chimiques dangereux.}
+
+# GENERAL TALK
+{550}{}{Ce n'est probablement pas le bon moment pour commencer une conversation.}

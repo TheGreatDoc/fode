@@ -1,0 +1,587 @@
+//Chat
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+import void client_get_active_screens(int[]& result) from "client_scripts";
+import void AttachTabsToScreen(int screen) from "client_scripts";
+import void UpdatePipBoyPosition(int x, int y) from "client_scripts";
+import void GetPipBoyPosition(int &x, int &y) from "client_scripts";
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+import int GetIniValue(string& iniKey, int defaultValue) from "ini_parser";
+
+IGUIScreenOpt @ChatScreenOpt;
+IGUIElementTextOpt @ChatTitleTextOpt;
+IGUIElementEditBoxOpt @ChatMessagesOpt;
+IGUIElementEditBoxOpt @ChatSayEditBoxOpt;
+
+IGUIElementButtonOpt @GlobalChatButtonOpt;
+IGUIElementButtonOpt @SupportChatButtonOpt;
+IGUIElementButtonOpt @FactionChatButtonOpt;
+IGUIElementButtonOpt @PrivateChatButtonOpt;
+
+TalkNotificationButtonClass []TalkNotificationButton;
+PrivateTalkClass []PrivateTalk;
+int CurrentChat=CHAT_GLOBAL;
+string GlobalChatMessages;
+string SupportChatMessages;
+string FactionChatMessages;
+int[] positions;
+uint numberlines;
+
+class ChatGlobalButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ChangeChatTo(CHAT_GLOBAL,null);
+	}
+}
+
+class ChatSupportButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ChangeChatTo(CHAT_SUPPORT,null);
+	}
+}
+
+class ChatFactionButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ChangeChatTo(CHAT_FACTION,null);
+	}
+}
+
+class ChatPrivateButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		GlobalChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000200), FONT_SPECIAL, COLOR_LGRAY);
+		GlobalChatButtonOpt.TextShift(0, -1, 0, -1);
+		SupportChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000202), FONT_SPECIAL, COLOR_LGRAY);
+		SupportChatButtonOpt.TextShift(0, -1, 0, -1);
+		FactionChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000204), FONT_SPECIAL, COLOR_LGRAY);
+		FactionChatButtonOpt.TextShift(0, -1, 0, -1);
+		PrivateChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000206), FONT_SPECIAL, COLOR_SAND);
+		PrivateChatButtonOpt.TextShift(0, -1, 0, -1);
+		CurrentChat=CHAT_UNDEFINED;
+		ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000207));
+		ChatMessagesOpt.Text("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+GetMsgStr(TEXTMSG_GAME,3000000209)+"\n"+GetMsgStr(TEXTMSG_GAME,3000000210));
+		ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_DWHITE, FT_CENTERX);
+	}
+}
+
+class ChatSayEditBoxCallbackClass : IGUIElementCallbackKeyPress
+{
+	bool OnKeyPress(uint8 key, string& letter)
+	{
+		if(key==DIK_RETURN)
+		{
+			if(@ChatSayEditBoxOpt.getText()!=null)
+			{
+				if(CurrentChat==CHAT_UNDEFINED)
+				{
+					RunServerScriptUnsafe("chat_server_scripts@unsafe_request_for_private_chat",0,0,0,ChatSayEditBoxOpt.getText(),null);
+				}
+				else if(ChatSayEditBoxOpt.getText().length()>0)
+					RunServerScriptUnsafe("chat_server_scripts@unsafe_chat_send_message",CurrentChat,0,0,ChatSayEditBoxOpt.getText(),null);
+			}
+			ChatSayEditBoxOpt.Text("");
+			ChatSayEditBoxOpt.TextOptions(FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED);
+			return true;
+		}
+		if(key!=DIK_ESCAPE) return true;
+		else return false;
+	}
+}
+
+class ChatScreenClass : IGUIScreenCallbackMove
+{
+	void OnMove(int x, int y)
+	{
+		UpdatePipBoyPosition(x,y);
+	}
+}
+
+void InitChatScreen()
+{
+	numberlines=GetIniValue("ChatNumberLines",34);
+	ChatScreenClass ChatScreen;
+	@ChatScreenOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_CHAT,"chat.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1)
+				.CallbackMove(ChatScreen);
+	
+	positions=GetIniValues2("ChatText",null);
+	GUI_AddText(CLIENT_SCREEN_CHAT,GetMsgStr(TEXTMSG_GAME,3000000001), positions[0], positions[0])
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	positions=GetIniValues2("ChatButtonGlobal",null);
+	ChatGlobalButtonClass ChatGlobalButton;
+	@GlobalChatButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_CHAT, positions[0],positions[1])
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000200), FONT_SPECIAL, COLOR_LGRAY)
+		.TextShift(0, -3, 0, -1)
+		.CallbackMouseClick(ChatGlobalButton);
+	
+	positions=GetIniValues2("ChatButtonSupport",null);
+	ChatSupportButtonClass ChatSupportButton;
+	@SupportChatButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_CHAT, positions[0],positions[1])
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000202), FONT_SPECIAL, COLOR_LGRAY)
+		.TextShift(0, -3, 0, -1)
+		.CallbackMouseClick(ChatSupportButton);
+	
+	positions=GetIniValues2("ChatButtonFaction",null);
+	ChatFactionButtonClass ChatFactionButton;
+	@FactionChatButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_CHAT, positions[0],positions[1])
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000204), FONT_SPECIAL, COLOR_LGRAY)
+		.TextShift(0, -3, 0, -1)
+		.CallbackMouseClick(ChatFactionButton);
+	
+	positions=GetIniValues2("ChatButtonPrivate",null);
+	ChatPrivateButtonClass ChatPrivateButton;
+	@PrivateChatButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_CHAT, positions[0],positions[1])
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000206), FONT_SPECIAL, COLOR_LGRAY)
+		.TextShift(0, -3, 0, -1)
+		.CallbackMouseClick(ChatPrivateButton);
+	
+	positions=GetIniValues2("ChatTextTitle",null);
+	@ChatTitleTextOpt=
+	GUI_AddText(CLIENT_SCREEN_CHAT,GetMsgStr(TEXTMSG_GAME,3000000201), positions[0], positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_DARK, FT_NOBREAK)
+		.TextBoxSize(300,10);
+	
+	positions=GetIniValues2("ChatTextMessages",null);
+	@ChatMessagesOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_CHAT, positions[0], positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE)
+		.TextBoxSize(GetIniValues2("ChatTextMessagesSize",null)[0],GetIniValues2("ChatTextMessagesSize",null)[1])
+		.Margins(3,0,3,0)
+		.BackgroundPic("chat_textbox.png");
+	ChatMessagesOpt.NoInput(true);
+	
+	positions=GetIniValues2("ChatTextSay",null);
+	GUI_AddText(CLIENT_SCREEN_CHAT,GetMsgStr(TEXTMSG_GAME,3000000211), positions[0], positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_DWHITE, FT_BORDERED)
+		.TextBoxSize(28,10);
+	
+	positions=GetIniValues2("ChatTextBoxSay",null);
+	ChatSayEditBoxCallbackClass ChatSayEditBoxCallback;
+	@ChatSayEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_CHAT, positions[0], positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED)
+		.TextBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("chat_editbox.png")
+		.MaxLen(70)
+		.CallbackKeyPress(ChatSayEditBoxCallback);
+	
+	TalkNotificationButton.resize(10);
+	for(uint i=0; i<TalkNotificationButton.length(); i++)
+	{
+		@TalkNotificationButton[i].ButtonOpt=
+		//GUI_AddButton(CLIENT_MAIN_SCREEN_GAME,-30,i*30-350)
+		GUI_AddButton(CLIENT_MAIN_SCREEN_GAME,10,i*30+200)
+			.UpPic("msg_new.png")
+			.DownPic("msg_new.png")
+			.Text("UNDEFINED", FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED)
+			.TextShift(0, -1, 0, -1)
+			.CallbackMouseClick(TalkNotificationButton[i]);
+		TalkNotificationButton[i].ButtonOpt.Hide();
+		TalkNotificationButton[i].TabIndex=i;
+		TalkNotificationButton[i].Chat=CHAT_UNDEFINED;
+		
+		IGUIElementOpt@ element;
+		@element = cast<IGUIElementOpt@>(TalkNotificationButton[i].ButtonOpt);
+		element.setAbsolutePosition(true);
+	}
+	
+	AttachTabsToScreen(CLIENT_SCREEN_CHAT);
+}
+
+void AddTalkNotificationButton(int newChat, string @InterlocutorName)
+{
+	bool ChatWindowOpened=false;
+	int[]active_screens;
+	client_get_active_screens(active_screens);
+	if(@active_screens!=null)
+	{
+		for(uint i=0; i<active_screens.length(); i++)
+		{
+			if(active_screens[i]==CLIENT_SCREEN_CHAT && CurrentChat==newChat)
+			{
+				return;
+			}
+		}
+	}
+	string ChatName="UNDEFINED";
+	if(newChat==CHAT_GLOBAL) ChatName=GetMsgStr(TEXTMSG_GAME,3000000200);
+	else if(newChat==CHAT_SUPPORT) ChatName=GetMsgStr(TEXTMSG_GAME,3000000202);
+	else if(newChat==CHAT_FACTION) ChatName=GetMsgStr(TEXTMSG_GAME,3000000204);
+	else if(newChat>0)
+	{
+		if(@InterlocutorName!=null) ChatName=InterlocutorName;
+		else ChatName="UNDEFINED";
+	}
+	for(uint i=0; i<TalkNotificationButton.length(); i++)
+	{
+		if(TalkNotificationButton[i].ButtonOpt.isVisible() && TalkNotificationButton[i].Chat==newChat) return;
+	}
+	for(uint i=0; i<TalkNotificationButton.length(); i++)
+	{
+		if(!TalkNotificationButton[i].ButtonOpt.isVisible() && ChatName!=GetMsgStr(TEXTMSG_GAME,3000000200) && ChatName!=GetMsgStr(TEXTMSG_GAME,3000000202))
+		{
+			TalkNotificationButton[i].ButtonOpt.Show();
+			TalkNotificationButton[i].ButtonOpt.Text(ChatName, FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED);
+			TalkNotificationButton[i].Chat=newChat;
+			break;
+		}
+	}
+}
+
+class TalkNotificationButtonClass : IGUIElementCallbackMouseClick
+{
+	IGUIElementButtonOpt @ButtonOpt;
+	uint TabIndex;
+	int Chat;
+	void OnMouseClick(int id, int click)
+	{
+		ChangeCursor(0);
+		ChangeChatTo(Chat,ButtonOpt.getText());
+		ShowScreen(CLIENT_SCREEN_CHAT,0,0,0);
+	}
+}
+
+class PrivateTalkClass
+{
+	string ChatMessages;
+	int InterlocutorId;
+	string @InterlocutorName;
+	void AddMessage(string @msg)
+	{
+		ChatMessages+=msg+"\n";
+		uint count=0;
+		uint end_index=0;
+		for(uint i=0; i<ChatMessages.length(); i++)
+		{
+			if(ChatMessages[i]=="\n")
+			{
+				if(count==0) end_index=i;
+				count++;
+			}
+		}
+		if(count>numberlines) ChatMessages=substring(ChatMessages,end_index+1,ChatMessages.length()-end_index-1);
+		if(CurrentChat==InterlocutorId) {ChatMessagesOpt.Text(ChatMessages);ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);}
+	}
+}
+
+void AddMessageToGlobalChat(string @msg)
+{
+	GlobalChatMessages+=msg+"\n";
+	uint count=0;
+	uint end_index=0;
+	for(uint i=0; i<GlobalChatMessages.length(); i++)
+	{
+		if(GlobalChatMessages[i]=="\n")
+		{
+			if(count==0) end_index=i;
+			count++;
+		}
+	}
+	if(count>numberlines) GlobalChatMessages=substring(GlobalChatMessages,end_index+1,GlobalChatMessages.length()-end_index-1);
+	if(CurrentChat==CHAT_GLOBAL) {ChatMessagesOpt.Text(GlobalChatMessages);ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);}
+}
+
+void AddMessageToSupportChat(string @msg)
+{
+	SupportChatMessages+=msg+"\n";
+	uint count=0;
+	uint end_index=0;
+	for(uint i=0; i<SupportChatMessages.length(); i++)
+	{
+		if(SupportChatMessages[i]=="\n")
+		{
+			if(count==0) end_index=i;
+			count++;
+		}
+	}
+	if(count>numberlines) SupportChatMessages=substring(SupportChatMessages,end_index+1,SupportChatMessages.length()-end_index-1);
+	if(CurrentChat==CHAT_SUPPORT) {ChatMessagesOpt.Text(SupportChatMessages);ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);}
+}
+
+void AddMessageToFactionChat(string @msg)
+{
+	FactionChatMessages+=msg+"\n";
+	uint count=0;
+	uint end_index=0;
+	for(uint i=0; i<FactionChatMessages.length(); i++)
+	{
+		if(FactionChatMessages[i]=="\n")
+		{
+			if(count==0) end_index=i;
+			count++;
+		}
+	}
+	if(count>numberlines) FactionChatMessages=substring(FactionChatMessages,end_index+1,FactionChatMessages.length()-end_index-1);
+	if(CurrentChat==CHAT_FACTION) {ChatMessagesOpt.Text(FactionChatMessages);ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);}
+}
+
+void ChangeChatTo(int Chat, string @InterlocutorName)
+{
+	CurrentChat=Chat;
+	int TalkNotificationButtonIndex=-1;
+	for(uint i=0; i<TalkNotificationButton.length(); i++)
+	{
+		if(TalkNotificationButton[i].Chat==CurrentChat)
+		{
+			TalkNotificationButtonIndex=i;
+			break;
+		}
+	}
+	if(TalkNotificationButtonIndex!=-1)
+	{
+		for(uint i=TalkNotificationButtonIndex; i<TalkNotificationButton.length()-1; i++)
+		{
+			TalkNotificationButton[i].ButtonOpt.Text(TalkNotificationButton[i+1].ButtonOpt.getText(), FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED);
+			TalkNotificationButton[i].Chat=TalkNotificationButton[i+1].Chat;
+			if(TalkNotificationButton[i+1].ButtonOpt.isVisible()) TalkNotificationButton[i].ButtonOpt.Show();
+			else TalkNotificationButton[i].ButtonOpt.Hide();
+		}
+		TalkNotificationButton[TalkNotificationButton.length()-1].ButtonOpt.Hide();
+	}
+	GlobalChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000200), FONT_SPECIAL, COLOR_LGRAY);
+	GlobalChatButtonOpt.TextShift(0, -1, 0, -1);
+	SupportChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000202), FONT_SPECIAL, COLOR_LGRAY);
+	SupportChatButtonOpt.TextShift(0, -1, 0, -1);
+	FactionChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000204), FONT_SPECIAL, COLOR_LGRAY);
+	FactionChatButtonOpt.TextShift(0, -1, 0, -1);
+	PrivateChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000206), FONT_SPECIAL, COLOR_LGRAY);
+	PrivateChatButtonOpt.TextShift(0, -1, 0, -1);
+	if(CurrentChat==CHAT_GLOBAL)
+	{
+		GlobalChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000200), FONT_SPECIAL, COLOR_SAND);
+		GlobalChatButtonOpt.TextShift(0, -1, 0, -1);
+		ChatMessagesOpt.Text(GlobalChatMessages);
+		ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);
+		ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000201));
+	}
+	else if(CurrentChat==CHAT_SUPPORT)
+	{
+		SupportChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000202), FONT_SPECIAL, COLOR_SAND);
+		SupportChatButtonOpt.TextShift(0, -1, 0, -1);
+		ChatMessagesOpt.Text(SupportChatMessages);
+		ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);
+		ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000203));
+	}
+	else if(CurrentChat==CHAT_FACTION)
+	{
+		FactionChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000204), FONT_SPECIAL, COLOR_SAND);
+		FactionChatButtonOpt.TextShift(0, -1, 0, -1);
+		ChatMessagesOpt.Text(FactionChatMessages);
+		ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);
+		ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000205));
+	}
+	else if(CurrentChat>0)
+	{
+		PrivateChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000206), FONT_SPECIAL, COLOR_SAND);
+		PrivateChatButtonOpt.TextShift(0, -1, 0, -1);
+		bool PrivateTalkExists=false;
+		for(uint i=0; i<PrivateTalk.length(); i++)
+		{
+			if(PrivateTalk[i].InterlocutorId==CurrentChat)
+			{
+				PrivateTalkExists=true;
+				break;
+			}
+		}
+		if(!PrivateTalkExists)
+		{
+			PrivateTalkClass newPrivateTalk;
+			newPrivateTalk.InterlocutorId=CurrentChat;
+			@newPrivateTalk.InterlocutorName=InterlocutorName;
+			PrivateTalk.insertLast(newPrivateTalk);
+		}
+		for(uint i=0; i<PrivateTalk.length(); i++)
+		{
+			if(PrivateTalk[i].InterlocutorId==CurrentChat)
+			{
+				ChatMessagesOpt.Text(PrivateTalk[i].ChatMessages);
+				ChatMessagesOpt.TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_NOBREAK_LINE);
+			}
+		}
+		if(@InterlocutorName==null) ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000208)+" UNDEFINED");
+		else if(InterlocutorName=="[no_change]") {}
+		else ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000208)+" "+InterlocutorName);
+	}
+	else
+	{
+		PrivateChatButtonOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000206), FONT_SPECIAL, COLOR_SAND);
+		ChatTitleTextOpt.Text(GetMsgStr(TEXTMSG_GAME,3000000207));
+	}
+}
+
+void ShowChatScreen()
+{
+	ChangeChatTo(CurrentChat,null);
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_CHAT,x,y);
+	ShowScreen(CLIENT_SCREEN_CHAT,0,0,0);
+	ChatSayEditBoxOpt.Text("");
+	ChatSayEditBoxOpt.setFocused(true);
+}
+
+void ProcessChatMessage(string message)
+{
+	if(substring(message,0,8)=="*GLOBAL*")
+	{
+		AddMessageToGlobalChat(substring(message,9,message.length()-9));
+		AddTalkNotificationButton(CHAT_GLOBAL,null);
+	}
+	else if(substring(message,0,9)=="*SUPPORT*")
+	{
+		AddMessageToSupportChat(substring(message,10,message.length()-10));
+		AddTalkNotificationButton(CHAT_SUPPORT,null);
+	}
+	else if(substring(message,0,9)=="*FACTION*")
+	{
+		AddMessageToFactionChat(substring(message,10,message.length()-10));
+		AddTalkNotificationButton(CHAT_FACTION,null);
+	}
+	else if(substring(message,0,13)=="*NEW_PRIVATE*")
+	{
+		int InterlocutorIdIndexEnd=-1;
+		for(uint i=14; i<message.length(); i++)
+		{
+			if(message[i]==" ")
+			{
+				InterlocutorIdIndexEnd=i-1;
+				break;
+			}
+		}
+		if(InterlocutorIdIndexEnd-14>=0)
+		{
+			int InterlocutorId=-1;
+			StrToInt(substring(message,14,InterlocutorIdIndexEnd-14+1),InterlocutorId);
+			if(InterlocutorId>0)
+			{
+				string @InterlocutorName=null;
+				@InterlocutorName=substring(message,InterlocutorIdIndexEnd+2,message.length()-InterlocutorIdIndexEnd-2);
+				if(@InterlocutorName!=null)
+				{
+					bool PrivateTalkExists=false;
+					for(uint i=0; i<PrivateTalk.length(); i++)
+					{
+						if(PrivateTalk[i].InterlocutorId==InterlocutorId)
+						{
+							PrivateTalkExists=true;
+							break;
+						}
+					}
+					if(!PrivateTalkExists)
+					{
+						PrivateTalkClass newPrivateTalk;
+						newPrivateTalk.InterlocutorId=InterlocutorId;
+						@newPrivateTalk.InterlocutorName=InterlocutorName;
+						PrivateTalk.insertLast(newPrivateTalk);
+					}
+					ChangeChatTo(InterlocutorId,InterlocutorName);
+					ShowScreen(CLIENT_SCREEN_CHAT,0,0,0);
+				}
+			}
+		}
+	}
+	else
+	{
+		int start_index=-1;
+		int end_index=-1;
+		for(uint i=0; i<message.length(); i++)
+		{
+			if(message[i]=="*")
+			{
+				if(start_index==-1) start_index=i;
+				else
+				{
+					end_index=i;
+					break;
+				}
+			}
+		}
+		if(start_index!=-1 && end_index!=-1 && end_index-start_index>1)
+		{
+			int InterlocutorId=-1;
+			string InterlocutorIdstr;
+			InterlocutorIdstr=substring(message,start_index+1,end_index-1);
+			StrToInt(InterlocutorIdstr,InterlocutorId);
+			if(InterlocutorId>0)
+			{
+				string @InterlocutorName=null;
+				int InterlocutorNameStartIndex=-1;
+				int InterlocutorNameEndIndex=-1;
+				int search_state=0;
+				for(uint i=end_index; i<message.length(); i++)
+				{
+					if(message[i]==":" && search_state==0) search_state=1;
+					if(message[i]==" " && search_state==1) search_state=2;
+					if(message[i]!=" " && search_state==2)
+					{
+						InterlocutorNameStartIndex=i;
+						search_state=3;
+					}
+					if(message[i]==":" && search_state==3)
+					{
+						InterlocutorNameEndIndex=i;
+						break;
+					}
+				}
+				bool PrivateTalkExists=false;
+				for(uint i=0; i<PrivateTalk.length(); i++)
+				{
+					if(PrivateTalk[i].InterlocutorId==InterlocutorId)
+					{
+						PrivateTalkExists=true;
+						break;
+					}
+				}
+				if(!PrivateTalkExists)
+				{
+					PrivateTalkClass newPrivateTalk;
+					newPrivateTalk.InterlocutorId=InterlocutorId;
+					@newPrivateTalk.InterlocutorName=InterlocutorName;
+					PrivateTalk.insertLast(newPrivateTalk);
+				}
+				int PrivateTalkIndex=-1;
+				for(uint i=0; i<PrivateTalk.length(); i++)
+				{
+					if(PrivateTalk[i].InterlocutorId==InterlocutorId)
+					{
+						PrivateTalkIndex=i;
+						break;
+					}
+				}
+				if(PrivateTalkIndex!=-1) PrivateTalk[PrivateTalkIndex].AddMessage(substring(message,end_index+2,message.length()-end_index-2));
+				if(InterlocutorNameStartIndex!=-1 && InterlocutorNameEndIndex!=-1)
+					@InterlocutorName=substring(message,InterlocutorNameStartIndex,InterlocutorNameEndIndex-InterlocutorNameStartIndex);
+				AddTalkNotificationButton(InterlocutorId,InterlocutorName);
+			}
+		}
+	}
+}

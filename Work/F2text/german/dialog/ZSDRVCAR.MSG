@@ -1,0 +1,14 @@
+{100}{}{Dieses Auto scheint nicht fahrtüchtig zu sein. Es sieht besser aus als die anderen Autos
+ in der Gegend. Vielleicht kann man es reparieren.}
+{101}{}{Das Auto scheint zur Zeit nicht fahrtüchtig zu sein. Es braucht einen 
+Treibstoffzellen-Controller.}
+
+{200}{}{Mit Hilfe des Treibstoffzellen-Controllers gelingt es dir, das Auto wieder in Gang
+ setzen.}
+{210}{}{Du schaffst es nicht, das Auto zu reparieren. Der Treibstoffzellen-Controller kann das
+ Auto nicht wieder flottmachen. }
+
+{300}{}{Du schaffst es nicht, das Auto zu reparieren. Vielleicht kann man es mit dem
+ Treibstoffzellen-Controller reparieren, von dem Smitty gesprochen hat.}
+
+{400}{}{Es würde zu viel Lärm machen, die Haube aufzumachen und an dem Auto rumzubasteln.}

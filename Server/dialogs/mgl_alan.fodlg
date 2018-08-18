@@ -1,0 +1,132 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+4 2010 #
+5 2020 #
+11 2030 R _var p MGL_Alan = 1 #
+10 2040 D _var p MGL_Alan = 1 #
+0 2050 @
+4 3000 None 1 #
+2 3010 @
+5 4000 None 1 #
+2 4010 @
+6 5000 None 1 #
+7 5010 #
+8 5020 #
+2 5030 #
+9 5040 @
+7 6000 None 1 #
+6 6010 @
+8 7000 None 1 #
+6 7010 @
+11 8000 None 1 #
+6 8010 @
+9 9000 None 1 #
+6 9010 @
+10 10000 None 1 #
+2 10010 &
+
+[engl]
+{100}{}{Alan}
+{200}{}{You see Alan.}
+{210}{}{You see leader of MGL guards Alan.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Yeah, what do you want?}
+{2010}{}{Who are you?}
+{2020}{}{What's  your job here?}
+{2030}{}{What's this place?}
+{2040}{}{Have you ever thought about take over this place?}
+{2050}{}{Bye.}
+{3000}{}{I'm Alan, leader of mercenary group here in MGL.}
+{3010}{}{I have few questions.}
+{4000}{}{We are hired to guard this place.}
+{4010}{}{Ok, I have more questions.}
+{5000}{}{Shoot..}
+{5010}{}{What's going on here?}
+{5020}{}{I've seen all those plasma turrets around... is this some kind of prewar military facility?}
+{5030}{}{I have another question.}
+{5040}{}{If they have such many security systems, why they need mercenaries?}
+{6000}{}{They are focused on some strange researchs and experiments down there. Also they produce drugs, like stims and other various chemicals. All their profits comes from selling that stuff.}
+{6010}{}{I see, tell me more about this place.}
+{7000}{}{Yes, and  those turrets are nothing, they also have small army of robots, in that building east from here ***he shows direction with finger***. MGL Leader said that this place was civilian research facility, but government wanted it for military purposes and make here some classified researchs..but war began before they finished it.}
+{7010}{}{Tell me more about this place.}
+{8000}{}{This is place is called Mendel Genetic Laboratories, there is probably biggest concentration of scientists per 1 square meter he heh..}
+{8010}{}{Could you tell me more ?}
+{9000}{}{They used robots as guards, before they hired us. I heared it was problematic for them, few times robots accidentally killed people - just because stupid program  wrongly considered their acts as a threat. Also sometimes they let peoples to sneak somewhere inside facility and steal some goods.}
+{9010}{}{I see, I have another question about this place.}
+{10000}{}{Hah, why should we try such nonsense ? Look, they pay fair price for our services. We can also eat and sleep here for free. Sometimes, when I look on that robo army, I think it's safest place in whole damn Wastelands.}
+{10010}{}{I see, I have few questions.}
+
+[pols]
+{100}{}{Alan}
+{200}{}{Widzisz Alana.}
+{210}{}{Widzisz Alana lidera strarzy MGL.}
+{1000}{}{instalacja przeddialogu}
+{1010}{}{ }
+{2000}{}{Tak, co chcesz ?}
+{2010}{}{Kim jestes ?}
+{2020}{}{Czym sie tu zajmujesz ?}
+{2030}{}{Co to za miejsce ?}
+{2040}{}{Myslales kiedys o opuszczeniu tego miejsca ?}
+{2050}{}{Czesc}
+{3000}{}{Jestem Alan, Lider grupy najemnikow to w MGL.}
+{3010}{}{mam kilka pytan}
+{4000}{}{Jestesmy zatrudnieni by strzec to miejsce.}
+{4010}{}{ok, mam wiecej pytan.}
+{5000}{}{Pytaj.}
+{5010}{}{Co sie tu dzieje ?}
+{5020}{}{Widzialem te wszystkie dzialka plasmowe do okola, to jest jakiegos rodzaju powojenna militarna budowla ?}
+{5030}{}{mam kolejne pytanie}
+{5040}{}{Jesli maja tak wiele systemow zabezpieczen dlaczego jeszcze potrzebuja zatrudniac najemnikow by bronic to miejsce ?}
+{6000}{}{Oni tam sa skoncentrowani na dziwnych badaniach i eksperymentach. Poza tym rozprowadzaja i robia leki, stimy i rozmaita chemie . Sprzedaz tego jest ich jedynym dochodem.}
+{6010}{}{Rozumiem, opowiedz mi wiecej na temat tego miejsca}
+{7000}{}{Tak, i te dzialka sa niczym, oni jeszcze maja mala armie robotow, w tym budynku na wschod.Lider MGR mowil ze to miejsce bylo cywilna placowka badawcza, ale rzad chcial to wziasc pod opieke wojska i przeniesc tu pewne wojskowe badania. Ale wojna sie skonczyla zanim to skonczyli.}
+{7010}{}{powiedz mi wiecej na temat tego miejsca}
+{8000}{}{To miejsce sie nazywa Mendel Genetic Laboratories, tam jest prawdopodobnie najwieksza koncentracja naukowcow na 1 metr kwadratowy heh.}
+{8010}{}{czy moglbys mi powiedziec wiecej ?}
+{9000}{}{Uzywali robotow jako strarzy zanim nas zatrudnili, slyszalem ze to bylo problematyczne, czasami roboty zabijaly ludzi tylko dlatego ze zle rozpoznawaly ich zamiary jako akt zdrady i czasmi pozwalaly sie ludziom wkrasc gdzies i cos ukrasc.}
+{9010}{}{Rozumiem, mam kolejne pytanie odnosnie tego miejsca}
+{10000}{}{Hah, dlaczego mielibysmy dzialac tak nonsensownie ? Spojrz, oni placa dobrze, mozemy tu jesc za darmo, spac tu za darmo, i heh dzieki tej armii robotow to jest prawdopodobnie najbezpieczniejsze miejsce na bezdrozach. Nawet jesli bylby jakis powod, nie mielibysmy szans przeciwko tym wszystkim pomiarom ochronnym.}
+{10010}{}{Rozumiem, mam kilka pytan}
+
+[russ]
+{100}{}{Alan}
+{200}{}{You see Alan.}
+{210}{}{You see leader of MGL guards Alan.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Yeah, what do you want ?}
+{2010}{}{who are you ?}
+{2020}{}{What is your your job here ?}
+{2030}{}{What's this place ?}
+{2040}{}{Have you ever thought about capturing this place ?}
+{2050}{}{Bye}
+{3000}{}{I am Alan, leader of mercenary group  here in MGL.}
+{3010}{}{i have few questions}
+{4000}{}{We are  hired to gurad this place.}
+{4010}{}{ok, i have more questions.}
+{5000}{}{Just ask.}
+{5010}{}{What's going on here ?}
+{5020}{}{I saw all those plasma turrets around, is this some kind of prewar military facility ?}
+{5030}{}{i have another question}
+{5040}{}{If they have so many security sytems why they also need to hire mercenaries to guard this place ?}
+{6000}{}{They are concentrated on some weird research and experiments down there. Also they are devolping and crafting drugs, stims and various chems. Selling this stuff is their only income.}
+{6010}{}{I see, tell me more about this place}
+{7000}{}{Yes, and  those turrets are nothing, they also have small army of robots, in that building east from here. MGL Leader said this place was civil research facility, but government wanted to take it under military and to move some military research here. But war begun before they finished it.}
+{7010}{}{tell me more about this place}
+{8000}{}{This is place is called Mendel Genetic Laboratories, there is probabaly biggest concentration of scientists per 1 square meter heh.}
+{8010}{}{could you tell me more ?}
+{9000}{}{They were using robots as guards before they hired us, I heared that it was problematic, sometimes robots were killing people just because they wrongly considered their acting as threat and sometimes they let people to sneak somewhere and steal something.}
+{9010}{}{I see, i have another question about this place}
+{10000}{}{Hah, why should we try such nonsense ? Look, they are paying well, we can eat here for free, sleep here for free, and heh due to that robot army this is maybe safest place in the wasteland. Even if there would be some reason, we wouldn't have any change against all those security measures.}
+{10010}{}{I see, i have few questions}
+

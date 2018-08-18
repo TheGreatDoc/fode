@@ -1,0 +1,146 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš dalšího ghoula. Vypadá zamyšlenì.}
+{101}{}{Vidíš Gordona z Gecka.}
+{102}{}{Vidíš velmi vkusnì obleèeného ghoula s vlasy ulízanými dozadu.}
+
+{110}{}{Nemám èas na pitomce.}
+{111}{}{Mám na práci dùležitìjší vìci. Vypadni odtud.}
+{112}{}{Jsi tak blbej jako všichni ostatní.}
+{113}{}{Tohle není místnost pro hodiny nápravného ètení.}
+{114}{}{Je tolik zmetkù mezi hezounama, mám ten dojem..}
+
+{120}{}{Nazdar. Jmenuju se Gordon. Gordon z Gecka.}
+{121}{}{Ještì jednou ahoj }
+{122}{}{Ahoj, Gordone. Já jsem }
+{123}{}{Tìší mì. Já jsem}
+{124}{}{Gordone, co jsi øíkal, že tu znovu dìláš?}
+{125}{}{Jenom chci vidìt moje pøátele. Jsem rád, že tì zase vidím. Nashle.}
+
+{130}{}{Hledám pøíležitosti.}
+{131}{}{Pøíležitosti? Napøíklad?}
+
+{135}{}{Hledám zpùsob jak maximalizovat svou cenu.}
+{136}{}{Hmm, zní mi to jako hrabivost.}
+
+{140}{}{Jsem hrabivý. Ale spousta lidí nechápe pojem hrabivý úplnì pøesnì. Hrabivost je motor, který tì žene k tomu, mít moc. V celé historii lidstva, všechny velké èiny byly vykonány lidmi, kteøí chtìli vylepšit svoje pozice.
+Byly uskuteènìny díky hrabivosti. Hrabivost, nevím, jak jinak to nazvat, je dobrá vìc.}
+{141}{}{V tomhle pøípadì dám na tvoje slova, Gordone. Ale co má hrabivost spoleèného s Geckem?}
+
+{150}{}{Doposud, nic moc. Ale v hrabivosti je spása Gecka. Mám dùležitou informaci o tom jak Gecko muže pøežít, ale nikdo mi nechce naslouchat.}
+{151}{}{Jakou informaci?}
+
+{160}{}{No, spoèítal jsem, že když budeme provozovat náš reaktor poøádnì, mohli bychom vyrobit enormní množství pøebyteèné enengie-- mnohem víc než Gecko potøebuje.}
+{161}{}{Fakt, jo?}
+
+{170}{}{Nuže, nyní, když jsi nám pomohl opravit naší jadernou elektrárnu, mám mnohem vìtší šanci dosáhnout toho, co chci. Maximalizovat mùj potenciál.}
+{171}{}{Maximalizovat tvùj potenciál? Co tím myslíš?}
+
+{180}{}{Také jsem zjistil, z velmi vìrohodných zdrojù, že se Vault City nemùže bez dodateèné energie dále rozšiøovat.}
+{181}{}{Vault City se nemùže rozšiøovat?}
+{182}{}{Z velmi vìrohodného zdroje? Od koho?}
+
+{190}{}{Vault City, jak jistì víš, má dostatek energie pro své bìžné potøeby -- pokud jsou opatrní. Ale jaderná elektrárná ve Vault City, kterou používají, nebyla nikdy projektována na takovou zvýšenou zátìž. Právì teï je na vrcholu své výkonnosti. Bez vìtšího množství energie se nemohou rozšiøovat.}
+{191}{}{Nevidím v tom nic, co by ti mohlo pomoci.}
+
+{200}{}{No, kdyby naše elektrárna pracovala lépe, mohli bychom obchodovat s naší pøebyteènou energií s Vault City výmìnou za lékaøskou technologii.}
+{201}{}{A?}
+
+{210}{}{Bez vìtšího množství energie spálí Vault City svùj reaktor bìhem 15 let. Kdyby reaktor v Gecku nebyl opraven, nedožili bychom se ani poloviny této doby. Bez lékaøské technologie stejnì, my ghoulové, vymøeme v pøíštích 20 letech. Každý na tom prodìlá, pokud nebudou Vaul City a Gecko spolupracovat.}
+{211}{}{Jsi moc velký samaritán. Ale já to neberu.}
+
+{220}{}{Nevadí. Mám svùj konec zajištìný. Kdyby tak ten projekt vyšel.
+ Hrabivost je mojí hnací silou, a zachránila by tisíce životù. Hrabivost je dobrá vìc. Alespoò by byla,
+ kdybych mohl najít nìkoho ve Vault City, aby si pøeèetl moje ekonomická data.}
+{221}{}{Nemyslím, že bych tì chtìl vidìt nìco spravovat.}
+{222}{}{Hmm, možná bych mohl ty data ukázat nìkomu ve Vault City.}
+{223}{}{Vsadím se, že radní McClure z Vault City by velmi rád dostal ty data do svých rukou. Zdá se být jako nìkdo, kdo vládne rozumem více než pøedsudky.}
+{224}{}{To je ale skvìlý pøíbìh, Gordone. Jsi nejlepší. (usmívá se) Zapamatuju si ho. Nashle.}
+
+{230}{}{Zaznamenávám ekonomická data o hospodaøení  Gecka a hlásím je Haroldovi. Ale on mì obvykle neposlouchá.}
+{231}{}{Je mi líto, že tohle slyším. Ekonomická data o èem?}
+{232}{}{No, je mi líto, ale Harold je pìknì zaneprázdnìný. Nashle pozdìji.}
+
+{240}{}{Jednou v noci jsem slyšel hlas, který ke mì promlouval tam ze šachty reaktoru. Hlas z pøíšeøí. Nejdøíve jsem nevìdìl, co si mám myslet, ale všechno, co ten hlas øíkal, dávalo smysl. Taky mi nastínil všechny pøekážky. Nevím kdo nebo co ten hlas je, ale všechno se dìje tak, jak øekl.}
+{241}{}{Co ten hlas øíkal?}
+
+{250}{}{Pøevážnì o zpùsobech maximalizování potenciální hodnoty. Mojí potenciální hodnoty.}
+{251}{}{Tvojí potenciální hodnoty? To mi zní, jako že jsi jenom hrabivý.}
+
+{260}{}{Pøevážnì o zpùsobech zvyšování potenciální hodnoty. Mojí potenciální hodnoty. }
+{261}{}{Tvojí potenciální hodnoty? To mi zní, jako že jsi jenom hrabivý.}
+
+{270}{}{Proè ne?}
+{271}{}{Nebudu ti vymlouvat tvoji pøedstavu, že hrabivost je dobrá vìc. Vsadím se ale, že bys byl schopný prodat èást èehokoliv, co spravuješ a zdrhnul s penìzi pryè. Nashle.}
+{272}{}{Protože jsi opomenul nejdùležitìjší èást tvého plánu. Na partnera -- jmenovitì na mì.}
+
+{280}{}{Tak, všechna dùležitá ekonomická data mám na holodisku. Mùžeš je mít, pokud slíbíš, že ta data ukážeš nìkomu ve Vault City, který dokáže tomu co ta data obsahují porozumìt a dokáže je použít. Ale buï s tím opatrný... ne každý tam bude štìstím bez sebe, že mùže mluvit s námi ghoulama.}
+{281}{}{Nemyslím, že bych chtìl mít nìco spoleèného s tvým holodiskem. Stejnì dìkuju. Nashle.}
+{282}{}{Ok, vezmu si ten holodisk. Jsem si jistý, že ho mùžu svìøit do správných rukou. Nashle.}
+
+{290}{}{Humph, tvojí pomoc nepotøebuju. Jsi jenom nula.}
+{291}{}{No, hádám, že ve Vault City nežijí jenom pánbíèkáøi, že ne, Gordie starý brachu? Nashle.}
+
+{300}{}{Naše elektrárna je stále sotva provozu schopná. Teï nesmíš pustit žádnou informaci do Vault City.}
+{301}{}{Nemyslím, že by ve Vault City by nìjak moc dùvìøivý k datùm od ghoulù.}
+{302}{}{Ne, ještì ne... ale budu. Nashle.}
+
+{310}{}{Díky za opravu naší atomové elektrárny. Další krok v plánu starého Gordona z Gecka pìknì funguje. Hrabivost je úžasná vìc. Mìl bys být pyšný na to, že jsi toho souèástí.}
+{311}{}{Hrabivost je dobrá; že ano, Gordone? No, mám své plány jak postupovat dál. Nashle.}
+
+{320}{}{Jsme odsouzeni. Jsme všichni odsouzeni. Teï nás nemùže nic zachránit. Jen jdi pryè.}
+{321}{}{Jen ode mne odejdi.}
+{322}{}{Ok, nashle.}
+
+{330}{}{Jsem ti opravdu zavázán. Teï mohu získat, cokoliv jsem kdy chtìl. Všechno na úèet Gecka a Vault City. A to jakmile budu jmenován novým pøedákem. Ano, ten Harold je už teï v prdeli.}
+{331}{}{Uh, yeah. Cokoliv, Gordone. (zakoulíš oèima). Dobrá, hádám, že už pùjdu.}
+{332}{}{Mìl bys ses radìji starat sám o sebe, Gordone. Cesta dolù je obvykle o hodnì rychlejší, než cesta vzhùru.
+ Nashle.}
+
+{340}{}{Vidím, že máš symbol. Jsi tady pro informaci?}
+{341}{}{Symbol?}
+{342}{}{Informaci?}
+{343}{}{Samozøejmì. Nosím ten symbol s hrdostí, a informaci nutnì poøebuju.}
+{344}{}{Shhh. Teï ne, bratøe. Sledují nás. Nashle.}
+
+{350}{}{Nosíš symbol Obrody. Jsi jedním z nás. Obroï se, kamaráde! Obroï!}
+{351}{}{Ano, jsem jedním z vás. Obru.., teda, Obroï se!}
+{352}{}{Právì jsem to našel. Co to je?}
+{353}{}{Sebral jsem to mrtvole. Co hernajs je?}
+
+{360}{}{Poslal tì pro ty data na holodisku?}
+{361}{}{Ano, samozøejmì. Jsem tady pro ten holodisk. Pøedej mi ho.}
+{362}{}{Jaký holodisk?}
+
+{370}{}{Ah, dobrá, nikdy v naší vìci nemùže být tolik. Více kamarádù znamená vìtší šanci pro starého Gordona dostat to, co chce. Jsi tu pro ten holodisk?}
+{371}{}{Jaký holodisk?}
+{372}{}{Myslím, že radiace usmažila tvùj mozek. Odcházím. Nashle.}
+
+{380}{}{Tady to je, ale nechci, aby se nepravá osoba dovìdìla, že to máš. Dej to jenom radnímu McCluremu ve Vault City.}
+{381}{}{Ano, samozøejmì. Uh, Obroï se, bratøe.}
+{382}{}{Neponesu žádný ghoulský holodisk do Vault City -- za to by napíchli mojí hlavu na kopí.
+ Nashle.}
+
+{390}{}{Je to holodisk s ekonomickými daty, které dokážou, že Gecko a Vault City musí  spolupracovat, aby každý z nás pøežil. Jsou všichni hezouni takový malý mozci?}
+{391}{}{Oh, ano, ten holodisk; jistì vezmu si ho.}
+{392}{}{Zní to jako opravdu komplikovaná vìc, v poøádku. Je toho pøíliš mnoho, než aby to mohl pochopit takový pitomec, jako jsem já. Nashle.}
+
+{400}{}{Jo, samozøejmì. (mrk, mrk) Všichni jsme "našli" symbol. Obroï se, kamaráde! Jsi tu pro ten holodisk?}
+{401}{}{Ano, jsem. Kde je?}
+{402}{}{Jaký holodisk?}
+{403}{}{Ne, ne doopravdy. Myslím, že radìji už pùjdu. Nashle.}
+
+{410}{}{Mrtvola? Kdo z nás zemøel?}
+{411}{}{Uh, myslím, že to dáno mì.}
+{412}{}{Kdo zemøel? Jste všichni mrtví. Jste jenom vyšoustlý ghoulové, že jo? Dal mi to jeden z vašich ghoulých pøátel.}
+{413}{}{No, mìli byste se ve skuteènosti ptát, kterého z vás jsem nezabil. Mimochodem -- jsi na øadì.}
+{414}{}{Ne, tys mi nerozumìl. Øekl jsem, že se pøipojím k jednotce. Obroï se bratøe!}
+
+{420}{}{Fakta hovoøí sama za sebe. Když to ukážeš nìkomu s dost otevøenou myslí, data udìlají všechno potøebné, co oni potøebují.}
+{421}{}{No, ok. Zkusím to. Nashle.}
+{422}{}{Budu o tom pøemýšlet. Nashle.}
+
+{500}{}{. Co tady dìláš?}
+{501}{}{. Uvidíme se pozdìji, Gordone. Nashle.}
+{502}{}{.}
+
+{600}{}{Díky za informaci Gordone. Nashle.}

@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Obywatel Green Point}
+{210}{}{Widzisz obywatela Green Point.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?}
+
+[engl]
+{100}{}{Green Point inhabitant}
+{210}{}{You see an inhabitant of Green Point.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hi there.@@There's no better place to live than Green Point, nicht war?@@Wie geht's?Why can't I have etwa' peace?@@I should have settled here a long time ago.@@Solitude...@@You're staying here for longer?@@Good thing both blues and reds ain't interested in this place.@@I hope Green Point will stay like this forever.@@I think I'll take a nap.@@Whew!@@I thought of leaving for Bearline once... @@Ja?@@Don't spread any of dat propaganda-bullshit.@@We're pretty far from  major players in the wastes.@@I never had to use a gun here.@@I heard NEC and REF are butting kopfe over Berlin..@@Want some water?@@We don't need NEC or REF here.@@Heard any news from Berlin?@@Hey.@@I used to be an adventurer like you, but then I took a bullet in the knee.@@Do you need something, stranger?@@Those friggin' mosquitos won't let me relax.@@I've heard there's fighting going on in Berlin.@@I wonder what it's like down south.@@We don't want any trouble here.@@We don't like uberaschungs.@@God dag!@@Hvem er du?@@Velkommen til Green Point, fremmede@@Hvordan har du det?@@It's so peaceful here...@@Someone told me there's a city far east from Bearline, can you believe it?@@Skrid!@@What is more important than peace and quiet?@@Willkommen in Green Point!@@I was born in London, you know.@@You're really clueless.@@More questions?@@Hello.@@@@The history of this place? I do not know@@I have no clue@@I have no idea@@Actually, why you asking me?@@Can you hear the birds?@@Will you do something for me?@@Looking for me?}
+
+[russ]
+{100}{}{Green Point inhabitant}
+{210}{}{You see an inhabitant of Green Point.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hi there.@@There's no better place to live than Green Point, nicht war?@@Wie geht's?Why can't I have etwa' peace?@@I should have settled here a long time ago.@@Solitude...@@You're staying here for longer?@@Good thing both blues and reds ain't interested in this place.@@I hope Green Point will stay like this forever.@@I think I'll take a nap.@@Whew!@@I thought of leaving for Bearline once... @@Ja?@@Don't spread any of dat propaganda-bullshit.@@We're pretty far from  major players in the wastes.@@I never had to use a gun here.@@I heard NEC and REF are butting kopfe over Berlin..@@Want some water?@@We don't need NEC or REF here.@@Heard any news from Berlin?@@Hey.@@I used to be an adventurer like you, but then I took a bullet in the knee.@@Do you need something, stranger?@@Those friggin' mosquitos won't let me relax.@@I've heard there's fighting going on in Berlin.@@I wonder what it's like down south.@@We don't want any trouble here.@@We don't like uberaschungs.@@God dag!@@Hvem er du?@@Velkommen til Green Point, fremmede@@Hvordan har du det?@@It's so peaceful here...@@Someone told me there's a city far east from Bearline, can you believe it?@@Skrid!@@What is more important than peace and quiet?@@Willkommen in Green Point!@@I was born in London, you know.@@You're really clueless.@@More questions?@@Hello.@@@@The history of this place? I do not know@@I have no clue@@I have no idea@@Actually, why you asking me?@@Can you hear the birds?@@Will you do something for me?@@Looking for me?}

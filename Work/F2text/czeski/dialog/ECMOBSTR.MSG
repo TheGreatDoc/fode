@@ -1,0 +1,16 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš èlena gangu.}
+{101}{}{Dobrá, dobrá -- co to tady máme?}
+{102}{}{Obyèejní pocestní jo? Nìco takového neexistuje. Nepotøebujete náhodou nìkoho, kdo by se vám postaral o vaše cennosti?}
+{103}{}{Dávej si pozor, kam v New Reno lezeš nebo pøijdeš k úrazu. Kliï se mi z cesty.}
+{104}{}{Nazdar, }
+{105}{}{.}
+{106}{}{Co tady dìláš?}
+{107}{}{?}
+{108}{}{Vyšli jsme jenom abychom si tì provìøili, }
+{109}{}{. Dneska je hezký den, }
+{110}{}{co?}
+{111}{}{Pøišel jsi sem, abys od všeho utekl,}
+{112}{}{? }
+{113}{}{ byl jsem zvìdavý k èemu se chystáte, }
+{114}{}{.}

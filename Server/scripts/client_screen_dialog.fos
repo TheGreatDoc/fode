@@ -1,0 +1,37 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "_defines.fos"
+
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+import void DeleteGUIElement(int) from"client_gui";
+
+IGUIElementImageOpt@ avatar;
+IGUIElementImageOpt@ ramka;
+
+int[] position;
+int[] position2;
+
+void InitDialogAvatar()
+{
+position=GetIniValues2("DialogAvatar",null);
+position2=GetIniValues2("FrameDialogAvatar",null);
+}
+
+void GetDialogAvatar(uint dlgId)
+{
+	DeleteGUIElement(CLIENT_SCREEN_DIALOG); // nowa funkcja GUI
+	DeleteGUIElement(CLIENT_SCREEN_DIALOG);
+	if(IsMsgStr(TEXTMSG_DLG, STR_NPC_AVATAR(dlgId)))
+	{
+		@ramka=
+		GUI_AddImage(CLIENT_SCREEN_DIALOG, "frameavatar.png", PT_ART_INTRFACE, position2[0], position2[1]);
+		ramka.setVisible(true);
+		string facestr = GetMsgStr(TEXTMSG_DLG, STR_NPC_AVATAR(dlgId));
+		@avatar=
+		GUI_AddImage(CLIENT_SCREEN_DIALOG, facestr, PT_ART_CRITTERS, position[0], position[1]);
+		avatar.setVisible(true);
+	}
+}

@@ -1,0 +1,26 @@
+{100}{}{Tu vois une personne portant une armure de cuir qui a l'air de s'ennuyer.}
+{101}{}{Tu vois (x), le garde de caravane.}
+{102}{}{Tu vois une personne sale portant une armure de cuir noir. Elle a l'air de s'ennuyer. L'odeur fétide de brahmine et sa démarche assurée indiquent qu'il doit s'agir d'un garde de caravane.}
+
+{103}{}{Puis-je t'aider ?}
+{104}{}{Hein ?}
+{105}{}{Cravail ici !}
+{106}{}{Qui es-tu ?}
+{107}{}{Qu'est-ce que tu peux me dire sur Chad ?}
+
+{108}{}{J'ai aucune patience avec les idiots. Je regrette, camarade, mais tu devras trouver quelqu'un d'autre pour jouer.}
+{109}{}{::sniff::}
+
+{110}{}{Je m'appelle (x). Je travaille comme garde de caravane.}
+{111}{}{Qu'est-ce que tu peux me dire sur Chad ?}
+{112}{}{Merci. Salut.}
+
+{113}{}{Chad est un type bien. Dur, mais juste. Il récompense très bien ceux dont il apprécie le travail.}
+{114}{}{Qui es-tu ?}
+{115}{}{Merci. Salut.}
+
+{116}{}{Merci. Non, vraiment. Merci d'avoir fait foirer nos primes. Les seules personnes auxquelles Chad faisait du mal sont celles avec lesquelles on commerçait. Il nous aidait, et t'as tout fait foirer. Minable !}
+{117}{}{Salut.}
+
+{118}{}{L'ennemi ! Crève !}
+{119}{}{Hou là là!}

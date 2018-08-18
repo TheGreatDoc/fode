@@ -1,0 +1,139 @@
+array<string> FACTIONS = {};
+
+string []FACTION_RANKS=
+{
+	"Novice",
+	"Member",
+	"Specialist",
+	"Vice-leader",
+	"Leader"
+};
+
+int[] faction_data=	{
+					1,// faction lvl [0]
+					3000,// faction found [1]
+					0,// faction industral points [2]
+					0,// faction type [3]
+					0,// faction merchant lvl [4]
+					0,// faction merchant points [5]
+					0,// faction military lvl [6]
+					0,// faction military points [7]
+					0,// faction genetic lvl [8]
+					0,// faction genetic points [9]
+					0,// faction explorer lvl [10]
+					0,// faction explorer points [11]
+					0,// faction power [12]
+					0,// faction kill orther players [13] 
+					0,// faction location id [14]
+					0,// faction location lvl [15]
+					0,// faction power [16] point for every successfull ocupation
+					0,// faction [17]
+					0,// faction SG lvl  [18]
+					0,// faction SG points [19]
+					0,// faction BG lvl [20]
+					0,// faction BG points [21]
+					0,// faction EW lvl[22]
+					0,// faction EW points[23]
+					0,// [24]
+					0,// [25]
+					0,// [26]
+					0,// [27]
+					0,// [28]
+					0,// [29]
+					0,// [30]
+					0,// [31]
+					0,// [32]
+					0,// [33]
+					0,// [34]
+					0,// [35]
+					0,// [36]
+					0,// [37]
+					0,// [38]
+					0,// [39]
+					0,// [40]
+					0,// [41]
+					0,// [42]
+					0,// [43]
+					0,// [44]
+					0,// [45]
+					0,// [46]
+					0,// [47]
+					0,// [48]
+					0 // [49]
+					};
+
+
+
+#ifdef __SERVER
+	/** 
+		Load the names of the existing factions from a text file and fill the global
+	 	variable FACTIONS
+	**/ 
+	void unsafe_LoadFactions(Critter& cr, int, int, int, string@ factionNames, int[]@)
+	{
+		FACTIONS.resize(0); // We resize the global variable so it restart from 0
+		file f;
+
+		if(f.open("factions/faction_names.txt","r") == 0) // Open the text file containing the name
+		{
+			// We read all the lines until the EOF
+			while(not f.isEndOfFile())
+			{
+				string line = ""; // We reset the value of the line to be read again
+				f.readLine(line);
+				line = substring(line, 0, line.length() - 2); // We delete the 2 last characters from the string which are \r\n (\ not counted as a char)
+				if(line.length() > 0) FACTIONS.insertLast(line); // If line isn't empty then we load it in the global variable
+			}
+
+			// We concatenate in one string the string<array>
+			for(uint i = 0; i < FACTIONS.length(); i++) {
+				factionNames += FACTIONS[i];
+				if(i < FACTIONS.length() - 1) factionNames += "&";
+			}
+
+			// We send to the client the concatenated string of all the factions
+			cr.RunClientScript("client_main@__FillFactionsVariable",0,0,0,factionNames,null);
+		}
+	}
+#endif
+
+/** 
+	Load the names of the existing factions from a text file and fill the global
+ 	variable FACTIONS.
+
+ 	DUPLICATE OF THE UNSAFE_LOADFACTIONS FUNCTION BECAUSE SERVER INIT DOESN'T CONTAIN CRITTER.
+**/ 
+void loadFactions() {
+	FACTIONS.resize(0); // We resize the global variable so it restart from 0
+	file f;
+
+	if(f.open("factions/faction_names.txt","r") == 0) // Open the text file containing the name
+	{
+		// We read all the lines until the EOF
+		while(not f.isEndOfFile())
+		{
+			string line = ""; // We reset the value of the line to be read again
+			f.readLine(line);
+			line = substring(line, 0, line.length() - 2); // We delete the 2 last characters from the string which are \r\n (\ not counted as a char)
+			if(line.length() > 0) FACTIONS.insertLast(line); // If line isn't empty then we load it in the global variable
+		}
+
+		Log(FACTIONS.length() + " factions loaded!");
+	}
+}
+
+/** 
+ bool return true;
+
+ Add a faction inside the game and load the factions again.
+**/ 
+bool addFaction(string& factionName) {
+	file f;
+	if(f.open("factions/faction_names.txt","a") ==0 )
+	{
+		f.writeString(factionName + "\r\n");
+		f.close(); // We close the file before refreshing the factions else it can't open the file in the same time.
+		loadFactions(); // We refresh the factions
+	}
+	return true;
+}

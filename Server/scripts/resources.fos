@@ -1,0 +1,853 @@
+#include "_macros.fos"
+#include "_msgstr.fos"
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//		Desert Europe resources
+//
+
+// item.Val1 is used as state of the ressource when resource is an item
+// anyData is used when resource is a scenery
+
+//	Value of anydata or val1
+#define RESOURCE_DEFAULT	(0)		//When never used
+#define RESOURCE_FULL		(1)		//We can gather something
+#define RESOURCE_EMPTY		(2)		//We can't gather something
+
+
+//	COOLDOWNS (in minutes)
+#define RESOURCE_CD_FRUIT_TREES			(3)
+#define RESOURCE_CD_TREES				(3)
+#define RESOURCE_CD_WOOD_PILE			(3)
+#define RESOURCE_CD_PALMS				(3)
+#define RESOURCE_CD_PLANT_TOBACCO		(3)
+#define RESOURCE_CD_PLANT_FIBER			(3)
+
+#define RESOURCE_CD_JUNK		        (4)
+#define RESOURCE_CD_CRASHED_CAR			(4)
+#define RESOURCE_CD_DAMAGED_TERMINAL	(4)
+
+#define RESOURCE_CD_LOW_ORE				(1)
+#define RESOURCE_CD_MEDIUM_ORE			(5)
+#define RESOURCE_CD_HIGH_ORE			(10)
+#define RESOURCE_CD_RARE_ORE			(60*12)
+
+#define RESOURCE_CD_BAREL_FUEL			(60*12)
+
+#define RUNTIME_STILL					(7)
+#define RUNTIME_BONFIRE					(60*2)
+
+//event to replenish the resource
+uint e_ResourceReplenish(uint[]@ values)
+{
+	Map@ map=GetMap(values[0]);
+	if(!valid(map)) return 0;
+	Item@ resource = map.GetItem(values[1]);
+	if(valid(resource))
+	{
+		resource.Val1 = RESOURCE_FULL;
+		if(resource.GetProtoId() != values[2])
+			resource.ChangeProto(values[2]);
+	}
+	
+	return 0;
+}
+
+//event to replenish the resource for scenary
+uint e_ResourceReplenish_scen(uint[]@ values)
+{
+	EraseAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]);
+	return 0;
+}
+
+//Generic Item
+bool Gathering_Generic(Critter& player, Item& resource, uint16 pid_tool)
+{
+	switch(resource.GetProtoId())
+	{
+		case PID_DE_TREE_FRUIT_1:
+		case PID_DE_TREE_FRUIT_2:
+			return Gathering_FruitTree(player, resource);
+			
+		case PID_DE_PLANT_TOBACCO:
+			return Gathering_PlantTobacco(player, resource);
+			
+		case PID_DE_PLANT_FIBER:
+			return Gathering_PlantFiber(player, resource);
+		
+		case PID_TREE_I:
+		case PID_TREE_II:
+		case PID_TREE_III:
+		case PID_TREE_IV:
+		case PID_TREE_V:
+		case PID_TREE_VI:
+			return Gathering_Tree(player, resource);
+		case PID_PALM_I:
+		case PID_PALM_II:
+			return Gathering_Palms(player, resource);
+			
+		case PID_BAREL1_FUEL:
+		case PID_BAREL2_FUEL:
+		case PID_BAREL3_FUEL:
+			return Gathering_Fuel(player, resource);
+			
+		case PID_STILL_B:
+		case PID_STILL_S:
+			return Gathering_Still(player, resource);
+		case PID_FIREBARREL:
+		case PID_WOODFIRE:
+			return Gathering_Bonfire(player, resource);
+	}
+	return false;
+}
+
+//Generic scenery
+bool Gathering_Generic_scen(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	switch(resource.ProtoId)
+	{
+		case PID_CAR_WRECK_I:
+		case PID_CAR_WRECK_II:
+			return Gathering_CrashedCar(player, resource, pid_tool);
+		
+		case 2256:
+		case 2254:
+		case 2255:	
+		case 2253:
+		case 2252:
+		case 2396:
+		case 2106:   		
+			return Gathering_Junk(player, resource, pid_tool);
+	
+	    case PID_DAMAGED_TERMINAL_I:
+		case PID_DAMAGED_TERMINAL_II:
+		case PID_DAMAGED_TERMINAL_III:
+		case PID_DAMAGED_TERMINAL_IV:
+		case 2805:
+		case 2806:
+			return Gathering_DamagedTerminal(player, resource, pid_tool);
+			
+		case PID_COAL_ORE_I:
+		case PID_COAL_ORE_II:
+		case PID_IRON_ORE_DEPOSITS_I:
+		case PID_IRON_ORE_DEPOSITS_II:
+		case PID_BIG_CHUNK_OF_IRON_ORE:
+		case PID_MINERAL_DEPOSITS_I:
+		case PID_MINERAL_DEPOSITS_II:
+		case PID_BIG_MINERAL_DEPOSITS:
+			return Gathering_LowOre(player, resource, pid_tool);
+			
+		case PID_IRON_ORE_DEPOSITS_V:
+		case PID_IRON_ORE_DEPOSITS_VI:
+		case PID_BIG_IRON_DEPOSITS:
+		case PID_SULFUR_ORE_DEPOSITS_I:
+		case PID_SULFUR_ORE_DEPOSITS_II:
+			return Gathering_MediumOre(player, resource, pid_tool);
+			
+		case PID_IRON_ORE_DEPOSITS_III:
+		case PID_IRON_ORE_DEPOSITS_IV:
+		case PID_MINERAL_DEPOSITS_III:
+		case PID_MINERAL_DEPOSITS_IV:
+		case PID_URANIUM_DEPOSITS_I:
+		case PID_URANIUM_DEPOSITS_II:
+		case PID_ROCK_I:
+		case PID_ROCK_II:
+			return Gathering_HighOre(player, resource, pid_tool);
+			
+		case PID_SMALL_DEPOSITS_II:
+		case PID_SMALL_DEPOSITS_I:
+			return Gathering_RareOre(player, resource, pid_tool);
+			
+		case PID_WOODPILE:
+			return Gathering_WoodPile(player, resource, pid_tool);
+		
+	}
+	return false;
+}
+
+
+////////////////////////////////////////////
+
+// BONFIRE BARREL AND WOODFIRE
+bool Gathering_Bonfire(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	if(resource.GetProtoId() == PID_FIREBARREL)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000001090);
+		resource.ChangeProto(PID_FIREBARREL_ACTIVE);
+		SkinFull = PID_FIREBARREL;
+	}
+	else if(resource.GetProtoId() == PID_WOODFIRE)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000001090);
+		resource.ChangeProto(PID_WOODFIRE_ACTIVE);
+		SkinFull = PID_WOODFIRE;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RUNTIME_BONFIRE), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, 3000001093);
+	
+	return true;
+}
+
+// DISTILLATION MACHINE START-UP
+bool Gathering_Still(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	if(resource.GetProtoId() == PID_STILL_B)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000001072);
+		resource.ChangeProto(PID_STILL_B_ACTIVE);
+		SkinFull = PID_STILL_B;
+	}
+	else if(resource.GetProtoId() == PID_STILL_S)
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000001082);
+		resource.ChangeProto(PID_STILL_S_ACTIVE);
+		SkinFull = PID_STILL_S;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RUNTIME_STILL), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, 3000001089);
+	
+	return true;
+}
+
+// Fuel from barel
+bool Gathering_Fuel(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	uint pid = resource.GetProtoId();
+	if(pid == PID_BAREL1_FUEL)
+	{
+		player.AddItem(PID_FUELF, 1);
+		resource.ChangeProto(PID_BAREL1_FUEL_EMPTY);
+		SkinFull = pid;
+	}
+	else if(pid == PID_BAREL2_FUEL)
+	{
+		player.AddItem(PID_FUELF, 1);
+		resource.ChangeProto(PID_BAREL2_FUEL_EMPTY);
+		SkinFull = pid;
+	}
+	else if(pid == PID_BAREL3_FUEL)
+	{
+		player.AddItem(PID_FUELF, 1);
+		resource.ChangeProto(PID_BAREL3_FUEL_EMPTY);
+		SkinFull = pid;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_BAREL_FUEL), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, 404);
+	
+	return true;
+}
+
+// Fruit Tree
+bool Gathering_FruitTree(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	if(resource.GetProtoId() == PID_DE_TREE_FRUIT_1)
+	{
+		player.AddItem(PID_DE_FRUIT_1, 1);
+		resource.ChangeProto(PID_DE_TREE_FRUIT_1_EMPTY);
+		SkinFull = PID_DE_TREE_FRUIT_1;
+	}
+	else if(resource.GetProtoId() == PID_DE_TREE_FRUIT_2)
+	{
+		player.AddItem(PID_DE_FRUIT_2, 1);
+		resource.ChangeProto(PID_DE_TREE_FRUIT_2_EMPTY);
+		SkinFull = PID_DE_TREE_FRUIT_2;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_FRUIT_TREES), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// Tree
+bool Gathering_Tree(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	uint pid = resource.GetProtoId();
+	if((pid == PID_TREE_I) || (pid == PID_TREE_II) || (pid == PID_TREE_III) || (pid == PID_TREE_IV) || (pid == PID_TREE_V) || (pid == PID_TREE_VI))
+	{
+		player.AddItem(PID_WOOD, 2);
+		resource.ChangeProto(PID_TRUNCATED_STUMP);
+		SkinFull = pid;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_TREES), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+// Island Palms
+bool Gathering_Palms(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	uint pid = resource.GetProtoId();
+	if((pid == PID_PALM_I) || (pid == PID_PALM_II))
+	{
+		player.AddItem(PID_WOOD, 2);
+		resource.ChangeProto(PID_CUTPALM);
+		SkinFull = pid;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_PALMS), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+
+// Plant Tobacco
+bool Gathering_PlantTobacco(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	if(resource.GetProtoId() == PID_DE_PLANT_TOBACCO)
+	{
+		player.AddItem(PID_TOBACCO, 1);
+		resource.ChangeProto(PID_DE_PLANT_TOBACCO_EMPTY);
+		SkinFull = PID_DE_PLANT_TOBACCO;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_PLANT_TOBACCO), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// Plant Fiber
+bool Gathering_PlantFiber(Critter& player, Item& resource)
+{
+	if(resource.Val1 == RESOURCE_DEFAULT)
+		resource.Val1 = RESOURCE_FULL;
+		
+	if(resource.Val1 == RESOURCE_EMPTY)
+		return false;
+	
+	uint SkinFull = 0;
+	if(resource.GetProtoId() == PID_DE_PLANT_FIBER)
+	{
+		player.AddItem(PID_DE_FIBER, 1);
+		resource.ChangeProto(PID_DE_PLANT_FIBER_EMPTY);
+		SkinFull = PID_DE_PLANT_FIBER;
+	}
+	else
+		return false;
+	
+	uint[] values(3);
+	values[0] = resource.MapId;
+	values[1] = resource.Id;
+	values[2] = SkinFull;
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_PLANT_FIBER), "e_ResourceReplenish", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// Crashed Car Screws / Rusted metal parts
+bool Gathering_CrashedCar(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_CAR_WRECK_I) || (pid == PID_CAR_WRECK_II))
+	{
+		player.AddItem(PID_SCRAP, 1);
+		if((pid_tool == PID_MULTI_TOOL) || (pid_tool == PID_SUPER_TOOL_KIT))
+		{
+			uint pid = PID_SCREWS, count = 5;
+			if( Random(0,1) == 1 )
+			{
+				pid = PID_RUSTED_METAL_PARTS;
+				count = 2;
+			}
+			player.AddItem( pid, count );
+		}
+	
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_CRASHED_CAR), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+// TLA like scavenging -Koniko
+bool Gathering_Junk(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+
+	uint16 pid = resource.ProtoId;
+	if((pid == 2256) || (pid == 2254) || (pid == 2255) || (pid == 2253) || (pid == 2252) || (pid == 2396) || (pid == 2106)) // Junk scenery
+	{
+		player.AddItem(PID_SCRAP, 1);
+		if((pid_tool == PID_MULTI_TOOL) || (pid_tool == PID_SUPER_TOOL_KIT))
+		{
+			uint pid = 4063, count = 5;
+			if( Random(0,1) == 0 )
+			{
+				if( Random(0,1) == 0 )
+					pid = PID_OLD_METAL_PARTS;
+				else
+					pid = PID_RUSTED_METAL_PARTS;
+				count = 2;
+			}
+			player.AddItem( pid, count );
+		}
+	
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_JUNK), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+// Damaged Terminal
+bool Gathering_DamagedTerminal(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+	
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_DAMAGED_TERMINAL_I) || (pid == PID_DAMAGED_TERMINAL_II) || (pid == PID_DAMAGED_TERMINAL_III) || (pid == PID_DAMAGED_TERMINAL_IV) || (pid == 2805) || (pid == 2806))	//2805 ? 2086 => more easy to find in map
+	{
+		player.AddItem(PID_ELECTRONIC_PARTS, 3);
+		if((pid_tool == PID_MULTI_TOOL) || (pid_tool == PID_SUPER_TOOL_KIT))
+			player.AddItem(PID_FUSE, 3);
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_DAMAGED_TERMINAL), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+// Wood from Pile
+bool Gathering_WoodPile(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+	
+	uint16 pid = resource.ProtoId;
+	if(pid == PID_WOODPILE)
+	{
+		player.AddItem(PID_WOOD, 2);
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_MINUTE(RESOURCE_CD_WOOD_PILE), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+// Low ore - COAL, IRON ORE, MINERAL. Resourcing >20% = 1 item, >120% = 2 items.
+bool Gathering_LowOre(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint roll = Random(1, 10);
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+
+	int amount = player.Skill[SK_RESOURCING] >= 120 ? 2 : (player.Skill[SK_RESOURCING] >= 20 ? 1 : 0);
+
+	/* ANOTHER VERSION,	THE SAME AS ABOVE
+	int skillreso=player.Skill[SK_RESOURCING];
+	int amount = skillreso >= 120 ? 2 : (skillreso>= 20 ? 1 : 0);
+	*/
+
+	if(amount == 0)
+	{
+		player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, 405);
+		return true;
+	}
+	
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_COAL_ORE_I) || (pid == PID_COAL_ORE_II))		//Coal (Wegiel)
+	{
+		player.AddItem(PID_COAL, amount);
+	}
+	else if((pid == PID_IRON_ORE_DEPOSITS_I) || (pid == PID_IRON_ORE_DEPOSITS_II) || (pid == PID_BIG_CHUNK_OF_IRON_ORE))
+	{
+		player.AddItem(PID_IRON_ORE, amount);
+	}
+	else if((pid == PID_MINERAL_DEPOSITS_I) || (pid == PID_MINERAL_DEPOSITS_II) || (pid == PID_BIG_MINERAL_DEPOSITS))
+	{
+		player.AddItem(PID_COMMON_MINERAL, amount);
+	}
+	else
+		return false;
+	
+	if (roll<4)
+	{
+		uint[] anyData(1);
+		anyData[0] = RESOURCE_EMPTY;
+		SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+		CreateTimeEvent(__FullSecond + REAL_SECOND(Random(30,45)), "e_ResourceReplenish_scen", values, true);
+	}
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// Medium ore - GOOD QUALITY IRON ORE, SULFUR. Resourcing >40% = 1 item, >160% = 2 items.
+bool Gathering_MediumOre(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint roll = Random(1, 6);
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+	
+	int amount = player.Skill[SK_RESOURCING] >= 160 ? 2 : (player.Skill[SK_RESOURCING] >= 40 ? 1 : 0);
+	if(amount == 0)
+	{
+		player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, 406);
+		return true;
+	}
+	
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_IRON_ORE_DEPOSITS_V) || (pid == PID_IRON_ORE_DEPOSITS_VI))
+	{
+		player.AddItem(PID_SMALL_CHUNK_OF_IRON_ORE, amount);
+	}
+	else if((pid == PID_BIG_IRON_DEPOSITS))
+	{
+		player.AddItem(PID_BIG_CHUNK_OF_IRON_ORE_CHUNK, amount);
+	}
+	else if((pid == PID_SULFUR_ORE_DEPOSITS_I) || (pid == PID_SULFUR_ORE_DEPOSITS_II))
+	{
+		player.AddItem(PID_MINERAL_SULFUR, amount);
+	}
+	else
+		return false;
+	
+	if(roll<4)
+	{
+		uint[] anyData(1);
+		anyData[0] = RESOURCE_EMPTY;
+		SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+		CreateTimeEvent(__FullSecond + REAL_SECOND(Random(20,60)), "e_ResourceReplenish_scen", values, true);
+	}
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// High ore - HIGH QUALITY IRON ORE, URANIUM, GOLD. Resourcing >80% = 1 item, >200% = 2 items.
+bool Gathering_HighOre(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+	
+	int amount = player.Skill[SK_RESOURCING] >= 200 ? 2 : (player.Skill[SK_RESOURCING] >= 80 ? 1 : 0);
+	if(amount == 0)
+	{
+		player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, 407);
+		return true;
+	}
+
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_IRON_ORE_DEPOSITS_III) || (pid == PID_IRON_ORE_DEPOSITS_IV))
+	{
+		player.AddItem(PID_GOOD_QUALITY_IRON_ORE_CHUNK, amount);
+	}
+	else if((pid == PID_MINERAL_DEPOSITS_III) || (pid == PID_MINERAL_DEPOSITS_IV))
+	{
+		player.AddItem(PID_HIGHT_QUALITY_MINERAL, amount);
+	}
+	else if((pid == PID_URANIUM_DEPOSITS_I) || (pid == PID_URANIUM_DEPOSITS_II))
+	{
+		player.AddItem(PID_URANIUM, amount);
+	}
+	else if((pid == PID_ROCK_I) || (pid == PID_ROCK_II))
+	{
+		player.AddItem(PID_GOLD, amount);
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_SECOND(Random(30,60)), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}
+
+
+// Rare ore - RARE IRON ORE, RARE MINERALS. Resourcing >120% = 1 item, >240% = 2 items.
+bool Gathering_RareOre(Critter& player, Scenery& resource, uint16 pid_tool)
+{
+	uint[] values(4);
+	values[0] = player.GetMapId();
+	values[1] = resource.HexX;
+	values[2] = resource.HexY;
+	values[3] = resource.ProtoId;
+	if(IsAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3]))
+	{
+		uint[] anyData;
+		if(!GetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData))
+			return false;
+		if(anyData[0]  == RESOURCE_EMPTY)
+		{
+			player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_EMPTY);
+			return true;
+		}
+	}
+	
+	int amount = player.Skill[SK_RESOURCING] >= 240 ? 2 : (player.Skill[SK_RESOURCING] >= 120 ? 1 : 0);
+	if(amount == 0)
+	{
+		player.SayMsg( SAY_NETMSG, TEXTMSG_TEXT, 408);
+		return true;
+	}
+	
+	uint16 pid = resource.ProtoId;
+	if((pid == PID_SMALL_DEPOSITS_II))
+	{
+		player.AddItem(PID_RARE_IRON_ORE, amount);
+	}
+	else if((pid == PID_SMALL_DEPOSITS_I))
+	{
+		player.AddItem(PID_RARE_MINERAL, amount);
+	}
+	else
+		return false;
+	
+	uint[] anyData(1);
+	anyData[0] = RESOURCE_EMPTY;
+	SetAnyData("Resources_"+values[0]+"_"+values[1]+"_"+values[2]+"_"+values[3], anyData);
+	CreateTimeEvent(__FullSecond + REAL_SECOND(Random(20,100)), "e_ResourceReplenish_scen", values, true);
+	
+	player.SayMsg(SAY_NETMSG, TEXTMSG_TEXT, STR_RESOURCE_FOUND);
+	
+	return true;
+}

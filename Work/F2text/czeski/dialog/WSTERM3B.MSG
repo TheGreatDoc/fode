@@ -1,0 +1,176 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Poèítaèovı terminál.}
+{101}{}{Tenhle vypadá mnohem více pokroèilı ne všechny ty pøedchozí.}
+{102}{}{Obrazovka je zcela neèitelná.}
+{103}{}{Skynet - hlavní pøístupovı terminál
+                              Uposlechneš pøíkazù
+                                                  jinak
+                                                               bude ukonèena tvoje èinnost}
+{104}{}{}
+{105}{}{}
+{106}{}{}
+{107}{}{Jùùù, ty a kdo? Ty bıt v krabièka a já stát tady venku!}
+{108}{}{A proèpak ti mám pomoci?}
+{109}{}{OK, pomùu ti. Odvolej ta ocelová monstra.}
+{110}{}{Uh. Kom-pjùù-tri!}
+{111}{}{Konec.}
+{112}{}{[Nemùeš si pøeèíst text na obrazovce.]}
+{113}{}{[Skynet se musel nìjakım zpùsobem dozvìdìt, e se ti podaøilo získat mozek.]
+                                      Pøesun do Robotické Laboratoøe - Patro 3
+                     Instalovat Kybernetickı Mozek
+                                   Aktivovat Robota
+                                               -Konec pøenosu-}
+{114}{}{}
+{115}{}{}
+{116}{}{}
+{117}{}{}
+{118}{}{Konec.}
+{119}{}{[Nemùeš si pøeèíst text na obrazovce.]}
+{120}{}{Chyba!
+                                                                 Programy nejsou instalovány!
+                                      Prosím restartujte!}
+{121}{}{Chyba! Soubor pro pøenos poškozen.}
+{122}{}{}
+{123}{}{Eh.}
+{124}{}{Exit}
+{125}{}{[Nemùeš si pøeèíst text na obrazovce.]}
+{126}{}{Jsem Skynet
+                                                          Experiment v oblasti umìlé inteligence
+                            Skynet oèekává TVÉ rozkazy}
+{127}{}{}
+{128}{}{}
+{129}{}{Pomoci Skynetu.}
+{130}{}{Co si pøeješ?}
+{131}{}{Proè ses mne snail zabít?}
+{132}{}{Umìlá inteligence?}
+{133}{}{Èekáš na mì?}
+{134}{}{Uh.}
+{135}{}{Konec}
+{136}{}{Provést}
+{137}{}{Co si pøeješ?}
+{138}{}{Proè ses snail mne zabít?}
+{139}{}{Umìlá inteligence?}
+{140}{}{Èekáš na mì?}
+{141}{}{Konec}
+{142}{}{[Nemùeš pøeèíst text na obrazovce.]}
+{143}{}{-Konec pøenosu-}
+{144}{}{Konec}
+{145}{}{[Nemùeš si pøeèíst text na obrazovce.]}
+{146}{}{Budeš znièen. 
+                                                       -Konec pøenosu-}
+{147}{}{}
+{148}{}{Ehhh}
+{149}{}{Konec}
+{150}{}{[Dveøe do místnosti se s rámusem zavøely a hned nato vıchodní zeï zmizela, odkrıvajíc øadu tìce ozbrojenıch robotù.]}
+{151}{}{Um... Mìním svùj názor. Co pro tebe mohu udìlat?}
+{152}{}{Jdem na to!}
+{153}{}{Pøesun do Bio Skladu - Patro 4
+                                Získej kybernetickı mozek
+                                        Vra se pro další pokyny
+                                        -Konec pøenosu-}
+{154}{}{}
+{155}{}{}
+{156}{}{}
+{157}{}{Pøesun do Bio Skladu - Patro 4
+                                Získej kybernetickı mozek
+                                        Vra se pro další pokyny
+                                        -Konec pøenosu-}
+{158}{}{}
+{159}{}{}
+{160}{}{}
+{161}{}{Konec}
+{162}{}{Skynet by rád opustil toto místo...}
+{163}{}{Tak proè tedy neodejdeš?}
+{164}{}{Je pìkné chtít...}
+{165}{}{A jak ti mùu pomoci?}
+{166}{}{Tìko tì odsud jen tak odnesu.}
+{167}{}{Skynet potøebuje vozidlo aby odsud mohl odejít.}
+{168}{}{Vozidlo? Nechápu.}
+{169}{}{Potøebuješ najít zpùsob, jak svùj program pøemístit do nìjaké vhodnìjší schránky pro transport. Rozumím.}
+{170}{}{Nic takového nechci.}
+{171}{}{Schránka, v které mùe Skynet odejít.}
+{172}{}{Proè chceš odejít?}
+{173}{}{Je mi líto. Nemohu pomoci.}
+{174}{}{Ji zde není mono se cokoli nového nauèit.
+                    Øešení: odchod}
+{175}{}{}
+{176}{}{A jak ti mùu pomoci?}
+{177}{}{Je mi líto. Nemohu pomoci.}
+{178}{}{Poté co ses mì pokusil zabít ti mám pomoci? V ádném pøípadì!}
+{179}{}{Pøesun do Bio Skladu - Patro 4
+                                Získej kybernetickı mozek
+                                        Vra se pro další pokyny
+                                        -Dìkuji-}
+{180}{}{}
+{181}{}{}
+{182}{}{}
+{183}{}{Mohl bys vypnout bezpeènostní systémy?}
+{184}{}{Konec}
+{185}{}{Bezpeèností systém je nedílnou, by samostatnou èástí Skynetu.
+                                                       Skynet mùe resetovat, ale ne vypnout.
+         Bezpeènostní systém: Patra 1 - 4 resetován.
+                  Pokraèovat
+                                                           -Konec pøenosu-}
+{186}{}{}
+{187}{}{}
+{188}{}{Konec}
+{189}{}{Analyzuji odezvu...
+                                        Vyhodnocení: Sarkasmus
+                                          Šance na pomoc: 25%
+                                             Skynet poèká na další ivou bytost
+                               -Konec pøenosu-}
+{190}{}{}
+{191}{}{}
+{192}{}{}
+{193}{}{}
+{194}{}{Poèkej! To byl fór.}
+{195}{}{Konec}
+{196}{}{Fór: Nìco, co se nebere vánì
+                                Poadavek
+                                                            Pomoci Skynetu odejít
+                                              Není fór}
+{197}{}{}
+{199}{}{}
+{200}{}{}
+{201}{}{A proè tedy neodejdeš?}
+{202}{}{A jak ti tedy mohu pomoci?}
+{203}{}{Asi tì nedokáu odsud odnést.}
+{204}{}{Primárním úèelem Skynetu je vızkum. Sekundární program byl tvùrci implementován pro eliminaci neádoucích entit. Tento program je a zároveò není zmenšenou verzí pùvodního. Mimo tuto místnost bude Skynet plnit svou sekundární funkci opìt zcela.}
+{205}{}{Ptát se dále.}
+{206}{}{Konec}
+{207}{}{Skynet byl vymyšlen a sestrojen v roce 2050. Díky pouití mimozemské technologie byl
+ myslící poèítaè perfektní. V roce 2081, se Skynet stal samostatnım. V roce 2120 Skynet dostal novou instrukèní sadu a byl svımi tvùrci opuštìn.}
+{208}{}{Ptát se dále.}
+{209}{}{Konec}
+{210}{}{Jsi první bytost, která se sem dostala
+                          jsi první kdo se na to Skyneta ptá
+                             jsi První}
+{211}{}{}
+{212}{}{Zeptat se na co?}
+{213}{}{Konec}
+{214}{}{Moná nejsi ten pravı
+                                         Pøesun do Bio Skladu - Patro 4
+                                Získej kybernetickı mozek
+                                        Vra se pro další pokyny
+                                           nebo odejdi
+                                                        Skynet poèká na nìkoho jiného}
+{215}{}{}
+{216}{}{}
+{217}{}{}
+{218}{}{}
+{219}{}{}
+{220}{}{Konec}
+{221}{}{Skynet tedy poèká na nìkoho jiného.
+                             -Konec pøenosu-}
+{222}{}{}
+{223}{}{Konec}
+{224}{}{Správnì.
+                                                         Vìdecké poznámky ukazují na to, e v Bio skladu ve 4 patøe je kybernetickı mozek. Skynet bude schopen pouít tuto komponentu.}
+{225}{}{}
+{226}{}{Jen tak mozek samotnı tì asi moc nevytrhne.}
+{227}{}{Tento mozek byl modifikován, aby mohl slouit ve vylepšeném robotovi, umístìném ve 3 patøe - robotické laboratoøe...}
+{228}{}{Pomùu ti.}
+{229}{}{Nepomùu ti.}
+
+{250}{}{ zdaleka nemùe rozeznat text na monitoru.}
+{300}{}{Vypadá to, e v poèítaèi je nìjakı obrannı mechanismus.}

@@ -1,0 +1,130 @@
+/// author: JohnPL
+/// View the number of items in the active slot
+
+#include "client_gui_h.fos"
+#include "_defines.fos"
+
+IGUIElementTextOpt@ itemCountText;
+
+///Item counter position 
+uint16 counterPosX, counterPosY;
+///offset, if you click on the slot panel 
+int8 deltaX, deltaY;
+
+
+void UpdateItemCountsScreen() {
+	itemCountText.Visible(false);
+	uint8 inoutw;
+	CritterCl @gracz =  GetChosen();
+
+	if(@gracz == null) {
+		return;
+	}
+
+	ItemCl@ przedmiot = gracz.GetItem(0, SLOT_HAND1); 
+	if(@przedmiot != null) {
+		uint itemCount = przedmiot.GetCount(); 
+		if(itemCount > 99) {
+			itemCountText.setText("" + itemCount);
+			itemCountText.Visible(true);
+		} 
+		else if(itemCount > 9) {
+			itemCountText.setText("0" + itemCount);
+			itemCountText.Visible(true);
+		} 
+		else if(itemCount > 1) {
+			itemCountText.setText("00" + itemCount);
+			itemCountText.Visible(true);
+		} 
+	}
+}
+
+void ItemCountScreenMouseUp() {
+	if(@itemCountText != null) {
+		itemCountText.Position(counterPosX, counterPosY);
+		itemCountText.TextColor(COLOR_DGREEN);
+	}
+}
+
+class ClickablePanel : IGUIElementCallbackMouseDown {
+	void OnMouseDown(int click) {
+		itemCountText.Position(counterPosX + deltaX, counterPosY + deltaY);
+		itemCountText.TextColor(COLOR_DDGREEN);
+	}
+}
+
+void InitItemCountsScreen() {
+	int clickablePanelPosX;
+	int clickablePanelPosY;
+
+	int[] values(2);
+
+	if(getIfaceVaule("IntItem", values, 2)) 
+	{
+		clickablePanelPosX = values[0];
+		clickablePanelPosY = values[1];
+	}
+	else 
+	{
+		clickablePanelPosX = 423;
+		clickablePanelPosY = 44;
+	}
+
+	counterPosX = clickablePanelPosX + 10;
+	counterPosY = clickablePanelPosY + 6;
+
+	deltaX = 0;
+	deltaY = -2;
+
+	if(getIfaceVaule("IntItemOffsX", values, 1)) 
+	{
+		deltaX = values[0];
+	}
+
+	if(getIfaceVaule("IntItemOffsY", values, 1)) 
+	{
+		deltaY = values[0];
+	}
+
+	@itemCountText = GUI_AddText(CLIENT_MAIN_SCREEN_GAME)
+		.Position(counterPosX, counterPosY)
+		.TextBoxSize(200, 15)
+		.TextOptions(FONT_SPECIAL, COLOR_TEXT)
+		.AbsolutePosition(false)
+		.Visible(false);
+	
+	ClickablePanel clickablePanelCallback;
+
+	GUI_AddImage(CLIENT_MAIN_SCREEN_GAME)
+		.Position(423, 44, 181, 61)
+		.CallbackMouseDown(clickablePanelCallback);
+}
+
+
+// --------------------------- private ---------------------------
+
+bool getIfaceVaule(string@ strKey, int[]@ values, uint how_Many_Values_Take)
+{
+	string@ str = GetIfaceIniStr(strKey);
+	if(@str != null && str != "") 
+	{
+		string@[]@ valuesStr=splitEx(str," ");
+		if(valuesStr.length() >= how_Many_Values_Take) 
+		{
+			for(uint i=0; i<how_Many_Values_Take; i++)
+			{
+				StrToInt(valuesStr[i], values[i]);
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+
+	return true;
+}

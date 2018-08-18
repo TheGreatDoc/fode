@@ -1,0 +1,717 @@
+#include "_dialogs.fos"
+#include "_macros.fos"
+#include "_ai.fos"
+#include "_bags.fos"
+#include "_npc_pids.fos"
+#include "_teams.fos"
+
+
+
+#define MESSAGE_CARAVANEER_GOTO_HOME				(212) // РїСЂРѕРІРѕРґРЅРёРє РѕС‚РїСЂР°РІРёС‚ СЌС‚Рѕ СЃРѕРѕР±С‰РµРЅРёРµ, РµСЃР»Рё РґРІРёРіР°РµС‚ Рє РґРѕРјР°С€РЅРµР№ РїРѕР·РёС†РёРё
+#define NPC_ROLE_CARAVAN_BOSS						(117)// Р±РѕСЃСЃ РєР°СЂР°РІР°РЅР°
+#define NPC_ROLE_CARAVAN_GUIDE						(118)// РїСЂРѕРІРѕРґРЅРёРє
+#define NPC_ROLE_CARAVAN_GUARD						(119)// РѕС…СЂР°РЅРЅРёРє РєР°СЂР°РІР°РЅР°(РќРџР¦)
+
+#define NpcRole 					StatBase[ST_NPC_ROLE]
+#define CrvId 						StatBase[ST_VAR0]
+#define Reaction 					StatBase[ST_VAR1]
+#define NervosityLvl 				StatBase[ST_VAR2]
+#define IdleCount					StatBase[ST_VAR3]
+
+// С‚РёРїРѕРІС‹Рµ С„СЂР°Р·С‹
+
+#define PHRASE_BORING								(2) // РѕС…СЂР°РЅРЅРёРє Р·Р°СЃРєСѓС‡Р°Р»
+#define PHRASE_ATTACKED     						(5) // С„СЂР°Р·Р° РµСЃР»Рё РѕС…СЂР°РЅРЅРёРє Р°С‚Р°РєРѕРІР°РЅ
+#define PHRASE_LOW_HP       						(6) // С„СЂР°Р·Р° РµСЃР»Рё Сѓ РѕС…СЂР°РЅРЅРёРєР° РѕСЃС‚Р°Р»РѕСЃСЊ РјР°Р»Рѕ С…Рї
+#define PHRASE_KILL_SOMEONE 						(7) // С„СЂР°Р·Р° РїСЂРё СѓР±РёР№СЃС‚РІРµ РѕС…СЂР°РЅРЅРёРєРѕРј РєРѕРіРѕ-Р»РёР±Рѕ
+// Р·Р°РґР°С‡Рё
+
+#define PLANE_GOTO_HOME								(405)// РіРІР°СЂРґ РёРґРµС‚ РЅР° РЅРѕРІРѕРµ РјРµСЃС‚Рѕ РґРёСЃР»РѕРєР°С†РёРё
+#define MSG_WHERE_IS_DA_LEADER						(211) // РЅРѕРјРµСЂ СЃРѕРѕР±С‰РµРЅРёСЏ, РєРѕС‚РѕСЂРѕРµ РѕС‚РїСЂР°РІР»СЏРµС‚ РѕС…СЂР°РЅРЅРёРє, РєРѕРіРґР° С…РѕС‡РµС‚ РїСЂРёР±Р»РёР·РёС‚СЊСЃСЏ Рє РєР°СЂР°РІР°РЅС‰РёРєСѓ
+
+/* ---------------------- imports ----------------------*/
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target,bool run) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddMiscPlane(Critter& npc, uint priority, uint waitSecond, string@ funcName) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, int identifier, uint identifierExt, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+/*---------------------- РїРѕР»СѓС‡РµРЅРёРµ РЅРµСЃРєРѕР»СЊРєРёС… РЅРїС†-РѕС…СЂР°РЅРЅРёРєРѕРІ ----------------------*/
+/*
+CaravanGuardInfo [] GetNpcGuards(uint guardsNum)
+{
+	CaravanGuardInfo[] availableGuards;
+	 // РћС‚РµС† РџРµС‚СЂРµСЃРєСѓ
+	availableGuardsСЋ.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_1//NPC_PID_HolyMan //Pid
+		,	DIALOG_crvg_petresku	//dialogId
+		,	"caravan@_PetreskuInit" //scriptId
+		,	AIPACKET_PARTY_SULIK_BERSERK //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	20//level
+		,	2//reaction
+		,	0//isNervous
+	));//
+		 // Mazzy
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_2 //Pid
+		,	DIALOG_crvg_mazzy	//dialogId
+		,	"caravan@_MazzyInit" //scriptId
+		,	AIPACKET_PARTY_LENNY_BERSERK //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	9//level
+		,	3
+		,	0//isNervous
+	));//
+		 // Р‘РѕРјР±РµСЂРјРµРЅ
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_3//NPC_PID_MaleTrapper //Pid
+		,	DIALOG_crvg_bomberman	//dialogId
+		,	"caravan@_BomberInit" //scriptId
+		,	AIPACKET_SPORE_PLANT  //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	12//level
+		,	1//reaction
+		,	3//isNervous
+	));//
+			 // РђРЅР°С„РµСЂРѕРЅ
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_4//NPC_PID_PrimitiveFemale //Pid
+		,	DIALOG_crvg_anaferon	//dialogId
+		,	"caravan@_AnaferonInit" //scriptId
+		,	AIPACKET_PARTY_VIC_DEFENSIVE //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	8//level
+		,	2//reaction
+		,	0	//isNervous
+	));//
+
+		 // РќР°С…РѕРґС‡РёРІС‹Р№ Р’Р°СЃРёР»РёР№
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_5//NPC_PID_MaleTrapper //Pid
+		,	DIALOG_crvg_vasiliy	//dialogId
+		,	"caravan@_VasyaInit" //scriptId
+		,	AIPACKET_BOUNTY_HUNTER //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	8//level
+		,	3//reaction
+		,	0//isNervous
+	));//
+
+		 // РљРёР»Р»РµР»РїСЂРѕР»РѕР»
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_6 //Pid
+		,	DIALOG_crvg_killerlolpro	//dialogId
+		,	"caravan@_KillerInit" //scriptId
+		,	AIPACKET_BOUNTY_HUNTER  //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	25//level
+		,	1//reaction
+		,	2//isNervous
+	));//
+
+		 // Р—РѕРјР±Рё
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_7 //Pid
+		,	DIALOG_crvg_zombie	//dialogId
+		,	"caravan@_ZombieInit" //scriptId
+		,	AIPACKET_PARTY_SULIK_CUSTOM //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	15//level
+		,	4//reaction
+		,	0//isNervous
+	));//
+		 // Р СЌС‚
+	availableGuards.insertLast(CaravanGuardInfo(
+			NPC_PID_Mercenary_8//NPC_PID_PressGangFemale //Pid
+		,	DIALOG_crvg_rat	//dialogId
+		,	"caravan@_RatInit" //scriptId
+		,	AIPACKET_PARTY_MACRAE_AGGRESSIVE //aiPack
+		,	BAG_Empty //bagId
+		,	TEAM_QuestNpc //teamId
+		,	12//level
+		,	1//reaction
+		,	0//isNervous
+	));//
+	if (guardsNum>availableGuards.length()){guardsNum = availableGuards.length();}
+	CaravanGuardInfo []chosenGuards;
+	uint chosenOne = 0;
+
+	for (uint i = 1; i<=guardsNum; i++)
+	{
+		chosenOne = Random(0, availableGuards.length()-1);
+		chosenGuardsСЋ.insertLast(availableGuards[chosenOne]);
+		availableGuards.removeAt(chosenOne);
+	}
+	return chosenGuards;
+}*/
+// РїС‹С‚Р°РµС‚СЃСЏ СЃРєР°Р·Р°С‚СЊ С„СЂР°Р·Сѓ РІ РєР°СЃСЃСѓ Рє РїСЂРѕРёСЃС…РѕРґСЏС‰РµРјСѓ СЃРѕР±С‹С‚РёСЋ
+// СЃ СѓС‡РµС‚РѕРј СѓСЂРѕРІРЅСЏ "РЅРµСЂРІРѕР·РЅРѕСЃС‚Рё" РіР°СЂРґР°
+// С‡РµРј РІС‹С€Рµ СѓСЂРѕРІРµРЅСЊ РЅРµСЂРІРѕР·РЅРѕСЃС‚Рё, С‚РµРј РІС‹С€Рµ С€Р°РЅСЃ
+// guard - РѕС…СЂР°РЅРЅРёРє
+// msgId - РЅРѕРјРµСЂ СЃС‚СЂРѕРєРё РІ РґРёР°Р»РѕРіРµ РѕС…СЂР°РЅРЅРёРєР°
+// boost - СѓРІРµР»РёС‡РёРІР°РµС‚ РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ
+// РµСЃР»Рё С„СЂР°Р·Р° СЃРєР°Р·Р°РЅР° - С„СѓРЅРєС†РёСЏ РІРµСЂРЅРµС‚ true, РёРЅР°С‡Рµ false
+bool _SayNervous(Critter& guard, uint msgID, uint boost)
+{
+	if (Random(guard.NervosityLvl+boost, 6)>=6)
+	{
+		guard.SayMsg(SAY_NORM_ON_HEAD,TEXTMSG_DLG,DLGSTR(guard.Stat[ST_DIALOG_ID],msgID));
+		return true;
+	}
+	return false;
+}
+// РѕС…СЂР°РЅРЅРёРє РїРѕРґС…РѕРґРёС‚ Рє РїСЂРѕРІРѕРґРЅРёРєСѓ
+void _MoveToCaravanLeader(Critter & guard, Critter & leader, uint radius)
+{
+	uint16 hx = leader.HexX;
+	uint16 hy = leader.HexY;
+	Map @ map = guard.GetMap();
+	if(!valid(map)) return;
+
+	if (GetFreeHex(map, radius, hx, hy))
+	{
+		bool run = false;
+		if((Random (1,3))==1){run=true;}
+		AddWalkPlane(guard, AI_PLANE_WALK_PRIORITY, PLANE_GOTO_HOME, 0, hx, hy, Random(1,5), run, 1);
+	}
+}
+/*-------------------- -----РѕР±СЂР°Р±РѕС‚РєР°------   -------------------*/
+// РћС…СЂР°РЅРЅРёРє РЅР° Р»РѕРєР°С†РёРё, Рё РЅРёС‡РµРіРѕ РѕСЃРѕР±РµРЅРЅРѕРіРѕ РЅРµ РґРµР»Р°РµС‚ _GuardIdle
+// РёРЅРѕРіРґР° РіРѕРІРѕСЂРёС‚ СЃР»СѓС‡Р°Р№РЅСѓСЋ С„СЂР°Р·Сѓ РёР· РґРёР°Р»РѕРіР°
+void _GuardIdle(Critter& guard)
+{
+	CaravanInfo@ ci = _GetCaravan(guard.CrvId);
+	// РЈРґР°Р»РµРЅРёРµ РѕС…СЂР°РЅРЅРёРєР°, РµСЃР»Рё РѕРЅ РЅРµРїРѕРЅСЏС‚РЅРѕ РіРґРµ Р·Р°РІРёСЃ
+	// РћС…СЂР°РЅРЅРёРєРё РґРѕР»Р¶РЅС‹ СЃСѓС‰РµСЃС‚РІРѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ РІ РјРѕРјРµРЅС‚ РґРІРёР¶РµРЅРёСЏ РёР»Рё РѕСЃС‚Р°РЅРѕРІРєРё РєР°СЂР°РІР°РЅР° РЅР° СЌРЅРєРµ
+	if(valid(ci))
+	{
+		if(ci.CaravanStatus==CRV_STATUS_BEFORE_START||ci.CaravanStatus==CRV_STATUS_PREPARE||ci.CaravanStatus==CRV_STATUS_END)
+		{
+			DL("kill caravan guard");
+			DeleteNpc(guard);
+			return;
+		}
+	}
+	if (valid(guard.GetMap()))
+	{
+
+		if (guard.IdleCount>=20)
+		{
+			if (_SayNervous(guard,PHRASE_BORING,2))
+			{
+				guard.IdleCount=0;
+				guard.SendMessage(MSG_WHERE_IS_DA_LEADER, guard.Id, MESSAGE_TO_ALL_ON_MAP);
+
+				return;
+			}
+		}
+		guard.IdleCount+=guard.NervosityLvl;
+		guard.IdleCount+=1;
+		return;
+
+	}else{
+
+		if(guard.IdleCount>0)
+		{
+			guard.IdleCount=0;
+		}
+
+	}
+}
+// РџСЂРёС€Р»Рѕ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРЅРѕРµ СЃ РїРѕРјРѕС‰СЊСЋ Critter::SendMessage.
+void _GuardOnMessage(Critter& guard, Critter& fromCr, int message, int value)
+{
+	if(message == MESSAGE_CARAVANEER_GOTO_HOME)
+	{
+		if((fromCr.NpcRole == NPC_ROLE_CARAVAN_GUIDE) && (fromCr.CrvId == guard.CrvId))
+		{
+			//import bool AddMiscPlane(Critter& npc, uint priority, uint waitSecond, string@ funcName) from "npc_planes";
+			guard.IdleCount = 0;
+			AddMiscPlane(guard,AI_PLANE_MISC_PRIORITY,guard.Reaction*60, "caravan@plane_MiscGoHomePos");
+
+		}
+	}
+
+}
+
+// Р·Р°РІРµСЂС€РµРЅРёРµ РІС‹РїРѕР»РЅРµРЅРёСЏ РЅРµРєРѕРµРіРѕ РїР»Р°РЅР° РѕС…СЂР°РЅРЅРёРєРѕРј
+int _GuardPlaneEnd(Critter& guard, NpcPlane& plane, int reason, Critter@ someCr, Item@ someItem)
+{
+	// РЅРїС† Р±РµР· РїСЂРѕР±Р»РµРј РґРѕС€РµР» РґРѕ РґРѕРјР°С€РЅРµР№ РїРѕР·РёС†РёРё
+	if(plane.Identifier==PLANE_GOTO_HOME && reason==REASON_SUCCESS)
+	{
+		guard.SetHomePos(guard.HexX , guard.HexY, Random(1,5));
+	}
+	//guard.Say(SAY_NORM_ON_HEAD, "reason = " +reason);
+	// Сѓ РЅРїС† РїСЂРѕР±Р»РµРјС‹ - РЅРµ РјРѕР¶РµС‚ РґРѕР№С‚Рё РґРѕ РґРѕРјР°С€РЅРµР№ РїРѕР·РёС†РёРё
+	else if(plane.Identifier==PLANE_GOTO_HOME)
+	{
+		if( reason==REASON_HEX_TOO_FAR||
+			reason==REASON_HEX_BUSY||
+			reason==REASON_HEX_BUSY_RING||
+			reason==REASON_DEADLOCK||
+			reason==REASON_TRACE_FAIL||
+			reason==REASON_POSITION_NOT_FOUND||
+			reason==REASON_FIND_PATH_ERROR)
+		{
+			AddMiscPlane(guard, AI_PLANE_MISC_PRIORITY, guard.Reaction*60, "caravan@plane_MiscGoHomePos");
+		}
+	}
+
+	return PLANE_RUN_GLOBAL;
+}
+
+// СѓР±РёС‚ РєС‚РѕС‚Рѕ
+void _SomeCritterDead(Critter& guard, Critter& fromCrit, Critter@ killer)
+{
+	if(!valid(killer)){return;}
+	if (killer.Id==guard.Id)
+	{
+		guard.SayMsg(SAY_NORM_ON_HEAD,TEXTMSG_DLG,DLGSTR(guard.Stat[ST_DIALOG_ID],PHRASE_KILL_SOMEONE));
+
+		return;
+	}
+}
+// Р°С‚Р°РєРѕРІР°РЅ РєРµРј-С‚Рѕ
+bool _GuardAttacked(Critter& guard, Critter& attacker)
+{
+
+	if(	guard.StatBase[ST_CURRENT_HP]*3 <guard.Stat[ST_MAX_LIFE])
+	{
+		_SayNervous(guard, PHRASE_LOW_HP, 3);
+	}else{
+		_SayNervous(guard, PHRASE_ATTACKED, 0);
+	}
+
+	return false;
+}
+
+// РѕС…СЂР°РЅРЅРёРє РѕР±РІРѕСЂРѕРІР°РЅ
+void _GuardStealing(Critter& cr, Critter& thief, bool success, Item& item, uint count)
+{
+	if(success&&thief.IsPlayer())
+	{
+		AddAttackPlane(cr,0,thief,true);
+		if(!cr.CheckEnemyInStack(thief.Id)) cr.AddEnemyInStack(thief.Id);
+	}
+}
+
+// СѓР±РёС‚ РїР°С‚СЂСѓР»СЊРЅС‹Р№ Р“РЈ
+void _VCPatrolDead (Critter& cr, Critter@ killer)
+{
+	CaravanInfo@ ci = _GetCaravan(cr.CrvId);
+	if(valid(ci))
+	{
+		if(ci.CaravanStatus==CRV_STATUS_ON_ENCOUNTER)
+		{
+			for(uint i=0, l=ci.Caravaneers.length(); i<l; i++)
+			{
+				Critter@ player = GetCritter(ci.Caravaneers[i]);
+				if(valid(player) && player.IsPlayer())
+				{
+					GameVar@ counter = GetLocalVar(LVAR_vc_dead_patrollers, player.Id);
+					if(valid(counter))
+						counter = counter.GetValue() + 1;
+				}
+			}
+		}
+	}
+}
+/*-------------------------СЃРїРµС†РёС„РёС‡РµСЃРєРёРµ РѕР±СЂР°Р±РѕС‚РєРё-------------------------*/
+// РќР°С…РѕРґС‡РёРІС‹Р№ Р’Р°СЃРёР»РёР№ РЅРµСЂРІРЅРѕ С€Р°СЂРёС‚СЃСЏ РїРѕ РѕРєСЂСѓРіРµ РіРѕСЂР°Р·РґРѕ С‡Р°С‰Рµ, С‡РµРј РѕСЃС‚Р°Р»СЊРЅС‹Рµ
+void e_VasyaIdle(Critter& guard)
+{
+	if(guard.IsNoPlanes())
+	{
+		if (guard.IdleCount%3==1&&guard.IsFree())
+		{
+
+			guard.SendMessage(MSG_WHERE_IS_DA_LEADER, guard.Id, MESSAGE_TO_ALL_ON_MAP);
+		}
+
+	}
+
+	_GuardIdle(guard);
+}
+/*-------------------------РїР»Р°РЅС‹---------------------------------*/
+// РѕС…СЂР°РЅРЅРёРє РїРѕРґС…РѕРґРёС‚ Р±Р»РёР¶Рµ Рє РїСЂРѕРІРѕРґРЅРёРєСѓ, РµСЃР»Рё Сѓ РЅРµРіРѕ РЅРµС‚ РґСЂСѓРіРёС… С†РµР»РµР№
+void plane_MiscGoHomePos(Critter& guard)
+{
+
+	guard.SendMessage(MSG_WHERE_IS_DA_LEADER, guard.Id, MESSAGE_TO_ALL_ON_MAP);
+
+}
+
+/*-------------------------РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ-------------------------*/
+void _DefaultGuardInit(Critter& guard, bool firstTime)
+{
+
+	if(!firstTime)
+	{
+	  if (!valid(guard.GetMap()))
+	  {
+			DL("Critter on global. Trying transit to home pos");
+			uint mapId=0;
+			uint16 x=0;
+			uint16 y=0;
+			uint8 dir=0;
+			guard.GetHomePos (mapId, x, y, dir);
+			guard.TransitToMap(mapId, x, y, dir);
+			DL("kill guard");
+			DeleteNpc(guard);
+			return;
+	  }
+	}
+	//void _FuncName(Critter& cr, Critter& fromCr, int message, int value)
+	guard.SetEvent(CRITTER_EVENT_MESSAGE,"_GuardOnMessage");
+	guard.SetEvent(CRITTER_EVENT_PLANE_END,"_GuardPlaneEnd");
+	guard.SetEvent(CRITTER_EVENT_SMTH_DEAD,"_SomeCritterDead");
+	guard.SetEvent(CRITTER_EVENT_ATTACKED,"_GuardAttacked");
+	guard.SetEvent(CRITTER_EVENT_IDLE,"_GuardIdle");
+
+		DL("Guard init");
+
+
+	// РѕС…СЂР°РЅРЅРёРєРѕРІ РЅРµ РѕРіСЂР°Р±РёС‚СЊ
+	guard.ModeBase[MODE_NO_STEAL]=1;
+	// С‚РѕСЂРіРѕРІР°С‚СЊ РѕРЅРё РЅРµ Р±СѓРґСѓС‚
+	guard.ModeBase[MODE_NO_BARTER]=1;
+	guard.ModeBase[MODE_NO_LOOT] = 0;
+	// РёР· РјРµСЂС‚РІС‹С… РЅРµ РІСЃС‚Р°РЅСѓС‚
+	guard.StatBase[ST_REPLICATION_TIME]=-1;
+}
+
+// С‚РѕР¶Рµ, РЅРѕ Р±РµСЃРєРѕРЅРµС‡РЅС‹Рµ РїР°С‚СЂРѕРЅС‹
+void _DefaultGuardInitUnlimAmmo(Critter& guard, bool firstTime)
+{
+	guard.ModeBase[MODE_UNLIMITED_AMMO] = 1;
+	_DefaultGuardInit(guard, firstTime);
+}
+
+void _VCPatrolInit(Critter& guard, bool firstTime)
+{
+	guard.ModeBase[MODE_UNLIMITED_AMMO] = 1;
+	_DefaultGuardInit(guard, firstTime);
+	guard.SetEvent(CRITTER_EVENT_DEAD, "_VCPatrolDead");
+}
+
+// РџР°С‚СЂСѓР»СЊРЅС‹Рµ РґР»СЏ РєРІРµСЃС‚Р° РџР°С‚СЂСѓР»СЊ Р РµР№РЅРґР¶РµСЂРѕРІ
+void _NcrRangerPatrolInit(Critter& guard, bool firstTime)
+{
+	GameVar @ qVar = GetLocalVar(LVAR_q_ncr_hate_patrol, guard.Id);
+	if(valid(qVar))
+	{
+		qVar = 2;
+	}
+
+	guard.StatBase[ST_MAX_LIFE] = Random(150,250);
+	guard.StatBase[ST_CURRENT_HP] = guard.Stat[ST_MAX_LIFE];
+	guard.StatBase[ST_EXPLODE_RESIST] = Random(50,90);
+	guard.StatBase[ST_NORMAL_RESIST] = Random(20,50);
+	guard.ModeBase[MODE_UNLIMITED_AMMO] = 1;
+	_DefaultGuardInit(guard, firstTime);
+}
+/*-------------------------СЃРїРµС†РёС„РёС‡РµСЃРєР°СЏ-------------------------*/
+void _BomberInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//#define PID_FRAG_GRENADE_DE                    (4055) //Grouped
+		Item@ item = guard.AddItem(PID_FRAG_GRENADE_DE, 14);
+		//guard.MoveItem(item.Id,1,SLOT_HAND2);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_FRAG_GRENADE_DE);
+		//#define PID_STIMPAK                         (40)
+		guard.AddItem(PID_STIMPAK, 10);
+		//#define PID_CROWBAR_DE                         (20)
+		guard.AddItem(PID_CROWBAR_DE, 1);
+		//#define PID_DYNAMITE                        (51) //Has timer
+		guard.AddItem(PID_DYNAMITE, 1);
+		//#define PID_LEATHER_ARMOR                   (1)
+		Item @ item1 = guard.AddItem(PID_LEATHER_ARMOR_DE, 1);
+		guard.SetFavoriteItem(SLOT_ARMOR,PID_LEATHER_ARMOR_DE);
+		guard.MoveItem(item1.Id,1,SLOT_ARMOR);
+	}
+
+	guard.SkillBase[SK_THROWING]=300;
+
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+
+	guard.ModeBase[MODE_NO_BARTER]=0;
+}
+void _AnaferonInit(Critter& guard, bool firstTime)
+{
+
+	if(firstTime)
+	{
+		//PID_HUNTING_RIFLE_DE
+		Item@ item = guard.AddItem(PID_HUNTING_RIFLE_DE, 1);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_HUNTING_RIFLE_DE);
+		//guard.MoveItem(item.Id,1,SLOT_HAND2);
+		//#define PID_223_FMJ_DE                         (34)
+		guard.AddItem(PID_223_FMJ_DE, 50);
+		//#define PID_COMBAT_KNIFE_DE                    (236)
+		guard.AddItem(PID_COMBAT_KNIFE_DE, 1);
+		//#define PID_LEATHER_ARMOR                   (1)
+		Item@ item1 = guard.AddItem(PID_LEATHER_ARMOR_DE, 1);
+		guard.MoveItem(item1.Id,1,SLOT_ARMOR);
+		guard.SetFavoriteItem(SLOT_ARMOR,PID_LEATHER_ARMOR_DE);
+		//#define PID_HEALING_POWDER                  (273)
+		guard.AddItem(PID_HEALING_POWDER, 6);
+		//#define PID_STIMPAK                         (40)
+		guard.AddItem(PID_STIMPAK, 2);
+	}
+
+
+
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+}
+void _VasyaInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//#define PID_ASSAULT_RIFLE_DE                   (23)
+		Item@ item = guard.AddItem(PID_ASSAULT_RIFLE_DE, 1);
+		//guard.MoveItem(item.Id,1,SLOT_HAND1);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_ASSAULT_RIFLE_DE);
+		//#define PID_SPIKED_KNUCKLES_DE                 (234)
+		guard.AddItem(PID_SPIKED_KNUCKLES_DE, 1);
+		//#define PID_5MM_JHP_DE                         (35)
+		guard.AddItem(PID_5MM_JHP_DE, 100);
+		//#define PID_JET              (259)
+		//guard.AddItem(PID_JET, 10);
+		//#define PID_STIMPAK                         (40)
+		guard.AddItem(PID_STIMPAK, 5);
+		//#define PID_BEER                            (124)
+		guard.AddItem(PID_BEER, 1);
+		//#define PID_BOOZE                           (125)
+		guard.AddItem(PID_BOOZE, 1);
+		//#define PID_METAL_ARMOR                     (2)
+		Item@ item1 = guard.AddItem(PID_METAL_ARMOR_DE, 1);
+		guard.SetFavoriteItem(SLOT_ARMOR,PID_METAL_ARMOR_DE);
+		guard.MoveItem(item1.Id,1, SLOT_ARMOR);
+		//#define PID_LIGHTER                         (101) //Zippo
+		guard.AddItem(PID_LIGHTER, 1);
+		//#define PID_CIGARETTES                      (541) //РЎРёРіР°СЂРµС‚С‹
+		guard.AddItem(PID_CIGARETTES, 1);
+	}
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+	// РїРѕС‚РѕСЂРіРѕРІР°С‚СЊ СЃ Р’Р°СЃРёР»РёРµРј? Р»РµРіРєРѕ!
+	guard.ModeBase[MODE_NO_BARTER]=0;
+	guard.SetEvent(CRITTER_EVENT_IDLE,"e_VasyaIdle");
+}
+void _KillerInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//#define PID_PLASMA_RIFLE_DE                    (15)
+		guard.AddItem(PID_LASER_PISTOL_DE, 1);
+		//#define PID_TURBO_PLASMA_RIFLE_DE              (233)
+		Item@ item = guard.AddItem(PID_LASER_PISTOL_DE, 1);
+		guard.MoveItem(item.Id,0,SLOT_HAND2);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_LASER_PISTOL_DE);
+
+		//
+		//#define PID_PLASMA_PISTOL_EXT_CART_DE          (406)
+		guard.AddItem(PID_PLASMA_PISTOL_EXT_CART_DE, 1);
+		//#define PID_SUPER_SLEDGE_DE                    (115)
+		guard.AddItem(PID_SUPER_SLEDGE_DE, 1);
+		//#define PID_SMALL_ENERGY_CELL_DE               (38)
+		guard.AddItem(PID_SMALL_ENERGY_CELL_DE, 100);
+		//#define PID_MICRO_FUSION_CELL_DE               (39)
+		guard.AddItem(PID_MICRO_FUSION_CELL_DE, 100);
+		
+		//guard.MoveItem(item1.Id,0, SLOT_ARMOR);
+		//#define PID_SUPER_STIMPAK
+		guard.AddItem(PID_SUPER_STIMPAK, 15);
+		//#define PID_PSYCHO                          (110)
+		guard.AddItem(PID_PSYCHO, 10);
+
+	}
+	guard.SkillBase[SK_ENERGY_WEAPONS]=280;
+
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+}
+void _ZombieInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//#define PID_10MM_SMG_DE                        (9)PID_10MM_JHP_DE
+		Item@ item = guard.AddItem(PID_10MM_SMG_DE, 1);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_WAKIZASHI_BLADE_DE);
+		guard.SetFavoriteItem(SLOT_HAND2,PID_WAKIZASHI_BLADE_DE);
+		//guard.MoveItem(item.Id,1,SLOT_HAND1);
+		guard.AddItem(PID_10MM_JHP_DE, 5);
+		//#define PID_WAKIZASHI_BLADE_DE                 (522) x2
+		Item@ item1 = guard.AddItem(PID_WAKIZASHI_BLADE_DE, 2);
+		//guard.MoveItem(item1.Id,1,SLOT_HAND2);
+		//#define PID_PSYCHO                          (110)
+		guard.AddItem(PID_PSYCHO, 10);
+		//#define PID_STIMPAK                         (40)
+		guard.AddItem(PID_STIMPAK, 10);
+		// РЅРёРєР°РєСѓСЋ Р±СЂРѕРЅСЋ Р·РѕРјР±Рё РЅРѕСЃРёС‚СЊ РЅРµ РјРѕР¶РµС‚
+		//#define PID_ADVANCED_POWER_ARMOR            (348)
+		//Item@ item2 = guard.AddItem(PID_ADVANCED_POWER_ARMOR, 1);
+		//guard.SetFavoriteItem(SLOT_ARMOR,PID_ADVANCED_POWER_ARMOR);
+		//guard.MoveItem(item2.Id,1,SLOT_ARMOR);
+	}
+
+	guard.StatBase[ST_NORMAL_RESIST] = 100;
+	guard.StatBase[ST_LASER_RESIST] = 100;
+	guard.StatBase[ST_FIRE_RESIST] = 100;
+	guard.StatBase[ST_PLASMA_RESIST] = 100;
+	guard.StatBase[ST_ELECTRO_RESIST] = 100;
+	guard.StatBase[ST_EMP_RESIST] = 100;
+	guard.SkillBase[SK_UNARMED]=300;
+
+		// default init
+	_DefaultGuardInit(guard,firstTime);
+}
+void _MazzyInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//#define PID_SPIKED_KNUCKLES_DE                 (234)
+		Item@ item = guard.AddItem(PID_SPIKED_KNUCKLES_DE, 1);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_SPIKED_KNUCKLES_DE);
+		guard.MoveItem(item.Id,0,SLOT_HAND1);
+	}
+
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+}
+void _RatInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+		{
+		//#define PID_INDEPENDENT_DE                     (353) XL703 5mm
+		Item@ item = guard.AddItem(PID_INDEPENDENT_DE, 1);
+		guard.SetFavoriteItem(SLOT_HAND1,PID_INDEPENDENT_DE);
+		//guard.MoveItem(item.Id,1,SLOT_HAND2);
+		//#define PID_5MM_JHP_DE                         (35)
+		guard.AddItem(PID_5MM_JHP_DE, 50);
+		//#define PID_223_PISTOL_DE                      (241)
+		guard.AddItem(PID_223_PISTOL_DE, 1);
+		//#define PID_223_FMJ_DE                         (34)
+		guard.AddItem(PID_223_FMJ_DE, 30);
+		//#define PID_HK_G11E_DE                         (391)  // 4.7mm Caseless
+		guard.AddItem(PID_HK_G11E_DE, 1);
+		//#define PID_4_7MM_CASELESS_DE                  (359)
+		guard.AddItem(PID_4_7MM_CASELESS_DE, 50);
+		//#define PID_STIMPAK                         (40)
+		guard.AddItem(PID_STIMPAK, 5);
+		//#define PID_SHOVEL                          (289) //Р›РѕРїР°С‚Р°
+		guard.AddItem(PID_SHOVEL, 1);
+		//#define PID_SUPER_STIMPAK
+		guard.AddItem(PID_SUPER_STIMPAK, 1);
+		//#define PID_METAL_ARMOR_MK_II               (380)
+		Item@ item1 = guard.AddItem(PID_METAL_ARMOR_MK_II_DE, 1);
+		guard.SetFavoriteItem(SLOT_ARMOR,PID_METAL_ARMOR_MK_II_DE);
+		guard.MoveItem(item1.Id,1,SLOT_ARMOR);
+	}
+
+	// default init
+	_DefaultGuardInit(guard,firstTime);
+}
+void _PetreskuInit(Critter& guard, bool firstTime)
+{
+	if (firstTime)
+	{
+		//PID_DESERT_EAGLE_DE
+		//#define PID_44_MAGNUM_JHP_DE                   (31)
+		//#define PID_SUPER_STIMPAK                   (144)
+		//#define PID_JET                             (259)
+		//#define PID_PURPLE_ROBE                  (524) //PID_BRIDGEKEEPERS_ROBE
+		Item@ item = guard.AddItem(PID_DESERT_EAGLE_DE, 1);
+		//guard.MoveItem(item.Id,1,SLOT_HAND2);
+		//guard.AddItem(PID_44_MAGNUM_JHP_DE, 20);
+		guard.AddItem(PID_SUPER_STIMPAK, 10);
+		Item@ item1 = guard.AddItem(PID_PURPLE_ROBE_DE, 1);
+		guard.SetFavoriteItem(SLOT_ARMOR,PID_PURPLE_ROBE_DE);
+		guard.MoveItem(item1.Id,1,SLOT_ARMOR);
+	}
+	guard.StatBase[ST_CRITICAL_CHANCE]=120;
+	guard.SkillBase[SK_UNARMED]=300;
+	guard.StatBase[ST_STRENGTH]=10;
+
+	_DefaultGuardInit(guard,firstTime);
+}
+void _BHCaravanGuardInit(Critter& guard, bool firstTime)
+{
+	 _DefaultGuardInitUnlimAmmo(guard, firstTime);
+	// РѕС…СЂР°РЅРЅРёРєРѕРІ РЅРµ РѕРіСЂР°Р±РёС‚СЊ
+	guard.ModeBase[MODE_NO_STEAL]=0;
+	guard.ModeBase[MODE_NO_LOOT] =0;
+	guard.SetEvent(CRITTER_EVENT_STEALING,"_GuardStealing");
+}
+// */
+/* ************************************* РџРѕРІРµРґРµРЅРёРµ РєР°СЂР°РІР°РЅС‰РёРєР° ************************************** */
+void _AmplifyCaravaneer(Critter & cr)
+{
+	DL("Critter level = "+cr.Stat[ST_LEVEL]);
+	_AmplifyCaravaneer(cr, uint(cr.Stat[ST_LEVEL]/6));
+}
+void _AmplifyCaravaneer(Critter & cr, uint lvl)
+{
+	DL("amplify called"+lvl);
+	cr.StatBase[ST_AGILITY] = CLAMP(cr.StatBase[ST_AGILITY]+lvl*1,5,10);
+	cr.StatBase[ST_MAX_LIFE] = CLAMP(50*lvl,100,780);
+	cr.StatBase[ST_CURRENT_HP] = cr.Stat[ST_MAX_LIFE];
+	cr.StatBase[ST_LASER_RESIST] = CLAMP(cr.StatBase[ST_LASER_RESIST]+lvl*20,30,250);
+	cr.StatBase[ST_FIRE_RESIST] = CLAMP(cr.StatBase[ST_FIRE_RESIST]+lvl*20,30,250);
+	cr.StatBase[ST_PLASMA_RESIST] = CLAMP(cr.StatBase[ST_PLASMA_RESIST]+lvl*20,30,250);
+	cr.StatBase[ST_ELECTRO_RESIST] = CLAMP(cr.StatBase[ST_ELECTRO_RESIST]+lvl*20,30,250);
+	cr.StatBase[ST_EXPLODE_RESIST] = CLAMP(cr.StatBase[ST_EXPLODE_RESIST]+lvl*20,30,250);
+	cr.StatBase[ST_NORMAL_RESIST] = CLAMP(cr.StatBase[ST_ELECTRO_RESIST]+lvl*20,30,250);
+}
+// РЅР°СЃС‚СЂРѕР№РєР° РїРѕРІРµРґРµРЅРёСЏ РєР°СЂР°РІР°РЅС‰РёРєР°
+void _SetEvents(Critter & cr, uint model)
+{
+	switch (model)
+	{
+		// С‚СЂСѓСЃ
+		case MODEL_CRVNR_COWARD:
+			cr.StatBase[ST_AI_ID] = AIPACKET_PRIMITIVE_COWARD;
+			cr.SetEvent(CRITTER_EVENT_ATTACKED,"e_CowardAttacked");
+			break;
+		default:
+			break;
+	}
+}
+
+bool e_CowardAttacked(Critter& cr, Critter& attacker)
+{
+	// РµСЃР»Рё Р·РґРѕСЂРѕРІСЊРµ РЅРїС† <95%
+	//cr.Say(SAY_NORM_ON_HEAD,"my health = "+ cr.StatBase[ST_CURRENT_HP] + " max hp = "+cr.StatBase[ST_MAX_LIFE]);
+	if (cr.StatBase[ST_MAX_LIFE]*75>cr.StatBase[ST_CURRENT_HP]*100)
+	{
+
+		uint16 hx = cr.HexX;
+		uint16 hy = cr.HexY;
+		_NpcEraseAllPlanes(cr);
+
+		if (GetFreeHex(cr.GetMap(), 25, hx, hy))
+		{
+			AddWalkPlane(cr, AI_PLANE_WALK_PRIORITY*10,  hx, hy, Random(1,5), true, 1);
+			AddMiscPlane(cr,AI_PLANE_WALK_PRIORITY*10-1,__FullSecond+Random(0,1)*60,"caravan@plane_MiscWaitInAttack");
+		}
+
+
+		return true;
+	}
+	return false;
+}
+// РєР°СЂР°РІР°РЅС‰РёРє РѕС‚Р±РµРіР°РµС‚ Рё Р¶РґРµС‚ РЅРµСЃРєРѕР»СЊРєРѕ РјРёРЅСѓС‚
+void plane_MiscWaitInAttack(Critter& cr)
+{
+}

@@ -1,0 +1,59 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Nìjaký druh oznamovací tabule.}
+{101}{}{Vidíš Klamathskou oznamovací tabuli.}
+{102}{}{Inzeráty a poznámky služeb, jsou pøipnuty pøipínáèky na tabuli. Nìkteré z nich sem byly dány teprve nedávno.}
+
+{110}{}{Je zde pár vìcí. Nìjaké inzeráty, pracovní nabídky, a dokonce nákresy. Všecny vypadají z nedávné doby.}
+{120}{}{Myslím, že se podívám více zblízka na ty nákresy.}
+{130}{}{Tenhle vypadá dobøe -- nìco okolo chlastu.}
+{140}{}{A tady nìco o lázních.}
+{150}{}{Nìkdo vykupuje ještìrèí kùže.}
+{160}{}{Cosi, co se týká krys.}
+{170}{}{Nìco ohlednì starých vìcí.}
+{180}{}{Vypadá to, že se nìkdo ztratil.}
+
+{210}{}{Hrubý náèrt nìèeho, co vypadá jako brahmína, pøeškrtnutý velkým 'X' a slovo 'Torr'
+ naškrábané vespod.}
+{220}{}{Podívám se na ty další vývìsky.}
+{230}{}{Mno, už mám toho ètení dost.}
+
+{240}{}{Pozor! Tohle se týka toho nejdùležitìjšího - chlastu. Práce zvláštì vhodná pro abstinenty.
+ Potøebuji pomoc pøi doplnìní paliva do destilaèního pøístroje. Hledám rychlého a spolehlivého èlovìka.
+ Kontaktujte Whiskey Boba v hospodì U Bucknerové.}
+{250}{}{Podívám se na ty další vývìsky.}
+{260}{}{Mno, už mám toho ètení dost.}
+
+{270}{}{Pohøešovaná osoba. Vidìl nìkdo RadaRa - lovce kožešin? RadaR je asi šest stop vysoký, hladce oholený a
+ býva dobøe upravený (vìtšinou). Ztratil se nìkde severnì odtud a já ho pøirozenì postrádám. -Ardin Bucknerová}
+{280}{}{Podívám se na ty další vývìsky.}
+{290}{}{Mno, už mám toho ètení dost.}
+
+{310}{}{Hodnì dolárkù za kvalitní kožešiny. Máte geckonské kùže? Já mám zase prachy. Zvláštì vítané jsou kùže Zlatých geckonù.
+ Navštivte mne! -Sajag, majitel hospody U Zlatého geckona.}
+{320}{}{Myslím že se podívám na jinou vývìsku.}
+{330}{}{Mno, už mám toho ètení dost.}
+
+{340}{}{Už máme dost tìch zpropadených krys v Lovecké ètvrti. Pøijïte a dostaòte je. Kolik jen mùžete.--Èahoun.}
+{350}{}{Myslím že se podívám na jinou vývìsku.}
+{360}{}{Mno, už mám toho ètení dost.}
+
+{370}{}{Cítíte se špinavý? Nic neudìlá znavenému èlovìku lépe, než poøádná koupel. Tøi potìšením naplnìné vany na výbìr!
+ Vystupuje zde krásná a talentovaná Jenny (pùvodnì z Denu) -- Pro bližší informace navštivte Nosatou Sally v lázních.}
+{380}{}{Myslím že se podívám na jinou vývìsku.}
+{390}{}{Mno, už mám toho ètení dost.}
+
+{400}{}{Dnes už se nedìlají vìci, tak jako døív. Nedìlají se totiž vùbec. Jestli máte zájem o starou dobrou
+ (pøedváleènou) kvalitu, navštivte Vica, obchodníka s antikvami ve východní èásti centra.}
+{410}{}{Myslím že se podívám na jinou vývìsku.}
+{420}{}{Mno, už mám toho ètení dost.}
+
+{430}{}{Vidíš pìkný kus døeva a na nìm pøipnutý cáry papíru. Až chytneš jednoho z tìch pisálkù, co
+ sem dali ty papíry tak je...! Fò! Hergot! Zkoumání tìch papírù tì pìknì utahalo. Radìji si najdi nìco ménì
+ vyèerpávajícího.}
+{440}{}{Grr. (Díváš se na znamení a nedává ti to pøíliš smysl.)}
+{450}{}{He?}
+
+{460}{}{Hrubý náèrt nìèeho, co vzdálenì pøipomíná brahmínu, pøeškrtnutou velkým X, a slovo 'Torr'
+ naškrábané pod tím. (Nejsi zrovna Einstein, ale význam toho je dostateèný.)}
+{470}{}{Eruu. (Dobrá, vypadá to, že nìjaká nebohá duše co se jmenuje Torr, potøebuje nìjak pomoci s brahmínami.)}

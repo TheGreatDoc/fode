@@ -1,0 +1,26 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "_ai.fos"
+#include "guard_red_events.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+void AccessToBaseHex_1(Critter& player, Scenery& scen, bool cps, uint8 dir)
+{
+	if(player.IsPlayer() && player.ParamBase[PLAYER_MAIN_FACTION]!=1)
+	{
+		player.TransitToHex(player.HexX,player.HexY+5,0);
+	}
+}
+
+void AccessToBaseHex_2(Critter& player, Scenery& scen, bool cps, uint8 dir)
+{
+	if(player.IsPlayer() && player.ParamBase[PLAYER_MAIN_FACTION]!=1)
+	{
+		player.TransitToHex(player.HexX-4,player.HexY-6,0);
+	}
+}

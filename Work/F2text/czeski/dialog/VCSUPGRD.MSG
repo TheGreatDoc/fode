@@ -1,0 +1,91 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš Martina.}
+{101}{}{Vidíš rychle mrkajícího chlapíka s otevøenou pusou.}
+{102}{}{Vidíš Martina.}
+{103}{}{Vidíš rychle mrkajícího chlapíka s otevøenou pusou.}
+{104}{}{Dìkuji ti, e jsi nás za-za-záchránil. Do-doslechl jsem se o tom i ta-ta-tady dole.}
+{105}{}{Po-pomóc! Vetøelec!}
+{106}{}{Mu-mu-mutant! Pomóc!}
+{107}{}{Gh-h-ghoul! Pomóc!}
+{108}{}{::Bum-ta-ra-ta-bum::}
+{109}{}{2 Seconds}
+{110}{}{"Maaaay-beeee..."}
+{111}{}{2 Seconds}
+{112}{}{"Yoooou'll think of meee...when you are alllll alone..."}
+{113}{}{2 Seconds}
+{114}{}{"Maaaay-beeee...the one whooo...is waaaaai-ting for yooou..."}
+{115}{}{2 Seconds}
+{116}{}{"...will prove un-truuuuuue..."}
+{117}{}{2 vteøiny}
+{118}{}{"...then what will yooou dooooo?"}
+{119}{}{2 Seconds}
+{120}{}{::Nìmı potlesk, davy jásají::}
+{121}{}{2 Seconds}
+{122}{}{Dì-dìkuji ti, dì-dì-dìkuji ti ti ty-ty jsi bá-bájeèné publikum.}
+{123}{}{2 Seconds}
+{124}{}{O-o-opakovat? Do-dobøe!}
+{125}{}{*Snfff*}
+{126}{}{Wh-?! Aighhh!}
+{127}{}{Aieeeee!}
+{128}{}{Prr, uvolni se!}
+{129}{}{Co máš, sakra, za problémy ?! Uklidni se!}
+{130}{}{Ty-ty-ty jsi mi skoro za-zachránil ivot tam venku.}
+{131}{}{Aieeeeee! Aieeeeee!}
+{132}{}{Omlouvám se, nechtìl jsem tì polekat.}
+{133}{}{Mo-mo-moná, kdy budeš vìnovat více pozornosti tomu co se dìje kolem tebe, moná nás oba nebudeš pøivádìt k infarktu, kamaráde.}
+{134}{}{Ta-ta-tak jo.}
+{135}{}{O-o-omlouvám se.}
+{136}{}{Ne-není mnoho lidí co pøijdou sem, do-do Vault.}
+{137}{}{(Tak dobøe. Není mnoho lidí co pøijdou sem, do Vaultu.)}
+{138}{}{(Promiò. Není mnoho lidí co pøijdou sem, do Vaultu.)}
+{139}{}{Co tady dìláš?}
+{140}{}{Mùeš mi øíct, kde je centrální poèítaè Vaultu?}
+{141}{}{Oh. Pìknì jsme si popovídali. Sbohem.}
+{142}{}{Je prá-právì ta-ta-tamhle...to-to mluxví po-po-poèítaè.}
+{143}{}{(Je právì tamhle. To mluví poèítaè.)}
+{144}{}{Co tady dìláš?}
+{145}{}{Díky. Sbohem.}
+{146}{}{H-h-hlídám vìci us-uskladnìné ta-ta-tatady do-dole. U-u-ujištuji se-se, za-zamknout vše-všechny dveøe.}
+{147}{}{(Hlídám vìci uskladnìné tady dole. Ujišuji se, e všechny dveøe zùstanou zamèenı.)}
+{148}{}{Máš klíè?}
+{149}{}{Co tady dole shromaïujete?}
+{150}{}{Jen se dívám okolo. Nashle.}
+{151}{}{Uh-uh. Ne-ne-ne..nevadí, .roto. v.v.vìtšina dveøí je-je-je ta-ta-tak jak ta-ta-tak za-za-zaseklá.}
+{152}{}{(Uh-uh. Nevadí, protoe vìtšina dveøí je tak jako tak zaseklá.)}
+{153}{}{Co tady dole shromaïujete?}
+{154}{}{Jen se dívám okolo. Nashle.}
+{155}{}{Na-na-náhradní s-s-souèástky, z-z-zdroje, a ru-ru-ruda.}
+{156}{}{(Náhradní souèástky, zdroje, a ruda.)}
+{157}{}{Ruda?}
+{158}{}{Oh. Díky za informaci.}
+{159}{}{Ru-ru-ruda z Re-re-redingu. A-a-ale u-u-u ne-ne-né ta-ta-tak moc.}
+{160}{}{(Ruda z Redingu. Ale u né tak moc.)}
+{161}{}{Nemnoho rudy z Reddingu? Proè?}
+{162}{}{Oh. Díky za informaci.}
+{163}{}{Ne-ne-nevím. Mm..McClure je do-do-doopravdy z-z-znepokojenı.}
+{164}{}{(Nevím. McClure je doopravdy znepokojenı.)}
+{165}{}{Mùeš mi øíct, kde je centrální poèítaè?}
+{166}{}{Moná si s ním pak promluvím. Díky.}
+{167}{}{Èa-èau. C-c-co po-potøebuješ?}
+{168}{}{(Èau. Co potøebuješ?)}
+{169}{}{Geeechk}
+{170}{}{Mùeš, do prdele pøestat zpívat?! Pøivádí mì to k šílenství.}
+{171}{}{Máš pìknı hlas. Mìl bys cvièit.}
+{172}{}{Co tady zase dìláš?}
+{173}{}{Nevadí. Omlouvám se, e obtìuji.}
+{174}{}{Dí-dí-díky! To je od tebe hezkı.}
+{175}{}{Co tady zase dìláš?}
+{176}{}{Jen nápad. Dávej pozor.}
+{177}{}{Pa-pa-pardon. Bu-bu-budu stát.}
+{178}{}{(Pardon. Budu stát.)}
+{179}{}{Tak... co tady zase dìláš?}
+{180}{}{Dobøe. Dìlém svìtu slubu a mlè u.}
+{181}{}{Bu-bu..buï po-po..potichu! Shhhhhh!}
+{182}{}{Promiò}
+{183}{}{Cc-co ta-ta-tady do-do-dole dìláš?!}
+{184}{}{GEK}
+{185}{}{Ge-ge-GECK? M-m-mùeš pro-pro-prozkoumat po-po-poèítaè... mi-mi-mikrofon.}
+{186}{}{Dobøe. Díky.}
+{187}{}{Zuh-zuh-zuh-Zzzzzzzzz}
+{188}{}{Ne-nepøibliuj se-se k tì-tì-tìm dveøím!}
+{189}{}{Zzzzzzz.}

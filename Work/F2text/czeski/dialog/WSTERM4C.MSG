@@ -1,0 +1,158 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Poèítaèový terminál.}
+{101}{}{Obslužný terminál Bioskladu.}
+{102}{}{Nemùžeš pøeèíst co je na obrazovce.}
+{103}{}{Bio sklad - hlavní menu
+                                              Odebrat
+                                                                Uložit}
+{104}{}{}
+{105}{}{}
+{106}{}{}
+{107}{}{Odebrat}
+{108}{}{Uložit}
+{109}{}{Konec}
+{110}{}{Uh.}
+{111}{}{[Nemùžeš pøeèíst text na obrazovce.]}
+{112}{}{Tento terminál je mimo provoz
+                                Prosím kontaktujte správce sítì pro další info.}
+{113}{}{}
+{114}{}{Fuj}
+{115}{}{Konec}
+{116}{}{Menu: odebrat
+                                                       Viry
+                                                               Orgány
+                                                              Mtrvoly}
+{117}{}{}
+{118}{}{}
+{119}{}{}
+{120}{}{Vybrat virus}
+{121}{}{Vybrat orgán}
+{122}{}{Vybrat mrtvolu}
+{123}{}{Návrat do hlavního menu}
+{124}{}{Exit}
+{125}{}{Menu: viry
+                                                            Snìt slezinná
+                                                          Èerný mor (Mutace 238)
+                                          Neštovice (Mutace 1025)
+                                            Ebola
+                                                                   Hantavirus (Mutace 304)}
+{126}{}{}
+{127}{}{}
+{128}{}{}
+{129}{}{}
+{130}{}{}
+{131}{}{Získat snìt slezinnou}
+{132}{}{Získat èerný mor}
+{133}{}{Získat neštovice}
+{134}{}{Získat ebolu}
+{135}{}{Získat Hantavirus}
+{137}{}{Návrat do hlavního menu}
+{138}{}{Konec}
+{139}{}{[Sleduješ, jak robot prochází kvanta biologických materiálù a podává ti vše promptnì otvorem ve zdi. Vše se mìní v horor ve chvíli, kdy upouštíš zkumavku. Tím nejrozumìjším øešením se teï zdá - utíkat!]}
+{140}{}{Konec.}
+{141}{}{Menu: orgány
+                                                           Srdce
+                                                                Mozek
+                                                                Ledvina
+                                                                 Játra
+                                                                  Plíce}
+{142}{}{}
+{143}{}{}
+{144}{}{}
+{145}{}{}
+{146}{}{}
+{147}{}{Odebrat srdce}
+{148}{}{Odebrat mozek}
+{149}{}{Odebrat ledvinu}
+{150}{}{Odebrat játra}
+{151}{}{Odebrat plíce}
+{152}{}{Návrat do menu: odebrat}
+{153}{}{Konec}
+{154}{}{Pozor! Chyba skladovacího systému.
+                        [Vzhledem k tomu, co je tu napsáno, se mechanismus porouchal velice dávno. Pokud nechceš dìlat polévku, asi nemá smysl pokraèovat.]}
+{155}{}{}
+{156}{}{Návrat do menu: orgány}
+{157}{}{Návrat do menu: odebrat}
+{158}{}{Konec}
+{159}{}{Pozor! Chyba skladovacího systému.
+                         Skladovací buòky 101 - 104
+                                      Požadavek na opravu nastavení
+                                  [Velice pøesné a složité výpoèty budou potøeba k tomu, aby se daly zachránit všechny orgány. Na obrazovce se míhají spousty vzorcù a názvosloví. Je to pomìrnì dost složité.]}
+{160}{}{}
+{161}{}{}
+{162}{}{}
+{163}{}{Pokusit se opravit data}
+{164}{}{Návrat do menu: odebrat}
+{165}{}{Zkusit pozdìji.}
+{166}{}{[Dík tvé neznalosti byly všechny mozky znièeny. Zvýšení teploty na 98.6 stupòù asi bylo trošku moc. No jo, vìda nikdy nebyla tvojí silnou stránkou.]}
+{167}{}{Konec.}
+{168}{}{[Metoda pokus - omyl by pøesnì definovala tvùj pøístup k tomuto problému. Podaøilo se ti zachránit pouze jediný mozek ze ètyø. Vìda je trošku složitìjší než se dalo pøedpkládat.]}
+{169}{}{Odebrat mozek}
+{170}{}{[Díky tvým prùmìrným znalostem se ti podaøilo zachránit polovinu mozkù. Ale vìdec zdaleka nejsi.]}
+{171}{}{Odebrat mozek}
+{172}{}{[Ani náhodou nevíš, jak se ti to povedlo. S výjimkou jediné chybièky jsou všechny mozky zachránìny. Koneènì se zužitkovalo ètení všech tìch pøíruèek.]}
+{173}{}{Odebrat mozek}
+{174}{}{[Jen nìkolik málo pøíkazù a krize je zažehnána a mozky v bezpeèí. Vìda je pro tebe víc, než jen koníèek. Je to poznat.]}
+{175}{}{Odebrat mozek}
+{176}{}{Nabídka odebrání mozku:
+                                             Abnormální mozek
+                                                     Šimpanzí mozek
+                                                     Lidský mozek
+                                                     Kybernetický mozek}
+{177}{}{Nabídka odebrání mozku:
+                                             Abnormální mozek
+                                                     Šimpanzí mozek
+                                                     Lidský mozek
+                                                     Kybernetický mozek - znièen}
+{178}{}{Nabídka odebrání mozku:
+                                             Abnormální mozek
+                                                     Šimpanzí mozek
+                                                     Lidský mozek - znièen
+                                                Kybernetický mozek - znièen}
+{179}{}{Nabídka odebrání mozku:
+                                             Abnormální mozek
+                                                     Šimpanzí mozek - znièen
+                                             Lidský mozek - znièen
+                                              Kybernetický mozek - znièen}
+{180}{}{}
+{185}{}{}
+{189}{}{}
+{193}{}{}
+{196}{}{Abnormální mozek}
+{197}{}{Šimpanzí mozek}
+{198}{}{Lidský mozek}
+{199}{}{Kybernetický mozek}
+{200}{}{[Aèkoli výpis ukazuje, že mozek je v poøádku, nervové signály jsou velice slabé.]
+                                          Odebrat?}
+{201}{}{}
+{202}{}{Ano}
+{203}{}{Ne}
+{204}{}{[Mozkové vlny jsou aktivní, ale liší se od lidských.]
+      Odebrat?}
+{208}{}{[Mozková aktivita odpovídá prùmìrnému lidskému mozku.]
+      Odebrat?}
+{212}{}{[Mozková kapacita mimo rozsah! Vzhledem k tomu, že mozek vykazuje i digitální impulsy, nebude asi lidského pùvodu.]
+     Odebrat?}
+{216}{}{[Robot se rychle vydal právì pro "tvùj" mozek. Pøi návratu je zøejmé, že má nìjaký problém. A už jisté je to ve chvíli, kdy exploduje. Naštìstí se mu podaøilo dopravit ti mozek ještì pøedtím, než se stal historií.]}
+{217}{}{Konec}
+{218}{}{Nabídka odbìru mrtvol
+                                          Vojín Dobbs}
+{219}{}{}
+{220}{}{Odebrat tìlo vojína Dobbse}
+{221}{}{Návrat do menu: odebrat}
+{222}{}{Konec}
+{223}{}{[Vzhledem k výpisu je vojín Dobbs naživu! Je umístìn v Experimentální Bio-Med gelové regeneraèní nádrži.]
+   Odebrat?}
+{224}{}{}
+{225}{}{Ano}
+{226}{}{Ne}
+{227}{}{[Tìlo vojína Dobbse teï leží u tvých nohou a k tvému pøekvapení se právì postavil a zaèal na tebe mluvit. Celkem divné - moc mrtvì nevypadá!?]}
+{228}{}{Konec}
+{229}{}{Momentálnì nejsou žádné mrtvoly na skladì.}
+{230}{}{Návrat do menu: odebrat}
+{231}{}{Konec}
+{232}{}{[Aèkoli je celkem zøetelnì jasné, že nádrže jsou prázdné, program hlásí, že jsou plné. Asi chyba programu. No jo.]}
+{233}{}{Návrat do hlavního menu}
+{234}{}{Konec}
+
+{300}{}{ nemùže pøeèíst, co se míhá na obrazovce.}

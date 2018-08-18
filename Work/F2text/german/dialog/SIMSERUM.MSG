@@ -1,0 +1,3 @@
+{100}{}{Das ist für den Einsatz bei Supermutanten bestimmt.}
+{101}{}{Er hälst  }
+{102}{}{  Erfahrungspunkte für den Einsatz des Mutationsserums.}

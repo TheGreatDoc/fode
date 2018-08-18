@@ -1,0 +1,146 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš nìkoho, jeho kùe byla velmi škaredì popálena.}
+{101}{}{Vidíš ghoula, obèana  Gecka.}
+{102}{}{Vidíš nìkoho, jeho kùe byla popálena radiací. Takovou radiací, která by byla schopná zabít, ale jemu to evidentnì nic nedìlá.}
+
+{110}{}{Osoba, kterou vidíš je na první pohled slabá. Jeho kùe jakoby byla škaredì popálená.}
+{111}{}{Vidíš Ozáøeného, obèana Gecka.}
+{112}{}{Vidíš nìkoho, kdo byl vystaven tak silné radiaci, e vypadá slabì.
+ Tak silná radiace, by mìla èlovìka zabít, ale zdá se, e mu to tolik nevadí.}
+
+{120}{}{Díky za to, e jsi nás zachránil pøed Vault City.}
+{121}{}{Ty fanatici z Vault City by nás byli pobili, kdyby nebylo tebe.}
+{122}{}{Jsi hrdina.}
+{123}{}{Kdykoliv ke mì mùeš zajít na dušenıho geckona.}
+{124}{}{Díky za opravu našeho reaktoru.}
+{125}{}{Je cítit, e je to teï chladnìjší, ale díky za opravu našeho dìravého reaktoru.}
+{126}{}{Díky, e jsi kvùli nám zatoèil s tìmi fanatiky z Vault City.}
+{127}{}{Kdybys nám nepomohl, Vault City by nás znièilo.}
+{128}{}{Jsi naším hrdinou.}
+{129}{}{Ještì jednou díky.}
+{130}{}{Díky za tvojí pomoc.}
+{131}{}{Jsi nejlepší. Díky.}
+{132}{}{Dost dobrı na hezouna.}
+
+{140}{}{Nazdar, mùj hezouèkı pøíteli.}
+{141}{}{Vítej v Gecku.}
+{142}{}{Zdar, pøíteli.}
+{143}{}{Nejsi jako ostatní hezouni.}
+{144}{}{Vidíš v pustošení nìco zajímavého?}
+{145}{}{Èau.}
+{146}{}{Brı den, pøíteli.}
+{147}{}{Náš atomovı reaktor mì naplòuje pıchou.}
+{148}{}{Vyuíváme tady atomovou energii.}
+{149}{}{Nìkdy budou i ostatní schopni vyuívat naši energii.}
+{150}{}{Jsem rád, e ne všichni hezouni jsou jako ty z Vault City. }
+{151}{}{Kdyby lidé byly jako ty, nemìli bychom s nimi ádné problémy.}
+
+{160}{}{Hmmph, další hezoun, kterı podvádí.}
+{161}{}{Hojdy, hezoune.}
+{162}{}{Nazdar.}
+{163}{}{Jak je?}
+{164}{}{Mìj se hezky bìhem tvého pobytu ve mìstì.}
+{165}{}{Pøicházíš z daleka?}
+{166}{}{Vypadáš, jako bys pocházel z Vault City.}
+{167}{}{Jsme tu tolerantní, ale ne pitomí, hezoune.}
+{168}{}{Vyhıbej se Vault City. Tamní chlápci jsou pìknı sráèi.}
+{169}{}{Dobrı den. V poslední dobì je pìknì sucho.}
+
+{180}{}{V poslední dobì je urèitì sucho.}
+{181}{}{K èertu se vším tím tabákem .}
+{182}{}{Myslím, e atomovı reaktor škodí tabáku.}
+{183}{}{Slyšel jsem, e nìkterı tabáky jsou nebezpeènı.}
+{184}{}{Slyšel jsem, e tento kmen ví, jak vyvolat déš.}
+{185}{}{Letos je pìkná úroda.}
+{186}{}{Obilí je vysokı jako kráva.}
+{187}{}{Zelenina je pro tebe dobrá.}
+{188}{}{Témìø pøipravenı ke sklizni.}
+{189}{}{Urèitì by to chtìlo zapršet.}
+
+{200}{}{Pozoruj ty brahmíny.}
+{201}{}{Ty brahmíny jsou roztomilé. Nechce se mi je zabít.}
+{202}{}{Jsem tak znudìnej.}
+{203}{}{Mù, mùùù, mùù?}
+{204}{}{U jsem tu byl dost dlouho.}
+{205}{}{Zapácháš tak ty nebo ta brahmína?}
+{206}{}{Vypadají skoro tak, jakoby vìdìli co je èeká.}
+{207}{}{Nìkdo tipoval jednu z posledních nocí.}
+{208}{}{Nìkteøí z nich jsou více mazanìjší ne ostatní.}
+{209}{}{Hmm, divím se, proè na nich nikdo nejel.}
+
+{220}{}{Hej ty, hezoune.}
+{221}{}{Kup nám panáka, hezoune.}
+{222}{}{Chlapèe, mám takovou ízeò.}
+{223}{}{Není to skvìlı, dát si s námi sklenièku?}
+{224}{}{Kde jsou moji kamarádíèci, Honza Procházka a Jimy Trám?}
+{225}{}{Dám si mùj protøepanı, ne míchanı.}
+{226}{}{Poádej Wooze, aby ti vyprávìl pøíbìh.}
+{227}{}{Zazpíváme si písnièku.}
+{228}{}{...a potom hlavy dìlají co? Vùbec tomu nerozumím Woozi.}
+{229}{}{Co je jablko?}
+
+{240}{}{Na hezouna jsi dost pìknej.}
+{241}{}{Kup nám ještì jednu rundu, hezoune.}
+{242}{}{./~ Jak jsem vyprahlej, Jak jsem vyprahlej... ./~}
+{243}{}{Mì se zamlouváš.}
+{244}{}{Hej, dej si pozor na krysu.}
+{245}{}{Zajímalo by mì, proè se k nám nikdy Skeeter nepøipojil?}
+{246}{}{Snaíme se vyšlechtit novı typ brahmíny -- jenom s jednou hlavou.}
+{247}{}{Nìkdo by tady mìl zaèít šít víc šatù.}
+{248}{}{Ahh, pivo je vıbornı.}
+{249}{}{Tohle pivo je vynikající. Je to voda -- a mnohem víc.}
+
+{260}{}{Jsi ten nejlepší hezoun, kterıho jsem kdy poznal.}
+{261}{}{Ještì radio-dus! Ještì radio-dus!}
+{262}{}{Dáš nám další, eh hezoune?}
+{263}{}{Ti chudáci mutanti v Broken Hills.}
+{264}{}{Slyšel jsem, e ti geckonové jsou jako my. Zmìnìní radiací.}
+{265}{}{Pøilnuli jsme k ivotu tady, jako malı geckon na zeï.}
+{266}{}{Vím, e Skeeter vytváøí obrovkého robota.}
+{267}{}{Slyšel jsem, e Chester je špionem Vault City.}
+{268}{}{Rád bych se znovuzrodil v hezouna.}
+{269}{}{Pøísahám, e jsem v noci vidìl nad námi létat vìci.}
+
+{280}{}{Miluju tì, èlovìèe.}
+{281}{}{Jsi nejlepší.}
+{282}{}{Nukleuj Vault City dokud to hne!}
+{283}{}{./~ 99 støíkaèek Rad-away na zdi, 99 støíkaèek... ./~}
+{284}{}{./~ Pracuju na re-akt-oru celı mùj ivot... ./~}
+{285}{}{Kromì tebe, bych vùbec ádnımu hezounovi nevìøil.}
+{286}{}{Myslím, e nìkteøí z vás hezounù jsou pøece jenom v pohodì.}
+{287}{}{Mìli bychom Chestra pozvat na sklenièku.}
+{288}{}{A se Znovuzrodím, chci bıt jako ty.}
+{289}{}{Jistì, e jsem rád, e náš reaktor bìí.}
+{290}{}{Musím bıt opilı. Wooz mi zaèíná dávat smysl.}
+{291}{}{Myslím, e jsem jednou vidìl jablko... nebo to byl banán?}
+
+{300}{}{Reaktor pracuje tak dobøe, e mùeš doslova slyšet jak si pøede.}
+{301}{}{Díky za to, e záleitost s Vault City pro nás dopadly, tak jak dopadly.}
+{302}{}{Teï budeme mít o tolik víc energie.}
+{303}{}{Ne moc dlouho, dokud nebudeme moct prodávat energii do Vault City.}
+{304}{}{Goshi, teï budeme potøebovat z Reddingu mnoho Mìdi.}
+{305}{}{Reaktor teï pracuje vıbornì. Díky.}
+{306}{}{Jsi nejlepší.}
+{307}{}{Díky za opravu našeho atomového reaktoru.}
+{308}{}{Reaktor pracuje, tak jak jen si mùeš pøát. Díky.}
+{309}{}{Jsi ten nejlepší hezoun, kterého jsem kdy potkal.}
+
+{320}{}{Znovuzrodím se, kamaráde. Znovuzrodím!}
+{321}{}{Jsi jeden z nás.}
+{322}{}{Ahoj, kamaráde. Znovuzrození je na dosah.}
+{323}{}{Brzo budeme všichni jen jeden.}
+{324}{}{On ví všechno. Zboòuji jeho uhlazenı koich.}
+{325}{}{Zatracení kultisti. Vypadnìte odtud.}
+{326}{}{Znovu obnovím to... (dìlá rukama gesta), doprdele.}
+{327}{}{Zaøídím tvojí obnovu právì tady, kámo.}
+{328}{}{Není dne, abych nenarazil na dalšího zatracenıho kultistu.}
+{329}{}{Nikdy mì nepøistihneš uctívat nìjakou pøerostlou krysu.}
+
+{340}{}{Mìl bys s tìmi ranami jít za Lennym.}
+{341}{}{Vypadáš poøádnì pomlácenì. Jdi za Lennym.}
+{342}{}{Nemìl by sis zahrávat se smrtí. Jdi za Lennym.}
+{343}{}{Lenny je v Haroldovì kanceláøi. Mìl bys ses nechat od nìho prohlédnout.}
+{344}{}{Jak jsi mohl pøijít k takovım ranám?}
+{345}{}{Jeíši. Mìl bys jít k Lennymu.}
+{346}{}{Lenny je v usedlosti; jdi a nech ho, aby se podíval na tvá zranìní.}
+{347}{}{Urèitì bych neudìlal dobøe, kdybych šel za nìkım jinım.}

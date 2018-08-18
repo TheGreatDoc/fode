@@ -1,0 +1,54 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš osobu obleèenou do kombinézy používané ve Vaultu.}
+{101}{}{Vidíš obyvatele Enklávy.}
+{102}{}{Vidíš pobledlého, ale jinak docela zdravì vyhlížejícího obyvatele.}
+{103}{}{Dej si pohov.}
+{104}{}{Jaký film dávají dnes veèer v kinì?}
+{105}{}{Co jsi zaè?}
+{106}{}{Poèasí je tu stále stejné.}
+{107}{}{Projekt pokraèuje podle plánu.}
+{108}{}{To o viceprezidentovi Birdovi je hnusná pomluva.}
+{109}{}{Moje pøíští støídání nebude døív jak za nìkolik hodin.}
+{110}{}{Bùh ochraòuj Ameriku.}
+{111}{}{Projekt je naše záchrana.}
+{112}{}{Jsem rád, že nejsem na pevninì.}
+{113}{}{Zase nìjaký výcvik.}
+{114}{}{Proè je tu takovej rámus?}
+{115}{}{To je poplach od reaktoru.}
+{116}{}{Uh, oh.}
+{117}{}{Bylo by dobré najít nìjaké Rad-X tablety.}
+{118}{}{Ta vìc se vždycky pokazí.}
+{119}{}{Sakra. Asi jsem se spálil.}
+{120}{}{Je to nejteplejší?}
+{121}{}{Toto není dobré.}
+{122}{}{Kurva, kurva a ještì jednou kurva.}
+{123}{}{Kde je moje kyslíková maska?}
+{124}{}{Je tu nìco smìšného.}
+{125}{}{Necítím se pøíliš dobøe.}
+{126}{}{Ten vzduch mì pálí v krku.}
+{127}{}{Šéfe, strašnì mì pálí záda.}
+{128}{}{Moje plíce jsou v jednom ohni.}
+{129}{}{Myslím, že se potøebuji nadýchat èerstvého vzduchu.}
+{130}{}{Stmívá se tady?}
+{131}{}{Jsem tak unavený, musím odpoèívat.}
+{132}{}{Myslím, že se tu na chvilku posadím.}
+{133}{}{Další výcvik?}
+{134}{}{Myslím, že jsem slyšel støelbu.}
+{135}{}{Hej, co seš zaè?}
+{136}{}{Stùj! Kdo sakra seš?}
+{137}{}{Jsem z každého výcviku strašnì unavený.}
+{138}{}{Asi jsem objevil vetøelce.}
+{139}{}{Tím se netrap.}
+{140}{}{Vojáci se o nás postarají.}
+{141}{}{Kde sakra jsou ti vojáci, když je èlovìk potøebuje?}
+{142}{}{Musím zùstat klidný - zùstat klidný.}
+{143}{}{Tohle nikdy nedokonèím.}
+{144}{}{Jsem si jistej, že bych teï byl radìji nìkde jinde.}
+{145}{}{Ten operátor u terminálu byl moc šikovný.}
+{146}{}{To nedává smysl.}
+{147}{}{Za tohle jsem dost špatnì placený.}
+{148}{}{Dìlám tu práci za všechny ostatní.}
+{149}{}{Proè lidé nedìlají to, co jim bylo urèeno?}
+{150}{}{Když nefunguje terminál tak ho kopnutím skoro vždy opravím.}
+{151}{}{Tahle hra je dost "cool". Doufám, že mì nikdo nenachytá.}
+{152}{}{Potøebuju si dát kafe.}

@@ -1,0 +1,12 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš pøístupovı terminál k elektrárnì.}
+{101}{}{Tahle konzole musí bıt pouívána k regulaci a toku energie v Broken Hills.}
+{102}{}{Bez dobrého uváení bude lépe se toho radìji nedotıkat, dá se ledacos pokazit.}
+{103}{}{Nevìdeckı pøístup k ovládání nemùe pøidat Erikovi extra šávu.}
+{104}{}{Podaøilo se ti do Erikova domku pøesmìrovat více energie.}
+{105}{}{Opravdu bude lepší na to nešahat, náhodou dostaneš ránu.}
+{106}{}{Pokoušíš se zvıšit pøíkon energie do Erikova domku, bohuel bez viditelného vısledku.}
+{107}{}{Hrát s proudem se nevyplácí, teï dostáváš poøádnou ránu.}
+{108}{}{Zkusil jsi na ovládací panelu navolit vìtší pøíkon do Erikova domu.}
+{109}{}{Koneènì se ti podaøilo nasmìrovat elektøinu k Erikovi domù. A navíc ještì zoptimalizovat celou Broken Hillskou elektrickou sí. To tì v ÈEZu nepochválí.}
+{110}{}{Erik má šávy dost a ty u s tím nic neudìláš.}

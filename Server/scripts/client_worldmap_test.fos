@@ -1,0 +1,107 @@
+/// author: JohnPL
+/// Testowanie Worldmap Graphics API
+
+#include "_defines.fos"
+#include "client_worldmap_h.fos"
+
+class CallbackTest : IWMElementCallbackMouseClick, IWMElementCallbackUpdate, IWMElementCallbackMouseDown, IWMElementCallbackMouseUp, IWMElementCallbackMouseMove
+{
+	void OnUpdate()
+	{
+		//Message("On Update callback");
+	}
+
+	void OnMouseDown(int click)
+	{
+		Message("On Mouse Down callback");
+	}
+
+	void OnMouseClick(int click)
+	{
+		Message("On Mouse Click callback");
+	}
+
+	void OnMouseUp(int click)
+	{
+		Message("On Mouse Up callback");
+	}
+
+	void OnMouseMove()
+	{
+		//Message("On Mouse Move callback");
+	}
+}
+
+void InitWorldMapTest() {
+
+	IWMImageOpt@ testImage = WM_AddImage();
+	testImage.Image(PT_ART_SKILLDEX, "pbear.png")
+		 .Position(10, 10); 
+
+
+	IWMTextOpt@ testText1 = WM_AddText();
+	testText1.Text("TestTxT")
+		.Position(ZONE_X(3), ZONE_Y(1))
+		.Size(ZONE_X(1), 30)
+		.Flags(FT_CENTERX);
+
+	
+	uint dx = 30;
+	IWMTextOpt@ testText2 = WM_AddText()
+		.Text("Arroyo")
+		.Position(ZONE_X(3) - dx, ZONE_Y(3))
+		.Size(ZONE_X(1) + 2 * dx, 30)
+		.Flags(FT_CENTERX);
+
+
+	CallbackTest callbackTest;
+
+	WM_AddText().Text("Click Here 1")
+		.Position(ZONE_X(5), ZONE_Y(3)+5)
+		.Size(ZONE_X(1.5), 10)
+		.Color(COLOR_WHITE)
+		.DownColor(COLOR_LRED)
+		.CallbackUpdate(callbackTest)
+		.CallbackMouseDown(callbackTest)
+		.CallbackMouseClick(callbackTest)
+		.CallbackMouseUp(callbackTest)
+		.CallbackMouseMove(callbackTest);
+
+	WM_AddText().Text("Click Here 2")
+		.Position(ZONE_X(5), ZONE_Y(3)+20)
+		.Size(ZONE_X(1.5), 10)
+		.Color(COLOR_WHITE)
+		.DownColor(COLOR_LRED)
+		.CallbackMouseClick(callbackTest)
+		.CollisionTransparent(false); //Colision will not be forwarded to engine
+	
+
+
+	WM_AddImage().Image(PT_ART_MISC, "square.png")
+		.Position(ZONE_X(0), ZONE_Y(3));
+
+	WM_AddImage().Image(PT_ART_MISC, "square.png")
+		.Position(ZONE_X(2), ZONE_Y(3))
+		.Color(COLOR_LRED);
+
+	
+	for(uint x=3 ; x<7; x++) 
+	{
+		for(uint y=4 ; y<6; y++) 
+		{
+			WM_AddImage().Image(PT_ART_MISC, "square.png")
+				.Position(ZONE_X(x), ZONE_Y(y))
+				.Color(COLOR_LGREEN);
+		}
+	}
+
+	for(uint x=5 ; x<8; x++) 
+	{
+		for(uint y=0 ; y<3; y++) 
+		{
+			WM_AddImage().Image(PT_ART_MISC, "square.png")
+				.Position(ZONE_X(x), ZONE_Y(y))
+				.Color(COLOR_SAND);
+		}
+	}	
+}

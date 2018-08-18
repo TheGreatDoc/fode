@@ -1,0 +1,66 @@
+#Pøeloil birdman@post.cz, http://www.mujweb/cz/www/birdman, 0604 540689
+{100}{}{Vidíš atraktivní mladou enu.}
+{101}{}{Vidíš lázeòskou obsluhu.}
+{102}{}{Vidíš jednu z dívek Nosaté Sally.}
+{103}{}{Vidíš znudìnì vypadající enu.}
+{104}{}{Vidíš enu která tì zkoumá pohledem.}
+{105}{}{Tahle ena tì doslova svléká pohledem.}
+{106}{}{Vidíš mladou enu.}
+
+{110}{}{To bylo rychlı.}
+{111}{}{Nemohlo to trvat déle, zlatíèko?}
+{112}{}{Moná to bude pøíštì delší?}
+{113}{}{Víš, tohle nejsou dostihy.}
+{114}{}{Neøíkají ti pøátelé 'Rychlíku'?}
+{115}{}{Kdyby byli všichni mí zákazníci tak rychlí, šla bych brzy domù.}
+{116}{}{Bude vìtší zábava, kdy poèkáš, a ti s tím pomùu.}
+{117}{}{Kdybys poèkal, a se svléknu, urèitì by se ti to líbilo víc.}
+
+{120}{}{To bylo opravdu pìkné. Jsi opravdovı chlap.}
+{121}{}{To bylo úasné. Jsi nádhernı. Ještì jednou!}
+{122}{}{Oh ano, zlatíèko, ještì nikdy jsem to tak nemìla. (ááách)}
+{123}{}{Jsi nejlepší. Vra se brzy.}
+{124}{}{Jsem si jista, e jsi nìkterá dìvèata z tvého kmene udìlal velmi šastnımi.}
+{125}{}{Ne zlato, velikost není všechno. Bylo to hezké.}
+{126}{}{Nejsi jenom - hup na to a je to. Mmmm...}
+{127}{}{Hezkej malej šikula, co ho tam máš schovanıho...}
+
+{130}{}{Velikost je dùleitá! Sladkı zázrak ivota.... }
+{131}{}{A pøijdeš pøíštì, budu dìlat pøesèasy.}
+{132}{}{Jistì sis za svı peníze uil.}
+{133}{}{Na zbytek dne si budu muset vzít volno.}
+{134}{}{Uau! Taky se s tebou otøásla zem?}
+{135}{}{Teï u vím, jak se cítila Kateøina Veliká.}
+
+{140}{}{No, dolar je dolar. }
+{141}{}{Tohle bylo, hmm, jiné, øekla bych.}
+{142}{}{Tohle bylo fakt super. Další!}
+{143}{}{Ne, nemùeš pouívat mùj parfém.}
+{144}{}{Dobrá, alespoò tvùj knírek je menší, ne má mnoho mıch zákazníkù.}
+{145}{}{Jsi si jistá, e jsi holka?}
+
+{150}{}{To bylo velmi nìné.}
+{151}{}{Tohle bylo nezvyklé, ale rozhodnì ne špatné.}
+{152}{}{Myslím, e bych si to ráda nìkdy vyzkoušela znovu.}
+{153}{}{Mìli bychom se nìkdy sejít mimo pracovní dobu.}
+{154}{}{To bylo sladkı, cukøíèku.}
+{155}{}{Jùùha! Od teï bude mùj ivot úplnì jinı.}
+{156}{}{Nevìdìla jsem, e by to mohlo bıt takové...}
+
+{160}{}{Jdi si promluvit s Nosatou Sally.}
+{161}{}{Vypadáš roztomile.}
+{162}{}{Miluj mì dlooouho!}
+{163}{}{Pøijdi se na mì nìkdy podívat.}
+{164}{}{(och, taková muná hruï)}
+{165}{}{Bıvala jsem èistá jak padlı sníh, ale pak jsem se nechala svést.}
+{166}{}{Suknièkáøi.}
+{167}{}{Hej ty, tygøe.}
+{168}{}{Hej, beeejby.}
+{169}{}{Bì si promluvit se Sally, jestli chceš nìjakou akci.}
+{170}{}{Nahoru a dolù, nahoru a...}
+{171}{}{Vypadáš, e potøebuješ koupel.}
+{172}{}{Och, barbar. Mám ráda exotiku.}
+{173}{}{Obvykle to s barbarama nedìlám.}
+{174}{}{Líbí se ti co vidíš, baby?}
+{175}{}{Chceš mì?}
+{176}{}{Jestli si chceš uít, budeš muset nejdøív zacálovat.}

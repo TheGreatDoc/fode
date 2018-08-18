@@ -1,0 +1,40 @@
+-------------------HELP INFO-------------------
+
+FOR MAPS Time: -1 = day/night, 0 = only night, 720 = only day
+
+config.fos        //ustawienia rozne servera
+books.fos				// Ksiazki do czytania na exp.
+locks.fos				// Klodki zakladane na zamki
+fix_boy.fos				// sceneria do fixboya
+repair.fos				// co do naprawy itemуw trzeba
+resources.fos			// itemy z sceneri
+disassemble.fos			// rozkladanie itemow repeirem
+repair.fos				// system naprawy itemow
+parameters.fos       // parametry traitуw i statystyk poczatkowych(?)
+fonline_tla.cpp       // parametry traitуw i statystyk poczatkowych(?)
+_colors.fos				// kolory i czcionki do wyboru
+_defines.fos			// nazwy pidy perkow, rodzaje etc..
+main.fos				// mechy,craft, bounty hunter (line 800),
+						   latarki (line 670), itemy dla doktora (line 1258),
+						   tworzenie baz (line 1167)
+merchantsys.fos			// itemy kupcуw
+spawn.fos				// spawn itemow w kontenerach
+critter_item_movement	// Perki itemуw (active slot)
+def_server_scripts.fos	// dodawanie mercy i spawnowanych critterуw z broni№ w reku
+merchantsys.fos			// ustawienia (jakie i ile itemуw) dla kupcуw
+server_scripts.fos		// merce kupowane (void merc_dealer_merc)
+dev_server_scripts.fos	// dev panel parametry
+worldmap_init.fos		// nowe encontery, itemy npcy na encach
+worldmap.fos        // nowe encontery
+entire.fos				// zdefiniowane rodzaje wejsc na mape
+_maps.fos				// zdefiniowane maps
+eventsys.fos			// uint e_PlayersTown(uint[]@ values) WYЈҐCZONE MIASTA
+combat.fos				// ustawienia perkуw radiacyjny,uszkadzajavy,paralizator
+drugs.fos				// system jedzenia
+lockers.fos				// usuwanie zamka z drzwi i kontenerуw (removed lock)
+replication.fos   // lokacje odkyte na mapie (line 108)
+item.fos        //usuwanie i dodawanie itemu/drzwi z terminala
+
+BRAKI W GRZE:
+maіa czcionka: џ 
+duza czcionka: Ј

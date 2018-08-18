@@ -1,0 +1,27 @@
+# quick look
+{100}{}{Tu vois un maquereau.}
+
+# examine
+{150}{}{Tu vois un homme bien habillé. Ses vêtements brillent tellement qu'ils réfléchissent une lumière aveuglante.}
+{151}{}{Tu vois un homme avec des vêtements tellement tape-à-l'œil qu'il faudrait des lunettes de soleil pour le regarder.}
+{152}{}{Tu vois un maquereau. Il a vraiment de la classe.}
+{153}{}{Tu vois un maquereau. Il te fait un signe.}
+{154}{}{Tu vois un maquereau. Il est tellement élégant qu'il pourrait être élu maquereau de l'année.}
+{155}{}{Tu vois un maquereau. Ses vêtements sont tellement tape-à-l'œil qu'il faudrait des lunettes de soleil pour le regarder.}
+
+# 15. ENCLAVE DESTROYED (MALE)
+{520}{}{Elle a intérêt d'avoir mon fric...}
+{521}{}{Ces touristes ne sont pas aussi obsédés que je le voudrais.}
+{522}{}{Celle-là elle a intérêt à ne rien me cacher...}
+{523}{}{Tu cherches un peu d'action ?}
+{524}{}{Tu cherches quelque chose pour te rafraîchir le... gosier ?}
+{525}{}{Tu ne pourras trouver mieux NULLE PART AILLEURS !}
+{526}{}{Je suis si brillant que Reno en perd de son éclat !}
+{527}{}{Si t'as des jetons, tu peux avoir un avant-goût du paradis.}
+{528}{}{Besoin de compagnie pour ce soir ? J'en ai une vrrrraiiiiment mignonne pour toi.}
+{529}{}{C'est pas des esclaves, c'est des vraies professionnelles... T'écoutes ce que je te dis ?}
+{530}{}{Les femmes les plus raffinées de tout New Reno. Si tu veux, elles sont à toi... si tu as des jetons.}
+{531}{}{J'ai là une femme qui fera de toi un vrai mâle, en échange de quelques jetons.}
+{532}{}{J'ai ce qu'il y a de mieux dans mon étable.}
+{533}{}{Fais-moi confiance. J'ai été élu maquereau de l'année pendant deux années consécutives.}
+{534}{}{J'ai les meilleures gonzesses de tout New Reno. Essaie-les et tu verras.}

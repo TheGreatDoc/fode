@@ -1,0 +1,799 @@
+#include "_teams.fos"
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "_bags.fos"
+
+void _MerchantSG(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantSG",npc.Id,false);
+}
+
+void _MerchantBG(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantBG",npc.Id,false);
+}
+
+void _MerchantEW(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantEW",npc.Id,false);
+}
+
+void _MerchantMelee(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantMelee",npc.Id,false);
+}
+
+void _MerchantArmors(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantArmors",npc.Id,false);
+}
+
+void _MerchantMedicament(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.ModeBase[MODE_BARTER_ONLY_CASH] = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantMedicament",npc.Id,false);
+}
+
+void _MerchantDrugs(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.ModeBase[MODE_BARTER_ONLY_CASH] = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantDrugs",npc.Id,false);
+}
+
+void _MerchantAlcohol(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantAlcohol",npc.Id,false);
+}
+
+void _MerchantAll(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantAll",npc.Id,false);
+}
+void _MerchantMine(Critter& npc, bool firstTime)
+{
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(120);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(1),"e_MerchantMine",npc.Id,false);
+}
+
+
+uint e_MerchantSG(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_SHOTGUN_DE,
+		PID_COLT1911_DE,
+		PID_SCOPED_HUNTING_RIFLE_DE,
+		PID_HUNTING_RIFLE_DE,
+		PID_10MM_SMG_DE,
+		PID_FN_FAL_DE,
+		PID_ASSAULT_RIFLE_DE,
+		PID_ASSAULT_RIFLE_EXT_MAG_DE,
+		PID_FN_FAL_HPFA_DE,
+		PID_GREASE_GUN_DE,
+		PID_FN_FAL_NIGHT_SCOPE_DE,
+		PID_NEEDLER_PISTOL_DE,
+		PID_14MM_PISTOL_DE,
+		PID_MP5_DE,
+		PID_AK47_NORMAL1_DE,
+		PID_HK_CAWS_DE,
+		PID_AK47_TACTICAL1_DE,
+		PID_10MM_JHP_DE,
+		PID_44_MAGNUM_JHP_DE,
+		PID_5MM_JHP_DE,
+		PID_SHOTGUN_SHELLS_DE,
+		PID_223_FMJ_DE,
+		PID_14MM_AP_DE,
+		PID_762X39_DE,
+		PID_40x46_DE,
+		PID_762x51_DE,
+		PID_762X54_DE
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		75,
+		50,
+		50,
+		50,
+		50,
+		50,
+		50,
+		20,
+		50,
+		50
+	};
+	int count=Random(6,14);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(2000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantBG(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_ROCKET_LAUNCHER_DE,
+		PID_FLAMER_DE,
+		PID_M60_DE,
+		PID_MINIGUN_DE,
+		PID_FLAMETHROWER_FUEL_DE,
+		PID_EXPLOSIVE_ROCKET_DE,
+		PID_223_FMJ_DE,
+		PID_5MM_JHP_DE,
+		PID_762x51_DE,
+		PID_762X54_DE
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		1,
+		1,
+		1,
+		1,
+		40,
+		15,
+		100,
+		100,
+		100,
+		100
+	};
+	int count=Random(6,10);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(2000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantBG",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantEW(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_LASER_PISTOL_DE,
+		PID_LASER_RIFLE_DE,
+		PID_SMALL_ENERGY_CELL_DE,
+		PID_MICRO_FUSION_CELL_DE,
+		PID_RADAMMO_DE,
+		PID_ENEAMMO_DE
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		1,
+		1,
+		150,
+		150,
+		10,
+		10
+	};
+	int count=Random(6,10);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(2000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantEW",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantMelee(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_THROWING_KNIFE_DE,
+		PID_COMBAT_KNIFE_DE,
+		PID_KNIFE_DE,
+		PID_SWITCHBLADE_DE,
+		PID_SHARP_SPEAR_DE,
+		PID_SLEDGEHAMMER_DE,
+		PID_FRAG_GRENADE_DE,
+		PID_SHARP_SPEAR_DE,
+		PID_BRASS_KNUCKLES_DE,
+		PID_SPIKED_KNUCKLES_DE
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		15,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1
+	};
+	int count=Random(6,8);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(2000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantMelee",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantArmors(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_LEATHER_JACKET_DE,
+		PID_CURED_LEATHER_ARMOR_DE,
+		PID_LEATHER_ARMOR_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_LEATHER_JACKET_DE,
+		PID_CURED_LEATHER_ARMOR_DE,
+		PID_LEATHER_ARMOR_DE,
+		PID_LEATHER_ARMOR_MK_II_DE,
+		PID_METAL_ARMOR_DE,
+		PID_METAL_ARMOR_MK_II_DE,
+		PID_CA_1
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		3,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1
+	};
+	int count=Random(4,6);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(2000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantArmors",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantMedicament(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_STIMPAK,
+		PID_RADAWAY,
+		PID_ANTIDOTE,
+		PID_RAD_X,
+		PID_SUPER_STIMPAK,
+		PID_BIO_GEL,
+		PID_HEALING_POWDER,
+		PID_HYPODERMIC_NEEDLE,
+		PID_HYPODERMIC_NEEDLE,
+		PID_MENTATS,
+		PID_BUFFOUT
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		5,
+		5,
+		5,
+		5,
+		5,
+		15,
+		3,
+		10,
+		5,
+		1,
+		1
+	};
+	int count=Random(6,20);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantMedicament",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantDrugs(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_MENTATS,
+		PID_BUFFOUT,
+		PID_PSYCHO,
+		PID_JET,
+		PID_HYPODERMIC_NEEDLE,
+		PID_NUKA_COLA
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		2,
+		2,
+		2,
+		2,
+		1,
+		3
+	};
+	int count=Random(6,24);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantDrugs",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantAlcohol(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantSG",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_NUKA_COLA,
+		PID_BEER,
+		PID_BOOZE,
+		PID_GAMMA_GULP_BEER,
+		PID_ROENTGEN_RUM,
+		PID_CIGARETTES,
+		PID_ROT_GUT
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		5,
+		1,
+		1,
+		1,
+		2,
+		5,
+		1
+	};
+	int count=Random(4,8);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(1000,5000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantAlcohol",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantAll(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantAll",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_NUKA_COLA,
+		PID_BEER,
+		PID_BOOZE,
+		PID_CIGARETTES,
+		PID_10MM_SMG_DE,
+		PID_ASSAULT_RIFLE_DE,
+		PID_NEEDLER_PISTOL_DE,
+		PID_MP5_DE,
+		PID_AK47_NORMAL1_DE,
+		PID_10MM_JHP_DE,
+		PID_44_MAGNUM_JHP_DE,
+		PID_5MM_JHP_DE,
+		PID_SHOTGUN_SHELLS_DE,
+		PID_223_FMJ_DE,
+		PID_14MM_AP_DE,
+		PID_762X39_DE,
+		PID_40x46_DE,
+		PID_762x51_DE,
+		PID_762X54_DE,
+		PID_FLAMER_DE,
+		PID_MINIGUN_DE,
+		PID_LASER_RIFLE_DE,
+		PID_LASER_PISTOL_DE,
+		PID_SMALL_ENERGY_CELL_DE,
+		PID_MICRO_FUSION_CELL_DE,
+		PID_COMBAT_KNIFE_DE,
+		PID_KNIFE_DE,
+		PID_LEATHER_JACKET_DE,
+		PID_LEATHER_ARMOR_DE,
+		PID_METAL_ARMOR_DE,
+		PID_STIMPAK,
+		PID_RADAWAY,
+		PID_MENTATS,
+		PID_BUFFOUT,
+		PID_PSYCHO,
+		PID_JET,
+		PID_CA_1,
+		PID_CAMKII_1,
+		PID_CURED_LEATHER_ARMOR_DE,
+		PID_COLT1_DE,
+		PID_COLT2K1_DE,
+		PID_COLT3K2_DE,
+		PID_AIRPISTOL_DE,
+		PID_223_PISTOL_DE,
+		PID_SNIPER_RIFLE_DE,
+		PID_45_ACP_DE,
+		PID_HN_NEEDLER_CARTRIDGE_DE,
+		PID_FUELF,
+		PID_LOCK1,
+		PID_RED,
+		PID_BLUE,
+		PID_ROBE_2_DE,
+		PID_JUMPSUIT_R3_DE,
+		PID_LIGHTER
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		2,
+		2,
+		2,
+		2,
+		1,
+		1,
+		1,
+		1,
+		1,
+		100,
+		100,
+		200,
+		100,
+		150,
+		50,
+		100,
+		100,
+		100,
+		100,
+		100,
+		1,
+		1,
+		1,
+		50,
+		75,
+		1,
+		2,
+		1,
+		1,
+		1,
+		2,
+		2,
+		2,
+		1,
+		1,
+		2,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		50,
+		50,
+		5,
+		1,
+		10,
+		10,
+		1,
+		1,
+		1
+	};
+	int count=Random(4,8);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(500,1000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantAll",npc.Id,false);
+	return 0;
+}
+
+uint e_MerchantMine(uint[]@ values)
+{
+	Critter @ npc =::GetCritter(values[0]);
+	if(!valid(npc)) return 0;
+	ClearItems(npc);
+	if(npc.IsDead()) {CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantMine",npc.Id,false); return 0;}
+	int []SPAWN_ITEM_PIDS=
+	{
+		PID_FUELE,
+		PID_BEER,
+		PID_BOOZE,
+		PID_CIGARETTES,
+		PID_DE_PRIMITIVE_TOOL,
+		PID_PICKAXE,
+		PID_AXE,
+		PID_MULTI_TOOL,
+		PID_ROPE,
+		PID_FLINT,
+		PID_BOTTLE_EMPTY,
+		PID_IRON_ORE,
+		PID_MINERAL_SULFUR,
+		PID_COAL,
+		PID_SCRAP,
+		PID_WOOD,
+		PID_GUNPOWDER_CLASS_I,
+		PID_SCREWDRIVER_CROSS1,
+		PID_10MM_JHP_DE,
+		PID_10MM_AP_DE,
+		PID_FLAMETHROWER_FUEL_DE,
+		PID_LEATHER_JACKET_DE,
+		PID_10MM_PISTOL_DE,
+		PID_KNIFE_DE,
+		PID_SHARPENED_POLE_DE,
+		PID_SLEDGEHAMMER_DE,
+		PID_SPEAR_DE,
+		PID_BUFFOUT,
+		PID_MEAT_ON_A_STICK,
+		PID_STIMPAK,
+		PID_IGUANA_ON_A_STICK,
+		PID_LIGHTER
+	};
+	int []SPAWN_ITEM_COUNT=
+	{
+		1,
+		3,
+		2,
+		2,
+		4,
+		1,
+		1,
+		1,
+		2,
+		3,
+		1,
+		2,
+		2,
+		1,
+		3,
+		4,
+		1,
+		1,
+		10,
+		10,
+		1,
+		1,
+		1,
+		2,
+		1,
+		1,
+		1,
+		1,
+		2,
+		1,
+		3,
+		1
+	};
+	int count=Random(2,8);
+	for(int y=0; y<=count; y++)
+	{
+		int roll=Random(1,SPAWN_ITEM_PIDS.length())-1;
+		npc.AddItem(SPAWN_ITEM_PIDS[roll],SPAWN_ITEM_COUNT[roll]);
+	}
+	npc.AddItem(PID_BOTTLE_CAPS,Random(250,1000));
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(240),"e_MerchantMine",npc.Id,false);
+	return 0;
+}
+
+void ClearItems(Critter & npc)
+{
+	Item@[] items;
+	if(npc.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+}
+
+//london and moscow work in mines dialog script
+void dlg_work_in_main( Critter& player, Critter@ npc, string@ playerName )
+{
+	Item@[] items;
+	if(npc.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			if ((items[i].GetProtoId()==4062)||(items[i].GetProtoId()==4059)||(items[i].GetProtoId()==4054))
+			{
+			DeleteItem(items[i]);
+			player.StatBase[ST_EXPERIENCE]+=10;
+			player.AddItem(PID_BOTTLE_CAPS,10);
+			}
+		}
+	}
+}
+
+void _MerchantGalachad(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Citizen;
+	npc.StatBase[ST_REPLICATION_TIME]	=__FullSecond+REAL_MINUTE(1);
+	npc.StatBase[ST_TALK_DISTANCE]      = 5;
+	npc.ModeBase[MODE_NO_ITEM_GARBAGER] = 1;
+	npc.ModeBase[MODE_NO_BARTER]        = 0;
+	npc.ModeBase[MODE_NO_DROP]          = 1;
+	npc.ModeBase[MODE_NO_STEAL]         = 1;
+	npc.ModeBase[MODE_NO_LOOT]          = 1;
+	npc.ModeBase[MODE_NO_ENEMY_STACK]   = 1;
+	npc.ModeBase[MODE_BARTER_ONLY_CASH] = 1;
+	npc.StatBase[ST_NORMAL_RESIST]		= 99;
+	npc.StatBase[ST_LASER_RESIST]		= 99;
+	npc.StatBase[ST_FIRE_RESIST]		= 99;
+	npc.StatBase[ST_PLASMA_RESIST]		= 99;
+	npc.StatBase[ST_ELECTRO_RESIST]		= 99;
+	npc.StatBase[ST_EMP_RESIST]			= 99;
+	npc.StatBase[ST_EXPLODE_RESIST]		= 99;
+	npc.StatBase[ST_MELEE_DAMAGE]		= 900;
+	npc.SkillBase[SK_UNARMED]			= 600;
+}

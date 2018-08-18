@@ -1,0 +1,248 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com
+#   Messages from perk.c
+#
+#
+#   PERK NAMES
+#
+{101}{}{Všímavost}
+{102}{}{Bonus v boji zblízka}
+{103}{}{Bonus úèinku}
+{104}{}{Bonus pohybu}
+{105}{}{Bonus v boji na dálku}
+{106}{}{Bonus kadence}
+{107}{}{Lepší postøeh}
+{108}{}{Rychlejší uzdravování}
+{109}{}{Zabiják}
+{110}{}{Noèní zrak}
+{111}{}{Lev salónù}
+{112}{}{Odolnı proti radiaci}
+{113}{}{Houevnatı}
+{114}{}{Silná záda}
+{115}{}{Ostrostøelec}
+{116}{}{Tichošlápek}
+{117}{}{Mistr v pøeití}
+{118}{}{Byznysmen}
+{119}{}{Vzdìlanec}
+{120}{}{Léèitel}
+{121}{}{Zlatokop}
+{122}{}{Lepší kritickı zásah}
+{123}{}{Empatie}
+{124}{}{Nièitel}
+{125}{}{Snajpr}
+{126}{}{Tichá smrt}
+{127}{}{Akèní hoch}
+{128}{}{Mentální blok}
+{129}{}{ivotodárce}
+{130}{}{Mrštnı}
+{131}{}{Polykaè hadù}
+{132}{}{Všeumìl}
+{133}{}{Medik}
+{134}{}{Kapsáø}
+{135}{}{Spíkr}
+{136}{}{Vrhaè}
+{137}{}{ERROR -- UNIMPED}  # was -- Friendly Foe
+{138}{}{Mistr zlodìj}
+{139}{}{Duch}
+{140}{}{Kult osobnosti}
+{141}{}{Hledaè pokladù}
+{142}{}{Prùzkumník}
+{143}{}{Stará smaka}
+{144}{}{Prùvodce}
+{145}{}{Pøítel zvíøat}
+{146}{}{Pozorovatel}
+{147}{}{Záhadnı cizinec}
+{148}{}{Ranger}
+{149}{}{Puntièkáø}
+{150}{}{Baviè}
+{151}{}{Bystrı uèedník}
+{152}{}{Talent!}
+{153}{}{Mutace!}
+{154}{}{Závislost na Nuka-Cole}
+{155}{}{Závislost na Buffoutu}
+{156}{}{Závislost na Mentatu}
+{157}{}{Závislost na Psycho}
+{158}{}{Závislost na Radaway}
+{159}{}{Zbraò dlouhého dosahu}
+{160}{}{Pøesnost zbranì}
+{161}{}{Penetrace zbranì}
+{162}{}{Zpìtnı ráz zbranì}
+{163}{}{Energo zbroj}
+{164}{}{Kevlarové brnìní}
+{165}{}{Zbraò s teleskopem}
+{166}{}{Zbraò s rychlonabíjeèem}
+{167}{}{Zbraò s infrahledem}
+{168}{}{Flameboy}
+{169}{}{Zdokonalená zbroj I}
+{170}{}{Zdokonalená zbroj II}
+{171}{}{Závislost na Jetu}
+{172}{}{Závislost na høe}
+{173}{}{Zbroj Charisma}
+{174}{}{Stahování geckonù}
+{175}{}{Podkoní implantáty}
+{176}{}{Implantáty Mark II }
+{177}{}{Implantáty typ Phoenix}
+{178}{}{Implantáty Phoenix Mark II}
+{179}{}{Oèkování z Vault City}
+{180}{}{Nápor adrenalinu}
+{181}{}{Opatrná nátura}
+{182}{}{Chápavı}
+{183}{}{Demolièní expert}
+{184}{}{Gambler}
+{185}{}{SÍLA +1}
+{186}{}{VNÍMÁNÍ +1}
+{187}{}{ODOLNOST +1}
+{188}{}{CHARISMA +1}
+{189}{}{INTELIGENCE +1}
+{190}{}{HBITOST +1}
+{191}{}{ŠTÌSTÍ +1}
+{192}{}{Neviòátko}
+{193}{}{Tady a teï}
+{194}{}{Lepší kryt}
+{195}{}{Mistr Kamasutry}
+{196}{}{Pramen Karmy}
+{197}{}{Lehkı krok}
+{198}{}{Znalec anatomie}
+{199}{}{Magnetická osobnost}
+{200}{}{Vyjednávaè}
+{201}{}{Baliè}
+{202}{}{Pyromaniak}
+{203}{}{Vstaváèek}
+{204}{}{Obchodník}
+{205}{}{Tvrïák}
+{206}{}{Zlodìj}
+{207}{}{Manipulátor}
+{208}{}{Vault City trénink}
+{209}{}{Pøítel Alkohol}
+{210}{}{Pøítel Alkohol II}
+{211}{}{Alkohol metla lidstva}
+{212}{}{Alkohol metla lidstva II}
+{213}{}{Autodok ti pøidal hit body}
+{214}{}{Autodok ti pøidal hit body II}
+{215}{}{Autodok ti ubral hit body}
+{216}{}{Autodok ti ubral hit body II}
+{217}{}{Expert Expedice Exkrementù}
+{218}{}{Vyšší zpìtnı ráz zbranì}
+{219}{}{Poznamenanı}
+
+#
+#   PERK DESCRIPTIONS
+#
+{1101}{}{Dokáeš postøehnout víc detailù o lidech okolo.  Kdy nìkoho prozkoumáš, VŠÍMAVOST ti o nìm poskytne víc podrobnìjších informací.  Zjistíš, èím je ozbrojen i pøesnı poèet jeho hit bodù.}
+{1102}{}{Buï jsi studoval tajná bojová umìní Vıchodu nebo prostì jen dokáeš udeøit rychleji. V kadém pøípadì tì tvoje údery pøi boji zblízka stojí o 1 akèní bod ménì.}
+{1103}{}{Tvoje zkušenosti v boji zblízka z tebe udìlaly pìknì ostrého protivníka. Za kadı stupeò tohoto Perku zpùsobíš soupeøi pøi boji beze zbranì a boji chladnımi zbranìmi o 2 body poškození víc.}
+{1104}{}{Za kadı stupeò tohoto Perku dostaneš ve svém tahu o 2 akèní body víc. Tyto body ale mohou bıt vyuity pouze pro pohyb.  Jinımi slovy za kadı level tohoto Perku se ve svém tahu budeš moci pohnout o 2 hexy navíc.}
+{1105}{}{Tvùj trénink v boji na dlouhou vzdálenost (støelné zbranì apod.) z tebe dìlá smrtelnì nebezpeèného protivníka. Za kadou úroveò tohoto Perku zpùsobíš o 2 body poškození víc.}
+{1106}{}{Tento Perk ti umoní zmáèknout spouš o nìco rychleji a pøesto støílet stejnì pøesnì jako pøedtím. Pouívání zbraní pro boj na dlouhou vzdálenost tì stojí o jeden akèní bod ménì.}
+{1107}{}{V boji jsi schopen reagovat rychleji ne tvoji nepøátelé, protoe tvùj Postøeh je +2 za kadı stupeò tohoto Perku.}
+{1108}{}{S kadım stupnìm tohoto Perku, obdríš +2 bonus ke své schopnosti Uzdravit se. Èili -- uzdravuješ se rychleji.}
+{1109}{}{Pokud máš tento Perk, máš vìtší šanci zpùsobit v boji soupeøi kritickı zásah. Kadı stupeò ti pøidá +5% šanci na kritickı zásah.  To docela ujde, ne?}
+{1110}{}{S tímto Perkem vidíš ve tmì lépe. Tento Perk zredukuje okolní temnotu o 20%.}
+{1111}{}{Vzbuzuješ pozornost jen tím, e vejdeš do místnosti. Úvodní reakce okolních NPC se navyšují o 10% za kadou úroveò tohoto Perku.}
+{1112}{}{Lépe odoláváš radioaktivitì a jejím zhoubnım následkùm. Kadı level tohoto Perku ti pøidá 15% na Odolnosti proti radiaci.}
+{1113}{}{Jsi-li houevnatı, utrpìná zranìní tì ménì poškozují. Kadı level tohoto Perk ti dodá +10% ke tvé celkové Odolnosti proti poškození.}
+{1114}{}{Máš sílu jako mezek. Za kadı stupeò tohoto Perku uneseš o 50 liber vybavení víc.}
+{1115}{}{Máš talent zasáhnout cíl na dlouhou vzdálenost. Za kadı stupeò tohoto Perku dostaneš +2 bonus ke své schopnosti VNÍMÁNÍ vdy, kdy budeš bojovat na delší vzdálenost.  Zabíjet z patøièného odstupu je jednodušší!}
+{1116}{}{S tímto Perkem se mùeš pohybovat rychle a pøesto tiše.  Mùeš bìhat a pouívat PLÍENÍ najednou.  Bez tohoto Perku se pøi bìhu PLÍENÍ automaticky zruší.}
+{1117}{}{Jsi opravdovı táborník. Tento Perk ti propùjèuje schopnost snadnìji pøeít v nehostinném prostøedí.  Za kadı level tohoto Perku dostaneš +25% bonus ke své schopnosti Zálesák.}
+{1118}{}{Speciálnì jsi se vypracoval v jedné disciplínì obchodování - ve schopnosti koupit nìco levnìji ne ostatní.  S tímto Perkem dostaneš v kadém obchodì 25%-ní slevu.}
+{1119}{}{Kadá úroveò "Vzdìlance" ti pøidá 2 schopnostní body navíc k poètu, kterı obdríš pøi dosaení nové zkušenostní úrovnì.  Èím døív si ve høe tento Perk vezmeš, tím víc se ti pochopitelnì zúroèí.}
+{1120}{}{Tento Perk zvyšuje tvoje léèitelské schopnosti.  Kadá jeho úroveò ti pøidá 4-10 hit bodù o které se pøi pouití schopnosti První pomoc nebo Doktor, uzdravíš více.}
+{1121}{}{Máš nos na to, jak lehce pøijít k penìzùm.  Nacházíš je toti v náhodnıch lokacích v poušti.}
+{1122}{}{Kritické zásahy, které v boji zpùsobuješ soupeøùm jsou ještì nièivìjší ne dosud.  Obdríš 20%-ní bonus k úèinku kadého kritického zásahu.  Co ovšem nemá ádnı vliv na samotnou šanci kritickı zásah docílit.}
+{1123}{}{Studoval jsi lidské povahy, co ti dává schopnost intuitivnì vycítit jejich emocionální reakce.  Pøi rozhovoru s NPC mùeš podle barevného oznaèení rozpoznat, jak budou bìhem konverzace reagovat.}
+{1124}{}{Conan Nièitel pøišel mezi nás!  V boji beze zbranì jsou všechny tvoje zásahy povıšeny na kritické -- jsi ztìlesnìním smrti a destrukce.}
+{1125}{}{S tímto Perkem je kadı tvùj úspìšnı zásah v boji na dlouhou vzdálenost, povıšen na kritickı. Svou roli ovšem hraje i tvoje ŠTÌSTÍ. Doporuèují 4 z 5 odstøelovaèù.}
+{1126}{}{Kdy pøi Plíení zasáhneš v boji zblízka svého protivníka zezadu, bude mít tvoje rána dvojnásobnı úèinek, ne obvykle.  Tomu se øíká Tichá (a rychlá) smrt.}
+{1127}{}{Kadı level Akèního hocha (nebo dívky, chceš-li) ti v boji pøi tvém tahu pøidá 1 akèní bod. Tento bod mùeš pouít na libovolnou èinnost.}
+{1128}{}{Mentální Blok je schopnost ignorovat všechna vnìjší mentální rušení. Tohle ses musel nauèit od potulného jogína nebo nad ránem nìkde v baru.}
+{1129}{}{Kadı level tohoto Perku ti pøidá 4 Hit body navíc. Moná to na první pohled vypadá, e to nic moc není, ale nemusí pršet, jen kdy kape.}
+{1130}{}{V boji je mnohem tìší tì zasáhnout, máš-li tento Perk. Kadı jeho stupeò pøidává +5 ke tvé Tøídì zbroje, bez ohledu na typ obleèeného brnìní.}
+{1131}{}{Mòam! Chutnají jako peèená kuøata. Jsi imunní proti jedùm, jinımi slovy dostaneš +25% ke své Odolnosti proti jedùm.}
+{1132}{}{Tento Perk ti dává jednorázovı bonus +10% ke tvım schopnostem Opraváø a Vìda. Trochu biflování do pozdních noèních hodin ještì nikdy nikoho nezabilo. A tebe u vùbec ne.}
+{1133}{}{Tento Perk ti dává jednorázovı bonus +10% ke tvım schopnostem První pomoc a Doktor.  Umìt nìkoho vyléèit, to se vdycky hodí.}
+{1134}{}{Perk Kapsáø ti dává jednorázovı bonus +15% ke tvım schopnostem Paklíè a Ukrást.  Bohatım brát a sobì dávat.}
+{1135}{}{Bıt Spíkrem znamená, e dostaneš jednorázovı bonus +20% ke své schopnosti Øeè.}
+{1136}{}{Kadı level tohoto Perku ti pøidá +2 SÍLY (a do vıše 10), kdy pouiješ nìkterou z vrhacích zbraní Tento Perk ovšem nemá ádnı vliv na maximální dosah zbranì.}
+{1137}{}{ERROR.UNIMPED!}
+{1138}{}{Jsi mistr zlodìjského øemesla.  Mùeš se smìle zaøadit po bok tìch nejlepších kapsáøù, protoe s tímto Perkem lze ignorovat velikost a polohu okrádaného subjektu.}
+{1139}{}{Máš-li tento Perk, pak tvoje chvíle pøichází po západu slunce nebo ve špatnì osvìtlenıch prostorách. Mùeš se pohybovat neslyšnì jako duch.  Tvoje schopnost Plíení se ve tmì zvyšuje o +20%.}
+{1140}{}{Povìst, která tì provází pùsobí na ostatní vdycky pozitivnì. Máš-li vysoce zápornou reputaci, pak to bez tohoto Perku vyvolává u "klaïasù" nepøátelské reakce.  To samé samozøejmì platí o vlivu kladné reputace na "záporáky".}
+{1141}{}{Máš talent nacházet mnohem víc nábojù ne ostatní. Tento Perk zdvojnásobuje mnoství munice, kterou najdeš v náhodnıch lokacích.}
+{1142}{}{Posláním Prùzkumníka je pátrat po novıch a zajímavıch místech. S tímto Perkem máš daleko vìtší šanci najít speciální postavy a lokace.}
+{1143}{}{S tímto Perkem máš menší pravdìpodobnost, e se staneš závislım na chemikáliích. Pøesnì øeèeno menší o 50%. Rovnì abstinenèní pøíznaky trvají jen polovinu doby ne u ostatních.}
+{1144}{}{Máš-li pøi svém dobrodruství Prùvodce, najdeš vdy tu nejkratší cestu. S tímto Perkem se tvùj cestovní èas po mapì svìta Falloutu redukuje o 25% za kadı jeho level.}
+{1145}{}{Zvíøata neútoèí na jednoho ze svıch pøátel. Leda v pøípadì jsou-li napadena nebo ohroena jako první. Co ale je a co není zvíøe v tomhle apokalyptickém svìtì, to je otázka na delší diskusi.}
+{1146}{}{Získal jsi schopnost dohlédnout i na vzdálenìjší lokace. Pøi svıch cestách po mapì Falloutu odkrıváš v kadém smìru o jeden ètverec víc. Máš rovnì vìtší šanci najít speciální lokace.}
+{1147}{}{S tímto Perkem jsi upoutal pozornost Tajemného cizince, kterı ti èas od èasu pomùe. Jestlie bude ale tento tvùj spojenec zabit v bitvì, neèekej, e ho (nebo ji) nìkdo nahradí.}
+{1148}{}{Obdríš +15% ke své schopnosti "Zálesák". Tvá šance bez varování vstoupit do nepøátelské lokace je menší, šance najít speciální lokace naopak vìtší.}
+{1149}{}{Nauèil ses lépe uspoøádat svoje vybavení.  V bojovém módu tì stojí vstup do inventáøe namísto 4 jen 2 akèní body.}
+{1150}{}{Baviè ti dává schopnost zvìtšit poèet voleb v dialozích.  Kadı level tohoto Perku zvyšuje tvou INTELIGENCI o +1 (a do vıše 10). Ovšem pouze po dobu konverzace s NPC.}
+{1151}{}{S tímto Perkem jsi opravdu Bystrı uèedník, protoe kadı jeho level ti dává +5% bonus, kdykoliv ve høe obdríš zkušenostní body.  Èím døív si Perk vezmeš, tím víc se ti pochopitelnì zúroèí.}
+{1152}{}{Tvoje zkušenosti dospìly k bodu, kdy si mùeš vzít další Talent. U této vybrané schopnosti dostaneš za kadı bod, kterı do ní investuješ, dvojnásobek procent ne u ostatních schopností.}
+{1153}{}{Zbytková radioaktivita v Pustinì zpùsobila tvojí mutaci! Jeden z tvıch talentù se zmìnil na jinı a ty si mùeš vybrat, kterı to bude...}
+{1154}{}{Potøebuješ další Nuka-Colu.}
+{1155}{}{Celı se tøeseš.}
+{1156}{}{Je ti nanic.}
+{1157}{}{Motá se ti hlava.}
+{1158}{}{Zvedá se ti aludek.}
+{1159}{}{Zbraò dlouhého dosahu}
+{1160}{}{Pøesnost zbranì}
+{1161}{}{Penetrace zbranì}
+{1162}{}{Zpìtnı ráz zbranì}
+{1163}{}{Energo zbroj}
+{1164}{}{Kevlarová zbroj}
+{1165}{}{Zbraò s teleskopem}
+{1166}{}{Zbraò s rychlonabíjeèem}
+{1167}{}{Zbraò s infrahledem}
+{1168}{}{Weapon Flameboy}
+{1169}{}{Zdokonalená zbroj I}
+{1170}{}{Zdokonalená zbroj II}
+{1171}{}{Všechno se pohybuje tak pomalu... potøebuješ si vzít další Jet, teï HNED!}
+{1172}{}{Cítíš neodolatelné nutkání otevøít další krabièku "Tragic" karet.}
+{1173}{}{Zbroj Charisma}
+{1174}{}{Víš, jak správnì stáhnout geckona, aby se nepoškodila jeho kùe.}
+{1175}{}{Pro zvıšení své odolnosti proti fyzickému útoku máš voperovány podkoní implantáty.}     # Dermal Impact Armor
+{1176}{}{Pro zvıšení své odolnosti proti fyzickému útoku máš voperovány zesílené podkoní implantáty.}  # Dermal Impact Assault Enhancement
+{1177}{}{Tyto implantáty zvyšují tvou odolnost proti všemi druhùm energetickıch útokù.}     # Phoenix Armor Implants
+{1178}{}{Tyto zesílené implantáty zvyšují tvou odolnost proti všemi druhùm energetickıch útokù.}  # Phoenix Assault Enhancement
+{1179}{}{Získáváš +10% odolnost vùèi jedùm a radiaci.}  # Vault City Inoculations
+{1180}{}{S tímto Perkem získáváš +1 SÍLA, kdykoliv klesneš pod 1/2 svého maxima hit bodù.}  # Adrenaline Rush
+{1181}{}{Jsi velmi opatrnı a nepøátelé se k tobì nemohou nepozorovanì pøíbliit.  S tímto Perkem získáš v rùznıch lokacích, kdy se rozhoduje o rozmístìní protivníkù, +3 ke svému VNÍMÁNÍ.}  # Cautious Nature
+{1182}{}{Jsi pozornı a kdy nìco studuješ, všímáš si i detailù.  Pøi ètení knih získáváš k pøíslušné schopnosti o 1/2 víc procent, ne ostatní.}  # Comprehension
+{1183}{}{Jsi expert na zacházení s vıbušninami. Vdy vybuchnou (kdy se to od nich ádá) a vdy jsou extra úèinné.}  # Demolition Expert
+{1184}{}{Hazard je pro tebe vším.  Získáváš +20% ke své schopnosti "Hazardní hry".}  # Gambler
+{1185}{}{Tento Perk ti pøidá +1 ke tvé SÍLE.}     # Gain Strength
+{1186}{}{Tento Perk ti pøidá +1 ke tvému VNÍMÁNÍ.}   # Gain Perception
+{1187}{}{Tento Perk ti pøidá +1 ke tvé ODOLNOSTI.}    # Gain Endurance
+{1188}{}{Tento Perk ti pøidá +1 ke tvému CHARISMA.}     # Gain Charisma
+{1189}{}{Tento Perk ti pøidá +1 ke tvé INTELIGENCI.} # Gain Intelligence
+{1190}{}{Tento Perk ti pøidá +1 ke tvé HBITOSTI.}      # Gain Agility
+{1191}{}{Tento Perk ti pøidá +1 ke tvému ŠTÌSTÍ.}         # Gain Luck
+{1192}{}{Tvoje nevinná tváøièka ti pomáhá lépe okrádat lidi. Získáváš 20% ke své schopnosti "Ukrást".}  # Harmless
+{1193}{}{Tento Perk tì okamitì zvedne o jeden zkušenostní level.}  # Here and Now
+{1194}{}{Máš-li obì ruce prázdné, pøidá ti na konci tvého tahu kadı nevyuitı akèní bod ke tvé Tøídì zbroje +2, namísto +1 jako tomu bylo pøedtím. Plus získáš 1/12 ke své schopnosti "boj beze zbranì".}  # HtH Evade
+{1195}{}{O zpùsobech jak si uívat s druhım pohlavím dokáeš napsat celou knihu.}  # Kama Sutra Master
+{1196}{}{Tvá Karma záøí zvláš silnì. A udìláš cokoliv (dobrého nebo špatného) získáš dvojnásobné mnoství Karmy ne normálnì.}  # Karma Beacon
+{1197}{}{Jsi rychlı, opatrnı a máš kliku. Tento Perk zvyšuje tvoje šance na odstranìní všech druhù pastí.}  # Light Step
+{1198}{}{Máš velmi dobrı pøehled o anatomii a o silnıch i slabıch stránkách rùznıch druhù ivoèichù.  Získáváš jednorázovı bonus +10% ke své schopnosti "Doktor" a pøi útoku na ivé tvory je úèinek tvého zásahu vìtší o +5.}  # Living Anatomy
+{1199}{}{Získáváš 1 extra místo ke svému limitu poètu spolubojovníkù. Ale nezapomeò, e víc ne 5, znamená vdycky tlaèenici.}  # Magnetic Personality
+{1200}{}{Jsi velmi schopnı vyjednávaè.  Typ o kterém se øíká, e "dokáe vymámit z jalové krávy tele".  Tento Perk ti pøidává +10% ke schopnostem "Obchod" a "Øeè".}  # Negotiator
+{1201}{}{Umíš si své vìci dobøe poskládat a uspoøádat a to ti umoòuje nosit jich u sebe o nìco víc.}  # Pack Rat
+{1202}{}{S hoølavinami a zbranìmi zaloenımi na této bázi umíš zvláš dobøe zacházet. Dá se o tobì øíct, e "máš oheò v tìle". Tvoji nepøátelé ho pak obvykle mívají na tìle.}  # Pyromaniac
+{1203}{}{Jsi-li sraen k zemi, umíš se rychle otøepat a vstát. Rocky a Rambo ti mùou jen z dálky závidìt!}  # Quick Recovery
+{1204}{}{Jsi mistr smlouvání.  Tento Perk ti pøidává +20% ke tvé schopnosti "Obchod".}  # Salesman
+{1205}{}{V boji tì jen tak nìkdo k zemi nesrazí!}  # Stonewall
+{1206}{}{Tvımi ilami proudí krev pravého lupièe. S tímto Perkem získáváš jednorázovı bonus +10% ke svım schopnostem "Plíení", "Paklíè", "Ukrást" a "Past".}  # Thief
+{1207}{}{Umíš svoje bouchaèky zvláš dobøe ovládat. Kdykoliv manipuluješ se zbraní získáváš ke své SÍLE +3.}  # Weapon Handling
+{1208}{}{Podaøilo se ti absolvovat lékaøskı vıcvik ve Vault City.}  # Vault City Training
+{1209}{}{Èastou a pravidelnou konzumací kvalitního alkoholu se ti podaøilo navıšit mnoství tvıch hit bodù.}  # Alcohol Enhanced hit points
+{1210}{}{Èastou a pravidelnou konzumací kvalitního alkoholu se ti podaøilo ještì o trochu víc navıšit mnoství tvıch hit bodù.}  # Alcohol Enhanced hit points II
+{1211}{}{Opakovanou opilostí se ti podaøilo sníit celkové mnoství tvıch hit bodù. Blahopøeju!}  # Alcohol Lowered hit points
+{1212}{}{Opakovanou opilostí se ti podaøilo ještì o trochu víc sníit celkové mnoství tvıch hit bodù. No, pìknì to vedeš!}  # Alcohol Lowered hit points II
+{1209}{}{Opakovanım pouíváním AutoDoku se ti podaøilo navıšit celkové mnoství tvıch hit bodù.}  # Autodoc Enhanced hit points
+{1210}{}{Opakovanım pouíváním AutoDoku se ti podaøilo ještì o trochu víc navıšit celkové mnoství tvıch hit bodù.}  # Autodoc Enhanced hit points II
+{1211}{}{Opakovanım pouíváním AutoDoku se ti podaøilo sníit celkové mnoství tvıch hit bodù.}  # Autodoc Lowered hit points
+{1212}{}{Opakovanım pouíváním AutoDoku se ti podaøilo ještì o trochu víc sníit celkové mnoství tvıch hit bodù.}  # Autodoc Lowered hit points II
+{1217}{}{Pøijde-li na kydání hnoje, mùeš se smìle postavit po bok tìm nejlepším kydaèùm.}
+{1218}{}{Vyšší zpìtnı ráz zbranì}
+{1219}{}{Ta dobrá zpráva je, e všem okolo tebe èasto v boji nìco sele. Ta špatná zpráva je, e se to stává i tobì!}

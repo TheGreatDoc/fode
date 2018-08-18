@@ -1,0 +1,8 @@
+{100}{}{Du bist ein toter Mann.}
+{101}{}{Du bist also der dem Tod Geweihte.}
+{102}{}{Du solltest dir bessere Manieren angewöhnen.}
+{103}{}{Du wirst in 'nem Sarg zurückkehren.}
+{104}{}{Stirb, du elender Abschaum!}
+{105}{}{Ach, zur Hölle, sie können die Beute behalten.}
+{106}{}{Nichts wie weg hier.}
+{107}{}{Der Job ist es nicht wert.}

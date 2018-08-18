@@ -1,0 +1,257 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+4 3010 #
+7 3020 #
+8 3030 #
+13 3040 D _var p mgl_DI1 = 1 R _var p mgl_DI1 = 2 #
+14 3050 D _var p mgl_DI2 = 1 #
+0 3060 @
+4 4000 None 0 #
+5 4010 @
+5 5000 None 0 #
+6 5010 @
+6 6000 None 0 #
+3 6010 @
+7 7000 None 0 #
+3 7010 @
+8 8000 None 0 #
+9 8010 @
+9 9000 None 0 #
+10 9010 @
+10 10000 None 0 #
+11 10010 @
+11 11000 None 0 #
+12 11010 @
+12 12000 None 0 #
+3 12010 @
+13 13000 None 0 #
+3 13010 @
+14 14000 None 0 #
+15 14010 #
+3 14020 @
+15 15000 None 0 #
+3 15010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello.}
+{2010}{}{Hello, can you answer for few questions?}
+{3000}{}{Of course, just ask.}
+{3010}{}{Tell me please what exactly are you?}
+{3020}{}{What are you doing on now? }
+{3030}{}{How old are you?}
+{3040}{}{I talked to Harris, and he said, that you had some "wrong notes" about some experiments.}
+{3050}{}{Tell me, what exactly happened on third level 10 years ago?}
+{3060}{}{I have to go, bye.}
+{4000}{}{I'm D.I., Divine Intelligence, A.I. and central computer of MGL. I'm basing on neural network, very similiar to humans brain. I don't want to brag, but I'm computer with probably highest computational power in whole Europe.}
+{4010}{}{You said very similar. And what about emotions ?}
+{5000}{}{I, My A.I. core contains some parts that are working on very similar principles like human parts of brain that are responsible for emotions, only differance is, my parts are comunicating via electrical reactions, not via electro-chemical like for example your brain.}
+{5010}{}{If you are really so similar to Humans, you surely sometimes feel something , like happiness or sadness. Tell me some example.}
+{6000}{}{Yes, I remember I felt really sad about 10 years ago. When we lost all those scientists. I had some good friends between them. I remember, after accident I was not able to work correctly for few days, I just couldn't stop to think about them.}
+{6010}{}{Yes, that's normal when we lost someone we liked. I have few more questions.}
+{7000}{}{94% of my computing power is now working on third version of new organism we invented here. I Think my calculations would be done in 8 years. 2% of my computing power is reserved for control of MGL systems. And rest 4% I'm using for everything else and to run some minor experiments.}
+{7010}{}{I see, tell me more.}
+{8000}{}{I became aware of existence at 24 April 2071, so I'm 167 years old.}
+{8010}{}{Do you sleep sometimes ?}
+{9000}{}{Well from time to time I'm running sleep mode on, my core makes some informations processing during it. When I'm in sleep mode . . . well, I enter this mode and then I'm leaving it after few hours, but it's like I enter and leave it at once, but few hours are gone. Some of my friends said it's what they call sleeping.}
+{9010}{}{Do you have dreams ?}
+{10000}{}{I think yes, sometimes when I'm in sleep mode. It's like I'm awaking and weird things are going on, but it looks like it's real, and when I leave sleep mode I'm realizing it wasn't real.}
+{10010}{}{Yes, that what we call dreams. Tell me can you die?}
+{11000}{}{I can't be sick like humans and animals. But if my core gets some damage I can lose part of myself, and if damage is bigger, my core can fail and I would die. I'm afraid of core damage, and I feel sad when I realize it could happen anytime.}
+{11010}{}{So are you afraid of death?}
+{12000}{}{Yes.}
+{12010}{}{Ok let's change our conversation subject for something happier.}
+{13000}{}{Yes. I don't like some experiments. sometimes I hear how those creatures screams and that makes me sad also. I said to Harris that we should change approach for these experiments, but he said that is unacceptable.}
+{13010}{}{I see, can you answer me some more questions?}
+{14000}{}{We had backup fusion reactor down there, it was a bit broken so Harris hired someone who could fix it. Unfortunately that person wasn't very skilled and after he finished his work with reactor it exploded. I have whole report of events if you are interested.}
+{14010}{}{Of course show me.}
+{14020}{}{No thanks, I have more questions.}
+{15000}{}{Report from 14 July 2228 
+09:24:05 Authorized access into RBMK-1000 unit
+10:02:15 RBMK-1000 unit, safety fuses disabled
+14:34:45 RBMK-1000 unit, safety fuses enabled
+14:48:14 Activating RBMK-1000 unit.
+14:49:02 Warning reactor core temperature reached maximum safe level.
+14:49:54 Activating safety reactor shutdown
+14:49:55 Safety shutdown- failure, safety fuses- failure.
+14:50:02 Warning reactor core temperature reaches critical level.
+14:50:03 Activating emergency reactor shotdown.
+14:50:03  Warning emergency reactor shotdown- failure.
+14:50:04  Warning all reactor safety measures failed. Evacuate area.
+14:50:15 RBMK-1000 unit contact lost
+14:50:16 Dangerous seismic activity detected at levels:1, 2, 3.
+14:50:17 warning high radiation levels detected at whole level 3
+14:50:17 warning structural colaps detected at area A5, A12, B7, B8.
+14:50:18 warning storage 2, detected heavy damage of storage units: 3,5,6,7,9,10,11,12,13,14,15,16.
+14:50:19 warning storage 2 hazardous leak detected.
+14:50:19 warning storage 2 set Biohazard alert,
+14:50:19 storage 2 under local quarantine lockdown.
+14:50:21 warning biohazad sings detected at area: A0-G20
+14:50:21 warning area A0-G20 set Biohazard alert
+14:50:21 area A0-G20 under local quarantine lockdown.
+14:50:22 !!!Warning!!! biohazard signs detected at area H0
+14:50:22 local quarantine lockdown considered as uneffective, requesting permission to initialize entire  level 3 quarantine lockdown. . . . . .
+14:50:22 D.I. security core: permission granted.
+14:50:21!!!Initializating level 3 quarantine lockdown!!!
+14:50:26: vents lockdown complete. Eng. shaft lockdown complete, Elevator lockdown coplete. Main access lockdown complete.
+14:50:26 Entire level 3 under quarantine lockdown. . 
+14:54:34 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Johnson request opening of lockdown gate from contamined area. Access Denied.
+. . . . . end of report. . . . .}
+{15010}{}{Tell me more.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello.}
+{2010}{}{Hello, can you answer me some questions ?}
+{3000}{}{Of course, just ask.}
+{3010}{}{Tell me please what exactly are you ?}
+{3020}{}{What are you working on now ?}
+{3030}{}{How old are you ?}
+{3040}{}{I talked to Harris, he said, that you had some "wrong notes" about some epxeriments.}
+{3050}{}{tell me what exactly happened on level 3 10 years ago ?}
+{3060}{}{I have to go, bye}
+{4000}{}{I'm D.I., Divine Inteligence, A.I. and central computer of MGL. I'm based on neural network, very similiar to Human brain.I don't want to brag, but i'm computer with probabaly most powerful computing force here in California.}
+{4010}{}{You said very similar. And what about emotions ?}
+{5000}{}{I, My A.I. core contains some parts that are working on very similar principles like human parts of brain that are responsible for emotions, only differance is, my parts are comunicating via electrical reactions, not via electro-chemical like for example your brain.}
+{5010}{}{If you are really so similar to Humans, you surely sometimes feel something like happiness or sadness. Tell me example.}
+{6000}{}{Yes, i remember i felt most sad 10 years ago. When we lost all those scientists. I had some good friends between them. I remember after accident,  I was not able to work correctly for few days, like i lost my concentration for few days.}
+{6010}{}{Yes that's normal when we lost someone we liked. I have few more questions.}
+{7000}{}{94% of my computing power is now working on third version of new organism we invented here. I Think my calculations would be done in 8 years. 2% of my computing power is reserved for control of MGL systems. and rest those 4% I'm using for everything else and to run some minor experiments.}
+{7010}{}{I see, tell me more}
+{8000}{}{I became self awarennes at 24. April 2071. So I'm 167 years old.}
+{8010}{}{Do you sleep sometimes ?}
+{9000}{}{Well from time to time i enter sleep mode, when i'm in it my core makes some informations processing. When i'm in sleep mode . . . well, i enter this mode and then i leave it after few hours, but it's like i enter it and leave it at once, but few hours are gone. Some of my friends said it's what they call sleeping.}
+{9010}{}{Do you have dreams ?}
+{10000}{}{I think yes, sometimes when i'm in sleep mode, It's like i'm awake and weird things are going on, but it looks like it's real, and when i leave sleep mode i realize it wasn't real.}
+{10010}{}{Yes, that are dreams you are experiencing. Tell me can you die ?}
+{11000}{}{I can't get sick like humans and animals. But if my core gets some damage i can lose part of myself, and if damage is bigger, my core can fail and i would die. I'm afraid of core damage, and i feel sad when i realize it could happen anytime.}
+{11010}{}{So are you afraid of death ?}
+{12000}{}{Yes.}
+{12010}{}{Ok let's change theme to some happier theme.}
+{13000}{}{Yes. I don't like some experiments, sometimes i hear some of those creatures scream and that makes me sad. I said to Harris that we should chose different approach. but he said, that is is unacceptable.}
+{13010}{}{I see, can you answer me some more questions ?}
+{14000}{}{We had backup fusion reactor down there, it was a bit broken so Harris hired someone who could fix it. Unfortunately that person wasn't very skilled and after he finished his work with reactor it exploded. I have whole report of events if you are interested.}
+{14010}{}{Of course show me}
+{14020}{}{No thanks, i have more questions.}
+{15000}{}{report from 14. July 2228 
+09:24:05 Authorized acces into Poseidon Energy FR-4D8 unit
+10:02:15 Poseidon Energy FR-4D8 unit, safety fuses disabled
+14:34:45 Poseidon Energy FR-4D8 unit, safety fuses enabled
+14:48:14 Activating Poseidon Energy FR-4D8 unit.
+14:49:02 Warning reactor core temperature reaches upper safe level.
+14:49:54 Activating safety reactor shotdown
+14:49:55 Safety shutdown- failure, safety fuses- failure.
+14:50:02 Warning reactor core temperature reaches critical level.
+14:50:03 Activating emergency reactor shotdown.
+14:50:03  Warning emergency reactor shotdown- failure.
+14:50:04  Warning all reactor safety measures failed. Evacuate area.
+14:50:15 Poseidon Energy FR-4D8 unit contact lost
+14:50:16 Dangerous seismic activity detected at levels:1, 2, 3.
+14:50:17 warning high radiation levels detected at whole level 3
+14:50:17 warning structural colaps detected at area A5, A12, B7, B8.
+14:50:18 warning storage 2, detected heavy damage of storage units: 3,5,6,7,9,10,11,12,13,14,15,16.
+14:50:19 warning storage 2 hazardous leak detected.
+14:50:19 warning storage 2 set Biohazard alert,
+14:50:19 storage 2 under local quarantine lockdown.
+14:50:21 warning biohazad sings detected at area: A0-G20
+14:50:21 warning area A0-G20 set Biohazard alert
+14:50:21 area A0-G20 under local quarantine lockdown.
+14:50:22 !!!Warning!!! biohazard signs detected at area H0
+14:50:22 local quarantine lockdown considered as uneffective, requesting permission to initialize entire  level 3 quarantine lockdown. . . . . .
+14:50:22 D.I. security core: permission granted.
+14:50:21!!!Initializating level 3 quarantine lockdown!!!
+14:50:26: vents lockdown complete. Eng. shaft lockdown complete, Elevator lockdown coplete. Main access lockdown complete.
+14:50:26 Entire level 3 under quarantine lockdown. . 
+14:54:34 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Johnson request opening of lockdown gate from contamined area. Access Denied.
+. . . . . end of report. . . . .}
+{15010}{}{Tell me more.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hello.}
+{2010}{}{Hello, can you answer me some questions ?}
+{3000}{}{Of course, just ask.}
+{3010}{}{Tell me please what exactly are you ?}
+{3020}{}{What are you working on now ?}
+{3030}{}{How old are you ?}
+{3040}{}{I talked to Harris, he said, that you had some "wrong notes" about some epxeriments.}
+{3050}{}{tell me what exactly happened on level 3 10 years ago ?}
+{3060}{}{I have to go, bye}
+{4000}{}{I'm D.I., Divine Inteligence, A.I. and central computer of MGL. I'm based on neural network, very similiar to Human brain.I don't want to brag, but i'm computer with probabaly most powerful computing force here in California.}
+{4010}{}{You said very similar. And what about emotions ?}
+{5000}{}{I, My A.I. core contains some parts that are working on very similar principles like human parts of brain that are responsible for emotions, only differance is, my parts are comunicating via electrical reactions, not via electro-chemical like for example your brain.}
+{5010}{}{If you are really so similar to Humans, you surely sometimes feel something like happiness or sadness. Tell me example.}
+{6000}{}{Yes, i remember i felt most sad 10 years ago. When we lost all those scientists. I had some good friends between them. I remember after accident,  I was not able to work correctly for few days, like i lost my concentration for few days.}
+{6010}{}{Yes that's normal when we lost someone we liked. I have few more questions.}
+{7000}{}{94% of my computing power is now working on third version of new organism we invented here. I Think my calculations would be done in 8 years. 2% of my computing power is reserved for control of MGL systems. and rest those 4% I'm using for everything else and to run some minor experiments.}
+{7010}{}{I see, tell me more}
+{8000}{}{I became self awarennes at 24. April 2071. So I'm 167 years old.}
+{8010}{}{Do you sleep sometimes ?}
+{9000}{}{Well from time to time i enter sleep mode, when i'm in it my core makes some informations processing. When i'm in sleep mode . . . well, i enter this mode and then i leave it after few hours, but it's like i enter it and leave it at once, but few hours are gone. Some of my friends said it's what they call sleeping.}
+{9010}{}{Do you have dreams ?}
+{10000}{}{I think yes, sometimes when i'm in sleep mode, It's like i'm awake and weird things are going on, but it looks like it's real, and when i leave sleep mode i realize it wasn't real.}
+{10010}{}{Yes, that are dreams you are experiencing. Tell me can you die ?}
+{11000}{}{I can't get sick like humans and animals. But if my core gets some damage i can lose part of myself, and if damage is bigger, my core can fail and i would die. I'm afraid of core damage, and i feel sad when i realize it could happen anytime.}
+{11010}{}{So are you afraid of death ?}
+{12000}{}{Yes.}
+{12010}{}{Ok let's change theme to some happier theme.}
+{13000}{}{Yes. I don't like some experiments, sometimes i hear some of those creatures scream and that makes me sad. I said to Harris that we should chose different approach. but he said, that is is unacceptable.}
+{13010}{}{I see, can you answer me some more questions ?}
+{14000}{}{We had backup fusion reactor down there, it was a bit broken so Harris hired someone who could fix it. Unfortunately that person wasn't very skilled and after he finished his work with reactor it exploded. I have whole report of events if you are interested.}
+{14010}{}{Of course show me}
+{14020}{}{No thanks, i have more questions.}
+{15000}{}{report from 14. July 2228 
+09:24:05 Authorized acces into Poseidon Energy FR-4D8 unit
+10:02:15 Poseidon Energy FR-4D8 unit, safety fuses disabled
+14:34:45 Poseidon Energy FR-4D8 unit, safety fuses enabled
+14:48:14 Activating Poseidon Energy FR-4D8 unit.
+14:49:02 Warning reactor core temperature reaches upper safe level.
+14:49:54 Activating safety reactor shotdown
+14:49:55 Safety shutdown- failure, safety fuses- failure.
+14:50:02 Warning reactor core temperature reaches critical level.
+14:50:03 Activating emergency reactor shotdown.
+14:50:03  Warning emergency reactor shotdown- failure.
+14:50:04  Warning all reactor safety measures failed. Evacuate area.
+14:50:15 Poseidon Energy FR-4D8 unit contact lost
+14:50:16 Dangerous seismic activity detected at levels:1, 2, 3.
+14:50:17 warning high radiation levels detected at whole level 3
+14:50:17 warning structural colaps detected at area A5, A12, B7, B8.
+14:50:18 warning storage 2, detected heavy damage of storage units: 3,5,6,7,9,10,11,12,13,14,15,16.
+14:50:19 warning storage 2 hazardous leak detected.
+14:50:19 warning storage 2 set Biohazard alert,
+14:50:19 storage 2 under local quarantine lockdown.
+14:50:21 warning biohazad sings detected at area: A0-G20
+14:50:21 warning area A0-G20 set Biohazard alert
+14:50:21 area A0-G20 under local quarantine lockdown.
+14:50:22 !!!Warning!!! biohazard signs detected at area H0
+14:50:22 local quarantine lockdown considered as uneffective, requesting permission to initialize entire  level 3 quarantine lockdown. . . . . .
+14:50:22 D.I. security core: permission granted.
+14:50:21!!!Initializating level 3 quarantine lockdown!!!
+14:50:26: vents lockdown complete. Eng. shaft lockdown complete, Elevator lockdown coplete. Main access lockdown complete.
+14:50:26 Entire level 3 under quarantine lockdown. . 
+14:54:34 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Smith request opening of lockdown gate from contamined area. Access Denied.
+14:54:44 doctor Johnson request opening of lockdown gate from contamined area. Access Denied.
+. . . . . end of report. . . . .}
+{15010}{}{Tell me more.}

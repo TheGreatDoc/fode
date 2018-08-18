@@ -1,0 +1,117 @@
+# 0. QUICK LOOK (ANY)
+{100}{}{Du siehst einen Bewohner von Reno.}
+
+# 1. LOOK, MALE (WTG)
+{150}{}{Du siehst einen abgerissen aussehenden Mann. Er wirkt gelangweilt.}
+{151}{}{Du siehst einen abgerissen aussehenden Mann. Er hat einen stumpfen Blick.}
+{152}{}{Du siehst einen abgerissen aussehenden Mann. Er sieht so aus, als ob er einen Kater hat.}
+{153}{}{Du siehst einen abgerissen aussehenden Mann. Er sieht etwas beschwipst aus.}
+{154}{}{Du siehst einen abgerissen aussehenden Mann. Er sieht dich kurz verärgert an und ignoriert dich dann.}
+{155}{}{Du siehst einen abgerissen aussehenden Mann. Er sieht genervt aus.}
+
+# 2. LOOK, FEMALE (WTG)
+{160}{}{Du siehst eine abgerissen aussehende Frau. Sie wirkt gelangweilt.}
+{161}{}{Du siehst eine abgerissen aussehende Frau. Sie hat einen stumpfen Blick.}
+{162}{}{Du siehst eine abgerissen aussehende Frau. Sie starrt auf einen tausend Meilen entfernten Punkt.}
+{163}{}{Du siehst eine abgerissen aussehende Frau. Sie sieht ein wenig betrunken aus.}
+{164}{}{Du siehst eine abgerissen aussehende Frau. Sie sieht dich kurz verärgert an und ignoriert dich dann.}
+{165}{}{Du siehst eine abgerissen aussehende Frau. Als sie deinen Blick bemerkt, grinst sie höhnisch.}
+
+# 3. FLOAT (ANY) TO [FLAG: ENCLAVE DESTROYED] (WTG)
+{202}{}{Toll, wie du diese Enklaven-Spinner abgebrannt hast! Ganz toll!}
+{203}{}{Das war ja 'ne Art, die Enklave fertig zu machen, }
+
+# 4. FLOAT (ANY) TO [POWER ARMOR] (WTG)
+{215}{}{Oh-oh. Aus dem Weg.}
+
+# 5. FLOAT AND CLICK (FEMALE) TO [MALE, PORN STAR] (WTG)
+{240}{}{Aber hallooooo, du Hengst.}
+{241}{}{Brauchst du 'n Partner für deinen nächsten Film?}
+
+# 6. FLOAT (MALE) TO [FEMALE, PORN STAR] (WTG)
+{255}{}{Wow. Sieh dir das an.}
+{256}{}{Miiiiist.}
+
+# 7. FLOAT AND CLICK (ANY) TO [MALE, PRIZEFIGHTER] (WTG)
+{287}{}{Hey, Champ! Dein letzter Kampf war toll!}
+
+# 8. FLOAT (ANY) TO [MADE MAN] (WTG)
+{308}{}{Wo wir gerade von gefährlichem Aussehen sprachen...}
+{309}{}{*Schluck*}
+
+# 9. FLOAT (ANY) TO [SLAVER] (WTG)
+{320}{}{Was issn mit all den Sklavenhändlern hier in letzter Zeit los?}
+{321}{}{Wieso, weshalb, warum. Wer nicht fragt bleibt dumm.}
+{322}{}{Ich muß raus aus dieser Stadt.}
+{323}{}{Sklavenhändler, paß besser auf in dieser Stadt...}
+{324}{}{Ich hasse diese verdammte Stadt.}
+{325}{}{Ich bin schon zu lange in dieser Stadt.}
+{326}{}{Diese Stadt ist toll...außer den Sklavenhändlern.}
+
+# 10. FLOAT AND CLICK (ANY) TO [COMPANION: ROBOBRAIN] (WTG)
+{366}{}{Ist das ein einarmiger Bandit?}
+
+# 11. FLOAT (ANY) TO [COMPANION: MARCUS] (WTG)
+{376}{}{Is' das 'n Mutant?}
+
+# 12. FLOAT (ANY) TO [COMPANION: BONE-NOSE] OR MALE TOWNSPERSON REACTION TO [COMPANION = FEMALE SPOUSE] (WTG)
+{385}{}{Dein Freund hat 'n Knochen durch die Nase.}
+{386}{}{Der Typ hat 'n Knochen in der Nase, der is' so groß wie mein Arm. Hiiiiimmel.}
+{387}{}{Noch 'n Neandertaler.}
+{388}{}{Reno wird heiß, Zeit, weiterzuziehen.}
+{389}{}{Ich muß raus aus dieser Stadt.}
+{400}{}{Ich hasse diese verdammte Stadt.}
+{401}{}{Ich bin schon zu lange in dieser Stadt.}
+{402}{}{Diese Stadt ist spitze...außer den Touristen.}
+{403}{}{Verkaufste mir die Frau von dir?}
+{404}{}{Wieviel willste für die Frau, die du da hast?}
+
+# 13. FLOAT [NO REP] (WTG)
+{453}{}{Wie viele von den Sippen werden denn so in die Stadt kommen?}
+{454}{}{Blöde Touristen.}
+{455}{}{Is' nicht von hier.}
+{456}{}{Ich muß raus aus dieser Stadt.}
+{457}{}{Ich bin schon zu lange in dieser Stadt.}
+{458}{}{Diese Stadt ist spitze...außer den Touristen.}
+
+# 14. CLICK (ANY) TO [FLAG: ENCLAVE DESTROYED] (WTG)
+{490}{}{Toll, wie du diese Enklaven-Spinner abgebrannt hast! Ganz toll!}
+{493}{}{Das war ja 'ne Art, die Enklave fertig zu machen, }
+
+# 15. CLICK (ANY) TO [POWER ARMOR) (WTG)
+{511}{}{Tut mir leid, war ich dir im Weg? Ich verlasse die Stadt.}
+{512}{}{Wenn du glaubst, daß mich diese Rüstung einschüchtert, hast du recht.}
+
+# 16. CLICK (MALE) TO [FEMALE, PORN STAR] (WTG)
+{543}{}{Komm und plauder 'ne Sekunde mit mir, Schätzchen.}
+{544}{}{Mist. So viele Kurven und ich steh ohne Bremsen da.}
+
+# 17. CLICK (ANY) TO [MALE, MADE MAN) (WTG)
+{584}{}{Grüß deinen Boß von mir.}
+{585}{}{Sieh mal, bitte...ich will keinen Ärger.}
+
+# 18. CLICK (ANY) TO [SLAVER] (WTG)
+{602}{}{Wenn du Sklaven verkaufen willst, mußte dich an die Mordinos halten.}
+{603}{}{Diese Stadt ist toll...außer den Sklavenhändlern.}
+{604}{}{Wie ich höre, testen sie das Zeug an Sklaven nördlich von New Reno.}
+{605}{}{Was willst du?}
+{606}{}{Ich muß raus aus dieser Stadt.}
+{607}{}{Hör zu, ich hab jetzt gerade keine Zeit, mit dir zu reden.}
+
+# 19. CLICK (ANY) TO [COMPANION: BONE-NOSE] OR MALE TOWNSPERSON TO (COMPANION: SPOUSE = FEMALE) (WTG)
+{655}{}{Der Typ hat 'n Knochen in der Nase, der is' so groß wie mein Arm. Hiiiiimmel.}
+{656}{}{Ich will lieber nich' wissen, wie dein Freund da den Knochen in seine Nase bekommen hat.}
+{657}{}{Ich hasse diese verdammte Stadt.}
+{658}{}{Ich bin schon zu lange in dieser Stadt.}
+{659}{}{Diese Stadt ist spitze...außer den Touristen.}
+{660}{}{Hör zu, ich hab jetzt gerade keine Zeit, mit dir zu reden.}
+{661}{}{Verkaufste mir die Frau von dir?}
+
+# 20. CLICK (ANY) TO [NO REP] (WTG)
+{700}{}{Heute nacht gibt's Action!}
+{701}{}{Ich muß raus aus dieser Stadt.}
+{702}{}{Hör zu, ich hab jetzt gerade keine Zeit, mit dir zu reden.}
+
+# endlines
+{1203}{}{!}
+{1493}{}{!}

@@ -1,0 +1,244 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš neobvykle velkou krtkokrysu.}
+{101}{}{Vidíš Braina.}
+{102}{}{Vidíš obrovskou, albínskou krtkokrysu. Zdá se, e má zvìtšenou lebku a vypadá obzvláš
+inteligentnì.}
+
+{110}{}{Jsi pošetilejší ne vìtšina z tvého druhu, která na mì narazila. Teï umøeš.}
+
+{120}{}{Nevím jak jsi se dostal sem -- ale musíš bıt schopen najít cestu ven stejnım zpùsobem.}
+{121}{}{Nemám èas na tvé obtìování. Plánuju ovládnutí svìta. Jdi pryè.}
+{122}{}{Neobtìuj mì. Podruhé u tì nebudu varovat.}
+{123}{}{To je ono. Zomak! Zabij ho pro mì!}
+
+{130}{}{Obroda je na dosah ruky. Ale nebude ani o trochu blí dokud nenajedeš na opravu našeho atomového reaktoru. 
+(sám k sobì) Lidé... tak èasto zklamou. }
+{131}{}{Oprava atomového reaktoru?}
+{132}{}{Jo. Dobøe, Pùjdu na to. Nazdar.}
+
+{140}{}{Cítím, e máš na sobì jeden z mıch talismanù, ale nepamatuju se, e bych ti nìjakı dal.}
+{141}{}{Našel jsem ho.}
+{142}{}{Uh, musels na to zapomenout.}
+{143}{}{To je jen moje kolínská. Old Spice -- líbí se ti?}
+{144}{}{Zabil jsem jednoho z tvıch trubcù a vzal si ho z jeho teplé mrtvoly.}
+
+{150}{}{Jsi pøipravenej stát se jedním z nás?}
+{151}{}{U od narození. Kam se mám podepsat?}
+{152}{}{Myslíš, stát se velkou krysou?}
+{153}{}{Nechci bıt ani trošku tím, èím jsi ty.}
+{154}{}{Ale kdo to je my, uh, myslím, vy?}
+
+{160}{}{Aby jak Gecko, tak Vault City pøeily, budou muset spolupracovat. Vault City potøebuje energii z našeho atomového reaktoru, aby expandovalo, a my potøebujeme lékaøskou technologii Vault City. Dokud nebudeme spolupracovat, obì mìsta budou stagnovat. Vault City nám musí pomoct opravit naši elektrárnu.}
+{161}{}{Jak je chcete pøimìt aby to udìlali?}
+
+{170}{}{Jsem známı prostì jako Brain. Jsem hold mého génia. Málo vìcí v Gecku unikne mé pozornosti.}
+{171}{}{Ale ty jsi jen obøí krysa.}
+{172}{}{Øíkal jsi nìco o pøidání se k vám?}
+
+{180}{}{Nezajímá mì, kde jsi k tomu pøišel. Otázkou je, zda zamıšlíš pøidat se k nám a brát to vánì. }
+{181}{}{Pøidat se k vám? Co tím míníš?}
+{182}{}{To radši vyèistím tohle doupì ne bych se k vám pøidal.}
+
+{190}{}{Dobøe, jako èást mého plánu k ovládnutí svìta, jsem zamıšlel odmìnit mé ghoulí následovníky nalezením
+ zpùsobu jak obnovit jejich lidskost.}
+{191}{}{Jak to chceš udìlat?}
+
+{200}{}{A sjednotím Gecko a Vault City pod mou vládou, vyèlením lékaøské laboratoøe Vault City
+ k nalezení zpùsobu obrácení úèinkù radiace, která dìlá z lidí ghouly. Budou obrozeni, znovuzrozeni jako lidé.}
+{201}{}{To nezní špatnì.}
+
+{210}{}{Ankh je symbolem ivota. Jakmile ti jednou dám ten talisman, budeš jedním z nás. A tví kamarádi ti budou více nápomocni na cestì k obnovì. Ale buï opatrnı na to, komu ten talisman ukáeš.}
+{211}{}{Jsi pøipraven pøijmout Obrodu a nosit mùj Ankh talisman?}
+{212}{}{OK, vezmu si tvùj Ankh talisman.}
+{213}{}{Nechci Obnovu. Jsem rád právì takovı jakı jsem. Nechci tvùj talisman.}
+{214}{}{Obnova? Co tím myslíš?}
+
+{220}{}{Ti pitomci z Vault City jenom vyjádøili své vyhroování smrtí znièením našeho reaktoru.}
+{221}{}{Teï musím vymyslet jinou cestu k ovládnutí svìta. Vypadni.}
+{222}{}{U mám dost tvıch neohrabanıch kecù. Zomaku! Zabij ho pro mì.}
+
+{230}{}{Oprava reaktoru byl první krok. Dalším krokem je zajištìní pøeití jak Gecka, tak Vault City.}
+{231}{}{Další krok?}
+{232}{}{Nejsi najednou nìjak ustaranı obèan.}
+{233}{}{Myslím, e jsem udìlal právì dost. Nazdar.}
+{234}{}{Proè se právì obøí mluvící krysa o tohle všechno zajímá?}
+
+{240}{}{Dobrá práce. Jak Vault City tak Gecko mají dùvod k radosti. S naším reaktorem pracujícím na maximální vıkon,
+ je mùj plán na dobytí svìta kousek od cíle. Nyní mùeš odejít. Mám nìjakou práci.}
+{241}{}{Dobøe, pro tebe jsem to urèitì nedìlal. Zdar.}
+{242}{}{Velké plány na pøekrmenou krysu. Nazdar.}
+
+{250}{}{Dobøe, reaktor pracuje -- ale ne moc efektivnì. Musíme pouít centrální poèítaè Vault City
+ k analıze vıstupní zprávy našeho reaktoru.}
+{251}{}{Cetrální poèítaè Vault City. Jsem si jistı, e ti otevøení lidé budou šastni, e mohou pomoct obøí zmutované kryse a mìstu plnému ghoulù.}
+{252}{}{Jak pøedpokládáš, e se to stane?}
+
+{260}{}{Ustaranı obèan? Tak nìjak. Ne ovládnu svìt, musím se ujistit, e je tu nìco, co za ovládnutí stojí. 
+ Musím vybudovat silnou energetickou základnu z Gecka a Vault City.}
+{261}{}{Krysa, která kuje pikle k ovládnutí svìta?}
+
+{270}{}{Hmm, navzdory tvé nechuti k ovládnutí svìta hlodavci, ta akce, kterou navrhuji, bude prospìšná
+ pro tisíce obyvatel Vault City a Gecka. Nemusíš se starat o mé vlastní pohnutky, ale za ty vısledky to stojí.}
+{271}{}{Proè mi neøekneš víc o tom posledním kroku. Pak budu pøemıšlet o tom, zda ti pomoci.}
+{272}{}{Dostávám køeèe, sotva pomyslím na to, e ti pomùu. Jdu pryè.
+ Zduø.}
+
+{280}{}{No, pomohou ti, kdy jim ukáeš, jak velkı z toho budou mít prospìch. Máme ekonomickou prognózu,
+ která dokazuje, e optimalizování vıkonu elektrárny Gecka bude pøímo prospìšné Vault City. Seznámím
+ naše kamarády tady v Gecku s tvojí misí.}
+{281}{}{Dají ti hydroelektrickı regulátor magnetosféry, kdy prokáeš e to Vault City pøinese takovı uitek. Pøipravil jsem
+ ekonomickou zprávu, která detailnì popisuje, jak velkı uitek Vaul City pøinese oprava našeho reaktoru. Seznámím
+ naše kamarády tady v Gecku s tvojí misí.}
+{282}{}{To je skvìlé, ale kdo by kdy èekal takovou vìc ve Vault City?}
+{283}{}{Proè si o tom nepopovídáš s tím starım tluèhubou, tím smradlavım srágorou Festusem, v jadernı elektrárnì a uvidíš, jestli dostaneš nìjaké informace z té jeho prohnilé lebky. Moná by vìdìl o nìkterıch vìcech, které bychom vyuili pro atomovou elektrárnu. Seznámím naše kamarády tady v Gecku s tvojí misí.}
+{284}{}{To zní jako dobrı nápad. Nashle.}
+
+{290}{}{Myslím, e McClure je jedinı èlen rady ve Vault City, kterı má dost mozkovıch závitù, aby se mohl povznést nad pøedsudky. On ti urèitì pomùe získat co potøebuješ.}
+{291}{}{ádná proè, ádná jak. Prostì budu tvùj posel, bez otázek.}
+{292}{}{Tak, hádám to stojí za pokus. Kde dostanu ten holodisk?}
+
+{300}{}{Musíš jít nahoru na smetištì. Hledej ghoula jménem Gordon. Má Ekonomickı data holodisk, kterı potøebuješ. Budeš mít mùj talisman, take pozná, e ti má vìøit.}
+{301}{}{Co, talisman?}
+
+{310}{}{Opravdu chceš odsoudit všechny obyvatele obou mìst k pomalé smrti?}
+{311}{}{Hmmm, asi ne. Dobøe, øekni mi, kde najdu data holodisk.}
+{312}{}{Lepší pomalá smrt, ne vláda krysy. Èau.}
+
+{320}{}{(Èmuch, èmuch) Hmmm, cítím z tebe pøíznaèné aroma sırovıch krekrù. Nemáš náhodou sebou pár navíc? 
+ Já prostì miluji sırové krekry.}
+{321}{}{Hmm, nee. Nemám tu ádnı sırovı krekry.}
+{322}{}{Asi bych mohl postrádat nìjakı sırovı krekry.}
+
+{330}{}{Teï jsi jeden z nás. Brzo ovládnu svìt a kadı z vás bude obrozen.}
+{331}{}{Uh, jo. Cokoliv øekneš.}
+{332}{}{To je ono. To u staèilo. Skonèí to právì teï. Nìkdo zašlápne tvou pochybnou existenci --
+ a ten nìkdo budu já.}
+
+{340}{}{Dobøe, pak pøedpokládám, e nemáme co bychom si ještì øekli. Ale jak víš, nemohu tì nechat odsud
+ odejít ivého, dokud nejsi jedním z nás.}
+{341}{}{Radìji bych umøel, ne se stal jedním z vás.}
+{342}{}{Hmm, asi jsem se ve svém úsudku unáhlil.}
+{343}{}{Sem s tím, Willarde.}
+
+{350}{}{Pitomèe. Zomaku! Zabij pro mì toho vetøelce.}
+
+{360}{}{Vy lidé jste tak omezení ve své toleranci. Pøipomínal bych normální krysu, kdybyste se vy lidé
+ nesnaili znièit svìt. Kdyby tu nebyla radiace, nebyl bych tím èím jsem dnes.}
+{361}{}{A èím pøesnì jsi ?}
+
+{370}{}{Teï, kdy u jsem ti všechno vysvìtlil, jsi pøipraven stát se jedním z nás?}
+{371}{}{Ano, pøedpokládám, e ano.}
+{372}{}{Jsem pøesvìdèen, jasnì. Pøesvìdèen, e vypadnu z tıhle pakárny.}
+
+{380}{}{Byl jsem pouze jednou z mnoha normálních laboratorních krys ve vızkumné laboratoøi. Pak jednou
+ nìco vybuchlo. Naše klece byly otevøeny, a dostaly jsme dávku nìjaké kapaliny z obrovské kádì.}
+{381}{}{A co bylo pak?}
+
+{390}{}{Vyplazil jsem se ven. Jak jsem se zaèal uzdravovat, uvìdomil jsem si, e jsem se zmìnil. Snail jsem se komunikovat s lidmi, ale oni se mì jen pokoušeli zabít. Lidi jsou pøíliš násilní, aby pøeili pouze pod svou vlastní vládou -- ale to je jinı pøíbìh. Prvním krokem je opravit reaktor.}
+{391}{}{Opravit reaktor?}
+
+{400}{}{Ano. Musíš získat hydroelektrickı regulátor magnetosféry z Vault City, abys opravil reaktor Gecka. Kdy neuspìješ, pak Vault City nebude váhat napadnout Gecko. Samozøejmì, znièením reaktoru se z dlouhodobého hlediska zahubí také.}
+{401}{}{Zahubí se sami? Jak to myslíš?}
+{402}{}{Proè by mì Vault City mìlo dát souèástku pro atomovou elektrárnu Gecka?}
+
+{410}{}{Musíš jim ukázat, e je to v jejich nejlepším zájmu. Lidé jsou nejlépe manipulovatelní skrze jejich vlastní zájmy.}
+{411}{}{Nemyslím si, e mi lidé ve Vault City dají díl pro tvou atomovou elektrárnu.}
+
+{420}{}{Nemáš co na práci právì teï?}
+{421}{}{Snad bych mìl jít pro tu souèástku do atomové elektrárny. Nashle.}
+{422}{}{Urèitì to udìlám. Musím sehnat tu souèástku nìkde jinde.}
+
+{430}{}{Mùj nos je docela citlivı. Jsem si jist, e máš sırové krekry. Dej mi nìjakı, hned. Prosím.}
+{431}{}{Jediná cesta, jak dostaneš sırovı krekry, je z mıch vychladlıch a mrtvıch dlaní.}
+{432}{}{Ou, hej. Co to jenom mám v mıch kapsách? Myslím, e to nakonec pøece jenom jsou nìjaké sırové krekry. Kdo ví?}
+
+{440}{}{(chlamst, kramst, chlamst) Mmmm, miluju sırové krekry, jsou tak , hmm, uh, sırové. Za to
+ se staneš èlenem mého zvláštního kultu, a mùeš mi pomoci ovládnout svìt.}
+{441}{}{(chlamst, kramst, chlamst) Mmmm, miluju sırové krekry, jsou tak , hmm, uh, sırové. Za to
+ se staneš èlenem mého zvláštního kultu, a mùeš mi pomoci ovládnout svìt. Je tu nìco, co bys mìl právì teï dìlat?}
+{442}{}{(chlamst, kramst, chlamst) Mmmm, miluju sırové krekry, jsou tak , hmm, uh, sırové.}
+{443}{}{(chlamst, kramst, chlamst) Mmmm, miluju sırové krekry, jsou tak , hmm, uh, sırové.}
+{444}{}{OK.}
+
+{450}{}{Budi. Zomaku! Zabij toho pitomce pro mì. Ale dávej pozor na sırové krekry, a je nerozdrobíš!}
+
+{460}{}{Musíš pouít data holodisk z reaktoru na centrální poèítaè Vault City. Mùeš se tam buï proplíit, nebo 
+ jestli máš ekonomickı data holodisk, mùeš jít za McClurem.}
+{461}{}{Ekonomickı data disk?}
+{462}{}{Jasnì.}
+{463}{}{Pak pøines zanalyzovaná data reaktoru na holodisku Festovi a on je pouije k tomu, aby reaktor bìel efektivnì.}
+{464}{}{Dobøe, a získáš hydroelektrickı regulátor magnetosféry z Vault City, pøines to zpátky do reaktoru. 
+ Pak mùeš zkusit pøesvìdèit toho nabubøelého slimáka Festa, aby instaloval tu souèástku, nebo pouij
+ robota k instalaci, nebo to mùeš dokonce instalovat sám, samozøejmì - pokud to nìkdo udìlá, tak to bude v poøádku.}
+{465}{}{Jak dostanu tu souèástku z Vault City?}
+{466}{}{Oh, aha. Fajn, díky za informace. Zatím.}
+{467}{}{Festus je ten chlapík, co provozuje atomovou elektrárnu. Je starı, nevrlı a hašteøivı, ale o vedení elektrárny opravdu nìco ví. Jeho pracovna je v té èásti elektrárny, která je nejvíce jihovıchodnì.
+ Dones mu data holodisk a on u bude vìdìt, jak ho pouít.}
+{468}{}{Oh, mám to. Fajn. Díky. Nashle.}
+
+
+{500}{}{(hloubá nad nìèím) Mnoho vìcí pominulo. Èasy u nejsou to, co bıvaly. (povzdech) Cítím, e
+ všichni ostatní z mého rodu zemøeli. Pøestoe byl šílenı, pøál bych si, aby tomu tak nebylo. Doufal jsem, e
+ mùe najít nìjaké štìstí i ve svém stavu. (k tobì) No, konec mıch pesimistickıch úvah.}
+{501}{}{Uh, dobøe.}
+
+{504}{}{Hydroelektrickı regulátor magnetosféry. To je ta èást, kterou musíš získat z
+ Vault City. Potom ji musíš pøinést zpìt sem a nainstalovat ji do reaktoru.}
+{505}{}{Nainstalovat do reaktoru? A jak to mám udìlat?}
+{506}{}{Oh, fajn. Díky.}
+
+{510}{}{Optimalizaèní data pro reaktor jsou nahraná na holodisku, kterı máš z centrálního poèítaèe Vault City.
+ Všechno, co teï musíš udìlat, je zanést ten holodisk nabubøelému tluèhubovi Festovi.
+ Nebo pøedpokládám, e by staèilo ten disk pouít u ovládacího panelu reaktoru, jestli nesneseš rozhovor
+ s Festem.}
+{511}{}{Festus? Kdo je to?}
+{512}{}{Oh, dobøe. Díky. Zatím.}
+
+{600}{}{Obroda je na dosah ruky. Ale nebude ani o trochu blí, dokud nezaèneš pracovat na opravì našeho atomového reaktoru. 
+(sám k sobì) Lidé... tak èasto zklamou.}
+{601}{}{Obroda je skoro tady, ale více se nepøiblíí, dokud nepouiješ data holodisk z reaktoru na centrální poèítaè Vault City. Pche! Jeden by si myslel, e tohle dokáe pochopit i èlovìk.}
+{602}{}{Jsi tak blízko k poskytnutí prostøedkù pro Obrodu nás všech. Jenom staèí dát zanalyzovanı data holodisk Festovi.}
+{603}{}{Víš, e musíš získat hydroelektrickı regulátor magnetosféry z Vault City, abys ho potom nainstaloval do reaktoru. Nìkdy si øíkám, e obroda nikdy nepøijde, dokud budu závislı na lidech.}
+{604}{}{Opravit reaktor? Co tím myslíš?}
+{605}{}{Pouít data holodisk z reaktoru? A jak to mám udìlat?}
+{606}{}{Musím ho pøedat Festovi?}
+{607}{}{Hydro-coeco? Huh?}
+{608}{}{Coe to je s tím reaktorem?}
+{609}{}{Komu to mám dát?}
+{610}{}{Oh jasnì. Tak u na to jdu. Mìj se.}
+
+{620}{}{Jsem znám jako Brain. Jsem hold mého génia. Málo vìcí v Gecku unikne mé pozornosti.}
+{621}{}{Ale ty jsi jen obøí krysa.}
+{622}{}{Øíkal jsi nìco o pøidání se k vám?}
+
+{630}{}{Akce, které navrhuji prospìjí tisícùm obyvatel z Vault City a Gecka.
+ I kdy se nestaráš o mnì, nebo mé pohnutky, vısledky budou poøád stát za to.}
+{631}{}{U máš data holodisk z reaktoru, take teï u jen zbıvá ho pouít.}
+{632}{}{U máš zanalyzovanı data holodisk, teï s ním musíš nìco udìlat.}
+{633}{}{Náš atomovı reaktor potøebuje novou souèástku, jestli má nìkdy pracovat efektivnì.}
+{634}{}{Získal jsi data, která potøebujeme na optimalizaci našeho reaktoru. Všechno
+ co teï musíš udìlat, je donést je Festovi.}
+{635}{}{Proè mi neøekneš, co navrhuješ?}
+{636}{}{Pouít data holodisk z reaktoru? A jak to mám udìlat?}
+{637}{}{Jasnì, to jsem si domyslel, ale co?}
+{638}{}{Souèástku? Jakou souèástku?}
+{639}{}{Proè mi neøekneš o tom posledním kroku a já popøemıšlím o tom, jestli ti mám pomoct.}
+{640}{}{Dát to komu?}
+{641}{}{Ještì jeden krok?}
+
+{650}{}{Hmm, navzdory tvé nechuti k ovládnutí svìta hlodavci, ta akce, kterou navrhuji, bude prospìšná
+ pro tisíce obyvatelù Vault City a Gecka. Nemusís se starat o mé pohnutky, ale za ty vısledky to stojí.}
+{651}{}{U máš data holodisk z reaktoru, take teï zbıvá ho pouít.}
+{652}{}{U máš zanalyzovanı data holodisk reaktoru, teï s ním musíš nìco udìlat.}
+{653}{}{Náš atomovı reaktor potøebuje novou souèástku, jestli má nìkdy pracovat efektivnì.}
+{654}{}{Proè mi neøekneš, co navrhuješ?}
+{655}{}{Pouít data holodisk z reaktoru? A jak to mám udìlat?}
+{656}{}{Jasnì, to jsem si domyslel, ale co?}
+{657}{}{Co jako?}
+{658}{}{Souèástku? Jakou souèástku?}
+{659}{}{Proè mi neøekneš o tom posledním kroku a já popøemıšlím o tom, jestli ti mám pomoct.}
+
+{670}{}{Reaktor, furt jenom reaktor (povzdech). Vra se zpátky, a s tím trochu pohneš.}
+{671}{}{Pøijï zpìt pozdìji. Komunikuji s vyšší mocí (ššššššš).}
+
+{700}{}{Nemám ti víc co øíct.}

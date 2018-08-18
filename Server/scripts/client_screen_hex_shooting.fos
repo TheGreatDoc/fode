@@ -1,0 +1,103 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+#include "_macros.fos"
+
+IGUIElementTextOpt @HexShootingHitChance;
+
+void InitHexShootingScreen()
+{
+	@HexShootingHitChance=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"", 0,0)
+	  .TextOptions(FONT_FALLOUT, COLOR_RED, 0)
+      .TextBoxSize(120,20);
+}
+
+int GetHexShootingHitChance(uint16 HexX, uint16 HexY)
+{
+	CritterCl @chosen=GetChosen();
+	uint8 weaponMode=0;
+	ProtoItem @weapon=chosen.GetSlotProto(SLOT_HAND1,weaponMode);
+	
+	int use         = _WeaponModeUse(weaponMode);
+	int hitLocation = _WeaponModeAim(weaponMode);
+	if(use > 2) return 0;
+
+    if(!chosen.IsLife()) return 0;
+
+    ItemCl@ realWeapon = _CritGetItemHand(chosen);
+    ProtoItem@ ammo = null;
+
+    if(valid(realWeapon) && _WeaponRound(weapon, use) > 0)
+    {
+        if(realWeapon.AmmoCount == 0) return 0;
+        @ammo=GetProtoItem(realWeapon.AmmoPid);
+    }
+
+    uint skillNum = _WeaponSkill(weapon, use);
+    int wpnMaxDist = _WeaponMaxDist(weapon, use);
+    if(skillNum == SK_THROWING) wpnMaxDist = MIN(wpnMaxDist, 3 * MIN(int(10), chosen.Stat[ST_STRENGTH]));
+
+    int dist = GetDistantion(chosen.HexX,chosen.HexY,HexX,HexY);
+    if(dist > wpnMaxDist) return 0;
+
+    int toHit = int(chosen.Skill[skillNum]);
+    int weaponPerk = weapon.Weapon_Perk;
+    int blockers = 0;
+
+    if(skillNum != SK_UNARMED)
+    {
+        // Ranged attack modifiers
+        int distmod1 = 2; // Used for initial weapon bonus
+        int distmod2 = 0; // Minimal distance
+        if(weaponPerk == WEAPON_PERK_LONG_RANGE) distmod1 = 4;
+        else if(weaponPerk == WEAPON_PERK_SCOPE_RANGE)
+        {
+            distmod1 = 5;
+            distmod2 = 8;
+        }
+
+        int perception = chosen.Stat[ST_PERCEPTION];
+        int acc = dist;
+
+        if(dist < distmod2) acc += distmod2;
+        else
+        {
+            if(chosen.IsPlayer())
+				acc -= (perception - 2) * distmod1; // we want to keep it, because fo2238 might use it to display NPCs chance (via possessing)
+            else
+				acc -= perception * distmod1;
+        }
+
+        if(-2 * perception > acc) acc = -2 * perception;
+
+        if(acc >= 0)
+        {
+            if(chosen.Damage[DAMAGE_EYE]!=0)
+				acc *= -12;
+            else
+				acc *= -4;
+        }
+        else acc *= -4;
+
+        toHit += acc;
+
+        blockers = GetCrittersPath(chosen.HexX, chosen.HexY, HexX, HexY, 0.0f, dist, FIND_LIFE, null);
+        toHit -= 10 * blockers;
+    } // End range modifiers
+
+    if(!(weapon.Weapon_IsUnarmed) && chosen.Trait[TRAIT_ONE_HANDER] != 0 && valid(realWeapon))
+        toHit += (FLAG(weapon.Flags, ITEM_TWO_HANDS) ? -40 : 20);
+
+    int handlingStrength = chosen.Stat[ST_STRENGTH];
+    int reqStrength = weapon.Weapon_MinStrength;
+    if(handlingStrength < reqStrength) toHit -= (reqStrength - handlingStrength) * 20;
+    if(weaponPerk == WEAPON_PERK_ACCURATE) toHit += 20;
+
+    if(chosen.Damage[DAMAGE_EYE] != 0) toHit -= 25;
+
+    toHit = CLAMP(toHit, 5, 95);
+
+    return toHit;
+}

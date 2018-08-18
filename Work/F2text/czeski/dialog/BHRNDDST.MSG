@@ -1,0 +1,169 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+# Brok Encounter Table
+{100}{}{Potkal jsi lupièe a vlky.}
+{101}{}{Potkal jsi lupièe.}
+{102}{}{Potkal jsi vlky.}
+{103}{}{Potkal jsi škorpiony.}
+{104}{}{Potkal jsi masožravé rostliny.}
+{105}{}{Potkal jsi hlídku Jednoty bojující s lupièi.}
+{106}{}{Potkal jsi hlídku Jednoty bojující s vlky.}
+{107}{}{Potkal jsi hlídku Jednoty.}
+
+# VPat Encounter Table
+{150}{}{Potkal jsi otrokáøe a psy.}
+{151}{}{Potkal jsi otrokáøe.}
+{152}{}{Potkal jsi zlaté geckony.}
+{153}{}{Potkal jsi divoké psy.}
+{154}{}{Potkal jsi Patrolu a psy bojující s otrokáøi.}
+{155}{}{Potkal jsi otrokáøe bojující se zlatými geckony.}
+{156}{}{Potkal jsi Patrolu bojující s otrokáøi.}
+{157}{}{Potkal jsi Patrolu bojující se zlatými geckony.}
+{158}{}{Potkal jsi Patrolu bojující s divokými psy.}
+{159}{}{Potkal jsi Patrolu.}
+
+# RDRC Encounter Table
+{200}{}{Byl jsi pøepaden lupièi.}
+{201}{}{Potkal jsi vlky.}
+{202}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{203}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{204}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{205}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{206}{}{Potkal jsi karavanu.}
+{207}{}{Potkal jsi karavanu.}
+{208}{}{Potkal jsi karavanu.}
+{209}{}{Potkal jsi karavanu.}
+
+# VNNB Encounter Table
+{250}{}{Potkal jsi bandity.}
+{251}{}{Potkal jsi vlky.}
+{252}{}{Potkal jsi škorpióny.}
+{253}{}{Potkal jsi karavanu odrážející útok banditù.}
+{254}{}{Potkal jsi karavanu odrážející útok banditù.}
+{255}{}{Potkal jsi karavanu odrážející vlky.}
+{256}{}{Potkal jsi karavanu odrážející škorpióny.}
+{257}{}{Potkal jsi karavanu.}
+{258}{}{Potkal jsi karavanu.}
+{259}{}{Potkal jsi karavanu.}
+{260}{}{Potkal jsi karavanu.}
+{261}{}{Potkal jsi poutníka.}
+
+# NCR Encounter Table
+{300}{}{Potkal jsi zbytky Vùdcovy armády.}
+{301}{}{Potkal jsi bandity.}
+{302}{}{Potkal jsi NCR Rangery bojující se zbytky Vùdcovy armády.}
+{303}{}{Potkal jsi NCR Rangery bojující s bandity.}
+{304}{}{Potkal jsi farmáøe, kteøí narazili na zbytky Vùdcovy armády.}
+{305}{}{Potkal jsi farmáøe, kteøí narazili na bandity.}
+{306}{}{Potkal jsi NCR Rangery.}
+{307}{}{Potkal jsi farmáøe.}
+
+# DNRV Encounter Table
+{350}{}{Potkal jsi otrokáøskou karavanu.}
+{351}{}{Potkal jsi lupièe a loupežníky.}
+{352}{}{Potkal jsi loupežníky.}
+{353}{}{Potkal jsi lupièe.}
+{354}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{355}{}{Potkal jsi karavanu bojující s lupièi.}
+{356}{}{Potkal jsi karavanu bojující s bandity.}
+{357}{}{Potkal jsi karavanu obklíèenou lupièi.}
+{358}{}{Potkal jsi otrokáøskou karavanu bojující s jinou karavanou.}
+{359}{}{Potkal jsi bandity bojující s lupièi.}
+{360}{}{Potkal jsi karavanu.}
+{361}{}{Potkal jsi karavanu.}
+
+# DMRV Encounter Table
+{400}{}{Potkal jsi bandity.}
+{401}{}{Potkal jsi lupièe.}
+{402}{}{Potkal jsi lupièe a bandity.}
+{403}{}{Potkal jsi zlaté geckony a škorpióny.}
+{404}{}{Potkal jsi zlaté geckony.}
+{405}{}{Potkal jsi krtèí a praseèí potkany.}
+{406}{}{Potkal jsi škorpióny.}
+{407}{}{Potkal jsi masožravé rostliny.}
+{408}{}{Potkal jsi lupièe bojující s bandity.}
+{409}{}{Potkal jsi karavanu odrážející útok banditù.}
+{410}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{411}{}{Potkal jsi karavanu odrážející útok škorpiónù.}
+{412}{}{Potkal jsi geckony bojující se škorpióny.}
+{413}{}{Potkal jsi karavanu.}
+
+# Band Encounter Table
+{450}{}{Potkal jsi bandity a lupièe.}
+{451}{}{Potkal jsi bandity a geckony.}
+{452}{}{Potkal jsi zlaté geckony.}
+{453}{}{Potkal jsi škorpióny a masožravé rostliny.}
+{454}{}{Potkal jsi lupièe bojující se škorpióny.}
+{455}{}{Potkal jsi škorpióny bojující s lupièi.}
+{456}{}{Potkal jsi karavanu odrážející útok banditù.}
+{457}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{458}{}{Potkal jsi nìjaké bandity plenící masožravé rostliny.}
+{459}{}{Potkal jsi karavanu.}
+
+# DVMV Encounter Table
+{500}{}{Potkal jsi bandity a divoké psy.}
+{501}{}{Potkal jsi lupièe a divoké psy.}
+{502}{}{Potkal jsi lupièe.}
+{503}{}{Potkal jsi bandity.}
+{504}{}{Potkal jsi skupinku Mantisù a nìkolik masožravých rostlin.}
+{505}{}{Potkal jsi psy a masožravé rostliny.}
+{506}{}{Potkal jsi skupinku Mantisù.}
+{507}{}{Potkal jsi divoké psy.}
+{508}{}{Potkal jsi lupièe bojující se psy.}
+{509}{}{Potkal jsi karavanu odrážející útok psù.}
+{510}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{511}{}{Potkal jsi karavanu odrážející útok banditù.}
+{512}{}{Potkal jsi karavanu.}
+
+# Red Encounter Table
+{550}{}{Potkal jsi geckony a vlky.}
+{551}{}{Potkal jsi zlodìje pùdy.}
+{552}{}{Potkal jsi vlky.}
+{553}{}{Potkal jsi zlaté geckony.}
+{554}{}{Potkal jsi prospektory, kteøí narazili na zlodìje pùdy.}
+{555}{}{Potkal jsi lovce lovící geckony.}
+{556}{}{Potkal jsi pašeráky lihovin bojující s vlky.}
+{557}{}{Potkal jsi bezdomovce bojující s vymahaèi penìz.}
+{558}{}{Potkal jsi bezdomovce bojující s vlky.}
+{559}{}{Potkal jsi pašeráky lihovin.}
+{560}{}{Potkal jsi lovce.}
+{561}{}{Potkal jsi prospektory.}
+
+# SRNRRN Encounter Table
+{600}{}{Potkal jsi deathclawy.}
+{601}{}{Potkal jsi ohnivé geckony.}
+{602}{}{Potkal jsi karavanu prchající pøed deathclawy.}
+{603}{}{Potkal jsi karavanu bojující s deathclawy.}
+{604}{}{Potkal jsi karavanu bojující s ohnivými geckony.}
+{605}{}{Potkal jsi karavanu bojující s ohnivými geckony.}
+{606}{}{Potkal jsi karavanu.}
+{607}{}{Potkal jsi karavanu.}
+{608}{}{Potkal jsi karavanu.}
+{609}{}{Potkal jsi karavanu.}
+
+# EPA Encounter Table
+{650}{}{Potkal jsi alieny a deathclawy.}
+{651}{}{Potkal jsi kentaury a floatery.}
+{652}{}{Potkal jsi ohnivé geckony.}
+{653}{}{Potkal jsi alieny.}
+{654}{}{Potkal jsi deathclawy.}
+{655}{}{Potkal jsi ohnivé geckony.}
+{656}{}{Potkal jsi alieny.}
+{657}{}{Potkal jsi kentaury.}
+{658}{}{Potkal jsi floatery.}
+
+# New Encounter Table
+{700}{}{Potkal jsi èleny Yakuzy.}
+{701}{}{Potkal jsi gang.}
+{702}{}{Potkal jsi nìjaké vlky.}
+{703}{}{Potkal jsi mafiány bojující s èleny Yakuzy.}
+{704}{}{Potkal jsi mafiány bojující s gangem.}
+{705}{}{Potkal jsi mafiány.}
+{706}{}{Potkal jsi poutníka.}
+
+# NRNR Encounter Table
+{750}{}{Potkal jsi karavanu odrážející útok lupièù.}
+{751}{}{Potkal jsi karavanu bojující se zbytky Vùdcovy armády.}
+{752}{}{Potkal jsi karavanu bojující s deathclawy.}
+{753}{}{Potkal jsi karavanu.}
+{754}{}{Potkal jsi karavanu.}
+{755}{}{Potkal jsi karavanu.}

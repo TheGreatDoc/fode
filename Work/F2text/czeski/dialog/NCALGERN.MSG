@@ -1,0 +1,95 @@
+# Tento soubor pøeloil Radim "HIGHTOWER" Brix , hightower@angelfire.com
+{100}{}{Vidíš nepozorného a uvanìného Algernona.}
+{101}{}{Vidíš Algernona.}
+
+# 0. LOOK )
+{150}{}{Vidíš, nepozorného a uvanìného mue.  Pohupuje se a nìco si píská.}
+{151}{}{Vidíš Algernona. Vypadá jako by si hrál na váleèníka, kterı právì vystøeluje rakety na cíle.}
+
+# 1. FLOAT DIALOGUES (WTG)
+{200}{}{Pfu Pfu}
+{201}{}{Šššššš buum!}
+{202}{}{Zark! Zark!}
+{203}{}{Sssssshhhhhhuuuu... *BUUM!*}
+{204}{}{Bac!}
+{205}{}{Buuuuum! Bu-bu-buum!}
+{206}{}{Bu-bu-bu}
+{207}{}{Bu-bu-bu}
+{208}{}{Beem! Bem bem bem!}
+{209}{}{Bem!}
+{210}{}{Pfu! Pfu!}
+{211}{}{Pfuuuuuu!}
+{212}{}{Bzooooom!}
+{213}{}{Rata-tata-tata}
+{214}{}{Ka-buum}
+
+# 2.  INTRO (WTG)
+{220}{}{(Algernon se na tebe podíval a pousmál se.) Buum! }
+{221}{}{(Uvanìnı mu se na tebe podíval s bezzubım úsmìvem. Na jeho trièku je pøišita jmenovka "Algernon", která je psaná kurzívou.) Buum! }
+{222}{}{(Kdy uvidìl tvoje zbranì zaèal na nì rozèilenì ukazovat.) Buum!}
+{223}{}{Buum!}
+{224}{}{Tuláci dál ode mì.}
+{225}{}{Uh... chceš se podívat na nìjakou z tìchto zbraní?}
+{226}{}{Jooo, tobì taky "buum". Algernone, mùeš mi vylepšit nìjakou z tìchto vìcí co tady mám?}
+{227}{}{Uf, ne "boom", ted ne. Díky. Èau.}
+
+# 3. RETARD (2)
+{230}{}{Huh! Huh-huh! (Algernon na tebe ukázal, zvednul prst jako by drel pistoli a ze srandy na tebe zabruèel.) Bem Bem!}
+{231}{}{Minuls mì, minuls mì! Tu máš! (Ukázal jsi na nìho prstem, jako kdybys mìl pistoli.) BUM! BUM!}
+{232}{}{Uf. Jsem mrtvı. Radìji pùjdu nìkam jinam.}
+
+# 4. AL DIES (3)
+{235}{}{(Algernon se na tebe dívá s šokovanım vırazem v tváøi, pak se podívá pomalu na místo kde byl 'zasaen'. Náhle
+ dostane závra, jeho oèi se obrátí v sloup a padá k zemi, je mrtev.)}
+{236}{}{Ah, Ale? Jsi v poøádku?}
+{237}{}{Ah-oh.}
+
+# 5. AL DEAD (4)
+{240}{}{(Nemùe se hıbat.)}
+{241}{}{(Zaèni tleskat.)}
+
+# 6. START CLAPPING (5)
+{245}{}{(Nezvedá se. Nedıchá.)}
+
+# 7. GIVE ITEMS MENU (2, 8, 9, 10, 11, 12)
+{250}{}{(Co mu chceš dát??)}
+{251}{}{Dej mu jednu svou pistoli.}
+{252}{}{Dej mu jednu svou pušku.}
+{253}{}{Dej mu svoje palivo do plamenometu.}
+{254}{}{Dej mu jednu ze svıch ruèních zbraní.}
+{255}{}{Promiò, nemyslím, e mám nìco, co bych ti mohl dát, Ale. Moná pøíštì.}
+{256}{}{Nemám v úmyslu dávat nìjaké zbranì zjevnì retardovanım lidem. Legrace, moná, ne. Pozdìji.}
+
+# 8. RETURN ITEMS MENU (7, 9, 10, 11, 12)
+{260}{}{(Al si sebral tvou vìc a v oèích se mu zablısklo. Chvíli si s tím hraje, pak ještì pár minut,
+ pak ještì... a o hodinu pozdìji, ti to Al vrací zpìt s pokyvováním a ïábelskım úsmìvem.) *Buuuuuuuuuuum.*}
+{261}{}{Øekni... mùeš TOHLE vylepšit?}
+{262}{}{Díky, Ale.}
+
+# 9. PISTOLS MENU (7)
+{265}{}{[Kterou?]}
+{266}{}{Tvoji .44 Magnum.}
+{267}{}{Tvoji Desert Eagle.}
+{268}{}{Tvoji Wattz 1000 laserovou pistoli.}
+{269}{}{Tvoji Glock 86 plasmovou pistoli.}
+{270}{}{Prohrabej se v batohu a dej mu nìco jiného...}
+{271}{}{Nevadí, Ale. Uvidíme se pozdìji.}
+{272}{}{Nevadí, dítì... pro dnešek ádné hraèky. Èau.}
+
+# 10. RIFLES MENU (7)
+{276}{}{Tvoji Colt loveckou pušku.}
+{277}{}{Tvoji útoènou pušku AK-112.}
+{278}{}{Tvoji FN FAL.}
+{279}{}{Tvoji Wattz 2000 laserovou pušku.}
+{280}{}{Tvùj Flambe 450 plamenomet.}
+{281}{}{Tvoji plasmovou pušku.}
+
+# 11. FUEL MENU (7)
+{291}{}{Nechceš se mrknout na tohle palivo do plamenometu?}
+{292}{}{Zde je nìjaké palivo do plamenometu. Mùeš s tím nìco udìlat?}
+
+# 12. MELEE MENU (7)					
+{301}{}{Dej mu svùj pohanìè dobytka. Uf... nejdøív se ujisti, zda to vezme za dradlo.}
+{302}{}{Tvùj boxer  "Velkej Blbec" od firmy Zabho s.r.o.}
+
+{400}{}{Já jsem zabiják Ale. Radìji odsaï odejdu.}

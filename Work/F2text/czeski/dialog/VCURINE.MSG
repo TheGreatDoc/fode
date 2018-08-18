@@ -1,0 +1,31 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš obèana Vaultu.}
+{101}{}{Vidíš nìjakýho obèana v jasnì modré kombinéze, který koná potøebu.}
+{102}{}{Rád bych ti potøásl rukou, ale mám plný ruce.}
+{103}{}{Gratuluju k vítìzství v Enklávì. Zastihl jsi je taky na záchodì, co?}
+{104}{}{Øekni mi radìji nìco o tvých hrdinských èinech, než se vyèùrám.}
+{105}{}{Veen! Táhni k èertu! Hergot!}
+{106}{}{Víš, nemìl bych chlastat tolik syntetickýho chlastu.}
+{107}{}{Táák to je lepší než soulož, málem se mi vyvalil bok.}
+{108}{}{Ahhhhhhhh.}
+{109}{}{Cítím se jako ve výloze, když na mì nìkdo èumí.}
+{110}{}{Tady se jeden nemùže ani poøádnì v soukromí vychcat.}
+{111}{}{Neruš mì... do prdele! Moje spodky!}
+{112}{}{Mlè. Dìlá se mi z toho zle.}
+{113}{}{Podívej se, "Vyvolený," pokouším se soustøedit. Rozumìl jsi mi?}
+{114}{}{Pøál bych si, aby tady byla køesla.}
+{115}{}{Lidi, kteøí si chtìjí povídat na záchodì, se mají hodnì co uèit z pravidel slušnýho chování.}
+{116}{}{Myslím si, že mì taháš za nos, jako nìkdo kdo .... !}
+{117}{}{Je tady Kevin and Bean a dìlají záchodový interviu?}
+{118}{}{Kdo pracuje pro Èíslo dvì?!?!}
+{119}{}{Víš, že veøejné záchodky... není dost dobrý nápad.}
+{120}{}{Né tady, drahoušku. Copak nevidíš, že moèím.}
+{121}{}{Pardon, miláèku. Záchod to není nic pro mì.}
+{122}{}{To není odpoèinková místnost, kamaráde. Pošoupneš se, že ano?}
+{123}{}{Myslím si, že mì taháš za nos jako nìkdo kdo chce potkat chlapa jako jsem já na záchodì.}
+{124}{}{Ne, já ti pøece nebudu dávat instrukce jak používat hajzl. Pøeèti si návod k použití.}
+{125}{}{Mutant! Stráže! Stráže!}
+{126}{}{Ghoul! Stráže! Stráže!}
+{127}{}{Hej! Pøestaò do mì strkat! Poèkej!}
+{128}{}{Je tady ještì jeden záchod! Použij ho!}
+{129}{}{Ještì jednou do mì strèíš a pochèiju tì. Rozumíš mi? Myslím to vážnì!}

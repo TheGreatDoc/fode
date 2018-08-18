@@ -1,0 +1,35 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš nìkoho v Energo brnìní. }
+{101}{}{Vidíš velitele báze Navarro.}
+{102}{}{Vidíš nìkoho v Energo brnìní nezvyklého vzhledu. Na prsou má znak, kterı ti nic neøíká.}
+
+{103}{}{Kdo vy k èertu jste chlapi... Poplach! Vetøelci v naší základnì!}
+{104}{}{Nemám èas se tady vykecávat s vojíny. Dejte si odchod, vojáku.}
+{105}{}{Dnes je dobrı den na smrt... tvojí.}
+{106}{}{Oukej.}
+
+{107}{}{Øíkal jsem ti, e na tebe nemám èas. Vypadni z tıhle kanceláøe a nevracej se dokud pro tebe nenechám poslat. Odchod!}
+{108}{}{Neuposlechnutí rozkazu nadøízeného dùstojníka je velezrada. Nemám èas zøizovat tu váleènı soud a vyøeším to tedy po svém. Stráe! Zabijte tohohle idiota!}
+{109}{}{Oukej.}
+{110}{}{Roztrhnu tì jako hada!}
+
+{111}{}{FOB je tamhle ve skøíòce. A mì velitel stráe zkontaktuje, a bude zabezpeèen. Odchod!}
+{112}{}{Ano pane!}
+
+{113}{}{Udìlej to rychle vojáku, nemám na tebe celı den.}
+{114}{}{Ano pane!}
+
+{115}{}{Nech bıt mojí skøínku na pokoji nebo tì nechám protáhnout ulièkou.}
+{116}{}{Ano pane!}
+
+{117}{}{Tato základna má poplach a já tì neznám. Uka mi své dokumenty, vojáku.}
+{118}{}{Jaké dokumenty?}
+{119}{}{Seru na tebe!}
+{120}{}{Myslím, e je dneska nemám s sebou...}
+{121}{}{Dokumenty? Mám ty tvı dokumenty pøímo tady!}
+
+{122}{}{Špatná odpovìï, èerve. Svoje dokumenty máš nosit vdycky u sebe. Mìl jsi to vìdìt!}
+{123}{}{Jdi do prdele.}
+
+{124}{}{Nech bıt mojí skøínku na pokoji nebo poznáš, co je to bolest.}
+{125}{}{Je èas umøít.}

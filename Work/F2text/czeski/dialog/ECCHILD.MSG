@@ -1,0 +1,15 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš malého kluka.}
+{101}{}{Vidíš malou holku.}
+
+
+{200}{}{Ještì jsi tam?}
+{201}{}{Jsem unavenı.}
+{202}{}{Poneseš mì?}
+{203}{}{Nemám mluvit s cizími lidmi.}
+{204}{}{Mamka a taka šli ven.}
+{205}{}{Vidíš mùj blıskavı kamínek?}
+{206}{}{Budeš si se mnou hrát?}
+{207}{}{La la la la la la. Neslyším tì.}
+{208}{}{Proè si teï nemùu hrát?}
+{209}{}{Chceš si hrát?}

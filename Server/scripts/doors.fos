@@ -1,0 +1,155 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//	Desert Europe
+//
+
+
+#include "_macros.fos"
+
+
+//time in second
+#define DOORS_TIME_BEFORE_CLOSE				(120)
+#define CONTAINERS_TIME_BEFORE_CLOSE		(120)
+
+
+//Call in start() of main.fos : close all doors and containers and set event when critter use skill on them
+void InitDoorsAndContainers()
+{
+	Map@[] maps;
+	uint nbmaps = GetAllMaps(0, maps);
+	for(uint i = 0; i < nbmaps; i++)
+	{
+		Item@[] items;
+		uint nbitems = maps[i].GetItems(0, items);
+		for(uint j = 0; j < nbitems; j++)
+		{
+			if(valid(items[j]))
+			{
+				if(items[j].GetScriptId() != 0) //Item already have a script associated
+				{
+					continue;
+				}
+				if(items[j].GetType() == ITEM_TYPE_DOOR) //a door
+				{
+					items[j].LockerClose();
+					items[j].SetEvent(ITEM_EVENT_SKILL, "_EventOnDoor");
+				}
+				else if(items[j].GetType() == ITEM_TYPE_CONTAINER && items[j].Proto.Container_Changeble) //a container that can be open or close
+				{
+					items[j].LockerClose();
+					items[j].SetEvent(ITEM_EVENT_SKILL, "_EventOnContainer");
+				}
+			}
+		}
+	}
+}
+
+
+
+
+//Call when a critter use skill on door
+bool _EventOnDoor(Item& item, Critter& crit, int skill)
+{
+	if(skill == SKILL_PICK_ON_GROUND)
+	{
+		if(FLAG(item.LockerCondition, LOCKER_ISOPEN) == false)	//Try open (door was close)
+		{
+			uint[] vals(2);
+			vals[0]=item.Id;
+			vals[1]=item.MapId;
+			
+			item.Val0 = CreateTimeEvent(__FullSecond+REAL_SECOND(DOORS_TIME_BEFORE_CLOSE),"e_CloseDoor",vals,false);
+			/*
+			// Play sound moved to lockers.fos, Here dont work sound "locked" door.
+			//crit.PlaySound(SOUND_DOOR,  SOUND_DOOR_OPEN, item.Proto.SoundId, item.Proto.SoundId, true);
+			*/
+		}
+		else	//Try close (door was open)
+		{
+			//if someone block the door nothing's happen
+			uint16 hexX=0;
+			uint16 hexY=0;		
+			Map@ map = item.GetMapPosition(hexX, hexY);
+			if(valid(map))
+			{
+				Critter@ potentialBlocker = map.GetCritter(hexX, hexY);
+				if(valid(potentialBlocker) && potentialBlocker.IsLife()) return false;
+			}
+			
+			//else we erase event if it was planned to close it.
+			if(item.Val0 != 0) EraseTimeEvent(item.Val0);
+			item.Val0 = 0;
+			/*
+			// Play sound move to lockers.fos, Here dont work sound "locked" door.
+			//crit.PlaySound(SOUND_DOOR,  SOUND_DOOR_CLOSE, item.Proto.SoundId, item.Proto.SoundId, true);
+			*/
+		}
+	}
+	
+	return false;
+}
+
+//Call when time-event is finish : door have to be close
+uint e_CloseDoor(uint[]@ vals)
+{
+	Map@ map =GetMap(vals[1]);
+	if(valid(map))
+	{
+		Item@ door=map.GetItem(vals[0]);
+		if(valid(door))
+		{
+			//if someone block the door time-event repeat
+			uint16 hexX=0;
+			uint16 hexY=0;		
+			door.GetMapPosition(hexX, hexY);
+			Critter@ potentialBlocker = map.GetCritter(hexX, hexY);
+			if(valid(potentialBlocker) && potentialBlocker.IsLife()) return REAL_SECOND(DOORS_TIME_BEFORE_CLOSE);
+			
+			//else we close door
+			door.LockerClose();
+			door.Val0 = 0;
+		}
+	}
+	return 0;
+}
+
+
+
+
+//Call when a critter use skill on container
+bool _EventOnContainer(Item& item, Critter& crit, int skill)
+{
+	if(skill == SKILL_PICK_ON_GROUND)
+	{
+		if(FLAG(item.LockerCondition, LOCKER_ISOPEN) == false)	//Try open (container was close)
+		{
+			uint[] vals(2);
+			vals[0]=item.Id;
+			vals[1]=item.MapId;
+			
+			item.Val0 = CreateTimeEvent(__FullSecond+REAL_SECOND(CONTAINERS_TIME_BEFORE_CLOSE),"e_CloseContainer",vals,false);
+		}
+		else	//Try close (container was open)
+		{
+			if(item.Val0 != 0) EraseTimeEvent(item.Val0);
+			item.Val0 = 0;
+		}
+	}
+	
+	return false;
+}
+
+//Call when time-event is finish : container have to be close
+uint e_CloseContainer(uint[]@ vals)
+{
+	Map@ map =GetMap(vals[1]);
+	if(valid(map))
+	{
+		Item@ container=map.GetItem(vals[0]);
+		if(valid(container))
+		{
+			container.LockerClose();
+			container.Val0 = 0;
+		}
+	}
+	return 0;
+}

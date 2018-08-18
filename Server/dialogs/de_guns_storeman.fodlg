@@ -1,0 +1,514 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+6 2020 #
+7 2030 #
+8 2040 #
+9 2050 #
+0 2060 @
+3 3000 None 1 #
+4 3010 #
+5 3020 #
+65505 3030 #
+0 3040 @
+4 4000 None 1 #
+4 4010 R _item p PID_4_7MM_CASELESS_DE + 500 R _item p PID_HK_G11E_DE + 1 R _item p PID_HK_G11E_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4020 R _item p PID_2MM_EC_AMMO_DE + 500 R _item p PID_PK12_GAUSS_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4030 R _item p PID_223_FMJ_DE + 500 R _item p PID_223_JHP_DE + 50 R _item p PID_223_AP_DE + 50 R _item p PID_223_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4040 R _item p PID_10MM_AP_DE + 500 R _item p PID_10MM_JHP_DE + 500 R _item p PID_HK_P90C_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4050 R _item p PID_9AP_DE + 500 R _item p PID_9JHP_DE + 500 R _item p PID_MP5_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4060 R _item p PID_762X39_DE + 500 R _item p PID_AK47_TACTICAL1_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4070 R _item p PID_HN_NEEDLER_CARTRIDGE_DE + 250 R _item p PID_HN_AP_NEEDLER_CARTRIDGE_DE + 250 R _item p PID_NEEDLER_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4080 R _item p PID_45_CALIBER_AMMO_DE + 500 R _item p PID_45_ACP_DE + 500 R _item p PID_GREASE_GUN_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4090 R _item p PID_14MM_AP_DE + 500 R _item p PID_14MM_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4100 R _item p PID_DARTS_DE + 250 R _item p PID_AIRPISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4110 R _item p PID_45_ACP_DE + 250 R _item p PID_45_CALIBER_AMMO_DE + 250 R _item p PID_COLT1_DE + 1 R _item p PID_COLT1K1_DE + 1 R _item p PID_COLT1K2_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4120 R _item p PID_44_FMJ_MAGNUM_DE + 250 R _item p PID_44_MAGNUM_JHP_DE + 250 R _item p PID_44_MAGNUM_REVOLVER_DE + 1 R _item p PID_44_MAGNUM_SPEEDLOADER_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4130 R _item p PID_10MM_AP_DE + 100 R _item p PID_10MM_JHP_DE + 100 R _item p PID_ZIP_GUN_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4140 R _item p PID_9AP_DE + 100 R _item p PID_9JHP_DE + 100 R _item p PID_9MM_AMMO_DE + 100 R _item p PID_9MM_BALL_DE + 100 R _item p PID_MAUSER_SMG_DE + 1 R _item p PID_9MM_MAUSER_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4150 R _item p PID_44_FMJ_MAGNUM_DE + 250 R _item p PID_44_MAGNUM_JHP_DE + 250 R _item p PID_DESERT_EAGLE_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4160 R _item p PID_10MM_AP_DE + 500 R _item p PID_10MM_JHP_DE + 500 R _item p PID_10MM_SMG_DE + 1 R _script dialog@dialog_sound1 0  #
+4 4170 R _item p PID_10MM_JHP_DE + 500 R _item p PID_10MM_AP_DE + 500 R _item p PID_10MM_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 4180 #
+0 4190 @
+5 5000 None 1 #
+5 5010 R _item p PID_223_FMJ_DE + 500 R _item p PID_M16_DE + 1 R _item p PID_M16_SPECIAL_DE + 1 R _item p PID_M16S_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5020 R _item p PID_762X39_DE + 500 R _item p PID_AK47_TACTICAL1_DE + 1 R _item p PID_AK47_TACTICAL2_DE + 1 R _item p PID_AK47_TACTICAL3_DE + 1 R _item p PID_AK47_NORMAL1_DE + 1 R _item p PID_AK47_NORMAL2_DE + 1 R _item p PID_AK47_SPECIAL_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5030 R _item p PID_762X54_DE + 500 R _item p PID_DRAGUNOV1_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5040 R _item p PID_2MM_EC_AMMO_DE + 500 R _item p PID_M72_GAUSS_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5050 R _item p PID_700_NITRO_EXPRESS_DE + 500 R _item p PID_ELEPHANT_GUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5060 R _item p PID_223_FMJ_DE + 500 R _item p PID_SNIPER_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5070 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_PANCOR_JACKHAMMER_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5080 R _item p PID_5MM_AP_DE + 500 R _item p PID_5MM_JHP_DE + 500 R _item p PID_ASSAULT_RIFLE_DE + 1 R _item p PID_ASSAULT_RIFLE_SCOPE_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5090 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_REM870_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5100 R _item p PID_40x46_DE + 250 R _item p PID_M32_DE + 1 R _item p PID_M32S_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5110 R _item p PID_5MM_JHP_DE + 500 R _item p PID_5MM_AP_DE + 500 R _item p PID_INDEPENDENT_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5120 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_HK_CAWS_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5130 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_COMBAT_SHOTGUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5140 R _item p PID_762x51_DE + 500 R _item p PID_FN_FAL_DE + 1 R _item p PID_FN_FAL_HPFA_DE + 1 R _item p PID_FN_FAL_NIGHT_SCOPE_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5150 R _item p PID_45_ACP_DE + 250 R _item p PID_45_CALIBER_AMMO_DE + 250 R _item p PID_TOMMY_GUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5160 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_SAWED_OFF_SHOTGUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5170 R _item p PID_10MM_AP_DE + 100 R _item p PID_10MM_JHP_DE + 100 R _item p PID_SPRINGER_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5180 R _item p PID_BBS_DE + 250 R _item p PID_RED_RYDER_BB_GUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5190 R _item p PID_SHOTGUN_SHELLS_DE + 500 R _item p PID_SHOTGUN_DE + 1 R _script dialog@dialog_sound1 0  #
+5 5200 R _item p PID_223_FMJ + 250 R _item p PID_HUNTING_RIFLE_DE + 1 R _item p PID_SCOPED_HUNTING_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 5210 #
+0 5220 @
+6 6000 None 1 #
+6 6010 R _item p PID_762X54_DE + 1000 R _item p PID_PKS_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6020 R _item p PID_762x51_DE + 1000 R _item p PID_UKM_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6030 R _item p PID_762x51_DE + 1000 R _item p PID_M240_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6040 R _item p PID_4_7MM_CASELESS_DE + 1000 R _item p PID_VINDICATOR_MINIGUN_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6050 R _item p PID_223_FMJ_DE + 500 R _item p PID_BOZAR_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6060 R _item p PID_223_FMJ_DE + 1000 R _item p PID_LIGHT_SUPPORT_WEAPON_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6070 R _item p PID_ROCKET_AP_DE + 75 R _item p PID_EXPLOSIVE_ROCKET_DE + 75 R _item p PID_ROCKET_LAUNCHER_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6080 R _item p PID_NapalmAmmo_DE + 150 R _item p PID_FLAMERN_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6090 R _item p PID_5MM_AP_DE + 750 R _item p PID_5MM_JHP_DE + 750 R _item p PID_MINIGUN_DE + 1 R _item p PID_AVENGER_MINIGUN_DE + 1 R _script dialog@dialog_sound1 0  #
+6 6100 R _item p PID_FLAMETHROWER_FUEL_DE + 75 R _item p PID_FLAMETHROWER_FUEL_MK_II_DE + 75 R _item p PID_FLAMER_DE + 1 R _item p PID_IMPROVED_FLAMETHROWER_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 6110 #
+0 6120 @
+7 7000 None 1 #
+7 7010 R _item p PID_ENEAMMO_DE + 500 R _item p PID_DAMRIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7020 R _item p PID_RADAMMO_DE + 500 R _item p PID_RADRIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7030 R _item p PID_RELE + 100 R _item p PID_ROCKETELE_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7040 R _item p PID_RRAD + 100 R _item p PID_ROCKETRAD_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7050 R _item p PID_SMALL_ENERGY_CELL_DE + 250 R _item p PID_PHAZER_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7060 R _item p PID_MICRO_FUSION_CELL_DE + 500 R _item p PID_YK42B_PULSE_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7070 R _item p PID_SMALL_ENERGY_CELL_DE + 250 R _item p PID_YK32_PULSE_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7080 R _item p PID_MICRO_FUSION_CELL_DE + 1000 R _item p PID_GATLING_LASER_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7090 R _item p PID_MICRO_FUSION_CELL_DE + 500 R _item p PID_PLASMA_RIFLE_DE + 1 R _item p PID_TURBO_PLASMA_RIFLE_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7100 R _item p PID_MICRO_FUSION_CELL_DE + 500 R _item p PID_LASER_RIFLE_EXT_CAP_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7110 R _item p PID_ENEAMMO_DE + 500 R _item p PID_DAMPISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7120 R _item p PID_RADAMMO_DE + 500 R _item p PID_RADPISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7130 R _item p PID_SMALL_ENERGY_CELL_DE + 250 R _item p PID_PLASMA_PISTOL_EXT_CART_DE + 1 R _script dialog@dialog_sound1 0  #
+7 7140 R _item p PID_SMALL_ENERGY_CELL_DE + 250 R _item p PID_LASER_PISTOL_DE + 1 R _item p PID_MAGNETO_LASER_PISTOL_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 7150 #
+0 7160 @
+8 8000 None 1 #
+8 8010 R _item p PID_MOLOTOV_COCKTAIL_DE + 75 R _script dialog@dialog_sound1 0  #
+8 8020 R _item p PID_FRAG_GRENADE_DE + 75 R _script dialog@dialog_sound1 0  #
+8 8030 R _item p PID_PLASMA_GRENADE_DE + 75 R _script dialog@dialog_sound1 0  #
+8 8040 R _item p PID_PULSE_GRENADE_DE + 75 R _script dialog@dialog_sound1 0  #
+8 8050 R _item p PID_SMOKE_GRENADE + 75 R _script dialog@dialog_sound1 0  #
+8 8060 R _item p PID_MUSTARD_GAS_GRENADE + 75 R _script dialog@dialog_sound1 0  #
+8 8070 R _item p PID_KNIFED_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8080 R _item p PID_COMBAT_KNIFE_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8090 R _item p PID_THROWING_KNIFE_DE + 75 R _script dialog@dialog_sound1 0  #
+8 8100 R _item p PID_SLEDGEHAMMER_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8110 R _item p PID_SUPER_SLEDGE_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8120 R _item p PID_POWER_FIST_DE + 1 R _item p PID_SMALL_ENERGY_CELL_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8130 R _item p PID_MEGA_POWER_FIST_DE + 1 R _item p PID_SMALL_ENERGY_CELL_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8140 R _item p PID_RIPPER_DE + 1 R _item p PID_SMALL_ENERGY_CELL_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8150 R _item p PID_CATTLE_PROD_DE + 1 R _item p PID_SUPER_CATTLE_PROD_DE + 1 R _item p PID_SMALL_ENERGY_CELL_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8160 R _item p PID_RAD_SPEAR + 1 R _item p PID_RADAMMO_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8170 R _item p PID_ENE_SPEAR + 1 R _item p PID_ENEAMMO_DE + 200 R _script dialog@dialog_sound1 0  #
+8 8180 R _item p PID_BRASS_KNUCKLES_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8190 R _item p PID_SPIKED_KNUCKLES_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8200 R _item p PID_SPEAR_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8210 R _item p PID_SHARP_SPEAR_DE + 1 R _script dialog@dialog_sound1 0  #
+8 8220 R _item p PID_LOUISVILLE_SLUGGER_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 8230 #
+0 8240 @
+9 9000 None 1 #
+9 9010 R _item p PID_CAMKII_1 + 1 R _script dialog@dialog_sound1 0  #
+9 9020 R _item p PID_CA_1 + 1 R _script dialog@dialog_sound1 0  #
+9 9030 R _item p PID_TESLA_ARMOR_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9040 R _item p PID_METAL_ARMOR_MK_II_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9050 R _item p PID_METAL_ARMOR_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9060 R _item p PID_LEATHER_ARMOR_MK_II_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9070 R _item p PID_LEATHER_ARMOR_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9080 R _item p PID_CURED_LEATHER_ARMOR_DE + 1 R _script dialog@dialog_sound1 0  #
+9 9090 R _item p PID_LEATHER_JACKET_DE + 1 R _script dialog@dialog_sound1 0  #
+65505 9100 #
+0 9110 &
+
+[pols]
+{100}{}{Storeman}
+{1000}{}{Predialogue installations}
+{1010}{}{next}
+{2000}{}{What you need?}
+{2010}{}{SG weapon}
+{2020}{}{BG weapon}
+{2030}{}{EN weapon}
+{2040}{}{Melee weapons and grenades}
+{2050}{}{Armor}
+{2060}{}{Nothing [Exit]}
+{3000}{}{Choose type SG weapon}
+{3010}{}{SHORT - One handed}
+{3020}{}{LONG - Two handed}
+{3030}{}{<--- Back}
+{3040}{}{EXIT}
+{4000}{}{Choose SHORT SG weapon}
+{4010}{}{H&K G11}
+{4020}{}{Gaus Pistol}
+{4030}{}{223 Pistol}
+{4040}{}{HK P90c}
+{4050}{}{MP5}
+{4060}{}{Folded AK47}
+{4070}{}{Needler Pistol}
+{4080}{}{M3A1 "Grease Gun"}
+{4090}{}{14mm Pistol}
+{4100}{}{Air Pistol}
+{4110}{}{Colt M1911}
+{4120}{}{.44 Magnum}
+{4130}{}{ZipGun}
+{4140}{}{Mauser 9mm}
+{4150}{}{Desert Eagle}
+{4160}{}{SMG 10 mm}
+{4170}{}{10mm Pistol}
+{4180}{}{<--- Back}
+{4190}{}{EXIT}
+{5000}{}{Choose LONG SG weapon}
+{5010}{}{M16}
+{5020}{}{AK 47}
+{5030}{}{Dragunov}
+{5040}{}{Gauss Rifle}
+{5050}{}{Elephant Gun}
+{5060}{}{Sniper Rifle DKS-501}
+{5070}{}{Pancor Jackhamer}
+{5080}{}{Assault Rifle}
+{5090}{}{Remington 870}
+{5100}{}{M32 Grenade Launcher}
+{5110}{}{XL70E3}
+{5120}{}{H&K CAWS}
+{5130}{}{Combat Shotgun}
+{5140}{}{FN FAL}
+{5150}{}{Thompson M1928}
+{5160}{}{Sawed-Off Shotgun}
+{5170}{}{Pipe Rifle}
+{5180}{}{Red Ryder BB Gun}
+{5190}{}{Shotgun}
+{5200}{}{Hunting Rifle}
+{5210}{}{<--- Back}
+{5220}{}{EXIT}
+{6000}{}{Choose BG weapon}
+{6010}{}{PK-PKS}
+{6020}{}{UKM-200P}
+{6030}{}{M240}
+{6040}{}{Vindicator Minigun}
+{6050}{}{Bozar}
+{6060}{}{LSW}
+{6070}{}{Rocket Launcher}
+{6080}{}{Napalm Blaster}
+{6090}{}{Minigun}
+{6100}{}{Flamethrower}
+{6110}{}{<--- Back}
+{6120}{}{EXIT}
+{7000}{}{Choose EN weapon}
+{7010}{}{Energy Activity Rifle}
+{7020}{}{Plasma Activity Rifle}
+{7030}{}{ELECTRO Rocket Launcher}
+{7040}{}{RAD Rocket Launcher}
+{7050}{}{Fazer}
+{7060}{}{YK42B Pulse Rifle}
+{7070}{}{YK32 Pulse Pistol}
+{7080}{}{Gatling Laser}
+{7090}{}{Plasma Rifle}
+{7100}{}{Laser Rifle}
+{7110}{}{Small Damaging Gun "SDG"}
+{7120}{}{Small Radiation Gun "SRG"}
+{7130}{}{Plasma Pistol}
+{7140}{}{Laser Pistol}
+{7150}{}{<--- Back}
+{7160}{}{EXIT}
+{8000}{}{Choose weapon}
+{8010}{}{Molotov coctail}
+{8020}{}{Frag grenade}
+{8030}{}{Plasma Grenade}
+{8040}{}{Pulse Grenade}
+{8050}{}{Smoke grenade}
+{8060}{}{Mustard gas grenade}
+{8070}{}{Knife}
+{8080}{}{Combat knife}
+{8090}{}{Throwing knife}
+{8100}{}{Hammer}
+{8110}{}{Assisted hammer}
+{8120}{}{Assisted glove}
+{8130}{}{Power Fist}
+{8140}{}{Ripper}
+{8150}{}{Cattle prod}
+{8160}{}{Plasmo Active Spear}
+{8170}{}{Energy Active Spear}
+{8180}{}{Knuckle-duster}
+{8190}{}{Barbed Knuckles}
+{8200}{}{Spears}
+{8210}{}{Sharpened spears}
+{8220}{}{Baseball}
+{8230}{}{<--- Back}
+{8240}{}{EXIT}
+{9000}{}{Choose armor}
+{9010}{}{CA mkII}
+{9020}{}{CA}
+{9030}{}{Tesla Armor}
+{9040}{}{Metal Armor mkII}
+{9050}{}{Metal Armor}
+{9060}{}{Leather Armor mkII}
+{9070}{}{Leather Armor}
+{9080}{}{Combat Leather Jacket}
+{9090}{}{Leather Jacket}
+{9100}{}{<--- Back}
+{9110}{}{EXIT}
+
+[engl]
+{100}{}{Storeman}
+{1000}{}{Predialogue installations}
+{1010}{}{next}
+{2000}{}{What you need?}
+{2010}{}{SG weapon}
+{2020}{}{BG weapon}
+{2030}{}{EN weapon}
+{2040}{}{Melee weapons and grenades}
+{2050}{}{Armor}
+{2060}{}{Nothing [Exit]}
+{3000}{}{Choose type SG weapon}
+{3010}{}{SHORT - One handed}
+{3020}{}{LONG - Two handed}
+{3030}{}{<--- Back}
+{3040}{}{EXIT}
+{4000}{}{Choose SHORT SG weapon}
+{4010}{}{H&K G11}
+{4020}{}{Gaus Pistol}
+{4030}{}{223 Pistol}
+{4040}{}{HK P90c}
+{4050}{}{MP5}
+{4060}{}{Folded AK47}
+{4070}{}{Needler Pistol}
+{4080}{}{M3A1 "Grease Gun"}
+{4090}{}{14mm Pistol}
+{4100}{}{Air Pistol}
+{4110}{}{Colt M1911}
+{4120}{}{.44 Magnum}
+{4130}{}{ZipGun}
+{4140}{}{Mauser 9mm}
+{4150}{}{Desert Eagle}
+{4160}{}{SMG 10 mm}
+{4170}{}{10mm Pistol}
+{4180}{}{<--- Back}
+{4190}{}{EXIT}
+{5000}{}{Choose LONG SG weapon}
+{5010}{}{M16}
+{5020}{}{AK 47}
+{5030}{}{Dragunov}
+{5040}{}{Gauss Rifle}
+{5050}{}{Elephant Gun}
+{5060}{}{Sniper Rifle DKS-501}
+{5070}{}{Pancor Jackhamer}
+{5080}{}{Assault Rifle}
+{5090}{}{Remington 870}
+{5100}{}{M32 Grenade Launcher}
+{5110}{}{XL70E3}
+{5120}{}{H&K CAWS}
+{5130}{}{Combat Shotgun}
+{5140}{}{FN FAL}
+{5150}{}{Thompson M1928}
+{5160}{}{Sawed-Off Shotgun}
+{5170}{}{Pipe Rifle}
+{5180}{}{Red Ryder BB Gun}
+{5190}{}{Shotgun}
+{5200}{}{Hunting Rifle}
+{5210}{}{<--- Back}
+{5220}{}{EXIT}
+{6000}{}{Choose BG weapon}
+{6010}{}{PK-PKS}
+{6020}{}{UKM-200P}
+{6030}{}{M240}
+{6040}{}{Vindicator Minigun}
+{6050}{}{Bozar}
+{6060}{}{LSW}
+{6070}{}{Rocket Launcher}
+{6080}{}{Napalm Blaster}
+{6090}{}{Minigun}
+{6100}{}{Flamethrower}
+{6110}{}{<--- Back}
+{6120}{}{EXIT}
+{7000}{}{Choose EN weapon}
+{7010}{}{Energy Activity Rifle}
+{7020}{}{Plasma Activity Rifle}
+{7030}{}{ELECTRO Rocket Launcher}
+{7040}{}{RAD Rocket Launcher}
+{7050}{}{Fazer}
+{7060}{}{YK42B Pulse Rifle}
+{7070}{}{YK32 Pulse Pistol}
+{7080}{}{Gatling Laser}
+{7090}{}{Plasma Rifle}
+{7100}{}{Laser Rifle}
+{7110}{}{Small Damaging Gun "SDG"}
+{7120}{}{Small Radiation Gun "SRG"}
+{7130}{}{Plasma Pistol}
+{7140}{}{Laser Pistol}
+{7150}{}{<--- Back}
+{7160}{}{EXIT}
+{8000}{}{Choose weapon}
+{8010}{}{Molotov coctail}
+{8020}{}{Frag grenade}
+{8030}{}{Plasma Grenade}
+{8040}{}{Pulse Grenade}
+{8050}{}{Smoke grenade}
+{8060}{}{Mustard gas grenade}
+{8070}{}{Knife}
+{8080}{}{Combat knife}
+{8090}{}{Throwing knife}
+{8100}{}{Hammer}
+{8110}{}{Assisted hammer}
+{8120}{}{Assisted glove}
+{8130}{}{Power Fist}
+{8140}{}{Ripper}
+{8150}{}{Cattle prod}
+{8160}{}{Plasmo Active Spear}
+{8170}{}{Energy Active Spear}
+{8180}{}{Knuckle-duster}
+{8190}{}{Barbed Knuckles}
+{8200}{}{Spears}
+{8210}{}{Sharpened spears}
+{8220}{}{Baseball}
+{8230}{}{<--- Back}
+{8240}{}{EXIT}
+{9000}{}{Choose armor}
+{9010}{}{CA mkII}
+{9020}{}{CA}
+{9030}{}{Tesla Armor}
+{9040}{}{Metal Armor mkII}
+{9050}{}{Metal Armor}
+{9060}{}{Leather Armor mkII}
+{9070}{}{Leather Armor}
+{9080}{}{Combat Leather Jacket}
+{9090}{}{Leather Jacket}
+{9100}{}{<--- Back}
+{9110}{}{EXIT}
+
+[russ]
+{100}{}{Storeman}
+{1000}{}{Predialogue installations}
+{1010}{}{next}
+{2000}{}{What you need?}
+{2010}{}{SG weapon}
+{2020}{}{BG weapon}
+{2030}{}{EN weapon}
+{2040}{}{Melee weapons and grenades}
+{2050}{}{Armor}
+{2060}{}{Nothing [Exit]}
+{3000}{}{Choose type SG weapon}
+{3010}{}{SHORT - One handed}
+{3020}{}{LONG - Two handed}
+{3030}{}{<--- Back}
+{3040}{}{EXIT}
+{4000}{}{Choose SHORT SG weapon}
+{4010}{}{H&K G11}
+{4020}{}{Gaus Pistol}
+{4030}{}{223 Pistol}
+{4040}{}{HK P90c}
+{4050}{}{MP5}
+{4060}{}{Folded AK47}
+{4070}{}{Needler Pistol}
+{4080}{}{M3A1 "Grease Gun"}
+{4090}{}{14mm Pistol}
+{4100}{}{Air Pistol}
+{4110}{}{Colt M1911}
+{4120}{}{.44 Magnum}
+{4130}{}{ZipGun}
+{4140}{}{Mauser 9mm}
+{4150}{}{Desert Eagle}
+{4160}{}{SMG 10 mm}
+{4170}{}{10mm Pistol}
+{4180}{}{<--- Back}
+{4190}{}{EXIT}
+{5000}{}{Choose LONG SG weapon}
+{5010}{}{M16}
+{5020}{}{AK 47}
+{5030}{}{Dragunov}
+{5040}{}{Gauss Rifle}
+{5050}{}{Elephant Gun}
+{5060}{}{Sniper Rifle DKS-501}
+{5070}{}{Pancor Jackhamer}
+{5080}{}{Assault Rifle}
+{5090}{}{Remington 870}
+{5100}{}{M32 Grenade Launcher}
+{5110}{}{XL70E3}
+{5120}{}{H&K CAWS}
+{5130}{}{Combat Shotgun}
+{5140}{}{FN FAL}
+{5150}{}{Thompson M1928}
+{5160}{}{Sawed-Off Shotgun}
+{5170}{}{Pipe Rifle}
+{5180}{}{Red Ryder BB Gun}
+{5190}{}{Shotgun}
+{5200}{}{Hunting Rifle}
+{5210}{}{<--- Back}
+{5220}{}{EXIT}
+{6000}{}{Choose BG weapon}
+{6010}{}{PK-PKS}
+{6020}{}{UKM-200P}
+{6030}{}{M240}
+{6040}{}{Vindicator Minigun}
+{6050}{}{Bozar}
+{6060}{}{LSW}
+{6070}{}{Rocket Launcher}
+{6080}{}{Napalm Blaster}
+{6090}{}{Minigun}
+{6100}{}{Flamethrower}
+{6110}{}{<--- Back}
+{6120}{}{EXIT}
+{7000}{}{Choose EN weapon}
+{7010}{}{Energy Activity Rifle}
+{7020}{}{Plasma Activity Rifle}
+{7030}{}{ELECTRO Rocket Launcher}
+{7040}{}{RAD Rocket Launcher}
+{7050}{}{Fazer}
+{7060}{}{YK42B Pulse Rifle}
+{7070}{}{YK32 Pulse Pistol}
+{7080}{}{Gatling Laser}
+{7090}{}{Plasma Rifle}
+{7100}{}{Laser Rifle}
+{7110}{}{Small Damaging Gun "SDG"}
+{7120}{}{Small Radiation Gun "SRG"}
+{7130}{}{Plasma Pistol}
+{7140}{}{Laser Pistol}
+{7150}{}{<--- Back}
+{7160}{}{EXIT}
+{8000}{}{Choose weapon}
+{8010}{}{Molotov coctail}
+{8020}{}{Frag grenade}
+{8030}{}{Plasma Grenade}
+{8040}{}{Pulse Grenade}
+{8050}{}{Smoke grenade}
+{8060}{}{Mustard gas grenade}
+{8070}{}{Knife}
+{8080}{}{Combat knife}
+{8090}{}{Throwing knife}
+{8100}{}{Hammer}
+{8110}{}{Assisted hammer}
+{8120}{}{Assisted glove}
+{8130}{}{Power Fist}
+{8140}{}{Ripper}
+{8150}{}{Cattle prod}
+{8160}{}{Plasmo Active Spear}
+{8170}{}{Energy Active Spear}
+{8180}{}{Knuckle-duster}
+{8190}{}{Barbed Knuckles}
+{8200}{}{Spears}
+{8210}{}{Sharpened spears}
+{8220}{}{Baseball}
+{8230}{}{<--- Back}
+{8240}{}{EXIT}
+{9000}{}{Choose armor}
+{9010}{}{CA mkII}
+{9020}{}{CA}
+{9030}{}{Tesla Armor}
+{9040}{}{Metal Armor mkII}
+{9050}{}{Metal Armor}
+{9060}{}{Leather Armor mkII}
+{9070}{}{Leather Armor}
+{9080}{}{Combat Leather Jacket}
+{9090}{}{Leather Jacket}
+{9100}{}{<--- Back}
+{9110}{}{EXIT}
+

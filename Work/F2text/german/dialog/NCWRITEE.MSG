@@ -1,0 +1,94 @@
+# QUICK LOOK
+{100}{}{Du siehst einen der Wright-Söhne.}
+{101}{}{Du siehst eine der Wright-Töchter.}
+
+# 0. LOOK [MALE]
+{150}{}{Du siehst einen jungen Mann mit wütendem Gesichtsausdruck. Er ist sehr darum bemüht, hart auszusehen.}
+{151}{}{Du siehst einen der Wright-Söhne. Er sieht aus, als packe er ein paar Waffen zusammen, ist aber eigentlich zu jung, um damit richtig umzugehen.}
+{152}{}{Du siehst einen der Wright-Söhne. Er versucht, dich zornig anzufunkeln, ist aber nicht besonders überzeugend.}
+{153}{}{Du siehst einen der Wright-Söhne. Er sieht aus, als würde er jetzt lieber...irgend etwas...anderes tun.}
+# 1. LOOK [FEMALE]
+{160}{}{Du siehst eine junge Frau mit ernstem Gesichtsausdruck. Sie versucht, hart auszusehen.}
+{161}{}{Du siehst eine der Wright-Töchter. Sie sieht aus, als packe sie ein paar Waffen zusammen, ist aber eigentlich zu jung, um damit richtig umzugehen.}
+{162}{}{Du siehst eine der Wright-Töchter. Sie ignoriert dich zwar, legt aber eine Hand bedeutungsvoll auf ihr Pistolen-Holster.}
+{163}{}{Du siehst eine der Wright-Töchter. Sie sieht niederträchtiger aus als eine Klapperschlange.}
+{164}{}{Du siehst eine der Wright-Töchter. Sie sieht niederträchtiger aus als eine Klapperschlange. Aus irgendeinem Grund findest du das aufregend.}
+
+# 2. CLICK/FLOAT DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{215}{}{Hab gehört, du hast die Enklave im Süden in die Luft gejagt. Ganz schön mutig.}
+
+# 3. FLOAT DIALOGUE: POWER ARMOR
+{225}{}{Wie gehst du denn mit dem Ding aufs Klo?}
+
+# 4. FLOAT/CLICK DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=WRIGHT [ARMED]
+{231}{}{Spiel hier nicht mit der Waffe rum, ja?}
+
+# 5. FLOAT/CLICK DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=WRIGHT [SNEAK]
+{236}{}{Warum schleichst du hier so rum?}
+
+# 6. FLOAT/CLICK [MALE, MADE MAN, FA = WRIGHT, NORM]
+{240}{}{Hallöchen, }
+
+# 7. FLOAT/CLICK [MALE, MADE MAN, FA = NOT WRIGHT, ARMED]
+{245}{}{Es ist einer der }
+
+# 8. FLOAT/CLICK [FEMALE, MADE MAN, FA = NOT WRIGHT, ARMED]
+{250}{}{Es ist einer der }
+
+# 9. FLOAT/CLICK [MALE/FEMALE, MADE MAN, FA = NOT WRIGHT, SNEAK]
+{255}{}{Es ist einer der }
+
+# 10. FLOAT/CLICK [MALE/FEMALE, MADE MAN, FA = NOT WRIGHT]
+{261}{}{Hau ab! Du und deine Familie sind hier nicht willkommen!}
+
+# 11. FLOAT/CLICK [SLAVER, ARMED]
+{265}{}{Runter mit der Waffe, Sklavenhändler, sonst schießen wir!}
+
+# 12. FLOAT/CLICK [SLAVER, SNEAK]
+{270}{}{Warum zum Teufel schleichst du hier so rum? Willst wohl abgeknallt werden, hä, Sklavenhändler?}
+
+# 13. FLOAT/CLICK [FEMALE/MALE, PRIZEFIGHTER/PORN STAR/NO REP, ARMED]
+{275}{}{Waffe weg! Aber schnell!}
+
+# 14. FLOAT/CLICK [FEMALE/MALE, PRIZEFIGHTER/PORN STAR/NO REP, SNEAK]
+{280}{}{Warum schleichste hier so rum? Willst wohl abgeknallt werden?}
+
+# 15. FLOAT AND CLICK (ANY) TO [COMPANION: ROBOBRAIN]
+{289}{}{Ist das ein Roboter? So einen hab ich noch nie gesehen.}
+
+# 16. FLOAT (ANY) TO [COMPANION: MARCUS]
+{296}{}{Is' das 'n Mutant?}
+
+# 17. FLOAT/CLICK [FEMALE/MALE, NORM]
+{311}{}{Paß auf, wo du hintrittst, klar? Das ist hier das Revier von den Wrights.}
+
+# 19. CLICK DIALOGUE: POWER ARMOR
+{323}{}{Ein Kühlschrank auf Beinen. Daß ich das auch mal sehen darf.}
+
+# 20. CLICK [FEMALE/MALE, MADE MAN, FA = WRIGHT OR PRIZEFIGHTER]
+{335}{}{Wie geht's, }
+{350}{}{Du bist dieser Kämpfer, }
+
+# 22. CLICK [PORN STAR]
+{362}{}{Wie ist es denn so beim Film? Mom läßt mich deine Filme nicht sehen.}
+
+# 24. [FEMALE/MALE/, NO REP/SLAVER, REACTION NEUTRAL +]
+{387}{}{Paß auf, wo du hintrittst, klar? Das ist hier das Revier von den Wrights.}
+
+# 25. CLICK [SLAVER, BAD REACTION]
+{392}{}{Komm mir nicht zu nahe, Sklavenhändler. Wenn du was von Pa willst, nur zu, und dann hau ab.}
+{393}{}{Ich hab dich hier im Blick, Sklavenhändler, also mach nichts Falsches, klar?}
+
+# 26. [FEMALE/MALE, NO REP, REACTION < NEUTRAL]
+{414}{}{Ich hab dich hier im Blick, also mach nichts Falsches, klar?}
+
+# 27. CLICK/FLOAT: LENNY
+{427}{}{Ich würd vorschlagen, daß du und dein Ghul-Freund abhaut, bevor ihr Ärger kriegt.}
+
+# END OF LINES
+{1240}{}{. Was hast du denn so gemacht?}
+{1245}{}{-Familie! Ruf die anderen!}
+{1250}{}{-Familie! Ruf die anderen!}
+{1255}{}{-Familie schleicht hier rum! Ruf die anderen!}
+{1335}{}{? Haste Ärger mit jemandem aus der Stadt?}
+{1350}{}{, oder? Super im Ring, das Beste, was man hier jemals zu sehen kriegt. }

@@ -1,0 +1,125 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+import uint8 GetHotkey(string& iniKey, uint8 defaultValue) from "skrypty_client";
+
+int AutoAimHitLocation=HIT_LOCATION_NONE;
+IGUIElementButtonOpt @AutoAimImageOpt;
+IGUIElementTextOpt @AutoAimTextOpt;
+IGUIElementTextOpt @AutoAimHitLocationTextOpt;
+
+void InitAutoAim()
+{
+	AutoAimHitLocation=HIT_LOCATION_NONE;
+	
+	//@AutoAimImageOpt=
+	//GUI_AddImage(CLIENT_MAIN_SCREEN_GAME,"Tab.png",PT_ART_INTRFACE,__ScreenWidth-80,5)
+	//	.Visible(false);
+	//AutoAimImageOpt.setAbsolutePosition(true);
+	@AutoAimImageOpt=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME,__ScreenWidth-80,5)
+			.UpPic("Tab.png")
+			.DownPic("Tab.png")
+			.Text("", 0,0);
+	AutoAimImageOpt.Hide();
+	IGUIElementOpt@ element;
+	@element = cast<IGUIElementOpt@>(AutoAimImageOpt);
+	element.setAbsolutePosition(true);
+	@AutoAimTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,GetMsgStr(TEXTMSG_GAME,3000000600),__ScreenWidth-81,12)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(76,10)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	@AutoAimHitLocationTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",__ScreenWidth-80,22)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(76,10)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+}
+
+void AutoAimHotkey(uint8 key)
+{
+	if(key==GetHotkey("no_aim",DIK_0)) {
+		AutoAimHitLocation=HIT_LOCATION_NONE;
+	}
+	if(key==GetHotkey("aim_head",DIK_W)) {
+		if(AutoAimHitLocation==HIT_LOCATION_HEAD) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_HEAD;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000601));
+		}
+	}
+	if(key==GetHotkey("aim_larm",DIK_A)) {
+		if(AutoAimHitLocation==HIT_LOCATION_LEFT_ARM) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_LEFT_ARM;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000602));
+		}
+	}
+	if(key==GetHotkey("aim_rarm",DIK_D)) {
+		if(AutoAimHitLocation==HIT_LOCATION_RIGHT_ARM) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_RIGHT_ARM;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000603));
+		}
+	}
+	if(key==GetHotkey("aim_torso",DIK_S)) {
+		if(AutoAimHitLocation==HIT_LOCATION_TORSO) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_TORSO;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000604));
+		}
+	}
+	if(key==GetHotkey("aim_lleg",DIK_Z)) {
+		if(AutoAimHitLocation==HIT_LOCATION_LEFT_LEG) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_LEFT_LEG;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000605));
+		}
+	}
+	if(key==GetHotkey("aim_rleg",DIK_C)) {
+		if(AutoAimHitLocation==HIT_LOCATION_RIGHT_LEG) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_RIGHT_LEG;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000606));
+		}
+	}
+	if(key==GetHotkey("aim_eyes",DIK_Q)) {
+		if(AutoAimHitLocation==HIT_LOCATION_EYES) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_EYES;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000607));
+		}
+	}
+	if(key==GetHotkey("aim_groin",DIK_X)) {
+		if(AutoAimHitLocation==HIT_LOCATION_GROIN) AutoAimHitLocation=HIT_LOCATION_NONE;
+		else {
+			AutoAimHitLocation=HIT_LOCATION_GROIN;
+			AutoAimHitLocationTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000608));
+		}
+	}
+	if(AutoAimHitLocation==HIT_LOCATION_NONE) {
+		AutoAimImageOpt.Hide();
+		AutoAimTextOpt.setVisible(false);
+		AutoAimHitLocationTextOpt.setVisible(false);
+	}
+	else {
+		AutoAimImageOpt.Show();
+		AutoAimTextOpt.setVisible(true);
+		AutoAimHitLocationTextOpt.setVisible(true);
+	}
+}
+
+int GetAutoAimHitLocation()
+{
+	return AutoAimHitLocation;
+}
+
+bool IsAutoAimActive()
+{
+	if(AutoAimHitLocation==HIT_LOCATION_NONE) return false;
+	return true;
+}

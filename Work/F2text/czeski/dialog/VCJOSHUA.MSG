@@ -1,0 +1,4 @@
+#tento soubor prelozil Tomas "LOCKHEAR" Jurecka
+{100}{}{Vidíš Joshuu.}
+{101}{}{Vidíš plešatého chlapíka s beránèím úsmìvem.}
+{102}{}{Díky, že jsi mi pomohl k propuštìní. Nezapomenu na to. Já a má žena brzy odjedeme nìkam pryè.}

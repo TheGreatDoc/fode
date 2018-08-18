@@ -1,0 +1,54 @@
+# Tento soubor pøeloil Radek "Sengaia" Friedrich.......Level
+{100}{}{Vidíš zaprášeného cestovatele.}
+{101}{}{Vidíš stálého hosta baru.}
+{102}{}{Vidíš zaprášeného cestovatele.}
+{103}{}{Hej! Poslouchejte všichni! To je ten, co nakopal Enklávì prdel!}
+{104}{}{Blahopøejeme, hrdino!}
+{105}{}{Hej, hvìzdo! Koupit ti pití, co øikáš?}
+{106}{}{Zdá se, e Kapitán pøišel navštívit chudinu...}
+{107}{}{No, jestli tohle není nejoblíbenìjší vlezdoprdelka Prvního Obèana...}
+{108}{}{No jestli tohle není "Kapitán..."}
+{109}{}{Všichni pozor. Právì vstoupil sám zákon.}
+{110}{}{Pøišels navštívit chudinu, Obèane?}
+{111}{}{Nepatøíš spíš do vnitøního mìsta, "Obèane?"}
+{112}{}{Zasraní Obèani. Vyráej si na procházku, kdykoli se jim zachce...}
+{113}{}{No teda... je to fakt mutant?!}
+{114}{}{Ztrate se, pánové. Máme tady mutanta.}
+{115}{}{Nastanou problémy, jestli stráe uvidí toho mutanta...}
+{116}{}{Oni u teï pouštìjí dovnitø taky *mutanty*?}
+{117}{}{Mám dojem, e se ten mutant brzy ocitne ve Vìzeòském støedisku...}
+{118}{}{Øekni, e to není ghoul.}
+{119}{}{Co je tohle za *puch?!* Vykopejte toho ghoula ven!}
+{120}{}{Vypráskejte to ho smradlavıho ghoula z baru!}
+{121}{}{Jestli tady po tom ghoulovi zbudou nìjakı kusy tìla, tak ho vykuchám.}
+{122}{}{Jestli toho ghoula uvidí stráe, udìlají z nìj cviènı terè. }
+{123}{}{Tìko si dovolit Denní propustku v této dobì...}
+{124}{}{Ceny brahmín poøád rostou...}
+{125}{}{Nastane tìkı období, pokud ty sucha neustanou...}
+{126}{}{Pøišels navštívit chudinu, Kapitáne?}
+{127}{}{Hele, já jsem nic neprovedl, Kapitáne. Hledím si jen svıho obchodu.}
+{128}{}{Já nic nevím, Kapitáne. Nech mì na pokoji.}
+{129}{}{Jdi se projít, "Kapitáne."}
+{130}{}{Zdá se, e dneska udìlá Lynette Obèanem úplnì kadıho.}
+{131}{}{Já u stránım peníze za ochranu zaplatil. Tak mì nech bıt.}
+{132}{}{Pøišels navštívit chudinu, Obèane?}
+{133}{}{Asi by ses mìl radši vrátit do mìsta, Obèane.}
+{134}{}{Nech toho, Obèane.}
+{135}{}{Jdi se provìtrat, Obèane.}
+{136}{}{Zdá se, e dneska udìlá Lynette Obèanem úplnì kadıho.}
+{137}{}{Ten Smith je fajn chlap.}
+{138}{}{Myslím, e já Denní propustku nezískám nikdy.}
+{139}{}{Nepij vodu nikde tady v okolí. V Geigerovıch poèítaèích toti tiká.}
+{140}{}{Ti Obèani v ivotì neøeknou nazdar, ani se ti nepodívají do oèí, kdy se tu  objeví.}
+{141}{}{Vault City nás moná nemá v lásce, ale aspoò nás chrání.}
+{142}{}{Dávej pozor na Auto-doktora. Vyléèí tì...tedy vìtšinou. Prostì jen moc nepokoušej svoje štìstí.}
+{143}{}{Ed, obchodník s dobytkem, musel zase zvıšit ceny, aby mohl zaplatit mìsíèní poplatek stránım.}
+{144}{}{Skeeve mì nechává za podíl propašovat do mìsta nìjakou tu koøalku. }
+{145}{}{Minulı tıden byl na cestách. Pøišel z NCR, dole z jihu.}
+{146}{}{Pár mıch pøátel odešlo do Rena...od té doby jsem je nevidìl.}
+{147}{}{Slyšel jsem, e v Renu zase roste napìtí. Rodiny se navzájem nenávidí.}
+{148}{}{Zaslechl jsem, e ghoulové z Gecka se chystají napadnout mìsto.}
+{149}{}{Nepøiple se do cesty nikomu z Obèanù, nebo tì hned šoupnou do Vìzeòského centra.}
+{150}{}{Lynette je dost drsòák.}
+{151}{}{Vault City není a tak "svobodné" mìsto. Ale není zas nehorší.}
+{152}{}{Vault City je lepší ne Den. Ale zase v nìm není tolik zábavy.}

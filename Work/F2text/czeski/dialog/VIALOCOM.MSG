@@ -1,0 +1,13 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Poèítaèovı terminál, zobrazující nejrùznìjší druhy dat.}
+{101}{}{Vidíš terminál. }
+{102}{}{Poèítaèovı terminál, zobrazující nejrùznìjší druhy dat.}
+{103}{}{Vidíš øídící poèítaè Vault City.}
+{104}{}{Vidíš terminál.}
+{105}{}{Vidíš øídící poèítaè Vault City.}
+{106}{}{Poèítaè, kterı si pøímo øíká o pøipojení s Pip Boyem.}
+{107}{}{Nic se nestalo.}
+{108}{}{S pomocí informací ve svém Pip Boy, zpøístupòuješ poèítaè.}
+{109}{}{Jejda.}
+{110}{}{Získáváš TUNY novıch informací o Falloutu 2.}

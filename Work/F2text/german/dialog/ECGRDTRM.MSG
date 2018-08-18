@@ -1,0 +1,11 @@
+{100}{}{Du siehst einen Terminal mit einem funktionierenden Steuerungschip.}
+{101}{}{Du siehst einen Terminal mit einem defekten Steuerungschip.}
+{102}{}{Du hast den Steuerungschip kaputt gemacht... es wird zwischen 100 und 150 Tage dauern,
+ bis dieser Bunker völlig ohne Wasser sein wird. Aus irgendeinem Grund gefällt Dir dieser
+ Gedanke.} 
+
+{103}{}{Huch.}
+{104}{}{*Piep*}
+{105}{}{*Pip-piiiep*}
+{106}{}{*Piep* *pip-piiiep*}
+

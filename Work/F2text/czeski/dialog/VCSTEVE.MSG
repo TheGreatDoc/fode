@@ -1,0 +1,17 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš veselého mladíka.}
+{101}{}{Vidíš Steva, pomocníka šéfa uvítací kanceláøe ve Vault City.}
+{102}{}{V jeho oèích pozoruješ nepøítomný pohled.}
+{103}{}{Ahoj a vítej ve Vault City, v nejlepším mìstì celé Kalifornie!
+ Jmenuji se Steve...jak ti mohu pomoci?}
+{104}{}{V tom oplocení je celé mìsto?}
+{105}{}{Co jsi chtìl øíct tím "nejlepší?"}
+{106}{}{Hledám Vault. Mùžeš mi prozradit kde ho najdu?}
+{107}{}{Nashle.}
+{108}{}{Umm... (Prohlíží si leták ve své ruce.) Uh... urèitì se nechceš na nic zeptat. Na nic z toho ti nemùžu odpovìdìt.}
+{109}{}{Znáš nìco?}
+{110}{}{Tak jako tak, díky.}
+{111}{}{(Ète si leták.) Jestliže kdokoliv, kdo není Obèan... pak musí být... urazí-li tì... pak musí být... pøedán šéfovi uvítací kanceláøe. Oh... Pøedám tì Melindì, šéfovi uvítací kanceláøe.}
+{112}{}{Pak si s ní pùjdu promluvit.}
+{113}{}{Vítej v uvítací kanceláøi. Jmenuji se Steve.}
+{114}{}{Promiò, musím si dùkladnì proèíst tenhle návod.}

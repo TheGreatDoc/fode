@@ -1,0 +1,55 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš gamblera.}
+{101}{}{Vidíš gamblera, doufajícího ve vıhru.}
+{102}{}{Vidíš nervózní a rozèilenou osobu.}
+{103}{}{Dìlej, dìlej. Dítì potøebuje nové boty.}
+{104}{}{Jo, to je ono!}
+{105}{}{Do prdele!}
+{106}{}{Proè já?}
+{107}{}{Nepøebıvají nìkomu drobné?}
+{108}{}{Tentokrát to mám jisté.}
+{109}{}{Mùj systém vdycky zabere.}
+{110}{}{To je podvod!}
+{111}{}{To je ale zlodìjina.}
+{112}{}{Já jsem nejšastnìjší osoba na svìtì!}
+{113}{}{Co jsem komu udìlal?}
+{114}{}{Sakra!}
+{115}{}{Juhùùù!}
+{116}{}{Jupíííííííí!}
+{117}{}{Nikdy pøedtím jsem nevidìl nikoho, kdo mìl takové štìstí.}
+{118}{}{To vypadá moc dobøe na to, aby to byla pravda.}
+{119}{}{Radši u nevyhrávej.}
+{120}{}{Kolik je v banku?}
+{121}{}{Opravdu je to podle pravidel?}
+{122}{}{Vıbornì.}
+{123}{}{Nech to bıt.}
+{124}{}{Pøíštì si to vyøídím.}
+{125}{}{Prosím, prosím...}
+{126}{}{Tohle bude mùj novı dùm.}
+{127}{}{A tohle moje zahrada.}
+{128}{}{Potøeboval bych ještì trochu penìz.}
+{129}{}{Teï budu mít vìtší štìstí. Cítím to.}
+{130}{}{Kde je moje šastná geckoní packa, kdy jí potøebuji?}
+{131}{}{Co chceš?}
+{132}{}{Ustup, vole.}
+{133}{}{Hele, neotravuj.}
+{134}{}{Neèum na mì tak.}
+{135}{}{Hej, máš pìknı štìstí.}
+{136}{}{Mùu tì praštit do hlavy? Pro štìstí.}
+{137}{}{Doufám e mi nechceš vyfouknout moje šastné kostky.}
+{138}{}{Hraj nebo odejdi.}
+{139}{}{Tohle není diváckı sport, kámo.}
+{140}{}{Doufám, e to nehodláš srovnat.}
+{141}{}{Tenhle stùl pøináší smùlu.}
+{142}{}{Tenhle stùl pøináší štìstí.}
+{143}{}{Ještì trochu vyhraju a padám. Teï u to myslím vánì.}
+{144}{}{Nemaèkejte se na mì.}
+{145}{}{Vidìl jsi to?}
+{146}{}{To je takové štìstí, e u tomu pøestávám vìøit.}
+{147}{}{Pìkná hra, nemyslíš?}
+{148}{}{Dneska mám štìstí.}
+{149}{}{Tentokrát to bude jiné.}
+{150}{}{Nechápu, jak mùou lidi hrát na náhodu.}
+{151}{}{Záleí jenom na dovednostech.}
+{152}{}{Zùstaò vzadu a sleduj, co se stane.}
+{153}{}{Chystáme se zruinovat tuhle hernu.}

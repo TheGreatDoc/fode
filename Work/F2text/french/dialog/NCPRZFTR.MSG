@@ -1,0 +1,6 @@
+{100}{}{Tu vois }
+{101}{}{.}
+
+{150}{}{Il a l'air d'en baver.}
+{151}{}{Pas l'air si costaud.}
+{152}{}{Je parie qu'il a pris des coups quand il était gosse.}

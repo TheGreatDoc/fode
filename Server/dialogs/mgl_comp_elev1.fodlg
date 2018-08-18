@@ -1,0 +1,51 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+0 2010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories 
+Elevator control MGL 1 - Surface 
+Access: Locked 
+Access Lockdown: No 
+Level 3 Lockdown: Yes 
+Elevator status: Offline}
+{2010}{}{Exit}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Kontorla windy: powierzchnia MGL 1
+Dostep: Zamkniety, Zamkniety na klucz
+Dostep Zblokowany: Nie
+Poziom 3 Zlokowany: Tak
+Winda: wylogowany
+}
+{2010}{}{wyjscie}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Elevator control: MGL 1 - surface
+Access: Closed, Locked
+Access Lockdown: No
+Level 3 Lockdown: Yes
+Elevator: off-line
+}
+{2010}{}{exit}
+

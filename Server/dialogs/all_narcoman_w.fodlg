@@ -1,0 +1,34 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Наркоманка}
+{200}{}{Вы видите наркоманку.}
+{210}{}{Она похоже в сильном наркотическом опьянении.}
+{210}{}{Вы видите женщину в грязной одежде. Ее глаза уставлены в одну точку.}
+{210}{}{Вы видите обдолбанную деваху.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Drug addict}
+{200}{}{You see drug-addicted woman.}
+{210}{}{Seems like she is intoxicated with some drugs.}
+{210}{}{You see ragged woman. Her eyes are fixed at some unspecified point in space.}
+{210}{}{You see a doped chick.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Narkomanka}
+{200}{}{Widzisz narkomanke.}
+{210}{}{Jest ona w silnym narkotycznym zamroczeniu.}
+{210}{}{Widzisz kobiete w brudnej odziezy. Jej oczy sa  sa ustawione w jeden punkt.}
+{210}{}{Widzisz naćpaną kobietę.}
+{1000}{}{Initial preferences}
+

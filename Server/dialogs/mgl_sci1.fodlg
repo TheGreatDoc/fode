@@ -1,0 +1,176 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+14 3010 #
+4 3020 D _var p mgl_sci_scorp = 0 D _var p mgl_sci_gckfire = 0 R _var p mgl_sci_scorp = 1 R _var p mgl_sci_gckfire = 1 #
+5 3030 D _var p mgl_sci_scorp } 1 D _var p mgl_sci_scorp < 3 #
+7 3040 D _var p mgl_sci_gckfire } 1 D _var p mgl_sci_gckfire < 3 #
+12 3050 D _var p mgl_sci_scorp = 2 D _item p PID_SCORPION_TAIL } 5 R _var p mgl_sci_scorp = 3 R _param p ST_EXPERIENCE + 1000 R _item p PID_SCORPION_TAIL - 5 #
+13 3060 D _var p mgl_sci_gckfire = 2 R _var p mgl_sci_gckfire = 3 R _param p ST_EXPERIENCE + 3000 #
+8 3070 D _var p mgl_sci_scorp } 3 #
+9 3080 D _var p mgl_sci_gckfire } 3 #
+0 3090 @
+14 4000 None 0 #
+3 4010 @
+4 5000 None 0 #
+3 5010 @
+5 6000 None 0 #
+3 6010 #
+10 6020 D _var p mgl_sci_scorp = 1 @
+7 7000 None 0 #
+3 7010 #
+11 7020 D _var p mgl_sci_gckfire = 1 @
+8 8000 None 0 #
+3 8010 @
+9 9000 None 0 #
+3 9010 @
+10 10000 None 0 #
+0 10010 R _var p mgl_sci_scorp = 2 @
+11 11000 None 0 #
+0 11010 R _var p mgl_sci_gckfire = 2 @
+12 12000 None 0 #
+0 12010 @
+13 13000 None 0 #
+0 13010 &
+
+[engl]
+{100}{}{Doctor Roberts}
+{200}{}{You see doctor Roberts}
+{210}{}{You see one of MGL scientist, doctor Roberts. He looks busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{
+}
+{2000}{}{I'm sorry, but i have lot of work to do here.}
+{2010}{}{I'm sorry for disturbing you. Could you answer me some questions please ?
+}
+{3000}{}{. . . Ok, but make it quick}
+{3010}{}{Who are you ?}
+{3020}{}{What are you researching ?
+}
+{3030}{}{Tell me something about scorpions.}
+{3040}{}{Tell me something about reptiles.}
+{3050}{}{I have those scorpion tails for you.}
+{3060}{}{Here 2 Fire Gecko skins i promised ***make it require and consume 2 fire gecko pelts*}
+{3070}{}{Tell me something about scorpions.}
+{3080}{}{Tell me something about reptiles.}
+{3090}{}{Bye.}
+{4000}{}{I'm doctor Roberts.}
+{4010}{}{my name is @pname@. I have few questions.}
+{5000}{}{I'm stuying mutated animals. My current research is concerned to special abilities of some reptiles and scorpions. Did you know some mutated reptiles are able to throw fire ? It's awesome what FEV combined with radiations created.}
+{5010}{}{Interesting, i want to know more about your research.}
+{6000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Unfortunately my research of this venom is going slowly, because i don't have any fresh samples.}
+{6010}{}{I see, Can you asnwer some of my questions ?}
+{6020}{}{Maybe  i could bring you some samples, but i don't know how to extract venom, so i would bring you whole scorpion tails.}
+{7000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat. I'd give anything for chance to examine it.}
+{7010}{}{interesting, i have another question.}
+{7020}{}{I could bring you some Fire Geckos skins if you want.}
+{8000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Since you brought me those samples, research is going much faster.}
+{8010}{}{I see, Can you asnwer some of my questions ?}
+{9000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat.  I'm now working on those skins you brought me.}
+{9010}{}{interesting, i have another question.}
+{10000}{}{Could you ? That would be really great. I think 5 tails would be enough.}
+{10010}{}{Ok I'm on it.}
+{11000}{}{You could ? Those fire geckos are dangerous beasts. But if you could kill some and bring me it's skin i would really appreciate it. Eh actualy i would need 2  skins to run serrious experiments.}
+{11010}{}{Ok I'll be back with those skins}
+{12000}{}{Oh, show me. . . .  yes. . . . . .  that  looks perfect. . . . . .  poison sacs are untouched. . .  good. tahnk you. Your reward awaits you at storekeeper.}
+{12010}{}{Ok, Thank you}
+{13000}{}{really ? showe me. . . . . . ahh finaly fire gecko skins in excelent condition. . .  Hmm I'll immidietaly start with experiments. Thank you, your reward is ready at storekeeper.}
+{13010}{}{Ok, Thank you}
+
+[pols]
+{100}{}{Doctor Roberts}
+{200}{}{You see doctor Roberts}
+{210}{}{You see one of MGL scientist, doctor Roberts. He looks busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{
+}
+{2000}{}{I'm sorry, but i have lot of work to do here.}
+{2010}{}{I'm sorry for disrupting you. Could you answer me some questions please ?
+}
+{3000}{}{. . . Ok, but make it quick}
+{3010}{}{Who are you ?}
+{3020}{}{What are you researching ?
+}
+{3030}{}{Tell me something about scorpions.}
+{3040}{}{Tell me something about reptiles.}
+{3050}{}{I have those scorpion tails for you.}
+{3060}{}{Here 2 Fire Gecko skins i promised ***make it require and consume 2 fire gecko pelts*}
+{3070}{}{Tell me something about scorpions.}
+{3080}{}{Tell me something about reptiles.}
+{3090}{}{Bye.}
+{4000}{}{I'm doctor Roberts.}
+{4010}{}{my name is @pname@. I have few questions.}
+{5000}{}{I'm stuying mutated animals. My current research is concerned to special abilities of some reptiles and scorpions. Did you know some mutated reptiles are able to throw fire ? It's awesome what FEV combined with radiations created.}
+{5010}{}{Interesting, i want to know more about your research.}
+{6000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Unfortunately my research of this venom is going slowly, because i don't have any fresh samples.}
+{6010}{}{I see, Can you asnwer some of my questions ?}
+{6020}{}{Maybe  i could bring you some samples, but i don't know how to extract venom, so i would bring you whole scorpion tails.}
+{7000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat. I'd give anything for chance to examine it.}
+{7010}{}{interesting, i have another question.}
+{7020}{}{I could bring you some Fire Geckos skins if you want.}
+{8000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Since you brought me those samples, research is going much faster.}
+{8010}{}{I see, Can you asnwer some of my questions ?}
+{9000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat.  I'm now working on those skins you brought me.}
+{9010}{}{interesting, i have another question.}
+{10000}{}{Could you ? That would be really great. I think 5 tails would be enough.}
+{10010}{}{Ok I'm on it.}
+{11000}{}{You could ? Those fire geckos are dangerous beasts. But if you could kill some and bring me it's skin i would really appreciate it. Eh actualy i would need 2  skins to run serrious experiments.}
+{11010}{}{Ok I'll be back with those skins}
+{12000}{}{Oh, show me. . . .  yes. . . . . .  that  looks perfect. . . . . .  poison sacs are untouched. . .  good. tahnk you. Your reward awaits you at storekeeper.}
+{12010}{}{Ok, Thank you}
+{13000}{}{really ? showe me. . . . . . ahh finaly fire gecko skins in excelent condition. . .  Hmm I'll immidietaly start with experiments. Thank you, your reward is ready at storekeeper.}
+{13010}{}{Ok, Thank you}
+
+[russ]
+{100}{}{Doctor Roberts}
+{200}{}{You see doctor Roberts}
+{210}{}{You see one of MGL scientist, doctor Roberts. He looks busy.}
+{1000}{}{Predialogue installations}
+{1010}{}{
+}
+{2000}{}{I'm sorry, but i have lot of work to do here.}
+{2010}{}{I'm sorry for disrupting you. Could you answer me some questions please ?
+}
+{3000}{}{. . . Ok, but make it quick}
+{3010}{}{Who are you ?}
+{3020}{}{What are you researching ?
+}
+{3030}{}{Tell me something about scorpions.}
+{3040}{}{Tell me something about reptiles.}
+{3050}{}{I have those scorpion tails for you.}
+{3060}{}{Here 2 Fire Gecko skins i promised ***make it require and consume 2 fire gecko pelts*}
+{3070}{}{Tell me something about scorpions.}
+{3080}{}{Tell me something about reptiles.}
+{3090}{}{Bye.}
+{4000}{}{I'm doctor Roberts.}
+{4010}{}{my name is @pname@. I have few questions.}
+{5000}{}{I'm stuying mutated animals. My current research is concerned to special abilities of some reptiles and scorpions. Did you know some mutated reptiles are able to throw fire ? It's awesome what FEV combined with radiations created.}
+{5010}{}{Interesting, i want to know more about your research.}
+{6000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Unfortunately my research of this venom is going slowly, because i don't have any fresh samples.}
+{6010}{}{I see, Can you asnwer some of my questions ?}
+{6020}{}{Maybe  i could bring you some samples, but i don't know how to extract venom, so i would bring you whole scorpion tails.}
+{7000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat. I'd give anything for chance to examine it.}
+{7010}{}{interesting, i have another question.}
+{7020}{}{I could bring you some Fire Geckos skins if you want.}
+{8000}{}{Mutated scorpions, also known as "Radscorpions". Due to radiation and FEV they became many times larger. Interesting thing is, their venom became alot stronger. It's one of the most lethal neurotoxines i have ever seen. Since you brought me those samples, research is going much faster.}
+{8010}{}{I see, Can you asnwer some of my questions ?}
+{9000}{}{I'm studying "fire geckos". Mutation gave them some of the most interesting abilities. They are able to throw sulfur dust that reacts with oxygen in air and burns, simply they can throw fire. But even more interesting thing , they seems to be somehow imunite to fire, Their skin has to contain something that reflects heat.  I'm now working on those skins you brought me.}
+{9010}{}{interesting, i have another question.}
+{10000}{}{Could you ? That would be really great. I think 5 tails would be enough.}
+{10010}{}{Ok I'm on it.}
+{11000}{}{You could ? Those fire geckos are dangerous beasts. But if you could kill some and bring me it's skin i would really appreciate it. Eh actualy i would need 2  skins to run serrious experiments.}
+{11010}{}{Ok I'll be back with those skins}
+{12000}{}{Oh, show me. . . .  yes. . . . . .  that  looks perfect. . . . . .  poison sacs are untouched. . .  good. tahnk you. Your reward awaits you at storekeeper.}
+{12010}{}{Ok, Thank you}
+{13000}{}{really ? showe me. . . . . . ahh finaly fire gecko skins in excelent condition. . .  Hmm I'll immidietaly start with experiments. Thank you, your reward is ready at storekeeper.}
+{13010}{}{Ok, Thank you}

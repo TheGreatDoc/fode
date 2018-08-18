@@ -1,0 +1,23 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš malého, veselého mue.}
+{101}{}{Vidíš Šastného Harryho, majitele obchodu.}
+{102}{}{Zdravíèko... co pro tebe mohu udìlat?}
+{103}{}{Chci obchodovat. Mohu vidìt co nabízíš?}
+{104}{}{Ten pluh venku je na prodej?}
+{105}{}{Já koupit}
+{106}{}{Dnes nic, díky.}
+{107}{}{Promiò. Nemohu ti pomoci, sousede.}
+{108}{}{Ano, proè? Mohu ti ho nechat za... øeknìme, osm stovek.}
+{109}{}{Dám ti za nìj šest stovek.}
+{110}{}{Je to kšeft. Beru to.}
+{111}{}{Ehm, osm stovek? Vydr, vrátím se... s penìzi.}
+{112}{}{Zapomeò na to. Jen a si Smiths hladoví.}
+{113}{}{Je tvùj. [Poèítá peníze.] Vezmeš si ho hned, nebo ho chceš
+ nìkam doruèit?}
+{114}{}{Doprav ho ke Smithsovi.}
+{115}{}{Promiò, pøíteli. Øekl jsem osm stovek.}
+{119}{}{Potøebuješ peníze na zaplacení, pøíteli.}
+{120}{}{Vrátím se s penìzi.}
+{121}{}{Není problém. Dopravím ho hned.}
+{122}{}{Chtìli jsme si polepšit, co?! Zatracenej zlodìji... stráe! Stráe!}

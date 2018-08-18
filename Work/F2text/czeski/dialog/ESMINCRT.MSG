@@ -1,0 +1,14 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Asi bys nemìl nastavovat ten èasovaè. Mùže to být nebezpeèné.}
+{101}{}{Ta výbušnina není zøejmì dostateènì úèinná, aby vyèistila ten otvor.}
+{102}{}{Dùlní vozík se zdá být v poøádku. Mohl bys zkusit zatlaèit.}
+{103}{}{Dynamit, pøipevnìný k té kovové tyèi bude zøejmì staèit k odpálení vchodu.}
+{104}{}{Dynamit je upevnìn ke kovové tyèi na vozíku.}
+{105}{}{Jedno dobré zatlaèení a ta vìc by se mìla rozjet.}
+{106}{}{Namáháš se tlaèením vozíku.}
+{107}{}{Tlaèíš vozík po kolejích.}
+{108}{}{Jenom vozík asi nebude staèit k otevøení dolu.}
+{109}{}{Nemáš nic, èím bys to upevnil.}
+{110}{}{Kdybys tak mìl nìjakou kovovou tyè, kterou bys mohl upevnit k dùlnímu vozíku.}
+{111}{}{Pøipevòuješ kovovou tyè k vozíku.}
+{112}{}{Pøipevòuješ dynamit ke kovové tyèi.}

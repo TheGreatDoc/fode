@@ -1,0 +1,4 @@
+{150}{}{Tu n'as pas réussi à faire quoi que ce soit d'utile et tu te prends 50 000 volts dans les dents.}
+{151}{}{Le champ gravitationnel semble intact.}
+{152}{}{Le champ gravitationnel a été retardé de quinze secondes.}
+{200}{}{Oui, beaucoup d'énergie circule ici. Tu arrêtes avant que l'électricité n'atteigne ta main.}

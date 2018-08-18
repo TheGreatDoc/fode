@@ -1,0 +1,130 @@
+{100}{}{Tu vois la Doyenne de ton village.}
+{101}{}{C'est la doyenne.}
+{102}{}{La doyenne est très vieille, plus vieille que tu peux te souvenir. Mais elle a toujours la
+ force et l'énergie pour guider le village en ces temps difficiles.}
+{103}{aeld1}{Félicitations, Etre Elu, tu as survécu au Temple des Epreuves. Es-tu
+ prêt pour ta quête ?}
+{104}{}{Qu'est-ce que tu faisais ? Tu voulais que je me fasse tuer dans le temple ?}
+{105}{}{Bien sûr.}
+{106}{}{J'aimerais encore y réfléchir.}
+{107}{aeld2a}{Je suis fier de toi, Etre Elu. Tu as surmonté beaucoup de difficultés. Mais maintenant tu dois trouver l'Abri
+ 13. L'Abri 13. Rapporte-nous le JEK. JEK. Voilà une bouteille brillante. Vic nous a donné ça. Vic. C'est un marchand de Klamath. Klamath. Va voir Vic. Trouve l'Abri 13. Trouve le JEK. Reviens à la maison. Fais de ton mieux, petit.}
+{112}{aeld2b}{Toi pas avoir trouvé abri. Toi devoir trouver abri ! Abri 13.}
+{113}{}{Euh. }
+{114}{aeld3}{Etre Elu, tu veux que nous mourrions tous ? Tu dois trouver l'Abri !}
+{115}{}{Pardon, doyenne. Je vais réussir.}
+{116}{}{Ouais, ouais. Arrête de crier.}
+{117}{aeld4}{Etre Elu, pourquoi es-tu ici ?}
+{118}{}{Je sais où se trouve l'Abri 13 !}
+{119}{}{Je suis prêt pour la sainte quête.}
+{120}{}{Il me faut davantage de renseignements.}
+{121}{}{Je n'ai pas envie de me faire tuer !}
+{122}{}{Qu'étais-je supposé faire déjà ? / Qu'est-ce que je dois faire déjà ?}
+{123}{}{Je m'en vais maintenant.}
+{124}{aeld5}{C'est une bonne nouvelle, mais ce n'est pas assez pour assurer notre salut. Tu dois nous rapporter le
+ JEK sinon, notre peuple mourra !}
+{125}{}{Il me faut d'autres renseignements.}
+{126}{}{Très bien, je m'en vais maintenant.}
+{127}{aeld6}{Tu as survécu. L'Etre Elu ne doit pas faiblir sinon, nous sommes tous condamnés. Es-tu
+ prêt pour ta quête ?}
+{128}{}{J'ai réussi l'épreuve. Bien sûr que je suis prêt.}
+{129}{}{Je dois y réfléchir.}
+{130}{}{Je n'ai pas envie de me faire tuer !}
+{131}{aeld7}{Fais attention. Trouve l'Abri 13 et rapporte le JEK. Vic, le marchand
+ de Klamath, nous a ramené cette fiole du Saint-Treize. Commence tes recherches en allant le voir. Le disque te rappellera ta tâche. Puissent les dieux de l'Abri te protéger.}
+{133}{}{Avant de partir, j'ai quelques questions.}
+{134}{}{Au revoir. La tribu peut compter sur moi.}
+{135}{aeld8}{Très bien. Viens me voir lorsque tu auras pris une décision, mais n'attends pas trop longtemps.}
+{136}{}{Au revoir.}
+{137}{aeld9}{Je ne peux pas faire grand chose. Tant de choses ont été perdues depuis l'Antan. Quelle sagesse cherches-tu ?}
+{138}{aeld9b}{Que veux-tu ?}
+{139}{}{Dis-m'en plus sur le JEK.}
+{140}{}{Comment va-t-on à Klamath ?}
+{141}{}{Où se trouve l'Abri 13 ?}
+{142}{}{Tout bien réfléchi, je ne pense pas avoir besoin d'aide. Au revoir.}
+{143}{aeld10}{C'est un artefact sacré, le Jardin d'Eden en Kit. C'est la promesse
+ de terres vertes et d'un village prospère. Il nous sauvera. Mais je n'en sais pas plus.}
+{144}{}{J'aimerais en savoir plus.}
+{145}{}{Au revoir.}
+{146}{aeld11}{Klamath se trouve à l'est.}
+{147}{}{Je pourrais en apprendre bien plus.}
+{148}{}{Je suis prêt. Au revoir.}
+{149}{aeld12}{Le Saint-Treize ? Je ne peux pas t'aider. Seul l'Habitant de l'Abri était au courant. Ses histoires  font
+ état d'un voyage périlleux.}
+{150}{}{Je vois. Je dois en savoir plus.}
+{151}{}{Au revoir, doyenne.}
+{152}{aeld13}{La lâcheté va tous nous tuer ! Toi y compris. Tu as réussi
+ les épreuves du temple. Nous avons confiance en toi. Nous avons besoin de toi.}
+{153}{}{Pas si vite, vieille femme. Je dois y réfléchir.}
+{154}{}{Comme tu veux, doyenne.}
+{155}{aeld14a}{Tu nous as trahis. Tu vas mourir.}
+{156}{aeld14b}{Tu es un traître !}
+{157}{aeld14c}{Pourquoi fais-tu cela ?}
+{158}{aeld14d}{Je savais que tu avais l'âme des ténèbres !}
+{159}{aeld15}{Alors, prends cette fiole. Elle vient du saint Abri 13. Vic, un marchand de Klamath nous l'a apportée. Il sait peut-être où se trouve l'abri. Tu vas peut-être avoir besoin de ce qu'ils appellent de l'argent. En voilà.}
+{160}{}{Euh... Quelle est ma quête déjà ?}
+{161}{}{Y a-t-il autre chose que tu puisses me dire ?}
+{162}{}{Souhaite-moi bonne chance, doyenne. Tu peux compter sur moi.}
+{163}{aeld16}{Trouve Vic à Klamath. Nous comptons sur toi.}
+{164}{aeld17}{C'est bon de te revoir, petit. Sans vouloir t'offenser, je vois que tu n'as pas terminé ta quête du Saint-Treize. Je t'en prie, ne perdons pas notre temps à perler. Notre peuple attend. Tu dois trouver l'Abri !}
+{165}{}{Moi partir maintenant.}
+{166}{}{Très bien, j'y vais.}
+{167}{}{Tu peux compter sur moi, doyenne.}
+{168}{}{J'y travaille, OK ?}
+{169}{aeld18}{Une fois de plus, tu reviens sans le JEK. Nos réserves commencent à s'épuiser, Etre Elu. Plus ça va et plus nous en avons besoin. Tu dois trouver le Saint-Treize !}
+{170}{}{OK, moi partir maintenant.}
+{171}{}{Oui, doyenne}
+{172}{}{Vous pouvez compter sur moi, ton peuple et toi, doyenne.}
+{173}{}{Ecoute. Si tu crois pouvoir faire mieux...}
+{174}{aeld19}{Etre Elu, les choses vont de mal en pis ici. Nous avons besoin du JEK pour assurer la survie de notre village. Notre peuple s'affaiblit, il a faim et nos réserves de nourriture ne vont pas durer éternellement. Je t'en prie, trouve le Saint-Treize et rapporte-le nous. Pars maintenant.}
+{175}{}{Moi partir.}
+{176}{}{Très bien. J'y vais.}
+{177}{}{Je vais faire de mon mieux pour trouver le JEK et sauver notre village.}
+{178}{}{Arrête, vieille femme. Je fais de mon mieux.}
+{179}{aeld20}{Petit, nous en avons plus besoin que jamais. Notre peuple souffre, les brahmines meurent et nous n'avons plus de nourriture. Seul le JEK peut sauver notre terre de ce désastre. Pars, trouve le JEK et sauve notre peuple.}
+{180}{}{Moi comprendre.}
+{181}{}{J'y vais de ce pas.}
+{182}{}{Pardonne-moi, doyenne. Je me mets sur-le-champ à la recherche du JEK.}
+{183}{}{Ouais, ouais. Tu commences à radoter...}
+
+
+{200}{eeld1}{Etre Elu ! Comment es-tu venu ici !}
+{201}{}{Euh... Ben ?}
+{202}{}{Je suis là pour vous sauver.}
+{203}{}{Bon sang, mais que se passe-t-il ici ?}
+{204}{eeld2}{Monstre ! Tu es là pour me tuer ?}
+{205}{}{Euhhh ?}
+{206}{}{Non, c'est moi, l'Etre Elu !}
+{207}{}{Oh, ferme-la, vieille salope ! C'est moi, l'Etre Elu.}
+{208}{eeld3}{Oh, mon dieu... Toi écouter - toi descendre. Toi trouver machine qui faire puissance. Toi tuer machine. Toi tuer méchants. Toi tuer tout le monde. Aussi, si toi pas avoir JEK, toi chercher JEK ici. Toi avoir besoin JEK pour sauver village ! Liberté n'être rien sans maison où rentrer. Toi comprendre ? Oh, mon dieu.}
+{209}{}{Euh -heuh !}
+{210}{eeld4}{Attention, tu ne dois pas toucher le mur rayonnant. Je crois que la machine qui l'alimente se trouve juste en dessous. Détruis-la pour nous permettre de nous échapper. Comment es-tu venu ici ? / as-tu fait pour arriver ici ?}
+{211}{}{J'ai un navire.}
+{212}{eeld5}{Des hommes sont venus dans notre village à bord de machines volantes et ils nous ont emmenés. Il y avait d'autres personnes aussi - du Saint-Treize ! J'ai cru que nous étions sauvés. J'ai cru que nous allions au paradis. (soupir)}
+{213}{}{Et alors ?}
+{214}{eeld5a}{Alors ils nous ont emmenés ici, en enfer. Ils ont tué la plupart d'entre nous avec quelque chose qu'ils appellent effeevee. Ils vont tous nous tuer avant d'en finir ! Sais-tu ce qu'il faut faire, Etre Elu ?}
+{215}{}{Effeevee ?}
+{216}{}{Oui.}
+{217}{}{Non.}
+{218}{eeld6}{Si tu détruis la machine, nous trouverons le navire. Il faut se dépêcher, nous ne sommes plus nombreux.}
+{219}{}{Que s'est-il passé ?}
+{220}{}{Je comprends.}
+{221}{eeld7}{Tu dois détruire la machine et tuer les démons de cet endroit. Nous te rejoindrons dehors ! Et, Etre Elu, si tu n'as pas trouvé le JEK, cherche ici. Notre liberté ne vaut rien si nous ne pouvons pas sauver notre village. Maintenant, pars !}
+{222}{}{Au revoir.}
+{223}{eeld8}{Je suis toujours la doyenne. N'oublie pas ton rang ! Excuse-toi ou je ne t'aiderai plus.}
+{224}{}{Excuse-moi, tu n'es pas une vieille salope. Que se passe-t-il ?}
+{225}{}{Je croyais que tu pourrais m'aider ? Va au diable.}
+{226}{eeld9}{Va-t'en. Tu ne vaux pas mieux que ces démons. C'est bien triste que tu sois l'Etre Elu.}
+{227}{eeld10}{Pourquoi es-tu ici ? A chaque minute que tu perds, un autre membre de notre peuple meurt. Et n'oublie pas le JEK ! Nous en avons besoin.}
+{228}{}{Nuh ? ?}
+{229}{}{Où étais-je supposé aller ? / Où devais-je aller ?}
+{230}{}{Je voulais juste t'embêter un peu. Je suis dessus. Ne t'inquiète pas.}
+{231}{eeld11}{(soupir) Toi descendre. Toi tuer. Toi détruire ces machines. Toi partir maintenant !}
+{232}{eeld12}{Ecoute cette fois ! Descends aux étages inférieurs. Trouve la machine qui crée la puissance. Arrête-la et nous pourrons nous enfuir. Les hommes ici ne correspondent pas au rêve de l'Abri. Ils sont mauvais. Et, si tu n'as pas encore trouvé le JEK, cherche-le ici. Notre liberté ne vaut rien si notre village ne peut pas être sauvé. Maintenant, va !}
+{233}{}{Compris.}
+{234}{eeld13}{C'est comme ça qu'ils l'appellent. Ils nous ont enfoncé des aiguilles dans la peau, comme des stimpacks, mais alors des choses terribles se sont produites. Puis... (il suffoque)}
+{235}{}{Et alors ?}
+{236}{}{Ca va me rendre malade, pas vrai ?}
+{237}{eeld13a}{Alors la peau s'est mise à gonfler comme s'il y avait des asticots en dessous. Les furoncles ont grossi, puis ont éclaté. Le sang coulait par les oreilles et la langue a enflé. Les plus chanceux sont morts par suffocation. Les autres...}
+{238}{}{Ils vont le payer.}
+{239}{}{C'était sûrement horrible. Que suis-je supposé faire ? }

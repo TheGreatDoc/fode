@@ -1,0 +1,4034 @@
+[Header]
+Version              4
+MaxHexX              250
+MaxHexY              250
+WorkHexX             188
+WorkHexY             177
+ScriptModule         -
+ScriptFunc           -
+NoLogOut             0
+Time                 0
+DayTime              300  600  1140 1380
+DayColor0            18  18  53 
+DayColor1            128 128 128
+DayColor2            103 95  86 
+DayColor3            51  40  29 
+
+[Tiles]
+tile       170  109            art\tiles\cav4009.frm
+tile       166  111            art\tiles\cav4009.frm
+tile       168  111            art\tiles\cav4009.frm
+tile       170  111            art\tiles\cav4009.frm
+tile       172  111            art\tiles\cav4010.frm
+tile       162  113            art\tiles\cav4010.frm
+tile       164  113            art\tiles\cav4009.frm
+tile       166  113            art\tiles\cav4010.frm
+tile       168  113            art\tiles\cav4009.frm
+tile       170  113            art\tiles\cav4010.frm
+tile       172  113            art\tiles\cav4009.frm
+tile       174  113            art\tiles\cav4009.frm
+tile       158  115            art\tiles\cav4009.frm
+tile       160  115            art\tiles\cav4009.frm
+tile       162  115            art\tiles\cav4009.frm
+tile       164  115            art\tiles\cav4009.frm
+tile       166  115            art\tiles\cav4009.frm
+tile       168  115            art\tiles\cav4009.frm
+tile       170  115            art\tiles\cav4009.frm
+tile       172  115            art\tiles\cav4010.frm
+tile       174  115            art\tiles\cav4009.frm
+tile       154  117            art\tiles\cav4010.frm
+tile       156  117            art\tiles\cav4009.frm
+tile       158  117            art\tiles\cav4010.frm
+tile       160  117            art\tiles\cav4009.frm
+tile       162  117            art\tiles\cav4010.frm
+tile       164  117            art\tiles\cav4009.frm
+tile       166  117            art\tiles\cav4010.frm
+tile       168  117            art\tiles\cav4009.frm
+tile       170  117            art\tiles\cav4010.frm
+tile       172  117            art\tiles\cav4009.frm
+tile       174  117            art\tiles\cav4010.frm
+tile       176  117            art\tiles\cav4009.frm
+tile       150  119            art\tiles\cav4009.frm
+tile       152  119            art\tiles\cav4009.frm
+tile       154  119            art\tiles\cav4009.frm
+tile       156  119            art\tiles\cav4009.frm
+tile       158  119            art\tiles\cav4009.frm
+tile       160  119            art\tiles\cav4009.frm
+tile       162  119            art\tiles\cav4009.frm
+tile       164  119            art\tiles\cav4009.frm
+tile       166  119            art\tiles\cav4009.frm
+tile       168  119            art\tiles\cav4009.frm
+tile       170  119            art\tiles\cav4009.frm
+tile       172  119            art\tiles\cav4009.frm
+tile       174  119            art\tiles\cav4009.frm
+tile       176  119            art\tiles\cav4009.frm
+tile       178  119            art\tiles\cav4009.frm
+tile       146  121            art\tiles\cav4009.frm
+tile       148  121            art\tiles\cav4009.frm
+tile       150  121            art\tiles\cav4010.frm
+tile       152  121            art\tiles\cav4009.frm
+tile       154  121            art\tiles\cav4010.frm
+tile       156  121            art\tiles\cav4009.frm
+tile       158  121            art\tiles\cav4010.frm
+tile       160  121            art\tiles\cav4009.frm
+tile       162  121            art\tiles\cav4010.frm
+tile       164  121            art\tiles\cav4009.frm
+tile       166  121            art\tiles\cav4010.frm
+tile       168  121            art\tiles\cav4009.frm
+tile       170  121            art\tiles\cav4010.frm
+tile       172  121            art\tiles\cav4009.frm
+tile       174  121            art\tiles\cav4010.frm
+tile       176  121            art\tiles\cav4009.frm
+tile       178  121            art\tiles\cav4010.frm
+tile       142  123            art\tiles\cav4009.frm
+tile       144  123            art\tiles\cav4009.frm
+tile       146  123            art\tiles\cav4009.frm
+tile       148  123            art\tiles\cav4009.frm
+tile       150  123            art\tiles\cav4009.frm
+tile       152  123            art\tiles\cav4009.frm
+tile       154  123            art\tiles\cav4009.frm
+tile       156  123            art\tiles\cav4009.frm
+tile       158  123            art\tiles\cav4009.frm
+tile       160  123            art\tiles\cav4009.frm
+tile       162  123            art\tiles\cav4009.frm
+tile       164  123            art\tiles\cav4009.frm
+tile       166  123            art\tiles\cav4009.frm
+tile       168  123            art\tiles\cav4009.frm
+tile       170  123            art\tiles\cav4009.frm
+tile       172  123            art\tiles\cav4009.frm
+tile       174  123            art\tiles\cav4009.frm
+tile       176  123            art\tiles\cav4009.frm
+tile       178  123            art\tiles\cav4009.frm
+tile       180  123            art\tiles\cav4009.frm
+tile       138  125            art\tiles\cav4009.frm
+tile       140  125            art\tiles\cav4009.frm
+tile       142  125            art\tiles\cav4009.frm
+tile       144  125            art\tiles\cav4009.frm
+tile       146  125            art\tiles\cav4009.frm
+tile       148  125            art\tiles\cav4009.frm
+tile       150  125            art\tiles\cav4009.frm
+tile       152  125            art\tiles\cav4009.frm
+tile       154  125            art\tiles\cav4009.frm
+tile       156  125            art\tiles\cav4009.frm
+tile       158  125            art\tiles\cav4009.frm
+tile       160  125            art\tiles\cav4009.frm
+tile       162  125            art\tiles\cav4009.frm
+tile       164  125            art\tiles\cav4009.frm
+tile       166  125            art\tiles\cav4009.frm
+tile       168  125            art\tiles\cav4009.frm
+tile       170  125            art\tiles\cav4009.frm
+tile       172  125            art\tiles\cav4009.frm
+tile       174  125            art\tiles\cav4009.frm
+tile       176  125            art\tiles\cav4009.frm
+tile       178  125            art\tiles\cav4009.frm
+tile       180  125            art\tiles\cav4009.frm
+tile       182  125            art\tiles\cav4010.frm
+tile       134  127            art\tiles\cav4009.frm
+tile       136  127            art\tiles\cav4010.frm
+tile       138  127            art\tiles\cav4009.frm
+tile       140  127            art\tiles\cav4010.frm
+tile       142  127            art\tiles\cav4009.frm
+tile       144  127            art\tiles\cav4010.frm
+tile       146  127            art\tiles\cav4009.frm
+tile       148  127            art\tiles\cav4010.frm
+tile       150  127            art\tiles\cav4009.frm
+tile       152  127            art\tiles\cav4010.frm
+tile       154  127            art\tiles\cav4009.frm
+tile       156  127            art\tiles\cav4010.frm
+tile       158  127            art\tiles\cav4009.frm
+tile       160  127            art\tiles\cav4010.frm
+tile       162  127            art\tiles\cav4009.frm
+tile       164  127            art\tiles\cav4010.frm
+tile       166  127            art\tiles\cav4009.frm
+tile       168  127            art\tiles\cav4010.frm
+tile       170  127            art\tiles\cav4009.frm
+tile       172  127            art\tiles\cav4010.frm
+tile       174  127            art\tiles\cav4009.frm
+tile       176  127            art\tiles\cav4009.frm
+tile       178  127            art\tiles\cav4009.frm
+tile       180  127            art\tiles\cav4009.frm
+tile       182  127            art\tiles\cav4009.frm
+tile       130  129            art\tiles\cav4009.frm
+tile       132  129            art\tiles\cav4009.frm
+tile       134  129            art\tiles\cav4009.frm
+tile       136  129            art\tiles\cav4009.frm
+tile       138  129            art\tiles\cav4009.frm
+tile       140  129            art\tiles\cav4009.frm
+tile       142  129            art\tiles\cav4010.frm
+tile       144  129            art\tiles\cav4010.frm
+tile       146  129            art\tiles\cav4009.frm
+tile       148  129            art\tiles\cav4009.frm
+tile       150  129            art\tiles\cav4009.frm
+tile       152  129            art\tiles\cav4009.frm
+tile       154  129            art\tiles\cav4009.frm
+tile       156  129            art\tiles\cav4009.frm
+tile       158  129            art\tiles\cav4009.frm
+tile       160  129            art\tiles\cav4009.frm
+tile       162  129            art\tiles\cav4009.frm
+tile       164  129            art\tiles\cav4009.frm
+tile       166  129            art\tiles\cav4010.frm
+tile       168  129            art\tiles\cav4010.frm
+tile       170  129            art\tiles\cav4009.frm
+tile       172  129            art\tiles\cav4009.frm
+tile       174  129            art\tiles\cav4010.frm
+tile       176  129            art\tiles\cav4009.frm
+tile       178  129            art\tiles\cav4010.frm
+tile       180  129            art\tiles\cav4009.frm
+tile       182  129            art\tiles\cav4010.frm
+tile       184  129            art\tiles\cav4009.frm
+tile       126  131            art\tiles\cav4009.frm
+tile       128  131            art\tiles\cav4010.frm
+tile       130  131            art\tiles\cav4009.frm
+tile       132  131            art\tiles\cav4010.frm
+tile       134  131            art\tiles\cav4009.frm
+tile       136  131            art\tiles\cav4009.frm
+tile       138  131            art\tiles\cav4009.frm
+tile       140  131            art\tiles\cav4009.frm
+tile       142  131            art\tiles\cav4009.frm
+tile       144  131            art\tiles\cav4009.frm
+tile       146  131            art\tiles\cav4009.frm
+tile       148  131            art\tiles\cav4010.frm
+tile       150  131            art\tiles\cav4009.frm
+tile       152  131            art\tiles\cav4010.frm
+tile       154  131            art\tiles\cav4009.frm
+tile       156  131            art\tiles\cav4010.frm
+tile       158  131            art\tiles\cav4009.frm
+tile       160  131            art\tiles\cav4009.frm
+tile       162  131            art\tiles\cav4009.frm
+tile       164  131            art\tiles\cav4009.frm
+tile       166  131            art\tiles\cav4009.frm
+tile       168  131            art\tiles\cav4009.frm
+tile       170  131            art\tiles\cav4009.frm
+tile       172  131            art\tiles\cav4009.frm
+tile       174  131            art\tiles\cav4009.frm
+tile       176  131            art\tiles\cav4009.frm
+tile       178  131            art\tiles\cav4009.frm
+tile       180  131            art\tiles\cav4009.frm
+tile       182  131            art\tiles\cav4009.frm
+tile       184  131            art\tiles\cav4009.frm
+tile       186  131            art\tiles\cav4009.frm
+tile       122  133            art\tiles\cav4009.frm
+tile       124  133            art\tiles\cav4009.frm
+tile       126  133            art\tiles\cav4009.frm
+tile       128  133            art\tiles\cav4009.frm
+tile       130  133            art\tiles\cav4009.frm
+tile       132  133            art\tiles\cav4009.frm
+tile       134  133            art\tiles\cav4010.frm
+tile       136  133            art\tiles\cav4009.frm
+tile       138  133            art\tiles\cav4010.frm
+tile       140  133            art\tiles\cav4009.frm
+tile       142  133            art\tiles\cav4010.frm
+tile       144  133            art\tiles\cav4009.frm
+tile       146  133            art\tiles\cav4010.frm
+tile       148  133            art\tiles\cav4009.frm
+tile       150  133            art\tiles\cav4009.frm
+tile       152  133            art\tiles\cav4009.frm
+tile       154  133            art\tiles\cav4009.frm
+tile       156  133            art\tiles\cav4009.frm
+tile       158  133            art\tiles\cav4010.frm
+tile       160  133            art\tiles\cav4009.frm
+tile       162  133            art\tiles\cav4010.frm
+tile       164  133            art\tiles\cav4009.frm
+tile       166  133            art\tiles\cav4010.frm
+tile       168  133            art\tiles\cav4009.frm
+tile       170  133            art\tiles\cav4010.frm
+tile       172  133            art\tiles\cav4009.frm
+tile       174  133            art\tiles\cav4010.frm
+tile       176  133            art\tiles\cav4009.frm
+tile       178  133            art\tiles\cav4010.frm
+tile       180  133            art\tiles\cav4009.frm
+tile       182  133            art\tiles\cav4010.frm
+tile       184  133            art\tiles\cav4009.frm
+tile       186  133            art\tiles\cav4010.frm
+tile       118  135            art\tiles\cav4009.frm
+tile       120  135            art\tiles\cav4009.frm
+tile       122  135            art\tiles\cav4009.frm
+tile       124  135            art\tiles\cav4010.frm
+tile       126  135            art\tiles\cav4009.frm
+tile       128  135            art\tiles\cav4009.frm
+tile       130  135            art\tiles\cav4009.frm
+tile       132  135            art\tiles\cav4009.frm
+tile       134  135            art\tiles\cav4009.frm
+tile       136  135            art\tiles\cav4009.frm
+tile       138  135            art\tiles\cav4009.frm
+tile       140  135            art\tiles\cav4009.frm
+tile       142  135            art\tiles\cav4009.frm
+tile       144  135            art\tiles\cav4009.frm
+tile       146  135            art\tiles\cav4009.frm
+tile       148  135            art\tiles\cav4010.frm
+tile       150  135            art\tiles\cav4009.frm
+tile       152  135            art\tiles\cav4009.frm
+tile       154  135            art\tiles\cav4009.frm
+tile       156  135            art\tiles\cav4009.frm
+tile       158  135            art\tiles\cav4009.frm
+tile       160  135            art\tiles\cav4009.frm
+tile       162  135            art\tiles\cav4009.frm
+tile       164  135            art\tiles\cav4009.frm
+tile       166  135            art\tiles\cav4009.frm
+tile       168  135            art\tiles\cav4009.frm
+tile       170  135            art\tiles\cav4009.frm
+tile       172  135            art\tiles\cav4009.frm
+tile       174  135            art\tiles\cav4009.frm
+tile       176  135            art\tiles\cav4009.frm
+tile       178  135            art\tiles\cav4009.frm
+tile       180  135            art\tiles\cav4009.frm
+tile       182  135            art\tiles\cav4009.frm
+tile       184  135            art\tiles\cav4009.frm
+tile       186  135            art\tiles\cav4009.frm
+tile       188  135            art\tiles\cav4009.frm
+tile       118  137            art\tiles\cav4010.frm
+tile       120  137            art\tiles\cav4009.frm
+tile       122  137            art\tiles\cav4010.frm
+tile       124  137            art\tiles\cav4009.frm
+tile       126  137            art\tiles\cav4010.frm
+tile       128  137            art\tiles\cav4009.frm
+tile       130  137            art\tiles\cav4010.frm
+tile       132  137            art\tiles\cav4009.frm
+tile       134  137            art\tiles\cav4010.frm
+tile       136  137            art\tiles\cav4009.frm
+tile       138  137            art\tiles\cav4010.frm
+tile       140  137            art\tiles\cav4009.frm
+tile       142  137            art\tiles\cav4010.frm
+tile       144  137            art\tiles\cav4009.frm
+tile       146  137            art\tiles\cav4010.frm
+tile       148  137            art\tiles\cav4009.frm
+tile       150  137            art\tiles\cav4010.frm
+tile       152  137            art\tiles\cav4009.frm
+tile       154  137            art\tiles\cav4010.frm
+tile       156  137            art\tiles\cav4009.frm
+tile       158  137            art\tiles\cav4010.frm
+tile       160  137            art\tiles\cav4009.frm
+tile       162  137            art\tiles\cav4010.frm
+tile       164  137            art\tiles\cav4009.frm
+tile       166  137            art\tiles\cav4010.frm
+tile       168  137            art\tiles\cav4009.frm
+tile       170  137            art\tiles\cav4010.frm
+tile       172  137            art\tiles\cav4009.frm
+tile       174  137            art\tiles\cav4010.frm
+tile       176  137            art\tiles\cav4009.frm
+tile       178  137            art\tiles\cav4010.frm
+tile       180  137            art\tiles\cav4009.frm
+tile       182  137            art\tiles\cav4010.frm
+tile       184  137            art\tiles\cav4009.frm
+tile       186  137            art\tiles\cav4010.frm
+tile       188  137            art\tiles\cav4009.frm
+tile       190  137            art\tiles\cav4010.frm
+tile       120  139            art\tiles\cav4009.frm
+tile       122  139            art\tiles\cav4009.frm
+tile       124  139            art\tiles\cav4009.frm
+tile       126  139            art\tiles\cav4009.frm
+tile       128  139            art\tiles\cav4009.frm
+tile       130  139            art\tiles\cav4009.frm
+tile       132  139            art\tiles\cav4009.frm
+tile       134  139            art\tiles\cav4009.frm
+tile       136  139            art\tiles\cav4009.frm
+tile       138  139            art\tiles\cav4009.frm
+tile       140  139            art\tiles\cav4009.frm
+tile       142  139            art\tiles\cav4009.frm
+tile       144  139            art\tiles\cav4009.frm
+tile       146  139            art\tiles\cav4009.frm
+tile       148  139            art\tiles\cav4009.frm
+tile       150  139            art\tiles\cav4009.frm
+tile       152  139            art\tiles\cav4009.frm
+tile       154  139            art\tiles\cav4009.frm
+tile       156  139            art\tiles\cav4009.frm
+tile       158  139            art\tiles\cav4009.frm
+tile       160  139            art\tiles\cav4009.frm
+tile       162  139            art\tiles\cav4009.frm
+tile       164  139            art\tiles\cav4009.frm
+tile       166  139            art\tiles\cav4009.frm
+tile       168  139            art\tiles\cav4009.frm
+tile       170  139            art\tiles\cav4009.frm
+tile       172  139            art\tiles\cav4009.frm
+tile       174  139            art\tiles\cav4009.frm
+tile       176  139            art\tiles\cav4009.frm
+tile       178  139            art\tiles\cav4009.frm
+tile       180  139            art\tiles\cav4009.frm
+tile       182  139            art\tiles\cav4009.frm
+tile       184  139            art\tiles\cav4009.frm
+tile       186  139            art\tiles\cav4009.frm
+tile       188  139            art\tiles\cav4009.frm
+tile       190  139            art\tiles\cav4009.frm
+tile       122  141            art\tiles\cav4010.frm
+tile       124  141            art\tiles\cav4009.frm
+tile       126  141            art\tiles\cav4010.frm
+tile       128  141            art\tiles\cav4009.frm
+tile       130  141            art\tiles\cav4010.frm
+tile       132  141            art\tiles\cav4009.frm
+tile       134  141            art\tiles\cav4010.frm
+tile       136  141            art\tiles\cav4009.frm
+tile       138  141            art\tiles\cav4010.frm
+tile       140  141            art\tiles\cav4009.frm
+tile       142  141            art\tiles\cav4010.frm
+tile       144  141            art\tiles\cav4009.frm
+tile       146  141            art\tiles\cav4010.frm
+tile       148  141            art\tiles\cav4009.frm
+tile       150  141            art\tiles\cav4010.frm
+tile       152  141            art\tiles\cav4009.frm
+tile       154  141            art\tiles\cav4010.frm
+tile       156  141            art\tiles\cav4009.frm
+tile       158  141            art\tiles\cav4010.frm
+tile       160  141            art\tiles\cav4009.frm
+tile       162  141            art\tiles\cav4010.frm
+tile       164  141            art\tiles\cav4009.frm
+tile       166  141            art\tiles\cav4010.frm
+tile       168  141            art\tiles\cav4009.frm
+tile       170  141            art\tiles\cav4010.frm
+tile       172  141            art\tiles\cav4010.frm
+tile       174  141            art\tiles\cav4009.frm
+tile       176  141            art\tiles\rst1000.frm
+tile       178  141            art\tiles\rst1003.frm
+tile       180  141            art\tiles\rst1001.frm
+tile       182  141            art\tiles\rst1002.frm
+tile       184  141            art\tiles\cav4009.frm
+tile       186  141            art\tiles\cav4009.frm
+tile       188  141            art\tiles\cav4009.frm
+tile       190  141            art\tiles\cav4009.frm
+tile       192  141            art\tiles\cav4009.frm
+tile       122  143            art\tiles\cav4009.frm
+tile       124  143            art\tiles\cav4009.frm
+tile       126  143            art\tiles\cav4009.frm
+tile       128  143            art\tiles\cav4009.frm
+tile       130  143            art\tiles\cav4009.frm
+tile       132  143            art\tiles\cav4009.frm
+tile       134  143            art\tiles\cav4009.frm
+tile       136  143            art\tiles\cav4009.frm
+tile       138  143            art\tiles\cav4009.frm
+tile       140  143            art\tiles\cav4009.frm
+tile       142  143            art\tiles\cav4009.frm
+tile       144  143            art\tiles\cav4009.frm
+tile       146  143            art\tiles\cav4009.frm
+tile       148  143            art\tiles\cav4009.frm
+tile       150  143            art\tiles\cav4009.frm
+tile       152  143            art\tiles\cav4009.frm
+tile       154  143            art\tiles\cav4009.frm
+tile       156  143            art\tiles\cav4009.frm
+tile       158  143            art\tiles\cav4009.frm
+tile       160  143            art\tiles\cav4009.frm
+tile       162  143            art\tiles\cav4009.frm
+tile       164  143            art\tiles\cav4009.frm
+tile       166  143            art\tiles\cav4009.frm
+tile       168  143            art\tiles\cav4009.frm
+tile       170  143            art\tiles\cav4009.frm
+tile       172  143            art\tiles\cav4009.frm
+tile       174  143            art\tiles\cav4010.frm
+tile       176  143            art\tiles\rst1000.frm
+tile       178  143            art\tiles\rst1001.frm
+tile       180  143            art\tiles\rst1003.frm
+tile       182  143            art\tiles\rst1002.frm
+tile       184  143            art\tiles\cav4010.frm
+tile       186  143            art\tiles\cav4009.frm
+tile       188  143            art\tiles\cav4010.frm
+tile       190  143            art\tiles\cav4009.frm
+tile       192  143            art\tiles\cav4010.frm
+tile       194  143            art\tiles\cav4009.frm
+tile       124  145            art\tiles\cav4009.frm
+tile       126  145            art\tiles\cav4009.frm
+tile       128  145            art\tiles\cav4009.frm
+tile       130  145            art\tiles\cav4009.frm
+tile       132  145            art\tiles\cav4009.frm
+tile       134  145            art\tiles\cav4009.frm
+tile       136  145            art\tiles\cav4009.frm
+tile       138  145            art\tiles\cav4009.frm
+tile       140  145            art\tiles\cav4009.frm
+tile       142  145            art\tiles\cav4009.frm
+tile       144  145            art\tiles\cav4009.frm
+tile       146  145            art\tiles\cav4009.frm
+tile       148  145            art\tiles\cav4009.frm
+tile       150  145            art\tiles\cav4009.frm
+tile       152  145            art\tiles\cav4009.frm
+tile       154  145            art\tiles\cav4009.frm
+tile       156  145            art\tiles\cav4009.frm
+tile       158  145            art\tiles\cav4009.frm
+tile       160  145            art\tiles\cav4009.frm
+tile       162  145            art\tiles\cav4009.frm
+tile       164  145            art\tiles\cav4009.frm
+tile       166  145            art\tiles\cav4009.frm
+tile       168  145            art\tiles\cav4009.frm
+tile       170  145            art\tiles\cav4009.frm
+tile       172  145            art\tiles\cav4009.frm
+tile       174  145            art\tiles\cav4009.frm
+tile       176  145            art\tiles\rst1000.frm
+tile       178  145            art\tiles\rst1003.frm
+tile       180  145            art\tiles\rst1001.frm
+tile       182  145            art\tiles\rst1002.frm
+tile       184  145            art\tiles\cav4009.frm
+tile       186  145            art\tiles\cav4009.frm
+tile       188  145            art\tiles\cav4009.frm
+tile       190  145            art\tiles\cav4009.frm
+tile       192  145            art\tiles\cav4009.frm
+tile       194  145            art\tiles\cav4009.frm
+tile       126  147            art\tiles\cav4009.frm
+tile       128  147            art\tiles\cav4010.frm
+tile       130  147            art\tiles\cav4009.frm
+tile       132  147            art\tiles\cav4010.frm
+tile       134  147            art\tiles\cav4009.frm
+tile       136  147            art\tiles\cav4010.frm
+tile       138  147            art\tiles\cav4009.frm
+tile       140  147            art\tiles\cav4010.frm
+tile       142  147            art\tiles\cav4009.frm
+tile       144  147            art\tiles\cav4010.frm
+tile       146  147            art\tiles\cav4009.frm
+tile       148  147            art\tiles\cav4010.frm
+tile       150  147            art\tiles\cav4009.frm
+tile       152  147            art\tiles\cav4010.frm
+tile       154  147            art\tiles\cav4009.frm
+tile       156  147            art\tiles\cav4010.frm
+tile       158  147            art\tiles\cav4009.frm
+tile       160  147            art\tiles\cav4010.frm
+tile       162  147            art\tiles\cav4009.frm
+tile       164  147            art\tiles\cav4010.frm
+tile       166  147            art\tiles\cav4009.frm
+tile       168  147            art\tiles\cav4010.frm
+tile       170  147            art\tiles\cav4009.frm
+tile       172  147            art\tiles\cav4009.frm
+tile       174  147            art\tiles\cav4010.frm
+tile       176  147            art\tiles\rst1000.frm
+tile       178  147            art\tiles\rst1001.frm
+tile       180  147            art\tiles\rst1003.frm
+tile       182  147            art\tiles\rst1002.frm
+tile       184  147            art\tiles\cav4010.frm
+tile       186  147            art\tiles\cav4009.frm
+tile       188  147            art\tiles\cav4010.frm
+tile       190  147            art\tiles\cav4009.frm
+tile       192  147            art\tiles\cav4010.frm
+tile       194  147            art\tiles\cav4009.frm
+tile       196  147            art\tiles\cav4009.frm
+tile       126  149            art\tiles\cav4009.frm
+tile       128  149            art\tiles\cav4009.frm
+tile       130  149            art\tiles\cav4009.frm
+tile       132  149            art\tiles\cav4009.frm
+tile       134  149            art\tiles\cav4009.frm
+tile       136  149            art\tiles\cav4009.frm
+tile       138  149            art\tiles\cav4009.frm
+tile       140  149            art\tiles\cav4009.frm
+tile       142  149            art\tiles\cav4010.frm
+tile       144  149            art\tiles\cav4010.frm
+tile       146  149            art\tiles\cav4009.frm
+tile       148  149            art\tiles\cav4009.frm
+tile       150  149            art\tiles\cav4009.frm
+tile       152  149            art\tiles\cav4009.frm
+tile       154  149            art\tiles\cav4009.frm
+tile       156  149            art\tiles\cav4009.frm
+tile       158  149            art\tiles\cav4009.frm
+tile       160  149            art\tiles\cav4009.frm
+tile       162  149            art\tiles\cav4009.frm
+tile       164  149            art\tiles\cav4009.frm
+tile       166  149            art\tiles\cav4010.frm
+tile       168  149            art\tiles\cav4010.frm
+tile       170  149            art\tiles\cav4009.frm
+tile       172  149            art\tiles\cav4009.frm
+tile       174  149            art\tiles\cav4009.frm
+tile       176  149            art\tiles\rst1000.frm
+tile       178  149            art\tiles\rst1003.frm
+tile       180  149            art\tiles\rst1001.frm
+tile       182  149            art\tiles\rst1002.frm
+tile       184  149            art\tiles\cav4009.frm
+tile       186  149            art\tiles\cav4009.frm
+tile       188  149            art\tiles\cav4009.frm
+tile       190  149            art\tiles\cav4009.frm
+tile       192  149            art\tiles\cav4009.frm
+tile       194  149            art\tiles\cav4010.frm
+tile       196  149            art\tiles\cav4009.frm
+tile       198  149            art\tiles\cav4010.frm
+tile       128  151            art\tiles\cav4010.frm
+tile       130  151            art\tiles\cav4009.frm
+tile       132  151            art\tiles\cav4010.frm
+tile       134  151            art\tiles\cav4009.frm
+tile       136  151            art\tiles\cav4009.frm
+tile       138  151            art\tiles\cav4009.frm
+tile       140  151            art\tiles\cav4009.frm
+tile       142  151            art\tiles\cav4009.frm
+tile       144  151            art\tiles\cav4009.frm
+tile       146  151            art\tiles\cav4009.frm
+tile       148  151            art\tiles\cav4010.frm
+tile       150  151            art\tiles\cav4009.frm
+tile       152  151            art\tiles\cav4010.frm
+tile       154  151            art\tiles\cav4009.frm
+tile       156  151            art\tiles\cav4010.frm
+tile       158  151            art\tiles\cav4009.frm
+tile       160  151            art\tiles\cav4009.frm
+tile       162  151            art\tiles\cav4009.frm
+tile       164  151            art\tiles\cav4009.frm
+tile       166  151            art\tiles\cav4009.frm
+tile       168  151            art\tiles\cav4009.frm
+tile       170  151            art\tiles\cav4009.frm
+tile       172  151            art\tiles\cav4009.frm
+tile       174  151            art\tiles\cav4010.frm
+tile       176  151            art\tiles\rst1000.frm
+tile       178  151            art\tiles\rst1001.frm
+tile       180  151            art\tiles\rst1003.frm
+tile       182  151            art\tiles\rst1002.frm
+tile       184  151            art\tiles\cav4010.frm
+tile       186  151            art\tiles\cav4009.frm
+tile       188  151            art\tiles\cav4009.frm
+tile       190  151            art\tiles\cav4009.frm
+tile       192  151            art\tiles\cav4009.frm
+tile       194  151            art\tiles\cav4009.frm
+tile       196  151            art\tiles\cav4009.frm
+tile       198  151            art\tiles\cav4009.frm
+tile       130  153            art\tiles\cav4009.frm
+tile       132  153            art\tiles\cav4009.frm
+tile       134  153            art\tiles\cav4010.frm
+tile       136  153            art\tiles\cav4009.frm
+tile       138  153            art\tiles\cav4010.frm
+tile       140  153            art\tiles\cav4009.frm
+tile       142  153            art\tiles\cav4010.frm
+tile       144  153            art\tiles\cav4009.frm
+tile       146  153            art\tiles\cav4010.frm
+tile       148  153            art\tiles\cav4009.frm
+tile       150  153            art\tiles\cav4009.frm
+tile       152  153            art\tiles\cav4009.frm
+tile       154  153            art\tiles\cav4009.frm
+tile       156  153            art\tiles\cav4009.frm
+tile       158  153            art\tiles\cav4010.frm
+tile       160  153            art\tiles\cav4009.frm
+tile       162  153            art\tiles\cav4010.frm
+tile       164  153            art\tiles\cav4009.frm
+tile       166  153            art\tiles\cav4010.frm
+tile       168  153            art\tiles\cav4009.frm
+tile       170  153            art\tiles\cav4010.frm
+tile       172  153            art\tiles\cav4009.frm
+tile       174  153            art\tiles\cav4009.frm
+tile       176  153            art\tiles\rst1001.frm
+tile       178  153            art\tiles\rst1000.frm
+tile       180  153            art\tiles\rst1003.frm
+tile       182  153            art\tiles\rst1001.frm
+tile       184  153            art\tiles\cav4009.frm
+tile       186  153            art\tiles\cav4010.frm
+tile       188  153            art\tiles\cav4009.frm
+tile       190  153            art\tiles\cav4010.frm
+tile       192  153            art\tiles\cav4009.frm
+tile       194  153            art\tiles\cav4010.frm
+tile       196  153            art\tiles\cav4009.frm
+tile       198  153            art\tiles\cav4010.frm
+tile       200  153            art\tiles\cav4009.frm
+tile       130  155            art\tiles\cav4009.frm
+tile       132  155            art\tiles\cav4009.frm
+tile       134  155            art\tiles\cav4009.frm
+tile       136  155            art\tiles\cav4009.frm
+tile       138  155            art\tiles\cav4009.frm
+tile       140  155            art\tiles\cav4009.frm
+tile       142  155            art\tiles\cav4009.frm
+tile       144  155            art\tiles\cav4009.frm
+tile       146  155            art\tiles\cav4009.frm
+tile       148  155            art\tiles\cav4010.frm
+tile       150  155            art\tiles\cav4009.frm
+tile       152  155            art\tiles\cav4009.frm
+tile       154  155            art\tiles\cav4009.frm
+tile       156  155            art\tiles\cav4009.frm
+tile       158  155            art\tiles\cav4009.frm
+tile       160  155            art\tiles\cav4009.frm
+tile       162  155            art\tiles\cav4009.frm
+tile       164  155            art\tiles\cav4009.frm
+tile       166  155            art\tiles\cav4009.frm
+tile       168  155            art\tiles\cav4009.frm
+tile       170  155            art\tiles\cav4009.frm
+tile       172  155            art\tiles\rst1001.frm
+tile       174  155            art\tiles\rst1000.frm
+tile       176  155            art\tiles\rst1002.frm
+tile       178  155            art\tiles\rst1001.frm
+tile       180  155            art\tiles\rst1000.frm
+tile       182  155            art\tiles\rst1002.frm
+tile       184  155            art\tiles\rst1002.frm
+tile       186  155            art\tiles\cav4010.frm
+tile       188  155            art\tiles\cav4009.frm
+tile       190  155            art\tiles\cav4010.frm
+tile       192  155            art\tiles\cav4009.frm
+tile       194  155            art\tiles\cav4010.frm
+tile       196  155            art\tiles\cav4009.frm
+tile       198  155            art\tiles\cav4010.frm
+tile       200  155            art\tiles\cav4009.frm
+tile       202  155            art\tiles\cav4010.frm
+tile       132  157            art\tiles\cav4009.frm
+tile       134  157            art\tiles\cav4010.frm
+tile       136  157            art\tiles\cav4009.frm
+tile       138  157            art\tiles\cav4010.frm
+tile       140  157            art\tiles\cav4009.frm
+tile       142  157            art\tiles\cav4010.frm
+tile       144  157            art\tiles\cav4009.frm
+tile       146  157            art\tiles\cav4010.frm
+tile       148  157            art\tiles\cav4009.frm
+tile       150  157            art\tiles\cav4010.frm
+tile       152  157            art\tiles\cav4009.frm
+tile       154  157            art\tiles\cav4010.frm
+tile       156  157            art\tiles\cav4009.frm
+tile       158  157            art\tiles\cav4010.frm
+tile       160  157            art\tiles\cav4009.frm
+tile       162  157            art\tiles\cav4010.frm
+tile       164  157            art\tiles\cav4009.frm
+tile       166  157            art\tiles\cav4010.frm
+tile       168  157            art\tiles\cav4009.frm
+tile       170  157            art\tiles\cav4010.frm
+tile       172  157            art\tiles\rst1001.frm
+tile       174  157            art\tiles\rst1000.frm
+tile       176  157            art\tiles\rst1000.frm
+tile       178  157            art\tiles\rst1002.frm
+tile       180  157            art\tiles\rst1001.frm
+tile       182  157            art\tiles\rst1000.frm
+tile       184  157            art\tiles\rst1000.frm
+tile       186  157            art\tiles\cav4009.frm
+tile       188  157            art\tiles\cav4009.frm
+tile       190  157            art\tiles\cav4009.frm
+tile       192  157            art\tiles\cav4009.frm
+tile       194  157            art\tiles\cav4009.frm
+tile       196  157            art\tiles\cav4009.frm
+tile       198  157            art\tiles\cav4009.frm
+tile       200  157            art\tiles\cav4009.frm
+tile       202  157            art\tiles\cav4009.frm
+tile       134  159            art\tiles\cav4009.frm
+tile       136  159            art\tiles\cav4009.frm
+tile       138  159            art\tiles\cav4009.frm
+tile       140  159            art\tiles\cav4009.frm
+tile       142  159            art\tiles\cav4009.frm
+tile       144  159            art\tiles\cav4009.frm
+tile       146  159            art\tiles\cav4009.frm
+tile       148  159            art\tiles\cav4009.frm
+tile       150  159            art\tiles\cav4009.frm
+tile       152  159            art\tiles\cav4009.frm
+tile       154  159            art\tiles\cav4009.frm
+tile       156  159            art\tiles\cav4009.frm
+tile       158  159            art\tiles\cav4009.frm
+tile       160  159            art\tiles\cav4009.frm
+tile       162  159            art\tiles\cav4009.frm
+tile       164  159            art\tiles\cav4009.frm
+tile       166  159            art\tiles\cav4009.frm
+tile       168  159            art\tiles\cav4009.frm
+tile       170  159            art\tiles\cav4009.frm
+tile       172  159            art\tiles\rst1002.frm
+tile       174  159            art\tiles\rst1001.frm
+tile       176  159            art\tiles\rst1001.frm
+tile       178  159            art\tiles\rst1003.frm
+tile       180  159            art\tiles\rst1002.frm
+tile       182  159            art\tiles\rst1001.frm
+tile       184  159            art\tiles\rst1001.frm
+tile       186  159            art\tiles\cav4010.frm
+tile       188  159            art\tiles\cav4009.frm
+tile       190  159            art\tiles\cav4010.frm
+tile       192  159            art\tiles\cav4009.frm
+tile       194  159            art\tiles\cav4010.frm
+tile       196  159            art\tiles\cav4009.frm
+tile       198  159            art\tiles\cav4010.frm
+tile       200  159            art\tiles\cav4009.frm
+tile       202  159            art\tiles\cav4010.frm
+tile       204  159            art\tiles\cav4009.frm
+tile       134  161            art\tiles\cav4010.frm
+tile       136  161            art\tiles\cav4009.frm
+tile       138  161            art\tiles\cav4010.frm
+tile       140  161            art\tiles\cav4009.frm
+tile       142  161            art\tiles\cav4010.frm
+tile       144  161            art\tiles\cav4009.frm
+tile       146  161            art\tiles\cav4010.frm
+tile       148  161            art\tiles\cav4009.frm
+tile       150  161            art\tiles\cav4010.frm
+tile       152  161            art\tiles\cav4009.frm
+tile       154  161            art\tiles\cav4010.frm
+tile       156  161            art\tiles\cav4009.frm
+tile       158  161            art\tiles\cav4010.frm
+tile       160  161            art\tiles\cav4009.frm
+tile       162  161            art\tiles\cav4010.frm
+tile       164  161            art\tiles\cav4009.frm
+tile       166  161            art\tiles\cav4010.frm
+tile       168  161            art\tiles\cav4009.frm
+tile       170  161            art\tiles\cav4010.frm
+tile       172  161            art\tiles\rst1003.frm
+tile       174  161            art\tiles\rst1002.frm
+tile       176  161            art\tiles\rst1002.frm
+tile       178  161            art\tiles\rst1001.frm
+tile       180  161            art\tiles\rst1003.frm
+tile       182  161            art\tiles\rst1002.frm
+tile       184  161            art\tiles\rst1002.frm
+tile       186  161            art\tiles\cav4009.frm
+tile       188  161            art\tiles\cav4009.frm
+tile       190  161            art\tiles\cav4009.frm
+tile       192  161            art\tiles\cav4009.frm
+tile       194  161            art\tiles\cav4009.frm
+tile       196  161            art\tiles\cav4009.frm
+tile       198  161            art\tiles\cav4009.frm
+tile       200  161            art\tiles\cav4009.frm
+tile       202  161            art\tiles\cav4009.frm
+tile       204  161            art\tiles\cav4010.frm
+tile       206  161            art\tiles\cav4010.frm
+tile       136  163            art\tiles\cav4009.frm
+tile       138  163            art\tiles\cav4009.frm
+tile       140  163            art\tiles\cav4009.frm
+tile       142  163            art\tiles\cav4009.frm
+tile       144  163            art\tiles\cav4009.frm
+tile       146  163            art\tiles\cav4009.frm
+tile       148  163            art\tiles\cav4009.frm
+tile       150  163            art\tiles\cav4009.frm
+tile       152  163            art\tiles\cav4009.frm
+tile       154  163            art\tiles\cav4009.frm
+tile       156  163            art\tiles\cav4009.frm
+tile       158  163            art\tiles\cav4009.frm
+tile       160  163            art\tiles\cav4009.frm
+tile       162  163            art\tiles\cav4009.frm
+tile       164  163            art\tiles\cav4009.frm
+tile       166  163            art\tiles\cav4009.frm
+tile       168  163            art\tiles\cav4009.frm
+tile       170  163            art\tiles\cav4009.frm
+tile       172  163            art\tiles\rst1003.frm
+tile       174  163            art\tiles\rst1003.frm
+tile       176  163            art\tiles\rst1003.frm
+tile       178  163            art\tiles\rst1000.frm
+tile       180  163            art\tiles\rst1003.frm
+tile       182  163            art\tiles\rst1003.frm
+tile       184  163            art\tiles\rst1003.frm
+tile       186  163            art\tiles\cav4010.frm
+tile       188  163            art\tiles\cav4009.frm
+tile       190  163            art\tiles\cav4010.frm
+tile       192  163            art\tiles\cav4009.frm
+tile       194  163            art\tiles\cav4010.frm
+tile       196  163            art\tiles\cav4009.frm
+tile       198  163            art\tiles\cav4009.frm
+tile       200  163            art\tiles\cav4009.frm
+tile       202  163            art\tiles\cav4009.frm
+tile       204  163            art\tiles\cav4009.frm
+tile       206  163            art\tiles\cav4009.frm
+tile       138  165            art\tiles\cav4009.frm
+tile       140  165            art\tiles\cav4009.frm
+tile       142  165            art\tiles\cav4009.frm
+tile       144  165            art\tiles\cav4009.frm
+tile       146  165            art\tiles\cav4009.frm
+tile       148  165            art\tiles\cav4009.frm
+tile       150  165            art\tiles\cav4009.frm
+tile       152  165            art\tiles\cav4009.frm
+tile       154  165            art\tiles\cav4009.frm
+tile       156  165            art\tiles\cav4009.frm
+tile       158  165            art\tiles\rst1000.frm
+tile       160  165            art\tiles\rst1003.frm
+tile       162  165            art\tiles\rst1001.frm
+tile       164  165            art\tiles\rst1000.frm
+tile       166  165            art\tiles\rst1003.frm
+tile       168  165            art\tiles\rst1001.frm
+tile       170  165            art\tiles\rst1000.frm
+tile       172  165            art\tiles\rst1003.frm
+tile       174  165            art\tiles\rst1001.frm
+tile       176  165            art\tiles\rst1001.frm
+tile       178  165            art\tiles\rst1000.frm
+tile       180  165            art\tiles\rst1003.frm
+tile       182  165            art\tiles\rst1001.frm
+tile       184  165            art\tiles\rst1001.frm
+tile       186  165            art\tiles\cav4009.frm
+tile       188  165            art\tiles\cav4009.frm
+tile       190  165            art\tiles\cav4009.frm
+tile       192  165            art\tiles\cav4009.frm
+tile       194  165            art\tiles\cav4009.frm
+tile       196  165            art\tiles\cav4010.frm
+tile       198  165            art\tiles\cav4009.frm
+tile       200  165            art\tiles\cav4010.frm
+tile       202  165            art\tiles\cav4009.frm
+tile       204  165            art\tiles\cav4010.frm
+tile       206  165            art\tiles\cav4009.frm
+tile       208  165            art\tiles\cav4010.frm
+tile       138  167            art\tiles\cav4010.frm
+tile       140  167            art\tiles\cav4009.frm
+tile       142  167            art\tiles\cav4010.frm
+tile       144  167            art\tiles\cav4009.frm
+tile       146  167            art\tiles\cav4010.frm
+tile       148  167            art\tiles\cav4009.frm
+tile       150  167            art\tiles\cav4010.frm
+tile       152  167            art\tiles\cav4009.frm
+tile       154  167            art\tiles\cav4010.frm
+tile       156  167            art\tiles\cav4009.frm
+tile       158  167            art\tiles\rst1001.frm
+tile       160  167            art\tiles\rst1000.frm
+tile       162  167            art\tiles\rst1002.frm
+tile       164  167            art\tiles\rst1001.frm
+tile       166  167            art\tiles\rst1000.frm
+tile       168  167            art\tiles\rst1002.frm
+tile       170  167            art\tiles\rst1001.frm
+tile       172  167            art\tiles\rst1000.frm
+tile       174  167            art\tiles\rst1002.frm
+tile       176  167            art\tiles\rst1002.frm
+tile       178  167            art\tiles\rst1001.frm
+tile       180  167            art\tiles\rst1000.frm
+tile       182  167            art\tiles\rst1002.frm
+tile       184  167            art\tiles\rst1002.frm
+tile       186  167            art\tiles\cav4010.frm
+tile       188  167            art\tiles\cav4009.frm
+tile       190  167            art\tiles\cav4009.frm
+tile       192  167            art\tiles\cav4009.frm
+tile       194  167            art\tiles\cav4009.frm
+tile       196  167            art\tiles\cav4009.frm
+tile       198  167            art\tiles\cav4009.frm
+tile       200  167            art\tiles\cav4009.frm
+tile       202  167            art\tiles\cav4009.frm
+tile       204  167            art\tiles\cav4009.frm
+tile       206  167            art\tiles\cav4009.frm
+tile       208  167            art\tiles\cav4009.frm
+tile       140  169            art\tiles\cav4009.frm
+tile       142  169            art\tiles\cav4009.frm
+tile       144  169            art\tiles\cav4009.frm
+tile       146  169            art\tiles\cav4009.frm
+tile       148  169            art\tiles\cav4009.frm
+tile       150  169            art\tiles\cav4009.frm
+tile       152  169            art\tiles\cav4010.frm
+tile       154  169            art\tiles\cav4010.frm
+tile       156  169            art\tiles\cav4009.frm
+tile       158  169            art\tiles\rst1002.frm
+tile       160  169            art\tiles\rst1001.frm
+tile       162  169            art\tiles\rst1000.frm
+tile       164  169            art\tiles\rst1002.frm
+tile       166  169            art\tiles\rst1001.frm
+tile       168  169            art\tiles\rst1000.frm
+tile       170  169            art\tiles\rst1002.frm
+tile       172  169            art\tiles\rst1001.frm
+tile       174  169            art\tiles\rst1000.frm
+tile       176  169            art\tiles\rst1000.frm
+tile       178  169            art\tiles\rst1002.frm
+tile       180  169            art\tiles\rst1001.frm
+tile       182  169            art\tiles\rst1000.frm
+tile       184  169            art\tiles\rst1000.frm
+tile       186  169            art\tiles\cav4009.frm
+tile       188  169            art\tiles\cav4010.frm
+tile       190  169            art\tiles\cav4009.frm
+tile       192  169            art\tiles\cav4010.frm
+tile       194  169            art\tiles\cav4009.frm
+tile       196  169            art\tiles\cav4010.frm
+tile       198  169            art\tiles\cav4009.frm
+tile       200  169            art\tiles\cav4010.frm
+tile       202  169            art\tiles\cav4009.frm
+tile       204  169            art\tiles\cav4010.frm
+tile       206  169            art\tiles\cav4009.frm
+tile       208  169            art\tiles\cav4010.frm
+tile       210  169            art\tiles\cav4009.frm
+tile       142  171            art\tiles\cav4010.frm
+tile       144  171            art\tiles\cav4009.frm
+tile       146  171            art\tiles\cav4009.frm
+tile       148  171            art\tiles\cav4009.frm
+tile       150  171            art\tiles\cav4009.frm
+tile       152  171            art\tiles\cav4009.frm
+tile       154  171            art\tiles\cav4009.frm
+tile       156  171            art\tiles\cav4009.frm
+tile       158  171            art\tiles\rst1003.frm
+tile       160  171            art\tiles\rst1002.frm
+tile       162  171            art\tiles\rst1001.frm
+tile       164  171            art\tiles\rst1003.frm
+tile       166  171            art\tiles\rst1002.frm
+tile       168  171            art\tiles\rst1001.frm
+tile       170  171            art\tiles\rst1003.frm
+tile       172  171            art\tiles\rst1002.frm
+tile       174  171            art\tiles\rst1001.frm
+tile       176  171            art\tiles\rst1001.frm
+tile       178  171            art\tiles\rst1003.frm
+tile       180  171            art\tiles\rst1002.frm
+tile       182  171            art\tiles\rst1001.frm
+tile       184  171            art\tiles\rst1001.frm
+tile       186  171            art\tiles\cav4009.frm
+tile       188  171            art\tiles\cav4009.frm
+tile       190  171            art\tiles\cav4009.frm
+tile       192  171            art\tiles\cav4009.frm
+tile       194  171            art\tiles\cav4009.frm
+tile       196  171            art\tiles\cav4009.frm
+tile       198  171            art\tiles\cav4009.frm
+tile       200  171            art\tiles\cav4009.frm
+tile       202  171            art\tiles\cav4009.frm
+tile       204  171            art\tiles\cav4009.frm
+tile       206  171            art\tiles\cav4009.frm
+tile       208  171            art\tiles\cav4009.frm
+tile       210  171            art\tiles\cav4009.frm
+tile       212  171            art\tiles\cav4009.frm
+tile       142  173            art\tiles\cav4009.frm
+tile       144  173            art\tiles\cav4010.frm
+tile       146  173            art\tiles\cav4009.frm
+tile       148  173            art\tiles\cav4010.frm
+tile       150  173            art\tiles\cav4009.frm
+tile       152  173            art\tiles\cav4010.frm
+tile       154  173            art\tiles\cav4009.frm
+tile       156  173            art\tiles\cav4010.frm
+tile       158  173            art\tiles\rst1001.frm
+tile       160  173            art\tiles\rst1003.frm
+tile       162  173            art\tiles\rst1002.frm
+tile       164  173            art\tiles\rst1001.frm
+tile       166  173            art\tiles\rst1003.frm
+tile       168  173            art\tiles\rst1002.frm
+tile       170  173            art\tiles\rst1001.frm
+tile       172  173            art\tiles\rst1003.frm
+tile       174  173            art\tiles\rst1002.frm
+tile       176  173            art\tiles\rst1002.frm
+tile       178  173            art\tiles\rst1001.frm
+tile       180  173            art\tiles\rst1003.frm
+tile       182  173            art\tiles\rst1002.frm
+tile       184  173            art\tiles\rst1002.frm
+tile       186  173            art\tiles\cav4009.frm
+tile       188  173            art\tiles\cav4010.frm
+tile       190  173            art\tiles\cav4009.frm
+tile       192  173            art\tiles\cav4010.frm
+tile       194  173            art\tiles\cav4009.frm
+tile       196  173            art\tiles\cav4010.frm
+tile       198  173            art\tiles\cav4009.frm
+tile       200  173            art\tiles\cav4010.frm
+tile       202  173            art\tiles\cav4009.frm
+tile       204  173            art\tiles\cav4010.frm
+tile       206  173            art\tiles\cav4009.frm
+tile       208  173            art\tiles\cav4010.frm
+tile       210  173            art\tiles\cav4009.frm
+tile       212  173            art\tiles\cav4010.frm
+tile       144  175            art\tiles\cav4009.frm
+tile       146  175            art\tiles\cav4009.frm
+tile       148  175            art\tiles\cav4009.frm
+tile       150  175            art\tiles\cav4009.frm
+tile       152  175            art\tiles\cav4009.frm
+tile       154  175            art\tiles\cav4009.frm
+tile       156  175            art\tiles\cav4009.frm
+tile       158  175            art\tiles\rst1000.frm
+tile       160  175            art\tiles\rst1003.frm
+tile       162  175            art\tiles\rst1003.frm
+tile       164  175            art\tiles\rst1000.frm
+tile       166  175            art\tiles\rst1003.frm
+tile       168  175            art\tiles\rst1003.frm
+tile       170  175            art\tiles\rst1000.frm
+tile       172  175            art\tiles\rst1003.frm
+tile       174  175            art\tiles\rst1003.frm
+tile       176  175            art\tiles\rst1003.frm
+tile       178  175            art\tiles\rst1000.frm
+tile       180  175            art\tiles\rst1003.frm
+tile       182  175            art\tiles\rst1003.frm
+tile       184  175            art\tiles\rst1003.frm
+tile       186  175            art\tiles\cav4009.frm
+tile       188  175            art\tiles\cav4009.frm
+tile       190  175            art\tiles\cav4009.frm
+tile       192  175            art\tiles\cav4009.frm
+tile       194  175            art\tiles\cav4009.frm
+tile       196  175            art\tiles\cav4009.frm
+tile       198  175            art\tiles\cav4009.frm
+tile       200  175            art\tiles\cav4009.frm
+tile       202  175            art\tiles\cav4009.frm
+tile       204  175            art\tiles\cav4009.frm
+tile       206  175            art\tiles\cav4009.frm
+tile       208  175            art\tiles\cav4009.frm
+tile       210  175            art\tiles\cav4009.frm
+tile       212  175            art\tiles\cav4009.frm
+tile       146  177            art\tiles\cav4009.frm
+tile       148  177            art\tiles\cav4010.frm
+tile       150  177            art\tiles\cav4009.frm
+tile       152  177            art\tiles\cav4010.frm
+tile       154  177            art\tiles\cav4009.frm
+tile       156  177            art\tiles\cav4010.frm
+tile       158  177            art\tiles\cav4009.frm
+tile       160  177            art\tiles\cav4009.frm
+tile       162  177            art\tiles\cav4009.frm
+tile       164  177            art\tiles\cav4009.frm
+tile       166  177            art\tiles\cav4009.frm
+tile       168  177            art\tiles\cav4009.frm
+tile       170  177            art\tiles\cav4009.frm
+tile       172  177            art\tiles\cav4009.frm
+tile       174  177            art\tiles\cav4009.frm
+tile       176  177            art\tiles\cav4009.frm
+tile       178  177            art\tiles\cav4009.frm
+tile       180  177            art\tiles\cav4009.frm
+tile       182  177            art\tiles\cav4009.frm
+tile       184  177            art\tiles\cav4009.frm
+tile       186  177            art\tiles\cav4009.frm
+tile       188  177            art\tiles\cav4009.frm
+tile       190  177            art\tiles\cav4009.frm
+tile       192  177            art\tiles\cav4009.frm
+tile       194  177            art\tiles\cav4009.frm
+tile       196  177            art\tiles\cav4009.frm
+tile       198  177            art\tiles\cav4009.frm
+tile       200  177            art\tiles\cav4009.frm
+tile       202  177            art\tiles\cav4009.frm
+tile       204  177            art\tiles\cav4009.frm
+tile       206  177            art\tiles\cav4009.frm
+tile       208  177            art\tiles\cav4009.frm
+tile       210  177            art\tiles\cav4009.frm
+tile       212  177            art\tiles\cav4009.frm
+tile       146  179            art\tiles\cav4009.frm
+tile       148  179            art\tiles\cav4009.frm
+tile       150  179            art\tiles\cav4009.frm
+tile       152  179            art\tiles\cav4009.frm
+tile       154  179            art\tiles\cav4009.frm
+tile       156  179            art\tiles\cav4009.frm
+tile       158  179            art\tiles\cav4010.frm
+tile       160  179            art\tiles\cav4009.frm
+tile       162  179            art\tiles\cav4010.frm
+tile       164  179            art\tiles\cav4009.frm
+tile       166  179            art\tiles\cav4010.frm
+tile       168  179            art\tiles\cav4009.frm
+tile       170  179            art\tiles\cav4010.frm
+tile       172  179            art\tiles\cav4009.frm
+tile       174  179            art\tiles\cav4010.frm
+tile       176  179            art\tiles\cav4009.frm
+tile       178  179            art\tiles\cav4010.frm
+tile       180  179            art\tiles\cav4009.frm
+tile       182  179            art\tiles\cav4010.frm
+tile       184  179            art\tiles\cav4009.frm
+tile       186  179            art\tiles\cav4010.frm
+tile       188  179            art\tiles\cav4009.frm
+tile       190  179            art\tiles\cav4010.frm
+tile       192  179            art\tiles\cav4009.frm
+tile       194  179            art\tiles\cav4010.frm
+tile       196  179            art\tiles\cav4009.frm
+tile       198  179            art\tiles\cav4010.frm
+tile       200  179            art\tiles\cav4009.frm
+tile       202  179            art\tiles\cav4010.frm
+tile       204  179            art\tiles\cav4009.frm
+tile       206  179            art\tiles\cav4009.frm
+tile       148  181            art\tiles\cav4010.frm
+tile       150  181            art\tiles\cav4009.frm
+tile       152  181            art\tiles\cav4010.frm
+tile       154  181            art\tiles\cav4009.frm
+tile       156  181            art\tiles\cav4010.frm
+tile       158  181            art\tiles\cav4009.frm
+tile       160  181            art\tiles\cav4009.frm
+tile       162  181            art\tiles\cav4009.frm
+tile       164  181            art\tiles\cav4009.frm
+tile       166  181            art\tiles\cav4009.frm
+tile       168  181            art\tiles\cav4009.frm
+tile       170  181            art\tiles\cav4009.frm
+tile       172  181            art\tiles\cav4009.frm
+tile       174  181            art\tiles\cav4009.frm
+tile       176  181            art\tiles\cav4010.frm
+tile       178  181            art\tiles\cav4010.frm
+tile       180  181            art\tiles\cav4009.frm
+tile       182  181            art\tiles\cav4009.frm
+tile       184  181            art\tiles\cav4009.frm
+tile       186  181            art\tiles\cav4009.frm
+tile       188  181            art\tiles\cav4009.frm
+tile       190  181            art\tiles\cav4009.frm
+tile       192  181            art\tiles\cav4009.frm
+tile       194  181            art\tiles\cav4009.frm
+tile       196  181            art\tiles\cav4009.frm
+tile       198  181            art\tiles\cav4009.frm
+tile       200  181            art\tiles\cav4010.frm
+tile       202  181            art\tiles\cav4010.frm
+tile       204  181            art\tiles\cav4009.frm
+tile       150  183            art\tiles\cav4009.frm
+tile       152  183            art\tiles\cav4009.frm
+tile       154  183            art\tiles\cav4009.frm
+tile       156  183            art\tiles\cav4009.frm
+tile       158  183            art\tiles\cav4010.frm
+tile       160  183            art\tiles\cav4009.frm
+tile       162  183            art\tiles\cav4010.frm
+tile       164  183            art\tiles\cav4009.frm
+tile       166  183            art\tiles\cav4010.frm
+tile       168  183            art\tiles\cav4009.frm
+tile       170  183            art\tiles\cav4009.frm
+tile       172  183            art\tiles\cav4009.frm
+tile       174  183            art\tiles\cav4009.frm
+tile       176  183            art\tiles\cav4009.frm
+tile       178  183            art\tiles\cav4009.frm
+tile       180  183            art\tiles\cav4009.frm
+tile       182  183            art\tiles\cav4010.frm
+tile       184  183            art\tiles\cav4009.frm
+tile       186  183            art\tiles\cav4010.frm
+tile       188  183            art\tiles\cav4009.frm
+tile       190  183            art\tiles\cav4010.frm
+tile       192  183            art\tiles\cav4009.frm
+tile       194  183            art\tiles\cav4009.frm
+tile       196  183            art\tiles\cav4009.frm
+tile       198  183            art\tiles\cav4009.frm
+tile       200  183            art\tiles\cav4009.frm
+tile       150  185            art\tiles\cav4009.frm
+tile       152  185            art\tiles\cav4009.frm
+tile       154  185            art\tiles\cav4010.frm
+tile       156  185            art\tiles\cav4009.frm
+tile       158  185            art\tiles\cav4009.frm
+tile       160  185            art\tiles\cav4009.frm
+tile       162  185            art\tiles\cav4009.frm
+tile       164  185            art\tiles\cav4009.frm
+tile       166  185            art\tiles\cav4009.frm
+tile       168  185            art\tiles\cav4010.frm
+tile       170  185            art\tiles\cav4009.frm
+tile       172  185            art\tiles\cav4010.frm
+tile       174  185            art\tiles\cav4009.frm
+tile       176  185            art\tiles\cav4010.frm
+tile       178  185            art\tiles\cav4009.frm
+tile       180  185            art\tiles\cav4010.frm
+tile       182  185            art\tiles\cav4009.frm
+tile       184  185            art\tiles\cav4009.frm
+tile       186  185            art\tiles\cav4009.frm
+tile       188  185            art\tiles\cav4009.frm
+tile       190  185            art\tiles\cav4009.frm
+tile       192  185            art\tiles\cav4010.frm
+tile       194  185            art\tiles\cav4009.frm
+tile       196  185            art\tiles\cav4010.frm
+tile       152  187            art\tiles\cav4009.frm
+tile       154  187            art\tiles\cav4009.frm
+tile       156  187            art\tiles\cav4009.frm
+tile       158  187            art\tiles\cav4010.frm
+tile       160  187            art\tiles\cav4009.frm
+tile       162  187            art\tiles\cav4009.frm
+tile       164  187            art\tiles\cav4009.frm
+tile       166  187            art\tiles\cav4009.frm
+tile       168  187            art\tiles\cav4009.frm
+tile       170  187            art\tiles\cav4009.frm
+tile       172  187            art\tiles\cav4009.frm
+tile       174  187            art\tiles\cav4009.frm
+tile       176  187            art\tiles\cav4009.frm
+tile       178  187            art\tiles\cav4009.frm
+tile       180  187            art\tiles\cav4009.frm
+tile       182  187            art\tiles\cav4010.frm
+tile       184  187            art\tiles\cav4009.frm
+tile       186  187            art\tiles\cav4009.frm
+tile       188  187            art\tiles\cav4009.frm
+tile       190  187            art\tiles\cav4009.frm
+tile       192  187            art\tiles\cav4009.frm
+tile       154  189            art\tiles\cav4010.frm
+tile       156  189            art\tiles\cav4009.frm
+tile       158  189            art\tiles\cav4009.frm
+tile       160  189            art\tiles\cav4010.frm
+tile       162  189            art\tiles\cav4009.frm
+tile       164  189            art\tiles\cav4010.frm
+tile       166  189            art\tiles\cav4009.frm
+tile       168  189            art\tiles\cav4010.frm
+tile       170  189            art\tiles\cav4009.frm
+tile       172  189            art\tiles\cav4010.frm
+tile       174  189            art\tiles\cav4009.frm
+tile       176  189            art\tiles\cav4010.frm
+tile       178  189            art\tiles\cav4009.frm
+tile       180  189            art\tiles\cav4010.frm
+tile       182  189            art\tiles\cav4009.frm
+tile       184  189            art\tiles\cav4010.frm
+tile       186  189            art\tiles\cav4009.frm
+tile       188  189            art\tiles\cav4010.frm
+tile       154  191            art\tiles\cav4009.frm
+tile       156  191            art\tiles\cav4009.frm
+tile       158  191            art\tiles\cav4009.frm
+tile       160  191            art\tiles\cav4009.frm
+tile       162  191            art\tiles\cav4009.frm
+tile       164  191            art\tiles\cav4009.frm
+tile       166  191            art\tiles\cav4009.frm
+tile       168  191            art\tiles\cav4009.frm
+tile       170  191            art\tiles\cav4009.frm
+tile       172  191            art\tiles\cav4009.frm
+tile       174  191            art\tiles\cav4009.frm
+tile       176  191            art\tiles\cav4009.frm
+tile       178  191            art\tiles\cav4009.frm
+tile       180  191            art\tiles\cav4009.frm
+tile       182  191            art\tiles\cav4009.frm
+tile       184  191            art\tiles\cav4009.frm
+tile       156  193            art\tiles\cav4009.frm
+tile       158  193            art\tiles\cav4009.frm
+tile       160  193            art\tiles\cav4010.frm
+tile       162  193            art\tiles\cav4009.frm
+tile       164  193            art\tiles\cav4010.frm
+tile       166  193            art\tiles\cav4009.frm
+tile       168  193            art\tiles\cav4010.frm
+tile       170  193            art\tiles\cav4009.frm
+tile       172  193            art\tiles\cav4010.frm
+tile       174  193            art\tiles\cav4009.frm
+tile       176  193            art\tiles\cav4010.frm
+tile       178  193            art\tiles\cav4009.frm
+tile       180  193            art\tiles\cav4010.frm
+tile       158  195            art\tiles\cav4009.frm
+tile       160  195            art\tiles\cav4009.frm
+tile       162  195            art\tiles\cav4009.frm
+tile       164  195            art\tiles\cav4009.frm
+tile       166  195            art\tiles\cav4009.frm
+tile       168  195            art\tiles\cav4009.frm
+tile       170  195            art\tiles\cav4009.frm
+tile       172  195            art\tiles\cav4009.frm
+tile       174  195            art\tiles\cav4009.frm
+tile       176  195            art\tiles\cav4009.frm
+tile       158  197            art\tiles\cav4009.frm
+tile       160  197            art\tiles\cav4010.frm
+tile       162  197            art\tiles\cav4009.frm
+tile       164  197            art\tiles\cav4010.frm
+tile       166  197            art\tiles\cav4009.frm
+tile       168  197            art\tiles\cav4010.frm
+tile       170  197            art\tiles\cav4009.frm
+tile       172  197            art\tiles\cav4010.frm
+tile       174  197            art\tiles\cav4009.frm
+tile       160  199            art\tiles\cav4009.frm
+tile       162  199            art\tiles\cav4009.frm
+tile       164  199            art\tiles\cav4009.frm
+tile       166  199            art\tiles\cav4009.frm
+tile       168  199            art\tiles\cav4009.frm
+tile       170  199            art\tiles\cav4009.frm
+tile       162  201            art\tiles\cav4009.frm
+tile       164  201            art\tiles\cav4010.frm
+tile       166  201            art\tiles\cav4009.frm
+tile       162  203            art\tiles\cav4009.frm
+
+[Objects]
+MapObjType           2
+ProtoId              3648
+MapX                 158
+MapY                 170
+Scenery_ToMapPid     730
+Scenery_ToEntire     4
+
+MapObjType           2
+ProtoId              6498
+MapX                 158
+MapY                 171
+
+MapObjType           2
+ProtoId              6497
+MapX                 158
+MapY                 168
+
+MapObjType           2
+ProtoId              6497
+MapX                 158
+MapY                 172
+
+MapObjType           2
+ProtoId              6514
+MapX                 158
+MapY                 167
+
+MapObjType           2
+ProtoId              6515
+MapX                 158
+MapY                 174
+
+MapObjType           2
+ProtoId              6498
+MapX                 158
+MapY                 173
+
+MapObjType           2
+ProtoId              5036
+MapX                 158
+MapY                 166
+
+MapObjType           2
+ProtoId              5038
+MapX                 158
+MapY                 175
+
+MapObjType           2
+ProtoId              5020
+MapX                 158
+MapY                 164
+
+MapObjType           2
+ProtoId              5021
+MapX                 158
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 160
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 159
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 161
+MapY                 164
+
+MapObjType           2
+ProtoId              5001
+MapX                 162
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 163
+MapY                 164
+
+MapObjType           2
+ProtoId              5001
+MapX                 164
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 165
+MapY                 164
+
+MapObjType           2
+ProtoId              5001
+MapX                 166
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 159
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 160
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 161
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 162
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 163
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 164
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 165
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 166
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 167
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 168
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 169
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 170
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 171
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 172
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 173
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 174
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 175
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 176
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 177
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 178
+MapY                 176
+
+MapObjType           2
+ProtoId              5022
+MapX                 186
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 167
+MapY                 164
+
+MapObjType           2
+ProtoId              5001
+MapX                 168
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 169
+MapY                 164
+
+MapObjType           2
+ProtoId              5001
+MapX                 170
+MapY                 164
+
+MapObjType           1
+ProtoId              4759
+MapX                 180
+MapY                 154
+
+MapObjType           2
+ProtoId              2174
+MapX                 180
+MapY                 154
+
+MapObjType           2
+ProtoId              2171
+MapX                 184
+MapY                 158
+
+MapObjType           2
+ProtoId              2990
+MapX                 180
+MapY                 154
+
+MapObjType           2
+ProtoId              3853
+MapX                 165
+MapY                 169
+Scenery_ToMapPid     734
+
+MapObjType           2
+ProtoId              5621
+MapX                 184
+MapY                 156
+
+MapObjType           2
+ProtoId              5622
+MapX                 176
+MapY                 158
+
+MapObjType           2
+ProtoId              5622
+MapX                 177
+MapY                 154
+
+MapObjType           2
+ProtoId              5622
+MapX                 177
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 177
+MapY                 158
+
+MapObjType           2
+ProtoId              5622
+MapX                 177
+MapY                 159
+
+MapObjType           2
+ProtoId              5622
+MapX                 178
+MapY                 154
+
+MapObjType           2
+ProtoId              5622
+MapX                 178
+MapY                 156
+
+MapObjType           2
+ProtoId              5622
+MapX                 178
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 178
+MapY                 158
+
+MapObjType           2
+ProtoId              5622
+MapX                 179
+MapY                 155
+
+MapObjType           2
+ProtoId              5622
+MapX                 179
+MapY                 156
+
+MapObjType           2
+ProtoId              5622
+MapX                 179
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 181
+MapY                 155
+
+MapObjType           2
+ProtoId              5622
+MapX                 181
+MapY                 156
+
+MapObjType           2
+ProtoId              5622
+MapX                 181
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 182
+MapY                 154
+
+MapObjType           2
+ProtoId              5622
+MapX                 182
+MapY                 156
+
+MapObjType           2
+ProtoId              5622
+MapX                 182
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 183
+MapY                 157
+
+MapObjType           2
+ProtoId              5622
+MapX                 183
+MapY                 158
+
+MapObjType           2
+ProtoId              5622
+MapX                 184
+MapY                 157
+
+MapObjType           2
+ProtoId              5015
+MapX                 172
+MapY                 161
+
+MapObjType           2
+ProtoId              5018
+MapX                 172
+MapY                 162
+
+MapObjType           2
+ProtoId              5015
+MapX                 172
+MapY                 159
+
+MapObjType           2
+ProtoId              5018
+MapX                 172
+MapY                 160
+
+MapObjType           2
+ProtoId              5018
+MapX                 172
+MapY                 158
+
+MapObjType           2
+ProtoId              5015
+MapX                 172
+MapY                 163
+
+MapObjType           2
+ProtoId              5022
+MapX                 172
+MapY                 164
+
+MapObjType           2
+ProtoId              5003
+MapX                 171
+MapY                 164
+
+MapObjType           2
+ProtoId              5019
+MapX                 186
+MapY                 154
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 156
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 157
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 158
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 159
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 160
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 161
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 162
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 163
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 164
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 165
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 166
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 167
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 168
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 169
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 170
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 171
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 172
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 173
+
+MapObjType           2
+ProtoId              5018
+MapX                 186
+MapY                 174
+
+MapObjType           2
+ProtoId              5015
+MapX                 186
+MapY                 175
+
+MapObjType           2
+ProtoId              5003
+MapX                 179
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 180
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 181
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 182
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 183
+MapY                 176
+
+MapObjType           2
+ProtoId              5001
+MapX                 184
+MapY                 176
+
+MapObjType           2
+ProtoId              5003
+MapX                 185
+MapY                 176
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 152
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 153
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 150
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 151
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 152
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 153
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 150
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 151
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 148
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 149
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 146
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 147
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 144
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 145
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 148
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 149
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 146
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 147
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 144
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 145
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 142
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 143
+
+MapObjType           2
+ProtoId              5003
+MapX                 177
+MapY                 140
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 142
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 143
+
+MapObjType           2
+ProtoId              5003
+MapX                 183
+MapY                 140
+
+MapObjType           2
+ProtoId              5621
+MapX                 173
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 174
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 175
+MapY                 159
+
+MapObjType           2
+ProtoId              5621
+MapX                 173
+MapY                 159
+
+MapObjType           2
+ProtoId              5621
+MapX                 186
+MapY                 156
+
+MapObjType           2
+ProtoId              5621
+MapX                 186
+MapY                 155
+
+MapObjType           2
+ProtoId              5621
+MapX                 185
+MapY                 156
+
+MapObjType           2
+ProtoId              5621
+MapX                 185
+MapY                 157
+
+MapObjType           2
+ProtoId              5621
+MapX                 186
+MapY                 157
+
+MapObjType           2
+ProtoId              5621
+MapX                 184
+MapY                 141
+
+MapObjType           2
+ProtoId              5621
+MapX                 176
+MapY                 141
+
+MapObjType           2
+ProtoId              5621
+MapX                 185
+MapY                 154
+
+MapObjType           2
+ProtoId              5621
+MapX                 185
+MapY                 155
+
+MapObjType           2
+ProtoId              5621
+MapX                 183
+MapY                 154
+
+MapObjType           2
+ProtoId              5621
+MapX                 185
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 184
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 183
+MapY                 159
+
+MapObjType           2
+ProtoId              5621
+MapX                 182
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 181
+MapY                 159
+
+MapObjType           2
+ProtoId              5621
+MapX                 179
+MapY                 159
+
+MapObjType           2
+ProtoId              5621
+MapX                 180
+MapY                 158
+
+MapObjType           2
+ProtoId              5621
+MapX                 158
+MapY                 165
+
+MapObjType           2
+ProtoId              5621
+MapX                 158
+MapY                 170
+
+MapObjType           2
+ProtoId              5621
+MapX                 157
+MapY                 170
+
+MapObjType           2
+ProtoId              5621
+MapX                 157
+MapY                 169
+
+MapObjType           2
+ProtoId              5621
+MapX                 158
+MapY                 168
+
+MapObjType           2
+ProtoId              5230
+MapX                 186
+MapY                 171
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 172
+
+MapObjType           2
+ProtoId              5232
+MapX                 186
+MapY                 173
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 174
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 175
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 176
+
+MapObjType           2
+ProtoId              5230
+MapX                 186
+MapY                 165
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 166
+
+MapObjType           2
+ProtoId              5232
+MapX                 186
+MapY                 167
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 168
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 169
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 170
+
+MapObjType           2
+ProtoId              5230
+MapX                 186
+MapY                 159
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 160
+
+MapObjType           2
+ProtoId              5232
+MapX                 186
+MapY                 161
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 162
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 163
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 164
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 154
+
+MapObjType           2
+ProtoId              5232
+MapX                 186
+MapY                 155
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 156
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 157
+
+MapObjType           2
+ProtoId              5233
+MapX                 186
+MapY                 158
+
+MapObjType           2
+ProtoId              5230
+MapX                 184
+MapY                 148
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 149
+
+MapObjType           2
+ProtoId              5232
+MapX                 184
+MapY                 150
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 151
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 152
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 153
+
+MapObjType           2
+ProtoId              5230
+MapX                 184
+MapY                 142
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 143
+
+MapObjType           2
+ProtoId              5232
+MapX                 184
+MapY                 144
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 145
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 146
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 147
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 140
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 141
+
+MapObjType           2
+ProtoId              5227
+MapX                 181
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 182
+MapY                 176
+
+MapObjType           2
+ProtoId              5225
+MapX                 183
+MapY                 176
+
+MapObjType           2
+ProtoId              5228
+MapX                 184
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 185
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 186
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 175
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 176
+MapY                 176
+
+MapObjType           2
+ProtoId              5225
+MapX                 177
+MapY                 176
+
+MapObjType           2
+ProtoId              5228
+MapX                 178
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 179
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 180
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 169
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 170
+MapY                 176
+
+MapObjType           2
+ProtoId              5225
+MapX                 171
+MapY                 176
+
+MapObjType           2
+ProtoId              5228
+MapX                 172
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 173
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 174
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 163
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 164
+MapY                 176
+
+MapObjType           2
+ProtoId              5225
+MapX                 165
+MapY                 176
+
+MapObjType           2
+ProtoId              5228
+MapX                 166
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 167
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 168
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 158
+MapY                 176
+
+MapObjType           2
+ProtoId              5225
+MapX                 159
+MapY                 176
+
+MapObjType           2
+ProtoId              5228
+MapX                 160
+MapY                 176
+
+MapObjType           2
+ProtoId              5227
+MapX                 161
+MapY                 176
+
+MapObjType           2
+ProtoId              5226
+MapX                 162
+MapY                 176
+
+MapObjType           2
+ProtoId              4012
+MapX                 170
+MapY                 111
+
+MapObjType           2
+ProtoId              4012
+MapX                 170
+MapY                 111
+
+MapObjType           2
+ProtoId              4012
+MapX                 169
+MapY                 112
+
+MapObjType           2
+ProtoId              4012
+MapX                 168
+MapY                 112
+
+MapObjType           2
+ProtoId              4012
+MapX                 168
+MapY                 112
+
+MapObjType           2
+ProtoId              4012
+MapX                 167
+MapY                 113
+
+MapObjType           2
+ProtoId              4012
+MapX                 166
+MapY                 113
+
+MapObjType           2
+ProtoId              4012
+MapX                 165
+MapY                 114
+
+MapObjType           2
+ProtoId              4012
+MapX                 165
+MapY                 114
+
+MapObjType           2
+ProtoId              4012
+MapX                 164
+MapY                 114
+
+MapObjType           2
+ProtoId              4012
+MapX                 163
+MapY                 115
+
+MapObjType           2
+ProtoId              4012
+MapX                 162
+MapY                 115
+
+MapObjType           2
+ProtoId              4012
+MapX                 162
+MapY                 115
+
+MapObjType           2
+ProtoId              4012
+MapX                 161
+MapY                 116
+
+MapObjType           2
+ProtoId              4012
+MapX                 160
+MapY                 116
+
+MapObjType           2
+ProtoId              4012
+MapX                 159
+MapY                 117
+
+MapObjType           2
+ProtoId              4012
+MapX                 158
+MapY                 117
+
+MapObjType           2
+ProtoId              4012
+MapX                 158
+MapY                 117
+
+MapObjType           2
+ProtoId              4012
+MapX                 157
+MapY                 118
+
+MapObjType           2
+ProtoId              4012
+MapX                 156
+MapY                 118
+
+MapObjType           2
+ProtoId              4012
+MapX                 155
+MapY                 119
+
+MapObjType           2
+ProtoId              4012
+MapX                 154
+MapY                 119
+
+MapObjType           2
+ProtoId              4012
+MapX                 154
+MapY                 119
+
+MapObjType           2
+ProtoId              4012
+MapX                 153
+MapY                 120
+
+MapObjType           2
+ProtoId              4012
+MapX                 152
+MapY                 120
+
+MapObjType           2
+ProtoId              4012
+MapX                 151
+MapY                 121
+
+MapObjType           2
+ProtoId              4012
+MapX                 150
+MapY                 121
+
+MapObjType           2
+ProtoId              4012
+MapX                 149
+MapY                 122
+
+MapObjType           2
+ProtoId              4012
+MapX                 148
+MapY                 122
+
+MapObjType           2
+ProtoId              4012
+MapX                 147
+MapY                 123
+
+MapObjType           2
+ProtoId              4012
+MapX                 146
+MapY                 123
+
+MapObjType           2
+ProtoId              4012
+MapX                 145
+MapY                 124
+
+MapObjType           2
+ProtoId              4012
+MapX                 145
+MapY                 124
+
+MapObjType           2
+ProtoId              4012
+MapX                 144
+MapY                 124
+
+MapObjType           2
+ProtoId              4012
+MapX                 144
+MapY                 124
+
+MapObjType           2
+ProtoId              4012
+MapX                 143
+MapY                 125
+
+MapObjType           2
+ProtoId              4012
+MapX                 142
+MapY                 125
+
+MapObjType           2
+ProtoId              4012
+MapX                 142
+MapY                 125
+
+MapObjType           2
+ProtoId              4012
+MapX                 141
+MapY                 126
+
+MapObjType           2
+ProtoId              4012
+MapX                 140
+MapY                 126
+
+MapObjType           2
+ProtoId              4012
+MapX                 139
+MapY                 127
+
+MapObjType           2
+ProtoId              4012
+MapX                 138
+MapY                 127
+
+MapObjType           2
+ProtoId              4012
+MapX                 137
+MapY                 128
+
+MapObjType           2
+ProtoId              4012
+MapX                 136
+MapY                 128
+
+MapObjType           2
+ProtoId              4012
+MapX                 135
+MapY                 129
+
+MapObjType           2
+ProtoId              4012
+MapX                 134
+MapY                 129
+
+MapObjType           2
+ProtoId              4012
+MapX                 133
+MapY                 130
+
+MapObjType           2
+ProtoId              4012
+MapX                 132
+MapY                 130
+
+MapObjType           2
+ProtoId              4012
+MapX                 131
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 131
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 130
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 130
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 129
+MapY                 132
+
+MapObjType           2
+ProtoId              4012
+MapX                 128
+MapY                 132
+
+MapObjType           2
+ProtoId              4012
+MapX                 128
+MapY                 132
+
+MapObjType           2
+ProtoId              4012
+MapX                 127
+MapY                 133
+
+MapObjType           2
+ProtoId              4012
+MapX                 126
+MapY                 133
+
+MapObjType           2
+ProtoId              4012
+MapX                 126
+MapY                 133
+
+MapObjType           2
+ProtoId              4012
+MapX                 125
+MapY                 134
+
+MapObjType           2
+ProtoId              4012
+MapX                 124
+MapY                 134
+
+MapObjType           2
+ProtoId              4012
+MapX                 124
+MapY                 134
+
+MapObjType           2
+ProtoId              4012
+MapX                 123
+MapY                 135
+
+MapObjType           2
+ProtoId              4012
+MapX                 122
+MapY                 135
+
+MapObjType           2
+ProtoId              4012
+MapX                 121
+MapY                 136
+
+MapObjType           2
+ProtoId              4012
+MapX                 120
+MapY                 136
+
+MapObjType           2
+ProtoId              4012
+MapX                 120
+MapY                 137
+
+MapObjType           2
+ProtoId              4012
+MapX                 121
+MapY                 138
+
+MapObjType           2
+ProtoId              4012
+MapX                 121
+MapY                 139
+
+MapObjType           2
+ProtoId              4012
+MapX                 122
+MapY                 139
+
+MapObjType           2
+ProtoId              4012
+MapX                 122
+MapY                 140
+
+MapObjType           2
+ProtoId              4012
+MapX                 123
+MapY                 141
+
+MapObjType           2
+ProtoId              4012
+MapX                 123
+MapY                 142
+
+MapObjType           2
+ProtoId              4012
+MapX                 124
+MapY                 142
+
+MapObjType           2
+ProtoId              4012
+MapX                 124
+MapY                 143
+
+MapObjType           2
+ProtoId              4012
+MapX                 125
+MapY                 144
+
+MapObjType           2
+ProtoId              4012
+MapX                 125
+MapY                 145
+
+MapObjType           2
+ProtoId              4012
+MapX                 126
+MapY                 145
+
+MapObjType           2
+ProtoId              4012
+MapX                 126
+MapY                 146
+
+MapObjType           2
+ProtoId              4012
+MapX                 127
+MapY                 147
+
+MapObjType           2
+ProtoId              4012
+MapX                 127
+MapY                 148
+
+MapObjType           2
+ProtoId              4012
+MapX                 128
+MapY                 148
+
+MapObjType           2
+ProtoId              4012
+MapX                 128
+MapY                 149
+
+MapObjType           2
+ProtoId              4012
+MapX                 129
+MapY                 150
+
+MapObjType           2
+ProtoId              4012
+MapX                 129
+MapY                 151
+
+MapObjType           2
+ProtoId              4012
+MapX                 130
+MapY                 151
+
+MapObjType           2
+ProtoId              4012
+MapX                 130
+MapY                 152
+
+MapObjType           2
+ProtoId              4012
+MapX                 131
+MapY                 153
+
+MapObjType           2
+ProtoId              4012
+MapX                 131
+MapY                 154
+
+MapObjType           2
+ProtoId              4012
+MapX                 132
+MapY                 154
+
+MapObjType           2
+ProtoId              4012
+MapX                 132
+MapY                 155
+
+MapObjType           2
+ProtoId              4012
+MapX                 133
+MapY                 156
+
+MapObjType           2
+ProtoId              4012
+MapX                 133
+MapY                 157
+
+MapObjType           2
+ProtoId              4012
+MapX                 134
+MapY                 157
+
+MapObjType           2
+ProtoId              4012
+MapX                 134
+MapY                 158
+
+MapObjType           2
+ProtoId              4012
+MapX                 135
+MapY                 159
+
+MapObjType           2
+ProtoId              4012
+MapX                 135
+MapY                 160
+
+MapObjType           2
+ProtoId              4012
+MapX                 136
+MapY                 160
+
+MapObjType           2
+ProtoId              4012
+MapX                 136
+MapY                 161
+
+MapObjType           2
+ProtoId              4012
+MapX                 137
+MapY                 162
+
+MapObjType           2
+ProtoId              4012
+MapX                 137
+MapY                 163
+
+MapObjType           2
+ProtoId              4012
+MapX                 138
+MapY                 163
+
+MapObjType           2
+ProtoId              4012
+MapX                 138
+MapY                 164
+
+MapObjType           2
+ProtoId              4012
+MapX                 139
+MapY                 165
+
+MapObjType           2
+ProtoId              4012
+MapX                 139
+MapY                 166
+
+MapObjType           2
+ProtoId              4012
+MapX                 140
+MapY                 166
+
+MapObjType           2
+ProtoId              4012
+MapX                 140
+MapY                 167
+
+MapObjType           2
+ProtoId              4012
+MapX                 141
+MapY                 168
+
+MapObjType           2
+ProtoId              4012
+MapX                 141
+MapY                 169
+
+MapObjType           2
+ProtoId              4012
+MapX                 142
+MapY                 169
+
+MapObjType           2
+ProtoId              4012
+MapX                 142
+MapY                 170
+
+MapObjType           2
+ProtoId              4012
+MapX                 143
+MapY                 171
+
+MapObjType           2
+ProtoId              4012
+MapX                 143
+MapY                 172
+
+MapObjType           2
+ProtoId              4012
+MapX                 144
+MapY                 172
+
+MapObjType           2
+ProtoId              4012
+MapX                 144
+MapY                 173
+
+MapObjType           2
+ProtoId              4012
+MapX                 145
+MapY                 174
+
+MapObjType           2
+ProtoId              4012
+MapX                 145
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 146
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 146
+MapY                 176
+
+MapObjType           2
+ProtoId              4012
+MapX                 147
+MapY                 177
+
+MapObjType           2
+ProtoId              4012
+MapX                 147
+MapY                 178
+
+MapObjType           2
+ProtoId              4012
+MapX                 148
+MapY                 178
+
+MapObjType           2
+ProtoId              4012
+MapX                 148
+MapY                 179
+
+MapObjType           2
+ProtoId              4012
+MapX                 149
+MapY                 180
+
+MapObjType           2
+ProtoId              4012
+MapX                 149
+MapY                 181
+
+MapObjType           2
+ProtoId              4012
+MapX                 150
+MapY                 181
+
+MapObjType           2
+ProtoId              4012
+MapX                 150
+MapY                 182
+
+MapObjType           2
+ProtoId              4012
+MapX                 151
+MapY                 183
+
+MapObjType           2
+ProtoId              4012
+MapX                 151
+MapY                 184
+
+MapObjType           2
+ProtoId              4012
+MapX                 152
+MapY                 184
+
+MapObjType           2
+ProtoId              4012
+MapX                 152
+MapY                 185
+
+MapObjType           2
+ProtoId              4012
+MapX                 153
+MapY                 186
+
+MapObjType           2
+ProtoId              4012
+MapX                 153
+MapY                 187
+
+MapObjType           2
+ProtoId              4012
+MapX                 154
+MapY                 187
+
+MapObjType           2
+ProtoId              4012
+MapX                 154
+MapY                 188
+
+MapObjType           2
+ProtoId              4012
+MapX                 155
+MapY                 189
+
+MapObjType           2
+ProtoId              4012
+MapX                 155
+MapY                 190
+
+MapObjType           2
+ProtoId              4012
+MapX                 155
+MapY                 190
+
+MapObjType           2
+ProtoId              4012
+MapX                 156
+MapY                 190
+
+MapObjType           2
+ProtoId              4012
+MapX                 156
+MapY                 191
+
+MapObjType           2
+ProtoId              4012
+MapX                 157
+MapY                 192
+
+MapObjType           2
+ProtoId              4012
+MapX                 157
+MapY                 193
+
+MapObjType           2
+ProtoId              4012
+MapX                 158
+MapY                 193
+
+MapObjType           2
+ProtoId              4012
+MapX                 158
+MapY                 194
+
+MapObjType           2
+ProtoId              4012
+MapX                 159
+MapY                 195
+
+MapObjType           2
+ProtoId              4012
+MapX                 159
+MapY                 196
+
+MapObjType           2
+ProtoId              4012
+MapX                 160
+MapY                 196
+
+MapObjType           2
+ProtoId              4012
+MapX                 160
+MapY                 197
+
+MapObjType           2
+ProtoId              4012
+MapX                 161
+MapY                 198
+
+MapObjType           2
+ProtoId              4012
+MapX                 161
+MapY                 199
+
+MapObjType           2
+ProtoId              4012
+MapX                 162
+MapY                 199
+
+MapObjType           2
+ProtoId              4012
+MapX                 171
+MapY                 112
+
+MapObjType           2
+ProtoId              4012
+MapX                 171
+MapY                 113
+
+MapObjType           2
+ProtoId              4012
+MapX                 172
+MapY                 113
+
+MapObjType           2
+ProtoId              4012
+MapX                 172
+MapY                 114
+
+MapObjType           2
+ProtoId              4012
+MapX                 173
+MapY                 115
+
+MapObjType           2
+ProtoId              4012
+MapX                 173
+MapY                 116
+
+MapObjType           2
+ProtoId              4012
+MapX                 174
+MapY                 116
+
+MapObjType           2
+ProtoId              4012
+MapX                 174
+MapY                 117
+
+MapObjType           2
+ProtoId              4012
+MapX                 175
+MapY                 118
+
+MapObjType           2
+ProtoId              4012
+MapX                 175
+MapY                 119
+
+MapObjType           2
+ProtoId              4012
+MapX                 176
+MapY                 119
+
+MapObjType           2
+ProtoId              4012
+MapX                 176
+MapY                 120
+
+MapObjType           2
+ProtoId              4012
+MapX                 177
+MapY                 121
+
+MapObjType           2
+ProtoId              4012
+MapX                 177
+MapY                 122
+
+MapObjType           2
+ProtoId              4012
+MapX                 178
+MapY                 122
+
+MapObjType           2
+ProtoId              4012
+MapX                 178
+MapY                 123
+
+MapObjType           2
+ProtoId              4012
+MapX                 179
+MapY                 124
+
+MapObjType           2
+ProtoId              4012
+MapX                 179
+MapY                 125
+
+MapObjType           2
+ProtoId              4012
+MapX                 180
+MapY                 125
+
+MapObjType           2
+ProtoId              4012
+MapX                 180
+MapY                 126
+
+MapObjType           2
+ProtoId              4012
+MapX                 181
+MapY                 127
+
+MapObjType           2
+ProtoId              4012
+MapX                 181
+MapY                 128
+
+MapObjType           2
+ProtoId              4012
+MapX                 182
+MapY                 128
+
+MapObjType           2
+ProtoId              4012
+MapX                 182
+MapY                 129
+
+MapObjType           2
+ProtoId              4012
+MapX                 183
+MapY                 130
+
+MapObjType           2
+ProtoId              4012
+MapX                 183
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 184
+MapY                 131
+
+MapObjType           2
+ProtoId              4012
+MapX                 184
+MapY                 132
+
+MapObjType           2
+ProtoId              4012
+MapX                 185
+MapY                 133
+
+MapObjType           2
+ProtoId              4012
+MapX                 185
+MapY                 134
+
+MapObjType           2
+ProtoId              4012
+MapX                 186
+MapY                 134
+
+MapObjType           2
+ProtoId              4012
+MapX                 186
+MapY                 135
+
+MapObjType           2
+ProtoId              4012
+MapX                 187
+MapY                 136
+
+MapObjType           2
+ProtoId              4012
+MapX                 187
+MapY                 137
+
+MapObjType           2
+ProtoId              4012
+MapX                 188
+MapY                 137
+
+MapObjType           2
+ProtoId              4012
+MapX                 188
+MapY                 138
+
+MapObjType           2
+ProtoId              4012
+MapX                 189
+MapY                 139
+
+MapObjType           2
+ProtoId              4012
+MapX                 189
+MapY                 140
+
+MapObjType           2
+ProtoId              4012
+MapX                 190
+MapY                 140
+
+MapObjType           2
+ProtoId              4012
+MapX                 190
+MapY                 141
+
+MapObjType           2
+ProtoId              4012
+MapX                 191
+MapY                 142
+
+MapObjType           2
+ProtoId              4012
+MapX                 191
+MapY                 143
+
+MapObjType           2
+ProtoId              4012
+MapX                 192
+MapY                 143
+
+MapObjType           2
+ProtoId              4012
+MapX                 192
+MapY                 144
+
+MapObjType           2
+ProtoId              4012
+MapX                 193
+MapY                 145
+
+MapObjType           2
+ProtoId              4012
+MapX                 193
+MapY                 146
+
+MapObjType           2
+ProtoId              4012
+MapX                 194
+MapY                 146
+
+MapObjType           2
+ProtoId              4012
+MapX                 194
+MapY                 147
+
+MapObjType           2
+ProtoId              4012
+MapX                 195
+MapY                 148
+
+MapObjType           2
+ProtoId              4012
+MapX                 195
+MapY                 149
+
+MapObjType           2
+ProtoId              4012
+MapX                 196
+MapY                 149
+
+MapObjType           2
+ProtoId              4012
+MapX                 196
+MapY                 150
+
+MapObjType           2
+ProtoId              4012
+MapX                 197
+MapY                 151
+
+MapObjType           2
+ProtoId              4012
+MapX                 197
+MapY                 152
+
+MapObjType           2
+ProtoId              4012
+MapX                 198
+MapY                 152
+
+MapObjType           2
+ProtoId              4012
+MapX                 198
+MapY                 153
+
+MapObjType           2
+ProtoId              4012
+MapX                 199
+MapY                 154
+
+MapObjType           2
+ProtoId              4012
+MapX                 199
+MapY                 155
+
+MapObjType           2
+ProtoId              4012
+MapX                 200
+MapY                 155
+
+MapObjType           2
+ProtoId              4012
+MapX                 200
+MapY                 156
+
+MapObjType           2
+ProtoId              4012
+MapX                 201
+MapY                 157
+
+MapObjType           2
+ProtoId              4012
+MapX                 201
+MapY                 158
+
+MapObjType           2
+ProtoId              4012
+MapX                 202
+MapY                 158
+
+MapObjType           2
+ProtoId              4012
+MapX                 202
+MapY                 159
+
+MapObjType           2
+ProtoId              4012
+MapX                 203
+MapY                 160
+
+MapObjType           2
+ProtoId              4012
+MapX                 203
+MapY                 161
+
+MapObjType           2
+ProtoId              4012
+MapX                 204
+MapY                 161
+
+MapObjType           2
+ProtoId              4012
+MapX                 204
+MapY                 162
+
+MapObjType           2
+ProtoId              4012
+MapX                 205
+MapY                 163
+
+MapObjType           2
+ProtoId              4012
+MapX                 205
+MapY                 164
+
+MapObjType           2
+ProtoId              4012
+MapX                 206
+MapY                 164
+
+MapObjType           2
+ProtoId              4012
+MapX                 206
+MapY                 165
+
+MapObjType           2
+ProtoId              4012
+MapX                 206
+MapY                 165
+
+MapObjType           2
+ProtoId              4012
+MapX                 207
+MapY                 166
+
+MapObjType           2
+ProtoId              4012
+MapX                 207
+MapY                 167
+
+MapObjType           2
+ProtoId              4012
+MapX                 208
+MapY                 167
+
+MapObjType           2
+ProtoId              4012
+MapX                 208
+MapY                 168
+
+MapObjType           2
+ProtoId              4012
+MapX                 209
+MapY                 169
+
+MapObjType           2
+ProtoId              4012
+MapX                 209
+MapY                 170
+
+MapObjType           2
+ProtoId              4012
+MapX                 210
+MapY                 170
+
+MapObjType           2
+ProtoId              4012
+MapX                 210
+MapY                 171
+
+MapObjType           2
+ProtoId              4012
+MapX                 211
+MapY                 172
+
+MapObjType           2
+ProtoId              4012
+MapX                 211
+MapY                 173
+
+MapObjType           2
+ProtoId              4012
+MapX                 212
+MapY                 173
+
+MapObjType           2
+ProtoId              4012
+MapX                 212
+MapY                 174
+
+MapObjType           2
+ProtoId              4012
+MapX                 213
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 213
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 213
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 212
+MapY                 175
+
+MapObjType           2
+ProtoId              4012
+MapX                 211
+MapY                 176
+
+MapObjType           2
+ProtoId              4012
+MapX                 211
+MapY                 176
+
+MapObjType           2
+ProtoId              4012
+MapX                 210
+MapY                 176
+
+MapObjType           2
+ProtoId              4012
+MapX                 209
+MapY                 177
+
+MapObjType           2
+ProtoId              4012
+MapX                 208
+MapY                 177
+
+MapObjType           2
+ProtoId              4012
+MapX                 208
+MapY                 177
+
+MapObjType           2
+ProtoId              4012
+MapX                 207
+MapY                 178
+
+MapObjType           2
+ProtoId              4012
+MapX                 206
+MapY                 178
+
+MapObjType           2
+ProtoId              4012
+MapX                 205
+MapY                 179
+
+MapObjType           2
+ProtoId              4012
+MapX                 205
+MapY                 179
+
+MapObjType           2
+ProtoId              4012
+MapX                 204
+MapY                 179
+
+MapObjType           2
+ProtoId              4012
+MapX                 203
+MapY                 180
+
+MapObjType           2
+ProtoId              4012
+MapX                 202
+MapY                 180
+
+MapObjType           2
+ProtoId              4012
+MapX                 201
+MapY                 181
+
+MapObjType           2
+ProtoId              4012
+MapX                 201
+MapY                 181
+
+MapObjType           2
+ProtoId              4012
+MapX                 200
+MapY                 181
+
+MapObjType           2
+ProtoId              4012
+MapX                 199
+MapY                 182
+
+MapObjType           2
+ProtoId              4012
+MapX                 198
+MapY                 182
+
+MapObjType           2
+ProtoId              4012
+MapX                 197
+MapY                 183
+
+MapObjType           2
+ProtoId              4012
+MapX                 197
+MapY                 183
+
+MapObjType           2
+ProtoId              4012
+MapX                 196
+MapY                 183
+
+MapObjType           2
+ProtoId              4012
+MapX                 195
+MapY                 184
+
+MapObjType           2
+ProtoId              4012
+MapX                 194
+MapY                 184
+
+MapObjType           2
+ProtoId              4012
+MapX                 193
+MapY                 185
+
+MapObjType           2
+ProtoId              4012
+MapX                 192
+MapY                 185
+
+MapObjType           2
+ProtoId              4012
+MapX                 191
+MapY                 186
+
+MapObjType           2
+ProtoId              4012
+MapX                 190
+MapY                 186
+
+MapObjType           2
+ProtoId              4012
+MapX                 189
+MapY                 187
+
+MapObjType           2
+ProtoId              4012
+MapX                 188
+MapY                 187
+
+MapObjType           2
+ProtoId              4012
+MapX                 188
+MapY                 187
+
+MapObjType           2
+ProtoId              4012
+MapX                 187
+MapY                 188
+
+MapObjType           2
+ProtoId              4012
+MapX                 187
+MapY                 188
+
+MapObjType           2
+ProtoId              4012
+MapX                 186
+MapY                 188
+
+MapObjType           2
+ProtoId              4012
+MapX                 185
+MapY                 189
+
+MapObjType           2
+ProtoId              4012
+MapX                 185
+MapY                 189
+
+MapObjType           2
+ProtoId              4012
+MapX                 184
+MapY                 189
+
+MapObjType           2
+ProtoId              4012
+MapX                 183
+MapY                 190
+
+MapObjType           2
+ProtoId              4012
+MapX                 182
+MapY                 190
+
+MapObjType           2
+ProtoId              4012
+MapX                 181
+MapY                 191
+
+MapObjType           2
+ProtoId              4012
+MapX                 180
+MapY                 191
+
+MapObjType           2
+ProtoId              4012
+MapX                 179
+MapY                 192
+
+MapObjType           2
+ProtoId              4012
+MapX                 178
+MapY                 192
+
+MapObjType           2
+ProtoId              4012
+MapX                 177
+MapY                 193
+
+MapObjType           2
+ProtoId              4012
+MapX                 176
+MapY                 193
+
+MapObjType           2
+ProtoId              4012
+MapX                 175
+MapY                 194
+
+MapObjType           2
+ProtoId              4012
+MapX                 174
+MapY                 194
+
+MapObjType           2
+ProtoId              4012
+MapX                 174
+MapY                 194
+
+MapObjType           2
+ProtoId              4012
+MapX                 173
+MapY                 195
+
+MapObjType           2
+ProtoId              4012
+MapX                 173
+MapY                 195
+
+MapObjType           2
+ProtoId              4012
+MapX                 172
+MapY                 195
+
+MapObjType           2
+ProtoId              4012
+MapX                 171
+MapY                 196
+
+MapObjType           2
+ProtoId              4012
+MapX                 171
+MapY                 196
+
+MapObjType           2
+ProtoId              4012
+MapX                 170
+MapY                 196
+
+MapObjType           2
+ProtoId              4012
+MapX                 169
+MapY                 197
+
+MapObjType           2
+ProtoId              4012
+MapX                 169
+MapY                 197
+
+MapObjType           2
+ProtoId              4012
+MapX                 168
+MapY                 197
+
+MapObjType           2
+ProtoId              4012
+MapX                 167
+MapY                 198
+
+MapObjType           2
+ProtoId              4012
+MapX                 167
+MapY                 198
+
+MapObjType           2
+ProtoId              4012
+MapX                 166
+MapY                 198
+
+MapObjType           2
+ProtoId              4012
+MapX                 165
+MapY                 199
+
+MapObjType           2
+ProtoId              4012
+MapX                 164
+MapY                 199
+
+MapObjType           2
+ProtoId              4012
+MapX                 163
+MapY                 200
+
+MapObjType           2
+ProtoId              6033
+MapX                 182
+MapY                 140
+
+MapObjType           2
+ProtoId              6034
+MapX                 178
+MapY                 140
+
+MapObjType           1
+ProtoId              2421
+MapX                 180
+MapY                 140
+
+MapObjType           2
+ProtoId              2417
+MapX                 181
+MapY                 139
+
+MapObjType           2
+ProtoId              2419
+MapX                 180
+MapY                 138
+
+MapObjType           2
+ProtoId              5032
+MapX                 176
+MapY                 140
+
+MapObjType           2
+ProtoId              5030
+MapX                 184
+MapY                 140
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 136
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 137
+
+MapObjType           2
+ProtoId              5018
+MapX                 184
+MapY                 138
+
+MapObjType           2
+ProtoId              5015
+MapX                 184
+MapY                 139
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 136
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 137
+
+MapObjType           2
+ProtoId              5018
+MapX                 176
+MapY                 138
+
+MapObjType           2
+ProtoId              5015
+MapX                 176
+MapY                 139
+
+MapObjType           2
+ProtoId              5020
+MapX                 176
+MapY                 134
+
+MapObjType           2
+ProtoId              5019
+MapX                 184
+MapY                 134
+
+MapObjType           2
+ProtoId              5003
+MapX                 177
+MapY                 134
+
+MapObjType           2
+ProtoId              5001
+MapX                 178
+MapY                 134
+
+MapObjType           2
+ProtoId              5003
+MapX                 179
+MapY                 134
+
+MapObjType           2
+ProtoId              5001
+MapX                 180
+MapY                 134
+
+MapObjType           2
+ProtoId              5003
+MapX                 181
+MapY                 134
+
+MapObjType           2
+ProtoId              5001
+MapX                 182
+MapY                 134
+
+MapObjType           2
+ProtoId              5003
+MapX                 183
+MapY                 134
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 140
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 139
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 138
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 137
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 136
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 135
+
+MapObjType           2
+ProtoId              5233
+MapX                 184
+MapY                 134
+
+

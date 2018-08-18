@@ -1,0 +1,5 @@
+{100}{}{Un avis de recherche avec un portrait au charbon du malfaiteur. Son visage semble familier.}
+{101}{}{La légende dit :}
+{102}{}{Recherché mort ou vivant pour avoir tué des innocents et pour être un enfant de salaud. Récompense : 10000 $ mort ou 5000 $ vivant.}
+{103}{}{Recherché mort ou vivant pour avoir tué des innocents. Récompense : 10000 $ mort ou 5000 $ vivant.}
+{104}{}{Recherché mort ou vivant pour être un enfant de salaud. Récompense : 10000 $ mort ou 5000 $ vivant.}

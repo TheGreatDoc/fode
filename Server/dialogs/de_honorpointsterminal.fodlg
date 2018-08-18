@@ -1,0 +1,378 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+0 2030 @
+3 3000 None 1 #
+5 3010 #
+6 3020 #
+7 3030 @
+4 4000 None 1 #
+8 4010 #
+9 4020 #
+10 4030 #
+11 4040 @
+5 5000 None 1 #
+12 5010 #
+13 5020 #
+14 5030 #
+15 5040 #
+16 5050 #
+17 5060 #
+18 5070 #
+19 5080 #
+20 5090 #
+21 5100 #
+22 5110 @
+6 6000 None 1 #
+23 6010 #
+24 6020 #
+25 6030 #
+26 6040 #
+27 6050 #
+28 6060 @
+7 7000 None 1 #
+29 7010 #
+30 7020 #
+31 7030 #
+32 7040 #
+33 7050 #
+34 7060 #
+35 7070 #
+36 7080 @
+8 8000 None 1 #
+0 8010 D _item p PID_BOTTLE_CAPS } 2500 D _param p HONOR_POINTS } 2500 R _param p HONOR_POINTS - 2500 R _item p PID_BOTTLE_CAPS - 2500 R _item p PID_BULLETPROOF1 + 1 #
+0 8020 D _param p HONOR_POINTS } 5000 D _item p PID_BOTTLE_CAPS } 4000 R _param p HONOR_POINTS - 5000 R _item p PID_BOTTLE_CAPS - 4000 R _item p PID_BULLETPROOF2 + 1 @
+9 9000 None 1 #
+0 9010 D _param p HONOR_POINTS } 1000 D _item p PID_BOTTLE_CAPS } 500 #
+0 9020 D _param p HONOR_POINTS } 2500 D _item p PID_BOTTLE_CAPS } 1500 #
+0 9030 D _param p HONOR_POINTS } 4500 D _item p PID_BOTTLE_CAPS } 2500 @
+10 10000 None 1 #
+0 10010 D _param p HONOR_POINTS } 1500 D _item p PID_BOTTLE_CAPS } 2500 #
+0 10020 D _param p HONOR_POINTS } 2500 D _item p PID_BOTTLE_CAPS } 4500 #
+0 10030 D _param p HONOR_POINTS } 5000 D _item p PID_BOTTLE_CAPS } 7500 #
+0 10040 D _param p HONOR_POINTS } 7500 D _item p PID_BOTTLE_CAPS } 10000 @
+11 11000 None 1 #
+0 11010 D _param p HONOR_POINTS } 1500 #
+0 11020 D _param p HONOR_POINTS } 2500 D _item p PID_BOTTLE_CAPS } 3000 #
+0 11030 D _param p HONOR_POINTS } 2000 D _item p PID_BOTTLE_CAPS } 2500 #
+0 11040 D _param p HONOR_POINTS } 4000 #
+0 11050 D _param p HONOR_POINTS } 8000 D _item p PID_BOTTLE_CAPS } 9500 #
+0 11060 D _param p HONOR_POINTS } 1500 D _item p PID_BOTTLE_CAPS } 5500 #
+0 11070 D _param p HONOR_POINTS } 25000 D _item p PID_BOTTLE_CAPS } 15500 @
+12 12000 None 0 @
+13 13000 None 0 @
+14 14000 None 0 @
+15 15000 None 0 @
+16 16000 None 0 @
+17 17000 None 0 @
+18 18000 None 0 @
+19 19000 None 0 @
+20 20000 None 0 @
+21 21000 None 0 @
+22 22000 None 0 @
+23 23000 None 0 @
+24 24000 None 0 @
+25 25000 None 0 @
+26 26000 None 0 @
+27 27000 None 0 @
+28 28000 None 0 @
+29 29000 None 0 @
+30 30000 None 0 @
+31 31000 None 0 @
+32 32000 None 0 @
+33 33000 None 0 @
+34 34000 None 0 @
+35 35000 None 0 @
+36 36000 None 0 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{to dialog}
+{2000}{}{Logowanie......
+
+
+Wybierz opcje.}
+{2010}{}{Implanty}
+{2020}{}{Przedmioty Specjalne}
+{2030}{}{Wyjdz}
+{3000}{}{Implanty}
+{3010}{}{Czerwone}
+{3020}{}{Zielone}
+{3030}{}{Niebieskie}
+{4000}{}{Przedmioty Specjalne}
+{4010}{}{Kamizelki Kuloodporne}
+{4020}{}{Plecaki}
+{4030}{}{Lornetki}
+{4040}{}{Inne}
+{5000}{}{Czerwone}
+{5010}{}{IR-1 Awaranes}
+{5020}{}{IR-2 Bonus Move}
+{5030}{}{IR-3 Night Vision}
+{5040}{}{IR-4 Carry Weight}
+{5050}{}{IR-5 Quick Recovery}
+{5060}{}{IR-6 Ranger}
+{5070}{}{IR-7 Living Anatomy}
+{5080}{}{IR-8 Magnetic Personality}
+{5090}{}{IR-9 Pack Rat}
+{5100}{}{IR-10 Doger}
+{5110}{}{IR-11 Faster Healing}
+{6000}{}{Zielone}
+{6010}{}{IG-1 Radiation Resistance}
+{6020}{}{IG-2 Poison Resistance}
+{6030}{}{IG-3 Damage Resistance}
+{6040}{}{IG-4 Healing Rate}
+{6050}{}{IG-5 Critical Chance}
+{6060}{}{IG-6 Sequence}
+{7000}{}{Niebieskie}
+{7010}{}{IB-1 Small Guns}
+{7020}{}{IB-2 Big Guns}
+{7030}{}{IB-3 Energy Guns}
+{7040}{}{IB-4 Melee and Throwing}
+{7050}{}{IB-5 Resourcing and Outdoorsman}
+{7060}{}{IB-6 First Aid and Doctor}
+{7070}{}{IB-7 Science and Repair}
+{7080}{}{IB-8 Lockpick, Steal and Traps}
+{8000}{}{Kamizelki Kuloodporne}
+{8010}{}{Kamizelka Policyjna 2500 HonorPoints 2500 Coins}
+{8020}{}{Kamizelka SWAT 5000 Honor Points 4000 Coins}
+{9000}{}{Plecaki}
+{9010}{}{Small Backpack 1000 Honor Points 500 Coins}
+{9020}{}{Medium Backpack 2500 Honor Points 1500 Coins}
+{9030}{}{Big Backpack 4500 Honor Points 2500 Coins}
+{10000}{}{Lornetki}
+{10010}{}{Old Binoculars 1500 Honor Points 2500 Coins}
+{10020}{}{Metal Binoculars 2500 Honor Points 4500 Coins}
+{10030}{}{Tourist Binoculars 5000 Honor Points 7500 Coins}
+{10040}{}{Military Binoculars 7500 Honor Points 10000 Coins}
+{11000}{}{Inne}
+{11010}{}{Map 1500 Honor Points 1000 Coins}
+{11020}{}{Precise Map 2500 Honor Points 3000 Coins}
+{11030}{}{Protective Mask 2000 Honor Points 2500 Coins}
+{11040}{}{Metal Mask 4000 Honor Points 6500 Coins}
+{11050}{}{Combat Helmet 8000 Honor Points 9500 Coins}
+{11060}{}{BaseBall Cap 1500 Honor Points 5500 Coins}
+{11070}{}{Balaclava Cap 25000 Honor Points 15500 Coins}
+{12000}{}{IR-1 Awaranes}
+{13000}{}{IR-2 Bonus Move}
+{14000}{}{IR-3 Night Vision}
+{15000}{}{IR-4 Carry Weight}
+{16000}{}{IR-5 Quick Recovery}
+{17000}{}{IR-6 Ranger}
+{18000}{}{IR-7 Living Anatomy}
+{19000}{}{IR-8 Magnetic Personality}
+{20000}{}{IR-9 Pack Rat}
+{21000}{}{IR-10 Doger}
+{22000}{}{IR-11 Faster Healing}
+{23000}{}{IG-1 Radiation Resistance}
+{24000}{}{IG-2 Poison Resistance}
+{25000}{}{IG-3 Damage Resistance}
+{26000}{}{IG-4 Healing Rate}
+{27000}{}{IG-5 Critical Chance}
+{28000}{}{IG-6 Sequence}
+{29000}{}{IB-1 Small Guns}
+{30000}{}{IB-2 Big Guns}
+{31000}{}{IB-3 Energy Guns}
+{32000}{}{IB-4 Melee and Throwing}
+{33000}{}{IB-5 Resourcing and Outdoorsman}
+{34000}{}{IB-6 First Aid and Doctor}
+{35000}{}{IB-7 Science and Repair}
+{36000}{}{IB-8 Lockpick, Steal and Traps}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{to dialog}
+{2000}{}{Log in...
+
+
+Choose options.}
+{2010}{}{Implants}
+{2020}{}{Special Items}
+{2030}{}{Exit}
+{3000}{}{Implants}
+{3010}{}{Red}
+{3020}{}{Green}
+{3030}{}{Yellow}
+{4000}{}{Special Items}
+{4010}{}{Ballistic Vests}
+{4020}{}{Backpacks}
+{4030}{}{Binoculars}
+{4040}{}{Other}
+{5000}{}{Red}
+{5010}{}{IR-1 Awaraness}
+{5020}{}{IR-2 Bonus Move}
+{5030}{}{IR-3 Night Vision}
+{5040}{}{IR-4 Carry Weight}
+{5050}{}{IR-5 Quick Recovery}
+{5060}{}{IR-6 Ranger}
+{5070}{}{IR-7 Living Anatomy}
+{5080}{}{IR-8 Magnetic Personality}
+{5090}{}{IR-9 Pack Rat}
+{5100}{}{IR-10 Dodger}
+{5110}{}{IR-11 Faster Healing}
+{6000}{}{Green}
+{6010}{}{IG-1 Radiation Resistance}
+{6020}{}{IG-2 Poison Resistance}
+{6030}{}{IG-3 Damage Resistance}
+{6040}{}{IG-4 Healing Rate}
+{6050}{}{IG-5 Critical Chance}
+{6060}{}{IG-6 Sequence}
+{7000}{}{Blue}
+{7010}{}{IB-1 Small Guns}
+{7020}{}{IB-2 Big Guns}
+{7030}{}{IB-3 Energy Guns}
+{7040}{}{IB-4 Melee and Throwing}
+{7050}{}{IB-5 Resourcing and Outdoorsman}
+{7060}{}{IB-6 First Aid and Doctor}
+{7070}{}{IB-7 Science and Repair}
+{7080}{}{IB-8 Lockpick, Steal and Traps}
+{8000}{}{Ballistic Vests}
+{8010}{}{Police Vest}
+{8020}{}{SWAT Vest 5000 Honor Points 4000 Coins}
+{9000}{}{Backpacks}
+{9010}{}{Small Backpack 1000 Honor Points 500 Coins}
+{9020}{}{Medium Backpack 2500 Honor Points 1500 Coins}
+{9030}{}{Big Backpack 4500 Honor Points 2500 Coins}
+{10000}{}{Binoculars}
+{10010}{}{Old Binoculars 1500 Honor Points 2500 Coins}
+{10020}{}{Metal Binoculars 2500 Honor Points 4500 Coins}
+{10030}{}{Tourist Binoculars 5000 Honor Points 7500 Coins}
+{10040}{}{Military Binoculars 7500 Honor Points 10000 Coins}
+{11000}{}{Other}
+{11010}{}{Precise Map 1500 Honor Points 1000 Coins}
+{11020}{}{Precise Map 2500 Honor Points 3000 Coins}
+{11030}{}{Protective Mask 2000 Honor Points 2500 Coins}
+{11040}{}{Metal Mask 4000 Honor Points 6500 Coins}
+{11050}{}{Combat Helmet 8000 Honor Points 9500 Coins}
+{11060}{}{Baseball Cap 1500 Honor Points 5500 Coins}
+{11070}{}{Balaclava Cap 25000 Honor Points 15500 Coins}
+{12000}{}{IR-1 Awaraness}
+{13000}{}{IR-2 Bonus Move}
+{14000}{}{IR-3 Night Vision}
+{15000}{}{IR-4 Carry Weight}
+{16000}{}{IR-5 Quick Recovery}
+{17000}{}{IR-6 Ranger}
+{18000}{}{IR-7 Living Anatomy}
+{19000}{}{IR-8 Magnetic Personality}
+{20000}{}{IR-9 Pack Rat}
+{21000}{}{IR-10 Dodger}
+{22000}{}{IR-11 Faster Healing}
+{23000}{}{IG-1 Radiation Resistance}
+{24000}{}{IG-2 Poison Resistance}
+{25000}{}{IG-3 Damage Resistance}
+{26000}{}{IG-4 Healing Rate}
+{27000}{}{IG-5 Critical Chance}
+{28000}{}{IG-6 Sequence}
+{29000}{}{IB-1 Small Guns}
+{30000}{}{IB-2 Big Guns}
+{31000}{}{IB-3 Energy Guns}
+{32000}{}{IB-4 Melee and Throwing}
+{33000}{}{IB-5 Resourcing and Outdoorsman}
+{34000}{}{IB-6 First Aid and Doctor}
+{35000}{}{IB-7 Science and Repair}
+{36000}{}{IB-8 Lockpick, Steal and Traps}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{to dialog}
+{2000}{}{Log in...
+
+
+Choose options.}
+{2010}{}{Implants}
+{2020}{}{Special Items}
+{2030}{}{Exit}
+{3000}{}{Implants}
+{3010}{}{Red}
+{3020}{}{Green}
+{3030}{}{Yellow}
+{4000}{}{Special Items}
+{4010}{}{Ballistic Vests}
+{4020}{}{Backpacks}
+{4030}{}{Binoculars}
+{4040}{}{Other}
+{5000}{}{Red}
+{5010}{}{IR-1 Awaraness}
+{5020}{}{IR-2 Bonus Move}
+{5030}{}{IR-3 Night Vision}
+{5040}{}{IR-4 Carry Weight}
+{5050}{}{IR-5 Quick Recovery}
+{5060}{}{IR-6 Ranger}
+{5070}{}{IR-7 Living Anatomy}
+{5080}{}{IR-8 Magnetic Personality}
+{5090}{}{IR-9 Pack Rat}
+{5100}{}{IR-10 Dodger}
+{5110}{}{IR-11 Faster Healing}
+{6000}{}{Green}
+{6010}{}{IG-1 Radiation Resistance}
+{6020}{}{IG-2 Poison Resistance}
+{6030}{}{IG-3 Damage Resistance}
+{6040}{}{IG-4 Healing Rate}
+{6050}{}{IG-5 Critical Chance}
+{6060}{}{IG-6 Sequence}
+{7000}{}{Blue}
+{7010}{}{IB-1 Small Guns}
+{7020}{}{IB-2 Big Guns}
+{7030}{}{IB-3 Energy Guns}
+{7040}{}{IB-4 Melee and Throwing}
+{7050}{}{IB-5 Resourcing and Outdoorsman}
+{7060}{}{IB-6 First Aid and Doctor}
+{7070}{}{IB-7 Science and Repair}
+{7080}{}{IB-8 Lockpick, Steal and Traps}
+{8000}{}{Ballistic Vests}
+{8010}{}{Police Vest}
+{8020}{}{SWAT Vest 5000 Honor Points 4000 Coins}
+{9000}{}{Backpacks}
+{9010}{}{Small Backpack 1000 Honor Points 500 Coins}
+{9020}{}{Medium Backpack 2500 Honor Points 1500 Coins}
+{9030}{}{Big Backpack 4500 Honor Points 2500 Coins}
+{10000}{}{Binoculars}
+{10010}{}{Old Binoculars 1500 Honor Points 2500 Coins}
+{10020}{}{Metal Binoculars 2500 Honor Points 4500 Coins}
+{10030}{}{Tourist Binoculars 5000 Honor Points 7500 Coins}
+{10040}{}{Military Binoculars 7500 Honor Points 10000 Coins}
+{11000}{}{Other}
+{11010}{}{Precise Map 1500 Honor Points 1000 Coins}
+{11020}{}{Precise Map 2500 Honor Points 3000 Coins}
+{11030}{}{Protective Mask 2000 Honor Points 2500 Coins}
+{11040}{}{Metal Mask 4000 Honor Points 6500 Coins}
+{11050}{}{Combat Helmet 8000 Honor Points 9500 Coins}
+{11060}{}{Baseball Cap 1500 Honor Points 5500 Coins}
+{11070}{}{Balaclava Cap 25000 Honor Points 15500 Coins}
+{12000}{}{IR-1 Awaraness}
+{13000}{}{IR-2 Bonus Move}
+{14000}{}{IR-3 Night Vision}
+{15000}{}{IR-4 Carry Weight}
+{16000}{}{IR-5 Quick Recovery}
+{17000}{}{IR-6 Ranger}
+{18000}{}{IR-7 Living Anatomy}
+{19000}{}{IR-8 Magnetic Personality}
+{20000}{}{IR-9 Pack Rat}
+{21000}{}{IR-10 Dodger}
+{22000}{}{IR-11 Faster Healing}
+{23000}{}{IG-1 Radiation Resistance}
+{24000}{}{IG-2 Poison Resistance}
+{25000}{}{IG-3 Damage Resistance}
+{26000}{}{IG-4 Healing Rate}
+{27000}{}{IG-5 Critical Chance}
+{28000}{}{IG-6 Sequence}
+{29000}{}{IB-1 Small Guns}
+{30000}{}{IB-2 Big Guns}
+{31000}{}{IB-3 Energy Guns}
+{32000}{}{IB-4 Melee and Throwing}
+{33000}{}{IB-5 Resourcing and Outdoorsman}
+{34000}{}{IB-6 First Aid and Doctor}
+{35000}{}{IB-7 Science and Repair}
+{36000}{}{IB-8 Lockpick, Steal and Traps}

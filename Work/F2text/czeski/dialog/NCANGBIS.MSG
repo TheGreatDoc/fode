@@ -1,0 +1,321 @@
+# Tento soubor pøeloil Radim "HIGHTOWER" Brix , hightower@angelfire.com
+# 0. QUICK LOOK (WTG)
+{100}{}{Vidíš Angelu Bishopovou.}
+{101}{}{Vidíš plaèící Angelu Bishopovou.}
+
+# 0. LOOK (MALE) (WTG)
+{150}{}{Vidíš mladou atraktivní enu v pøiléhavıch koenıch šatech.}
+{151}{}{Vidíš Angelu Bishopovou. Kdy spatøila tvé oèi, tak si jemnì olízla rty.}
+
+# 1. LOOK (FEMALE) (WTG)
+{175}{}{Vidíš mladou enu v pøiléhavıch koenıch šatech. Je vidìt, e je to vysoce postavená osoba.}
+{176}{}{Vidíš Angelu Bishopovou. Pošklebuje se na tebe.}
+
+# 2. FLOAT/CLICK: ANGELA_REJECTED (MALE) (WTG)
+{200}{}{Mùj otec tì ZABIJE, kdy uslyší jak se mnou zacházíš.}
+
+# 3. FLOAT/CLICK: BISHOP DEAD (MALE) (WTG)
+{205}{}{VÍM, e jsi to byl ty. Urèitì najdu nìjakou cestu jak tì dostat za to, co jsi udìlal mému otci.}
+
+# 4. FLOAT/CLICK: ENCLAVE_DESTROYED (FEMALE) (WTG)
+{210}{}{Hmmmm. Není tohle naše velká hrdinka.}
+
+# 5. FLOAT COMMENTS (POWER ARMOR, WTG)
+{215}{}{Dej si pozor, a v tom, co máš na sobì, nespadneš na schodech.}
+
+# 6. FLOAT COMMENTS (MALE) (WTG)
+{220}{}{NUDÍM SE.}
+{221}{}{Jak se máš.}
+{222}{}{Ty. Mluv se mnou. Hned.}
+{223}{}{Ty. Pojï sem. Hned.}
+{224}{}{Hej.}
+{225}{}{Hmmmm.}
+{226}{}{Take, take...}
+
+# 7. FLOAT COMMENTS (FEMALE) (WTG)
+{230}{}{NUDÍM SE.}
+{231}{}{Vypadáš, jako jedna z novıch otcovıch kurev...}
+{232}{}{Jedna z tátovıch sluek...}
+
+# 8. BASIC INTRO DIALOGUE, 1st TIME MALE (WTG)
+{240}{}{Ještì jsem tì tady nikdy nevidìla. Jak se jmenuješ cizinèe? (Zlomyslnì se zaculila.) Vlastnì, nevadí, ani to nechci vìdìt. Nudíš se taky jako já?}
+{241}{}{Zase ty. U se nudíš?}
+{242}{}{Mòam, sladká brambora. Mám ráda sladké brambory}
+{243}{}{Nudíš se}
+{244}{}{Taky se nudím}
+{245}{}{Néééé radìji odejdu}
+{246}{}{Ne.}
+{247}{}{Ano.}
+{248}{}{Uh... proè se na mì tak díváš?}
+{249}{}{Mohl bych se nudit. Proè, hledáš nìjaké vzrušení, princezno?}
+{250}{}{Ne tak docela. Mìl bych teï bıt nìkde jinde.}
+
+# 9. YAM/ME BOARD TOO (8, 28)
+{260}{}{Oh, to vypadá zajímavì. Pojï se mnou, chci ti ukázat mùj pokoj.}
+{261}{}{Jasnì pùvabná sleèno.}
+{262}{}{Uh... budeme si hrát?}
+{263}{}{Nikam nejdu.}
+
+# 10. WE GONNA PLAY? (9)
+{270}{}{To se vsaï. Tak u pojï.}
+{271}{}{U jdu}
+{272}{}{Já si rád hraju. Aèkoli jen sám se sebou}
+
+# 11. ME COME (10, 28)
+{280}{}{Pøesnì tak...}
+{281}{}{Následuj ji.}
+
+# 12. ME NO GO (8, 9, 10)
+{290}{}{Ach, pojï! Prosííím? Opravdu ti chci ukázat svùj pokoj. Bude to trvat jenom chvíli, pøísahám.}
+{291}{}{Nejdu! Já nikam nejdu! Nenu me k tomu! Ne!}
+{292}{}{Jasòaèka. Nemusíš to øíkat dvakrát. U jdu}
+{293}{}{ODCHÁZÍM A U NA MÌ NEMLUV}
+
+# 13. NO GO! ME NO GO! NO MAKE ME GO! (12)
+{300}{}{Tak to staèí, ty stupidní debile! Vypadni odsaï! ::Idiot.::}
+
+# 14. NO (8, 16, 17, 18, 21?, 25, 28, 47)
+{310}{}{Ty jsi tady NOVİ nebo co? Já jsem Angela BISHOPOVÁ. Mùj otec je hlavou rodiny Bishopù. }
+{311}{}{Ty pracuješ pro nìho, co znamená, e taky pracuješ pro MÌ. }
+{312}{}{Radìji udìlej co ti øíkám a já ti øíkám, e máš jít teï se mnou. Hned.}
+{313}{}{Máš pravdu: Tvùj otec je hlavou Bishopovy rodiny a právì proto nikde nepùjdeme.}
+{314}{}{Dobøe, jestli na tom tak trváš... tak pojïme.}
+{315}{}{To není to, NELICHOTIL sem, ale...}
+{316}{}{Ne. Myslel jsem tím poprvé.}
+{317}{}{ádné takové drahoušku. Budeš dokola bìhat, a ti bude dobøe.}
+{318}{}{Vyjasnìme si jednu vìc princeznièko: já tady rozkazuju a ty posloucháš.}
+{320}{}{Jestli se nudíš princeznièko... tak si sedni na ruce a zaèni se toèit dokola. Já odsuï odcházím.}
+
+# 15. FINAL NO (14, 19, 20, 21, 22, 25, 28, 47)
+{330}{}{Ty si myslíš, e ses mì jen tak lehko zbavil? Jen poèkej, mùj otec se o tobì všechno doví.}
+
+# 16. WHY ARE YOU LOOKING AT ME LIKE THAT? (8)
+{340}{}{Proè? Neudìlala jsem na tebe dobrı dojem? (Udìlala jeden malı krok smìrem k tobì a její hlas zvánìl.) Uvádím tì do... rozpakù?}
+{341}{}{Ne tak docela.}
+{342}{}{Dìvèe, z toho koukají problémy, tak u s tím radìji pøestaò.}
+{343}{}{Promiò. Mohla bys trochu zpomalit?}
+{344}{}{Ano, uvádíš. Mùeš mi s tím nìjak pomoct?}
+{345}{}{Ne, ale hned odejdu.}
+
+# 17. EXCUSE ME. WOULD YOU PLEASE STEP BACK A LITTLE? (16)
+{350}{}{(Udìlala ještì jeden krùèek smìrem k tobì, skoro se tì dotıká.) Necítím se dobøe. Co se snaíš udìlat?}
+{352}{}{Nic. Podívej, øeknu to takhle. Nemám na to náladu.}
+{353}{}{Ustup. Nemám náladu na tyhle zvrhlé prasárny, rozumíš?}
+{354}{}{Co se snaíš udìlat? Mluvíš, mluvíš, ale musíš ke mì chodit?}
+
+# 18. YES/YEAH, IT'S GETTING PRETTY HARD. CAN YOU HELP ME WITH THAT? (8, 17, 23, 24)
+{360}{}{Jistì musím. }
+{361}{}{Podívej: Mám ve svém pokoji nìjakı Jet... a NE ty sraèky co prodávají v obchodech nebo co prodávají dealeøi na ulici. Chceš si zalítat?}
+{362}{}{Jistì. Tak to rozjedem bejby.}
+{363}{}{U se tìším na tu jízdu.}
+{364}{}{Ví tvùj otec, e bereš tohle svinstvo?}
+{365}{}{Zmìnil jsem názor. Ne díky.}
+{366}{}{Ne, myslel jsem, e bych mohl vidìt jestli si taková velká kurva jak jsem si o tobì myslel. Pozdìji princeznièko.}
+
+# 19. I MIGHT BE BORED. WHY? YOU LOOKING FOR SOME EXCITEMENT, PRINCESS? (8, 14, 18)
+{370}{}{Mìl by sis dávat pozor na to co mluvíš. Já jsem Angela BISHOPOVÁ. Mùj otec je HLAVOU rodiny Bishopovıch. Budeš mi projevovat stejnou úctu
+ jakou jemu nebo tì, budou po kouscích seškrabovat ze stìny. ROZUMÌL JSI?}
+{371}{}{Take, jestli dobøe rozumím, potøebuješ nìkoho, aby tì zavedl k tobì a já bych mìl bıt ta osoba.}
+{372}{}{Rozumìl jsem. Jsem rád, e jsme si ty rodinné vazby vyøešili.}
+{373}{}{No tak. Pouze jsem ertoval.}
+{374}{}{Zapomeò na to.}
+{375}{}{Zapomeò na všechno. Odcházím.}
+
+# 20. YEAH, I UNDERSTAND YOU NEED SOMEONE TO PUT YOU IN YOUR PLACE, PRINCESS . . ./LET'S GET ONE THING STRAIGHT: I GIVE ORDERS, YOU RECEIVE THEM (19)
+{380}{}{Proè, ty arogantní zkurvysynu -- mám jít hned za tátou a øíct mu všechno, co jsi mi právì øekl?}
+{381}{}{Proè ne, e? Nebudu ti v tom bránit princeznièko.}
+{382}{}{Nemyslím, e to udìláš. Myslím, e chceš vidìt co jsem za mue.}
+{383}{}{Pøestaò u s tím vším døív ne se tady nìkomu nìco stane.}
+{384}{}{Ano, proè to nejdeš udìlat? Mám dùleitìjší vìci na práci.}
+{385}{}{Zapomeò na tyhle kecy. Odcházím.}
+
+# 21. WHY DON'T YOU THEN? I AIN'T STOPPING YOU, PRINCESS. (20)
+{390}{}{Ty... nestojíš mi za ten ÈAS.}
+{391}{}{A ty mi zase nestojíš za ten mùj ty zhıèkanı spratku.}
+{392}{}{Miláèku ty si nemùeš DOPØÁT mùj èas.}
+{393}{}{Pocity jsou vzájemné.}
+{394}{}{Ano, to je to na co jsem myslel. Odcházím.}
+
+# 22. I DON'T THINK YOU WILL. I THINK YOU WANT TO SEE WHAT KIND OF MAN I AM. (20)
+{400}{}{Oh, opravdu? Co jsi za mue? Chceš mi to UKÁZAT?}
+{401}{}{Ano. Pojïme do tvého pokoje, princeznièko a já ti ukáu kdo to je pravı mu.}
+{402}{}{Ne, byl jsem jenom zvìdavı. Chtìl jsem vidìt, jak velká šlapka doopravdy jsi. Pøíštì, bejby.}
+
+# 23. UNDERSTOOD. SURE GLAD WE GOT THAT FAMILY ID THING CLEARED UP. (19)
+{410}{}{Ano, je dobøe, e rozumíš tomu jak to tady chodí. (Prohlídla si tì odshora dolù.)}
+{411}{}{Uh...}
+{413}{}{(Stùj kde jsi, dokud si tì neprohlídne.)}
+
+# 24. GIRL, YOU'RE TROUBLE/LET'S STOP THIS RIGHT NOW/CALM DOWN. I WAS JUST JOKING WITH YOU (19, 20)
+{420}{}{Dobrá tedy... (Prohlídla si tì odshora dolù.)}
+{422}{}{Dobrá, take...}
+
+# 25. YOUR FATHER KNOW YOU DO THAT SHIT? (18)
+{430}{}{(Pokrèí rameny.) On se o to nestará. (Zamraèí se.) Chceš si se mnou zalít nebo co?}
+{432}{}{Dobrá tedy. Pojïme do tvého pokoje.}
+{433}{}{Podívej, nemùeme bıt pouze pøátelé?}
+{434}{}{Ne, radìji odejdu.}
+{435}{}{Ne. Kdybych chtìl nìjakou kurvu, našel bych si nìjakého prašivého psa. Zatím.}
+
+# 26. CAN'T WE JUST BE FRIENDS? (25)
+{440}{}{CO jsem to právì slyšela?}
+{441}{}{Nic. Pojïme do tvého pokoje.}
+{442}{}{Øekl jsem, "nemùeme bıt pouze pøátelé?"}
+{443}{}{Nic. Podívej, radìji odtud odejdu.}
+
+# 27. SECOND TIME DIALOGUE (MALE) (WTG)
+{450}{}{Hej, to jsi ty... pøed tím, ne jsi odešel nakopat prdel Enklávì, tak jsme spolu strávili hezké chvíle.
+ Nechceš si znovu proít tyhle chvíle?}
+{451}{}{Zase ty. Chceš si nìjak zkrátit volnı èas?}
+{452}{}{Ne teï ne.}
+{453}{}{Jasnì. Pojïme do tvého pokoje.}
+
+# 28. MALE PORN STAR DIALOGUE/MALE PRIZEFIGHTER (WTG)
+{460}{}{Zaslechla jsem co jsi provedl v Enklávì, }
+{1460}{}{. }
+{1461}{}{. Vidìl jsem tvùj poslední film. }
+{462}{}{Take, take: }
+{1462}{}{. Slyšela jsem o tvıch vynikajících vıkonech v ringu. }
+{463}{}{VELMI pùsobivé. Myslím, e ty jsi ta pravá osoba, která mi pomùe s... problémem co mám. }
+{464}{}{Mám problém}
+{465}{}{Jedinì ty mì mùeš zachránit}
+{466}{}{Vypadni}
+{467}{}{Co je to za problém?}
+{468}{}{Ne. Myslím, e ne. Radìji pùjdu.}
+{469}{}{Na tohle teï nemám èas. Odcházím.}
+
+# 29. WHAT PROBLEM IS THAT? (28)
+{480}{}{Podívej, v pokoji mám spoustu toho nejkvalitnìjšího Jetu a pøece si ho nemùu sama všechen vzít.}
+{481}{}{Oh?}
+{482}{}{A to je problém, protoe...?}
+{483}{}{Uh... Nemyslím, e jsem ta pravá osob...}
+
+# 30. [FEMALE INTRO] (WTG)
+{490}{}{Nikdy jsem tì tady nevidìla. Ty jsi nìjaká nová tátova kurva?}
+{491}{}{Huh?}
+{493}{}{Ne. Ty?}
+{494}{}{Ne, pouze procházím.}
+{495}{}{Ty musíš bıt Bishopova dcera. Pracuji pro tvého otce sleèno Bishopová.}
+{496}{}{Ve skuteènosti PRACUJI pro tvého otce. Jsem jeden z jeho muù. }
+{497}{}{Ve skuteènosti PRACUJI pro nìho jako vymahaè.}
+{499}{}{Nejsem ádná kurva, ale právì jsem s jednou domluvila.}
+
+# 31. HORSE (30)
+{510}{}{Vidím, e se tátovy pøijímací podmínky nemìní. Chovej se tady slušnì zlato, nebo se ti mùe nìco stát.}
+{511}{}{Oukej! Díky!}
+
+# 32. NO, JUST PASSING THROUGH (30)
+{520}{}{Jako hovno ve støevì, huh? Nezùstávej tady dlouho dìvko, nìkdo by tady mohl dojít k úrazu.}
+{521}{}{Cokoli.}
+{522}{}{Dìvko...}
+
+# 33. NO, YOU? (30)
+{531}{}{Take, jestli dobøe rozumím, potøebuješ nìkoho, aby tì zavedl k tobì a já bych mìl bıt ta osoba. Je to tak, PRINCEZNIÈKO ?}
+{532}{}{Rozumìla jste, sleèno Bishopová.}
+{534}{}{Radìji odejdu.}
+{535}{}{Odcházím.}
+
+# 34. ACTUALLY, I WORK FOR HIM AS ONE OF HIS ENFORCERS (30)
+{540}{}{Nazval jsem tì kurvou, e ano? Pro tebe není velkej rozdíl mezi bejt 'hotová' a jít si lehnout, co?}
+{541}{}{Vymahaè, kurva... jakı je v tom rozdíl?}
+{542}{}{To je velkı rozdíl. Chceš, abych to na tobì vyzkoušel ty rozmazlená dìvko?}
+{543}{}{Skoro ádnı rozdíl sleèno Bishopová.}
+{544}{}{Promiòte sleèno Bishopová, teï nemám èas na rozhovor.}
+
+# 35. THERE'S A BIG DIFFERENCE . . . /YEAH, I UNDERSTAND (33, 34)
+{550}{}{Ještì jeden krok a døív ne udìláš další, budeš mrtvá.}
+{551}{}{Chceš si na to vsadit? Myslím, e prohraješ.}
+{552}{}{Uvidíme. Odcházím.}
+
+# 36. WANNA BET ON IT? I THINK YOU'LL LOSE (35)
+{560}{}{Ty... dotkl ses mì, a otec o tom všechno uslyší.}
+{561}{}{Nebude se o to starat.}
+{563}{}{No tak se uklidni. Jenom sem ertoval.}
+{564}{}{Jasnì, uvidíme.}
+
+# 37. HE WON'T CARE (35, 36)
+{570}{}{On... bude. Uvidíš.}
+{571}{}{Vypadni odsaï ty malá dìvko. Hned.}
+{573}{}{No tak se uklidni. Jenom sem ertoval.}
+
+# 38. YEAH, YEAH/GET OUT OF HERE, YOU LIL BITCH (36, 37)
+{580}{}{(Ušklíbla se na tebe a pak se otoèila a uraenì odešla.)}
+{581}{}{(Odejít.)}
+
+# 39. YOU SAY ONE WORD TO OL' DADDY . . . (36, 37, 44)
+{590}{}{(Stále na tebe civí, ale vypadá nejistì. Kousla si do rtu, otoèila se a rychle odešla.)}
+{591}{}{Ano, dobrá myšlenka, e.}
+
+# 40. CALM DOWN. I WAS JUST JOKING (33, 36, 37)
+{600}{}{(Plivla ti na nohu.) Ano, budi byla jsem. (Naposledy se na tebe ušklíbla, otoèila se a odešla.)}
+
+# 41. NOT MUCH DIFFERENCE, MISS BISHOP (34)
+{610}{}{'adnı rozdíl, sleèno Bishopová.' A myslel jsem, e moje máma byla pouze tátova otrokynì. Zmiz mi z oèí.}
+
+# 42. UNDERSTOOD (33)
+{620}{}{'Rozumíte, sleèno Bishopová.' And A myslel jsem, e moje máma byla pouze tátova otrokynì. Zmiz mi z oèí.}
+
+# 43. DON'T HAVE TIME . . . (30, 34)
+{630}{}{Je mi to líto, sleèno Bishopová, teï nemám èas s vámi mluvit. A myslel jsem, e moje máma byla pouze tátova otrokynì.
+ Jdi mi z oèí.}
+
+# 44. END (33, 34, 35, 36, 37)
+{640}{}{Ano, zaèal jsi chodit. Táta se všechno o tobì dozví. Jen poèkej. }
+{641}{}{(Otoèit se a odejít.)}
+{642}{}{Øekneš jediné slovo starému dobrému otci a mùeš se vidìt 'létat' na nejvyšší budovì v New Reno.
+ Potom co najdou dopis, kterı u tebe nechám tak si budou všichni myslet, e to byla sebevrada. Byla by to NESMÍRNÁ tragedie. V ulicích by se rozléhal pláè.}
+{643}{}{(Odejít.)}
+
+# 45. CALL BLUFF (35)
+{650}{}{Ne, myslím, e je to sázka kterou prohraješ, dìvko. Jen to zkus.}
+{651}{}{(Zaútoè na ni.)}
+{652}{}{(Nechat ji bıt.)}
+
+# 46. FLOAT MESSAGES (WTG)
+{660}{}{Stùj dál ode mì. Nemám co bych ti øekl.}
+{661}{}{Ty si myslíš, e ses mì jen tak lehko zbavil? Jen poèkej, mùj otec se o tobì všechno doví.}
+
+# 47. WHAT PROBLEM IS THAT? (29)
+{670}{}{Ne jenom tohle, ale kdy si vezmu Jet tak dìlám všechny BLÁZNIVÉ vìci a sotva se mùu kontrolovat. Potøebuji nìkoho, aby mì ohlídal. Abych neprovedla 
+ nìjakou... hloupost.}
+{671}{}{Jsem tvùj èlovìk. Tak jdeme do toho.}
+{672}{}{Bıt hrdinou nìkdy znamená chránit krásnou enu pøed ní samotnou, a to stojí co to stojí. Tak zaèni.}
+{673}{}{Myslím, e sis mì spletla s nìkım, kdo si skuteènì rozmyslí se tì dotknout.}
+
+# 100. LOOK (SEX) (WTG)
+{680}{}{Vidíš Angelu Bishopovou, která právì usnula. Jemnì pochrupuje, její vlasy jsou rozcuchané a na její tváøi je vidìt, e se šastnì usmívá.}
+
+# 101. LOOK (NO SEX) (WTG)
+{690}{}{Vidíš mladou enu obleèenou v koenıch šatech. Ruce má na tváøi a pláèe.}
+
+# 102. HAD SEX WITH ANGELA (WTG)
+{700}{}{Zzxxssnnn...oh, }
+{1700}{}{, oooooh... zzxnhzzz}
+{701}{}{Zzzzz....}
+{1701}{}{, opìt? Ooooh... }
+
+# 103. DID NOT HAVE SEX (ANGELA SCREAMS RAPE) (WTG)
+{800}{}{Znásilnìní! Pomoc!}
+{801}{}{Pomoc, on mì napadl! Pomoc!}
+{802}{}{Znásilnìní! Znásilnìní!}
+
+# 104. JET OFFER (WTG)
+{810}{}{(Angela tì zavedla nahoru do tøetího patra. Tam otevøela malé dveøe ve stìnì, sebrala podivnou
+ plastikovou láhev, a nabídla ti ji.) Chceš brouèku? Je zde dostatek pro nás oba.}
+{811}{}{(Angela tì zavedla nahoru do tøetího patra. Pak otevøela trezor ve stìnì, sebrala nìjakı Jet, a nabídla ti ho.) Chceš brouèku? Je zde dostatek pro nás oba.}
+{812}{}{Uh-huh}
+{813}{}{Unh-unh}
+
+# 105. SEX OFFER (104)
+{820}{}{Mmmmmmmm... (Angela potáhla dlouhı lok z láhve.) Mmmmmmm... proè nejdeš trošku blí
+ ? (Lehla si na postel a opìt si dala další lok.) Jestli pospícháš, tak si mùeš nasát nìjakı
+ Jet pøímo z mıch úst...}
+{821}{}{Dobøe kdy to chceš takhle... jistì.}
+{822}{}{Ne dìkuji. Z takového svinstva bych se mohl udávit... nezùstanu tady u ani chvilku.}
+
+# 106. RAPE! (104, 105)
+{830}{}{(Angela se na tebe vztekle podívala. Vyskoèila z postele a zaèala køièet!)
+ Znásilnìní! Pomoc! Znásilnìní!}
+{831}{}{Psssss! Jestli se neutišíš, tak mi George nìco udìlá! Psssss!}
+{832}{}{Nekøiè! Nekøiè!}
+{833}{}{Tak TEDY odejdu.}

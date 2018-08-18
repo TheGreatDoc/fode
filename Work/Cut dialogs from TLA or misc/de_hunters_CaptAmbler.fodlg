@@ -1,0 +1,33 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Kpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Przyjdz kiedys indziej, nie mam czasu teraz.@@ Jestem zajety.@@Przykro mi ale nie mam czasu.}
+
+[engl]
+{100}{}{Cpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Przyjdz kiedys indziej, nie mam czasu teraz.}
+
+[russ]
+{100}{}{Cpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Przyjdz kiedys indziej, nie mam czasu teraz.}
+

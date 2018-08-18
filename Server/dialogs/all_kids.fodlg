@@ -1,0 +1,38 @@
+[comment]
+Ваши комментарии / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0#
+2 1010@
+2 2000 NOT_ANSWER_CLOSE_DIALOG 0&
+
+[russ]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Преддиалоговые установки}
+{1010}{}{-}
+{2000}{}{Aaaaaa!Weeeeeee!@@Wohooooo!@@Kurva, kurva, kurava!!!@@Give me few caps??}
+
+[engl]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Aaaaaa!Weeeeeee!@@Wohooooo!@@Kurva, kurva, kurava!!!@@Give me few caps??}
+
+[pols]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{Widzisz mężczyznę.}
+{210}{}{Widzisz mężczyznę.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{Aaaaaa!Weeeeeee!@@Wohooooo!@@Kurva, kurva, kurava!!!@@Dasz kapsle??}

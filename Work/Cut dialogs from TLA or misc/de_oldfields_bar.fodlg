@@ -1,0 +1,26 @@
+[comment]
+
+
+[data]
+lang=pols engl
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Klient Baru}
+{210}{}{Widzisz klieta baru. Wyglada jak by siedzial tu juz od dluzszego czasu.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Wypierdalaj z tad@@Znowu piles?@@Wypij ze mna@@Uwazaj, barman lubi szczac do piwa.@@Smakuje jak siury.@@Myslales moze ... Ze ty i ja... razem... gdzies...?@@Teraz nie mam czasu.@@Ty ciagle tu?@@Czemu zycie jest do bani?@@Przestan klikac mnie w glowe!@@I co z tego? Edi tez z nim spal.@@Wydaje mi sie ze wszyscy na nas patrza.@@Nie stoj kolo mnie, pomysla ze jestesmy razem.@@Zajebista imprezka co nie!@@Harry kto?@@Jaki suplement?@@Syfilis? Myslalem, ze juz cos takiego mam.@@Chcesz dolaczyc?@@Piwo dla wszystkich!@@Wiem ze masz zultaczke.@@Znam cie?@@Chyba jestem chory.@@Nie wygladasz za dobrze.@@Odejsz odemnie.@@Myslalem, ze ja jestem brzydki.@@Lepiej zobacz sie w lustrze.@@Mowil Ci ktos, jak jestes brzydki?@@Mowil Ci ktos, ze jestes piekny?@@On mnie nie kocha.@@Widzial ktos moje klucze?@@Ktore to jest piwo?@@Pssss pssyy... gdzies tam stoji dev.@@Pssss pssyy... nie obracaj sie.@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Loda? nie ma chuja!@@Ja Cie zaraz zaczepie... Spierdalaj@@Skad moglem wiedziec ze ma 14 lat@@Nie wiedzialem ze miala 15 lat@@Kto jest glodny?}
+
+[engl]
+{100}{}{Bar client}
+{210}{}{You see client from the bar. It seems that he's been here a little a long time.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Get the fuck outta here@@Have been drinking?@@Drink some with me@@Watch out for the barman, he pisses to beer@@Tastes like piss@@Do you think that you... and me... together... somewhere...?@@Now I do not have time@@You're still here@@Why life is sucks?@@Stop clicking my head!@@So what? Edi also slept with him@@I think that all watching us@@Don't standing here, they thought that we are together@@Amazing party! is not?@@Harry who?@@What dietary supplement?@@Syphilis? I think I had something like this already@@Want to join?@@Beer for all!@@I know that you have rabies@@I know you?@@I think I'm sick@@You don't look too good@@Get away from me@@I thought that I look bad@@You better look in the mirror@@Anyone tell you that you're ugly?@@Anyone tell you that you're pretty?@@He doesn't love me@@Has anyone seen my keys?@@Which is a beer?@@Pssss pssyy... somewhere there standing dev@@Pssss pssyy... do not turn@@Did you know that the mutated fruit grow on trees?@@Blowjob? no way!@@I'll puke... back off@@I did not know that he has 14 years@@I did not know that she has 15 years@@Who's Hungry?}
+

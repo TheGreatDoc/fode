@@ -1,0 +1,13 @@
+{100}{}{Le tableau de commande du système de refroidissement.}
+{101}{}{Tu vois le tableau de commande d'un système de refroidissement.}
+{102}{}{Ce tableau est composé de nombreux boutons, de touches et d'un volant.}
+
+{110}{}{Tu as du mal à tourner le volant de fermeture de la soupape de refroidissement.}
+{111}{}{Après un gros effort, tu parviens à tourner le volant de fermeture de la soupape de refroidissement une fois.}
+{112}{}{Après un gros effort, tu parviens à tourner le volant de fermeture de la soupape de refroidissement deux fois.}
+{113}{}{On dirait que tu as fermé la soupape.}
+
+{120}{}{On dirait qu'il manque une pièce.}
+{121}{}{Aucun effet.}
+{122}{}{Tu as réparé le réacteur.}
+{123}{}{Tu as du mal à réparer le réacteur.}

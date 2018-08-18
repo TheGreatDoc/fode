@@ -1,0 +1,170 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "guard_nec_events.fos"
+#include "guard_red_events.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import void server_message(string@ message) from "server_scripts";
+import bool GetFreeHex(Map& map, uint radius, uint16& hx, uint16& hy) from "caravan";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+int Counter=0;
+
+void RemoveSpawnedCritter(Critter& cr, Critter@ killer)
+{
+	DeleteNpc(cr);
+}
+
+void ChurchDefenseEventUpdate()
+{
+	Map @map=GetMapByPid(686,0);
+	if(@map!=null)
+	{
+		Critter @[]crs;
+		map.GetCrittersHex(0,0,7,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+		map.GetCrittersHex(0,0,7,FIND_ONLY_NPC|FIND_LIFE_AND_KO,crs);
+		int ULSs=0, NECs=0;
+		for(uint i=0; i<crs.length(); i++)
+		{
+			if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==1) ULSs++;
+			if(crs[i].ParamBase[PLAYER_MAIN_FACTION]==2) NECs++;
+		}
+		if(NECs>ULSs && ULSs==0)
+		{
+		
+		}
+	}
+}
+
+void ChurchDefenseEventStart()
+{
+	__EventChurchDefense=true;
+	server_message("REF forces has found hidden supplies in ATOM Church ruins.\nNEC is preparing to attack them.");
+	int []SpawnPositions={ // x y dir
+	73,78,2,
+	77,75,1,
+	71,72,3,
+	71,74,3,
+	67,64,3,
+	69,62,2,
+	73,66,0,
+	81,62,2,
+	92,61,1,
+	89,67,5,
+	71,55,3,
+	75,53,5,
+	78,59,0,
+	98,68,3,
+	100,61,2,
+	90,55,5
+	};
+	Map @map=GetMapByPid(686,0);
+	if(@map==null) return;
+	for(uint i=0; i<SpawnPositions.length(); i+=3)
+	{
+		Critter@ spawncr=map.AddNpc(5101,SpawnPositions[i],SpawnPositions[i+1],SpawnPositions[i+2],null,null,null);
+		spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+		spawncr.ModeBase[MODE_NO_DROP]=1;
+		spawncr.ModeBase[MODE_NO_LOOT]=1;
+		spawncr.ShowCritterDist1=30;
+		int roll=Random(1,4);
+		if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+		else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+		else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+		else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+		spawncr.ParamBase[PLAYER_MAIN_FACTION]=1;
+		spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+		spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+	}
+	Counter=0;
+	CreateTimeEvent(__FullSecond+REAL_SECOND(1),"e_StartNECAttack",false);
+}
+
+int []NECSpawnPositions={ // x y
+53,112,
+41,89,
+15,55,
+52,23,
+85,13,
+129,82,
+109,104,
+81,118
+};
+
+uint e_StartNECAttack(uint[]@ values)
+{
+	Map @map=GetMapByPid(686,0);
+	if(@map==null) return 0;
+	server_message("NEC has started attacking REF forces in ATOM Church ruins.");
+	int npcs_added=0;
+	if(NECSpawnPositions.length()>0) while(npcs_added<8)
+	{
+		int RandomPosition=Random(0,NECSpawnPositions.length()-1)/2;
+		uint16 hx=NECSpawnPositions[RandomPosition*2],hy=NECSpawnPositions[RandomPosition*2+1];
+		hx+=Random(0,4)-2;
+		hy+=Random(0,4)-2;
+		if(!map.IsHexPassed(hx,hy)) continue;
+		npcs_added++;
+		Critter@ spawncr=map.AddNpc(5001,hx,hy,Random(0,5),null,null,null);
+		spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+		spawncr.ModeBase[MODE_NO_DROP]=1;
+		spawncr.ModeBase[MODE_NO_LOOT]=1;
+		spawncr.ShowCritterDist1=30;
+		int roll=Random(1,4);
+		if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+		else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+		else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+		else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+		spawncr.ParamBase[PLAYER_MAIN_FACTION]=2;
+		spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+		spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+		uint16 target_hx=74,target_hy=64;
+		GetFreeHex(map,4,target_hx,target_hy);
+		AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,target_hx,target_hy,0,false,0);
+	}
+	CreateTimeEvent(__FullSecond+REAL_SECOND(10),"e_NECNextWave",false);
+	return 0;
+}
+
+uint e_NECNextWave(uint[]@ values)
+{
+	++Counter;
+	if(Counter==30)
+	{
+		server_message("REF has defended ATOM Church ruins and won the battle.");
+		return 0;
+	}
+	
+	if(__EventChurchDefense==false) return 0;
+	Map @map=GetMapByPid(686,0);
+	if(@map==null) return 0;
+	int RandomPosition=Random(0,NECSpawnPositions.length()-1)/2;
+	uint16 hx=NECSpawnPositions[RandomPosition*2],hy=NECSpawnPositions[RandomPosition*2+1];
+	hx+=Random(0,4)-2;
+	hy+=Random(0,4)-2;
+	if(!map.IsHexPassed(hx,hy))
+	{
+		CreateTimeEvent(__FullSecond+REAL_SECOND(10),"e_NECNextWave",false);
+		return 0;
+	}
+	Critter@ spawncr=map.AddNpc(NPC_PID_guardBLUE,hx,hy,Random(0,5),null,null,null);
+	spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	spawncr.ModeBase[MODE_NO_DROP]=1;
+	spawncr.ModeBase[MODE_NO_LOOT]=1;
+	spawncr.ShowCritterDist1=30;
+	int roll=Random(1,4);
+	if(roll==1)spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+	else if(roll==2)spawncr.AddItem(PID_PKS_DE,1);
+	else if(roll==3)spawncr.AddItem(PID_SNIPER_RIFLE_DE,1);
+	else spawncr.AddItem(PID_PLASMA_RIFLE_DE,1);
+	spawncr.ParamBase[PLAYER_MAIN_FACTION]=2;
+	spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+	spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+	uint16 target_hx=74,target_hy=64;
+	GetFreeHex(map,4,target_hx,target_hy);
+	AddWalkPlane(spawncr,AI_PLANE_WALK_PRIORITY,target_hx,target_hy,0,false,0);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(10),"e_NECNextWave",false);
+	return 0;
+}

@@ -1,0 +1,21 @@
+{100}{}{Tu vois quelqu'un avec une arme puissante.}
+{101}{}{Tu vois quelqu'un du corps commercial et protecteur des Collines Brisées.}
+{102}{}{Tu vois quelqu'un avec une arme puissante et couvert d'un nuage de poussière.}
+{103}{}{J'te dis, encore un autre groupe de bandits, et je porterai de la dynamite pendant le prochain voyage !}
+{104}{}{J'aurais bien besoin d'aide pour les caravanes.}
+{105}{}{Le travail des Patrouilles d'Unité se fait très, très vieux.}
+{106}{}{Donc, après j'ai vu venir c'te tribale et... peu importe.}
+{107}{}{Encore un coup des "Arc-en-Ciel" et je tue quelqu'un !}
+{108}{}{Si les bandits empirent, nous sommes morts l'année prochaine !}
+{109}{}{De quel village paumé tu viens ?}
+{110}{}{Tu payes un pot à un travailleur ?}
+{111}{}{Je suis trop nase pour parler.}
+{112}{}{Si t'as besoin d'un truc, va parler à Bill, l'armateur.}
+{113}{}{On pourrait penser qu'après tant de temps passé à essayer de civiliser ce trou on se rapprocherait enfin de notre but.}
+{114}{}{J'en ai marre de ces chamailleries entre humains et mutants. Ne ne devrions pas montrer l'exemple ?}
+{115}{}{Qu'est-ce tu veux ? Tu vois pas que j'me repose ?!}
+{116}{}{Quand est-ce qu'elle part la prochaine caravane ?}
+{117}{}{Patrouiller, Patrouiller, Patrouiller, c'est tout ce que je fais ici...}
+{118}{}{J'ai besoin d'une sieste.}
+{119}{}{Je mérite une augmentation. C'est un travail dangereux.}
+

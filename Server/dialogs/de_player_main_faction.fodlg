@@ -1,0 +1,164 @@
+[comment]
+Npc do zmiany frakcji i resetowania reputacji.
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 @
+3 3000 None 0 #
+5 3010 #
+0 3020 @
+4 4000 None 0 #
+5 4010 @
+5 5000 None 0 #
+6 5010 #
+6 5020 #
+0 5030 @
+6 6000 None 0 #
+7 6010 #
+0 6020 #
+9 6030 @
+7 7000 None 0 #
+12 7010 D _item p PID_BOTTLE_CAPS } 3000 D _param p REPUTATION_RED } 0 R _script dialog@r_SetRED 0  #
+12 7020 D _param p REPUTATION_BLUE } 0 D _item p PID_BOTTLE_CAPS } 3000 R _script dialog@r_SetBLUE 0  #
+8 7030 @
+8 8000 None 0 #
+0 8010 #
+9 8020 @
+9 9000 None 0 #
+10 9010 D _item p PID_BOTTLE_CAPS } 4000 R _script dialog@r_ResetReputationBLUE 0  #
+10 9020 D _item p PID_BOTTLE_CAPS } 4000 R _script dialog@r_ResetReputationRED 0  #
+11 9030 @
+10 10000 None 0 #
+7 10010 #
+0 10020 @
+11 11000 None 0 #
+0 11010 @
+12 12000 None 0 #
+0 12010 &
+
+[pols]
+{100}{}{Alan}
+{200}{}{Znany mezczyzna w srednim wieku.}
+{210}{}{To jest Alan, wplywowa osoba w tym miescie. Jest dobrze ubrany i wyglada bardzo powaznie.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Witaj przybyszu, co cie domnie sprowadza? Potrzeba ci czego?}
+{2010}{}{Czym sie zajmujesz?}
+{2020}{}{To ty jestes Alan, potrzebuje przyslugi.}
+{3000}{}{Jestem Alan zalatwiam to i owo, mam duze znajomosci. Czegos potzrebujesz? Czy zajmujesz moj czas?}
+{3010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{3020}{}{Tylko prezchodze.}
+{4000}{}{Tak to ja. Czego ci trzeba?@@Widac jestem tutaj rozpoznawalny. Co potzreba?}
+{4010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{5000}{}{Ty chcialbys zmienic frakcje. Wiesz, ze to niemalo cie bedzie kosztowac?}
+{5010}{}{Tak, wiem co mnie czeka.}
+{5020}{}{Juz teraz mnie straszysz, wiem o co chodzi.}
+{5030}{}{Dzieki rezygnuje.}
+{6000}{}{Chcialbys zmienic frakcje, czy tylko poprawic reputacje? Oczywiscie jezeli twoja reputacja jest zla, musisz ja poprawic.}
+{6010}{}{Chcialbym zmienic frakcje.}
+{6020}{}{Dzieki mam co innego do zalatwienia.}
+{6030}{}{Chcialbym poprawic reputacje.}
+{7000}{}{Dobrze, 3000 kapsli mnie zadowola. Ale do ktorej frakcji chcesz dolaczyc.}
+{7010}{}{Chcialbym dolaczyc do REF}
+{7020}{}{Chcialbym dolaczyc do NEC}
+{7030}{}{Niestety nie moge zmienic frakcji.}
+{8000}{}{Moze potrzebujesz reputacji?}
+{8010}{}{Nie rezygnuje}
+{8020}{}{Tak, jezeli jest to mozliwe.}
+{9000}{}{Moge ci wyzerowac reputacje. Ale musisz za to zaplacic 4000 kapsli. Ktorej frakcji reputacje chcialbys wyzerowac?}
+{9010}{}{Chcialbym zmienic reputacje NEC.}
+{9020}{}{Chcialbym zmienic reputacje REF.}
+{9030}{}{Upss niemam tyle kapsli.}
+{10000}{}{Poprawilem ci reputacje. Co chcialbys teraz zrobic?}
+{10010}{}{Zmienic frakcje}
+{10020}{}{Dzieki to juz wszystko.}
+{11000}{}{Nastepnym razem nie zawracaj mi glowy.}
+{11010}{}{EXIT}
+{12000}{}{Wszystko zalatwione. Zapraszam ponownie.}
+{12010}{}{EXIT}
+
+[engl]
+{100}{}{Alan}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Witaj przybyszu, co cie domnie sprowadza? Potrzeba ci czego?}
+{2010}{}{Czym sie zajmujesz?}
+{2020}{}{To ty jestes Alan, potrzebuje przyslugi.}
+{3000}{}{Jestem Alan zalatwiam to i owo, mam duze znajomosci. Czegos potzrebujesz? Czy zajmujesz moj czas?}
+{3010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{3020}{}{Tylko prezchodze.}
+{4000}{}{Tak to ja. Czego ci trzeba?@@Widac jestem tutaj rozpoznawalny. Co potzreba?}
+{4010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{5000}{}{Ty chcialbys zmienic frakcje. Wiesz, ze to niemalo cie bedzie kosztowac?}
+{5010}{}{Tak, wiem co mnie czeka.}
+{5020}{}{Juz teraz mnie straszysz, wiem o co chodzi.}
+{5030}{}{Dzieki rezygnuje.}
+{6000}{}{Chcialbys zmienic frakcje, czy tylko poprawic reputacje? Oczywiscie jezeli twoja reputacja jest zla, musisz ja poprawic.}
+{6010}{}{Chcialbym zmienic frakcje.}
+{6020}{}{Dzieki mam co innego do zalatwienia.}
+{6030}{}{Chcialbym poprawic reputacje.}
+{7000}{}{Dobrze, 3000 kapsli mnie zadowola. Ale do ktorej frakcji chcesz dolaczyc.}
+{7010}{}{Chcialbym dolaczyc do REF}
+{7020}{}{Chcialbym dolaczyc do NEC}
+{7030}{}{Niestety nie moge zmienic frakcji.}
+{8000}{}{Moze potrzebujesz reputacji?}
+{8010}{}{Nie rezygnuje}
+{8020}{}{Tak, jezeli jest to mozliwe.}
+{9000}{}{Moge ci wyzerowac reputacje. Ale musisz za to zaplacic 4000 kapsli. Ktorej frakcji reputacje chcialbys wyzerowac?}
+{9010}{}{Chcialbym zmienic reputacje NEC.}
+{9020}{}{Chcialbym zmienic reputacje REF.}
+{9030}{}{Upss niemam tyle kapsli.}
+{10000}{}{Poprawilem ci reputacje. Co chcialbys teraz zrobic?}
+{10010}{}{Zmienic frakcje}
+{10020}{}{Dzieki to juz wszystko.}
+{11000}{}{Nastepnym razem nie zawracaj mi glowy.}
+{11010}{}{EXIT}
+{12000}{}{Wszystko zalatwione. Zapraszam ponownie.}
+{12010}{}{EXIT}
+
+[russ]
+{100}{}{Alan}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Witaj przybyszu, co cie domnie sprowadza? Potrzeba ci czego?}
+{2010}{}{Czym sie zajmujesz?}
+{2020}{}{To ty jestes Alan, potrzebuje przyslugi.}
+{3000}{}{Jestem Alan zalatwiam to i owo, mam duze znajomosci. Czegos potzrebujesz? Czy zajmujesz moj czas?}
+{3010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{3020}{}{Tylko prezchodze.}
+{4000}{}{Tak to ja. Czego ci trzeba?@@Widac jestem tutaj rozpoznawalny. Co potzreba?}
+{4010}{}{Chcialbym zmienic frakcje, mogbys mi pomoc?}
+{5000}{}{Ty chcialbys zmienic frakcje. Wiesz, ze to niemalo cie bedzie kosztowac?}
+{5010}{}{Tak, wiem co mnie czeka.}
+{5020}{}{Juz teraz mnie straszysz, wiem o co chodzi.}
+{5030}{}{Dzieki rezygnuje.}
+{6000}{}{Chcialbys zmienic frakcje, czy tylko poprawic reputacje? Oczywiscie jezeli twoja reputacja jest zla, musisz ja poprawic.}
+{6010}{}{Chcialbym zmienic frakcje.}
+{6020}{}{Dzieki mam co innego do zalatwienia.}
+{6030}{}{Chcialbym poprawic reputacje.}
+{7000}{}{Dobrze, 3000 kapsli mnie zadowola. Ale do ktorej frakcji chcesz dolaczyc.}
+{7010}{}{Chcialbym dolaczyc do REF}
+{7020}{}{Chcialbym dolaczyc do NEC}
+{7030}{}{Niestety nie moge zmienic frakcji.}
+{8000}{}{Moze potrzebujesz reputacji?}
+{8010}{}{Nie rezygnuje}
+{8020}{}{Tak, jezeli jest to mozliwe.}
+{9000}{}{Moge ci wyzerowac reputacje. Ale musisz za to zaplacic 4000 kapsli. Ktorej frakcji reputacje chcialbys wyzerowac?}
+{9010}{}{Chcialbym zmienic reputacje NEC.}
+{9020}{}{Chcialbym zmienic reputacje REF.}
+{9030}{}{Upss niemam tyle kapsli.}
+{10000}{}{Poprawilem ci reputacje. Co chcialbys teraz zrobic?}
+{10010}{}{Zmienic frakcje}
+{10020}{}{Dzieki to juz wszystko.}
+{11000}{}{Nastepnym razem nie zawracaj mi glowy.}
+{11010}{}{EXIT}
+{12000}{}{Wszystko zalatwione. Zapraszam ponownie.}
+{12010}{}{EXIT}
+

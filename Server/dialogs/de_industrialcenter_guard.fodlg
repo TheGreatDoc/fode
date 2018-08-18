@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Straznik Fabryki}
+{210}{}{Widzisz straznika Fabryki.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Nie ma na co patrzec@@Spadaj z tad@@Wypierdalaj z tad@@To tylko moja robota@@...Jebani turysci@@Chcesz tu strzelac?@@Moze razem postrzelamy?@@Prosze bardzo...strzelaj ...zapewniam odpowiem tym samym@@Przestan klikac@@Twoja stara@@Twoj stary tez@@Hej, pamietam Cie@@Ostatni raz wpakowalem Ci dwa strzaly@@Chcesz dotknac mojej broni?@@Wiem ze cos knujesz@@Cos sie dzisiaj swieci. Czuje to@@Susan?@@Kto?@@Peter Parker?@@O moj Boze, znowu ty@@Czego chcesz?@@Czego chcesz czlowieku?@@Pfff ...haha ...dobry dowcip, teraz zamiataj z tad@@Widze cie@@Nienawidze tej Roboty@@Witaj@@Dzien dobry@@Piekny dzien by kogos postrzelic@@Dobry dzien by zabic jakis zlodzieji@@Masz siostre?@@Wydaje cala dniowke na Nuke Cola@@Chyba bedzie padac@@"I've been watching you A la la la la"...@@Znam kolesia jak ty... kawal gnoja@@Znamy sie?@@Nie nawidze tego koloru@@Niebieski, niebieski, niebieski... wszedzie ten niebieski@@O moj Boze jestes kobieta?@@Szalenstwo? To jest SPARTA!@@Wiem ze masz wscieklizne@@Ani kroku wiecej@@Moglbys sie czasem umyc@@Uzyj stimpacka jak sie slabo czujesz@@To moj ostatni dzien w tej robocie, wiec uwazaj co robisz@@Slyszales to?@@Wygladam jak informacja?@@Nie, nie umowie sie z toba@@Nie, nie umowie sie z toba po pracy@@Zadziwiajace..@@Ostroznie@@Europa schodzi na psy@@Nie mow nikomu ale najebalem sie@@Piles cos?@@Chyba jestem chory@@Jesli nie tu to gdzie?@@Lepiej nie idz do zaswiatow@@Widziales tego nowego kolesia?@@Widziales ta nowa dziwewczyne?@@Dam Ci dobra rade, nie spij lepiej z ta ruda dziwka Alicja@@Lepiej nic nie mow@@Matka Cie nie uczyla, ze starsi maja pierszenstwo?@@Dobry Boze, wszedzie tylko nie tutaj..@@Nie stoj tu zadlugo, jeszcze pomysla ze jestesmy razem@@Ty ciagle tutaj@@Nie wygladasz za dobrze, lepiej odejdz odemnie@@O moj Boze! A nie to tylko twoja twarz@@WTF?@@Mowil Ci ktos jak jestes brzydki?@@Glupi dev mowil zebym tu stal caly dzien@@Nie obracaj sie albo Cie zastrzele@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Co do kurwy?}
+
+[engl]
+{100}{}{Guard}
+{210}{}{You see a guard. He looks at you with suspicion.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Drop it.@@Why did you come here?@@Get the fuck outta here.@@This job's a total bore...@@Fucking tourists.@@Don't make me shoot you.@@Come on, try and shoot me, I'll rip your spine.@@One stupid move and you're dead.@@Stop it!@@My mornin' shit looks better than you.@@And your mother too.@@Here again?@@One time seeing you was bad enough.@@You wanna touch my barrel?@@I'm watching you, scum.@@Did someone fart?@@You don't have any guts.@@Who?@@No, not you again.@@What do you want?@@Need anything?@@Hahahahaha what a joker you are!@@I see you. And I don't like you.@@I'm gonna fall asleep.@@I've got something that needs to be done.@@Hey there.@@Nice day to spill some blood.@@Been at the shooting range?@@You seen any lasses here?@@They pay me shit.@@I think it will rain again.@@Raiders show up sometimes, but we give'em hell.@@You look like some bastard I knew.@@Do I know you?@@Wait, you're a woman?@@The pay ain't worth it.@@Jands where I can see them!@@Don't come any closer.@@What is that stench?@@Got beer?@@Another dull day... man, what a bore.@@Did you hear that?@@Do I look like a tour guide?@@Fuck off.@@No, I'm not going anywhere.@@Go bother someone else.@@Shit...@@This place is falling apart.@@I've been drinking, why do you care?@@Got some booze?@@Bleh...@@Not here, come back later.@@What is this shit?@@Have you seen this new girl?@@People are people, fucktards are fucktards.@@Better not say anything.@@Momma didn't teach you any manners?@@Get lost, or God help me I'm gonna tear ya a new asshole.@@Stop pestering me you hear?@@You're still here.@@Scram!@@Someone bursted your face or what?@@Whatta fuck?@@Anyone tell you that you're so friggin' ugly?@@Dev told me stand here.@@One sudden move, and I'll shoot.@@Where's my damn ammo?@@What the fuck is this?}
+
+[russ]
+{100}{}{Guard}
+{210}{}{You see a guard. He looks at you with suspicion.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Drop it.@@Why did you come here?@@Get the fuck outta here.@@This job's a total bore...@@Fucking tourists.@@Don't make me shoot you.@@Come on, try and shoot me, I'll rip your spine.@@One stupid move and you're dead.@@Stop it!@@My mornin' shit looks better than you.@@And your mother too.@@Here again?@@One time seeing you was bad enough.@@You wanna touch my barrel?@@I'm watching you, scum.@@Did someone fart?@@You don't have any guts.@@Who?@@No, not you again.@@What do you want?@@Need anything?@@Hahahahaha what a joker you are!@@I see you. And I don't like you.@@I'm gonna fall asleep.@@I've got something that needs to be done.@@Hey there.@@Nice day to spill some blood.@@Been at the shooting range?@@You seen any lasses here?@@They pay me shit.@@I think it will rain again.@@Raiders show up sometimes, but we give'em hell.@@You look like some bastard I knew.@@Do I know you?@@Wait, you're a woman?@@The pay ain't worth it.@@Jands where I can see them!@@Don't come any closer.@@What is that stench?@@Got beer?@@Another dull day... man, what a bore.@@Did you hear that?@@Do I look like a tour guide?@@Fuck off.@@No, I'm not going anywhere.@@Go bother someone else.@@Shit...@@This place is falling apart.@@I've been drinking, why do you care?@@Got some booze?@@Bleh...@@Not here, come back later.@@What is this shit?@@Have you seen this new girl?@@People are people, fucktards are fucktards.@@Better not say anything.@@Momma didn't teach you any manners?@@Get lost, or God help me I'm gonna tear ya a new asshole.@@Stop pestering me you hear?@@You're still here.@@Scram!@@Someone bursted your face or what?@@Whatta fuck?@@Anyone tell you that you're so friggin' ugly?@@Dev told me stand here.@@One sudden move, and I'll shoot.@@Where's my damn ammo?@@What the fuck is this?}

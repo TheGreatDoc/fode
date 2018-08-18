@@ -1,0 +1,585 @@
+#include "factions.fos"
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_vars.fos"
+#include "_macros.fos"
+
+string @GetFactionPlayerName(string @str)
+{
+	int index=-1;
+	int spaces=0;
+	for(uint i=0; i<str.length(); i++)
+	{
+		if(str[i]==" ") spaces++;
+		if(spaces==2)
+		{
+			index=i+1;
+			break;
+		}
+	}
+	if(index==-1) return "Error";
+	return substring(str,index,-1);
+}
+
+int GetFactionPlayerId(string str)
+{
+	int index=0;
+	for(uint i=0; i<str.length(); i++)
+	{
+		if(str[i]==" ")
+		{
+			index=i-1;
+			break;
+		}
+	}
+	if(index==-1) return 0;
+	int id=0;
+	StrToInt(substring(str,0,index+1),id);
+	return id;
+}
+
+int GetFactionPlayerRank(string str)
+{
+	int index=-1;
+	int index2=-1;
+	int spaces=0;
+	for(uint i=0; i<str.length(); i++)
+	{
+		if(str[i]==" ") spaces++;
+		if(spaces==1 && index==-1)
+		{
+			index=i+1;
+		}
+		if(spaces==2 && index2==-1)
+		{
+			index2=i-1;
+		}
+	}
+	if(index==-1 || index2==-1) return 0;
+	int rank=0;
+	StrToInt(substring(str,index,index2-index+1),rank);
+	return rank;
+}
+
+bool FreeFaction(int faction_id)
+{
+	file FactionFile;
+    string str;
+	if(FactionFile.open("factions/"+FACTIONS[faction_id],"r")>=0)
+	{
+		while(!FactionFile.isEndOfFile())
+		{
+			FactionFile.readLine(str);
+			if(str.length()>0)
+				while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+					str.rawResize(str.length()-1);
+			if(GetFactionPlayerRank(str)==4) return false;
+		}
+		FactionFile.close();
+	}
+	return true;
+}
+
+void SetShowLocation(Critter& player)
+{
+	
+}
+
+void unsafe_Create(Critter& player, int, int, int, string@ factionName, int[]@)
+{
+	int faction_id = 0;
+
+	// If player is already in another faction
+	if(player.ParamBase[PLAYER_FACTION]!=0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000329);
+	// else if(faction_id<1 || uint(faction_id)>=FACTIONS.length()) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000330);
+	// else if(!FreeFaction(faction_id)) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000331);
+
+	// If player don't have enough caps
+	else if(player.CountItem(PID_BOTTLE_CAPS)<15000) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000332);
+	else
+	{
+		file FactionFile;
+		if(FactionFile.open("factions/" + factionName,"w")<0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+		else
+		{
+			addFaction(factionName);
+			Log("Faction length = " + FACTIONS.length());
+			faction_id = FACTIONS.length() - 1;
+			Log("Faction ID  = " + faction_id);
+			player.DeleteItem(PID_BOTTLE_CAPS,15000);
+			string str=player.Id+" 4 "+player.Name;
+			FactionFile.writeString(str);
+			FactionFile.close();
+			player.ParamBase[PLAYER_FACTION]=faction_id;
+			player.ParamBase[PLAYER_FACTION_RANK]=4;
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000333);
+			SetAnyData("FACTIONS["+faction_id+"]",faction_data);
+
+			// We update all the players that a new faction has been created
+			array<Critter@> players;
+			GetAllPlayers(players);
+			for(uint i = 0; i < players.length(); i++) {
+				players[i].RunClientScript("client_main@__InitializeFactions",0,0,0,null,null);
+			}
+		}
+	}
+}
+
+void unsafe_Join(Critter& player, int, int, int, string@, int[]@)
+{
+	if(player.ParamBase[PLAYER_FACTION]!=0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000329);
+	else if(player.ParamBase[PLAYER_FACTION_INVITATION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000334);
+	else if(player.ParamBase[PLAYER_FACTION_INVITATION]<1 || uint(player.ParamBase[PLAYER_FACTION_INVITATION])>=FACTIONS.length()) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000330);
+	else if(FreeFaction(player.ParamBase[PLAYER_FACTION_INVITATION])) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000335);
+	else
+	{
+		file FactionFile;
+		if(FactionFile.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION_INVITATION]],"a")<0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+		else
+		{
+			string str="\n"+player.Id+" 0 "+player.Name;
+			FactionFile.writeString(str);
+			FactionFile.close();
+			player.ParamBase[PLAYER_FACTION]=player.ParamBase[PLAYER_FACTION_INVITATION];
+			player.ParamBase[PLAYER_FACTION_RANK]=0;
+			player.ParamBase[PLAYER_FACTION_INVITATION]=0;
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000336);
+		}
+	}
+}
+
+void unsafe_Leave(Critter& player, int, int, int, string@ sitter_name, int[]@)
+{
+	loadFactions(); // Loading the factions, just to be sure.
+
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else
+	{
+
+		if(player.ParamBase[PLAYER_FACTION_RANK]==4 && (@sitter_name==null || sitter_name.length()==0))
+		{
+	
+			file FactionFileRead;
+			if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+			else
+			{
+		
+				string str;
+				int[]player_ids;
+				while(!FactionFileRead.isEndOfFile())
+				{
+					FactionFileRead.readLine(str);
+					if(str.length()>0)
+						while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+							{str.rawResize(str.length()-1); if(str.length()==0) break;}
+					if(str.length()==0) continue;
+					player_ids.insertLast(GetFactionPlayerId(str));
+				}
+				FactionFileRead.close();
+		
+				file FactionFileWrite;
+				if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+				{
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				}
+				else
+				{
+			
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						Critter @cr=GetCritter(player_ids[i]);
+						if(@cr!=null)
+						{
+							cr.ParamBase[PLAYER_FACTION]=0;
+							cr.ParamBase[PLAYER_FACTION_RANK]=0;
+						}
+						else if(player_ids[i]>0)
+						{
+							GameVar @FactionLeaveRequest=GetLocalVar(LVAR_faction_leave_request,player_ids[i]);
+							FactionLeaveRequest=1;
+						}
+					}
+					FactionFileWrite.writeString("0 0 none");
+					player.ParamBase[PLAYER_FACTION]=0;
+					player.ParamBase[PLAYER_FACTION_RANK]=0;
+					FactionFileWrite.close();
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000338);
+				}
+			}
+		}
+		else if(player.ParamBase[PLAYER_FACTION_RANK]==4)
+		{
+			Critter @sitter=GetPlayer(sitter_name);
+			if(@sitter==null) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000339);
+			else if(sitter.ParamBase[PLAYER_FACTION]!=player.ParamBase[PLAYER_FACTION]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000340);
+			else if(sitter.Name==player.Name) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000341);
+			else
+			{
+				file FactionFileRead;
+				if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				else
+				{
+					int[]player_ids;
+					int[]player_ranks;
+					string[]player_names;
+					string str;
+					while(!FactionFileRead.isEndOfFile())
+					{
+						FactionFileRead.readLine(str);
+						if(str.length()>0)
+							while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+								{str.rawResize(str.length()-1); if(str.length()==0) break;}
+						if(str.length()==0) continue;
+						player_ids.insertLast(GetFactionPlayerId(str));
+						player_ranks.insertLast(GetFactionPlayerRank(str));
+						player_names.insertLast(GetFactionPlayerName(str));
+					}
+					FactionFileRead.close();
+					file FactionFileWrite;
+					if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+					{
+						player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+					}
+					else
+					{
+						for(uint i=0; i<player_ids.length(); i++)
+						{
+							if(uint(player_ids[i])==player.Id)
+							{
+								player_ids.removeAt(i);
+								player_ranks.removeAt(i);
+								player_names.removeAt(i);
+								break;
+							}
+						}
+						for(uint i=0; i<player_ids.length(); i++)
+						{
+							if(uint(player_ids[i])==sitter.Id) player_ranks[i]=4;
+							if(i==player_ids.length()-1) FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]);
+							else FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]+"\n");
+						}
+						player.ParamBase[PLAYER_FACTION]=0;
+						player.ParamBase[PLAYER_FACTION_RANK]=0;
+						sitter.ParamBase[PLAYER_FACTION_RANK]=4;
+						FactionFileWrite.close();
+						player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000342);
+					}
+				}
+			}
+		}
+		else
+		{
+			file FactionFileRead;
+			if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+			else
+			{
+				int[]player_ids;
+				int[]player_ranks;
+				string[]player_names;
+				string str;
+				while(!FactionFileRead.isEndOfFile())
+				{
+					FactionFileRead.readLine(str);
+					if(str.length()>0)
+						while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+							{str.rawResize(str.length()-1); if(str.length()==0) break;}
+					if(str.length()==0) continue;
+					player_ids.insertLast(GetFactionPlayerId(str));
+					player_ranks.insertLast(GetFactionPlayerRank(str));
+					player_names.insertLast(GetFactionPlayerName(str));
+				}
+				FactionFileRead.close();
+				file FactionFileWrite;
+				if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+				{
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				}
+				else
+				{
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(uint(player_ids[i])==player.Id)
+						{
+							player_ids.removeAt(i);
+							player_ranks.removeAt(i);
+							player_names.removeAt(i);
+							break;
+						}
+					}
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(i==player_ids.length()-1) FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]);
+						else FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]+"\n");
+					}
+					player.ParamBase[PLAYER_FACTION]=0;
+					player.ParamBase[PLAYER_FACTION_RANK]=0;
+					FactionFileWrite.close();
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000343);
+				}
+			}
+		}
+	}
+}
+
+void unsafe_Players(Critter& player, int, int, int, string@, int[]@)
+{
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else if(player.ParamBase[PLAYER_FACTION_RANK]<1) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000344);
+	else
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000345);
+		file FactionFile;
+		string str;
+		if(FactionFile.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+		else
+		{
+			while(!FactionFile.isEndOfFile())
+			{
+				FactionFile.readLine(str);
+				if(str.length()>0)
+					while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+						str.rawResize(str.length()-1);
+				player.Say(SAY_NETMSG,GetFactionPlayerName(str)+" - "+FACTION_RANKS[GetFactionPlayerRank(str)]);
+			}
+			FactionFile.close();
+		}
+	}
+}
+
+void unsafe_Invite(Critter& player, int, int, int, string@ player_name, int[]@)
+{
+	if(@player_name==null) return;
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else if(player.ParamBase[PLAYER_FACTION_RANK]<2) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000344);
+	else
+	{
+		Critter @cr=GetPlayer(player_name);
+		if(@cr==null) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000339);
+		else if(cr.ParamBase[PLAYER_FACTION]==player.ParamBase[PLAYER_FACTION]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000346);
+		else
+		{
+			cr.ParamBase[PLAYER_FACTION_INVITATION]=player.ParamBase[PLAYER_FACTION];
+			cr.Say(SAY_FACTION_INVITATION,FACTIONS[player.ParamBase[PLAYER_FACTION]]+"*"+player.ParamBase[PLAYER_FACTION]);
+			player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000347);
+			//cr.Say(SAY_NETMSG,"You've been invited to "+FACTIONS[player.ParamBase[PLAYER_FACTION]]+" faction (ID "+player.ParamBase[PLAYER_FACTION]+")");
+		}
+	}
+}
+
+void unsafe_Kick(Critter& player, int, int, int, string@ player_name, int[]@)
+{
+	if(@player_name==null) return;
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else if(player.ParamBase[PLAYER_FACTION_RANK]<3) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000344);
+	else
+	{
+		Critter @cr=GetPlayer(player_name);
+		if(@cr==null) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000339);
+		else if(cr.ParamBase[PLAYER_FACTION]!=player.ParamBase[PLAYER_FACTION]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000340);
+		else if(cr.ParamBase[PLAYER_FACTION_RANK]>=player.ParamBase[PLAYER_FACTION_RANK]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000348);
+		else
+		{
+			file FactionFileRead;
+			if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+			else
+			{
+				int[]player_ids;
+				int[]player_ranks;
+				string[]player_names;
+				string str;
+				while(!FactionFileRead.isEndOfFile())
+				{
+					FactionFileRead.readLine(str);
+					if(str.length()>0)
+						while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+							{str.rawResize(str.length()-1); if(str.length()==0) break;}
+					if(str.length()==0) continue;
+					player_ids.insertLast(GetFactionPlayerId(str));
+					player_ranks.insertLast(GetFactionPlayerRank(str));
+					player_names.insertLast(GetFactionPlayerName(str));
+				}
+				FactionFileRead.close();
+				file FactionFileWrite;
+				if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+				{
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				}
+				else
+				{
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(uint(player_ids[i])==cr.Id)
+						{
+							player_ids.removeAt(i);
+							player_ranks.removeAt(i);
+							player_names.removeAt(i);
+							break;
+						}
+					}
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(i==player_ids.length()-1) FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]);
+						else FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]+"\n");
+					}
+					cr.ParamBase[PLAYER_FACTION]=0;
+					cr.ParamBase[PLAYER_FACTION_RANK]=0;
+					FactionFileWrite.close();
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000349);
+					cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000350);
+				}
+			}
+		}
+	}
+}
+
+void unsafe_Promote(Critter& player, int, int, int, string@ player_name, int[]@)
+{
+	if(@player_name==null) return;
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else if(player.ParamBase[PLAYER_FACTION_RANK]<3) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000344);
+	else
+	{
+		Critter @cr=GetPlayer(player_name);
+		if(@cr==null) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000339);
+		else if(cr.ParamBase[PLAYER_FACTION]!=player.ParamBase[PLAYER_FACTION]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000340);
+		else if(cr.ParamBase[PLAYER_FACTION_RANK]+1>=player.ParamBase[PLAYER_FACTION_RANK]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000351);
+		else
+		{
+			file FactionFileRead;
+			if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+			else
+			{
+				int[]player_ids;
+				int[]player_ranks;
+				string[]player_names;
+				string str;
+				while(!FactionFileRead.isEndOfFile())
+				{
+					FactionFileRead.readLine(str);
+					if(str.length()>0)
+						while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+							{str.rawResize(str.length()-1); if(str.length()==0) break;}
+					if(str.length()==0) continue;
+					player_ids.insertLast(GetFactionPlayerId(str));
+					player_ranks.insertLast(GetFactionPlayerRank(str));
+					player_names.insertLast(GetFactionPlayerName(str));
+				}
+				FactionFileRead.close();
+				file FactionFileWrite;
+				if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+				{
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				}
+				else
+				{
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(uint(player_ids[i])==cr.Id) player_ranks[i]++;
+						if(i==player_ids.length()-1) FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]);
+						else FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]+"\n");
+					}
+					cr.ParamBase[PLAYER_FACTION_RANK]++;
+					FactionFileWrite.close();
+					if(cr.ParamBase[PLAYER_FACTION_RANK]==1) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000352);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==2) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000353);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==3) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000354);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==4) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000355);
+					if(cr.ParamBase[PLAYER_FACTION_RANK]==1) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000356);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==2) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000357);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==3) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000358);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==4) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000359);
+				}
+			}
+		}
+	}
+}
+
+void unsafe_Demote(Critter& player, int, int, int, string@ player_name, int[]@)
+{
+	if(@player_name==null) return;
+	if(player.ParamBase[PLAYER_FACTION]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000337);
+	else if(player.ParamBase[PLAYER_FACTION_RANK]<3) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000344);
+	else
+	{
+		Critter @cr=GetPlayer(player_name);
+		if(@cr==null) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000339);
+		else if(cr.ParamBase[PLAYER_FACTION]!=player.ParamBase[PLAYER_FACTION]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000340);
+		else if(cr.ParamBase[PLAYER_FACTION_RANK]>=player.ParamBase[PLAYER_FACTION_RANK]) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000360);
+		else if(cr.ParamBase[PLAYER_FACTION_RANK]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000360);
+		else
+		{
+			file FactionFileRead;
+			if(FactionFileRead.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"r")<0)
+				player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+			else
+			{
+				int[]player_ids;
+				int[]player_ranks;
+				string[]player_names;
+				string str;
+				while(!FactionFileRead.isEndOfFile())
+				{
+					FactionFileRead.readLine(str);
+					if(str.length()>0)
+						while(str[str.length()-1]=="\r" || str[str.length()-1]=="\n")
+							{str.rawResize(str.length()-1); if(str.length()==0) break;}
+					if(str.length()==0) continue;
+					player_ids.insertLast(GetFactionPlayerId(str));
+					player_ranks.insertLast(GetFactionPlayerRank(str));
+					player_names.insertLast(GetFactionPlayerName(str));
+				}
+				FactionFileRead.close();
+				file FactionFileWrite;
+				if(FactionFileWrite.open("factions/"+FACTIONS[player.ParamBase[PLAYER_FACTION]],"w")<0)
+				{
+					player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000008);
+				}
+				else
+				{
+					for(uint i=0; i<player_ids.length(); i++)
+					{
+						if(uint(player_ids[i])==cr.Id) player_ranks[i]--;
+						if(i==player_ids.length()-1) FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]);
+						else FactionFileWrite.writeString(player_ids[i]+" "+player_ranks[i]+" "+player_names[i]+"\n");
+					}
+					cr.ParamBase[PLAYER_FACTION_RANK]--;
+					FactionFileWrite.close();
+					if(cr.ParamBase[PLAYER_FACTION_RANK]==0) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000361);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==1) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000362);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==2) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000363);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==3) player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000364);
+					if(cr.ParamBase[PLAYER_FACTION_RANK]==0) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000365);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==1) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000366);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==2) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000367);
+					else if(cr.ParamBase[PLAYER_FACTION_RANK]==3) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000368);
+				}
+			}
+		}
+	}
+}
+
+void unsafe_AddFactionFunds(Critter& player, int count, int, int, string@ , int[]@)
+{
+	if(count<=0) return;
+	if(int(player.CountItem(PID_BOTTLE_CAPS))<count) return;
+	if(!IsAnyData("FACTIONS["+player.ParamBase[PLAYER_FACTION]+"]")) return;
+	player.DeleteItem(PID_BOTTLE_CAPS,count);
+	int[] fdata;
+	GetAnyData("FACTIONS["+player.ParamBase[PLAYER_FACTION]+"]", fdata);
+	fdata[1]+=count;
+	SetAnyData("FACTIONS["+player.ParamBase[PLAYER_FACTION]+"]", fdata);
+}
+
+void dlg_CritterFactionName( Critter& player, Critter@ npc, string@ str )
+{
+    if(!IS_DIALOG_GENERATED(str))
+        return;
+
+	str += "$faction" + FACTIONS[player.ParamBase[PLAYER_FACTION]];
+}
+

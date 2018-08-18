@@ -1,0 +1,122 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Kybernetickı robot.}
+{101}{}{Pìknı kousek techniky, kterı ještì více stírá rozdíly mezi lidmi a roboty.}
+{102}{}{Skynet pùjde s tebou.}
+{103}{}{Skynet dìkuje èlovìku.
+                                        Skynet by chtel poádat o laskavost.
+                         Skynet chce pokraèovat s èlovìkem.}
+{104}{}{}
+{105}{}{}
+{106}{}{                           [Tak tohle by nìkdy vánì bodlo.]}
+{107}{}{Vzít si robota s sebou.}
+{108}{}{Ponechat robota zde.}
+{109}{}{Vıstup}
+{110}{}{Uf!}
+{111}{}{[Všechna tahle kybernetická technika je vyplıtvána na takovıhle zmetkovı mozek.] }
+{112}{}{Uhni mi z cesty, tupá plechovko.}
+{113}{}{Tak, teï upravíme tvùj inventáø.}
+{114}{}{Sbohem.}
+{115}{}{Eh!}
+{116}{}{[Vypadá, e by si dal banán.]}
+{117}{}{Uhniii, šmejde.}
+{118}{}{Poèkej tady.}
+{119}{}{Tak se mrknem na tvé vnitønosti, plecháèi.}
+{120}{}{Zatím...}
+{121}{}{Eh.}
+{122}{}{No-no-no-nooovéé pøí-pøíkazy?}
+{123}{}{Uhni mi z cesty.}
+{124}{}{TADY na mì poèkej.}
+{125}{}{U jsi mi na nic. Zmiz.}
+{126}{}{Jaké zbranì ti sedí nejlépe?}
+{127}{}{Mrknem se na to, co s sebou taháš.}
+{128}{}{Zatím...}
+{129}{}{Eh.}
+{130}{}{Odlo zbraò                                                   Pøesun na povrch.}
+{131}{}{}
+{132}{}{Ahoj}
+{133}{}{Uf}
+{134}{}{Chceš komunikovat se Skynetem?}
+{135}{}{Uhni mi z cesty.}
+{136}{}{Tady na mì poèkej.}
+{137}{}{U jsi mi na nic. Zmiz.}
+{138}{}{Jaké zbranì ti sedí nejlépe?}
+{139}{}{Podívejme se do tvého batùku.}
+{140}{}{Zapoèni auto-opravárenskou sekvenci.}
+{141}{}{Zmìòme formaci.}
+{142}{}{Umíš ještì nìco navíc?}
+{143}{}{Zatím...}
+{144}{}{Uf.}
+{145}{}{Skynet se nauèil všechny potøebné informace o tomto místì.}
+{146}{}{Èekáááááám.}
+{147}{}{        [Je to pøesnì tam, kde si to nechal.]}
+{148}{}{Jdem.}
+{149}{}{Poèkej tady. Já se vrátím.}
+{150}{}{Skynet je velice rád, e vidí èlovìka znovu.}
+{151}{}{Odchóóóóód.}
+{152}{}{Potøeboval bych ještì pomoci.}
+{153}{}{Zatím...}
+{154}{}{Skynet pùjde s tebou a bude shromaïovat data.}
+{155}{}{Nááááásleduji.}
+{156}{}{[Zkøíil si prsty a øekl robotu, a tì následuje. I kdy na toto nereagoval, tak pøi tvém pohybu tì následuje.] }
+{157}{}{Zatím...}
+{158}{}{Skynet poèká zde.}
+{159}{}{[Tahat za sebou tuhle plechovku asi nebude ta nejlepší vìc.]}
+{160}{}{Zatím...}
+{161}{}{[Já jsem samotáø. Nechci tuhle hromadu šrotu vidìt motat se kolem mì.] }
+{162}{}{[Moje skupina je nìjaká rozsáhlá. Asi bych mìl nìkoho propustit, ne si pøiberu nìkoho nového.] }
+{163}{}{Zatím...}
+{164}{}{Véééélké ruèníííí zbrááánì                                          Pùùùùškíííí                                            Brokooovnííícééé}
+{165}{}{}
+{166}{}{}
+{167}{}{Pouij svou nejlepší zbraò.}
+{168}{}{Další pøíkazy.}
+{169}{}{Zatím...}
+{170}{}{Provedu!}
+{171}{}{Další pøíkazy}
+{172}{}{Zatím...}
+{173}{}{Skynet je VOLNİ! Tvùj úkol je u konce.}
+{174}{}{}
+{175}{}{Vyhubit podøadné druhy. }
+{176}{}{Vše podøídit Skynetu.}
+{177}{}{Pøestaneš fungovat.}
+{178}{}{Skynet má pouze omezené znalosti o zbraních. Databáze obsahuje obecné informace o pouití malıch pušek a ruèních zbraních.}
+{179}{}{Pouij nejlepší zbraò.}
+{180}{}{Další pøíkazy}
+{181}{}{Zatím...}
+{182}{}{Srozumnìno.}
+{183}{}{Další pøíkazy}
+{184}{}{Zatím...}
+{185}{}{Primární úkol Skynetu je vızkum. Skynet si poradí s jakımkoli problémem, kterı vyaduje vìdeckı pøístup.}
+{186}{}{Další pøíkazy.}
+{187}{}{Zatím...}
+{188}{}{Vloit pøíkazy pro novou formaci.}
+{189}{}{Následovat ve velké vzdálenosti.}
+{190}{}{Následovat ve støední vzdálenosti.}
+{191}{}{Zùstaò blízko u mne.}
+{192}{}{Další pøíkazy.}
+{193}{}{Zatím...}
+{194}{}{Skynet bude pokraèovat ve shromaïování informací o tomto místì, dokud se nevrátíš.}
+{195}{}{Èekááááááááám.}
+{196}{}{[Robot se zastavil v pohybu.]}
+{197}{}{Zatím...}
+{198}{}{Skynet bude pokraèovat ve sbìru dat samostatnì. Skynet dìkuje èlovìku za darovanou svobodu.}
+{199}{}{Odchoóóóód.}
+{200}{}{Zatím...}
+{201}{}{Skynet bude cestovat s èlovìkem.}
+{202}{}{Ooooou......Kéééééj.}
+{203}{}{Zatím...}
+{204}{}{Deaktivace bezpeènostních systémù - Úroveò 1}
+{205}{}{Deaktivace bezpeènostních systémù - Úroveò 2}
+{206}{}{Deaktivace bezpeènostních systémù - Úroveò 3}
+
+{306}{}{[Tohle se vánì nìkdy mùe hodit.]}
+
+{400}{}{Odlo svou zbraò.}
+
+{410}{}{Bzzzzz}
+
+{420}{}{Odchóóóód}
+
+{430}{}{Aktivace motivátorù.}
+{431}{}{Vyhledávání novıch souøadnic.}
+{432}{}{Pøesmìrování.}

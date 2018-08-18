@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 R _script dialog@r_AnimalDogSound 0 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Pies}
+{210}{}{Widzisz zwyczjnego psa.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}
+
+[engl]
+{100}{}{Dog}
+{210}{}{You see an usual Dog.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}
+
+[russ]
+{100}{}{Dog}
+{210}{}{You see an usual Dog.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}

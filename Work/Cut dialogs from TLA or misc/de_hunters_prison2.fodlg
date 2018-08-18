@@ -1,0 +1,162 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Hunters_Camp_Canibal = -1 #
+3 1020 D _var p Hunters_Camp_Canibal = 2 D _var p Hunters_Camp_Prison_Knife = -1 #
+10 1030 D _var p Hunters_Camp_Prison_Knife = 1 #
+11 1040 D _var p Hunters_Camp_Prison_Knife = 2 D _var p Hunters_Camp_Canibal ! 3 #
+15 1050 D _var p Hunters_Camp_Prison_Knife = 2 D _var p Hunters_Camp_Canibal = 3 @
+2 2000 None 1 @
+3 3000 None 1 #
+5 3010 #
+6 3020 #
+0 3030 @
+5 4000 None 0 @
+6 5000 None 0 #
+7 5010 #
+0 5020 @
+7 6000 None 0 #
+8 6010 #
+0 6020 @
+8 7000 None 0 #
+9 7010 #
+0 7020 @
+9 8000 None 0 #
+0 8010 R _var p Hunters_Camp_Prison_Knife = 1 #
+0 8020 @
+10 9000 None 0 #
+10 9010 D _item p PID_WOOD } 1 D _item p PID_IRON_ORE } 1 R _item p PID_WOOD - 1 R _item p PID_IRON_ORE - 1 R _item p PID_SHIV_DE + 1 R _var p Hunters_Camp_Prison_Knife = 2 #
+0 9020 @
+11 10000 None 0 #
+12 10010 @
+12 11000 None 0 #
+13 11010 @
+13 12000 None 0 #
+14 12010 @
+14 13000 None 0 @
+15 14000 None 0 #
+0 14010 &
+
+[pols]
+{100}{}{Insane prison}
+{1000}{}{Predialogue installations}
+{1010}{}{not talk}
+{1020}{}{talk}
+{1030}{}{talk if have wood and iron}
+{1040}{}{talk if have knife}
+{1050}{}{if give knife to canibal}
+{2000}{}{Daj mi spokoj !@@ Nie widzisz ze jestem zajety ?!@@...Jak sie nie odczepisz to bedziesz nastepny mojej liscie !@@Gdzie ja podzialem moj noz...}
+{3000}{}{Chyba mowilem ci wyraznie zebys sie odpierdolil !}
+{3010}{}{A to bylo do mnie? Myslalem ze sam do siebie mowisz.}
+{3020}{}{Hej przydupasie ! jeszcze jedna taka odzywka a bedziesz wybierac resztki zebow z kaluzy krwi ! kumasz czacze czy mam zademonstrowac ?}
+{3030}{}{Sam sie odpierdol pojebancu !}
+{4000}{}{Ahrryyyy}
+{5000}{}{Mistrzu spokojnie ! tylko zartowalem... nie bierz tego do siebie, poprostu mam nerwowy dzien...}
+{5010}{}{Co ci sie dzieje?}
+{5020}{}{No ja mysle.}
+{6000}{}{Sluchaj ale nikomu ani slowa mysle ze mozemy razem sobie pomoc.  Musze wyrwac sie z tego miejsca i mam pewien plan !}
+{6010}{}{Tak? jaki plan?}
+{6020}{}{W sumie to nie interesuje mnie}
+{7000}{}{Trzeba zabic straznika ! Ja go zagadam a ty podejdziesz od tylu i unieszkodliwisz go nozem. Nastepnie jak tylko padnie na glebe szybko przeskoczymy ogrodzenie i uciekniemy stad !}
+{7010}{}{A skad wezme noz?}
+{7020}{}{Nie ma mowy! Jestes swirem, ten straznik nie jest taki glupi. jak tylko zobaczy ze cos kombinujemy to powystrzela nas jak kaczki.}
+{8000}{}{Zajme sie zrobieniem noza tylko przyniesc mi kawalek drewna i skalke rudy zelaza.}
+{8010}{}{OK, zalatwione. Zaraz wracam.}
+{8020}{}{Chyba zartujesz ze jeszcze mam ci zbierac rzeczy.}
+{9000}{}{Masz juz rzeczy na noz?}
+{9010}{}{Tak... trzymaj.}
+{9020}{}{Jeszcze pracuje nad tym. Dam ci znac.}
+{10000}{}{Czego chcesz odemnie?}
+{10010}{}{Jak to czego? mielismy zabic straznika?}
+{11000}{}{Zwariowales? odejdz wariacie !}
+{11010}{}{No przeciez dales mi noz !}
+{12000}{}{JA ?! NOZ ?! masz cos nie tak z glowa ! Odejdz odemnie, nie zblizaj sie !}
+{12010}{}{...?}
+{13000}{}{Straz!@@ Ratunku!@@ Pomocy, on ma noz!}
+{14000}{}{Co z naszym planem? Juz stanowaczo za dlugo czekam na ciebie !
+...i gdzie masz nasz noz !?}
+{14010}{}{Jestes szurniety !@@ Zal mi ciebie...@@Leczysz sie na glowe?}
+
+[engl]
+{100}{}{Insane prison}
+{1000}{}{Predialogue installations}
+{1010}{}{not talk}
+{1020}{}{talk}
+{1030}{}{talk if have wood and iron}
+{1040}{}{talk if have knife}
+{1050}{}{if give knife to canibal}
+{2000}{}{Leave me alone!@@Can't you see I'm busy?!@@If you keep pestering me, you're in for a world of hurt.@@Where did I put that fucking knife...?}
+{3000}{}{I *told* you to *piss off*!}
+{3010}{}{Oh? I thought you were talking to *yourself*.}
+{3020}{}{Keep talking to me like that, and I'll make sure you swallow all your teeth once you're done fishing them out of the pool of your own motherfucking blood.}
+{3030}{}{No, *you* piss off!}
+{4000}{}{Arghhh.}
+{5000}{}{Come on, boss. I was just fooling around. I'm sorry. I've had a bad day.
+{5010}{}{What's going on?}
+{5020}{}{Figures.}
+{6000}{}{I've got something to tell you, but don't breathe a word about this conversation to anybody. We can help each other out. I know how to escape from this hellhole.}
+{6010}{}{Keep talking.}
+{6020}{}{Whatever you're planning, you're best off keeping it to yourself.}
+{7000}{}{We need to get rid of the guard. I'll distract him, and you'll sneak behind him to slit his throat. As soon as his corpse hits the ground, we jump over the fence and get the fuck out of here!}
+{7010}{}{And how exactly am I supposed to get a knife?}
+{7020}{}{No fucking way! You've lost it, man. The guard isn't as stupid as you think he is. As soon as he notices we're up to something, he'll shoot us both like dogs.}
+{8000}{}{I'll take care of that. All you need to do is get me a piece of wood and some iron ore.}
+{8010}{}{Done. I'll be back in a second.}
+{8020}{}{You've got to be shitting me. You want me to run around collecting stuff for you?}
+{9000}{}{Do you have all the items we need?}
+{9010}{}{Yeah. Here you go.}
+{9020}{}{I'm still on it. I'll let you know when I have them.}
+{10000}{}{What do you want?}
+{10010}{}{What do you mean? Don't we have a guard to kill?}
+{11000}{}{Are you nuts? Get the fuck away from me, you looney!}
+{11010}{}{Then what did you give me the knife for?}
+{12000}{}{Me?! A *knife*?! You're fucking crazy! Move back! Don't come any closer!}
+{12010}{}{What th-}
+{13000}{}{Guards!@@Help me!@@Help! He's got a knife!}
+{14000}{}{What about our plan? I've been waiting for you for way too long! Have you forgotten all about it? And where's the knife?}
+{14010}{}{You're completely out of your mind.@@Poor thing...@@Have you forgotten to take your pills again?}
+
+[russ]
+{100}{}{Insane prison}
+{1000}{}{Predialogue installations}
+{1010}{}{not talk}
+{1020}{}{talk}
+{1030}{}{talk if have wood and iron}
+{1040}{}{talk if have knife}
+{1050}{}{if give knife to canibal}
+{2000}{}{Leave me alone!@@Can't you see I'm busy?!@@If you keep pestering me, you're in for a world of hurt.@@Where did I put that fucking knife...?}
+{3000}{}{I *told* you to *piss off*!}
+{3010}{}{Oh? I thought you were talking to *yourself*.}
+{3020}{}{Keep talking to me like that, and I'll make sure you swallow all your teeth once you're done fishing them out of the pool of your own motherfucking blood.}
+{3030}{}{No, *you* piss off!}
+{4000}{}{Arghhh.}
+{5000}{}{Come on, boss. I was just fooling around. I'm sorry. I've had a bad day.
+{5010}{}{What's going on?}
+{5020}{}{Figures.}
+{6000}{}{I've got something to tell you, but don't breathe a word about this conversation to anybody. We can help each other out. I know how to escape from this hellhole.}
+{6010}{}{Keep talking.}
+{6020}{}{Whatever you're planning, you're best off keeping it to yourself.}
+{7000}{}{We need to get rid of the guard. I'll distract him, and you'll sneak behind him to slit his throat. As soon as his corpse hits the ground, we jump over the fence and get the fuck out of here!}
+{7010}{}{And how exactly am I supposed to get a knife?}
+{7020}{}{No fucking way! You've lost it, man. The guard isn't as stupid as you think he is. As soon as he notices we're up to something, he'll shoot us both like dogs.}
+{8000}{}{I'll take care of that. All you need to do is get me a piece of wood and some iron ore.}
+{8010}{}{Done. I'll be back in a second.}
+{8020}{}{You've got to be shitting me. You want me to run around collecting stuff for you?}
+{9000}{}{Do you have all the items we need?}
+{9010}{}{Yeah. Here you go.}
+{9020}{}{I'm still on it. I'll let you know when I have them.}
+{10000}{}{What do you want?}
+{10010}{}{What do you mean? Don't we have a guard to kill?}
+{11000}{}{Are you nuts? Get the fuck away from me, you looney!}
+{11010}{}{Then what did you give me the knife for?}
+{12000}{}{Me?! A *knife*?! You're fucking crazy! Move back! Don't come any closer!}
+{12010}{}{What th-}
+{13000}{}{Guards!@@Help me!@@Help! He's got a knife!}
+{14000}{}{What about our plan? I've been waiting for you for way too long! Have you forgotten all about it? And where's the knife?}
+{14010}{}{You're completely out of your mind.@@Poor thing...@@Have you forgotten to take your pills again?}

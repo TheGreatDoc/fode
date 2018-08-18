@@ -1,0 +1,24 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+IGUIElementTextOpt @TcServerMessageTextOpt;
+IGUIElementTextOpt @TcServerMessageGlobalMapTextOpt;
+uint TcServerMessageDissappearTime=0;
+
+void InitTcServerMessageScreen()
+{
+	@TcServerMessageTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",__ScreenWidth/2-250,10)
+	  .TextOptions(FONT_FALLOUT, COLOR_WHITE, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(500,500)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	@TcServerMessageGlobalMapTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GLOBAL_MAP,"",__ScreenWidth/2-250,10)
+	  .TextOptions(FONT_FALLOUT, COLOR_WHITE, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(500,500)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+}

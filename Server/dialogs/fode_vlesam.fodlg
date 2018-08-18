@@ -1,0 +1,82 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 D _var p quest_deliver_suitcase = 1 D _item p PID_10MM_JHP > 1 #
+5 2020 #
+6 2030 #
+0 2040 @
+3 3000 None 0 #
+4 3010 R _var p quest_deliver_suitcase = 2 R _item p PID_10MM_AP - 1 #
+0 3020 @
+4 4000 None 0 #
+0 4010 @
+5 5000 None 0 #
+0 5010 @
+6 6000 None 0 #
+0 6010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{Oh hey, What do you need?}
+{2010}{}{Hello, Vasilij is sending me. He is giving you some suitcase.}
+{2020}{}{What is this place?}
+{2030}{}{What is the history of this place?}
+{2040}{}{Oh nothing, I am just passing through this place.}
+{3000}{}{Oh good. I thought he forgot.}
+{3010}{}{Here it is.}
+{3020}{}{Uuh, sorry I am leaving.}
+{4000}{}{Thank you! Tell Vasilij that I am saying big thanks to him! Good luck.}
+{4010}{}{Thanks, I appreciate it!}
+{5000}{}{This is Minsk. Ask someone else for further infos, I am busy.}
+{5010}{}{Oh, okay.}
+{6000}{}{Sorry, I don't have enought time to tell you the history. Ask someone else for it.}
+{6010}{}{Oh, okay.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{O, witaj. Czego potrzebujesz?}
+{2010}{}{Witaj, Vasilij mnie przysłał z tą walizką. Podobno mam ci ją dać}
+{2020}{}{Co to za miejsce?}
+{2030}{}{Jaka jest historia tego miejsca?}
+{2040}{}{Oh, nieważne. Tylko przechodzę.}
+{3000}{}{Cholera, myślałem, że zapomni.}
+{3010}{}{Proszę bardzo.}
+{3020}{}{Yyy, wybacz, muszę iść.}
+{4000}{}{Dziekuję! Powiedz Vasiljemu że przesyłam mu wielkie dzięki.}
+{4010}{}{Dzięki, nie zapomne!}
+{5000}{}{To miasto to Old Fields, popytaj kogoś innego. Ja nie mam czasu.}
+{5010}{}{Oh, okej.}
+{6000}{}{Wybacz, popytaj kogoś innego. Ja nie mam czasu.}
+{6010}{}{Oh, okej.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{Oh hey, What do you need?}
+{2010}{}{Hello, Vasilij is sending me. He is giving you some suitcase.}
+{2020}{}{What is this place?}
+{2030}{}{What is the history of this place?}
+{2040}{}{Oh nothing, I am just passing through this place.}
+{3000}{}{Oh good. I thought he forgot.}
+{3010}{}{Uuh, sorry I am leaving.}
+{3020}{}{Uuh, sorry I am leaving.}
+{4000}{}{Thank you! Tell Vasilij that I am saying big thanks to him! Good luck.}
+{4010}{}{Thanks, I appreciate it!}
+{5000}{}{This is Minsk. Ask someone else for further infos, I am busy.}
+{5010}{}{Oh, okay.}
+{6000}{}{Sorry, I don't have enought time to tell you the history. Ask someone else for it.}
+{6010}{}{Oh, okay.}
+

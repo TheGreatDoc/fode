@@ -1,0 +1,10 @@
+<root>
+<child>text1</child>
+<child>text2</child>
+<elem param1="value" param2="42" />
+<subroot>
+<subchild>
+<subelement>Some text!</subelement>
+</subchild>
+</subroot>
+</root>

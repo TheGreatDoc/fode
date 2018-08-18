@@ -1,0 +1,17 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Vidíš typické dveøe do Vaultu.}
+{101}{}{Toto jsou typické dveøe do Vaultu. Vypadá to, že jsou zadøené.}
+{102}{}{Dveøe se nepohly}
+{103}{}{Tyto dveøe jsou zadøené. Bude to chtít pìknì silného èlovìka, aby je otevøel.}
+{104}{}{*Eeeeeeehhhnnn*... *ufff*... *uuuufff*}
+{105}{}{Ani s pomocí tyèe se tyhle dveøe nechtìjí ani pohnout.}
+{106}{}{*Heeeeeej RUP!*}
+{107}{}{S pomocí tyèe se ti podaøilo donutit tyhle dveøe se pohnout.}
+{108}{}{*Heeeeeej RUP!*}
+{109}{}{Použitím brutální fyzické síly se ti podaøilo tyto dveøe otevøít.}
+{110}{}{Wow. Tohle je ani neškráblo!}
+{111}{}{BUM ... a dveøe stojí dál}
+{112}{}{Dveøe jsou ZASEKNUTÉ, ne ZAMÈENÉ. Jasné?}
+{113}{}{Zámky jsou zadøené ne zamèené, pitomèe.}
+{114}{}{Dveøe se nezavøou. Jsou zablokované.}
+{115}{}{Dveøe se ani nepohly.}

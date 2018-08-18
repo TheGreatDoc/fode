@@ -1,0 +1,38 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+0 2010 #
+0 2020 &
+
+[engl]
+{100}{}{Militia}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{I'm on duty.}
+{2010}{}{Right, right.}
+{2020}{}{Ok then.}
+
+[pols]
+{100}{}{Milicja}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Jestem na sluzbie.}
+{2010}{}{Dobra, dobra.}
+{2020}{}{Ok w takim razie.}
+
+[russ]
+{100}{}{Militia}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Może później, teraz jestem na służbie.}
+{2010}{}{Dobrze, dobrze.}
+{2020}{}{Ok.}
+

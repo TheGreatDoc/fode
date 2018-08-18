@@ -1,0 +1,28 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Девочка}
+{200}{}{Вы видите маленькую девочку.}
+{210}{}{Вы видите маленькую девочку, кое-как одетую. Она смотрит на вас голодными глазами.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Girl}
+{200}{}{You see a little girl.}
+{210}{}{You see an almost naked little girl. She looks at you with hungry eyes.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Girl}
+{200}{}{Widzisz małą dziewczynkę.}
+{210}{}{Jest prawie naga. Patrzy na Ciebie oczami nędzy i rozpaczy}
+{1000}{}{Initial preferences}
+

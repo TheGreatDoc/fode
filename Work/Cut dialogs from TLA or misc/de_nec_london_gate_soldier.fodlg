@@ -1,0 +1,70 @@
+[comment]
+Zolnierz nec odpowiedzialny na pierwszy qest w NEC.
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p de_quest_nec_start = 0 #
+3 1020 D _var p de_quest_nec_start = 80 #
+3 1030 D _param p REPUTATION_OLD_FIELDS ! 80 D _param p REPUTATION_OLD_FIELDS ! 0 R _script dialog@r_SayMessageDelayed 3 1 0 2 @
+2 2000 None 0 #
+0 2010 R _script quest_server_scripts@first_quest_blue_0_to_30 0  #
+0 2020 R _param p REPUTATION_BLUE - 5 #
+0 2030 @
+3 3000 None 0 #
+0 3010 R _script quest_server_scripts@first_quest_blue_80_to_100 0  R _item p PID_BOTTLE_CAPS + 150 #
+0 3020 R _script quest_server_scripts@first_quest_blue_80_to_100 0  R _item p PID_BOTTLE_CAPS + 150 @
+4 4000 None 0 &
+
+[pols]
+{100}{}{Arbert}
+{200}{}{Widzisz Alberta jest jedny z straznikow bramy.}
+{1000}{}{Predialogue installations}
+{1010}{}{start 1}
+{1020}{}{start 2}
+{1030}{}{start 3}
+{2000}{}{Zolnierzu dobrze, ze jestes prosze zanies ta wiadomosc do kosciola. Niezwklekaj z tym ani chwili.}
+{2010}{}{Dobrze, robi sie.}
+{2020}{}{Wal sie}
+{2030}{}{Nie mam czasu.}
+{3000}{}{Dziekuje ci bardzo. Jezeli szukasz pracy mozesz porozmawiac z zolnierzem przed mostem slyszalem, ze ostatnio potrzebowal pomocy. Masz tu troche kapsli za przyszluge.}
+{3010}{}{Niema sprawy. Narazie}
+{3020}{}{Dzieki za informacje, musze juz isc.}
+{4000}{}{}
+{100000001}{}{Nie rob glupich rzeczy, a wszyscy beda zdrowi.@@Przygladam ci sie.@@Nie przeszkadzaj.@@Bedziesz krasc - zabije w miejscu.@@Sprobuj tylko palcem dotknij kogokolwiek!}
+
+[engl]
+{100}{}{Albert}
+{1000}{}{Predialogue installations}
+{1010}{}{start 1}
+{1020}{}{start 2}
+{1030}{}{start 3}
+{2000}{}{Citizen, I've got an important task for you. Will you carry this message to the priest at the church near the northern wall?}
+{2010}{}{Yes sir, I'll do it.}
+{2020}{}{Fuck you, I ain't got time for this.}
+{2030}{}{Sorry, can't do this right now. See you.}
+{3000}{}{Great, your commitment will not go unnoticed. Here's some coin for your effort. If you're looking for another assignment, talk to the soldier near the bridge.}
+{3010}{}{Ok, thanks, goodbye.}
+{3020}{}{Thanks for the tip, I need to go.}
+{4000}{}{}
+{100000001}{}{NEC serves and protects! Even the poor sods like you...@@Your activities won't go unnoticed.@@Thanks again for delivering that message.@@We serve the Commonwealth!@@Yes, I remember you.@@We're the shield of NEC!@@At least they haven't sent my sorry arse to Dark Waters...}
+
+[russ]
+{100}{}{Arbert}
+{1000}{}{Predialogue installations}
+{1010}{}{start 1}
+{1020}{}{start 2}
+{1030}{}{start 3}
+{2000}{}{Soldier, thast good are you here, can u take this message to church?}
+{2010}{}{Well, i do it.}
+{2020}{}{Fuck you.}
+{2030}{}{I'm not have time. See you.}
+{3000}{}{Thank u very much. If you find job, you can talk to soldier front to bridge.}
+{3010}{}{ok bey.}
+{3020}{}{Thans for imformation, I need to go.}
+{4000}{}{}
+{100000001}{}{Don't do anything stupid, and everybody will be okay.@@I'm watching you.@@Don't violate the rules.@@You steal - I kill.@@Don't even try to set a finger on anybody!}
+

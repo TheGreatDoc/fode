@@ -1,0 +1,9 @@
+{100}{}{Le terminal est éteint.}
+{101}{}{Le code est entré : 3... P... C... F... 1... 6.}
+{102}{}{*Biiip*}
+{103}{}{Le distributeur d'urgence médicale est déclenché.}
+{104}{}{*kling kling*}
+{105}{}{Veuillez enlever le stimpac du casier.}
+{106}{}{J'ai deux stims et un superstim.}
+{107}{}{Le terminal est maintenant éteint.}
+

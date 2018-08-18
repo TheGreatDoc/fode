@@ -1,0 +1,69 @@
+#tento soubor pøeloil Marek "MAK" Gøešek
+{100}{}{Vidíš holohlavého mue v laboratorním plášti.}
+{101}{}{Vidíš Toma Murraye, šéfa Komise pro atomovou energii.}
+{102}{}{Vidíš velmi nervózního mue obleèeného ve starém, ošoupaném laboratorním plášti.}
+{103}{}{Mùj stroj! Mùj pøekrásnı stroj je v hajzlu. (Vzlykání)}
+{104}{}{Jsme znièeni.}
+{105}{}{Bez fungujícího poèítaèe vyletí reaktor do povìtøí!}
+{106}{}{Neumím plavat.}
+{107}{}{Moná to dokáu opravit....}
+{108}{}{Proè se odevšad ozıvá poplašnı signál?}
+{109}{}{Co to tu provádíte?}
+{110}{}{Všichni pøestaòte panikaøit. NEPROPADEJTE PANICE!!!}
+{111}{}{OK, zùstaò v klidu. }
+{112}{}{Moná, e je to jen cvièení.}
+{113}{}{Vrate se zpìt na zadrovací úroveò.}
+{114}{}{Vánì dokáeš mluvit jinak.}
+{115}{}{Máš opravdu tupı vıraz.}
+{116}{}{Tvoje mozková kapacita nestaèí ani na sfouknutí svíèku, e jo?}
+{117}{}{Jestli budeš hodnı, tak jsem si jistı, e dostaneš sušenku, kdy se vrátíš zpìt do cely.}
+{118}{}{Ty tam, nejsi oprávnìn nosit zde toto brnìní.}
+{119}{}{Budu nosit své brnìní kdekoliv budu chtít.}
+{120}{}{Oh, promiòte, pane. Radši odcházím.}
+{121}{}{Opravdu, huh? No, pak tì budu muset nahlásit.}
+{122}{}{Pokraèujte a nerušte mì.}
+{123}{}{Prosím, nedìlejte to. U odcházím. Sbohem.}
+{124}{}{Já jsem Tom Murray, šéf Komise pro atomovou energii. Øídím zde naši atomovou elektrárnu. Kdo k èertu si a co tady dìláš?}
+{125}{}{Co sakra zase chceš?}
+{126}{}{Potøebuji vypnout náš reaktor.}
+{127}{}{No, zajímá mì jak náš reaktor pracuje.}
+{128}{}{Musím tì ZABÍT!!!.}
+{129}{}{Pomóóóc! Pomozte mi! Pomóóóc!}
+{130}{}{Vetøelec! Poplach!}
+{131}{}{Radši zdrhej jako o ivot! Takoví jako ty, zde nemají šanci!}
+{132}{}{Stráe! Pomóóóóóóc!}
+{133}{}{Popláááááách! Poplááááááách!}
+{134}{}{Vypnout? Zbláznil ses? Nikdo nebude vypínat "mùj" reaktor.}
+{135}{}{No, asi takhle, buï mi øekneš jak se ten reaktor vypíná, nebo ti rozstøílím ten tvùj hnusnej ksicht na sraèku.}
+{136}{}{Já øek vypnout? Promiò já, chtìl øíct, e by mì zajímalo jak reaktor pracuje.}
+{137}{}{Oh, to je tvùj reaktor? Tak promiò, to jsem nevìdìl. No, tak teda sbohem.}
+{138}{}{Fajn, øeknu ti to, ale kdy ho vypneš pøíliš rychle, tak se pøehøeje.}
+{139}{}{To mì nezajímá. Ihned vypni reaktor, nebo tì vykuchám jak rybu.}
+{140}{}{To zní nebezpeènì. No, fajn, zapomeò na to. Sbohem.}
+{141}{}{Jen blufuješ. Ty by ses toho nikdy neodváil.}
+{142}{}{Ale odváil. Jestli mi nepomùeš, tak je z tebe mrtvej mu.}
+{143}{}{Zkoušel jsem se s tebou domluvit po dobrém, ale jak vidím nemá to cenu. No, doufám, e chápeš, e tì nemùu nechat spustit alarm.}
+{144}{}{Hej, dìlal sem si legraci. Jak vlastnì pracuje reaktor?}
+{145}{}{Jo, myslím, e máš pravdu. Udìlal bys nejlépe, kdybys teï zùstal chvíli zticha, ne se mi podaøí odtud zmiznout. Sbohem.}
+{146}{}{Dobøe, dobøe. Udìlám to. Hlavnì se uklidni. Ale povídám
+ ti - hned, jakmile vytáhnu kontrolní tyèe se reaktor zaène pøehøívat.
+ A pokud dojde k havarijní situaci, budeme muset reaktor nouzovì odstavit
+ - jinak bychom se asi mìli radìji zaèít uèit èínsky..}
+{147}{}{Nech si ty kecy a vypni tu zasranou vìc teï hned!}
+{148}{}{To zní nebezpeènì. Moná by bylo lepší poohlédnout se po jiném zpùsobu. Nechtìl bych tady nikoho zranit, nebo zabít. Sbohem.}
+{149}{}{Nehodlám riskovat ivoty všech co tu jsou. To kurva, ani omylem.}
+{150}{}{Je mi líto, e to berete takhle. Pak mi ovšem nezbıvá nic jiného ne vás zabít. Ale neberte to osobnì.}
+{151}{}{Jak to mùe ohrozit ivoty všech co tu jsou? Jak vùbec pracuje ten reaktor?}
+{152}{}{Myslím, e budu muset najít jinı zpùsob, jak vypnout reaktor. Udìláš dobøe, kdy budeš dret hubu, ne odtud zmizím. Sbohem.}
+{153}{}{Máš co jsi chtìl. Fajn, uh, take zelená jde dolù... (Nìkolik minut manipuluje s kontrolním panelem a pøitom si stále nìco mumlá.) Okay, u je to hotovo, ale buï si jistı, e reaktor teï moc dlouho stabilní nebude.}
+{154}{}{Udìlal jsi správnou vìc. No, tak já dopiju a pùjdu... jo, ještì jedna vìc, buï tady teï chvíli jako skøítek, protoe jací jsou skøítci....klidní a tišší.}
+{155}{}{Dobrá práce. No a teï tì budu muset zabít. Promiò, ale nemùu si dovolit ádné svìdky.}
+{156}{}{Tak já padám. Sbohem.}
+{157}{}{No já osobnì neøídím pøíliš mnoho èinností reaktoru. Øízení vìtšiny funkcí má na starosti hlavní poèítaè, kterı je severnì od reaktoru. Bez nìj bychom nemìli ádnou energii.}
+{158}{}{ádnou energii?}
+{159}{}{Pøesnìji øeèeno, nemìli bychom ji dost. Svìtla, obrana a další základní vìci by nìjakou dobu fungovaly, ale napøíklad silová pole a další energeticky nároèná zaøízení by se okamitì vypnula.}
+{160}{}{Vypadá to, e bychom bez nìj byli úplnì ochromeni.}
+{161}{}{Pøíliš dobøe by nám bez nìj nebylo. V pøípadì nutnosti se všechny druhy bezpeènostních dveøí automaticky vodotìsnì uzavøou. Jakmile se pøeruší dodávka energie, uzavøou se i všechny únikové vıchody na povrch. Jednoduché a úèinné bezpeènostní opatøení.}
+{162}{}{Zajímavé. Ale je tu ještì nìco co bych chtìl vìdìt.}
+{163}{}{To je vše, co jsem potøeboval vìdìt. Díky, moc jsi mi pomohl. Udìláš dobøe, kdy budeš zticha, ne odtud zmizím.}
+{164}{}{Díky. Škoda, e u tu nebudeš, abys to vidìl. Sbohem.}

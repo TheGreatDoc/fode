@@ -1,0 +1,111 @@
+# QUICK LOOK
+{100}{}{Tu vois une nana.}
+
+# 1. LOOK (PLAYER IS MALE)
+{150}{}{Tu vois une femme assez attirante. Elle semble te dévisager.}
+{151}{}{Tu vois une nana. Elle semble hésiter à s'occuper de toi.}
+
+# 2. LOOK (PLAYER IS FEMALE)
+{160}{}{Tu vois une femme assez attirante. Elle te dévisage comme si tu étais son adversaire.}
+{161}{}{Tu vois une nana. Elle te dévisage comme si tu étais son adversaire.}
+
+# 3. [ENCLAVE DESTROYED]
+{201}{}{Tu es le plus grand tombeur au monde.}
+{203}{}{J'ai entendu dire que les Frères te cherchaient. Ils veulent faire un film inspiré de tes aventures.}
+{202}{}{Vas-y, ma fille !}
+
+# 4. [POWER ARMOR]
+{225}{}{Il n'est pas QUESTION que je rate ça !}
+{226}{}{Est-ce là un nouveau préservatif corporel ?}
+
+# 5. [MALE, PORN STAR]
+{235}{}{Tu as besoin de quelque chose ?}
+{237}{}{Regardez ! C'est lui !}
+{236}{}{J'aimerais tellement tourner une scène avec }
+
+# 6. [PORN STAR, FEMALE]
+{247}{}{Ce n'est pas facile d'être une nana.}
+
+# 7. [MALE, PRIZEFIGHTER]
+{255}{}{Oh mon dieu... c'est luiii !!}
+{256}{}{Regarde un peu ces muscles ! Je me sens faillir...}
+
+# 8. [FEMALE, PRIZEFIGHTER]
+{270}{}{Oh mon dieu... c'est elle !!}
+{271}{}{Bienvenue au studio, Madame.}
+
+# 9. [MALE, MADE MAN/BERSERKER]
+{280}{}{Oh mon dieu... c'est luiii !!}
+{281}{}{Bienvenue au studio, Monsieur.}
+
+# 10. [FEMALE, MADE MAN/BERSERKER]
+{290}{}{Oh mon dieu... c'est elle.}
+{291}{}{Bienvenue au studio, Madame.}
+
+# 11. [MALE, NO REP + MYRON]
+{300}{}{Oh, merde. C'est Myron ! Cours !}
+{301}{}{Tu as intérêt à ce que Myron ne s'approche pas de moi.}
+
+# 12. FLOAT/[LEATHER]
+{316}{}{Super. Encore un rôle SM.}
+{317}{}{On ne fait ni cuir ni chaînes avant la semaine prochaine.}
+
+# 13. [NO REP + BONENOSE]
+{325}{}{Si je dois encore m'occuper d'un acteur aujourd'hui, je crois que je vais vomir.}
+{326}{}{J'ai entendu dire que la situation redevenait tendue entre les Familles.}
+{327}{}{Le type qui a un os entre les narines est plutôt mignon. D'un point de vue sadomasochiste en tout cas.}
+{328}{}{Vise un peu le tribale qui a un os entre les narines. Ah, il ira loin !}
+{329}{}{Super. Une autre NANA. Vu sa tête, elle travaillera certainement à moitié prix.}
+
+# 14. [NO REP]
+{345}{}{Si je dois encore m'occuper d'un acteur aujourd'hui, je vais vomir.}
+{346}{}{Ce n'est pas facile d'être une nana.}
+{348}{}{Qui c'est elle ?}
+{347}{}{Qui tu es toi ?}
+
+# 15. [ENCLAVE DESTROYED]
+{360}{}{L'Enclave ? Le président ? Raconte-moi toute l'histoire.}
+{361}{}{Raconte-moi tout sur cette bataille contre l'Enclave. Je vais te chercher une bière fraîche.}
+
+# 16. [PORN STAR]
+{371}{}{Hum, tu ne voudrais pas sortir prendre un verre ? Sinon, ça te dirait un petit coup rapide ?}
+{372}{}{Je peux avoir un autographe ? Sur la poitrine ?}
+{373}{}{Hum, ça te dirait d'aller boire un coup ? Si tu aimes les femmes, bien sûr...}
+
+# 17. [PRIZEFIGHTER]
+{420}{}{Tu veux sauter le pas avec moi, champion ?}
+{421}{}{Bonjour, ma belle. Je peux faire quelque chose pour toi... *n'importe quoi* ?}
+{422}{}{Hum, plus tard, si tu cherches un peu de compagnie, ma belle...}
+
+# 18. [MADE MAN]
+{450}{}{Bonjour, beau gosse. Je peux faire quelque chose pour toi... *n'importe quoi* ?}
+{451}{}{Hum, plus tard, si tu cherches un peu de compagnie, ma belle...}
+
+# 19. [BONE-NOSE]
+{467}{}{Heu, est-ce que ton ami qui a un os entre les narines essaie de compenser un manque ?}
+{468}{}{Ton ami, celui qui a un os entre les narines, il est pris ?}
+{469}{}{Ton ami, celui qui a un os entre les narines, il est plutôt mignon. Dans le genre sadomasochiste.}
+{470}{}{C'est qui ton ami si mignon, celui avec un os entre les narines ?}
+{471}{}{Hum, c'est la première fois que tu viens ici, hein ?}
+{472}{}{C'est vraiment pas bon mais on s'y fait.}
+
+# 20. [NO REP]
+{500}{}{Non merci, je regrette. J'aurais plus de plaisir avec mon rouge à lèvre.}
+{501}{}{Hum, c'est la première fois que tu viens ici, hein ?}
+{502}{}{C'est vraiment pas bon mais on s'y fait.}
+
+{1200}{}{. La personne qui a donné une leçon à l'Enclave.}
+{1204}{}{ ! C'est comme ça qu'on donne une leçon à l'Enclave !}
+{1207}{}{ . La personne qui a donné une leçon à l'Enclave.}
+{1235}{}{ ?}
+{1236}{}{ !}
+{1238}{}{ !}
+{1239}{}{.}
+{1245}{}{ ?}
+{1255}{}{.}
+{1270}{}{.}
+{1280}{}{.}
+{1290}{}{.}
+{1374}{}{ ?}
+{1378}{}{ !}
+{1381}{}{ ?}

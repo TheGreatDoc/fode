@@ -1,0 +1,163 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš terminál.}
+{101}{}{Vidíš terminál. Zdá se být plnì funkèní.}
+{102}{}{Vidíš DataPlex 2000 SmarTerminál, s 64k RAM pamìti, poslední výkøik poèítaèové technologie - škoda, že právì teï nefunguje.}
+{103}{}{Vidíš DataPlex 2000 SmarTerminál, s 64k RAM pamìti, poslední výkøik poèítaèové technologie.}
+{104}{}{Vítejte do sítì PoseidoNet. Vyberte pøíkaz ze vstupního menu:}
+{105}{}{Pøihlásit se.}
+{106}{}{Nápovìda.}
+{107}{}{Ukonèit práci.}
+{108}{}{Tento terminál pøehrává velmi nudný Indiánský film.}
+{109}{}{Tento terminál pøehrává program o støelbì. Vše co mùžeš vidìt je støed terèe.}
+{110}{}{Tento terminál ukazuje nìjaký druh moderního umìní - skládající se z pruhù mnoha rùzných barev.}
+{111}{}{Vidíš terminál. Pøes obrazovku se diagonálnì pohybují malé zelené bomby.}
+{112}{}{Tento terminál zobrazuje vzkaz, "Nyní mùžete bez obav vypnout poèítaè." Nechápeš, co to znamená.}
+{113}{}{Vidíš èervená, zelená a modrá svìtla, jejichž kombinace vytváøí jakýsi obraz....}
+{114}{}{Díváš se do terminálu na nìèí velice hnusný oblièej. Oh, poèkat, tenhle terminál je vypnutý.}
+{115}{}{Toto okno zobrazuje temnou dimenzi mimo náš prostor a èas.}
+{116}{}{Tento terminál zobrazuje vzkaz - "Nahrávám  Fenestra '98." Tento terminál je pokryt tlustou vrstvou prachu.}
+{117}{}{Tento terminál vypadá dost opotøebovanì. Spouští cosi co nazývá Fallout 2. Sááákra, to vypadá na multiplayer a ve 3D.}
+{118}{}{Napiš uživatelský identifikátor:}
+{119}{}{(No zkusme tøeba tohle) Seznam uživatelù.}
+{120}{}{(Jestlipak tohle bude fungovat?) Smith, J.}
+{121}{}{Zpìt.}
+{123}{}{Myslím, že bude lepší, když pùjdu blbnout nìkam jinam.}
+{124}{}{Seznam: (Terminál zobrazil seznam o více než pìti stech jménech)}
+{125}{}{Seznam: (Poèítaè zobrazil seznam jmen)}
+{126}{}{Vyber uživatelský identifikátor, nebo se odhlaš:}
+{127}{}{(Tento pøístup je bezproblémový.) Smith, J.}
+{128}{}{(Tenhle vypadá velmi speciálnì.) Prezidentský Bezpeènostní klíè nutný!}
+{129}{}{(Tento pøístup vypadá lépe než ostatní.) Murray, T.}
+{130}{}{(Tento pøístup je v pohodì.) Curling, Dr. C.}
+{131}{}{(Tento pøístup vypadá opravdu zajímavì.) Bird, D.}
+{132}{}{(Možná to zkusím pozdìji.) Odhlásit se.}
+{133}{}{Vyber:}
+{134}{}{ A. E. C.: Èinnost Atomové Elektrárny}
+{135}{}{                                Bezpeènostní stav}
+{136}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{137}{}{Bezpeènostní stav}
+{138}{}{Návrat do uživatelského menu:}
+{139}{}{Vyber:}
+{140}{}{ Stupeò bezpeènosti: Souèasný stav}
+{141}{}{                                 Chemické zamoøení: Projektová zpráva o stavu}
+{142}{}{                 A. E. C.: Èinnost Atomové Elektrárny}
+{143}{}{                              Bezpeènostní stav?}
+{144}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{145}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{146}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{147}{}{Bezpeènostní stav}
+{148}{}{Návrat do uživatelského menu:}
+{149}{}{Vyber:}
+{150}{}{ Státy a národy: Souèasný stav,}
+{151}{}{                                   (Seznam slov),}
+{152}{}{                                                         Stupeò bezpeènosti: Souèasný stav,}
+{153}{}{                              Chemické zamoøení: Projektová zpráva o stavu,}
+{154}{}{                 A. E. C.: Èinnost Atomové Elektrárny,}
+{155}{}{                             Bezpeènostní stav?}
+{156}{}{Státy a národy: Souèasný stav}
+{157}{}{Stáhnout seznam slov}
+{158}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{159}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{160}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{161}{}{Bezpeènostní stav}
+{162}{}{Návrat do uživatelského menu:}
+{163}{}{Vyber: Bezpeènostní stav?}
+{164}{}{Bezpeènostní stav}
+{165}{}{Ukonèit pøístup}
+{166}{}{Stahování kompletní.}
+{167}{}{Státy a národy: Souèasný stav}
+{168}{}{Stáhnout seznam slov}
+{169}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{170}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{171}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{172}{}{Návrat do uživatelského menu:}
+{173}{}{Stahování kompletní.}
+{174}{}{Stáhnout seznam slov}
+{175}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{176}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{177}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{178}{}{Bezpeènostní stav}
+{179}{}{Návrat do uživatelského menu:}
+{180}{}{Stahování kompletní.}
+{181}{}{Státy a národy: Souèasný stav}
+{182}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{183}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{184}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{185}{}{Bezpeènostní stav}
+{186}{}{Návrat do uživatelského menu:}
+{187}{}{Podlaží - Ubikace Stráží: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v pohotovostním režimu.}
+{188}{}{Podlaží - Ubikace Stráží: Bezpeènostní støelecké vìžièky jsou v souèasném stavu v normálním režimu.}
+{189}{}{Podlaží - Ubikace Stráží: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v deaktivovaném režimu.}
+{190}{}{Podlaží - Testovaných Subjektù: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v pohotovostním režimu.}
+{191}{}{Podlaží - Testovaných Subjektù: Bezpeènostní støelecké vìžièky jsou v souèasném stavu v normálním režimu.}
+{192}{}{Podlaží - Testovaných Subjektù: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v deaktivovaném režimu.}
+{193}{}{Oblast výzkumu a vývoje: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v pohotovostním režimu.}
+{194}{}{Oblast výzkumu a vývoje: Bezpeènostní støelecké vìžièky jsou v souèasném stavu v normálním režimu.}
+{195}{}{Oblast výzkumu a vývoje: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v deaktivovaném režimu.}
+{196}{}{Oblast prezidentské kanceláøe: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v pohotovostním režimu.}
+{197}{}{Oblast prezidentské kanceláøe: Bezpeènostní støelecké vìžièky jsou v souèasném stavu v normálním režimu.}
+{198}{}{Oblast prezidentské kanceláøe: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v deaktivovaném režimu.}
+{199}{}{Podlaží - Informaèní støedisko a elektrárna: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v pohotovostním režimu.}
+{200}{}{Podlaží - Informaèní støedisko a elektrárna: Bezpeènostní støelecké vìžièky jsou v souèasném stavu v normálním režimu.}
+{201}{}{Podlaží - Informaèní støedisko a elektrárna: Bezpeènostní støelecké vìžièky jsou v souèasném stavu plnì v deaktivovaném režimu.}
+{202}{}{Zmìnit stupeò bezpeènosti}
+{203}{}{Státy a národy: Souèasný stav}
+{204}{}{Stáhnout seznam slov}
+{205}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{206}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{207}{}{Bezpeènostní stav}
+{208}{}{Návrat do uživatelského menu:}
+{209}{}{Stahování kompletní.}
+{210}{}{Stáhnout Státy a národy: Souèasný stav}
+{211}{}{Stáhnout seznam slov}
+{212}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{213}{}{Stáhnout A. E. C.: Èinnost Atomové Elektrárny}
+{215}{}{Bezpeènostní stav}
+{216}{}{Návrat do uživatelského menu:}
+{217}{}{Stahování kompletní.}
+{218}{}{Stáhnout Státy a národy: Souèasný stav}
+{219}{}{Stáhnout seznam slov}
+{220}{}{Bezpeènost/Úroveò: Souèasný Stav}
+{221}{}{Stáhnout Chemické zamoøení: Projektová zpráva o stavu}
+{222}{}{Bezpeènostní stav}
+{223}{}{Návrat zpìt do uživatelského menu:}
+{224}{}{Tento terminál je v souèasné dobì zaneprázdnìn diagnostickým programem. Prosím zkuste jiný terminál. Dìkuji.}
+{225}{}{Vítejte v NÁPOVÌDÌ sítì PoseidoNet. Je nám líto, ale soubory  vaší NÁPOVÌDY jsou v souèasné dobì již zastaralé a tím pádem nepoužitelné. Vyhledat aktualizované soubory NÁPOVÌDY? (Ano/Ne)}
+{226}{}{Ano}
+{227}{}{Ne, Zpìt}
+{228}{}{Soubory NÁPOVÌDY nelze aktualizovat s vaším "zkušebním" PoseidoNetovým softwarem. Prosím zakupte si plnou verzi pro plný pøístup ke všem dalším aktualizacím. Vaše zkušební období pro pøístup k PoseidoNetu je 59439 dnù prošlé.}
+{229}{}{Zobrazit uživatelské menu.}
+{230}{}{Ukonèit práci}
+{231}{}{Vstupní bezpeèností opatøení vyžaduje Prezidentský bezpeènostní klíè. Pøípustné volby: Potlaèení vzpoury, nebo rebelie, Mimoøádné vypnutí systému obrany.}
+{232}{}{(Zkusím se podívat na toto.) Potlaèení vzpoury, nebo rebelie.}
+{233}{}{(No, zkusím se podívat na toto.) Mimoøádné vypnutí systému obrany.}
+{234}{}{(Možná bych mìl vyzkoušet nìco ménì nápadného) Návrat zpìt do uživatelského menu.}
+{235}{}{(Nemyslím, že se mi chce s tímhle babrat právì teï.) Odhlásit se}
+{236}{}{Potlaèení vzpoury, nebo rebelie. V pøípadì možné vzpoury, pøipouští Prezidentský bezpeènostní klíè uvést obranné systémy do pohotovosti namíøené proti všem, døíve vìrným, ale nyní nepøátelským jednotkám v dané oblasti. Obranné systémy jsou naprogramovány tak, aby útoèily nejdøíve na nejnebezpeènìjšího nepøítele. Varování! Nynìjší operaèní úroveò - Pouze vstupní patro!}
+{237}{}{(To vypadá užiteènì.) Aktivovat bezpeènostní protokol "Potlaèení vzpoury, nebo rebelie".}
+{238}{}{(No, možná to zkusíme pozdìji.) Zpìt.}
+{239}{}{(Už mì nebaví hrát si z poèítaèem.) Odhlásit se.}
+{240}{}{Prezidentský bezpeènostní klíè pøijat, Dobrý den, Pane Prezidente.... Spouštím protokol "Potlaèení vzpoury, nebo rebelie."... Primární cíl získán}
+{241}{}{(Myslím, že si stoupnu trochu stranou a podívám se co se stane.)}
+{242}{}{Prezidentský bezpeènostní klíè pøijat, Dobrý den, Pane Prezidente.... Spouštím protokol "Potlaèení vzpoury, nebo rebelie."...**Porucha**... Bezpeènostní spojení je na tomto patøe mimo provoz. Prosím vyplòte formuláø FG-I-106-32-0635 pro schválení opravy tohoto zaøízení. Dìkujeme za použití našeho dalšího spolehlivého výrobku. Pøeji pìkný den.}
+{243}{}{(Možná, že to funguje pouze na vstupním podlaží. Hmm, to musí být urèitì ta plocha pøed dokem. Budu to muset zkusit tam.) Návrat do uživatelského menu.}
+{244}{}{(To je strašné co tady jeden musí udìlat, aby se mu nìco povedlo spustit!) Zpìt.}
+{245}{}{Pro vstup je nutný Prezidentský bezpeènostní klíè. Klíè nebyl nalezen.}
+{246}{}{(To je strašné co tady jeden musí udìlat, aby se mu nìco povedlo spustit!) Zpìt.}
+{247}{}{Mimoøádné vypnutí systému obrany doèasnì vypojí aktivní bezpeènostní systémy v patøe. Vypnutí systému spustí obsáhlou diagnostickou proceduru pøed zavedením auto-restartu bezpeènostních systémù.}
+{248}{}{(To stojí za pokus.) Aktivovat "Mimoøádné vypnutí systému obrany".}
+{249}{}{(Hmm, možná to zkusím nìkdy jindy.) Zpìt.}
+{250}{}{(Už mì nebaví hrát si z poèítaèem.) Odhlásit se.}
+{251}{}{Prezidentský bezpeènostní klíè pøijat, Dobrý den, pane Prezidente.... Mimoøádné vypnutí systému obrany zapoèato...Provádím obsáhlou diagnostickou proceduru. Alpha....Bravo....Charlie....}
+{252}{}{(Z nìjakého zvláštního dùvodu, si nemyslím, že to chci udìlat právì teï.) Zpìt.}
+{253}{}{(Bude lepší, když vypadnu dokud ta mašinka pracuje). Odhlásit se.}
+{254}{}{Prezidentský bezpeènostní klíè nebyl pøijat.  Pøístup zamítnut.}
+{255}{}{(Hmm, by mì zajímalo, jestli bych dokázal oklamat scanner, aby si myslel, že mám klíè a nechal mì hacknout pøístupový soubor. Myslím, že to zkusím.)}
+{256}{}{(Fajn, stálo to za to.) Zpìt.}
+{257}{}{Bezpeènostní scanner selhal...Pøeinicializuji scanner....}
+{258}{}{(To je moje šance, teï jen musím dostat do pamìti poèítaèe, že Prezidentský bezpeènostní klíè byl uznán....)}
+{259}{}{(Sakra, no nic na plat.....) Zpìt.}
+{260}{}{Scanner pøeinicializován. Pøeskenovávám....}
+{261}{}{(A nyní pøichází oèekávaný moment.)-Píšeš jako zbìsilý.}
+{262}{}{Ilegální postup objeven. Další pøístup k tomuto terminálu je odepøen...poplachové hlášení odesláno.}
+{263}{}{Kurva. Tak to jsem teda nechtìl.}

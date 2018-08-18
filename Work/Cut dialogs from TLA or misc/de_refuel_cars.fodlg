@@ -1,0 +1,114 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+Dialog kupowania auta, auto jezeli jest miejsce respi sie punkcie respa samochodow w danym miescie. Dlatego moze byc to jakas malo lokacja z obstawa np. gasstation. Moze ona sie tez powtarzac, niema z tym problemu.
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 1 #
+3 2010 R _script car_buy@r_CheckCar 1 0 #
+4 2020 R _script car_buy@r_CheckCar 1 0 #
+65505 2030 @
+3 3000 car_buy@dlg_Fuel 1 #
+5 3010 R _script car_buy@r_DoFuel 1 0 #
+37 3020 #
+0 3030 @
+4 4000 car_buy@dlg_Wear 1 #
+5 4010 R _script car_buy@r_DoWear 1 0 #
+37 4020 #
+65505 4030 @
+37 5000 None 1 @
+38 6000 None 1 @
+5 7000 None 1 @
+100 8000 None 1 @
+101 9000 None 1 @
+102 10000 None 1 @
+103 11000 None 1 &
+
+[engl]
+{100}{}{Kate}
+{110}{}{women12.png}
+{200}{}{You see a nice-looking girl.}
+{210}{}{You see Kate. She looks pretty hot.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Welcome! My name is Kate, and I run this gas station. You need some fuel? I'm also a mechanic, can fix your baby if you want me to.}
+{2010}{}{I'd like you to fill'er up.}
+{2020}{}{Yeah, I it needs some repairs. Can you take a look at this?}
+{2030}{}{Ok, I'll keep that in mind.}
+{3000}{}{All rite, it'll be @lex fuel_cost@ coins.}
+{3010}{}{Okay.}
+{3020}{}{Sorry, I don't have enough cash...}
+{3030}{}{I'll come back next time.}
+{4000}{}{Let me see... @lex wear_cost@ coins, and it'll be as good as new.}
+{4010}{}{You've got yourself a deal, baby.}
+{4020}{}{Nah.}
+{4030}{}{Next time, perhaps.}
+{5000}{}{So why are you wasting my time then?@@No money? Shooo!@@You ain't gonna get anything for free.}
+{6000}{}{I think don't really need that.}
+{7000}{}{It's done!}
+{8000}{}{Um, I just remembered I got something that needs taken care of, I'll drop in later.}
+{9000}{}{Take the key in your hand, How am I supposed to know what vehicle are you talking about?}
+{10000}{}{I can't see your vehicle, park it here.}
+{11000}{}{Take the key in your hand...}
+
+[pols]
+{100}{}{Kate}
+{110}{}{women12.png}
+{200}{}{You see a nice-looking girl.}
+{210}{}{You see Kate. He looks good in those jeans.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Welcome in "Coal Mine" town ...
+My name is Kate, If you need to refuel your vehicle or fix something I can help you.}
+{2010}{}{I'd like to fuel up my vehicle}
+{2020}{}{I think that I need repair my vehicle}
+{2030}{}{Ok, I'll keep that in my mind.}
+{3000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{3010}{}{Okay.}
+{3020}{}{I don't have enough money.}
+{3030}{}{I'll come back next time.}
+{4000}{}{Repair will cost you @lex wear_cost@ coins.}
+{4010}{}{Deal! Fix it.}
+{4020}{}{Nope. Too expensive.}
+{4030}{}{Next time, I think.}
+{5000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{6000}{}{There's no need for that.}
+{7000}{}{Done.}
+{8000}{}{Sorry, have important work to do now, come here later.}
+{9000}{}{Take the key in your hand, I can't understand what vehicle are you talking about.}
+{10000}{}{I can't see your vehicle, park it here.}
+{11000}{}{Take the key in your hand human.}
+
+[russ]
+{100}{}{Kate}
+{110}{}{women12.png}
+{200}{}{You see a nice-looking girl.}
+{210}{}{You see Kate. He looks good in those jeans.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Welcome in "Coal Mine" town ...
+My name is Kate, If you need to refuel your vehicle or fix something I can help you.}
+{2010}{}{I'd like to fuel up my vehicle}
+{2020}{}{I think that I need repair my vehicle}
+{2030}{}{Ok, I'll keep that in my mind.}
+{3000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{3010}{}{Okay.}
+{3020}{}{I don't have enough money.}
+{3030}{}{I'll come back next time.}
+{4000}{}{Repair will cost you @lex wear_cost@ coins.}
+{4010}{}{Deal! Fix it.}
+{4020}{}{Nope. Too expensive.}
+{4030}{}{Next time, I think.}
+{5000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{6000}{}{There's no need for that.}
+{7000}{}{Done.}
+{8000}{}{Sorry, have important work to do now, come here later.}
+{9000}{}{Take the key in your hand, I can't understand what vehicle are you talking about.}
+{10000}{}{I can't see your vehicle, park it here.}
+{11000}{}{Take the key in your hand human.}
+

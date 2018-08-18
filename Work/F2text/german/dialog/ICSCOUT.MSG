@@ -1,0 +1,13 @@
+# 0. QUICK LOOK
+{100}{}{Du siehst Laufender Schatten.}
+
+# 0. LOOK
+{150}{}{Du siehst einen muskulösen, Wilden mit schwarzen Narben im Gesicht. Er schaut dich stumm an.}
+{151}{}{Du siehst Laufender Schatten. Sein Gesicht ist von rituellen Tätowierungen stark vernarbt.}
+
+# 1. CLICK ON HIM (WTG)
+{200}{}{Er starrt dich schweigend an.}
+{201}{}{Er beobachtet dich schweigend.}
+
+# WABBITS
+{300}{}{Pssst... Ich jag Taninchen.}

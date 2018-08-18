@@ -1,0 +1,12 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Starý, rozbitý Highwayman.}
+{110}{}{Tenhle stroj je na tom ještì hùøe, než se na první pohled zdá -- tohle už nikdo neopraví. Ale vypadá to, že na zadním sedadle je krabice s náhradními díly k motoru, a vypadá celkem zachovale.}
+{111}{}{Tento stroj vypadá dost špatnì. Akorát na zadním sedadle je balík, zdá se.}
+{112}{}{Tento stroj vypadá témìø stejnì jako všechny ostatní tady kolem. Zdá se, že na zadním sedadle je nìjaký balík.}
+{113}{}{Tahle stará šunka je ve skvìlém stavu! Vsadím se, že by se to dalo nìjak spravit. Ale jen kdyby byly náhradní souèástky...}
+{120}{}{Motor vypadá dost zrezavìle a témìø neopravitelnì. A hele. Pøi prohlížení auta, nacházíš láhev palivových pøísad, které budou urèitì velmi dobøe hoøet.}
+{121}{}{Motor nevypadá jako nic jiného, než zrezavìlá hromada èehosi, co se rozpadne na kusy, sotva otevøeš kapotu.}
+{122}{}{Toto je pro opravdovýho mechanika. Ale nemáš zkušenosti a souèástky, aby se to teï dalo rozchodit.}
+{123}{}{Vypadá to, že tohle dítko je témìø pøipraveno øádit. Ještì párkrát otoèit tímhle šroubem... (musíš honem uskoèit, protože motor vypadl z auta a rozbil se na hromadu šrotu a náhradních dílu.)}
+{130}{}{Na zadním sedadle byl regulátor pøívodu paliva.}

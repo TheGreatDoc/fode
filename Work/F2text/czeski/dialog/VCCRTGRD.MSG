@@ -1,0 +1,15 @@
+# Tento soubor pøeložil Petr "Lee" Bulíø.......Level
+{100}{}{Vidíš pøísnì vypadající stráž.}
+{101}{}{Vidíš vážnì vypadající stráž Vault City.}
+{102}{}{Pokraèuj svou cestou.}
+{103}{}{Myslím, že je pravý èas, abys odešel.}
+{104}{}{Nelíbí se mi tvùj výraz.}
+{105}{}{Dávej na sebe pozor.}
+{106}{}{Zdravím, Obèane.}
+{107}{}{Rád tì vidím, Obèane.}
+{108}{}{Rušný den, Obèane?}
+{109}{}{Až po tobì, Obèane.}
+{110}{}{Hej, poutníku.}
+{111}{}{Jdi svou cestou, venkovane.}
+{112}{}{Žádné okounìní.}
+{113}{}{Zeptej se Walace, jestli se chceš dostat do mìsta.}

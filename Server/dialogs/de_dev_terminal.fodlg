@@ -1,0 +1,273 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _param p ST_LEVEL = 77 #
+9 1020 D _param p ST_LEVEL ! 77 R _script dialog@r_DevTerminal1 0  @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+5 2030 #
+6 2040 #
+0 2050 @
+3 3000 None 1 #
+0 3010 D _param p PE_GAIN_STRENGTH < 5 D _param p PE_STRONG_BACK < 25 R _script dialog@r_DevTerminal2 0  R _param p PE_AWARENESS = 1 R _param p PE_BONUS_HTH_ATTACKS = 1 R _param p PE_BONUS_RATE_OF_FIRE = 1 R _param p PE_MORE_CRITICALS = 3 R _param p PE_BETTER_CRITICALS = 1 R _param p PE_STRONG_BACK = 25 R _param p PE_SHARPSHOOTER = 5 R _param p PE_ACTION_BOY = 20 R _param p PE_GAIN_STRENGTH = 5 R _param p PE_GAIN_PERCEPTION = 5 R _param p PE_GAIN_ENDURANCE = 5 R _param p PE_GAIN_CHARISMA = 5 R _param p PE_GAIN_INTELLIGENCE = 5 R _param p PE_GAIN_AGILITY = 5 R _param p PE_GAIN_LUCK = 5 R _param p ST_MAX_LIFE + 300 R _param p SK_SMALL_GUNS = 230 R _param p SK_BIG_GUNS = 230 R _param p SK_ENERGY_WEAPONS = 230 R _param p SK_UNARMED = 300 R _param p SK_TACTICAL_FIGHTING = 230 R _param p SK_THROWING = 230 R _param p SK_FIRST_AID = 230 R _param p SK_DOCTOR = 230 R _param p SK_SNEAK = 230 R _param p SK_LOCKPICK = 230 R _param p SK_STEAL = 230 R _param p SK_TRAPS = 230 R _param p SK_SCIENCE = 230 R _param p SK_REPAIR = 230 R _param p SK_SPEECH = 230 R _param p SK_BARTER = 230 R _param p SK_GAMBLING = 230 R _param p SK_OUTDOORSMAN = 230 R _param p ST_CURRENT_HP + 300 #
+65505 3020 #
+0 3030 R _script dialog@r_DevTerminal2 0  @
+4 4000 None 1 #
+65505 4010 #
+0 4020 R _script server_scripts@teleport_baza 0  #
+0 4030 R _script server_scripts@teleport_london 0  #
+0 4040 R _script server_scripts@teleport_moscow 0  #
+0 4050 R _script server_scripts@teleport_scrapers 0  #
+0 4060 R _script server_scripts@teleport_berlincity 0  #
+0 4070 R _script server_scripts@teleport_townstation 0  #
+0 4080 R _script server_scripts@teleport_darkwaters 0  #
+0 4090 R _script server_scripts@teleport_furytown 0  #
+0 4100 R _script server_scripts@teleport_greenpoint 0  #
+0 4110 R _script server_scripts@teleport_deathmine 0  #
+0 4120 R _script server_scripts@teleport_oldvillage 0  #
+0 4130 R _script server_scripts@teleport_oldfields 0  #
+0 4140 R _script server_scripts@teleport_industrial_center 0  #
+0 4150 R _script server_scripts@teleport_powerplant 0  #
+0 4160 R _script server_scripts@teleport_hunterscamp 0  #
+0 4170 R _script server_scripts@teleport_mountainmine 0  #
+0 4180 R _script server_scripts@teleport_minepit 0  #
+0 4190 R _script server_scripts@teleport_coalmine 0  #
+0 4200 R _script server_scripts@teleport_101 0  #
+0 4210 R _script server_scripts@teleport_island 0  #
+0 4220 R _script server_scripts@teleport_districtx 0  #
+0 4230 R _script server_scripts@teleport_mgl 0  #
+65505 4240 @
+5 5000 None 1 #
+65505 5010 @
+6 6000 None 1 #
+7 6010 #
+8 6020 #
+0 6030 D _param p ST_RUN_TIME ! 25 R _param p ST_RUN_TIME = 25 R _script dialog@r_DevTerminal2 0  #
+0 6040 D _param p ST_RUN_TIME ! 200 R _param p ST_RUN_TIME = 200 R _script dialog@r_DevTerminal2 0  #
+0 6050 R _param p PE_FIRE_GECKO_SKINNING = 1 R _param p PE_BRAHMIN_SKINNING = 1 R _param p PE_GECKO_SKINNING = 1 R _script dialog@r_DevTerminal2 0  #
+0 6060 R _param p MODE_NO_STEAL = 1 R _param p MODE_NO_DROP = 1 R _param p MODE_NO_LOOT = 1 R _script dialog@r_DevTerminal2 0  #
+2 6070 @
+7 7000 None 1 #
+0 7010 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 1 R _item p PID_ROPE + 3 #
+0 7020 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 2 #
+0 7030 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 3 R _item p PID_DEFIBRIL + 3 R _item p PID_STIMPAK + 10 #
+0 7040 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 4 #
+0 7050 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 5 #
+0 7060 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 6 R _item p PID_COMBAT_KNIFE_DE + 3 #
+0 7070 R _script dialog@r_DevTerminal2 0  R _param p PLAYER_PROFESSION = 0 #
+65505 7080 @
+8 8000 None 1 #
+0 8010 R _param p ST_SLOT_A = 1 R _param p ST_SLOT_B = 1 R _param p ST_SLOT_C = 1 R _script dialog@r_UnlockSlotHead 0  #
+65505 8020 @
+9 9000 None 1 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{warunek}
+{1020}{}{Answer text}
+{2000}{}{DEV TERMINAL}
+{2010}{}{SZYBKIE ULEPSZENIE POSTACI}
+{2020}{}{TELEPORTACJA}
+{2030}{}{INNE OPCJE}
+{2040}{}{TWOJA POSTAC}
+{2050}{}{<<<--- WYJSCIE Z TERMINALA}
+{3000}{}{CZY PODWYZSZYC STATYSTYKI I ULEPSZYC POSTAC?}
+{3010}{}{TAK}
+{3020}{}{NIE}
+{3030}{}{COFNIJ PODWYZSZENIA}
+{4000}{}{TELEPORTACJA DO...}
+{4010}{}{<<<--- POWROT DO MENU}
+{4020}{}{Baza [ 666 ]}
+{4030}{}{London [ 711 ]}
+{4040}{}{Moscow [ 690 ]}
+{4050}{}{Scrapers [ 694 ]}
+{4060}{}{Berlin [ 695 ]}
+{4070}{}{Town Station [ 668 ]}
+{4080}{}{Dark Waters [ 702 ]}
+{4090}{}{Fury Town [ 709 ]}
+{4100}{}{Green Point [ 669 ]}
+{4110}{}{Death Mine [ 678 ]}
+{4120}{}{Old Village [ 670 ]}
+{4130}{}{Old Fields [ 685 ]}
+{4140}{}{Industrial Center [ 689 ]}
+{4150}{}{Power Plant [ 710 ]}
+{4160}{}{Hunters Camp [752]}
+{4170}{}{Mountain Mine [ 674 ]}
+{4180}{}{Mine Pit [ 677 ]}
+{4190}{}{Coal Mine [ 706 ]}
+{4200}{}{101 Nights / TB City [ 703 ]}
+{4210}{}{Island [ 700 ]}
+{4220}{}{District X [ 672 ]}
+{4230}{}{Mendel Genetic Lab. [ 741 ]}
+{4240}{}{<<<--- POWROT DO MENU}
+{5000}{}{INNE OPCJE}
+{5010}{}{BRAK}
+{6000}{}{TWOJA POSTAC}
+{6010}{}{PROFESJE}
+{6020}{}{ODBLOKUJ SLOTY}
+{6030}{}{SZYBKIE CHODZENIE [PARAM 118 = 25]}
+{6040}{}{NORMALNE CHODZENIE [PARAM 118 = 200]}
+{6050}{}{ZBIERANIE SKOR Z MOBOW [Fire Gecko = 428, Brahmin = 429, Gecko = 430]}
+{6060}{}{NO STEAL,DROP & LOOT [511, 523, 532]}
+{6070}{}{<<<--- POWROT DO MENU}
+{7000}{}{PROFESJE}
+{7010}{}{BOUNTY HUNTER [ Parametr 911=1 ]}
+{7020}{}{SCOUT [ Parametr 911=2 ]}
+{7030}{}{PARAMEDIC [ Parametr 911=3 ]}
+{7040}{}{ASSASIN [ Parametr 911=4 ]}
+{7050}{}{SOLDIER [ Parametr 911=5 ]}
+{7060}{}{CANNIBAL [ Parametr 911=6 ]}
+{7070}{}{BRAK PROFESJI [ Parametr 911=0 ]}
+{7080}{}{<<<--- POWROT DO MENU}
+{8000}{}{ODBLOKOWAC WSZYSTKIE SLOTY?
+SPEC SLOT [ 145=1 ]
+RED [ 146=1 ]
+GREEN [ 147=1 ]
+BLUE [ 148=1 ]}
+{8010}{}{TAK}
+{8020}{}{NIE}
+{9000}{}{Access Denied}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{warunek}
+{1020}{}{Answer text}
+{2000}{}{DEV TERMINAL}
+{2010}{}{SZYBKIE ULEPSZENIE POSTACI}
+{2020}{}{TELEPORTACJA}
+{2030}{}{INNE OPCJE}
+{2040}{}{TWOJA POSTAC}
+{2050}{}{<<<--- WYJSCIE Z TERMINALA}
+{3000}{}{CZY PODWYZSZYC STATYSTYKI I ULEPSZYC POSTAC?}
+{3010}{}{TAK}
+{3020}{}{NIE}
+{3030}{}{COFNIJ PODWYZSZENIA}
+{4000}{}{TELEPORTACJA DO...}
+{4010}{}{<<<--- POWROT DO MENU}
+{4020}{}{Baza [ 666 ]}
+{4030}{}{London [ 711 ]}
+{4040}{}{Moscow [ 690 ]}
+{4050}{}{Scrapers [ 694 ]}
+{4060}{}{Berlin [ 695 ]}
+{4070}{}{Town Station [ 668 ]}
+{4080}{}{Dark Waters [ 702 ]}
+{4090}{}{Fury Town [ 709 ]}
+{4100}{}{Green Point [ 669 ]}
+{4110}{}{Death Mine [ 678 ]}
+{4120}{}{Old Village [ 670 ]}
+{4130}{}{Old Fields [ 685 ]}
+{4140}{}{Industrial Center [ 689 ]}
+{4150}{}{Power Plant [ 710 ]}
+{4160}{}{Hunters Camp [752]}
+{4170}{}{Mountain Mine [ 674 ]}
+{4180}{}{Mine Pit [ 677 ]}
+{4190}{}{Coal Mine [ 706 ]}
+{4200}{}{101 Nights / TB City [ 703 ]}
+{4210}{}{Island [ 700 ]}
+{4220}{}{District X [ 672 ]}
+{4230}{}{Mendel Genetic Lab. [ 741 ]}
+{4240}{}{<<<--- POWROT DO MENU}
+{5000}{}{INNE OPCJE}
+{5010}{}{BRAK}
+{6000}{}{TWOJA POSTAC}
+{6010}{}{PROFESJE}
+{6020}{}{ODBLOKUJ SLOTY}
+{6030}{}{SZYBKIE CHODZENIE [PARAM 118 = 25]}
+{6040}{}{NORMALNE CHODZENIE [PARAM 118 = 200]}
+{6050}{}{ZBIERANIE SKOR Z MOBOW [Fire Gecko = 428, Brahmin = 429, Gecko = 430]}
+{6060}{}{NO STEAL,DROP & LOOT [511, 523, 532]}
+{6070}{}{<<<--- POWROT DO MENU}
+{7000}{}{PROFESJE}
+{7010}{}{BOUNTY HUNTER [ Parametr 911=1 ]}
+{7020}{}{SCOUT [ Parametr 911=2 ]}
+{7030}{}{PARAMEDIC [ Parametr 911=3 ]}
+{7040}{}{ASSASIN [ Parametr 911=4 ]}
+{7050}{}{SOLDIER [ Parametr 911=5 ]}
+{7060}{}{CANNIBAL [ Parametr 911=6 ]}
+{7070}{}{BRAK PROFESJI [ Parametr 911=0 ]}
+{7080}{}{<<<--- POWROT DO MENU}
+{8000}{}{ODBLOKOWAC WSZYSTKIE SLOTY?
+SPEC SLOT [ 145=1 ]
+RED [ 146=1 ]
+GREEN [ 147=1 ]
+BLUE [ 148=1 ]}
+{8010}{}{TAK}
+{8020}{}{NIE}
+{9000}{}{Access Denied}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{warunek}
+{1020}{}{Answer text}
+{2000}{}{DEV TERMINAL}
+{2010}{}{SZYBKIE ULEPSZENIE POSTACI}
+{2020}{}{TELEPORTACJA}
+{2030}{}{INNE OPCJE}
+{2040}{}{TWOJA POSTAC}
+{2050}{}{<<<--- WYJSCIE Z TERMINALA}
+{3000}{}{CZY PODWYZSZYC STATYSTYKI I ULEPSZYC POSTAC?}
+{3010}{}{TAK}
+{3020}{}{NIE}
+{3030}{}{COFNIJ PODWYZSZENIA}
+{4000}{}{TELEPORTACJA DO...}
+{4010}{}{<<<--- POWROT DO MENU}
+{4020}{}{Baza [ 666 ]}
+{4030}{}{London [ 711 ]}
+{4040}{}{Moscow [ 690 ]}
+{4050}{}{Scrapers [ 694 ]}
+{4060}{}{Berlin [ 695 ]}
+{4070}{}{Town Station [ 668 ]}
+{4080}{}{Dark Waters [ 702 ]}
+{4090}{}{Fury Town [ 709 ]}
+{4100}{}{Green Point [ 669 ]}
+{4110}{}{Death Mine [ 678 ]}
+{4120}{}{Old Village [ 670 ]}
+{4130}{}{Old Fields [ 685 ]}
+{4140}{}{Industrial Center [ 689 ]}
+{4150}{}{Power Plant [ 710 ]}
+{4160}{}{Hunters Camp [752]}
+{4170}{}{Mountain Mine [ 674 ]}
+{4180}{}{Mine Pit [ 677 ]}
+{4190}{}{Coal Mine [ 706 ]}
+{4200}{}{101 Nights / TB City [ 703 ]}
+{4210}{}{Island [ 700 ]}
+{4220}{}{District X [ 672 ]}
+{4230}{}{Mendel Genetic Lab. [ 741 ]}
+{4240}{}{<<<--- POWROT DO MENU}
+{5000}{}{INNE OPCJE}
+{5010}{}{BRAK}
+{6000}{}{TWOJA POSTAC}
+{6010}{}{PROFESJE}
+{6020}{}{ODBLOKUJ SLOTY}
+{6030}{}{SZYBKIE CHODZENIE [PARAM 118 = 25]}
+{6040}{}{NORMALNE CHODZENIE [PARAM 118 = 200]}
+{6050}{}{ZBIERANIE SKOR Z MOBOW [Fire Gecko = 428, Brahmin = 429, Gecko = 430]}
+{6060}{}{NO STEAL,DROP & LOOT [511, 523, 532]}
+{6070}{}{<<<--- POWROT DO MENU}
+{7000}{}{PROFESJE}
+{7010}{}{BOUNTY HUNTER [ Parametr 911=1 ]}
+{7020}{}{SCOUT [ Parametr 911=2 ]}
+{7030}{}{PARAMEDIC [ Parametr 911=3 ]}
+{7040}{}{ASSASIN [ Parametr 911=4 ]}
+{7050}{}{SOLDIER [ Parametr 911=5 ]}
+{7060}{}{CANNIBAL [ Parametr 911=6 ]}
+{7070}{}{BRAK PROFESJI [ Parametr 911=0 ]}
+{7080}{}{<<<--- POWROT DO MENU}
+{8000}{}{ODBLOKOWAC WSZYSTKIE SLOTY?
+SPEC SLOT [ 145=1 ]
+RED [ 146=1 ]
+GREEN [ 147=1 ]
+BLUE [ 148=1 ]}
+{8010}{}{TAK}
+{8020}{}{NIE}
+{9000}{}{Access Denied}

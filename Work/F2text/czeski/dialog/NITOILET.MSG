@@ -1,0 +1,4 @@
+#tenhle soubor pøeložil Birdman - birdman@post.cz, http://get.to/birdman
+{100}{}{Uh...je to toaleta.}
+{101}{}{Hej, nìkdo nacpal do nádržky pár granátù.}
+{102}{}{Už tady nic není... teda, nic, co má smysl sebrat.}

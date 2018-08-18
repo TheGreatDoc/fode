@@ -1,0 +1,123 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš zamraèenì vypadajícího èlovìka.}
+{101}{}{Vidíš Lumpyho, pøítele Skeetera a jeho pomocníka.}
+{102}{}{Vidíš vyzáblého nešastnì vypadajícího èlovìka s vpadlıma oèima.}
+{110}{}{Jsi v ještì horším stavu ne já. Ty ubohı pitomèe.}
+{111}{}{Nemám èas na to, abych se bavil s pitomci.}
+{112}{}{Nejsi o nic chytøejší, ne brahmíny, o které se starám.}
+{113}{}{Nemáš asi všech pìt pohromadì, co?}
+{114}{}{Jeiš, ty jsi asi fakt tak blbej, jak vypadáš.}
+
+{120}{}{Nazdar, jmenuju se Lumpy.}
+{121}{}{Trochu divné jméno. Jak jsi k nìmu pøišel?}
+{122}{}{Co tady dìláš?}
+{123}{}{To je fajn, Lumpy. Musím u jít.}
+
+{130}{}{Víš, ve skuteènosti se jmenuju John, ale všichni mi tady øíkají Lumpy.}
+{131}{}{Proè Lumpy?}
+{132}{}{No, oni za to ani nemùou. Sbohem.}
+
+{140}{}{Hej ty tam. Všiml sis u, e kadá brahmína má svoji osobnost? To kdyby ses o nì staral tak dlouho jako já, urèitì by sis všiml.}
+{141}{}{Jo. Jsou prostì úasné. To fakt jsou.}
+{142}{}{Búú Búúú.}
+{143}{}{Co tady dìláš?}
+{144}{}{To je fakt zajímavé. Kdo jsi?}
+{145}{}{Rád bych se nìco dozvìdìl.}
+{146}{}{Rád jsem tì poznal Lumpy. Sbohem.}
+
+{150}{}{Hej ty tam. Asi jsi pøišel za Skeeterem. O techniku se nestarám. Jsem tu jen, abych pomáhal.}
+{151}{}{Keeter. He, he, he.}
+{152}{}{Kdo jsi?}
+{153}{}{Co tady dìláš?}
+{154}{}{Chtìl bych se tì na nìco zeptat.}
+{155}{}{Tak dobøe. Promluvím se Skeeterem. Díky.}
+
+{160}{}{Hej ty. Kdy u jsi se dostal dovnitø, co pro tebe mùu udìlat?}
+{161}{}{Já mít hlad.}
+{162}{}{Uh, Chtìl jsem vìdìt, kde je Skeeter.}
+{163}{}{Chtìl bych se tì na nìco zeptat.}
+{164}{}{Oh, promiò. Nechtìl jsem sem jen tak vpadnout. Sbohem.}
+
+{170}{}{Støeím brahmíny nebo pomáhám Skeeterovi v jeho dílnì.}
+{171}{}{Kdo je to Skeeter?}
+{172}{}{Dovol, abych se tì zeptal na nìco jiného.}
+{173}{}{Myslím, e to je zatím všechno, co jsem potøeboval vìdìt. Sbohem Lumpy.}
+
+{180}{}{Je to nìco jako vtip. Lidem jako jsi ty a já obvykle øíkají hezouni. Ale ve Vault City se mnou ostatní hezouni zacházeli tak špatnì, e všichni tady usoudili, e moje vyráka musí bıt ještì horší ne ta jejich.}
+{181}{}{Proè s tebou špatnì zacházeli ve Vault City?}
+{182}{}{To hodnì vysvìtluje. Sbohem.}
+
+{190}{}{No, Skeeter je nìco jako mechanik. Je schopnı rozebrat skoro všecko, co mu doneseš a døíve nebo pozdìji to dá vìtšinou zase dohromady. Nìkdy se stane, e potom vìci fungují dokonce i lépe ne pøedtím.}
+{191}{}{Kde mohu najít Skeetera?}
+{192}{}{Zajímavé. Rád bych se tì zeptal na nìco jiného.}
+{193}{}{Myslím, e to je zatím všechno, co jsem potøeboval vìdìt. Sbohem.}
+
+{200}{}{No, øíkali, e pro nì nejsem dost lidskı. Jsem tak nìjak odolnı proti radiaci-- co se tady náramnì hodí. Ale nelíbilo se jim to. Zacházeli se mnou jako s posledním špinavcem.}
+{201}{}{Opravdu?}
+
+{210}{}{Jednoho dne u jsem to prostì nemohl dál snášet. Došel jsem k závìru, e pomalé umírání ve Wastes je lepší, ne ít s tìma zmrdama ve Vault City.}
+{211}{}{Jak to es teda skonèil tady?}
+
+{220}{}{No, karavana z Broken Hills mì našla a dovezla mì sem. A od té doby jsem tady. Ghoulové tady se toti starají pøedevším o to, jakı je èlovìk uvnitø. Jsou jako velká rodina.}
+{221}{}{Broken Hills? Kde to je?}
+{222}{}{To je zajímavé. Ale chtìl bych se tì zeptat na nìco jiného.}
+{223}{}{Je skvìlé, e jsi tady šastnı. Sbohem.}
+{224}{}{Rodina zrùd. Myslím, e u tì dál nechci poslouchat. Sbohem.}
+
+{230}{}{Z Broken Hills bereme veškerı uran, kterı potøebujeme pro náš jadernı reaktor. Slyšel jsem, e uran tam tìí mutanti. Lidi mají na to, aby pro nì to zboí prodávali.}
+{231}{}{Proè mají na prodej zboí lidi?}
+
+{240}{}{Co chceš vìdìt?}
+{241}{}{Nejsi nìjak moc zvìdavı? No tak dobøe. Co chceš vìdìt?}
+{242}{}{Co chceš vìdìt teï?}
+{243}{}{Co je to tam na dvoøe za harampádí?}
+{244}{}{Co tady dìláš?}
+{245}{}{Kdo je to Skeeter?}
+{246}{}{Nedìje se tady nic neobvyklého?}
+
+{250}{}{Je to proto, e prodávají uran i do Vault City. Ve Vault City jednají s kadım, kdo nemá èistou lidskou rasu, jako s malomocnım. A tak Broken Hills vyuívá k obchodování lidi. Chlápka, kterı se, tuším, jmenuje Chad.}
+{251}{}{Øíkáš Chad, jo? To si zapamatuji. Ale zeptal bych se tì ještì na nìco.}
+{252}{}{Myslím, e to je zatím všechno, co jsem potøeboval vìdìt. Sbohem.}
+
+{260}{}{Nìco z toho haraburdí tady zùstalo z doby, kdy stavìli reaktor. To bylo pøed válkou. A zbytek? To nevím. Skeeter to všecko sbírá.}
+{261}{}{Kdo to je Skeeter?}
+{262}{}{To je zajímavé. Mám ještì jednu otázku.}
+{263}{}{Myslím, e to je zatím všechno, co jsem potøeboval vìdìt. Sbohem.}
+
+{270}{}{Je právì tady. Jenom otevøi oèi a podívej se kolem.}
+{271}{}{Skeeter je obvykle ve své dílnì. Jinì od nedokonèeného reaktoru. Skoro nikdy ho odtamtud nemùu dostat.}
+{272}{}{Aha díky Sbohem.}
+{273}{}{Nevím, kde Skeeter v poslední dobì byl.}
+
+{280}{}{Vìtšinou se starám jen o své vìci, ale nìkdy se mi zdá, e pozdì v noci slyším zvuky.}
+{281}{}{Slyšíš zvuky? Jako co?}
+{282}{}{Ale jdi. Mnì mùeš øíct, co jsi slyšel. Nikomu to neøeknu.}
+{283}{}{Já taky, ale myslím, e to jsou jenom hlasy uvnitø mé hlavy.}
+
+{290}{}{Pochop; nejsem si jistı. Ale myslím, e jsem slyšel lidi; alespoò si myslím, e to byli lidi. Pozdì v noci vcházeli do šachty reaktoru a zase z ní vycházeli.}
+{291}{}{Lidi? Kadou noc?}
+{292}{}{To je zajímavé. Ale chtìl bych se tì zeptat na nìco jiného.}
+
+{300}{}{To ti nemùu øíct. Lidi by si mysleli, e jsem blázen. Je to stejnì zøejmì jenom vítr, jak se prohání tím harampádím.}
+{301}{}{Øíkám ti, e jsem nic neslyšel. Teï u mì s tím pøestaò otravovat.}
+{302}{}{Dobøe. Tak se tì zeptám na nìco jiného..}
+
+{310}{}{(Dívá se ti zblízka do oèí) Slyšíš vnitøní hlasy? Øíkají ti o kolik jsi lepší ne všichni ostatní? Øíkají ti, e jednoho dne budou lidi klekat pøed tvou velikostí? (smìje se a pøikyvuje)}
+{311}{}{No, to zrovna ne.}
+{312}{}{No jasnì, e jo. Samozøejmì. Jako snad kadı, ne?}
+
+{320}{}{To je dobøe. U jsem si o tebe zaèínal dìlat starosti.}
+{321}{}{Tak díky. Rád bych se tì na nìco zeptal.}
+{322}{}{Jo. Myslím, e u budu muset jít. Sbohem.}
+
+{330}{}{U jsem si tì otipoval, hned, kdy jsem tì poprvé zahlídl, ale nebyl jsem si úplnì jistı. Vypadni odsud ty zasranej blbèe!}
+{331}{}{Uh, jasnì. Jak chceš. Sbohem.}
+{332}{}{To jo. Jeden z nás je blbec. -- Myslím ale, e ti není jasné kdo z nás to je.}
+
+{340}{}{No, nevím jestli to byli lidi nebo co, ale obvykle k tomu dochází jednou za èas v noci. Zvuky ozıvající se z šachty reaktoru. Nevím co se tam dìje a ani to nechci vìdìt.}
+{341}{}{Myslím, e ti to nemùu vyèítat. e nechceš øíct, co by mohlo bıt tam dole.}
+{342}{}{Díky za informace. Sbohem.}
+{343}{}{Není hladina radioaktivity v reaktoru pøíliš vysoká na to, aby tam mohlo nìco ít?}
+
+{350}{}{Ne, Kdy zaèala válka, tahle èást reaktoru ještì nebyla dokonèena.}
+{351}{}{Aha. Hmm, Tak mi øekni ještì nìco jiného.}

@@ -1,0 +1,9 @@
+#tento soubor pøeložil Miskot...mhoferek@telecom.cz
+{100}{}{Vidíš svého synovce, Fearguse - jako obvykle nad nìèím fòuká.}
+{101}{}{Prosím tì, oprav tu studnu.}
+{102}{}{Mám velkou žízeò, ale studna je rozbitá!}
+{103}{}{Ta studna potøebuje opravit.}
+{104}{}{Haló. Mockrát díky za opravu studny!}
+{105}{}{Dávej na sebe pozor.}
+{106}{}{Studna je opravená, mockrát díky!}
+{200}{}{Vidíš svého synovce, Fearguse.}

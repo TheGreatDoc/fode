@@ -1,0 +1,61 @@
+// Author: Baryman    
+// Mouse Position Script    
+    
+#include "_client_defines.fos"    
+#include "client_gui_h.fos"    
+#include "_colors.fos"    
+    
+IGUIElementTextOpt@ infoText;    
+    
+class RuchyMyszy : IGUIElementCallbackMouseMove    
+{    
+       
+   void OnMouseMove(int x, int y)    
+   {    
+      CritterCl @ gracz = GetMonitorCritter(x, y); //Na podstawie pozycji x,y pobiera klase CritterCl    
+      ItemCl @ ziemia = GetMonitorItem(x,y); // Na podstawie pozycji x,y pobiera    klase ItemCl    
+      if(@gracz == null && @ziemia == null )    
+      {    
+         GetMonitorHex(x ,y ,hx, hy);  // Z x,y na monitorze pobiera wspolrzedne hexa          
+         infoText.setText("("+hx+":"+hy+")"); //wypisywanie    
+      }    
+      else     
+      {    
+         bool uu = false;    
+         if (@ziemia==null)       
+         {    
+            if(gracz.Name==" ")    
+            {    
+               infoText.setText("("+hx+":"+hy+")"+" \n id: 666");  // glupi zart   
+            }    
+            else    
+            {    
+               infoText.setText("("+hx+":"+hy+")"+" \n id:"+ gracz.Id);    
+            }    
+         }    
+         else     
+         {    
+            infoText.setText("("+hx+":"+hy+")"+"\n rzecz:"+ziemia.GetProtoId());    
+         }    
+      }       
+   }    
+    
+   uint16  hx;    
+   uint16  hy;    
+}    
+    
+    
+void InitBaryScreen()    
+{    
+/*   GUI_AddText(CLIENT_MAIN_SCREEN_GAME, "2077", 0,0)    
+      .TextBoxSize(70, 40)     
+      .AbsolutePosition(10, 10);    */
+       
+   RuchyMyszy dupa();    
+    
+   @infoText = GUI_AddText(CLIENT_MAIN_SCREEN_GAME, "", 0, 0)    
+      .AbsolutePosition(__ScreenWidth-80, 10) //pozycjana ekranie    
+      .TextBoxSize(70, 40) //wielkosc obszaru tekstu    
+      .CallbackMouseMove(dupa);    
+       
+}    

@@ -1,0 +1,139 @@
+#Pøeloil birdman@post.cz, http://www.mujweb/cz/www/birdman, 0604 540689
+#############################################################
+#  Message File: KCjenny.msg                                #
+#                                                           #
+#       Body Type:                                          #
+#       Combat AI:                                          #
+#       Weapons: None                                       #
+#       HP:                                                 #
+#       Skills to note:                                     #
+#       Inventory:                                          #
+#  Log:                                                     #
+#                                                           #
+#  Created: January 15, 1998                                #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+#############################################################
+#  The following lines are for describing the NPC when      #
+#  glanced and and examined.                                #
+#############################################################
+{100}{}{Vidíš atraktivní, ale vyèerpanou mladou enu.}
+{101}{}{Vidíš Jenny, lázeòskou obsluhu.}
+
+#############################################################
+#  The following lines are for the dialog which the NPC     #
+#  says. This will be disorganized because of the Design    #
+#  Tool.                                                    #
+#############################################################
+
+{200}{}{Panejo, to bylo ale rychlı. Zøejmì jsi v tìchto vìcech nezkušenı. Jenom relaxuj a
+ uvolni se - budeš z toho pak mít daleko vìtší poitek.}
+{201}{}{Dìkuju, Jenny. Mám dojem, e v tomhle opravdu potøebuju více praxe.}
+
+{210}{}{To bylo pìkné. Zøejmì, u jsi na své cestì potkal mnohem více en, ne ostatní mui v tvém vìku.}
+{211}{}{Jsem potìšenı, e jsme si spolu uili.}
+
+{220}{}{V tobì je fakt hodnì netušené síly. Takovı vıkon bych od nìkoho tak mladého neèekala. Jistì si pøeješ
+ to nìkdy zopakovat.}
+{221}{}{Pochopitelnì se mi ta koupel líbila, Jenny. Mohl bych i zajít ještì trochu dále, kdybych nemìl na práci
+ ještì jiné vìci.}
+
+{230}{}{Jùù, to bylo nezvyklé. Doufám, e se ještì ukáeš; Pøíštì bych si ráda trochu zaexperimentovala, mám nìkolik vlastních nápadù.}
+{231}{}{Je pìkné bıt s nìkım, kdo pro zmìnu ví, co potøebuji.}
+
+{240}{}{Chi chi, tohle je zábavné. Byla bys opravdu bomba, kdyby ses zbavila tìch barbarskıch hader. V;bec by mi nevadilo,
+ kdybys tu ještì chvilku zùstala. Nikdy jsi neuvaovala o zmìnì kariéry?}
+{241}{}{Také jsem se moc pobavila. Ale mám na práci ještì spoustu vìcí,ne budu moct uvaovat o usazení se nìkde na stálo.
+ Ale, kadopádnì dìkuji.}
+
+{250}{}{V nìèem se lišíš od obvyklıch návštìvníkù...}
+{251}{}{Povìz mi tu o nìèem ve mìste.}
+{252}{}{Myslím, e nepotøebuji o èemkoliv vìdet.}
+
+{260}{}{Bylo pìkné si s tebou povykládat. Ale bude lepší, kdy mì necháš, pøipravit se na dalšího zákazníka, nemyslíš? Nashledanou.}
+
+{270}{}{Vypadáš ponìkud zmatenì. Jmenuji se Jenny; mùu ti pomoci?}
+{271}{}{Enny? Ooo he he he. (úsmìv)}
+{272}{}{(pøikıvnout) pomoc}
+{273}{}{ zatr Enny}
+{274}{}{Mami?}
+
+{280}{}{Hmm, bude lépe, kdy odtud vypadneš døíve, ne tì objeví Nosatá Sally. Nemá ráda
+ na svém pozemku takové idioty.}
+
+{290}{}{Co chceš vìdìt?}
+{291}{}{Povìz mi o lovcích koešin.}
+{292}{}{Hledám obchodníka. Nevíš o nìkom, kdo obchoduje se starımi vìcmi? Mám teï na mysli vìci z pøedváleèné éry.}
+{293}{}{Nevíš náhodou, jak se odtud dostanu do Denu?}
+{294}{}{Nashle.}
+{295}{}{Jenny, neslyšela jsi nìkdy o vìci zvané GECK?}
+
+{300}{}{Hmm, není toho pøíliš mnoho co bych ti mohla øíci o lovcích koešin, opravdu. Loví geckony kvùli jejich kùím...
+ nìkdy mají štìstí a narazí na Zlaté geckony...no, a pak pøijdou zpìt a stahují jim ty kùe nad parou. Rychlé, úèinné a ne moc
+ namáhavé -- to je jediné, co je na lovu pomìrnì snadné.}
+{301}{}{To bude nejspíš vše.}
+{302}{}{Zajímavé; ještì nìco, prosím.}
+
+{310}{}{Zajímají tì obchodníci? Tak v tomhle je nejvìtší odborník jeden... Vic se jmenuje.
+ Je to velmi dobrı zákazník. Vdycky mìl pro mne nìjaké to dıko, alespoò kdy pracoval. A specializoval se na opravdu staré zboí. Víš,
+ takové ty technické vìcièky.}
+{311}{}{Dobrá, dìkuji za informace. Myslím, e u pùjdu.}
+{312}{}{Povìz mi více o Vicovi.}
+{313}{}{Ještì mám pár dotazù.}
+
+{320}{}{Vic byl mùj opravdovı drahoušek. Nìkdy se stalo, e odešel na dlouhé tıdny pryè, pak se najednou
+ vrátil a mìl plno tìch starıch vìcí. Ale èasto cestoval do Denu a prodával je tam. Tady se o jeho
+ zboí nikdo pøíliš nezajímal.}
+{321}{}{Kde je Vic nyní?}
+{322}{}{Kde je Den?}
+{323}{}{Nevíš, jestli Vic nemìl nìco, co mìlo na sobì znaèku 'Vault-Tek'?}
+{324}{}{Povìz mi ještì nìco.}
+{325}{}{Myslím, e to je vše.}
+
+{330}{}{Den je doupì špíny a nièemností jihovıchodnì odtud. Myslím, asi tak tıden cesty. U si to nepamatuji
+ tak jasnì. Kadopádnì, je to vzrušující místo. Nebezpeèné, ale vzrušující. Ach, ale promiò, nechala jsem se trochu
+ unést. Víš, zanechala jsem tam, svım zpùsobem, kousek své duše.}
+{331}{}{Ještì se chci na nìco zeptat.}
+{332}{}{Asi u pùjdu, dìkuji.}
+
+{340}{}{Nejsem si tak úplnì jista, kde Vic zrovna je. Vím, e má dùm kdy pùjdeš odtud ulicí kousek dolù a na
+ vıchod. Mohl by bıt zase mimo - obchodovat s barbary nebo snad i v Denu, co já vím. Doufám, e je OK. Je pro
+ mì u více ne jen zákazník, jestli mi rozumíš.}
+{341}{}{U jen kvùli tobì doufám, e je v poøádku. Ještì se chci na nìco zeptat.}
+{342}{}{Doufám, e se k tobì brzy vrátí. Myslím, e u pùjdu. Nashle.}
+
+{350}{}{Zdravím. Jmenuji se Jenny. Hledáte místo, kde se dobøe 'uvolnit'?}
+{351}{}{Ach, ne dìkuji; jen se tu rozhlíím.}
+{352}{}{No, vlastnì... trocha masáe by mi neuškodila (šouchneš do ní a šibalsky mrkneš).}
+{353}{}{No, já... mám pár otázek, na které se tì chci zeptat.}
+{354}{}{Sháním informace o obchodníkovi, kterı obchoduje s vìcmi z pøedváleèné éry.}
+
+{360}{}{Dobrı den. Jmenuji se Jenny. Mohu vám pomoci?}
+{361}{}{Ach, ne; Jenom jsem se chtìla podívat co to tu je. Ale myslím, e radìji pùjdu.}
+{362}{}{No, ráda bych dostala nìjakou tu osobní masá od zajíèka jako jsi ty.}
+{363}{}{Mám pár otázek, na které bych ráda znala odpovìï.}
+{364}{}{Sháním informace o jistém obchodníkovi, kterı obchoduje s vìcmi z pøedváleèné éry.}
+
+{370}{}{Dobrá. Pak tedy ale bude lépe promluvit si s Nosatou Sally. Ona se stará o všechny
+ naše obchodní záleitosti a nemá ráda vyjednávání za jejími zády.}
+
+{380}{}{Zdravím, fešando. Jmenuji se Jenny. Hledáš zde práci? Jestli jsi opravdu tak k svìtu, jak
+ na první pohled vypadáš, mùeš si tady celkem dobøe vydìlat.}
+{381}{}{Práce zde mne nezajímá.}
+{382}{}{Mmm, docela ráda se pøedvádím, a kdybych to mohla mít navíc zaplaceno, tak...}
+{383}{}{Dìkuji, ale myslím, e se spíše potøebuji na nìco zeptat.}
+{384}{}{Hledám informace o jednom obchodníkovi. Obchoduje prı s velmi starımi vìcmi.}
+
+{390}{}{Vault-tek? Moná tam nìco takového mìl. Nejsem si jistá. Vím, e to byly opravdu hodnì
+ staré vìci a zboí.}
+{391}{}{Dìkuji, Jenny. Ještì mám nìjaké otázky.}
+{392}{}{Dobrá. Myslím, e to je zatím vše.}
+
+{400}{}{Geck? Co je to? Nìjakı druh malého geckona, ehm?. Je mi líto, nevím co by to
+ tak ještì mohlo bıt.}
+{401}{}{Dìkuji, Jenny. Ještì nìco, prosím.}
+{402}{}{Dobrá. Myslím, e to je zatím vše.}
+
+{500}{}{[Jenny ti dala facku] Prosím, neosahávej mì tak!}

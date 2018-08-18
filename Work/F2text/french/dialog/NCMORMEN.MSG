@@ -1,0 +1,167 @@
+# QUICK LOOK
+{100}{}{Tu vois un des hommes de Mordino.}
+# RAMIREZ
+{101}{}{Tu vois Ramirez.}
+
+# LOOK
+{150}{}{Tu vois un homme brûlé par le soleil et qui porte une barbe de plusieurs jours. Il regarde autour de lui d'un air nerveux.}
+{151}{}{Tu vois un des hommes de Mordino.}
+{152}{}{Tu vois un des hommes de Mordino. Il a l'air un peu agité.}
+{153}{}{Tu vois un des hommes de Mordino. Il a l'air nerveux.}
+{154}{}{Tu vois un des hommes de Mordino. On dirait qu'il n'a pas dormi depuis longtemps.}
+# RAMIREZ
+{160}{}{Tu vois un homme louche aux cheveux noirs coupés en brosse. Il regarde autour de lui d'un air nerveux.}
+
+# 1. FLOAT [ENCLAVE DESTROYED]
+{200}{}{Hé ! }
+{201}{}{Putain, }
+
+# 2. FLOAT [POWER ARMOR]
+{205}{}{Comment tu fais pour pisser avec ce truc ?}
+
+# 3. FLOAT/CLICK [MADE MAN, SAME FAM, ARMED
+{210}{}{Joli morceau que tu as là, }
+
+# 4. FLOAT/CLICK [MADE MAN, SAME FAMILY, SNEAK]
+{215}{}{Comment ça se fait que tu te planques, hé, }
+
+# 5. FLOAT [MADE MAN, SAME FAMILY]
+{220}{}{T'as du Jet sur toi ?}
+
+# 7. FLOAT [MADE MAN, NOT SAME FAMILY]
+{230}{}{Hé ! cabron ! Tu veux voir l'Ange de la Mort ? Tire-toi !}
+{231}{}{Hé ! Puta ! Tu veux voir l'Ange de la Mort ? Tire-toi !}
+
+# 9. FLOAT [MALE, ARMED, RESPECTFUL]
+{235}{}{Hé ! Je regrette hombre, mais tu peux pas te balader avec ça ici.}
+
+# 10. FLOAT [FEMALE, ARMED, RESPECTFUL]
+{240}{}{Hé ! Chica, tu peux pas te balader avec ça ici.}
+
+# 11. FLOAT [MALE, SNEAK, PRIZEFIGHTER]
+{245}{}{Mais bordel, pourquoi tu te planques, }
+
+# 12. FLOAT [FEMALE, SNEAK, PRIZEFIGHTER]
+{250}{}{Pourquoi tu te planques, chica ? Avec ton crochet du droit, tu devrais marcher la tête haute !}
+
+# 13. FLOAT/CLICK [PRIZEFIGHTER]
+{264}{}{Le dernier combat a été épique !}
+{265}{}{J'ai vu comment tu te bats sur le ring, }
+{266}{}{Comme tu te débrouilles, }
+
+# 15. FLOAT/CLICK [ARMED, PORN STAR, FEMALE]
+{280}{}{Hé, hé là chica ! Tu veux que je range cette arme pour toi ?}
+
+# 16. FLOAT [MALE, SNEAK, PORN STAR]
+{285}{}{Mais bordel, pourquoi tu te planques, }
+
+# 17. FLOAT/CLICK [SNEAK, PORN STAR, FEMALE]
+{290}{}{'Dur d'échapper à l'oeil d'un Mordino avec un physique pareil, chica.}
+
+# 18. FLOAT [PORN STAR]
+{295}{}{Ton film était pas mal, mais on dirait que t'as besoin que je t'apprenne quelques tuyaux.}
+{296}{}{Tu veux du Jet ? Je peux t'arranger ça, chica.}
+
+# 20. FLOAT/CLICK [ARMED, SLAVER]
+{315}{}{Te pavane pas avec des trucs en fer dans le coin. Range ça.}
+
+# 21. FLOAT/CLICK [SNEAK, SLAVER]
+{320}{}{Pas besoin de te planquer, l'esclavagiste, OK ? Y a que des amis ici.}
+
+# 22. FLOAT/CLICK [ARMED, NO REP]
+{325}{}{Hé ! T'as pigé ou quoi ? Range ce truc ou je vais devoir te faire mal !}
+
+# 24. FLOAT/CLICK [SNEAK, MALE, NO REP]
+{330}{}{Bordel, pourquoi tu te planques ? Tu veux te faire trouer la peau ?}
+
+# 25. FLOAT/CLICK [SNEAK, FEMALE, NO REP]
+{335}{}{Pourquoi tu te planques, chica ? Tu veux te faire trouer la peau ?}
+
+# 26. FLOAT/CLICK [COMPANION: ROBOBRAIN]
+{342}{}{Ce robot va pas faire long feu s'il reste.}
+
+# 27. FLOAT/CLICK [COMPANION: MARCUS]
+{347}{}{Ce mutant veut jouer à la cible ? Qu'il reste dans le coin et il sera servi.}
+
+# 28. FLOAT/CLICK [COMPANION: LENNY]
+{352}{}{Si ce goule n'est pas dehors dans une minute, il peut faire sa prière.}
+
+# 29. FLOAT [ENCLAVE DESTROYED]
+{362}{}{Putain, heureusement que ces connards de l'Enclave ont pas emmerdé les Mordino !}
+
+# 30. FLOAT [MADE MAN, SAME FAMILY]
+{373}{}{Content de te voir, }
+
+# 32. CLICK [MADE MAN, NOT SAME FAMILY]
+{406}{}{::Il te crache sur les pieds::}
+{407}{}{T'imagines que tu peux te pointer et causer à un Mordino pour l'emballer ? Tire-toi.}
+{408}{}{Tu l'ouvres encore et je tue ta famille, ton chien et toi. Deux fois de suite.}
+
+# 34. CLICK [SLAVER]
+{420}{}{Non, j'suis pas le type à qui parler pour les esclaves... Tu devrais voir avec Petit Jésus.}
+{421}{}{C'est quand que tu vas te décider à nous ramener de beaux esclaves ? La dernière récolte était pauvre, esclavagiste. Tous des miteux.}
+
+# 35. CLICK [MALE/FEMALE, NO REP, GOOD REACTION]
+{430}{}{Tu cherches du boulot, hein ? Vois avec Petit Jésus.}
+
+# 36. CLICK [NO REP, BAD REACTION]
+{437}{}{Barre-toi, tribale.}
+{438}{}{J'ai pas le TEMPS de m'occuper de toi là.}
+{439}{}{Tire-toi de là.}
+{440}{}{Enflure.}
+
+# RAMIREZ UNIQUE DIALOG
+# 37. CLICK [DELIVERY = ASSIGNED] (WTG)
+{460}{}{(Il te regarde approcher, sourit d'un air méprisant.) Tu cherches des ennuis, hombre ?}
+{461}{}{(Il te regarde approcher, sourit d'un air méprisant.) Tu cherches des ennuis, chica ?}
+{462}{}{T'es Ramirez ? Big Jésus m'a donné ce paquet pour toi.}
+{463}{}{Pas de problème. J'y vais.}
+
+# 38. CLICK [DELIVERY = ASSIGNED] (37)
+{470}{}{(Il prend la boîte.) C'est pas trop tôt. On avait presque plus de Jet. (Il renifle, tousse un peu.) J'sais pas où il passe... hein ?}
+{471}{}{Ouais, bon, fais attention --}
+{472}{}{Au son de ta toux et à la façon dont tu te frottes le nez, je me demande à peine où passe tout le Jet qui est livré ici.}
+
+# 39. CLICK [DELIVERY = ASSIGNED] (38)
+{473}{}{Big J, y prend soin de nous. La semaine dernière, j'ai chopé trois esclaves assez bêtes pour s'enfuir. Alors récompense, tu vois ? Hé. Et toi que dalle. Tu te penches, tu ramasses. Moi, chuis GARDE.}
+{474}{}{Ouais, super. Fais gaffe à toi.}
+{475}{}{Je me demande si Big Jésus réalise comment ces trois esclaves auraient pu s'échapper sous le NEZ de gardes aussi perspicaces et accros au Jet que toi.}
+{476}{}{Ramirez... fais gaffe à ce que tu dis, d'accord ? Laisse pas ta bouche mettre tes fesses dans une situation délicate.}
+
+# 40. CLICK [DELIVERY = ASSIGNED] (39)
+{480}{}{(Il cligne de l'oeil.) Hé... ? Quoi ?}
+{481}{}{Rien que tu pourrais comprendre ou que je voudrais prendre le temps de répéter. Fais gaffe, OK ?}
+{482}{}{J'ai dit « Je me demande si Big Jésus réalise comment ces trois esclaves auraient pu s'échapper sous le NEZ de gardes aussi perspicaces et accros au Jet que toi ».}
+
+# 41. CLICK [DELIVERY = ASSIGNED] (40)
+{490}{}{(Il cligne de l'oeil, sourit confusément.) Hé ? Ouais, ouais. J'suis vif, tu vois... per-pisse-cace... J'suis GARDE, hé ?}
+{491}{}{Ouais, tu l'as déjà dit. A ta place, Ramirez, je rendrais un service à l'humanité toute entière en prenant toute cette boîte de Jet d'un coup. A plus.}
+{492}{}{Mec, ça me rassure qu'on ait eu la sagesse de vous donner que des armes automatiques. Je me sens plus en sécurité. A plus, Ramirez.}
+
+# 42. CLICK [DELIVERY = ASSIGNED] (39)
+{493}{}{(Il cligne de l'oeil.) Hé... ? Quoi ?}
+{494}{}{Laisse tomber. Assieds-toi sur une arme à feu et appuie sur la détente, d'accord ?}
+{495}{}{Rien. A ta place, Ramirez, je rendrais un service à l'humanité en prenant toute cette boîte de Jet d'un coup. A plus.}
+{496}{}{(Tu t'en vas.)}
+
+# 43. CLICK [DELIVERY = ASSIGNED] (39, 40, 41, 42)
+{500}{}{(Tu te retournes et Ramirez grogne.) Hé ! Cette boîte a été ouverte !}
+{501}{}{T'en as chouré, hombre ?}
+{502}{}{T'en as chouré, chica ?}
+{503}{}{Personne fait des embrouilles à Ramirez, tu m'entends ?!!}
+{504}{}{Ouais, je t'entends. Mais plus pour très longtemps.}
+{505}{}{Ils sont minables tes derniers mots, Ramirez.}
+
+# delivered box
+{600}{}{Tu as livré le paquet de Big Jésus à Ramirez.}
+
+# END OF LINES
+{1200}{}{C'est comme ça qu'on lui botte le cul à l'Enclave !}
+{1201}{}{, leur montrer à ces connards de l'Enclave comment on procède en VILLE.}
+{1210}{}{.}
+{1215}{}{ ? Les Mordino sont fiers.}
+{1245}{}{ ? Avec ton crochet du droit, tu devrais marcher la tête haute.}
+{1265}{}{. Tu le CREVAIS ce type.}
+{1266}{}{ ?}
+{1285}{}{ ? Allez, marche la tête haute.}
+{1373}{}{. T'étais où ?}

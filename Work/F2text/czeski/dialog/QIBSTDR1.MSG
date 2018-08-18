@@ -1,0 +1,6 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Na tìchto dveøích není zjevnì viditelný žádný zamykací mechanismus.}
+{101}{}{Nevypadá to, že by se tyto dveøe daly otevøít obvyklými výbušninami.}
+{102}{}{Vidíš pevné, výbuchu odolné dveøe. Dveøe jsou pevnì zapuštìny do podlahy
+ i stropu.}
+{103}{}{Nenapadá tì žádný zpùsob jak tyto dveøe otevøít.}

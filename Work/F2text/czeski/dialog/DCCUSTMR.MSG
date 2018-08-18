@@ -1,0 +1,124 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+#0. Look
+{100}{}{Vidíš zákazníka.}
+{101}{}{Vidíš mìšana.}
+
+{150}{}{Vypadá, jako kdy má nìkam namíøeno.}
+{151}{}{Vypadá, jako kdy má nìkam namíøeno.}
+{152}{}{Je zaneprázdnìn pitím a hovorem s dalšími zákazníky.}
+{153}{}{Zdá se, e je zaneprázdnìná hovorem.}
+{154}{}{Dívá se po Tubbyho regálech.}
+{155}{}{Zdá se, e se rozhlíí po Tubbyho obchodì.}
+{156}{}{Nevidíš na nìm nic zvláštního.}
+{157}{}{Nevidíš na ní nic zvláštního.}
+
+#1. Hostile
+{200}{}{Odejdi odtud!}
+{201}{}{Dej mi pokoj!}
+{202}{}{Nedotıkej se mì!}
+{203}{}{Pøestaò s tím!}
+{204}{}{Co dìláš?}
+
+#2. Else
+{300}{}{Promiò, ale teï nemùu mluvit.}
+{301}{}{Kam jsem se to zase dostal?}
+{302}{}{Dobrı den.}
+{303}{}{Promiòte mi.}
+{304}{}{Ahoj.}
+
+# 3. Becky's
+{305}{}{U Becky je nejlíp, a ne jenom pro ty nízké ceny.}
+{306}{}{Pøišel jsi na drink nebo si zahrát?}
+{307}{}{Všechno co teï potøebujeme, je nìjakej trumpetista.}
+{308}{}{Dobrı den.}
+{309}{}{Jsi hráè?}
+{310}{}{Jak je ve svìtì?}
+{311}{}{Frankie je pytel sraèek. Neznamená pro Becky vùbec nic.}
+{312}{}{Jsi pøítel Becky?}
+{313}{}{Dej si panáka, kamaráde!}
+{314}{}{Do dna! Drinky jsou levnı!}
+{315}{}{Nemùu si pomoct, jsou øedìnı.}
+{316}{}{Dyer urèitì ví, z èeho to dìlá.}
+{317}{}{Nic ne dobré nápoje a dobrá spoleènost.}
+{318}{}{Jedinı potíe s Beckyny nápoji jsou ty, e máš tendenci moc pít!}
+{319}{}{Becky... Míním tím, e Rebecca je urèitì dobrosrdeèná.}
+{320}{}{Jestli se jí jen prstem dotknou, budou toho litovat.}
+{321}{}{To je dobrı materiál.}
+
+{340}{}{Mìli bychom tì zabít, za to co jsi udìlal.}
+{341}{}{Nevím, co ti udìlala, ale nezaslouila si zemøít.}
+{342}{}{Moná jsme mìli jít do New Rena, od té doby, co je U Becky zavøeno.}
+{343}{}{Stejská se mi po Beckynım úsmìvu.}
+{344}{}{U nebude levnej chlast.}
+{345}{}{Den u nebude bez Becky, to co bıval.}
+
+# 4. Frankie's
+{360}{}{Frankie je díra... ve zdi. Jo, jo.}
+{361}{}{Mám radši Díru ne U Becky.}
+{362}{}{Øíkáme tomu místu Díra.}
+{363}{}{Vem místo. Oh, poèkej. Moná ne.}
+{364}{}{U Frankieho to ije. Becky je jen dùl na peníze.}
+{365}{}{Frankie urèitì nemá rád Becky.}
+{366}{}{Frankie øíká, e Beckyny drinky jsou øedìné.}
+{367}{}{Proè tomu tak je?}
+{368}{}{Frankie ví, jak dìlat veèírky.}
+{369}{}{Beckyny hrací stoly jsou podvod! Aspoò tak to Frankie øíká.}
+{370}{}{Na ex!}
+
+{390}{}{Zatracenì, já jsem Frankieho varoval, jak se chovat k lidem.}
+{391}{}{Frankie mìl kontrolovat svùj temperament.}
+{392}{}{Kam teï pùjdem kalit?}
+{393}{}{Frankieho je vìèná škoda. On vìdìl, jak to rozjet.}
+{394}{}{Jsi nìjakej pøísnej. Co ti Frankie udìlal?}
+{395}{}{Frankie urazil tvojí mámu nebo co?}
+
+# 5. Tubby's
+{410}{}{Jen se rozhlíím kolem.}
+{411}{}{Nejsem si jist, co hledám.}
+{412}{}{Tubby urèitì bere hodnì Jetu.}
+{413}{}{Vidíš nìco dobrého?}
+{414}{}{Moc toho tu není.}
+{415}{}{Tubby potøebuje získat nìjaké lepší dodavatele.}
+{416}{}{Potøebuješ drogy? Tubby je vdycky dobøe zásoben.}
+
+{430}{}{Pro co jsi zabil Tubbyho?}
+{431}{}{ádná velká ztráta, ale Tubby byl jedinı opravdovı obchod ve mìstì.}
+{432}{}{Èím tì Tubby naštval?}
+{433}{}{Tubby ti prodal nìjakej šmejd, e jo?}
+{434}{}{Jdou zvìsti, e jsi Tubbyho zabil kvùli špatnému jednání nebo co.}
+{435}{}{Není divu. Mnoho lidí bylo poslední dobou na Tubbyho naštvanıch.}
+
+# 6. Flick
+{440}{}{Dneska mì nic nezajímá...}
+{441}{}{A, ahoj. Jen si pohovoøím s mım dobrım pøítelem Flickem.}
+{442}{}{Co tu dìláš?}
+{443}{}{Ty jsi taky Flickùv pøítel?}
+{444}{}{Nic jsem neudìlal.}
+{445}{}{Co tu vyvádíš?}
+{446}{}{Jen pøedstírej, e mì nevidíš.}
+{447}{}{Nevšímej si mì.}
+
+{460}{}{Zatracenì. Ty jsi zabil Flicka.}
+{461}{}{Flick tì okradl?}
+{462}{}{Flick byl namoèen v nebezpeèné práci.}
+{463}{}{To je hloupı, to o Flickovi.}
+{464}{}{Zajímalo by mì, co teï bude s tìmi dìtmi po Flickovì smrti.}
+{465}{}{Pøekvapilo mì, e Flick vydrel tak dlouho.}
+
+# 7. Mom
+{480}{}{Zavoláme to domù.}
+{481}{}{Vìtšina z nás vyrostla na Máminì kuchyni.}
+{482}{}{Znám Mámu od té doby, co jsem byl ještì dítì.}
+{483}{}{Máma se starala o kadého v Denu.}
+{484}{}{Máma umí udìlat sendviè s èímkoliv.}
+{485}{}{Doufám, e teï poznáš Mámu tak dobøe jako my.}
+{486}{}{Skvìlı podnik, skvìlé jídlo. Co víc si mùeš pøát?}
+{487}{}{Na zdraví!}
+{488}{}{Dobrı den.}
+
+{500}{}{Jak si jenom mohl ublíit chudince staré Mámì?}
+{501}{}{Znám... , chci øíct, znal jsem Mámu celı mùj ivot.}
+{502}{}{Co ti kdy udìlala?}
+{503}{}{Vrahu! Chudák Máma...}
+{504}{}{Proè jsi to jenom musel udìlal?}
+{505}{}{Ty bezcitné monstrum!}

@@ -1,0 +1,32 @@
+#include "_defines.fos"
+#include "_macros.fos"
+
+void _nightcity(Map &map, bool firstTime)
+{
+	uint base=703;
+	CreateTimeEvent(__FullSecond+REAL_SECOND(1),"e_turnbase",base,false);
+}
+
+uint e_turnbase(uint[]@ values)
+{
+	Map @map=GetMapByPid(values[0],0);
+	if(!map.IsTurnBased()) 
+	{
+		map.IsTurnBasedAvailability();
+		map.SetTurnBasedAvailability(true);
+	}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(90),"e_notturnbase",values[0],false);
+	return 0;
+}
+
+uint e_notturnbase(uint[]@ values)
+{
+	Map @map=GetMapByPid(values[0],0);
+	if(map.IsTurnBased())
+	{
+		map.EndTurnBased();
+		map.SetTurnBasedAvailability(false);
+	}
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(10),"e_turnbase",values[0],false);
+	return 0;
+}

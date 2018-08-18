@@ -1,0 +1,36 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 R _script dialog@r_SayMessageDelayed 3 1 0 2 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{Casino Guard}
+{200}{}{You see a casino guard.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{I am watching you, punk!@@Don't do anything stupid!@@Hey, if you'll make trouble I will catch you and throw you outta these walls!@@Still watching you!@@Hey! Be careful!}
+
+[pols]
+{100}{}{StraЕјnik kasyna}
+{200}{}{Widzisz straЕјnika kasyna, jest dobrze zbudowany.}
+{210}{}{Widzisz straЕјnika kasyna. Prawdopodobnie jednym uderzeniem moЕјe zЕ‚amaД‡ ci rД™kД™.}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{I am watching you, punk!@@Don't do anything stupid!@@Hey, if you'll make troubles I will catch you and throw you through these walls!!@@Still watching you!@@Hey! Be careful!}
+
+[russ]
+{100}{}{Casino Guard}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{ }
+{100000001}{}{I am watching you, punk!@@Don't do anything stupid!@@Hey, if you'll make troubles I will catch you and throw you through these walls!!@@Still watching you!@@Hey! Be careful!}
+

@@ -1,0 +1,263 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš vysokého ghoula s dlouhımi vlasy.}
+{101}{}{Vidíš Wooze.}
+{102}{}{Vidíš extrémnì vysokého a vychrtlého ghoula s dlouhımi vlasy.}
+
+{110}{}{Já jsem Wooz. Co chceš?}
+{111}{}{A co chceš teï? Jsi normální?}
+{112}{}{Nazdar. Co chceš?}
+{113}{}{Chlast, Woozi.}
+{114}{}{Co tady dìláš?}
+{115}{}{Øekni mi nìco o tomhle místì.}
+{116}{}{Slyšel jsi nìkdy o nìèem, èemu se øíká GECK.?}
+{117}{}{Nic od tebe nechci. Nashle.}
+
+{120}{}{Právì jsem ti øekl, e kadı Vault má jeden. Vypadá tohle jako Vault? Jsi blbec? Proè hledáš GECK tady? Zkus to ve Vaultu. }
+{121}{}{Kde je nejbliší Vault?}
+{122}{}{Já ti ukáu blbce. Blbost je mluvit takhle se mnou. Já jsem Vyvolenı, abys vìdìl.}
+{123}{}{Uh, vlastnì, já jsem jenom... a myslel jsem e bys mohl... oh, nevadí. Nashle.}
+
+{130}{}{GECK? Myslíš ten pøístroj, kterı mají v kadém vaultu, pomocí kterého
+ lidé, kteøí opustí vault mohou zaloit novou civilizaci?}
+{131}{}{Ano! To je ono! Kde ho mùu najít?}
+{132}{}{Uh, ne, myslel jsem nìjakı jinı GECK.}
+
+{140}{}{Já to tady provozuju. Jsi normální? Prodávám drinky, obchoduju, povídám pøíbìhy, a hraju Tragic.}
+{141}{}{Co chceš teï?}
+{142}{}{Chci drink.}
+{143}{}{Chci obchodovat.}
+{144}{}{Vyprávíš pøíbìhy?}
+{145}{}{Hraješ Tragic?}
+{146}{}{Myslím, e zrovna teï nic nepotøebuji. Zatím.}
+
+{150}{}{Obchodovat? Vdycky jsem pøipravenı mìnit Tragic karty. Mám pár starıch Vox Mubies, Black
+ Dahlia, a nìjaké Rare Earths.}
+{151}{}{Pøedpokládám, e mìníš taky zboí, he?}
+{152}{}{O èem to sakra mluvíš?}
+{153}{}{Uh, nevím v èem zrovna jedeš, ale doufám, e máš trochu u sebe a vymìníš to se mnou.}
+{154}{}{Jasnì, dáme se do toho.}
+{155}{}{Hmm... napøed bych se tì na nìco zeptal.}
+{156}{}{Teï nepotøebuju obchodovat. Nashle.}
+
+{160}{}{Vcelku nic moc, fakt. Jenom skupina ghoulù, co se pevnì drí konce svého ubohého ivota.}
+{161}{}{Ne, myslel jsem co mi øekneš o tomhle baru.}
+{162}{}{No, to se hodí na hodnì lidí. To není nic novıho.}
+
+{170}{}{Chceš drink, co? Take, Máme svoje vlastní Gamma Pivo $5 za flašku a, pro
+ speciální pøíleitosti, náš Rentgen Rum za $12 za láhev.}
+{171}{}{Co to bude?}
+{172}{}{Gama Pivo?}
+{173}{}{Dám si Gamma Pivo. To má takhle svítit?}
+{174}{}{Tohle je speciální pøíleitost, svım zpùsobem. Chci láhev Rentgen rumu.}
+{175}{}{Platím rundu bezvadnıho Gamma Piv pro všechny v lokále.}
+{176}{}{Uh uh, zatím.}
+
+{180}{}{Nemáš dost prachù. Jsi blbec?}
+{181}{}{Blbec?}
+{182}{}{Ach. Sorry. Tak si dám nìco jinıho.}
+{183}{}{Okej, tak se tì na nìco zeptám.}
+{184}{}{Myslím, e jsem blbec. Sorry. Ale na nìco se tì zeptám.}
+{185}{}{Blbec? Takhle se mnou mluvit, je pìkná hovadina, kamaráde. To by se ti taky mohlo nìco pøihodit.
+ Zatím.}
+{186}{}{Sorry. Nashle.}
+
+{190}{}{Chceš koupit rundu pro všechny tady? To se chceš fakt hodnì skamarádit.
+ Bude tì to stát $35.}
+{191}{}{Na cenì nezáleí, dobrı mui. Chci rundu pro všechny, Woozi.}
+{192}{}{Woozi, starej brachu, chci tady všem svım pøátelùm koupit drink. Tihle chlapíci jsou nejlepší.}
+{193}{}{Woozi, pocem... tadyhle ti chlapíci sou nejlepššší kámoši, kerı mùe èlovìk mít. Nalej další rundu
+ pro vššechny moje kamarády.}
+{194}{}{Woozi! Naval další rundu pro všechny mı kámoše. Tihle chlápci sou prostì nejlepší. LIDIÈKY JÁ VÁS MILUJU!
+ Poïte, obejmeme se!}
+{195}{}{Kdy tak pøemıšlím, musím bejt nìjakej divnej, kdy chci koupit drink bandì hnijících zombií.}
+{196}{}{Radši si koupím drink jenom sám pro sebe.}
+
+{200}{}{Mám bezva pøíbìh. je to fakt sranda. Vidíš tuhle hlavu, jo?}
+{201}{}{Hlavu?}
+{202}{}{Uh, myslím, e tenhle jsem u slyšel. Teï nemám èas poslouchat. Nashle.}
+
+{210}{}{Co blbneš? Tragic the Garnering je po Jetu druhá nejnávykovìjší vìc. A Jet má jen nepatrnej náskok.}
+{211}{}{Jak jsem øíkal. Tragic the Garnering je hra.}
+{212}{}{Øekni mi víc o Tragic the Garnering.}
+{213}{}{Co je Jet?}
+{214}{}{Tak to si budu radši pamatovat. Mìj se.}
+
+{220}{}{Hmm, sorry. Víc jich neznám. Mimochodem, nevidìl jsi poslední dobou jablko?}
+{221}{}{Jablko?}
+{222}{}{Jsem pøíliš zklamanı na další konverzaci. Zatím.}
+
+{230}{}{Prostì miluju jabka, ale u jich nikde moc není. Sotva je obèas zahlídnu.}
+{231}{}{Nevìdìl jsem, e jsi takovı ovocnı fetišista. Øekni mi ještì nìco.}
+{232}{}{Slyšel jsem, e jablko si mùeš tak vychutnat, protoe se jí hodnì pomalu.}
+
+{240}{}{Pomalu?!? Si dìláš prdel, ne?! Jabka se jí stejnì rychle jako kadı jinı ovoce. Jablíèka jsou 
+ prostì super. Kdyby nebylo to spiknutí pìstitelù ovoce, všichni bychom mìli dost jablek.}
+{241}{}{Jsi se zbláznil, ne? Myslím, es vysosal nìjak moc vlastního zboí. Øekni mi nìco jinıho.}
+{242}{}{Oh, jasnì... jablíèka jsou perfektní. (pomalu ustupuješ dozadu) Ano, správnì. Dobøe Woozi, klídek. Mìj se.}
+
+{250}{}{Take jsme se shodli. Potøebuješ ještì nìco?}
+{251}{}{Vlastnì, je ještì nìco, co by se mi hodilo. }
+{252}{}{Co se tıká obchodu, je tohle všechno. Ale mám ještì nìjaké otázky.}
+{253}{}{U nic dalšího nepotøebuju. Zatím.}
+
+{260}{}{Aha, Vyvolenı. No teda, To jsem si neuvìdomil. Zkusím se pøestat tøást na tak dlouho, abych ti nìco øekl.
+ (Wooz se usmívá) Pojï blí a já ti to pošeptám.}
+{261}{}{No, takhle je to lepší. Zaslouím si víc respektu.}
+{262}{}{K tobì se nikdy nepøiblíím, šlachovitej magore. Jdi ode mnì.}
+
+{270}{}{Nejbliší Vault? Jo, to nevím. Moná se zeptej lidí ve Vault City, kde mùe bıt Vault.
+ Vault City je na jih. Jsi nìjakej divnej, ne?}
+{271}{}{Vìdìl jsem to. Jenom jsem tì zkoušel. Woozi, jsi tak chytrej. Ale øekni mi ještì nìco jinıho.}
+{272}{}{Nejsem! Sám jsi divnej. Jdu pryè. Sbohem.}
+
+{280}{}{(Wooz kıvá, abys šel blí) Pošeptám ti to pøímo do ucha...}
+{281}{}{Dobøe.}
+{282}{}{Nemyslím; jenom se snaíš serat mi mozek, e jo? Jdu pryè. Sbohem.}
+
+{290}{}{VYSER SI!!! A teï vypadni z mıho baru. Vyvolenı. Jééiš, to je ale debil.}
+{291}{}{Stejnì nechci v tomhle blbım baru zùstat. Nemusíš tak øvát.}
+{292}{}{Tak to by staèilo, zasranej lepráku. Je èas dát ti malı oèkování.}
+
+{300}{}{Vyser si! Jsi magor. Co tu kurva chceš?}
+{301}{}{Uh, mrzí mì, e jsem vás tak nasral, pane Wooz. Jenom se chci na nìco zeptat.}
+{302}{}{Mám si vysrat? Sám si vyser voko! Tenhle bar mi sere. Padám pryè.}
+{303}{}{Uh, nic. Sorry, Woozi.}
+{304}{}{Uh, u jsem ti øíkal, jak moc miluju jablka?}
+
+{310}{}{Opravdu? To jsem nevìdìl. No, kdy máš rád jabka, tak nemùeš bıt tak špatnı. Take co
+ sakra chceš?}
+{311}{}{Mám pro tebe nìjakı otázky Woozi.}
+
+{320}{}{Zombie? Kurva drát! Jsme ghoulové. Zombie jsou typ nemrtvıch bez vlastní vùle. Pøestoe máme spoleèné
+ urèité fyzické charakteristiky -- nejnápadnìji, hnijící maso a charakteristickou chorobnost --
+ jsme stvoøení s vlastní vùlí. Demonstruji ti to na nìèem.}
+{321}{}{Huh?}
+
+{330}{}{Demonstruji svoji vlastní vùli tím, e ti øíkám VYPADNI! Podìlanej hezounovskej bigote. Táhni zpátky
+ do Vault City, kam patøíš.}
+{331}{}{Ghoulové, zombie, koho to zajímá? Beztak je to ta samá verbe.}
+
+{340}{}{Vlastnì, Tragic the Garnering není jenom hra -- je to posedlost. Nìkdo si myslí, e zpùsob, jakım
+ to zmìní lidskı ivot je tragickı, ale ti tomu nerozumí.}
+{341}{}{Uh huh.}
+
+{350}{}{Jet je droga z New Rena. To ses narodil vèera, nebo jsi jenom tak blbej?}
+{351}{}{Aha, to je Jet. Jasnì, urèitì jsem o tom vìdìl. Ale øekni mi víc o Tragic the Garnering.}
+
+{360}{}{Ne, vánì. Je to bezva. Mìl by sis zahrát. Jenom jednou. První balíèek karet je zdarma. Nìco malıho
+ pro tebe ode mnì.}
+{361}{}{Díky. Hej, vypadají perfektnì. (trháš obal) Mmm, miluju tu vùni.}
+{362}{}{Prostì øíkám Tragicu 'NE'. Mìj se.}
+
+{370}{}{Nazdar. Vypadáš jako další hráè Tragicu. Máš èas na hru? Nebo jsi jenom uøvanec? Já tì vyzívám.}
+{371}{}{Opravdu nemám èas na... ale, kolik èasu mùe zabrat jenom jedna malá partièka...}
+{372}{}{Jasnì, jenom mì nech... Ne! Musím pøestat. (ruka ti sama jakoby z vlastní vùle sahá pro balíèek) Neeeeee!}
+
+{375}{}{Rád bych si s tebou Tragic zahrál, ale vypadá to, e u mi došly karty.}
+{376}{}{Poèkej pøíští tıden. Poskládám dohromady neporazitelnı balíèek.}
+{377}{}{Sebral jsi mi moje nejlepší karty. Nenávidím tuhle hru!}
+
+{380}{}{Tohle je jenom zaèátek. Teï jsi jedním z nás, chceš si dát partièku?}
+{381}{}{Jasnì, ale budeš mi muset ukázat jak.}
+{382}{}{Nemyslím, e mám teï èas na nìco takového. Ale na nìco se tì zeptám.}
+{383}{}{Rád bych zùstal a mìnil s tebou Tragic karty, ale mám dost práce. V reálném ivotì, víš? Mìj se.}
+
+{390}{}{Podívej, je to jednoduchı, fakt. To pochopí dokonce i blbec. Nejdøív, sestavíš z karet, které máš
+ herní balíèek a potom...}
+{391}{}{Uh, huh. Take øíkáš, e rozdáváš tøetímu, pokud není ètvrtek? OK, myslím e to mám.
+ Zahrajeme si.}
+{392}{}{Moná si zahrajeme pozdìji. Díky za vysvìtlení. Mìj se.}
+
+{400}{}{Ty jsi vyhrál? Kurva! To se mi nìjak nezdá. Tentokrát jsi mìl štìstí. Prostì se mi jenom
+ nepovedlo sestavit balíèek. Musím si poskládat lepší.}
+{401}{}{Díky za karty, Woozi. A já jsem myslel, e to umíš hrát? Myslím, e jsi jenom blbej.}
+{402}{}{Hmm, takovı jsou prohry, Woozi. Mìj se.}
+
+{410}{}{Já jsem vyhrál! Doprdele! Jsi blbec. Rozdrtil jsem tì. A s tvıma kartama si sestavím ještì
+ lepší balíèek.}
+{411}{}{Uh, jasnì. Vyhrál jsi. Mìj se.}
+{412}{}{To je pøekvapení. No, aspoò jsem nemusel poslouchat ty tvoje pøíbìhy. Mìj se.}
+
+{420}{}{Skoro ádnı. Jdeme na to. Mám novı balíèek, kterı chci vyzkoušet.}
+{421}{}{Fajn. Jdu do toho.}
+{422}{}{Ne, musím odolat volání sirén. Musím se zeptat na nìco jiného.}
+
+{430}{}{Vím co myslíš. Mùu pøestat kdykoliv bych chtìl. Ale dneska nechci.}
+{431}{}{Nekecáš. Vlastnì, jsem se tì chtìl zeptat na nìco jiného.}
+{432}{}{Arrrgh! Musím odejít, dokud ještì mùu. Nashle.}
+
+{440}{}{No, pojmenoval jsem to tu po oblíbenım pajzlu, co jsem mìl pøed válkou. Myslím e je to 
+ pøipomínka minulıch èasù. Tak trochu vtip, aby nám to taky trochu zpøíjemnilo náš osud.}
+{441}{}{Pøed válkou? Ale to bylo tak dávno.}
+{442}{}{Jakı osud?}
+
+{450}{}{Mùe to tak bejt, ale ne kadej má mìsto plnı pomatencù, co chtìj jeho krev.}
+{451}{}{Co tím myslíš?}
+
+{460}{}{Opravdu to bylo hodnì dávno. Jak si myslíš, e vznikne ghoul? Myslíš, e nìkteøí z nás prostì 
+ jednoho krásného dne ráno vstali a øekli si: "Hele, to by mnì zajímalo, jakı by to bylo, kdyby mi z tohodle
+ podìlanıho tìla uhnívalo maso?"}
+{461}{}{Vlastnì, ne, to si nemyslím. Tak teda, jak vznikne ghoul?}
+{462}{}{Víš, vlastnì je mi hovno po tom, proè vypadáte tak hnusnì. Mìj se.}
+
+{470}{}{Ty sráèe z Vault City. Jestli nás nìkdo chce sejmout, tak oni. Jsou jak posraní.
+ Kdy nìkdo nemá v hlavì nasráno pøesnì tak, jak oni, chtìj ho zabít. Dával bych si na nì
+ majzla, bejt tebou.}
+{471}{}{Zní to jako dobrá rada. Budu opatrnı. Ale ještì nìco mì zajímá.}
+{472}{}{Myslím, e mají pravdu. Jenom malá genetická èistka. Doufám, e zaènou s tebou. Sbohem.}
+
+{480}{}{Jediná monost, jak mi ghoulové pøijdeme na jiné myšlenky, je zahrát si na vlastní harfu.}
+{481}{}{Nevìdìl jsem, e ghoulové jsou nìjak zvláš muzikální.}
+{482}{}{Aha, tak jo. Heh, heh. Na nìco se tì zeptám.}
+
+{490}{}{Se støíbrnıma zvoneèkama a tak podobnì... Sakra, jsi fakt blbec, co? Silná radiace. Tak je to. Jak sis myslel? Víš, hodnì bomb udìlá bum, záblesk svìtla a horko, maso ohoøí, je to prostì ten ne-zrovna-smrtelnı-typ silné radiace.}
+{491}{}{Uh, vlastnì, myslím...}
+
+{500}{}{Já ne. Tak ti teda kurevsky dìkuju, es mi pøipomnìl všechny ty bolestivı vzpomínky. Sráèi. Jsme mìsto posranıch zbytkù -- trochu pøevaøenıch zbytkù.}
+{501}{}{Já mám rád støednì propeèené. Hej, zeptám se tì na nìco jinıho.}
+{502}{}{Vlastnì, já uh, ehm. Sorry. Teï tì nechám vyválet v sebelítosti. Zatím.}
+
+{510}{}{No, obyèejnì jenom buším na prázdnı hlavy svıch zákazníkù -- asi jako na bonga. Jak to, e tì vùbec nechali vylézt z vesnice? Jsi nebezpeènej jak pro sebe, tak pro ostatní.}
+{511}{}{Bonga?}
+
+{520}{}{Spadnul jsi ze stromu a cestou dolù narazil do kadı blbı vìtve, co?}
+{521}{}{Strom? Mám pocit, e se v té tvojí hatmatilce ztrácím... chlape. Zeptám se tì na nìco jinıho.}
+
+{530}{}{Jasnì, je to hlava. A není pøipojená k tìlu. Vidíš, je useknutá.}
+{531}{}{Useknutá hlava. Vidím. A to je vtipnı?}
+
+{540}{}{Jenom vydr minutku. Tahle useknutá hlava, vidíš, je v Pekle. (ha, ha) A lítá tam kolem,
+ víš, v Pekle. A naráí tam do rùznıch známıch lidí... (ho, ho, ho)}
+{541}{}{Poèkej, useknutá hlava je v Pekle, a lítá kolem...a co dìlá?}
+
+{550}{}{No, dìlá rùznı vìci. (hee, hee) Víš. Jsou to vìci, kterı chce dìlat, nebo moná vìci, kterı musí dìlat.
+ Pointa je, e dìlá vìci, víš, tam v Pekle. Oh Boe, (ha, ha, ha) nemùu to ustát!}
+{551}{}{Jsi tím nìjak posedlej, e jo? Hmm. Byli jste si s matkou blízcí? Nemìl jsi problémy s pomoèováním?}
+
+{560}{}{Ne, ty tomu proste nerozumíš. Všechno je to o useknuté hlavì. Chápeš? He, he, he, to je prdel! Jak mùeš pøemıšlet o useknuté hlavì v Pekle, a nesmát se?}
+{561}{}{Woozi, moc dobøe tì neznám, a jsem si jistı, e ani moc nechci. Ale, myslím, e mùu øíct, bez obav z pøehánìní, e potøebuješ pomoc. Okamitou, odbornou pomoc. }
+{562}{}{Oh. Aha. Proè ne. Samozøejmì; Je to velice smìšné. He he. Nemùu se ovládnout... ale dost srandy -- ou, moje bránice -- potøebuju se tì na nìco zeptat.}
+
+{570}{}{Vyser si! Jsi stejnej, jako všichni ostatní. Øíkám ti, je to sakra veselı. Není to moje chyba, e nemáš smysl pro humor.}
+{571}{}{Máš pravdu, Woozi. Myslím, e jenom nejsem tak chytrı jako ty. Jsi prostì perla mezi svinìmi. Ale teï mi øekni nìco jinıho.}
+{572}{}{Mám dost smyslu pro humor na to, abych poznal, e nìkomu jinımu chybí. Mìj se.}
+
+{600}{}{Jsi blbec? U jsem ti o Tragicu všechno øekl. Musíš mít fakt krátkou pamì.}
+
+{601}{}{Vidíš? Øíkal jsem ti, e je to sranda. Potøebuješ ještì nìco?}
+
+{700}{}{Nejsi blbec?}
+{701}{}{Dej mi obøí colu!}
+{702}{}{Na tohle není pravidlo!}
+{703}{}{Polib mi prdel.}
+{704}{}{Zdar, prdi.}
+{705}{}{Vyser si voko.}
+{706}{}{Se tøeba poser.}
+{707}{}{Zahrajeme si Tragic.}
+{708}{}{Jsem nejhorší hráè Tragicu na svìtì.}
+{709}{}{SÍLA!}
+{710}{}{Všechny hry poseru.}
+{711}{}{Jsem nejvìtší blbec, co jsi kdy potkal.}
+{712}{}{NENÁVIDÍM!!!}
+{713}{}{Kde je ta horda malıch enskıch?}
+{714}{}{U jsi vidìl dospìlıho chlapa NAHİHO?!}

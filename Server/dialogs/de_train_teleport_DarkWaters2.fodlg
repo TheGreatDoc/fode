@@ -1,0 +1,55 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+0 2020 @
+3 3000 None 0 #
+0 3010 D _item p PID_BOTTLE_CAPS } 200 R _script dialog@r_TeleportToMap2 0  #
+0 3020 &
+
+[engl]
+{100}{}{Fisherman Henry}
+{110}{}{man16.png}
+{210}{}{You see a man. He looks old, withered, but still very firm despite his age.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Lookin' for a boat? Me sailin' to Scrapers City if ye interested.@@Oy, me leavin' for eastern waters near da Scrapers City. Could drop ye there, for say... 200 coins. Whaddya say, matey?@@Aye there, landlubber, me takin' this babeh to Scrapers City, wanna join?}
+{2010}{}{Yeah.@@I am interested.
+{2020}{}{No, thanks.}
+{3000}{}{Aye, me hearty, drop dat 200 smartly, fuel ain' free!}
+{3010}{}{Okay, here you go.@@Here's 200 coins.}
+{3020}{}{Damn, I don't have the cash right now.@@I've changed my mind, maybe later.}
+
+[pols]
+{100}{}{Fisherman Henry}
+{110}{}{man16.png}
+{210}{}{Stary przygarbiony ale pewny siebie czіowiek.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Sіyszaіem їe potrzebujesz transportu. Wybieram siк do Scrapers City, jesteњ zainteresowany?@@Wybieram siк іowiж na wschodnie wody niedaleko Scrapers City. Jeњli jestes zainteresowany mogк ciebie zabraж nawet do portu w tym mieњcie za jedyne 200 kapsli.@@Jeњli jesteњ zainteresowany to wybieram siк do portu w Scrapers City. Chcesz pіyn№ж ze mn№?}
+{2010}{}{Tak@@Jestem zainteresowany}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Dorzuж siк tylko do paliwa te 200 kapsli i juї pіyniemy.}
+{3010}{}{Prosze.@@O to 200 kapsli.}
+{3020}{}{Nie mam tyle.@@Moїe innym razem.}
+
+[russ]
+{100}{}{none}
+{110}{}{man12.png}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj.Jestes zainteresowany transportem na druga strone}
+{2010}{}{Tak}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Koszt to 100 kapsli.@@Dawaj 100 kapsli}
+{3010}{}{Prosze.@@O to 100 kapsli.}
+{3020}{}{Nie mam tyle.}
+

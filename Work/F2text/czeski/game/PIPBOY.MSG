@@ -1,0 +1,1261 @@
+#tento soubor pøeloil Vachy...
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used in PIPBOY.C
+#
+# (These MUST match "text message" enumeration on the top of PIPBOY.C)
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+
+#
+# Special holiday dates
+#
+{100}{}{Šastnı Novı rok!}      # New years
+{101}{}{Šastnı Valentın!}     # April fools
+{102}{}{Veselého Apríla!}      # April fools
+{103}{}{Šastnı den Lodí!}            # Shipping day! Svátek v Británii
+{104}{}{Šastnı Den nezávislosti!}    # Independence day
+{105}{}{Šastnı Halloween!}           # Halloween
+{106}{}{Šastnı Den díkùvzdání!}    # Thanksgiving
+{107}{}{Veselé Vánoce!}           # X-mas
+
+#
+# System messages
+#
+{200}{}{VÍCE}
+{201}{}{ZPÌT}
+{202}{}{LOKACE}
+{203}{}{ádné další spuštìné úlohy.}
+{204}{}{VODÍTKA}  # clues gone
+{205}{}{AUTOMAPY}
+{206}{}{VIDEO ARCHÍVY}
+{207}{}{DATA}
+{208}{}{}
+{209}{}{}
+{210}{}{- úkoly}
+{211}{}{DATA}
+{212}{}{z}
+{213}{}{Strana}
+{214}{}{HOTOVO}
+{215}{}{Na tomto místì nemùeš odpoèívat!}
+
+#
+# Alarm clock
+#
+{300}{}{BUDÍK}
+{301}{}{Zranìní}
+{302}{}{Odpoèívat deset minut}
+{303}{}{Odpoèívat pùl hodiny}
+{304}{}{Odpoèívat hodinu}
+{305}{}{Odpoèívat dvì hodiny}
+{306}{}{Odpoèívat tøi hodiny}
+{307}{}{Odpoèívat ètyøi hodiny}
+{308}{}{Odpoèívat pìt hodin}
+{309}{}{Odpoèívat šest hodin}
+{310}{}{Odpoèívat do rána (0800)}
+{311}{}{Odpoèívat do poledne (1200)}
+{312}{}{Odpoèívat do veèera (1800)}
+{313}{}{Odpoèívat do pùlnoci (0000)}
+{314}{}{Odpoèívat do plného uzdravení}
+{315}{}{Odpoèívat do uzdravení celé skupiny}
+
+#
+# Holodisk titles
+#
+{400}{}{Holodisk Vault 13}
+{401}{}{Vojenská báze: Vnìjšek}
+{402}{}{Vojenská báze: 1. patro}
+{403}{}{Vojenská báze: 2. patro}
+{404}{}{Vojenská báze: 3. patro}
+{405}{}{Vojenská báze: 4. patro}
+{406}{}{Sklad Sierra Exp. Log}
+{407}{}{Sklad Sierra: Lék. záznam}
+{408}{}{Sklad Sierra: Evakuace}
+{409}{}{Sklad Sierra: Zprávy GNN}
+{410}{}{Mise Sierra}
+{411}{}{Uèení Hubologù}
+{412}{}{Poznámky návrháøe Vault City}
+{413}{}{Cestovní záznam Vault City}
+{414}{}{Špionání holodisk NCR}
+{415}{}{Historickı holodisk NCR}
+{416}{}{Westinùv holodisk}
+{417}{}{Stát Národù}
+{418}{}{Seznam slov}
+{419}{}{Projekt}
+{420}{}{Operace jaderné elektrárny}
+
+#
+# Movie archive titles
+# Order must match the list (see gmovie.h)
+#
+{500}{}{Logo InterPlay}               # Not shown in Pipboy
+{501}{}{Úvodní sekvence}
+{502}{}{Øeè Starší}
+{503}{}{Získání kombinézy}
+{504}{}{Selhání Arroya}
+{505}{}{Arroyo znièeno}
+{506}{}{Startování auta}
+{507}{}{Rodina Cartucciovıch}
+{508}{}{Vùdce deathclawù}
+{509}{}{Tanker odplouvá}
+{510}{}{Vìzòové v Enklávì}
+{511}{}{Znièení Enklávy}
+{512}{}{Sen o Arroyo 1}
+{513}{}{Sen o Arroyo 2}
+{514}{}{Sen o Arroyo 3}
+{515}{}{Sen o Arroyo 4}
+{516}{}{Autoøi}
+
+#
+# Things for the Mac version to speak
+#
+#
+{600}{}{Stav}
+{601}{}{Vodítka}  # Clues gone
+{602}{}{Automapy}
+{603}{}{Archívy}
+{604}{}{Budík}
+{605}{}{Doo da doo da dum dee dee doodly doo dum dum dum doo da doo da doo da doo da doo da doo da doo}
+{606}{}{Vítá Vás Rob Co Pipboy 2000.}
+{607}{}{Navidìnou.}
+{608}{}{Vstávej.}
+
+#
+# Status thread text
+#
+# Format:
+# 0 City name
+# 1 ... 9 thread/quest name
+#
+{700}{}{Vault 13}
+{701}{}{Uklidnit povstaleckou frakci.}
+{702}{}{Znièit velitele Mutantù.}
+{703}{}{Znièit zdroj Mutantù.}
+{704}{}{Najít Vodní èip.}
+{705}{}{Najít zlodìje vody.}
+#
+{710}{}{Znièenı Vault}
+#
+{720}{}{Shady Sands}
+{721}{}{Vyléèit Jarvise z otrávení.}
+{722}{}{Udìlat protijed.}
+{723}{}{Zachránit Tandi od Nájezdníkù.}
+{724}{}{Zastavit Radškorpiony.}
+#
+{730}{}{Junktown}
+{731}{}{Pomoct Saulovi.}
+{732}{}{Zabít Kiliana.}
+{733}{}{Zachránit Sinthiu.}
+{734}{}{Zachránit Trish.}
+{735}{}{Zastavit Gizma.}
+{736}{}{Znièit gang Lebek.}
+#
+{740}{}{Nájezdníci}
+#
+{750}{}{Necropole}
+{751}{}{Znièit Super Mutanty u vodního zdroje.}
+{752}{}{Opravit vodní pumpu v Necropoli.}
+#
+{760}{}{Hub}
+{761}{}{Znièit deathclawa.}
+{762}{}{Sjednat obchod s Jainem.}
+{763}{}{Sjednat obchod s nákupèími.}
+{764}{}{Najít ztracené karavany.}
+{765}{}{Ukrást náhrdelník obchodníkùm.}
+#
+{770}{}{Bratrstvo}
+{771}{}{Stát se Zasvìcenım.}
+{772}{}{Zachránit Zasvìcence z Hubu.}
+#
+{780}{}{Vojenská základna}
+#
+{790}{}{Kráter}
+{791}{}{Odblokovat pasti v lokaci.}
+{792}{}{Nahodit elektøinu v Kráteru.}
+#
+{800}{}{Pohøebištì}
+{801}{}{Stát se Bladem.}
+{802}{}{Pøinést medailonek pro Romero.}
+{803}{}{Doruèit zásilku pro Gun Runnery.}
+{804}{}{Najít dìtského špióna u Následníkù.}
+{805}{}{Opravit hydroponickou farmu v Adytu.}
+{806}{}{Zachránit Jasona Zimmermana.}
+{807}{}{Zastavit útoky gangù na Adytum.}
+
+{810}{}{Katedrála}
+
+
+#
+# Holodisk text
+#
+
+# GVAR_NKR_FAKE_VAULT13_HOLODISK
+#
+{1000}{}{VAULT 13 HOLODISK od Ziggy}
+{1001}{}{**END-PAR**}
+{1002}{}{Na tomto holodisku je uloena lokace Vaultu 13. Jeho}
+{1003}{}{poloha byla zaznamenána do tvé mapy.}
+{1004}{}{**END-DISK**}
+# *** ***
+# GVAR_HOLODISK_MB_OUTSIDE
+{2000}{}{Pro: Centrální Velitelství}
+{2001}{}{Náš vìdeckı tım dokonèil zkoumání vzorkù získanıch ze}
+{2002}{}{základny - byly potvrzeny jako na 99% èisté. Poèítejte,}
+{2003}{}{e vzorek brzy dorazí. Jak jsme oèekávali, dìlnická}
+{2004}{}{populace pøi vystavení èisté smìsi silnì zmutovala.}
+{2005}{}{Jsou hlášeny tìké, ale pøijatelné ztráty. Naøídil jsem}
+{2006}{}{evakuaci základny. Jakmile odtamtud bude pryè poslední}
+{2007}{}{z nich, odpálíme vchod do základny a zavøeme tam ty}
+{2008}{}{bastardy.}
+{2009}{}{}
+{2010}{}{Plukovník Sanders}
+{2011}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_1
+{3000}{}{Toto je kapitán Pickard, hlásící se z kontrolního bodu 1.}
+{3001}{}{Spojení s kontrolními body 2 a 3 bylo ztraceno. Mùeme}
+{3002}{}{oèekávat jen to nejhorší. Nestvùry šplhají z dùlních}
+{3003}{}{šachet. Selhaly všechny zpùsoby, jak je zastavit.}
+{3004}{}{Pokusíme se je udret v této pozici, jak nejdéle to}
+{3005}{}{bude moné.}
+{3006}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_2
+{4000}{}{Kontrolní bod 3 je pod útokem. Pro jistotu jsme}
+{4001}{}{vypnuli dùlní vıtahy, ale já je slyším, jak lezou}
+{4002}{}{šachtami. A kruci! Z niších pater lezou...! Obøí,}
+{4003}{}{hnusná, zelená monstra! O to tady musí jít. Nìjakı}
+{4004}{}{druh supervojáka! Kdy to do nich napálíme, ze šachet}
+{4005}{}{vylezou další dva a ti, které jsme u zastøelili,}
+{4006}{}{vstanou a jdou poøád se na nás! Potøebujeme posi_}
+{4007}{}{}
+{4008}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_3
+{5000}{}{Serant Bracks, hlášení z kontrolního bodu 3. Všechno je}
+{5001}{}{v poøádku, stejnì tak jako vèera a den pøedtím. Nevím,}
+{5002}{}{proè nás sem poslali stráit tyto sešlé horníky. Jsou tak}
+{5003}{}{slabí a vyzáblí, e u pomalu neuzvednou krumpáè. Tak jako}
+{5004}{}{tak, pøed chvílí tudy prošli vìdátoøi s nìjakım druhem}
+{5005}{}{vzorku. Zdáli se jím bıt dost nadšení. Nevíte, jestli}
+{5006}{}{našli, co hledali? Moná, e u se z tohoto opuštìného}
+{5007}{}{koneènì místa dostaneme. Dostávám z toho husí kùi.}
+{5008}{}{Moment - ze šachet se sune další náklad. Mùj boe...!}
+{5009}{}{Boe, co jsou zaè? Obklièují nás! Pošlete pomoc!! Opakuji,}
+{5010}{}{tady je kontrolní bod 3, pošlete nìkoho na pom_}
+{5011}{}{**END-DISK**}
+{5012}{}{}
+{5013}{}{}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_4
+{6000}{}{Vykopávky probíhají podle plánu. Soudì podle návrhù}
+{6001}{}{staré základny bychom mìli brzy dosáhnout káïové}
+{6002}{}{oblasti. Ve vzorcích pùdy i ovzduší, které jsme sejmuli,}
+{6003}{}{je pøítomna vysoká hladina viru FEV. Naše kombinézy}
+{6004}{}{ten virus naštìstí odfiltrují. Èlenùm Enklávy povìzte,}
+{6005}{}{e velice brzy budou mít èistı vzorek tohoto mutagenu.}
+{6006}{}{}
+
+{6007}{}{**END-PAR**}
+#
+{6008}{}{Navíc si zaèínám všímat jistıch zmìn v hornících.}
+{6009}{}{Projevují známky zvıšené síly a vıdre a jemnou zmìnu}
+{6010}{}{ve zbarvení pokoky - oèividnı projev mutace virem}
+{6011}{}{FEV. Mui zaèínají bıt nervózní, kdy si všímají}
+{6012}{}{tìchto zmìn. Zvıšil jsem poèet stráí, protoe se bojím}
+{6013}{}{e pokud dìlníci zmutují kompletnì, budou v pøesile}
+{6014}{}{Osobnì doufám, e kdy jako pracovní sílu vyuijeme}
+{6015}{}{místní Obyvatele, plná mutace nenastane, dokud nebudou}
+{6016}{}{pøímo vnoøeni do èistého zdroje nebo vystaveni dlouho-}
+{6017}{}{dobému pùsobení viru. Po celém regionu byly zjištìny}
+{6018}{}{nepatrné dávky viru. Testy na subjektech ijících v této}
+{6019}{}{oblasti ukázaly, e si vùèi nìmu vypìstovali jistou}
+{6020}{}{odolnost. Pøesto je tu ale monost pøípadného nebezpeèí,}
+{6021}{}{protoe s vystavením takové úrovni viru FEV jsme nikdy}
+{6022}{}{nepoèítali. Navrhuji, abychom vchod do této základny}
+{6023}{}{nechali znièit co nejdøíve poté, co obdríme èistı vzorek.}
+{6024}{}{Tím uvìzníme zmutované horníky a pøedejdeme nebezpeèí}
+{6025}{}{získání viru nìkım po našem odchodu.}
+{6026}{}{**END-DISK**}
+{6027}{}{}
+{6028}{}{}
+{6029}{}{}
+#
+{7000}{}{Armádní sklad Sierra - V & V}
+{7001}{}{Hostující lékaø - Dr. H. Lector}
+{7002}{}{Osobní záznam}
+{7003}{}{**END-PAR**}
+{7004}{}{28. èervna 2077}
+{7005}{}{Dnes na mì kluci z biologického zahráli skvìlı vtípek}
+{7006}{}{Jeden z tìch malıch ulièníkù zvıšil nastavení na mém}
+
+{7007}{}{automatizovaném extraktoru orgánù Vault-Tec. Páni,}
+{7008}{}{to jsem byl ale pøekvapenı, kdy vojín Callow odešel}
+{7009}{}{z operaèní místnosti bez traèníku! Dobré bylo, e u}	
+{7010}{}{byl po smrti, jinak bych mìl problémy. Pøeprogramoval}
+{7011}{}{jsem tedy ten pøístroj tak, aby vyjímal pouze mozky,}
+{7012}{}{take se to u nikdy nestane.  Za tohle je dostanu.}
+{7013}{}{**END-PAR**}
+{7014}{}{29. èervna 2077}
+{7015}{}{Odstranil jsem játra vojínu Callowovi a uvaøil je. Pak}
+{7016}{}{jsem je poslal dolù klukùm do biologického spolu s}
+{7017}{}{fazolemi a lahodnou èínou. Mysleli si, e to bylo}
+{7018}{}{zvláštní podìkování za dobøe odvedenou práci. Já to}
+{7019}{}{prostì miluju.}
+{7020}{}{**END-PAR**}
+{7021}{}{30. èervna 2077}
+{7022}{}{Testoval jsem na jednom z mıch pacientù chemickı}
+{7023}{}{koktejl Buffoutu a Psycha smíchanı s nìkterımi}
+{7024}{}{speciálními zlepšováky, se kterımi jsem si hrál.}
+{7025}{}{Vısledky byly velice slibné, ne-li delikátní.}
+{7026}{}{Subjekt zaèal bıt velice násilnı a pokusil se}
+{7027}{}{uprchnout z místnosti. Naštìstí - ti noví bezpeè-}
+{7028}{}{nostní roboti byli na místì a zastavili ho.}
+{7029}{}{Mìl bych zavolat údrbu, a ty dveøe vymìní.}
+{7030}{}{**END-PAR**}
+{7031}{}{1. èervence 2077}
+{7032}{}{Mùj oblíbenı pokusnı objekt zemøel. Stravoval}
+{7033}{}{jsem ho vyváenou dietou Mentantù smíchanıch}
+{7034}{}{s mımi speciálními zlepšováky. Bìhem pár tıdnù se}
+{7035}{}{mu IQ zvıšilo z 39 na 200. Jsem smutnı, protoe}
+{7036}{}{to byl jeden z mála lidí, se kterım jsem si}
+{7037}{}{mohl opravdu popovídat. Bude mi moc chybìt.}
+{7038}{}{**END-PAR**}
+{7039}{}{5. èervence 2077}
+{7040}{}{Myslíme si, e ten novı kybernetickı mozek je}
+{7041}{}{koneènì pøipraven. Musíme provést ještì nìjaké}
+{7042}{}{testy, ale vypadá to slibnì.}
+{7043}{}{**END-PAR**}
+{7044}{}{6. èervence 2077}
+{7045}{}{Oddìlení robotiky není rádo, e jejich precizní}
+{7046}{}{poèítaè byl upraven pro spuštìní bezpeènosti}
+{7047}{}{bìhem evakuace. Také nemùu øíci, e bych byl}
+{7048}{}{šastnı, protoe Skynet byl neocenitelnı pøi}
+{7049}{}{vırobì nového kybernetického mozku.}
+{7050}{}{**END-PAR**}
+{7051}{}{9. èervence 2077}
+{7052}{}{Evakuace byla posunuta, mizerné naèasování.}
+{7053}{}{U nám toho moc nezbıvá k zahájení instalace}
+{7054}{}{toho nového kybernetického mozku. Øíkají,}
+{7055}{}{e evakuace je doèasná, take budu ve svém}
+{7056}{}{vızkumu pokraèovat, a se vrátím. Toto je}
+{7057}{}{asi na nìjakı èas mùj poslední záznam, budu se}
+{7058}{}{snait co nejvíce se zkoncentrovat na mùj vızkum.}
+{7059}{}{**END-DISK**}
+{7060}{}{}
+#
+{8000}{}{5. èervenec 2077}
+{8001}{}{Armádní depo Sierra - Ošetøovna}
+{8002}{}{Hostující lékaø - Dr. Solomon}
+{8003}{}{Subjekt - plukovník Dixon}
+{8004}{}{Nehodové hlášení # 8332-523D}
+{8005}{}{**END-PAR**}
+{8006}{}{Subjekt se pokoušel instalovat útoènou minu}
+{8007}{}{ve skladišti jako souèást evakuaèní obrany}
+{8008}{}{Armádního depa Sierra. Mina vybuchla pøedèasnì}
+{8009}{}{a zpùsobila plukovníku Dixonovi a generálu}
+{8010}{}{Cliftonovi èetná poranìní. Plukovník Dixon utrpìl}
+{8011}{}{mnoho trnıch ran na rukou, hrudi a oblièeji.}
+{8012}{}{Pravá ruka na tom byla nejhùøe, nepodaøilo se}
+{8013}{}{nám nalézt její zbıvající èást. Váná vpichová}
+{8014}{}{poranìní na hrudi a oblièeji vyadovala}
+{8015}{}{k nápravì rozsáhlou chirurgickou operaci.}
+{8016}{}{Celkem bylo vyòato 32 fragmentù miny. Pravé}
+{8017}{}{oko bylo poškozeno natolik, e jej bylo}
+{8018}{}{nutno chirurgicky odstranit. Je zde ale ještì}
+{8019}{}{nadìje, e pokud poškozené, ale stále ještì}
+{8020}{}{ivoucí oko umístíme do Biomed roztoku, samo}
+{8021}{}{se zregeneruje. Doufejme, e jej budeme moci}	 
+{8022}{}{pozdìji opìtovnì implantovat. Experimentální}
+{8023}{}{Biomed roztok se dá velice vıhodnì vyuít}
+{8024}{}{ke stimulaci ivıch bunìk, je ale velice}
+{8025}{}{nešastné testovat tento novı objev za tak}
+{8026}{}{nepøíjemnıch okolností.}
+{8027}{}{**END-DISK**}
+{8028}{}{}
+#
+{9000}{}{9. èervna 2077}
+{9001}{}{Pøednostní vydání}
+{9002}{}{Všeobecné hlášení}
+{9003}{}{}
+{9004}{}{Oznámení všemu personálu. Evakuace Armádního}
+{9005}{}{skladu Sierra byla pøesunuta o jeden tıden.}
+{9006}{}{Do té doby musí bıt dokonèena instalace bezpeè-}
+{9007}{}{nostích a obrannıch systémù. Všechen personál}
+{9008}{}{se musí hlásit u vedoucích jednotlivıch}
+{9009}{}{sekcí kvùli zmìnìnım rozkazùm. Bìhem této doby}
+{9010}{}{bude bezpeènost striktnì zesílena. Identifikaèní}  
+{9011}{}{odznaky musejí bıt neustále viditelnì nošeny.}
+{9012}{}{}
+{9013}{}{Z rozkazù generála Cliftona}
+{9014}{}{**END-DISK**}
+
+# Sierra Base Mission Statement
+{10000}{}{Armádní depo Sierra}
+{10001}{}{Vyjádøení k misi 1942 - 1991}
+{10002}{}{Skladištì a údrba obranného materiálu.}
+{10003}{}{V pøípadì moné invaze musí Armádní depo Sierra}
+{10004}{}{zapùjèit pomoc do sousedních bází a zajistit}
+{10005}{}{dodávky ádaného materiálu a vybavení.}
+{10006}{}{**END-PAR**}
+{10007}{}{Armádní depo Sierra}
+{10008}{}{Vyjádøení k misi 1992 - 2050}
+{10009}{}{Zodpovìdnost za likvidaci nadbyteèné prošlé èi}
+{10010}{}{poškozené munice nebo techniky zastaralé pro vojenské}
+{10011}{}{úèely. O tyto úkoly se stará Prùmyslové operaèní}
+{10012}{}{støedisko(POS) ve spolupráci s Agenturou na}
+{10013}{}{ochranu prostøedí (ANOP), zajištující lepší a}
+{10014}{}{ekologiètìjší cestu likvidace vojenského materiálu.}
+{10015}{}{**END-PAR**}
+{10016}{}{Armádní depo Sierra}
+{10017}{}{Vyjádøení k misi 2050 - 2076}
+{10018}{}{TAJNÉ}
+{10019}{}{Vyaduje 5 stupeò utajení}
+{10020}{}{Základna je neustále doplòována nejnovìjšími techno-}
+{10021}{}{logiemi a je pouívána jako tajné støedisko pro}
+{10022}{}{vızkum a testování robotiky, biologickıch a konvenèních}
+{10023}{}{zbraní.}
+{10024}{}{**END-PAR**}
+{10025}{}{Armádní depo Sierra}
+{10026}{}{Vyjádøení k misi 2077}
+{10027}{}{Díky nedostatku cvièeného personálu bude Armádní}
+{10028}{}{sklad Sierra modifikován na plnì automatickou}
+{10029}{}{obrannou základnu. Všechen personál bude pøesunut do}
+{10030}{}{okolních základen a nebo do první linie.}
+{10031}{}{**END-DISK**}
+
+# Sierra Base GNN Transscript
+{11000}{}{Galaxy News Network}
+{11001}{}{Pøepis vysílání z 11. ledna 2073}
+{11002}{}{Zprávy dne na GNN. Díky svému finanènímu zázemí}
+{11003}{}{bude USA jako první spravovat pøídìl posledních}
+{11004}{}{svìtovıch zásob ropy. Tato situace potrvá do té doby,}
+{11005}{}{dokud vydrí zásoby nebo dokud se nenajde}
+{11006}{}{zpùsob, jak se dostat k loiskùm ropy ukrytım}
+{11007}{}{tisíce metrù pod hladinou Tichého oceánu.}
+{11008}{}{Se svìtovou zásobou ropy blíící se nule bude národ,}
+{11009}{}{kterı první pøijde na zpùsob tìby, velmi dobøe}
+{11010}{}{zajištìnı. My z GNN jsme hrdí, e mùeme ohlásit,}
+{11011}{}{e USA jsou první, kdo má projekt na tìbu, a}
+{11012}{}{v závislosti na to prohlašuje tyto zásoby za}
+{11013}{}{majetek Spojenıch státù. Smìle do toho Ameriko!}
+{11014}{}{**END-PAR**}
+{11015}{}{Èína to prohlašuje za nechutnou kachnu vydanou tøetí}
+{11016}{}{mocností. Èínskı prezident Xin na to reagoval okamitım}
+{11017}{}{prohlášením, e projekt jejich tìebních vìí byl}
+{11018}{}{dokonèen mìsíce pøed uveøejnìním projektu USA, avšak}
+{11019}{}{èínské plošiny doprovází neustálı øetìzec nešastnıch}
+{11020}{}{událostí èinících celı projekt neuskuteènitelnım.}
+{11021}{}{Prezident Xin také poznamenal, e je na 100% }
+{11022}{}{pøesvìdèen, e ve všech tìchto sabotáích }
+{11023}{}{jejich plošin mají prsty USA a poaduje}
+{11024}{}{pøešetøení pøed mezinárodním soudním dvorem.}
+{11025}{}{**END-PAR**}
+{11026}{}{Další zprávy, mezi obyèejnımi lidmi se projevují}
+{11027}{}{nepokoje v souvislosti s nárùstem cen paliv. Zatím}
+{11028}{}{se nikdy v minulosti ceny nepohybovaly tak vysoko a}
+{11029}{}{všechny dosavadní rekordy byly u dávno pøekonány.}
+{11030}{}{**END-PAR**}
+{11031}{}{Z domova, zimní teploty dosáhly velmi nízkıch teplot.}
+{11032}{}{Ve støedu USA kolem -3 a -5 st.C a na obou}
+{11033}{}{pobøeích -10 st.C. Obleète se dnes teple!}
+{11034}{}{**END-PAR**}
+
+{11035}{}{Galaxy News Network}
+{11036}{}{Pøepis vysílání z 24. èervna 2074}
+{11037}{}{Jednání mezi Spojenımi státy a ostatními svìtovımi}
+{11038}{}{mocnostmi došla dramatického konce, kdy se prezident}
+{11039}{}{rozhodl u ádné diskuse o ropì nepodporovat. Po}
+{11040}{}{prudké debatì se vyøítil ze zasedací místnosti a}
+{11041}{}{prohlásil, e poslední známı ropnı zdroj bude vyuíván}
+{11042}{}{vıhradnì Spojenımi státy a ty nebudou v ádném}
+{11043}{}{pøípadì ropu prodávat cizím státùm ani s ní jinak}
+{11044}{}{obchodovat. Hrozby OSN padají na "neúrodnou" pùdu.}
+{11045}{}{**END-PAR**}
+{11046}{}{Vìršina svìtového prùmyslu se po totálním vyèerpání}
+{11047}{}{zásob ropy zastaví. Tato situace se bohuel jeví.}
+{11048}{}{jako nevyhnutelná. Vıvoz USA se ale zvıší 20%}
+{11049}{}{a to i pøes sankce OSN. Zdá se, e ekonomika}
+{11050}{}{Spojenıch státù je v souèasné dobì na svém}
+{11051}{}{nejvyšším stupni od Reaganovy vlády.}
+{11052}{}{**END-PAR**}
+
+{11053}{}{Galaxy News Network}
+{11054}{}{Pøepis vysílání ze 14. února 2075}
+{11055}{}{Dnes se zmìnila historie Kanady. Veøejnım hlasováním}
+{11056}{}{jejich obèanù se stala dalším státem USA.}
+{11057}{}{Prezident na to reagoval prohlášením, e "Kanada je}
+{11058}{}{jedním z nejvìtších svìtovıch zdrojù hokejovıch hráèù"}
+{11059}{}{a její vstup do USA je vøele vítán. Proslıchá se,}
+{11060}{}{e Kanada obdrí celıch 10% svìtovıch zásob ropy}
+{11061}{}{kontrolovanıch pouze Spojenımi státy a rovnì}
+{11062}{}{na jejím území dojde k okamitému sníení daní}
+{11063}{}{o 50% a k pøechodu na americkou legislativu.}
+{11064}{}{**END-PAR**}
+{11065}{}{Ze sportu: Little Rock Saints a Anaheim Jets zmìøily}
+{11066}{}{své síly pøi závìreèném utkání SuperPoháru. Byla to}
+{11067}{}{opravdu pìkná podívaná. J. Montana IV zachránil tım}
+{11068}{}{krásnım únikem od 5 yardové èáry, kde se mu potom}
+{11069}{}{podaøil vítìznı touch down v opravdu poslední vteøinì}
+{11070}{}{hry. Koneèné skóre je tedy 95 - 90. Anaheim}
+{11071}{}{Jets vyhráli Super Bowl CXII.}#112
+{11072}{}{**END-PAR**}
+
+{11073}{}{Galaxy News Network}
+{11074}{}{Pøepis vysílání z 15. února 2075}
+{11075}{}{Jako omraèující dùkaz solidarity byl prezident jedno-}
+{11076}{}{myslnì obvinìn Snìmovnou representantù a Kongresem}
+{11077}{}{z vlastizrady. Obì komory konstatovaly, e se}
+{11078}{}{prezident nemùe povyšovat nad zákon a mìl by rovnì}
+{11079}{}{lépe zvaovat svá prohlášení. Obì sbory mu okamitì }
+{11080}{}{znemonily cokoli nadále podnikat ve vìci pøipojení Kanady.}
+{11081}{}{**END-PAR**}
+
+{11082}{}{Galaxy News Network}
+{11083}{}{Pøepis vysílání z 30. bøezna 2076}
+{11084}{}{Dnes prezident naøídil Pacifické flotile chránit}
+{11085}{}{hlubokomoøskou tìební plošinu Poseidon umístìnou}
+{11086}{}{v tajné lokaci v Pacifiku. Ubezpeèil všechny koncerny,}
+{11087}{}{e se nejedná o pouhé cvièení a e èínská flotila je}
+{11088}{}{"nebezpeènì blízko naším strategickım zásobám ropy."}
+{11089}{}{Èínská vláda popøela jakékoli nepøátelské úmysly.}
+{11090}{}{**END-PAR**}
+{11091}{}{Podle nedávného hlasování divákù GNN si 54% myslí,}
+{11092}{}{e prezident pouívá svojí diversní taktiku,}
+{11093}{}{aby odvrátil pozornost veøejnosti od svıch}
+{11094}{}{neustále se opakujících nemanelskıch}
+{11095}{}{aférek. Ale vızkumy veøejného mínìní rovnì prokazují,}
+{11096}{}{e 70% respondentù tyto aféry nepovauje}
+{11097}{}{za pøekáku pøi øízení státu. Velkı poèet (60%) také}
+{11098}{}{øíká, e si ve svıch aférkách mùe dál pokraèovat,}
+{11099}{}{kdy to pomùe hladkému chodu ekonomiky.}
+{11100}{}{**END-PAR**}
+
+{11101}{}{Galaxy News Network}
+{11102}{}{Pøepis vysílání z 10. øíjna 2077}
+{11103}{}{VÁLKA! Bez pøedchozího vyhlášení války, napadla Èína}
+{11104}{}{Spojené státy útokem pøes Aljašku ! Na protest proti}
+{11105}{}{nedávnım tahanicím okolo ropy se rozhodla rada OSN}
+{11106}{}{tento akt násilí ignorovat. Prezident Spojenıch státù}
+{11107}{}{VÁS volá do zbranì, abyste pomohli bránit naši zem}
+{11108}{}{proti tìm, kdo jí chtìjí znièit. JSTE vyzıváni,}
+{11109}{}{abyste se dostavili do svıch náborovıch støedisek}
+{11110}{}{a pøipojili se k ozbrojenım silám. Strıèek Sam TÌ}
+{11111}{}{potøebuje! Za právo a za svobodu!}
+{11112}{}{**END-PAR**}
+
+{11113}{}{Galaxy News Network}
+{11114}{}{Pøepis vysílání z 22. øíjna 2077}
+{11115}{}{Díky stateènému duchu našich ozbrojenıch sil a našim}
+{11116}{}{nejnovìjším typùm silovıch obrnìnıch bojovıch oblekù}
+{11117}{}{odrazily naše jednotky èínské utlaèovatele.}
+{11118}{}{Znaènì ochuzené o palivo, pak naše jednotky zahnaly}
+{11119}{}{nepøítele zpìt do jejich rıovıch mìst.}
+{11120}{}{**END-DISK**}
+
+# Elron Bible
+{12000}{}{Vítejte!}
+{12001}{}{Vítejte na holodisku Hubologù! Na tìchto elektronickıch}
+{12002}{}{stránkách naleznete struènı popis naší víry vèetnì døíve}
+{12003}{}{potlaèovaného uèení Hubu. Tento holodisk není zamıšlen}
+{12004}{}{jako reprezentace posledního slova k hubologii - chápejte}
+{12005}{}{jej jako modlitební kníku a nás}
+{12006}{}{jako vaše duchovní stráce.}
+{12007}{}{**END-PAR**}
+{12008}{}{HLAVNÍ NABÍDKA}
+{12009}{}{Historie}
+{12010}{}{Filozofie}
+{12011}{}{Malı slovníèek pojmù}
+{12012}{}{Bibliografie Støedu}
+{12013}{}{**END-PAR**}
+{12014}{}{HISTORIE}
+{12015}{}{Byli jsme zaloeni ještì pøed Velkou povodní stvoøitelem}
+{12016}{}{a vizionáøem velkého pøíslibu, muem jménem Dick Hubbel.}
+{12017}{}{To on spatøil selhání lékaøství své doby, selhání nábo-}
+{12018}{}{enství a selhání vlády. Byl si vìdom, e svìt potøebuje}
+{12019}{}{nìco nového...e svìt potøebuje hubologii. Inspirován}
+{12020}{}{hudbou vìkù a svou osobní zkušeností s mimozemskımi}
+{12021}{}{jevy snail se ze všech sil ukázat nám kola na obloze,}
+{12022}{}{udret jejich oheò a pomoci nám pochopit podstatu}
+{12023}{}{Velkého kola ivota.}
+{12024}{}{**END-PAR**}
+{12025}{}{Nazıvali jsme jej Støedem, protoe právì kvùli nìmu}
+{12026}{}{chápeme naše umístìní v Kole - on je naším prostøedkem}
+{12027}{}{a my jsme jeho paprsky. Obíháme okolo jeho vznešenıch}
+{12028}{}{pravd a uèení.}
+{12029}{}{**END-PAR**}
+{12030}{}{Po zveøejnìní nespoètu publikací, knih a urnálù zaèal}
+{12031}{}{Støed šíøit slova hubologie - a okamitì se tím stal}
+{12032}{}{terèem pomlouvaèù a oèeròovatelù. Nazıvali jeho práci}
+{12033}{}{"pseudovìdou" a "nebezpeènou fanatièností, která mùe}
+{12034}{}{jedinì zranit své pøívrence". Navzdory mnoha proká-}
+{12035}{}{zanım pozorování mimozemskıch plavidel po celé Zemi}
+{12036}{}{trvali na svém a pokraèovali v hanobení Støedovıch}
+{12037}{}{slov. Víme, e byli jednoduše zaslepení a hloupí,}
+{12038}{}{ale mìli moc; pracovali ve vládách a ve spoleènostech}
+{12039}{}{a mnoha vlivnıch institucích, aby zabránili nejvìtším}
+{12040}{}{novinám všech dob dostat se k obyvatelùm Zemì.}
+{12041}{}{**END-PAR**}
+{12042}{}{Hubologie byla po jistou dobu øízena z podsvìtí a koor-}
+{12043}{}{dinovala odtud své síly proti útokùm tìch, kteøí závidìli}
+{12044}{}{její jednoduchost a snadnost vyuití i pro bìného èlovìka.}
+{12045}{}{Kdy se nakonec Hubologové té doby postavili na odpor,}
+{12046}{}{udìlali to stejnım zpùsobem jako tìch málo, co stáli proti}
+{12047}{}{nim - proniknuli do organizací, které usilovaly o jejich}
+{12048}{}{znièení a vytvoøili "televizní" poøady za úèelem odhalení}
+{12049}{}{lí, kterımi vláda krmila lidi.}
+{12050}{}{**END-PAR**}
+{12051}{}{To zapøíèinilo sotva patrnou prudkou reakci vùèi našemu}
+{12052}{}{náboenství. Obyèejnı èlovìk našel dùvod, proè o hubologii}
+{12053}{}{pochybovat, protoe popírala uèení médií a my museli vést}
+{12054}{}{prohranı boj proti tìm, kdo nás nazıvali potøeštìnci.}
+{12055}{}{Po tuto dobu velikı Støed se smutkem zmizel.}
+{12056}{}{**END-PAR**}
+{12057}{}{Zpevnìni vìdomím, e Hub došel jednoty s Nebeskım otcem}
+{12058}{}{a teï pomáhá obrátit kosmické kolo naším smìrem a dosahuje}
+{12059}{}{stavù vyššího vìdomí, zùstali jsme pøesvìdèeni, e naše cesta}
+{12060}{}{byla tou správnou cestou. Postupnì jsme získávali pøívr-}
+{12061}{}{ence, mnoho z nich jednoduše chtìlo vìøit, e nìkde tam}
+{12062}{}{venku je místo mnohem lepší ne tento svìt. Nabízeli jsme}
+{12063}{}{dùkazy ivota na jinıch planetách, filozofii, která nám}
+{12064}{}{umoní pochopit smysl a øád vesmíru. Po vìky k nám pøicházeli}
+{12065}{}{lidé zaujatí pravostí našich myšlenek. A fakt, e jsme pøe-}
+{12066}{}{ili Velkou potopu nezranìní, nás utvrzuje v tom, e Velké}
+{12067}{}{kolo se toèí pro naše pravdy!}
+{12068}{}{}
+{12069}{}{}
+{12070}{}{}
+{12071}{}{**END-PAR**}
+{12072}{}{FILOZOFIE}
+{12073}{}{Hubologie oplıvá jednoduchou filozofií sestavenou}
+{12074}{}{z nejproslulejších náboenskıch a filozofickıch myš-}
+{12075}{}{lenek na Pøedpotopní Zemi - vìøíme, e ivot, vesmír}
+{12076}{}{a všechno vùbec mùe bıt symbolizováno otáèejícím se}
+{12077}{}{kolem. Vnìjší ráf kola zahrnuje ty, kteøí nerozumí}
+{12078}{}{našim pravdám, kteøí nerozumí pravdì. Nazıváme je}
+{12079}{}{"masem ráfu", protoe Kolo se pøes nì otáèí a drtí}
+{12080}{}{je a oni nedoceòují a neváí si jeho chodu.}
+{12081}{}{}
+{12082}{}{**END-PAR**}
+{12083}{}{Ti, kteøí praktikují hubologii, jsou Hvìzdicemi Kola.}
+{12084}{}{Snaí se porozumìt jeho pohybu a co nevíce mu usnadnit}
+{12085}{}{jeho otáèení. Ti, kteøí se podílejí na ovládání samotného}
+{12086}{}{kola, jsou nazıváni Støedy - a pokud dobøe víme, bylo}
+{12087}{}{jenom velice málo Støedù, osvícenıch to jedincù, kteøí}
+{12088}{}{usilovali o zlepšení osudù svıch pozemskıch pøátel.}
+{12089}{}{Na zakladatele Støedologie poukazujeme jako na TEN}
+{12090}{}{Støed, protoe právì ta jeho uèení byla nejkvalitnìjší.}
+{12091}{}{**END-PAR**}
+{12092}{}{Prakticky naše náboenství jednoduše aplikuje vìdecké}
+{12093}{}{techniky vyvinuté Støedem a zdokonalené jeho pøívrenci}
+{12094}{}{k tomu, abychom oèistili zkaené neurodyny, je tvoøí}
+{12095}{}{disharmonii a nesoumìrnost kola. Toto nám umoòuje}
+{12096}{}{oèistit sebe sama a pøipravit se na sebepoznání. Pouze}
+{12097}{}{a jenom skrze sebepoznání mùeme uspìt a jen skrze}
+{12098}{}{sebepoznání mùeme porozumìt naší pozici ve vesmíru}
+{12099}{}{a na Velkém kole. To díky sebepoznávání zjišujeme,}
+{12100}{}{zdali jsme dostateènì dùstojní pøistoupiti k ohnivım}
+{12101}{}{prstenùm, které nás potkají na planetì Quetzel.}
+{12102}{}{**END-PAR**}
+{12103}{}{Povaujeme se za náboenství zkombinované s tou nejvyspìlejší}
+{12104}{}{vìdeckou technikou - øíkáme tomu vìdecká spiritualita...}
+{12105}{}{a v co doufáme je, e i vy tomu tak budete zanedlouho øíkat!}
+{12106}{}{**END-PAR**}
+{12107}{}{Toto je pøíbìh našeho stvoøení:}
+{12108}{}{Pøed dávnımi eóny ili všichni v míru a vzájemné harmonii.}
+{12109}{}{Tìlo, mysl a duch byli ve všech stvoøeních spojeni a z exis-}
+{12110}{}{tující technologie jednoho jímala závra. Byl to èas míru,}
+{12111}{}{tvoøivosti a souososti. Potom ale nastaly Temné dny.}
+{12112}{}{Thrakazog Jeskyòáø zapoèal uèit o dualismu tìla a mysli}
+{12113}{}{a rozdìlení ducha. Nastala válka. Duše a tìla byla}
+{12114}{}{bìhem Velké války znièena a jejich ostatky se rozptılily}
+{12115}{}{po celém vesmíru. Velké kolo u u se oddìlit ode své}
+{12116}{}{existenèní nápravy, jeho hvìzdice se ve vyjedìnıch}
+{12117}{}{kolejích, které stvoøil Thrakazog, zlomily. Musel}
+{12118}{}{vzniknout novı ivot.}
+{12119}{}{**END-PAR**}
+{12120}{}{A také e vzniknul - na planetì Terra, stejnì jako i na}
+{12121}{}{mnoha dalších planetách ve celém vesmíru. (My se zamìøujeme}
+{12122}{}{pøevánì na ivot, kterı vzniknul na Teøøe, nebo pokud}
+{12123}{}{vìøíme, e se nám a naším hvìzdnım bratrùm ještì jednou}
+{12124}{}{podaøí zhojit zlomené hvìzdice Kola, musíme se nejdøíve}
+{12125}{}{soustøedit na to, abychom my sami byli uiteènımi hvìzdicemi.)}
+{12126}{}{Tento novı ivot byl zneèištìn èástmi duší mrtvıch, co}
+{12127}{}{vedlo k nenávisti a nepochopení a na celém povrchu Terry}
+{12128}{}{øádily boje, nesváry a války a do onoho dne, kdy jeden}
+{12129}{}{vizionáø došel k myšlence, e jedinım zpùsobem, jak nastolit}
+{12130}{}{mír, porozumìní a osvícenství, je oèistit tyto èásti duše}
+{12131}{}{od rysù lidského ducha. Oním vizionáøem byl Støed. Jeho}
+{12132}{}{oèišování pokraèuje dodnes.}
+{12133}{}{**END-PAR**}
+{12134}{}{MALİ SLOVNÍÈEK}
+{12135}{}{SHS/Souosı Hledatel Støedu: Úrovnì osvícenství jsou mìøeny}
+{12136}{}{podle oèištìní vašich neurodynù, oèištìní od vaší základní}
+{12137}{}{negativní energie vašeho masa a podle její pøemìny v mentální}
+{12138}{}{energii pozitivní. Jakmile dosáhnete dostateènì vysoké úrovnì}
+{12139}{}{zetanové energie, mùete odcestovat na planetu Quetzel, anebo}
+{12140}{}{vyèkat v nadìji, e bìhem vašeho ivota dojde k Povznesení.}
+{12141}{}{**END-PAR**}
+{12142}{}{Souosost: Kdy se neurodyn zneèistí a poté udruje hledate-}
+{12143}{}{lovu Zeta hladinu na nízké úrovni, tak spuštìním Zeta skenu}
+{12144}{}{na afektovaném neurodynu "zosíme" ony úrovnì do univerzálního}
+{12145}{}{Kola, oèisujíce jej tak od kazù. Tak nebo tak, pøíliš}
+{12146}{}{mnoho souososti v jednu chvíli zraòuje ducha.}
+{12147}{}{**END-PAR**}
+{12148}{}{}
+{12149}{}{}
+{12150}{}{Osvícenství: Osvícenství je stav dosaenı po PHS-9, kdy }
+{12151}{}{hledatel získal u tolik zkušeností, e se stává vnitøní }
+{12152}{}{souèástí Velkého kola a ponechává za sebou svoji pozemskou }
+{12153}{}{existenci. Nìkteøí z Osvícenıch zùstanou na Teøøe, aby }
+{12154}{}{nás dovedli zbytek nás do stavu milosti, aby nám ukázali, }
+{12155}{}{jak se dostat za Kolo našich vlastních ivotù. }
+{12156}{}{}
+{12157}{}{**END-PAR**}
+{12158}{}{Velké kolo: To mluví o opakující se povaze vesmíru}
+{12159}{}{místa, èasu a prostoru. Všechno je souèástí}
+{12160}{}{Velkého kola. Je tu nìkdo, kdo mùe pøevzít kontrolu}
+{12161}{}{nad Kolem - nebo snad jen oni jednoduše rozumí smìru}
+{12162}{}{a cestì kterou urèuje - a mùeme je nazıvat bostvem,}
+{12163}{}{proroky a visionáøi. Jsou to ti, kdo mistr Velkého kola}
+{12164}{}{opravdu osvítil.}
+{12165}{}{**END-PAR**}
+{12166}{}{Neurodyn: Neurodyny jsou duchovní zastávky. Starodávná }
+{12167}{}{náboenství je nazıvala "èakry". Mohou bıt zneèištìny}
+{12168}{}{kousky duše a negativní energií vycházející z}
+{12169}{}{utlaèovatelù.}
+{12170}{}{**END-PAR**}
+{12171}{}{Utlaèovatelé: Utlaèovatelé jsou ti jedinci, kteøí oplıvají}
+{12172}{}{takovım mnostvím negativní energie a zneèištìnıch}
+{12173}{}{kouskù duše, e mohou zcela vyèerpat hledatele}
+{12174}{}{osvícenství v jejich blízkosti. Je tøeba se jim vyhıbat -}
+{12175}{}{mnoho z nich je natolik poskvrnìno, e neuznávají hodnotu}
+{12176}{}{skrytou v dobrém oèištìní a ze všech sil se snaí}
+{12177}{}{odklonit kurz Velkého Kola.}
+{12178}{}{**END-PAR**}
+{12179}{}{Quetzel: Planeta, na kterou nás dovede Hvìzdnı otec,}
+{12180}{}{jakmile se staneme Optimalizovanımi. Tam se setkáme}
+{12181}{}{s našimi hvìzdnımi bratry a spojíme se s nimi na jejich}
+{12182}{}{ohnivıch kolech na obloze.}
+{12183}{}{**END-PAR**}
+{12184}{}{Ráfové maso: Základní osoba, ten, kdo prozatím nebyl}
+{12185}{}{zosen, aby oèistil své neurodyny.}
+{12186}{}{**END-PAR**}
+{12187}{}{Hvìzdnı otec: Nìkteøí by Hvìzdného otce nazvali "bohem".}
+{12188}{}{My ale upøednostòujeme o Hvìzdném otci smıšlet, jakoto }
+{12189}{}{o jedineèné síle, ze které èerpáme svoji sílu a kterou na}
+{12190}{}{oplátku ivíme energií svou - opìt jde o cyklickı vztah, kolobìh.}
+
+{12191}{}{**END-PAR**}
+{12192}{}{Povznesení: Èas, kdy nás Nebeskı otec volá na planetu}
+{12193}{}{Quetzel, kde se setkáme se svımi mimozemskımi bratry}
+{12194}{}{a pøiblííme se støedu Velkého kola. Ti, kdo projevili velkou}
+{12195}{}{snahu porozumìt a pøijmout velká slova Støedu, a nezáleí}
+{12196}{}{teï na jejich SHS úrovních, budou pozváni do nebes na}
+{12197}{}{Quetzel, aby se pøipojili k Hvìzdnému otci.}
+{12198}{}{}
+{12199}{}{**END-PAR**}
+{12200}{}{Zeta sken: Jinı vıraz pro "souosost". Zeta sken napomáhá}
+{12201}{}{oèistit vaše neurodyny a vašeho ducha. Skládá se z pøístroje,}
+{12202}{}{kterı vaší pokokou vede masivní dávky elektøiny - tato elektøina}
+{12203}{}{byla pøesnì na volt peèlivì zformována do mnoství, které je}
+{12204}{}{potøebné k odstranìní negativní energie z neurodynu.}
+{12205}{}{Podstoupením Zeta skenu je váš kurz lehce napraven, aby}
+{12206}{}{se více shodoval s pohybem Velkého kola.}
+{12207}{}{}
+{12208}{}{}
+{12209}{}{**END-PAR**}
+{12210}{}{BIBLIOGRAFIE}
+{12211}{}{Knihy Støedu}
+{12212}{}{(Jsou zde vyobrazeny desítky a stovky knih, vèetnì}
+{12213}{}{slavnıch titulù jako: Vìdecká spiritualita,}
+{12214}{}{Bojištì Quetzel, Hvìzdnı otec nad námi, Kolekce nákupních }
+{12215}{}{seznamù, Jak úspìšnì alovat své nepøátele, Jak vytvoøit }
+{12216}{}{kult a Budoucnost.}
+{12217}{}{}
+{12218}{}{**END-DISK**}
+
+{13000}{}{POZNÁMKY NÁVRHÁØE MÌSTA VAULT CITY}
+{13001}{}{**END-PAR**}
+{13002}{}{Mìsto Vault City prošlo mnoha podobami. Bylo navrhováno}
+{13003}{}{Leonardem Boyarskym, Jasonem Andersonem, Feargem}
+{13004}{}{Urquhartem a Chrisem Avellonem. Scott Everts vytvoøil}
+{13005}{}{mapy tìmi šastnımi mui, kteøí tohoto architektonického}
+{13006}{}{Frankensteina naskriptovali, byli Rob Hertenstein III a Dan}
+{13007}{}{Spitzley. A na závìr - Eric Pribley málem pøišel o ivot,}
+{13008}{}{kdy tuto monstróznost celou testoval.}
+{13009}{}{**END-PAR**}
+{13010}{}{Chris by rád podìkoval tìmto lidem, kteøí mu bìhem tvorby}
+{13011}{}{Falloutu 2 pomohli: Rob, Scotty a Dan (ovšeme), Eileen}
+{13012}{}{Suhová, Sára Smartová, Emily Yanceová, Thuy Dang}
+{13013}{}{(tomu jsem nikdy za nic nedìkoval), Chris Wright a Tim}
+{13014}{}{Winkle.}
+{13015}{}{**END-PAR**}
+{13016}{}{Scotty by rád podìkoval tìmto lidem: Donu a Aileen Evertsovım}
+{13017}{}{a Avisi Andremu. A velkı dík Billu Bridgesovi za všechny ty}
+{13018}{}{skvìlé Fading Suns kníky!}
+{13019}{}{**END-PAR**}
+{13020}{}{Dan by rád podìkoval tìmto lidem:}
+{13021}{}{Split Enzové za vynikající melodie, Jamesi Cameronovi za}
+{13022}{}{Pravdivé li, Josefu Vyskoèilovi za jeho bombastické exploze,}
+{13023}{}{restauraci Chong's na Triangle Square za to, e mì ivili, Carlosi}
+{13024}{}{Kotkinovi za to, e to koneènì vypustil (nìkdy v tìchto dnech}
+{13025}{}{by se mìla pouštìt premiéra jeho prvního filmu), Joe Landovi}
+{13026}{}{za jeho skvìlé novely, Èervenému trpaslíkovi za srandu}
+{13027}{}{a nakonec - jako ostatnì vdycky - mámì a tátovi}
+{13028}{}{za to, e tu se mnou byli.}
+{13029}{}{**END-PAR**}
+{13030}{}{Rob Hertenstein by rád podìkoval tìmto lidem:}
+{13031}{}{Becky Warnerová (poøád mì drí od problémù),}
+{13032}{}{Billie Ryderová (za to, e mì bìhem tohoto projektu}
+{13033}{}{drela pøi smyslech), Little Ryder (kterı se pravdìpodobnì}
+{13034}{}{narodil ve stejnı èas jako hra), a Nicole Romanové (za}
+{13035}{}{to e tu byla).}
+{13036}{}{**END-PAR**}
+{13037}{}{Eric Pribish by rád podìkoval následujícím lidem:}
+{13038}{}{Tommy Hoodovi, Jr., Joe Isipovi a Julio Matovi za}
+{13039}{}{to, e mì nenechali padnout, kdy jsem byl na dnì. Mım}
+{13040}{}{starım pøátelùm Bradu a Davovi Carnesovım za ochrannou}
+{13041}{}{(ruku). A koneènì, asi nejdùleitìjší osobì, mému}
+{13042}{}{milujícímu dìvèeti Rhondì Laufferové za to, e}
+{13043}{}{rozumìla všem tìm dlouhım nocím a víkendùm, kdy}
+{13044}{}{mì práce odvedla pryè a e tu byla vdy, kdy}
+{13045}{}{jsem se vrátil domù.}
+{13046}{}{**END-PAR**}
+{13047}{}{Jako oplátku za znièení Enclavy by Chris, Scotty,}
+{13048}{}{Rob, Dan, a Eric rádi doporuèili vyuít pøíleitosti}
+{13049}{}{podívat se na poèítaèovı terminál v levém horním rohu}
+{13050}{}{tohoto podlaí a pouít ho.}
+{13051}{}{**END-PAR**}
+{13052}{}{Gratulujeme vám, zachránili jste svìt. A ještì jednou}
+{13053}{}{díky za zahrání Falloutu 2.}
+{13054}{}{**END-DISK**}
+
+{14000}{}{VAULT CITY - SEVERNÍ KALIFORNIE TRAVEL LOG}
+{14001}{}{**END-PAR**}
+{14002}{}{VAROVÁNÍ: Pokud obèané Vault City uznají za}
+{14003}{}{nezbytné opustit mìsto, nemìli by opomenout}
+{14004}{}{vzít s sebou vìci z tohoto seznamu:}
+{14005}{}{}
+{14006}{}{1. Zásobu zabalenıch Vault City-kondenzo potravin.}
+{14007}{}{   Nikdy nejezte jakékoli jídlo nabídnuté venkovanem}
+{14008}{}{   nebo do svého trávicího systému vstøebáte}
+{14009}{}{   bakterie a radioaktivní èásteèky!}
+{14010}{}{}
+{14011}{}{2. Geigerùv poèítaè, kterım mùete neustále monitorovat}
+{14012}{}{   radioaktivitu v okolí vaší cesty!}
+{14013}{}{}
+{14014}{}{3. A koneènì 2 povinné stimpaky. Jakékoli nevinné}
+{14015}{}{   øíznutí èi škrábnutí mùe dostat do Vašeho tìla}
+{14016}{}{   nebezpeèné látky!}
+{14017}{}{**END-PAR**}
+{14018}{}{REDDING: Malá hornické mìsto umístìné na západ od}
+{14019}{}{Vault City. Redding mìní zlatou rudu za lékaøské}
+{14020}{}{vybavení z Vault City. Všichni Obyvatelé Vault City}
+{14021}{}{musí bıt obrnìni notnou dávkou odvahy a trpìlivosti,}
+{14022}{}{kdy vstupují do Reddingu. Horníci ve své provincii}
+{14023}{}{neuznávají ádnou autoritu.}
+{14024}{}{}
+{14025}{}{POPULACE: ádné známé hodnoty, ale pravdìpodobnì}
+{14026}{}{nìco kolem stovky obyvatel.}
+{14027}{}{VLÁDA: Starosta a mìstská rada.}
+{14028}{}{MÍRA RADIOAKTIVNÍHO ZAMOØENÍ: ádné známé hodnoty.}
+{14029}{}{}
+{14030}{}{ÚROVEÒ MUTACE: Neznámá, oèekává se nízká.}
+{14031}{}{**END-PAR**}
+
+{14032}{}{NEW RENO: Mìsto jihozápadnì od Vault City. Mìní}
+{14033}{}{zlato za lékaøské vybavení z Vault City. Reno}
+{14034}{}{utrpìlo bìhem války jen malé poškození}
+{14035}{}{(tøebae plenìní a škody na majetku poškodilo}
+{14036}{}{jejich vybavení) a mnoho ulic a budov zùstalo nedotèeno.}
+{14037}{}{Varování! Neexistuje zde ádná jurisdikce.}
+{14038}{}{Hazard, prostituce a uívání tvrdıch drog jsou zde}
+{14039}{}{na denním poøádku. Obyvatelé Vault City jsou varováni}
+{14040}{}{pøed jakoukoli návštìvou New Reno. Vstup}
+{14041}{}{do mìsta je jen na vlastní riziko!}
+{14042}{}{POPULACE: ádné známé hodnoty, ale pravdìpodobnì}
+{14043}{}{nìkolik tisíc..."lidí."}
+{14044}{}{VLÁDA: New Reno existuje jako kriminálnì-anarchistickı}
+{14045}{}{stát. V našich záznamech je nìkolik zloèineckıch}
+{14046}{}{"rodin", které øídí mìsto podle svého vlastního uváení.}
+{14047}{}{MÍRA RADIOAKTIVNÍHO ZAMOØENÍ: ádné známé hodnoty.}
+{14048}{}{}
+{14049}{}{ÚROVEÒ MUTACE: Neznámá, oèekává se nízká.}
+{14050}{}{**END-PAR**}
+{14051}{}{NEW CALIFORNIA REPUBLIC: Teritorium NCR je}
+{14052}{}{alokováno trochu dále na jih od Vault City. Mìní}
+{14053}{}{technické vybavení, zlato a rùzné nadbytky techni-}
+{14054}{}{ckého vybavení za lékaøskou technologii Vault City.}
+{14055}{}{NCR vyvíjí úsilí, aby vstøebalo Vault City jako}
+{14056}{}{svojí pohranièní kolonii, proto nabádáme Oèany}
+{14057}{}{Vault City k extrémní opatrnosti pøi cestách do NCR.}
+{14058}{}{}
+{14059}{}{POPULACE: Jsou provádìna sèítání lidu, bohuel nemáme}
+{14060}{}{pøístup k poadovanım hodnotám. Podle našich domnìnek}
+{14061}{}{má NCR nìkolik desítek tisíc obyvatel.}
+{14062}{}{VLÁDA: Prezident a Kongres.}
+{14063}{}{MÍRA RADIOAKTIVNÍHO ZAMOØENÍ: ádné známé hodnoty.}
+{14064}{}{}
+{14065}{}{ÚROVEÒ MUTACE: Rùzní se území od území.}
+{14066}{}{**END-PAR**}
+{14067}{}{BROKEN HILLS: Malé hornické mìsto na jih od Vault}
+{14068}{}{City zabıvající se tìbou uranové rudy. Ruda se}
+{14069}{}{mìní za lékaøské vybavení z Vault City, hlavnì za}
+{14070}{}{Rad-X a RadAway. Lidé zde vìøí, e mùou ít}
+{14071}{}{pohromadì s mutanty a ghouly. Díky pøírodní}
+{14072}{}{povaze obyvatel a hlavnì jejich vysokému stupni}
+{14073}{}{ozáøení doporuèujeme Obyvatelùm Vault City vyhnout}
+{14074}{}{se Broken Hill za kadou cenu!}
+{14075}{}{}
+{14076}{}{POPULACE: ádné známé hodnoty, ale pøedpoklad je}
+{14077}{}{nìco okolo stovky obyvatel.}
+{14078}{}{VLÁDA: Proslıchá se, e starostou mìsta je MUTANT}
+{14079}{}{Bohuel je to velmi nešastné øešení, jeliko jako}
+{14080}{}{vìtšina mutantù urèitì postrádá zdravı rozum. Jestli}
+{14081}{}{JE tato povìst pravdivá, je to další dùvod nechat}
+{14082}{}{Broken Hills na pokoji.}
+{14083}{}{MÍRA RADIOAKTIVNÍHO ZAMOØENÍ: ádné známé hodnoty.}
+{14084}{}{Pravdìpodobnì ale vysoká.}
+{14085}{}{ÚROVEÒ MUTACE: Pravdìpodobnì vysoká. V Broken Hills}
+{14086}{}{se dají najít rùzné variace zmutovanosti.}
+{14087}{}{**END-PAR**}
+{14088}{}{VAULT CITY: Toto utopické mìsto nezná kriminalitu}
+{14089}{}{ani další sociální nemoce, kterımi trpí vìtšina}
+{14090}{}{mìst v Severní Kalifornii. Existuje nezávisle od}
+{14091}{}{svého vynoøení z Vaultu 8 a jeho hlavním artiklem}
+{14092}{}{(na kterém stojí jeho ekonomie) je vıvoz lékaøského}
+{14093}{}{vybavení do dalších lokalit v Severní Kalifornii}
+{14094}{}{Všichni jeho obyvatelé chtìjí ve Vault City}
+{14095}{}{zùstat, dokud jen to bude moné.}
+{14096}{}{}
+{14097}{}{POPULACE: Podle posledního sèítání lidu 103 Obèanùl.}
+{14098}{}{VLÁDA: První Obèan a Rada.}
+{14099}{}{MÍRA RADIOAKTIVNÍHO ZAMOØENÍ: Soubor vymazán,}
+{14100}{}{chybí následující údaje: [-$Gecko-/-$Kontaminace}
+{14101}{}{podzemní vody-]}
+{14102}{}{ÚROVEÒ MUTACE: Soubor vymazán,}
+{14103}{}{chybí následující údaje: [-$Porodnost %-]}
+{14104}{}{**END-DISK**}
+
+{15000}{}{INFORMAÈNÍ DISK NEW CALIFORNIAN REPUBLIC È.5}
+{15001}{}{**END-PAR**}
+{15002}{}{Na tomto disku se nachází zajímavé informace o NCR -  }
+{15003}{}{totální mìsíèní produkce, zápisy karavan,             }
+{15004}{}{rozpis bezpeènostních slueb, slyšení Kongresu,       }
+{15005}{}{tajná hlášení z rady, diplomatická korespondence      }
+{15006}{}{z New Rena, Reddingu a Vault City, dokonce nìkolik }
+{15007}{}{tıdnù zaèátku jmenování prezidentky Tandi             }
+{15008}{}{Není zde nic o Vaultu 13 nebo o GECKu.                }
+{15009}{}{Všechna hlášení jsou adresována Darionovi a podepsána }
+{15010}{}{"F".}
+{15011}{}{**END-DISK**}
+
+{16000}{}{INFORMAÈNÍ DISK NEW CALIFORNIAN REPUBLIC}
+{16001}{}{**END-PAR**}
+{16002}{}{Jsme tady! Proè se k nám nepøidat?}
+{16003}{}{**END-PAR**}
+{16004}{}{Leí pøed námi neuvìøitelná budoucnost - a s NCR}
+{16005}{}{mùe bıt celá vaše!}
+{16006}{}{**END-PAR**}
+{16007}{}{Vy ale chcete vìdìt, co to pøesnì je, e?}
+{16008}{}{**END-PAR**}
+{16009}{}{JAK VELKÁ JE NCR?}
+{16010}{}{NCR byla zaloena pøed osmdesáti lety a nyní se skládá }
+{16011}{}{ze státù Shady, Los Angeles, Maxson, Hub a Dayglow.}
+{16012}{}{Dnes má v NCR svùj domov více ne 700,000 lidí.}
+{16013}{}{**END-PAR**}
+{16014}{}{ZA ÈÍM NCR STOJÍ?}
+{16015}{}{New Californian Republic chce pøinést mír, bezpeènost}
+{16016}{}{a právo všem lidem ijícím na našem skvìlém západì. Naše}
+{16017}{}{vıborné policejní sloky neustále okamitì zneškodí}
+{16018}{}{jakéhokoliv banditu, kanibala, otrokáøe nebo}
+{16019}{}{nepøizpùsobivého mutanta. Naše silná armáda hlídá}
+{16020}{}{a chrání naše hranice proti venkovním narušitelùm.}
+{16021}{}{K zajištìní práva a svobody mají všichni obèané pøístup }
+{16022}{}{k našim soudním dvorùm a mají právo volit svoje}
+{16023}{}{vybrané kandidáty, kteøí zasednou v Kongresové hale}
+{16024}{}{Podle slov naší prezidentky Tandi}
+{16025}{}{"Jen bezpeèní lidé jsou silní lidé."}
+{16026}{}{}
+{16027}{}{**END-PAR**}
+{16028}{}{KDO ZDE VLÁDNE?}
+{16029}{}{NCR má moná jinı styl vlády, ne na kterı jste zvyklı.}
+{16030}{}{Nejsou tu ádní samozvanci, mìstští šéfové, králové}
+{16031}{}{nebo diktátoøi. Naši vùdcové jsou voleni ve volbách!}
+{16032}{}{Tak to je - kadı stát má právo vyslat svoje}
+{16033}{}{reprezentanty do Kongresové haly. Tito}
+{16034}{}{reprezentanti zvolí prezidenta a víceprezidenta}
+{16035}{}{do èela vlády a jsou to oni, kdo øídí}
+{16036}{}{veškerá prezidentská rozhodnutí. U po dlouhıch}
+{16037}{}{deset období je naší prezidentkou Tandi. Volená}
+{16038}{}{jednomyslnì kongresem, kterı respektuje její vìdomosti}
+{16039}{}{a prozíravost.}
+{16040}{}{**END-PAR**}
+{16041}{}{ZNÍ TO SKVÌLE! JAK SE K NCR PØIPOJÍM?}
+{16042}{}{Kadı zákonadbalı a pokojnı èlovìk, bytost èi mutant  }
+{16043}{}{je hoden stát se obèanem NCR. Abyste se stali       }
+{16044}{}{obèanem, všechno, co musíte udìlat, je pøijít do NCR a  }
+{16045}{}{pøednést Váš poadavek na pøistìhování. Po vıcviku    }
+{16046}{}{na obèana a pøijetí Vaší ádosti, budete povıšen do   }
+{16047}{}{svého nového stavu jakoto PO (Prozatímní Obèan). Odsud  }
+{16048}{}{u je jen malı krùèek k plnému obèanství!             }
+{16049}{}{**END-PAR**}
+{16050}{}{Samozøejmì, NCR není pro kadého - otrokáøi,          }
+{16051}{}{nereformovaní mutanti, bandité a další       }
+{16052}{}{nekalé ivly nebudou pøijati!                        }
+{16053}{}{**END-PAR**}
+{16054}{}{A CO JÁ KDY SE CHCE PØIPOJIT MOJE MÌSTO?             }
+{16055}{}{V závislosti na umístìní Vašeho mìsta, NCR bude akce- }
+{16056}{}{ptovat ádosti od obyvatel, mìst, základen, mìstskıch }
+{16057}{}{státù, dokonce i menších království k pøipojení k     }
+{16058}{}{NCR. Ve chvíli, kdy bude ádost pøijata, NCR potvrdí  }
+{16059}{}{váš územní status. Kdokoli bude potøebovat pomoc      }
+{16060}{}{policie nebo armády, má na ní plné právo a jakákoli    }
+{16061}{}{zloèinecká nebo nerovnoprávná skupina, by se mìla     }
+{16062}{}{smíøit s vaším plnım statusem v NCR. Jak je to        }
+{16063}{}{jednoduché!}
+{16064}{}{**END-PAR**}
+{16065}{}{Take pamatuj - JSME TU, TAK PROÈ SE K NÁM NEPØIDAT?}
+{16066}{}{**END-PAR**}
+{16067}{}{Pøipraveno odbornım poradcem NCR}
+{16068}{}{**END-PAR**}
+{16069}{}{NKRAP Pub. #A7-7893b}
+{16070}{}{Tato stránka je internì èistá.}
+{16071}{}{**END-DISK**}
+
+{17000}{}{První obèance Lynette:}
+{17001}{}{**END-PAR**}
+{17002}{}{Kurır doruèil disk, kterı jsi mi poslala. Mìla jsi}
+{17003}{}{samozøejmì pravdu. Informace se ukázala bıt velmi}
+{17004}{}{uiteènou na dalším zasedání rady. S tím, co jsi mi}
+{17005}{}{poslala, jsem si jistı, e mùu bránit a maøit všechny}
+{17006}{}{další pokusy o vytvoøení aliance NCR/New Reno.}
+{17007}{}{**END-PAR**}
+{17008}{}{    Mohu tì jenom ujistit, e jestli se všechno povede}
+{17009}{}{tak, jak oèekávám, nebudou u ádné další zásahy nebo}
+{17010}{}{provokace od NCR vùèi Vault City.}
+{17011}{}{Já sám respektuji vaší samostatnost a nesouhlasím}
+{17012}{}{s ádnım sabotérem, kterı chce poškodit naše nevinné}
+{17013}{}{sousedy a jejich svobodu.}
+{17014}{}{**END-PAR**}
+{17015}{}{Tvùj pøítel a spojenec}
+{17016}{}{Roger Westin}
+{17017}{}{**END-DISK**}
+
+# State of the Nation
+{18000}{}{Vìc: Stát národù}
+{18001}{}{Od: Prezident Dick Richardson}
+{18002}{}{Pro: Lidem tohoto Velkého národa}
+{18003}{}{Zpráva: Oslovení státù Unie}
+{18004}{}{**END-PAR**}
+{18005}{}{Drazí Amerièané, byl jsem poctìn stát se pastıøem,      }
+{18006}{}{kterı chce vzít všechny Amerièany zpìt na pevninu, }
+{18007}{}{aby zde vrátili Spojené státy pùvodním obyvatelùm. My  }
+{18008}{}{budeme první generací oproštìnou od mutantské hrozby   }
+{18009}{}{po prvních sto letech.}
+{18010}{}{**END-PAR**}
+{18011}{}{Bylo to velmi dlouhé èekání a práce, která toto uèinila }
+{18012}{}{monım, byla nároèná. To, co vypadalo jako nemonı sen,   }
+{18013}{}{se díky stateènosti a neúnavnému úsilí našeho nejlepšího}
+{18014}{}{hlavního èlena Chemickıch jednotek, Doktora Charlese}
+{18015}{}{Curlinga, stalo skuteèností. Hodina našeho koneèného }
+{18016}{}{vítìzství se blíí.}
+{18017}{}{**END-PAR**}
+{18018}{}{Stateènost, neoblomnost, ble, ble, ble. Doufám, e se }
+{18019}{}{tohle vystøihne?}
+{18020}{}{**END-PAR**}
+{18021}{}{--Vlastní poznámky-}
+{18022}{}{1)  Pohovoøit trochu o Curlingovì projektu.}
+{18023}{}{2)  Øíct všem, jak jsou skvìlí, atd., oni jsou}
+{18024}{}{     Tády dááády dá}
+{18025}{}{**END-PAR**}
+{18026}{}{Ujistit se o svém znovuzvolení.}
+{18027}{}{**END-PAR**}
+{18028}{}{Pamatuj: NEOBJÍMAT zástupce cestou dolù z}
+{18029}{}{pódia.}
+{18030}{}{**END-PAR**}
+{18031}{}{Dùleité: Tohle neøíkat. Budeme schopni kdykoli }
+{18032}{}{usmrtit jakéhokoli mutanta, jestli je Curlingùv vızkum}
+{18033}{}{v poøádku.}
+{18034}{}{**END-DISK**}
+
+# Word List
+{19000}{}{Vìc: Zásoba slov}
+{19001}{}{Od: víceprezident Daniel Bird}
+{19002}{}{Komu: Mnì}
+{19003}{}{Téma: Moje zásoba slov}
+{19004}{}{**END-PAR**}
+{19005}{}{Obtíná slova:}
+{19006}{}{--------------------}
+{19007}{}{Brambora}
+{19008}{}{Rajèe}
+{19009}{}{Psycho}
+{19010}{}{Kalifornie}
+{19011}{}{Bıt pøipraven}
+{19012}{}{Ukecanost}
+{19013}{}{Neartikulovanost}
+{19014}{}{Obratnost}
+{19015}{}{**END-PAR**}
+{19016}{}{Zamìnitelná slova:} #to by mohlo bıt v pohodì V. i s tim spodkem
+{19017}{}{----------------------}
+{19018}{}{Brambor}
+{19019}{}{Rajskı}
+{19020}{}{Sucho}
+{19021}{}{Kalifornije}
+{19022}{}{Jít pøipraven}
+{19023}{}{Ukydanost}
+{19024}{}{Plavosel -udìlat to novım národním maskotem (je to }
+{19025}{}{nìjaká americká potvora?)}
+{19026}{}{**END-DISK**}
+
+# The Projekt
+{20000}{}{Vìc: Projekty, Popis stavu}
+{20001}{}{Od: Podplukovník, Dr. Charles Curling, Chemické jednotky U.S.}
+{20002}{}{To: Vládì}
+{20003}{}{Téma: Projekt je blízko k plnému spuštìní.}
+{20004}{}{**END-PAR**}
+{20005}{}{Je mou poctou a radostí vám sdìlit e jsme v koneèné}
+{20006}{}{fázi operace Projekt. Po nároènıch rocích práce jsme }
+{20007}{}{zjistili, jak izolovat vìtšinu toxickıch elementù ve viru}
+{20008}{}{F.E.V. K vızkumu nám dopomohly i nìkteré informace,}
+{20009}{}{které jsme získali z opuštìné vojenské základny na}
+{20010}{}{planinách. Tyto znalosti nás vedly a k souèasnosti.}
+{20011}{}{**END-PAR**}
+{20012}{}{Zjistili jsme e virus F.E.V. nebyl stvoøen jako}
+{20013}{}{nástroj pro vırobu supervojákù. Ale hlavnì, a na}
+{20014}{}{tom trvám, byl stvoøen jako silnì virulentní toxin}
+{20015}{}{A pozdìji byl virus F.E.V. pøetvoøen k vırobì}
+{20016}{}{supervojákù.}
+{20017}{}{**END-PAR**}
+{20018}{}{Po podrobném pøezkoumání našich vızkumù a s}
+{20019}{}{neocenitelnou pomocí nahrávek, získanıch ve vojenské}
+{20020}{}{základnì, jsme schopni vypustit naší zcela novou verzi}
+{20021}{}{viru F.E.V. (F.E.V. Curling-13) do vzdálenıch oblastí}
+{20022}{}{naší zemì.}
+{20023}{}{**END-PAR**}
+{20024}{}{Koneèné testy provádìné na potomcích lidí z Vaultu,}
+{20025}{}{obyvatelích "Arroya", nám dokázaly monost pøeití}
+{20026}{}{nula procent. Vìtšina subjektù zemøela po v první}
+{20027}{}{hodinì vypuštìní, a to s .0001% aerosolového roztoku.}
+{20028}{}{Jako protiklad, objekty pøivezené z Vaultu 13 mají}
+{20029}{}{tendenci zvládnout krvácení a køeèe v první hodinì}
+{20030}{}{od rozprášení. V tomto pøípadì jsou úmrtí prùmìrná,}
+{20031}{}{nastávají a kolem 14,5 hodiny od infikace.}
+{20032}{}{**END-PAR**}
+{20033}{}{V obou pøípadech jsou toxické hodnoty F.E.V.}
+{20034}{}{dostateèné k rychlému oèištìní všech dostupnıch}
+{20035}{}{(vyjma Enklávy) lokalit. Souèasná dostupná mìøení}
+{20036}{}{viru F.E.V. Curling-13 ukazují 95% pravdìpodobnost s}
+{20037}{}{.00007% prùmìrnou impregnací. Podle propoètù Chemickıch}
+{20038}{}{jednotek je to velmi uspokojivá úroveò k úspìšnému}
+{20039}{}{dokonèení Projektu, vìøíme, e má cenu poèkat,}
+{20040}{}{dokud nenashromádíme dostatek toxinu F.E.V., abychom}
+{20041}{}{dosáhli naší .0001% impregnace a 99.5% smrtící}
+{20042}{}{úspìšnosti našeho viru.}
+{20043}{}{**END-PAR**}
+{20044}{}{Souèasná produkce viru F.E.V. Curling-13 ukazuje, e}
+{20045}{}{jsme schopni dostát svého cíle. Vypadá to na 625,000}
+{20046}{}{litrù do šesti tıdnù.}
+{20047}{}{**END-PAR**}
+{20048}{}{Gratuluji, dámy a pánové, dlouhá léta naší tvrdé práce}
+{20049}{}{se blíí ke konci.}
+{20050}{}{Bùh ehnej Americe.}
+{20051}{}{**END-DISK**}
+
+# Power Plant Operations
+{21000}{}{Vìc: Komise pro atomovou energii, Popis stavu}
+{21001}{}{Od: Tom Murray, pøedseda Komise pro jadernou energii}
+{21002}{}{Pro: Kabinet}
+{21003}{}{Téma: Nebezpeèí selhání hlavního poèítaèe pro}
+{21004}{}{všechny stupnì reaktoru.}
+{21005}{}{**END-PAR**}
+{21006}{}{POZNÁMKA KE KABINETU: U mì otravuje neustále pøetøásat}
+{21007}{}{tuto záleitost, ale nemohu poøád dokola zdùrazòovat}
+{21008}{}{dùleitost zlepšení našich kontrolních systémù pro}
+{21009}{}{atomovou elektrárnu. Tady je má oficiální zpráva. Myslím,}
+{21010}{}{e a si jí pøeètete, porozumíte, proè potøebujeme mít novı}
+{21011}{}{záloní systém.}
+{21012}{}{--Tom}
+{21013}{}{**END-PAR**}
+{21014}{}{Reaktorovı regulátor atomové energie}
+{21015}{}{------------------------------------------}
+{21016}{}{Novı uranovı nukleární reaktor Vault-Tec u pøestal}
+{21017}{}{dávno pracovat vıkonnì. S vynaloením velkého úsilí se}
+{21018}{}{nám povedlo udret poèítaèové systémy zajišující}
+{21019}{}{regulaci chladící teploty jádra.  Pøišli jsme sice}
+{21020}{}{o hodnì funkcí, ale stále jsme schopni chodu s}
+{21021}{}{minimální obsluhou.}
+
+{21022}{}{**END-PAR**}
+{21023}{}{Nové synchronické multi-procesory, které jsme }
+{21024}{}{zabudovali do tri-procesorové základní desky jsou}
+{21025}{}{schopné zajistit chladící víceproces. Pøijímají studenou}
+{21026}{}{moøskou vodu a odèerpávají postradatelnou teplotu a}
+{21027}{}{zneèištìní ze všech reakcí a regulace neutronového}
+{21028}{}{rozkladu uranu. Bez poèítaèovıch systémù mùe}
+{21029}{}{reaktor vypadnout z rovnováhy témìø okamitì,}
+{21030}{}{kvùli øetìzové reakci bombardování uranovıch}
+{21031}{}{isotopù. Za dvì hodin nebo i míò to mùe mít}
+{21032}{}{za následek nukleární vıbuch v síle 100 kilotun.}
+{21033}{}{}
+{21034}{}{**END-PAR**}
+{21035}{}{Vìtšina hlavních èástí reaktoru je umístìna pod}
+{21036}{}{vodou, pod stanicí. Toto postavení dovoluje, e}
+{21037}{}{díky pøírodní teplotì oceánu se udrí jádro chladné}
+{21038}{}{Moøská voda z hloubky 500 metrù je pumpována do}
+{21039}{}{chladící komory. Vìtšina studené moøské vody}
+{21040}{}{je odvedena do èásti, kde je jádro a kontrolní}
+{21041}{}{tyèe. Tady cirkuluje skrz jádro a ohøívá se}
+{21042}{}{v dùsledku nukleárních reakcí. Voda dosáhne bodu}
+{21043}{}{varu a všechna vzniklá pára se pouívá k chodu}
+{21044}{}{turbínového generátoru, kterı vytváøí veškerou}
+{21045}{}{elektrickou energii. Pára se kondenzuje a vrací}
+{21046}{}{se do filtrovací nádre. Èistší voda se vrací zpìt}
+{21047}{}{do pøípravné nádre, pøipravena zaèít znovu celı}
+{21048}{}{cyklus.}
+{21049}{}{**END-PAR**}
+{21050}{}{Veškerá ozáøená voda a rozmanité toxické materiály}
+{21051}{}{jsou odèerpány pryè ze stanice skrz odpadovou}
+{21052}{}{trubici, ukonèenou jednu míli na jih. Hlášení od}
+{21053}{}{našich pøedsunutıch hlídek dokazují, e naše vıtoky}
+{21054}{}{proudí dolù na pobøeí jiní Kalifornie a Mexika,}
+{21055}{}{kde zpùsobují rozsáhlé ekologické poškození. Hodnì}
+{21056}{}{pláí je nyní nasyceno toxickım odpadem a vysoce ozáøenım}
+{21057}{}{moøskım ivotem. Naštìstí toto nemá ádnı vliv na nás.}
+
+{21058}{}{**END-PAR**}
+{21059}{}{V kadém pøípadì, jestli se náš reaktor vypne, máme}
+{21060}{}{nìjaké záloní baterie, které mohou bıt po urèitou dobu}
+{21061}{}{pouívány pro chod Enklávy, dokud nebude obnovena normální}
+{21062}{}{dodávka. Nicménì, toto opatøení nezahrnuje vedlejší a}
+{21063}{}{vysokoenergické záleitosti jako tøeba silové pole. Také}
+{21064}{}{se zavøou (bezpeènostní opatøení) jisté vodotìsné dveøe,}
+{21065}{}{vedoucí skrze základnu, které se zavírají pøi poklesu}
+{21066}{}{energie jako ochrana pøed záplavou. To zamezí pohyb }
+{21067}{}{po vìtšinì naší stanice. Bude monı pouze pohyb v horních}
+
+{21068}{}{patrech, ale pouze pøes urèité prùlezy.}
+{21069}{}{**END-PAR**}
+{21070}{}{Hlavní problém je v tom, e jestlie bude centrální}
+
+{21071}{}{poèítaè vypnut nebo znièen, nebo se naneštìstí stanou}
+{21072}{}{oba pøípady, reaktor se dostane do kritickıch hodnot}
+{21073}{}{a roztaví se do dvou hodin. Potøebujeme nainstalovat}
+{21074}{}{nìjakı druh lidského podpùrného záloního systému.}
+
+{21075}{}{Vím, e si o mnì mùete myslet, e jsem panikáø,}
+{21076}{}{kdy po Vás ádám tyto opatøení proti nepøedvídané}
+{21077}{}{události, ale i tak se vyplatí bıt vdy pøipraven.}
+
+{21078}{}{**END-PAR**}
+{21079}{}{Mezi tím se jdìte pøesvìdèit, jestli nìkdo náhodou}
+{21080}{}{nevyhodil do vzduchu náš hlavní poèítaè (ha, ha).}
+{21081}{}{**END-PAR**}
+
+{21082}{}{Váš Tom Murray, pøedseda Komise pro atomovou energii}
+{21083}{}{**END-DISK**}

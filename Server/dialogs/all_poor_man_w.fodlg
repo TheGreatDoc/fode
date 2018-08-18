@@ -1,0 +1,28 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Нищенка}
+{200}{}{Вы видите бедную женщину.}
+{210}{}{Вы видите грязную нищенку, одетую в разорванные лохмотья.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Beggar}
+{200}{}{You see a beggar woman.}
+{210}{}{You see a beggar woman wearing torn rags.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Beggar}
+{200}{}{Widzisz żebraczkę.}
+{210}{}{Żebraczka ubrana w szmaciane ciuchy.}
+{1000}{}{Initial preferences}
+

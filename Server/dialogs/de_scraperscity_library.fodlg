@@ -1,0 +1,120 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Industrial_Bob_Repair_PA = 0 #
+3 1020 D _var p Industrial_Bob_Repair_PA ! 0 @
+2 2000 None 1 #
+4 2010 @
+3 3000 None 1 #
+9 3010 D _item p PID_BOOKJUNK = 0 #
+8 3020 D _item p PID_BOOKJUNK ! 0 #
+7 3030 D _var p Industrial_Bob_Repair_PA = 30 D _item p PID_BOOKJUNK } 50 R _script quest_server_scripts@technical_manual_30_to_80 0  R _item p PID_BOOKJUNK - 50 R _item p PID_TECHNICAL_MANUAL + 1 #
+0 3040 @
+4 4000 None 1 #
+5 4010 #
+0 4020 @
+5 5000 None 1 #
+6 5010 R _script quest_server_scripts@technical_manual_0_to_30 0  #
+0 5020 @
+6 6000 None 1 @
+7 7000 None 1 #
+6 7010 @
+8 8000 None 1 #
+6 8010 D _item p PID_BOOKJUNK ! 0 R _script dialog@r_booksjunk 0  #
+0 8020 @
+9 9000 None 1 &
+
+[pols]
+{100}{}{Mr. Cover}
+{110}{}{man2.png}
+{200}{}{You see a libarian.}
+{210}{}{You see a local libarian.}
+{1000}{}{Predialogue installations}
+{1010}{}{after industrial bob quest}
+{1020}{}{normal talk}
+{2000}{}{Hello, how can I help you?}
+{2010}{}{I'm looking for a manual to repair a power armor. Do you have one?}
+{3000}{}{Yes, can I help you?@@Can I help you?@@Do you need something?}
+{3010}{}{I've have some old books. Are you interested in buying?}
+{3020}{}{I've have some old books. Are you interested in buying?}
+{3030}{}{I've got this 50 old books you wanted.}
+{3040}{}{Nothing...}
+{4000}{}{Yes, I have one of it. But it is a rarity, I don't want to give it away.}
+{4010}{}{Please, I really need it. I could give you other books in exchange.}
+{4020}{}{Ok, I understand.}
+{5000}{}{Hmm... Certainly, I always seek for more books, especially those from the time before the great war. I tell you what. Bring me fifty old books, and I will give you the manual to repair a power armor.}
+{5010}{}{You can count on me.}
+{5020}{}{Nah, I'm too lazy for this shit.}
+{6000}{}{Come back soon.}
+{7000}{}{Ah, great. Here, let me get that manual for you.}
+{7010}{}{Thank you!}
+{8000}{}{That's great! Please let me get a reward for you, 50 caps for each book.}
+{8010}{}{Thank you.@@OK@@Good exchange.}
+{8020}{}{50 caps for one? No thanks.@@I'm not interested now.}
+{9000}{}{Yes, but you do not have any books now}
+
+
+[engl]
+{100}{}{Mr. Cover}
+{110}{}{man2.png}
+{200}{}{You see a libarian.}
+{210}{}{You see a local libarian.}
+{1000}{}{Predialogue installations}
+{1010}{}{after industrial bob quest}
+{1020}{}{normal talk}
+{2000}{}{Hello, how can I help you?}
+{2010}{}{I'm looking for a manual to repair a power armor. Do you have one?}
+{3000}{}{Yes, can I help you?@@Can I help you?@@Do you need something?}
+{3010}{}{I've have some old books. Are you interested in buying?}
+{3020}{}{I've have some old books. Are you interested in buying?}
+{3030}{}{I've got this 50 old books you wanted.}
+{3040}{}{Nothing...}
+{4000}{}{Yes, I have one of it. But it is a rarity, I don't want to give it away.}
+{4010}{}{Please, I really need it. I could give you other books in exchange.}
+{4020}{}{Ok, I understand.}
+{5000}{}{Hmm... Certainly, I always seek for more books, especially those from the time before the great war. I tell you what. Bring me fifty old books, and I will give you the manual to repair a power armor.}
+{5010}{}{You can count on me.}
+{5020}{}{Nah, I'm too lazy for this shit.}
+{6000}{}{Come back soon.}
+{7000}{}{Ah, great. Here, let me get that manual for you.}
+{7010}{}{Thank you!}
+{8000}{}{That's great! Please let me get a reward for you, 50 caps for each book.}
+{8010}{}{Thank you.@@OK@@Good exchange.}
+{8020}{}{50 caps for one? No thanks.@@I'm not interested now.}
+{9000}{}{Yes, but you do not have any books now}
+
+
+[russ]
+{100}{}{Mr. Cover}
+{110}{}{man2.png}
+{200}{}{You see a libarian.}
+{210}{}{You see a local libarian.}
+{1000}{}{Predialogue installations}
+{1010}{}{after industrial bob quest}
+{1020}{}{normal talk}
+{2000}{}{Hello, how can I help you?}
+{2010}{}{I'm looking for a manual to repair a power armor. Do you have one?}
+{3000}{}{Yes, can I help you?@@Can I help you?@@Do you need something?}
+{3010}{}{I've have some old books. Are you interested in buying?}
+{3020}{}{I've have some old books. Are you interested in buying?}
+{3030}{}{I've got this 50 old books you wanted.}
+{3040}{}{Nothing...}
+{4000}{}{Yes, I have one of it. But it is a rarity, I don't want to give it away.}
+{4010}{}{Please, I really need it. I could give you other books in exchange.}
+{4020}{}{Ok, I understand.}
+{5000}{}{Hmm... Certainly, I always seek for more books, especially those from the time before the great war. I tell you what. Bring me fifty old books, and I will give you the manual to repair a power armor.}
+{5010}{}{You can count on me.}
+{5020}{}{Nah, I'm too lazy for this shit.}
+{6000}{}{Come back soon.}
+{7000}{}{Ah, great. Here, let me get that manual for you.}
+{7010}{}{Thank you!}
+{8000}{}{That's great! Please let me get a reward for you, 50 caps for each book.}
+{8010}{}{Thank you.@@OK@@Good exchange.}
+{8020}{}{50 caps for one? No thanks.@@I'm not interested now.}
+{9000}{}{Yes, but you do not have any books now}

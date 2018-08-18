@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Obywatel Dark Waters}
+{210}{}{Widzisz obywatela Dark Waters}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Co jest Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca by zyc@@Tak wiem, Bezpieczne miejsce ale ciezko sie tu dostac@@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?@@Mhyyy... Uwielbiam zapach smazonej ryby@@Tez czujesz zapach starej ryby?@@Slyszysz szum morza?@@Uwazaj na morskie gule. Sraja gdzie popadnie@@Jako dziecko slyszalem bajki o morskich potworach@@Wiesz dlaczego Londyn jest bezpieczny? Poniewaz zolnierze REF boja sie wody... Ha ha ha@@Szukasz roboty?@@Powiem Ci szczerze, nie wygladasz na kogos kto potrafi plywac @@Pierwszy raz w Dark Waters?@@Jesli chcesz sie dostac do Londynu. Pogadaj z kapitanem statku. Znajdziesz go na molo@@Jesli bedziesz kiedys w Scrapers, pogadaj z rybakiem Henrym. Znajdziesz go zaraz przed molo po lewej stronie}
+
+[engl]
+{100}{}{Dark Waters citizen}
+{210}{}{You see a Dark Waters resident.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{What's up?@@Fuck off!@@How's it going?@@I don't know the time, get lost.@@Really?@@There is no better place to live. Or is it?@@It's kinda safe here... for now.@@I don't have time for this.@@Get lost, tramp.@@You're a joke.@@Joining NEC? Why not?@@Being with REF we would be better off.@@Jane?@@You do know Michelin, right?@@You have smokes?@@Have a beer?@@Got a light?@@Hey you!@@Why are you even standing here?@@Don't you eye me, mister.@@That damn rat bit my balls!@@My retarded neighbor catches fish with dynamite.@@We'd be dead if it wasn't for the guards.@@These stray dogs piss me off.@@John who?@@This place is going down the drain...@@...hookers, junkies, perverts, robbers, rapists and now you. How sweet.@@I always wanted to have a boat.@@Have you ever been outta the island?@@I heard there's no life beyond the great water.@@Get a life, man.@@What am I doing here? Dunno.@@Stupid questions, stupid answers...@@Piss off.@@I'm just trying to live here.@@The story behind it all? Who cares.@@I have no idea.@@Don't know, don't care.@@Really, why are you asking me?@@Can you hear the waves?@@Will you do something for me?@@Looking for me?@@Mhyyy... I like the smell of smoked fish in the morning.@@Can you smell those fish?@@Can you hear the sound of the sea?@@Watch out for the seagulls. They shit everywhere where they can.@@As a child I heard stories about sea monsters. And now I see you.@@You know why London is safe? Because REF soldiers are afraid of the water... Ha ha ha.@@Looking for a job? I'm not gonna give you one.@@You don't look like someone who knows how to swim.@@First time in Dark Waters?@@If you wanna get to London talk to the captain, he's at the pier.@@If you want get to Scrapers City, talk with Henry. You can find him just before the pier.}
+
+[russ]
+{100}{}{Dark Waters citizen}
+{210}{}{You see a Dark Waters resident.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{What's up?@@Fuck off!@@How's it going?@@I don't know the time, get lost.@@Really?@@There is no better place to live. Or is it?@@It's kinda safe here... for now.@@I don't have time for this.@@Get lost, tramp.@@You're a joke.@@Joining NEC? Why not?@@Being with REF we would be better off.@@Jane?@@You do know Michelin, right?@@You have smokes?@@Have a beer?@@Got a light?@@Hey you!@@Why are you even standing here?@@Don't you eye me, mister.@@That damn rat bit my balls!@@My retarded neighbor catches fish with dynamite.@@We'd be dead if it wasn't for the guards.@@These stray dogs piss me off.@@John who?@@This place is going down the drain...@@...hookers, junkies, perverts, robbers, rapists and now you. How sweet.@@I always wanted to have a boat.@@Have you ever been outta the island?@@I heard there's no life beyond the great water.@@Get a life, man.@@What am I doing here? Dunno.@@Stupid questions, stupid answers...@@Piss off.@@I'm just trying to live here.@@The story behind it all? Who cares.@@I have no idea.@@Don't know, don't care.@@Really, why are you asking me?@@Can you hear the waves?@@Will you do something for me?@@Looking for me?@@Mhyyy... I like the smell of smoked fish in the morning.@@Can you smell those fish?@@Can you hear the sound of the sea?@@Watch out for the seagulls. They shit everywhere where they can.@@As a child I heard stories about sea monsters. And now I see you.@@You know why London is safe? Because REF soldiers are afraid of the water... Ha ha ha.@@Looking for a job? I'm not gonna give you one.@@You don't look like someone who knows how to swim.@@First time in Dark Waters?@@If you wanna get to London talk to the captain, he's at the pier.@@If you want get to Scrapers City, talk with Henry. You can find him just before the pier.}

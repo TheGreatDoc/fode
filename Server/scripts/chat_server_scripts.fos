@@ -1,0 +1,125 @@
+#include "_defines.fos"
+#include "_client_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "utils_for_array.fos"
+
+import bool CheckIfDEV(Critter& player) from "server_scripts";
+import bool CheckIfGM(Critter& player) from "server_scripts";
+
+
+void unsafe_chat_send_message(Critter& cr, int ChatType, int, int, string@ message, int[]@)
+{
+	if(cr.ParamBase[PLAYER_IS_BANNED]<1)
+	{
+		if(@message==null) return;
+		if(message.length()==0) return;
+		
+		uint16 year=0,month=0,day_of_week=0,day=0,hour=0,minute=0,second=0,milliseconds=0;
+		GetTime(year,month,day_of_week,day,hour,minute,second,milliseconds);
+		
+		string name=cr.Name;
+		if(CheckIfGM(cr)) name="[DEV] "+name;
+		
+		if(ChatType>0)
+		{
+			Critter @private_msg_cr=GetCritter(ChatType);
+			if(@private_msg_cr==null)
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000212);
+				return;
+			}
+			if(!private_msg_cr.IsPlayer())
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000213);
+				return;
+			}
+			if(private_msg_cr.Id==cr.Id)
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000214);
+				return;
+			}
+			cr.Say(SAY_CHAT_MESSAGE,"*"+private_msg_cr.Id+"* "+hour+":"+minute+" "+name+": "+message);
+			private_msg_cr.Say(SAY_CHAT_MESSAGE,"*"+cr.Id+"* "+hour+":"+minute+" "+name+": "+message);
+		}
+		else if(ChatType==CHAT_FACTION)
+		{
+			if(cr.ParamBase[PLAYER_FACTION]==0)
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000215);
+				return;
+			}
+			else
+			{
+				for(int i=0; i<PLAYERS_COUNT; i++)
+				{
+					string@ str=GetPlayerName(i);
+					if(@str!=null)
+					{
+						Critter @findcr=GetPlayer(str);
+						if(@findcr!=null)
+						{
+							if(findcr.ParamBase[PLAYER_FACTION]==cr.ParamBase[PLAYER_FACTION])
+								findcr.Say(SAY_CHAT_MESSAGE,"*FACTION* "+hour+":"+minute+" "+name+": "+message);
+						}
+					}
+				}
+			}
+		}
+		else for(int i=0; i<PLAYERS_COUNT; i++)
+		{
+			string@ str=GetPlayerName(i);
+			if(@str!=null)
+			{
+				Critter @findcr=GetPlayer(str);
+				if(@findcr!=null)
+				{
+					if(ChatType==CHAT_GLOBAL) findcr.Say(SAY_CHAT_MESSAGE,"*GLOBAL* "+hour+":"+minute+" "+name+": "+message);
+					else if(ChatType==CHAT_SUPPORT) findcr.Say(SAY_CHAT_MESSAGE,"*SUPPORT* "+hour+":"+minute+" "+name+": "+message);
+				}
+			}
+		}
+	}
+	else cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000710);
+}
+
+void unsafe_request_for_private_chat(Critter& cr, int, int, int, string@ InterlocutorName, int[]@)
+{
+	if(cr.ParamBase[PLAYER_IS_BANNED]<1)
+	{
+		string original_name=InterlocutorName;
+		if(@InterlocutorName==null)
+		{
+			cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000216);
+			return;
+		}
+		Critter @private_chat_player;
+		Critter @private_chat_player2;
+		@private_chat_player=GetPlayer(InterlocutorName);
+		if(@private_chat_player==null)
+		{
+			if(InterlocutorName.length()>5)
+			{
+				if(substring(InterlocutorName,0,5)=="[DEV]")
+					InterlocutorName=substring(InterlocutorName,6,InterlocutorName.length()-6);
+			}
+			@private_chat_player2=GetPlayer(InterlocutorName);
+			if(@private_chat_player2==null)
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000217);
+				return;
+			}
+			if(!CheckIfGM(private_chat_player2))
+			{
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000217);
+				return;
+			}
+			cr.Say(SAY_CHAT_MESSAGE,"*NEW_PRIVATE* "+private_chat_player2.Id+" [DEV] "+InterlocutorName);
+			return;
+		}
+		if(CheckIfGM(private_chat_player)) cr.Say(SAY_CHAT_MESSAGE,"*NEW_PRIVATE* "+private_chat_player.Id+" [DEV] "+InterlocutorName);
+		else cr.Say(SAY_CHAT_MESSAGE,"*NEW_PRIVATE* "+private_chat_player.Id+" "+InterlocutorName);
+	}
+	else cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000710);
+}

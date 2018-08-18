@@ -1,0 +1,9 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš trestance.}
+{101}{}{Vidíš nìjakého trestance, který není zdejší.}
+{102}{}{Tak to je naposledy co jsem porušil zákaz vycházení.}
+{103}{}{Minulý týden jsem v obchodním centru...}
+{104}{}{Pøíteli, moc se nepøibližuj. Uvidí nás spolu mluvit. Je to jako píchat do vosího hnízda.}
+{105}{}{Podìlanej Barkus mì sem strèil. Když strèíš prsty, tam kam nemáš - Je to hned...}
+{106}{}{Vstoupit do Vault City to byla osudová chyba. "Demokratické" mìsto... jaký je to žert.}
+{107}{}{Alespoò, že to žrádlo tady nemají hnusný.}

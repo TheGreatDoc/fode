@@ -1,0 +1,83 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 #
+3 1020 D _param p PLAYER_MAIN_FACTION = 1 D or D _param p SK_SCIENCE } 85 #
+5 1030 D _param p PLAYER_MAIN_FACTION ! 1 D _param p SK_SCIENCE < 85 @
+2 2000 None 1 #
+3 2010 D _param p PLAYER_MAIN_FACTION = 1 D or D _param p SK_SCIENCE } 85 #
+5 2020 D _param p PLAYER_MAIN_FACTION ! 1 D _param p SK_SCIENCE < 85 R _param p DAMAGE_RIGHT_ARM = 1 R _script dialog@r_AccessDenied 0  #
+0 2030 @
+3 3000 None 1 #
+4 3010 #
+0 3020 @
+4 4000 None 1 #
+0 4010 R _script dialog@r_MedicalRobot 0  @
+5 5000 Attack 0 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{logowanie do systemu}
+{1020}{}{sprawdz czy czlonek frakcji lub wysoki science}
+{1030}{}{jesli nie jest czlonkiem i niski science}
+{2000}{}{Automatyczny Regeneracyjny Robot Medyczny "Medical-Tec".
+Procedura identyfikacji...
+Wprowadz ID Federacji:.............}
+{2010}{}{Zaloguj do systemu@@Wpisz haslo}
+{2020}{}{Hmmmy...  78238145 ?@@Hmmmy...  11892815 ?@@Eeeee...  ENTER ?}
+{2030}{}{Wylacz}
+{3000}{}{W czym moge pomoc?}
+{3010}{}{Potrzebuje pelnej regeneracji uszkodzen tkanek}
+{3020}{}{Wyloguj}
+{4000}{}{Wprowadzanie danych obiektu... Prosze czekac... Rozpoczynanie regeneracji...}
+{4010}{}{Ok}
+{5000}{}{...ACCESS DENIED...}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{logowanie do systemu}
+{1020}{}{sprawdz czy czlonek frakcji lub wysoki science}
+{1030}{}{jesli nie jest czlonkiem i niski science}
+{2000}{}{Welcome to Med-Tec Systems Gmbh Auto-Doc.
+Loading executable...
+Voice recognition module self-test...
+Please enter your Federation ID.}
+{2010}{}{Log in.@@Enter ID@@Input ID.}
+{2020}{}{Errr... 78798132?@@Ummm... 01482815?@@Eeeee... ALT-CTRL-DEL@@CTRL-V?}
+{2030}{}{Step away from the terminal.}
+{3000}{}{Welcome, citizen. Loaded procedures: 
+Tissue regeneration surgery. Do you want to continue?}
+{3010}{}{Yes, I need It now.}
+{3020}{}{Log out.@@Log off.}
+{4000}{}{Processing patient data... Please wait... Operation starting...}
+{4010}{}{Okay.}
+{5000}{}{Acces Denied. Abort, Retry, Fail?}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{logowanie do systemu}
+{1020}{}{sprawdz czy czlonek frakcji lub wysoki science}
+{1030}{}{jesli nie jest czlonkiem i niski science}
+{2000}{}{Welcome to Med-Tec Systems Gmbh Auto-Doc.
+Loading executable...
+Voice recognition module self-test...
+Please enter your Federation ID.}
+{2010}{}{Log in.@@Enter ID@@Input ID.}
+{2020}{}{Errr... 78798132?@@Ummm... 01482815?@@Eeeee... ALT-CTRL-DEL@@CTRL-V?}
+{2030}{}{Step away from the terminal.}
+{3000}{}{Welcome, citizen. Loaded procedures: 
+Tissue regeneration surgery. Do you want to continue?}
+{3010}{}{Yes, I need It now.}
+{3020}{}{Log out.@@Log off.}
+{4000}{}{Processing patient data... Please wait... Operation starting...}
+{4010}{}{Okay.}
+{5000}{}{Acces Denied. Abort, Retry, Fail?}

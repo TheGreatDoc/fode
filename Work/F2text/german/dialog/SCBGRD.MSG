@@ -1,0 +1,12 @@
+{100}{}{Du siehst jemanden, der eine Kampfrüstung trägt.}
+{101}{}{Du siehst eine Wache.}
+{102}{}{Er scheint, hier zu stehen und darauf zu warten, daß etwas passiert.}
+{103}{}{Ja, ja. Beweg' Dich.}
+{104}{}{Paß auf, daß Du nett zu Mr. Buster bist, damit wir keine Munition verschwenden müssen.}
+{105}{}{Ich bin hier, um in Hintern zu treten und Kaugummi zu kauen. Gut für Dich, daß ich einen Streifen übrig habe.}
+{106}{}{Was zum Teufel gibt's da zu gucken? Blas.}
+{107}{}{Hey, so bin ich nicht. Paß auf, daß Du weit genug von mir entfernt bleibst.}
+{108}{}{Ja, das ist richtig, komm' rüber zu Papa. Warum treffen wir uns nicht später auf einen Drink?}
+{109}{}{Süße, ich würde eher mit einem Brahmin schlafen, bevor ich Dich zweimal anschauen würde.}
+{110}{}{Kauf' einfach etwas und dann scher' Dich zum Teufel.}
+

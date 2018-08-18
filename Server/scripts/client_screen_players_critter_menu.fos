@@ -1,0 +1,148 @@
+//Client GUI Players menu
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+IGUIScreenOpt @PlayersCritterMenuOpt;
+IGUIScreenOpt @PlayersDEVCritterMenuOpt;
+uint PlayersMenuPointedCritterId;
+
+class MessageToCritterButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		CritterCl @cr=GetCritter(PlayersMenuPointedCritterId);
+		if(cr.IsPlayer()) RunServerScriptUnsafe("chat_server_scripts@unsafe_request_for_private_chat",0,0,0,cr.Name,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+class MercAttackButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("players_menu_server_scripts@unsafe_MercAttack",PlayersMenuPointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+class NpcMessageAttactButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_NpcMessageAttact",PlayersMenuPointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+class NpcMessageStopButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_NpcMessageStop",PlayersMenuPointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+class ChoseCritterButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_ChoseCrriter",PlayersMenuPointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+class ChoseCritterAttactButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_ChoseCrriterAttact",PlayersMenuPointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,0,0,0);
+	}
+}
+
+void InitPlayersCritterMenu()
+{
+	@PlayersCritterMenuOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,"Players menu\nCritter", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	MessageToCritterButtonClass MessageToCritterButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Private msg.", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MessageToCritterButton);
+	
+	MercAttackButtonClass MercAttackButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Merc ATTACK", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MercAttackButton);
+}
+
+bool InitDEVPlayersCritterMenu()
+{
+	// DEV access
+	bool AccessToDEVPanel=false;
+	string PlayerName=GetChosen().Name;
+	if(GetChosen().ParamBase[PLAYER_ACCESS] == ACCESS_ADMIN)
+	{
+		AccessToDEVPanel=true;
+	}
+	if(!AccessToDEVPanel) return false;
+	GUI_AddText(CLIENT_SCREEN_PLAYERS_CRITTER_MENU,"DEV: NPC Control", 0, 60)
+		.TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+		.TextBoxSize(120,10);
+	
+	NpcMessageAttactButtonClass NpcMessageAttactButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,60+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Npc ATTACK", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(NpcMessageAttactButton);
+		
+	NpcMessageStopButtonClass NpcMessageStoptButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,75+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Npc STOP", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(NpcMessageStoptButton);
+		
+	ChoseCritterButtonClass ChoseCritterButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,90+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Chose Critter", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ChoseCritterButton);
+		
+	ChoseCritterAttactButtonClass ChoseCritterAttactButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_CRITTER_MENU, 0,105+15)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Chose Target", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ChoseCritterAttactButton);
+	return true;
+}
+
+void InitDEVPlayersCritterMenu(int, int, int, string@, int[]@)
+{
+	if(InitDEVPlayersCritterMenu()) Message("Success NPC Menu Control Init");
+}

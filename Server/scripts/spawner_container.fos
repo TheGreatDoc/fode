@@ -1,0 +1,235 @@
+//
+// FOnline: 2238
+// Rotators
+//
+// spawner_container.fos
+//
+
+#define __SPAWNER_CONTAINER_MODULE__
+#include "_macros.fos"
+#include "_itempid.fos"
+#include "spawner_container_h.fos"
+
+#define SPAWN_INTERVAL    # (_time)  REAL_MINUTE(_time)   // debug
+
+//import bool LockerClose(Item& item) from "lockers";
+
+class ItemInstance
+{
+    uint Pid;
+    uint Chance;
+    uint Min;
+    uint Max;
+    ItemInstance(uint16 pid, uint chance, uint min, uint max)
+    {
+        Pid = pid;
+        Chance = chance;
+        Min = min;
+        Max = max;
+    }
+};
+
+class ItemSpawner : IItemSpawner
+{
+    array<ItemInstance@> items;
+    uint                 SumChance;
+    uint                 SpawnTimeMin;
+    uint                 SpawnTimeMax;
+    uint16               LockerMin;
+    uint16               LockerMax;
+    bool                 Separate;
+
+    ItemSpawner()
+    {
+        SumChance = 0;
+        SpawnTimeMin = 0;
+        SpawnTimeMax = 0;
+        LockerMin = 0;
+        LockerMax = 0;
+        Separate = false;
+    }
+
+    uint GetSpawnTime()
+    {
+        return SPAWN_INTERVAL(Random(SpawnTimeMin, SpawnTimeMax));
+    }
+    uint GetLock()
+    {
+        int lockVal = Random(LockerMin, LockerMax);
+        lockVal = CLAMP(lockVal, 0, 350);
+        return lockVal;
+    }
+    IItemSpawner@ Lock(uint16 min, uint16 max)
+    {
+        LockerMin = min;
+        LockerMax = MAX(LockerMin, max);
+        return this;
+    }
+    IItemSpawner@ SpawnTime(uint min, uint max)   // set in real minutes
+    {
+        SpawnTimeMin = min;
+        SpawnTimeMax = MAX(SpawnTimeMin, max);
+        return this;
+    }
+    IItemSpawner@ AddItem(uint16 pid, uint chance, uint min, uint max)
+    {
+        ItemInstance@ item = @ItemInstance(pid, chance, min, max);
+        items.insertLast(item);
+        SumChance += chance;
+        return this;
+    }
+    IItemSpawner@ AddItem(uint16 pid, uint chance)
+    {
+        return AddItem(pid, chance, 1, 1);
+    }
+    IItemSpawner@ SetSeparate(bool separate)
+    {
+        Separate = separate;
+        return this;
+    }
+    IItemSpawner@ Clear()
+    {
+        SumChance = 0;
+        SpawnTimeMin = 0;
+        SpawnTimeMax = 0;
+        LockerMin = 0;
+        LockerMax = 0;
+        items.resize(0);
+        Separate = false;
+        return this;
+    }
+    uint Spawn(Item& item)
+    {
+        if(!Separate)
+        {
+            uint num = Random(1, SumChance);
+            uint idx = 0;
+            while(num > items[idx].Chance)
+                num -= items[idx++].Chance;
+            ItemInstance@ spawnitem = items[idx];
+            item.AddItem(spawnitem.Pid, Random(spawnitem.Min, spawnitem.Max), 0);
+        }
+        else
+        {
+            for(uint i = 0, j = items.length(); i < j; i++)
+            {
+                ItemInstance@ spawnitem = items[i];
+                if(Random(1, 100) <= int(spawnitem.Chance))
+                    item.AddItem(spawnitem.Pid, Random(spawnitem.Min, spawnitem.Max), 0);
+            }
+        }
+
+        if(LockerMax != 0)
+        {
+            if(FLAG(item.LockerCondition, LOCKER_ISOPEN))
+                item.LockerClose();
+            item.LockerId = Random(0, 0x7fffffff);
+            item.LockerComplexity = GetLock();
+        }
+        return GetSpawnTime();
+    }
+
+    uint GetValue()
+    {
+        uint sum = 0;
+        if(Separate)
+        {
+
+            for(uint i = 0, j = items.length(); i < j; i++)
+            {
+                ItemInstance@ item = items[i];
+                ProtoItem@    proto = GetProtoItem(item.Pid);
+                if(!valid(proto))
+                {
+                    Log("ERR: Spawner uses invalid proto: " + item.Pid);
+                    continue;
+                }
+                sum += MIN(100, item.Chance) * (item.Min + item.Max) * proto.Cost;
+            }
+            return sum / 200;
+        }
+        else
+        {
+            for(uint i = 0, j = items.length(); i < j; i++)
+            {
+                ItemInstance@ item = items[i];
+                ProtoItem@    proto = GetProtoItem(item.Pid);
+                if(!valid(proto))
+                {
+                    Log("ERR: Spawner uses invalid proto: " + item.Pid);
+                    continue;
+                }
+                sum += item.Chance * (item.Min + item.Max) * proto.Cost;
+            }
+        }
+        return sum / (2 * SumChance);
+    }
+};
+
+array<ItemSpawner@> spawners;
+bool                Init = false;
+
+#define ADD_ITEMSPAWNER    # (_name, _prop) ItemSpawner@ _name = @ItemSpawner(); _name._prop; spawners.insertLast(_name)
+void ItemSpawnInit() // export
+{
+    if(Init)
+        return;
+	
+	//continious spawner
+	ADD_ITEMSPAWNER(continuous_container_weapon_sg_t1_1,
+                    SpawnTime(60, 180).SetSeparate(true).Lock(25, 50).
+                    AddItem(PID_9MM_MAUSER_DE, 30).
+                    AddItem(PID_SHOTGUN_SHELLS_DE, 30, 10, 20)
+                    );					
+	//		One time spawners
+	ADD_ITEMSPAWNER(once_container_SG_low_31,
+                    SpawnTime(0, 0).SetSeparate(true).Lock(0, 0).
+
+                    AddItem(PID_9MM_MAUSER_DE, 30).
+                    AddItem(PID_SHOTGUN_SHELLS_DE, 30, 10, 20)
+                    );
+    Init = true;
+}
+
+uint e_Spawn(array<uint>@ values)
+{
+    Item@ item = GetItem(values[0]);
+    if(!valid(item))
+        return 0;
+    return spawners[item.Val4].Spawn(item);
+}
+
+// API helper
+bool InvalidIndex(uint num)
+{
+    return SPAWNER_RESERVED_MAX < num && num < spawners.length();
+}
+
+// API
+
+IItemSpawner@ GetSpawner(uint num)   // export
+{
+    if(InvalidIndex(num))
+        return null;
+    return spawners[num];
+}
+
+IItemSpawner@ MakeSpawner(uint num)   // export
+{
+    if(num <= SPAWNER_RESERVED_MAX)
+        return null;
+    if(num >= spawners.length())
+        spawners.resize(num + 1);
+    @spawners[num] = @ItemSpawner();
+    return spawners[num];
+}
+
+void MakeSpawnerContainer(Item& item, uint type)   // export
+{
+    if(!Init)
+        ItemSpawnInit();
+    item.Val4 = type;
+    spawners[item.Val4].Spawn(item);
+    if(spawners[item.Val4].SpawnTimeMax > 0)
+        CreateTimeEvent(AFTER(spawners[type].GetSpawnTime()), "e_Spawn", item.Id, false);
+}

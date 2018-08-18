@@ -1,0 +1,1109 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+import void AttachTabsToScreen(int screen) from "client_scripts";
+import void UpdatePipBoyPosition(int x, int y) from "client_scripts";
+import void GetPipBoyPosition(int &x, int &y) from "client_scripts";
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+import int[]@ GetIniValues4(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+IGUIElementTextOpt @BankPlayerCapsTextOpt;
+IGUIElementTextOpt @BankPlayerRedTextOpt;
+IGUIElementTextOpt @BankPlayerBlueTextOpt;
+IGUIElementTextOpt @NoBankTextOpt;
+
+IGUIElementEditBoxOpt @BankDepositCapsEditBoxOpt;
+IGUIElementEditBoxOpt @BankDepositRedEditBoxOpt;
+IGUIElementEditBoxOpt @BankDepositBlueEditBoxOpt;
+IGUIElementEditBoxOpt @BankWithdrawCapsEditBoxOpt;
+IGUIElementEditBoxOpt @BankWithdrawRedEditBoxOpt;
+IGUIElementEditBoxOpt @BankWithdrawBlueEditBoxOpt;
+IGUIElementEditBoxOpt @BankTransferCapsEditBoxOpt1;
+IGUIElementEditBoxOpt @BankTransferCapsEditBoxOpt2;
+IGUIElementEditBoxOpt @BankTransferRedEditBoxOpt1;
+IGUIElementEditBoxOpt @BankTransferRedEditBoxOpt2;
+IGUIElementEditBoxOpt @BankTransferBlueEditBoxOpt1;
+IGUIElementEditBoxOpt @BankTransferBlueEditBoxOpt2;
+IGUIElementEditBoxOpt @BankCapsRedEditBoxOpt;
+IGUIElementEditBoxOpt @BankCapsBlueEditBoxOpt;
+IGUIElementEditBoxOpt @BankRedCapsEditBoxOpt;
+IGUIElementEditBoxOpt @BankRedBlueEditBoxOpt;
+IGUIElementEditBoxOpt @BankBlueCapsEditBoxOpt;
+IGUIElementEditBoxOpt @BankBlueRedEditBoxOpt;
+
+int[] positions;
+
+void ShowBankScreen(int, int, int, string@, int[]@)
+{
+	RunServerScriptUnsafe("bank_server_scripts@unsafe_set_see_banker",0,0,0,null,null);
+	ChangeCursor(0);
+	if(GetChosen().ParamBase[PLAYER_SEE_BANKER]==1)
+	{
+	RunServerScriptUnsafe("bank_server_scripts@unsafe_show_exchange_rates",0,0,0,null,null);
+	BankPlayerCapsTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000500)+": "+GetChosen().ParamBase[PLAYER_BANK_CAPS]);
+	BankPlayerRedTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000501)+": "+GetChosen().ParamBase[PLAYER_BANK_RED]);
+	BankPlayerBlueTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000502)+": "+GetChosen().ParamBase[PLAYER_BANK_BLUE]);
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_BANK,x,y);
+	HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+	ShowScreen(CLIENT_SCREEN_BANK,0,0,0);
+	}
+	else
+	{
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_NO_BANK,x,y);
+	HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+	ShowScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+	}	
+}
+
+class DepositCapsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankDepositCapsEditBoxOpt.Text("");
+		BankDepositCapsEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_DEPOSIT_CAPS,0,0,0);
+	}
+}
+
+class DepositRedButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankDepositRedEditBoxOpt.Text("");
+		BankDepositRedEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_DEPOSIT_RED,0,0,0);
+	}
+}
+
+class DepositBlueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankDepositBlueEditBoxOpt.Text("");
+		BankDepositBlueEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_DEPOSIT_BLUE,0,0,0);
+	}
+}
+
+class WithdrawCapsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankWithdrawCapsEditBoxOpt.Text("");
+		BankWithdrawCapsEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_WITHDRAW_CAPS,0,0,0);
+	}
+}
+
+class WithdrawRedButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankWithdrawRedEditBoxOpt.Text("");
+		BankWithdrawRedEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_WITHDRAW_RED,0,0,0);
+	}
+}
+
+class WithdrawBlueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankWithdrawBlueEditBoxOpt.Text("");
+		BankWithdrawBlueEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_WITHDRAW_BLUE,0,0,0);
+	}
+}
+
+class TransferCapsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankTransferCapsEditBoxOpt1.Text("");
+		BankTransferCapsEditBoxOpt1.setFocused(true);
+		BankTransferCapsEditBoxOpt2.Text("");
+		BankTransferCapsEditBoxOpt2.setFocused(false);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_TRANSFER_CAPS,0,0,0);
+	}
+}
+
+class TransferRedButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankTransferRedEditBoxOpt1.Text("");
+		BankTransferRedEditBoxOpt1.setFocused(true);
+		BankTransferRedEditBoxOpt2.Text("");
+		BankTransferRedEditBoxOpt2.setFocused(false);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_TRANSFER_RED,0,0,0);
+	}
+}
+
+class TransferBlueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankTransferBlueEditBoxOpt1.Text("");
+		BankTransferBlueEditBoxOpt1.setFocused(true);
+		BankTransferBlueEditBoxOpt2.Text("");
+		BankTransferBlueEditBoxOpt2.setFocused(false);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_TRANSFER_BLUE,0,0,0);
+	}
+}
+
+class CapsRedButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankCapsRedEditBoxOpt.Text("");
+		BankCapsRedEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_CAPS_RED,0,0,0);
+	}
+}
+
+class CapsBlueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankCapsBlueEditBoxOpt.Text("");
+		BankCapsBlueEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_CAPS_BLUE,0,0,0);
+	}
+}
+
+class RedCapsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankRedCapsEditBoxOpt.Text("");
+		BankRedCapsEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_RED_CAPS,0,0,0);
+	}
+}
+
+class RedBlueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankRedBlueEditBoxOpt.Text("");
+		BankRedBlueEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_RED_BLUE,0,0,0);
+	}
+}
+
+class BlueCapsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankBlueCapsEditBoxOpt.Text("");
+		BankBlueCapsEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_BLUE_CAPS,0,0,0);
+	}
+}
+
+class BlueRedButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		BankBlueRedEditBoxOpt.Text("");
+		BankBlueRedEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		ShowScreen(CLIENT_SCREEN_BANK_BLUE_RED,0,0,0);
+	}
+}
+
+class DepositCapsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankDepositCapsEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_deposit_caps",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_DEPOSIT_CAPS,0,0,0);
+	}
+}
+
+class DepositRedButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankDepositRedEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_deposit_red",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_DEPOSIT_RED,0,0,0);
+	}
+}
+
+class DepositBlueButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankDepositBlueEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_deposit_blue",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_DEPOSIT_BLUE,0,0,0);
+	}
+}
+
+class WithdrawCapsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankWithdrawCapsEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_withdraw_caps",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_WITHDRAW_CAPS,0,0,0);
+	}
+}
+
+class WithdrawRedButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankWithdrawRedEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_withdraw_red",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_WITHDRAW_RED,0,0,0);
+	}
+}
+
+class WithdrawBlueButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankWithdrawBlueEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_withdraw_blue",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_WITHDRAW_BLUE,0,0,0);
+	}
+}
+
+class TransferCapsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankTransferCapsEditBoxOpt1.getText();
+		string @player_name=BankTransferCapsEditBoxOpt2.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_transfer_caps",money,0,0,@player_name,null);
+		HideScreen(CLIENT_SCREEN_BANK_TRANSFER_CAPS,0,0,0);
+	}
+}
+
+class TransferRedButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankTransferRedEditBoxOpt1.getText();
+		string @player_name=BankTransferRedEditBoxOpt2.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_transfer_red",money,0,0,@player_name,null);
+		HideScreen(CLIENT_SCREEN_BANK_TRANSFER_RED,0,0,0);
+	}
+}
+
+class TransferBlueButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankTransferBlueEditBoxOpt1.getText();
+		string @player_name=BankTransferBlueEditBoxOpt2.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_transfer_blue",money,0,0,@player_name,null);
+		HideScreen(CLIENT_SCREEN_BANK_TRANSFER_BLUE,0,0,0);
+	}
+}
+
+class CapsRedButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankCapsRedEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_caps_red_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_CAPS_RED,0,0,0);
+	}
+}
+
+class CapsBlueButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankCapsBlueEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_caps_blue_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_CAPS_BLUE,0,0,0);
+	}
+}
+
+class RedCapsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankRedCapsEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_red_caps_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_RED_CAPS,0,0,0);
+	}
+}
+
+class RedBlueButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankRedBlueEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_red_blue_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_RED_BLUE,0,0,0);
+	}
+}
+
+class BlueCapsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankBlueCapsEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_blue_caps_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_BLUE_CAPS,0,0,0);
+	}
+}
+
+class BlueRedButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=BankBlueRedEditBoxOpt.getText();
+		int money=0;
+		StrToInt(str,money);
+		RunServerScriptUnsafe("bank_server_scripts@unsafe_exchange_blue_red_bank",money,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_BANK_BLUE_RED,0,0,0);
+	}
+}
+
+class BankScreenClass : IGUIScreenCallbackMove
+{
+	void OnMove(int x, int y)
+	{
+		UpdatePipBoyPosition(x,y);
+	}
+}
+
+void InitBankScreen()
+{
+	positions=GetIniValues2("BankTextBank",null);
+	BankScreenClass BankScreen;
+	GUI_CreateScreen(CLIENT_SCREEN_BANK,"bank.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1)
+				.CallbackMove(BankScreen);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000004), positions[0], positions[1])
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	positions=GetIniValues2("BankTextCaps",null);
+	@BankPlayerCapsTextOpt=
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000500)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED)
+      .TextBoxSize(200,10);
+	
+	positions=GetIniValues2("BankButtonCapsDeposit",null);
+	DepositCapsButtonClass DepositCapsButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositCapsButton);
+	
+	positions=GetIniValues2("BankButtonCapsWithdraw",null);
+	WithdrawCapsButtonClass WithdrawCapsButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawCapsButton);
+	
+	positions=GetIniValues2("BankButtonCapsTransfer",null);
+	TransferCapsButtonClass TransferCapsButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferCapsButton);
+	
+	positions=GetIniValues2("BankTextCapsREF",null);
+	@BankPlayerRedTextOpt=
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000501)+": ", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_LRED2, FT_BORDERED)
+      .TextBoxSize(250,10);
+	
+	positions=GetIniValues2("BankButtonCapsREFDeposit",null);
+	DepositRedButtonClass DepositRedButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositRedButton);
+	
+	positions=GetIniValues2("BankButtonCapsREFWithdraw",null);
+	WithdrawRedButtonClass WithdrawRedButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawRedButton);
+	
+	positions=GetIniValues2("BankButtonCapsREFTransfer",null);
+	TransferRedButtonClass TransferRedButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferRedButton);
+	
+	positions=GetIniValues2("BankTextCapsNEC",null);
+	@BankPlayerBlueTextOpt=
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000502)+": ", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_LBLUE2, FT_BORDERED)
+      .TextBoxSize(250,10);
+	
+	positions=GetIniValues2("BankButtonCapsNECDeposit",null);
+	DepositBlueButtonClass DepositBlueButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositBlueButton);
+	
+	positions=GetIniValues2("BankButtonCapsNECWithdraw",null);
+	WithdrawBlueButtonClass WithdrawBlueButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawBlueButton);
+	
+	positions=GetIniValues2("BankButtonCapsNECTransfer",null);
+	TransferBlueButtonClass TransferBlueButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bankOFF.png")
+		.DownPic("bankON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_SPECIAL, COLOR_LSAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferBlueButton);
+	
+	positions=GetIniValues2("BankTextExchange",null);
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000511), positions[0],positions[1])
+	  .TextOptions(FONT_SPECIAL, COLOR_DWHITE)
+      .TextBoxSize(200,10);
+	
+	positions=GetIniValues2("BankButtonCapsREF",null);
+	CapsRedButtonClass CapsRedButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000512), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CapsRedButton);
+	
+	positions=GetIniValues2("BankButtonCapsNEC",null);
+	CapsBlueButtonClass CapsBlueButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000515), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CapsBlueButton);
+	
+	positions=GetIniValues2("BankButtonCapsREF2",null);
+	RedCapsButtonClass RedCapsButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000513), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(RedCapsButton);
+		
+	positions=GetIniValues2("BankButtonCapsNEC2",null);
+	RedBlueButtonClass RedBlueButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000516), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(RedBlueButton);
+	
+	positions=GetIniValues2("BankButtonCapsREF3",null);
+	BlueCapsButtonClass BlueCapsButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000514), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BlueCapsButton);
+	
+	positions=GetIniValues2("BankButtonCapsNEC3",null);
+	BlueRedButtonClass BlueRedButton;
+	GUI_AddButton(CLIENT_SCREEN_BANK, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000517), FONT_FAT, COLOR_SAY)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BlueRedButton);
+	
+	positions=GetIniValues2("BankTextExchange2",null);
+	GUI_AddText(CLIENT_SCREEN_BANK,GetMsgStr(TEXTMSG_GAME,3000000521), positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_BLACK, FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	//popup windows
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_DEPOSIT_CAPS,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_DEPOSIT_CAPS,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000500)+" "+GetMsgStr(TEXTMSG_GAME,3000000507), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankDepositCapsEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_DEPOSIT_CAPS,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	DepositCapsButtonClass2 DepositCapsButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_DEPOSIT_CAPS, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositCapsButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_DEPOSIT_RED,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_DEPOSIT_RED,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000501)+" "+GetMsgStr(TEXTMSG_GAME,3000000507), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankDepositRedEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_DEPOSIT_RED,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	DepositRedButtonClass2 DepositRedButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_DEPOSIT_RED, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositRedButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_DEPOSIT_BLUE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_DEPOSIT_BLUE,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000502)+" "+GetMsgStr(TEXTMSG_GAME,3000000507), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankDepositBlueEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_DEPOSIT_BLUE,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	DepositBlueButtonClass2 DepositBlueButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_DEPOSIT_BLUE, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000503), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DepositBlueButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_WITHDRAW_CAPS,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_WITHDRAW_CAPS,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000500)+" "+GetMsgStr(TEXTMSG_GAME,3000000508), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankWithdrawCapsEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_WITHDRAW_CAPS,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	WithdrawCapsButtonClass2 WithdrawCapsButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_WITHDRAW_CAPS, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawCapsButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_WITHDRAW_RED,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_WITHDRAW_RED,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000501)+" "+GetMsgStr(TEXTMSG_GAME,3000000508), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankWithdrawRedEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_WITHDRAW_RED,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	WithdrawRedButtonClass2 WithdrawRedButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_WITHDRAW_RED, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawRedButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_WITHDRAW_BLUE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_WITHDRAW_BLUE,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000502)+" "+GetMsgStr(TEXTMSG_GAME,3000000508), 0, 33)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankWithdrawBlueEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_WITHDRAW_BLUE,46,49)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	WithdrawBlueButtonClass2 WithdrawBlueButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_WITHDRAW_BLUE, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000504), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(WithdrawBlueButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_TRANSFER_CAPS,"s_window2.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_CAPS,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000500)+" "+GetMsgStr(TEXTMSG_GAME,3000000509), 0, 27)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferCapsEditBoxOpt1=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_CAPS,46,39)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_CAPS,GetMsgStr(TEXTMSG_GAME,3000000510), 0, 57)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferCapsEditBoxOpt2=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_CAPS,46,69)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TransferCapsButtonClass2 TransferCapsButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_TRANSFER_CAPS, 98,99)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferCapsButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_TRANSFER_RED,"s_window2.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_RED,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000501)+" "+GetMsgStr(TEXTMSG_GAME,3000000509), 0, 27)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferRedEditBoxOpt1=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_RED,46,39)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_RED,GetMsgStr(TEXTMSG_GAME,3000000510), 0, 57)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferRedEditBoxOpt2=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_RED,46,69)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TransferRedButtonClass2 TransferRedButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_TRANSFER_RED, 98,99)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferRedButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_TRANSFER_BLUE,"s_window2.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_BLUE,GetMsgStr(TEXTMSG_GAME,3000000506)+" "+GetMsgStr(TEXTMSG_GAME,3000000502)+" "+GetMsgStr(TEXTMSG_GAME,3000000509), 0, 27)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferBlueEditBoxOpt1=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_BLUE,46,39)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_TRANSFER_BLUE,GetMsgStr(TEXTMSG_GAME,3000000510), 0, 57)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankTransferBlueEditBoxOpt2=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_TRANSFER_BLUE,46,69)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TransferBlueButtonClass2 TransferBlueButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_TRANSFER_BLUE, 98,99)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000505), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TransferBlueButton2);
+	
+	// EXCHANGE MONEY
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_CAPS_RED,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_CAPS_RED,GetMsgStr(TEXTMSG_GAME,3000000500)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000501), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_CAPS_RED,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankCapsRedEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_CAPS_RED,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	CapsRedButtonClass2 CapsRedButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_CAPS_RED, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CapsRedButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_CAPS_BLUE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_CAPS_BLUE,GetMsgStr(TEXTMSG_GAME,3000000500)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000502), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_CAPS_BLUE,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankCapsBlueEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_CAPS_BLUE,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	CapsBlueButtonClass2 CapsBlueButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_CAPS_BLUE, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CapsBlueButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_RED_CAPS,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_RED_CAPS,GetMsgStr(TEXTMSG_GAME,3000000501)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000500), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_RED_CAPS,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankRedCapsEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_RED_CAPS,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	RedCapsButtonClass2 RedCapsButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_RED_CAPS, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(RedCapsButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_RED_BLUE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_RED_BLUE,GetMsgStr(TEXTMSG_GAME,3000000501)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000502), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_RED_BLUE,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankRedBlueEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_RED_BLUE,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	RedBlueButtonClass2 RedBlueButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_RED_BLUE, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(RedBlueButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_BLUE_CAPS,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_BLUE_CAPS,GetMsgStr(TEXTMSG_GAME,3000000502)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000500), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_BLUE_CAPS,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankBlueCapsEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_BLUE_CAPS,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	BlueCapsButtonClass2 BlueCapsButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_BLUE_CAPS, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BlueCapsButton2);
+	
+	//
+	
+	GUI_CreateScreen(CLIENT_SCREEN_BANK_BLUE_RED,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_BLUE_RED,GetMsgStr(TEXTMSG_GAME,3000000502)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000518)+" -> "+GetMsgStr(TEXTMSG_GAME,3000000501), 0, 28)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	GUI_AddText(CLIENT_SCREEN_BANK_BLUE_RED,GetMsgStr(TEXTMSG_GAME,3000000519), 0, 38)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(330,10);
+	
+	@BankBlueRedEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_BANK_BLUE_RED,46,50)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	BlueRedButtonClass2 BlueRedButton2;
+	GUI_AddButton(CLIENT_SCREEN_BANK_BLUE_RED, 98,79)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000520), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BlueRedButton2);
+		
+	
+	AttachTabsToScreen(CLIENT_SCREEN_BANK);
+}
+
+void InitNoBankScreen()
+{
+	positions=GetIniValues2("BankTextBank",null);
+	BankScreenClass BankScreen;
+	GUI_CreateScreen(CLIENT_SCREEN_NO_BANK,"bank.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1)
+				.CallbackMove(BankScreen);
+	
+	GUI_AddText(CLIENT_SCREEN_NO_BANK,GetMsgStr(TEXTMSG_GAME,3000000004), positions[0], positions[1])
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	  
+	positions=GetIniValues4("NoRadioTextOpt",null);
+	@NoBankTextOpt=
+	GUI_AddText(CLIENT_SCREEN_NO_BANK)
+		.Position(positions[0],positions[1])
+		.Text("!!! NO BANKER DETECTED !!!")
+		.TextOptions(FONT_BIG,COLOR_RED,FT_BORDERED|FT_CENTERX)
+		.TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+
+	AttachTabsToScreen(CLIENT_SCREEN_NO_BANK);
+}

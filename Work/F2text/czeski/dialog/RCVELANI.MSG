@@ -1,0 +1,28 @@
+#Tento soubor pøeložil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš sympatického opáleného chlápka.}
+{101}{}{Vidíš Velaniho, mordinova kupce}
+{102}{}{Vidíš opáleného muže s peèlivì ostøíhanými nehty.}
+{103}{}{Naštval jsi mne. Kdybych mìl vìtší svaly, tak bych už ti dávno rozbil hubu za opuštìní mojí karavany. Jdi mi z oèí.}
+{104}{}{Udìlal jsi velikou chybu, když jsi se pokusil okrást mordinovic rodinu. Zmiz mi z oèí.}
+{105}{}{Cože? Já že jsem okrádal mordinovic rodinu? To jsi tedy uhodl. Sbohem.}
+{200}{}{Proè bysme si to nemohli vyøídit teï? Pøiprav se na smrt, oslí zadku.}
+{106}{}{Však ty budeš brzo litovat, že jsi mne vyhodil. Sbohem.}
+{107}{}{Tak za tuhle jízdu by ses mìl stydìt. Nedostaneš zaplaceno za flákání. Kvùli tobì zemøel Savinnelli.}
+{108}{}{Tak to jsi mì opravdu nasral. Za to zaplatíš. Sbohem.}
+{109}{}{Akorát máte vìtšinou víc štìstí než ostatní. Teï jste ho ale nemìli. Sbohem.}
+{110}{}{Buï rád, že ti zaplatím za tvojí práci - nepráci. Ale jenom 500$. Tady je máš a zmiz mi z oèí.}
+{111}{}{Poøád lepší nežli nic. Sbohem.}
+{112}{}{Cože? Tak málo? Nikdo by neudìlal lepší práci než já. To jsi mne pravdu nasral. Sbohem.}
+{113}{}{Vìtšina karavany to sice pøežila, ale bohužel to nepøežil Savinelli. Tady máš 1500$. Jestli chceš, mùžeš s námi jet
+ zase pøíštì. Nevím ale kolik èasu nám zabere hledání nìkoho schopného øízení karavany.}
+{114}{}{To vùbec nevadí. Stejnì bych už déle nevydržel dívat se na brahmíní prdele. Sbohem.}
+{115}{}{Tak já se stavím pozdìji a uvidíme. Sbohem.}
+{116}{}{Tohle byla dobrá jízda. Za odmìnu si navíc mùžeš vzít Savinelliho podíl, což je 150$. On už ty peníze nebude
+ potøebovat. Pokud budeš zase nìkdy shánìt práci, tak se stav.}
+{117}{}{Rád vidím nìkoho kdo dokáže ocenit snahu. Uvidíme se pozdìji. Sbohem.}
+{118}{}{Vždycky rád dostávám pøíplatky. Díky a sbohem.}
+{119}{}{Savinelli udìlal velikou chybu. Nemìl lézt na farmu a najímat takové idioty, jako seš ty. Stalo se mu to osudným.
+ A ty mi zmiz z oèí.}
+{120}{}{Ook?}
+{121}{}{Zabili Savinelliho. Kurva, to se nikdy nemìlo stát. Já jsem Velani. Zaplatím ti, co ti dlužíme.}
+{122}{}{Eh, díky.}

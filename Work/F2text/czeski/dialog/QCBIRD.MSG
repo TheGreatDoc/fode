@@ -1,0 +1,98 @@
+#tento soubor pøeloil Marek "MAK" Gøešek
+{100}{}{Vidíš malého, nervóznì vypadajícího mue.}
+{101}{}{Vidíš víceprezidenta Birda.}
+{102}{}{Vidíš malého, nervóznì vypadajícího mue, obleèeného do obleku se skvrnami od jídla.}
+{103}{}{A hele jeden z našich stateènıch vojákù. Co dìláš v kanceláøi Více-Prezidenta?}
+{104}{}{Zdravím tì vojáku. Co dìláš v kanceláøi víceprezidenta?}
+{105}{}{Vypadáš povìdomì. Nemluvili jsme spolu ji døív? No, nevadí. Tak, co pohledáváš v kanceláøi víceprezidenta?}
+{106}{}{Coe?}
+{107}{}{Uh, jsem jen na rutinní obchùzce, Pane.}
+{108}{}{Hledám vetøelce.}
+{109}{}{Jsem tu, abych ještì jednou zkontroloval naše tajné plány.}
+{110}{}{Jsem tu, abych tì zabil.}
+{111}{}{Tak pokraèuj vojáku. Pokraèuj. Ty a tvoji chlapci dìláte skvìlou práci. Myslím, e jsme pøipraveni na všechny neèekané události, které se mohou objevit.}
+{112}{}{Huh?}
+{113}{}{Uh, ano. No, tak já radši dokonèím svoji obchùzku, Pane.}
+{114}{}{Hmm, øekni mi, jak hláskuješ "dcera"? S 'D', nebo bez}
+{115}{}{Hmm, øekni mi, jak hláskuješ "domnìnka"? S 'N', nebo bez}
+{116}{}{Hmm, øekni mi, jak hláskuješ "ethanol"? S 'H', nebo bez}
+{117}{}{Hmm, øekni mi, jak hláskuješ "vèela"? S 'F', nebo bez?}
+{118}{}{Hmm, øekni mi, jak hláskuješ psychopat? S 'T,' nebo bez?}
+{119}{}{Uh, asi s.}
+{120}{}{Bez, samozøejmì.}
+{121}{}{No jo, asi máš pravdu. Všichni vìrní obèané slavnıch Spojenıch Státù by mìli mluvit stejnım jazykem a pokud mono i podobnì myslet.}
+{122}{}{A proè jako?}
+{123}{}{Mám teï práci. Nashledanou.}
+{124}{}{Jen tak dál, vojáku. Budoucnost bude lepší a lepší.}
+{125}{}{Co tím myslíte?}
+{126}{}{Jo, ale pro vás, u to platit nebude. Vyhladil sem, u dost Enklávskıch èervù a ty jsi další z nich.}
+{127}{}{Tak jo, to je asi vše. Sbohem.}
+{128}{}{Musíme spojit síly a pracovat spoleènì, protoe jinak riskujeme selhání.}
+{129}{}{Moná, e vaše selhání by nebylo zas tak špatné.}
+{130}{}{No, bude lepší, kdy pùjdu.}
+{131}{}{Myslím, e mi nic neudìláš.}
+{132}{}{Tak to se dost pleteš.}
+{133}{}{Proè ne? }
+{134}{}{Øekl bych to jedním slovem, které má na pamìti kadı viceprezident, a to slovo je "buï vdy pøipraven".}
+{135}{}{No, a na co jsi pøipraven?}
+{136}{}{Promiò, já nevím, školy nemám, ale nejsou to náhodou tøi slova? 'Pøipravenost' to je jedno slovo. Není to, to co jste myslel?}
+{137}{}{Jo, to je pøesné. No, ale nebudeme to rozvádìt. Konec koncù, uvanìnost vede ke špatné vıslovnosti a tím i k nedorozumìním.}
+{138}{}{Hmmm a co jako.}
+{139}{}{Potøebuju vypadnout. Sbohem.}
+{140}{}{Chci tím øíct, e se nesmíme obracet zpátky do minulosti, musíme smìøovat vstøíc nové budoucnosti.}
+{141}{}{A vy se chcete vydat tímto smìrem?}
+{142}{}{Jojo, opatrnosti není nikdy dost, konec koncù, jistí "lidé" by se mohli dostat na jistá delikátní místa a to by pak mohlo mít hrozivı dopad na historii.}
+{143}{}{Jo, chápu.}
+{144}{}{No a jakı dopad na historii plánujete Vy?}
+{145}{}{Ano, rád bych šel tímto smìrem. Osvìdèil se v minulosti, a osvìdèí se i v budoucnu. No, rozhodnì musíme jít touto cestou.}
+{146}{}{Hmm, ano.}
+{147}{}{Vìøím, e jsme zapoèali nezvratnı trend smìøující k vìtší svobodì a demokracii - ale to se mùe zmìnit.}
+{148}{}{Zneèištìné ivotní prostøedí pustin neumoòuje pøíliš vyuít svobody pro nìjaké znìny.}
+{149}{}{Tak to u je pøíliš. Musíte zemøít.}
+{150}{}{Hòupe. To není odpadové zneèištìní co poškozuje pøírodu. Dìlají to neèistoty v naší vodì a v ovzduší.}
+{151}{}{U opravdu musím jít.}
+{152}{}{Kdybyste il na pevninì, nemluvil bys tak lehkomyslnì.}
+{153}{}{No, to je moné. Naštìstí je Enkláva umìle vytvoøenı "ostrov" ze všech stran obklopenı vodou.}
+{154}{}{Myslíte si, e jste proti všemu, co se tady dìje imunní, e? Jene pokud jde o tuto planetu, tak jsme všichni na stejné lodi.}
+{155}{}{Nechtìl bys k tomu tøeba ještì nìco dodat?}
+{156}{}{Já jsem víceprezident Daniel Bird. Jsem zatracenì rád, e se s tebou poznávám.}
+{157}{}{Ale hovno! Jste jen malá èást celého tohoto velkého problému.}
+{158}{}{Jste cvok.}
+{159}{}{Já nejsem problém. Jsem Republikán.}
+{160}{}{Jak jsem øekl, jste jen takovej malej problém.}
+{161}{}{Ah, no jo. No, jak moná víš, u dlouho pøemıšlíme o tom, e je èas na to, aby lidská rasa "vstoupila" do naší sluneèní soustavy.}
+{162}{}{No, moná nejsme všichni pøipraveni vstoupit do.... Uh, kam e to máme vstoupit?}
+{163}{}{A jak bychom to mìli udìlat?}
+{164}{}{Myslím, e Mars by byl ideální, protoe Mars je v podstatì na stejné obìné dráze... Mars je pøiblinì ve stejné vzdálenosti od Slunce, co je pochopitelnì velmi dùleité. Vidìli jsme obrázky, na kterıch jsou stopy po kanálech a vìøíme, e i po vodì. Jestli je tam voda, znamená to ,e tam je i kyslík. No a pøítomnost kyslíku, by znamenala, e tam mùeme dıchat.}
+{165}{}{No teda, neoèekával jsem tak "vyèerpávající" odpovìï.}
+{166}{}{Zbláznil jste se?}
+{167}{}{Jak primitivní oznaèovat všechny, kteøí jsou nìjak vıjimeèní, za blázny. Oh, jak typické.}
+{168}{}{No, je to moná typické, ne neopodstatnìné. Øekl bych, e vy a vám podobní jsou všichni blázni, i kdy ve vašem pøípadì by se moná dala udìlat vıjimka, protoe vy jste jen takovı malı, "problém".}
+{169}{}{O èem to sakra mluvíte?}
+{170}{}{No, u musím jít. Sbohem.}
+{171}{}{NASA - pro ni má vesmír stále velmi vysokou prioritu.}
+{172}{}{Hmmmm, a kam bychom jsme se mìli vydat nejdøív?}
+{173}{}{To není pravda. Republikáni chápou dùleitost rodiny a hlavnì rodinného svazku mezi matkou a dítìtem. To je klíè k øešení všech našich problémù - musíme vrátit rodinné hodnoty.}
+{174}{}{Ani vy ani celá Enkláva nemá s rodinnımi hodnotami vùbec nic spoleèného.}
+{175}{}{Pevnì si stojím za vším co dìláme.}
+{176}{}{Nechápete, e vytvoøíte jen další "Totální znièení", jestlie budete pokraèovat v tom co dìláte.}
+{177}{}{Jste fakt pìknej hajzl. Vy to asi opravdu myslíte vánì, e jo?}
+{178}{}{Období "Totálního znièení" bylo v našich národních dìjinách velice odpornım obdobím. Myslím tím naše døívìjší mnohasetleté dìjiny. Ale my všichni ijeme v tomto století, kde se to ji nemùe stát, to víš - Jiná doba!}
+{179}{}{Jste jen zasranej blázen.}
+{180}{}{Nìkdo u musí zastavit tvoje øádìní. Pomodli se, Birde.}
+{181}{}{Musím odtud vypadnout.}
+{182}{}{D-C-E-R-A}
+{183}{}{D-C-E-R-A}
+{184}{}{E-T-H-A-N-O-L}
+{185}{}{E-T-H-A-N-O-L}
+{186}{}{Kam se podìly moje dvì piksly jahodové zmrzliny?}
+{187}{}{Caine je moje loï. Jenom moje, slyšíš?}
+{188}{}{Všichni jsou proti mì, e ano? e ano?}
+{189}{}{Mùeš bıt jakkoliv rychlı, ale mì nechytíš.}
+{190}{}{Pìknì, pìknì.}
+{191}{}{Jasnı.}
+{192}{}{Ne, mami, Neudìlal sem to. A u mì nemla!}
+{193}{}{Mami! Mami kde jsi?}
+{194}{}{Teï nechci bıt trpìlivı.}
+{195}{}{Ne, ádné háèky, cokoliv jen né ádné háèky.}
+{196}{}{Ne, ne, uh-uh, ne. Neeeeee!}

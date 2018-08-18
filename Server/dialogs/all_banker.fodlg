@@ -1,0 +1,61 @@
+[comment]
+
+
+[data]
+lang=Main pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+0 2010 R _script bank_server_scripts@ServerShowBankScreen 0  #
+3 2020 #
+0 2030 @
+3 3000 None 1 #
+2 3010 &
+
+[Main]
+{100}{}{Banker}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{European Bank at your service. What can I do for you?}
+{2010}{}{I'd like to see my bank account.}
+{2020}{}{Could you tell me something about my bank account?}
+{2030}{}{Good bye.}
+{3000}{}{In your bank account you can hold all your money with no risk of losing it. You won't get any additional money for keeping money in our bank but you will get more other advantages. You can transfer your money (caps, ULS money or NEC money) to anyone you'd like to whenever you want. You can also exchange any type of money for any other type of money. Actual exchange rates are displayed when you open your bank account panel. Bank takes 10% for each exchange. Depositing, withdrawing, transfering are free.}
+{3010}{}{Ok.}
+
+[pols]
+{100}{}{Bankier}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Bank European Savings do Twojej dyspozycji. Co mogę dla Pana zrobić?}
+{2010}{}{Chciałbym zobaczyć swoje konto.}
+{2020}{}{Chciałbym dowiedzieć się czegoś o moim koncie bankowym.}
+{2030}{}{Do widzenia.}
+{3000}{}{W banku może Pan trzymać wszystie swoje oszczedności bez jakiegokolwiek ryzyka. Nie płacimy za trzymanie pieniędzy w naszym banku, aczkolwiek są inne korzyści. Jako nasz klient może Pan przelewać pieniądze (kapsle, pieniadze REF oraz NEC) do kogolwiek w dowolnym momencie. Aktualne kursy walut sa wyświetlane przy każdym otwarciu panelu zarządzania swoim kontem. Bank bierze 10% od każdej wymiany waluty. Wpłacanie, wypłacanie i przelewanie odbywa się bez żadnych dodatkowych oplat.}
+{3010}{}{Ok.}
+
+[engl]
+{100}{}{Banker}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{European Bank at your service. What can I do for you?}
+{2010}{}{I'd like to see my bank account.}
+{2020}{}{Could you tell me something about my bank account?}
+{2030}{}{Good bye.}
+{3000}{}{In your bank account you can hold all your money with no risk of losing it. You won't get any additional money for keeping money in our bank but you will get more other advantages. You can transfer your money (caps, ULS money or NEC money) to anyone you'd like to whenever you want. You can also exchange any type of money for any other type of money. Actual exchange rates are displayed when you open your bank account panel. Bank takes 10% for each exchange. Depositing, withdrawing, transfering are free.}
+{3010}{}{Ok.}
+
+[russ]
+{100}{}{Banker}
+{1000}{}{Predialogue installations}
+{1010}{}{Nnrdn}
+{2000}{}{European Bank at your service. What can I do for you?}
+{2010}{}{I'd like to see my bank account.}
+{2020}{}{Could you tell me something about my bank account?}
+{2030}{}{Good bye.}
+{3000}{}{In your bank account you can hold all your money with no risk of losing it. You won't get any additional money for keeping money in our bank but you will get more other advantages. You can transfer your money (caps, ULS money or NEC money) to anyone you'd like to whenever you want. You can also exchange any type of money for any other type of money. Actual exchange rates are displayed when you open your bank account panel. Bank takes 10% for each exchange. Depositing, withdrawing, transfering are free.}
+{3010}{}{Ok.}
+

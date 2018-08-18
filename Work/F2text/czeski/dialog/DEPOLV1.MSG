@@ -1,0 +1,19 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Závada na bio-uskladnìní!}
+{101}{}{Level 4 Izolace porušena.}
+{102}{}{Level 4 Kontaminován.}
+{103}{}{Plomby nebezpeèného biomateriálu v Levelu 3 porušeny.}
+{104}{}{Level 3 Izolace porušena.}
+{105}{}{Level 3 Kontaminován.}
+{106}{}{Plomby nebezpeèného biomateriálu v Levelu 2 porušeny.}
+{107}{}{Level 2 Izolace porušena.}
+{108}{}{Level 2 Kontaminován.}
+{109}{}{Plomby nebezpeèného biomateriálu v Levelu 1 porušeny.}
+{110}{}{Level 1 Izolace porušena.}
+{111}{}{Level 2 Kontaminován.}
+
+# X minutes and Y seconds to evacuate.
+{112}{}{ minut a }
+{113}{}{ vteøin k evakuaci.}
+{114}{}{ minut a }
+{115}{}{ sekund k evakuaci.}

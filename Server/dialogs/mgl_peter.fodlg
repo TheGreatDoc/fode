@@ -1,0 +1,56 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_soul_ex_machina ! 2 D _var p mgl_soul_ex_machina ! 3 #
+3 1020 D _var p mgl_soul_ex_machina = 2 @
+2 2000 None 0 @
+3 3000 None 0 #
+4 3010 @
+4 4000 None 0 #
+0 4010 R _var p mgl_soul_ex_machina = 3 R _script main@r_WalkAway 2 142 236 &
+
+[engl]
+{100}{}{Peter}
+{200}{}{You see Peter.}
+{210}{}{You see one of MGL scientists Peter.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@... If i would add another  6 units of CX-IV.. hmmm...@@wait... where i was?.}
+{3000}{}{Yes ? Do you want something ?}
+{3010}{}{Are you Peter ?}
+{4000}{}{Yes, what do you need ?}
+{4010}{}{John Talan send me, he want's to speak with you about something.}
+
+[pols]
+{100}{}{Peter}
+{200}{}{Widzisz Petera.}
+{210}{}{Widzisz jednego z naukowcow MGL Petera.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Jestem zajety, zostaw mnie w spokoju.@@ Mam prace do zrobienia.@@te wyniki sa ekscytujace!@@... Jesli moglbym dodac kolejne 6 jednostek CX-IV.. hmmm...@@Czekaj... na czym skonczylem?.}
+{3000}{}{Tak? Potrzebujesz cos?}
+{3010}{}{Jestes Peter ?}
+{4000}{}{Tak, co chcesz ?}
+{4010}{}{John Talan mnie przyslal, chce z Toba porozmawiac o czyms.}
+
+[russ]
+{100}{}{Peter}
+{200}{}{You see Peter.}
+{210}{}{You see one of MGL scientists Peter.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@... If i would add another  6 units of CX-IV.. hmmm...@@wait... where i was?.}
+{3000}{}{Yes ? Do you want something ?}
+{3010}{}{Are you Peter ?}
+{4000}{}{Yes, what do you need ?}
+{4010}{}{John Talan send me, he want's to speak with you about something.}
+

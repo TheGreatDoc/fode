@@ -1,0 +1,45 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš ghoula s nìjakým druhem talismanu na jeho krku.}
+{101}{}{Vidíš èlena kultu Obrody.}
+{102}{}{Vidíš spokojenì vypadajícího ghoula.}
+
+{110}{}{Vidíš Ozáøeného s nìjakým druhem talismanu kolem krku.}
+{111}{}{Vidíš èlena kultu Obrody.}
+{112}{}{Vidíš spokojenì vypadajícího Ozáøeného.}
+
+{120}{}{Jeden z nás, jeden z nás...}
+{121}{}{Obroï se, kamaráde! Obroï!}
+{122}{}{Èas na poslední den je tady.}
+{123}{}{Brzo budeme všichni hezouni jako jsi ty, kamaráde.}
+{124}{}{Atom nám dává sílu.}
+{125}{}{Ahoj, kamaráde. Brain ví všechno.}
+{126}{}{Obrození je na dosah, kamaráde.}
+{127}{}{Budeme spojeni spolu v jednoho.}
+{128}{}{Pryè s radikalismem, kamaráde.}
+{129}{}{Budeme všichni obrozeni dohromady.}
+
+{130}{}{Ahoj kamaráde. Brain ví všechno.}
+{131}{}{Jsi Brainùv oblíbenec -- brzo budeš jedním z nás.}
+{132}{}{Budeš se snažit o slova obrody, pøíteli?}
+{133}{}{Sedni si k jeho rùžovým nohám a poslouchej znovuobrození.}
+{134}{}{Chytøí vyhledávají jeho moudrost.}
+{135}{}{Ahoj pøíteli. Budeš s námi usilovat o obrození?}
+{136}{}{Obroï se! Obroï se!}
+{137}{}{Kdybychom jenom mìli pro nìho kolo. (povzdech)}
+{138}{}{Žehnám Ti, pøíteli. Obroda je na dosah jen pro vybrané.}
+{139}{}{Být Brainùv pøítel je neobyèejná vìc.}
+
+{140}{}{Ahoj. Radši bys mìl být opatrnej.}
+{141}{}{Mi tì sledujeme.}
+{142}{}{Snaž se najít osvícenost v Brainovì moudrosti.}
+{143}{}{Nevím, proè dovolujeme hezounùm chodit sem dolù.}
+{144}{}{Mìl by si radìji jít pøímo k nìmu.}
+{145}{}{Pøišel jsi sem za Brainem?}
+
+{150}{}{Ahoj, hezoune. Budeš se snažit o obrodu?}
+{151}{}{Náš Jemnostpán si tì pøeje vidìt.}
+{152}{}{Ty se taky mùžeš obrodit!}
+{153}{}{Pøidej se k nám a obroï se!}
+{154}{}{On tì chce vidìt?}
+{155}{}{Obrození je samozøejmì možné i pro hezouny.}
+{156}{}{Hezouni se mùžou obrodit také.}

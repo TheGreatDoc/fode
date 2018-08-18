@@ -1,0 +1,56 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_meat_M ! 1 #
+3 1020 D _var p mgl_Frank = 3 D _var p mgl_meat_M = 1 @
+2 2000 None 0 @
+3 3000 None 0 #
+4 3010 R _var p mgl_meat_M = 2 @
+4 4000 None 0 #
+0 4010 &
+
+[engl]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@What the hell is this ?!@@ Stop bugging me!}
+{3000}{}{Yeah ?}
+{3010}{}{Frank sent me here, I have 5 pieces of meat for you. *** make it require and consume 5 pieces of meat***}
+{4000}{}{Good.}
+{4010}{}{Bye.}
+
+[pols]
+{100}{}{Specjalista}
+{200}{}{Widzisz specjaliste.}
+{210}{}{Widzisz jednego ze specjalistow MGL.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{Jestem zajety zostaw mnie w spokoju.@@ Mam robote do zrobienia.@@Te wyniki sa ekscytujace!@@Co to jest do cholery ?!@@ Przestan mi przeszkadzac!}
+{3000}{}{Ta ?}
+{3010}{}{Tu jest 5 kawaіkow miesa od Franka.*** wymaga i konsumuje 5kawalkow miesa***}
+{4000}{}{Dobrze.}
+{4010}{}{Czesc}
+
+[russ]
+{100}{}{specialist}
+{200}{}{You see specialist.}
+{210}{}{You see one of MGL specialists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{1020}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@What the hell is this ?!@@ Stop disrupting me!}
+{3000}{}{Yeah ?}
+{3010}{}{Here 5 piecies of meat fro you from Frank.*** make it require and consume 5 piecies of meat***}
+{4000}{}{Good.}
+{4010}{}{bye}
+

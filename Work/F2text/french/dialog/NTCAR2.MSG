@@ -1,0 +1,8 @@
+{100}{}{J'avais garé ma voiture ici !}
+{150}{}{Au moment où tu t'approches de l'endroit où tu avais garé la voiture, tu remarques des légères traces de pneus allant vers le nord.}
+{151}{}{Tu vois des traces de pneus allant vers le nord.}
+{152}{}{Tu vois des traces de pneus !}
+{153}{}{(Suivre les traces !)}
+{154}{}{(Ne pas suivre les traces.)}
+{155}{}{(Suis les traces de pneus.)}
+{156}{}{(Ignore-les.)}

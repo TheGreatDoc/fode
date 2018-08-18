@@ -1,0 +1,13 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Vzduchový ventilaèní systém èistící vzduch v celém vaultu. Zevnitø ventilátoru slyšíš podivné klepání.}
+{101}{}{Vidíš ventilátor. }
+{102}{}{Vzduchový ventilaèní systém èistící vzduch v celém vaultu. Zevnitø ventilátoru slyšíš podivné klepání.}
+{103}{}{Vzduchový ventilaèní systém èistící vzduch v celém vaultu.}
+{104}{}{Vidíš ventilátor. }
+{105}{}{Vzduchový ventilaèní systém èistící vzduch v celém vaultu.}
+{106}{}{::Klep-klep::}
+{107}{}{Nezdá se, že s tímhle ventilátorem by bylo nìco v nepoøádku, alespoò tobì se to nezdá.}
+{108}{}{Otevíráš ventilátor a díváš se dovnitø, co že to tam klepe. Nìco zapøíèeného se zablesklo uvnitø a poté, co byla vìc vyjmuta už je vše v poøádku.}
+{109}{}{Vypadá to, že se nìkdo schovával v téhle ventilaèní šachtì. }
+{110}{}{Otevíráš ventilátor a díváš se dovnitø, proè se ventilátor netoèí. Nìco zapøíèeného se zablesklo uvnitø a poté, co byla vìc vyjmuta už je vše v poøádku.}
+{111}{}{Vypadá to, že se v téhle ventilaèní šachtì nìkdo schovával.}

@@ -1,0 +1,55 @@
+#include "_teams.fos"
+#include "_defines.fos"
+#include "_itempid.fos"
+#include  "npc_planes.fos"
+#include "_macros.fos"
+#include "_npc_pids.fos"
+#include "_bags.fos"
+#include "guard_message.fos"
+
+void _GuardInit(Critter& npc, bool firstTime)
+{
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"GuardMessage");
+	npc.SetEvent( CRITTER_EVENT_SMTH_DROP_ITEM, "_GuardSmthDropItem" );
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM_Guard;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.StatBase[ST_EXPLODE_ABSORB] = 60;
+    npc.StatBase[ST_EXPLODE_RESIST] = 90;
+	npc.ShowCritterDist1=80;
+	//to random
+	int stuff=Random(1,4);
+		if (npc.GetProtoId()==3254 || npc.GetProtoId()==3290)
+	{
+		npc.AddItem(PID_223_PISTOL_DE,1);
+		npc.SetFavoriteItem(SLOT_HAND1,PID_223_PISTOL_DE);
+	}
+	else if (stuff==1)
+	{
+		npc.AddItem(PID_LASER_RIFLE_EXT_CAP_DE,1);
+		npc.SetFavoriteItem(SLOT_HAND1,PID_LASER_RIFLE_EXT_CAP_DE);
+	}
+	else if (stuff==2)
+	{
+		npc.AddItem(PID_SNIPER_RIFLE_DE,1);
+		npc.SetFavoriteItem(SLOT_HAND1,PID_SNIPER_RIFLE_DE);
+	}
+	else if (stuff==3)
+	{
+		npc.AddItem(PID_TURBO_PLASMA_RIFLE_DE,1);
+		npc.SetFavoriteItem(SLOT_HAND1,PID_TURBO_PLASMA_RIFLE_DE);
+	}
+	else if (stuff==4)
+	{
+		npc.AddItem(PID_FN_FAL_HPFA_DE,1);
+		npc.SetFavoriteItem(SLOT_HAND1,PID_FN_FAL_HPFA_DE);
+	}
+}
+
+void walk_Guard1(Critter& npc)
+{
+	AddWalkPlane(npc, 0, 228, 298, 2, false, 1);
+}

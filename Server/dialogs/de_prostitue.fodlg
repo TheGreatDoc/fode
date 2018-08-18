@@ -1,0 +1,57 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Prostytutka}
+{210}{}{Widzisz prostytutke.}
+{210}{}{Widzisz atrakcyjna kobiete w uwodzacym ubraniu. Typowa dziwka.@@Widzisz dziwke. Puszcza ci oczko.@@Widzisz kobiete ktora na Ciebie patrzy.@@Ta kobieta rozbiera cie w swojich myslach.@@Widzisz ladna mloda dziewczyne. Jej twarz jest pokryta czyms bialym, to chyba jakis puder.@@Widzisz piekna kobiete w rozpietym ubraniu.@@W sposob jaki ona na Ciebie patrzy, mozna wydedukowac ze zchecia by sie toba zajela.@@Widzisz piekna ale zmeczona kobiete.@@Widzisz kobiete nocy. Jej podarte ubranie jest idealnie owiniete wokol jej ciala.@@Widzisz prostytutke. Jej oczy lsnia.@@Widzisz prostytutke. Pachnie kwiatami.@@Widzisz prostytutke. Lsni jak droga bizuteria.@@}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Nie pytaj dlaczego@@Nie mam czasu na rozmowy@@Jak zaplacisz to mozemy pogadac@@Musze jakos zarobic na zycie@@Nie pamietam jak ta choroba sie nazywa@@Jesli ci sie nie podoba zawsze moge zalozyc torbe na glowe@@Uwiez mi nie ma lepszej odemnie@@Za sto kapsli moge to zrobic nawet z tak brzydkim kolesiem@@Ladna pogoda ale musze jakos zarobic ten hajs@@Nie twoj zasrany interes@@Ty placisz ja robie@@Hej przystojniaczku@@Chcialam byc piosenkarka@@Powaznie, z taba moge nawet za darmo@@Tak tez Cie kocham... ale wpierw kasa@@Wydaje mi sie ze mam jakas infekcje@@Co to kondomy?@@W przeszlosci nazywali to syfilis@@Trojkacik? Hmmy... PEWNIE@@LODA? Spoko@@Nie, nie mam 17-tu lat@@Naprawde musze zalozyc ubranie przybysza z krypty?@@Londyn, Moskwa, Bearline ... faceci wszedzie sa tacy sami@@Moje marzenie to wyruchac reszte ludzi z europy@@Warszawa? pierwsze slysze@@Paryz? Nie mam pojecia gdzie to jest@@Ohhh... Ahhh... Mmmm... To jest za darmo za reszte musisz zaplacic@@Lapy precz@@O MOJ BOZE!... twoja twarz... bedzie to kosztowac wiecej@@Jestes prawdziwym Indianem?@@Chcesz hot doga?@@Niech pomysle... 500 kapsli!?@@Za 50 kapsli moge zrobic reczna robotke@@Moje marzenie to zrobic to z super mutantem i zwarjowanym gulem na raz@@Moje marzenie? ...wydostac sie z tego miejsca@@Moje marzenie? To sex z toba@@Hej, chcesz sie zabawic?@@Mysle ze dam ci naprawde dobra cene.@@Zpenetruj moja cipke!@@Jestem taka podniecona teraz!@@Przestan na mnie patrzec jak niechcesz mnie wyruchac!@@Hej, twoj kutas bedzie zadowolony.@@Moge sie zalozyc ze tego chcesz}
+
+[engl]
+{100}{}{Prostitue}
+{210}{}{You see a prostitute.}
+{210}{}{You see an attractive woman in seductive clothes. Typical whore.}
+{210}{}{You see a whore. She winks at you.}
+{210}{}{You see a typical, run-of-the-mill hooker.}
+{210}{}{This woman seems to be undressing you in her mind.}
+{210}{}{You see a pretty young woman. Her face is covered with a white powder of some sort.}
+{210}{}{You see a woman. Closer examination reveals that she is actually wearing some clothes.}
+{210}{}{You can clearly that this woman definitely interested in taking care of you.}
+{210}{}{You see a very tired-looking woman.}
+{210}{}{You see a daughter of Corinth. Her ripped garment is attractively wrapped around her body.}
+{210}{}{You see a prostitute, well beyond her fifties.}
+{210}{}{You see a hooker, dressed in some shaggy clothes.}
+{210}{}{You see a hooker. She's assessing you like a professional jeweller.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Don't ask why.@@Don't have time for chit-chat, dear.@@You just wanna talk? Pay's the same.@@It's a profession like any else.@@I don't remember how that disease is called, why do you care?@@If you don't fancy my face I can always put a bag on my head.@@Believe me, there are no better girls than myself.@@With that face of yours, you'll havta pay extra.@@Yeah, yeah, the weather's great, but I gotta make some money.@@None of your business.@@You pay, I work.@@Hi there, cupcake.@@And they said I'm gonna be a singer...@@With you? Not even if you were the last person on earth!@@Yeah I love ya too, but love ain't for free you know.@@Fungal infections? What are those?@@Condoms, what condoms?@@I heard they called it sea-phallis  or something back in the old days.@@A threesome? It's double the standard fee.@@Only a blowjob? You sure?@@I just look young, I'm way more older than 13.@@You want me to wear a walt-suit? It's like, a dress for a dance or something?@@Londonne, Dark Waters, Furytown... all men are the same.@@I want to fuck all the way through Urope@@Warsaw? Is that some kinda weapon?@@Pair-is?@@Ohhh... Ahhh... Mmmm... This is a freebie, you want more - pay me.@@Hands off, weirdo!@@Oh shit!... your face... this will cost you extra.@@You wanna free willy?@@You want a hot dawg?@@Lemme think... 500?@@Fifty, and I'll make you a nice handjob.@@I dream of a threesome with a ghoul and a mutant.@@I need to get outta this place.@@What do I want? I wanna fuck you. No, not for free.@@Hey, wanna have some fun?@@Hey there, sweetcheeks, I might have a special rate for ya.@@My pussy's always ready!@@First pay, then we'll talk. Or something else...@@Lookin's free, everything else'll cost ya.@@Wanna make your dick happy?@@I bet you want it!}
+
+[russ]
+{100}{}{Prostitue}
+{210}{}{You see a prostitute.}
+{210}{}{You see an attractive woman in seductive clothes. Typical whore.}
+{210}{}{You see a whore. She winks at you.}
+{210}{}{You see a typical, run-of-the-mill hooker.}
+{210}{}{This woman seems to be undressing you in her mind.}
+{210}{}{You see a pretty young woman. Her face is covered with a white powder of some sort.}
+{210}{}{You see a woman. Closer examination reveals that she is actually wearing some clothes.}
+{210}{}{You can clearly that this woman definitely interested in taking care of you.}
+{210}{}{You see a very tired-looking woman.}
+{210}{}{You see a daughter of Corinth. Her ripped garment is attractively wrapped around her body.}
+{210}{}{You see a prostitute, well beyond her fifties.}
+{210}{}{You see a hooker, dressed in some shaggy clothes.}
+{210}{}{You see a hooker. She's assessing you like a professional jeweller.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Don't ask why.@@Don't have time for chit-chat, dear.@@You just wanna talk? Pay's the same.@@It's a profession like any else.@@I don't remember how that disease is called, why do you care?@@If you don't fancy my face I can always put a bag on my head.@@Believe me, there are no better girls than myself.@@With that face of yours, you'll havta pay extra.@@Yeah, yeah, the weather's great, but I gotta make some money.@@None of your business.@@You pay, I work.@@Hi there, cupcake.@@And they said I'm gonna be a singer...@@With you? Not even if you were the last person on earth!@@Yeah I love ya too, but love ain't for free you know.@@Fungal infections? What are those?@@Condoms, what condoms?@@I heard they called it sea-phallis  or something back in the old days.@@A threesome? It's double the standard fee.@@Only a blowjob? You sure?@@I just look young, I'm way more older than 13.@@You want me to wear a walt-suit? It's like, a dress for a dance or something?@@Londonne, Dark Waters, Furytown... all men are the same.@@I want to fuck all the way through Urope@@Warsaw? Is that some kinda weapon?@@Pair-is?@@Ohhh... Ahhh... Mmmm... This is a freebie, you want more - pay me.@@Hands off, weirdo!@@Oh shit!... your face... this will cost you extra.@@You wanna free willy?@@You want a hot dawg?@@Lemme think... 500?@@Fifty, and I'll make you a nice handjob.@@I dream of a threesome with a ghoul and a mutant.@@I need to get outta this place.@@What do I want? I wanna fuck you. No, not for free.@@Hey, wanna have some fun?@@Hey there, sweetcheeks, I might have a special rate for ya.@@My pussy's always ready!@@First pay, then we'll talk. Or something else...@@Lookin's free, everything else'll cost ya.@@Wanna make your dick happy?@@I bet you want it!}

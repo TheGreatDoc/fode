@@ -1,0 +1,190 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+5 2030 #
+6 2040 #
+8 2050 D _var p quest_deliver_suitcase = 0 #
+10 2060 D _var p quest_deliver_suitcase = 2 R _var p quest_deliver_suitcase = 3 R _item p PID_BOTTLE_CAPS + 1000 R _item p PID_METAL_ARMOR + 1 #
+0 2070 @
+3 3000 None 0 #
+4 3010 #
+5 3020 #
+6 3030 #
+7 3040 #
+0 3050 @
+4 4000 None 0 #
+5 4010 #
+6 4020 #
+7 4030 #
+0 4040 @
+5 5000 None 0 #
+6 5010 #
+7 5020 #
+0 5030 @
+6 6000 None 0 #
+7 6010 #
+0 6020 @
+7 7000 None 0 #
+3 7010 #
+4 7020 #
+5 7030 #
+6 7040 #
+0 7050 @
+8 8000 None 0 #
+9 8010 R _var p quest_deliver_suitcase = 1 R _item p PID_10MM_AP + 1 #
+7 8020 #
+0 8030 @
+9 9000 None 0 #
+7 9010 @
+10 10000 None 0 #
+7 10010 #
+0 10020 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{What do you want, petushok?}
+{2010}{}{Who are you?}
+{2020}{}{What is this place?}
+{2030}{}{Why are there so many people?}
+{2040}{}{What happened here?}
+{2050}{}{Do you have any work for me?}
+{2060}{}{Vlesam is saying big thanks to you! Now, where's my reward?}
+{2070}{}{Nothing, bye.}
+{3000}{}{I am Vasilij Vasilov, I am citizen of Moscow, as you can see we don't have too much but we are also not so poor.}
+{3010}{}{What is this place?}
+{3020}{}{Why are there so many people living in this town?}
+{3030}{}{What happened to this place?}
+{3040}{}{Tell me about something else...}
+{3050}{}{Actually, I now know everything what I needed. Bye!}
+{4000}{}{This place? Are you stupid? This is capital of REF. Moscow.}
+{4010}{}{Why there are so many people living in this town?}
+{4020}{}{What happened to this place?}
+{4030}{}{Tell me about something else...}
+{4040}{}{I need to go.}
+{5000}{}{Oh, man! You are so stupid... Well, as you can see, it's capital city of REF. That's why there are so many people here.}
+{5010}{}{What happened to this place?}
+{5020}{}{Hmm, interesting, tell me something else.}
+{5030}{}{Bye.}
+{6000}{}{Well, everybody who wanted help, and we reconstructed this main part of city. Now we are proud what we have done there.}
+{6010}{}{Yeah, I see, I want to know something else...}
+{6020}{}{Hmm, okey. Bye.}
+{7000}{}{ }
+{7010}{}{Who are you?}
+{7020}{}{What is this place?}
+{7030}{}{Why are there so many people?}
+{7040}{}{What happened here?}
+{7050}{}{Nothing, bye.}
+{8000}{}{Actually, yes I have. I need you to bring this suitcase to my friend in Minsk. His name is Vlesam.}
+{8010}{}{Okey, I will do it.}
+{8020}{}{I have more questions...}
+{8030}{}{No, do it by yourself.}
+{9000}{}{Okay, so you'll find him in Minsk near electric station.}
+{9010}{}{I have more questions...}
+{10000}{}{That's great. About your reward? Hmm... Here, take this. (He gives you a bag with caps and an metal armor)}
+{10010}{}{I wanted to ask you something else...}
+{10020}{}{Good, thanks!}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{O co chodzi?}
+{2010}{}{Kim jesteś?}
+{2020}{}{Co to za miejsce?}
+{2030}{}{Czemu jest tu tak dużo ludzi?}
+{2040}{}{Co się tu stało?}
+{2050}{}{Masz dla mnie robotę?}
+{2060}{}{Vlesam dziękuje ci bardzo. A teraz, gdzie moja nagroda?}
+{2070}{}{Nieważne, żegnaj.}
+{3000}{}{Jestem Vasilij Vasilov, mieszkaniec Moskwy. Jak widzisz, nie jesteśmy zbyt bogaci, ale raczej nie ma wśród nas biedaków.}
+{3010}{}{Co to za miejsce?}
+{3020}{}{Dlaczego w mieście mieszka tyle ludzi?}
+{3030}{}{Co się tutaj stało?}
+{3040}{}{Porozmawiajmy o czymś innym...}
+{3050}{}{Właściwie, wiem wszystko co chciałem wiedzieć. Do zobaczenia!}
+{4000}{}{To miejsce? Wszystko z tobą w porządku? To Moskwa, Centrum REF.}
+{4010}{}{Dlaczego w mieście mieszka tyle ludzi?}
+{4020}{}{Co się tutaj stało?}
+{4030}{}{Porozmawiajmy o czymś innym...}
+{4040}{}{Muszę iść.}
+{5000}{}{To miejsce? Wszystko z tobą w porządku? To Moskwa, Centrum REF. Dlatego mieszka tutaj tyle ludzi.}
+{5010}{}{Co się tutaj stało?}
+{5020}{}{Interesujące, porozmawiajmy o czymś innym.}
+{5030}{}{Żegnaj.}
+{6000}{}{Hmm.. każdy, kto chce pomóc w odbudowie miasta jest mile widziany.}
+{6010}{}{Tia... porozmawiajmy o czymś innym}
+{6020}{}{Hmm.. okej. Żegnaj.}
+{7000}{}{ }
+{7010}{}{Kim jesteś?}
+{7020}{}{Co to za miejsce?}
+{7030}{}{Dlaczego jest tu tylu ludzi?}
+{7040}{}{Co się tu stało?}
+{7050}{}{Nieważne. Do widzenia.}
+{8000}{}{Mam dla ciebię robote. Zanieś tą walizkę do mojego przyjaciela w Old Fields. Jego imię to Vlesam.}
+{8010}{}{Dobra, zrobię to.}
+{8020}{}{mam więcej pytań...}
+{8030}{}{Niee, zrób to sam}
+{9000}{}{Dobra, znajdziesz go w Old Fields niedalego stacji energetycznej.}
+{9010}{}{Mam więcej pytań...}
+{10000}{}{Zrobiłeś to ? Świetnie, oto nagroda. (Daje ci worek kapsli i metalowy pancerz)}
+{10010}{}{Chcę cie o coś zapytać.}
+{10020}{}{Świetnie, dzięki!}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jump to dialog}
+{2000}{}{What do you want, petushok?}
+{2010}{}{Who are you?}
+{2020}{}{What is this place?}
+{2030}{}{Why are there so many people?}
+{2040}{}{What happened here?}
+{2050}{}{Do you have any work for me?}
+{2060}{}{Vlesam is saying big thanks to you! Now, where's my reward?}
+{2070}{}{Nothing, bye.}
+{3000}{}{I am Vasilij Vasilov, I am citizen of Moscow, as you can see we don't have too much but we are also not so poor.}
+{3010}{}{What is this place?}
+{3020}{}{Why are there so many people living in this town?}
+{3030}{}{What happened to this place?}
+{3040}{}{Tell me about something else...}
+{3050}{}{Actually, I now know everything what I needed. Bye!}
+{4000}{}{This place? Are you stupid? This is capital of REF. Moscow.}
+{4010}{}{Why there are so many people living in this town?}
+{4020}{}{What happened to this place?}
+{4030}{}{Tell me about something else...}
+{4040}{}{I need to go.}
+{5000}{}{Oh, man! You are so stupid... Well, as you can see, it's capital city of REF. That's why there are so many people here.}
+{5010}{}{What happened to this place?}
+{5020}{}{Hmm, interesting, tell me something else.}
+{5030}{}{Bye.}
+{6000}{}{Well, everybody who wanted help, and we reconstructed this main part of city. Now we are proud what we have done there.}
+{6010}{}{Yeah, I see, I want to know something else.}
+{6020}{}{Hmm, okey. Bye.}
+{7000}{}{ }
+{7010}{}{Who are you?}
+{7020}{}{What is this place?}
+{7030}{}{Why are there so many people?}
+{7040}{}{What happened here?}
+{7050}{}{Nothing, bye.}
+{8000}{}{Actually, yes I have. I need you to bring this suitcase to my friend in Minsk. His name is Vlesam.}
+{8010}{}{Okey, I will do it.}
+{8020}{}{I have more questions.}
+{8030}{}{No, do it by yourself.}
+{9000}{}{Okay, so you'll find him in Minsk near electric station.}
+{9010}{}{I have more questions...}
+{10000}{}{That's great. About your reward? Hmm... Here, take this. (He gives you a bag with caps and an metal armor)}
+{10010}{}{I wanted to ask you something else...}
+{10020}{}{Good, thanks!}
+

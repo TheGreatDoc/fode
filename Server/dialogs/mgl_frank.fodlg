@@ -1,0 +1,132 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+5 2030 #
+8 2040 D _var p mgl_Frank = 2 #
+7 2050 D _var p mgl_Frank = 0 R _var p mgl_Frank = 1 #
+0 2060 D _var p mgl_Frank } 1 #
+10 2070 D _var p mgl_Frank = 3 D _var p mgl_meat_sD = 2 D _var p mgl_meat_aD = 2 D _var p mgl_meat_C = 2 D _var p mgl_meat_F = 2 D _var p mgl_meat_M = 2 D _var p mgl_meat_A = 2 R _var p mgl_Frank = 4 R _param p ST_EXPERIENCE + 2000 @
+3 3000 None 0 #
+2 3010 @
+4 4000 None 0 #
+2 4010 @
+5 5000 None 0 #
+6 5010 @
+6 6000 None 0 #
+2 6010 @
+7 7000 None 0 #
+8 7010 @
+8 8000 None 0 #
+9 8010 R _var p mgl_Frank = 3 R _var p mgl_meat_sD = 1 R _var p mgl_meat_aD = 1 R _var p mgl_meat_C = 1 R _var p mgl_meat_F = 1 R _var p mgl_meat_M = 1 R _var p mgl_meat_A = 1 #
+0 8020 R _var p mgl_Frank = 2 @
+9 9000 None 0 #
+0 9010 @
+10 10000 None 0 #
+0 10010 &
+
+[engl]
+{100}{}{Frank}
+{200}{}{You see Frank.}
+{210}{}{You see Frank, MGL butcher.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hm ?}
+{2010}{}{Hello, what are you doing here ?}
+{2020}{}{It seems you have lot of work here.}
+{2030}{}{What do you thing about people here and about their work ?}
+{2040}{}{Do you still need help ?}
+{2050}{}{Bye}
+{2060}{}{bye}
+{2070}{}{Ok meat distributed.*** make it give 2 000 caps***}
+{3000}{}{Are you blind ? Just look around me, what you ca see ? knives, saws, blood everywhere, meat. I'm butcher, My name is Frank.}
+{3010}{}{Of course sorry. I want to ask you something else.}
+{4000}{}{Yes, Those beasts down there have great appetite i tell you. It's about 1 brahmin per day, minus best piecies of meat what i'm sending to kitchen up there.}
+{4010}{}{Tell me more}
+{5000}{}{What i think ? Well I have lot of work to do always, but they are paying well and i can live here for free, good trade in my opinion. And about what they are doing here ? Heh some weird stuff i tell yea, playing with most dangerous beasts, i wonder nothing escaped yet.}
+{5010}{}{and what you do you think about their tests on humans ?}
+{6000}{}{I think it's not so bad, they are testing only some medications and drugs, as far as i know.}
+{6010}{}{I want to talk about something else.}
+{7000}{}{Wait. I could have some job for you.}
+{7010}{}{yes ?}
+{8000}{}{I have a lot of work here and i need to get this pile of meat down to laboratories at level 2, do you think you could help me ?}
+{8010}{}{Ok i will help you, tell me more.*** make it give 30 piecies of meat***}
+{8020}{}{Sorry not now.}
+{9000}{}{here take this 30 pieces of meat. Go to level 2 and give 3 piecies to laboratory with small deathclaws, 7 piecies to laboratory with adult deathclaws, 7 piecies to laboratory with centaurs, 3 piecies to laboratory with floaters and 5 piccies to laboratory with molerats and aliens.}
+{9010}{}{Uh 3 small deathclaws 7 adult deathclaws, 7 centaurs, 3 floaters, 5 molerats, 5 aliens ok i think i have it ok.}
+{10000}{}{good job my friend. Here take this.}
+{10010}{}{Thanks, bye.}
+
+[pols]
+{100}{}{Frank}
+{200}{}{You see Frank.}
+{210}{}{You see Frank, MGL butcher.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hm ?}
+{2010}{}{Hello, what are you doing here ?}
+{2020}{}{It seems you have lot of work here.}
+{2030}{}{What do you thing about people here and about their work ?}
+{2040}{}{Do you still need help ?}
+{2050}{}{Bye}
+{2060}{}{bye}
+{2070}{}{Ok meat distributed.*** make it give 2 000 caps***}
+{3000}{}{Are you blind ? Just look around me, what you ca see ? knives, saws, blood everywhere, meat. I'm butcher, My name is Frank.}
+{3010}{}{Of course sorry. I want to ask you something else.}
+{4000}{}{Yes, Those beasts down there have great appetite i tell you. It's about 1 brahmin per day, minus best piecies of meat what i'm sending to kitchen up there.}
+{4010}{}{Tell me more}
+{5000}{}{What i think ? Well I have lot of work to do always, but they are paying well and i can live here for free, good trade in my opinion. And about what they are doing here ? Heh some weird stuff i tell yea, playing with most dangerous beasts, i wonder nothing escaped yet.}
+{5010}{}{and what you do you think about their tests on humans ?}
+{6000}{}{I think it's not so bad, they are testing only some medications and drugs, as far as i know.}
+{6010}{}{I want to talk about something else.}
+{7000}{}{Wait. I could have some job for you.}
+{7010}{}{yes ?}
+{8000}{}{I have a lot of work here and i need to get this pile of meat down to laboratories at level 2, do you think you could help me ?}
+{8010}{}{Ok i will help you, tell me more.*** make it give 30 piecies of meat***}
+{8020}{}{Sorry not now.}
+{9000}{}{here take this 30 pieces of meat. Go to level 2 and give 3 piecies to laboratory with small deathclaws, 7 piecies to laboratory with adult deathclaws, 7 piecies to laboratory with centaurs, 3 piecies to laboratory with floaters and 5 piccies to laboratory with molerats and aliens.}
+{9010}{}{Uh 3 small deathclaws 7 adult deathclaws, 7 centaurs, 3 floaters, 5 molerats, 5 aliens ok i think i have it ok.}
+{10000}{}{good job my friend. Here take this.}
+{10010}{}{Thanks, bye.}
+
+[russ]
+{100}{}{Frank}
+{200}{}{You see Frank.}
+{210}{}{You see Frank, MGL butcher.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Hm ?}
+{2010}{}{Hello, what are you doing here ?}
+{2020}{}{It seems you have lot of work here.}
+{2030}{}{What do you thing about people here and about their work ?}
+{2040}{}{Do you still need help ?}
+{2050}{}{Bye}
+{2060}{}{bye}
+{2070}{}{Ok meat distributed.*** make it give 2 000 caps***}
+{3000}{}{Are you blind ? Just look around me, what you ca see ? knives, saws, blood everywhere, meat. I'm butcher, My name is Frank.}
+{3010}{}{Of course sorry. I want to ask you something else.}
+{4000}{}{Yes, Those beasts down there have great appetite i tell you. It's about 1 brahmin per day, minus best piecies of meat what i'm sending to kitchen up there.}
+{4010}{}{Tell me more}
+{5000}{}{What i think ? Well I have lot of work to do always, but they are paying well and i can live here for free, good trade in my opinion. And about what they are doing here ? Heh some weird stuff i tell yea, playing with most dangerous beasts, i wonder nothing escaped yet.}
+{5010}{}{and what you do you think about their tests on humans ?}
+{6000}{}{I think it's not so bad, they are testing only some medications and drugs, as far as i know.}
+{6010}{}{I want to talk about something else.}
+{7000}{}{Wait. I could have some job for you.}
+{7010}{}{yes ?}
+{8000}{}{I have a lot of work here and i need to get this pile of meat down to laboratories at level 2, do you think you could help me ?}
+{8010}{}{Ok i will help you, tell me more.*** make it give 30 piecies of meat***}
+{8020}{}{Sorry not now.}
+{9000}{}{here take this 30 pieces of meat. Go to level 2 and give 3 piecies to laboratory with small deathclaws, 7 piecies to laboratory with adult deathclaws, 7 piecies to laboratory with centaurs, 3 piecies to laboratory with floaters and 5 piccies to laboratory with molerats and aliens.}
+{9010}{}{Uh 3 small deathclaws 7 adult deathclaws, 7 centaurs, 3 floaters, 5 molerats, 5 aliens ok i think i have it ok.}
+{10000}{}{good job my friend. Here take this.}
+{10010}{}{Thanks, bye.}
+

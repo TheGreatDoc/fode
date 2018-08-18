@@ -1,0 +1,38 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+2 2010 R _item p PID_BOTTLE_CAPS + 500 &
+
+[pols]
+{100}{}{Kpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Dobra robota przyjacielu. Dzieki takim ja ty zwykli ludzie moga chodzic spokojnie po pustkowiach. Oby tak dalej! ...Aha prawie bym zapomnial. Tu masz swoje wynagordzenie za pomoc w ujeciu poszukiwanego.
+Jeszcze raz dzieki i powodzenia przy nastepnych lowach.}
+{2010}{}{Dzieki kapitanie.}
+
+[engl]
+{100}{}{Cpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Przyjdz kiedys indziej, nie mam czasu teraz.}
+{2010}{}{Dzieki kapitanie.}
+
+[russ]
+{100}{}{Cpt. Ambler}
+{110}{}{man40.png}
+{1000}{}{Predialogue installations}
+{1010}{}{dialog on head}
+{2000}{}{Przyjdz kiedys indziej, nie mam czasu teraz.}
+{2010}{}{Dzieki kapitanie.}
+

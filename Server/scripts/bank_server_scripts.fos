@@ -1,0 +1,525 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "prefixes.fos"
+#include "_npc_pids.fos"
+
+#define TAX 0.1
+#define NPC_BANK_DIALOG	(40001)
+
+bool ServerCanMakaTransfer(Critter& player)
+{
+	Critter@[] cr;
+	player.GetCritters(true,FIND_LIFE|FIND_ONLY_NPC,cr);
+	for(uint i=0; i<cr.length();i++)
+		{
+			if(cr[i].StatBase[ST_DIALOG_ID]==NPC_BANK_DIALOG)
+			{
+				player.ParamBase[PLAYER_SEE_BANKER]=1;
+				return true;
+			}
+		}
+	player.Say(SAY_NETMSG,"Find Banker");
+	player.ParamBase[PLAYER_SEE_BANKER]=0;
+	return false;
+}
+
+void ServerShowBankScreen(Critter& player, Critter@ npc)
+{
+	player.RunClientScript("client_screen_bank@ShowBankScreen",0,0,0,null,null);
+}
+
+bool CheckIfDEV(Critter& player)
+{
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && PREFIXES[i][1]=="DEV")
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+bool CheckIfGM(Critter& player)
+{
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && (PREFIXES[i][1]=="DEV" || PREFIXES[i][1]=="GM" ))
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+void unsafe_set_see_banker(Critter& cr, int, int, int, string@, int[]@)
+{
+	ServerCanMakaTransfer(cr);
+	return;
+}
+
+void unsafe_show_exchange_rates(Critter& cr, int, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000523);
+	int[]course_red={0};
+	int[]course_blue={0};
+	if(IsAnyData("RED")) GetAnyData("RED",course_red);
+	if(IsAnyData("BLUE")) GetAnyData("BLUE",course_blue);
+	if(course_red[0]==0) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000524);
+	else cr.Say(SAY_NETMSG,"1 REF bill = "+course_red[0]+" caps.");
+	if(course_blue[0]==0) cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000525);
+	else cr.Say(SAY_NETMSG,"1 NEC bill = "+course_blue[0]+" caps.");
+}
+
+//deposit, withdraw
+void unsafe_withdraw_caps(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money <= 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000526);
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_CAPS])
+	{
+		cr.ParamBase[PLAYER_BANK_CAPS]-=money;
+		cr.AddItem(PID_BOTTLE_CAPS,money);
+		cr.Say(SAY_NETMSG,"Withdrawed "+money+" caps.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000527);
+	}
+}
+
+void unsafe_deposit_caps(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money <= 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000528);
+	}
+	else if(money <= int(cr.CountItem(PID_BOTTLE_CAPS)))
+	{
+		cr.ParamBase[PLAYER_BANK_CAPS]+=money;
+		cr.DeleteItem(PID_BOTTLE_CAPS,money);
+		cr.Say(SAY_NETMSG,"Deposited "+money+" caps.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000527);
+	}
+}
+
+void unsafe_withdraw_red(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money <= 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000526);
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_RED])
+	{
+		cr.ParamBase[PLAYER_BANK_RED]-=money;
+		cr.AddItem(PID_RED, money);
+		cr.Say(SAY_NETMSG,"Withdrawed "+money+" REF bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000529);
+	}
+}
+
+void unsafe_deposit_red(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000528);
+	}
+	else if(money <= int(cr.CountItem(PID_RED)))
+	{
+		cr.ParamBase[PLAYER_BANK_RED]+=money;
+		cr.DeleteItem(PID_RED,money);
+		cr.Say(SAY_NETMSG,"Deposited "+money+" REF bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000529);
+	}
+}
+
+void unsafe_withdraw_blue(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000526);
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_BLUE])
+	{
+		cr.ParamBase[PLAYER_BANK_BLUE]-=money;
+		cr.AddItem(PID_BLUE, money);
+		cr.Say(SAY_NETMSG,"Withdrawed "+money+" NEC bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000530);
+	}
+}
+
+void unsafe_deposit_blue(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000528);
+	}
+	else if(money <= int(cr.CountItem(PID_BLUE)))
+	{
+		cr.ParamBase[PLAYER_BANK_BLUE]+=money;
+		cr.DeleteItem(PID_BLUE,money);
+		cr.Say(SAY_NETMSG,"Deposited "+money+" NEC bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000530);
+	}
+}
+
+//transfer
+void unsafe_transfer_caps(Critter& cr, int money, int, int, string@ player_name, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(@player_name==null)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000531);
+		return;
+	}
+	
+	Critter @tocr=GetPlayer(player_name);
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000532);
+	}
+	else if(@tocr==null)
+	{
+		cr.Say(SAY_NETMSG,"Player "+player_name+" is not online.");
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_CAPS])
+	{
+		cr.ParamBase[PLAYER_BANK_CAPS]-=money;
+		tocr.ParamBase[PLAYER_BANK_CAPS]+=money;
+		cr.Say(SAY_NETMSG,"Transfered "+money+" caps to "+player_name+".");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000527);
+	}
+}
+
+void unsafe_transfer_red(Critter& cr, int money, int, int, string@ player_name, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(@player_name==null)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000531);
+		return;
+	}
+	
+	Critter @tocr=GetPlayer(player_name);
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000532);
+	}
+	else if(@tocr==null)
+	{
+		cr.Say(SAY_NETMSG,"Player "+player_name+" is not online.");
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_RED])
+	{
+		cr.ParamBase[PLAYER_BANK_RED]-=money;
+		tocr.ParamBase[PLAYER_BANK_RED]+=money;
+		cr.Say(SAY_NETMSG,"Transfered "+money+" ULS bills to "+player_name+".");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000529);
+	}
+}
+
+void unsafe_transfer_blue(Critter& cr,  int money, int, int, string@ player_name, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(@player_name==null)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000531);
+		return;
+	}
+	
+	Critter @tocr=GetPlayer(player_name);
+	if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000532);
+	}
+	else if(@tocr==null)
+	{
+		cr.Say(SAY_NETMSG,"Player "+player_name+" is not online.");
+	}
+	else if(money <= cr.ParamBase[PLAYER_BANK_BLUE])
+	{
+		cr.ParamBase[PLAYER_BANK_BLUE]-=money;
+		tocr.ParamBase[PLAYER_BANK_BLUE]+=money;
+		cr.Say(SAY_NETMSG,"Transfered "+money+" NEC bills to "+player_name+".");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000530);
+	}
+}
+
+//wymiana waluty
+void unsafe_exchange_caps_red_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("RED"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000524);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_CAPS])
+	{
+		int[]course;
+		int result;
+		int rest;
+		GetAnyData("RED",course);
+		result=money/course[0];
+		rest=money-(result*course[0]);
+		result=result*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_RED]+=result;
+		cr.ParamBase[PLAYER_BANK_CAPS]+=rest;
+		cr.ParamBase[PLAYER_BANK_CAPS]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+(money-rest)+" caps for "+result+" REF bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000527);
+	}
+}
+
+void unsafe_exchange_caps_blue_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("BLUE"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000525);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_CAPS])
+	{
+		int[]course;
+		int result;
+		int rest;
+		GetAnyData("BLUE",course);
+		result=money/course[0];
+		rest=money-(result*course[0]);
+		result=result*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_BLUE]+=result;
+		cr.ParamBase[PLAYER_BANK_CAPS]+=rest;
+		cr.ParamBase[PLAYER_BANK_CAPS]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+(money-rest)+" caps for "+result+" NEC bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000527);
+	}
+}
+
+void unsafe_exchange_red_caps_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("RED"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000524);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_RED])
+	{
+		int[]course;
+		int result;
+		GetAnyData("RED",course);
+		result=money*course[0]*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_CAPS]+=result;
+		cr.ParamBase[PLAYER_BANK_RED]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+money+" REF bills for "+result+" caps.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000529);
+	}	
+}
+
+void unsafe_exchange_blue_caps_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("BLUE"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000525);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_BLUE])
+	{
+		int[]course;
+		int result;
+		GetAnyData("BLUE",course);
+		result=money*course[0]*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_CAPS]+=result;
+		cr.ParamBase[PLAYER_BANK_BLUE]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+money+" NEC bills for "+result+" caps.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000530);
+	}
+}
+
+void unsafe_exchange_red_blue_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("RED"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000524);
+	}
+	else if(!IsAnyData("BLUE"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000525);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_RED])
+	{
+		int[]course_red;
+		int[]course_blue;
+		int result;
+		int rest;
+		GetAnyData("RED",course_red);
+		GetAnyData("BLUE",course_blue);	
+		result=money*course_red[0]/course_blue[0];
+		rest=(money*course_red[0]-result*course_blue[0])/course_red[0];
+		result=result*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_BLUE]+=result;
+		cr.ParamBase[PLAYER_BANK_RED]+=rest;
+		cr.ParamBase[PLAYER_BANK_RED]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+(money-rest)+" REF bills for "+result+" NEC bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000529);
+	}
+}
+
+void unsafe_exchange_blue_red_bank(Critter& cr, int money, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!IsAnyData("RED"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000524);
+	}
+	else if(!IsAnyData("BLUE"))
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000525);
+	}
+	else if(money < 0)
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000533);
+	}
+	else if(money<=cr.ParamBase[PLAYER_BANK_BLUE])
+	{
+		int[]course_red;
+		int[]course_blue;
+		int result;
+		int rest;
+		GetAnyData("RED",course_red);
+		GetAnyData("BLUE",course_blue);	
+		result=(money*course_blue[0])/(course_red[0]*5);
+		rest=(money*course_blue[0]-result*course_red[0]) / course_blue[0];
+		result=result*(1-TAX);
+		cr.ParamBase[PLAYER_BANK_RED]+=result;
+		cr.ParamBase[PLAYER_BANK_BLUE]+=rest;
+		cr.ParamBase[PLAYER_BANK_BLUE]-=money;
+		cr.Say(SAY_NETMSG,"Exchanged "+(money-rest)+" NEC bills for "+result+" REF bills.");
+	}
+	else
+	{
+		cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,3000000530);
+	}
+}
+
+//course management
+void unsafe_set_red_exchange_rate(Critter& cr, int new_course, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!CheckIfGM(cr)) return;
+	if(new_course<0)
+	{
+		cr.Say(SAY_NETMSG,"Exchange rate cannot be less than 0.");
+		return;
+	}
+	int[]course={new_course};
+	SetAnyData("RED",course);
+	if(new_course==0) cr.Say(SAY_NETMSG,"Exchange rate for REF money is now unset.");
+	else cr.Say(SAY_NETMSG,"Exchange rate set to "+new_course+" caps for 1 REF bill.");
+}
+
+void unsafe_set_blue_exchange_rate(Critter& cr, int new_course, int, int, string@, int[]@)
+{
+	if(!ServerCanMakaTransfer(cr)) return;
+	if(!CheckIfGM(cr)) return;
+	if(new_course<0)
+	{
+		cr.Say(SAY_NETMSG,"Exchange rate cannot be less than 0.");
+		return;
+	}
+	int[]course={new_course};
+	SetAnyData("BLUE",course);
+	if(new_course==0) cr.Say(SAY_NETMSG,"Exchange rate for NEC money is now unset.");
+	else cr.Say(SAY_NETMSG,"Exchange rate set to "+new_course+" caps for 1 NEC bill.");
+}
+
+void _NpcBankerInit(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_NO_PUSH] =1;
+	npc.ShowCritterDist1=4;
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"BankerEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_HIDE_CRITTER_1,"BankerEventShowCritter");
+}
+
+void BankerEventShowCritter(Critter &cr, Critter &cr2)
+{
+	if(!cr2.IsNpc())
+	{
+		ServerCanMakaTransfer(cr2);
+	}
+}

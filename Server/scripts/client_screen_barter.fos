@@ -1,0 +1,131 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+IGUIElementCheckBoxOpt@[] BarterState;
+IGUIElementCheckBoxOpt@[] BarterStateOpponent;
+ScreenBarter@ screenBarter;
+
+class ScreenBarter : IGUIScreenCallbackShow
+{
+void OnShow(int , int , int )
+	{
+	__InventoryItemBarter=0;
+	__InventoryItemBarterOpponent=0;
+	for(uint i=0; i<BarterStateOpponent.length(); i++)
+		{
+		BarterState[i].setState(false);
+		BarterStateOpponent[i].setState(false);
+		}
+	RefreshItemsCollection(ITEMS_BARTER);	
+	RefreshItemsCollection(ITEMS_BARTER_OPPONENT);	
+	}
+}
+
+
+
+
+void ChangeBarter(uint id, bool type)
+{
+
+if (type)
+	{
+	if (!BarterState[id].IsChecked()) {__InventoryItemBarter=0;}
+	else
+		{    switch( id )
+            {
+            case 0:
+			__InventoryItemBarter=1;
+                break;
+            case 1:
+			__InventoryItemBarter=3;
+                break;
+            case 2:
+			__InventoryItemBarter=4;
+                break;
+            case 3:
+			__InventoryItemBarter=2;
+                break;
+            case 4:
+			__InventoryItemBarter=5;
+                break;
+			}
+			for(uint i=0; i<BarterState.length(); i++)
+			{
+			if (id!=i)BarterState[i].setState(false);
+			}
+		}
+	}
+if (!type)
+	{
+	if (!BarterStateOpponent[id].IsChecked()) {__InventoryItemBarterOpponent=0;}
+	else 
+		{
+             switch( id )
+            {
+            case 0:
+			__InventoryItemBarterOpponent=1;
+                break;
+            case 1:
+			__InventoryItemBarterOpponent=3;
+                break;
+            case 2:
+			__InventoryItemBarterOpponent=4;
+                break;
+            case 3:
+			__InventoryItemBarterOpponent=2;
+                break;
+            case 4:
+			__InventoryItemBarterOpponent=5;
+                break;
+			}
+			for(uint i=0; i<BarterStateOpponent.length(); i++)
+			{
+			if (id!=i)BarterStateOpponent[i].setState(false);
+			}
+		}
+	}
+RefreshItemsCollection(ITEMS_BARTER);	
+RefreshItemsCollection(ITEMS_BARTER_OPPONENT);		
+}
+
+class BarterButtons : IGUIElementCallbackMouseClick
+{
+	uint id;
+	bool type;
+	BarterButtons(uint id, bool type)
+	{
+		this.id=id;
+		this.type = type;
+	}
+	
+     void OnMouseClick(int mm, int click)
+    {
+
+			ChangeBarter(id,type);
+	}
+}
+
+void InitBarterScreen()
+{
+	@screenBarter = ScreenBarter();
+	SetBarterCallbackShow(screenBarter);
+	BarterState.resize(5);
+	BarterStateOpponent.resize(5);
+	for(uint i=0; i<BarterState.length(); i++)
+	{
+	BarterButtons check(i,true);
+	@BarterState[i]=GUI_AddCheckBox (CLIENT_SCREEN_BARTER)
+	.CallbackMouseClick(check)
+	.Position("BarterButton" + (i))
+	.CheckedPic(GetIfaceIniStr( "BarterButtonPic" + (i)));
+	
+	BarterButtons check1(i,false);
+	@BarterStateOpponent[i]=GUI_AddCheckBox (CLIENT_SCREEN_BARTER)
+	.CallbackMouseClick(check1)
+	.Position("BarterButtonOpponent" + (i))
+	.CheckedPic(GetIfaceIniStr( "BarterButtonPic" + (i)));
+	}
+}
+

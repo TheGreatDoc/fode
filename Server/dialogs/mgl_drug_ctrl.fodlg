@@ -1,0 +1,93 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p mgl_soul_ex_machina = 3 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+4 3010 @
+4 4000 None 0 #
+5 4010 R _var p mgl_soul_ex_machina = 4 R _param p ST_EXPERIENCE + 5000 @
+5 5000 None 0 #
+0 5010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Drugs control
+current: Antibiotics Lx-8            1,23    u/h
+             Exircin-15                     1,5     u/h
+             AcIL5-III                       0,2     u/h
+             Mcit - 8                         NO     u/h
+             BM gel                          0,23   u/h
+             
+}
+{2010}{}{Set Exircin-15 to 4,5 u/h}
+{3000}{}{Acess denied.
+Unathorized access detected.
+. . . . . . . . . . This is D.I. what do you think you are doing ?!}
+{3010}{}{oops.}
+{4000}{}{Speak, explain me what are you trying here, otherwise i will contact Harris immediately.
+Well ?}
+{4010}{}{. . .  John Talan asked me for favor, asked me to end this, this senseless torturering, you call "research". And i agree with him this is something what has to be stopped. And that's what i'm doing right now.}
+{5000}{}{. . . . . . . . . . . . . . . . . . . Acess Granted.
+Exircin-15 1,5 u/h =>4,5 u/h  executing. . . . . . . . . . . . . . . .
+Exircin-15 current dose 4,5 u/h}
+{5010}{}{Uh.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Drugs control
+current: Antibiotics Lx-8            1,23    u/h
+             Exircin-15                     1,5     u/h
+             AcIL5-III                       0,2     u/h
+             Mcit - 8                         NO     u/h
+             BM gel                          0,23   u/h
+             
+}
+{2010}{}{Set Exircin-15 to 4,5 u/h}
+{3000}{}{Acess denied.
+Unathorized access detected.
+. . . . . . . . . . This is D.I. what do you think you are doing ?!}
+{3010}{}{oops.}
+{4000}{}{Speak, explain me what are you trying here, otherwise i will contact Harris immidietaly.
+Well ?}
+{4010}{}{. . .  John Talan asked me for favor, asked me to end this, this senseless torturering, you call "research". And i agree with him this is something what has to be stopped. And that's what i'm doing right now.}
+{5000}{}{. . . . . . . . . . . . . . . . . . . Acess Granted.
+Exircin-15 1,5 u/h =>4,5 u/h  executing. . . . . . . . . . . . . . . .
+Exircin-15 current dose 4,5 u/h}
+{5010}{}{Uh.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Drugs control
+current: Antibiotics Lx-8            1,23    u/h
+             Exircin-15                     1,5     u/h
+             AcIL5-III                       0,2     u/h
+             Mcit - 8                         NO     u/h
+             BM gel                          0,23   u/h
+             
+}
+{2010}{}{Set Exircin-15 to 4,5 u/h}
+{3000}{}{Acess denied.
+Unathorized access detected.
+. . . . . . . . . . This is D.I. what do you think you are doing ?!}
+{3010}{}{oops.}
+{4000}{}{Speak, explain me what are you trying here, otherwise i will contact Harris immidietaly.
+Well ?}
+{4010}{}{. . .  John Talan asked me for favor, asked me to end this, this senseless torturering, you call "research". And i agree with him this is something what has to be stopped. And that's what i'm doing right now.}
+{5000}{}{. . . . . . . . . . . . . . . . . . . Acess Granted.
+Exircin-15 1,5 u/h =>4,5 u/h  executing. . . . . . . . . . . . . . . .
+Exircin-15 current dose 4,5 u/h}
+{5010}{}{Uh.}

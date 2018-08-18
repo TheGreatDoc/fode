@@ -1,0 +1,89 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com 
+{100}{}{Vidíš Camerona, èlena tvého kmene.}
+{101}{}{Vidíš Camerona.}
+{102}{}{Vidíš svalnatého mladíka. Vzduch okolo nìj se pøímo tetelí sebevìdomím, které z nìj vyzaøuje.}
+{103}{}{Zdravím tì, }
+{104}{}{. Mám tu èest bıt tvou koneènou zkouškou. Chceš-li pokraèovat v cestì, musíš mì nejdøív porazit v boji beze zbranì. Mùeme zaèít?}
+{105}{}{Já mít otázky.}
+{106}{}{JO! Boj, boj, boj!}
+{107}{}{Ne, já se muset nejdøív pøipravit.}
+{108}{}{Poèkej. Nejdøív se tì chci na nìco zeptat.}
+{109}{}{Jasná páka, tygøe. Zatancujeme si.}
+{110}{}{Potøebuju trochu èasu na pøípravu.}
+{111}{}{A co chceš vìdìt?}
+{112}{}{Proè my spolu bojovat?}
+{113}{}{Bıt to boj na smrt?}
+{114}{}{My bojovat beze zbraní?}
+{115}{}{Oukej, my teï bojovat.}
+{116}{}{Já se muset nejdøív pøipravit.}
+{117}{}{Proè spolu máme bojovat?}
+{118}{}{Má to bıt boj na ivot a na smrt?}
+{119}{}{Øíkáš, e budeme bojovat beze zbraní?}
+{120}{}{Jdeme na to. A u to máme za sebou.}
+{121}{}{Potøebuju trochu èasu na pøípravu.}
+{122}{}{Cesta Vyvoleného nebude ádná procházka rùovım sadem, }
+{123}{}{. Bìhem svého putování budeš muset èelit mnoha zkouškám a mezi ty nejtìší patøí støetnutí s jinımi lidmi. Mohou nastat situace, kdy ti diplomacie a takt nebudou k nièemu. A proto musí bıt silné i tvoje ruce. Tahle zkouška tì má pøipravit na to, dokázat se postavit svému protivníkovi, pohlédnout mu do oèí a dát mu najevo, e kdy budeš muset, zabiješ ho.}
+{124}{}{Oukej.}
+{125}{}{Rozumím.}
+{126}{}{Ne, to ne. Musíš mì jen porazit. A to bude nutné, vèas boj ukonèíme.}
+{127}{}{Já rozumìt.}
+{128}{}{V poøádku.}
+{129}{}{Ano. Zbraò nutí èlovìka udrovat si odstup od svého protivníka a i samotnı boj odosobòuje. Kdy s nìkım bojuješ jen za pomoci svıch rukou a nohou, tak oba vnímáte bolest, kterou zpùsobujete i pøijímáte. Boj se tak stává velmi osobním a reálnım. Tuhle dùleitou lekci si zapamatuj, }
+{130}{}{.}
+{131}{}{Já rozumìt.}
+{132}{}{Rozumím.}
+{133}{}{Vıteènì. Zaèneme tedy?}
+{134}{}{Vdy pøipraven.}
+{135}{}{Ne, já se muset nejdøív pøichystat.}
+{136}{}{Mùeme zaèít.}
+{137}{}{Ne, ještì potøebuju trochu èasu na pøípravu.}
+{138}{}{Dobøe tedy. A se pøipravíš, vra se sem a dej mi vìdìt.}
+{139}{}{Mùeme zaèít s tvou zkouškou, }
+{140}{}{?}
+{141}{}{Já u chtít bojovat.}
+{142}{}{Ještì ne.}
+{143}{}{U se nemùu doèkat.}
+{144}{}{Ne. Dej mi ještì minutku.}
+{145}{}{Skvìlé! Tvojí vıstroj odloíme do truhly ve vedlejší místnosti. Po boji si jí mùeš zase vzít. A teï se do toho dáme! A ti štìstí pøeje }
+{146}{}{.}
+{147}{}{Rád tì zase vidím, Vyvolenı. Mùu ti nìjak pomoci?}
+{148}{}{Já chtít znovu do kostel.}
+{149}{}{Chceš zase bojovat? Bojíš, bojíš?}
+{150}{}{Jen tebe pozdravit. Já hned zase jít.}
+{151}{}{Chci znovu navštívit chrám.}
+{152}{}{Nazdar, Camerone. Chceš si zase zatancovat?}
+{153}{}{Jen mì napadlo, e se tu zastavím a pozdravím tì. Tak zatím...}
+{154}{}{Dej se cestou po mé levici, Vyvolenı. Vede do chrámu. A tím jeskynním vstupem za mnou se mùeš vrátit zpátky do poslední komnaty chrámu.}
+{155}{}{Dobøe, já jít.}
+{156}{}{Bezva. Díky}
+{157}{}{Díky za laskavou nabídku, Vyvolenı, ale radìji ne. Z toho našeho posledního utkání mám poøád ještì jizvy a bude trvat dost dlouho, ne se mi zahojí všechna zranìní!}
+{158}{}{Sbohem, Camerone.}
+{159}{}{Hahaha! Pøeju dobrı den, Camerone.}
+{160}{}{Vyvolenı! Pøísahám, e tì zabiju!}
+{161}{}{Jsem poraen! To u se mi nestalo, ani nepamatuju! To byl skvìlı boj. Opravdu si zaslouíš nosit své jméno, Vyvolenı.}
+{165}{}{Nesouhlasím s tebou. Myslím, e kadı problém se dá vyøešit pokojnou cestou.}
+{166}{}{Moná máš pravdu, }
+{167}{}{, ale v naší momentální situaci to neplatí. Jestli chceš uspìt ve zkoušce, musíš mì porazit.}
+{168}{}{Podívej, já neznám všechny tvoje pøednosti a slabiny a ty zas neznáš ty moje. Vdycky se mùe pøihodit nìjaká nehoda. Co kdy jeden z nás v boji nechtìnì zabije toho druhého? Radìji toho necháme a nebudeme to riskovat, ano?}
+{169}{}{Hmm... chápu jak to myslíš. Nechtìl bych mít na svìdomí tvoji smrt. Zvláš kdy jediné, o co mi jde, je vyzkoušet tvojí odvahu. Dobøe tedy -- mùeš projít, Vyvolenı.}
+{170}{}{Hmm... chápu, jak to myslíš. Nicménì ten boj musí probìhnout. Ale neboj, dám pozor, abych tì pøíliš neporanil.}
+{171}{}{Dìkuju! Uvidíme se ve vesnici.}
+{172}{}{Rozumím.}
+
+{200}{}{Moc si z toho našeho posledního souboje nepamatuju, Vyvolenı. Asi se nikdy nepøestanu divit, jak jsem s tebou mohl prohrát.}
+{201}{}{Ty máš opravdu hbitı jazyk, Vyvolenı. Tvoje umìní zacházet se slovy ti pomùe otevøít hodnì dveøí.}
+
+{300}{}{Pøeji ti mnoho štìstí, Vyvolenı. A tì na tvé cestì provází pøízeò bohù.}
+{301}{}{Díky, Camerone.}
+
+{302}{}{Nemìl bych ti to øíkat, Vyvolenı, ale všiml jsem si, e postrádáš hlubší bojové znalosti. A mì moje zkušenosti nauèily, e v ivotì nemùeš vdycky spoléhat na svùj dùvtip. A slova tì taky pokadé neochrání. Pokud budeš chtít, nauèím tì pár trikù, které by se ti na tvé pouti mohly hodit.}
+{303}{}{Ano, ty uèit mì.}
+{304}{}{Ne, já to nepotøebovat.}
+{305}{}{Ano. Nauè mì, prosím, všechno, co umíš.}
+{306}{}{Díky. Ale myslím, e se o sebe dokáu postarat docela dobøe.}
+{307}{}{Šlo ti to dobøe, Vyvolenı. Myslím, e teï u se o sebe dokáeš v boji postarat. Ale zapamatuj si, e i ten nejlepší bojovník nìkdy prohraje. A e není ádná hanba padnout. Hanbou je zùstat pøíliš dlouho leet.}
+{308}{}{Dìkuju, Camerone.}
+{309}{}{Díky, Camerone. Zapamatuju si tvoje slova.}
+{310}{}{Jak myslíš. Pokud zmìníš názor, najdeš mì tady.}
+{311}{}{Já ti dìkovat, Cameron.}
+{312}{}{Díky za nabídku, Camerone. Budu o tom pøemıšlet.}

@@ -1,0 +1,187 @@
+// Author: Grzegorz "Atom" Jagiella
+// This file is public domain.
+#ifndef __XML_H__
+#define __XML_H__
+
+#include "_macros.fos"
+#pragma bindfunc "void Dummy() -> Xml.dll Dummy"
+
+// utility classes: XmlHandle and XmlIt
+
+shared class XmlHandle
+{
+	XmlHandle(XmlNode@ _node)
+	{
+		@node=_node;
+	}
+
+	XmlHandle(const XmlHandle&in other)
+	{
+		@node=other.node;
+	}
+
+	XmlHandle& opAssign(const XmlHandle&in other)
+	{
+		@node=other.node;
+		return this;
+	}
+
+	XmlHandle@ FirstChild()
+	{
+		if(!valid(node)) return @XmlHandle(null);
+		return @XmlHandle(node.FirstChild());
+	}
+
+	XmlHandle@ FirstChild(string& name)
+	{
+		if(!valid(node)) return @XmlHandle(null);
+		return @XmlHandle(node.FirstChild(name));
+	}
+
+	XmlHandle@ FirstChildElement()
+	{
+		if(!valid(node)) return @XmlHandle(null);
+		return @XmlHandle(node.FirstChildElement());
+	}
+
+	XmlHandle@ FirstChildElement(string& name)
+	{
+		if(!valid(node)) return @XmlHandle(null);
+		return @XmlHandle(node.FirstChildElement(name));
+	}
+
+	XmlHandle@ Child(string& name, int index)
+	{
+		if(valid(node))
+		{
+			int i;
+			XmlNode@ child = node.FirstChild(name);
+			for (	i=0;
+					valid(child) && i<index;
+					@child = child.NextSibling(name))
+			{
+				i++;
+			}
+			return XmlHandle(child);
+		}
+		return XmlHandle(null);
+	}
+
+	XmlHandle@ Child(int index)
+	{
+		if(valid(node))
+		{
+			int i;
+			XmlNode@ child = node.FirstChild();
+			for (	i=0;
+					valid(child) && i<index;
+					@child = child.NextSibling())
+			{
+				i++;
+			}
+			return XmlHandle(child);
+		}
+		return XmlHandle(null);
+	}
+
+	XmlHandle@ ChildElement(string& name, int index)
+	{
+		if(valid(node))
+		{
+			int i;
+			XmlNode@ child = node.FirstChildElement(name);
+			for (	i=0;
+					valid(child) && i<index;
+					@child = child.NextSiblingElement(name))
+			{
+				i++;
+			}
+			return XmlHandle(child);
+		}
+		return XmlHandle(null);
+	}
+
+	XmlHandle@ ChildElement(int index)
+	{
+		if(valid(node))
+		{
+			int i;
+			XmlNode@ child = node.FirstChildElement();
+			for (	i=0;
+					valid(child) && i<index;
+					@child = child.NextSiblingElement())
+			{
+				i++;
+			}
+			return XmlHandle(child);
+		}
+		return XmlHandle(null);
+	}
+
+	XmlNode@ ToNode()
+	{
+		return node;
+	} 
+
+	XmlElement@ ToElement()
+	{
+		return valid(node) ? node.ToElement() : null;
+	}
+
+	XmlText@ ToText()
+	{
+		return valid(node) ? node.ToText() : null;
+	}
+	XmlUnknown@ ToUnknown()
+	{
+		return valid(node) ? node.ToUnknown() : null;
+	}
+
+	bool IsNull()
+	{
+		return !valid(node);
+	}
+
+	private XmlNode@ node;
+};
+
+shared class XmlIt
+{
+	XmlIt(XmlNode@ node, string& name)
+	{
+		if(valid(node)) @n=node.FirstChildElement(name);
+		nname=name;
+	}
+
+	XmlIt& opPreInc()
+	{
+		if(valid(n)) @n=n.NextSiblingElement(nname);
+		return this;
+	}
+
+	XmlIt& opPostInc()
+	{
+		if(valid(n)) @n=n.NextSiblingElement(nname);
+		return this;
+	}
+
+	XmlElement@ v()
+	{
+		return n;
+	}
+
+	XmlElement@ opCom()
+	{
+		return n;
+	}
+
+	bool IsNull()
+	{
+		return !valid(n);
+	}
+
+	private XmlElement@ n;
+	private string nname;
+};
+
+#endif // __XML_H__

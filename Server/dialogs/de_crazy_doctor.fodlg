@@ -1,0 +1,117 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+0 2010 #
+3 2020 D _script dialog@d_IsToHeal 0  #
+4 2030 D _param p DAMAGE_EYE > 0 D or D _param p DAMAGE_RIGHT_ARM > 0 D or D _param p DAMAGE_LEFT_ARM > 0 D or D _param p DAMAGE_RIGHT_LEG > 0 D or D _param p DAMAGE_LEFT_LEG > 0 #
+5 2040 @
+3 3000 None 0 #
+0 3010 #
+0 3020 D _item p PID_BOTTLE_CAPS } 100 R _item p PID_BOTTLE_CAPS - 100 R _script dialog@r_ToHeal 0  @
+4 4000 None 1 #
+0 4010 D _param p DAMAGE_EYE > 0 D _item p PID_BOTTLE_CAPS } 300 R _item p PID_BOTTLE_CAPS - 300 R _param p DAMAGE_EYE = 0 #
+0 4020 D _param p DAMAGE_RIGHT_ARM > 0 D _item p PID_BOTTLE_CAPS } 300 R _item p PID_BOTTLE_CAPS - 300 R _param p DAMAGE_RIGHT_ARM = 0 #
+0 4030 D _param p DAMAGE_LEFT_ARM > 0 D _item p PID_BOTTLE_CAPS } 300 R _item p PID_BOTTLE_CAPS - 300 R _param p DAMAGE_LEFT_ARM = 0 #
+0 4040 D _param p DAMAGE_RIGHT_LEG > 0 D _item p PID_BOTTLE_CAPS } 300 R _item p PID_BOTTLE_CAPS - 300 R _param p DAMAGE_RIGHT_LEG = 0 #
+0 4050 D _param p DAMAGE_LEFT_LEG > 0 D _item p PID_BOTTLE_CAPS } 300 R _item p PID_BOTTLE_CAPS - 300 R _param p DAMAGE_LEFT_LEG = 0 #
+0 4060 @
+5 5000 None 0 #
+0 5010 #
+6 5020 D _param p ST_SLOT_A = 0 D _param p HONOR_POINTS } 3000 D _item p PID_BOTTLE_CAPS } 5000 R _script dialog@r_MakeOperationA 0  #
+6 5030 D _param p ST_SLOT_B = 0 D _param p HONOR_POINTS } 3000 D _item p PID_BOTTLE_CAPS } 5000 R _script dialog@r_MakeOperationB 0  #
+6 5040 D _param p ST_SLOT_C = 0 D _param p HONOR_POINTS } 3000 D _item p PID_BOTTLE_CAPS } 5000 R _script dialog@r_MakeOperationC 0  @
+6 6000 None 0 #
+0 6010 &
+
+[engl]
+{100}{}{Crazy Doctor}
+{1000}{}{Predialogue installations}
+{1010}{}{2}
+{2000}{}{Welcome, welcome, my little pumpkin! What brings you to this humble abode? Health problems? Need some extra fingers amputated? Maybe a liver transplant?@@Well hello there, scrawny one. I've got a special offer for you, just look at this beautiful eyeball... I'd have to get rid of yours first, of coursey. What? Not intersted? Maybe... maybe other, standard procedures? Too bad they bore mo to death.@@IT'S ALIVE, IT'S ALIVE! See this! A ten-legged  rat, look at this beauty! Oh... you in for some more trivial procedures? You make this doctor sad.}
+{2010}{}{Uh, I don't think I need help right now, doc.}
+{2020}{}{I'm hurt.@@Can you heal me?}
+{2030}{}{I need surgical intervention, now!@@I need an operation, doc.@@I need a surgery.}
+{2040}{}{I'd like a surgery that would allow me to use implants. Can you do that?@@I was thinking about some advanced implant surgery.}
+{3000}{}{We'll see, we'll see...100 coins, pronto!Give this poor man of science 100 coins, and we'll get you fixed right away.@@100 coins and we'll get you fixed.}
+{3010}{}{Maybe some other time then.}
+{3020}{}{All right, here's your money.}
+{4000}{}{300 coins upfront for any standard operation ... Now, where should I put my art to use?@@300 coins, 300 coins!@@300 coins then, my precious.}
+{4010}{}{I need my eyes fixed.@@My eyes.@@Fix my eyes, doc.}
+{4020}{}{My right hand needs some patchin' up.@@Right hand, doc.@@Right hand.}
+{4030}{}{Left hand, it's a total mess.@@Left hand needs some stitchin'.@@Left hand.}
+{4040}{}{My right leg's shattered.@@Right Leg...@@Right leg, please.}
+{4050}{}{Left leg, just look at it.@@My left leg.@@Left leg.}
+{4060}{}{THREE hundred? Screw you, weirdo.@@I don't think I really need this right now.@@I've changed my mind.}
+{5000}{}{Splendid! I always love to see people interested in new technology, unfortunately, these little thingies cost. A lot. 5000 coins for each implant, also, take note that some people mite look at you funny after they see my work...}
+{5010}{}{All right, I want that surgery.}
+{5020}{}{I guess I can live without that part... [RED implant slot]}
+{5030}{}{Take your scalpel and cut me already! [GREEN implant slot]}
+{5040}{}{This muscle hasn't seen much use anyway... [BLUE implant slot]}
+{6000}{}{Surgery succeded, patient died, heheh. Oh... don't you worry sweetie, just a little joke we used to have back in the days... Come back If you find yourself missing an eye. Or a limb. Or needing an extra one. Or whatever else.}
+{6010}{}{[Leave.]}
+
+[pols]
+{100}{}{Crazy Doctor}
+{1000}{}{Predialogue installations}
+{1010}{}{2}
+{2000}{}{Czym moge pomoc?@@Co doprowadzilo was do mnie?@@Problemy ze zdrowiem?}
+{2010}{}{Nie, potrzebuje pomocy, doktorze}
+{2020}{}{Jestem ranny.}
+{2030}{}{Potrzebuje chirurgicznej pomocy, i to natychmiast!}
+{2040}{}{Chcialbym prezprowadzic operacje.@@Chcialbym abys wyciol kilka rzeczy z moejgo ciala, abym mogl korzystac z implantow.}
+{3000}{}{Zobaczmy, za 100 kapsli moge cie uleczyc.}
+{3010}{}{Byc moze, innym razem.}
+{3020}{}{Niech bedzie, oto twoje 100 monet.}
+{4000}{}{Kazda operacja kosztuje 300 monet. Jestes zainteresowany?}
+{4010}{}{Oczy.}
+{4020}{}{Prawa reka.}
+{4030}{}{Lewa reka.}
+{4040}{}{Prawa noga.}
+{4050}{}{Lewa noga.}
+{4060}{}{300 monet? Wal sie, Zbyt drogo dla mnie.@@Moze innym razem.}
+{5000}{}{Ciesze sie, ze chcesz skorzystac z nowej technologi, ale wiedz, ze to cholerstow kosztuje kupe forsy. Za kazdy implant inkasuje 5000 kapsli i 3000 honor pointow.}
+{5010}{}{Nie stac mnie.@@Nie jestem wstanie oplacic tej operacji.}
+{5020}{}{Chcialbym rozbudowac pierwszy slot.[RED slot]}
+{5030}{}{Wez ten swoj noz i tnij.[GREEN slot]}
+{5040}{}{Ten miesien moze zastapic implant.[BLUE slot]}
+{6000}{}{Operacja sie powiodla, zapaszam ponownie w razie klopotow.}
+{6010}{}{[EXIT]}
+
+[russ]
+{100}{}{Crazy Doctor}
+{200}{}{Вы видите: Доктор Алан.}
+{200}{}{Вы видите человека в халате доктора.}
+{210}{}{Алан, в отличие от регуляторов и остальных граждан ГУ, вполне терпимо относится ко всем остальным жителям Пустоши. У него всегда можно рассчитывать на квалифицированную медицинскую помощь.}
+{1000}{}{Predialogue installations}
+{1010}{}{2}
+{2000}{}{?le eiao diei?u?@@?ni ddcalei arn ei eil?@@Ddiaeleu ni caidiaule? Niaar au iadrncecnu di radlno.}
+{2010}{}{Iln, eil il iocir arrr dieiuu, aie.}
+{2020}{}{? cnnlert ediaut!}
+{2030}{}{Eil ndlaolnn? ocdodac?lner? dieiuu, aie. C ilelaeliii.}
+{2040}{}{Chcialbym prezprowadzic operacje.@@Chcialbym abys wyciol kilka rzeczy z moejgo ciala, abym mogl korzystac z implantow.}
+{3000}{}{Oe, nle?rn dineindce... Ic?lai nndrriiai ? il acco, 100 eiiln, c aoalnl, ere iialiue@sex@|ce||r?|.}
+{3010}{}{Eicln aunu, a adoaie drc.}
+{3020}{}{Ar, olir eli? onndrcarln. Di doere.}
+{4000}{}{?ni arn alndieicn? Etar? idldroc? aoaln nnicnu 300 eiiln.}
+{4010}{}{Aercr.}
+{4020}{}{Ddrar? doer.}
+{4030}{}{Elar? doer.}
+{4040}{}{Ddrar? iiar.}
+{4050}{}{Elar? iiar.}
+{4060}{}{300 eiiln? Necreie aidiai ae? eli?.}
+{5000}{}{Ciesze sie, ze chcesz skorzystac z nowej technologi, ale wiedz, ze to cholerstow kosztuje kupe forsy. Za kazdy implant inkasuje 5000 kapsli i 3000 honor pointow.}
+{5010}{}{Chcialbym prezprowadzic operacje.@@Chcialbym abys wyciol kilka rzeczy z moejgo ciala, abym mogl korzystac z implantow.}
+{5020}{}{Chcialbym rozbudowac pierwszy slot.[RED slot]}
+{5030}{}{Wez ten swoj noz i tnij.[GREEN slot]}
+{5040}{}{Ten miesien moze zastapic implant.[BLUE slot]}
+{6000}{}{Operacja sie powiodla, zapaszam ponownie w razie klopotow.}
+{6010}{}{exit}
+

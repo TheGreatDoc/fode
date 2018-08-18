@@ -1,0 +1,1394 @@
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used in PIPBOY.C
+#
+# (These MUST match "text message" enumeration on the top of PIPBOY.C)
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+
+#
+# Special holiday dates
+#
+{100}{}{Frohes Neues Jahr!}      # New years
+{101}{}{Schönen Valentinstag!}     # April fools
+{102}{}{Einen schönen Ersten April!}      # April fools
+{103}{}{Frohen Schifftag!}            # Shipping day!
+{104}{}{Einen schönen Unabhängigkeitstag!}    # Independence day
+{105}{}{Frohes Halloween!}           # Halloween
+{106}{}{Ein schönes Erntedankfest!}    # Thanksgiving
+{107}{}{Frohe Weihnachten!}           # X-mas
+
+#
+# System messages
+#
+{200}{}{WEITER}
+{201}{}{ZURÜCK}
+{202}{}{STATUS}
+{203}{}{Keine Aufgabe zu erledigen.}
+{204}{}{TIPS}  # clues gone
+{205}{}{KARTENANSICHT}
+{206}{}{VIDEOARCHIV}
+{207}{}{DATEN}
+{208}{}{}
+{209}{}{}
+{210}{}{Status}
+{211}{}{DATEN}
+{212}{}{von}
+{213}{}{Seite}
+{214}{}{OK}
+{215}{}{Hier kannst du nicht ausruhen!}
+
+#
+# Alarm clock
+#
+{300}{}{WECKER}
+{301}{}{Trefferpunkte}
+{302}{}{Zehn Minuten ausruhen}
+{303}{}{Dreißig Minuten ausruhen}
+{304}{}{Eine Stunde ausruhen}
+{305}{}{Zwei Stunden ausruhen}
+{306}{}{Drei Stunden ausruhen}
+{307}{}{Vier Stunden ausruhen}
+{308}{}{Fünf Stunden ausruhen}
+{309}{}{Sechs Stunden ausruhen}
+{310}{}{Bis zum Morgen ausruhen (08:00)}
+{311}{}{Bis Mittag (12:00) ausruhen}
+{312}{}{Bis zum Abend (18:00) ausruhen}
+{313}{}{Bis Mitternacht (00:00) ausruhen}
+{314}{}{Bis zur Heilung ausruhen}
+{315}{}{Bis zur Heilung der Gruppe ausruhen}
+
+#
+# Holodisk titles
+#
+{400}{}{Holo-Disk von Bunker 13}
+{401}{}{Militärbasis, Außen}
+{402}{}{Militärbasis, Ebene 1}
+{403}{}{Militärbasis, Ebene 2}
+{404}{}{Militärbasis, Ebene 3}
+{405}{}{Militärbasis, Ebene 4}
+{406}{}{Sierra-Depot: Allg. Protokoll}
+{407}{}{Sierra-Depot: Medizinisches Protokoll}
+{408}{}{Sierra-Depot: Evak.-Befehl}
+{409}{}{Sierra-Depot: GNN-Abschrift}
+{410}{}{Sierra-Missionsbericht}
+{411}{}{Lehre der Hubologen}
+{412}{}{Bunkerstadt - Designerhinweise}
+{413}{}{Bunkerstadt - Reisebericht}
+{414}{}{NCR-Spion-Holodisk}
+{415}{}{NKR-Geschichts-Holo-Disk}
+{416}{}{Westins Holodisk}
+{417}{}{Lage der Nation}
+{418}{}{Wortliste}
+{419}{}{Das Projekt}
+{420}{}{Vorgänge am Kraftwerk}
+
+#
+# Movie archive titles
+# Order must match the list (see gmovie.h)
+#
+{500}{}{InterPlay-Logo}               # Not shown in Pipboy
+{501}{}{Einführung}
+{502}{}{Rede der Älteren}
+{503}{}{Bergen der Bunkeranzüge}
+{504}{}{Arroyo-Versagen}
+{505}{}{Arroyo zerstört}
+{506}{}{Anlassen des Autos}
+{507}{}{Familie Cartucci}
+{508}{}{Anführer der Todeskrallen}
+{509}{}{Tanker zum Ladekran}
+{510}{}{Gefangene in Enklave}
+{511}{}{Ladekran explodiert}
+{512}{}{Arroyo-Traum 1}
+{513}{}{Arroyo-Traum 2}
+{514}{}{Arroyo-Traum 3}
+{515}{}{Arroyo-Traum 4}
+{516}{}{Danksagung}
+
+#
+# Things for the Mac version to speak
+#
+#
+{600}{}{Status}
+{601}{}{Tips}  # Clues gone
+{602}{}{Kartenansicht}
+{603}{}{Archive}
+{604}{}{Wecker}
+{605}{}{Du da du da dum di di dudly du dam dam dam du da}
+{606}{}{Dein Rob Co PIPBoy 2000 grüßt dich.}
+{607}{}{Bis dann.}
+{608}{}{Aufwachen.}
+
+
+#
+# Status thread text
+#
+# Format:
+# 0 City name
+# 1 ... 9 thread/quest name
+#
+{700}{}{Bunker 13}
+{701}{}{Rebellengruppe beruhigen.}
+{702}{}{Mutantenanführer zerstören.}
+{703}{}{Mutantenquelle zerstören.}
+{704}{}{Steuerchip finden.}
+{705}{}{Wasserdieb finden.}
+#
+{710}{}{Unterirdischer Bunker}
+#
+{720}{}{Shady Sands}
+{721}{}{Jarvis vom Radskorpion-Gift heilen.}
+{722}{}{Gegengift herstellen.}
+{723}{}{Tandi von den Raiders retten.}
+{724}{}{Radskorpione aufhalten.}
+#
+{730}{}{Junktown}
+{731}{}{Saul helfen.}
+{732}{}{Killian umbringen.}
+{733}{}{Sinthia retten.}
+{734}{}{Trish retten.}
+{735}{}{Gizmo aufhalten.}
+{736}{}{Die Skulz ausheben.}
+#
+{740}{}{Raider}
+#
+{750}{}{Nekropolis}
+{751}{}{Supermutanten an der Wasserstelle zerstören.}
+{752}{}{Die Wasserpumpe in Nekropolis reparieren.}
+#
+{760}{}{Hub}
+{761}{}{Todeskralle zerstören.}
+{762}{}{Jain beseitigen.}
+{763}{}{Händler beseitigen.}
+{764}{}{Verschollene Karawanen finden.}
+{765}{}{Halskette von den Händlern stehlen.}
+#
+{770}{}{Bruderschaft}
+{771}{}{Neuling werden.}
+{772}{}{Neuling aus dem Hub retten.}
+#
+{780}{}{Militärbasis}
+#
+{790}{}{Glow}
+{791}{}{Fallen für den Stützpunkt entschärfen.}
+{792}{}{Strom für den Glow einschalten.}
+#
+{800}{}{Knochengarten}
+{801}{}{Blade werden.}
+{802}{}{Medaillon für Romero abliefern.}
+{803}{}{Paket von den Gunrunners abliefern.}
+{804}{}{Kinderspion bei den Anhängern finden.}
+{805}{}{Hydrofarmen in Adytum reparieren.}
+{806}{}{Jason Zimmermann retten.}
+{807}{}{Angriffe der Gangs auf Adytum beenden.}
+#
+{810}{}{Kathedrale}
+
+
+#
+# Holodisk text
+#
+
+# GVAR_NCR_FAKE_VAULT13_HOLODISK
+#
+{1000}{}{BUNKER 13 HOLO von Ziggy}
+{1001}{}{**END-PAR**}
+{1002}{}{Diese Holo-Disk gibt den Standort von Bunker 13}
+{1003}{}{an. Der Standort ist auf deiner Karte markiert}
+{1004}{}{worden.}
+{1005}{}{**END-DISK**}
+# *** ***
+# GVAR_HOLODISK_MB_OUTSIDE
+{2000}{}{An: CHQ}
+{2001}{}{Unsere Wissenschaftler haben die Tests an der}
+{2002}{}{Probe beendet, die wir in der Basis gefunden}
+{2003}{}{haben. Es hat sich bestätigt, daß sie 99 % rein}
+{2004}{}{ist. Sie können die Probe in Kürze erwarten. Wie}
+{2005}{}{erwartet sind die Arbeiter schnell mutiert, sobald}
+{2006}{}{sie einer reinen Quelle ausgesetzt wurden. Schwere,}
+{2007}{}{doch akzeptable Verluste werden berichtet. Ich habe}
+{2008}{}{die Evakuierung der Basis angeordnet. Sobald die}
+{2009}{}{letzte Person sie verlassen hat, werden wir den}
+{2010}{}{Eingang zur Basis sprengen und die Schweine darin}
+{2011}{}{begraben.}
+{2012}{}{}
+{2013}{}{Oberst Sanders}
+{2014}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_1
+{3000}{}{Dies ist Hauptmann Pickard, bei der}
+{3001}{}{Berichterstattung an Kontrollpunkt 1. Kontakt}
+{3002}{}{mit Kontrollpunkten 2 & 3 ist abgerissen. Wir}
+{3003}{}{müssen das Schlimmste annehmen. Die Monster}
+{3004}{}{schwärmen die Minenschächte empor. Alle}
+{3005}{}{Anstrengungen, sie aufzuhalten, sind fehlgeschlagen.}
+{3006}{}{Wir versuchen, sie an dieser Stellung zu halten, so}
+{3007}{}{lange wir können.}
+{3008}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_2
+{4000}{}{Kontrollpunkt 3 wird angegriffen. Wir haben}
+{4001}{}{vorsorglich die Minenaufzüge stillgelegt, aber}
+{4002}{}{ich kann hören, wie sie den Minenschacht}
+{4003}{}{hochkommen. Scheiße! Riesige, widerliche grüne}
+{4004}{}{Wesen kommen von den unteren Ebenen}
+{4005}{}{heraufgeklettert! Sowas muß der Traum unserer}
+{4006}{}{Führung sein. Eine Art Supersoldat. Sobald wir}
+{4007}{}{sie erschießen, klettern die nächsten zwei aus}
+{4008}{}{dem Minenschacht, und die erschossenen stehen}
+{4009}{}{auf und greifen uns an! Wir brauchen Verstär_}
+{4010}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_3
+{5000}{}{Feldwebel Bracks berichtet von Kontrollpunkt 3.}
+{5001}{}{Alles ist normal, genau wie gestern und vorgestern.}
+{5002}{}{Ich verstehe nicht, warum die Führung will, daß wir}
+{5003}{}{diese armen Bergleute bewachen. Die sind so}
+{5004}{}{ausgemergelt und schwach, daß sie kaum eine}
+{5005}{}{Spitzhacke heben können. Egal, die}
+{5006}{}{Schreibtischhengste waren vor kurzem mit einer Art}
+{5007}{}{Probe da. Sie schienen ziemlich aufgeregt zu sein.}
+{5008}{}{Weißt du, ob sie gefunden haben, was sie gesucht}
+{5009}{}{haben? Vielleicht können wir endlich von diesem}
+{5010}{}{gottverdammten Ort abhauen. Ich werd hier noch}
+{5011}{}{völlig verrückt. Moment mal, da kommt die nächste}
+{5012}{}{Fuhre den Minenschacht hoch. Mein Gott! Was ist}
+{5013}{}{das? Sie schwärmen über unsere Position aus!}
+{5014}{}{Schickt sofort Verstärkung! Ich wiederhole, hier}
+{5015}{}{ist Kontrollpunkt 3, schick Hil_}
+{5016}{}{**END-DISK**}
+
+# *** ***
+# GVAR_HOLODISK_MB_LEVEL_4
+{6000}{}{Die Ausgrabung verläuft nach Plan. Den alten}
+{6002}{}{Blaupausen der Basis nach, sollten wir bald im}
+{6003}{}{Containerbereich sein. Verstärktes Vorkommen des}
+{6004}{}{FEV-Virus in den Luft- und Bodenproben, die wir}
+{6005}{}{genommen haben. Zum Glück ist in unsere Anzüge}
+{6006}{}{ein Filter gegen das Virus eingebaut. Sag den}
+{6007}{}{Mitgliedern der Enklave, daß sie vermutlich bald}
+{6008}{}{eine reine Probe des mutierten Gens bekommen.}
+{6009}{}{**END-PAR**}
+#
+{6010}{}{Ich habe auch Änderungen an den Bergleuten}
+{6011}{}{beobachtet. Sie scheinen irgendwie stärker zu sein,}
+{6012}{}{sind ausdauernder und haben eine etwas andere}
+{6013}{}{Hautfarbe angenommen; das sind offensichtliche}
+{6014}{}{Anzeichen für eine Mutation durch FEV. Die Männer}
+{6015}{}{werden langsam nervös, weil auch sie die Änderungen}
+{6016}{}{bemerkt haben. Obwohl ich die Anzahl der Wachen}
+{6017}{}{erhöht habe, fürchte ich, daß wir, wenn die}
+{6018}{}{Arbeiter vollständig mutieren, zahlenmäßig weit}
+{6019}{}{unterlegen sind. Da wir nur die örtliche}
+{6020}{}{Bevölkerung als Arbeitskräfte einsetzen, hoffe}
+{6021}{}{ich, daß keine vollständige Mutation eintritt,}
+{6022}{}{solange sie nicht direkt einer reinen Quelle}
+{6023}{}{ausgesetzt sind (eingetaucht werden), oder solange}
+{6024}{}{sie dem Virus nicht längere Zeit ausgesetzt sind.}
+{6025}{}{Sie werden sich erinnern, daß kleinste Mengen des}
+{6026}{}{Virus in der Region entdeckt wurden. Untersuchungen}
+{6027}{}{an Versuchspersonen, die in diesem Gebiet}
+{6028}{}{leben, haben gezeigt, daß sie eine gewisse}
+{6029}{}{Toleranz gegenüber dem FEV-Virus entwickelt haben.}
+{6030}{}{Trotzdem rate ich zur Vorsicht, da ein derartiger}
+{6031}{}{Kontakt mit dem FEV-Virus nie in unsere}
+{6032}{}{Berechnungen eingegangen ist. Ich rate dazu, den}
+{6033}{}{Eingang zur Basis so zu präparieren, daß er}
+{6034}{}{einstürzt, sobald eine reine Probe vorhanden ist.}
+{6035}{}{Das wird die betroffenen Bergleute in der Basis}
+{6036}{}{einschließen und verhindern, daß feindlich}
+{6037}{}{gesonnene Personen das Virus bekommen, sobald wir}
+{6038}{}{weg sind.}
+{6039}{}{**END-DISK**}
+#
+{7000}{}{Sierra Armeedepot - F & E}
+{7001}{}{Behandelnder Arzt - Dr. H. Lector}
+{7002}{}{Persönliches Protokoll}
+{7003}{}{**END-PAR**}
+{7004}{}{28. Juni 2077}
+{7005}{}{Heute haben mir die Jungs im Biolager einen tollen}
+{7006}{}{Streich gespielt. Einer der Scherzbolde hat die}
+{7007}{}{Einstellungen an meinem automatischen Bunker-Tek-}
+{7008}{}{Organentnehmer geändert. Ich hab vielleicht}
+{7009}{}{gestaunt, als der Gefreite Callow ohne Dickdarm}
+{7010}{}{aus dem Operationssaal kam. Ein Glück, daß er schon}
+{7011}{}{tot war, sonst hätte ich Ärger bekommen. Ich hab die}
+{7012}{}{Maschine jetzt so verdrahtet, daß sie nur noch Hirne}
+{7013}{}{entnimmt, damit dies nicht mehr passiert. Ich krieg}
+{7014}{}{die Kerle noch ran!}
+{7015}{}{**END-PAR**}
+{7016}{}{29. Juni 2077}
+{7017}{}{Ich habe die Leber des Gefreiten Callow entfernt}
+{7018}{}{und gekocht. Dann ließ ich sie runter zu den Jungs}
+{7019}{}{ins Biolager schicken, garniert mit Bohnen und}
+{7020}{}{einem guten Chianti. Jetzt denken sie, das sei ein}
+{7021}{}{spezielles Dankeschön für ihre gute Arbeit gewesen.}
+{7022}{}{Ich liebe meinen Job.}
+{7023}{}{**END-PAR**}
+{7024}{}{30. Juni 2077}
+{7025}{}{Ich habe einen neuen Drogencocktail aus Buffout und}
+{7026}{}{Psychos an einem meiner Patienten ausprobiert und}
+{7027}{}{ein paar besondere Verstärker untergemischt, mit}
+{7028}{}{denen ich schon länger herumexperimentiere. Die}
+{7029}{}{Ergebnisse waren vielversprechend, wenn auch etwas}
+{7030}{}{außer Kontrolle. Die Testperson wurde gewalttätig}
+{7031}{}{und konnte aus dem Zimmer ausbrechen. Zum Glück}
+{7032}{}{waren die neuen Sicherheitsroboter zur Stelle und}
+{7033}{}{haben ihn ruhiggestellt. Ich muß die Techniker}
+{7034}{}{bitten, die Tür auszutauschen.}
+{7035}{}{**END-PAR**}
+{7036}{}{1. Juli 2077}
+{7037}{}{Mein Lieblingsproband ist gestorben. Ich hatte ihn}
+{7038}{}{auf eine ständige Diät von Mentats mit meinen}
+{7039}{}{speziellen Verstärkern gesetzt. Sein IQ stieg}
+{7040}{}{innerhalb weniger Wochen von 39 auf 200. Es trifft}
+{7041}{}{mich sehr, denn er war einer der wenigen, mit}
+{7042}{}{denen ich richtig reden konnte. Ich werde ihn sehr}
+{7043}{}{vermissen.}
+{7044}{}{**END-PAR**}
+{7045}{}{5. Juli 2077}
+{7046}{}{Wir glauben, das neue kybernetische Gehirn ist}
+{7047}{}{endlich fertig. Wir haben noch ein paar Tests}
+{7048}{}{gemacht, doch es sieht vielversprechend aus.}
+{7049}{}{**END-PAR**}
+{7050}{}{6. Juli 2077}
+{7051}{}{Die Robotik ist nicht allzu glücklich, daß ihr}
+{7052}{}{teurer Computer so umkonfiguriert wird, daß er die}
+{7053}{}{Basis für die Evakuierung leitet. Ich bin auch}
+{7054}{}{nicht eben begeistert, da Skynet bei der}
+{7055}{}{Entwicklung des neuen kybernetischen Gehirns}
+{7056}{}{unschätzbare Dienste geleistet hat.}
+{7057}{}{**END-PAR**}
+{7058}{}{9. Juli 2077}
+{7059}{}{Die Evakuierung wurde vorverlegt. Das Timing könnte}
+{7060}{}{nicht schlechter sein; wir wollten gerade mit der}
+{7061}{}{Installation des neuen kybernetischen Gehirns}
+{7062}{}{beginnen. Sie behaupten, daß die Evakuierung}
+{7063}{}{zeitlich begrenzt sei. Ich muß meine Forschungen}
+{7064}{}{fortsetzen, wenn ich zurückkomme. Das ist}
+{7065}{}{wahrscheinlich mein letztes Protokoll für lange}
+{7066}{}{Zeit, da ich so viel wie möglich von meinen}
+{7067}{}{Forschungsarbeiten zusammensammeln muß.}
+{7068}{}{**END-DISK**}
+#
+{8000}{}{5. Juli 2077}
+{8001}{}{Sierra Armeedepot - Krankenstube}
+{8002}{}{Behandelnder Arzt - Dr. Solomon}
+{8003}{}{Patient - Obergefreiter Dixon}
+{8004}{}{Unfallbericht Nr. 8332-523D}
+{8005}{}{**END-PAR**}
+{8006}{}{Der Patient versuchte, im Lagerraum eine}
+{8007}{}{Angriffsmine scharfzumachen, als Bestandteil der}
+{8008}{}{Evakuierungsmaßnahmen des Sierra Armeedepots. Die}
+{8009}{}{Mine explodierte vorzeitig und verletzte}
+{8010}{}{Obergefreiten Dixon und General Clifton schwer.}
+{8011}{}{Obergefreiter Dixon erlitt schwere Fleischwunden}
+{8012}{}{an Händen, Brust und im Gesichtsbereich. Die rechte}
+{8013}{}{Hand wurde vollständig abgetrennt, und wir haben}
+{8014}{}{sie bisher nicht wiederfinden können. Schwere}
+{8015}{}{Eintrittswunden in der Brust und im Gesichtsbereich}
+{8016}{}{erforderten ausgiebige Eingriffe. 32 Minensplitter}
+{8017}{}{wurden insgesamt entfernt. Das rechte Auge war}
+{8018}{}{irreparabel geschädigt. Per Operation wurde das}
+{8019}{}{rechte Auge des Obergefreiten Dixon entfernt. Wir}
+{8020}{}{hoffen jetzt, das geschädigte, aber noch lebende}
+{8021}{}{Auge in ein neues, experimentelles Bio-Gel betten}
+{8022}{}{zu können, wo es sich eventuell selbst wieder}
+{8023}{}{regeneriert. Hoffentlich können wir das Auge zu}
+{8024}{}{einem späteren Zeitpunkt wieder einsetzen. Dieses}
+{8025}{}{experimentelle Bio-Gel wirkt stimulierend auf das}
+{8026}{}{Wachstum lebender Zellen. Es ist jedoch}
+{8027}{}{bedauerlich, daß wir dieses neue Gel unter}
+{8028}{}{derartigen Umständen testen müssen.}
+{8029}{}{**END-DISK**}
+#
+{9000}{}{9. Juni 2077}
+{9001}{}{Dringlich}
+{9002}{}{Rundschreiben}
+{9003}{}{}
+{9004}{}{Nachricht an die gesamte Mannschaft. Die}
+{9005}{}{Evakuierung des Sierra Armeedepots wurde um 1}
+{9006}{}{Woche vorverlegt. Die Installation der Sicherheits-}
+{9007}{}{und Abwehrmaßnahmen muß bis zu diesem Zeitpunkt}
+{9008}{}{abgeschlossen sein. Der gesamte Trupp muß sich}
+{9009}{}{aufgrund der geänderten Befehle mit den}
+{9010}{}{Abteilungsleitern in Verbindung setzen, um}
+{9011}{}{geänderte Anordnungen entgegenzunehmen. Während}
+{9012}{}{dieser Zeit gelten strikte Sicherheitsvorkehrungen;}
+{9013}{}{Kennmarken müssen ständig getragen werden.}
+{9014}{}{}
+{9015}{}{Auf Anweisung von General Clifton}
+{9016}{}{**END-DISK**}
+
+# Sierra Base Mission Statement
+{10000}{}{Armeedepot Sierra}
+{10001}{}{Missionsbericht 1942 - 1991}
+{10002}{}{Lagerung und Erhaltung eines Geschützvorrats für die}
+{10003}{}{Verteidigung. Im Falle eines Einfalls unterstützt das}
+{10004}{}{Armeedepot Sierra benachbarte Militärstützpunkte, um deren}
+{10005}{}{adäquate Ausrüstung zu gewährleisten.}
+{10006}{}{**END-PAR**}
+{10007}{}{Armeedepot Sierra}
+{10008}{}{Missionsbericht 1992 - 2050}
+{10009}{}{Verantwortlich für die Entsorgung der gelagerten}
+{10010}{}{überschüssigen Munition, die als ungeeignet oder zu}
+{10011}{}{veraltet für militärische Zwecke eingestuft wurde. Diese}
+{10012}{}{Mission untersteht dem IOK (Industrielles}
+{10013}{}{Operationskommando) in Zusammenarbeit mit der USB}
+{10014}{}{(Umweltschutzbehörde), um militärische Ausrüstung}
+{10015}{}{ökologischer zu entsorgen.}
+{10016}{}{**END-PAR**}
+{10017}{}{Armeedepot Sierra}
+{10018}{}{Missionsbericht 2050 - 2076}
+{10019}{}{VERTRAULICH}
+{10020}{}{Berechtigung Stufe 5 erforderlich}
+{10021}{}{Die Basis ist mit technologischen Neuentwicklungen}
+{10022}{}{auszustatten und als geheime Forschungseinrichtung für das}
+{10023}{}{Entwickeln und Testen robotischer, biologischer und}
+{10024}{}{konventioneller Waffen zu verwenden.}
+{10025}{}{**END-PAR**}
+{10026}{}{Armeedepot Sierra}
+{10027}{}{Missionsbericht 2077}
+{10028}{}{Aufgrund der Knappheit an ausgebildetem Personal ist das}
+{10029}{}{Armeedepot Sierra in eine automatisierte Verteidigungsbasis}
+{10030}{}{umzuwandeln. Das gesamte Personal ist in benachbarte}
+{10031}{}{Einrichtungen umzusiedeln oder an die Front zu schicken.}
+{10032}{}{**END-DISK**}
+
+# Sierra Base GNN Transscript
+{11000}{}{Galaxy News Network}
+{11001}{}{Abschrift der Übertragung vom 11. Januar 2073}
+{11002}{}{Heutige Schlagzeile bei GNN. In einer finanziellen}
+{11003}{}{Glanzleistung, haben die USA es geschafft, als erste die}
+{11004}{}{letzten Ölvorräte der Erde anzuzapfen. Bis vor kurzem hielt}
+{11005}{}{man dieses Öldepot für unerreichbar, da es sich Tausende}
+{11006}{}{von Metern unter dem Pazifischen Ozean befindet. Da die}
+{11007}{}{Ölvorräte der Erde zur Neige gehen, kam es zu einer Art}
+{11008}{}{Wettrennen, um die beste Methode zur Erschließung dieses}
+{11009}{}{Ölvorkommens zu entwickeln. Wir hier bei GNN melden mit}
+{11010}{}{Stolz, daß die USA als erste dieses Ziel erreicht haben,}
+{11011}{}{und das Öl folglich zum Eigentum der Vereinigten Staaten}
+{11012}{}{erklärt wird.}
+{11013}{}{Weiter so, USA!}
+{11014}{}{**END-PAR**}
+{11015}{}{China protestiert, als die Erfolgsnachricht }
+{11016}{}{um die ganze Welt geht. Laut dem chinesischen Präsidenten}
+{11017}{}{Xin war der Abschluß des chinesischen Bohrprojekts Monate }
+{11018}{}{vor dem der USA geplant, jedoch }
+{11019}{}{wurden die Arbeiten an der chinesischen Bohrplattform durch}
+{11020}{}{eine Reihe von Unfällen signifikant verzögert.}
+{11021}{}{Präsident Xin behauptet außerdem, schlagkräftige Beweise }
+{11022}{}{für die Urheberschaft der USA hinter den erwähnten}
+{11023}{}{Sabotageakten an der chinesischen Ölplattform zu besitzen.}
+{11024}{}{Er fordert offiziell die Bildung eines internationalen}
+{11025}{}{Untersuchungsgremiums.}
+{11026}{}{**END-PAR**}
+{11027}{}{Weitere Nachrichten. Im ganzen Land brachen Unruhen aus,}
+{11028}{}{als die Benzinpreise ein nie gekanntes Hoch erreichten.}
+{11029}{}{Rekorde wurden gebrochen, als der Preis für Benzin den}
+{11030}{}{aktuellen Goldpreis überschritt.}
+{11031}{}{**END-PAR**}
+{11032}{}{Das Wetter. Der Winter ist kühl bei einer Temperatur von}
+{11033}{}{100-110 Grad Fahrenheit, Tiefsttemperaturen erreichen sogar}
+{11034}{}{90 Grad Fahrenheit an der Küste. Ziehen sie sich heute warm}
+{11035}{}{an!}
+{11036}{}{**END-PAR**}
+{11037}{}{Galaxy News Network}
+{11038}{}{Abschrift der Übertragung vom 24. Juni 2074}
+{11038}{}{Die Verhandlungen zwischen den USA und anderen Weltmächten}
+{11039}{}{kamen auf dramatische Weise zum Stillstand, als der}
+{11040}{}{Präsident die Ölverhandlungen mit den anderen Weltmächten}
+{11041}{}{während der Sitzung verließ. Nach einer erhitzten Debatte}
+{11042}{}{stürmte der Präsident aus der Sitzung und erklärte, daß das}
+{11043}{}{letzte bekannte Erdölvorkommen einzig und allein von den USA}
+{11044}{}{genutzt werden und die USA kein Öl an Dritte verkaufen oder}
+{11045}{}{damit Handel treiben wird. Drohungen über Sanktionen der}
+{11046}{}{Vereinten Nationen stoßen auf taube Ohren.}
+{11047}{}{**END-PAR**}
+{11048}{}{Weltweit kommen ganze Industrien zum Stehen, weil}
+{11049}{}{die Ölvorkommen zur Neige gehen. Die Schreie der}
+{11050}{}{Verzweiflung verhallen jedoch nicht ungehört, da die}
+{11051}{}{Exporte aus den USA trotz der VN-Sanktionen um das}
+{11052}{}{Zwanzigfache zunehmen. Die US-amerikanische Wirtschaft}
+{11053}{}{erlebt ihr größtes Wachstum seit der Reagan-Ära.}
+{11054}{}{**END-PAR**}
+{11055}{}{Galaxy News Network}
+{11056}{}{Abschrift der Übertragung vom 14. Februar 2075}
+{11057}{}{Heute wurde Geschichte gemacht, als Kanada im Anschluß an}
+{11058}{}{eine Volksabstimmung von den USA annektiert wurde. Der}
+{11059}{}{Präsident sagte, "Kanada hat die besten Hockeyspieler der}
+{11060}{}{Welt" und ist daher in den Reihen der Bundesstaaten}
+{11061}{}{willkommen. Gut unterrichteten Quellen zufolge erhält}
+{11062}{}{Kanada als Gegenleistung volle 10 % der restlichen}
+{11063}{}{Ölvorräte der Welt, die ausschließlich von den USA}
+{11064}{}{kontrolliert werden, sowie einen 50%igen Steuernachlaß,}
+{11065}{}{da Kanada jetzt unter die Steuergesetzgebung der USA fällt.}
+{11066}{}{**END-PAR**}
+{11067}{}{Neues vom Sport: Heute spielten die Little Rock Saints}
+{11068}{}{gegen die Anaheim Jets. Das Match war eine echte}
+{11069}{}{Zitterpartie, aber J. Montana IV rettete sein Team, als er}
+{11070}{}{den Ball von der 3-Meter-Linie an in die gegnerische Hälfte}
+{11071}{}{trieb und Sekunden vor dem Schlußpfiff den siegreichen}
+{11072}{}{Touchdown erzielte. Der Spielstand lautete am Ende 95 - 90.}
+{11073}{}{Die Anaheim Jets gewinnen den Super Bowl CXII.}
+{11074}{}{**END-PAR**}
+{11075}{}{Galaxy News Network}
+{11076}{}{Abschrift der Übertragung vom 15. Februar 2075}
+{11077}{}{In einer verblüffenden Demonstration von Einigkeit stimmten}
+{11078}{}{das Repräsentantenhaus und der Kongreß einstimmig für die}
+{11079}{}{Einleitung eines Amtsenthebungsverfahrens gegen den}
+{11080}{}{Präsidenten aufgrund von unachtsamem Verhalten im}
+{11081}{}{Straßenverkehr. Beide Häuser betonten, daß der Präsident}
+{11082}{}{nicht über dem Gesetz stehe und sich wie jeder andere}
+{11083}{}{Fußgänger an die Straßenverkehrsordnung zu halten habe.}
+{11084}{}{Beide Seiten leugnen, daß diese Maßnahme  mit der kürzlich}
+{11085}{}{stattgefundenen Annektierung von Kanada zusammenhängt.}
+{11086}{}{**END-PAR**}
+{11087}{}{Galaxy News Network}
+{11088}{}{Abschrift der Übertragung vom 30. März 2076}
+{11089}{}{Heute beorderte der Präsident die Pazifische Flotte zur }
+{11090}{}{Poseidon-Bohrinsel, die sich an einem geheimen }
+{11091}{}{Ort im Pazifik befindet. Er drückte seine Besorgnis über }
+{11092}{}{Militärübungen der chinesischen Flotte aus, die}
+{11093}{}{"zu dicht an unseren strategischen Ölreserven ausgeführt}
+{11094}{}{werden." Die chinesische Regierung stritt feindliche}
+{11095}{}{Absichten ab.}
+{11096}{}{**END-PAR**}
+{11097}{}{Eine vor kurzem durchgeführte Umfrage belegt, daß 54% der}
+{11098}{}{GNN-Zuschauer den Streit um die Ölreserven für ein}
+{11099}{}{Ablenkungsmanöver des Präsidenten von seinen erst kürzlich}
+{11100}{}{bekanntgewordenen zahlreichen außerehelichen Affären }
+{11101}{}{mit Mitarbeiterinnen an seinen Wahlkampagnen halten. Unsere}
+{11102}{}{Umfrage zeigt außerdem, daß 70% der Zuschauer diese Affären}
+{11103}{}{egal sind und sie mit der Art und Weise zufrieden sind, }
+{11104}{}{in der der Präsident das Land regiert. Unglaubliche 60%}
+{11105}{}{glauben sogar, daß er weiterhin Affären haben sollte, wenn}
+{11106}{}{dies zur guten Verwaltung des Landes beiträgt.}
+{11107}{}{**END-PAR**}
+{11108}{}{Galaxy News Network}
+{11109}{}{Abschrift der Übertragung vom 10. Oktober 2077}
+{11110}{}{KRIEG! Der Krieg wurde erklärt, als China über Alaska}
+{11111}{}{in die Vereinigten Staaten einfiel! Die Protestbekundungen}
+{11112}{}{der USA stoßen auf taube Ohren. Der Rat der Vereinten}
+{11113}{}{Nationen ignoriert  diesen offenen Akt der Aggression. Der}
+{11114}{}{Präsident der Vereinigten Staaten ruft jetzt DIE BÜRGER}
+{11115}{}{auf, bei der Verteidigung ihres Landes gegen die}
+{11116}{}{Eindringlinge mitzuhelfen. JEDER EINZELNE VON UNS ist}
+{11117}{}{aufgerufen, sich bei der nächstgelegenen}
+{11118}{}{Rekrutierungsstelle zu melden und den Streitkräften }
+{11119}{}{beizutreten. Uncle Sam braucht EUCH! Für Gerechtigkeit,}
+{11120}{}{für Freiheit und für Mamas Apfeltorte.}
+{11121}{}{**END-PAR**}
+{11122}{}{Galaxy News Network}
+{11123}{}{Abschrift der Übertragung vom 22. Oktober 2077}
+{11124}{}{Dank der Anstrengungen unserer bewaffneten Streitkräfte und}
+{11125}{}{der neuentwickelten Powerrüstungs-Kampfanzüge konnten die}
+{11126}{}{Streitkräfte der USA die chinesische Invasion stoppen. Da}
+{11127}{}{die Aggressoren unter der Treibstoffknappheit litten,}
+{11128}{}{konnten die Streitkräfte der USA die Invasoren bis in die }
+{11129}{}{Hauptstadt Peking zurücktreiben.}
+{11130}{}{**END-DISK**}
+
+
+# Elron Bible
+{12000}{}{Willkommen!}
+{12001}{}{Willkommen zur Hubologie-Holo-Disk! Auf diesen}
+{12002}{}{elektronischen Seiten befindet sich eine Kurzbeschreibung}
+{12003}{}{unserer Philosophie einschließlich der früher verbotenen}
+{12004}{}{Lehren des Hub. Diese Holo-Disk soll kein umfassendes Werk}
+{12005}{}{über die Hubologie darstellen - sie ist einfach eine}
+{12006}{}{Einführung, und wir deine geistlichen Lehrer.}
+{12007}{}{**END-PAR**}
+{12008}{}{HAUPTMENÜ}
+{12009}{}{Geschichte}
+{12010}{}{Philosophie}
+{12011}{}{Kleines Glossar der Bezeichnungen}
+{12012}{}{Bibliographie des Hub}
+{12013}{}{**END-PAR**}
+{12014}{}{GESCHICHTE}
+{12015}{}{Wir wurden vor der Zeit der Großen Flut von einem}
+{12016}{}{Autor und vielversprechendem Visionär namens Dick}
+{12017}{}{Hubbell gegründet. Er sah das Versagen der Medizin zu dieser}
+{12008}{}{Zeit, das Versagen der Religion und das Versagen der }
+{12019}{}{Regierung. Er erkannte, daß die Welt etwas Neues brauchte... }
+{12020}{}{die Welt brauchte die Hubologie. Inspiriert durch die Musik}
+{12021}{}{seiner Zeit und seine persönlichen Erfahrungen mit}
+{12022}{}{außerirdischen Wesen machte er sich daran, uns Räder am}
+{12023}{}{Himmel zu zeigen, in diesen das Feuer zu erhalten und uns}
+{12024}{}{das Verständnis des Großen Lebensrads zu erleichtern. }
+{12025}{}{**END-PAR**}
+{12026}{}{Wir nennen ihn den Hub, die "Nabe", denn durch ihn }
+{12027}{}{begreifen wir unseren Platz im Rad - er ist unsere Mitte,}
+{12028}{}{und wir sind seine Speichen. Um seine Lehre herum drehen}
+{12029}{}{wir uns.}
+{12030}{}{**END-PAR**}
+{12031}{}{Durch die Veröffentlichung zahlloser Bücher und Beiträge}
+{12032}{}{begann der Hub, das Wort von der Hubologie zu verbreiten -}
+{12033}{}{und wurde sofort zur Zielscheibe seiner Gegner. Sie nannten}
+{12034}{}{sein Werk "pseudowissenschaftlich" und "gefährliches}
+{12035}{}{Geschwätz, das seinen Anhängern nur schaden kann." Trotz}
+{12036}{}{der gesammelten Sichtungen außerirdischer Fahrzeuge}
+{12037}{}{weltweit bestanden sie darauf, das Wort des Hub zu}
+{12038}{}{unterdrücken. Wir wissen, daß sie einfach dumm und}
+{12039}{}{irregeleitet waren, aber sie hatten Macht; zu ihnen zählten}
+{12040}{}{Regierungen, Konzerne und andere Institutionen, die die}
+{12041}{}{wichtigsten Begebenheiten aller Zeiten von den Menschen auf}
+{12042}{}{der Erde fernzuhalten versuchen.}
+{12043}{}{**END-PAR**}
+{12044}{}{Die Hubologie lebte eine Zeitlang im Untergrund; dort}
+{12045}{}{sammelte sie ihre Kräfte zur Verteidigung gegen jene, die}
+{12046}{}{ihr ihre Einfachheit und leichte Anwendung für jedermann}
+{12047}{}{neideten. Als die Hubologen jener Zeit dann endlich}
+{12048}{}{zurückschlugen, taten sie es auf eine Weise, der nur wenige}
+{12049}{}{etwas entgegenzusetzen hatten - sie infiltrierten die}
+{12050}{}{Organisationen, die sie zerstören wollten und schufen}
+{12051}{}{"Fernseh-Shows", in denen die Lügen aufgedeckt wurden, }
+{12052}{}{die die Regierung den Leuten einzureden versuchte.}
+{12053}{}{**END-PAR**}
+{12054}{}{Hierdurch kam eine leichte Gegenstimmung gegen unsere}
+{12055}{}{Religion auf. Der Mann auf der Straße zweifelte plötzlich}
+{12056}{}{an der Hubologie, weil die Lehre der Medien ihre}
+{12057}{}{Wirklichkeit völlig verzerrt hatte, und wir mußten einen}
+{12058}{}{langen Kampf gegen jene führen, die uns als Verrückte}
+{12059}{}{bezeichneten. Zu dieser Zeit verließ uns der große Hub}
+{12060}{}{leider für immer.}
+{12061}{}{**END-PAR**}
+{12062}{}{Sicher in dem Wissen, daß der Hub eine Einheit mit dem}
+{12063}{}{großen Sternenvater erreicht hatte, wodurch das}
+{12059}{}{Rad des Kosmos in unsere Richtung gedreht wurde und wir}
+{12060}{}{eine andere Bewußtseinsebene erreichen konnten, vertrauten}
+{12061}{}{wir darauf, daß unser Weg der wahre Weg war. Im Laufe der}
+{12062}{}{Zeit gewannen wir viele Anhänger, von denen die Mehrzahl}
+{12063}{}{einfach nur glauben wollte, daß es irgendwo einen besseren}
+{12064}{}{Ort als diese Welt gibt. Wir liefern den Beweis für Leben}
+{12065}{}{auf anderen Planeten und bieten eine Philosophie, die uns}
+{12066}{}{das Verständnis des Universums erleichtert. Seit vielen}
+{12067}{}{Jahren kommen die Menschen jetzt schon zu uns, weil sie}
+{12068}{}{von der Richtigkeit unserer Gedanken überzeugt sind. Die}
+{12069}{}{Tatsache, daß wir die Große Flut unbeschadet überstanden}
+{12070}{}{haben, lehrt uns, daß sich das große Rad auf unsere Lehre}
+{12071}{}{zudreht!}
+{12072}{}{**END-PAR**}
+{12073}{}{PHILOSOPHIE}
+{12074}{}{Die Hubologie enthält eine einfache Philosophie, die sich}
+{12075}{}{aus den fortschrittlichsten philosophischen und religiösen}
+{12076}{}{Gedanken der Erde aus der Zeit vor der Großen Flut}
+{12077}{}{zusammensetzt - wir glauben, daß das Leben, das Universum}
+{12078}{}{und der ganze Rest am besten durch ein sich drehendes Rad}
+{12079}{}{symbolisiert werden. Am äußeren Rand des Rads befinden sich}
+{12080}{}{diejenigen, die unsere Lehre nicht verstehen und die}
+{12081}{}{Wahrheit nicht erkennen. Wir nennen sie "Felgenfleisch",}
+{12082}{}{da das Rad sie überrollt und zermalmt, und sie es nicht}
+{12083}{}{erkennen.}
+{12084}{}{**END-PAR**}
+{12085}{}{Diejenigen, die die Hubologie aktiv praktizieren, sind die}
+{12086}{}{Speichen des Rads. Wir verstehen die Bewegung des Rads und}
+{12087}{}{tun unser Bestes, um die Drehungen zu fördern. Diejenigen,}
+{12088}{}{die einen Teil des Rads steuern, werden Hubs genannt - und}
+{12089}{}{soweit wir wissen, hat es bisher nur ein paar Hubs gegeben,}
+{12090}{}{erleuchtete Ausnahmewesen, die das Los der anderen Erdlinge}
+{12091}{}{zu verbessern suchten. Wir bezeichnen den Begründer der}
+{12092}{}{Hubologie als DEN Hub, da er derjenige mit der reinsten}
+{12093}{}{Lehre war.}
+{12094}{}{**END-PAR**}
+{12095}{}{Bei der Ausübung unserer Religion wenden wir lediglich}
+{12096}{}{wissenschaftliche Methoden an, die vom Hub entwickelt und}
+{12097}{}{von seinen Erben verbessert wurden, um jene fehlerhaften}
+{12098}{}{Neurodyne neu auszurichten, die Disharmonie und Asymmetrie}
+{12099}{}{am Rad auslösen. Dadurch reinigen wir uns selbst und}
+{12100}{}{bereiten uns auf die Selbstuntersuchung vor. Nur durch}
+{12101}{}{Selbstuntersuchung können wir Erfolg haben, und nur durch}
+{12102}{}{Selbstuntersuchung können wir unseren Platz im Kosmos und}
+{12103}{}{auf dem großen Rad begreifen. Nur durch Selbstuntersuchung}
+{12104}{}{können wir feststellen, ob wir bereit sind, auf die}
+{12105}{}{brennenden Ringe zu steigen, wenn sie uns am Planeten}
+{12106}{}{Quetzel begegnen.}
+{12107}{}{**END-PAR**}
+{12108}{}{Wir sehen uns selbst als Religion, verbunden mit dem Besten}
+{12109}{}{an wissenschaftlicher Methodik - wir nennen es}
+{12110}{}{wissenschaftliche Spiritualität ...und wir hoffen, daß auch}
+{12111}{}{du unsere Lehre bald so verstehst!}
+{12112}{}{**END-PAR**}
+{12113}{}{Dies ist unsere Entstehungsgeschichte:}
+{12114}{}{Vor Jahrmillionen lebten alle in Frieden und Harmonie }
+{12115}{}{miteinander. Körper, Geist und Seele ruhten in allen }
+{12116}{}{Wesen, und die Technologie der Zeit überstieg }
+{12117}{}{unser Fassungsvermögen. Es war eine Zeit des Friedens, der}
+{12118}{}{Kreativität und der Ausrichtung - doch dann kamen die}
+{12119}{}{dunklen Tage. Thrakazog der Stolperstein begann seine}
+{12120}{}{Lehre von der dualen Natur des Körpers und des Geistes und}
+{12121}{}{der Trennung von der Seele, worauf es bald zum Krieg kam.}
+{12122}{}{Der Große Krieg zerstörte Seelen und Körper und verstreute}
+{12123}{}{ihre Überreste im ganzen Universum. Das große Rad war kurz}
+{12124}{}{davor, sich von der Achse des Daseins zu lösen, seine}
+{12125}{}{Speichen waren in dem von Thrakazog heraufbeschworenen}
+{12126}{}{Tumult zerbrochen. Es mußte neues Leben entstehen.}
+{12127}{}{**END-PAR**}
+{12128}{}{Und neues Leben entstand auch, auf dem Planeten Terra und}
+{12129}{}{anderen Planeten im ganzen Universum. (Wir konzentrieren}
+{12130}{}{uns hauptsächlich auf das Leben auf Terra, denn auch wenn}
+{12131}{}{wir glauben, eines Tages die absplitterten Speichen des}
+{12132}{}{Rads mit unseren Brüdern von den Sternen heilen zu können,}
+{12133}{}{müssen wir uns zuerst darauf besinnen, wie wir selbst}
+{12134}{}{nützliche Speichen werden können.) Dieses neue Leben wurde}
+{12135}{}{durch Seelenpartikel der Toten verunreinigt. Es kam dadurch}
+{12136}{}{zu Haß  und Mißverständnissen sowie Kriegen auf Terra. }
+{12137}{}{Eines Tages erkannte ein Visionär, daß der einzige Weg hin}
+{12138}{}{zu Frieden, gegenseitigem Verständnis und Erleuchtung darin}
+{12139}{}{bestand, diese Seelenpartikel vom Geist der Menschheit zu}
+{12140}{}{entfernen. Dieser Visionär war der Hub. Seine Reinigung}
+{12141}{}{schreitet auch heute noch fort. }
+{12142}{}{**END-PAR**}
+{12143}{}{KLEINES GLOSSAR}
+{12144}{}{AHS/Ausgerichteter Hub-Sucher: Die unterschiedlichen Ebenen}
+{12145}{}{der Erleuchtung werden an der Reinheit der Neurodyne}
+{12146}{}{bemessen. Durch Reinigung der negativen Basisenergie des}
+{12147}{}{Fleisches kann so eine Umwandlung in positive geistige}
+{12148}{}{Energie erreicht werden. Wenn du einen ausreichend starken}
+{12149}{}{Grad an Zeta-Energie erzielt hast, kannst du zum Quetzel}
+{12150}{}{reisen oder abwarten und hoffen, daß sich die Erhöhung noch}
+{12151}{}{während deiner Lebenszeit ereignet.}
+{12152}{}{**END-PAR**}
+{12153}{}{Ausrichtung : Wenn ein Neurodyn unrein ist und die }
+{12154}{}{Zeta-Werte eines Suchenden am Ansteigen hindert, werden die}
+{12155}{}{Werte am Rad des Universums "ausgerichtet", indem wir einen}
+{12156}{}{Zeta-Scan am betroffenen Neurodyn ausführen, wodurch es}
+{12157}{}{gereinigt wird. Zu viel Ausrichtung innerhalb zu kurzer}
+{12158}{}{Zeit ist jedoch schädlich für den Geist.}
+{12159}{}{**END-PAR**}
+{12160}{}{Erleuchtung: Erleuchtung ist der nach }
+{12161}{}{AHS-9 erreichte Zustand, in dem der Suchende so viel Wissen}
+{12162}{}{angesammelt hat, daß er ein integraler Bestandteil des}
+{12163}{}{großen Rads wird. Er läßt dann das irdische Leben hinter}
+{12164}{}{sich. Einige Erleuchtete bleiben auf Terra, um uns Übrige}
+{12165}{}{in einen Zustand der Gnade zu führen und uns zu zeigen, wie}
+{12166}{}{wir das Rad unseres eigenen Lebens steuern können.}
+{12167}{}{**END-PAR**}
+{12168}{}{Großes Rad: Bezieht sich auf die zyklische Natur von }
+{12169}{}{Universum, Raum und Zeit. Alles ist Teil des großen Rades. }
+{12170}{}{Einige können das Rad steuern }
+{12171}{}{- oder vielleicht verstehen sie auch einfach nur die}
+{12172}{}{Richtung, in die es sich bewegt - und wir nennen sie}
+{12173}{}{Götter, Propheten und Visionäre. Diejenigen, die das große}
+{12174}{}{Rad verstehen, sind wahrhaft erleuchtet.}
+{12175}{}{**END-PAR**}
+{12176}{}{Neurodyne: Neurodyne sind die Stationen des Geistes.}
+{12177}{}{In den alten Religionen wurden sie als "Shakras"}
+{12178}{}{bezeichnet. Sie können durch Seelenpartikel und negative}
+{12179}{}{Energie verunreinigt werden, die von Repressiven ausgeht.}
+{12180}{}{**END-PAR**}
+{12181}{}{Repressive: Repressive sind diejenigen, die}
+{12182}{}{so voller negativer Energie und verunreinigler}
+{12183}{}{Seelenpartikel sind, daß sie allein durch ihre Anwesenheit}
+{12184}{}{die Erleuchtung Suchenden mit sich nach unten ziehen. Daher}
+{12185}{}{sind sie zu meiden. Viele von ihnen sind so verunreinigt,}
+{12186}{}{daß sie den Wert einer gründlichen Säuberung nicht}
+{12187}{}{wertschätzen können. Sie tun daher ihr Bestes, um das}
+{12188}{}{große Rad von seinem Kurs abzubringen.}
+{12189}{}{**END-PAR**}
+{12190}{}{Quetzel: Der Planet, zu dem uns der Sternenvater bringt,}
+{12191}{}{wenn wir ausreichend optimiert sind. Hier treffen wir}
+{12192}{}{unsere Sternenbrüder, um sie auf ihren flammenden}
+{12193}{}{Rädern am Himmel zu begleiten.}
+{12194}{}{**END-PAR**}
+{12195}{}{Felgenfleisch: Eine Person einfachen Wesens, an der noch}
+{12196}{}{keine Ausrichtung zur Reinigung der Neurodyne vorgenommen}
+{12197}{}{wurde.}
+{12198}{}{**END-PAR**}
+{12199}{}{Sternenvater: Manche würden den Sternenvater "Gott" nennen.}
+{12200}{}{Wir sehen den Sternenvater hingegen als die universale }
+{12201}{}{Kraft, aus der wir unsere Energie ziehen, und der wir}
+{12202}{}{wiederum unsere Energie zukommen lassen; dies ist ebenfalls}
+{12203}{}{eine Beziehung zyklischer Natur.}
+{12204}{}{**END-PAR**}
+{12205}{}{Erhöhung: Der Zeitpunkt, zu dem uns der Sternenvater heim}
+{12206}{}{zum Quetzel ruft, wo wir dann auf unsere außerirdischen}
+{12207}{}{Brüder treffen und uns dem Zentrum des großen Rads nähern.}
+{12208}{}{Diejenigen, die die Anstrengung unternommen haben, die}
+{12209}{}{Worte des Hub zu verstehen und ihnen zu folgen, werden}
+{12210}{}{unabhängig von ihren AHS-Werten zum Sternenvater gerufen,}
+{12211}{}{um zusammen mit ihm in den Himmeln des Planeten Quetzel}
+{12212}{}{zu leben.}
+{12113}{}{**END-PAR**}
+{12214}{}{Zeta-Scan: Anderes Wort für "Ausrichtung". Der Zeta-Scan }
+{12215}{}{reinigt deine Neurodyne und wirkt erhellend auf den Geist.}
+{12216}{}{Er wird mit einem Gerät ausgeführt, das deine Haut hohen}
+{12217}{}{Dosen von Elektrizität aussetzt. Diese Elektrizität wurde}
+{12218}{}{sorgfältig auf das Volt genau auf die Energiemenge}
+{12219}{}{eingestellt, die zur Beseitigung der negativen Energie aus}
+{12220}{}{einem Neurodyn benötigt wird. Durch Ausführen eines Zeta-}
+{12221}{}{Scans wirst du so ausgerichtet, daß du dich besser im}
+{12222}{}{Einklang mit dem Großen Rad befindest.}
+{12223}{}{**END-PAR**}
+{12224}{}{BIBLIOGRAPHIE}
+{12225}{}{Bücher des Hub}
+{12226}{}{(Es gibt Hunderte und Aberhunderte von Büchern in dieser}
+{12227}{}{Rubrik, unter ihnen Titel wie: Wissenschaftliche}
+{12228}{}{Spiritualität, Schlachtfeld Quetzel, Sternenvater über uns,}
+{12229}{}{Gesammelte Einkaufslisten, Notizen und Überlegungen,}
+{12230}{}{Persönliche Feinde verklagen: Aber richtig!, So erschaffe}
+{12231}{}{ich einen Kult, und Zukünftige Bücher, die ich nach meinem}
+{12232}{}{Tod verfassen werde.)}
+{12233}{}{**END-DISK**}
+
+{13000}{}{BUNKERSTADT - DESIGNERHINWEISE}
+{13001}{}{**END-PAR**}
+{13002}{}{Die Bunkerstadt hatte vielerlei Erscheinungsformen.}
+{13003}{}{Entwickelt wurde sie von Leonard Boyarsky, Jason Anderson,}
+{13004}{}{Feargus Urquhart und Chris Avellone. Scott Everts erstellte}
+{13005}{}{die Karten, und Rob Hertenstein III und Dan Spitzley waren}
+{13006}{}{mutig genug, das Skript für dieses Frankensteinsche Monster}
+{13007}{}{der Architektur zu erstellen. Schließlich gab Eric Pribish}
+{13008}{}{fast sein Leben, als er die Bunkerstadt in all ihrer}
+{13009}{}{Monstrosität testete.}
+{13010}{}{**END-PAR**}
+{13011}{}{Chris möchte sich bei den folgenden bedanken, die }
+{13012}{}{an der Produktion von Fallout 2 beteiligt waren: Rob,}
+{13013}{}{Scotty und Dan (natürlich), Eileen Suh, Sarah Smart, Emily}
+{13014}{}{Yance, Thuy Dang (bei dem ich mich nie für irgend etwas}
+{13015}{}{bedanke), Chris Wright und Tim Winkle.}
+{13016}{}{**END-PAR**}
+{13017}{}{Scotty möchte sich bei folgenden Leuten bedanken: Don &}
+{13018}{}{Aileen Everts und Avis Andre. Und Dankeschön an Bill}
+{13019}{}{Bridges für die coolen 'Fading Suns'-Bücher!}
+{13020}{}{**END-PAR**}
+{13021}{}{Dan möchte sich bei folgenden Leuten bedanken:}
+{13022}{}{Bei Split Enz für die gute Musik, James Cameron für}
+{13023}{}{"True Lies", Joe Viskocil für seine unglaublichen}
+{13024}{}{Explosionen, Chong's am Triangle Square für das Essen,}
+{13025}{}{Carlos Kotkin dafür, daß er's endlich gewagt hat (sein}
+{13026}{}{erster Film kann jetzt jeden Tag herauskommen), Jon Land}
+{13027}{}{für die unterhaltsam unwahrscheinlichen Blaine McCracken-}
+{13028}{}{Romane, bei Red Dwarf für den Humor und wie immer bei Mom}
+{13029}{}{und Dad, weil sie cool sind.}
+{13030}{}{**END-PAR**}
+{13031}{}{Rob Hertenstein möchte sich bei folgenden Leuten bedanken:}
+{13032}{}{Bei Becky Warner (die immer noch versucht, mich von allem}
+{13033}{}{Ärger fernzuhalten), bei Billie Ryder (dafür, daß sie}
+{13034}{}{während des ganzen Projekts meine geistige Gesundheit}
+{13035}{}{gesichert hat), Little Ryder (der ungefähr zur selben}
+{13036}{}{Zeit herauskommen soll wie dieses Spiel), und Nicole Roman}
+{13037}{}{(dafür, daß sie da war).}
+{13038}{}{**END-PAR**}
+{13039}{}{Eric Pribish möchte sich bei folgenden Leuten bedanken:}
+{13040}{}{Bei Tommy Hood, Jr., Joe Isip und Julio Mata dafür, daß}
+{13041}{}{sie mich nicht enteignet haben, als ich bei D&D kürzer}
+{13042}{}{treten mußte. Bei meinen alten Freunden Brad und Dave}
+{13043}{}{Carnes, weil sie (all die Jahre) nie den Kontakt haben}
+{13044}{}{abreißen lassen. Zu guter Letzt auch Dank an meine Freundin}
+{13045}{}{Rhonda Lauffer für ihr Verständnis, wenn ich all}
+{13046}{}{die langen Abende und Wochenenden bei der Arbeit war,}
+{13047}{}{und sie immer für mich da war,}
+{13048}{}{wenn ich dann nach Hause kam.}
+{13049}{}{**END-PAR**}
+{13050}{}{Als Belohnung für den Sieg über die Enklave möchten Chris,}
+{13051}{}{ Scotty, Rob, Dan und Eric dir bei dieser Gelegenheit}
+{13052}{}{raten, zum Computerterminal in der oberen linken Ecke}
+{13053}{}{dieser Ebene zu gehen und es zu verwenden.}
+{13054}{}{**END-PAR**}
+{13055}{}{Herzlichen Glückwunsch, du hast die Welt gerettet! Und}
+{13056}{}{nochmals unseren Dank dafür, daß du Fallout 2 gespielt hast.}
+{13057}{}{**END-DISK**}
+
+{14000}{}{BUNKERSTADT, NORDKALIFORNIEN - REISEBERICHT}
+{14001}{}{**END-PAR**}
+{14002}{}{WARNUNG: Wenn Bürger von Bunkerstadt }
+{14003}{}{Bunkerstadt verlassen müssen, sollten sie die }
+{14004}{}{folgenden Gegenstände stets bei sich haben:}
+{14005}{}{}
+{14006}{}{1. Einen Vorrat abgepackte Bunkerstadt-Nahrung.}
+{14007}{}{Iß nie etwas, das dir ein Fremder anbietet, da du}
+{14008}{}{auf diesem Wege Bakterien oder radioaktive}
+{14009}{}{Teilchen in deinen Körper gelangen!}
+{14010}{}{}
+{14011}{}{2. Einen Geigerzähler. Überwache auf Reisen stets}
+{14012}{}{ die Strahlungswerte der Umgebung!}
+{14013}{}{}
+{14014}{}{3. Mindestens zwei Stimpaks. Schon durch kleinste}
+{14015}{}{Schnitte oder Abschürfungen können schädliche}
+{14016}{}{Bakterien in deinen Körper gelangen!}
+{14017}{}{**END-PAR**}
+{14018}{}{REDDING: Kleine Bergarbeiterstadt im Westen von}
+{14019}{}{Bunkerstadt. Redding tauscht mit Bunkerstadt}
+{14020}{}{Golderz gegen medizinische Vorräte. Allen Bürgern}
+{14021}{}{von Bunkerstadt wird zu äußerster Vorsicht}
+{14022}{}{geraten, wenn sie sich in Redding aufhalten, da}
+{14023}{}{die dortigen Bergarbeiter nicht streng}
+{14024}{}{kontrolliert werden.}
+{14025}{}{}
+{14026}{}{BEVÖLKERUNG: Es sind keine genauen}
+{14027}{}{Einwohnerzahlen verfügbar, jedoch leben in}
+{14028}{}{Redding mehrere hundert Einwohner.}
+{14029}{}{REGIERUNG: Bürgermeister und Stadtrat.}
+{14030}{}{HINTERGRUNDSTRAHLUNGSWERTE: Keine aktuellen}
+{14031}{}{Ergebnisse verfügbar.}
+{14032}{}{MUTATIONSRATE: Unbekannt, vermutlich niedrig.}
+{14033}{}{**END-PAR**}
+{14034}{}{NEW RENO: Stadt im Südwesten von Bunkerstadt.}
+{14035}{}{Tauscht mit Bunkerstadt Golderz gegen}
+{14036}{}{medizinische Vorräte. Reno ist im Krieg kaum}
+{14037}{}{zerstört worden (obwohl großer Schaden durch}
+{14038}{}{Plünderungen und Vandalismus entstanden ist),}
+{14039}{}{so daß viele Straßen und Gebäude noch stehen.}
+{14040}{}{Warnung! Es gibt weder eine verantwortliche}
+{14041}{}{Regierung noch Gesetzesvollzug.}
+{14042}{}{Glücksspiel, Prostitution und Drogenabhängigkeit }
+{14043}{}{herrschen in der Stadt vor. Bürgern von}
+{14044}{}{Bunkerstadt wird geraten, New Reno}
+{14045}{}{UNBEDINGT zu meiden!}
+{14046}{}{}
+{14047}{}{BEVÖLKERUNG: Keine aktuellen Zahlen, vermutlich}
+{14048}{}{gibt es in New Reno aber mehrere}
+{14049}{}{tausend..."Leute."}
+{14050}{}{REGIERUNG: In New Reno herrscht momentan ein}
+{14051}{}{Zustand ähnlich der Anarchie. Berichten zufolge}
+{14052}{}{haben mehrere "Mafia-Familien" die Stadt unter}
+{14053}{}{sich aufgeteilt.}
+{14054}{}{HINTERGRUNDSTRAHLUNGSWERTE: Keine aktuellen}
+{14055}{}{Ergebnisse verfügbar.}
+{14056}{}{MUTATIONSRATE: Unbekannt, vermutlich niedrig.}
+{14057}{}{**END-PAR**}
+{14058}{}{NEUE KALIFORNISCHE REPUBLIK: Die NKR befindet sich}
+{14059}{}{weit im Süden von Bunkerstadt. Tauschhandel von}
+{14060}{}{mechanischen Geräten, Gold und verschiedenen}
+{14061}{}{Produkten gegen Medizintechnologie aus}
+{14062}{}{Bunkerstadt. Die NKR betreibt in letzter Zeit den}
+{14063}{}{Versuch, Bunkerstadt als Grenzgebiet zu}
+{14064}{}{vereinnahmen, so daß Bürger von Bunkerstadt bei}
+{14065}{}{Reisen in die NKR äußerste Vorsicht walten lassen}
+{14066}{}{sollten.}
+{14067}{}{}
+{14068}{}{BEVÖLKERUNG: Trotz einer neuen Volkszählung sind}
+{14069}{}{die genauen Zahlen nicht verfügbar. Die NKR hat}
+{14070}{}{vermutlich Zehntausende von Einwohnern.}
+{14071}{}{REGIERUNG: Präsident/in und Kongreß.}
+{14072}{}{HINTERGRUNDSTRAHLUNGSWERTE: Keine aktuellen}
+{14073}{}{Ergebnisse  verfügbar.}
+{14074}{}{MUTATIONSRATE: Variiert je nach Gebiet.}
+{14075}{}{**END-PAR**}
+{14076}{}{BROKEN HILLS: Bergarbeiterstadt südlich von}
+{14077}{}{Bunkerstadt. Dort wird Uranerz gefördert, das}
+{14078}{}{mit Bunkerstadt gegen medizinische Vorräte,}
+{14079}{}{zumeist Rad-X und RadAway getauscht wird. Es}
+{14080}{}{ist zu vermuten, daß die Menschen in der Stadt}
+{14081}{}{zum Zusammenleben mit Mutanten und Ghuls}
+{14082}{}{gezwungen werden. Aufgrund der Einwohnersituation}
+{14083}{}{und der hohen Kontaminierungsgefahr wird}
+{14084}{}{Bürgern von Bunkerstadt geraten, Broken Hills}
+{14085}{}{UNBEDINGT zu meiden!}
+{14086}{}{}
+{14087}{}{BEVÖLKERUNG: Keine aktuellen Zahlen, vermutlich}
+{14088}{}{aber mehrere hundert Einwohner.}
+{14089}{}{REGIERUNG: Gerüchten zufolge steht ein MUTANT an}
+{14090}{}{der Spitze der Stadt. Dies ist jedoch äußerst}
+{14091}{}{unwahrscheinlich, da die meisten Mutanten nicht}
+{14092}{}{zu vernunftbegabten Entscheidungen in der Lage}
+{14093}{}{sind. Sollte dieses Gerücht TATSÄCHLICH wahr}
+{14094}{}{sein, ist dies ein weiterer Grund, Broken}
+{14095}{}{Hills zu meiden.}
+{14096}{}{HINTERGRUNDSTRAHLUNGSWERTE: Keine aktuellen}
+{14097}{}{Ergebnisse nicht verfügbar. Vermutlich hoch.}
+{14098}{}{MUTATIONSRATE: Vermutlich hoch. Broken Hills weist}
+{14099}{}{höchstwahrscheinlich eine hohe Rate an}
+{14100}{}{degenerativen Mutationen auf.}
+{14101}{}{**END-PAR**}
+{14102}{}{BUNKERSTADT: Paradies ohne Verbrechen und andere}
+{14103}{}{gesellschaftliche Abweichungen, unter denen die}
+{14104}{}{anderen Städte in Nordkalifornien zu leiden haben.}
+{14105}{}{Unabhängig seit der Entstehung aus Bunker 8.}
+{14106}{}{Unterhält eine blühende Wirtschaft auf der}
+{14107}{}{Basis von Exporten medizinischer Technologie an}
+{14108}{}{Outsider-Gemeinschaften in Nordkalifornien. Allen}
+{14109}{}{Bürgern wird angeraten, die Bunkerstadt soweit}
+{14110}{}{möglich nicht zu verlassen.}
+{14111}{}{}
+{14112}{}{BEVÖLKERUNG: Aktuelle Einwohnerzahl: 103.}
+{14113}{}{REGIERUNG: Erstbürger/in und Stadtrat.}
+{14114}{}{HINTERGRUNDSTRAHLUNGSWERTE: Es wurden Dateien}
+{14115}{}{gelöscht, in denen folgende Zeichenketten}
+{14116}{}{fehlten: [-$Gecko-/-}
+{14117}{}{$Grundwasserverseuchung -]}
+{14118}{}{MUTATIONSRATE: Es wurden Dateien gelöscht,}
+{14119}{}{in denen folgende}
+{14120}{}{Zeichenketten fehlten: [-$Geburtenrate %-]}
+{14121}{}{**END-DISK**}
+
+{15000}{}{NEUE KALIFORNISCHE REPUBLIK: INFORMATIONS-DISK 5}
+{15001}{}{**END-PAR**}
+{15002}{}{Auf dieser Disk befinden sich Berichte über die NKR-}
+{15003}{}{Monatliche Produktionszahlen, Karawanenpläne,}
+{15004}{}{Wachdienstpläne, Protokolle von Kongreßanhörungen,}
+{15005}{}{geheime Ratsberichte, diplomatischer Schriftverkehr}
+{15006}{}{aus New Reno, Redding und Bunkerstadt, sogar einige}
+{15007}{}{Wochen aus dem Terminkalender von Präsidentin}
+{15008}{}{Tandi. Es gibt aber keine Informationen über}
+{15009}{}{Bunker 13 oder ein GEEK. Alle Berichte sind an}
+{15010}{}{Darion gerichtet und mit "F-" unterschrieben.}
+{15011}{}{**END-DISK**}
+
+{16000}{}{NEUE KALIFORNISCHE REPUBLIK: INFORMATIONS-DISK 1}
+{16001}{}{**END-PAR**}
+{16002}{}{Wir sind hier! Warum schließt du dich uns nicht an?}
+{16003}{}{**END-PAR**}
+{16004}{}{Vor uns liegt eine herrliche Zukunft - und sie}
+{16005}{}{könnte dir gehören, wenn du dich der Neuen}
+{16006}{}{Kalifornischen Republik anschließt!}
+{16007}{}{**END-PAR**}
+{16008}{}{Aber was willst du wissen?}
+{16009}{}{**END-PAR**}
+{16010}{}{WIE GROSS IST DIE NKR?}
+{16011}{}{Die NKR wurde vor achtzig Jahren gegründet und}
+{16012}{}{umfaßt heute die Staaten Shady, Los Angeles,}
+{16013}{}{Maxson, Hub und Dayglow. Ca. 700.000 Bürger sind}
+{16014}{}{stolz, Einwohner der NKR zu sein.}
+{16015}{}{**END-PAR**}
+{16016}{}{WOFÜR STEHT DIE NKR?}
+{16017}{}{Die Neue Kalifornische Republik will den Menschen}
+{16018}{}{im Westen Frieden, Sicherheit und Gerechtigkeit}
+{16019}{}{bringen. Die hochkarätigen Polizeikräfte der NKR}
+{16020}{}{fahren regelmäßig Patrouille und nehmen alle}
+{16021}{}{Räuber, Kannibalen, Sklavenhändler und gesetzlosen}
+{16022}{}{Mutanten innerhalb der Landesgrenzen fest. Die}
+{16023}{}{Armee der NKR schützt die Grenzen mutig gegen}
+{16024}{}{Einfälle von außen. Zur Sicherstellung von }
+{16025}{}{Gerechtigkeit und Freiheit, haben alle Bürger}
+{16026}{}{Zugang zu den Gerichtshöfen der NKR sowie das}
+{16027}{}{Recht, einen Repräsentanten ihrer Wahl zu}
+{16028}{}{bestimmen, der sie im Kongreß vertritt. Um mit}
+{16029}{}{Präsidentin Tandi zu sprechen, "Ein sicheres Volk}
+{16030}{}{ist ein starkes Volk."}
+{16031}{}{**END-PAR**}
+{16032}{}{WER HAT HIER DAS SAGEN?}
+{16033}{}{Die NKR unterscheidet sich vielleicht ein bißchen}
+{16034}{}{von dem, was du gewohnt bist. Es gibt hier keine}
+{16035}{}{Häuptlinge oder Mafiabosse, Könige oder Diktatoren.}
+{16036}{}{Unsere Anführer werden vom Volk gewählt! Genau --}
+{16037}{}{jeder Staat hat das Recht, Repräsentanten zum}
+{16038}{}{Kongreß zu entsenden. Diese Repräsentanten}
+{16039}{}{wählen den Präsidenten und den Vizepräsidenten,}
+{16040}{}{der dem Rat vorsteht. Der Rat wiederum leitet den}
+{16041}{}{Präsidenten in seinen Entscheidungen. Seit zehn}
+{16042}{}{Amtsperioden wurde Präsidentin Tandi einstimmig}
+{16043}{}{vom Rat gewählt, da ihre Weisheit und politische}
+{16044}{}{Weitsicht weithin respektiert werden. }
+{16045}{}{**END-PAR**}
+{16046}{}{KLINGT JA TOLL! WIE TRETE ICH IN DER NKR BEI?}
+{16047}{}{Alle gesetzestreuen und friedliebenden Leute,}
+{16048}{}{seien es Menschen oder Mutanten, können Bürger}
+{16049}{}{der NKR werden. Hierzu mußt du nur in die NKR}
+{16050}{}{ziehen und einen Einwanderungsantrag vorlegen.}
+{16051}{}{Nach dem Bürgertraining und der Bearbeitung}
+{16052}{}{deines Antrags wirst du über deinen neuen Status}
+{16053}{}{als BA (Bürgerschaftsanwärter/in) unterrichtet.}
+{16054}{}{Dann ist es nur noch ein kleiner Schritt bis zur}
+{16055}{}{vollwertigen Bürgerschaft!}
+{16056}{}{**END-PAR**}
+{16057}{}{Natürlich kann die NKR nicht alle aufnehmen -}
+{16058}{}{Sklavenhändler, unreformierte Mutanten, als}
+{16059}{}{Gangster bekannte Personen und sonstige}
+{16060}{}{Nichterwünschte brauchen sich gar nicht erst zu}
+{16061}{}{bewerben! }
+{16062}{}{**END-PAR**}
+{16063}{}{WAS IST, WENN MEINE GANZE STADT BEITRETEN WILL?}
+{16064}{}{Je nach Lage deiner Stadt akzeptiert die NKR }
+{16065}{}{Annektierungsanträge von Dörfern, Städten,}
+{16066}{}{Stützpunkten, Stadtstaaten und sogar kleineren}
+{16067}{}{Königreichen. Sobald der Antrag angenommen ist,}
+{16068}{}{gewährt die NKR deiner Stadt den Territorialstatus.}
+{16069}{}{Sobald die benötigte Polizei- und Armeepräsenz}
+{16070}{}{vor Ort gesichert ist und Banditen oder andere}
+{16071}{}{Gesetzlose in die Schranken verwiesen worden sind,}
+{16072}{}{kann sich dein Dorf um die volle}
+{16073}{}{Staatszugehörigkeit der NKR bewerben. So einfach}
+{16074}{}{ist das!}
+{16075}{}{**END-PAR**}
+{16076}{}{Also denk dran - WIR SIND HIER, ALSO WARUM}
+{16077}{}{SCHLIESST DU DICH UNS NICHT AN?}
+{16077}{}{**END-PAR**}
+{16078}{}{Erstellt durch das Beratungsgremium für}
+{16079}{}{Öffentlichkeitsarbeit der Neuen Kalifornischen}
+{16080}{}{Republik}
+{16081}{}{**END-PAR**}
+{16082}{}{(BÖNKR), Veröff. Nr. A7-7893b}
+{16083}{}{Diese Seite wurde absichtlich leer gelassen.}
+{16084}{}{**END-DISK**}
+
+{17000}{}{Erstbürgerin Lynette;}
+{17001}{}{**END-PAR**}
+{17002}{}{Der Kurier hat die von dir geschickte Disk}
+{17003}{}{geliefert. Du hattest natürlich recht. Die}
+{17004}{}{Informationen könnten bei der nächsten Ratssitzung}
+{17005}{}{äußerst hilfreich sein. Mit dem, was du mir}
+{17006}{}{geschickt hast, kann ich alle weiteren}
+{17007}{}{Bemühungen in Richtung einer Allianz zwischen}
+{17008}{}{der NKR und New Reno empfindlich behindern, wenn}
+{17009}{}{nicht sogar zunichte machen. }
+{17010}{}{**END-PAR**}
+{17011}{}{Ich kann dir nur versichern, daß, wenn ich wie}
+{17012}{}{erwartet freie Hand erhalte, es keine weiteren}
+{17013}{}{Störungen oder Provokationen durch die NKR}
+{17014}{}{hinsichtlich der Angelegenheiten von Bunkerstadt}
+{17015}{}{mehr geben wird. Ich jedenfalls respektiere eure}
+{17016}{}{Unabhängigkeit und stimme nicht mit diesen}
+{17017}{}{Streithähnen überein, die unsere unschuldigen}
+{17018}{}{Nachbarn ihrer Freiheiten berauben wollen.}
+{17019}{}{**END-PAR**}
+{17020}{}{Dein Freund und Verbündeter}
+{17021}{}{Roger Westin}
+{17022}{}{**END-DISK**}
+
+# State of the Nation
+{18000}{}{Aktennotiz: Lage der Nation}
+{18001}{}{Von: Präsident Dick Richardson}
+{18002}{}{An: Das Volk unserer großen Nation}
+{18003}{}{Thema: Ansprache zur Lage der Nation }
+{18004}{}{**END-PAR**}
+{18005}{}{Liebe amerikanische Mitbürger und Mitbürgerinnen:}
+{18006}{}{Ich habe die große Ehre, alle Amerikaner }
+{18007}{}{zurück zum Hauptland Amerikas zu führen, }
+{18008}{}{um die Vereinigten Staaten wieder für die eigenen}
+{18009}{}{Bürger und Bürgerinnen zurückzufordern. Wir }
+{18010}{}{werden die erste Generation sein, die seit über}
+{18011}{}{hundert Jahren frei von der Bedrohung durch die}
+{18012}{}{Mutanten lebt.}
+{18013}{}{**END-PAR**}
+{18014}{}{Wir haben lange gewartet, und unsere Arbeit}
+{18015}{}{auf dieses Ziel hin war nicht einfach. Zuweilen}
+{18016}{}{erschien es sogar unmöglich, jedoch steht}
+{18017}{}{uns nun dank der mutigen und unermüdlichen}
+{18018}{}{Anstrengungen des Leiters unseres Chemie-Chorps,}
+{18019}{}{Dr. Charles Curling, die Stunde der Errettung }
+{18020}{}{bevor.}
+{18021}{}{**END-PAR**}
+{18022}{}{Mutig, zielbewußt, blah, blah, blah. Mein Gott,}
+{18023}{}{hört sich denn wirklich jemand dieses Zeug an?}
+{18024}{}{**END-PAR**}
+{18025}{}{--Persönliche Notizen-}
+{18026}{}{1) Noch ein bißchen mehr in diesem Stil zu}
+{18027}{}{Curlings Projekt. 2) Allen vorsülzen, wie}
+{18028}{}{mutig, zielstrebig, etc. sie sind}
+{18029}{}{     Blah, blah, blah}
+{18030}{}{**END-PAR**}
+{18031}{}{Auf jeden Fall das Thema Wiederwahl erwähnen.}
+{18032}{}{**END-PAR**}
+{18033}{}{Dran denken, die Praktikantin auf dem Rückweg}
+{18034}{}{vom Rednerpult NICHT zu umarmen.}
+{18035}{}{**END-PAR**}
+{18036}{}{Wichtig: Das hier schnell zu Ende schreiben.}
+{18037}{}{Wenn Curlings Bericht stimmt, können wir die}
+{18038}{}{verdammten Mutanten jetzt jeden Augenblick}
+{18039}{}{vergasen.}
+{18040}{}{**END-DISK**}
+
+# Word List
+{19000}{}{Aktennotiz: Wortliste}
+{19001}{}{Von: Vizepräsident Daniel Bird}
+{19002}{}{An: Mich}
+{19003}{}{Thema: Meine Wortliste}
+{19004}{}{**END-PAR**}
+{19005}{}{Schwierige Wörter:}
+{19006}{}{--------------------}
+{19007}{}{Kartoffel}
+{19008}{}{Tomate}
+{19009}{}{Tourist}
+{19010}{}{Charakter}
+{19011}{}{Vorzubereiten}
+{19012}{}{Weitschweifigkeit}
+{19013}{}{Inartikuliert}
+{19014}{}{Übernahme}
+{19015}{}{**END-PAR**}
+{19016}{}{Zu ändernde Wörter:}
+{19017}{}{----------------------}
+{19018}{}{Kahrtofel}
+{19019}{}{Tomahte}
+{19020}{}{Turist}
+{19021}{}{Karakter}
+{19022}{}{Vorzubereiten}
+{19023}{}{Übername}
+{19024}{}{Jackelope - zum neuen Maskottchen des Landes}
+{19025}{}{machen (ist das ein }
+{19026}{}{amerikanisches Tier?)}
+{19027}{}{**END-DISK**}
+
+# The Project
+{20001}{}{Aktennotiz: Die Projekte, Vierteljährlicher}
+{20002}{}{Statusbericht Von: Oberlt. Dr. Charles Curling,}
+{20003}{}{Chemie-Chorps der USA. An: Kabinett}
+{20004}{}{Thema: Projekt fast vollständig abgeschlossen.}
+{20005}{}{**END-PAR**}
+{20006}{}{Es ist mir eine Ehre und ein besonderes Privileg,}
+{20007}{}{den baldigen Abschluß des Projekts anzukündigen.}
+{20008}{}{Nach jahrelanger Arbeit haben wir die Isolierung}
+{20009}{}{der am stärksten toxischen Bestandteile des}
+{20010}{}{F.E.V.- Virus erreicht. Einige der erst kürzlich}
+{20011}{}{decodierten Informationen aus dem verlassenen}
+{20012}{}{Militärstützpunkt auf dem Festland haben die}
+{20013}{}{Fortschritte bei unseren Forschungen wesentlich}
+{20014}{}{begünstigt.}
+{20015}{}{**END-PAR**}
+{20016}{}{Wir haben entdeckt, daß das F.E.V.-Virus}
+{20017}{}{ursprünglich nicht für die Entwicklung von Super-}
+{20018}{}{Soldaten konzipiert war. Anfangs wurde F.E.V.}
+{20019}{}{offensichtlich als virulentes Toxin entwickelt.}
+{20020}{}{Erst später wurde das F.E.V.- Virus dann}
+{20021}{}{dahingehend manipuliert, daß Supersoldaten}
+{20022}{}{entstehen konnten.}
+{20023}{}{**END-PAR**}
+{20024}{}{Durch Rückverfolgung unserer Schritte und mit}
+{20025}{}{Hilfe von weiteren Informationen aus den}
+{20026}{}{Aufzeichnungen aus der Militärbasis ist es uns}
+{20027}{}{gelungen, unsere Version des F.E.V.}
+{20028}{}{(F.E.V.-Curling-13) zu einem wesentlich}
+{20029}{}{toxischeren Wirkstoff weiterzuentwickeln.}
+{20030}{}{**END-PAR**}
+{20031}{}{Die letzten Tests an Bunkerabkömmlingen }
+{20032}{}{aus dem Dorf "Arroyo" zeigen eine Überlebensrate}
+{20033}{}{von Null Prozent, wobei der Tod zumeist innerhalb}
+{20034}{}{einer Stunde nach dem Kontakt mit einer}
+{20035}{}{Aerosollösung von 0,0001% eintritt. Im Gegensatz}
+{20036}{}{dazu scheinen die Testpersonen aus Bunker 13 eine}
+{20037}{}{Stunde nach dem Kontakt eher unter Hirnblutungen}
+{20038}{}{und Krämpfen zu leiden, wobei der Tod im}
+{20039}{}{Durchschnitt nicht vor Verstreichen von weiteren}
+{20040}{}{14,5 Stunden eintritt.}
+{20041}{}{**END-PAR**}
+{20042}{}{In jedem Fall sind die Toxizitätswerte des F.E.V.}
+{20043}{}{nun ausreichend, um eine "völlige Säuberung" von}
+{20044}{}{allen befallenen (d. h. nicht der Enklave}
+{20045}{}{angehörend) Örtlichkeiten zu gewährleisten.}
+{20046}{}{Aktuelle freisetzbare Werte von F.E.V. Curling-13}
+{20047}{}{zeigen eine durchschnittliche}
+{20048}{}{Sättigungswahrscheinlichkeit von 95% für 0,00007%.}
+{20049}{}{Obwohl diese Werte nach einstimmiger Ansicht des}
+{20050}{}{Chemie-Chorps bereits einen Erfolg des Projekts}
+{20051}{}{gewährleisten können, halten wir es für richtig,}
+{20052}{}{so lange zu warten, bis wir eine ausreichende}
+{20053}{}{Menge an F.E.V.-Toxin akkumuliert haben, so daß}
+{20054}{}{eine Sättigung von 0,0001% und somit die}
+{20055}{}{angestrebte Exterminierungswahrscheinlichkeit}
+{20056}{}{von 99,5% eintritt.}
+{20057}{}{**END-PAR**}
+{20058}{}{Die aktuellen Produktionszahlen von F.E.V.}
+{20060}{}{Curling-13 belegen, daß unser Ziel von 1 Million}
+{20061}{}{Litern in sechs Wochen erreicht sein wird.}
+{20062}{}{**END-PAR**}
+{20063}{}{Herzlichen Glückwunsch, meine Damen und Herren,}
+{20064}{}{unsere langen Jahre der Arbeit sehen nun einem}
+{20065}{}{Ende entgegen.}
+{20066}{}{Gott schütze Amerika.}
+{20067}{}{**END-DISK**}
+
+# Power Plant Operations
+{21000}{}{Notiz: A.E.K., Statusbericht}
+{21001}{}{Von: Tom Murray, Vorsitzender der}
+{21002}{}{Atomenergiekommission An: Kabinett}
+{21003}{}{Thema: Gefahr übergroßer Abhängigkeit}
+{21004}{}{vom Zentralcomputer bezüglich der}
+{21005}{}{Reaktorsteuerung.}
+{21006}{}{**END-PAR**}
+{21007}{}{MEMO an das KABINETT: Ich will damit ja nicht}
+{21008}{}{allen auf die Nerven gehen, aber ich kann die}
+{21009}{}{Notwendigkeit einer Diversifizierung der}
+{21010}{}{Steuersysteme für unser Atomkraftwerk gar}
+{21011}{}{nicht genug betonen. Mein offizieller Bericht}
+{21012}{}{liegt bei. Nach gründlichem Studium werden alle}
+{21013}{}{die Notwendigkeit eines Sicherungssystems für den}
+{21014}{}{Ernstfall auch einsehen.}
+{21015}{}{--Tom}
+{21016}{}{**END-PAR**}
+{21014}{}{Regulator für den Atomreaktor}
+{21018}{}{------------------------------------------}
+{21019}{}{Der neue Urankernreaktor von Bunker-Tek hat bisher}
+{21020}{}{zu unserer vollsten Zufriedenheit funktioniert.}
+{21021}{}{Mit den speziell für die Regulierung der}
+{21022}{}{Kühlmitteltemperatur sowie für zahlreiche andere}
+{21023}{}{Schlüsselfunktionen entwickelten Computersystemen}
+{21024}{}{auf dem neuesten Stand der Technik kann der Reaktor}
+{21025}{}{mit minimaler Überwachung betrieben werden.}
+{21026}{}{**END-PAR**}
+{21027}{}{Die neuen Synchronic-Multi-Prozessoren, die in die}
+{21028}{}{Hauptplatine mit drei Prozessoren eingebaut wurden,}
+{21029}{}{ermöglichen Multitasking der Kühlmitteltemperatur,}
+{21030}{}{den Einzug von kaltem Meerwasser, die Abgabe von}
+{21031}{}{verbrauchtem Kühlmittel und Abfallprodukten der}
+{21032}{}{Reaktionen sowie die Regulierung des}
+{21033}{}{Neutronenkontakts mit dem Uran. Ohne die}
+{21034}{}{Computersysteme würde das funktionierende}
+{21035}{}{Gleichgewicht des Reaktors mit sofortiger Wirkung}
+{21036}{}{umkippen und durch Kettenreaktion in der}
+{21037}{}{anschließenden Bombardierung der Uranisotope}
+{21038}{}{kulminieren. Innerhalb von höchstens zwei Stunden}
+{21039}{}{käme es dann zu einer Atomexplosion von einer}
+{21040}{}{Ausbreitung entsprechend}
+{21041}{}{100 Kilotonnen.}
+{21042}{}{**END-PAR**}
+{21043}{}{Die Hauptbestandteile des Reaktors befinden sich}
+{21044}{}{unter Wasser, unterhalb der Station. Durch diese}
+{21045}{}{Regelung sorgt die natürliche Wassertemperatur }
+{21046}{}{für eine Kühlung der Außenhülle. Aus 500 m Tiefe}
+{21047}{}{wird Meerwasser in die Kühlmittelkammern gepumpt.}
+{21048}{}{Ein Teil des kühlen Meerwassers wird in die}
+{21049}{}{Eindämmungseinheit geleitet, in der sich Kern und}
+{21050}{}{Steuerstäbe befinden. Hier zirkuliert es durch den}
+{21051}{}{Kern und wird von der stattfindenden Kernreaktion}
+{21052}{}{erhitzt. Das Seewasser erreicht den Siedepunkt;}
+{21053}{}{mit dem entstehenden Dampf wird der}
+{21054}{}{Turbinengenerator betrieben, der all unsere}
+{21055}{}{Elektrizität generiert. Daraufhin kondensiert der}
+{21056}{}{Dampf und wird in einen Filtertank geleitet. Das}
+{21057}{}{gereinigte Wasser wird wieder in einen}
+{21058}{}{Vorbereitungstank geleitet, so daß der Kreislauf}
+{21059}{}{von Neuem beginnen kann.}
+{21060}{}{**END-PAR**}
+{21061}{}{Schwer verstrahltes Wasser und verschiedene }
+{21062}{}{toxische Stoffe werden durch eine Leitung für}
+{21063}{}{Abfallprodukte geleitet, die 1,5 km von hier endet.}
+{21064}{}{Berichte unserer Untersuchungstrupps haben gezeigt,}
+{21065}{}{daß unsere Abwässer entlang der Küste}
+{21066}{}{Südkaliforniens und Mexikos zu irreversiblen}
+{21067}{}{ökologischen Schäden führen. Viele Strände }
+{21068}{}{sind mit toxischem Abfall und stark verstrahlten}
+{21069}{}{Meereslebewesen saturiert. Dies betrifft uns}
+{21070}{}{glücklicherweise nicht.}
+{21071}{}{**END-PAR**}
+{21072}{}{Für den Fall einer Reaktorabschaltung stehen in}
+{21073}{}{jedem Fall Sicherungsbatterien zur Verfügung,}
+{21074}{}{mit denen lebenswichtige Systeme in der gesamten}
+{21075}{}{Enklave betrieben werden können, bis die}
+{21076}{}{Stromversorgung wiederhergestellt ist. Dazu zählen}
+{21077}{}{jedoch keine Funktionen, die nicht lebenswichtig}
+{21078}{}{sind oder extrem viel Energie benötigen, wie}
+{21079}{}{z. B. Kraftfelder. Als Sicherheitsvorkehrung}
+{21080}{}{werden im Falle eines Stromausfalls auch}
+{21081}{}{verschiedene wasserdichte Türen in der gesamten}
+{21082}{}{Station geschlossen (um eine Überflutung im}
+{21083}{}{Notfall auszuschließen). Dadurch kommt es zu}
+{21084}{}{einer Einschränkung der Bewegungsfreiheit}
+{21085}{}{innerhalb der Station. Über Ausweichrouten ist}
+{21086}{}{das Betreten der Stationsoberfläche jedoch nach}
+{21087}{}{wie vor gesichert.}
+{21088}{}{**END-PAR**}
+{21089}{}{Das wichtigste Problem besteht darin, daß im Falle}
+{21090}{}{einer Abschaltung oder Zerstörung des Computers -}
+{21091}{}{so unwahrscheinlich diese beiden Möglichkeiten}
+{21092}{}{auch sind - der Reaktorzustand so instabil wird,}
+{21093}{}{daß es im Verlauf von zwei Stunden zur}
+{21094}{}{Kernschmelze kommt. Aus diesem Grund muß ein mit}
+{21095}{}{Menschen besetztes Sicherungssystem eingerichtet}
+{21096}{}{werden. Mir ist durchaus bewußt, daß ich aufgrund}
+{21097}{}{meines Heraufbeschwörens unwahrscheinlicher }
+{21098}{}{Szenarien wahrscheinlich für paranoid gehalten}
+{21099}{}{werde. Ich halte es jedoch für sicherer,}
+{21100}{}{immer auf alles vorbereitet zu sein.}
+{21101}{}{**END-PAR**}
+{21102}{}{Einstweilen sollten wir also sicherstellen,}
+{21103}{}{daß keiner unseren}
+{21104}{}{Computer in die Luft jagt (hah, hah).}
+{21105}{}{**END-PAR**}
+{21106}{}{Mit freundlichen Grüßen, Tom Murray,}
+{21107}{}{Vorsitzender, A.E.C.}
+{21108}{}{**END-DISK**}

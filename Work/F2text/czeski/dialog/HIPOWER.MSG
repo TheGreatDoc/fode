@@ -1,0 +1,3 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Tohle je generátor pro Broken Hills.}
+{101}{}{Generátor je napájen uranovým odpadem a vypadá docela efektivnì.}

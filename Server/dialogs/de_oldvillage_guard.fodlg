@@ -1,0 +1,32 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Straznik Wioski}
+{210}{}{Widzisz straznika Old Village.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Nie ma na co patrzec@@Spadaj z tad@@Wypierdalaj z tad@@To tylko moja robota@@...Jebani turysci@@Chcesz tu strzelac?@@Moze razem postrzelamy?@@Prosze bardzo...strzelaj ...zapewniam odpowiem tym samym@@Przestan klikac@@Twoja stara@@Twoj stary tez@@Hej, pamietam Cie@@Ostatni raz wpakowalem Ci dwa strzaly@@Chcesz dotknac mojej broni?@@Wiem ze cos knujesz@@Cos sie dzisiaj swieci. Czuje to@@Susan?@@Kto?@@Peter Parker?@@O moj Boze, znowu ty@@Czego chcesz?@@Czego chcesz czlowieku?@@Pfff ...haha ...dobry dowcip, teraz zamiataj z tad@@Widze cie@@Nienawidze tej Roboty@@Witaj@@Dzien dobry@@Piekny dzien by kogos postrzelic@@Dobry dzien by zabic jakis zlodzieji@@Masz siostre?@@Wydaje cala dniowke na Nuke Cola@@Chyba bedzie padac@@"I've been watching you A la la la la"...@@Znam kolesia jak ty... kawal gnoja@@Znamy sie?@@Nie nawidze tego koloru@@Niebieski, niebieski, niebieski... wszedzie ten niebieski@@O moj Boze jestes kobieta?@@Szalenstwo? To jest SPARTA!@@Wiem ze masz wscieklizne@@Ani kroku wiecej@@Moglbys sie czasem umyc@@Uzyj stimpacka jak sie slabo czujesz@@To moj ostatni dzien w tej robocie, wiec uwazaj co robisz@@Slyszales to?@@Wygladam jak informacja?@@Nie, nie umowie sie z toba@@Nie, nie umowie sie z toba po pracy@@Zadziwiajace..@@Ostroznie@@Europa schodzi na psy@@Nie mow nikomu ale najebalem sie@@Piles cos?@@Chyba jestem chory@@Jesli nie tu to gdzie?@@Lepiej nie idz do zaswiatow@@Widziales tego nowego kolesia?@@Widziales ta nowa dziwewczyne?@@Dam Ci dobra rade, nie spij lepiej z ta ruda dziwka Alicja@@Lepiej nic nie mow@@Matka Cie nie uczyla, ze starsi maja pierszenstwo?@@Dobry Boze, wszedzie tylko nie tutaj..@@Nie stoj tu zadlugo, jeszcze pomysla ze jestesmy razem@@Ty ciagle tutaj@@Nie wygladasz za dobrze, lepiej odejdz odemnie@@O moj Boze! A nie to tylko twoja twarz@@WTF?@@Mowil Ci ktos jak jestes brzydki?@@Glupi dev mowil zebym tu stal caly dzien@@Nie obracaj sie albo Cie zastrzele@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Co do kurwy?}
+
+[engl]
+{100}{}{Village Guard}
+{210}{}{You see the guard from Old Village.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{There is nothing to watch@@Get out of here@@Get the fuck outta here@@Is only my job@@...Fucking tourist@@Do you want to shoot ?@@Maybe shooting together ?@@Go ahead ...shoot ...I assure your back@@Stop clicking@@Your mother@@And your father too@@Hey, I remember you@@The last time I shot you twice@@Wanna touch my barrel?@@I know that you're up to something@@Something feels bad today@@Susan?@@Who?@@Peter Parker?@@Oh my god, you again@@What do you want?@@What you need human?@@Pfff ...haha ...good joke, but now get lost@@I see you@@I hate this job@@Hello@@Good day@@Beautiful day to shoot somebody@@Good day to kill some thieves@@Do you have sister?@@I give all the daily wage for nuke cole@@I think it will rain@@"I've been watching you A la la la la"...@@I know a guy like you... piece of bastard@@I know you?@@I hate this color@@Blue, blue, blue... everywhere this blue@@Omg you are a woman?@@Madness? THIS IS SPARTA!@@I know that you have rabies@@Don't come any closer@@Sometimes you could wash@@Use stimpack if you feel weak@@My last day in this job so better watch out what you do@@Did you hear that?@@Do I look like information?@@No, I'm not going out with you@@No, I don't meet with you after work@@Amazing..@@Be careful@@This Europe is going to the dogs@@Do not tell anyone but a moment ago I drank@@Have you been drinking?@@I think I'm sick@@If not here, then where?@@You better don't go to the underworld@@Have you seen this new guy?@@Have you seen this new girl?@@I'll give you good advice, don't sleep with that redheaded bitch Alice@@Better do not say anything@@Mother didn't teach you that the elders have priority?@@Good God, anywhere but not here..@@Don't standing here too long, they thought that we are together@@You're still here@@You don't look too good, better get away from me@@OH MY GOD! Oooh... it's only your face@@WTF?@@Anyone tell you that you're ugly?@@Stupid dev told me stand here all day@@Do not turn or I shoot you@@Did you know that the mutated fruit grow on trees?@@What the fuck?}
+
+[russ]
+{100}{}{Village Guard}
+{210}{}{You see the guard from Old Village.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{There is nothing to watch@@Get out of here@@Get the fuck outta here@@Is only my job@@...Fucking tourist@@Do you want to shoot ?@@Maybe shooting together ?@@Go ahead ...shoot ...I assure your back@@Stop clicking@@Your mother@@And your father too@@Hey, I remember you@@The last time I shot you twice@@Wanna touch my barrel?@@I know that you're up to something@@Something feels bad today@@Susan?@@Who?@@Peter Parker?@@Oh my god, you again@@What do you want?@@What you need human?@@Pfff ...haha ...good joke, but now get lost@@I see you@@I hate this job@@Hello@@Good day@@Beautiful day to shoot somebody@@Good day to kill some thieves@@Do you have sister?@@I give all the daily wage for nuke cole@@I think it will rain@@"I've been watching you A la la la la"...@@I know a guy like you... piece of bastard@@I know you?@@I hate this color@@Blue, blue, blue... everywhere this blue@@Omg you are a woman?@@Madness? THIS IS SPARTA!@@I know that you have rabies@@Don't come any closer@@Sometimes you could wash@@Use stimpack if you feel weak@@My last day in this job so better watch out what you do@@Did you hear that?@@Do I look like information?@@No, I'm not going out with you@@No, I don't meet with you after work@@Amazing..@@Be careful@@This Europe is going to the dogs@@Do not tell anyone but a moment ago I drank@@Have you been drinking?@@I think I'm sick@@If not here, then where?@@You better don't go to the underworld@@Have you seen this new guy?@@Have you seen this new girl?@@I'll give you good advice, don't sleep with that redheaded bitch Alice@@Better do not say anything@@Mother didn't teach you that the elders have priority?@@Good God, anywhere but not here..@@Don't standing here too long, they thought that we are together@@You're still here@@You don't look too good, better get away from me@@OH MY GOD! Oooh... it's only your face@@WTF?@@Anyone tell you that you're ugly?@@Stupid dev told me stand here all day@@Do not turn or I shoot you@@Did you know that the mutated fruit grow on trees?@@What the fuck?}

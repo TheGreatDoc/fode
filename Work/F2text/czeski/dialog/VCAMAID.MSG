@@ -1,0 +1,9 @@
+# Tento soubor pøeložil Radek "Sengaia" Friedrich.......Level
+{100}{}{Vidíš Obèana.}
+{101}{}{Vidíš pøíruèího z koloniálu.}
+{102}{}{Jestli potøebuješ pomoc, jdi za Randalem.}
+{103}{}{Tady se shromažïuje zboží pro všechny Obèany.}
+{104}{}{Pokud nemáš povolení, dej od toho zboží ruce pryè.}
+{105}{}{To je práce.}
+{106}{}{Randal ti mùže se vším pomoci.}
+{107}{}{Stroje ve Vaultu toho vyrábìjí hromady.}

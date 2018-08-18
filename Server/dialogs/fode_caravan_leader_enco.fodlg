@@ -1,0 +1,30 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{talking}
+{2000}{}{No loitering!@@Don't speak, focus.@@You will get less money if you run away.@@If we die, you will die as well. Remember that.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{talking}
+{2000}{}{Nie marudź!@@Dość gadania. Skoncentruj się.@@Jak uciekniesz, kasa ucieknie w drugą stronę.@@Jeśli zginiemy, zginiesz także ty. Pamiętaj o tym.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{talking}
+{2000}{}{No loitering!@@Don't speak, focus.@@You will get less money if you run away.@@If we die, you will die as well. Remember that.}
+

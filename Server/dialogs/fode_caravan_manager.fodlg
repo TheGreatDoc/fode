@@ -1,0 +1,238 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p caravan_job > 7 D _var p caravan_job < 12 #
+2 1020 D _var p caravan_job = 0 #
+9 1030 D _var p caravan_job = 1 #
+11 1040 D _var p caravan_job > 1 D _var p caravan_job < 8 #
+65507 1050 D _var p caravan_job = 12 @
+2 2000 None 0 #
+0 2010 #
+3 2020 D _var p caravan_job > 8 D _var p caravan_job < 1 #
+4 2030 #
+5 2040 @
+3 3000 None 0 #
+6 3010 #
+7 3020 R _var p caravan_job = 1 @
+4 4000 None 0 #
+3 4010 #
+5 4020 #
+0 4030 @
+5 5000 None 0 #
+0 5010 #
+3 5020 @
+6 6000 None 0 #
+8 6010 D _var p caravan_job = 8 R _var p caravan_job = 2 #
+8 6020 D _var p caravan_job = 9 R _var p caravan_job = 3 #
+8 6030 D _var p caravan_job = 10 R _var p caravan_job = 4 #
+7 6040 R _var p caravan_job = 1 @
+7 7000 None 0 #
+0 7010 @
+8 8000 None 0 #
+0 8010 @
+9 9000 None 0 #
+10 9010 D _var p caravan_job = 8 R _var p caravan_job = 2 #
+10 9020 D _var p caravan_job = 9 R _var p caravan_job = 3 #
+10 9030 D _var p caravan_job = 10 R _var p caravan_job = 4 #
+0 9040 @
+10 10000 None 0 #
+0 10010 @
+11 11000 None 0 #
+12 11010 #
+13 11020 R _var p caravan_job = 12 #
+0 11030 @
+12 12000 None 0 #
+0 12010 #
+13 12020 R _var p caravan_job = 12 @
+13 13000 None 0 #
+0 13010 #
+14 13020 #
+65507 13030 @
+14 14000 None 0 #
+65507 14010 #
+0 14020 &
+
+[engl]
+{100}{}{Caravan job manager}
+{200}{}{You see: Manager}
+{210}{}{You see the local manager of the caravans.}
+{220}{}{You see: Manager}
+{230}{}{You see the local manager of the caravans.}
+{240}{}{You see: Manager}
+{250}{}{You see the local manager of the caravans.}
+{260}{}{You see: Manager}
+{270}{}{You see the local manager of the caravans.}
+{1000}{}{Predialogue installations}
+{1010}{}{unemployed}
+{1020}{}{unemployed}
+{1030}{}{set up on first talk}
+{1040}{}{employed}
+{1050}{}{fired}
+{2000}{}{What do you want?!}
+{2010}{}{Shit, nothing. Sorry.}
+{2020}{}{Do you have any jobs?}
+{2030}{}{What is this?}
+{2040}{}{Do you have anything to trade?}
+{3000}{}{Hm, yes! Yes I have! Are you good with weapons?!}
+{3010}{}{Yes, I can fight.}
+{3020}{}{No, I can't fight.}
+{4000}{}{This is my caravan house! Now, what do you want?!}
+{4010}{}{Do you have an empty place in your caravan?}
+{4020}{}{Trade with you.}
+{4030}{}{Nothing, bye.}
+{5000}{}{I do not have anything to trade!}
+{5010}{}{Okay okay, see you.}
+{5020}{}{Chill out. How about a job? Do you have any?}
+{6000}{}{Great, great. Then you can guard my caravans for some payment. Up for it?}
+{6010}{}{Hell yeah!}
+{6020}{}{Hell yeah!}
+{6030}{}{Hell yeah!}
+{6040}{}{Hell no!}
+{7000}{}{THEN DON'T WASTE MY TIME!!}
+{7010}{}{Sorry... goodbye.}
+{8000}{}{Okay. Go to the man in the red shirt, he will tell you the dates and the reward.}
+{8010}{}{Good. See you then.}
+{9000}{}{You again! I don't need you!}
+{9010}{}{Actually, I can fight now.}
+{9020}{}{Actually, I can fight now.}
+{9030}{}{Actually, I can fight now.}
+{9040}{}{(Leave)}
+{10000}{}{Are you sure? Well, okay then. Talk with the man in the red shirt, he will tell you the dates and the rewards.}
+{10010}{}{Good. See you then.}
+{11000}{}{Yes, what do you want now??}
+{11010}{}{Can I get more money?}
+{11020}{}{Give me more money!}
+{11030}{}{Nothing, see you.}
+{12000}{}{NO!}
+{12010}{}{Okay okay. (Leave)}
+{12020}{}{YES!}
+{13000}{}{FUCK YOU! YOU'RE FIRED! COME BACK AND I'LL FUCKING KILL YOU!!}
+{13010}{}{Damn... (Leave)}
+{13020}{}{Look, I really am sorry. I just needed more money. Please nevermind it.}
+{13030}{}{Bring it on, motherfucker!@@Bring it on, bitch!}
+{14000}{}{Get. Of. My. Property!!}
+{14010}{}{Or what? (Spit on him)}
+{14020}{}{(Leave)}
+
+[pols]
+{100}{}{Caravan job manager}
+{200}{}{Widzisz managera.}
+{210}{}{Widzisz lokalnego managera karawan.}
+{220}{}{Widzisz managera.}
+{230}{}{Widzisz lokalnego managera karawan.}
+{240}{}{Widzisz managera.}
+{250}{}{Widzisz lokalnego managera karawan.}
+{260}{}{Widzisz managera.}
+{270}{}{Widzisz lokalnego managera karawan.}
+{1000}{}{Predialogue installations}
+{1010}{}{unemployed}
+{1020}{}{unemployed}
+{1030}{}{set up on first talk}
+{1040}{}{employed}
+{1050}{}{fired}
+{2000}{}{Czego?!}
+{2010}{}{Cholera, nic. Wybacz}
+{2020}{}{Masz jakąś pracę dla mnie?}
+{2030}{}{Co to?}
+{2040}{}{Masz jakiś towar na zbyciu?}
+{3000}{}{Hm, jasne! Umiesz posługiwać się bronią?!}
+{3010}{}{Pewnie.}
+{3020}{}{Niezbyt.}
+{4000}{}{Oto mój dom karawan! Czego chcesz?!}
+{4010}{}{Masz wolne miejsce w swojej karawanie?}
+{4020}{}{Pohandlować.}
+{4030}{}{Nic, żegnaj.}
+{5000}{}{Nie mam nic na sprzedaż!}
+{5010}{}{Dobra dobra, do zobaczenia.}
+{5020}{}{Spokojnie. A co z pracą, znajdzie się jakaś?}
+{6000}{}{Pewnie, zostaniesz strażnikiem karawany, pasuje?}
+{6010}{}{Jasne!}
+{6020}{}{Jasne!}
+{6030}{}{Jasne!}
+{6040}{}{Co? Nie!}
+{7000}{}{PRZESTAŃ MARNOWAĆ MÓJ CZAS!!}
+{7010}{}{Wybacz, do widzenia.}
+{8000}{}{Dobra, idź do gościa w czerwonym ubraniu, on powie ci więcej szczegółów.}
+{8010}{}{Świetnie. Do zobaczenia}
+{9000}{}{Znowu ty? Nie potrzebuję cię!}
+{9010}{}{Właściwie, mogę już walczyć.}
+{9020}{}{Właściwie, mogę już walczyć.}
+{9030}{}{Właściwie, mogę już walczyć.}
+{9040}{}{(Odejdź)}
+{10000}{}{Na pewno? Idź do gościa w czerwonym ubraniu, on powie ci więcej szczegółów.}
+{10010}{}{Super. Do zobaczenia.}
+{11000}{}{Tak, co tym razem??}
+{11010}{}{Moge zabrać pieniądze?}
+{11020}{}{Daj mi więcej pieniędzy!}
+{11030}{}{Nic, do zobaczenia.}
+{12000}{}{NIE!}
+{12010}{}{Dobra, dobra. (Odejdź)}
+{12020}{}{TAK!}
+{13000}{}{PIERDOL SIE! PRZYJDŹ TU JESZCZE RAZ A ROZWALĘ CI TEN KRZYWY RYJ!!}
+{13010}{}{Cholera... (Odejdź)}
+{13020}{}{Przepraszam, potrzebuje pieniędzy. Wybacz mi.}
+{13030}{}{Chodź tu, sukinsynu!@@Dawaj, dziwko!}
+{14000}{}{Wyjdź z mojej posesji!!}
+{14010}{}{Bo co? (Spluń na niego)}
+{14020}{}{(Odejdź)}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{unemployed}
+{1020}{}{unemployed}
+{1030}{}{set up on first talk}
+{1040}{}{employed}
+{1050}{}{fired}
+{2000}{}{What do you want?!}
+{2010}{}{Shit, nothing. Sorry.}
+{2020}{}{Do you have any jobs?}
+{2030}{}{What is this?}
+{2040}{}{Do you have anything to trade?}
+{3000}{}{Hm, yes! Yes I have! Are you good with weapons?!}
+{3010}{}{Yes, I can fight.}
+{3020}{}{No, I can't fight.}
+{4000}{}{This is my caravan house! Now, what do you want?!}
+{4010}{}{Do you have an empty place in your caravan?}
+{4020}{}{Trade with you.}
+{4030}{}{Nothing, bye.}
+{5000}{}{I do not have anything to trade!}
+{5010}{}{Okay okay, see you.}
+{5020}{}{Chill out. How about a job? Do you have any?}
+{6000}{}{Great, great. Then you can guard my caravans for some payment. Up for it?}
+{6010}{}{Hell yeah!}
+{6020}{}{Hell yeah!}
+{6030}{}{Hell yeah!}
+{6040}{}{Hell no!}
+{7000}{}{THEN DON'T WASTE MY TIME!!}
+{7010}{}{Sorry... goodbye.}
+{8000}{}{Okay. Go to the man in the red shirt, he will tell you the dates and the reward.}
+{8010}{}{Good. See you then.}
+{9000}{}{You again! I don't need you!}
+{9010}{}{Actually, I can fight now.}
+{9020}{}{Actually, I can fight now.}
+{9030}{}{Actually, I can fight now.}
+{9040}{}{(Leave)}
+{10000}{}{Are you sure? Well, okay then. Talk with the man in the red shirt, he will tell you the dates and the rewards.}
+{10010}{}{Good. See you then.}
+{11000}{}{Yes, what do you want now??}
+{11010}{}{Can I get more money?}
+{11020}{}{Give me more money!}
+{11030}{}{Nothing, see you.}
+{12000}{}{NO!}
+{12010}{}{Okay okay. (Leave)}
+{12020}{}{YES!}
+{13000}{}{FUCK YOU! YOU'RE FIRED! COME BACK AND I'LL FUCKING KILL YOU!!}
+{13010}{}{Damn... (Leave)}
+{13020}{}{Look, I really am sorry. I just needed more money. Please nevermind it.}
+{13030}{}{Bring it on, motherfucker!}
+{14000}{}{Get. Of. My. Property!!}
+{14010}{}{Or what? (Spit on him)}
+{14020}{}{(Leave)}
+

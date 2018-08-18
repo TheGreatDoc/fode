@@ -1,0 +1,30 @@
+#Tento soubor pøeložil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš svalnatého chlapíka v kombinéze.}
+{101}{}{Vidíš Ferndowna, obchodního agenta z Vault City.}
+{102}{}{Vidíš útlého, ostøe vypadajícího muže v ušpinìné kombinéze.}
+{103}{}{Obávám se, že ti nemùžu zaplatit, protože jsi opustil karavanu. Kvùli tomu zemøel Ben.}
+{104}{}{Opravdu si myslíš, že bych odmìnil zlodìje? Mìl bys být rád, že jsem tì nenechal zlynèovat. Tobì nic nezaplatím.
+ Odejdi.}
+{105}{}{Zlodìj? Vypadám snad jak zlodìj, zatracený nevdìèníku? Sbohem.}
+{106}{}{Brzy budeš litovat, že jsi mì potkal. Sbohem.}
+{107}{}{Vaše karavana mìla tolik ztrát, že pochybuji o kvalitì tvé práce. Neodmìním tì za neúspìch.}
+{108}{}{Brzo zaplatíš za to, že jsi mì vyhodil. Sbohem.}
+{109}{}{Nìkdy hold máte víc štìstí, než ostatní. Teï jste ho nemìli. Sbohem.}
+{110}{}{Neztratili jsme sice úplnì celou karavanu, ale ztratili jsme více, než si mùžeme dovolit. Kdybys svojí práci
+ udìlal poøádnì, tak bys dostal víc než tìchto 500$.}
+{111}{}{Nevadí. Málo je poøád lepší, nežli nic. Sbohem.}
+{112}{}{Ty jeden nevdìèníku. Nikdo nemohl udìlat lepší práci než já. Za tohle se ti brzy pomstím. Sbohem.}
+{113}{}{Svou práci jsi odvedl na jednièku. Tady máš zasloužených 1000$. Budu velice rád, když s námi pojedeš i zpìt,
+ ale nevím bohužel kdy to bude. Musím totiž poèkat, než nám pøidìlí nového vùdce karavany.}
+{114}{}{To nevadí. Stejnì se mi už nechce déle èichat brahmíní zápach. Sbohem.}
+{115}{}{Já si poèkám. Uvidíme se pozdìji. Sbohem.}
+{116}{}{Tohle byla výborná jízda. Je poznat že jsi dìlal co jsi mìl. Tady máš 100$ plus 50$ za skvìlou práci. Ještì jednou
+ ti dìkuji. Škoda, že se toho nedožil Ben.}
+{117}{}{Koneènì jsem potkal nìkoho, kdo je schopen ocenit mou práci. Uvidíme se pozdìji. Snad.}
+{118}{}{Nikdy nepohrdnu penìzi navíc. Díky a sbohem.}
+{119}{}{Nemùžu uvìøit, že Ben pøijal takového idiota. To byla jeho poslední dobroèinná akce. Mìl by si být rád, že jsi to
+ pøežil. Sbohem.}
+{120}{}{OK?}
+{121}{}{Je mi líto Bena Weda. Byl to dobrý chlap a jen tak nìkdo ho nenahradí. Mé jméno je Ferndown a zaplatím ti
+ to, co ti dlužíme.}
+{122}{}{Díky.}

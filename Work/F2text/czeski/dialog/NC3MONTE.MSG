@@ -1,0 +1,341 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+# 0. LOOK (WTG)
+{100}{}{Vidíš "Tøi karty" Monteho.}
+
+# 0. LOOK (WTG)
+{150}{}{Vidíš pokøiveného starého mue s osmahlou tváøí. Je tak hubenı, e vypadá jako souška.}
+{000}{}{Vidíš Monteho "Tøi karty". Potuluje se po ulici, pokyvuje na tebe a zdraví tì.}
+{000}{}{Vidíš Monteho "Tøi karty". Potuluje se po ulici, pokyvuje na tebe a zdraví tì.}
+
+# 1. FLOAT (MONTE_BEATEN] (WTG)
+{200}{}{Mì neuvidíš nikdy prohrát...}
+{000}{}{Jenom klídek...Monte nemá dneska štístko.}
+{000}{}{Asi jsem vytáhl špatnou kartu?}
+{000}{}{Jak si mùe ten debilní venkovan neustále vybírat tu správnou kartu?}
+
+# 3. FLOAT [FALLOUT2 = ENCLAVE_DESTROYED] (WTG)
+{205}{}{Heeele! Hrdino! Seš v pohodì, seš v pohodì.}
+{000}{}{::Ukazuje palcem jednièku::}
+{000}{}{::Smìje se, povykuje::}
+{000}{}{To si udìlal dobøe, hrdino, hodnì dobøe.}
+
+# 4. FLOAT [NO CARDS] (WTG)
+{215}{}{Kde jsou k ïasu moje karty, vdy jsem je ještì pøed chvílí mìl?}
+{000}{}{Tyhle zatracení šotci, ty vdycky chtìli moje karty.}
+
+# 5. FLOAT [GENERIC] (WTG)
+{220}{}{Hele, kámo, Nechoï do kasina. Zkus štìstí s Montem.}
+{000}{}{Hledáš pøíleitost paráku? Nejlepší vıhry v New Renu! Pojï...}
+{000}{}{Hele, ty. Vypadáš jako dítì štìstìny, pojï to zkusit.}
+{000}{}{Chce nìkdo hrát? Peníze zadara, peníze zadara.}
+{000}{}{Pøistupte blíe lidièky, mùete mì krásnì punpnout.}
+{000}{}{Je to jednoduchı, jenom najdi královnu, èervenou královnu a vyhraješ, to je jednoduchı.}
+{000}{}{Chceš si pøijít na rychlı prachy? Pøistup blí.}
+{000}{}{Kadı mùe vyhrát...chceš bıt další?}
+{000}{}{Kasina tì voberou a setrhaj z tebe šaty...Monte ti dá férovou šanci.}
+{000}{}{Hledáte pøíleitost dámo? Nejlepší vıhry v New Renu! Pojïte..}
+{000}{}{Chceš si pøijít na rychlı prachy? Pøistup blí.}
+{000}{}{Hele, šabajzno. Vypadáš jako dítì štìstìny, pojï to zkusit }
+{000}{}{Dámo nezlobte se s kasinem, zkuste radìji Monteho.}
+
+# 7. PLAYING CARDS GONE (WTG)
+{230}{}{Monte má dneska zavøenej krám, ztratil jsem karty.}
+
+# 8. INTRO (WTG)
+{231}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chceš hrát, pøíteli?}
+{000}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chcete hrát, dámo?}
+{000}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chceš hrát, hrdino?}
+{000}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chceš hrát, pøíteli?}
+{000}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chcete hrát, dámo?}
+{000}{}{(Starı mu se smìje a kùe kolem oèí se mu scvrkává.) Chceš hrát, hrdino?}
+{000}{}{Monte "Tøi karty" jméno mé a hra je podobná jako jméno. Hoï sem 20 a uvidíme co s tím.}
+{000}{}{Podvádíš. Nehraješ fér}
+{000}{}{No dobrá, nevím jestli 20 bude staèit, tak ti dám trochu víc}
+{000}{}{Uh, docela mi lichotíš, ale nechci o všechno pøijít...sbohem}
+{000}{}{Nehoò se}
+{000}{}{S podvodníkem jako si ty nehraju.}
+{000}{}{Uh, o co pøijít?}
+{000}{}{Ja tuhle hru dobøe znám. Tady máš 20 babek. Zkus to.}
+{000}{}{Monte "Tøi karty", jo? Dáš tøi karty obrázkem dolù, zamícháš je mezi sebou a já si vyberu kartu. Kdy si vyberu tu správnou - teda pokud jí náhodou nevymìníš pøi míchání - tak vyhraju. Dík nechci, kámo.}
+{000}{}{Monte "Tøi karty", jo? Dáš tøi karty obrázkem dolù, zamícháš je mezi sebou a já si vyberu kartu. Kdy si vyberu tu správnou - teda pokud jí náhodou nevymìníš pøi míchání - tak vyhraju. Dík nechci, kámo.}
+{000}{}{Dnes ne, dík.}
+
+# 9. UH, GET DOWN TO WHAT? (8)
+{250}{}{O co pøijít? No pøece o hru!}
+{000}{}{Podívej... (Ukáe ti tøi karty) ...jedna z nich je královna. Poloím je tváøí dolù, zamíchám je a ty si potom vybereš srdcovou královnu. Kdy jí najdeš, vyhráls.}
+{000}{}{To je jednoduchı, kámo.}
+{000}{}{To je jednoduchı, dìvèe.}
+{000}{}{S podvodníkem jako si ty nehraju.}
+{000}{}{Mùeš mi prosím tì ještì jednou vysvìtlit pravidla?}
+{000}{}{To zní jednoduše, já to zkusím. Tady máš 20 a jdeme na to.}
+{000}{}{Dnes ne, dík.}
+
+# 10.  PLAYING, BASIC CHEATING (8, 9, 11)
+{260}{}{(Dals mu prachy. Monte je stáhl, ukázal ti karty, potom je dal na stùl a pár vteøin je míchal.)}
+{000}{}{Tak...která z nich je královna, kámo?}
+{000}{}{Tak...která z nich je královna, dìvèe?}
+{000}{}{(Myslíš si, e je to ta nalevo.)}
+{000}{}{(Myslíš si, e je to ta uprostøed.)}
+{000}{}{(Myslíš si, e je to ta napravo.)}
+{000}{}{(Nevíš. Monte míchal kartama moc rychle.)}
+{000}{}{Levá Lucka}
+{000}{}{Nejlepší je cesta støední}
+{000}{}{Pravá šmucka}
+{000}{}{Je to ta nalevo.}
+{000}{}{Je to ta uprostøed.}
+{000}{}{Je to ta napravo.}
+
+# 11.  PLAYING, LOST (10, 12, 15)
+{280}{}{(Monte otoèí kartu. Je to kárová dvojka.)}
+{000}{}{Promiò, kámo, vedle, ale by si BLÍZKO.}
+{000}{}{Promiò, zlato, vedle, ale by si BLÍZKO.}
+{000}{}{Máš na to docela dobrı zrak, nechceš hrát znovu?}
+{000}{}{Ty podvádíš. Nehraješ fér}
+{000}{}{Tady máš pár mincí, nevím kolik je 20}
+{000}{}{Ne ne nemám rád tu hru ... u du}
+{000}{}{S podvodníkem jako si ty nehraju.}
+{000}{}{Jistì. Tady je tvıch 20.}
+{000}{}{Ne dík.}
+
+# 12.  PLAYING, NOTICE MONTE CHEATING (8, 9, 11, 14)
+{300}{}{(Dals mu prachy. Monte je sejmul, ukázal ti karty a je dal na stùl. Karty mu na chvílí zmizely v ruce. Potom je pár vteøin je míchal.)}
+{000}{}{Tak...která z nich je královna, kámo?}
+{000}{}{Tak...která z nich je královna, dìvèe?}
+{000}{}{Ta co není na stole ale v rukávì}
+{000}{}{Levá Lucka}
+{000}{}{Nejlepší je cesta støední}
+{000}{}{Pravá šmucka}
+{000}{}{Ty zasranej podvodníku. Vidìl sem, jak si tu kartu stopil. Vra mi okamitì prachy, nebo se ti kulkama podepíšu na záda.}
+{000}{}{Je to ta v rukávu.}
+{000}{}{Je to ta nalevo.}
+{000}{}{Je to ta uprostøed.}
+{000}{}{Je to ta napravo.}
+
+# 13. YOU GODDAMN CHEATER . . . (8, 9, 11, 12, 15)
+{320}{}{Cos to øíkal, kámo?}
+{000}{}{Cos to øíkala, zlato?}
+{000}{}{Obviòuješ mì z podvodu?}
+{000}{}{Ale. VÍM e podvádíš}
+{000}{}{Ne! Ne! Neblázni.. u musím jít.}
+{000}{}{Ano.}
+{000}{}{Vykašli se na to. Nech si prachy, padám odsud.}
+
+# 14. YES (13)
+{330}{}{Podívej, nemùu tady s tebou zahazovat èas, protoe si prohrál. Zaplatil's prachy, dostal's šanci. Kdy chceš hrát, musíš se nauèit prohrávat!}
+{000}{}{ROZLOUSKNU TI LEBKU}
+{000}{}{Ne! Ne! Neblázni.. u musím jít.}
+{000}{}{To jo. Udìlám z tebe rádlo pro èervy.}
+{000}{}{No jo tak tolik nekøiè, promiò. Tady je 20 babek a dem hrát znovu.}
+{000}{}{Vykašli se na to. Nech si prachy, padám odsud.}
+
+# 15. PLAYING, SWITCH BUT NOT COMPLETE, MONTE CHEATING (8, 9)
+
+{340}{}{(Dals mu prachy. Monte je stáhl, ukázal ti karty, potom je dal na stùl a pár vteøin je míchal.)}
+{000}{}{Tak...která z nich je královna, kámo?}
+{000}{}{Tak...která z nich je královna, dìvèe?}
+{000}{}{(Monte hraje s normálním balíèkem! Mìl bys mu ukradnout jeho fixlovací karty)}
+{000}{}{Ta co neni na stole ale v rukávì}
+{000}{}{Levá Lucka}
+{000}{}{Nejlepší je cesta støední}
+{000}{}{Pravá šmucka}
+{000}{}{Ty zasranej podvodníku. Vidìl sem, jak si tu kartu stopil. Vra mi okamitì prachy, nebo se ti kulkama podepíšu na záda.}
+{000}{}{Je to ta v rukávu.}
+{000}{}{Je to ta nalevo.}
+{000}{}{Je to ta uprostøed.}
+{000}{}{Je to ta napravo.}
+
+# 16. PLAYING, CHEATED MONTE (8, 9, 17)
+{360}{}{(Dals mu prachy. Monte je stáhl, ukázal ti karty, potom je dal na stùl a pár vteøin je míchal.)}
+{000}{}{(Dals mu prachy. Monte se podíval nepøíjemnì.) Uh...no dobrá... (Monte dal karty na stùl a potom je pár vteøin je míchal.)}
+{000}{}{Tak...která z nich je královna, kámo?}
+{000}{}{Tak...která z nich je královna, dìvèe?}
+{000}{}{(Monte pouívá oznaèenı balíèek. Jakákoli karta je správná.)}
+{000}{}{Levá! Levá!}
+{000}{}{Pravá! Pravá!}
+{000}{}{Prostøední! Prostøední!}
+{000}{}{Oh, nevím...zkusím tu nalevo.}
+{000}{}{Hmmmm...moná tahle napravo?}
+{000}{}{Do prdele, nejsem si jistı...asi to bude ta prostøední.}
+
+# 17. PLAYING, WON (16)
+{375}{}{(Monte otáèí kartu. Je to srdcová královna. Šokovanì øekne.) Uh...? Heh. Eh...}
+{000}{}{vypadá to, e si vyhrál, kámo.}
+{000}{}{vypadá to, e si vyhrála, zlato.}
+{000}{}{(Zdráhavì ti vyplácí vıhru.)}
+{000}{}{Ještì! Ještì!}
+{000}{}{Díkec, u musím jít}
+{000}{}{Tak zahrajem si ještì nebo co? Pojï, Monte. Teprve sem zaèal.}
+{000}{}{Tak dík, Monte. Uvidíme se pozdìji.}
+
+# 18. PLAYING, DON'T HAVE ANY MORE CASH (16)
+{385}{}{(Monte otáèí kartu. Je to srdcová královna. Šokovanì øekne.) Uh...? Heh. Eh...}
+{000}{}{vypadá to, e si vyhrál, kámo.}
+{000}{}{vypadá to, e si vyhrála, zlato.}
+{000}{}{U nemám ani vyndru, aèkoliv... (Podívá se na tebe smutnì) Mùu pro tebe nìco udìlat?}
+{000}{}{Nic. Jenom sem si chtìl zvednout zkušenosti, sbohem.}
+{000}{}{Co nabídneš?}
+{000}{}{Dej mi nìjaké informace?}
+{000}{}{Zapomeò na to, Monte. Promluvíme si o tom jindy.}
+
+# 19. WHAT HAVE YOU *GOT?* (18)
+{400}{}{(Podívá se bolestnì.) Eh...dobrá, nìco mám...ale má to vìtší cenu ne TVOJE vıhra...take...}
+{000}{}{No? Co je to?}
+{000}{}{Jestli ti to stojí za to, aby tì našli mrtvého v Golgotì protoe neplatíš dluhy, tak si to nech. Ale pøemıšlel bych o tom, kdybych byl tebou.}
+
+# 20. WHY DON'T YOU GIVE ME SOME INFO? (18, 44)
+{405}{}{Eh...hmnnn...to záleí na tom, co bys chtìl vìdìt.}
+{000}{}{Nevíš kdo má na svìdomí Wrightovic kluka? Kdo z nìj udìlal závisláka na Jetu?}
+{000}{}{Nevíš kde najdu chlapa co si øíká Hezoun Lloyd?}
+{000}{}{Nevíš náhodou, kde je moje auto, Monte?}
+{000}{}{Máš nìco o èem myslíš, e bych mìl vìdìt?}
+{000}{}{Nevadí, Monte. Jsme srovnáni, uvidíme se pozdìji.}
+
+# 21. O.D. ON JET (20)
+{415}{}{No...podívej, já jsem ti to neøekl, ale asi to bude Renesco, ten sráè co prodává drogy na západní stranì. Nejsem si jistı, jestli ON prodal nìco tomu klukovi, ale urèitì nìco ví.}
+{000}{}{Tak jo, Monte. Jsme srovnáni.}
+
+# 22. PRETTY BOY (20)
+{420}{}{Eh...Nue... (vypadá e svádí vnitøní bitvu) Ode mì sto neslyšel, ale kdybych byl ty, podíval bych se poøádnì do Desperadova suterénu.}
+{000}{}{Tak jo, Monte. Jsme srovnáni.}
+
+# 23. KNOW WHERE MY CAR IS? (20)
+{425}{}{(Zúí se mu zrak a oèi sklopí dolù) Zeptal bych se starého Julese na periférii mìsta. Za nic nemùe, ale má ve šem prsty. Jestli rozumíš co øíkám?}
+{000}{}{Tak jo, Monte. Jsme srovnáni.}
+
+# 24. GOT ANYTHING YOU THINK I SHOULD KNOW? (20)
+{430}{}{Dobrá...znáš toho Eldridge co má obchod se zbranìmi v New Renu? Øíkají, e dìlá úpravy na zbranì, ale v ivotì jsem ho nevidìl dìlat nìjakou práci. Moná by bylo uiteèné si to ovìøit...ale ode mì si to neslyšel.}
+{000}{}{Tak jo, Monte. Jsme srovnáni.}
+
+# 25. MONTE_BEATEN (WTG)
+{435}{}{(Monte se na tebe mraèí.) Podívej, dneska se ádnı hraní nekoná, je ti to jasnı? Vykuø.}
+{000}{}{Mùu si od tebe koupit tvoje karty?}
+{000}{}{Chtìl bych nìco vìdìt...}
+{000}{}{No jo, Monte. Odcházím...sbohem.}
+
+# 26.  CAN I BUY THAT CARD? (25, 27)
+{440}{}{Nikoliv. S tím nemohu souhlasit. Teèka. Je to PRAVÁ pøedváleèná památka...kousek historie. Prostì NE.}
+{000}{}{Máš pro mì jinou NABÍDKU? Podívej, u jsem ti øíkal, e nejsou na prodej.}
+{000}{}{Co tøeba jeden litr? Mám ho tu zrovna sebou. Vymìním ho za ty karty.}
+{000}{}{750 by ti mohlo staèit?}
+{000}{}{Co tøeba 500 babek?}
+{000}{}{Jak ti zní 250 babek?}
+{000}{}{No jo. Chtìl bych se ještì zeptat...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 27.  NOPE. (26)
+{450}{}{Sedíš si na uších? Tyhle tvoje nabídky mì nemùou zajímat.}
+{000}{}{A co kdybys mi nabídl nìco jiného...?}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 28.  OKAY. (26)
+{460}{}{Nue, za takovıchto podmínek mi nezáleí na NIÈEM. Jsou tvoje kámo. (Rychle se podívá nalevo a napravo, potom se sehne a sundá si botu. Odšroubuje patu a dutiny uvnitø vyndá balíèek karet.) Tady je máš, dej na nì bacha.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Díky Monte. Mìj se.}
+
+# 29.  WHY DON'T YOU GIVE ME SOME INFO? (25, 26, 27, 28, 30, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43)
+{465}{}{(Mraèí se) Jestli budu mluvit o tom co potøebuješ, závisí na tom co z toho kápne.}
+{000}{}{Nevíš kdo má na svìdomí Wrightovic kluka? Kdo z nìj udìlal závisláka na Jetu?}
+{000}{}{Nevíš kde najdu chlapa co si øíká Hezoun Lloyd?}
+{000}{}{Nevíš náhodou, kde je moje auto, Monte?}
+{000}{}{Máš nìco o èem myslíš, e bych mìl vìdìt?}
+{000}{}{Nevadí,Monte. Jsme srovnáni, uvidíme se pozdìji.}
+
+# 30.  O.D. ON JET, BUYING INFO (29, 31, 42)
+{475}{}{O Golgotì moc nemluv, ani já o tom nerad mluvím, kušuj s tím.}
+{000}{}{Podívej, tohle téma je jen špatná volba. Nech to na pokoji jo?}
+{000}{}{Máš ještì jinou nabídku? Podívej, øíkal jsem, e o TOM nebudu mluvit.}
+{000}{}{Tisícovka urèitì zmìní tvùj názor? Mám jí sebou.}
+{000}{}{Co bys øekl na 750?}
+{000}{}{Co tøeba 500 babek?}
+{000}{}{250 babek ti zní dobøe?}
+{000}{}{Uh...Gologoa?} #schválnì
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 31.  O.D. ON JET, NO DEAL (30)
+{490}{}{(Potøese hlavou.) Neblázni. Mluvit o nìèím zabití, tím si èlovìk zadìlá na vlastní smrt. Zapomeò.}
+{000}{}{Co kdybych ti za to nìco nabídl...}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 32.  O.D. ON JET, BOUGHT INFO (30)
+{495}{}{Eh...dobrá...to by mohlo staèit. (Olizuje si rty. A tváøí se jako kdyby mìl velkı problém....ale jen krátkı.) Podívej ode mì si nic slyšel...}
+{000}{}{Rozumím, pokraèuj.}
+
+# 33.  LLOYD, BUYING INFO (29, 34)
+{500}{}{(Ufrkne si) Moná jsem nìco slyšel, moná ne. Øekni cenu.}
+{000}{}{No jo...co za to.}
+{000}{}{Tisícovka urèitì zmìní tvùj názor? Mám jí sebou.}
+{000}{}{Co bys øekl na 750?}
+{000}{}{Co tøeba 500 babek?}
+{000}{}{250 babek ti zní dobøe?}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 34. PRETTY BOY, NOPE (33)
+{510}{}{Ha! Za tohle si nekoupím ani pytel sraèek, zapomeò na to.}
+{000}{}{Co kdybych ti za to nìco nabídl...}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 35. PRETTY BOY, SURE (33)
+{515}{}{Taaaaak takhle to je. (Opatrnì pomrkává.) Hele, já jsem nic neøekl, ale kdybych byl tebou, prohlídl bych si poøádnì suterén u Desperada na Ulici panen. Ale je tam hodnì rys, take je musíš umìt chytat.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Tak jo. Díks.}
+
+# 36. KNOW WHERE MY CAR IS? (29, 37)
+{520}{}{(pokrèí rameny) Moná o nìèem vím, moná ne. Øekni cenu.. a uvidíme, co s tím udìláme.}
+{000}{}{No jo...co za to.}
+{000}{}{Tisícovka urèitì zmìní tvùj názor? Mám jí sebou.}
+{000}{}{Co bys øekl na 750?}
+{000}{}{Co tøeba 500 babek?}
+{000}{}{250 babek ti zní dobøe?}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 37. KNOW WHERE MY CAR IS? NO (36)
+{530}{}{(Zúí se mu zrak a oèi sklopí dolù) Tak za tenhle obnos vím leda kulovı}
+{000}{}{Co kdybych ti za to nìco nabídl...}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 38. KNOW WHERE MY CAR IS? YES (36)
+{535}{}{Všechno je v pohodì... (Zúí se mu zrak a oèi sklopí dolù) ... Zeptal bych se starého Julese na periférii mìsta. Za nic nemùe, ale má ve šem prsty. Jestli rozumíš co øíkám?}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Tak jo, Monte. Dík.}
+
+# 39. GOT ANYTHING YOU THINK I SHOULD KNOW? (29)
+{540}{}{(Pokrèí rameny) Slyším vìci, vidím vìci. Za 200 babek, moná se mi osvìí pamì, jestli rozumíš co øíkám?}
+{000}{}{Tady máš 200 babek.}
+{000}{}{Dám ti 150.}
+{000}{}{100 babek nebo nic.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 40. GOT ANYTHING YOU THINK I SHOULD KNOW? NOPE (39)
+{550}{}{Seš hluchej? ØÍKÁM 200 babek, rozumbrado.}
+{000}{}{Tak jo. Tady máš 200.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Zapomeò na to, Monte. Padám odsud.}
+
+# 41. GOT ANYTHING YOU THINK I SHOULD KNOW? YES (39, 40)
+{555}{}{Nic. (Monte pokrèí rameny) Dobrá...znáš toho Eldridge co má obchod se zbranìmi v New Renu? Øíkají, e dìlá úpravy na zbranì, ale v ivotì jsem ho nevidìl dìlat nìjakou práci. Moná by bylo uiteèné si to ovìøit...ale ode mì si to neslyšel.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Rozumím. Dík, Monte.}
+
+# 42. GOLGOTHA (30)
+{560}{}{Pohøebištì na jih od mìsta. Smrdí to tam jak v prdeli.}
+{000}{}{Oh...Vidím. A teï o tom Wrightovic klukovi...}
+{000}{}{Zapomeò na Wrighta. Mám ještì nìjaké otázky...}
+{000}{}{Tak jo Monte. Dík.}
+
+# 43.  O.D. ON JET, BOUGHT INFO 2 (32)
+{565}{}{Vsadil bych na Renesca, ten sráè co prodává drogy na západní stranì. Nejsem si jistı, jestli ON prodal nìco tomu klukovi, ale urèitì nìco ví.. (Rozhlíí se kolem) To je vše co vím.}
+{000}{}{Mám ještì nìjaké otázky...}
+{000}{}{Rozumím. Dík, Monte.}
+
+# 44. WHY DON'T YOU GIVE ME THAT CARD? (19)
+{570}{}{(Rychle se rozhlídne kolem, potom se sehne a sundá si botu. Odšroubuje patu a dutiny uvnitø vyndá balíèek karet...na kartì je mu v divném klobouku, drící palici.) Zajímavé? Je to pravá pøedváleèná památka.}
+{000}{}{Ne, u mám v batohu dost blbostí... Dal bych pøednost spíše informacím.}
+{000}{}{Uh, Jistì, proè ne? Tohle urovná vìci mezi námi.}

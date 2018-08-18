@@ -1,0 +1,872 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "utils_for_array.fos"
+#include "prefixes.fos"
+#include "_ai.fos"
+#include "_maps.fos"
+#include "guard_red_events.fos"
+#include "guard_nec_events.fos"
+
+import void DropRadiation(Critter& cr) from "radiation";
+import void r_AddMerc2Player(Critter & player, Critter @ npc) from "merc";
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import void DropPoison(Critter& cr) from "poison";
+import void DropDrugEffects(Critter& cr) from "drugs";
+import void InjureCritter(Critter& cr, uint dmg, uint dmgType, uint8 dir, uint attackerId, uint forceFlags) from "combat";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+
+bool CheckIfDEV(Critter& player)
+{
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && PREFIXES[i][1]=="DEV")
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+bool CheckIfGM(Critter& player)
+{
+	bool Access=false;
+	for(uint i=0; i<PREFIXES.length(); i++)
+	{
+		if(player.Name==PREFIXES[i][0] && (PREFIXES[i][1]=="DEV" || PREFIXES[i][1]=="GM" ))
+		{
+			Access=true;
+			break;
+		}
+	}
+	return Access;
+}
+
+void unsafe_TeleportToMe(Critter& player, int id, int, int, string@, int[]@)
+{
+	Log("GM Log");
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(!valid(cr.GetMap())) return;
+	if(@cr!=null) cr.TransitToHex(player.HexX,player.HexY,cr.Dir);
+}
+
+void unsafe_GiveItem(Critter& player, int critter_id, int item_pid, int item_count, string@, int[]@)
+{
+	if(!CheckIfDEV(player)) return;
+	if(item_count<=0) return;
+	Critter@ cr=GetCritter(critter_id);
+	//Log(player.Name+" give "+cr.Name+" pid:"+ item_pid+" count:"+item_count);
+	if(@cr!=null) cr.AddItem(item_pid,item_count);
+}
+
+void unsafe_Knockout(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null) cr.ToKnockout(KNOCKOUT_ANIM2_DEFAULT(true),5,cr.HexX,cr.HexY);
+}
+
+void unsafe_TotalBanPlayer(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null)
+	{
+		cr.AddItem(PID_ROPE,1);
+		cr.ParamBase[PLAYER_IS_BANNED]=2;
+		Map @map=GetMapByPid(MAP_island,0);
+		if(@map!=null) cr.TransitToMap(map.Id,0);
+		//Log(player.Name+" ban "+cr.Name);
+	}
+}
+
+void unsafe_ChatBanPlayer(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null)
+	{
+		cr.ParamBase[PLAYER_IS_BANNED]=1;
+		//Log(player.Name+" ban from chat "+cr.Name);
+	}
+}
+
+void unsafe_UnBanChatPlayer(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null)
+	{
+		cr.ParamBase[PLAYER_IS_BANNED]=0;
+		//Log(player.Name+" unban "+cr.Name);
+	}
+}
+
+void unsafe_Kill(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null) cr.ToDead(0,cr);
+	//Log(player.Name+" kill "+cr.Name);
+}
+
+void unsafe_Respawn(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null) cr.ToLife();
+	//Log(player.Name+" respawn "+cr.Name);
+}
+
+void unsafe_Heal(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(@cr!=null)
+	{
+		cr.StatBase[ST_CURRENT_HP]+=1000;//cr.StatBase[ST_MAX_LIFE];
+		DropRadiation(cr);
+		DropPoison(cr);
+		DropDrugEffects(cr);
+		cr.DamageBase[DAMAGE_LEFT_LEG]=0;
+		cr.DamageBase[DAMAGE_RIGHT_LEG]=0;
+		cr.DamageBase[DAMAGE_LEFT_ARM]=0;
+		cr.DamageBase[DAMAGE_RIGHT_ARM]=0;
+		cr.DamageBase[DAMAGE_EYE]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_COOKIE]=0;
+		cr.TimeoutBase[TO_SK_FIRST_AID]=0;
+		cr.TimeoutBase[TO_SK_DOCTOR]=0;
+		cr.TimeoutBase[TO_SK_REPAIR]=0;
+		cr.TimeoutBase[TO_SK_SCIENCE]=0;
+		cr.TimeoutBase[TO_SK_LOCKPICK]=0;
+		cr.TimeoutBase[TO_SK_STEAL]=0;
+		cr.TimeoutBase[TO_SK_OUTDOORSMAN]=0;
+		cr.TimeoutBase[TO_SNEAK]=0;
+		cr.TimeoutBase[TO_HEALING]=0;
+		cr.TimeoutBase[TO_STEALING]=0;
+		cr.TimeoutBase[TO_AGGRESSOR]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_BUFFOUT]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_MENTATS]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_PSYCHO]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_JET]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_RAD_X]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_NUKA_COLA]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_BEER]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_CIGARETTES]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_DIXON_EYE]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_BRAIN_MEAT]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_HEART_MEAT]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_LIVER_MEAT]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_PLAYERS_EAR]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_TACTICAL]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_PARAMEDIC]=0;
+		cr.ParamBase[PLAYER_TIMEOUT_PARAMEDIC_FA]=0;
+		
+		cr.ParamBase[IS_AGRESOR]=0;
+	}
+	//Log(player.Name+" for "+cr.Name);
+}
+
+void unsafe_DeleteNpc(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter @cr=GetCritter(id);
+	if(@cr!=null) if(cr.IsNpc()) DeleteNpc(cr);
+	//Log(player.Name+" delete npc "+id);
+}
+
+void unsafe_AddMerc(Critter& player, int to_id, int merc_pid, int count, string@, int[]@)
+{
+	if(!CheckIfDEV(player)) return;
+	Critter @cr=GetCritter(to_id);
+	if(@cr==null) return;
+	Map @map = cr.GetMap();
+	if(!valid(map)) return;
+	if(count>15) count=15;
+	for(int i=0; i<count; i++)
+	{
+		Critter@ merc=map.AddNpc(merc_pid,cr.HexX,cr.HexY,player.Dir,null,null,null);
+		if(merc_pid==6000)
+		{
+			merc.AddItem(PID_BEER,3);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_BEER);
+		}
+		else if(merc_pid==6001)
+		{
+			merc.AddItem(PID_COMBAT_KNIFE_DE,2);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_COMBAT_KNIFE_DE);
+		}
+		else if(merc_pid==6002)
+		{
+			merc.AddItem(PID_14MM_PISTOL_DE,1);
+			merc.AddItem(PID_14MM_AP_DE,150);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_14MM_PISTOL_DE);
+		}
+		else if(merc_pid==3201 || merc_pid==3202 || merc_pid==3211 || merc_pid==3212 || merc_pid==5101 || merc_pid==5102 || merc_pid==6003 || merc_pid==NPC_PID_guardBLUE || merc_pid==NPC_PID_guardwBLUE || merc_pid==3221 || merc_pid==3222)
+		{
+			merc.AddItem(PID_AK47_NORMAL1_DE,1);
+			merc.AddItem(PID_762X39_DE,300);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_AK47_NORMAL1_DE);
+		}
+		else if(merc_pid==6004)
+		{
+			merc.AddItem(PID_M60_DE,1);
+			merc.AddItem(PID_762x51_DE,500);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_M60_DE);
+		}
+		else if(merc_pid==5103 || merc_pid==5104 || merc_pid==120 || merc_pid==3102 || merc_pid==6006)
+		{
+			merc.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+			merc.AddItem(PID_ROCKET_AP_DE,30);
+			merc.AddItem(PID_EXPLOSIVE_ROCKET_DE,30);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_ROCKET_LAUNCHER_DE);
+		}
+		else if(merc_pid==121 || merc_pid==3103 || merc_pid==6005)
+		{
+			merc.AddItem(PID_MINIGUN_DE,1);
+			merc.AddItem(PID_5MM_JHP_DE,500);
+			merc.AddItem(PID_5MM_AP_DE,500);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_MINIGUN_DE);
+		}
+		else if(merc_pid==6007)
+		{
+			merc.AddItem(PID_LASER_RIFLE_EXT_CAP_DE,1);
+			merc.AddItem(PID_MICRO_FUSION_CELL_DE,150);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_LASER_RIFLE_EXT_CAP_DE);
+		}
+		else if(merc_pid==3113 || merc_pid==3114)
+		{
+			merc.AddItem(PID_SHARP_SPEAR_DE,1);
+			merc.SetFavoriteItem(SLOT_HAND1,PID_SHARP_SPEAR_DE);
+		}
+		r_AddMerc2Player(cr,merc);
+		merc.Say(SAY_NORM_ON_HEAD,"At your service.");
+		//merc.ParamBase[MODE_UNLIMITED_AMMO]=1;
+		//merc.ModeBase[MODE_NO_DROP]=1;
+		merc.MercBase[MERC_CANCEL_ON_ATTACK]=1;
+		//merc.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+		merc.ShowCritterDist1=30;
+		merc.StatBase[ST_FREE_BARTER_PLAYER]=player.Id;
+		if(merc_pid>=5101 && merc_pid<=5199 || merc_pid==3211 || merc_pid==3212)
+		{
+			merc.ParamBase[PLAYER_MAIN_FACTION]=1;
+			merc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+			merc.StatBase[ST_TEAM_ID]=TEAM_RED;
+			merc.SetEvent(CRITTER_EVENT_ATTACKED,"RedAttacked");
+		}
+		else if(merc_pid==NPC_PID_guardBLUE || merc_pid==3201 || merc_pid==3202)
+		{
+			merc.ParamBase[PLAYER_MAIN_FACTION]=2;
+			merc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+			merc.StatBase[ST_TEAM_ID]=TEAM_BLUE;
+			merc.SetEvent(CRITTER_EVENT_ATTACKED,"BlueAttacked");
+		}
+	}
+	Log(player.Name+" addmerc to "+to_id+":"+cr.Name);
+}
+
+void unsafe_SetMainFaction(Critter& player, int cr_id, int main_faction, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(main_faction<0 || main_faction>2) return;
+	Critter @cr=GetCritter(cr_id);
+	if(@cr==null) return;
+	cr.ParamBase[PLAYER_MAIN_FACTION]=main_faction;
+	Log(player.Name+" SetMainFaction "+cr_id+":"+cr.Name+" on "+main_faction );
+}
+
+void unsafe_SetParam(Critter& player, int critter_id, int param_pid, int value, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(critter_id);
+	if(param_pid==947) return;
+	if(@cr!=null) cr.ParamBase[param_pid]=value;
+	Log("WARNING "+player.Name+" ustawiі parametr "+critter_id+":"+cr.Name+" param:"+param_pid+" na "+value );
+}
+
+void unsafe_DeleteItem(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	Item @it=GetItem(id);
+	if(@it!=null) DeleteItem(it);
+}
+
+void unsafe_Take(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Item @it=GetItem(id);
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	if(@it!=null)
+	{
+		player.AddItem(it.GetProtoId(),1);
+		DeleteItem(it);
+	}
+	//Log("admin take item");
+}
+
+void unsafe_Clone(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfDEV(player)) return;
+	Item @it=GetItem(id);
+	if(@it!=null) player.AddItem(it.GetProtoId(),1);
+	//Log("admin clone item pid:"+it.GetProtoId());
+}
+
+void unsafe_Teleport(Critter& player, int hx, int hy, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=player.GetMap();
+	if(!valid(map)) return;
+    //map.RunEffect(PID_EXPLODE_EMP,player.HexX,player.HexY,0);
+	player.TransitToHex(hx,hy,player.Dir);
+    //map.RunEffect(PID_EXPLODE_EMP,player.HexX,player.HexY,0);
+}
+
+void unsafe_GlobalMap(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	player.TransitToGlobal(false);
+}
+
+void unsafe_SpawnItem(Critter& player, int hx, int hy, int pid, string@, int[]@ count)
+{
+	if(!CheckIfGM(player)) return;
+	if(@count==null) return;
+	if(count.length()==0) return;
+	if(count[0]<=0) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	map.AddItem(hx,hy,pid,count[0]);
+	//Log("SpawnItem "+pid+" count:"+count[0]);
+}
+
+void unsafe_Snow(Critter& player, int, int, int, string@, int[]@ count)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	for(int i=0; i<200; i++)
+	{
+		for(int j=0; j<200; j++)
+		{
+			if(i%2==0 && j%2==0)
+				map.AddItem(i,j,7966,1);
+		}
+	}
+}
+
+void unsafe_Lightning(Critter &player, int, int, int, string@, int[]@ count)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	map.PlaySound("lightning.ogg");
+	Critter@[]crs;
+	map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_ALL,crs);
+	for(uint i=0; i<crs.length(); i++)
+	{
+		crs[i].RunClientScript("_FlushScreen",0x7FFEFEFE,0,200,null,null);
+		crs[i].RunClientScript("_QuakeScreen",10,200,0,null,null);
+	}
+}
+
+void unsafe_SpawnCritter(Critter& player, int hx, int hy, int pid, string@, int[]@ count)
+{
+	if(!CheckIfGM(player)) return;
+	if(@count==null) return;
+	if(count.length()==0) return;
+	if(count[0]<=0) return;
+	if(count[0]>15) count[0]=15;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	for(int i=0; i<count[0]; i++)
+	{
+		Critter@ spawncr;
+		if(pid==987) @spawncr=map.AddNpc(pid,hx,hy,player.Dir,null,null,"guards@_GuardInit");
+		else @spawncr=map.AddNpc(pid,hx,hy,player.Dir,null,null,null);
+		//spawncr.StatBase[ST_TEAM_ID]=8;
+		//spawncr.StatBase[ST_AI_ID]=8;
+		spawncr.SetEvent(CRITTER_EVENT_DEAD,"RemoveSpawnedCritter");
+		spawncr.ModeBase[MODE_UNLIMITED_AMMO]=1;
+		spawncr.ModeBase[MODE_NO_DROP]=1;
+		spawncr.ShowCritterDist1=30;
+		if(pid==3201 || pid==3202 || pid==3211 || pid==3212 || pid==5001 || pid==5002 || pid==5101 || pid==5102|| pid==3221 || pid==3222)
+		{
+			spawncr.AddItem(PID_AK47_NORMAL1_DE,1);
+			spawncr.SetFavoriteItem(SLOT_HAND1,PID_AK47_NORMAL1_DE);
+		}
+		else if(pid==5103 || pid==5104 || pid==120 || pid==3102)
+		{
+			spawncr.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+			spawncr.SetFavoriteItem(SLOT_HAND1,PID_ROCKET_LAUNCHER_DE);
+		}
+		else if(pid==121 || pid==3103)
+		{
+			spawncr.AddItem(PID_MINIGUN_DE,1);
+			spawncr.SetFavoriteItem(SLOT_HAND1,PID_MINIGUN_DE);
+		}
+		else if(pid==3113 || pid==3114)
+		{
+			spawncr.AddItem(PID_SHARP_SPEAR_DE,1);
+			spawncr.SetFavoriteItem(SLOT_HAND1,PID_SHARP_SPEAR_DE);
+		}
+		if((pid>=5101 && pid<=5199  || pid==3211 || pid==3212))
+		{
+			spawncr.ParamBase[PLAYER_MAIN_FACTION]=1;
+			spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+			spawncr.StatBase[ST_TEAM_ID]=TEAM_RED;
+			spawncr.SetEvent(CRITTER_EVENT_ATTACKED,"RedAttacked");
+		}
+		else if((pid>=5001) && (pid<=5099)  || pid==3201 || pid==3202)
+		{
+			spawncr.ParamBase[PLAYER_MAIN_FACTION]=2;
+			spawncr.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"NECEventShowCritter");
+			spawncr.StatBase[ST_TEAM_ID]=TEAM_BLUE;
+			spawncr.SetEvent(CRITTER_EVENT_ATTACKED,"BlueAttacked");
+		}
+	}
+}
+
+void unsafe_TeleportPlayers(Critter& player, int hx, int hy, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	Critter@[] crs;
+	uint cr_count=map.GetCritters(0,FIND_ONLY_PLAYERS|FIND_LIFE_AND_KO,crs);
+	for(uint i=0; i<cr_count; i++)
+	{
+		if(crs[i].Id!=player.Id) crs[i].TransitToHex(hx,hy,crs[i].Dir);
+	}
+}
+
+void unsafe_RemoveItemsFromGround(Critter& player, int hx, int hy, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	Item@[] weapons;
+	Item@[] armors;
+	Item@[] ammo;
+	uint items_count;
+	items_count=map.GetItemsByType(ITEM_TYPE_WEAPON,weapons);
+	for(uint i=0; i<items_count; i++) DeleteItem(weapons[i]);
+	items_count=map.GetItemsByType(ITEM_TYPE_ARMOR,armors);
+	for(uint i=0; i<items_count; i++) DeleteItem(armors[i]);
+	items_count=map.GetItemsByType(ITEM_TYPE_AMMO,ammo);
+	for(uint i=0; i<items_count; i++) DeleteItem(ammo[i]);
+}
+
+void unsafe_TeleportPlayer(Critter& player, int hx, int hy, int, string@ playerName, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(@playerName==null) return;
+	Map @map = player.GetMap();
+	if(!valid(map)) return;
+	string original_name=playerName;
+	Critter @find_cr1;
+	Critter @find_cr2;
+	@find_cr1=GetPlayer(playerName);
+	if(@find_cr1==null)
+	{
+		if(playerName.length()>5)
+		{
+			if(substring(playerName,0,5)=="[DEV]")
+				playerName=substring(playerName,6,playerName.length()-6);
+		}
+		@find_cr2=GetPlayer(playerName);
+		if(@find_cr2==null)
+		{
+			player.Say(SAY_NETMSG,"Player "+original_name+" is offline or does not exist.");
+			return;
+		}
+		if(!CheckIfDEV(find_cr2))
+		{
+			player.Say(SAY_NETMSG,"Player "+original_name+" is offline or does not exist.");
+			return;
+		}
+		find_cr2.TransitToMap(player.GetMapId(),hx,hy,find_cr2.Dir);
+		return;
+	}
+	find_cr1.TransitToMap(player.GetMapId(),hx,hy,find_cr1.Dir);
+}
+
+void unsafe_TeleportToPlayer(Critter& player, int, int, int, string@ playerName, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(@playerName==null) return;
+	Critter @find_cr;
+	@find_cr=GetPlayer(playerName);
+	if(@find_cr==null)
+	{
+		player.Say(SAY_NETMSG,"Player "+playerName+" is offline or does not exist.");
+		return;
+	}
+	if(!valid(find_cr.GetMap())) player.TransitToGlobalGroup(find_cr.Id);
+	else player.TransitToMap(find_cr.GetMapId(),find_cr.HexX,find_cr.HexY,player.Dir);
+}
+
+void unsafe_NoRain(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	map.SetRain(0);
+}
+
+void unsafe_SmallRain(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	map.SetRain(50);
+	map.PlaySound("small_rain.ogg");
+}
+
+void unsafe_BigRain(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=player.GetMap();
+	if(@map==null) return;
+	map.SetRain(150);
+	map.PlaySound("big_rain.ogg");
+}
+
+//events
+
+void RemoveSpawnedCritter(Critter& cr, Critter@ killer)
+{
+	CreateTimeEvent(__FullSecond+REAL_SECOND(120),"e_RemoveSpawnedCritter",cr.Id,true);
+}
+
+uint e_RemoveSpawnedCritter(uint[]@ id)
+{
+	Critter@ cr=GetCritter(id[0]);
+	if(!valid(cr)) return 0;
+	DeleteNpc(cr);
+	return 0;
+}
+
+
+
+void unsafe_TeleportToMap(Critter& player, int id, int idmap, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map @map=GetMapByPid(idmap,0);
+	Critter@ cr=GetCritter(id);
+	if(cr.GetMap().GetProtoId ()==idmap) return;
+	if(@map!=null) cr.TransitToMap(map.Id,0);
+}
+
+void unsafe_TeleportToPlayerBase(Critter& player, int id, int , int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(!valid(cr)) return;
+	Map @map=GetLocation(cr.ParamBase[PLAYER_BASE]).GetMapByIndex(0);
+	if(@map!=null) player.TransitToMap(map.Id,0);
+}
+
+void unsafe_CheckInv(Critter& player, int crId, int , int, string@, int[]@)
+{
+	Critter@ critter = GetCritter(crId);
+	if(valid(critter))
+	player.ShowContainer(critter, null, TRANSFER_FAR_CRIT);
+}
+
+void unsafe_ItemCheckInv(Critter& player, int itemId, int , int, string@, int[]@)
+{
+	Item@ item = GetItem(itemId);
+	if(valid(item))
+	player.ShowContainer(null, item, TRANSFER_FAR_CONT);
+}
+
+void unsafe_NpcMessageAttact(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(player.ParamBase[PLAYER_MAIN_FACTION]==1)//red
+	{
+	Critter@ cr=GetCritter(id);
+	player.SendMessage(995,cr.Id,MESSAGE_TO_I_SEE);
+	}
+	else if(player.ParamBase[PLAYER_MAIN_FACTION]==2)//blue
+	{
+		Critter@ cr=GetCritter(id);
+	player.SendMessage(997,cr.Id,MESSAGE_TO_I_SEE);
+	}
+	else
+	{
+	Critter@ cr=GetCritter(id);
+	player.SendMessage(999,cr.Id,MESSAGE_TO_I_SEE);
+	}
+	
+}
+
+void unsafe_NpcMessageStop(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(player.ParamBase[PLAYER_MAIN_FACTION]==1)//red
+	{
+	player.SendMessage(994,0,MESSAGE_TO_ALL_ON_MAP);
+	}
+	else if(player.ParamBase[PLAYER_MAIN_FACTION]==2)//blue
+	{
+	player.SendMessage(996,0,MESSAGE_TO_ALL_ON_MAP);
+	}
+	else
+	{
+	player.SendMessage(998,0,MESSAGE_TO_ALL_ON_MAP);
+	}
+}
+
+void unsafe_ChoseCrriter(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	GameVar@  chosen= GetLocalVar(LVAR_de_dev_chosecritter_id , player.Id);
+	chosen=id;
+}
+
+void unsafe_ChoseCrriterAttact(Critter& player, int id, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	GameVar@  chosen= GetLocalVar(LVAR_de_dev_chosecritter_id , player.Id);
+	if(chosen==id) return;
+	AddAttackPlane(GetCritter(chosen.GetValue()), 0, GetCritter(id),true);
+}
+
+void unsafe_ChoseCrriterMove(Critter& player, int hexX, int hexY, int, string@, int[]@) //niepodpiete
+{
+	if(!CheckIfGM(player)) return;
+	GameVar@  chosen= GetLocalVar(LVAR_de_dev_chosecritter_id , player.Id);
+	AddWalkPlane(GetCritter(chosen.GetValue()), 0, hexX, hexY, 2, true, 1);
+}
+
+void unsafe_ClearItems(Critter& player, int id, int idmap, int, string@, int[]@)
+{	
+	if(!CheckIfGM(player)) return;
+	Critter@ cr=GetCritter(id);
+	if(!valid(cr)) return;
+	Item@[] items;
+	if(cr.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+}
+
+void unsafe_myvisible(Critter& player, int , int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(!valid(player)) return;
+	if(player.ParamBase[CRITER_VISIBLE]==0)	player.ParamBase[CRITER_VISIBLE]=1;
+	else player.ParamBase[CRITER_VISIBLE]=0;
+}
+
+void unsafe_DeleteLocation(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfDEV(player)) return;
+	if(!valid(player)) return;
+	Map@ map=player.GetMap();
+	if(!valid(map)) return;
+	Location@ loc= map.GetLocation();
+	if(!valid(loc)) return;
+	DeleteLocation(loc.Id);
+}
+
+void unsafe_DeleteLocationById(Critter& player, int locId, int, int, string@, int[]@)
+{
+	if(!CheckIfDEV(player)) return;
+	Location@ loc= GetLocation(locId);
+	if(!valid(loc)) return;
+	DeleteLocation(loc.Id);
+}
+
+void unsafe_ChangeTurnBaseInMap(Critter& player, int hx, int hy, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	Map@ map = player.GetMap();
+	if(ChangeTurnBaseInMap(map)) player.Say(SAY_NETMSG,"Trun Base chenged");
+}
+
+bool ChangeTurnBaseInMap(Map@ map)
+{
+	if(!valid(map)) return false;
+	if(map.IsTurnBasedAvailability()) map.SetTurnBasedAvailability(false);
+	else map.SetTurnBasedAvailability(true);
+	return true;
+}
+
+void unsafe_SetKnowLocation(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(!valid(player)) return;
+	Map@ map=player.GetMap();
+	if(!valid(map)) return;
+	Location@ loc= map.GetLocation();
+	if(!valid(loc)) return;
+	player.SetKnownLoc(true,loc.Id);
+}
+
+void unsafe_USetKnowLocation(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(!valid(player)) return;
+	Map@ map=player.GetMap();
+	if(!valid(map)) return;
+	Location@ loc= map.GetLocation();
+	if(!valid(loc)) return;
+	player.UnsetKnownLoc(true,loc.Id);
+}
+
+void unsafe_GiveWeapons(Critter& player, int, int, int, string@, int[]@)
+{
+	for(uint i=10000,j=10381;i<j;i++) 
+	{	
+		Item@ spawn = player.AddItem(i,1);
+		if valid(spawn)	
+		{
+			spawn.Val5=10000;
+			spawn.Update();
+		}
+	}
+}
+
+void unsafe_GiveAmmo(Critter& player, int, int, int, string@, int[]@)
+{
+	for(uint i=700,j=743;i<j;i++) player.AddItem(i,1000);
+}
+
+void unsafe_displaycritterparams(Critter& player, int id, int , int, string@, int[]@)
+{
+	//if(!CheckIfGM(player)) return;
+	string param;
+	string result = "Stats:\n";
+	int czas = 0;
+	Critter@ cr=GetCritter(id);
+	if(@cr==null) return;
+	result= result + "Honor Points" + ": " + cr.ParamBase[HONOR_POINTS] + "\n";
+	result= result + "0 ST_STRENGTH" + ": " + cr.ParamBase[ST_STRENGTH] + "\n";
+	result= result + "1 ST_PERCEPTION" + ": " + cr.ParamBase[ST_PERCEPTION] + "\n";
+	result= result + "2 ST_ENDURANCE" + ": " + cr.ParamBase[ST_ENDURANCE] + "\n";
+	result= result + "3 ST_CHARISMA" + ": " + cr.ParamBase[ST_CHARISMA] + "\n";
+	result= result + "4 ST_INTELLECT" + ": " + cr.ParamBase[ST_INTELLECT] + "\n";
+	result= result + "5 ST_AGILITY" + ": " + cr.ParamBase[ST_AGILITY] + "\n";
+	result= result + "6 ST_LUCK" + ": " + cr.ParamBase[ST_LUCK] + "\n";
+	result= result + "7 ST_MAX_LIFE" + ": " + cr.ParamBase[ST_MAX_LIFE] + "\n";
+	result= result + "8 ST_ACTION_POINTS" + ": " + cr.ParamBase[ST_ACTION_POINTS] + "\n";
+	result= result + "9 ST_ARMOR_CLASS" + ": " + cr.ParamBase[ST_ARMOR_CLASS] + "\n";
+	result= result + "11 ST_CARRY_WEIGHT" + ": " + cr.ParamBase[ST_CARRY_WEIGHT] + "\n";
+	result= result + "14 ST_CRITICAL_CHANCE" + ": " + cr.ParamBase[ST_CRITICAL_CHANCE] + "\n";
+	result= result + "15 ST_MAX_CRITICAL" + ": " + cr.ParamBase[ST_MAX_CRITICAL] + "\n";
+	result= result + "32 ST_STRENGTH_EXT" + ": " + cr.ParamBase[ST_STRENGTH_EXT] + "\n";
+	result= result + "33 ST_PERCEPTION_EXT" + ": " + cr.ParamBase[ST_PERCEPTION_EXT] + "\n";
+	result= result + "34 ST_ENDURANCE_EXT" + ": " + cr.ParamBase[ST_ENDURANCE_EXT] + "\n";
+	result= result + "35 ST_CHARISMA_EXT" + ": " + cr.ParamBase[ST_CHARISMA_EXT] + "\n";
+	result= result + "36 ST_INTELLECT_EXT" + ": " + cr.ParamBase[ST_INTELLECT_EXT] + "\n";
+	result= result + "37 ST_AGILITY_EXT" + ": " + cr.ParamBase[ST_AGILITY_EXT] + "\n";
+	result= result + "38 ST_LUCK_EXT" + ": " + cr.ParamBase[ST_LUCK_EXT] + "\n";
+	result= result + "39 ST_MAX_LIFE_EXT" + ": " + cr.ParamBase[ST_MAX_LIFE_EXT] + "\n";
+	result= result + "40 ST_ACTION_POINTS_EXT" + ": " + cr.ParamBase[ST_ACTION_POINTS_EXT] + "\n";
+	result= result + "41 ST_ARMOR_CLASS_EXT" + ": " + cr.ParamBase[ST_ARMOR_CLASS_EXT] + "\n";
+	result= result + "46 ST_CRITICAL_CHANCE_EXT" + ": " + cr.ParamBase[ST_CRITICAL_CHANCE_EXT] + "\n";
+	result= result + "47 ST_MAX_CRITICAL_EXT" + ": " + cr.ParamBase[ST_MAX_CRITICAL_EXT] + "\n";
+	result= result + "55 ST_NORMAL_RESIST_EXT" + ": " + cr.ParamBase[ST_NORMAL_RESIST_EXT] + "\n";
+	result= result + "64 ST_TOXIC" + ": " + cr.ParamBase[ST_TOXIC] + "\n";
+	result= result + "65 ST_RADIOACTIVE" + ": " + cr.ParamBase[ST_RADIOACTIVE] + "\n";
+	result= result + "66 ST_KILL_EXPERIENCE" + ": " + cr.ParamBase[ST_KILL_EXPERIENCE] + "\n";
+	result= result + "67 ST_BODY_TYPE" + ": " + cr.ParamBase[ST_BODY_TYPE] + "\n";
+	result= result + "70 ST_AGE" + ": " + cr.ParamBase[ST_AGE] + "\n";
+	result= result + "72 ST_CURRENT_HP" + ": " + cr.ParamBase[ST_CURRENT_HP] + "\n";
+	result= result + "73 ST_POISONING_LEVEL" + ": " + cr.ParamBase[ST_POISONING_LEVEL] + "\n";
+	result= result + "74 ST_RADIATION_LEVEL" + ": " + cr.ParamBase[ST_RADIATION_LEVEL] + "\n";
+	result= result + "75 ST_CURRENT_AP" + ": " + cr.ParamBase[ST_CURRENT_AP] + "\n";
+	result= result + "76 ST_EXPERIENCE" + ": " + cr.ParamBase[ST_EXPERIENCE] + "\n";
+	result= result + "77 ST_LEVEL" + ": " + cr.ParamBase[ST_LEVEL] + "\n";
+	result= result + "78 ST_UNSPENT_SKILL_POINTS" + ": " + cr.ParamBase[ST_UNSPENT_SKILL_POINTS] + "\n";
+	result= result + "79 ST_UNSPENT_PERKS" + ": " + cr.ParamBase[ST_UNSPENT_PERKS] + "\n";
+	result= result + "80 ST_KARMA" + ": " + cr.ParamBase[ST_KARMA] + "\n";
+	
+	for(uint i=0; i<121; i++)
+	{
+		param=cr.ParamBase[i];
+		if(czas == 8)
+		{
+			czas=0;
+			result= result + i + ": " + param + "\n";
+		}
+		else
+		{
+			czas++;
+			result= result + i + ": " + param + " ";
+		}
+	}
+	for(uint i=200; i<218; i++)
+	{
+		param=cr.ParamBase[i];
+		if(czas == 8)
+		{
+			czas=0;
+			result= result + i + ": " + param + "\n";
+		}
+		else
+		{
+			czas++;
+			result= result + i + ": " + param + " ";
+		}
+	}
+	for(uint i=226; i<249; i++)
+	{
+		param=cr.ParamBase[i];
+		if(czas == 8)
+		{
+			czas=0;
+			result= result + i + ": " + param + "\n";
+		}
+		else
+		{
+			czas++;
+			result= result + i + ": " + param + " ";
+		}
+	}
+	for(uint i=300; i<354; i++)
+	{
+		param=cr.ParamBase[i];
+		if(czas == 8)
+		{
+			czas=0;
+			result= result + i + ": " + param + "\n";
+		}
+		else
+		{
+			czas++;
+			result= result + i + ": " + param + " ";
+		}
+	}
+	for(uint i=380; i<906; i++)
+	{
+		param=cr.ParamBase[i];
+		if(czas == 8)
+		{
+			czas=0;
+			result= result + i + ": " + param + "\n";
+		}
+		else
+		{
+			czas++;
+			result= result + i + ": " + param + " ";
+		}
+	}
+	player.RunClientScript("client_screen_param@ResultCritterParams",0,0,0,result,null);
+}
+

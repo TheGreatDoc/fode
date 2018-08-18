@@ -1,0 +1,76 @@
+{100}{}{Tu vois un Shi à l'air mauvais.}
+{101}{}{Tu vois le Docteur Jing Tie Gahng}
+{102}{}{Tu vois un Shi portant une blouse de laboratoire.}
+{103}{}{Qui es-tu ? Que veux-tu ?}
+{104}{}{Quoi ?}
+{105}{}{Qui es-TU ?}
+{106}{}{Je m'appelle }
+{107}{}{Ca ne te regarde pas.}
+{108}{}{Rien. Je m'en vais.}
+{109}{}{Tu n'as rien à faire ici si tu es un imbécile. Fiche le camp avant que j'appelle les gardes.}
+{110}{}{Tu ne me comprends vraiment pas, hein ? Tu comprendras peut-être mieux les gardes. Gardes ! Un intrus !}
+{111}{}{-Terminé-}
+{112}{}{Je suis Jing Tie Gahng. Je dirige le laboratoire chimique du Palais d'Acier... Et tu perturbes un travail important. Va-t'en. Immédiatement... avant que j'appelle les gardes !}
+{113}{}{Vas-y mon vieux, appelle-les !}
+{114}{}{Très bien... Je m'en vais.}
+{115}{}{Eh bien,}
+{116}{}{Oui. Je suis ici pour obtenir du carburant pour le pétrolier Poséidon.}
+{117}{}{J'aimerais savoir ce que tu fais ici.}
+{118}{}{Je suis ici pour obtenir du carburant pour les Hubologistes.}
+{119}{}{Non. Je m'en vais immédiatement.}
+{120}{}{Ahh, mais tu vois, c'est mon boulot. C'est mon laboratoire. Maintenant, dis-moi ce que tu fais là.}
+{121}{}{Je suis ici pour trouver du carburant pour le pétrolier Poséidon.}
+{122}{}{J'aimerais savoir ce que tu fais ici.}
+{123}{}{Je suis ici pour obtenir du carburant pour les Hubologistes.}
+{124}{}{Non. Je m'en vais immédiatement.}
+{125}{}{Tu veux du carburant pour le pétrolier ? Je veux une superarmure renforcée. Je sais qu'un Hubologiste, un certain Crocket, dispose du processus permettant d'améliorer une SuperArmure ordinaire. Donne-moi une de ces armures et je transférerai le carburant pour toi.}
+{126}{}{Ca marche.}
+{127}{}{Je ne peux rien te promettre.}
+{128}{}{J'en ai justement une ici.}
+{129}{}{Je crée des composants et des mécanismes pour l'Empereur et son conseiller, Ken Lee. En ce moment, je travaille sur des dérivés de carburant et des polymères capables de résister à une attaque massive. Bien sûr, cela ne t'intéressera peut-être pas car c'est en grande partie théorique.}
+{130}{}{En fait, c'est intéressant. J'ai besoin de carburant pour le pétrolier Poséidon.}
+{131}{}{Je pense que ça pourrait intéresser les Hubologistes. Ils ont besoin de carburant.}
+{132}{}{Pas pour l'instant. Mais je vais revenir.}
+{133}{}{Ils veulent du carburant, c'est ça ? Eh bien, même s'ils sont agaçants, ils peuvent toujours servir. J'ai entendu dire qu'ils avaient mis au point un processus capable de renforcer l'invincibilité des super armures. S'ils acceptent de renforcer une armure pour moi, je transférerai le carburant via le pipeline. Je suppose que c'est pour leur vaisseau spatial. Tu dois t'adresser à un certain Crocket.}
+{134}{}{Pas de problème.}
+{135}{}{Je ne peux rien te promettre.}
+{136}{}{J'en ai justement une ici.}
+{137}{}{Même si je voulais t'aider, je ne pourrais pas le faire. Nos réserves de carburant sont épuisées. Tu ferais peut-être mieux de t'adresser aux Hubologistes. Au revoir.}
+{138}{}{Oh. Eh bien, c'est tout alors.}
+{139}{}{C'est quasiment impossible. Nos réserves de carburant sont épuisées. Même si je voulais aider les Hubologistes, ce qui n'est pas le cas, je ne pourrais pas le faire. Au revoir.}
+{140}{}{OK. Au revoir.}
+{141}{}{Très bien. Alors, laisse-moi me remettre au travail.}
+{142}{}{-Terminé-}
+{143}{}{Tu ne peux pas le faire ? Bon, alors, je ne peux pas te vendre de carburant. Maintenant, fiche le camp ; j'ai à faire.}
+{144}{}{-Terminé-}
+{145}{}{Tu as renforcé la superarmure ? Parfait ! Comment veux-tu que je te paye ?}
+{146}{}{Transfère le carburant aux Hubologistes en échange.}
+{147}{}{Transfère le carburant à bord du pétrolier Poséidon.}
+{148}{}{Et que dirais d'un peu de fric ? }
+{149}{}{J'ai décidé de le garder.}
+{150}{}{C'est comme si c'était fait. Je vais me dépêcher de faire les réglages. Maintenant, excuse-moi, je dois me remettre au travail.}
+{151}{}{Merci. Au revoir.}
+{152}{}{Tant que ça ? Ah ! Mais pour une superarmure aussi puissante... Très bien. Voici ton argent.}
+{153}{}{Merci. Au revoir.}
+{154}{}{Tu veux la garder ? Très bien. Si tu changes d'avis, fais-le moi savoir.}
+{155}{}{Je vais le faire. Au revoir.}
+{156}{}{Y'a peu de chance. Au revoir.}
+{157}{}{Gardes ! Gardes ! L'intrus est de retour ! Tuez-le !}
+{158}{}{As-tu parlé à cet Hubologiste qui s'appelle Crocket et as-tu trouvé l'armure ?}
+{159}{}{Non, pas encore.}
+{160}{}{Alors, pourquoi continues-tu à venir m'embêter ici ?}
+{161}{}{Parce que j'ai des questions.}
+{162}{}{Je n'en sais rien. Au revoir.}
+{163}{}{Ma patience a des limites.}
+{164}{}{Que veux-tu ?}
+{165}{}{Que fais-tu ici ?}
+{166}{}{Je suis ici pour trouver du carburant pour le pétrolier Poséidon.}
+{167}{}{Je suis ici pour obtenir du carburant pour les Hubologistes.}
+{168}{}{Rien. Pardon.}
+{169}{}{Nous sommes tous à court de carburant maintenant. Je ne peux pas t'aider pour autre chose. J'ai trop à faire avec cette armure. Au revoir.}
+{170}{}{-Au revoir-}
+
+{171}{}{. Je jetais juste un oeil.}
+{172}{}{ ; tu travailles ici ?}
+{173}{}{ $, ça serait super.}
+{174}{}{J'ai tout ce qu'il me faut. S'il le faut, parle à Wong.}

@@ -1,0 +1,99 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+7 1010 D _var p lost_papers ! 1 #
+2 1020 D _var p lost_papers = 1 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+5 2030 @
+3 3000 None 0 #
+4 3010 #
+0 3020 @
+4 4000 None 0 #
+5 4010 #
+6 4020 D _param p SK_SPEECH } 40 D or D _param p ST_CHARISMA } 5 R _param p ST_EXPERIENCE + 50 R _var p lost_papers = 2 #
+0 4030 @
+5 5000 None 0 #
+0 5010 @
+6 6000 None 0 #
+0 6010 @
+7 7000 None 0 &
+
+[pols]
+{100}{}{Equipment Overseer}
+{200}{}{Widszisz nadzorcę}
+{210}{}{Widzisz lidera ekwipunku Moskwy.}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest, standart talk}
+{1020}{}{quest "lost papers" running ( var lost papers == 1)}
+{2000}{}{Ta, czego chcesz?}
+{2010}{}{Potrzebuję dokumenty identyfikacji.}
+{2020}{}{Zgubiłem dokumenty, możesz dać mi nowe?}
+{2030}{}{Masz coś, co ja chcę, a ja mam coś, co ty chcesz. Co ty na mały Deal?}
+{3000}{}{Masz już jedne, pamiętam cię.}
+{3010}{}{Zgubiłem je, potrzbuję nowych.}
+{3020}{}{Dobra, żegnaj.}
+{4000}{}{Zgubiłeś dokumenty? Ty idioto. Jak można być tak nieostrożnym? Musisz teraz iść do Cornela, a on ci skopie tyłek.}
+{4010}{}{Eeem.. Co ty na mały "Deal"?}
+{4020}{}{Proszę, to się już nie powtórzy. Mały wypadek.}
+{4030}{}{Oh, więc.. żegnaj.}
+{5000}{}{"Deal"? Nie, spierdalaj.}
+{5010}{}{Dobra, uspokój się.}
+{6000}{}{No dobra, tylko nie mów nikomu.}
+{6010}{}{Oczywiście. Dzięki i do zobaczenia.}
+{7000}{}{Nie mam czasu na rozmowę, jak coś, napisz podanie.}
+
+[engl]
+{100}{}{Equipment Overseer}
+{200}{}{You see: Equipment overseer}
+{210}{}{You see the lead manager of the equipment of moscow.}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest, standart talk}
+{1020}{}{quest "lost papers" running ( var lost papers == 1)}
+{2000}{}{Yeah, what do you need?}
+{2010}{}{Yeah, I need identification documents please.}
+{2020}{}{I lost my documents, can you give me some new?}
+{2030}{}{You have something I want, and I may have something you want. How about making a deal?}
+{3000}{}{You already have them, I remember you.}
+{3010}{}{Actually I lost them and heard you can give me some new.}
+{3020}{}{Okay then... bye.}
+{4000}{}{You LOST your DOCUMENTS?! How dare you not being careful with your papers, especialy as new soldier? Go and speak to the cornell, he'll rip your ass for that in person.}
+{4010}{}{Hnnrgh... well, how about making a deal instead?}
+{4020}{}{Please, I swear it won't happen again. It was some shitty situation, and I will be more carefully from now on.}
+{4030}{}{Oh well, bye...}
+{5000}{}{A deal? No. Get the fuck out}
+{5010}{}{Okay, chill out.}
+{6000}{}{Well... ok... but I do not have the time to fill them out. You'll do that, but don't tell anyone I've let you filling them instead of me.}
+{6010}{}{No problem. Thank you and goodbye.}
+{7000}{}{I do not have the time to talk. If you need something, fill out the application form.}
+
+[russ]
+{100}{}{Equipment Overseer}
+{200}{}{You see: Equipment overseer}
+{210}{}{You see the lead manager of the equipment of moscow.}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest, standart talk}
+{1020}{}{quest "lost papers" running ( var lost papers == 1)}
+{2000}{}{Yeah, what do you need?}
+{2010}{}{Yeah, I need identification documents please.}
+{2020}{}{I lost my documents, can you give me some new?}
+{2030}{}{You have something I want, and I may have something you want. How about making a deal?}
+{3000}{}{You already have them, I remember you.}
+{3010}{}{Actually I lost them and heard you can give me some new.}
+{3020}{}{Okay then... bye.}
+{4000}{}{You LOST your DOCUMENTS?! How dare you not being careful with your papers, especialy as new soldier? Go and speak to the cornell, he'll rip your ass for that in person.}
+{4010}{}{Hnnrgh... well, how about making a deal instead?}
+{4020}{}{Please, I swear it won't happen again. It was some shitty situation, and I will be more carefully from now on.}
+{4030}{}{Oh well, bye...}
+{5000}{}{A deal? No. Get the fuck out}
+{5010}{}{Okay, chill out.}
+{6000}{}{Well... ok... but I do not have the time to fill them out. You'll do that, but don't tell anyone I've let you filling them instead of me.}
+{6010}{}{No problem. Thank you and goodbye.}
+{7000}{}{I do not have the time to talk. If you need something, fill out the application form.}

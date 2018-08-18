@@ -1,0 +1,158 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+#include "profession.fos"
+
+import void AttachTabsToScreen(int screen) from "client_scripts";
+import void UpdatePipBoyPosition(int x, int y) from "client_scripts";
+import void GetPipBoyPosition(int &x, int &y) from "client_scripts";
+import int[]@ GetIniValues4(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+IGUIElementTextOpt @OtherProfesionTextOpt;
+IGUIElementTextOpt @OtherHonorPointTextOpt;
+IGUIElementTextOpt @OtherPlayersOnlineTextOpt;
+IGUIElementTextOpt @OtherPlayersMoscowTextOpt;
+IGUIElementTextOpt @OtherPlayersLondonTextOpt;
+IGUIElementTextOpt @OtherPlayersDistrict_XTextOpt;
+IGUIElementTextOpt @OtherPlayersFury_TownTextOpt;
+IGUIElementTextOpt @OtherPlayersOld_VillageTextOpt;
+IGUIElementTextOpt @OtherPlayersLight_TownTextOpt;
+IGUIElementTextOpt @OtherPlayersScrapers_CityTextOpt;
+IGUIElementTextOpt @OtherPlayersBear_LineTextOpt;
+IGUIElementTextOpt @OtherPlayersDeatch_MineTextOpt;
+
+int []positions;
+
+class OtherScreenClass : IGUIScreenCallbackMove
+{
+	void OnMove(int x, int y)
+	{
+		UpdatePipBoyPosition(x,y);
+	}
+}
+
+void InitOtherScreen()
+{
+	OtherScreenClass OtherScreen;
+	GUI_CreateScreen(CLIENT_SCREEN_OTHER,"other.png")
+      .CanMove(true)
+      .Modal(false)
+      .Multiinstance(false)
+	  .SizeByMultipleImages(1,1)
+	  .CallbackMove(OtherScreen);
+	
+	positions=GetIniValues4("OtherGameText3000000800",null);
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000800), positions[0], positions[1])
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000801",null);
+	@OtherProfesionTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000801)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000802",null);
+	@OtherHonorPointTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000802)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000799",null);
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000799), positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);  
+	
+	positions=GetIniValues4("OtherGameText3000000803",null);
+	@OtherPlayersOnlineTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000803)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000804",null);
+	@OtherPlayersMoscowTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000804)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000805",null);
+	@OtherPlayersLondonTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000805)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000806",null);
+	@OtherPlayersDistrict_XTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000806)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000807",null);
+	@OtherPlayersFury_TownTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000807)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000808",null);
+	@OtherPlayersOld_VillageTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000808)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	 
+	positions=GetIniValues4("OtherGameText3000000809",null);
+	@OtherPlayersLight_TownTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000809)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000810",null);
+	@OtherPlayersScrapers_CityTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000810)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000811",null);
+	@OtherPlayersBear_LineTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000811)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	positions=GetIniValues4("OtherGameText3000000812",null);
+	@OtherPlayersDeatch_MineTextOpt=
+	GUI_AddText(CLIENT_SCREEN_OTHER,GetMsgStr(TEXTMSG_GAME,3000000812)+": 0", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED)
+      .TextBoxSize(positions[2]-positions[0],positions[3]-positions[1]);
+	
+	AttachTabsToScreen(CLIENT_SCREEN_OTHER);
+
+	
+}
+
+void ShowOtherScreen()
+{
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_OTHER,x,y);
+	ShowScreen(CLIENT_SCREEN_OTHER,0,0,0);
+	OtherProfesionTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000801)+": "+PROFESSION[GetChosen().ParamBase[PLAYER_PROFESSION]]);
+	OtherHonorPointTextOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000802)+": "+GetChosen().ParamBase[HONOR_POINTS]);
+	//graczy online dodac
+	RunServerScriptUnsafe("server_other_script@unsafe_send_player_stats",0,0,0,null,null);
+	
+}
+
+void MoscowPlayersMsg(int, int, int, string@, int[]@ town)
+{ //town[] 0-moscow 1-london 2-district_x 3-fury_town 4-old_village 5-light_town 6-scrapers_city 7-bear_line 8-deatch_mine
+	OtherPlayersOnlineTextOpt.setText(				GetMsgStr(TEXTMSG_GAME, 3000000803) + ": " + town[0]);
+	OtherPlayersMoscowTextOpt.setText(				GetMsgStr(TEXTMSG_GAME, 3000000804) + ": " + town[1]);
+	OtherPlayersLondonTextOpt.setText(				GetMsgStr(TEXTMSG_GAME, 3000000805) + ": " + town[2]);
+	OtherPlayersDistrict_XTextOpt.setText(			GetMsgStr(TEXTMSG_GAME, 3000000806) + ": " + town[3]);
+	OtherPlayersFury_TownTextOpt.setText(			GetMsgStr(TEXTMSG_GAME, 3000000807) + ": " + town[4]);
+	OtherPlayersOld_VillageTextOpt.setText(		GetMsgStr(TEXTMSG_GAME, 3000000808) + ": " + town[5]);
+	OtherPlayersLight_TownTextOpt.setText(		GetMsgStr(TEXTMSG_GAME, 3000000809) + ": " + town[6]);
+	OtherPlayersScrapers_CityTextOpt.setText(	GetMsgStr(TEXTMSG_GAME, 3000000810) + ": " + town[7]);
+	OtherPlayersBear_LineTextOpt.setText(			GetMsgStr(TEXTMSG_GAME, 3000000811) + ": " + town[8]);
+	OtherPlayersDeatch_MineTextOpt.setText(		GetMsgStr(TEXTMSG_GAME, 3000000812) + ": " + town[9]);	
+}
+

@@ -1,0 +1,28 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+#############################################################
+#  Message File: obj_dude.msg                               #
+#                                                           #
+#  Log:                                                     #
+#                                                           #
+#  Created: April 14, 1998                                  #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+#############################################################
+#  The following lines are for describing the NPC when      #
+#  glanced and and examined.                                #
+#############################################################
+{100}{}{}
+{101}{}{}
+
+#############################################################
+
+{110}{}{Chodidla tì dost svrbí.}
+{120}{}{Na nohou se ti tvoøí jakési výrùstky.}
+{130}{}{Boty ti zaèínají být tìsné; ty výrùstky jsou v jednom ohni.}
+{140}{}{Výrùstek na každé noze se zmìnil v jeden další prst! Ale alespoò, že to hrozné pálení pøestalo.}
+{141}{}{Mùj bože, to je ale hnus!}
+
+{150}{}{Získáváš }
+{151}{}{ XP za nalezení GECKu.}

@@ -1,0 +1,45 @@
+[comment]
+Aaoe eiiiaioa?ee / Your comments.
+
+[data]
+lang=russ engl pols germ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 &
+
+[russ]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{What are you looking at?@@Buy some some drink for meee.@@ Night is night, kurva.@@More beer...@@Do you have problem, kurva.}
+
+[engl]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{What are you looking at?@@Buy some some drink for meee.@@ Night is night, kurva.@@More beer...@@Do you have problem, kurva.}
+
+[pols]
+{100}{}{Man.}
+{110}{}{avatar_kipelov.png}
+{200}{}{You see a man.}
+{210}{}{You see a man.}
+{1000}{}{Initial preferences}
+{1010}{}{-}
+{2000}{}{What are you looking at?@@Buy some some drink for meee.@@ Night is night, kurva.@@More beer...@@Do you have problem, kurva.}
+
+[germ]
+{100}{}{none}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{-}
+{2000}{}{What are you looking at?@@Buy some some drink for meee.@@ Night is night, kurva.@@More beer...@@Do you have problem, kurva.}
+

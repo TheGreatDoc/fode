@@ -1,0 +1,149 @@
+#tento soubor prelozil Jarda "PIZDUCH" Skarda
+{100}{}{Vidíš chlapíka s divokım pohledem. Navzdory jeho neupravenım vlasùm a špinavım vousùm jsou jeho šaty dobøe opeèovávané.}
+{101}{}{Vidíš Thomase Moorea.}
+{102}{}{Vidíš Thomase Moorea. I pøes jeho neupravené vlasy a špinavé vousy jeho šaty vypadají jako dobøe opeèovávané.}
+{103}{}{Buï zdráv a vítej, pocestnı! Slyšel jsi u dnešní zprávy?}
+{104}{}{Uurmph}
+{105}{}{Ecch}
+{106}{}{Portzebie}
+{107}{}{Vypadni}
+{108}{}{Proè, nic... jsem neudìlal.}
+{109}{}{A ty jsi...?}
+{110}{}{Uh, ne, a nechci. Sbohem. }
+{111}{}{Svìt, mùj pøíteli... svìt je sobeckı. Sluèují se vrady s arogancí. A co z toho?  Vault City... je všechno pokrytectví, sláva z obchodu s otroky.}
+{112}{}{Proè tady iješ, kdy to tady tak nenávidíš?}
+{113}{}{Ámen, bratøe!}
+{114}{}{Mám pocit, e jsem slyšel dost. Sbohem.}
+{115}{}{Bì prodávat svı bláboly nìkam jinam, kamaráde... toho u jsem slyšel dost.}
+{116}{}{Ano! }
+{117}{}{Teï je slyšet kvílení našich pøíbuznıch venku za zdí. Proè je nenecháme jít dovnitø?! Máme víc ne dost k nakrmení a ubytování našich bratøí... nepotøebujeme bıt bohatí, kdy je mnoho chudıch.}
+{118}{}{Poslouchám tì!}
+{119}{}{Koneènì, nìkdo kdo má srdce na pravém místì! Proè musí ostatní trpìt, kdy pomoc leí mezi tìmito zdmi?}
+{120}{}{Slyšel jsem dost. Nashle.}
+{121}{}{Pøíteli... tak jak tì tu dnes vidím, vidím SÍLU. Vidím BOJ. Nešálí mì mùj zrak? Nebo je to spøíznìná duše, která bude sdílet mé názory?}
+{122}{}{K èertu!}
+{123}{}{Ano! Vím, e u je èas... èas tohoto mìsta. Mìsta vybudovaného z høíchu a z otroctví. Je èas aby otevøelo své brány pro všechny! }
+{124}{}{Musím odejít. Dobøe jsme si popovídali... ehh, poslouchám tì.}
+{125}{}{Pak bych se rád zeptal na toto, mùj pøíteli - jak dlouho to bude trvat ne se to doví celı svìt?}
+{126}{}{No, to závisí kolik penìz máš u sebe..."pøíteli."}
+{127}{}{ádná doba není dost dlouhá... ádná vzdálenost dost velká, kdy si stojíš za svım slovem a dodríš ho. Cokoliv mùe bıt udìláno, kdy dodríš své slovo!}
+{128}{}{Nechápu smìr, kam se náš rozhovor ubírá. Hezkı den.}
+{129}{}{Dokonce i kdy to mùe znamenat konec této oázy?}
+{130}{}{Tohle není ádná oáza, mùj pøíteli. Je to mìsto, postavené na sobectví a chamtivosti. Potøebuje bıt zachránìno...  je to pøíliš vysoká cena?! Nemyslím si.}
+{131}{}{Je potøeba zveøejnit vše o jeho dluzích!}
+{132}{}{Nechápu... co chceš po mì abych udìlal?}
+{133}{}{Hmmm. Ne, od doby co jsi formuloval zpùsob, ne, nedomnívám se. Hezkı den.}
+{134}{}{(Skloní se.) Mám kuføík... s ivotnì dùleitımi informacemi k našim cílùm.
+ Mùeš je pro mì doruèit do New Reno? Sám bych je tam odnesl, ale ostatní Obèané mì sledují...}
+{135}{}{Tak co, kdy pøijmu tvojí zakázku do New Reno, eh? To tì bude nìco stát... "pøíteli."}
+{136}{}{Jistì. Dej mi to.}
+{137}{}{Ne dìkuji... je to pro mì pøíliš riskantní. Nestojí mi to za to.}
+{138}{}{Tady to je... balíèek pro mue jménem John Bishop v New Reno. Buï opatrnı, kamaráde, a a štìstí provází tvé kroky.}
+{139}{}{Mám doruèit tento kuføík Johnu Bishopovi? ádnı problém.}
+{140}{}{Moje jméno? Jsem Thomas Moore, kazatel slova a pravdy. Co mi dnes pøinášíš pøíteli? Hledáš pravdu?}
+{141}{}{Pravdu?}
+{142}{}{Uh, ne dnes, díky. Nashle.}
+{143}{}{Dokonce i ti co se jeví jako nejvíce nevinní mohou podvádìt posly pravdy...
+ jak mám vìdìt, e jsi skuteènı vìøící pravdy a slova?}
+{144}{}{Musíš bıt skuteènı vìøící, kdy strkáš svojí hlavu do mıho zadku!}
+{145}{}{Jsem skuteènı vìøící, bratøe. Jak mám dokázat svoji oddanost?}
+{146}{}{Vím, e je toto mìsto postavené na základech z høíchu a z otroctví, a pouze spravedlivost to mùe zmìnit k lepšímu!}
+{147}{}{Víš, moná se stavím pozdìji.}
+{148}{}{Ignorantskı barbare! Máš uši, ale jsi hluchı! Máš oèi a jsi slepı! Zmiz mi z oèí, zabednìnı prase!}
+{149}{}{Zabednìnı... uh... pr... coe? Nikdo mi nenadává tak jako ty! Doufám e jsi bezdìtnı, protoe jinak tvı dìti budou bez otce, mrtvolo...}
+{150}{}{Nikdo mi nenadává tak jako ty, u vùbec ne nìjakı kazatel, kterı je na dva kousky. Myslím si, e je èas, abys dostal lekci... mrtvolo.}
+{151}{}{Uklidni se. Odcházím.}
+{152}{}{Hmmmmmm. Èlovìk si musí dávat pozor na zmije, kteøí napodobují kázání, avšak v jejich srdci hnízdí faleš.}
+{153}{}{Ámen, bratøe! }
+{154}{}{Radìji pùjdu, protoe nejsi upøímnı a nerozumíme si. Sbohem.}
+{155}{}{Uh... jistì. Moná si pohovoøíme pozdìji.}
+{156}{}{Coe?! Jak si TROUFÁŠ vydírat mì, ty... ty... (Mraèí se.)... dám si na tebe pozor.}
+{157}{}{Pojï si popovídat o penìzích... jdeme na to?}
+{158}{}{Proè... bych mìl kázat, kdy je mnohem víc tìch kteøí to potøebují slyšet?}
+{159}{}{Budu pøedpokládat, e máš pravdu. Kdo jsi?}
+{160}{}{Pøesnì tak, bratøe. Hlásej slovo!}
+{161}{}{Pøesnì tak! Toto mìsto postavené na základech z høíchu a z otroctví, a pouze spravedlivost to mùe zmìnit k lepšímu!}
+{162}{}{Oh... správnì. No, pìknì se mi s tebou povídalo. Sbohem.}
+{163}{}{Tady... v tomto kuføíku jsou má èísla úètu. Doruèíš ho Johnu Bishopovi do New Reno, a on ti dá pøístup k mım úèetním knihám.}
+{164}{}{Zapomeò na to. Zastavím se nìkdy jindy.}
+{165}{}{Pak tedy vra platbu. Nepùjdu do Rena.}
+{166}{}{Vıbornì! Ale všechno má svojí cenu.}
+{167}{}{Zdá se e sama pøíroda je proti tobì, ebráku. Snad jednou budeš spasen i ty.}
+{168}{}{Eh... to není tak. A svìtlo provází tvùj krok pustinou, mùj jednoduchı pøíteli.}
+{169}{}{Urf}
+{170}{}{Tak, pøíteli, u jsi to zváil?}
+{171}{}{Uvaoval jsem, e to bude stát mnoho penìz z mé kapsy, abych tì udrel v tajnosti. Rozumíš?}
+{172}{}{Spatøil jsem svìtlo, bratøe... co bych mìl udìlat?}
+{173}{}{Ne, dík. Hezkı den.}
+{174}{}{Eh? Co tady dìláš? Nedoruèil jsi...}
+{175}{}{... kuføík Bishopovi? No, zkusil jsem to a pøedpokládám, e si pøeèetl tu malou poznámku co jsi zanechal v kuføíku a pokusil se mì ZABÍT. Pìknì komickı, có? Doufám, e jsi pøipravenı zemøít, Moore.}
+{176}{}{Udìlal jsem to, ale jsem zpátky, abych se ti pomstil. Supi budou hodovat na tvém tìle.}
+{177}{}{Dríš svùj osud ve svıch rukou. Ahoj.}
+{178}{}{Ah! Vítej zpátky, ty jen hledáš pravdu! Jak ti mohu pomoci?}
+{179}{}{Co znáš o NCR?}
+{180}{}{Chci se zeptat: Proè má Vault City otroky? Slyšel jsem e je to svobodné mìsto.}
+{181}{}{Chci slyšet slovo pravdy, bratøe!}
+{182}{}{Toto mìsto postavené na základech z høíchu a z otroctví a já jsem tady abych to zmìnil!}
+{183}{}{Dnes nic, díky.}
+{184}{}{Vím e se snaí vzkøísit pravdu a spravedlnost a my nehneme ani prstem.}
+{185}{}{Co mùeme dìlat?}
+{186}{}{To zní trochu jako zrada.}
+{187}{}{To je hanba. Tak dobøe, nashle.}
+{188}{}{Mùeme otevøít široce naše brány a uvítat je vevnitø! Potøebují naši pomoc, STÁLE ještì mají zalepené oèi!}
+{189}{}{Amen! Pokroková technologie Vault City by mìla bıt pøístupná pro všechny a né vyplenìna.}
+{190}{}{Hmm... nevím. Máme to tady docela dobré. Opravdu je potøebujem? Konec koncù, oni sníí naší ivotní úroveò... dokonce nás zneèistí.}
+{191}{}{Hmmm. No, nìco na tom bude. Nashle.}
+{192}{}{Na to neznám odpovìï, mìsto postavené na základì otroctví nemùe bıt nikdy skuteènì svobodné.}
+{193}{}{Jo, ale oni jsou jistì bohatí, có?}
+{194}{}{Vaše slova... to je hudba pro mé uši. Snad osvobození otrokù, uvolnìní jich, je nejlepší pro Vault City.}
+{195}{}{Mìli bychom osvobodit otroky a obejmout je jako bratry!}
+{196}{}{Ó, neházej brahmínì perly. Otroctví... a Vault City... tady bude dlouho.}
+{197}{}{Zajímavá øeè. Snad si popovídáme znovu.}
+{198}{}{Jak vidím jsi obchodník s lidskım masem. Nemám co øíct takovım jako jsi ty.}
+{199}{}{Uurmph}
+{200}{}{Ecch}
+{201}{}{Portzebie}
+{202}{}{Vypadni!}
+{203}{}{Hej, Jen jsem se choval jako otrok, abych získal informace.}
+{204}{}{No, musím ti nìco øíct: Proè má Vault City otroky? Slyšel jsem, e je to svobodné mìsto.}
+{205}{}{Hej, dokonce nejniší znamená ospravedlnit urozenı konec.}
+{206}{}{Budi. Nashle.}
+{207}{}{Je dobré se podívat na ivou a zdravou nesnášenlivost. Hezkı den.}
+{208}{}{Pøedstírání je stejné jako èin. Táhni, otroku.}
+{209}{}{Pouèil jsem se ze svıch chyb!}
+{210}{}{Stalo se. Za èas procitneš, otevøeš své oèi a uvidíš co jsi zpùsobil...}
+{211}{}{Budi.}
+{212}{}{Nemám co øíct nìkomu tak prohnilému jako jsi ty. Odejdi.}
+{213}{}{Chceš prohnilou povahu? Ukáu ti co je to prohnilá povaha...}
+{214}{}{Vidím chyby své povahy. Pøišel jsem pro odpuštìní a chci slyšet pravé slovo!}
+{215}{}{Moje srdce bylo rozpolcené myšlenkou lidské krutosti!}
+{216}{}{Budi. }
+{217}{}{Vítej zpìt, poutníku! Doruèil jsi informace jak jsem ádal?}
+{218}{}{Vítej zpìt, poutníku! Jak ti mohu dnes pomoci?}
+{219}{}{Jdi do prdele, "kocoure." Vím vše o tobì a tvıch kumpánech dole v NCR.}
+{220}{}{Proè pracuješ pro NCR? Myslel jsem si, e jsi poctivı èlovìk.}
+{221}{}{Jo... podívej, Bishop ti øekl, e pracuješ pro NCR. Je to pravda?}
+{222}{}{Ano, právì jsem to chtìl zjistit a vyøídit to.}
+{223}{}{Je potìšující slyšet, e má slova zasela pochybnost v tvém srdci. Snad se naše cesty zase zkøíí.}
+{224}{}{Snad jo. Dodr slovo, bratøe.}
+{225}{}{Nashle.}
+{226}{}{NCR se snaí získat spravedlnost a vládu pro celou Kalifornii a Vault City má sílu to zvládnout! Pro dobro všech bychom mìli zpøístupnit technologii Vault City všem!}
+{227}{}{Na to neskoèím. Myslím, e se to musí hlásit - ovšem pokud si chceš koupit moje mlèení...}
+{228}{}{Ale to je technologie Vault City. Ostatní na ni nemají ádné právo.}
+{229}{}{Nic dobrého nepochází ze li a zrady, Moore. Vault City si samo sobì nalhává u nìkolik let... nechoï touto cestou. Je to jasné?}
+{230}{}{Hmm. Musím si to promyslet.}
+{231}{}{Máš pravdu. Omlouvám se, e jsem o tobì pochyboval.}
+{232}{}{VŠICHNI lidé mají právo na plody starého svìta. Technologie se musí sdílet, ne hamonit.}
+{233}{}{Ty nejsi pøi smyslech, e jo, Moore? Moná staré dobré nakopnutí do zadku ti vrátí rozum.}
+{234}{}{Jo, jo, vyøíznout "svaté" hovno. Naval nìjaké prachy, nebo tì zabiju.}
+{235}{}{Budu o tom pøemıšlet. Nashle.}
+{236}{}{Prosím, doruè tento kuføík do New Reno, pøíteli. Je tøeba pospíšit!}
+{237}{}{Co dìlat? Proè rozšiøovat slovo a bude to staèit...?
+  A svìtlo provází tvùj krok pustinou, mùj pøíteli. Jdi opatrnì za svım cílem. Slovo bude tvım svìtlem, s ním se neztratíš.}
+{238}{}{Díky, bratøe. Udìlám jak jsi øekl.}
+{239}{}{Slyšel u jsi dnes slovo?}
+{240}{}{Slyš slovo! Slovo tì uèiní volnım!}
+{241}{}{Otroctví znièí toto mìsto!}
+{242}{}{Musíme otevøít brány Vault City a pøijmout okolní svìt!}
+{243}{}{Proè nemùou sdílet naše bohatství?! }
+{244}{}{Jak mùete poslouchat vıkøiky tìch, co trpí vnì našich zdí?!}

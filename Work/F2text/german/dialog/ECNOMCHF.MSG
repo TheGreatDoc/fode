@@ -1,0 +1,27 @@
+{100}{}{Ein Nomade.}
+{101}{}{Der Nomadenhäuptling.}
+{102}{}{Mit dieser Bekleidung und so wie er sich gibt, muß er ein Anführer sein.}
+{103}{}{Ah, ein Reisender. Sei willkommen in meinem bescheidenen Zelt. Ruh dich hier im Schatten
+ von der unerbittlichen Hitze des Landes aus.}
+{104}{}{Danke, diese Einladung nehme ich gern an.}
+{105}{}{Ich muß die Einladung leider ausschlagen. Ich bin nur auf der Durchreise.}
+{106}{}{Uhga.}
+{107}{}{Dann also herzlich willkommen. Wir leben schon lang fern von jeglicher 'Zivilisation'.
+ Wir brauchen bestimmte Dinge. Vielleicht können wir ins Geschäft kommen?}
+{108}{}{Was hast du anzubieten?}
+{109}{}{Ich hab nichts. Tut mir leid.}
+{110}{}{Vielleicht ein andermal? Möge deine Reise ohne Gefahr verlaufen.}
+{111}{}{Tschüß.}
+{112}{}{Wie schade. Dann bleib doch, du bist willkommen in meinem Lager.}
+{113}{}{Tschüß.}
+{114}{}{Mein Angebot, dich im Schatten auszuruhen, kam wohl zu spät für dich. Die Sonne hat dir
+ scheinbar schon den Wortschatz aus dem Gehirn gebrannt. Ich muß die gut behandeln, die weniger
+ Glück haben als ich. Bleib so lang du möchtest in meinem Lager, Dämliches Wesen.}
+{115}{}{Tschüß.}
+{116}{}{Ungläubiger!}
+{117}{}{Warum greifst du uns an?}
+{118}{}{Ich werd die Sippe mit meinem Leben verteidigen!}
+{119}{}{Wie kannst du es nur wagen, unsre Gastfreundschaft zu mißbrauchen.}
+{120}{}{Verschwinde!}
+{121}{}{Hau ab.}
+{122}{}{Wir sind ein friedlicher Stamm.}

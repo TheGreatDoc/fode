@@ -1,0 +1,114 @@
+# QUICK LOOK
+{100}{}{Tu vois une prostituée.}
+
+# EXAMINE
+{150}{}{Tu vois une... femme de la nuit. Ses vêtements déchirés enserrent son corps de manière provocante.}
+{151}{}{Tu vois une prostituée. Elle te fait un clin d'oeil.}
+{152}{}{Tu vois une prostituée. Ses yeux te font penser à des fusibles qui ont sauté.}
+{153}{}{Tu vois une prostituée. Elle sent les fleurs.}
+{154}{}{Tu vois une prostituée. Elle sent la maman.}
+{155}{}{Tu vois une prostituée. Comment ses loques déchirées réussissent à cacher sa poitrine, c'est un mystère.}
+{156}{}{Tu vois une prostituée. On dirait qu'elle tue et mange ses partenaires.}
+{157}{}{Tu vois une prostituée. Elle t'évalue avec beaucoup d'attention.}
+{158}{}{Tu vois une prostituée. Ses vêtements déchirés enserrent son corps de manière provocante.}
+
+# 1. [NO REP]
+{1223}{}{Je m'appelle Libertine. Et toi ?}
+{1224}{}{Oui, ils SONT réels.}
+{1225}{}{Oui, ils SONT réels, et NON, tu peux pas vérifier.}
+{1226}{}{Besoin de quelqu'un pour partager ton matelas ?}
+{1227}{}{Tu cherches un peu d'action ?}
+{1228}{}{Tu sais pas c'que c'est qu'l'amour tant qu't'as pas eu l'amour à Reno.}
+{1229}{}{Tu cherches quelqu'un ?}
+{1230}{}{J'ai entendu dire qu'il y a du grabuge dans la Rue marchande...}
+{1231}{}{Tu cherches de la compagnie ?}
+{1232}{}{Tu danses ?}
+{1233}{}{Tu sais pas c'que c'est qu'l'amour tant qu't'as pas eu l'amour à Reno.}
+{1234}{}{T'as besoin d'une amie pour la soirée ? Ou pour dix minutes ?}
+{1235}{}{Tu veux du bon temps ?}
+{1236}{}{Tu veux aller dans le centre ?}
+{1237}{}{T'as le fric, j'ai le temps.}
+{1238}{}{Si je dois te parler après, ça coûte plus cher.}
+{1239}{}{Si tu veux que je reste réveillée après, c'est plus cher.}
+{1240}{}{Oublie les machines à sous. Avec moi c'est BEAUCOUP mieux...}
+{1241}{}{Je suis pas au rabais mais je suis l'affaire du jour.}
+{1242}{}{J'ai l'impression d'avoir couru un marathon hier soir...}
+{1243}{}{J'embrasse pas. C'est la règle.}
+{1244}{}{Oublie les machines à sous. Avec moi c'est BIEN mieux...}
+{1245}{}{J'ai une copine si tu veux faire ça à trois.}
+{1246}{}{T'emmènes une dame esseulée en ville ?}
+{1247}{}{Heu, évidemment je suis une femme. fais pas attention à ma pomme d'Adam.}
+{1248}{}{J'suis à plat depuis la dernière convention...}
+{1249}{}{J'suis pas très pure, mais je suis vierge.}
+{1250}{}{J'ai entendu dire que les familles redevenues nerveuses.}
+{1251}{}{J'ai besoin d'aide pour sortir de cette robe.}
+{1252}{}{On m'appelle pas Dame Lachance pour rien.}
+{1253}{}{Tu montres à une dame comment on prend du bon temps ?}
+{1254}{}{Vas doucement, c'est la première fois. Pour aujourd'hui.}
+{1255}{}{::Ronronnement::}
+{1256}{}{::Grognement::}
+{1257}{}{Tu va déclencher mon compteur Geiger si tu continues comme ça.}
+{1258}{}{::Sifflements::}
+{1259}{}{Les morsures, c'est plus cher.}
+{1260}{}{Tu veux que j'mette de l'huile dans ton moteur ?}
+
+# SPECIAL CAT'S PAW WHORE DIALOGS START
+# 0. QUICK LOOK
+{3100}{}{Tu vois une des filles du magazine 'Cat's Paw'.}
+
+# EXAMINES
+{3150}{}{Tu vois une... femme de la nuit. Ses vêtements déchirés enserrent son corps de manière provocante.}
+{3151}{}{Tu vois une des filles du 'Cat's Paw'. Elle te fait un clin d'oeil.}
+{3151}{}{Tu vois une des filles du 'Cat's Paw'. Ses yeux te font penser à des fusibles qui ont sauté.}
+{3152}{}{Tu vois une des filles du 'Cat's Paw'. Elle sent la lavande.}
+{3153}{}{Tu vois une des filles du 'Cat's Paw'. Elle sent la maman.}
+{3154}{}{Tu vois une des filles du 'Cat's Paw'. Comment ses loques déchirées réussissent à cacher sa poitrine, c'est un mystère.}
+{3155}{}{Tu vois une des filles du 'Cat's Paw'. On dirait qu'elle tue et mange ses partenaires.}
+{3156}{}{Tu vois une des filles du 'Cat's Paw'. Elle t'évalue avec beaucoup d'attention.}
+{3157}{}{Tu vois une des filles du 'Cat's Paw'. Ses vêtements déchirés enserrent son corps de manière provocante.}
+
+#1. SOME OTHER RANDOM FLOAT TEXT [ANY DISTANCE] (WTG)
+{3200}{}{Oh, oui ! Oui ! Ohouiouioiuoui... ooooooh oui.}
+{3201}{}{Oui ! Oui ! Oooooohhhh OuiOuiOuiOui OUI OUI OUIIIIII ! Maintenant, passe à la caisse.}
+{3202}{}{Grouille-toi. Le compteur tourne.}
+{3203}{}{T'as besoin d'une petite serviette ?}
+{3204}{}{Vaffy, Fr... Ni... Chr... - heu, c'est quoi ton nom déjà ?}
+{3205}{}{Oh oh oh oui ! T'as fini MAINTENANT ?}
+{3206}{}{Ouahou. CA va te coûter plus cher.}
+{3207}{}{Oui ! Tu es Christophe Colomb, je suis l'Amérique !}
+{3208}{}{Mon Dieu, c'était gé-nial. Maintenant arrache-toi et passe à la caisse.}
+{3209}{}{C'est bon ?}
+{3210}{}{Oui, tu ES l'habitant de l'Abri. Oui, TU as trouvé la puce d'eau et battu le MAITRE. Tu es HEROIQUE.}
+{3211}{}{T'es comme une superarmure renforcée, solide.}
+{3212}{}{*Souffle*}
+{3213}{}{*Halètement*}
+{3214}{}{Non, je REFUSE de porter les oreilles de Mickey.}
+{3215}{}{Oui, oui, t'as des « boules monstres ».}
+
+# END LINES
+{2175}{}{La personne qui a donné une bonne leçon à l'Enclave.}
+{2178}{}{C'est comme ça qu'on donne une leçon à l'Enclave !}
+{2181}{}{La personne qui a donné une leçon à l'Enclave.}
+{2195}{}{ !}
+{2197}{}{! Peux-tu m'avoir du boulot au studio ?}
+{2210}{}{.}
+{2263}{}{! Vas-y, tombeur !}
+{2264}{}{ botte tellement de culs qu'il devait être une chaussure dans une autre vie.}
+{2268}{}{ ?}
+{2272}{}{ ?}
+{2278}{}{! Vas-y, minette !}
+{2279}{}{ ?}
+{2280}{}{ botte tellement de culs qu'elle devait être une chaussure dans une autre vie.}
+{2285}{}{.}
+{2292}{}{...}
+{2293}{}{ ?}
+{2294}{}{... viens par là, mon ange...}
+{2295}{}{.}
+{2855}{}{ ?}
+{2858}{}{ ?}
+{2861}{}{ ?}
+{2865}{}{, et beau mec... où est-ce que tu étais ?}
+{2867}{}{ ! Comment vas-tu ?}
+{2868}{}{. Puis-je t'aider en...*quoi que ce soit ?*}
+{2870}{}{.}
+{2873}{}{, petite coquine... où est-ce que tu étais ?}

@@ -1,0 +1,37 @@
+[comment]
+Ваши комментарии / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0&
+
+[russ]
+{100}{}{Работорговец}
+{200}{}{Вы видите женщину в коже. У нее татуировка работорговца.}
+{200}{}{Это торговка "живым товаром".}
+{200}{}{Вы видите члена банды работорговцев.}
+{210}{}{Это настоящая гадюка пустыни. Она даст фору любому мужчине по жестокости.}
+{210}{}{С этой крошкой лучше не флиртовать. Она состоит в банде работорговцев.}
+{210}{}{Женщин убивать нехорошо... Но в этой торговке "живым товаром" нет ничего женственного.}
+{1000}{}{Преддиалоговые установки}
+{100000001}{}{Оп-па, у нас гости!@@Все ко мне, прикончим эту тварь!@@Ты покойник!@@Ребята, сюда! Тут какая то мразь ошивается!@@Вот это удача! Рабы сами лезут в наши объятия. Несите веревку!}
+{100000002}{}{Стой на месте, я тебя перебинтую!@@Стой, тупица, ты же сейчас коньки отбросишь!@@Остановись, вколю обезболивающее!@@Cтой, придурок, я кому говорю.}
+
+[engl]
+{100}{}{Slaver}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Slaver}
+{200}{}{widzicie kobiete w skorze. U niej tatuowanie niewolnikow.}
+{200}{}{To handlarka "zywym towarem".}
+{200}{}{Widzicie czlonka bandy niewolnikow.}
+{210}{}{To terazniejsza zmija pustyni.}
+{210}{}{Z ta okruszyna lepiej nie flirtowac. }
+{210}{}{Kobiete zabijac niedobrze... Lecz w tej handlarce "zywym towarem" nie ma nic kobiecosci.}
+{1000}{}{Initial preferences}
+{100000001}{}{Op-pa, u nas goscie!@@Wszystko do mnie, prikonczim te kreature!@@Ty jestes nieboszczyk!@@Dzieci, tutaj! Tu jaki to mraz oszywajetsia!@@Ot to powodzenie! Niewolnicy sami leza w nasze objecia. Niescie linke!}
+{100000002}{}{Stoj w miejscu, ja ciebie przebandazuje!@@Stoj, tepak, ty zas teraz lyzwy odrzucisz!@@Zatrzymaj sie, wkluje przeciwbolowe!@@Stoj, pridurok, ja kogo mowie.}

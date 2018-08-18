@@ -1,0 +1,33 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Klient baru}
+{200}{}{Widzisz klienta baru}
+{210}{}{Widzisz klietna baru. Wyglada jak by siedzial tu juz od dluzszego czasu.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Bier trinken, Bier trinken, bis zum abwinken~@@Hallo leute.@@Huch, warum so viele Leute hier?@@Ich hab kein Bier, gib mir eins.@@Schon leer?@@Schon wieder leer?@@Huhuu@@Wypierdalaj z tad@@Znowu piles?@@Wypij ze mna@@Uwazaj, barman lubi szczac do piwa.@@Smakuje jak siury.@@Myslales moze ... Ze ty i ja... razem... gdzies...?@@Teraz nie mam czasu.@@Ty ciagle tu?@@Czemu zycie jest do bani?@@Przestan klikac mnie w glowe!@@I co z tego? Edi tez z nim spal.@@Wydaje mi sie ze wszyscy na nas patrza.@@Nie stoj kolo mnie, pomysla ze jestesmy razem.@@Zajebista imprezka co nie!@@Harry kto?@@Jaki suplement?@@Syfilis? Myslalem, ze juz cos takiego mam.@@Chcesz dolaczyc?@@Piwo dla wszystkich!@@Wiem ze masz zultaczke.@@Znam cie?@@Chyba jestem chory.@@Nie wygladasz za dobrze.@@Odejsz odemnie.@@Myslalem, ze ja jestem brzydki.@@Lepiej zobacz sie w lustrze.@@Mowil Ci ktos, jak jestes brzydki?@@Mowil Ci ktos, ze jestes piekny?@@On mnie nie kocha.@@Widzial ktos moje klucze?@@Ktore to jest piwo?@@Pssss pssyy... gdzies tam stoji dev.@@Pssss pssyy... nie obracaj sie.@@Wiedziales ze zmutowane owoce rosna na drzewach?@@Loda? nie ma chuja!@@Ja Cie zaraz zaczepie... Spierdalaj@@Skad moglem wiedziec ze ma 14 lat@@Nie wiedzialem ze miala 15 lat@@Kto jest glodny?@@Piwo w Berlinie zawsze smakowalo jak siki@@Dlaczego przybyles do Berlina?@@Duzo wspanialtch ludzi tu zyje@@Kolejny dzien w Berlinie...@@Powietrze w Berlinie jest lepsze, czujesz je?@@Pewnego dnia sie z tad wyprowadze@@Mam dosyc tej wody, smakuje jak woda z kanalow}
+
+[engl]
+{100}{}{A bar patron}
+{210}{}{You see a bar patron. It seems that he's been here a while.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Bier trinken, Bier trinken, bis zum abwinken@@Hallo leute.@@Huch, warum so viele Leute hier?@@Ich hab kein Bier, gib mir eins.@@Schon leer?@@Schon wieder leer?@@Huhuu@@Get the fuck outta here.@@Have you been drinking?@@Drink some with me.@@Watch out for the bartender, he pisses into the beer sometimes.@@Tastes like piss.@@Do you think that you... and me... together... somewhere...?@@I don't have the tme now.@@You're still here.@@Why does life suck?@@Stop clicking my head!@@Aaaand?@@I think they're all watching us.@@Don't stand here, they gonna think that we're together.@@Amazing party, isn't it?@@Harry who?@@One week I had to live on nothing but bread and water.@@What dietary supplement?@@Syphilis? I think I had sumfin' like that already.@@Want to join?@@Beer for all!@@I know that you have rabies.@@Do I know you?@@I think I'm sick.@@You don't look too good.@@Get away from me.@@And I thought I look bad.@@You better look in the mirror.@@Has anyone told ya you're ugly?@@Anyone tell you that you're pretty?@@He doesn't love me.@@Anyone seen my keys?@@The beer is where?@@Pssss psst... The Devs are standing there.@@Pssss psst... don't look back.@@Did you know that the mutated fruit grow on trees?@@Blowjob? No way!@@I'm gonna puke... back off!@@I didin't know that he was 14 years old!@@I didin't know she was 13!@@Who's hungry?@@Beer in Berlin tastes like piss@@Why did you come to Berlin?@@A lot of great people live here.@@Another ordinary day in Berlin...@@The air in Berlin is the shit, can you feel it?@@One day I'm gonna get out of here...@@I've had enough of this booze, tastes like fuckin' sewage!}
+
+[russ]
+{100}{}{A bar patron}
+{210}{}{You see a bar patron. It seems that he's been here a while.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Bier trinken, Bier trinken, bis zum abwinken@@Hallo leute.@@Huch, warum so viele Leute hier?@@Ich hab kein Bier, gib mir eins.@@Schon leer?@@Schon wieder leer?@@Huhuu@@Get the fuck outta here.@@Have you been drinking?@@Drink some with me.@@Watch out for the bartender, he pisses into the beer sometimes.@@Tastes like piss.@@Do you think that you... and me... together... somewhere...?@@I don't have the tme now.@@You're still here.@@Why does life suck?@@Stop clicking my head!@@Aaaand?@@I think they're all watching us.@@Don't stand here, they gonna think that we're together.@@Amazing party, isn't it?@@Harry who?@@One week I had to live on nothing but bread and water.@@What dietary supplement?@@Syphilis? I think I had sumfin' like that already.@@Want to join?@@Beer for all!@@I know that you have rabies.@@Do I know you?@@I think I'm sick.@@You don't look too good.@@Get away from me.@@And I thought I look bad.@@You better look in the mirror.@@Has anyone told ya you're ugly?@@Anyone tell you that you're pretty?@@He doesn't love me.@@Anyone seen my keys?@@The beer is where?@@Pssss psst... The Devs are standing there.@@Pssss psst... don't look back.@@Did you know that the mutated fruit grow on trees?@@Blowjob? No way!@@I'm gonna puke... back off!@@I didin't know that he was 14 years old!@@I didin't know she was 13!@@Who's hungry?@@Beer in Berlin tastes like piss@@Why did you come to Berlin?@@A lot of great people live here.@@Another ordinary day in Berlin...@@The air in Berlin is the shit, can you feel it?@@One day I'm gonna get out of here...@@I've had enough of this booze, tastes like fuckin' sewage!}

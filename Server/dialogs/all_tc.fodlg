@@ -1,0 +1,46 @@
+[comment]
+
+
+[data]
+lang=Main pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+0 2010 R _script town_control_server_scripts@try_town_control 0  #
+0 2020 &
+
+[Main]
+{100}{}{Rich merchant}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Greeting. What do you want, stranger?}
+{2010}{}{I want to take this place under "protection", you know what I mean...}
+{2020}{}{Just passing by.}
+
+[pols]
+{100}{}{Bogaty kupiec}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj. W czym moge Ci pomóc?}
+{2010}{}{Zamknij sie i dawaj wszystkie rzeczy. Tylko pamiętaj - nie próbuj nic głupiego.}
+{2020}{}{Tylko przechodze.}
+
+[engl]
+{100}{}{Rich merchant}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Greetings. How may I help you?}
+{2010}{}{Shut up and give me all your stuff, now!}
+{2020}{}{Just passing by.}
+
+[russ]
+{100}{}{Rich merchant}
+{1000}{}{Predialogue installations}
+{1010}{}{Nnrdn}
+{2000}{}{N ddclcaie. A ??e ? eiao Nlal dieiuu?}
+{2010}{}{Shut up and give me all your stuff, now!}
+{2020}{}{Nieuei ddioial.}
+

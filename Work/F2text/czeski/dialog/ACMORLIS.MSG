@@ -1,0 +1,47 @@
+#tento soubor pøeložil Miskot...mhoferek@telecom.cz
+{100}{}{Vidíš jednu ze svých tet, Morlis - právì tu, která tì vždycky nesnášela.}
+{101}{}{Proè otravuješ, synovèe? Nevidíš, že mám práci?}
+{301}{}{Proè otravuješ, neteøi? Nevidíš, že mám práci?}
+{102}{}{Hmm, dobøe. Promiò.}
+{103}{}{O co jde? Vidíš, že mám spoustu práce!}
+{104}{}{No... Mynoc øíkal...}
+{105}{}{Mynoc øekl co? Ven s tím, prcku!}
+{106}{}{Že, no..., že bys mohla mít nìjaký pazourek.}
+{107}{}{Taky že mám. A ty ho teï ode mì budeš chtít, co?}
+{108}{}{Vlastnì... no ano.}
+{109}{}{Dobrá... Chci tøi dávky hojivého prášku. Blíží se zlé èasy a já chci být pøipravená. Pøines mi je a dostaneš pazourek. A teï bìž!}
+{110}{}{Ano, madam!}
+{111}{}{Plýtváš mým èasem. Máš pro mì ty prášky?}
+{112}{}{Ano, tady jsou.}
+{113}{}{No... myslím, že ne.}
+{114}{}{Tady je pazourek. Teï odtud zmiz! Nemám èas s tebou klábosit.}
+{115}{}{Dìkuju teto Morlis.}
+{116}{}{Zas plýtváš mým èasem, ty hajzlíku. Jak se z tebe vùbec kdy mohl stát Vyvolený?}
+{117}{}{Ano, teto Morlis.}
+{118}{}{Éé, teto Morlis, mám s sebou ty tøi prášky.}
+{150}{}{Teto Morlis, jsem na velmi riskantní výpravì za spásu naši vesnice. A moje šance na úspìch se dramaticky zvýší, když si ty léèivé prášky nechám a ty mi dáš ten pazourek. Souhlasíš?}
+{151}{}{Co si myslíš, že dìláš, ty naivko? Takhle by se ten, kdo nosí jméno Vyvolený chovat nemìl. A teï mi zmiz z oèí!}
+{152}{}{Pokud je pro tebe ten pazourek tolik dùležitý, že jsi ochotný znectít jméno Vyvoleného, tak prosím. Vem si ho a zmiz mi z oèí.}
+{153}{}{Ano, teto Morlis.}
+{154}{}{Ale... no tak dobrá. Tady je ten pazourek. Pøeju ti bezpeènou cestu, dítì.}
+{155}{}{Ne, to teda nesouhlasím. A teï odsud zmiz!}
+{156}{}{Ano, teto Morlis.}
+
+# new add on stuff for time limit
+{200}{}{Tak jsi zpátky. A co svatý Vault tøináct? Víš už, kde leží?}
+{201}{}{Ne, teto Morlis, já...}
+{202}{}{No tak odsud rychle vypadni a najdi ho! Jsi naše jediná nadìje!}
+{203}{}{Ano, teto Morlis.}
+{204}{}{Á, to jsi zase ty. Zase jsi zmrvil svoje poslání?}
+{205}{}{Ano, teto Morlis, ale...}
+{206}{}{Tak odsud vypadni a nevracej se, dokud to poslání nesplníš! Proè ztrácíš èas návratem sem, když namísto toho mùžeš pokraèovat v pátrání!?}
+{207}{}{Ano, teto Morlis.}
+{208}{}{Skuteènost, že tady stojíš, mùže znamenat jen, že tvoje výprava je úspìšnì u konce. Neztrácel bys pøece drahocenný èas návratem s prázdnou, že ne?}
+{209}{}{Ano, teto Morlis. Tedy ne, teto Morlis! Ehm, budu muset jít, teto Morlis.}
+{210}{}{Tak, dítì. Po kolikáté už tady pøede mnou stojíš. Zase se vracíš s prázdnou?}
+{211}{}{Ano, teto Morlis.}
+{212}{}{Poslouchej, }
+{213}{}{. Lidé umírají, dobytek hyne a úroda vadne. Všichni jsme vyhladovìlí, nemocní anebo obojí zároveò. Nezbývá nám už moc èasu. Pokud brzy nenajdeš GECK, je s námi konec. Rozumíš mi?}
+{214}{}{Ano, teto Morlis.}
+{215}{}{Tak odsud padej a najdi GECK! Jsi naše jediná nadìje!}
+{216}{}{Ano, teto Morlis.}

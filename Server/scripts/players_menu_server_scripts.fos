@@ -1,0 +1,159 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_msgstr.fos"
+#include "utils_for_array.fos"
+
+import uint GetPlayerMercs(Critter & player, Critter@ []& mercs) from "merc";
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddPickPlane(Critter& npc, uint priority, Item@ item, uint useItemId, bool toOpen) from "npc_planes";
+
+void unsafe_Suicide(Critter& player, int, int, int, string@, int[]@)
+{
+	if(player.StatBase[ST_CURRENT_HP]>-20)
+	{
+		player.Say(SAY_NETMSG,"You managed to commit suicide.");
+		player.ToDead(ANIM2_DEAD_EXPLODE,player);
+	}
+}
+
+void unsafe_MercMoveTo(Critter& player, int hx, int hy, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]))
+		{
+			mercs[i].DropPlanes();
+			mercs[i].ClearEnemyStack();
+			AddWalkPlane(mercs[i],AI_PLANE_WALK_PRIORITY,hx,hy,0,true,2);
+		}
+	}
+}
+
+void unsafe_MercStop(Critter& player, int, int, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]))
+		{
+			mercs[i].DropPlanes();
+			mercs[i].ClearEnemyStack();
+		}
+	}
+}
+
+void unsafe_MercWait(Critter& player, int, int, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]))
+		{
+			mercs[i].MercBase[MERC_WAIT]=1;
+		}
+	}
+}
+
+void unsafe_MercAttack(Critter& player, int cr_id, int, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	Critter @cr=GetCritter(cr_id);
+	if(@cr==null) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]))
+		{
+			AddAttackPlane(mercs[i],AI_PLANE_ATTACK_PRIORITY,cr,true);
+		}
+	}
+}
+
+void unsafe_MercFollowMe(Critter& player, int, int, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]))
+		{
+			mercs[i].DropPlanes();
+			mercs[i].ClearEnemyStack();
+			AddWalkPlane(mercs[i],AI_PLANE_WALK_PRIORITY,player.HexX,player.HexY,0,true,2);
+			mercs[i].MercBase[MERC_WAIT]=0;
+		}
+	}
+}
+
+void unsafe_MercPickUp(Critter& player, int item_id, int, int, string@, int[]@)
+{
+	Critter@[] mercs;
+	Map@ map=player.GetMap();
+	if (!valid(map)) return;
+	Item @item=GetItem(item_id);
+	if(@item==null) return;
+	GetPlayerMercs(player,mercs);
+	for(uint i=0; i<mercs.length(); i++)
+	{
+		if(valid(mercs[i]) && FLAG(item.Flags,ITEM_CAN_PICKUP))
+		{
+			mercs[i].DropPlanes();
+			mercs[i].ClearEnemyStack();
+			AddPickPlane(mercs[i],AI_PLANE_PICK_PRIORITY,item,0,false);
+			break;
+		}
+	}
+}
+
+void unsafe_NoScout(Critter& cr, int, int, int, string@, int[]@)
+{
+	if (cr.ParamBase[PLAYER_PROFESSION]==2)
+	{
+		cr.ParamBase[SCOUT_PLAYER_FACTION]=0;
+		cr.ParamBase[SCOUT_MAIN_FACTION]=0;
+	}
+}
+
+void unsafe_NPC(Critter& cr, int, int, int, string@, int[]@)
+{
+	if (cr.ParamBase[PLAYER_PROFESSION]==2)
+	{
+		cr.ParamBase[SCOUT_PLAYER_FACTION]=0;
+		cr.ParamBase[SCOUT_MAIN_FACTION]=1;
+	}
+}
+
+void unsafe_EnemyMainFactionNoPlayersFaction(Critter& cr, int, int, int, string@, int[]@)
+{
+	if (cr.ParamBase[PLAYER_PROFESSION]==2)
+	{
+		cr.ParamBase[SCOUT_PLAYER_FACTION]=2;
+		cr.ParamBase[SCOUT_MAIN_FACTION]=2;
+	}
+}
+
+void unsafe_EnemyMainFactionAndPlayersFaction(Critter& cr, int, int, int, string@, int[]@)
+{
+	if (cr.ParamBase[PLAYER_PROFESSION]==2)
+	{
+		cr.ParamBase[SCOUT_PLAYER_FACTION]=1;
+		cr.ParamBase[SCOUT_MAIN_FACTION]=2;
+	}
+}

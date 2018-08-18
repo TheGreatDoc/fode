@@ -1,0 +1,3 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Dùl je zavalen.}
+{101}{}{Výbuch èistièe vzduchu zpùsobil zavalení celého dolu.}

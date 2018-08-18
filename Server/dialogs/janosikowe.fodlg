@@ -1,0 +1,22 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+

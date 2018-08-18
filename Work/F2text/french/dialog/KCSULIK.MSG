@@ -1,0 +1,614 @@
+{100}{}{Tu vois un homme avec des tatouages sur le visage et un gros os entre les narines.}
+{101}{}{Voici Sulik.}
+{102}{}{Tu vois un Tribale grand et musclé. Il a un os entre les narines et le visage bariolé de tatouages. Son attitude est posée et son air est assuré.}
+
+{103}{}{.}
+{104}{slk1}{Hé ! Toi. Notre nom être Sulik. Toi chercher quelque chose ?}
+{105}{}{Euh ?}
+
+{107}{slk2a}{Oh, non ! Toi pas parler à nous. Toi être avec eux, eux enlever notre sœur. Mauvais karma pour toi.}
+{108}{slk2b}{Oh, non ! Mes amis et moi pas parler à esclavagistes. }
+
+{109}{slk3}{Beaucoup de gens avoir esprits malfaisants. Toi ? Avoir esprit stupide. Va voir shaman pour trou dans ta tête... grand trou... très grand trou... trou énorme.}
+{110}{}{Euhg ?}
+{111}{}{Hou hou !}
+{112}{}{Gulp ! (Tu as l'air inquiet.)}
+
+{113}{slk4}{Toi pas vouloir trou ? Va voir Torr, lui être esprit-frère de toi. Lui travailler pour Maida-sans-sourire. Comme nous et moi.}
+{114}{}{Hum-hum.}
+{115}{}{Heu ?}
+
+{116}{slk5a}{Ah ! Pas bien du tout. Esclavagistes prendre notre sœur. Nous partir boire et nous tout casser. Maintenant, nous rembourser Maida. Quand tout fini, nous partir chercher sœur.}
+{117}{slk5b}{Maintenant, nous prêts à partir. Nous aller chercher sœur. Elle enlevée par esclavagistes.}
+{118}{}{Euh ?}
+{119}{}{Hum ! Combien dois-tu encore rembourser avant de pouvoir être libre ?}
+{120}{}{Hum-hum.}
+{121}{}{Je cherche quelque chose. Tu pourrais peut-être venir avec moi ?}
+
+{122}{slk6}{Nous devoir payer 350 dollars à Maida. Toi aller sud ? Nous venir avec toi et chercher notre sœur. Toi avoir 350 dollars ? }
+{123}{}{Nan-nan.}
+{124}{}{Uh-huh !}
+{125}{}{Tiens, voilà les 350 $.}
+{126}{}{Qui ça, nous ?}
+{127}{}{Tu as sûrement raison, Sulik. Est-ce que je peux te demander quelque chose ?}
+{128}{}{350 $, c'est beaucoup d'argent. On dirait que t'es pas prêt de partir d'ici. Au revoir.}
+{129}{}{Le fait d'avoir un maître t'évite certainement bien des ennuis. Je ne penses pas que tu iras vers le sud de si tôt. Au revoir.}
+
+{140}{slk6a}{Les esprits être avec moi ! Partout ! Parfois, esprits parler.}
+{141}{}{T'as une araignée au plafond, hein ?}
+{142}{}{Quels esprits ?}
+{143}{}{OK... je peux te demander autre chose ?}
+
+{150}{slk6b}{Nous bien rigoler. Grand-père Esprit des Os lui dire toi avoir intelligence. Dire aussi, toi en avoir besoin.}
+{151}{}{Pourquoi ?}
+{152}{}{Qui est Grand-père Esprit des Os ?}
+{153}{}{Je peux te poser une question ?}
+
+{160}{slk6c}{Lui avoir bon pressentiment pour toi. Grand-père Esprit des Os esprit malin.}
+{162}{}{Quel pressentiment ?}
+
+{170}{slk6d}{Esprits être partout. Eux voyager avec moi. Grand-père Esprit des Os être bavard.}
+{171}{}{Ah, ce Démon.}
+
+{180}{slk6e}{Parle-moi d'autre chose.}
+{181}{}{C'est tout ce que je voulais savoir pour l'instant. Au revoir.}
+{182}{}{Sulik dire non.}
+
+{190}{slk6f}{Hum ! Parle-moi d'autre chose.}
+{191}{}{Je vois. C'est tout ce que j'ai besoin de savoir pour le moment. Au revoir.}
+
+{200}{slk6g}{Je préférerais ne pas savoir ce que les esprits t'ont dit.}
+{201}{}{Sulik avait besoin de temps pour faire quelque chose par lui-même.}
+
+{210}{slk6h}{Sulik rester près pour que toi plus avoir d'ennuis.}
+{211}{}{Sulik penser peut-être prendre savon dans prochaine ville.}
+
+{220}{slk7}{Sulik souhaiter bonne chance. Sulik penser toi avoir besoin beaucoup aide.}
+{221}{}{Sulik attendre toi ici.}
+{222}{}{J'ai autre chose à te demander.}
+{223}{}{Sulik devoir penser à ancêtres pendant un moment. Ici bien. Maintenant bon moment.}
+
+{230}{slk8}{Sulik protégé par ancêtres. Ca et armure suffire. Presque.}
+{231}{}{Oui.}
+{232}{}{Sulik se demander si ça être suffisant. Beaucoup de gens vouloir faire mal à Sulik ces temps-ci.}
+{233}{}{Sulik pas aimer armure lourde. Sulik avoir besoin de bouger.}
+{234}{}{Sulik avoir des choses toi vouloir ?}
+{235}{}{Toi donner à Sulik nouvelle chose ?}
+{236}{}{D'accord. Sulik faire échange. Mais avoir seulement os de Grand-père.}
+{237}{}{Sulik OK. Pas besoin ton médicament. Avoir sac à sept démons.}
+
+{240}{slk9a}{Sulik faire de son mieux pour guérir - mais Sulik encore blessé beaucoup.}
+{241}{slk9b}{Utilise tes compétences pour te guérir toi-même, Sulik.}
+
+{243}{slk10a}{C'est tout pour le moment.}
+{244}{slk10b}{Laisser Sulik regarder devant.}
+
+{246}{slk11a}{Sulik ami. Sullik aller le premier pour être sûr pas dangereux pour toi.}
+{247}{slk11b}{Sulik vouloir échanger deux contre maintenant. Sulik plaisanter, simplement vouloir voir ta tête.}
+
+{250}{slk12a}{Sulik dire merci. Toi pas avoir assez argent pour libérer Sulik. Peut-être toi gagner plus argent puis libérer Sulik ?}
+{251}{slk12b}{Ooog. (déception)}
+
+{253}{slk13a}{Je croyais avoir assez. Je regrette. J'ai une autre question à te poser.}
+{254}{slk13b}{Sulik prendre 350 $ et donner à Maida tout de suite. Après Sulik libre. Toi vouloir Sulik accompagner toi ?}
+
+{257}{slk14a}{Sulik pas venir. (Tu hoches la tête)}
+{258}{slk14b}{Sulik venir avec }
+
+{260}{slk15a}{Parle-moi de la Grande Eau Salée.}
+{261}{slk15b}{Des lézards qui mordent ?}
+
+{263}{slk16a}{Que fais-tu ici ?}
+{264}{slk16b}{J'aimerais avoir des informations sur la région.}
+
+{267}{slk17a}{Tribu de Sulik vivre près de Grande Eau Salée. Poisson géant manger soleil quand soleil arriver trop près de Grande Eau Salée. Mais après Soleil cuire poisson et donner eau goût salé. Pour venir ici, Sulik avoir voyagé deux lunes.}
+{268}{slk17b}{Tu crois que le soleil va sous l'eau ?}
+
+{270}{slk18a}{J'aimerais te poser une autre question.}
+{271}{slk18b}{Deux lunes ? Ca fait un bout de temps. Comment as-tu pu voyager sans encombres jusqu'à aujourd'hui ?}
+
+{280}{slk21}{J'aimerais te poser une autre question.}
+{281}{}{C'est tout ce que j'ai besoin de savoir pour le moment. Au revoir.}
+
+{290}{slk22}{Tu cherches ta sœur ?}
+{291}{}{Mais dis-moi...}
+{292}{}{C'est tout ce que je voulais savoir pour l'instant. Salut.}
+
+{300}{slk23a}{C'est tout ce que j'ai besoin de savoir pour le moment. Au revoir.}
+{301}{}{Grand-père os fort et sage, avec Sulik toujours. Sulik honoré que Grand-père choisir Sulik pour le porter. Sulik porter autres esprits des os. Sulik demander os sages de l'aide. Grand-père Esprit des os dire Sulik garder couteau aiguisé.}
+{302}{slk23b}{J'aimerais te poser une autre question.}
+
+{310}{slk25a}{Quoi Sulik faire pour toi ?}
+{311}{slk25b}{J'aimerais te poser quelques questions.}
+{312}{}{Y a-t-il des marchands ou des guérisseurs dans cette ville ?}
+
+{320}{slk26a}{Oh, merci. Encore une chose...}
+{321}{slk26b}{C'est tout ce que je voulais savoir pour le moment.}
+{322}{slk26c}{Sulik jamais entendre parler de J.E.K. Maida demander Sulik faire grand tas de poussière avec petits tas. C'est tout ce que Sulik fait.}
+{323}{}{Euh ?}
+{324}{}{Oh ! Eh bien, j'aimerais te poser une autre question.}
+{325}{}{Nan-nan.}
+{326}{}{Sulik entendre beaucoup choses étranges arriver ici. Bugmen manger bétail, esprits marcher, Souriant disparaître.}
+{327}{}{Sulik entendre choses étranges arriver ici. Bugmen manger bétail, esprits marcher, Souriant disparu. Maintenant, Torr disparu aussi.}
+{328}{}{Tu as d'autres questions pour Sulik ?}
+{329}{}{Parle-moi des Bugmen.}
+
+{350}{slk27aa}{Rien n'est jamais gratuit.}
+{351}{slk27ab}{Les armes lourdes sont mieux que les armes légères.}
+{352}{slk27ac}{Certains personnages du jeu pourront t'apprendre de nouvelles compétences et capacités.}
+
+{360}{slk27ba}{Toi vouloir Sulik rester loin comment ?}
+{361}{slk27bb}{Toi vouloir Sulik lutter comment ?}
+{362}{slk27bc}{Sulik trouver seulement un vieux. Très malade. Lui dire beaucoup de guerriers venir du Démon avec torches magiques. Feu toucher guerriers, eux exploser. Démon prendre tous les gens, et les attacher et partir. Prendre sœur aussi. Sulik trouver sœur ou mourir.}
+
+{370}{slk27ca}{Toi être comme hommes qui prendre sœur de Sulik. Toi possédé par esprit mauvais. Sulik très triste que toi prendre marque d'esprit mauvais. Sulik partir.}
+{371}{slk27cb}{Posséder quelqu'un pas bien. Sulik rempli de dégoût.}
+
+{380}{slk27da}{Eh bien, on dirait qu'il avait vraiment besoin d'aide. J'aimerais te poser quelques questions.}
+{381}{slk27db}{Il avait besoin d'aide, ça c'est sûr. J'ai besoin d'avoir des nouvelles du coin.}
+{382}{slk27dc}{Torr a besoin d'aide. Il faudrait que je me mette au travail. Au revoir.}
+
+{390}{}{Torr ? [nom du joueur] trouver Torr. Au revoir.}
+{391}{}{Où Torr ?}
+
+{400}{slk27fa}{Il y a un Canyon à l'est des pâturages des brahmines. Il y a plusieurs mois arriver tonnerre et éclairs puissants. Pas nuages dans le ciel. Sulik savoir que ça arriver quand esprit méchant venir dans terre des vivants. Maintenant entendre bruits étranges du canyon. Sulik penser que mauvais esprits pleurer de tourment. Déjà entendu avant dans hutte de médecine quand Chaman arracher mauvaise dent. Des gens dire créature d'esprit étrange ici. Pas ressembler à homme. Torr dire à Sulik que lui prouver pas stupide. Lui aller tuer créature d'esprit. Après personne se moquer de Torr. Sulik penser que Torr faire ça. Toi aider Torr ? Torr besoin aide.}
+{401}{slk27fb}{Esprit ? Ooooooh ! Au revoir.}
+{402}{slk27fc}{Torr besoin aide ? [nom du joueur] aider Torr.}
+{403}{slk27fd}{Je vais chercher le pauvre Torr immédiatement.}
+
+{410}{slk27ga}{OK Sulik.}
+{411}{slk27gb}{Je suis content que nous ayons trouvé ta sœur. Tu devrais retourner dans ton village avec elle. Simplement pour la mettre hors de danger. Tu vas me manquer, Sulik.}
+
+{420}{slk27ha}{Sulik penser toi laisser trop souvent petite tête réfléchir à la place de grande tête.}
+{421}{slk27hb}{Sulik penser toi être fainéant.}
+
+{430}{slk27ia}{Je ne sais rien de tout ça.}
+{431}{slk27ib}{Oui.}
+
+{440}{slk27ja}{Ces gens sont fous.}
+{441}{slk27jb}{Démon est très puissant ici.}
+{442}{slk27jc}{Est-ce qu'ils sont tous devenus fous ici ?}
+
+{450}{slk27ka}{J'ai trouvé le chemin.}
+{451}{slk27kb}{Bonne chasse ici.}
+{452}{slk27kc}{Mauvaise chasse ici.}
+
+{460}{slk27la}{Vous devez ouvrir ça.}
+{461}{slk27lb}{Nous devrions peut-être revenir ici.}
+{462}{slk27lc}{Je ne comprends pas.}
+
+{470}{slk27ma}{Insulte au combat n°7}
+{471}{slk27mb}{Insulte au combat n°8}
+
+{480}{slk27na}{Sulik voir meilleur chemin maintenant.}
+{482}{slk27nb}{Sulik penser pas beaucoup apprendre comme ça.}
+{483}{slk27nc}{Je te quitte car beaucoup trop de gens voyagent avec toi maintenant.}
+{484}{slk27nd}{Je te quitte car tu as perdu ta gentillesse maintenant.}
+
+{490}{}{Oui.}
+{491}{}{Non.}
+{492}{}{OK, Sulik aller voir famille, parler à Chaman sage, et te rattraper quand toi partir.}
+
+{500}{slk27pa}{Sulik triste. Sulik content voyager avec toi, même si beaucoup de gens essayer de tuer nous. Sulik
+ aller chercher sœur tout seul.}
+{501}{slk27pb}{Au revoir.}
+{502}{slk27pc}{Eh bien, peut-être devrais-tu continuer ta route avec moi ? Il est encore possible que l'on retrouve ta sœur.}
+
+{510}{slk27qa}{Non.}
+{511}{slk27qb}{Les esprits voient le même nuage menaçant se diriger vers chez toi.}
+{512}{slk27qc}{Tous emmenés à la Grande Eau Salée.}
+
+{520}{slk27ra}{Ce que tu cherches n'est pas ici. Mais le chemin l'est.}
+{521}{slk27rb}{Suis le chemin de la tranquillité et apprends beaucoup.}
+{522}{slk27rc}{Une puissante graine est plantée ici. Une bonne plante.}
+
+{530}{slk27sa}{Une coquille vide se cache sous ceux qui se reposent.}
+{531}{slk27sb}{Les griffes de la mort sont proches.}
+{532}{slk27sc}{La petite mort te suivra.}
+
+{540}{slk27ta}{Le son de la voix est plus fort que celui des armes.}
+{541}{slk27tb}{Le Mal réside ici.}
+{542}{slk27tc}{Le chemin du Mal est tracé ici.}
+
+{550}{}{Il y a grand savoir ici.}
+{551}{}{Ces modestes lieux ouvrent un chemin plus résolu vers l'avenir.}
+
+{560}{slk28a}{Nous avons besoin de temps pour nous retrouver seuls.}
+{561}{slk28b}{Nous besoin de repos. Un peu fumer, un peu penser.}
+
+{600}{}{OK. Merci.}
+
+{704}{slk28a}{Nous avons besoin de temps pour nous retrouver seuls.}
+{705}{slk28b}{Nous besoin de repos. Un peu fumer, un peu penser.}
+
+{706}{slk29a}{Nous te montrer comment on fait dans notre tribu.}
+{707}{slk29b}{Nous connaître bien terre et vents. Nous s'occuper de ça.}
+{708}{slk29c}{Les esprits des os nous aident pour ça.}
+
+{709}{slk30a}{Nous être laids à côté de toi.}
+{710}{slk30b}{Ouais, toi avoir besoin que nous rester pour éviter problèmes à toi.}
+{711}{slk30c}{Nous et moi, on reste près de toi si tu promets d'acheter du savon à la prochaine ville.}
+
+{712}{slk31a}{D'accord.}
+{713}{slk31b}{Nous être là, si toi avoir besoin.}
+{714}{slk31c}{Sûrement une bonne chose de garder les distances. Les gens vouloir tuer toi tout le temps.}
+
+{715}{slk32a}{Pas de problème.}
+{716}{slk32b}{Bonne idée. De toute façon, tu vas sûrement te faire tirer dessus.}
+{717}{slk32c}{Nous et mon nez dire merci à toi.}
+
+{718}{slk33a}{C'est le moment pour un peu d'herbe superbe. Ca nous en fera plus.}
+{719}{slk33b}{Bonne idée. Les mauvaises choses qui te poursuivent, ça ne regarde personne.}
+{720}{slk33c}{Bonne chance. Nous penser que toi en avoir grand besoin.}
+
+{721}{slk34a}{Nous être ici.}
+{722}{slk34b}{Une petite sieste et causer avec Grand-père Esprit des Os. Moi aller nulle part. }
+{723}{slk34c}{Ici, être endroit idéal pour se reposer un peu.}
+
+{724}{slk35a}{Hé ! Toi nous dire simplement de laisser toi.}
+{725}{slk35b}{Nous désolés.}
+{726}{slk35c}{Nous partir, pas d'problème.}
+
+{727}{slk36a}{D'accord.}
+{728}{slk36b}{Grand-père Esprit des Os dire même chose à nous.}
+{729}{slk36c}{Beaucoup combat. Besoin d'armes meilleures.}
+
+{730}{slk37a}{Esprits aider aussi. Ca et armure presque suffisant pour protéger toi.}
+{731}{slk37b}{Bonne idée. Tu attires les gens qui t'en veulent comme une bouse attire les mouches}
+{732}{slk37c}{Avec toi, nous avoir besoin de tout ce qui est possible.}
+{733}{slk37d}{Trop lourd. Nous aimer rester loin de mauvaises choses.}
+
+{734}{slk38a}{Tu en as besoin, tu l'as.}
+{735}{slk38b}{Allons-y.}
+{736}{slk38c}{Echange, pas de problème. Mais moi seulement avoir un Grand-père Esprit. Désolé.}
+
+{737}{slk39a}{Ca, très bonne chose.}
+{738}{slk39b}{Okay.}
+{739}{slk39c}{Nous pas vouloir faire comme petite fille, mais...}
+{740}{slk39d}{Pas de problème. Nous avoir force.}
+{741}{slk39e}{Les esprits nous ont protégés. Tout va bien.}
+
+{742}{slk40a}{Jeter un coup d'oeil.}
+{743}{slk40b}{Grand-père Esprit des Os dire être très prudents.}
+{744}{slk40c}{Pas problème. Juste vérifier sécurité pour ami.}
+
+{745}{slk41a}{Maintenant, moi vouloir échanger deux pour un.... Pour rigoler. Grand-père Esprit des Os dire que toi faire drôle de tête, comme celle-ci.}
+{746}{slk41b}{Ca a l'air bien.}
+{747}{slk41c}{Ce qui est à nous est à toi aussi.}
+
+{750}{slk42}{Moi remercier toi. Ce que toi essayer faire très bien, mais toi pas avoir argent. Peut-être toi pouvoir en trouver ?}
+{751}{}{Eu-euh.}
+{752}{}{Je regrette, j'ai dû mal compter. Au revoir.}
+{753}{}{Je croyais avoir assez, je regrette. J'ai une question à te poser.}
+
+{754}{slk43a}{Ouais. Nous donner ça à Maida. Puis nous être libres. Toi vouloir nous marcher côte à côte.}
+{755}{slk43b}{Ouais. Toi être moche dehors, mais dedans, toi être vraiment super. Nous êtres libres de chercher sœur, maintenant.}
+{756}{slk43c}{Oh, ouais. Nous bien vouloir venir, mais toi déjà avoir beaucoup de compagnons.}
+{757}{}{No-non.}
+{758}{}{Oui-oui.}
+{759}{}{Pas maintenant, merci.}
+{760}{}{Ce serait cool.}
+
+{761}{slk44a}{Nous et moi savoir beaucoup. Avoir voyagé de Grande Eau Salée à terre des lézards qui mordent.}
+{762}{slk44b}{Moi être très heureux de répondre.}
+{763}{}{Parle-moi de la Grande Eau Salée.}
+{764}{}{Des lézards qui mordent ?}
+{766}{}{Pourquoi as-tu tant voyagé ?}
+{767}{}{Que fais-tu donc ici ?}
+{768}{}{Je cherche des renseignements sur la région.}
+{769}{}{Veux-tu venir avec moi ? Peut-être réussirons-nous à retrouver ta sœur au cours de nos voyages.}
+{770}{}{Je crois que je n'ai pas besoin d'en savoir plus pour l'instant.}
+
+{771}{slk45}{Le foyer de la tribu est juste à côté de Grande Eau Salée. A deux lunes de voyage d'ici.}
+{772}{}{J'ai autre chose à te demander.}
+{773}{}{A deux lunes ? Ca fait loin. Comment as-tu pu aller si loin ?}
+{774}{}{C'est tout ce qu'il me faut pour l'instant.}
+
+{775}{slk46}{Les geckos. Les petits ne mordent pas fort. Mais les dorés... ils te font des trous énormes quand ils mordent.}
+
+{776}{slk47}{Nous entendre que Vic, le marchand, être ici. Lui dire savoir choses sur esclavagistes. Nous débarquer,
+ lui pas là, gros problème.}
+{777}{}{Vic est là, mais je ne crois pas qu'il sache grand-chose sur les esclaves. Sauf qu'il a lui-même été esclave à la
+ Fosse. Dis-moi autre chose.}
+{778}{}{S'lut.}
+
+{779}{slk48a}{Esclavagistes prendre notre sœur. Nous penser que Vic avoir informations. Nous pas trouver lui, nous être très en colère et boire comme des trous. Esprits de colère et de chaos grossir et nous maintenant devoir payer pour réparer.}
+{780}{slk48b}{Nous essayer de savoir par où aller pour trouver esclavagistes qui ont pris sœur. Peut-être sud.}
+{781}{slk48c}{Nous descendre pour trouver sœur. Nous penser aller vers le sud, mais pas encore bien sûrs. Toi vouloir compagnie ?}
+{782}{}{Tu voulais voir Vic le marchand ?}
+{783}{}{Il faut payer pour les dégâts ?}
+{784}{}{Euh ! Oui, oui !}
+{785}{}{Je vais aller vers le Sud. Si tu veux venir, bienvenue à toi.}
+{786}{}{Tu cherches ta sœur, c'est ça ?}
+
+{787}{slk50}{Avec tous les esprits qui marchent à côté de moi, pas avoir peur de voyager partout.}
+
+{790}{slk52a}{Marcher avec toi pas bonne nouvelle. Grand-père Esprit des Os dire que rester avec toi attire
+ mauvais karma sur nous.}
+{791}{slk52b}{On est là. Grand-père dire que peut-être nous trouver sœur avec toi.}
+{792}{}{Oui.}
+{793}{}{J'espère bien. Ce sera un plaisir de voyager avec toi et, euh, ton
+ Grand-père os.}
+
+{794}{slk53}{Non, pas seulement Grand-père, tous les esprits de la tribu. Lui être juste esprit
+ le plus fort et le plus sage. Toi pas t'inquiéter.}
+{795}{}{Euh, ouais. D'accord, Sulik.}
+
+{796}{slk54}{Moi pouvoir faire quelque chose pour toi ?}
+{797}{}{J'ai quelques questions à te poser.}
+{798}{}{Où puis-je faire des échanges, trouver un guérisseur ou une chambre ?}
+{799}{}{Tu as entendu parler d'un Jardin d'Eden en Kit ?}
+{800}{}{Non, je n'ai pas besoin de ton aide pour le moment, Sulik. Merci.}
+{801}{}{Que fais-tu donc ici ?}
+{802}{}{Maintenant que tu es libre, pourquoi ne pas m'accompagner ?}
+{803}{}{Je crois que je n'ai besoin de rien d'autre, pour l'instant. Salut.}
+
+{804}{slk55}{Trop de questions. Maida s'occupe du commerce ici et sa mère, Ardin, s'occupe des chambres.
+ Pas de Shaman en ville, mais tu peux troquer contre médicaments.}
+{805}{}{Ah, merci. Je voulais te demander autre chose.}
+{806}{}{Je crois que j'en sais assez, maintenant. Salut.}
+
+{807}{slk56}{Jamais entendu parler de ça. Mais Maida nous donne beaucoup de travail.}
+{808}{}{Qui est Maida ?}
+{809}{}{Ah, je voulais te demander autre chose.}
+{810}{}{Bon, alors, je crois que je vais te laisser repartir. Salut.}
+
+{811}{slk57a}{Ici, très animé : Bugmen enlever bétail, esprits ambulants, Souriant disparu.}
+{812}{slk57b}{Ici, très animé : Bugmen enlever bétail, esprits ambulants, Souriant disparu. Maintenant Torr aussi.}
+{813}{slk57c}{Toi avoir autres questions pour Sulik ?}
+{814}{}{Parle-moi de ces Bugmen.}
+{815}{}{Esprits ambulants ? Raconte-moi ça.}
+{816}{}{Souriant ? Qui est Souriant ?}
+{817}{}{Torr a disparu ? Où peut-il être allé ?}
+{818}{}{Je voulais te demander autre chose.}
+{819}{}{Je crois que je n'ai pas besoin d'en savoir plus pour l'instant. Salut.}
+
+# Will be removing the word Pistol from his dialog when the new audio is back.
+{820}{slk58alt}{Nous être forts avec poings, lances, gros marteaux, pistolets et mitrailleuses. Nous pas petits.}
+
+{821}{slk59}{Torr nous parler des insectes avec deux pieds voleurs de Brahmines. Lui tout retourné.}
+{822}{}{Passionnant. Je voulais te demander autre chose.}
+{823}{}{Je crois que c'est tout ce que je voulais savoir. Salut.}
+
+{824}{slk60}{Dans canyon à l'est des pâturages hurle Esprit Ambulant. Faire peur aux gens.
+ Pourtant, Grand-père Esprit des Os rien dire du tout.}
+
+{825}{slk61}{Smiley être très bon chasseur. Lui dire aller chercher nid de geckos dorés. Lui jamais revenir.}
+
+{830}{slk62a}{Là où se trouve la pierre qui tremble, suis le chemin que tu ne peux pas voir.}
+{831}{slk62b}{Le vent souffle vers des lieux secrets.}
+{832}{slk62c}{Cherche la vision qui semble étrange.}
+{833}{slk62d}{Plus l'endroit est haut, plus c'est difficile.}
+{834}{slk62e}{L'eau qui dort ne se réveille jamais.}
+{835}{slk62f}{Une fleur ouvre ses pétales au soleil. Cherche ce qui ressemble à la fleur.}
+{836}{slk62g}{Les apparences peuvent parfois être trompeuses.}
+{837}{slk62h}{Cherche ton reflet. Alors le chemin s'ouvrira devant toi.}
+{838}{slk62i}{L'herbe est plus verte de l'autre côté de la barrière, mais il faut d'abord trouver la barrière.}
+{839}{slk62j}{Celui qui soulève les pierres trouve de l'or entre les limaces.}
+
+{840}{slk63a}{Une porte n'est seulement qu'un chemin vers l'autre côté.}
+{841}{slk63b}{Il existe un temps pour parler et un temps pour écouter.}
+{842}{slk63c}{La raison du plus fort n'est pas toujours la meilleure.}
+{843}{slk63d}{Même les petits esprits méritent d'être écoutés.}
+{844}{slk63e}{Ca ne sert à rien de tuer d'abord et de discuter ensuite.}
+{845}{slk63f}{Tout ce qui est cassé ne l'était pas avant.}
+{846}{slk63g}{Les outils peuvent parfois prendre des formes très étranges.}
+{847}{slk63h}{Il ne faut pas demander à une vache de pondre des œufs.}
+{848}{slk63i}{Il ne faut pas poser de questions à ceux qu'on voit tous les jours.}
+{849}{slk63j}{Si tu attends assez longtemps, toutes les dépendances se soignent d'elles-mêmes.}
+{850}{slk63k}{Si tu tues des âmes justes, ton âme s'obscurcit. Certaines personnes sentent ce genre de choses.}
+{851}{slk63l}{Tuer de mauvaises âmes est bon pour ton karma. Certaines personnes sentent ce genre de choses.}
+{852}{slk63m}{Un acte de bonté est rarement oublié.}
+
+{860}{slk64a}{Vert, c'est la couleur qui te portera chance.}
+{861}{slk64b}{Un peu plus doucement maintenant.}
+{862}{slk64c}{Regarde où tu mets les pieds.}
+{863}{slk64d}{Il ne faut pas prendre un hérisson pour un oreiller.}
+{864}{slk64e}{Que font les ombres la nuit ?}
+{865}{slk64f}{Un peu plus fort maintenant.}
+{866}{slk64g}{Les champignons sont de mauvais invités.}
+{867}{slk64h}{C'est facile de devenir un esprit.}
+{868}{slk64i}{Crie.}
+{869}{slk64j}{Les moustaches continuent à pousser, l'eau continue à couler, mais la pierre jamais ne bouge.}
+{870}{slk64k}{Quand la lumière du jour s'éteint, qu'est-ce qui commence ?}
+
+{880}{slk65}{Toi avoir besoin de quoi ?}
+{881}{}{J'ai besoin que tu t'écartes de mon chemin.}
+{882}{}{On va changer de tactique de combat.}
+{883}{}{J'ai besoin que tu attendes ici.}
+{884}{}{Tu devrais te soigner.}
+{885}{}{Dis-moi comment tu te sens.}
+{886}{}{C'est tout pour l'instant, Sulik.}
+{887}{}{Parle-moi de cet endroit.}
+
+{890}{slk66}{Toi avoir quel plan pour attaquer ?}
+{891}{}{Il faut se mettre à une autre distance.}
+{892}{}{Je veux que tu utilises ta meilleure arme.}
+{893}{}{Je veux que tu utilises ta meilleure armure.}
+{894}{}{Je veux que tu changes de type d'agressivité.}
+{895}{}{Ca ne fait rien.}
+
+{900}{slk67}{A quelle distance tu veux qu'on soit ?}
+{901}{}{Je veux que tu restes à Courte distance.}
+{902}{}{Je veux que tu restes à Moyenne distance.}
+{903}{}{Je veux que tu restes à Longue distance.}
+{904}{}{Je veux que tu partes en éclaireur.}
+
+{905}{slk68}{Comment tu veux qu'on se batte ?}
+{906}{}{Pour l'instant, tu vas combattre en défense.}
+{907}{}{Tu vas combattre normalement.}
+{908}{}{Tu vas combattre avec agressivité.}
+
+{910}{slk69}{Un survivant. Lui être mal en point. Lui dire que guerriers du mal être venus avec torches magiques.
+ Le feu lécher les guerriers de la tribu et eux rejoindront l'esprit.}
+{911}{}{Et pour ta sœur ?}
+
+{912}{slk69a}{Guerriers du mal avoir ligoté le reste et puis partir. Sœur être avec eux. Nous chercher elle
+ jusqu'à la mort s'il le faut.}
+{913}{}{On dirait que ce sont des esclavagistes. Tu as trouvé quelque chose sur eux ?}
+{914}{}{Je regrette vraiment. J'espère que tu la retrouveras. Mais, je voulais te demander autre chose.}
+{915}{}{C'est tout ce que je voulais savoir pour l'instant. Salut.}
+
+{916}{slk70a}{Nous être comme dans fourmilière ici. Trop de monde pour nous.}
+{917}{slk70b}{Notre tribu être plus petite que ça. Trop de monde pour ce voyage.}
+{918}{slk70c}{Toi avoir ton armée. Toi plus avoir besoin de moi maintenant.}
+
+{919}{slk71}{Nous et moi être très tristes de laisser toi. Nous croire que ton âme devenir plus sombre.
+ Nous partir maintenant. Salut.}
+
+{920}{slk72}{Toi penser être bien avoir esclaves ? Vraiment ? Nous partir.}
+
+{921}{slk73a}{Toi avoir beaucoup problèmes avec les gens. Nous revenir quand toi avoir résolu tout ça.}
+{922}{slk73b}{Toi être un cauchemar. Nous devoir partir.}
+
+{923}{slk74}{Nous et tueur d'innocents, jamais amis. Jamais.}
+
+{924}{slk75}{Nous penser que toi faire grosse erreur, mais d'accord.}
+
+{925}{slk76}{Nous avoir entendu que toi aider Torr. Si lui perdre encore brahmines, avoir gros problèmes.}
+{926}{}{Euh ?}
+{927}{}{Oui. Salut.}
+{928}{}{Il avait l'air d'avoir besoin d'aide. Je voulais te poser quelques questions.}
+{929}{}{Il avait besoin d'aide, c'est sûr. J'ai besoin de quelques renseignements sur la région.}
+{930}{}{Torr a besoin d'aide. Il vaudrait mieux que j'y aille. Salut.}
+
+{931}{slk77}{Alors toi pas pouvoir aider Torr. Dommage, lui avoir beaucoup besoin d'aide pourtant.}
+{932}{}{Bien, ça arrive. Mais, il me faut des renseignements sur la région.}
+{933}{}{J'ai vraiment essayé de l'aider. Je regrette de ne pas avoir réussi. Salut.}
+{934}{}{Bah, c'était un idiot. Qui se soucie de ce qui lui arrive. Salut.}
+
+{935}{slk78}{Nous espérer que toi trouver Torr. Lui avoir besoin d'aide.}
+{936}{}{Où est allé Torr ?}
+{937}{}{Je regrette que Torr ait disparu. Mais j'ai des questions à te poser.}
+{938}{}{Je voudrais bien aider Torr, mais je n'ai pas le temps, là. Salut. }
+{939}{}{Torr n'est qu'un faible d'esprit. Aucun d'entre nous ne peut l'aider. Salut.}
+
+{940}{slk79}{Lui parler de l'esprit ambulant qui tue. Lui essayer d'avoir beaucoup de courage.}
+{941}{}{Esprit ambulant ?}
+{942}{}{Ouaoh. Esprits ? Ca fout les jetons. Salut.}
+
+{943}{slk80}{A l'est se trouve un canyon servant de pâturage aux brahmines. Il y a plusieurs lunes, il y a eu des éclairs
+ et du tonnerre... mais pas un nuage. Les esprits du mal arrivent dans les terres des vivants.}
+{944}{}{Vraiment ?}
+
+{945}{slk80a}{Gens d'ici entendre bruits étranges. Nous dire, ça être esprits tourmentés. Certains même avoir vu quelque chose là-bas. Créatures des esprits pas avoir forme d'humain.}
+{946}{}{Hum.}
+{947}{}{Ca a l'air dangereux. Qu'est-ce que Torr a à voir là-dedans ?}
+
+{948}{slk80b}{Beaucoup se moquer de Torr. Alors lui penser que si réussir à trouver, et à tuer mauvais esprit, lui devenir un héros. Nous penser que lui avoir problèmes. Toi aider Torr alors ?}
+{949}{}{Hum-hum !}
+{950}{}{Hum-hum.}
+{951}{}{Je vais partir à sa recherche tout de suite.}
+{952}{}{Bien sûr que je vais l'aider. Mais, j'ai besoin de renseignements.}
+{953}{}{Il faut peut-être lui laisser un peu plus de temps. Il ne sera pas un héros, si on intervient. Il
+ me faudrait des renseignements sur la région.}
+{954}{}{Oh, très intéressant, mais je ne crois pas que je pourrai aider Torr. J'ai pas mal à faire. Salut.}
+
+{955}{slk81a}{Nous avoir trouvé sœur et nous envoyer elle à la maison. Elle être forte. Nous vouloir aller avec toi.
+ Grand-père dire que toi avoir encore longue route à faire.}
+{956}{slk81b}{Nous venir avec toi maintenant ?}
+{957}{}{Nan-nan.}
+{958}{}{Oui-oui.}
+{959}{}{Tu devrais retourner à ton village la mettre à l'abri. Tu vas me manquer, Sulik.}
+{960}{}{Allons-y, Sulik.}
+
+{961}{slk82a}{Quand toi avoir terminé, il ne restera plus aucune mauvaise personne dans le monde.}
+{962}{slk82b}{Eh t'être jamais demandé si exister plus de gens méchants que de fusils ?}
+
+{963}{slk83a}{Toi aimer regarder l'intérieur des gens, pas vrai ?}
+{964}{slk83b}{Grand-père dire que moi devoir m'inquiéter si toi plus avoir personne à tuer.}
+
+{965}{slk84a}{Nous et moi penser que petite tête à toi beaucoup travailler.}
+{966}{slk84b}{Toi passer trop de temps là-dessus.}
+
+# FLOATS
+{1016}{}{Nous être comme dans fourmilière ici. Trop de monde pour nous.}
+{1017}{}{Notre tribu être plus petite que ça. Trop de monde pour ce voyage.}
+{1018}{}{Toi avoir ton armée. Toi plus avoir besoin de moi maintenant.}
+{1020}{}{Toi penser être bien avoir esclaves ? Vraiment ? Nous partir.}
+{1021}{}{Toi avoir beaucoup problèmes avec les gens. Nous revenir quand toi avoir résolu tout ça.}
+{1023}{}{Nous et tueur d'innocents, jamais amis. Jamais. }
+{1025}{}{Toi avoir fait grabuge à Klamath. Nous partir.}
+
+{2300}{}{Esprits nous accompagner}
+{2301}{}{Nous partir maintenant}
+{2302}{}{OK, ne t'emballe pas.}
+{2303}{}{Pas de problème, nous partir maintenant}
+{2304}{}{Nous penser toi avoir besoin te reposer. Grand-père Esprit des Os dire toi en faire trop. Toi prendre la vie plus tranquille.}
+{2305}{}{Nous bouger pas cadencé.}
+{2306}{}{Nous aller là maintenant.}
+{2307}{}{Relax, toi t'amuser, nous partir.}
+
+{3000}{}{Vers le nord.}
+{3001}{}{Vers le nord-ouest.}
+{3002}{}{Vers le soleil couchant.}
+{3003}{}{Vers le sud-ouest.}
+{3004}{}{Vers le sud.}
+{3005}{}{Vers le sud-est.}
+{3006}{}{Vers le soleil levant.}
+{3007}{}{Vers le nord-est.}
+{3008}{}{Nous savoir rien à ce sujet.}
+{3009}{}{Oui.}
+{3010}{}{Non.}
+{3011}{}{Toi attendre quoi de nous ?}
+{3012}{}{Ca pas être bien.}
+{3013}{}{Merci.}
+{3014}{}{C'est bien.}
+{3015}{}{C'est pas bien.}
+{3016}{}{Moi avoir bon pressentiment.}
+{3017}{}{Moi avoir mauvais pressentiment.}
+{3018}{}{Ces gens sont complètement fous.}
+
+{3020}{}{Il doit y avoir un autre moyen.}
+{3021}{}{Suis-nous.}
+{3022}{}{Essaie ça.}
+{3023}{}{Nous allons ici maintenant.}
+{3024}{}{C'est parti par là.}
+{3025}{}{Ils sont partis par là. }
+{3026}{}{Voici le chemin.}
+{3027}{}{Nous avoir trouvé la piste.}
+{3028}{}{Bonne chasse par ici.}
+{3029}{}{Mauvaise chasse par ici.}
+{3030}{}{Sans danger pour camper ici.}
+{3031}{}{Dangereux de camper ici.}
+{3032}{}{Nous pouvoir se reposer ici.}
+{3033}{}{Nous avoir de la chance.}
+{3034}{}{Tu dois réparer ça.}
+{3035}{}{Tu dois allumer ça.}
+{3036}{}{Tu dois déverrouiller ça.}
+{3037}{}{Tu dois ouvrir ça.}
+{3038}{}{Nous devrions peut-être revenir ici.}
+{3039}{}{On ne comprend pas.}
+{3040}{}{On ne sait pas.}
+
+{3050}{slk86}{Retour à la maison, bien. Mais, ici être un peu petit maintenant. La route et la compagnie
+ avec ami comme toi manquer à nous. Toi vouloir que nous repartir avec toi ?}
+{3051}{}{Ce serait génial.}
+{3052}{}{Je r'grette, pas maintenant.}
+
+{3053}{slk87}{Nous dire au revoir et rattraper toi en chemin.}
+{3054}{}{D'accord.}
+
+{3055}{slk88}{Vraiment dommage. Tu sais, toi avoir plus besoin de ça que moi. Bonne route.}
+{3056}{}{Finalement, tu devrais peut-être m'accompagner. Je regrette, je ne voulais pas t'arracher
+ si vite à ton foyer.}
+
+{3057}{slk89}{Bon de revoir la maison, mais pas si sœur encore pas là, alors. Nous vouloir rester avec toi, toi d'accord ?}
+{3058}{}{Oui.}
+{3059}{}{Non, je crois qu'il est temps que tu la recherches tout seul.}
+
+{3060}{slk90}{Peut-être. Moi souvent penser à toi. Que bons esprits accompagner toi.}
+{3061}{}{Merci, Sulik. Salut.}
+{3062}{}{Tu devrais peut-être continuer avec moi. On a peut-être une chance de trouver ta sœur.}
+
+{3063}{slk91a}{Toi vouloir compagnie finalement ?}
+{3064}{slk91b}{C'est bon d'être rentré à la maison.}
+{3065}{slk91c}{Nous avoir besoin d'un petit tête-à-tête avec herbe superbe. Laisser le monde flotter à côté.}
+{3066}{slk91d}{Beaucoup, beaucoup de jeunes filles pour écouter voyage... mais trop peu de temps.}
+{3067}{slk91e}{Ca être drôle. Nous être vraiment contents d'être à la maison, mais déjà impatients de prendre route.}
+{3068}{}{Oui, bien sûr.}
+{3069}{}{Non, non-non.}
+
+{3070}{}{Sulik, peux-tu consulter les esprits pour moi ?}
+{3071}{}{Sulik, rengaine ton arme, je t'en prie.}
+{3080}{}{Toi pas être ami. Grand-père Esprit des Os dire pas te parler.}

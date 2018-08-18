@@ -1,0 +1,218 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš zvláštnì neupravenéhé ghoula.}
+{101}{}{Vidíš Festuse, øeditele atomové elektrárny}
+{102}{}{Vidíš depresivnì vyhlíejícího ghoula s podivnì luklou vizáí a smrdícího jako bolavá noha.}
+
+{110}{}{Nejsi právì tak blbej jako oni? He, he, he.}
+{111}{}{Jsi debil nebo co? He, he, he. Vypadáš jako èlovìk z Vault City.}
+{112}{}{Dobrá, jsi asi pìknì blbej, e jo? Mìl bys jít rovnou do Vault City.}
+{113}{}{Mám právì na práci tolik dùleitıch vìcí. Proè se nevrátíš do Vault City, kam patøíš?}
+{114}{}{He, he, he. Tváøíš se jako debil.}
+
+{120}{}{Nazdar. Já jsem Festus. Provozuju celı reaktor. Beze mne by bylo celı mìsto srovnáno se zemí. Jsem velmi zamìstnanı èlovìk. Urèitì mì tady udøou.}
+{121}{}{Mám tady moc práce. Mohl bych si pochopitelnì orazit, ale, jak víš, nikdo jinı nemùe tuhle jadernou elektrárnu provozovat. Vyuívám energie atomù, jak víš. Je to poøádná makaèka.}
+{122}{}{Co tu dìláš?}
+{123}{}{Rozumìl jsem, e reaktor moc dobøe nefunguje. Je to pravda?}
+{124}{}{Proè koukáš -- a èmucháš -- a co se do toho sereš?}
+{125}{}{Dobrá, nechci mrhat tvım drahocennım èasem. Pùjdu. Nashle.}
+
+{130}{}{Teï u reaktor fachá bezvadnì. Já jsem tak dobrej.}
+{131}{}{Teï reaktor bìí celkem v pohodì, v poøádku. Je to nìkdy poøádnej kus døiny, ale musím øíct, e je to stejnì dost dobrej dob.}
+{132}{}{Více pracovat? Co tím myslíš?}
+{133}{}{Dobrá, nic není vdycky perfektní. Nashle, Festusi.}
+
+{141}{}{Øídím jadernou elektrárnu. Opravdu, aèkoliv, dìlám všechny vìci sám.}
+{142}{}{Jo, dìlám všechno -- co spadá do kompetence øeditele. Všechno sám. To by nebylo monı, kdybych v tom nebyl zatracenì dobrej. Je to dar, opravdu...}
+{143}{}{Sám? Co potom dìlají ostatní lidi ve vedlejší místnosti?}
+{144}{}{To musíš vìdìt nìco málo o atomové energii.}
+{145}{}{Dobrá, nechci tì zdrovat od práce. Nashle.}
+
+{150}{}{Zmetci, zmetci to všichni jsou. Vùbec nerozumí tomu, co dìlat. Drí si jenom svoje koryta. Rozèiluje mì, kdy si myslí, e nìco o jaderné elektrárnì ví. Proè, kdyby to pro mì nebylo...}
+{151}{}{Hmm. Co jste øíkal, e tady dìláte?}
+{152}{}{Jo. Radìji u pùjdu. Nashle.}
+
+{160}{}{Víš nìco o atomové energii? Skoro jsem ji vynalezl. Vím o atomové energii mnohem víc, ne kdokoli jinı. Co se tıèe atomové energie- Jsem tvùj mu.}
+{161}{}{Hmm. Co jsi øíkal, e tady dìláš?}
+{162}{}{Ah, ano. Radìji u pùjdu. Nashle.}
+
+{170}{}{Víš, o všechno se starám. Je to poøádná makaèka. Ale mám mnohaleté zkušenosti. Mám všechny pøedpoklady øídit atomovou elektrárnu.}
+{171}{}{Musíš bıt moc dobrej ve svı práci.}
+{172}{}{Jsem si jist, e jsi. Uh, radìji u pùjdu. Nashle.}
+
+{180}{}{Vìtšina lidí si myslí, e je to jednoduchı. Myslí si, e kadej mùe øídit atomovı reaktor. Avšak není to nic pro netrénované nebo slabé na srdce. Vyuívám tady energii atomu!}
+{181}{}{Jsem ochromen.}
+{182}{}{Nebudu tì zdrovat. Nashle.}
+
+{190}{}{Jistì by nebylo od vìci, aby by mi nìkdo pomáhal, ale jak vidíš, nikdo jinı nemá kvalifikaci na to, co dìlám já. Oni vùbec nerozumí v podstatì tomu, co dìlám.}
+{191}{}{Jak by mohl nìkdo doufat v to, e s tebou udrí krok?}
+{192}{}{Jsi opravdu specialista, o tom není pochyb. Nashle.}
+
+{200}{}{To víš, e jsem. Mohu øíct, e opravdu rozumíš tìmto vìcem. Kdybych tady nemìl tolik práce, øídil bych Gecko. A vìø tomu, e bych to dìlal dobøe.}
+{201}{}{Ty bys taky spravoval mìsto?}
+{202}{}{Arrrrrgh! Odcházím. Fakt. A nesna se mì zastavit. Nazdar!}
+
+{210}{}{Co se tıèe uranové rudy, tak s Broken Hills by nebyly ádnı obchody. Na místo toho bychom jim prodávali jenom energii. Mohli by spravovat svoje mìsto pouitím atomové energie.}
+{211}{}{Nemusel bys potom vést elektrické vedení pøes míle dalekou a nebezpeènou pouš?}
+{212}{}{Necítíš nìco? Nehnije tu nìco? Radìji pùjdu. Nashle.}
+
+{220}{}{S tím poèítám. Potom bychom jim prodávali obrovské baterie. V tom je ta krása. Potom by taky oni od nás museli kupovat baterie. A to je teprve zaèátek, mám v plánu jiné velké plány, jako...}
+{221}{}{Ty jsi taky politik? To je neskuteènı, kolik rozmanitıch oblastí obsáhne tvùj talent.}
+{222}{}{Nehnije tady nìco? Myslím, e pùjdu na èerstvı vzduch. Nashle.}
+
+{230}{}{Jsem mnohostrannı èlovìk. Skuteènì, cokoliv zkusím, v tom jsem dobrej. Prostì na co šáhnu, to se mi daøí. Tìko najdeš nìkoho lepšího.
+ Jasnì, asi dávám pøednost provozování jaderné elektrárny. Ale kdybych chtìl, mohl bych dìlat nìco jinıho.}
+{231}{}{Nemùu uvìøit tomu, e si v Gecku nikdo neuvìdomil tvojí pravou hodnotu. Teï pùjdu a povím jim to. Nashle.}
+{232}{}{Muset se osvobodit. Síla vyprchává. Muset odejít.}
+
+{240}{}{Co tì pøivedlo do této èásti mého atomového reaktoru?}
+{241}{}{Nue, mám souèástku, kterou mùeš pouít na opravu reaktoru.}
+{242}{}{Uh, jen se rozhlíím kolem. Nashle.}
+
+{250}{}{Podívej, nejsem si opravdu jistı, e je to ta pravá souèástka. Asi bys ji mìl vzít zpátky do Vault City, aby ji provìøili. Nemyslím, e ti s tím mùu pomoct.}
+{251}{}{Jsem si jistı, e je to správná souèástka. Mám obrovskou dùvìru v tvoje schopnosti.}
+{252}{}{Hádám, e máš pravdu. Radìji najdu jinı zpùsob, jak souèástku nainstalovat..}
+
+{260}{}{Nemyslím, e lidi z Vault City nás mají pøíliš v lásce. Nechci jim hloupì skoèit na špek. Moná, e to vypadá jako správná souèástka a ve skuteènosti je to bomba!
+Tak snadno mì neoblbneš. Tu vìc nenainstaluji.}
+{261}{}{Kdyby to byla bomba, u bys to pomocí svıch technickıch expertız dávno zjistil. Prosím tì nainstaluj tu souèástku.}
+{262}{}{Moná máš pravdu. Radìji najdu jinı zpùsob, jak tu souèástku zapojit.}
+
+{270}{}{Ok. Ale stále si nejsem jist, jestli je to ta správná souèástka, nebo jenom past. Podívej, já mám takovou cenu, e si nemùu dovolit zemøít. Asi bych mìl nechat to udìlat nìkoho jiného...
+ pozdìji... mnohem pozdìji.}
+{271}{}{Musí se to udìlat teï hned. A ty jsi jedinej èlovìk, co to mùe udìlat správnì. No tak, celı  Gecko je na tobì závislı!}
+{272}{}{Myslím, e máš pravdu. Radìji najdu jinı zpùsob, jak tu souèástku zapojit.}
+
+{300}{}{Urèitì to vyuívá kvanta uranu. A nìkde to prosakuje. Podívej, u jsem ádal, aby to nìkdo opravil, ale nikdo mì neposlouchá.}
+{301}{}{Prı radiace uniká do spodních vod. Je to pravda?}
+{302}{}{Jsi pøece expert. Proè jsi to neopravil? Kvùli èemu tady potom jsi?}
+
+{310}{}{Je to monı, ale nemyslím, e by to mohlo nìèemu uškodit. Je to pøeci jenom v podzemí.}
+{311}{}{Myslím, e se asi mılíš. Vault City si stìuje, e tvùj atomovı reaktor zamoøuje jejich vodu radiací.}
+{312}{}{Dobrá, kdy to øíkáš. Nashle.}
+
+{320}{}{To není monı. Nikdo o tom neví víc ne já. Oni jenom hledají toho, kdo mùe za jejich problém. Slaboši.}
+{321}{}{Hm. Ale oni jsou na to také experti.}
+
+{330}{}{Co se tıèe atomové energie, je to jenom banda amatérù. Já jsem tady ten pravı expert. Mùeš vzít, to co øíkám do banky. Pokud by tady, ale nìjaké banky ještì byly, to je to.}
+{331}{}{Myslím, e víš, o èem mluvíš. Nashle.}
+{332}{}{Nejsem si tak jistı, jako ty. Nashle.}
+
+{340}{}{Máš u sebe náhradní hydroelektrickı regulátor magnetosféry?}
+{341}{}{Víš vùbec, co to je?}
+{342}{}{Jasnì. Jsi pøipraven to zapojit?}
+
+{350}{}{Coe? Øíkal jsem ti pøece, e o jadernıch elektrárnách vím absolutnì všechno. Mìl bys mì poslouchat.}
+{351}{}{Dobrá, kdy víš co to je, musíš taky vìdìt, jak to zapojit.}
+{352}{}{Myslím, e u jsem tì poslouchal a dost. Nashle.}
+
+{360}{}{Jasnì, e ano. Proè, je to lehkı jako facka, pro nìkoho s mımi zkušenostmi a talentem. Kdy jsem byl malej kluk, hrál jsem si s regulátorem magnetosféry místo panenky, víš.}
+{361}{}{To je skvìlé. Mohl bys to pro mì zapojit?}
+
+{370}{}{Myslím, e bych to mohl zapojit. Jsem urèitì jedinı, kdo to mùe udìlat správnì.
+ Zapojení hydroelektrického regulátoru magnetosféry je pìknì sloitı.}
+{371}{}{Tady je regulátor. Vìdìl jsem, e mì v tom nenecháš.}
+{372}{}{Kdy se nad tím zamyslím, domnívám se, e bude lepší najít jinı zpùsob. Nashle.}
+
+{380}{}{Myslím, e bych to mohl zapojit. Ale, jak víš, je zapojení hydroelektrického regulátoru magnetosféry pìknì sloitı. A je to nebezpeènı. Ne, e bych se bál o sebe, ale kdo by potom øídil jadernou elektrárnu, kdyby se mi nìco stalo? Je mi líto, ale nemohu ti pomoct.}
+{381}{}{Mìl jsem vìdìt, e z toho vycouváš. Sbohem.}
+
+{390}{}{Teï ti nemùu pomoct. Mám moc práce.}
+{391}{}{Pøijï znovu pøíští tıden. Potom budu mít moná víc èasu.}
+{392}{}{Uh, stejnì máš špatnou souèástku.}
+{393}{}{Promiò, mám tolik práce, e ti nemùu pomoct.}
+{394}{}{Nemùu zradit Gecko tím, e sám sebe ohrozím.}
+
+{400}{}{Jo, jo, je to správná souèástka. Jen je to, uh, mnohem primitivnìjší model, ne jsem zvyklı. To je všechno.}
+{401}{}{Dobrá. Tak tedy, jdi na to a zapoj to.}
+
+{410}{}{Myslím, e by mì mìli l=pe znát, ne se snait mì oblbnout bombou. Jsem si jist, e ví jenom to, s kım obchodují.}
+{411}{}{Ve Vault City se o tobì èasto mluví a to obyèejnì v tiché úctì. Teï u ale zapoj tu zatracenou souèástku.}
+
+{420}{}{Ok, a je to. Heej! Udìlal jsem to. Jsem opravdu tak dobrej.}
+{421}{}{Zatracenì dobrej.}
+{422}{}{Bylo to obtínı, ale zvládnul jsem to. Jsem hrdina.}
+{423}{}{Zaslouím si povıšení za tu práci, co jsem odvedl.}
+{424}{}{Gecko mi teï urèitì bude vdìènı.}
+{425}{}{Vidìl jsi mì tam venku? Nikdy jsem se tak nebál.}
+
+{430}{}{Co chceš?}
+{431}{}{Slyšel jsem, e se staráš o souèástky rekvizic a já jednu potøebuji.}
+{432}{}{Divím se, co tady dìláš.}
+
+{440}{}{Ty? Na co ty jednu potøebuješ?}
+{441}{}{No, chlapi ve vedlejší místnosti ji potøebují. Ale øekl jsem jim, e to budu chtít od tebe. Chci tì vidìl v akci.}
+{442}{}{Jednu zkrátka potøebuji. No tak, nebuï labu. Dej mi jednu. Ok?}
+{443}{}{Myslím si, e bys mi ji mìl radši dát. Kdy èlovìk pracuje v jaderné elektrárnì, obèas se mu mùe stát nìjaká nehoda. Rozumíš mi?}
+{444}{}{Potøebuju jednu k... hele, není tohle Fershlubiner Widget aktivátor v èerveném provedení?}
+
+{450}{}{No tak jo. Tady máš ádanku. Asi máš dùvod, e ji potøebuješ.}
+{451}{}{No tak jo. Tady je tvùj... Hej? Kam jsem tu zatracenou vìc poloil? Musí bıt nìkde tady... Hmm, myslím, e jí teï právì nemùu najít. Urèitì se to najde.}
+{452}{}{Díky. Sbohem.}
+{453}{}{No tak jo. Asi pøijdu pozdìji. Sbohem.}
+
+{460}{}{Nezajímá mì, co chceš. Tyhle ádanky jsou urèeny jenom k oficiálním obchodùm. Oni jsou svìøovány jenom klíèovım osobám. Proto je mám. Ano? Jenom klíèovım osobám. }
+{461}{}{Jo, jasnì. Sbohem.}
+{462}{}{Budeš mít svoje. Moná ne dnes, ale brzo. Nashle.}
+
+{470}{}{Uh, pøedpokládejme, e je to ten správnı zpùsob. Mám spoustu dùleité práce. Pokud je to všechno, kvùli èemu jsi pøišel...}
+{471}{}{Vlastnì potøebuji ádanku.}
+{472}{}{Myslím, e nic jiného nepotøebuji. Sbohem.}
+
+{480}{}{Co myslíš? Oh, hádám, e poslední dobou zatracenì tvrdì pracuju. Ani nemám èas se o sebe starat, tak jak bych mìl. Moná mì ta radiace trochu ovlivnila.}
+{481}{}{Uh, ... moná bys sis mìl uvìdomit, e koupaní, nebo nìco takového, ti nedìlá moc dobøe.}
+
+{490}{}{Asi bych mìl. Kdykoliv se koupu, sloupe se mi hodnì kùe a všechny moje strupy se strhnou. A další vìc, nehty na rukou mi odpadávají...}
+{491}{}{Zadr! Poèkej! Myslím, e jsem slyšel dost. Tak se vzmu.}
+
+{500}{}{Festus odchází a potom pøichází zpátky. Nesoucí stále tu souèástku.}
+{510}{}{[Hotovo]}
+{520}{}{Festus ti vrací tu souèástku.}
+{530}{}{Festus odchází a potom se vrací. Vypadá, e je nìèím potìšen.}
+
+{600}{}{Mám holodisk s údaji o reaktoru, které ti ho mohou pomoci optimalizovat.}
+{610}{}{Ok, dej mi ho a uvidím, co mohu udìlat.}
+{620}{}{Tady je.}
+{630}{}{Ne, myslím e si ho ještì nechám.}
+{640}{}{Ok. Vypadá dobøe. Díky za všechnu tvojí pomoc.}
+{650}{}{Jistì. V pohodì.}
+
+{700}{}{Pøesvìdèil jsi Festuse, aby ti pomohl s jadernou elektrárnou.}
+
+{800}{}{Domnívám se, e reaktor teï bìí, ale urèitì by mohl bìet líp. Mám na mysli o hodnì líp, kdy teï máme o trochu více dat. Teï, kdy bys mohl mít optimalizaèní data, vaøili bychom takøíkajíc na plynu. Uuh, no, víš jak to myslím.}
+{801}{}{Optimalizaèní data? Kde bych je vzal?}
+{802}{}{Ty informace bys mohl pravdìpodobnì získat z centrálního poèítaèe ve Vault City.}
+{803}{}{Uvidím, co mùu dìlat.}
+{804}{}{Hmm, to je nápad.}
+{805}{}{To se stane po tom, co papírovı pes proene azbestovou koèku peklem. Sbohem, Feste.}
+{806}{}{Vsadím se, e nìkdo tak chytrı jako ty, by se tam mohl proplíit a pouít holodisk s prùvodními informacemi reaktoru v centrálním poèítaèi a potom propašovat holodisk zpátky sem. Udìlal bych to sám, ale jsem tu tak dùleitı, e se odtud nemùu hnout ani na krok.}
+{807}{}{Nesnáším, kdy nechám práci napùl rozdìlanou.}
+{808}{}{Hmm, nemyslím, e by to prošlo. Sorry, Feste. Sbohem.}
+{809}{}{Vynikající práce. Myslím, e èást mojí chytrosti se pøenesla na tebe. Dobøe, dobøe. Koukni, mìl bys to urychlenì donést chlapíkovi jménem McClure. Podle toho co vím, je on ten jedinı, kdo ví o všem, co se ve Vault
+ City šustne.}
+{810}{}{Teda radní McClure, je ten, za kterım je tøeba zajít. OK, díky za typ. Myslím, e tak uèiním.}
+{811}{}{Gee, myslíš, e bych strašnì rád ukryl ve Vault City a byl tak kámoš s mutanty.... Ne díky, Festusi. Udìlej si to sám. Sbohem.}
+{812}{}{To je odvaha. Doufal jsem, e to øekneš. Vıbornì. Jenom pouij tento holodisk v centrálním poèítaèi ve Vault City a potom ho dostaò zpátky sem. Budem pouívat míò uranu, jádro nebude tak hroznì prosakovat a to Vault City nebude mít ádnı dùvod k tomu, aby nás pøišli vyhladit.}
+{813}{}{Urèitì nechci vidìt Gecko znièenı. Udìlám to.}
+{814}{}{Nemyslím si, e na to mám. Sorry, Festusi. Nashle.}
+{815}{}{Jistì bych si pøál, abych mìl èas, to udìlat sám, ale nemám. Všechno co mùu øíct, je díky, chlapèe. Prokáeš nám všem obrovskou slubu. (smrk, smrk) Jsem tak hrdı.}
+{816}{}{Radìji u pùjdu. Sbohem, Festusi. Budu zpátky s tìmi daty, co potøebujete tak rychle, jak jen to pùjde.}
+{817}{}{Neflákej se tady a seeò ty data.}
+{818}{}{Nestùj tady. Reaktor nebude pracovat navdy.}
+{819}{}{Hejbni sebou a seeò ty optimalizaèní data, kterı si øekl, e seeneš.}
+{820}{}{Na tlachání bude spousta èasu a *potom*, co ten reaktor optimalizujeme.}
+{821}{}{Jdi do Vault City a vymìò s McClurem ekonomická holodisk za data o reaktoru, kterı potøebujeme. Ano?}
+{822}{}{Tak jdi u. Dej ten holodisk McCluremu.}
+{823}{}{Vault City? Neproveditelnı dob? Haraší ti ve vìi?}
+{824}{}{Pospìš si!}
+{825}{}{Díky za ty data, kterı jsme potøebovali z Vault City, abychom optimalizovali tu dìravou starou bestii.
+ Jsi chytrej, e to hloupì nepopíráš. Skoro tak dobrá práce, jako bych ji udìlal já sám.
+ Samozøejmì... kdybys nechtìl tu zatracenou práci ve skuteènosti *dokonèit* tak, e jen pouiješ ten holodisk v terminálu robota, kterı udruje reaktor.
+ Rozumíš mi? Tak OK.}
+{826}{}{Nemám rád nedodìlanou práci. Sbohem, Festusi.}
+{827}{}{Jooo, vsadím se, e bys to udìlal. Ty kecale. Sbohem.}
+{828}{}{Ty jsi skvìlı. O tom není pochyb. Vìdìl jsem, e bys to udìlal.}
+{829}{}{Jsem tak hrdej.}
+{830}{}{Díky. Teï mì nech pokraèovat v mé dùleité práci.}
+{831}{}{Zlepšuj se a potom nìkdy moná budeš takovı jako já.}
+
+{900}{}{Nevidíš, e nemám èas?}

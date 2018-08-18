@@ -1,0 +1,261 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš funkèní terminál.}
+{101}{}{Vidíš terminál obsluhující údrbáøského a opravárenského robota reaktoru.}
+{102}{}{Vidíš terminál. Vypadá to, e je funkèní.}
+
+{110}{}{Zdravím. Vítej na stanici RMR&RCT 3.}
+{111}{}{RMRRCT?}
+{112}{}{Funkce?}
+{113}{}{Akce:}
+{114}{}{Inicializace:}
+{115}{}{Odlogovat.}
+
+{120}{}{Terminálová stanice #3 chodu reaktoru a ovládací terminál opravného robota.}
+{121}{}{Funkce?}
+{122}{}{Robota? Uka mi všechny informace, které bych chtìl o nìm vìdìt.}
+{123}{}{Odlogovat.}
+
+{130}{}{Tento terminál byl zkonstruován ke koordinování a ovládání chodu reaktoru a opravného robota.}
+{131}{}{RMRRCT?}
+{132}{}{Robota? Tak to mì nech podívat, co všechno mùu o nìm zjistit.}
+{133}{}{Odlogovat.}
+
+{140}{}{Tento terminál je pouíván k zadávání pøíkazù pro údrbáøského a opravárenského robota Poseidon Oil-reaktoru #5. Tento terminál také dovoluje pøístup na PoseidoNet.}
+{141}{}{Robota? Dovol mi najít všechny informace, které se ho tıkají.}
+{142}{}{Nìjakı druh poèítaèové sítì? Divil bych se, kdybych mìl do ní pøístup.}
+{143}{}{Odlogovat.}
+
+{150}{}{Fl>)$#_~)u-*+$#\)_+@#$%-0? %#$ (Nyní spouštím Win95, Prosím èekejte... OS nerozpoznal pøíkaz. Nyní se spouští mazání DOD HDD.}
+{151}{}{Hmmm. Coo?}
+{152}{}{Ajasdfaa coheroto?}
+
+{160}{}{Údrbáøskı a opravnı robot reaktoru pøipraven na inicializaèní/spouštìcí sekvenci. Správnı pøístupovı kód?:}
+{161}{}{Funkce?}
+{162}{}{Akce?}
+{163}{}{35C76863}
+{164}{}{A1546761}
+{165}{}{5B576005}
+{166}{}{Odlogovat.}
+
+{170}{}{Poèáteèní pøístupovı kód pøijmut. Zadej sekundární pøístupovı kód.}
+{171}{}{Vynulování.}
+{172}{}{Funkce?}
+{173}{}{Akce?}
+{174}{}{35C76863}
+{175}{}{A1546761}
+{176}{}{5B576005}
+{177}{}{Odlogovat.}
+
+{180}{}{Sekundární pøístupovı kód pøijmut. Zadej terciální pøístupovı kód.}
+{181}{}{Vynulování.}
+{182}{}{Funkce?}
+{183}{}{Akce?}
+{184}{}{35C76863}
+{185}{}{A1546761}
+{186}{}{5B576005}
+{187}{}{Odlogovat.}
+
+{190}{}{Terciální pøístupovı kód pøijmut. Jednotka RM&RR se zahøívá... Jednotka pøipravena k úkolùm. Servisní akce?:}
+{191}{}{Jednotka RM&RR pøipravena k plnìní úkolù. Servisní akce?:}
+{192}{}{Zahájení celkové údrbové sekvence.}
+{193}{}{Zahájení chladící sekvence.}
+{194}{}{Zahájení èistící sekvence.}
+{195}{}{Zahájení opravárenské sekvence.}
+{196}{}{Zùstat v pøipraveném postavení a odlogovat se.}
+
+{200}{}{Tato servisní procedura ji není v pamìti. Nahrát tuto servisní proceduru?}
+{201}{}{Nahrát bìnou servisní proceduru.}
+{202}{}{Zpìt.}
+{203}{}{Odlogovat.}
+
+{210}{}{Prohledávání.... aktualizace servisní procedury se nenachází lokálnì na tomto terminálu.}
+{211}{}{Zpìt.}
+{212}{}{Stáhnutí servisní procedury ze sítì.}
+{213}{}{Odlogovat.}
+
+{220}{}{Zahájení propojení se sítí PosiedoNetu. Zadej primární sekvenci bezpeènostního pøístupového kódu: 70Y644, 008Z21, 9X7299, A46123.}
+{221}{}{70Y644}
+{222}{}{008Z21}
+{223}{}{9X7299}
+{224}{}{A46123}
+{225}{}{Odlogování.}
+
+{230}{}{Zahájena chladící sekvence. Pøíprava pøesunu k hlavnímu uzávìru chladícího systému.}
+{231}{}{Tohle bylo mnohem lehèí, ne jsem si myslel.}
+{232}{}{Odlogování.}
+
+{240}{}{Zahájena opravárenská sekvence. Prohledávání... Hydroelektrickı regulátor magnetosféry vyadován. Pøíprava pøesunu k hlavnímu uzávìru chladícího systému k pøemístìní souèástky. Místo souèástky pod pøenosnım víkem terminálu.}
+{241}{}{Ou, tuším co tahle vìc znamená.}
+{242}{}{Øekl bych, e nemám tu èást, kterou to potøebuje.}
+{243}{}{Odlogování.}
+
+{250}{}{Terminál byl uzavøen z bezpeènostních dùvodù. Prosím informujte správce PoseidoNetu.}
+{251}{}{Hmm, to vypadá, e z tıhle mašinky víc nedostanu.}
+{252}{}{Hmm, divil bych se, jestli tahle mašina má lokální reset. No jo, fakt má. Tak ho otestuju.}
+
+{300}{}{Zadán špatnı bezpeènostní pøístupovı kód.}
+{301}{}{Zadán špatnı bezpeènostní pøístupovı kód. Pøístup odepøen. Prosím zadejte správnı kód. Máte na to ještì dva pokusy.}
+{302}{}{Zadán špatnı bezpeènostní pøístupovı kód. Pøístup odepøen. Povolen ještì jeden pokus.}
+{303}{}{Zadán špatnı bezpeènostní pøístupovı kód. Pøístup odepøen. Zaktivování vnitøních bezpeènostních procedur.}
+{304}{}{Ups.}
+{305}{}{Radìji bych mìl bıt více opatrnı.}
+{306}{}{Radìji bych u nemìl udìlat ádnou chybu.}
+{307}{}{To nezní moc dobøe.}
+{308}{}{Odlogování. }
+
+{310}{}{Zadejte sekundární sekvenci bezpeènostního pøístupového kódu: 70Y644, 008Z21, 9X7299, A46123.}
+{311}{}{70Y644}
+{312}{}{008Z21}
+{313}{}{9X7299}
+{314}{}{A46123}
+{315}{}{Odlogování.}
+
+{320}{}{Zadejte terciální sekvenci bezpeènostního pøístupového kódu: 70Y644, 008Z21, 9X7299, A46123.}
+{321}{}{70Y644}
+{322}{}{008Z21}
+{323}{}{9X7299}
+{324}{}{A46123}
+{325}{}{Odlogování.}
+
+{330}{}{Sekvence bezpeènostního pøístupového kódu pøijmuta. Vítejte v síti PoseidoNet: }
+{331}{}{Stáhnutí servisních procedur pro robota údrby}
+{332}{}{Seznam dalších stanic}
+{333}{}{Odlogovat.}
+
+{340}{}{Prohledávání... servisní procedury pro robota údrby nebyly nalezeny.}
+{341}{}{Hmm, vypadá to, e tady nejsou.}
+{342}{}{Seznam stanic.}
+{343}{}{Odlogovat.}
+
+{350}{}{Prohledávání Comlinek.... prohledávání... Iron Mountain... vypnuto, NORAD... vypnuto, SAC... vypnuto. Prohledávání PoseidoNetu... --Více?--}
+{351}{}{Stáhnutí servisních procedur pro robota údrby.}
+{352}{}{Více}
+{353}{}{Odlogování.}
+
+{360}{}{Aktivní stanice PoseidoNetu: Atomová elektrárna #5, Rafinérie Navarro, Kontrolní stanice Enkláva, Vault Enklávy-Vızkumné støedisko... Pøístup odepøen}
+{361}{}{Všechna svìtla svítí, ale nikdo není doma. }
+{362}{}{Všechno je vypnutı kromì Vaultu Enkláva-vızkumného støediska. Rád bych vìdìl, co to je?}
+{363}{}{Hmm, nicménì to vypadá, e tahle stanice je taky vypnutá nebo uzavøená. Hm, dobøe. }
+
+{370}{}{Pøipojování... Enklávská stanice... pøístup odepøen.}
+{371}{}{Pøipojování... znovu... Enklávská stanice... pøístup odepøen.}
+{372}{}{Pøipojování... ještì jednou... jsi ale vytrvalej, e jo? Enklávská stanice... pøístup odepøen.}
+{373}{}{Pøipojování... ještì jednou... nezaèíná tì tohle u unavovat? Enklávská stanice... pøístup odepøen.}
+{374}{}{Pøipojování... ještì jednou... nemáš teï nic lepšího na práci? Enklávská stanice... pøístup odepøen.}
+{375}{}{Tak u dost. U mám dost tohohle neustálého popichování. Jestli to zkusíš ještì jednou, tak toho budeš litovat.}
+{376}{}{Neøíkej, e sem Tì nevaroval. (Teï, kdy tohle èteš, najednou pociuješ vlnu elektøiny, která proudí tvımi prsty s klávesnice terminálu.)}
+{377}{}{Moná bych to mìl zkusit znovu?}
+{378}{}{Tak tohle bylo pro tuhle chvíli a dost. Radši bych se mìl snait zprovoznit RM&RR robota. }
+{379}{}{Zatracenì, musím se odpojit.}
+
+{380}{}{Hydroelektrickı regulátor magnetosféry vyadován, ne mùe opravárenská sekvence zaèít.}
+{381}{}{Zahájení údrby chlazení}
+{382}{}{Odlogovat.}
+
+{390}{}{Hydroelektrickı regulátor magnetosféry pøijmut. Scanování... souèástka v poøádku... Jednotka dokonèila opravu.... Pokraèovat?}
+{391}{}{Ano.}
+{392}{}{Odlogovat.}
+
+{400}{}{Logické okruhy byly poškozeny. V pøípadì nouze, jednotka RM&RR mùe bıt øízena manuálnì.}
+{401}{}{Hmm, to vše vysvìtluje. Myslím, e se o to pokusím.}
+{402}{}{Hmm, to nezní moc slibnì. Radìji se odloguju.}
+
+{410}{}{Zahájení revize RM&RR jednotky. Kontrola systému... OK, Kontrola manipulaèního ramena... OK, Kontrola vnitøního stabilizeru... OK, Logické okruhy... CHYBA.}
+{411}{}{Logické okruhy jsou chybné. Rád bych vìdìl, co to znamená.}
+{412}{}{Vypadá to, e vìtšina z toho spíše funguje ne ne. Musím to zprovoznit.}
+
+{420}{}{Pohyby (MovVary) jsou pro jednotku nerozpoznatelné. Jednotka nemùe chodit na daná místa -- nechápe, jakım smìrem se má pohybovat. Doporuèení: Pøesuò jednotku manuálnì (pomocí MovVarù) na místo jejího úkolu, co bude její vıchozí bod pro splnìní úkolu.}
+{421}{}{Rád bych vìdìl, co se stane, kdy nezadám kroky (MovVary) ve správném poøadí?}
+{422}{}{Myslím, e tìch varování u jsem èetl dost. Jsem pøipraven tu vìc teï vyzkoušet.}
+
+{430}{}{Robot se vrátí na svojí základnu, jestlie pøíkazovı program obsahuje terminálové chyby.}
+{431}{}{Ach, tak; to to jasnì vysvìtluje. Nicménì bych se nìco rád dozvìdìl o té chybì v logickém okruhu robota?}
+{432}{}{Jsem pøipraven pokusit se tuhle vìc rozchodit.}
+
+{440}{}{Manuální navádìní: Jednotka RM&RR musí bıt øízena manuálnì k jejímu koneènému cíli. Jednotka se bude pohybovat podle pøíkazù (MovVarù), které jí zadáš, ale jestli její cesta bude blokována nebo jednotka bude hodnì poškozena, automaticky se vrátí na své pùvodní místo.}
+{441}{}{Kam budu potøebovat pøemístit robota? Nech mì podívat se na procedury.}
+{442}{}{Øekl bych, e jsem pøipraven zaèít.}
+{443}{}{Odlogování.}
+
+{450}{}{ádosti na procedury:}
+{451}{}{Chci vìdìt, kde potøebuji pøemístit hydroelektrickı regulátor magnetosféry.}
+{452}{}{Potøebuju vìdìt, kde se nachází hlavní uzávìr chladícího systému.}
+{453}{}{Odlogování.}
+
+{460}{}{Hydroelektrickı regulátor magnetosféry se nachází naproti vıchodní zdi jádra reaktoru. Je hned po pravé stranì hlavního uzávìru chladícího sytému.}
+{461}{}{Kde je hlavní uzávìr chladícího systému?}
+{462}{}{Øekl bych, e jsem pøipraven zaèít.}
+{463}{}{Odlogování. }
+
+{470}{}{Hlavní uzávìr chladícího systému se nachází blízko vıchodní zdi jádra reaktoru. Uzávìr je ovládán velkım èervenım kolem.}
+{471}{}{To by nemìlo bıt tak tìkı najít -- alespoò dokud se ta èervená barva nesloupe.}
+{472}{}{Øekl bych, e jsem pøipraven zaèít.}
+{473}{}{Odlogování.}
+
+{480}{}{Pohotovostní manuál ovládání jednotky RM&RR: Aby se mohla jednotka pohybovat, musíš jí zadat pøíkazy Otoè se doleva, Otoè se doprava, Jdi rovnì a jako poslední dát pøíkaz v dané sekvenci, co je pøíkaz pro vykonání procedury.}
+{482}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Pøíkazy?: MoveVar1}
+{484}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 5% tolerance. Pøíkazy?: MoveVar1, MoveVar2}
+{486}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 10% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3}
+{488}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 15% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4}
+{490}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 20% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5}
+{492}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 25% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6}
+{494}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 30% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7}
+{496}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 35% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8}
+{498}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 40% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9}
+{500}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 45% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10}
+{502}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 50% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11}
+{504}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 55% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11, MoveVar12}
+
+{506}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 60% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13}
+{508}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 65% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14}
+{510}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 70% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15}
+{512}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 75% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15, MoveVar16}
+{514}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 80% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15, MoveVar16, MoveVar17}
+{516}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 85% tolerance. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15, MoveVar16, MoveVar17, MoveVar18}
+{518}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 90% tolerance. Hrozí spadnutí systému. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15, MoveVar16, MoveVar17, MoveVar18, MoveVar19}
+{520}{}{Jestlie tato sekvence ji byla zkoušena, uka mi pøedchozí øadu pohybovıch pøíkazù. Zahøátí jednotky na 95% tolerance. Hrozí spadnutí systému. Pøíkazy?: MoveVar1, MoveVar2, MoveVar3, MoveVar4, MoveVar5, MoveVar6, MoveVar7, MoveVar8, MoveVar9, MoveVar10, MoveVar11,MoveVar12, MoveVar13, MoveVar14, MoveVar15, MoveVar16, MoveVar17, MoveVar18, MoveVar19, MoveVar20}
+{522}{}{Otoè se doleva.}
+{524}{}{Otoè se doprava.}
+{526}{}{Jdi rovnì.}
+
+{530}{}{Proveï úkol: Nainstaluj hydroelektrickı regulátor magnetosféty.}
+{531}{}{Proveï úkol: Vypni hlavní uzávìr chladícího systému.}
+
+{535}{}{Pohotovostní pøíruèka kontrolní jednotky RM&RR :}
+
+{540}{}{Pøidat pøíkaz.}
+{541}{}{Seznam programù.}
+{542}{}{Informace o nastavení senzorù.}
+{543}{}{Nahlášení škod.}
+{544}{}{Smazat všechny pøíkazy.}
+{545}{}{Spustit program.}
+{546}{}{Zpìt.}
+{547}{}{Odlogování.}
+{550}{}{Zpátky do hlavního Menu.}
+
+{600}{}{Vıbìr pøíkazù:}
+{601}{}{Kalibrace uranové palivové tyèe.}
+{602}{}{Zvìtšení plutoniového gamma štítu.}
+{603}{}{Nastavení voltáe v obsahu prstence.}
+{604}{}{Zharmonizování neptunového rotoru.}
+{605}{}{Otestovat jupiterovı vlnovı kompilátor.}
+{606}{}{Nainstalování hydroelektrického regulátoru magnetosféry.}
+{607}{}{Vypnout hlavní uzávìr chladícího systému.}
+{608}{}{Zapnout hlavní uzávìr chladícího systému.}
+
+{620}{}{Seznam programù:}
+{630}{}{Informace o nastavení systému:}
+{640}{}{Nahlášení škod:}
+{650}{}{Smazání pøíkazù.}
+{660}{}{--KONEC PROGRAMU--}
+
+{700}{}{Prosím èekejte. Program se spouští...}
+{710}{}{Jednotka nekomunikuje.}
+{720}{}{Špatnì navolenı pøíkaz. Jádro jednotky odmítlo pøíkaz. Jednotka se vrátila do kontrolního doku.}
+{730}{}{Díky špatnému pøíkazu došlo k pøeteèení dat.}
+{740}{}{Ok.}
+
+{800}{}{Optimalizaèní procedura byla úspìšná.}
+
+{900}{}{Zpracování spouštìcích souborù. Prosím èekejte.}
+{910}{}{[Hotovo]}

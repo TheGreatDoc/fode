@@ -1,0 +1,128 @@
+#include "_colors.fos"
+#include "_time.fos"
+#include "_defines.fos"
+
+#ifdef __SERVER
+import bool CheckIfDEV(Critter&player) from "server_scripts";
+import bool CheckIfGM(Critter&player) from "server_scripts";
+void unsafe_SetAutoTc(Critter& player, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(player)) return;
+	if(!__AutoEvent) 
+	{
+		__AutoEvent=true;
+		player.Say(SAY_NETMSG,"Auto Event: On");
+	}
+	else 
+	{
+		__AutoEvent=false;
+		player.Say(SAY_NETMSG,"Auto Event: Off");
+	}
+}
+
+#endif
+
+#ifdef __CLIENT
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+class BerlinDominationStartButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("eventsys_calls@unsafe_EventBerlinStart",0,0,0,null,null);
+	}
+}
+
+class BerlinDominationEndButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("eventsys_calls@unsafe_EventBerlinEnd",0,0,0,null,null);
+	}
+}
+
+class ChurchDefenseStartButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		//RunServerScriptUnsafe("eventsys_calls@unsafe_EventChurchDefenseStart",0,0,0,null,null);
+	}
+}
+
+class SetAutoEventButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("client_screen_event_panel@unsafe_SetAutoTc",0,0,0,null,null);
+	}
+}
+
+class InitializeAttackRaidersButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("eventsys_calls@unsafe_AttacInit",0,0,0,null,null);
+	}
+}
+
+void InitEventPanelScreen()
+{
+	GUI_CreateScreen(CLIENT_SCREEN_EVENT_PANEL,"chat.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_EVENT_PANEL,"Event panel", 0, 28)
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	GUI_AddText(CLIENT_SCREEN_EVENT_PANEL,"Berlin Domination:", 30, 50)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(150,10);
+	
+	BerlinDominationStartButtonClass BerlinDominationStartButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_PANEL, 30,65)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Start", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BerlinDominationStartButton);
+	
+	BerlinDominationEndButtonClass BerlinDominationEndButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_PANEL, 150,65)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("End", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(BerlinDominationEndButton);
+	
+	GUI_AddText(CLIENT_SCREEN_EVENT_PANEL,"Church Defense:", 30, 100)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(150,10);
+	
+	ChurchDefenseStartButtonClass ChurchDefenseStartButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_PANEL, 30,115)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Start", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(ChurchDefenseStartButton);
+	
+	SetAutoEventButtonClass SetAutoEventButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_PANEL, 30,220)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Auto Event", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SetAutoEventButton);
+		
+	InitializeAttackRaidersButtonClass InitializeAttackRaidersButton;
+	GUI_AddButton(CLIENT_SCREEN_EVENT_PANEL, 30,255)
+		.UpPic("smallOFF.png")
+		.DownPic("smallON.png")
+		.Text("Initialize Attac", FONT_FALLOUT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(InitializeAttackRaidersButton);
+}
+#endif

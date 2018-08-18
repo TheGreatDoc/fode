@@ -1,0 +1,336 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//	Desert Europe
+//
+
+#include "_macros.fos"
+#include "_msgstr.fos"
+
+
+//Rarity (reduce or increase science skill)
+#define DISASSEMBLE_COMMON		(100)
+#define DISASSEMBLE_NORMAL		(0)
+#define DISASSEMBLE_RARE		(-100)
+
+
+//Try to get item when disassembling
+//	player		: the player who disassemble
+//	itempid 	: item proto id that we have to check
+//	rarity 		: reduce(negative value) or increase(positive value) science skill
+//	maxAmount 	: maximum number of item that the player can have
+void DisassembleParts(Critter& player, uint16 itempid, int rarity, uint maxAmount)
+{
+	int skill = player.Skill[SK_SCIENCE] + rarity;
+	if(skill <= 0) return;
+	if(skill > MAX_SKILL_VAL) skill = MAX_SKILL_VAL;
+	
+	uint amount = Random(0, skill*maxAmount/MAX_SKILL_VAL);
+	if(amount != 0)
+	{
+		player.AddItem(itempid, amount);
+	}
+}
+
+
+//Call when using science on item (see main.fos)
+bool TryDisassembleItem(Critter& player, Item& item) // Export
+{
+	uint16 pid = item.GetProtoId();
+	uint roll=0;
+	
+	switch(pid)
+	{
+		/* Weapons */
+		//hand made weapon
+		case PID_ZIP_GUN_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+			break;
+			
+		//low-tech weapon
+		case PID_9MM_MAUSER_DE:
+		case PID_44_MAGNUM_REVOLVER_DE:
+		case PID_44_MAGNUM_SPEEDLOADER_DE:
+		case PID_SPRINGER_RIFLE_DE:
+		case PID_RED_RYDER_BB_GUN_DE:
+		case PID_RED_RYDER_LE_BB_GUN_DE:
+		case PID_JONNY_BB_GUN_DE:
+		case PID_SHOTGUN_DE:
+		case PID_COLT1911_DE:
+		case PID_M32_DE:
+		case PID_M32S_DE:
+		case PID_REM870_DE:
+		case PID_M16_DE:
+		case PID_M16S_DE:
+		case PID_COLT1_DE:
+		case PID_COLT1K1_DE:
+		case PID_COLT1K2_DE:
+		case PID_COLT2_DE:
+		case PID_COLT2K1_DE:
+		case PID_COLT2K2_DE:
+		case PID_COLT3_DE:
+		case PID_COLT3K1_DE:
+		case PID_COLT3K2_DE:
+		case PID_10MM_PISTOL_DE:
+		case PID_14MM_PISTOL_DE:
+		case PID_DESERT_EAGLE_DE:
+		case PID_DESERT_EAGLE_EXT_MAG_DE:
+		case PID_HUNTING_RIFLE_DE:
+		case PID_SCOPED_HUNTING_RIFLE_DE:
+		case PID_ELEPHANT_GUN_DE:
+		case PID_10MM_SMG_DE:
+		case PID_SAWED_OFF_SHOTGUN_DE:
+		case PID_MAUSER_SMG_DE:
+		case PID_FLAMER_DE:
+		case PID_FLAMERN_DE:
+		case PID_INDEPENDENT_DE:
+		case PID_MP5_DE:
+		case PID_ROCKET_LAUNCHER_DE:
+		case PID_NEEDLER_PISTOL_DE:
+			roll=Random(1,2);
+			switch(roll)
+			{
+			case 1:
+				DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 3);
+				DisassembleParts(player, PID_RUSTED_METAL_PARTS, DISASSEMBLE_NORMAL, 2); break;
+			case 2: 
+				DisassembleParts(player, PID_GOOD_METAL_PARTS, DISASSEMBLE_NORMAL, 2);
+				DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 1); 
+				break;
+			}
+			break;
+			
+		//middle-tech weapon
+		case PID_223_PISTOL_DE:
+		case PID_ASSAULT_RIFLE_DE:
+		case PID_ASSAULT_RIFLE_EXT_MAG_DE:
+		case PID_TOMMY_GUN_DE:
+		case PID_GREASE_GUN_DE:
+		case PID_AK47_NORMAL1_DE:
+		case PID_AK47_TACTICAL1_DE:
+		case PID_AK47_SPECIAL_DE:
+		case PID_AK47_TACTICAL3_DE:
+		case PID_PANCOR_JACKHAMMER_DE:
+		case PID_COMBAT_SHOTGUN_DE:
+		case PID_HK_CAWS_DE:
+		case PID_IMPROVED_FLAMETHROWER_DE:
+		case PID_MINIGUN_DE:
+		case PID_M60_DE:
+		case PID_M240_DE:
+		case PID_FN_FAL_DE:
+		case PID_FN_FAL_NIGHT_SCOPE_DE:
+		case PID_FN_FAL_HPFA_DE:
+			roll=Random(1,2);
+			switch(roll)
+			{
+			case 1: 
+				DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+				DisassembleParts(player, PID_SCREWS, DISASSEMBLE_COMMON, 2);
+				DisassembleParts(player, PID_RUSTED_METAL_PARTS, DISASSEMBLE_NORMAL, 2);
+				break;
+			case 2: 
+				DisassembleParts(player, PID_GOOD_METAL_PARTS, DISASSEMBLE_NORMAL, 2);
+				DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 1);
+				break;
+			}
+			break;
+			
+		//high-tech weapon
+		case PID_UKM_DE:
+		case PID_PKS_DE:
+		case PID_RADRIFLE_DE:
+		case PID_DAMRIFLE_DE:
+		case PID_RADPISTOL_DE:
+		case PID_DAMPISTOL_DE:
+		case PID_PK12_GAUSS_PISTOL_DE:
+		case PID_SNIPER_RIFLE_DE:
+		case PID_M72_GAUSS_RIFLE_DE:
+		case PID_DRAGUNOV1_DE:
+		case PID_DRAGUNOV2_DE:
+		case PID_HK_P90C_DE:
+		case PID_HK_G11_DE:
+		case PID_HK_G11E_DE:
+		case PID_AVENGER_MINIGUN_DE:
+		case PID_BOZAR_DE:
+		case PID_LIGHT_SUPPORT_WEAPON_DE:
+		case PID_VINDICATOR_MINIGUN_DE:
+			roll=Random(1,2);
+			switch(roll)
+			{
+			case 1:
+				DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+				DisassembleParts(player, PID_SCREWS, DISASSEMBLE_COMMON, 2);
+				DisassembleParts(player, PID_RUSTED_METAL_PARTS, DISASSEMBLE_NORMAL, 2);
+				DisassembleParts(player, PID_GOOD_METAL_PARTS, DISASSEMBLE_NORMAL, 2);
+				break;
+			case 2:
+				DisassembleParts(player, PID_HIGHT_QUALITY_METAL_PARTS, DISASSEMBLE_NORMAL, 1);
+				DisassembleParts(player, PID_COMPENSATING_SPRING, DISASSEMBLE_RARE, 1);
+				DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 2);
+				break;
+			}
+			break;
+			
+		//low-energy weapon
+		case PID_LASER_PISTOL_DE:
+		case PID_MAGNETO_LASER_PISTOL_DE:
+		case PID_PHAZER_DE:
+		case PID_ROCKETRAD_DE:
+		case PID_ROCKETELE_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_FUSE, DISASSEMBLE_NORMAL, 2);
+			DisassembleParts(player, PID_ELECTRONIC_PARTS, DISASSEMBLE_NORMAL, 2);
+			DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 5);
+			break;
+		
+		//middle-energy weapon
+		case PID_PLASMA_PISTOL_DE:
+		case PID_PLASMA_PISTOL_EXT_CART_DE:
+		case PID_LASER_RIFLE_DE:
+		case PID_LASER_RIFLE_EXT_CAP_DE:
+		case PID_PLASMA_RIFLE_DE:
+		case PID_TURBO_PLASMA_RIFLE_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 4);
+			DisassembleParts(player, PID_FUSE, DISASSEMBLE_NORMAL, 2);
+			DisassembleParts(player, PID_ELECTRONIC_PARTS, DISASSEMBLE_NORMAL, 5);	
+			DisassembleParts(player, PID_RUSTED_METAL_PARTS, DISASSEMBLE_NORMAL, 3);
+			DisassembleParts(player, PID_GOOD_METAL_PARTS, DISASSEMBLE_NORMAL, 3);
+			DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 5);
+			break;
+		
+		//high-energy weapon
+		case PID_YK32_PULSE_PISTOL_DE:
+		case PID_YK42B_PULSE_RIFLE_DE:
+		case PID_GATLING_LASER_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 5);
+			DisassembleParts(player, PID_FUSE, DISASSEMBLE_NORMAL, 2);
+			DisassembleParts(player, PID_ELECTRONIC_PARTS, DISASSEMBLE_NORMAL, 7);	
+			DisassembleParts(player, PID_RUSTED_METAL_PARTS, DISASSEMBLE_NORMAL, 4);
+			DisassembleParts(player, PID_GOOD_METAL_PARTS, DISASSEMBLE_NORMAL, 4);
+			DisassembleParts(player, PID_HIGHT_QUALITY_METAL_PARTS, DISASSEMBLE_RARE, 2);
+			DisassembleParts(player, PID_PACKAGE_OF_PARTS, DISASSEMBLE_NORMAL, 5);
+			break;
+		
+		
+	/* Armors */
+		//low textile/leather
+		case PID_LEATHER_JACKET_DE:
+		case PID_LEATHER_ARMOR_DE:
+		case PID_LEATHER_ARMOR_MK_II_DE:
+		case PID_CURED_LEATHER_ARMOR_DE:
+		case PID_PURPLE_ROBE_DE:
+		case PID_KEEPBRIGE_ROBE_DE:
+		case PID_NAVY_ROBE_DE:
+		case PID_JUMPSUIT_DE:
+		case PID_FAKE_JUMPSUIT_DE:
+		case PID_JUMPSUIT_B_DE :
+		case PID_ROBE_2_DE :
+		case PID_ROBE_3_DE :
+		case PID_JUMPSUIT_R1_DE :
+		case PID_ROBE_D_DE :
+		case PID_LEATHER_GECKO_DE :
+		case PID_JUMPSUIT_BR_DE :
+		case PID_JUMPSUIT_G_DE :
+		case PID_JUMPSUIT_R2_DE :
+		case PID_JUMPSUIT_B2_DE :
+		case PID_JUMPSUIT_R3_DE :
+		case PID_JUMPSUIT_D_DE :
+		case PID_COAT_DE:
+			DisassembleParts(player, PID_BRAHMIN_LEATHER, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_DE_FIBER, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_GECKO_LEATHER, DISASSEMBLE_NORMAL, 2);
+			break;
+			
+		//low metalic
+		case PID_METAL_ARMOR_DE:
+		case PID_METAL_ARMOR_MK_II_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_HIGHT_QUALITY_METAL_PARTS, DISASSEMBLE_NORMAL, 4);
+			break;
+		
+		//high metalic
+		case PID_TESLA_ARMOR_DE:
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_HIGHT_QUALITY_METAL_PARTS, DISASSEMBLE_NORMAL, 4);
+			DisassembleParts(player, PID_ELECTRONIC_PARTS, DISASSEMBLE_RARE, 2);
+			break;
+		
+		//low special
+		case PID_ENVIRONMENTAL_DE :
+			DisassembleParts(player, PID_BRAHMIN_LEATHER, DISASSEMBLE_COMMON, 3);
+			DisassembleParts(player, PID_DE_FIBER, DISASSEMBLE_COMMON, 3);
+			DisassembleParts(player, PID_GECKO_LEATHER, DISASSEMBLE_NORMAL, 3);
+			break;
+
+		//middle
+		case PID_CA_1:
+		case PID_CA_2:
+		case PID_CA_3:
+		case PID_CA_4:
+		case PID_CA_5:
+		case PID_CA_6:
+		case PID_CA_7:
+		case PID_CA_8:
+		case PID_CA_9:
+		case PID_CA_10:
+		case PID_CA_11:		
+		case PID_CAMKII_1:
+		case PID_CAMKII_2:
+		case PID_CAMKII_3:
+		case PID_CAMKII_4:
+		case PID_CAMKII_5:
+		case PID_CAMKII_6:
+		case PID_CAMKII_7:
+		case PID_CAMKII_8:
+		case PID_CAMKII_9:
+		case PID_CAMKII_10:
+		case PID_CAMKII_11:		
+		case PID_THERMAL_CA:
+		case PID_REACTIV_CA:
+		case PID_NEC_CA:
+		case PID_ULS_CA:
+			DisassembleParts(player, PID_BRAHMIN_LEATHER, DISASSEMBLE_COMMON, 2);
+			DisassembleParts(player, PID_DE_FIBER, DISASSEMBLE_COMMON, 4);
+			DisassembleParts(player, PID_GECKO_LEATHER, DISASSEMBLE_NORMAL, 2);
+			DisassembleParts(player, PID_SCRAP, DISASSEMBLE_COMMON, 4);
+			DisassembleParts(player, PID_HIGHT_QUALITY_METAL_PARTS, DISASSEMBLE_NORMAL, 5);
+			break;
+	
+	/* disabled */
+		//unknow technology
+		case PID_ALIEN_LASER_PISTOL_DE:
+		case PID_SOLAR_SCORCHER_DE:
+			
+		//high
+		case PID_PA:
+		case PID_PAMKII:
+		case PID_APA:
+		case PID_FT_ENCLAV_DE:
+		case PID_FT_COMBAT_DE:
+		case PID_FT_PA_DE:
+			
+		//high special
+		case PID_MECHSUITG1:
+		case PID_MECHSUITG2:
+		case PID_MECHSUITB1:
+		case PID_MECHSUITB2:
+		case PID_MECHSUITD1:
+		case PID_FT_FRANK_DE:
+		default : return false;
+	}
+	
+	//if item is weapon : unload to get ammo
+	if(item.GetType() == ITEM_TYPE_WEAPON)
+	{
+		uint16 ammo_count = item.AmmoCount;
+		if(ammo_count > 0)
+		{
+			player.AddItem(item.AmmoPid, ammo_count);
+		}
+	}
+	
+	player.Say(SAY_NETMSG, "You disassembled it");//todo msg
+	DeleteItem(item);
+	player.PlaySound("carrepar.acm", true);
+	
+	return true;
+}
+

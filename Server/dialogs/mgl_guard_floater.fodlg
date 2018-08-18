@@ -1,0 +1,35 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{Guard}
+{200}{}{You see guard.}
+{210}{}{You see one of MGL guards.}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{We are keeping an eye on you.@@Don't make any troubles.@@Leave me alone.@@ I don't want to talk with you.}
+
+[pols]
+{100}{}{Ochrona}
+{200}{}{Widzisz ochrone.}
+{210}{}{Widzisz jednego z ochroniarzy MGL.}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{Mamy Cie na oku.@@Nie stwarzaj zadnych problemow.@@Zostaw mnie w spokoju.@@ Nie chce mi sie z Toba rozmawiac.}
+
+[russ]
+{100}{}{Guard}
+{200}{}{You see guard.}
+{210}{}{You see one of MGL guards.}
+{1000}{}{Predialogue installations}
+{1010}{}{}
+{2000}{}{We are keeping an eye on you.@@Don't make any troubles.@@Leave me alone.@@ I don't want to talk with you.}

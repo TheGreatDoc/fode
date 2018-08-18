@@ -1,0 +1,64 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+0 2030 @
+3 3000 None 0 #
+2 3010 @
+4 4000 None 0 #
+2 4010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Level 2, Laboratory 6 
+Object: M36 "Wanamingo"}
+{2010}{}{General informations}
+{2020}{}{Origin}
+{2030}{}{Exit}
+{3000}{}{Agressive creature, which usually can be spotted in dark and wet places. It seems like objects cannot breed. We think they have some kind of main hive and Queen, which is only one individual able to breed. Existence of Queen is not confirmed yet. }
+{3010}{}{Back}
+{4000}{}{M36 seems to be result of some FEV experiments. But DNA analysis showed us only illegible results. So we can't even guess from which spiece or spieces this "Wanamingo" was created.}
+{4010}{}{Back}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Poziom 2, Laboratorium 6
+Obejct: M36- "Wanamingo"}
+{2010}{}{glowne informacje}
+{2020}{}{pochodzenie.}
+{2030}{}{wyjscie}
+{3000}{}{agresywne stworzenie, zyje zazwyczaj w ciemnych mokrych miejscach. Wydaje sie ze obiekty nie moga sie rozmnazac. Myslimy ze maja w grupie pewnego rodzaju krolowa ktora jedynie sie rozmnaza. Prawdopodobienstwo tej krolowej nie zostalo jeszcze potwierdzone. }
+{3010}{}{powrot}
+{4000}{}{M36 wydaje sie byc rezultatem jakiegos eksperymentu FEV. Ale analiza DNA ukazuje nam tylko nieczytelne wyniki. Wiec nie mozemy nawet zgadywac z jakiego stworzenia lub stworzen "wanamingo" zostalo stworzone.}
+{4010}{}{powrot}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Level 2, Laboratory 6
+Obejct: M36- "Wanamingo"}
+{2010}{}{general info}
+{2020}{}{origin.}
+{2030}{}{exit}
+{3000}{}{agressive creature, lives usually in dark wet places. It seems usuall objects cannot breed. We think they have in middle of group some kind of Queen that is only able to breed. possibility of this Queen wasn't conrimed yet. }
+{3010}{}{back}
+{4000}{}{M36 seems to be result of some FEV experiments. But DNA analysis showed us only illegible results. So we can't even guess from what creatue or creatures this "wanamingo" was created.}
+{4010}{}{back}
+

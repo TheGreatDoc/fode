@@ -1,0 +1,2 @@
+{100}{}{He! Wo ist mein Auto?!}
+{101}{}{Was ist mit meinem Auto passiert...?}

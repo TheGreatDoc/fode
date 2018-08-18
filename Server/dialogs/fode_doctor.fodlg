@@ -1,0 +1,138 @@
+[comment]
+Aaoe eiiiaioa?ee / Your comments.
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 #
+0 2010 #
+3 2020 D _param p ST_CURRENT_HP < ST_MAX_LIFE #
+5 2030 D _param p ST_CURRENT_HP = ST_MAX_LIFE #
+6 2040 D _param p ST_RADIATION_LEVEL = 0 #
+4 2050 D _param p ST_RADIATION_LEVEL > 0 #
+65506 2060 @
+3 3000 None 0 #
+7 3010 D _item p PID_BOTTLE_CAPS > 400 R _item p PID_BOTTLE_CAPS - 400 R _param p ST_CURRENT_HP + 1000 #
+65505 3020 D _item p PID_BOTTLE_CAPS < 400 #
+65505 3030 @
+4 4000 None 0 #
+7 4010 D _item p PID_BOTTLE_CAPS > 1000 R _param p ST_RADIATION_LEVEL = 0 R _item p PID_BOTTLE_CAPS - 1000 #
+65505 4020 D _item p PID_BOTTLE_CAPS < 1000 #
+65505 4030 @
+5 5000 None 0 #
+2 5010 #
+0 5020 @
+6 6000 None 0 #
+2 6010 #
+0 6020 @
+7 7000 None 0 #
+2 7010 #
+0 7020 &
+
+[engl]
+{100}{}{Doctor}
+{200}{}{You see: Doctor.}
+{210}{}{You see an doctor.}
+{220}{}{You see: Doctor.}
+{230}{}{You see an unconscious doctor.}
+{240}{}{You see: Dead doctor.}
+{250}{}{You see an dead doctor.}
+{260}{}{You see: Dead doctor.}
+{270}{}{You see an dead doctor.}
+{1000}{}{Initial preferences}
+{1010}{}{Going to main.}
+{2000}{}{Yes? What do you want?}
+{2010}{}{Nothing, bye.}
+{2020}{}{I need medical help.}
+{2030}{}{I need medical help.}
+{2040}{}{Can you remove my radiation?}
+{2050}{}{Can you remove my radiation?}
+{2060}{}{I'd like to buy some supplies.}
+{3000}{}{That makes 400 caps.}
+{3010}{}{Here you go.}
+{3020}{}{I don't have enough caps.}
+{3030}{}{I think I need something else.}
+{4000}{}{That makes 1000 caps.}
+{4010}{}{Okay, fine.}
+{4020}{}{I don't have enough caps.}
+{4030}{}{I guess not.}
+{5000}{}{You do not look like you need any help.}
+{5010}{}{Oops, there was something else.}
+{5020}{}{Okay, bye.}
+{6000}{}{You aren't radiated.}
+{6010}{}{Phew. But there was something else I needed.}
+{6020}{}{Thanks god. See you around.}
+{7000}{}{Glad to help. Do you need something else?}
+{7010}{}{Yes, if you don't mind.}
+{7020}{}{Nope, that was all. Thank you.}
+
+[pols]
+{100}{}{Doctor}
+{200}{}{Widzisz lekarza.}
+{210}{}{Widzisz lekarza.}
+{220}{}{Widzisz lekarza.}
+{230}{}{Widzisz nieprzytomnego lekarza.}
+{240}{}{Widzisz nieżywego lekarza.}
+{250}{}{Widzisz nieżywego lekarza.}
+{260}{}{Widzisz nieżywego lekarza.}
+{270}{}{Widzisz nieżywego lekarza.}
+{1000}{}{Initial preferences}
+{1010}{}{Going to main.}
+{2000}{}{Tak? O co chodzi?}
+{2010}{}{Nieważne, żegnaj.}
+{2020}{}{Potrzebuję pomocy medycznej.}
+{2030}{}{Potrzebuję pomocy medycznej.}
+{2040}{}{Możesz usunąć ze mnie promieniowanie?}
+{2050}{}{Możesz usunąć ze mnie promieniowanie?}
+{2060}{}{Chciałbym kupić kilka rzeczy}
+{3000}{}{To będzie 400 kapsli}
+{3010}{}{Proszę.}
+{3020}{}{Nie mam tyle.}
+{3030}{}{Hmm, potrzebuję czegoś innego.}
+{4000}{}{To będzie 1000 kapsli.}
+{4010}{}{Ok, zgoda.}
+{4020}{}{Nie mam tyle.}
+{4030}{}{Wątpie.}
+{5000}{}{Wygląda na to, że nie potrzebujesz pomocy}
+{5010}{}{Yyy, chodziło mi o coś innego.}
+{5020}{}{Dobra, żegnaj.}
+{6000}{}{Nie jesteś napromieniowant.}
+{6010}{}{Zapomnij o tym. Porozmawiajmy o czymś innym}
+{6020}{}{Dzięki Bogu. Do zobaczenia.}
+{7000}{}{Cieszę cię. Coś jeszcze?}
+{7010}{}{Tak.}
+{7020}{}{Nie, to tyle. Żegnaj}
+
+[russ]
+{100}{}{Terminal}
+{1000}{}{I?aaaeaeiaiaua onoaiiaee}
+{1010}{}{I?iaa?ei aeiee?iaeo.}
+{2000}{}{Yes? What do you want?}
+{2010}{}{Nothing, bye.}
+{2020}{}{I need medical help.}
+{2030}{}{I need medical help.}
+{2040}{}{Can you remove my radiation?}
+{2050}{}{Can you remove my radiation?}
+{2060}{}{I'd like to buy some supplies.}
+{3000}{}{That makes 400 caps.}
+{3010}{}{Here you go.}
+{3020}{}{I don't have enough caps.}
+{3030}{}{I think I need something else.}
+{4000}{}{That makes 1000 caps.}
+{4010}{}{Okay, fine.}
+{4020}{}{I don't have enough caps.}
+{4030}{}{I guess not.}
+{5000}{}{You do not look like you need any help.}
+{5010}{}{Oops, there was something else.}
+{5020}{}{Okay, bye.}
+{6000}{}{You aren't radiated.}
+{6010}{}{Phew. But there was something else I needed.}
+{6020}{}{Thanks god. See you around.}
+{7000}{}{Glad to help. Do you need something else?}
+{7010}{}{Yes, if you don't mind.}
+{7020}{}{Nope, that was all. Thank you.}
+

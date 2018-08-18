@@ -1,0 +1,87 @@
+#include "_defines.fos"
+#include "utils_for_array.fos"
+#include "_maps.fos"
+
+import bool CheckIfGM(Critter& player) from "server_scripts";
+import void server_message(string@ message) from "server_scripts";
+import void ChurchDefenseEventStart() from "church_defense_event";
+import uint e_EventBerlinStart(uint[]@ values) from "eventsys";
+import uint e_EventDeathMineStart(uint[]@ values) from "eventsys";
+import uint e_EventOldVillageStart(uint[]@ values) from "eventsys";
+import uint e_EventOldFieldsStart(uint[]@ values) from "eventsys";
+import uint e_EventFuryTownStart(uint[]@ values) from "eventsys";
+import uint e_EventScrapersCityStart(uint[]@ values) from "eventsys";
+import uint e_EventDistrictXStart(uint[]@ values) from "eventsys";
+import uint e_EventBerlinStop(uint[]@ values) from "eventsys";
+import bool IsEvent() from "eventsys";
+import void AttacInit() from "main";
+
+void unsafe_EventBerlinStart(Critter &cr, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(cr)) return;
+	
+	if(__EventBerlin==false)
+	{
+		e_EventBerlinStart(null);
+		server_message("Berlin Domination event has begun\nPrepare for the fight!");
+	}
+}
+
+void unsafe_EventBerlinEnd(Critter &cr, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(cr)) return;
+	
+	if(__EventBerlin==true)
+	{
+		e_EventBerlinStop(null);
+	}
+}
+
+void unsafe_EventChurchDefenseStart(Critter &cr, int, int, int, string@, int[]@)
+{
+	if(!CheckIfGM(cr)) return;
+	ChurchDefenseEventStart();
+}
+
+void unsafe_AttacInit(Critter& cr, int, int, int, string@,int[]@)
+{
+	if(!CheckIfGM(cr)) return;
+	AttacInit();
+}
+
+void LocationEventStart(Critter& cr, int , int , int)
+{
+	Map@ map=cr.GetMap();
+	if(@map==null) return;
+	int[] maps={MAP_berlincity,MAP_deathmine,MAP_oldvillage,MAP_oldfields,MAP_furytown};
+	int index=FindInArray(maps,map.GetProtoId());
+	if(index==-1) return;
+	if(__AutoEvent==true && !IsEvent())
+	{
+		switch(index)
+		{
+			case 0:
+				e_EventBerlinStart(null);
+				break;
+			case 1:
+				e_EventDeathMineStart(null);
+				break;
+			case 2:
+				e_EventOldVillageStart(null);
+				break;
+			case 3:
+				e_EventOldFieldsStart(null);
+				break;
+			case 4:
+				e_EventFuryTownStart(null);
+				break;
+			case 5:
+				e_EventScrapersCityStart(null);
+				break;
+			case 6:
+				e_EventDistrictXStart(null);
+				break;	
+		}
+	}
+	return;
+} 

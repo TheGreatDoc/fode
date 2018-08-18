@@ -1,0 +1,128 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Old_Fields_Gordon_Job = -1 #
+6 1020 D _var p Old_Fields_Gordon_Job = 0 #
+10 1030 D _var p Old_Fields_Gordon_Job = 2 @
+2 2000 None 1 #
+4 2010 #
+3 2020 #
+0 2030 @
+3 3000 None 1 @
+4 4000 None 1 #
+5 4010 #
+0 4020 @
+5 5000 None 1 #
+0 5010 R _var p Old_Fields_Gordon_Job = 0 @
+6 6000 None 1 #
+0 6010 #
+7 6020 @
+7 7000 None 1 #
+9 7010 R _item p PID_BOTTLE_CAPS + 500 R _var p Old_Fields_Gordon_Job = 2 #
+8 7020 #
+0 7030 @
+8 8000 None 1 @
+9 9000 None 1 @
+10 10000 None 1 #
+11 10010 D _item p PID_BOTTLE_CAPS } 500 R _item p PID_BOTTLE_CAPS - 500 R _var p Old_Fields_Gordon_Job = 0 #
+0 10020 @
+11 11000 None 1 &
+
+[pols]
+{100}{}{Gordon}
+{110}{}{man29.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{have job}
+{1030}{}{have debt}
+{2000}{}{Witam jestem Gordon, zarzadzam tym miejscem a dokladnie tymi polami za moim domem. Czego ci trzeba?}
+{2010}{}{Szukam pracy}
+{2020}{}{Kobiety}
+{2030}{}{W sumie niczego}
+{3000}{}{A wygladam na aflonsa?}
+{4000}{}{Dobrze sie sklada. Potrzebuje pracownikow do zbioru. Place 7 kapsli za tyton i 10 za wlokna. Jestes zainteresowany?}
+{4010}{}{Tak !}
+{4020}{}{Chyba jednak nie}
+{5000}{}{Ok, udaj sie do moich brygadzistow przy wejsciach na plantacje. Tam uzyskasz wiecej szczegolow.}
+{5010}{}{Dzieki}
+{6000}{}{Witam mojego najlepszego pracownika. W czym ci moge pomoc?}
+{6010}{}{Wpadlem sie tylko przywitac.}
+{6020}{}{Szefie, chcialem porzyczyc troche kasy.}
+{7000}{}{Hahaha... Ile?}
+{7010}{}{500}
+{7020}{}{...100 000?}
+{7030}{}{W sumie chyba jednak niepotrzebuje gotowki.}
+{8000}{}{Ha Ha Ha...@@Masz poczucie humoru@@Tak, jasne... moze byc w zlocie? Ha Ha Ha.}
+{9000}{}{Mowisz i masz. Dobry z ciebie chlopak wiec pare kapsli moge w ciebie zainwestowac.}
+{10000}{}{Witam mojego pracownika. W czym ci moge pomoc? A moze wpadles oddac porzyczona kase?}
+{10010}{}{Mam dla ciebie gotowke do oddania. Jeszcze raz dzieki szefie.}
+{10020}{}{Tak tylko wpadlem sie przywitac i przekazac zebys nie martwil sie o pieniadze. Juz zebralem prawie cala kwote. Wiec za niedlugo oddam ci wszystko.}
+{11000}{}{Zaden problem.}
+
+[engl]
+{100}{}{Gordon}
+{110}{}{man29.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{have job}
+{1030}{}{have debt}
+{2000}{}{How's it going? The name's Gordon, and I run this place. Is there anything you need?}
+{2010}{}{Yeah, I need a job.}
+{2020}{}{A woman.}
+{2030}{}{Not really.}
+{3000}{}{Do I fucking look like a pimp to you?}
+{4000}{}{You're in luck then. I could use an extra pair of hands to help me with the harvest. Collect some tobacco leaves for me, and I'll give you 7 caps a piece. Cut off a few fibers, and they'll net you 10 caps each. Sounds good enough?}
+{4010}{}{Yup!}
+{4020}{}{Not really.}
+{5000}{}{All right, go talk to one of the foremen. You'll find them near the plantation entrance. They'll give you more details.}
+{5010}{}{Thanks.}
+{6000}{}{Isn't that my number one worker again! Anything I can help you with?}
+{6010}{}{Nah, I'm just dropping by to say "hi."}
+{6020}{}{Could you lend me some cash, boss?}
+{7000}{}{Ha ha, I knew it! How much do you need?}
+{7010}{}{How about 500 caps?}
+{7020}{}{...100,000 caps?}
+{7030}{}{Actually, I don't think I need any money at the moment.}
+{8000}{}{Ha ha...@@You have some sense of humor, I have to give you that!@@Yeah, right. How much is it in gold bars? Ha ha. }
+{9000}{}{Anything you want, you've got it. You're a good person, so I guess there's no harm in throwing a few extra caps your way... provided you'll pay me back.}
+{10000}{}{Isn't that my favorite employee again! Anything I can do for you? Or maybe you're here to pay back the money you borrowed a while ago?}
+{10010}{}{Yeah, I'm here to pay back my debt. Thanks a bunch for helping me out, boss.}
+{10020}{}{I'm just dropping by to say "hi" and let you know I'm almost there with the money. You'll get it back in no time, I promise.}
+{11000}{}{No problem.}
+
+[russ]
+{100}{}{Gordon}
+{110}{}{man29.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{have job}
+{1030}{}{have debt}
+{2000}{}{How's it going? The name's Gordon, and I run this place. Is there anything you need?}
+{2010}{}{Yeah, I need a job.}
+{2020}{}{A woman.}
+{2030}{}{Not really.}
+{3000}{}{Do I fucking look like a pimp to you?}
+{4000}{}{You're in luck then. I could use an extra pair of hands to help me with the harvest. Collect some tobacco leaves for me, and I'll give you 7 caps a piece. Cut off a few fibers, and they'll net you 10 caps each. Sounds good enough?}
+{4010}{}{Yup!}
+{4020}{}{Not really.}
+{5000}{}{All right, go talk to one of the foremen. You'll find them near the plantation entrance. They'll give you more details.}
+{5010}{}{Thanks.}
+{6000}{}{Isn't that my number one worker again! Anything I can help you with?}
+{6010}{}{Nah, I'm just dropping by to say "hi."}
+{6020}{}{Could you lend me some cash, boss?}
+{7000}{}{Ha ha, I knew it! How much do you need?}
+{7010}{}{How about 500 caps?}
+{7020}{}{...100,000 caps?}
+{7030}{}{Actually, I don't think I need any money at the moment.}
+{8000}{}{Ha ha...@@You have some sense of humor, I have to give you that!@@Yeah, right. How much is it in gold bars? Ha ha. }
+{9000}{}{Anything you want, you've got it. You're a good person, so I guess there's no harm in throwing a few extra caps your way... provided you'll pay me back.}
+{10000}{}{Isn't that my favorite employee again! Anything I can do for you? Or maybe you're here to pay back the money you borrowed a while ago?}
+{10010}{}{Yeah, I'm here to pay back my debt. Thanks a bunch for helping me out, boss.}
+{10020}{}{I'm just dropping by to say "hi" and let you know I'm almost there with the money. You'll get it back in no time, I promise.}
+{11000}{}{No problem.}

@@ -1,0 +1,129 @@
+# QUICK LOOK
+{100}{}{Tu vois un homme de main de Bishop.}
+
+# EXAMINES
+{150}{}{Tu vois un homme à l'air bourru, vêtu d'une cuirasse. Son corps est couvert de nombreuses cicatrices et blessures par balles.}
+{151}{}{Tu vois un homme de main de Bishop. Il scrute les environs en tripotant son arme.}
+
+# 1. FLOAT DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{200}{}{Hé ! }
+
+# 2. FLOAT DIALOGUE: POWER ARMOR
+{205}{}{Comment tu fais pour aller aux toilettes avec ce truc ?}
+
+# 3. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [ARMED]
+{210}{}{Joli morceau que tu as là !}
+
+# 4. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [SNEAK]
+{215}{}{Hé, qu'est-ce que tu fous par ici, }
+{216}{}{Hé... hé, }
+
+# 5. FLOAT DIALOGUE: PLAYER = FEMALE/MALE, MADE MAN, FA=BISHOP [NORMAL]
+{220}{}{Yo, }
+{221}{}{Hé, }
+{222}{}{Hé, }
+
+# 6. FLOAT/CLICK DIALOGUE: MADE MAN, FA=NOT BISHOP
+{229}{}{Tu ferais mieux de partir, }
+
+# 8. FLOAT DIALOGUE: MALE, PRIZEFIGHTER [ARMED]
+{250}{}{Hé, champion. Pas d'armes ici, d'accord ?}
+
+# 9. FLOAT DIALOGUE: MALE, PRIZEFIGHTER AND MALE PORN STAR [SNEAK]
+{256}{}{Tu essaies d'échapper à tes fans ?}
+
+# 10. FLOAT DIALOGUE: MALE/FEMALE, PRIZEFIGHTER
+{260}{}{Yo, }
+{261}{}{Yo, }
+
+# 11. FLOAT DIALOGUE: PORN STAR [ARMED]
+{266}{}{Hé, }
+{267}{}{Yo, }
+
+# 13. FLOAT DIALOGUE: [PORN STAR, FEMALE] [SNEAK]
+{275}{}{Avec un corps pareil, tu vas avoir du mal à te faufiler mon chou.}
+
+# 14. FLOAT DIALOGUE: [PORN STAR, NORMAL]
+{280}{}{J'adore ces films, }
+
+# 16. FLOAT DIALOGUE: SLAVER [ARMED]
+{296}{}{Range cette arme, esclavagiste, ou je t'utilise comme cible.}
+
+# 17. FLOAT DIALOGUE: SLAVER [SNEAK]
+{301}{}{Viens pas rôder par ici, esclavagiste, ou je t'utilise comme cible.}
+
+# 18. FLOAT DIALOGUE: MALE/FEMALE, NO REP [ARMED]
+{306}{}{Range cette arme, tribale, ou je t'utilise comme cible.}
+
+# 19. FLOAT DIALOGUE: MALE/FEMALE, NO REP [SNEAK]
+{311}{}{Ne rôde par ici, tribale, ou je t'utilise comme cible.}
+
+# 20. FLOAT DIALOGUE: COMPANION: ROBOBRAIN
+{315}{}{Sors-moi ce robot d'ici ! Tout de suite !!}
+
+# 21. FLOAT DIALOGUE: COMPANION: MARCUS
+{322}{}{Ce mutant a intérêt à sortir d'ici immédiatement, ou je lui éclate la tête contre le mur !!}
+
+# 22. FLOAT DIALOGUE: MALE/FEMALE, NO REP
+{326}{}{Il faut aimer Reno...}
+
+# 23. CLICK DIALOGUE: ENCLAVE DESTROYED IS TRUE
+{330}{}{Je croyais que le Président était un mythe, une sorte de père Fouettard pour faire peur aux enfants.}
+{331}{}{New Reno a été conçu par Chris Avellone ; le scénario est de Tom French. Le bruit court qu'ils vont bientôt se marier.}
+{332}{}{J'ai entendu dire que tu avais esquinté l'Enclave au sud. C'est courageux.}
+
+# 24. CLICK DIALOGUE: MALE/FEMALE, MADE MAN, SAME FAMILY
+{350}{}{Hé, }
+{351}{}{Yo, }
+{352}{}{Hé, }
+{356}{}{Pas mal, tes fringues ! Moi aussi j'aimerais être dans les petits papiers du patron.}
+{357}{}{Je peux t'apporter quelque chose, patron ?}
+
+# 25. CLICK DIALOGUE: PRIZEFIGHTER
+{387}{}{Hé champion ! Le dernier combat était super !}
+
+# 27. CLICK DIALOGUE: PORN STAR
+{400}{}{J'ai entendu dire que Mme Bishop te cherchait. Fais gaffe.}
+{401}{}{Donne-moi du boulot, allez ! Je suis le roi des as.}
+{402}{}{J'adore ces films, }
+{403}{}{Quand est-ce que tu passeras me voir ?}
+
+# 29. CLICK DIALOGUE: [SLAVER]
+{420}{}{Quoi de neuf à La Fosse ?}
+{421}{}{A quel taux s'échangent les esclaves ces jours-ci ?}
+
+# 30. CLICK DIALOGUE: MALE/FEMALE, NO REP (Good Reaction)
+{441}{}{Tu cherches du travail ? Va parler à M. Bishop.}
+
+# 31. CLICK DIALOGUE: MALE, NO REP (Bad Reaction)
+{445}{}{Casse-toi, tribale !}
+{446}{}{Fiche le camp, tribale !}
+
+# 32. CLICK DIALOGUE: FEMALE, NO REP (Bad Reaction)
+{460}{}{J'ai pas besoin de tribales en ce moment. Reviens plus tard.}
+{461}{}{Casse-toi, tribale.}
+{462}{}{Fiche le camp, tribale.}
+
+# 34. FLOAT DIALOGUE: COMPANION: LENNY
+{492}{}{Si ce goule n'est pas dehors dans une minute, il pourra faire sa prière !}
+
+# END OF LINES
+{1200}{}{ ! C'est comme ça qu'on donne une leçon à l'Enclave !}
+{1210}{}{.}
+{1215}{}{ ?}
+{1216}{}{... pourquoi ce mystère ?}
+{1220}{}{, quoi de neuf ?}
+{1221}{}{, qu'est-ce que tu racontes de beau ?}
+{1222}{}{ ! T'as réussi à éviter les ennuis ?}
+{1229}{}{. Maintenant.}
+{1252}{}{ ! Interdiction de montrer tes armes ici, compris ?}
+{1260}{}{. Tu fais attention à toi ?}
+{1261}{}{. Quoi de neuf ?}
+{1266}{}{ ! Interdiction de montrer tes armes ici, compris ? }
+{1267}{}{ ! Range cette arme !}
+{1269}{}{ ! Ici, tu peux montrer tes nichons, mais pas tes armes, compris ?}
+{1280}{}{ !}
+{1350}{}{. Alors, quoi de neuf ?}
+{1351}{}{. Ca boume ?}
+{1352}{}{ ! T'as réussi à éviter les ennuis ?}
+{1402}{}{ !}

@@ -1,0 +1,95 @@
+#tento soubor prelozil Tomas "LOCKHEAR" Jurecka
+{100}{}{Vidíš šéfknihovníka Kohla.}
+{101}{}{Vidíš uhlazenì vyhlíejícího mue v uniformì Vault City.}
+{102}{}{Vidíš šéfknihovníka Kohla.}
+{103}{}{Vidíš uhlazenì vyhlíejícího mue v uniformì Vault City.}
+{104}{}{Mohu zaruèit, e tvé hrdinské èiny budou zaznamenány v archívech Vault City, }
+{105}{}{U všech knih! Vetøelec! Pomoc! Stráe!}
+{106}{}{U všech knih! Mutant ve Vault City! Stráe! Stráe!(kde jsem to u slyšel?)}
+{107}{}{U všech knih! Ghoul ve Vault City! Stráe! Stráe!(kde jsem to u slyšel?)}
+{108}{}{Informaèní kanceláø je veèer zavøená. Vra se ráno.}
+{109}{}{Informaèní kanceláø je veèer zavøená. Pùjdu domù a roztøídím všechny tyto listiny.}
+{110}{}{Pssst.}
+{111}{}{Tiše, prosím.}
+{112}{}{Psssst.}
+{113}{}{V tichu JE síla.}
+{114}{}{Ah... zdravím! S èím Vám mohu pomoci?}
+{115}{}{Bt-ble-ping!}
+{116}{}{Vypal}
+{117}{}{Co to je za místo?}
+{118}{}{Ale nic. Odpuste to vyrušení.}
+{119}{}{Ah... promiòte?}
+{120}{}{Skøípy-skøípy vrz}
+{121}{}{Vypal}
+{122}{}{Ach, Ty musíš bıt jeden ze sluhù. Mìl by ses u koneènì OPRAVDU vrátit k Tvému pánovi Barkusovi, jinak se fakt rozzlobí!}
+{123}{}{Jasòaèka!}
+{124}{}{Toto je Informaèní centrum pro Vault City. Je tohle to místo, které jsi hledal?}
+{125}{}{Ano, koneènì. Mám nìkolik otázek, na které mi moná odpovíš.}
+{126}{}{Informaèní centrum? Máte nìjaké knihy nebo manuály?}
+{127}{}{Ne. Promiò za to vyrušení.}
+{128}{}{Naneštìstí jsou teï naše knihy právì pøevádìny do elektronické podoby. Ty které byly navíc se pøevezly do kanceláøí obchodního centra na dolním konci ulice. Zkus to ještì tam.}
+{129}{}{A kde jsou ty knihy, které u máte do elektronické podoby pøevedené?}
+{130}{}{Všechny knihy jsou pryè?}
+{131}{}{Ah. Mám pár otázek...}
+{132}{}{Moná to tam teda zkusím.}
+{133}{}{Rád Tì zase vidím. Potøebuješ pomoci nìco najít?}
+{134}{}{Samozøejmì. Co potøebuješ vìdìt?}
+{135}{}{Co to je za místo?}
+{136}{}{Nevíš náhodou, kde by se dal najít GECK?}
+{137}{}{Kam se mám vydat, kdy chci do  Vaultu?}
+{138}{}{Dnes nic, díky.}
+{139}{}{GECK? To mi zní nìjak povìdomì. Co to má bıt?}
+{140}{}{To taky pøesnì nevím. Podle slov naší Starší, by to mìl bıt nìjakı všelék pro mou vesnici. Moc tomu ale nevìøím.}
+{141}{}{Doopravdy nevím.}
+{142}{}{Mohu se zeptat na pár jinıch vìcí?}
+{143}{}{Nevadí. Moná si promluvíme jindy.}
+{144}{}{Vault? Vchod najdeš kdy se vydáš dolù ulicí... je to ta obrovská díra v úboèí hory.}
+{145}{}{Slyšel jsi o nìjakıch dalších Vaultech?}
+{146}{}{Mùu se zeptat na nìco jiného?}
+{147}{}{Díky za radu.}
+{148}{}{Jiné Vaulty? Hmmm. Ne, ne doslova. Vím e byly vybudovány i jiné Vaulty, ale nikdy jsme ádnı další nenašli. Moná bude nìjaká zmínka v centrálním poèítaèi našeho Vaultu.}
+{149}{}{Jak se mohu dostat dovnitø Vault?}
+{150}{}{Mohu se zeptat na pár jinıch vìcí?}
+{151}{}{Díky za informace.}
+{152}{}{Hmmmm. Moná e centrální poèítaè uvnitø našeho Vaultu o tom má nìjaké informace. Máme tam uloeno mnoho starıch archívù.}
+{153}{}{Jak se dostanu do Vašeho Vaultu?}
+{154}{}{Mohu se zeptat na pár jinıch vìcí?}
+{155}{}{Díky za informace.}
+{156}{}{Take, kdy jsi právoplatnım Obèanem naší komunity, Tak máš povolenı pøístup do Vaultu.}
+{157}{}{Ach, Ty jsi Obèan? Omlouvám se, moc se omlouvám... nue, tím pádem máš povolen pøístup do našeho Vaultu a mùeš pouít poèítaè.}
+{158}{}{Take, nejprve se musíš stát Obèanem Vault City. Jestli se na to cítíš, tak mùeš podstoupit test Obèanství... Nebo bude lepší, kdy si promluvíš s První Obèankou Lynette. Jsem si jist, e by mohla ve Tvém pøípadì udìlat vıjimku.}
+{159}{}{Uh, ale já jsem Obèan.}
+{160}{}{Mohu se zeptat na pár jinıch vìcí?}
+{161}{}{Díky za informace.}
+{162}{}{Ano, všechno je pøekládáno protoe... hmmm. Je to trochu delikátní záleitost, ale myslím si, e moje funkce zde ve Vault City zaèíná bıt zastaralá.}
+{163}{}{Zastaralá? Co tím myslíš?}
+{164}{}{Zastaralá?}
+{165}{}{Ah. Mám pár jinıch otázek...}
+{166}{}{To je mi líto. Musím u jít.}
+{167}{}{To znamená, e moje fuknce bude brzy zbyteèná. Vše s nejlepším úmyslem.}
+{168}{}{Nyní se diskutuje o umístìní informaèního terminálu do kadé domácnosti. Všechny tyto nové terminály budou propojeny do sítì s vyhledávacím a informaèním serverem. A to bude jednou hotovo, tak potom Informaèní centrum... a já ... budem patøit do starého eleza. Vše s nejlepším úmyslem, samozøejmì.}
+{169}{}{Jsi si jistı?}
+{170}{}{Ah. Mám pár jinıch otázek...}
+{171}{}{To je mi líto. Musím u jít.}
+{172}{}{Ó ano. první Obèanka se v takovıch vìcech málokdy mılí. I pøesto mi bude po tomto místì smutno. Slyšel jsem, e na mne èeká místo v evidenèní kanceláøi.}
+{173}{}{Och. Není moc pøíjemné slyšet, e všechny mé knihy jsou elektronicky pøepisovány. Ne bych mìl upøenì civìt do monitoru, tak si radìji pøeètu poctivou papírovou knihu.}
+{174}{}{Och. Není moc pøíjemné slyšet, e všechny mé knihy jsou elektronicky pøepisovány. Ne bych mìl upøenì civìt do monitoru, tak si radìji pøeètu poctivou papírovou knihu.}
+{175}{}{Ah. Mám pár jinıch otázek...}
+{176}{}{To je mi líto. Musím u jít.}
+{177}{}{Vycítil jsem to správnì! Nemám nic pro elektronickému formátu, ale je zde jistá... hmatatelnost... v sevøení knihy tvımi dlanìmi a obracení stránek jednu za druhou. Hmmm. Však víš...}
+{178}{}{Ano?}
+{179}{}{Ah. Mám pár jinıch otázek...}
+{180}{}{To je mi líto. Musím u jít.}
+{181}{}{Všechny knihy do obchodního centra nepøenesli. Vím e Randalovi nebudou chybìt jestlie je dám nìkomu, kdo je opravdu vyuije... nìkomu jako jsi Ty.}
+{182}{}{Zboòuji tyto knihy . Díky.}
+{183}{}{Dojdu pro nì...}
+{184}{}{Jasnì.}
+{185}{}{Tady jsou. Snad najdeš potìšení pøi jejich èetbì. Jsou to nìkteré z mıch nejoblíbenìjších... trochu techniky, ale pøesto ujdou.}
+{186}{}{Díky. Myslíš, e se mùu zeptat na pár dalších otázek?}
+{187}{}{Supr. Jdu na to.}
+{188}{}{Knihy byly pøepsány do jednoho z knihovnickıch poèítaèù ve tøetím podlaí našeho Vaultu. Nemohu si vzpomenout které...myslím e to není ádná z tìch co jsou zapsány v centrálním poèítaèi.}
+{189}{}{Proè se vše zaèíná pøepisovat?}
+{190}{}{Jak se mùu dostat dovnitø Vaultu?}
+{191}{}{To vidím. Myslíš, e se mùu zeptat na pár dalších otázek?}
+{192}{}{Moná bude lepší, kdy se pùjdu podívat jestli ji najdu .}
+{193}{}{! Vıbornì! Bravo!}

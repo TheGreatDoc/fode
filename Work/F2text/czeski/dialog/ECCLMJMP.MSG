@@ -1,0 +1,7 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš zlodìje pùdy.}
+{101}{}{Byli jsme tady první.}
+{102}{}{Bìž si ukrást jinou pùdu.}
+{103}{}{Další záøez na mé pistoli.}
+{104}{}{Teï už tì nemùžu nechat odejít.}
+{105}{}{Vidìl jsi pøíliš mnoho.}

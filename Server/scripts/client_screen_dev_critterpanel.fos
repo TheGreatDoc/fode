@@ -1,0 +1,675 @@
+//Client GUI DEV Panel
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "client_screen_param.fos"
+
+IGUIScreenOpt @DEVCritterPanelOpt;
+IGUIElementEditBoxOpt @GiveItemEditBoxOpt;
+IGUIElementEditBoxOpt @GiveItemCountEditBoxOpt;
+IGUIElementEditBoxOpt @AddMercEditBoxOpt;
+IGUIElementEditBoxOpt @AddMercCountEditBoxOpt;
+IGUIElementEditBoxOpt @SetParamEditBoxOpt;
+IGUIElementEditBoxOpt @SetParamValueEditBoxOpt;
+IGUIElementEditBoxOpt @MapPidEditBoxOpt;
+IGUIElementTextOpt@ ConfirmNameOptB;
+IGUIElementButtonOpt@ TrueButtonOptB;
+IGUIElementButtonOpt@ CancelButtonOptB;
+uint PointedCritterId;
+
+class VisibleButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_myvisible",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class TotalBanPlayerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ShowConfimationScreenB();
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+class ChatBanPlayerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_ChatBanPlayer",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+class UnBanChatPlayerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_UnBanChatPlayer",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class TeleportToMeButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportToMe",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class TeleportToPlayerBaseButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportToPlayerBase",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class ShowPlayerContainerButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_CheckInv",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class GiveItemButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		GiveItemEditBoxOpt.Text("");
+		GiveItemEditBoxOpt.setFocused(true);
+		GiveItemCountEditBoxOpt.Text("1");
+		GiveItemCountEditBoxOpt.setFocused(false);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_GIVE_ITEM,0,0,0);
+	}
+}
+
+class KnockoutButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Knockout",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class KillButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Kill",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class RespawnButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Respawn",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class HealButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_Heal",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class DeleteNpcButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_DeleteNpc",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+	}
+}
+
+class AddMercButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		AddMercEditBoxOpt.Text("");
+		AddMercEditBoxOpt.setFocused(true);
+		AddMercCountEditBoxOpt.Text("1");
+		AddMercCountEditBoxOpt.setFocused(false);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_ADD_MERC,0,0,0);
+	}
+}
+
+class SetMainFactionButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_SET_MAIN_FACTION,0,0,0);
+	}
+}
+
+class SetParamButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		SetParamEditBoxOpt.Text("");
+		SetParamEditBoxOpt.setFocused(true);
+		SetParamValueEditBoxOpt.Text("");
+		SetParamValueEditBoxOpt.setFocused(false);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_SET_PARAM,0,0,0);
+	}
+}
+
+class InfoParamButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		DisplayParamInfo(PointedCritterId);
+	}
+}
+
+class TeleportToMapButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		MapPidEditBoxOpt.setFocused(true);
+		MapPidEditBoxOpt.Text("");
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);
+		ShowScreen(CLIENT_SCREEN_DEV_TELEPORT_TO_MAP,0,0,0);
+	}
+}
+
+class ClearItemsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_ClearItems",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,0,0,0);		
+	}
+}
+
+class GiveItemButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=GiveItemEditBoxOpt.getText();
+		int pid=0;
+		StrToInt(str,pid);
+		string @str2=GiveItemCountEditBoxOpt.getText();
+		int count=0;
+		StrToInt(str2,count);
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_GiveItem",PointedCritterId,pid,count,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_GIVE_ITEM,0,0,0);
+	}
+}
+
+class AddMercButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=AddMercEditBoxOpt.getText();
+		int pid=0;
+		if(str=="u") pid=5101;
+		else if(str=="n") pid=5001;
+		else StrToInt(str,pid);
+		string @str2=AddMercCountEditBoxOpt.getText();
+		int count=0;
+		StrToInt(str2,count);
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_AddMerc",PointedCritterId,pid,count,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_ADD_MERC,0,0,0);
+	}
+}
+
+class SetMainFactionButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SetMainFaction",PointedCritterId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_SET_MAIN_FACTION,0,0,0);
+	}
+}
+
+class SetMainFactionButtonClass3 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SetMainFaction",PointedCritterId,1,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_SET_MAIN_FACTION,0,0,0);
+	}
+}
+
+class SetMainFactionButtonClass4 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SetMainFaction",PointedCritterId,2,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_SET_MAIN_FACTION,0,0,0);
+	}
+}
+
+class SetParamButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=SetParamEditBoxOpt.getText();
+		int pid=0;
+		StrToInt(str,pid);
+		string @str2=SetParamValueEditBoxOpt.getText();
+		int value=0;
+		StrToInt(str2,value);
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_SetParam",PointedCritterId,pid,value,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_SET_PARAM,0,0,0);
+	}
+}
+
+class TeleportToMapButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=MapPidEditBoxOpt.getText();
+		int pid=0;
+		StrToInt(str,pid);
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TeleportToMap",PointedCritterId,pid,0,null,null);
+		HideScreen(CLIENT_SCREEN_DEV_GIVE_ITEM,0,0,0);
+	}
+}
+
+class TrueButtonClassB : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("dev_server_scripts@unsafe_TotalBanPlayer",PointedCritterId,0,0,null,null);
+		ConfirmNameOptB.setVisible(false);
+		TrueButtonOptB.Hide();
+		CancelButtonOptB.Hide();
+	}
+}
+
+class CancelButtonClassB : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		ConfirmNameOptB.setVisible(false);
+		TrueButtonOptB.Hide();
+		CancelButtonOptB.Hide();
+	}
+}
+
+void ShowConfimationScreenB()
+{
+			ConfirmNameOptB.setText("Do You want totaly ban this player? Are you sure?");
+			ConfirmNameOptB.setVisible(true);
+			TrueButtonOptB.Show();
+			CancelButtonOptB.Show();
+}
+
+void InitDEVCritterPanel()
+{
+	@DEVCritterPanelOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_CRITTERPANEL,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_CRITTERPANEL,"DEV Panel\nCritter", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	TeleportToMeButtonClass TeleportToMeButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Tp. to me", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportToMeButton);
+	
+	GiveItemButtonClass GiveItemButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Give item", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(GiveItemButton);
+	
+	KnockoutButtonClass KnockoutButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,55)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Knockout", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(KnockoutButton);
+	
+	KillButtonClass KillButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,70)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Kill", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(KillButton);
+	
+	RespawnButtonClass RespawnButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,85)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Respawn", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(RespawnButton);
+	
+	HealButtonClass HealButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,100)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Heal", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(HealButton);
+	
+	DeleteNpcButtonClass DeleteNpcButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,115)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Delete Npc", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(DeleteNpcButton);
+	
+	AddMercButtonClass AddMercButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,130)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Add merc", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(AddMercButton);
+	
+	SetMainFactionButtonClass SetMainFactionButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,145)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Main faction", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(SetMainFactionButton);
+	
+	SetParamButtonClass SetParamButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,160)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Set param", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(SetParamButton);
+	
+	InfoParamButtonClass InfoParamButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,175)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("View param", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(InfoParamButton);
+		
+	TeleportToMapButtonClass TeleportToMapButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,190)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Tp. to map", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportToMapButton);
+
+	ClearItemsButtonClass ClearItemsButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 0,205)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Clear Item", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ClearItemsButton);
+		
+	ChatBanPlayerButtonClass ChatBanPlayerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Chat ban", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ChatBanPlayerButton);
+		
+	UnBanChatPlayerButtonClass UnBanChatPlayerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,40)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Unban player", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(UnBanChatPlayerButton);
+		
+	TotalBanPlayerButtonClass TotalBanPlayerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,55)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Total ban", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TotalBanPlayerButton);
+	
+	VisibleButtonClass VisibleButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,70)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Visible on/off", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(VisibleButton);
+		
+	TeleportToPlayerBaseButtonClass TeleportToPlayerBaseButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,85)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Tp. to player base", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(TeleportToPlayerBaseButton);
+		
+	ShowPlayerContainerButtonClass ShowPlayerContainerButton;
+	GUI_AddButton(CLIENT_SCREEN_DEV_CRITTERPANEL, 120,100)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(120,10)
+		.Text("Show container", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(ShowPlayerContainerButton);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_GIVE_ITEM,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_GIVE_ITEM,"Item PID:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@GiveItemEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_GIVE_ITEM,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_GIVE_ITEM,"Count:", 0, 36)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@GiveItemCountEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_GIVE_ITEM,30,46)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GiveItemButtonClass2 GiveItemButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_GIVE_ITEM, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("GIVE", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(GiveItemButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_ADD_MERC,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_ADD_MERC,"Merc Critter PID:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@AddMercEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_ADD_MERC,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_ADD_MERC,"Count:", 0, 36)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@AddMercCountEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_ADD_MERC,30,46)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	AddMercButtonClass2 AddMercButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_ADD_MERC, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("ADD", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(AddMercButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_SET_MAIN_FACTION,"big_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	SetMainFactionButtonClass2 SetMainFactionButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SET_MAIN_FACTION, 81,21)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("NONE", FONT_FAT, COLOR_WHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SetMainFactionButton2);
+	
+	SetMainFactionButtonClass3 SetMainFactionButton3;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SET_MAIN_FACTION, 81,66)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("REF", FONT_FAT, COLOR_LRED2)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SetMainFactionButton3);
+	
+	SetMainFactionButtonClass4 SetMainFactionButton4;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SET_MAIN_FACTION, 81,111)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("NEC", FONT_FAT, COLOR_LBLUE2)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SetMainFactionButton4);
+		
+		GUI_CreateScreen(CLIENT_SCREEN_DEV_SET_PARAM,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SET_PARAM,"Param:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SetParamEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SET_PARAM,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_SET_PARAM,"Value:", 0, 36)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@SetParamValueEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_SET_PARAM,30,46)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	SetParamButtonClass2 SetParamButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_SET_PARAM, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("SET", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(SetParamButton2);
+		
+	@ConfirmNameOptB=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"", 0,-30)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(505,10)
+	  .Visible(false);
+	
+	TrueButtonClassB TrueButtonB;
+	@TrueButtonOptB=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, 0,-20)
+		.Text("OK", FONT_FAT, COLOR_GREEN,COLOR_LGREEN,0)
+		.ClickableZone(37,19)
+		.CallbackMouseClick(TrueButtonB);
+	TrueButtonOptB.Hide();
+	
+	CancelButtonClassB CancelButtonB;
+	@CancelButtonOptB=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, 50,-20)
+		.Text("NO", FONT_FAT, COLOR_RED,COLOR_LRED,0)
+		.ClickableZone(58,19)
+		.CallbackMouseClick(CancelButtonB);
+	CancelButtonOptB.Hide();
+		
+		
+	GUI_CreateScreen(CLIENT_SCREEN_DEV_TELEPORT_TO_MAP,"small_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	GUI_AddText(CLIENT_SCREEN_DEV_TELEPORT_TO_MAP,"Map PID:", 0, 10)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	@MapPidEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_DEV_TELEPORT_TO_MAP,30,20)
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,14)
+		.NumericMode(true)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	TeleportToMapButtonClass2 TeleportToMapButton2;
+	GUI_AddButton(CLIENT_SCREEN_DEV_TELEPORT_TO_MAP, 80,63)
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text("TELEPORT", FONT_FAT, COLOR_SAND)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(TeleportToMapButton2);
+}

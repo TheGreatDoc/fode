@@ -1,0 +1,106 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p quest_the_little_tom_progress_guard = 0 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+0 2030 @
+3 3000 None 0 #
+5 3010 #
+6 3020 @
+4 4000 None 0 #
+5 4010 #
+6 4020 @
+5 5000 None 0 #
+8 5010 R _script quest_server_scripts@the_little_tom_1_to_1 0  R _var p quest_the_little_tom_progress_guard + 1 @
+6 6000 None 0 #
+65507 6010 R _script quest_server_scripts@the_little_tom_1_to_1 0  #
+7 6020 #
+8 6030 R _script quest_server_scripts@the_little_tom_1_to_1 0  R _var p quest_the_little_tom_progress_guard + 1 @
+7 7000 None 0 #
+8 7010 R _script quest_server_scripts@the_little_tom_1_to_1 0  R _var p quest_the_little_tom_progress_guard + 1 @
+8 8000 None 0 #
+0 8010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jumping to dialog}
+{2000}{}{Hello, what can we do for you?}
+{2010}{}{I'm looking for a little child. May you've seen it?}
+{2020}{}{Who are you?}
+{2030}{}{Hmm, nothing, bye.}
+{3000}{}{Actually yes. A few weeks ago we've rescued a boy. What about him?}
+{3010}{}{Rescued? How it comes?}
+{3020}{}{You liar! I know you've kidnapped him.}
+{4000}{}{We are a small group of people who want to build up our lifes again.}
+{4010}{}{Build up your lifes again? How it comes?}
+{4020}{}{You are a gang of raiders, admit already!}
+{5000}{}{You see, the leader of our group had a family, but one day the woman took his son and left. She hasn't spoke with him, just went out and never came back. Since months we tried to find the woman and his son, and a few weeks ago we've finally managed to bring him back in safety.}
+{5010}{}{This sounds incredible. I need to talk to your leader.}
+{6000}{}{We? Never. We never harm anyone or did bad things. We're peacemakers.}
+{6010}{}{Tell that my weapon.}
+{6020}{}{Peacemakers? Tell me more about that.}
+{6030}{}{I need to talk to your leader.}
+{7000}{}{Well, you see, we're all people who got a hurting past. First we just were a couple of friends, meeting sometimes with a beer and talk about our problems. Then we've decided to make a gang of peacemakers, and we've voted who shall be our leader. It hit Matt, and he decided to move out to find his son. Now we did, and we like this place, so we build up our camp here.}
+{7010}{}{Wow, I am happy for you. But I need to talk to Matt. Where is he?}
+{8000}{}{I've seen him in the house, calculating our food storage.}
+{8010}{}{Thanks.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jumping to dialog}
+{2000}{}{Witaj, co mogę dla ciebie zrobić?}
+{2010}{}{Szukam małego dzieciaka. Widziałeś go?}
+{2020}{}{Kim jesteś?}
+{2030}{}{Hmm, nieważne. Do widzenia.}
+{3000}{}{Właściwie tak. Kilka tygodni temu pomagałem mu.}
+{3010}{}{"Pomagałem"? Jak to się stało?}
+{3020}{}{Kłamiesz! Porwałeś go.}
+{4000}{}{Jesteśmy małą grupą ludzi próbujących ułożyc swoje życie od nowa.}
+{4010}{}{Próbujących ułożyc swoje życie od nowa? Jak?}
+{4020}{}{Jesteście bandytami!}
+{5000}{}{Przywódca naszej grupy miał rodzinę. Pewnego dnia jego żona zniknęła. Nie pokłóciła się z nim, po prostu wyszła z domu i nigdy nie wróciła. Od miesięcy próbowaliśmy ja znaleźć, wreszcie się udało.}
+{5010}{}{To brzmi strasznie. Powinienem z nim pogadać.}
+{6000}{}{My? Nigdy nikogo nie skrzywdziliśmy. Staramy się wprowadzić pokój.}
+{6010}{}{Powiedzmy, że to moja broń.}
+{6020}{}{Wprowadzić pokój? Opowiedz mi więcej.}
+{6030}{}{Muszę pogadać z waszym przywódcą.}
+{7000}{}{Zobacz, jesteśmy ludźmi, który zostali skrzywdzeni. Najpierw byliśmy paczką przyjaciół. Potem postanowiliśmy stworzyć gang czyniący dobro, głosując kto ma być liderem. Został nim Matt, który postanowił odnaleźć syna. Jesteśmy jak to miejsce, więc postanowiliśmy rozbić tu obóz.}
+{7010}{}{Interesujące. Gdzie mogę znaleźć Matt'a?}
+{8000}{}{Ostatnio był w spiżarni, liczył jedzenie.}
+{8010}{}{Dzięki.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{jumping to dialog}
+{2000}{}{Hello, what can we do for you?}
+{2010}{}{I'm looking for a little child. May you've seen it?}
+{2020}{}{Who are you?}
+{2030}{}{Hmm, nothing, bye.}
+{3000}{}{Actually yes. A few weeks ago we've rescued a boy. What about him?}
+{3010}{}{Rescued? How it comes?}
+{3020}{}{You liar! I know you've kidnapped him.}
+{4000}{}{We are a small group of people who want to build up our lifes again.}
+{4010}{}{Build up your lifes again? How it comes?}
+{4020}{}{You are a gang of raiders, admit already!}
+{5000}{}{You see, the leader of our group had a family, but one day the woman took his son and left. She hasn't spoke with him, just went out and never came back. Since months we tried to find the woman and his son, and a few weeks ago we've finally managed to bring him back in safety.}
+{5010}{}{This sounds incredible. I need to talk to your leader.}
+{6000}{}{We? Never. We never harm anyone or did bad things. We're peacemakers.}
+{6010}{}{Tell that my gun.}
+{6020}{}{Peacemakers? Tell me more about that.}
+{6030}{}{I need to talk to your leader.}
+{7000}{}{Well, you see, we're all people who got a hurting past. First we just were a couple of friends, meeting sometimes with a beer and talk about our problems. Then we've decided to make a gang of peacemakers, and we've voted who shall be our leader. It hit Matt, and he decided to move out to find his son. Now we did, and we like this place, so we build up our camp here.}
+{7010}{}{Wow, I am happy for you. But I need to talk to Matt. Where is he?}
+{8000}{}{I've seen him in the house, calculating our food storage.}
+{8010}{}{Thanks.}
+

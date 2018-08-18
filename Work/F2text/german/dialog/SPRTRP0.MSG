@@ -1,0 +1,18 @@
+{100}{}{Du siehst einen hochgestellten Teller, der vermutlich zu einer Falle
+ gehört.}
+
+# NPC name prepends this line
+{101}{}{ sieht einen hochgestellte Teller, der vermutlich zu einer Falle
+ gehört.}
+
+{102}{}{Du siehst einen hochgestellten Teller.}
+
+# NPC name prepends this line
+{103}{}{ sieht einen hochgestellten Teller.}
+
+{104}{}{Du löst die Falle aus und entgehst ganz knapp dem aus der Wand kommenden Geschoß.}
+
+# NPC name prepends this line
+{105}{}{ löst die Falle aus und entgeht ganz knapp dem aus der Wand kommenden Geschoß.}
+
+{106}{}{Du siehst einen hochgestellten Teller, der nicht gefährlich aussieht.}

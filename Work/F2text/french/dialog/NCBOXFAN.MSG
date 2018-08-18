@@ -1,0 +1,52 @@
+# quick look
+{100}{}{Tu vois un fanatique de boxe.}
+
+# examine
+{150}{}{Tu vois un homme, il a l'air fou. Il beugle comme un veau.}
+{151}{}{Tu vois un fanatique de boxe. Il est assoiffé de sang.}
+{152}{}{Tu vois une femme, elle a l'air folle. Elle beugle comme une vache.}
+{153}{}{Tu vois une fanatique de boxe. Elle est assoiffée de sang.}
+
+# 1. FLOAT DIALOGUES [FAN=MALE, PC NOT A PRIZEFIGHTER]
+{201}{}{Ouuuaaaaaiiiiiis !}
+{202}{}{A mort !!}
+{1202}{}{ !}
+
+# 2. FLOAT DIALOGUES [FAN=MALE, PC = FEMALE OR MALE PRIZEFIGHTER]
+{256}{}{T'es le top du top, }
+{1256}{}{ ! File-leur la pâtée !}
+{257}{}{Tue-le !}
+{1257}{}{ !}
+
+# 3. FLOAT DIALOGUES [FAN=FEMALE, PC = PRIZEFIGHTER]
+{287}{}{Oh, mon dieu !}
+{1287}{}{ ! Signe-moi un autographe !}
+{288}{}{Frappe-moi ! Frappe-moi ! Je veux pouvoir dire à mes enfants que tu m'as fait mal !}
+{289}{}{T'es le top du top, }
+{1289}{}{ ! Ecrase-les !}
+{290}{}{Tue-le !}
+{1290}{}{ !}
+
+# 4. CLICK DIALOGUES [FAN=FEMALE OR MALE, PC NOT A PRIZEFIGHTER]
+{324}{}{ est le plus grand champion de boxe que je connaisse.}
+
+# 5. CLICK DIALOGUES [FAN=MALE, PC = PRIZEFIGHTER]
+{351}{}{Je garde un peu de ta sueur dans un pot à la maison.}
+{352}{}{Oh la la !}
+{1352}{}{ ! Signe-moi un autographe !}
+{353}{}{Frappe-moi ! Frappe-moi ! Je veux pouvoir dire à mes enfants que tu m'as fait mal !}
+{354}{}{T'es hyper top, }
+{1354}{}{ ! Donne-leur du spectacle !}
+{355}{}{T'es le top du top,}
+{1355}{}{ !}
+
+# 6. CLICK DIALOGUES [FAN=FEMALE, PC = PRIZEFIGHTER]
+{385}{}{Oh la la !}
+{1385}{}{ ! Signe-moi un autographe !}
+{386}{}{Frappe-moi ! Frappe-moi ! Je veux pouvoir dire à mes enfants que tu m'as fait mal !}
+{387}{}{T'es le top du top, }
+{1387}{}{ ! Montre leur ce que tu peux faire !}
+{388}{}{Tue-le !}
+{1388}{}{ !}
+{389}{}{T'es imbattable,}
+{1389}{}{ !}

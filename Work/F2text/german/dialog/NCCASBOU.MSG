@@ -1,0 +1,92 @@
+# QUICK LOOK
+{100}{}{Du siehst einen Türsteher des Kasinos.}
+
+# LOOK
+{150}{}{Du siehst einen Türsteher des Kasinos. T-Ray hat sich bei diesem Modell wirklich selbst übertroffen.}
+{151}{}{Du siehst einen Türsteher des Kasinos. Er sieht groß aus. Und wütend.}
+{152}{}{Du siehst einen Türsteher des Kasinos. Er sieht dich mißtrauisch an.}
+{153}{}{Du siehst einen Türsteher des Kasinos. Du dachtest immer, daß nur Mutantenmodelle so groß werden können.}
+
+# 1. FLOAT DIALOGUE: POWER ARMOR
+{200}{}{Äh...du mußt diese Rüstung abnehmen...ach, eigentlich - was soll's.}
+
+# 2. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO, SNEAK
+{206}{}{Äh, bist du hier undercover, Mister?}
+
+# 3. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO, SNEAK
+{211}{}{Äh, bist du hier undercover, Lady?}
+
+# 4. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO, NIGHT
+{216}{}{'N Abend, Mister.}
+
+# 5. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO, NIGHT
+{221}{}{'N Abend, Lady.}
+
+# 6. FLOAT DIALOGUE: MALE, MADE MAN, SAME CASINO
+{225}{}{Guten Tag, Mister.}
+
+# 7. FLOAT DIALOGUE: FEMALE, MADE MAN, SAME CASINO
+{230}{}{Guten Tag, Lady.}
+
+# 8. FLOAT DIALOGUE: MALE, MADE MAN, NOT SAME CASINO
+{236}{}{Du solltest besser gehen. Jetzt.}
+
+# 9. FLOAT DIALOGUE: FEMALE, MADE MAN, NOT SAME CASINO
+{241}{}{Du solltest besser gehen. Jetzt.}
+
+# 10. FLOAT DIALOGUE: MALE, PRIZEFIGHTER/PORN STAR (ARMED)
+{245}{}{Es tut mir leid, aber du mußt diese Waffe sichern.}
+
+# 11. FLOAT DIALOGUE: FEMALE, PRIZEFIGHTER (ARMED)
+{250}{}{Es tut mir leid, aber du mußt diese Waffe sichern.}
+
+# 12. FLOAT DIALOGUE: PORN STAR, FEMALE (ARMED)
+{255}{}{Schätzchen, es tut mir leid, aber du darfst im Kasino keine Waffen tragen. Hä-hä...du
+ bist auch so schon tödlich genug.}
+
+# 13. FLOAT DIALOGUE: PORN STAR, FEMALE (SNEAK)
+{260}{}{Schätzchen, mit so 'nem Körper kannst du dich nirgendwo vorbeischleichen.}
+
+# 14. FLOAT DIALOGUE: MALE, NO REP (ARMED)
+{265}{}{Hey, Sippentrottel, du solltest diese Waffe besser JETZT GLEICH sichern.}
+
+# 15. FLOAT DIALOGUE: MALE, NO REP (SNEAK)
+{270}{}{Hey, Sippentrottel, du solltest besser JETZT GLEICH aufhören, hier rumzuschleichen.}
+
+# 16. MYRON, MORDINO
+{275}{}{[Zu Myron] Hey, hey...Myron! Hab dich ja lange nicht außerhalb des Labors gesehen.}
+
+# 17. MARCUS
+{282}{}{Dieser Mutantenspinner darf hier nicht rein.}
+
+# 18. ROBOBRAIN
+{287}{}{Keine Droiden. Die müssen draußen warten.}
+
+# 19. CLICK DIALOGUES: MADE MAN, SAME CASINO
+{290}{}{Willkommen im Kasino, Mister.}
+{291}{}{Keine Probleme heute, Lady.}
+
+# 21. CLICK DIALOGUE: MALE, PRIZEFIGHTER/PORN STAR
+{310}{}{Willkommen im Kasino, Mister.}
+
+# 22. CLICK DIALOGUE: FEMALE, PRIZEFIGHTER
+{315}{}{Willkommen im Kasino, Lady.}
+
+# 24. CLICK DIALOGUE: FEMALE, PORN STAR
+{322}{}{Du siehst umwerfend aus, Süße.}
+
+# 25. CLICK DIALOGUE: MALE, NO REP
+{330}{}{Das Kasino is' drin. Sprich nicht mit mir.}
+
+# 26. CLICK DIALOGUE: FEMALE, NO REP (CUTE/UGLY)
+{337}{}{Ich such jetzt gerade keinen blöden Eingeborenen. Pack dich.}
+
+# 28. FLOAT DIALOGUE: FLAG: ENCLAVE DESTROYED IS TRUE
+{345}{}{Soll mich ja eigentlich im Dienst nich' unterhalten, aber bin froh, daß du der Enklave
+ eins übergezogen hast.}
+
+# 29. CLICK DIALOGUE: FLAG: ENCLAVE DESTROYED IS TRUE
+{350}{}{Du hast ja wirklich Mut, daß du's der Enklave so gezeigt hast.}
+
+# 30. FLOAT/CLICK DIALOGUE: LENNY
+{360}{}{Wenn dieser Ghul hier reinkommt, stirbt er zweimal.}

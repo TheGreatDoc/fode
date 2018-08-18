@@ -1,0 +1,229 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš malého, obtloustlého mue s tmavım plnovousem.}
+{101}{}{Vidíš Nebezpeèného Dana McGrewa, majitele dolu Morningstar.}
+{102}{}{Vidíš svalnatého mue s jizvou na oblièeji. Vypadá houevnatì a sebejistì.}
+{103}{}{Kdybys mìl mozek, tak radši zhebneš dobrovolnì.}
+{104}{}{Krucinál, nikdy jsem nevìdìl, e evoluce mùe jít pozpátku.}
+{105}{}{Mìl sis koupit novı zuby, tyhle dlouho mít nebudeš.}
+{106}{}{Nemám èas na primitivy.}
+{107}{}{Jste jenom pár klaunù, co utekli z cirkusu.}
+{108}{}{Ahoj. Jsem Nebezpeènı Dan McGrew a vlastním dùl Morningstar. Co pro tebe mùu udìlat?}
+{109}{}{Co ode mì potøebuješ?}
+{110}{}{Co se tady tìí?}
+{111}{}{Neslyšel jsi náhodou o vìci zvané Garden of Eden Creation Kit?}
+{112}{}{Proè ti øíkají *Nebezpeènı* Dan McGrew?}
+{113}{}{Co se dìje tady ve mìstì?}
+{114}{}{Jenom procházím. Sbohem.}
+{115}{}{Tìíme zlato. Kadı ho chce. Posíláme ho do Vault City, New Reno a NCR. Dalo by se øíci,
+ e Redding má dost zlata pro kadého - to nám zaruèuje samostatnost.}
+{116}{}{To rád slyším. Povìz mi o nìèem jiném.}
+{117}{}{Já si myslím, e nìkdo by se o Redding mìl starat.}
+{118}{}{Díky za informace. Sbohem.}
+{119}{}{Ty myslíš e by nikdo nechtìl? Omyl, kadı by chtìl mít Redding v kapse. A já si myslím, e u se to brzy nìkomu
+ podaøí. My mùeme udìlat pouze jedinou vìc - zvolit, kdo to bude.}
+{120}{}{Co tím myslíš?}
+{121}{}{To dává rozum. Take hodnì štìstí a sbohem.}
+{122}{}{Tím myslím, e u nás nìkdo brzo bude mít pod palcem. My si akorát musíme vybrat ten nejlehèí palec.}
+{123}{}{To je pochopitelné.}
+{124}{}{Hodnì štìstí pøi chytání palcù. Sbohem.}
+{125}{}{To víš, e je. Pokud se ale nespojíme s nìjakou z rodin z New Rena, u teï mùeš dát Reddingu pusu na dobrou noc.
+ Takovı musí bıt ten Redding, ve kterém si pøeju ít.}
+{126}{}{Teï ti trošku nerozumím.}
+{127}{}{Rozumím. Sbohem.}
+{128}{}{Tak si vem tøeba New California Republic. Pokud se dostane k moci zrovna NCR, octne se tak Redding pod pìknì tvrdım
+ palcem. NCR není slavné zrovna velikou osobní svobodou. Redding by tak byl pouze dalším bezvıznamnım místem na mapì NCR.}
+{129}{}{Nooo, tak co tøeba Vault City?}
+{130}{}{Zajímavé. Sbohem.}
+{131}{}{Vault City? (smìje se) Tihle cvoci by z nás nadìlali leda tak pokusné králíky. Pro nì kdokoliv kdo není tím jejich
+ Obèanem neznamená víc ne pouhá krysa. Trávit zbytek ivota klanìním a mytím bot Obèanùm by se mi ani trošku nelíbilo.}
+{132}{}{V èem se to liší od New Rena?}
+{133}{}{Díky, e jsi mi to tak pìknì vysvìtlil. Sbohem.}
+{134}{}{New Reno je dost silné na to, aby ochránilo Redding pøed Vault City i NCR. New Reno je ovládáno odlišnımi gangsterskımi rodinami. Ty jsou navzájem hodnì znesváøené, co by pro Redding znamenalo víceménì samostatnost. V New
+ Renu by se toti nestarali o to, co se tu dìje, ale pouze o naše zlato..}
+{135}{}{To taky nezní zrovna skvìle.}
+{136}{}{U musím jít. Sbohem.}
+{137}{}{Tohle není dokonalı svìt. Nìkdy musíš pøijmout i špatnou nabídku, protoe ti nic jiného nezbıvá. To je zrovna tento pøípad.}
+{138}{}{A co si myslíš, e se stane?}
+{139}{}{To nevypadá na dobrou budoucnost Reddingu. Sbohem.}
+{140}{}{Co se stane, to si neumím pøedstavit. Sbohem, Dane.}
+{141}{}{Nevím to jistì, ale události se zaèínají vyjasòovat. Znáš to - podáš prst a vezmou si celou ruku. Já se akorát
+ snaím zajistit, aby se to podaøilo právì New Renu. Jak u jsem øekl, je to jediná šance Reddingu.}
+{142}{}{Jak chceš pomoci New Renu k pøevzetí Reddingu?}
+{143}{}{Tak u to na svìtì chodí. Sbohem, Dane.}
+{144}{}{Nejlepší vìc bude zaèít poøádnì prosperovat a øíci horníkùm, kdo jim za to zlato platí. Navíc fakt, e veškeré
+ pochoutky mıch muù pocházejí zrovna z New Rena, mu na popularitì rozhodnì neubere.}
+{145}{}{Pochoutky?}
+{146}{}{Udìlej to jak chceš. Sbohem, Dane.}
+{147}{}{Chlast, drogy a další ty chemické vymoenosti. Vìtšina z nich se dováí právì z New Rena. Tyhle vìci jsou ty jediné,
+ kvùli kterım horníci pracují. Radši si ani nepøej vìdìt, co by se stalo, kdyby dodávka nepøišla.}
+{148}{}{Jak jsou na tom místní zásoby Jetu?}
+{149}{}{Hmm, zeptám se tì ještì na pár vìcí.}
+{150}{}{Díky za informace, Dane. Musím u ale jít. Sbohem.}
+{151}{}{Momentálnì není Jetu tolik, aby to uspokojilo všechny. Já ale doufám, e pøíští karavana u to dá do poøádku.}
+{152}{}{Zajímavé. Povìz mi ještì o nìèem jiném.}
+{153}{}{U asi pùjdu. Sbohem, Dane.}
+{154}{}{Poslední dobou tu na Jetu jedou všichni. Vypadá to, e se ho horníci nemùou nabait. Ále co, chlapi jsou šastní a tak mi to nevadí. Pøed ordinací doktora Johnsona obvykle tak jeden nebo dva stojí. Ale kdyby jich tam mìlo stát víc, asi bych se zaèal bát.}
+{155}{}{Kdo je doktor Johnson?}
+{156}{}{Zajímavé. Jestli dovolíš, zeptám se tì ještì na pár vìcí.}
+{157}{}{No, u asi pùjdu. Sbohem, Dane.}
+{158}{}{Ve mìstì je a moc Jetu. Topíme se v nìm. Nikdo nechce pracovat, ale všichni chtìjí akorát stoupat do vıše.
+ Nemùu tìit, kdy polovina mejch horníkù *létá* na Jetu. Zatracenej doktor Johnson.}
+{159}{}{Kdo je doktor Johnson?}
+{160}{}{To vypadá na velkı problém. Povìz mi radši o nìèem jiném.}
+{161}{}{U asi pùjdu. Sbohem, Dane.}
+{162}{}{Vìtšina horníkù závislıch na Jetu nedávno s Jetem naprosto skoncovala. Poslední dávka, co jim doktor Johnson prodal, musela bıt asi hodnì špatná.}
+{163}{}{Kdo je doktor Johnson?}
+{164}{}{Zajímavé. Povìz mi ještì o nìèem, Dane.}
+{165}{}{U asi zase pùjdu. Sbohem, Dane.}
+{166}{}{Nevím, co se stalo, ale vìtšina horníkù se po poslední dávce pozvracela. A teï nemùou Jet ani cítit. Slyšel jsem, e jim do toho doktor Johnson nìco dal.}
+{167}{}{Kdo je doktor Johnson?}
+{168}{}{Zajímavé. Povìz mi ještì o nìèem.}
+{169}{}{U asi pùjdu. Sbohem, Dane.}
+{170}{}{Protoe jsem nejvìtší, nejtvrdší a nejhrozivìjší hadojed v tìhle konèinách. A jím syrové brahmíny. Jo, to jsem já - Nebezpeènı Dan McGrew.}
+{171}{}{Chápu. Povìz mi o jinıch vìcech, Nebezpeènı Dane.}
+{172}{}{Vypadáš spíš jako pravej opak.}
+{173}{}{To vypadá, e jsi docela dobrej chlapík. Nechci si s tebou nic zaèínat. Sbohem, pane Nebezpeènı.}
+{174}{}{Další tvrïák na obzoru. Tak pojï a uka, co umíš.}
+{175}{}{Dobøe, chtìl jsi to, máš to mít. U nebudeš Nebezpeènı, ale Mrtvı Dan McGrew.}
+{176}{}{To bych mohl. Doufám, e máš dost u sebe penìz na zaplacení všech nábojù co na tebe vyplıtvám.}
+{177}{}{Kdybych chtìl, tak u tady nejsi. Ale nemám èas na zabíjení další krysy.}
+{178}{}{Jo, to jsem si mohl myslet. (pauza) Pøiposránku.}
+{179}{}{Já ti dám pøiposránku... vyøíznu ti slezinu. A potom tì zabiju.}
+{180}{}{Mìl by ses uklidnit. Dám ti na to chvíli èas. Sbohem.}
+{181}{}{Garden of Eden Creation Kit? O tom jsem nic neslyšel. Ale moc rád bych našel svùj Eden v Louinì náruèí.}
+{182}{}{Není Lou náhodou muské jméno?}
+{183}{}{No, povìz mi o nìèem jiném.}
+{184}{}{Pøeju ti hodnì štìstí. Sbohem.}
+{185}{}{Coe? Muské jméno? To je zkrácenina ENSKÉHO jména Lousia. Lou je majitelka Hospody u malamuta tady ve mìstì.
+ A proè tì to vlastnì zajímá?}
+{186}{}{Emm, já jen tak... No nic, povìz mi o nìèem jiném.}
+{187}{}{Jo tak je to. Díky za vysvìtlení. Sbohem, slaïouši}
+{188}{}{Promiò za špatnou otázku. No, u musím jít. Sbohem.}
+{189}{}{No, jedna vìc... Potøeboval bych novı kontrolní èip do mé dùlní mašiny.}
+{190}{}{Kontrolní èip? Co je to?}
+{191}{}{Povìz mi radši o nìèem jiném, Dane.}
+{192}{}{Jo tak. Dám ti vìdìt, jestli nìjakı najdu.}
+{193}{}{Zajímavé e se na toté ptá spousta lidí. No, u nás ve mìstì se dìje hrozná spousta vìcí.}
+{194}{}{Ty by si toho mìl vìdìt strašnou spoustu. Ne snad?}
+{195}{}{Máš na mysli shánìní kontrolního èipu pro dùlní rypadlo?}
+{196}{}{Máš na mysli to, jak nìkdo poøezal kurvu?}
+{197}{}{Myslíš tu barovou rvaèku, kterou jsem vyøídil?}
+{198}{}{Jenom jsem od pøírody zvìdavı. U musím jít, sbohem.}
+{199}{}{Nevím sice, co jsi tím myslel, ale nemám èas, abych to zjišoval. Sbohem.}
+{200}{}{Jo, mám na mysli ten kontrolní èip, kterı si mimochodem prodal majitelce dolu Kokoweef - Marge Lebarge. To byla
+ opravdu chyba. Uškodilo to nejenom mì, ale i celému Reddingu.}
+{201}{}{Co tím myslíš?}
+{202}{}{To je moje vìc, kámo. Povìz mi o nìèem jiném, co se dìje ve mìstì.}
+{203}{}{To urèitì. Sbohem.}
+{204}{}{Poøád nedokáu pochopit, e jsi toho zkurveného Hakeswilla nechat na svobodì. Mım horníkùm se to sice zamlouvá, ale
+ urèitì ne mì.}
+{205}{}{O to se ty vùbec nemáš co starat. To je moje vìc. Radši mi povìz o jinıch vìcech, které se zde staly.}
+{206}{}{Uh, nebyl jsem si jistı, e on byl na vinì. Radši mi povìz o nìèem jiném.}
+{207}{}{Nezajímá mì, co si myslíš. Sbohem.}
+{208}{}{Udìlal jsi správnou vìc, kdy jsi zavøel toho bastarda Hakeswilla do vìzení. Vyhrooval všem mım horníkùm, e
+ kdy to prozradí, tak je zabije. Bude lepší se dívat jak ho šerif legálnì povìsí.}
+{209}{}{No, udìlal jsem to nejlepší, co jsem mohl. Ale teï mi povìz o jinıch vìcech co se, dìjí ve mìstì.}
+{210}{}{Zákon se musí dodrovat. Teï mi ale povìz o nìèem jiném.}
+{211}{}{Dobrı nápad. Jdu za šerifem. Sbohem.}
+{212}{}{Díky, e jsi zabil toho idiota Haheswilla. Moji horníci u zaèínali zuøit.}
+{213}{}{No, udìlal jsem to nejlepší co jsem mohl. Ale teï mi povìz o jinıch vìcech, co se dìjí ve mìstì.}
+{214}{}{Ten bastard byl naivu moc dlouho. Potøeboval zabít a já to udìlal první. Teï mi povìz o jinıch vìcech.}
+{215}{}{Jenom jsem dìlal svou práci. Sbohem.}
+{216}{}{Ty víš, jak se vìci okolo toho èipu mají. Potøebuju ho a vsadím se, e ti o nìj øekla u i Marge Lebarge. 
+Ale vìø mi. Udìláš nejlépe, kdy ho dáš mì.}
+{217}{}{Jakou to pro tebe má cenu?}
+{218}{}{Proè je lepší prodat ho tobì a ne jí?}
+{219}{}{To nech na mì. Já se rozhodnu sám. Povìz mi radši o jinıch vìcech.}
+{220}{}{Ještì jsem ho nenašel. A ho najdu, rozhodnu se sám. Sbohem.}
+{221}{}{Chtìl bych ti podìkovat za prodání kontrolního èipu tomu správnému èlovìku.}
+{222}{}{ádnı problém. Povìz mi o nìèem jiném, co se dìje ve mìstì.}
+{223}{}{Nemáš zaè. Tìch tisíc babek se mi hodilo. Povìz mi ještì o nìèem jiném.}
+{224}{}{ádnı problém. Sbohem.}
+{225}{}{Díky za vyøešení té barové rvaèky, ani bys nìkoho strèil pod zámek. Horníci si obèas chtìjí povyrazit, ale nikoho
+ pøitom neohroují.}
+{226}{}{V tom máš pravdu. Povìz mi o jinıch vìcech, které se dìjí ve mìstì.}
+{227}{}{Nìkdo to musel udìlat. Povìz mi ještì o nìèem jiném.}
+{228}{}{Bylo mi potìšením. Sbohem.}
+{229}{}{Vysvìtli mi, proè si pozavíral moje horníky. Oni si jenom chtìli trochu povyrazit.}
+{230}{}{To moná, ale porvali se. Radši mi povìz o jinıch vìcech, které se dìjí zde ve mìstì.}
+{231}{}{Potøebovali trochu vychladnout. Za pár dní je máš zpátky. Povìz mi ještì o jinıch vìcech.}
+{232}{}{Øekli si o to. Nemìli se rvát. Sbohem.}
+{233}{}{Jsem rád, e jsi pozavíral ti Kokoweefské vıtrníky, kteøí chtìli zmlátit moje hochy. Ti Kokoweeføi opravdu
+ potøebovali trochu vychladnout.}
+{234}{}{Musel jsem je pozavírat. Nemìli se rvát. Zákon se musí dodrovat. Povìz mi ještì o tom, co se dìje ve mìstì.}
+{235}{}{Zaslouili si to. Za pár dní je šerif pustí. Snad je to nìèemu pøiuèí. Teï mi povìz ještì o nìèem.}
+{236}{}{Jenom jsem chránil tvoje horníky pøed ostatními. Sbohem.}
+{237}{}{Proè si zatracenì pozavíral všechny Reddingské horníky? Kdo teï bude ksakru pracovat v mém dole?}
+{238}{}{To si mìli rozmyslet døív, ne se zaèali rvát. Povìz mi ještì o tom, co se dìje ve mìstì.}
+{239}{}{Tentokrát zašli moc daleko. Ve vìzení budou mít èas si to rozmyslet. Povìz mi ještì o jinıch vìcech.}
+{240}{}{Dobrá otázka. Asi budeš muset ve svém dole dìlat sám. Sbohem.}
+{241}{}{Nechápu, jak ti nìkdo mohl svìøit odznak. Pøi barové rvaèce nemusíš pøece nikoho zabíjet.}
+{242}{}{Vìci se mi trošku vymkly kontrole. Povìz mi ještì o nìèem, co se stalo ve mìstì.}
+{243}{}{Pár mrtvol. Komu na tom záleí. Radši mi povìz o nìèem jiném.}
+{244}{}{To ji mìli rozmyslet døív ne si zaèali na mì - na šerifa. Sbohem.}
+{245}{}{Prodáním vodního èipu Marge jsi zajistil Reddingu ponurou budoucnost. Marge podporuje NCR a kdy teï má ten èip,
+ tak bude více tìit a získá více popularity, take bude vìtší šance, e to tu NCR pøevezme. Potom bude mít Redding potíe.}
+{246}{}{A to z jakého dùvodu?}
+{247}{}{Nemám èas na kecy o politice. Sbohem.}
+{248}{}{Kadı by chtìl vlastnit Redding. Nìkteøí lidé se asi rozhodnou radši Redding opustit, ne aby to zaili. Nech mì
+ vysvìtlit ti to podrobnìji.}
+{249}{}{Poslu si.}
+{250}{}{U jsem slyšel dost kecù. Sbohem.}
+{251}{}{Dostaneš 1000 dolarù, kdy mi ten èip dáš.}
+{252}{}{To zní dobøe. Kde ho mùu najít?}
+{253}{}{To zní dobøe. Tady ho máš.}
+{254}{}{Ještì si ten èip chvíli nechám. Sbohem.}
+{255}{}{A nìjakı najdu, tak ti ho pøinesu. Sbohem.}
+{256}{}{Je ve Velkém Wanamingo Dole - západnì od mìsta. Nìkde ve spodní èásti dolu je velkı dùlní stroj. Nemùeš si ho
+ nevšimnout. Èip je uvnitø toho stroje. Staèí kdy tam dojdeš a pøineseš mi ho.}
+{257}{}{Zeptám se tì ještì na pár vìcí, které se dìjí zde ve mìstì.}
+{258}{}{Kdy ten èip tak potøebuješ, tak proè si pro nìj nedojdeš sám?}
+{259}{}{U pro nìj bìím. Zatím sbohem.}
+{260}{}{Mám velké dùlní rypadlo vyrobené ještì pøed válkou, ale je tu jeden problém. Nemám kontrolní èip.}
+{261}{}{Nejradši bych si ještì povídal o tom, co se dìje ve mìstì, ale zeptám se tì na tohle: A co já s tím?}
+{262}{}{To co se stalo s tvım rypadlem není moje vìc. Sbohem.}
+{263}{}{Kontrolní èip mého rypadla vyhoøel a já nemám ádnı jinı. Ale vìdìl bych kde jeden je. Dones mi ho a zaplatím
+ ti 1000$.}
+{264}{}{Kde je?}
+{265}{}{Kdy ten èip tak nutnì potøebuješ, tak proè sis pro nìj u nedošel sám?}
+{266}{}{Jsem moc zaneprázdnìnı, a tak na hledání èipu nemám èas. Sbohem, kámo.}
+{267}{}{Z mnoha dùvodù. Teda spíš z jednoho. Wanamingo dùl je plnı hladovıch Wanamingos.}
+{268}{}{Co to ksakru jsou ty Wannamingles?}
+{269}{}{U chápu. Nechceš aby serali tebe, ale mì. Sbohem.}
+{270}{}{Wanamingos. Nic hrozného. Jsou to jenom ty nejhorší, nejsilnìjší a nejhnusnìjší potvory, jaké jsem kdy vidìl. Mají
+ veliké zuby a jsou asi ètyøi stopy vysocí. Uh, myslel jsem ètrnáct stop. Ale myslím, e ty se nebojíš, nebo snad jo?}
+{271}{}{Já o té práci zapøemıšlím. Sbohem.}
+{272}{}{To nezní zrovna nejlépe. Myslím, e to není práce pro mne. Klepou se mi kolena.}
+{273}{}{Však ty to udìláš. 1000$ není zrovna malá suma, kámo.}
+{274}{}{Povìz mi ještì o nìèem, co se dìje ve mìstì.}
+{275}{}{Budu o tom pøemıšlet. Vdycky rád dostanu zaplaceno.}
+{276}{}{Tak to vypadá, e jsem se spletl, kdy jsem myslel e to zvládneš. Táhni odsud, nehodlám s tebou ztrácet èas.}
+{277}{}{Aa, ano, pane. U jdu, pane.}
+{278}{}{Všichni dìláme chyby. Sbohem.}
+{279}{}{Krucinál. Já bıt tebou tak bych si koupil papíry od toho dolu, vyklidil bych to tam, a potom bych to prodal zpátky
+ starostovi Ascortimu. On je toti majitel toho dolu.}
+{280}{}{Starej se o sebe. Já pro ten èip zajdu.}
+{281}{}{Povìz mi ještì o nìèem, co se dìje zde ve mìstì.}
+{282}{}{Díky za tip. Sbohem.}
+{283}{}{"Bezbolestnı" doktor Johnson je náš místní mastièkáø. Pøedpokládám e o té doktoøinì trošku ví, ale netroufám si
+ odhadnout jak moc dobøe. Najdeš ho v západní èásti centra mìsta. Prodává všechny léky a drogy, které tu máme.}
+{284}{}{To všechno prodává on?}
+{285}{}{Uvidíme se pozdìji, Dane. Sbohem.}
+{286}{}{Samozøejmì. Vìtšinou kdy dostaneme dodávku Jetu, tak je to ve velkém mnoství najednou. Doktor to potom rozlévá
+ do tìch malıch ampulí. Lidé na nìj spoléhají. Snad ještì ani jednou nás nijak nepodvedl.}
+{287}{}{Ah tak. Povìz mi ještì o nìèem jiném.}
+{288}{}{Díky za informace, Dane. Sbohem.}
+{289}{}{Vy ode mnì mùete dostat tak akorát dvì vìci, milej pane. Jacka a hovno, ale Jack u ve mìstì není.
+ A teï mi zmizte z oèí.}
+{290}{}{Vy ode mnì mùete dostat tak akorát dvì vìci, sleèinko. Jacka a hovno, ale Jack u ve mìstì není.
+ A teï mi zmizte z oèí.}
+{291}{}{Ah, pojï dál. Odpus mi. Øekni mi co potøebuješ.}
+{292}{}{Ty ode mne nìco chceš? Pojï si pro nìco.}
+{293}{}{Jdu odsud. A moc rád. Sbohem.}
+{294}{}{Mìl jsi o tom pøemıšlet, ne se ti události vymkly z rukou. Táhni z mojí kanceláøe, kurva.}
+{295}{}{Ó, pan tvrïák.}
+{296}{}{Jdu odsud. Nechci mít ádné potíe. Sbohem.}
+{297}{}{Zatím nikdo tohle neøekl Danovi McGrew a odešel ivı.}
+{298}{}{Tak sleduj mì.}
+{299}{}{Jo, to se vsadím..."Nebezpeènı Dane"}
+{300}{}{Odpus, prosím. Já jsem to tak nemyslel. Jenom jsem si dìlal s-srandu. Sbohem.}

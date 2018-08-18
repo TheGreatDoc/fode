@@ -1,0 +1,3 @@
+#tento soubor pøeložil Miskot...mhoferek@telecom.cz
+{100}{}{Studna potøebuje opravu.}
+{101}{}{Studna je v poøádku.}

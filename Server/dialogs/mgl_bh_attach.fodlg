@@ -1,0 +1,41 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 D _var p mgl_scott_BH = 1 R _var p mgl_scott_BH = 2 R _item p PID_BROKEN_HILLS_GHOUL_BLOOD_SAMPLE + 1 @
+3 3000 None 0 #
+0 3010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to one of ghouls in Broken Hills***}
+{2010}{}{I'm here from MGL. One of scientists is studying effects of FEV on ghouls, and he needs some blood samples. Do you think I could take some of your blood ?***make it require and consume 1 empty hypodermic***}
+{3000}{}{Research you say...hmm, ok go ahead.}
+{3010}{}{Ok, done, thank you.}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to one of ghouls in Broken Hills***}
+{2010}{}{Jestem tu z MGL. Jeden z naukowcow bada efekty FEV na ghulach i potrzebuje probke krwi, czy moglbym pobrac od Ciebie troche krwi ?***make it require and consume 1 empty hypodermic***}
+{3000}{}{Badania powiadasz. hmm, ok pobierz.}
+{3010}{}{Ok, done, thank you.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{***This dialog should be attached to one of ghouls in Broken Hills***}
+{2010}{}{I'm here from MGL. One of scientists is studying effects of FEV on ghouls and he needs some blood samples, do you think i could take some of your blood ?***make it require and consume 1 empty hypodermic***}
+{3000}{}{Research you say. hmm, ok go ahead.}
+{3010}{}{Ok, done, thank you.}

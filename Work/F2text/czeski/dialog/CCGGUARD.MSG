@@ -1,0 +1,69 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš stráž. }
+{101}{}{Vidíš stráž hlídající vchod.}
+{102}{}{Vidíš nìkoho v Energo brnìní nezvyklého vzhledu. Na prsou má znak, který ti nic neøíká.}
+
+{103}{gate1}{Stát! Tohle je federální území - sem je vstup bez pøíslušného povolení zakázán.}
+{104}{}{Uh... fedr..er..ace? Co to je ?}
+{105}{}{Já mít propustku... Kam jí jen dát?}
+{106}{}{Já být nový. Mnì øíct, vy èekat mnì.}
+{107}{}{Aha. Vyvolený se omlouvat. Hned jít pryè.}
+{108}{}{Jo, mám propustku... Tady sem jí nìkde mìl.}
+{109}{}{Jsem nováèek. Øíkali mi, že mì budete oèekávat.}
+{110}{}{No, tak promiòte. Tak jdu teda pryè, no.}
+
+{111}{gate2}{Ty jsi nìjakej Einstein, co?? Seber si svých pìt švestek a už se nevracej. Rozumìl si?}
+{112}{}{Chtít jít dovnitø.}
+{113}{}{Oukej. Už jít.}
+
+{114}{gate3}{Nikdo sem... sakra. (pomalu) Ty potøebovat propustku, aby ty dostat dovnitø. Když ty nemít propustku, ty jít pryè. Když ty nejít pryè, ty dostat pøes držku. Ty rozumìt?}
+{115}{}{A co když já namísto toho tobì rozkopat prdel?}
+{116}{}{Jo. Už jít.}
+
+{117}{gate14}{(dává ruku na zbraò) Neomlouvej se mi! Buï mi musíš ukázat propustku anebo mi øekneš heslo!}
+{118}{}{Vyvolený nemùže najít propustku, Vyvolený si nepamatovat heslo!}
+{119}{}{Ani jedno. Zabít tì.}
+{120}{}{Promiòte, ztratil jsem propustku a vùbec netuším, že bych potøeboval heslo.}
+{121}{}{Anebo si taky mùžu podat tebe a všechny tobì podobný!}
+
+{122}{gate5}{Radím ti dobøe, rychle odsud vypadni a nevracej se bez øádné propustky. Øíkám to dost jasnì?}
+{123}{}{Jasnì, už mizím.}
+
+{124}{gate6a}{Rozumím. Mùžu laskavì slyšet to heslo?}
+{125}{gate6b}{Aha. (dává ruku na zbraò) Všichni nováèci se musí do služby hlásit sami. Radši odsud odejdi i s tìmi svými kumpány. Øíkám to dost jasnì?}
+{126}{}{Ovèí hlava.}
+{127}{}{Ano.}
+
+{128}{gate7a}{Momentík prosím. (po chvíli) Oukej, vypadáš v poøádku. Zahlásíš se výkonnému dùstojníkovi. Projdi vchodem, pak pùjdeš okolo stoky a jsou to první dveøe napravo.}
+{129}{gate7b}{(mumlání) Ty vygumovaný palice jsou èím dál tím pitomìjší.}
+{130}{}{Oukej.}
+
+{131}{gate8a}{Stát! - Hmm. Vidím, že tentokrát jsi sám. Tak rekrute, jaký je to heslo?}
+{132}{gate8b}{Stát! - Zase ty. Koukám, že ta banda je poøád s tebou. (dává ruku na zbraò) Mìli byste odtud vypadnout a nevracet se sem. Øíkám to dost jasnì?}
+{133}{}{Ovèí hlava.}
+{134}{}{Ano.}
+
+{135}{gate9}{Stát! - Zase ty ? Doufám, že tentokrát už máš propustku anebo znáš heslo. No tak, já èekám.}
+{136}{}{No... já nevìdìt. Vrátit se.}
+{137}{}{Srát na tebe. Projít pøes tvoje mrtvé tìlo.}
+{138}{}{Podívej, já tu pitomou propustku ztratil...}
+{139}{}{Táhni k èertu. Pošlu ti pár kulek, parchante! Postøeh!}
+
+{140}{gate10}{Tohle je poslední varování. Doporuèuju ti, co nejrychleji vypadnout a nevracet se sem. Øíkám to dost jasnì?}
+{141}{}{Ok, tak já zase jít...}
+{142}{}{Starými dobrými slovy... srát na tebe!}
+{143}{}{No dobøe, už jdu.}
+{144}{}{Starejma dobrejma slovama... Jdi do prdele!}
+
+{145}{gate11a}{Stát! - Zase ty? Já tì varoval. Poplach! Vetøelec u vchodu! }
+{146}{}{K sakru!}
+
+# Floats
+{147}{}{Vetøelec u vchodu!}
+{148}{}{Hlavní vchod byl napaden!}
+{149}{}{Ke vchodu! Vetøelci u vchodu!}
+
+{200}{}{...parchant jeden...}
+{201}{}{...jo, radši vodsaï zmiz...}
+{202}{}{...buzerant jeden podìlaná...}
+{203}{}{...ano, pane! Zasranej bastard...}

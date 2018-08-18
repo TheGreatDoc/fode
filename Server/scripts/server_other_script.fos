@@ -1,0 +1,65 @@
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_vars.fos"
+#include "_macros.fos"
+
+void unsafe_send_player_stats(Critter& cr, int, int, int, string@, int[]@)
+{	
+	int[] townplayers={
+		GetGlobalVar(GVAR_de_online_players).GetValue(),
+		GetGlobalVar(GVAR_de_moscow_players).GetValue(),
+		GetGlobalVar(GVAR_de_london_players).GetValue(),
+		GetGlobalVar(GVAR_de_district_x_players).GetValue(),
+		GetGlobalVar(GVAR_de_fury_town_players).GetValue(),
+		GetGlobalVar(GVAR_de_old_village_players).GetValue(),
+		GetGlobalVar(GVAR_de_light_town_players).GetValue(),
+		GetGlobalVar(GVAR_de_scrapers_city_players).GetValue(),
+		GetGlobalVar(GVAR_de_bear_line_players).GetValue(),
+		GetGlobalVar(GVAR_de_deatch_mine_players).GetValue()
+	};
+	cr.RunClientScript("client_screen_other@MoscowPlayersMsg",0,0,0,null,townplayers);
+}
+
+//work in main dialog
+void dlg_work_in_main( Critter& player, Critter@ npc)
+{
+	Item@[] items;
+	if(player.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			if ((items[i].GetProtoId()==4060)||(items[i].GetProtoId()==4054)||(items[i].GetProtoId()==4062))
+			{
+			DeleteItem(items[i]);
+			player.StatBase[ST_EXPERIENCE]+=( 30*items[i].GetCount() );
+			player.AddItem(PID_BOTTLE_CAPS,( 10*items[i].GetCount() ));
+			}
+		}
+	}
+}
+
+void ClearItems(Critter& cr)
+{	
+	if(!valid(cr)) return;
+	if(!_CritCanDropItemsOnDead(cr)) return;
+	Item@[] items;
+	cr.GetItems(-1,items);
+	// Disable drop of hidden items and delete gag items (sandbags)
+	for(uint i=0,j=items.length();i<j;i++)
+	{
+		if(FLAG(items[i].Flags,ITEM_GAG))
+		{
+			DeleteItem(items[i]);
+			@items[i]=null;
+		}
+		else if(FLAG(items[i].Flags,ITEM_HIDDEN))
+		{
+			@items[i]=null;
+		}
+		//no drop implants
+		if(items[i].CritSlot==SLOT_SLOT_A) @items[i]=null;
+		else if(items[i].CritSlot==SLOT_SLOT_B) @items[i]=null;
+		else if(items[i].CritSlot==SLOT_SLOT_C) @items[i]=null;
+	}
+	DeleteItems(items);
+}

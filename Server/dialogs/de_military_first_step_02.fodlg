@@ -1,0 +1,59 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p de_quest_first_military_red = 30 #
+4 1020 D _var p de_quest_first_military_red ! 30 R _script dialog@r_SayMessageDelayed 3 1 0 2 @
+2 2000 None 1 #
+3 2010 D _var p de_quest_first_military_red = 30 R _script quest_server_scripts@first_military_step_red_30_to_80 0  R _item p PID_10MM_AP_DE + 30 #
+0 2020 @
+3 3000 None 1 #
+0 3010 @
+4 4000 None 0 &
+
+[engl]
+{100}{}{Soldier}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{start 2}
+{2000}{}{And you want...?}
+{2010}{}{I was sent by a soldier at the entrance, he needs 30 10mm rounds.}
+{2020}{}{Just passing by.}
+{3000}{}{What a jerk, I bet he got wasted and shot some imaginary blues again. Allright, fuck this, not your fault I guess. Take'em and get goin'!}
+{3010}{}{Yes sir!}
+{4000}{}{}
+{100000001}{}{Don't bother me.@@Did you bring him that ammo?@@Man, I don't feel safe with these muties at all.@@Want vodka?@@I'm done with you.}
+
+[pols]
+{100}{}{Zolnierz}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{start 2}
+{2000}{}{Co moge dla Ciebie zrobic przybyszu?}
+{2010}{}{Przyslal, mnie zolnierz przed brama. Mam przynies amunicje.}
+{2020}{}{Tylko przechodze.}
+{3000}{}{Dobrze, prosze. Odmaszerowac!!}
+{3010}{}{Tak jest.}
+{4000}{}{}
+{100000001}{}{Nie rob glupich rzeczy, a wszyscy beda zdrowi.@@Przygladam ci sie.@@Nie przeszkadzaj.@@Bedziesz krasc - zabije w miejscu.@@Sprobuj tylko palcem dotknij kogokolwiek!}
+
+
+[russ]
+{100}{}{Soldier}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{1020}{}{start 2}
+{2000}{}{What can I do for ya' wastelander?}
+{2010}{}{He has sent me a soldier at the gate. I must bring ammo.}
+{2020}{}{Just passing by.}
+{3000}{}{well, March off!}
+{3010}{}{Yes sir.}
+{4000}{}{}
+{100000001}{}{Don't do anything stupid, and everybody will be okay.@@I'm watching you.@@Don't violate the rules.@@You steal - I kill.@@Don't even try to set a finger on anybody!}
+
+

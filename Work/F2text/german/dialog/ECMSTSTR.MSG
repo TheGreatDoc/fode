@@ -1,0 +1,2 @@
+{100}{}{Du siehst einen hilfsbereiten Fremden.}
+{101}{}{Du siehst den mysteriösen Fremden.}

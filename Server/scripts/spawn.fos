@@ -1,0 +1,373 @@
+#include "_teams.fos"
+#include "_defines.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "_maps.fos"
+
+int []SPAWN_ITEM_MAPS=
+{
+	MAP_townstation,
+	MAP_townstation_under,
+	//MAP_lighttown,
+	MAP_oldvillage,
+	//MAP_districtx,
+	//MAP_deathmine,
+	MAP_oldfields,
+	MAP_scrapers,
+	MAP_scrapers_lvl1,
+	MAP_scrapers_lvl2,
+	MAP_scrapers_lvl3,
+	MAP_scrapers_lvl4,
+	MAP_scrapers_lvl5,
+	MAP_scrapers_lvl6,
+	MAP_scrapers_lvl7,
+	MAP_berlincity,
+   MAP_berlinbunker,
+	MAP_berlinflor1,
+   MAP_berlinflor2,
+   MAP_berlinsewers,
+	MAP_moscow,
+	MAP_darkwaters,
+	MAP_furytown,
+	MAP_industrial_center,
+	MAP_industrial_center_under,
+	MAP_powerplant,
+	MAP_PowerPlant_under,
+	MAP_coalmine,
+	MAP_coalmine_under,
+	//MAP_wildmine,
+	MAP_mountainmine,
+	MAP_minepit,
+	//MAP_greatmine,
+	MAP_london,
+	MAP_london_under,
+	MAP_london_under2,
+	MAP_greenpoint,
+	MAP_hunters_camp,
+	//MAP_rep1,
+	//MAP_rep2,
+	//MAP_rep3,
+	//MAP_rep4,
+	//MAP_rep5,
+	//MAP_rep6,
+   //Encounter Maps,
+   	MAP_e_city1,
+   	MAP_e_city2,
+   	MAP_e_city3,
+   	MAP_e_city4,
+   	MAP_e_city5,
+   	MAP_e_city6,
+   	MAP_e_city7,
+	MAP_e_city8,
+   //Quest Maps,
+   MAP_de_q_leon_gp_out,
+   MAP_de_q_leon_gp_cave
+
+};
+int []SPAWN_ITEM_CITIZEN=
+{
+	PID_FLINT,
+	PID_STIMPAK,
+	PID_ANTIDOTE,
+	PID_MOUSE_SKIN,
+	PID_10MM_PISTOL_DE,
+	PID_PACKAGE_OF_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_BIO_GEL,
+   PID_YELLOW_FLOWER,                      
+   PID_WHITE_FLOWER,
+   PID_YELLOW_FLOWER,                      
+   PID_WHITE_FLOWER,
+   PID_BLUE_CHIP,
+   PID_TOBACCO,
+   PID_FUSE,
+   PID_SCREWS,
+   PID_COMPENSATING_SPRING,
+   PID_WOOD,
+   PID_TUBE1,
+   PID_ELECTRONIC_PACKAGE,
+   PID_BOTTLE_GLASS,
+   PID_CIGARETTES
+};
+int []SPAWN_ITEM_CONTAINERS=
+{
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_SCREWS,
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING, 
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING,
+   PID_COMPENSATING_SPRING,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,
+   PID_YELLOW_FLOWER,                      
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_WHITE_FLOWER,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_FUSE,
+   PID_BLUE_CHIP,
+   PID_BLUE_CHIP,
+   PID_BLUE_CHIP,
+   PID_BLUE_CHIP,
+   PID_BLUE_CHIP,
+   PID_TOBACCO,
+   PID_TOBACCO,
+   PID_TOBACCO,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_WOOD,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_RUSTED_METAL_PARTS,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_TUBE1,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+   PID_PACKAGE_OF_PARTS,
+	PID_9JHP_DE,
+	PID_IGUANA_ON_A_STICK,
+	PID_MEAT_ON_A_STICK,
+	PID_FLINT,
+	PID_GAMMA_GULP_BEER,
+	PID_ROENTGEN_RUM,
+	PID_CIGARETTES,
+	PID_CIGARETTES,
+	PID_COMPENSATING_SPRING,
+	PID_CIGARETTES,
+	PID_RADAWAY,
+	PID_FUSE,	
+	PID_YELLOW_FLOWER,
+	PID_WHITE_FLOWER,
+	PID_RAD_X,
+	PID_NUKA_COLA,
+	PID_TOBACCO,
+	PID_WOOD,
+	PID_BEER,
+	PID_BEER,
+	PID_BEER,
+	PID_BEER,
+	PID_BEER,
+	PID_TUBE1,
+	PID_BOOZE,
+	PID_JET,
+	PID_DE_FRUIT_1,
+	PID_ZIP_GUN_DE,
+	PID_9MM_MAUSER_DE,
+	PID_KNIFE_DE,
+	PID_CLUB_DE,
+	PID_CROWBAR_DE,
+	PID_9MM_MAUSER_DE,
+	PID_SLEDGEHAMMER_DE,
+	PID_10MM_PISTOL_DE,
+	PID_DARTS_DE,
+	PID_HNADV_DE,
+	PID_NAILS_DE,
+	PID_223_JHP_DE,
+	PID_223_AP_DE,
+	PID_FUELE,
+	PID_LOCK2,
+	PID_RED,
+	PID_BLUE,
+	PID_GECKO_LEATHER,
+	PID_BRAHMIN_LEATHER,
+	PID_FLINT,
+	PID_COAL,
+	PID_IRON_ORE,
+	PID_PICKAXE,
+	PID_SHOVEL,
+	PID_AXE,
+	PID_GUNPOWDER_CLASS_I,
+	PID_GOLD,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BOTTLE_CAPS,
+	PID_BROC_FLOWER,
+	PID_BOTTLE_GLASS,
+	PID_BOTTLE_GLASS,
+	PID_BOTTLE_GLASS,
+	PID_XANDER_ROOT,
+	PID_BOOKJUNK,
+	PID_BOOKJUNK
+};
+
+int []SPAWN_ITEM_MEDIC_CONTAINERS=
+{
+	PID_STIMPAK,
+	PID_ANTIDOTE,
+	PID_HYPODERMIC_NEEDLE
+};
+
+void _SpawnInit()
+{
+	uint base;
+	for(uint i=0; i < (SPAWN_ITEM_MAPS.length()); i++)
+	{
+	  base = SPAWN_ITEM_MAPS[i];
+	  CreateTimeEvent(__FullSecond+REAL_SECOND(1),"e_Spawn",base,false);
+	}
+}
+
+uint e_Spawn(uint[]@ values)
+{
+	Critter@[] critters;
+	Map @map=GetMapByPid(values [0],0);
+	if(!valid(map)) return 0;
+	Item@[] containers;
+	//citizen spawn
+	map.GetCritters(0,FIND_LIFE_AND_KO|FIND_ONLY_NPC,critters);
+	for(uint i=0,j=critters.length();i<j;i++)
+	{
+		if (critters[i].StatBase[ST_TEAM_ID] == TEAM_Citizen)
+		{
+			ClearItems(critters[i]);
+			int roll = Random (1, 100);
+			if(roll<31)
+			{
+				uint count=Random(3,6);
+				for(uint y=0; y<=count; y++)
+				{
+					critters[i].AddItem(SPAWN_ITEM_CITIZEN[Random(0,5)],1);
+				}
+				critters[i].AddItem(PID_BOTTLE_CAPS,Random(6,80));
+			}
+		}		
+	}
+	//container spawn
+	map.GetItemsByType(ITEM_TYPE_CONTAINER, containers);
+	for(uint i = 0; i < containers.length()-1; i++)
+	{
+		Item@[] items;
+		if(containers[i].GetItems(0, items)<=0)
+		{
+			ClearItemsContainers(containers[i]);
+			if(containers[i].GetProtoId ()==PID_FALOCK1 || containers[i].GetProtoId ()==PID_FALOCK2)
+			{
+				int roll = Random (0, 100);
+				if (roll<50)
+				{
+					int count = Random(1, 2);
+					for (int y=0; y< count; y++)
+					{
+						int rand= Random(0,SPAWN_ITEM_MEDIC_CONTAINERS.length()-1);
+						if(SPAWN_ITEM_MEDIC_CONTAINERS[rand]==PID_STIMPAK || SPAWN_ITEM_MEDIC_CONTAINERS[rand]==PID_ANTIDOTE || SPAWN_ITEM_MEDIC_CONTAINERS[rand]==PID_RAD_X)
+						{
+							containers[i].AddItem(SPAWN_ITEM_MEDIC_CONTAINERS[rand],Random(1,2),0);
+						}
+						if(SPAWN_ITEM_MEDIC_CONTAINERS[rand]==PID_HYPODERMIC_NEEDLE)
+						{
+							containers[i].AddItem(SPAWN_ITEM_MEDIC_CONTAINERS[rand],Random(1,5),0);
+						}
+						else
+						{
+							containers[i].AddItem(SPAWN_ITEM_MEDIC_CONTAINERS[rand],1,0);
+						}
+					}
+				}
+			}
+			else
+			{
+				int roll = Random (0, 100);
+				if (roll<31)
+				{
+					int count = Random (1, 5);
+					for (int y=0; y< count; y++)
+					{
+						containers[i].AddItem(SPAWN_ITEM_CONTAINERS[Random(0,SPAWN_ITEM_CONTAINERS.length()-1)],1,0);
+					}
+				}
+			}
+		}
+	}
+	//
+	CreateTimeEvent(__FullSecond+REAL_MINUTE(480),"e_Spawn",values [0],false);
+	return 0;
+}
+
+void ClearItems(Critter & npc)
+{
+	Item@[] items;
+	if(npc.GetItems(-1, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+}
+
+void ClearItemsContainers(Item & item)
+{
+	Item@[] items;
+	if(item.GetItems(0, items)>0)
+	{
+		for(uint i=0,l=items.length();i<l;i++)
+		{
+			DeleteItem(items[i]);
+		}
+	}
+}

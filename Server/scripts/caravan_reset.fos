@@ -1,0 +1,151 @@
+
+// РћС‚РјС‹РІР°РЅРёРµ РїСЂРѕРІР°Р»РѕРІ РєРІРµСЃС‚РѕРІ РЅР° СЃРѕРїСЂРѕРІРѕР¶РґРµРЅРёРµ РєР°СЂР°РІР°РЅР°
+// РїРѕРєР° РґР»СЏ РґР°РЅРЅРѕРіРѕ РєРІРµСЃС‚Р° caravanResetVar>0 РёРіСЂРѕРє РјРѕР¶РµС‚ РѕС‚РєР°С‚РёС‚СЊ РєР°СЂР°РІР°РЅРЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ РІ РЅРѕР»СЊ, Р·Р°РїР»Р°С‚РёРІ СѓСЃР»РѕРІРЅРѕРјСѓ "Р±РѕСЃСЃСѓ РєР°СЂР°РІР°РЅРѕРІ"
+// Р Р°СЃС‡РµС‚ СЃС‚РѕРёРјРѕСЃС‚Рё РѕС‚РјС‹РІРєРё РїСЂРѕРІР°Р»Р° РєРІРµСЃС‚Р° 
+// СЃСѓС‰РµСЃС‚РІСѓРµС‚ РїРµСЂРµРјРµРЅРЅР°СЏ, РІ РєРѕС‚РѕСЂРѕР№ СЃС‡РёС‚Р°РµС‚СЃСЏ С‡РёСЃР»Рѕ РґРѕСЃС‚СѓРїРЅС‹С… РїРµСЂСЃРѕРЅР°Р¶Сѓ РѕС‚РјС‹РІРѕРє
+// РїСЂРё РєР°Р¶РґРѕР№ РѕС‡РµСЂРµРґРЅРѕР№ РѕС‚РјС‹РІРєРµ РїРµСЂРµРјРµРЅРЅР°СЏ РёР·РјРµРЅСЏРµС‚СЃСЏ РЅР° -1, Р•СЃР»Рё РїРµСЂРµРјРµРЅРЅР°СЏ = 0, Р±РѕР»СЊС€Рµ РёРіСЂРѕРє РєРІРµСЃС‚ РѕС‚РјС‹С‚СЊ РЅРµ СЃРјРѕР¶РµС‚
+#define CARAVAN_DEFAULT        (0) // РєР°СЂР°РІР°РЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
+const uint[] crvCosts = {
+
+//	caravanNumber,              caravanVar,                          caravanResetVar                CARAVAN_FAILURE_PLAYER_THIEFT,      CARAVAN_FAILURE_PLAYER_DEAD,         CARAVAN_FAILURE_PLAYER_KILL_LEADER
+//                                                                                                            CARAVAN_FAILURE_PLAYER_ABANDONED,   CARAVAN_FAILURE_CARAVANLEADER_DEAD, 
+	CARAVAN_DEFAULT,            0,                                  LVAR_common_crv_reset_counter, 5000,      1000,                    1000,      2000,                     6000,  
+	CARAVAN_WADE_REDD_VC,       LVAR_q_redd_wade_caravan_escort,    LVAR_redd_crv_reset_counter,   5000,      1000,                    1000,      3000,                     5000,
+	CARAVAN_SAVINEL_REDD_NR,    LVAR_q_redd_savinel_caravan_escort, LVAR_redd_crv_reset_counter,   6000,      2000,                    3000,      4000,                     7000,
+	CARAVAN_STANWELL_REDD_NCR,  LVAR_q_redd_stan_caravan_escort,    LVAR_redd_crv_reset_counter,   10000,     1000,                    3000,      2000,                     15000,
+	CARAVAN_HAL_NCR_REDD,       LVAR_q_ncr_redding_caravan_escort,  LVAR_ncr_crv_reset_counter,    5000,      3000,                    3000,      3000,                     7000,
+	CARAVAN_KIT_BH_GECKO,       LVAR_q_bh_kit_caravan_escort,       LVAR_bh_crv_reset_counter,     4000,      4000,                    1000,      2000,                     10000
+};
+
+#define ROW_COUNT     (6) // С‡РёСЃР»Рѕ СЃС‚СЂРѕРє РІ С‚Р°Р±Р»РёС†Рµ РѕС‚РјС‹РІРєРё РїСЂРѕРІР°Р»РѕРІ
+#define COL_COUNT     (8) // С‡РёСЃР»Рѕ РєРѕР»РѕРЅРѕРє РІ С‚Р°Р±Р»РёС†Рµ
+#define CELL#(row, col) (crvCosts[(row<ROW_COUNT?row:0)*COL_COUNT + (col<COL_COUNT?col:0)])
+
+// Р’РѕР·РІСЂР°С‰Р°РµС‚ РёРЅРґРµРєСЃ СЃС‚СЂРѕРєРё РІ С‚Р°Р±Р»РёС†Рµ, РѕС‚РЅРѕСЃСЏС‰РµР№СЃСЏ Рє СѓРєР°Р·Р°РЅРЅРѕРјСѓ РєР°СЂР°РІР°РЅСѓ
+// Р•СЃР»Рё РёРЅРґРµРєСЃ РЅРµ РЅР°Р№РґРµРЅ, Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰РµРЅ 0
+uint RowIndex(uint caravanId)
+{
+	
+	for(uint i=0; i<ROW_COUNT; i++)
+	{
+		if(CELL(i,0)==caravanId)
+		{
+			return i;
+		}
+	}
+	
+	return 0;
+}
+
+// Р Р°СЃС‡РµС‚ С†РµРЅС‹ "РѕС‚РјС‹РІРєРё" СѓРєР°Р·Р°РЅРЅРѕРіРѕ РєР°СЂР°РІР°РЅР°
+// crvId - РЅРѕРјРµСЂ РєР°СЂР°РІР°РЅР° (СЃРј. caravan_h)
+// player - РёРіСЂРѕРє
+// РІРѕР·РІСЂР°С‰Р°РµС‚ С†РµРЅСѓ РѕС‚РјС‹РІРєРё, Р»РёР±Рѕ 0, РІ СЌС‚РѕРј СЃР»СѓС‡Р°Рµ РѕС‚РјС‹РІРєР° РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ РёР»Рё РЅРµРІРѕР·РјРѕР¶РЅР°
+// Р»РёР±Рѕ С†РµРЅР° РїСЂРѕРІР°Р»Р°
+uint GetCrvResetCost(int crvId, Critter & player)
+{
+	if(!CanResetCaravan(crvId, player)||!NeedResetCaravanStatus(crvId, player)) return 0;
+	
+	GameVar @ status = GetLocalVar(CELL(RowIndex(crvId),1), player.Id);
+	if(!valid(status)) return 0;
+	
+	return CELL(RowIndex(crvId), status.GetValue());
+}
+// РџСЂРѕРІРµСЂРєР°, РјРѕР¶РµС‚ Р»Рё РёРіСЂРѕРє "РѕС‚РјС‹С‚СЊ" СѓРєР°Р·Р°РЅРЅС‹Р№ РєР°СЂР°РІР°РЅ
+bool CanResetCaravan(int crvId, Critter & player)
+{
+	GameVar @ status = GetLocalVar(CELL(RowIndex(crvId),2), player.Id);
+	if(!valid(status)) return false;
+	
+	return status.GetValue()>0;
+}
+
+// РџСЂРѕРІРµСЂРєР°, РЅСѓР¶РґР°РµС‚СЃСЏ Р»Рё РёРіСЂРѕРє РІ РѕС‚РјС‹РІРєРµ РєР°СЂР°РІР°РЅР°
+bool NeedResetCaravanStatus(int crvId, Critter & player)
+{
+	GameVar @ status = GetLocalVar(CELL(RowIndex(crvId),1), player.Id);
+	if(!valid(status)) return false;
+	
+	
+	return (status.GetValue()>=CARAVAN_FAILURE_PLAYER_THIEFT&&status.GetValue()<=CARAVAN_FAILURE_PLAYER_KILL_LEADER);
+}
+
+// РџСЂРѕРІРµСЂРєР°, РЅРµ РёСЃС‡РµСЂРїР°Р» Р»Рё РёРіСЂРѕРє С‡РёСЃР»Рѕ РІРѕР·РјРѕР¶РЅС‹С… РѕС‚РјС‹РІРѕРє РїСЂРѕРІР°Р»РѕРІ РґР°РЅРЅРѕРіРѕ РєР°СЂР°РІР°РЅР°
+bool d_CanResetCaravanStatus(Critter & player, Critter @ npc, int crvId)
+{
+	return CanResetCaravan(crvId, player);
+}
+bool d_CanNotResetCaravanStatus(Critter & player, Critter @ npc, int crvId)
+{
+	return !d_CanResetCaravanStatus(player, npc, crvId);
+}
+// РџСЂРѕРІРµСЂРєР° РІ РґРёР°Р»РѕРіРµ, РЅСѓР¶РґР°РµС‚СЃСЏ Р»Рё РґР°РЅРЅС‹Р№ РєР°СЂР°РІР°РЅ РІ РѕС‚РјС‹РІРєРµ
+bool d_NeedResetCaravanStatus(Critter & player, Critter @ npc, int crvId)
+{
+	return NeedResetCaravanStatus(crvId, player);
+}
+
+// Р”РёР°Р»РѕРі СЃ Р»РµРєСЃРµРјР°РјРё РёРјСЏ РєР°СЂР°РІР°РЅС‰РёРєР° (@lex leader@) Рё СЃСѓРјРјР° РґР»СЏ РїРѕРіР°С€РµРЅРёСЏ(@lex cost@)
+// РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ РІ СЃРѕС‡РµРЅС‚Р°РЅРёРё СЃ r_SetSelectedCaravan!!
+void dlg_GenResetCaravanText(Critter& player, Critter@ npc, string@ lexems)
+{
+	if(IS_DIALOG_END(lexems) or IS_DIALOG_SAY_MODE(lexems))
+	{
+		return;
+	}
+	if(!valid(npc)) return;
+	GameVar @ crv = GetUnicumVar(UVAR_selected_caravan, npc.Id, player.Id);
+	if(!valid(crv)) return;
+	
+	uint crvId = crv.GetValue();
+	crv = 0; // РЎР±СЂРѕСЃ РІС‹Р±РѕСЂР°
+	
+	CaravanInfo @ ci = _GetCaravan(crvId);
+	if(!valid(ci)) return;
+	
+	CaravanLeaderInfo @ li = ci.Leader;
+	if(!valid(ci)) return;
+	
+	uint cost = GetCrvResetCost(crvId, player);
+	
+	lexems = "$leader@msg DLG "+STR_NPC_NAME(li.DialogId,0)+"@$money "+cost;		
+	
+}
+// РїРµСЂРµРґ РІС‹Р±РѕСЂРѕРј РєР°СЂР°РІР°РЅР°, Р·Р° РєРѕС‚РѕСЂС‹Р№ РёРіСЂРѕРє С…РѕС‡РµС‚ РІРЅРµСЃС‚Рё РІС‹РєСѓРї, С‡С‚РѕР±С‹ РѕС‚РєСѓРїРёС‚СЊСЃСЏ РѕС‚ РїСЂРѕРІР°Р»Р° РєРІРµСЃС‚Р°
+// РЅРµРѕР±С…РѕРґРёРјРѕ СЃРѕС…СЂР°РЅРёС‚СЊ РёРґ РєР°СЂР°РІР°РЅР° РІ СѓРЅРёРєР°Р»СЊРЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ, С‡С‚РѕР±С‹ РїРѕС‚РѕРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїСЂРё РіРµРЅРµСЂР°С†РёРё Р»РµРєСЃРµРј
+// РґР»СЏ СЌС‚РѕРіРѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СѓРЅРёРєР°Р»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ UVAR_selected_caravan (3603)
+void r_SetSelectedCaravan(Critter & player, Critter @ npc, int crvId)
+{
+	if(!valid(npc)) return;
+	GameVar @ crv = GetUnicumVar(UVAR_selected_caravan, npc.Id, player.Id);
+	if(!valid(crv)) return;
+	
+	crv = crvId;
+}
+bool  d_CheckHasEnoughMoney(Critter & player, Critter @ npc, int crvId)
+{
+	uint cost = GetCrvResetCost(crvId, player);
+	if(cost==0) return false;
+	
+	uint money = player.CountItem(PID_BOTTLE_CAPS);
+	return (money>=cost); 
+}
+// РЎРЅСЏС‚РёСЏ СЃС‚Р°С‚СѓСЃР° РїСЂРѕРІР°Р»Р° СЃ РєР°СЂР°РІР°РЅР°, РѕР±РЅРѕРІР»РµРЅРёРµ С‡РёСЃР»Р° РѕС‚РјС‹РІРѕРє РєР°СЂР°РІР°РЅР°
+void r_ResetCaravanStatus(Critter & player, Critter @ npc, int crvId)
+{
+	uint cost = GetCrvResetCost(crvId, player);
+	if(cost==0) return;
+	
+	uint money = player.CountItem(PID_BOTTLE_CAPS);
+	if(money<cost) return; // РќРµ С…РІР°С‚Р°РµС‚ РґРµРЅРµРі РЅР° РїРѕРіР°С€РµРЅРёРµ РїСЂРѕРІР°Р»Р°
+	Item @ item = player.GetItem(PID_BOTTLE_CAPS, -1);
+	if(!valid(item)) return;
+	_SubItem(item, cost);
+	
+	GameVar @questVar = GetLocalVar(CELL(RowIndex(crvId),1), player.Id);
+	GameVar @status = GetLocalVar(CELL(RowIndex(crvId),2), player.Id);
+	if(!valid(status)||!valid(questVar)) return;
+	
+	status = status.GetValue()-1;
+	questVar = 0;		
+}

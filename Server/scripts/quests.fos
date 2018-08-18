@@ -1,0 +1,60 @@
+#ifdef __SERVER
+#include "_vars.fos"
+
+class QUEST
+{
+	string name;
+	int lvar;
+	QUEST(string new_name, int new_lvar)
+	{
+		name=new_name;
+		lvar=new_lvar;
+	}
+};
+
+QUEST []QUESTS=
+{
+	QUEST("Warm-up",LVAR_de_quest_warm_up),
+	QUEST("First steps",LVAR_de_quest_first_steps),
+	QUEST("Plague",LVAR_de_quest_plague),
+	QUEST("Stealth",LVAR_de_quest_stealth),
+	QUEST("Small favor",LVAR_de_quest_small_favor),
+	QUEST("Medic test",LVAR_de_quest_medic_test),
+	QUEST("First military steps",LVAR_de_quest_first_military_red),
+	QUEST("Brahmin Skin Perk",LVAR_de_quest_brahmin_perk_npc),
+	QUEST("Geckon Skin Perk",LVAR_de_quest_gecko_perk),
+	QUEST("New Empire Comenwelt First Steps",LVAR_de_quest_nec_start),
+	QUEST("Caravan Quest",LVAR_caravan_job),
+	QUEST("The Little Tom",LVAR_quest_the_little_tom_progress),
+	QUEST("The Little Tom",LVAR_quest_the_little_tom_progress2),
+	QUEST("The Irish Man",LVAR_quest_the_irish_man_progress),
+	QUEST("William Truba",LVAR_quest_william_truba_progress),
+	QUEST("Thomas Wensdin Tool",LVAR_bring_tool_recieve_hunting_rifle_progress),
+	QUEST("Become a Bounty Hunter",LVAR_Hunters_Camp),
+	QUEST("Find a book Technical Manual T-51b",LVAR_Industrial_Bob_Repair_PA)
+};
+#endif
+
+#ifdef __CLIENT
+string []QUESTS=
+{
+	"Warm-up",
+	"First steps",
+	"Plague",
+	"Stealth",
+	"Small favor",
+	"Medic test",
+	"First military steps",
+	"Brahmin Skin Perk",
+	"Geckon Skin Perk",
+	"New Empire Comenwelt First Steps",
+	"Caravan Quest",
+	"The Little Tom",
+	"The Little Tom",
+	"The Irish Man",
+	"William Truba",
+	"Thomas Wensdin Tool",
+	"Become a Bounty Hunter",
+	"Find a book Technical Manual T-51b"
+};
+#endif

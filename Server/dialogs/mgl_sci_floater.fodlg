@@ -1,0 +1,36 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[engl]
+{100}{}{scientist}
+{200}{}{You see scientist}
+{210}{}{You see one of MGL scientists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@... If i would add another  6 units of CX-IV.. hmmm...@@wait... where i was?.}
+
+[pols]
+{100}{}{Naukowiec}
+{200}{}{Widzisz naukowca}
+{210}{}{Widzisz jednego z naukowcow MGL.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Jestem zajety, zostaw mnie w spokoju.@@ Mam prace do zrobienia.@@te wyniki sa ekscytujace!@@... Jesli moglbym dodac kolejne 6 jednostek CX-IV.. hmmm...@@Czekaj... na czym skonczylem?.}
+
+[russ]
+{100}{}{scientist}
+{200}{}{You see scientist}
+{210}{}{You see one of MGL scientists.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{I'm busy, leave me alone.@@ I have work to do.@@Those results are exciting!@@... If i would add another  6 units of CX-IV.. hmmm...@@wait... where i was?.}
+

@@ -1,0 +1,417 @@
+// Author: cvet
+#include "_macros.fos"
+#include "entire.fos"
+#include "_msgstr.fos"
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_itempid.fos"
+
+import void DropDrugEffects(Critter& cr) from "drugs";
+import void DropPoison(Critter& cr) from "poison";
+import void DropRadiation(Critter& cr) from "radiation";
+import void PlayVideo(Critter& cr, string& videoName, bool canStop) from "media";
+import void FindEncounter(Critter@[]& group, Item@ car, uint x, uint y, uint& encounterDescriptor, bool& waitForAnswer, bool empty) from "worldmap";
+import void InviteToEncounter(Critter@[]& group, Item@ car, uint encounterDescriptor, int combatMode, uint& mapId, uint16& hexX, uint16& hexY, uint8& dir) from "worldmap";
+
+const uint16 HellMapPid=MAP_DE_baza;
+const uint16[] ReplicatorsMapPids={MAP_rep1, MAP_rep2, MAP_rep3, MAP_rep4, MAP_rep5, MAP_rep6, MAP_rep7};
+uint ReplicatorPos=0;
+
+// Permanent death
+bool IsPermanentDeathInit=false;
+uint[] PermanentDeath;
+
+bool IsPermanentDeath(uint id) // Export
+{
+	if(not IsPermanentDeathInit)
+	{
+		GetAnyData("PermanentDeath",PermanentDeath);
+		IsPermanentDeathInit=true;
+	}
+
+	for(uint i=0,j=PermanentDeath.length();i<j;i++)
+		if(PermanentDeath[i]==id) return true;
+	return false;
+}
+
+void ClearPermanentDeath() // Export
+{
+	PermanentDeath.resize(0);
+	SetAnyData("PermanentDeath",PermanentDeath);
+}
+
+void AddPermanentDeath(uint id)
+{
+	if(not IsPermanentDeathInit)
+	{
+		GetAnyData("PermanentDeath",PermanentDeath);
+		IsPermanentDeathInit=true;
+	}
+
+	if(not IsPermanentDeath(id))
+	{
+		PermanentDeath.insertLast(id);
+		SetAnyData("PermanentDeath",PermanentDeath);
+	}
+}
+
+Map@ GetStartReplicatorMap()
+{
+	return GetMapByPid(ReplicatorsMapPids[0],0);
+}
+
+Map@ GetNearReplicatorMap(Critter& cr)
+{
+
+	if(cr.GetMap().GetProtoId()==LOCATION_DE_DREAM) return cr.GetMap();
+	if(cr.GetMap().GetProtoId()==MAP_industrial_center_under) return cr.GetMap();
+	if(cr.GetMap().GetProtoId()==MAP_hunters_camp && cr.StatBase[ST_KARMA]<-100)
+	{
+		cr.ParamBase[PLAYER_IN_JAIL]=1;
+		return cr.GetMap();
+	}
+	
+	
+	
+	Map@ nearMap=null;
+	int nearDist=0;
+	if (cr.ParamBase[PLAYER_IS_BANNED]==2)
+	{
+		Map@ map=GetMapByPid(700,0);
+		if(valid(map))
+		{
+			Location@ loc=map.GetLocation();
+			int dx=int(cr.WorldX)-int(loc.WorldX);
+			int dy=int(cr.WorldY)-int(loc.WorldY);
+			int dist=int(sqrt(dx*dx+dy*dy));
+
+			if(not valid(nearMap) || dist<nearDist)
+			{
+				@nearMap=map;
+				nearDist=dist;
+			}
+		}
+	}
+	else
+	{
+		for(uint i=0,j=ReplicatorsMapPids.length();i<j;i++)
+		{
+			Map@ map=GetMapByPid(ReplicatorsMapPids[i],0);
+			if(valid(map))
+			{
+				Location@ loc=map.GetLocation();
+				int dx=int(cr.WorldX)-int(loc.WorldX);
+				int dy=int(cr.WorldY)-int(loc.WorldY);
+				int dist=int(sqrt(dx*dx+dy*dy));
+
+				if(not valid(nearMap) || dist<nearDist)
+				{
+					@nearMap=map;
+					nearDist=dist;
+				}
+			}
+		}
+	}
+	return nearMap;
+}
+
+void SetStartLocation(Critter& cr) // Export
+{
+	Map@ replicator=GetStartReplicatorMap();
+	if(not valid(replicator)) return;
+
+	// Hidden fog on default player position
+	uint zoneX=cr.WorldX/__GlobalMapZoneLength;
+	uint zoneY=cr.WorldY/__GlobalMapZoneLength;
+		for(zoneX=0;zoneX<=50;zoneX++)                   
+	{  
+   		for(zoneY=0;zoneY<=29;zoneY++)     
+    		{  
+      		cr.SetFog(zoneX,zoneY,FOG_HALF);      
+  		}  
+	}
+
+	cr.TransitToMap(replicator.Id,ENTIRE_REPLICATION);
+
+	cr.SetKnownLoc(true,replicator.GetLocation().Id);
+	//cr.SetKnownLoc(false,LOCATION_ReplicationHell);
+	uint16 replPid=replicator.GetLocation().GetProtoId();
+	//cr.SetKnownLoc(false,LOCATION_1);
+	//cr.SetKnownLoc(false,LOCATION_2);
+	//cr.SetKnownLoc(false,LOCATION_3);
+	//cr.SetKnownLoc(false,LOCATION_4);
+	//cr.SetKnownLoc(false,LOCATION_5);
+	//cr.SetKnownLoc(false,LOCATION_6);
+	//cr.SetKnownLoc(false,LOCATION_7);
+	//cr.SetKnownLoc(false,LOCATION_8);
+	//cr.SetKnownLoc(false,LOCATION_9);
+	//cr.SetKnownLoc(false,LOCATION_11);
+	//cr.SetKnownLoc(false,LOCATION_13);
+	//cr.SetKnownLoc(false,LOCATION_17);
+	//cr.SetKnownLoc(false,LOCATION_18);
+	//cr.SetKnownLoc(false,LOCATION_19);
+	//cr.SetKnownLoc(false,LOCATION_20);
+	//cr.SetKnownLoc(false,LOCATION_22);
+	//cr.SetKnownLoc(false,LOCATION_23);
+	//cr.SetKnownLoc(false,LOCATION_26);
+	//cr.SetKnownLoc(false,LOCATION_27);
+	//if(replPid==LOCATION_Replication1)
+	//{
+	//	cr.SetKnownLoc(false,LOCATION_Den);
+	//	cr.SetKnownLoc(false,LOCATION_Klamath);
+	//}
+	//else if(replPid==LOCATION_Replication2)
+	//{
+	//	cr.SetKnownLoc(false,LOCATION_Modoc);
+	//}
+	//else if(replPid==LOCATION_Replication3)
+	//{
+	//	cr.SetKnownLoc(false,LOCATION_Redding);
+	//}
+	//else if(replPid==LOCATION_Replication4)
+	//{
+	//	cr.SetKnownLoc(false,LOCATION_BrokenHills);
+	//	cr.SetKnownLoc(false,LOCATION_NewReno);
+	//}
+	zoneX=cr.WorldX/__GlobalMapZoneLength;
+	zoneY=cr.WorldY/__GlobalMapZoneLength;
+	cr.SetFog(zoneX  ,zoneY  ,FOG_NONE);
+}
+
+void SetReplicationTime(Critter& cr) // Export
+{
+	int replTime=cr.Stat[ST_REPLICATION_TIME];
+	if(replTime<0) return; // No respawn
+	if(replTime==0) // Take default values
+	{
+		if(cr.IsPlayer()) replTime=1; // 3 minutes
+		else replTime=Random(90,120); // 90-120 minutes
+	}
+	replTime*=REAL_SECOND(60);
+	cr.TimeoutBase[TO_REPLICATION]=__FullSecond+replTime;
+}
+
+bool IsHellMap(int mapPid)
+{
+	return mapPid==HellMapPid;
+}
+
+void ReplicateCritter(Critter& cr) // Export
+{
+	Map@ dieMap=cr.GetMap();
+	Map@ map=null;
+	uint16 hx=0,hy=0;
+
+	// Check car
+	Item@[] cars;
+	cr.GetItemsByType(ITEM_TYPE_CAR, cars);
+	if(cars.length() > 0)
+	{
+		// Transit to random encounter
+		bool transferred=false;
+		uint encounterDescriptor=uint(-1);
+		bool waitForAnswer=false;
+		FindEncounter(cr.GetGlobalGroup(), cars[0], cr.WorldX, cr.WorldY, encounterDescriptor, waitForAnswer, true);
+		if(encounterDescriptor!=uint(-1))
+		{
+			uint mapId=0;
+			uint16 hexX=0;
+			uint16 hexY=0;
+			uint8 dir=0;
+			InviteToEncounter(cr.GetGlobalGroup(), cars[0], encounterDescriptor, COMBAT_MODE_ANY, mapId, hexX, hexY, dir);
+			if(mapId!=0 && cr.TransitToMap(mapId,hexX,hexY,dir))
+				transferred=true;
+		}
+
+		// Encounter not founded or transfer fail, delete cars
+		if(!transferred)
+		{
+			for(uint i=0;i<cars.length();i++)
+				DeleteItem(cars[i]);
+		}
+
+		// Continue dead
+		cr.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+		return;
+	}
+
+	if(cr.IsPlayer())
+	{
+		bool dieMapIsHell=(valid(dieMap) && IsHellMap(dieMap.GetProtoId()));
+
+		if(cr.Stat[ST_REPLICATION_MONEY]>9999999999)
+		{
+			@map=GetMapByPid(HellMapPid,0);
+
+			if(not dieMapIsHell)
+			{
+				GameVar@ hellVisits=GetLocalVar(LVAR_hell_visits,cr.Id);
+				hellVisits+=1;
+
+				// Show hell video
+				//if(hellVisits==1) PlayVideo(cr,"TheLifeAfterHell.ogv|TheLifeAfterHell.ogg",false);
+
+				// Permanent death
+				if(__PermanentDeath>0 && hellVisits>__PermanentDeath)
+				{
+					AddPermanentDeath(cr.Id);
+					cr.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_NET_PERMANENT_DEATH);
+					cr.Disconnect();
+				}
+			}
+		}
+		else
+		{
+			@map=GetNearReplicatorMap(cr);
+		}
+
+		if(not valid(map) || not GetEntireFreeHex(map,ENTIRE_REPLICATION,hx,hy))
+		{
+			// Continue dead
+			cr.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+			return;
+		}
+
+		if(valid(dieMap) && _CritCanDropItemsOnDeadOnMap(cr,dieMap.GetProtoId()))
+		{
+			Map@ dropMap=cr.GetMap();
+			Item@[] items;
+			cr.GetItems(-1,items);
+
+			// Disable drop of hidden items and delete gag items (sandbags)
+			for(uint i=0,j=items.length();i<j;i++)
+			{
+				if(FLAG(items[i].Flags,ITEM_GAG))
+				{
+					DeleteItem(items[i]);
+					@items[i]=null;
+				}
+				else if(FLAG(items[i].Flags,ITEM_HIDDEN))
+				{
+					@items[i]=null;
+				}
+				
+				//no drop implants
+				if(items[i].CritSlot==SLOT_SLOT_A) @items[i]=null;
+				else if(items[i].CritSlot==SLOT_SLOT_B) @items[i]=null;
+				else if(items[i].CritSlot==SLOT_SLOT_C) @items[i]=null;
+				else if(items[i].CritSlot==ST_SLOT_HEAD) @items[i]=null;
+			}
+			
+			// Drop
+			if(valid(dropMap))
+				MoveItems(items,dropMap,cr.HexX,cr.HexY);
+			else
+				DeleteItems(items);
+		}
+
+		if(not dieMapIsHell)
+		{
+			cr.StatBase[ST_REPLICATION_MONEY]-=(cr.Stat[ST_REPLICATION_COST] - 100);
+			if(cr.Stat[ST_REPLICATION_MONEY]>=100) _CritAddItem(cr,PID_RADIO,1); // Add radio
+		}
+		cr.StatBase[ST_REPLICATION_COUNT]++;
+	}
+	else
+	{
+		cr.DropPlanes();
+		cr.ClearEnemyStackNpc();
+		cr.StatBase[ST_LAST_WEAPON_ID]=0;
+		@map=cr.GetMap();
+		if(not valid(map)) // On global, delete
+		{
+			DeleteNpc(cr);
+			return;
+		}
+		hx=cr.HexX;
+		hy=cr.HexY;
+
+		if(cr.Stat[ST_DEAD_BLOCKER_ID]!=0)
+		{
+			Item@ block=GetItem(cr.Stat[ST_DEAD_BLOCKER_ID]);
+			if(valid(block)) DeleteItem(block);
+			cr.StatBase[ST_DEAD_BLOCKER_ID]=0;
+		}
+
+		if(not map.IsHexPassed(hx,hy))
+		{
+			bool founded=false;
+			for(int x=-1;x<=1;x++)
+			{
+				for(int y=-1;y<=1;y++)
+				{
+					if(x==0 && y==0) continue; // Skip direct position
+
+					if(__MapHexagonal)
+					{
+						if((hx%2)==1 && ((x==-1 && y==1) || (x==1 && y==1))) continue;
+						if((hx%2)==0 && ((x==-1 && y==-1) || (x==1 && y==-1))) continue;
+					}
+
+					if(map.IsHexPassed(hx+x,hy+y))
+					{
+						hx+=x;
+						hy+=y;
+						founded=true;
+						break;
+					}
+				}
+				if(founded) break;
+			}
+
+			if(not founded)
+			{
+				// Continue dead
+				cr.TimeoutBase[TO_REPLICATION]=__FullSecond+REAL_MINUTE(1);
+				return;
+			}
+		}
+	}
+
+	cr.TransitToMap(map.Id,hx,hy,Random(0,5));
+	cr.DamageBase[DAMAGE_EYE]=0;
+	cr.DamageBase[DAMAGE_RIGHT_ARM]=0;
+	cr.DamageBase[DAMAGE_LEFT_ARM]=0;
+	cr.DamageBase[DAMAGE_RIGHT_LEG]=0;
+	cr.DamageBase[DAMAGE_LEFT_LEG]=0;
+	cr.ToLife();
+	cr.StatBase[ST_CURRENT_HP]=cr.Stat[ST_MAX_LIFE];
+	cr.StatBase[ST_CURRENT_AP]=cr.Stat[ST_ACTION_POINTS]*100;
+	DropPoison(cr);
+	DropRadiation(cr);
+	//if(cr.IsNpc() || map.GetProtoId()!=HellMapPid) DropDrugEffects(cr); // Note: This function clear effects of all active drugs/radiation/poison!
+	cr.DropTimers();
+	for(uint i=TIMEOUT_BEGIN;i<=TIMEOUT_END;i++) if(i!=TO_KARMA_VOTING) cr.TimeoutBase[i]=0;
+}
+
+//
+// Turret
+//
+//void _TurretInit(Critter& turret, bool firstTime)
+//{
+//	turret.StatBase[ST_PERCEPTION]=10;
+//	turret.SkillBase[SK_BIG_GUNS]=300;
+//	turret.SkillBase[SK_ENERGY_WEAPONS]=300;
+//	turret.ModeBase[MODE_NO_ENEMY_STACK]=1;
+//	turret.ModeBase[MODE_UNLIMITED_AMMO]=1;
+//}
+//
+//
+// Hubologist
+//
+//void _HubologistInit(Critter& hubologist, bool firstTime)
+//{
+//	hubologist.ModeBase[MODE_NO_ENEMY_STACK]=1;
+//}
+
+
+
+
+
+
+
+
+
+
+
+

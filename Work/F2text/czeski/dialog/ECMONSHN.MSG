@@ -1,0 +1,10 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš pøekupníka s alkoholem.}
+{101}{}{Prodáváme pítí té nejvyšší kvality. Máš zájem?}
+{102}{}{Mám. Uka, co máš.}
+{103}{}{Ne.}
+{104}{}{Ug.}
+{105}{}{Tak vystøel. Nemáme èas.}
+{106}{}{Ujišuji se, e obsah alkoholu je v poøádku.}
+{107}{}{Baka. BAka BAKA!}
+{108}{}{Díky za obchod.}

@@ -1,0 +1,329 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+import void GUI_GetActiveScreens(int[]& result) from "client_gui";
+import void ShowChatScreen() from "client_screen_chat";
+import void ShowFactionScreen() from "client_screen_faction";
+import void ShowBankScreen(int, int, int, string@, int[]@) from "client_screen_bank";
+import void HideAllQuestDescriptionButtons() from "client_screen_quest";
+import void ShowOtherScreen() from "client_screen_other";
+import int[]@ GetIniValues4(string& iniKey, int[]@ defaultValues) from "ini_parser";
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+
+int PipBoyPosX=(__ScreenWidth-511)/2;
+int PipBoyPosY=(__ScreenHeight-478)/2;
+int []positions;
+int PipBoyMenu=0;
+
+void UpdatePipBoyPosition(int x, int y)
+{
+	PipBoyPosX=x;
+	PipBoyPosY=y;
+}
+
+void GetPipBoyPosition(int &x, int &y)
+{
+	x=PipBoyPosX;
+	y=PipBoyPosY;
+}
+
+void client_get_active_screens(int[]& result)
+{
+	GUI_GetActiveScreens(result);
+}
+
+class CloseButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);
+	}
+}
+
+class ChatTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);
+		ShowChatScreen();
+		PipBoyMenu=CLIENT_SCREEN_CHAT;
+	}
+}
+
+class FactionTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);
+		ShowFactionScreen();
+		PipBoyMenu=CLIENT_SCREEN_FACTION;
+	}
+}
+
+class QuestLogTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);
+		int x=0,y=0;
+		GetPipBoyPosition(x,y);
+		SetScreenPos(CLIENT_SCREEN_QUEST_LOG,x,y);
+		ShowScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideAllQuestDescriptionButtons();
+		RunServerScriptUnsafe("quest_server_scripts@unsafe_GetQuestProgress",0,0,0,null,null);
+		PipBoyMenu=CLIENT_SCREEN_QUEST_LOG;
+	}
+}
+
+class RadioTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);		
+		int x=0,y=0;
+		GetPipBoyPosition(x,y);
+		SetScreenPos(CLIENT_SCREEN_RADIO,x,y);
+		CritterCl @chosen=GetChosen();
+		if(@chosen==null) return;
+		ItemCl @radio=chosen.GetItem(100,0);
+		if(@radio!=null) ShowScreen(CLIENT_SCREEN_RADIO,radio.Id,-1,0);
+		else ShowScreen(CLIENT_SCREEN_RADIO,-1,-1,0);
+		PipBoyMenu=CLIENT_SCREEN_RADIO;
+	}
+}
+
+class BankTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);		
+		//SetScreenPos(CLIENT_SCREEN_BANK,(__ScreenWidth-511)/2,(__ScreenHeight-478)/2);
+		ShowBankScreen(0,0,0,null,null);
+		PipBoyMenu=CLIENT_SCREEN_BANK;
+	}
+}
+
+class OtherTabButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		HideScreen(CLIENT_SCREEN_CHAT,0,0,0);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		HideScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+		HideScreen(CLIENT_SCREEN_RADIO,0,0,0);
+		HideScreen(CLIENT_SCREEN_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_NO_BANK,0,0,0);
+		HideScreen(CLIENT_SCREEN_OTHER,0,0,0);
+		ShowOtherScreen();
+		PipBoyMenu=CLIENT_SCREEN_OTHER;
+	}
+}
+
+void AttachTabsToScreen(int screen)
+{
+	positions=GetIniValues2("TabScreenCloseButton",null);
+	CloseButtonClass CloseButton;
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000016), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(CloseButton);
+	
+	IGUIElementButtonOpt @temp;
+	
+	positions=GetIniValues2("TabsSreenChatTabButton",null);
+	ChatTabButtonClass ChatTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000001), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(ChatTabButton);
+	if(screen==CLIENT_SCREEN_CHAT)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000001), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+	
+	positions=GetIniValues2("TabScreenFactionTabButton",null);
+	FactionTabButtonClass FactionTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000002), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(FactionTabButton);
+	if(screen==CLIENT_SCREEN_FACTION)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000002), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+	
+	positions=GetIniValues2("TabScreenQuestLogTabButton",null);
+	QuestLogTabButtonClass QuestLogTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000003), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(QuestLogTabButton);
+	if(screen==CLIENT_SCREEN_QUEST_LOG)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000003), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+	
+	positions=GetIniValues2("TabScreenRadioTabButton",null);
+	RadioTabButtonClass RadioTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000015), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(RadioTabButton);
+	if(screen==CLIENT_SCREEN_RADIO)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000015), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+	
+	positions=GetIniValues2("TabScreenBankTabButton",null);
+	BankTabButtonClass BankTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000004), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(BankTabButton);
+	if(screen==CLIENT_SCREEN_BANK || screen==CLIENT_SCREEN_NO_BANK)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000004), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+	
+	positions=GetIniValues2("TabScreenOtherTabButton",null);
+	OtherTabButtonClass OtherTabButton;
+	@temp=
+	GUI_AddButton(screen,positions[0],positions[1])
+		.UpPic("Tab2.png")
+		.DownPic("Tab2.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000017), FONT_SPECIAL, COLOR_LGRAY, COLOR_WHITE, FT_BORDERED|FT_CENTERXY)
+		.CallbackMouseClick(OtherTabButton);
+	if(screen==CLIENT_SCREEN_OTHER)
+	{
+		temp.Text(GetMsgStr(TEXTMSG_GAME,3000000017), FONT_SPECIAL, COLOR_SAND, COLOR_SAND, FT_BORDERED|FT_CENTERXY);
+		temp.CallbackMouseClick(null);
+	}
+}
+
+class PipBoyCallbackShowClass : IGUIScreenCallbackShow
+{
+	void OnShow(int p1, int p2, int p3)
+	{
+		HideScreen(CLIENT_SCREEN_PIP_BOY,0,0,0);
+		int x=0,y=0;
+		CritterCl @chosen=GetChosen();
+		ItemCl @radio=chosen.GetItem(100,0);
+		ChangeCursor(0);
+		switch(PipBoyMenu)
+		{
+			case CLIENT_SCREEN_CHAT: 
+				ShowChatScreen();
+				break;
+			case CLIENT_SCREEN_BANK:
+				ShowBankScreen(0,0,0,null,null);
+				break;
+			case CLIENT_SCREEN_FACTION:
+				ShowFactionScreen();
+				break;
+			case CLIENT_SCREEN_OTHER:
+				ShowOtherScreen();
+				break;
+			case CLIENT_SCREEN_RADIO:
+				GetPipBoyPosition(x,y);
+				SetScreenPos(CLIENT_SCREEN_RADIO,x,y);
+				if(@chosen==null) return;
+				if(@radio!=null) ShowScreen(CLIENT_SCREEN_RADIO,radio.Id,-1,0);
+				else ShowScreen(CLIENT_SCREEN_RADIO,-1,-1,0);
+				break;
+			case CLIENT_SCREEN_QUEST_LOG:
+				GetPipBoyPosition(x,y);
+				SetScreenPos(CLIENT_SCREEN_QUEST_LOG,x,y);
+				ShowScreen(CLIENT_SCREEN_QUEST_LOG,0,0,0);
+				HideAllQuestDescriptionButtons();
+				RunServerScriptUnsafe("quest_server_scripts@unsafe_GetQuestProgress",0,0,0,null,null);
+				break;
+			default:
+				ShowChatScreen();
+				break;
+		}
+	}
+}
+
+void InitNewPipBoy()
+{
+	PipBoyCallbackShowClass PipBoyCallbackShow;
+	SetPipBoyCallbackShow(PipBoyCallbackShow);
+}
+
+class MenuCallbackShowClass : IGUIScreenCallbackShow
+{
+	bool StartMusicPlayed;
+	void OnShow(int p1, int p2, int p3)
+	{
+		if(!StartMusicPlayed && IsMsgStr(TEXTMSG_GAME,80))
+		{
+			PlayMusic(GetMsgStr(TEXTMSG_GAME,80),0,0);
+			StartMusicPlayed=true;
+		}
+	}
+	MenuCallbackShowClass()
+	{
+		StartMusicPlayed=false;
+	}
+}
+
+void InitStartMusic()
+{
+	MenuCallbackShowClass MenuCallbackShow;
+	SetMenuCallbackShow(MenuCallbackShow);
+}

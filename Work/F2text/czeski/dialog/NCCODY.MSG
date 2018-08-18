@@ -1,0 +1,139 @@
+#tento soubor pøeložil Vladimir "SIR QWERTY" Sojka - http://qwerty.moje.cz
+# 0. QUICK LOOK (CODY ALIVE) (WTG)
+{125}{}{Vidíš Codyho.}
+
+# 1. LOOK (WTG)
+{175}{}{Vidíš rozcuchanýho sirotka. Na zbytcích jeho otrhanýho trièka je naèmáráno "Cody."}
+{176}{}{Vidíš Codyho. Zasmušile tì pozoruje.}
+{177}{}{Vidíš Codyho. Pohledem by mohl zabíjet.}
+{178}{}{Vidíš Codyho. Svoje jméno má naèmáráno na zbytcích svého roztrhaného trièka.}
+
+# 2. CODY INTRO (WTG)
+{200}{}{(Chlapec tì nevrle pozoruje. Jak pøicházíš blíž jen stìží rozeznáváš jeho oblièej pod vší tou špínou. Na zbytcích svého trièka má naèmáráno "Cody.")}
+{201}{}{(Cody se zamraèí, když tì vidí pøicházet.)}
+{202}{}{Kuky kuk!}
+{203}{}{Upøenì se na nìj podíváš}
+{204}{}{ ztracené auto. }
+{1204}{}{ smutný. Nevidìl jsi }
+{2204}{}{ auto?}
+{205}{}{Cody, mùžeš mì dovést }
+{1205}{}{ k autu? Prosím?}
+{206}{}{Odejdeš}
+{207}{}{Hej, Cody. Jsi v poøádku? Nechceš nìco k jídlu?}
+{208}{}{Hej, Cody. Máš žízeò? Chceš nìèeho napít?}
+{209}{}{Kde máš rodièe?}
+{210}{}{Hej, Cody. Nevidìl jsi moje auto?}
+{211}{}{Cody, mùžeš mi øíct kde je moje auto?}
+{212}{}{Cody, mùžeš mì dovést k mému autu?}
+{213}{}{Cody, mùžeš mi ukázat, kde bylo moje auto?}
+{214}{}{Mùžeš mi øíct, kdo ho ukrad'?}
+{215}{}{Mìj se.}
+
+# 3. KOOTCHIE/GLARE BACK/OFFER CODY DRUGS (2, 5, 19)
+{220}{}{(Cody ti ukazuje vztyèeny prostøedník a utíká.)}
+{221}{}{(Codymu se rozšíøí zornièky strachem a už utíká pryè.)}
+{223}{}{JÁ TÌ ZABIJU! ZABIJU TÌ!}
+{224}{}{Tak možná až pøíštì.}
+{225}{}{Sráè malej...}
+
+# 4. HEY KID. YOU ALL RIGHT? WHERE ARE YOUR PARENTS? (2, 4)
+{230}{}{(Cody na tebe dál zírá.)}
+{231}{}{Hele, seš O.K. Cody?}
+{239}{}{Nashle, Cody. Opatruj se.}
+
+# 5. DRINK (2, 4)
+{251}{}{Hej, Cody. Chceš trochu nuka coly?}
+{252}{}{Dáš si trochu chlastu, kamaráde? Nikdy nejsi dost mladý abys s tim zaèal, øíkala moje máma. Teda když byla støízlivá, samozøejmì.}
+{253}{}{Mám tady trochu Jetu, Cody. Chceš si se strejdou trochu zalítat, že jo?}
+{254}{}{Mám tady trochu Jetu, Cody. Chceš si s tetou trochu zalítat, co?}
+{1254}{}{?}
+{255}{}{Hej, Cody... chceš nìjaký silný metamfetaminy? Mohl by sis chytit a sníst vlastní potravu. Tøeba i ostatní dìti.}
+{256}{}{Dávej na sebe pozor, Cody.}
+{257}{}{Sorry kámo, vypadá to, že tu pro tebe nic nemám.}
+
+# 6. FOOD (2, 4)
+{261}{}{Co takhle nìjaké ovoce, Cody?}
+{262}{}{Chceš trochu iguana, Cody? Mmmmmm, je moooc dobrý.}
+{263}{}{Hej, Cody. Chceš pár chutn... totiž, jedl... plátkù Duntonova sušenýho masa? Mmmmmm... ehmh... jsou vážnì dobrý.}
+
+# 7. CODY TAKES ITEM (5, 6)
+{270}{}{(Cody popadne nabízenou dobrotu a utíká pryè.)}
+{271}{}{::Mumláš si pro sebe nìco o dnešní mládeži.::}
+{272}{}{Neni zaè...! Nemusíš tak dìkovat...!}
+{273}{}{Panejo. Prevít malej.}
+{274}{}{Mìl bych toho malýho nevdìènýho parchanta poslat do otroctví... hmmmm, poèkat...}
+
+# 8. HAVE YOU SEEN MY CAR? [X] LOST CAR? (2, 4)
+{280}{}{(Cody kývne hlavou!)}
+{281}{}{(K tvému pøekvapeni Cody kývne hlavou.)}
+{282}{}{Vidíš }
+{1282}{}{ auto! Kde! Kde! Ukaž! Ukaž! Prosííím? Ukážeš? Co øíkáš?}
+{283}{}{Je dobøe, že víš kde }
+{1283}{}{ to auto je... a hele, koukni! Støíbrná vìcièka! (Necháš toho.)}
+{284}{}{Vážnì?! Mùžeš mi ukázat kde je?}
+{286}{}{No nic, to já jen tak ze zvìdavosti. Ještì se vrátím.}
+
+# 9. CODY FINGERS JULES (2, 4, 8)
+{290}{}{(Cody se ustrašenì zadívá na Julese stojícího pøes ulici, který vás oba pozoruje.)}
+{291}{}{(Cody se ustrašenì zadívá na èernocha stojícího pøes ulici, který vás oba pozoruje..)}
+{292}{}{Vážnì? No, vypadá to, že Jules a moje pìst se brzy blíže seznámí.}
+{293}{}{Vážnì? A víš co se stane teï, Cody? Ten ošklivý pán co ukradl }
+{1293}{}{auto a }
+{2293}{}{ s rukou v pìst si zajde pøes ulici trochu si popovídat mezi ètyøma oèima.}
+{294}{}{Opravdu? No, vyøídím si to s ním pozdìji. Mùžeš mi ukázat kde je teï to auto?}
+
+# 10. CODY FINGERS JULES, BUT JULES DEAD (8)
+{300}{}{(Cody krèí rameny.)}
+{301}{}{Mùžeš mi ukázat, kde je teï to auto?}
+{302}{}{No nic, to já jen tak ze zvìdavosti. Mìj se.}
+
+# 11. SHOW ME! SHOW ME!/YOU CAN?! WILL YOU? (2, 4, 8, 9, 10)
+{310}{}{(Cody znovu pøitaká, a pak se nìkam rozbìhne.)}
+{311}{}{(Bìžíš za ním.)}
+{312}{}{Už jdu... koukni na ten písek! Je uježdìný! Uh... Cody kam jdeš?}
+{313}{}{Cody, zastav! Já tam teï nechci jít... Musím nejdøív zaøídit pár vìcí. Za chvíli jsem zpátky.}
+
+# 12. SCARE CODY OFF (WTG)
+{320}{}{(Blížíš se k chlapci, který tì stále upøenì pozoruje. Je obleèený jen do hadrù a jen stìží rozeznáš jeho oblièej pod tou vši špínou.
+ Když jsi už skoro u nìj, všimne si tvého èela, zornièky se mu rozšíøí a rozbìhne se pryè.)}
+{321}{}{(Z dálky to vypadá, jako když je to dítì obleèené jenom do špinavých hadrù. Je to  stejnì jedno, protože jen jak jsi se ve své energo zbroji trochu pøiblížil, chlapec se evidentnì polekal a utíká pryè.)}
+{322}{}{Sbohem}
+{324}{}{Mìl bych toho malýho parchanta prodat do otroctví... hmmmm, moment...}
+
+# 13. SCARE CODY OFF CUZ OF BAD KARMA (WTG)
+{330}{}{(Z dálky to vypadá, jako když je to dítì obleèené jenom do špinavých hadrù. Je to stejnì jedno, protože jen jak ses trochu pøiblížil, chlapec se evidentnì polekal a utíká pryè.)}
+
+# 14. SCARE CODY OFF CUZ OF MARCUS (WTG)
+{340}{}{(Z dálky to vypadá, jako když je to dítì obleèené jenom do špinavých hadrù. Je to stejnì jedno, protože jen co se Marcus trochu pøiblížil, chlapec se evidentnì polekal a utíká pryè.)}
+
+# 15. SCARE CODY OFF CUZ OF LENNY (WTG)
+{350}{}{(Z dálky to vypadá, jako když je to dítì obleèené jenom do špinavých hadrù. Je to stejnì jedno, protože jen co se Lenny trochu pøiblížil, chlapec se evidentnì polekal a utíká pryè.)}
+
+# 16. FALLOUT2 = ENCLAVE_DESTROYED (WTG)
+{360}{}{(Když tì Cody poznal, pøestal se mraèit a dokonce se i trochu usmál, když jsi pøišel až k nìmu.)}
+{361}{}{(Chlapec tì upøenì pozoruje jak pøicházíš blíž... stìží rozeznáváš jeho oblièej pod nánosy špíny. Na zbytcích svého ošuntìlého trièka má naèmáráno "Cody". Když jsi pøišel blíž, pøestal se mraèit a trochu se i usmál.)}
+{362}{}{Nazdáár, Cody}
+{363}{}{Èaues, Cody}
+{364}{}{Jak žiješ Cody, kamaráde?}
+{365}{}{Hej, Cody. Tak jsem právì zachránil svìt. Že to ale byla døina. Kdo by si to byl pomyslel, že je prezident takovej hajzl? Joj. Jak se máš ty?}
+{366}{}{Jenom jsem myslel, že se zastavím na kus øeèi, Cody. Staráš se teï o New Reno, že jo?}
+
+# 17. FALLOUT2 = TALKIN' (16, 17)
+{370}{}{(Cody se na tebe stále usmívá.)}
+{371}{}{(Cody se nepøestává usmívat.)}
+{372}{}{(Cody se usmívá.)}
+{375}{}{Tak jak žiješ, Cody? Pohoda, ne?}
+{377}{}{Jenom jsem myslel, že se zastavim na kus øeèi, Cody. Staráš se teï o New Reno, že jo?}
+
+# 18. SEEYA (16, 17)
+{380}{}{(Cody zamrká a pak cosi zamumlá.)}
+{381}{}{He? Cos øíkal?}
+{382}{}{Cože, Cody? Nerozumìl jsem.}
+
+# 19. THANKS (18)
+{390}{}{(Cody zamrká, a pak znovu cosi zahuhòá. Skoro jsi to neslyšel, ale znìlo to jako 'ti dìkuju.')}
+{391}{}{(Cody zamrká, a pak znovu cosi zahuhòá. Skoro jsi to neslyšel, ale znìlo to jako 'jdi do hajzlu.')}
+{392}{}{Díky Cody. Bez eNPéCéèek, jako jsi ty, by tu byla ale ZATRACENÁ nuda}
+{393}{}{JÁ TÌ ZABIJU! ZABIJU TÌ!}
+{394}{}{Hej, žádnej problém, Cody. Zachraòovat svìt mám prostì už v krvi. Dávej na sebe pozor, OK?}
+{395}{}{Ty malej sráèi! Já tì zabiju! Já tì vážnì zabiju! Rozpárám ti držku --!}

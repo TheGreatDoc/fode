@@ -1,0 +1,112 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš rozloitou enu støedního vìku.}
+{101}{}{Vidíš Marge LeBarge, majitelku dolu Kokoweef.}
+{102}{}{Vidíš statnou houevnatou enu, která vyzaøuje autoritu.}
+{103}{}{Je mi líto, ale právì nemám èas na chudáky.}
+{104}{}{Vra se, a se ti hlava zahojí.}
+{105}{}{Pøekvapuje mì, e umíš chodit a dokonce i mluvit.}
+{106}{}{Zdá se, e tvùj opasek nemùe vydret ten nápor.}
+{107}{}{Jste jenom pár klaunù, kteøí utekli z cirkusu.}
+{108}{}{No, mùj favorit zrovna nejsi.}
+{109}{}{Díky za pøinesení toho kontrolního èipu. Koneènì se Kokoweef zase vrátil do vyjetıch kolejí.}
+{110}{}{Za ten kontrolní èip ti dám 1000$.}
+{111}{}{Mìl jsi štìstí pøi hledání kontrolního èipu?}
+{112}{}{Ano, bylo mi potìšením. Ale obèas si taky budeš muset vystaèit sama.}
+{113}{}{Nikdy nepohrdnu placenou prací. Ale teï mi ještì povìz o nìèem jiném.}
+{114}{}{Jak to víš, e mám ten èip u sebe?}
+{115}{}{Jakou to pro tebe má cenu?}
+{116}{}{A nìjakı seenu, dám ti vìdìt.}
+{117}{}{U asi pùjdu. Sbohem.}
+{118}{}{Mockrát díky, e jsi tomu udìlal pøítr. Obèas pøestávali moji horníci pracovat, ale teï u jim jde práce od ruky,
+ kdy nefetují.}
+{119}{}{Díky za pozavírání tìch Morningstarskıch provokatérù. Koneènì dostali co jim patøí. Jak ti mohu pomoci?}
+{120}{}{Jak jsi mohl moje chlapce pozavírat do vìzení? Teï mám nedostatek horníkù a Morningstar mi vyfoukne všechny kšefty.
+ Co po mì ještì chceš?}
+{121}{}{Jsem sice ráda, e jsi pozavíral všechny ty Morningstarské vandaly, ale moje hochy si zavírat nemusel. Co ještì
+ chceš?}
+{122}{}{To je jako dát miminu motorovou pilu. Vysvìtli mi, proè jsi je postøílel, kdy se jenom pohádali? Co po mì potom
+ všem ještì chceš?}
+{123}{}{Kdo jsi?}
+{124}{}{Rád bych se tì zeptal na pár vìcí.}
+{125}{}{Jenom procházím. U jsem prošel, tak zase pùjdu dál. Sbohem.}
+{126}{}{Nazdar, já jsem Marge. Marge LeBarge. Jsem majitelka tohoto dolu.}
+{127}{}{Co pro tebe mùe Marge udìlat?}
+{128}{}{Copak tady tìíte?}
+{129}{}{Neslyšela jsi náhodou o vìci zvané Garden of Eden Creation Kit?}
+{130}{}{Narodila jsi se v Reddingu?}
+{131}{}{Nevíš o nìjaké práci, nebo o nìèem, co by se ve mìstì dalo dìlat?}
+{132}{}{Jenom se rozhlíím. Sbohem.}
+{133}{}{Zlato, samozøejmì. Tìíme ho tady v Kokoweefu a potom obchodujeme s New Californian Republic, Vault City a New
+ Renem.}
+{134}{}{Posíláte zlato na všechna ta místa?}
+{135}{}{Proè se tvùj dùl jmenuje Kokoweef?}
+{136}{}{Povìz mi ještì o nìèem jiném.}
+{137}{}{To mi prozatím staèí. U pùjdu, sbohem.}
+{138}{}{Samozøejmì. Kadı má rád zlato. Pokud sháníš bliší informace, promluv si s vùdcem karavany, Jamesem Hoffym.}
+{139}{}{Povìz mi ještì o nìèem jiném.}
+{140}{}{Díky, u jdu za ním. Sbohem.}
+{141}{}{Garden of Eden Creation Kit? To zní velice pùsobivì. Nikdy jsem ale nic takového nevidìla a nevìø tomu, e kvùli 
+tobì to pùjdu hledat klidnì i na smetištì.}
+{142}{}{Povìz mi ještì o nìèem jiném.}
+{143}{}{To jsem si myslel. Sbohem.}
+{144}{}{Zbláznil ses?. Narodila jsem se na severu. Na okraji jednoho jezera. Jezera LeBarge.}
+{145}{}{O nìm jsem nikdy nic neslyšel. Povìz mi ještì o nìèem jiném. }
+{146}{}{To zní pìknì. Snad se tam nìkdy podívám. Prozatím sbohem.}
+{147}{}{Znám jenom pár historek.}
+{148}{}{Jo, poøád jenom historky... ale já mám nìco jiného na práci.}
+{149}{}{Jenom pár historek?. Povìz mi ještì o nìèem jiném.}
+{150}{}{Vyprávìj mi ty historky.}
+{151}{}{Co je to?}
+{152}{}{Myslím, e to zvládneš. Je mi líto, ale mám toho na práci moc. Sbohem.}
+{153}{}{Ve svém dole mám velikou dùlní mašinu. Problém je v tom, e její kontrolní èip jaksi doslouil. Abych mohla zvıšit
+ naší produkci, musím sehnat novı.}
+{154}{}{Rád bych ti pomohl, ale kde ten èip mùu sehnat?}
+{155}{}{Na západ od mìsta se nachází Velkı Wanamingo Dùl. Pøed nìkolika mìsíci se v nìm pøestalo tìit. Je sice opuštìnı, ale všechny dùlní stroje v nìm poøád jsou. Podle mì by alespoò v jednom z nich mìl bıt funkèní kontrolní èip.}
+{156}{}{To se nezdá moc obtíné. Proè u jsi tam nedošla sama?}
+{157}{}{Není to tak lehké jak se zdá, protoe v tom dole straší. To je taky ten dùvod proè se celı dùl uzavøel. Pár  horníkù se tam ztratilo a nìkteøí tvrdí, e vidìli nìjaká divná stvoøení. Teï u se tam nikdo neodváí a kdy se pøece jen
+ našlo pár odválivcù, nikdo u je nikdy nevidìl.}
+{158}{}{Take se mì pokoušíš poslat na sebevraednou misi. Kolik mi za ten èip dáš?.}
+{159}{}{Za ten èip ti dám rovnıch 1000$. Majitel dolu Morningstar Dan McGrew ti pravdìpodobnì nabídne to samé, ale on tìí zlato jenom kvùli fetu z New Rena. Rozhodnutí je ale na tobì. Kdy mi ten èip dáš, dostaneš zaplaceno a ještì udìláš dobrou vìc.}
+{160}{}{Vıbornì. Tolik penìz jenom za jeden mròavej èip.... Ten dùl je asi hodnì nebezpeènı.}
+{161}{}{Není to sice procházka rùovım sadem, ale ty vypadáš na nìkoho, kdo by to mohl zvládnout. Dones mi èip a já ti vyplatím odmìnu. Platí?}
+{162}{}{Jo, platí. U pro nìj jdu.}
+{163}{}{Popøemıšlím o tom. Zatím sbohem.}
+{164}{}{Svìlé. Ten pøed tebou se nevrátil. Doufám, e budeš lepší (usmívá se).}
+{165}{}{Uvidíme co se dá dìlat. Ale nejprve mi ještì povìz o jinıch vìcech.}
+{166}{}{To víš e budu. Uvidíme se pozdìji. Sbohem.}
+{167}{}{No, koluje spousta historek a rùznıch klepù tøeba o tom, e nìkdo pøevezme moc nad Reddingem, e jednou pozdì v noci pøišli ze høbitova Wanamingos a nìkdo dokonce tvrdí, e pøed pár mìsíci spatøil létající talíø.}
+{168}{}{Co tì ještì zajímá?}
+{169}{}{Povìz mi nìco o tom pøevzetí moci}
+{170}{}{Co je to Wanamingo?}
+{171}{}{Øíkala jsi létající talíø?}
+{172}{}{Lidi si prostì musí vymıšlet kdykoliv a kdekoliv. Povìz mi ještì o nìèem jiném.}
+{173}{}{Rád bych tì poslouchal, ale u musím jít. Sbohem.}
+{174}{}{Vypráví se, e moc nad námi se chystá pøevzít Vault City. Popøípadì to mùe bıt jedna z rodin New Rena, která by pøi tom pøejímaní a po nìm zahrnula celé naše mìsto drogami a chlastem. Poslední z adeptù je NCR. NCR by pro nás bylo nelepší, to ti povím - Nejvíc si cení našeho zlata a tím pádem i celého mìsta. A i kdy by Redding spadal pod NCR, byl by víceménì samostatnı.}
+{175}{}{Co takhle další historky?}
+{176}{}{Díky za vysvìtlení. Víc u nepotøebuji. Sbohem.}
+{177}{}{Wanamingo je ta nejhorší potvora, která se ve mìstì vyskytuje. Je velkı jako dva urostlí mui, silnìjší ne brahmíní samec a místo rukou má dvì odporná slizká chapadla. Wanamingos se nedají zranit ádnou zbraní. Øíká se po válce pøišly z vesmíru nìjaké obludy a pár let po nich i Wanamingos.}
+{178}{}{Øekni mi ještì o jinıch historkách.}
+{179}{}{To je všechno, co jsem prozatím potøeboval vìdìt. Sbohem.}
+{180}{}{Ano. Moji horníci sice, stejnì jako vìtšina lidí ve mìstì, pravidelnì uívají Jet, ale stejnì se nìkteøí z nich zapøísáhli, e pøed pár mìsíci vidìli kosmickou loï, letící jihozápadním smìrem.}
+{181}{}{Co takhle jiné historky?}
+{182}{}{To je všechno co jsem potøeboval vìdìt. Sbohem.}
+{183}{}{No Dan a jeho hoši z Morningstaru preferujou ty parchanty z New Reno. A já zas doufám, e Redding bude brzo souèástí NCR.}
+{184}{}{To se mì netıká. Povìz mi ještì o nìèem jiném.}
+{185}{}{Zajímavé. Sbohem.}
+{186}{}{V takovémto mìsteèku se kadá, zpráva roznese rychlostí blesku. A u je to dùleité, nebo je to úplná prkotina. Teï si promluvme o koupi.}
+{187}{}{Kolik mi za to dáš?}
+{188}{}{Dostaneš 1,000$. Tak co?}
+{189}{}{OK, beru to. Tady máš èip.}
+{190}{}{Nìjak se mi ho nechce dát z ruky.}
+{191}{}{Doufáš e ti nabídnu víc? Doufej dál, kámo. A jestli chceš hledat lepší nabídku, tak se uhledáš. Ale já ti do toho nebudu kecat.}
+{192}{}{No dobrá, prodám ti to. Tady je ten èip.}
+{193}{}{To je jedno. Stejnì si to ještì nechám. Sbohem.}
+{194}{}{Rozhodl jsi se správnì. Díky. Teï zajdu zapojit ten èip, a u koneènì mùeme zaèít poøádnì tìit.}
+{195}{}{Vıbornì. Ale nejdøív mi povìz ještì o jinıch vìcech.}
+{196}{}{Díky za zaplacení. Sbohem.}
+{197}{}{Jo? Jeiši, mockrát ti díky. Jsem z toho celá dojatá. Co chceš?}
+{198}{}{Rád bych se tì na nìco zeptal.}
+{199}{}{Nic. Jenom jdu kolem. Sbohem.}
+{200}{}{Abych øekla pravdu, já vlastnì ani nevím, kde se to jméno vzalo. Tento dùl se tak jmenoval u odjakiva. Ale stejnì to zní romanticky, nemyslíš? Ko-ko-weef. To jméno lahodí mému uchu.}
+{201}{}{Ah tak. A co si vlastnì øíkala, e zde tìíte?}
+{202}{}{Uh huh. No, radši u pùjdu. Sbohem.}

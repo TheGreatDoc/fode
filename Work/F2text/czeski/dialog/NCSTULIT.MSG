@@ -1,0 +1,285 @@
+#tenhle soubor pøeloil Birdman - birdman@post.cz, http://get.to/birdman
+# 0. QUICK LOOK (WTG)
+{100}{}{Vidíš roztomilou "malou osobu."}
+{101}{}{Vidíš Stuarta Malého.}
+
+# 0. LOOK (WTG)
+{150}{}{Vidíš skøeèka v dìtskıch šatech. vıká párátko a pátravì si tì prohlíí.}
+{151}{}{Vidíš Stuarta Malého, trpaslíèího boxerského agenta. vıká párátko a pátravì si tì prohlíí.}
+{152}{}{Vidíš Stuarta Malého, trpaslíèího boxerského agenta. Vypadá strašnì roztomile. Jako lehce páchnoucí, zrzavı plyšovı medvídek z Bogoty.}
+
+# 1. FLOAT DIALOGUES (ENCLAVE_DESTROYED = TRUE + PRIZEFIGHTER) (WTG)
+{200}{}{Já vìdìl, e ty na to máš, ale e zachráníš i svìt, to jsem skuteènì neèekal. Dobrá práce.}
+{201}{}{Jsem na tebe pyšnı, dítì.}
+{202}{}{Poøádná dálka a poøádná práce. Stuart je na tebe pyšnı.}
+
+# 2. FLOAT DIALOGUES (ENCLAVE_DESTROYED = TRUE) (WTG)
+{210}{}{Škoda, strašná škoda, e jsem nevidìl, jak mlátíš ty Enklávské hajzly. To by byl pohled!}
+{211}{}{Ta bitva s Enklávou, to muselo bıt nìco. Zatracenì.}
+{212}{}{Ha! Teï, kdy u je svìt zachránìnej a Enkláva znièená, asi u nemáš ádné vyuití pro své hrdinské schopnosti, co? Co takhle vyuít svoji ïábelskou energii v ringu?}
+
+# 3. FLOAT [MALE, PRIZEFIGHTER] (WTG)
+{220}{}{Jak se vede, šampióne?}
+{221}{}{Vypadáš dobøe.}
+{222}{}{Máš cenu svı váhy ve zlatì. Pìsti moná i víc.}
+{223}{}{Terminátor je proti tobì hadr, kamaráde. Kdybys boxoval s ním, rozmaèkal bys mu tu jeho plechovici, co nosí na krku.}
+{224}{}{Rozdrtils toho zmrda jako buldozer, uau! A to jsem na tebe ani nemusel øvát 'udìlej to pro Ameriku...' Skvìlej zápas.}
+{225}{}{Jsem rád, e jsem to s tebou zkusil, zlatíèko. To byla bitva!}
+{226}{}{Vypadáš dobøe...}
+
+# 5. FLOAT DIALOGUES NORMAL (WTG)
+{230}{}{Potøebuju nìjakej novej talent...}
+{231}{}{Zasraní tlustoprdi, lenivı jak sviòa...}
+{232}{}{Kdybych byl jenom o kousek vìtší...}
+{233}{}{Ti hòupi se bijou jako dìcka z mateøskı školy, blbouni...}
+
+# 6. INTRO (WTG)
+{240}{}{(Skrèek si tì prohlíí pátravım pohledem. Kdy k nìmu pøistoupíš, vyndává si rozvıkané párátko z úst.) }
+{241}{}{Jo, co chceš, VELKEJ kámo?}
+{242}{}{Co pro tebe mùu udìlat, zlato?}
+{243}{}{Nazdar hrdino. Co pro tebe mùu udìlat?}
+{244}{}{Hunh?}
+{245}{}{Proè tak máááálinkej seš?}
+{246}{}{Odejdi}
+{247}{}{Kdo jsi?}
+{248}{}{Nic, jenom se rozhlíím.}
+
+# 7. HUNH?/ME NO LOOK PRETTY/WHY YOU SOOO SMALL? (6)
+{250}{}{(Mávnul rukou.) Odbzuè, postiáku. Nemám na tebe èas.}
+{251}{}{Bzzzzzzz-bzzzzzz}
+
+# 8. HUNH? [EXCEPT THE PLAYER LOOKS LIKE A FIGHTER] (6)
+{260}{}{(Povzdechl si. Vypadá, jakoby chtìl nìco øíct, ale pak si to rozmyslel. Prohlíí si tvou postavu a pak pøikıvne.) Umíš se mlátit? 
+Vypadáš fit.}
+{261}{}{Já biješ MOC! Chceš já biješ ty?}
+{262}{}{Já nejseš hezkej. Ty rád? Já chceš}
+
+# 9. ME FIGHT A LOT. ME FIGHT YOU? (8)
+{270}{}{Ne, ne...bojovat v RINGU! Víš, ring?(Ukazuje na boxerskı ring a druhou rukou pøedvedl nìkolik rychlıch boxerskıch úderù.)
+ To by tì moná mohlo zajímat?}
+{271}{}{(Bouxhni malıho chlápka do ksichtu a vem mu jeho kapesné.)}
+{272}{}{Uh-huh}
+{273}{}{Mùeš dát nánuk, dy já bojuješ v cing-ling uh RING?}
+{274}{}{Nuh-uh}
+{275}{}{Já nebiješ v ring, já biješ bo, já dóbródruh, já chráníš SVÌT! Já jdeš pryè...}
+
+# 10. PUNCH HIM BACK (9)
+{280}{}{(Uskoèil.) Hej, blbèe! Šetøi si to do ringu! A teï na rovinu - jdeš do toho, nebo ne?}
+{281}{}{Já jdeš}
+{283}{}{Já jdeš pryè ty blbec, ne já}
+
+# 11. UH-HUH (9, 10)
+{290}{}{(Usmívá se.) Dobøe, domluveno. Jmenuju se Stuart, ale vìtšinou mi lidi øíkají Stuart Malej, ale to proto....hm,  všechno, co TY potøebuješ vìdìt, e jsem velkej v dùleitejch smìrech. Máš jméno, vole?}
+{291}{}{Já }
+{292}{}{Nó... Mì...já...mi...}
+{293}{}{Já Velkej Stu}
+{296}{}{Odejdi hledat dobrodruství nìkde jinde}
+
+# 12. ALL RIGHT NAME (11)
+{300}{}{Mì-já-mi, huh? "Mìjámi...Jo MIAMI!" TO SE MI LÍBÍ! Jo, to je ono. Tak dobøe, pojï zlomit pár nosù.}
+{301}{}{(Mraèí se.) Chytrák, co? Hmmf...dneska nikdo nerespektuje starší. (Pokrèil rameny.) Dobøe, tak pùjdeme rozbít pár hub.}
+{302}{}{, jo? Dobøe,  }
+{1302}{}{ Pojïme rozbít pár hub.}
+{305}{}{Uteè a schovej se}
+
+# 13. SEXY (22)
+{310}{}{(Rozhoøèenì si odfouknul.) Hele. Jenom proto, e nesplòuju poadavky armády pro odvod svou vıškou, neznamená, e si neuívám naplno.}
+{311}{}{Jo tak?}
+
+# 14. RETARD LOSE (WTG)
+{320}{}{Vypadni, joudo. V tomhle mìstì u další šanci nedostaneš. A teï vypadni!}
+{321}{}{Nikdy, NIKDY jsem nemìl riskovat a vìøit ti. Takové zasrané zklamání. A teï vypadni, ty joudo! Zmiz!}
+{322}{}{JÁ }
+{1322}{}{ NE ÈURÁK JA ZABIJEŠ TY ZABIJEŠ ZABIJEŠ MRTVEJ SEŠ TEÏ TY--}
+{323}{}{A co nánuk?}
+{324}{}{S pláèem uteè pryè}
+{326}{}{(Klidnì se usmìj, pøikıvni, a pak na nìj zaútoè.)}
+{327}{}{Dej mi další šanci, Stuarte. No tak, jenom JEDNU! Já na to mám!}
+{328}{}{(Odejdi.)}
+{329}{}{(Stuart je znechucenı, kdy vidí, jak tì vytahují z ringu.) }
+
+# 15. ANOTHER CHANCE...HELL NO (14, 24)
+{330}{}{Co, dímaèka ti ukousl obì uši, nebo co, chlapèe?! }
+{331}{}{Co, dímaèka ti ukousl obì uši, nebo co, dìvèe?! }
+{332}{}{Øekl jsem vypadni! ZMIZ!}
+{333}{}{Kopni hlasitého èerveného muíèka.}
+{334}{}{Nenávistnì zaøvi}
+{336}{}{(Odejdi.)}
+{337}{}{(Zrudnul.) }
+
+# 16. ANOTHER CHANCE...HELL NO (14, 24)
+{340}{}{(Poslední šance. Ale dostanu 75%, ádné námitky. }
+{341}{}{(Poslední šance. Ale dostanu 75%, ádné námitky. }
+{342}{}{Dobøe. Mùu jít bojovat hned teï. Veï mì, Stuarta.}
+{343}{}{Dobøe. Dej mi pauzu na oddech, hned budu zpátky.}
+{344}{}{Nestojí mi to za to.}
+{345}{}{(Stuart zrudnul a vypadá, jako by chtìl zaèít øvát, ale pak se uklidnil.) Dobøe. }
+{346}{}{Poser to ještì jednou a skonèíš tady.}
+
+# 17. RETARD/NORMAL WIN (WTG)
+{350}{}{(Stuart je usmívá jako šakal.) Zasranì dobrı pøedstavení. }
+{1350}{}{ to je boxerská hvìzda budoucnosti. Doufám, take mì nezklam. Dej mi vìdìt, a budeš mít chu na další boj.}
+{351}{}{Já CHCEŠ HNED ROZBIJEŠ DRŠKA JIM TEÏ TEÏ HNED!}
+{352}{}{Já chrápeš chvilinku a pak biješ zas}
+{353}{}{Chceš nánuká}
+{355}{}{Pøipravenìjší u nebudu. Mùeme jít.}
+{356}{}{Dej mi chvilku na pauzu, musím si trochu oddechnou.}
+{357}{}{Myslím, e konèím, Stuarte. Tam v ringu, tam na mì èíhá smrt, vystrašilo mì to xmrti. Konèím s boxem.}
+
+# 18. ICE CREAM (9, 10, 17)
+{360}{}{(Skøet mrknul, pak se zamraèil.) Ná- co?}
+{361}{}{Já chceš nanuk nanuk nanuk. šokoládovej nébo fanilkovej}
+{362}{}{Uh-uh. NáNUK! Malej sladkej studenej nánuk}
+{363}{}{Jdi pryè, najít si nanuk nìkde jinde}
+
+# 19. ICE CREAM (18)
+{370}{}{(Skøet se nejistì usmál.) }
+{371}{}{No, mùu ti sehnat nìco na ten zpùsob, kámo...vıbìr kurev, drog a chlastu...ale to je tak všechno. }
+{372}{}{No, mùu ti sehnat nìco na ten zpùsob, dìvèe...nìjakého toho gigola, poøádnou dávku drog nebo exkluzivní chlast...ale to je tak všechno. }
+{373}{}{Tak, jdeš se bít, nebo ne?}
+{374}{}{Okay}
+{375}{}{Chceš spát minutku}
+{376}{}{Nene}
+
+# 20. NUH-UH/NAW (9, 10, 17, 19)
+{380}{}{No, já tì nudit nebudu, ale zahazuješ skvìlou kariéru, víš? Mùeš mít co chceš, sex, drogy, raknról...Poøádnì si to rozmysli, a pak se vra. Máš poøádnou šanci.}
+
+# 21. WIN, FIGHT AGAIN (17, 24, 30, 31)
+{390}{}{Vıbornì! Pøedstavení zaèíná!}
+{391}{}{Jdi za ním.}
+
+# 22. WHO ARE YOU? (6, 40)
+{400}{}{Co...tady je snad nìkdo HLUCHEJ nebo co? Stuart, Stuart Malej? Nejvìtší agent v celım Renu? }
+{401}{}{Nìkdo ti velice uškodil, e se o mnì nezmínil, kámo. }
+{402}{}{Nìkdo ti velice uškodil, e se o mnì nezmínil, drahoušku. }
+{404}{}{Hmmmf. Tak. Jak je jmenuješ?}
+{405}{}{Jsem }
+{1405}{}{.}
+{1406}{}{, chci boxovat. Mùeš mi nìjak pomoct?}
+{407}{}{Pracoval jsi nìkdy v cirkusu, Stuarte?}
+{408}{}{"Stuart Malej?"}
+{409}{}{Hele, bacha. Buï slušnej, Stuarte, nebo budeš mít ještì víc problémù s domlouváním schùzek ve mìstì.  Taková zadrátovaná èelist...}
+{410}{}{Vlastnì se jenom rozhlíím. Mìj se, Stuarte.}
+{411}{}{(Vrazil si párátko zpátky do pusy a zakousl se do nìj.) Máš jméno?}
+{412}{}{(Prohlíí si tì od hlavy k patì.) Uau. Máš k tìm nohám nìjaké jméno?}
+
+# 23. I'M X (22, 33)
+{420}{}{(Stuart pøikıvnul.) }
+{421}{}{Fajn, }
+{1421}{}{. Rád tì potkávám. }
+{422}{}{... }
+{1422}{}{... Se mi líbí. Fakt fajn jméno. No, rád tì poznávám, }
+{3422}{}{. }
+{423}{}{Co pro tebe mùu udìlat?}
+{424}{}{Chci boxovat. Mùeš mi v tom nìjak pomoct?}
+
+# 24. BOXED BEFORE (WTG)
+{430}{}{(Stuart se usmál, kdy zahlédnul tvou blíící se postavu.) Hej, hrdino! Slyšel jsem, co jsi dokázal! Gratuluju! Jak to jde?}
+{431}{}{(Stuart kıvnul na pozdrav, kdy tì uvidìl. ) Heeeej, }
+{1431}{}{(! Jak se vede? Chceš zpátky do ringu?}
+{432}{}{(Stuart si odfrknul.) No, eslipak to není "}
+{1432}{}{." Co tì pøivádí zpátky?}
+{433}{}{Já biješ zas}
+{434}{}{Nièevó. náhledánou}
+{435}{}{Chci BOXOVAT!}
+{436}{}{Dej mi další šanci, Stuarte. Já to DOKÁU! Prosím...}
+{437}{}{Nic, jenom se tak rozhlíím...}
+
+# 25. OFFER TO BOX, PC DOESN'T MATCH UP (23, 33)
+{440}{}{Chceš BOXOVAT? Uh...hele, abychom si rozumìli. Nemáš na to postavu. Je to jasnı? V ringu by tì zabili...}
+{441}{}{TY chceš BOXOVAT? To jsem ještì neslyšel! Hele, pro enskı jsou pracovní místa v Renu vìtšinou...hmmm. No, jak se na tebe dívám, tak pro tebe nejsou ani ty.}
+{442}{}{TY chceš BOXOVAT? To jsem ještì neslyšel!  Hele, bez uráky, box je TVRDEJ a HNUSNEJ sport a ... a ... lidi v nìm jsou potom taky HNUSNÍ, a to by v tvém pøípadì byla zatracená škoda.}
+{444}{}{Dej mi šanci, a já zapomenu na ten MALEJ vtípek, co jsi právì udìlal.}
+{445}{}{Dej mi šanci, Stuarte.}
+{446}{}{Oh, jdi do háje s takovıma posranıma kecama. Jdu pryè.}
+
+# 26. CHANCE (FAIL) (25)
+{450}{}{Ne, sorry, lásko, pøíliš velké riziko...stejnì by tì nejspíš nenechali zápasit. A teï se vra domu, okej?}
+{451}{}{Ne, sorry, kámo, moc velkı riziko...byl by to masakr. A teï se vra k mamince, okej?}
+{452}{}{Neexistují boxerky, a o to mi jde, Stuarte. Budeš první agent, kterı má pod palcem enu-boxerku. Lidi se budou chodit dívat v DAVECH.}
+{453}{}{Ale o to právì jde, Stu...mùu ti øíkat, Stu, ejo?...BUDE to masakr. A víš kolik pozornosti to pøitáhne? Bude to jako poprava v pøímém pøenosu!}
+{454}{}{Oh, tak jdi doprdele s tìma kecam. Jdu pryè.}
+
+# 27. CHANCE (FAIL AGAIN) (25, 26, 27)
+{460}{}{Ne, sorry, lásko, pøíliš velké riziko...stejnì by tì nejspíš nenechali zápasit. A teï se vra domu, okej?}
+{461}{}{No, sorry, kámo, to by nebyl moc zábavnej maskakr - jediná rána a konec. A teï se vra k mamince, okej?}
+{462}{}{Je to riziko, ale...ale, víš, Stuarte, mohla bych se v ringu trochu *odobléct*. To by mohlo pøitáhnout mnohem víc lidí...}
+{463}{}{Oh, tak jdi doprdele s tìma kecama. Jdu pryè.}
+
+# 28. STRONG FELLA, AGREES (23, 25, 26, 27, 33)
+{470}{}{Hmmmmm...Dobøe, dám ti šanci...ale nic ti neslibuju. Jestli to uškodí kšeftùm, tøeba jenom trošièku,
+ letíš. (Zaloil si ruce za záda.) A já beru pochopitelnì pùlku vıhry, bez jakıchkoli námitek.}
+{471}{}{Hmmmmm...Dám ti šanci...ale nic neslibuju. Dìlám ti laskavost, e tì beru pod svá køídla, ale sna se ze všech sil. A já beru pochopitelnì pùlku vıhry, bez jakıchkoli námitek.}
+{472}{}{Beru.}
+{473}{}{Stáhni to na 25% a dohodnuto.}
+{474}{}{Oh, to jsou pìknì posranı kecy, tohleto. Mizím.}
+
+# 29. WE'VE REACHED AN AGREEMENT (28)
+{480}{}{(Stuart se zamraèil ještì víc. Asi chce protestovat, ale pak potøásl hlavou.) Tak dobøe. Teï si promluvíme o managementu.}
+{481}{}{Okay...}
+
+# 30. YOU'RE GONNA NEED A HANDLE (28, 29, 32)
+{490}{}{Dobøe... (Stuart si tì prohlíí.) A teï potøebuješ jméno, umìleckı jméno. Nìco, co zní tvrïácky. Zle, jako tøeba }
+{1490}{}{ Hurrikán, }
+{2490}{}{ Velkej Bijec, však víš.}
+
+# 31. SPECIAL HANDLE (30)
+{500}{}{(Skøet se zamraèil.) nezabil ho tenkrát ten Rusák? Ah, srát na to. Jdeme do boje?}
+{501}{}{(Skøet se zaculil.) Hmm, myslím e ty a "dímaèka" spolu budete vycházet, jenom proboha obèas nìkomu nechejte alespoò jedno ucho. Take...do boje?}
+{502}{}{(Skøet se zaculil.) Nevypadáš na Rusáka, ale kdy se ti to líbí...jdeme do boje?}
+{503}{}{(Skøet se zaculil.) Hmmm, no uvidíme, moná to vyjde. Jdeme do boje?}
+{504}{}{(Skøet se zaculil.) Oko Tygra, co? Heh-heh. To se mi líbí, to bude na lidi brát. Take, jdeme?}
+{505}{}{(Skøet pøikıvnul.) }
+{2505}{}{... To není špatné. Fakt ne. Padne to na tebe. (Kıvnul smìrem k ringu.) Take jdeme na to?}
+{506}{}{Jdeme na to.}
+
+# 32. WE HAVE NOT REACHED AN AGREEMENT (28)
+{510}{}{Ne ne. Fifty-fiftym nebo NIC. Jestli se ti to nelíbí, zkus to jinde.}
+{511}{}{Okay. I kdy mi nikdo neøekl, e upíøi se dìlají i ve tvojí velikosti.}
+{512}{}{Dobøe. 50/50. Co dál?}
+{513}{}{Oh soooorry, pøeøekl sem se? 25/75? Tím myslím 50/50. Pøesnì na pùl. No problemo.}
+{514}{}{Zkus to jinde.}
+
+# 33. STUART LITTLE (22, 33, 39)
+{520}{}{Jo, jo, však víš, "Stuart Malı." Matka ráda èetla E.B. Whita. Tak, máš taky nìjakı jméno?}
+{521}{}{Hmmff. Máš jméno?}
+{526}{}{Ahoj Stu. Ale já teï nemám èas na drby. Pozdìji...}
+
+# 34. DONE MUCH CIRCUS WORK IN YOUR LIFE? (33)
+{530}{}{A proè si myslíš, e jsem vystupoval v cirkusu?}
+{531}{}{Uh...no, víš, vìtšina lidí v Novım Renu se chová, jakoby vylezli z cirkusu, take...}
+
+# 35. DONE MUCH CIRCUS WORK IN YOUR LIFE? (34)
+{540}{}{Take se díváš na mou malou postavu a napadá tì, e jedinı kšeft, ke kterému bych se dostal, je cirkus.}
+{541}{}{Ale... ne...}
+
+# 36. DONE MUCH CIRCUS WORK IN YOUR LIFE? (35)
+{550}{}{JEDINİ ZBÌNİ pohled, a myslíš si, e znáš celou moji kariéru. Nikdy by tì nenapadlo, e osoba mojí vıšky by mohla mít vynikající kariéru v *Boxerském Managementu.*}
+{551}{}{Promiò, bez uráky.}
+
+# 37. I MEANT NO OFFENSE . . . (36)
+{560}{}{Proè bych se mìl uráet? Jenom proto, e si tady nìkdo zvyknul odhadovat kadou NPC v téhle høe  podle nìkolika sprajtù, kterımi jsou prezentovány?}
+{561}{}{Víš, já...}
+
+# 38. . . . (37)
+{570}{}{Hele, já udìlal s tebou to samı? }
+{571}{}{Coe?}
+
+# 39. . . . (42)
+{580}{}{(Smutnì se na tebe podíval.) Nevidíš tu TRAGÉDII? Omylem jsem si tì zredukovat do stereotypu, karikatury bìného Falloutského modelu, místo abych tì povaoval za specifickou, unikátní postavu.}
+{581}{}{Uh, ale Stuarte, JÁ JSEM typickı hrdinskı model. Vlastnì, já jsem hráè téhle hry. }
+
+# 40. UH (13)
+{590}{}{Ne všechny eny jsou pøitahovány k muskım postavám s hrudníky jako sudy, které vypadají jako na steroidové dietì. Pøekvapilo by tì, kolik en povauje moji velikost za neuvìøitelnì SVÁDÌJÍCÍ.}
+{591}{}{A tebe by pøekvapilo, kolik muù taky.}
+
+# 41. . . . (38)
+{600}{}{Vzal jsem v úvahu tvoji pøeplácanou fyzièku, tvoje chování typu Já-chci-bıt-Mad-Max (kdy o tom vùbec mluvíme, kde jsi ztratil jeho psa?), tvoje
+ nesmyslné rozdìlení schopností a pøedpokládal jsem, e jsi prostì obyèejnı nafoukanı moula.}
+{601}{}{Vzal jsme v úvahu tvoje pøepixelované prsa, ten pitomı zpùsob, kterım chodíš, tvoje nesmyslné rozdìlení schopností a pøedpokládal jsem, e jsi prostì nìkdo, kdo chce vypadat jako lepší Lara Croft.}
+{602}{}{Já...}
+
+# 42. . . . (41)
+{610}{}{Nejsi nic víc ne typickı 'muskı hrdinskı RPG model,' jeden z MNOHA stejnıch modelù, které zaplòují tenhle svìt.}
+{611}{}{Nejsi nic víc ne typickı 'enskı hrdinskı RPG model,' jedna z MNOHA stejnıch modelù, které zaplòují tenhle svìt.}
+{612}{}{No...}

@@ -1,0 +1,49 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš obrovitého muže v tìžkém brnìní.}
+{101}{}{Vidíš Franka Horrigana, agenta tajné služby a šéfa prezidentovy ochranky.}
+{102}{}{Vidíš ohromnou postavu hypnotizující tì pohledem plným nenávisti.}
+{103}{}{Nemáš šanci dostat se odtud živý, mutantíku.}
+{104}{}{Mizerný mutante.}
+{105}{}{Mutante!}
+{106}{}{Všechny jsi nás znièil.}
+{107}{}{Všechno je to tvoje vina. Teï za to zaplatíš.}
+
+# Node 2
+{108}{ssa2}{Ty... (kašel) nikdy nezvítìzíš. Ty i ti tví zmutovaní kamarádíèci, vy všichni se mnou odplujete na velkém høibovitém oblaku. Spustil jsem autodestrukci... (smích následovaný záchvatem kašle). Naše práce bude pokraèovat. Nièeho jsi nedosáhl, jen sis podepsal vlastní rozsudek smrti. Já zvítìzil, mutante. Služba, (kašel) èest... odvaha...}
+{109}{ssa2}{Ty... (kašel) nikdy nezvítìzíš. Ty i ti tví zmutovaní kamarádíèci, vy všichni se mnou odplujete na velkém høibovitém oblaku. Spustil jsem autodestrukci... (smích následovaný záchvatem kašle). Naše práce bude pokraèovat. Nièeho jsi nedosáhla, jen sis podepsala vlastní rozsudek smrti. Já zvítìzil, mutante. Služba, (kašel) èest... odvaha...}
+{110}{}{Uh-oh. Promiò kámo... už musím nebo mi ujede loï.}
+{111}{}{Bude lepší, když z tohohle pekla vypadnu a vrátím se na loï.}
+
+# Node 3
+{112}{ssa3alt}{Dostal ses mnohem dál, než jsi mìl, ale to znamená jenom jediné - dosud jsi nepotkal Franka Horrigana. Tvoje krasojízda skonèila, mutante. Je èas zemøít.}
+{113}{}{Když tì nìmùžu obejít, tak tì tedy pøekroèím!}
+{114}{}{Nemùžeme si o tom trochu popovídat?}
+
+# Node 4
+{115}{ssa4a}{Vypuštìní F.E.V. toxinu do naší ventilaèní soustavy z tebe nedìlá hrdinu. Jsi jen další obtížná štìnice, kterou zamáèknu.}
+{116}{ssa4b}{Právì dochází k pøehøátí jádra reaktoru, což znamená, že tady bude za chvíli dost horko. Ale nemusíš se bát, ty se toho nedožiješ. Nejsi žádný hrdina, jsi jenom chodící mrtvola, nic víc.}
+{117}{}{Jenom kecáš, ale skutek utek.}
+{118}{}{Promluvme si o tom. Pìknì v klidu, beseda u kulatého stolu...}
+
+# Node 5
+{119}{ssa5}{Už jsme si promluvili. Interview právì skonèilo.}
+{120}{}{Kdo chce kam, pomozme mu tam.}
+{121}{}{No tak poèkej! Neválèete, milujte! Copak ti to heslo ic neøíká?}
+
+# Node 6
+{140}{ssa6}{Ty mutantská špíno! Co to na mì zkoušíš za triky? Teï už ti nepomùže vùbec nic.}
+{141}{}{Když tì nìmùžu obejít, tak tì tedy pøekroèím!}
+{142}{}{Moment, promluvíme si o tom trochu, co ty na to?}
+
+# Node 7
+{130}{ssa7}{Já jsem Frank Horrigan, Speciální jednotky Spojených státù amerických. Odsud už neodejdeš.}
+{131}{}{Když tì nìmùžu obejít, tak tì tedy pøekroèím!}
+{132}{}{Nemùžeme si o tom promluvit?}
+{133}{}{Máš pravdu. Neodejdu odsud, dokud ti ten tvùj hnusnej ksicht nerozstøílím
+ na sraèku.}
+
+# Additional PC responses to Node 3
+{134}{}{Cože? Jakej Frank? Ty jsi nìjakej herec nebo co?}
+
+# Additional PC responses to Node 4
+{135}{}{Možná sis toho nevšiml, ale jedinej živej mutant široko daleko seš ty. Ale neboj se, já to brzy napravím.}

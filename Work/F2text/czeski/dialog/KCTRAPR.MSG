@@ -1,0 +1,82 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš zátylek rozhlíející se osoby.}
+{101}{}{Vidíš obyvatele Klamathu.}
+{102}{}{Vidíš usedlíka.}
+{103}{}{Vidíš zálesáka}
+{104}{}{Vidíš lovce koešin.}
+{105}{}{Vidíš lovce.}
+
+{110}{}{He, he - ty u se poèítáš mezi našince?}
+{111}{}{Není tu nic co se dá ukrást.}
+{112}{}{V Lovecké ètvrti je kadım dnem èím dál víc krys. Zaèínají dokonce napadat lidi.}
+{113}{}{Není tu pro tebe místo.}
+{114}{}{Nezùstávej tu, odejdi.}
+{115}{}{Na co se díváš?}
+{116}{}{Zatracení barbaøi, vdycky zpùsobíte nìjakı malér.}
+{117}{}{Dej se na jih.}
+{118}{}{Nìco tu smrdí... a víc ne geckonská kùe.}
+{119}{}{Krysy jsou všude!}
+{120}{}{Velkı krysí duch, a co bude pak?}
+{121}{}{Mohu ti poskytnout modlitbu za Velkého krysího ducha, jestli jsi ve mìstì u delší dobu.}
+{122}{}{Dávej si pozor, nebo skonèíš jako Phil.}
+{123}{}{Jsi jako Dunton.}
+{124}{}{Nemyslím si, e tì potøebujeme v téhle èásti mìsta.}
+{125}{}{Co máš za problém?}
+{126}{}{(Mumly, mumly)...je jenom jeden dobrej druh barbarù, a to jsou...(mumly)}
+
+{130}{}{Tahle èást mìsta je pouze pro profesionály.}
+{131}{}{Hmm... nevypadáš jako nìkdo, kdo umí stopovat geckony.}
+{132}{}{Nechápu, jak se takovej divoch dokázal dosta a sem.}
+{133}{}{Dávej si tu pozor na krysy.}
+{134}{}{e zlatı geckon mùe vyrùst a 5-ti násobné velikosti èlovìka je pøehnané.}
+{135}{}{Zlatí geckonové mají jedovaté zuby.}
+{136}{}{Vidìl nìkdo Phila? Tak mám dojem, e jsme ztratili dalšího lovce...}
+{137}{}{Nevidìl jsi Phila?}
+{138}{}{Krysy jsou v posledních dnech strašnì hladové.}
+{139}{}{Pøedpokládám, e se shromaïují ve starıch dolech pod námi.}
+{140}{}{Mım ivotmním snem je vydìlat si na Corvegu.}
+{141}{}{Dávej si pozor na otrokáøe. Oni rádi berou barbary.}
+{142}{}{Ach jo, mít tak víc penìz na láznì.}
+{143}{}{Chci si jít popovídat se svojí Jenny.}
+{144}{}{Ještì nìkolik málo kùí, a budu si moci jít dát koupel v lázních.}
+{145}{}{Mmm, mám rád Duntonovic sušené maso.}
+{146}{}{Jestli se tady ukáou lido-brouci, krysy je seerou. Ha, ha.}
+{147}{}{Óóo ano, opravdu jsou tu pod Klamathem staré tunely. Vìø tomu, nebo ne.}
+{148}{}{V tìch budovách okolo je hodnì narváno.}
+
+{150}{}{Vypadáš jako nìkdo, kdo se vyzná v okolních lesích.}
+{151}{}{Lov geckonù je nebezpeènı -- ale dobøe za nì platí.}
+{152}{}{Strašnì nenávidím všechny ty krysy. A ještì ke všemu jsou natolik chytré, aby se vyhnuly jakımkoliv pastem!}
+{153}{}{Dávej si pozor na zlaté geckony; mají dvakrát tak velkou vıdr jako ti obyèejní.}
+{154}{}{Ty jsi z kmene v Arroyu, e? Poznám to podle vzhledu.}
+{155}{}{Nìkdy mám dojem, e v tìch bárácích pobíhá obrovská krysa.}
+{156}{}{ít zde je laciné, ale musíme strpìt krysy.}
+{157}{}{(Hluènì mlaská) Krysy chutnají lépe, ne si lidi myslí. Máš hlad?}
+{158}{}{Víš, kdy se správnì pøipraví, chutnají geckoni mnohem lépe ne by se mohlo zdát. Jenome jen málo
+ lidí ví jak.}
+{159}{}{Nìkterá zvíøata jsou tak blbá, e utíkají k tobì místo od tebe.}
+{160}{}{Pamatuj si - jestli nìkomu prodáš moc kùí najednou, jejich cena pùjde dolù.}
+{161}{}{Mít tak zbraò s poøádnım dostøelem, to by byl masakr...}
+{162}{}{Pøísahám, e jsem vidìl ty lido-brouky poblí pastvin brahmín na vıchodì mìsta. }
+
+{170}{}{Nenávidím krysy. Smrt by jediné, mne vdy potìší.}
+{171}{}{Lov geckonù je nebezpeènı, ale pøijdeš si na pìknı prachy.}
+{172}{}{Dávej si pozor na zlaté geckony; jsou dvakrát tak odolní, ne ti obyèejní.}
+{173}{}{Ty jsi z kmene v Arroyu, e? Poznám to podle vzhledu.}
+{174}{}{Je tu hroznì moc krys. U se ani nedají netrefit}
+{175}{}{Ty krysy odtud pìknì zdrhly (he he).}
+{176}{}{(Hluènì mlaská) Krysy chutnají lépe, ne si lidi myslí. Máš hlad?}
+{177}{}{Víš, kdy se správnì pøipraví, chutnají geckoni mnohem lépe ne by se mohlo zdát. Jenome jen málo lidí ví jak.}
+{178}{}{Skoro všechna zvíøata, tøeba ze kterıch se dìlá sušené maso, vìtšinou od tebe hned uteèou.}
+{179}{}{V poslední dobì u ten podivnı hlas vycházející zezdola není slyšet. Kam asi zmizel?}
+{180}{}{Víš, nesmìj se mi, ale vùdce krys je prı mrtvı.}
+{181}{}{Prı je vùdce krys mrtvı. Tomu nemùu uvìøit.}
+
+{200}{}{Vidíš drsòáka v koenıch botách.}
+{201}{}{Vidíš èlovìka co musí trávit hodnì èasu v pøírodì.}
+{202}{}{Vidíš drsòáka, kterı si upravuje oblek.}
+{203}{}{Vidíš drsòáckého lovce koešin s botama z geckoní kùe.}
+{204}{}{Vidíš èlovìka co musí trávit hodnì èasu v divoèinì. Má na sobì oblek
+ z geckoní kùe.}
+{205}{}{Vidíš èlovìka ijícího v Lovecké ètvrti.}

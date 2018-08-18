@@ -1,0 +1,110 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p quest_the_irish_man = 0 #
+4 1020 D _var p quest_the_irish_man = 1 #
+5 1030 D _var p quest_the_irish_man = 2 #
+8 1040 D _var p quest_the_irish_man = 3 @
+2 2000 None 1 #
+3 2010 R _var p quest_the_irish_man = 1 R _script quest_server_scripts@the_irish_man_start 0  #
+0 2020 @
+3 3000 None 1 #
+0 3010 @
+4 4000 None 1 #
+0 4010 @
+5 5000 None 1 #
+0 5010 #
+6 5020 R _var p quest_the_irish_man = 3 R _item p PID_BOTTLE_CAPS + 100 R _script quest_server_scripts@the_irish_man_2_3 0  @
+6 6000 None 1 #
+0 6010 #
+7 6020 D _param p ST_STRENGTH > 7 R _item p PID_BOTTLE_CAPS + 350 @
+7 7000 None 1 #
+65507 7010 #
+0 7020 @
+8 8000 None 0 &
+
+[pols]
+{100}{}{Woman}
+{200}{}{Widzisz kobietę.}
+{210}{}{Kobieta jak kobieta.}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{accept, no progress}
+{1030}{}{accept, talked with man}
+{1040}{}{done}
+{2000}{}{Co ty robisz w moim domu? Eh, skoro tu już jesteś, słuchaj, mam problem. Mój mąż wyszedł z domu i nie wiem gdzie jest. Powinien już dawno być w domu. Zaczynam się martwić. Poszukasz go? Powinien być gdzieś w mieście.}
+{2010}{}{Mogę to zrobić.}
+{2020}{}{Nie mam teraz czasu, może później.}
+{3000}{}{Dzięki, jeśli dowiesz się czegoś, powiedz mi. Proszę, znajdź go.}
+{3010}{}{Życz mi szczęścia.}
+{4000}{}{I.. Jakieś postępy? Wiesz, gdzie on jest?}
+{4010}{}{Nie, nie wiem. Daj mi chwile odpocząć.}
+{5000}{}{I.. Jakieś postępy? Wiesz, gdzie on jest?}
+{5010}{}{Nie, nie wiem. Daj mi chwile odpocząć.}
+{5020}{}{Ta, siedzi w barze. Powiedział, że niedługo wróci.}
+{6000}{}{Dziekuję Ci. Oto nagroda. (Daje ci 100 kapsli)}
+{6010}{}{Dobra, żegnaj. (Wyjdź)}
+{6020}{}{100 kapsli? Jaja sobie robisz? (Pokaż swoje muskuły)}
+{7000}{}{Dobra dobra, masz (Daje ci 350 kapsli) Mam tylko tyle, przysięgam!}
+{7010}{}{Ty jebana dziwko! (Atakuj)}
+{7020}{}{Okej. (Wyjdź)}
+{8000}{}{Dziękuje ci!@@Dzięki za pomoc.@@Witaj.@@Oh, witaj ponownie.@@To miło, że mi pomogłeś@@Mam nadzieje, że mąż nie pije ciągle@@Hmm.. ciekawe kiedy przyjdzie.}
+
+[engl]
+{100}{}{Woman}
+{200}{}{You see: Woman}
+{210}{}{You see an woman.}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{accept, no progress}
+{1030}{}{accept, talked with man}
+{1040}{}{done}
+{2000}{}{What are you doing in our house?! Oh well, since you're here now, I have a problem. My husband is gone and I don't know where he is now. He was supposed to be here since a longer time, I'm getting worried. Can you search him please? He must be somewhere in the City!}
+{2010}{}{Alright, I'll do it.}
+{2020}{}{I don't have time right now, maybe later.}
+{3000}{}{Thank you very much. Sadly, I don't have any further informations, and I have to be here if he comes back. Please find him, and I'll give you a reward.}
+{3010}{}{Wish me luck.}
+{4000}{}{And? Any success? Do you know where he is?}
+{4010}{}{No, I do not. Give me a break, geez...}
+{5000}{}{And? Any success? Do you know where he is?}
+{5010}{}{No, I do not. Give me a break, geez...}
+{5020}{}{Yeah, he's hanging out in the bar. He told me I should tell you that he comes home later.}
+{6000}{}{Oh Thank you very much! Here's the reward I promised you. (She gives you 100 caps)}
+{6010}{}{Okay, bye. (Leave)}
+{6020}{}{100 Caps? Are you fucking kidding me? (Show your muscles)}
+{7000}{}{Okay okay, here, take this... (She's giving you another 350 caps) It's all I have, I swear!}
+{7010}{}{You fucking cunt! (Attack)}
+{7020}{}{Fine. (Leave)}
+{8000}{}{Thank you again!@@Thanks again for helping me.@@Hello.@@Oh, Hi again.@@It was very kind of you to help me out.@@I wish my husband wouln't drink all the time.@@hmm... he is pretty late.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{accept, no progress}
+{1030}{}{accept, talked with man}
+{1040}{}{done}
+{2000}{}{What are you doing in our house?! Oh well, since you're here now, I have a problem. My husband is gone and I don't know where he is now. He was supposed to be here since a longer time, I'm getting worried. Can you search him please? He must be somewhere in the City!}
+{2010}{}{Alright, I'll do it.}
+{2020}{}{I don't have time right now, maybe later.}
+{3000}{}{Thank you very much. Sadly, I don't have any further informations, and I have to be here if he comes back. Please find him, and I'll give you a reward.}
+{3010}{}{Wish me luck.}
+{4000}{}{And? Any success? Do you know where he is?}
+{4010}{}{No, I do not. Give me a break, geez...}
+{5000}{}{And? Any success? Do you know where he is?}
+{5010}{}{No, I do not. Give me a break, geez...}
+{5020}{}{Yeah, he's hanging out in the bar. He told me I should tell you that he comes home later.}
+{6000}{}{Oh Thank you very much! Here's the reward I promised you. (She gives you 100 caps)}
+{6010}{}{Okay, bye. (Leave)}
+{6020}{}{100 Caps? Are you fucking kidding me? (Show your muscles)}
+{7000}{}{Okay okay, here, take this... (She's giving you another 350 caps) It's all I have, I swear!}
+{7010}{}{You fucking cunt!}
+{7020}{}{Fine. (Leave)}
+{8000}{}{Thank you again!@@Thanks again for helping me.@@Hello.@@Oh, Hi again.@@It was very kind of you to help me out.@@I wish my husband wouln't drink all the time.@@hmm... he is pretty late.}
+

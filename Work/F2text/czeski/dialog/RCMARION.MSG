@@ -1,0 +1,219 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš statného èernocha.}
+{101}{}{Vidíš Earla Mariona, šerifa Reddingu.}
+{102}{}{Vidíš statnì stavìného mue, dívajícího se na tebe.}
+{103}{}{Vypadáš jako bys potøeboval pøebalit.}
+{104}{}{Nestrpím tu šmejdy, jako jsi ty!}
+{105}{}{Asi to nebude dlouho, co jsi ještì cucal lízátko, viï?}
+{106}{}{Táhni odsud, podvraáku.}
+{107}{}{Táhni odsud.}
+{108}{}{Nazdar zálesáku. Já jsem Earl Marion a jsem místní šerif.}
+{109}{}{Co pro tebe šerif Marion mùe udìlat?}
+{110}{}{Máš teï ve mìstì nìjakou práci?}
+{111}{}{S takovım idiotem jako ty se nehodlám bavit. Tas, šerife!}
+{112}{}{Nehodlám mít ádnı problémy. Radši u odejdu. Nashle.}
+{113}{}{Ahoj. Já jsem Earl Marion, šerif tady v Reddingu, a jsem rád, e tì tu vidím.}
+{114}{}{Ahoj zálesáku. Co pro tebe mùe Earl Marion udìlat?}
+{115}{}{Jak víte, e jsem zálesák?}
+{116}{}{Máte teï ve mìstì nìjakou práci?}
+{117}{}{Rád vás poznávám, šerife, ale u musím jít. Nashle.}
+{118}{}{Jednoduše. Podle toho tetování v zadu na krku.}
+{119}{}{ádnı nemám.}
+{120}{}{Já mám tetování?}
+{121}{}{Sakra, to bylo moje tajemství.}
+{122}{}{Urèitì jsi to poznal podle zpùsobu, jakım jsem ti podal ruku.}
+{123}{}{(Heh, heh) Jenom jsem si dìlal srandu.}
+{124}{}{Ah, chápu. Máš teï nìjakou práci?}
+{125}{}{Stále mì zajímá, jak jste se to dozvìdìl.}
+{126}{}{Proto jste šerifem, ne? Nashle.}
+{127}{}{No, kdy tomu chceš ukrást všechen nádech tajemství... Mám pøátele v New California Republic. Dobré pøátele.
+ Ti mi sdìlují všemoné vìci.}
+{128}{}{Díky, e jsi mi to vysvìtlil. Zajímalo by mì, jestli ty, jako šerif, máš nìjakou práci.}
+{129}{}{Všemoné vìci? Jaké všemoné vìci?}
+{130}{}{Chápu. No, u radši pùjdu. Sbohem, šerife.}
+{131}{}{Já bych to takhle ale nenechával. To podání ruky mùe znát kadı.}
+{132}{}{Oh.}
+{133}{}{Vìtšinou udrování míru. Aspoò nìco jsem dìlal, ne jsem si zlomil nohu.}
+{134}{}{Jak u jsem øekl, zlomil jsem si nohu, take toho teï moc neudìlám.}
+{135}{}{Co se stalo s tvou nohou?}
+{136}{}{Musíte mít opravdu nebezpeènou práci.}
+{137}{}{To je ale smùla. Nashle.}
+{138}{}{Vyšel jsem z mìsta naproti karavanì a protoe u bylo pozdì, tak jsem si zdøímnul. Pak u si pamatuju jenom,
+ e se nìjakı prokletı geckon snail dát si moje koleno k veèeøi.}
+{139}{}{Take tvá noha není zrovna v tom nejlepším stavu, co?}
+{140}{}{No, nikdy pøedtím jsem nebyl dobrı taneèník a nebudu ani potom. Mùu sice chodit, ale doktor Johnson mi øekl,
+ abych tu nohu nechal v klidu, ne se zahojí. Take bych potøeboval malou vıpomoc.}
+{141}{}{Ne e bych toho nemohl moc dìlat, kdy mám pochroumanou nohu, to ne. Ale podle doktora Johnsona bych tu nohu nemìl
+ moc zatìovat a já nemám dùvod ho neposlechnou. Co pro tebe tedy mùu udìlat.}
+{142}{}{S èím mì hodláš obtìovat teï?}
+{143}{}{Kdo je doktor Johnson?}
+{144}{}{Nepotøebuješ náhodou pomoc, šerife?}
+{145}{}{Jestli tì náhodou nepokousala enská...}
+{146}{}{Nebudu tì otravovat moc dlouho. Potøebuješ odpoèívat. Sbohem.}
+{147}{}{Starı dobrı doktor Johnson je mìstskım lékaøem. Bolí tì zub nebo máš zlomenou nohu, on to urèitì spraví.
+ Mimo jiné také prodává léky. Všechny druhy lékù, pokud mi rozumíš. Léky na *cokoliv*, co tì trápí.}
+{148}{}{Toho zní slibnì. Kde ho mùu najít?}
+{149}{}{Zajímavé. Rád bych se tì zeptal ještì na pár vìcí.}
+{150}{}{Díky, uvidíme se pozdìji. Sbohem.}
+{151}{}{Jo, potøeboval bych bodnout s pár vìcma. Jde jenom o takovou chvilkovou záleitost. Je ale dobøe placená a navíc 
+ pøi ní udìláš dobrou vìc pro Redding.}
+{152}{}{Dobøe placená? Kolik je to, dobøe placená?}
+{153}{}{Jak ti mùu pomoci?}
+{154}{}{Jako pro kadého správného Rangera není i pro mne nic jednoduššího, ne ti pomoci.}
+{155}{}{Dneska ti asi moc nepomùu. Snad pøíštì. Sbohem, šerife.}
+{156}{}{To jsi opravdu pøehnal. Nakopu ti prdel i se zlomenou nohou.}
+{157}{}{Jenom si dìlám srandu. Povìz mi radši o nìèem jiném.}
+{158}{}{Ty? Cha! To bylo dobrı!}
+{159}{}{Jenom jsem se snail spravit ti nohu. Eh, sakra, co jsem to chtìl øíct... Sbohem, šerife.}
+{160}{}{Doktor bydlí v západní èásti centra mìsta. Jsem si jist, e uvidí rád dalšího pacienta.}
+{161}{}{Jo, rozumím. Zeptám se tì ještì na pár vìcí.}
+{162}{}{No, zajdu si s ním popovídat. Uvidíme se pozdìji.}
+{163}{}{Všichni tady respektují zákon a pravidla. A dbají na budoucnost Reddingu, samozøejmì.}
+{164}{}{Budoucnost Reddingu?}
+{165}{}{To je témìø samozøejmost, kdy jsi šerifem ty. Máš teï vùbec nìjakou práci?}
+{166}{}{Jistì. Redding nemùe zùstat sám navìky. Nìkdy prostì bude potøebovat kámoše. Já se snaím zajistit,
+ abysme co nejdøív toho kámoše našli. Toho pravého kámoše.}
+{167}{}{Oni jsou i špatní kámoši?}
+{168}{}{To si piš. Tøeba New Reno. To chce vyrabovat Redding kvùli zlatu. Vault City by z nás zase udìlalo sluhy pro ty
+ své Obèany.}
+{169}{}{A ty mylíš, e New Californian Republic je nìjaká jiná?}
+{170}{}{Podle mì ano. NCR je budoucností pustin. "Pracujme spoleènì pro lepší zítøek," øíkají jejich plakáty a mají pravdu.
+ NCR nás chce pøipojit, ne zotroèit.}
+{171}{}{Aha, ale jak mùeš ovlivnit lidi z Reddingu?}
+{172}{}{Kadı má svùj názor. Sbohem.}
+{173}{}{No, èas sice ještì nedospìl k momentu osudového rozhodnutí, ale mùu u teï lidem ukázat, kdo by pro nì byl ten
+ nejlepší, aby se správnì rozhodli, a nadejde ten okamik. To je vše... prozatím.}
+{174}{}{Zajímavé. Zeptám se tì ještì na pár vìcí.}
+{175}{}{Hmm, aspoò mám o èem pøemıšlet. Sbohem.}
+{176}{}{Nemohu uvìøit, e jsi nìco takového øekl. Asi jsi èetl moc westernù. Take ti dám na vıbìr:
+ Buï odsud okamitì odejdeš, nebo odletíš. Ale do nebe. Raè si vybrat.}
+{177}{}{Dobrá, šerife! Jen se uka!}
+{178}{}{Ne, ne, tak jsem to nemyslel. Jenom jsem trošku vtipkoval. Radši mi povìz o jinıch vìcech.}
+{179}{}{No, ehm, ta první monost se zdá lepší. Sbohem, šerife.}
+{180}{}{Jo. Myslel jsem si, e se ti to bude líbit.}
+{181}{}{Heh, heh. Sbohem, šerife Marione.}
+{182}{}{Co ty o mnì víš? Tohle tì bude mrzet. Pojï ven. Na férovku.}
+{183}{}{Plat se mìní práci od práce, ale mìl bych pro tebe nìco jednoduchého pro zaèátek. Jenom potøebuju
+ vykopnout jednoho otrapu z jeho domku. Dostaneš za to 100$.}
+{184}{}{To nezní moc sloitì. Povìz mi o tom víc.}
+{185}{}{Rád bych ti pomoh, šerife, ale nemám dost èasu. Snad pøíštì. Nashle.}
+{186}{}{Vıbornì, Rangere, tohle slyším rád. Vdova Rooneyová u dlouho nezaplatila nájem. Bydlí kousek odsud pøes ulici, na
+ západì. Prostì k ní dojdi a vykopni ji z domu - nebo ji donu, aby zaplatila nájem starostovi Ascortimu.}
+{187}{}{Vdova Rooneyová u dlouho nezaplatila nájem. Bydlí kousek odsud pøes ulici, na
+ západì. Prostì k ní dojdi a vykopni ji z domu - nebo ji donu, aby zaplatila nájem starostovi Ascortimu.}
+{188}{}{Koneènì ses rozhodl. Vdova Rooneyová u dlouho nezaplatila nájem. Bydlí kousek odsud pøes ulici, na
+ západì. Prostì k ní dojdi a vykopni ji z domu - nebo ji donu, aby zaplatila nájem starostovi Ascortimu.}
+{189}{}{Kolik dluí starostovi Ascortimu?}
+{190}{}{Jako kadı správnı Ranger budu rád, kdy udìlám dobrou vìc. To znamená, e to beru.}
+{191}{}{Starosta Ascorti? Kdo to je?}
+{192}{}{To nezní tak špatnì. Beru to.}
+{193}{}{Promiò šerife, ale tohle je mi trochu proti srsti. Sbohem.}
+{194}{}{Vıbornì. Díky za pomoc. Vra se, a jí vykopneš z baráku a odmìna tì nemine.}
+{195}{}{Dobøe. Sbohem, šerife.}
+{196}{}{To nevím, ale ona by ti to mohla øíct. Take, co ty na to?}
+{197}{}{Beru to.}
+{198}{}{Starosta Ascorti? Kdo to je?}
+{199}{}{Promiò, šerife, ale tohle je mi trochu proti srsti. Sbohem.}
+{200}{}{Ascorti je starosta Reddingu. Vlastní Ascortiho Eso naproti pøes ulici. Kousek na sever odsud.
+ Take, chceš mi pomoci, nebo ne?}
+{201}{}{Kolik mu dluí?}
+{202}{}{Dobøe, jdu do toho.}
+{203}{}{Víš, vyhazování starıch en není zrovna moje partie. Sbohem, šerife.}
+{204}{}{To jsem si moh myslet. A zrovna kdy jsem tolik potøeboval pomoci. No, kdy zmìníš názor, víš kde mì najít.}
+{205}{}{Ne odejdu, zeptám se tì na pár vìcí.}
+{206}{}{Zajisté, šerife. Sbohem.}
+{207}{}{Poèkej, ještì jedna vìc. Skoro bych zapomnìl. Tady máš odznak. Budeš ho potøebovat.}
+{208}{}{Díky, šerife. Ale teï, musím udìlat svou práci.}
+{209}{}{Díky. Cítil jsem se dùleitı i pøedtím. Radši u pùjdu.}
+{210}{}{Ahoj. Škoda, es mi nepomoh. U sis to rozmyslel?}
+{211}{}{Moná. Ale nejdøív se tì na nìco zeptám.}
+{212}{}{Ne, jenom jsem šel kolem. Sbohem.}
+{213}{}{Rád tì zase vidím. Radši bys mìl vyøešit ten problém s vdovou Rooneyovou, jinak ti nebudu moci zaplatit.}
+{214}{}{Spolehni se. Uh, coe se po mì chtìlo?}
+{215}{}{Jo, jasnì. Zatím ahoj.}
+{216}{}{S tou vdovou Rooneyovou jsi to udìlal na jednièku, tady máš svıch 100$. Jsi doufám pøipraven na další práci.
+ Takového pomocníka jako ty nemùu postrádat.}
+{217}{}{Povìz mi o té další práci.}
+{218}{}{Budeš muset. Sbohem, šerife.}
+{219}{}{Pro vdovu Rooneyovou jsi udìlal opravdu dobrou vìc. Dìlat si pøátele a ještì pøitom udrovat mír... Díky. 
+ Jsi tedy pøipraven na další práci? Pro tebe to urèitì bude jen takové odreagování.}
+{220}{}{Povìz mi té o další práci.}
+{221}{}{Bohuel nejsem. Sbohem, šerife.}
+{222}{}{Ohlednì té vdovy Rooneyové jsi mì nejspíš špatnì pochopil. Byla to sice postarší dáma, ale do hrobu si jí pomáhat
+ nemusel. Peníze ti sice dám, ale pøi pøíští práci se radìji dr na uzdì. Jasnı?}
+{223}{}{Nìjaké podrobnosti ohlednì pøíští práce?}
+{224}{}{Na další prácièku u nemám náladu. Sbohem.}
+{225}{}{Asi ses moc nesnail zabránit rvaèce v baru, co? Nemùu ti zaplatit za nìco, co jsi neudìlal. Jenome mám poøád zlomenou nohu, take tì potøebuji. Hodláš pro mì pracovat dál?}
+{226}{}{Jistì, povìz mi víc o další práci.}
+{227}{}{U asi ne. Sbohem, šerife.}
+{228}{}{Zavøel jsi sice Morningstarské horníky, ale jejich šéfovi, Danu McGrewovi, se to asi moc nezamlouvá. No nic, tady
+ máš peníze. A teï si promluvme o další práci?}
+{229}{}{Souhlasím.}
+{230}{}{Je mi líto šerife, ale u to vzdávám. Sbohem.}
+{231}{}{Marge se asi podiví, a zjistí, e má své horníky pod zámkem. Dobrá práce. Tady máš peníze. Aby sis  vydìlal další,
+ staèí pøijmout další práci. Co ty na to?}
+{232}{}{U jsem snad nìkdy odmítl?}
+{233}{}{Je mi to líto šerife, ale konèím. Tohle u mi staèilo.}
+{234}{}{Nejsem si jistı, zda zavøení kadého horníka ve mìstì do mého vìzení bylo zrovna to nejlepší øešení, ale budi. Alespoò je klid. Tady máš peníze. Jsi pøipraven na další práci?}
+{235}{}{Jistì.}
+{236}{}{U ne. Je mi líto. Sbohem.}
+{237}{}{Ty jsi jako neøízená støela! Vdy jsi postøílel skoro celou hospodu! Za tohle ti o polovinu sníím plat, a to ještì mùeš bıt rád, e tì nezavøu. Snad tì to nìèemu nauèí. Pøi hospodské rvaèce pøece nemusí nikdo zemøít, he? Doufám jen, e si pøíštì povedeš lépe. Pøipraven na další job?}
+{238}{}{To víš e jo.}
+{239}{}{U nebudu mít práci, kterou bych udìlat lépe, protoe konèím. Sbohem.}
+{240}{}{Ahoj, jsem moc rád, e ses koneènì dal do toho Louina poøezaného dìvèete. Dej mi vìdìt, a dokonèíš práci.}
+{241}{}{U na tom pracuju, šerife. Zatím sbohem.}
+{242}{}{Nemìj obavy, u to skoro mám.}
+{243}{}{Jak jsi mohl toho bastarda, co poøezal tu dívku, nechat vyváznou? Nejseš ty náhodou tak trochu idiot?
+ Dám ti ještì jinou práci, ale za tuhle ti nezaplatím.}
+{244}{}{Já ti ukáu, jakej jsem idiot, ty zatracenej køivonohej greenhorne!}
+{245}{}{Tak u mi dej tu jinou práci.}
+{246}{}{Díky, ale u ádnou práci nechci. Sbohem.}
+{247}{}{Díky Bohu, e jsi dostal toho zkurvenıho sráèe Hakeswilla. Nejdøív ho pouèím o spravedlnosti, a pak ho povìsím.
+ Jen tak dál. Tady máš peníze.}
+{248}{}{Díky šerife. Teï mi øekni o další práci.}
+{249}{}{Díky, to je vše.}
+{250}{}{Nepochybuju o tom, e ten sviòák dostal, co si zaslouil, ale jeho zabitím sis mezi horníky moc pøátel nenadìlal.
+ Odvedl jsi ale dobrou práci, tady máš peníze. Jsi pøipraven na další práci?}
+{251}{}{Jistì.}
+{252}{}{Ne. Je mi líto. Sbohem, šerife.}
+{253}{}{U jsi asi slyšel o ábì Mortonovi. Neprodlenì ho potøebuji odstranit. Je toti pøíliš riskatní nechat
+ si ho hned vedle našeho mìsteèka. Dám ti rovnıch 1000$ za to, e dojdeš do Velkého Wanamigo dolu, ten je západnì
+ odsud, a odpravíš ábu a jeho bandu. Jo a ještì nìco. Dej na sebe bacha.}
+{254}{}{To je nìco pro mì. Jdu do toho.}
+{255}{}{Ne, díky. Ještì by zabil on mì. Sbohem.}
+{256}{}{Ty jsi to zvládl. Zabil jsi ábu. Skvìlá práce, skvìlá práce. Tady máš svıch 1000$. Jeho bratøi asi
+ nebudou moc rádi, kdy se dozvìdí, e jsi ho zabil, ale komu by to vadilo.}
+{257}{}{Bratøi? Neøekl jsi mi, e má abák bratry.}
+{258}{}{Ne? Tak to jsem asi trochu pozapomnìl. Já u jsem holt takovej. No, abák mìl tøi starší bratry...a podle toho, co jsem slyšel, jsou to ještì vìtší mizerové ne on. Jestli si to ještì správnì pamatuji, jsou to Ropucha, Mlok a Had Mortonovi. Taky bych je rád všechny dostal. Jen tak mimochodem, nech si ten odznak, co jsem ti dal. Zaslouíš si to...šerife. (usmívá se)}
+{259}{}{Eh, díky moc, na to nezapomenu. No, radši u pùjdu. U mì zase potøebují jinde. Mimo Redding. Sbohem.}
+{260}{}{No jsou to jen další tøi záøezy na mojí pabì. Bez problému. Sbohem, šerife.}
+{261}{}{To slyším nerad. Potøeboval bych tvoji pomoc. No nic, kdy si to rozmyslíš, víš, kde mì najdeš.}
+{262}{}{Bez obav. Zajdu sem. Sbohem.}
+{263}{}{Budu o tom pøemıšlet. Sbohem.}
+{264}{}{Slyšel jsem, e horníci z obou místních dolù, Morningstaru i Kokoweefu, vyvolávají rvaèky v Louinì Hospodì u malamuta. Kdy se ti povede zastavit je, zaplatím ti 300$. Malamutí salón je kousek odsud. Pøejdi ulici a jdi
+ kousek na západ.}
+{265}{}{U tam jdu, šerife. Zatím sbohem.}
+{266}{}{To není nic pro mì. Nechci zase dostat pøes hubu. Sbohem, šerife.}
+{267}{}{Nìkdo poøezal kurvu v Louinì Hospodì u malamuta, kousek odsud. Take ho vyèmuchej a pøiveï mi ho sem. Dám ti za nìj 500$. Nikdo nebude v mım mìstì øezat lidi. Ani kurvy.}
+{268}{}{ádnı problém. Jako by u tady byl. Zatím nashle.}
+{269}{}{Nejsem ádnı detektiv. Do toho nejdu. Sbohem, šerife.}
+{270}{}{Je tu jeden bandita, øíká se mu abák. Rozhodl se, e se usídlí ve starém Wanamingo dole, západnì od mìsta. Potøebuji ho odstranit. Ale dávej si pozor. Je velice prohnanı a je hlavou nìjakého gangu. Mimochodem, celej gang je v tom dolu s ním. Dám ti 1000$, kdy z nìj udìláš minulost.}
+{271}{}{Proè mu øíkají zrovna abák?}
+{272}{}{Bez obav, šerife.}
+{273}{}{To není nic pro mì. Já mám ivot rád. Sbohem, šerife.}
+{274}{}{Jmenuje se Morton a øíkají mu abák, protoe nutí lidi kuòkat bolestí. Tak co, bereš tu práci?}
+{275}{}{Ohhhh. Ouch. To je hroznı. Ta bolest, ta bolest...}
+{276}{}{Jasnì.}
+{277}{}{Nerad bych taky kuòkal. Sbohem, šerife.}
+{278}{}{Nech toho. To se jenom tak øíká. Potøebuju ho oddìlat co nejdøív. Tak co, bereš to, nebo ne?}
+{279}{}{Pøemluvil jsi mì. Beru to.}
+{280}{}{To je na mì pøíliš nebezpeèné. Sbohem, šerife.}
+{281}{}{Ty jsi v tom baru ještì nebyl? Tak tam jdi hned teï. Byl bych nerad, aby se mi tu lidi navzájem pomlátili.}
+{282}{}{Jasná vìc, šerife.}
+{283}{}{Uvidím, co s tím budu moct udìlat. Sbohem, šerife.}
+{284}{}{Ahoj. Myslím, e máš práci. Vra se, a donutíš ábu kuòkat po našem.}
+{285}{}{Jenom jsem šel kolem.}
+{286}{}{Právì u tam jdu. Sbohem, šerife.}
+
+{300}{}{Tahle práce je pro tebe moc tìká. Vra se, a budeš mít víc zkušeností.}
+{301}{}{Dobøe, šerife.}

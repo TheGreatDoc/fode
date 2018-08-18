@@ -1,0 +1,28 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Ребенок}
+{200}{}{Вы видите ребенка.}
+{210}{}{Вы видите маленького грязного ребенка в каких-то обмотках. Он смотрит на вас голодными глазами.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Child}
+{200}{}{You see a child.}
+{210}{}{You see a little dirty child with some rags on him. He looks at you with hungry eyes.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Child}
+{200}{}{Widzisz dziecko.}
+{210}{}{Widzisz brudne dziecko w obdartych ubraniach. Patrzy na ciebie oczyma głodu, nędzy i rozpaczy.}
+{1000}{}{Initial preferences}
+

@@ -1,0 +1,69 @@
+#tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+# Messages used in gdialog.c for custom NPC combat control.
+#
+{0}{}{Støílej dávkou}
+{1}{}{Uteè z boje}
+{2}{}{Volba druhu zbranì}
+{3}{}{Vzdálenost}
+{4}{}{Útoè na}
+{5}{}{Nadopuj se}
+
+{10}{}{OK}
+{11}{}{Zrušit}
+
+#
+# Burst options.
+#
+{99}{}{Nelze použít.}
+{100}{}{Vždycky!}
+{101}{}{Obèas a nestarej se, když mì náhodou trefíš}
+{102}{}{Ujisti se nejdøív, že mì nezasáhneš}
+{103}{}{Dávej pozor, abys mì nezasáhl}
+{104}{}{Musíš si být absolutnì jistý, že mì nezasáhneš}
+
+#
+# Run away options.
+#
+{200}{}{Kdo uteèe, ten vyhraje!}
+{201}{}{Lepší živý pes než mrtvý lev}
+{202}{}{Když zaèneš trochu krvácet}
+{203}{}{Když se necítíš dobøe}
+{204}{}{Když už je to fakt vážné}
+{205}{}{Nikdy neutíkej z boje!}
+
+#
+# Weapon pref options.
+#
+{300}{}{Žádné}
+{301}{}{Chladné zbranì}
+{302}{}{Preferuj chladné pøed dalekonosnými}
+{303}{}{Preferuj dalekonosné pøed chladnými}
+{304}{}{Dalekonosné}
+{305}{}{Beze zbranì}
+
+#
+# Distance options.
+#
+{400}{}{Drž se poblíž mnì}
+{401}{}{Útoè!}
+{402}{}{Odstøeluj je pìknì z dálky}
+{403}{}{Jak je ti libo}
+{404}{}{Zùstaò na jednom místì}
+
+#
+# Attack who options.
+#
+{500}{}{Toho, kdo útoèí na mì}
+{501}{}{Toho nejsilnìjšího}
+{502}{}{Toho neslabšího}
+{503}{}{Koho chceš}
+{504}{}{Toho, kdo je nejblíž}
+
+#
+# Chem use options.
+#
+{600}{}{Nic neber}
+{601}{}{Stimpaky, kdykoliv jsi trochu zranìný}
+{602}{}{Stimpaky, když jsi zranìný vážnì}
+{603}{}{Obèas si vezmi libovolnou drogu}
+{604}{}{Šlehni si, co chceš a kdy chceš}

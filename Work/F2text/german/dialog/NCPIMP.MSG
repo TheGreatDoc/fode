@@ -1,0 +1,27 @@
+# quick look
+{100}{}{Du siehst einen Zuhälter.}
+
+# examine
+{150}{}{Du siehst einen gut gekleideten Mann. Seine Kleider fangen das Licht ein und reflektieren es, wodurch du geblendet wirst.}
+{151}{}{Du siehst einen Mann mit Klamotten, geschmackloser als eine abgestandene Flasche Mineralwasser.}
+{152}{}{Du siehst einen Zuhälter. Er macht sich gerade zurecht.}
+{153}{}{Du siehst einen Zuhälter. Er nickt dir zu.}
+{154}{}{Du siehst einen Zuhälter. Er sieht schick genug aus, um Zuhälter des Jahres zu werden. }
+{155}{}{Du siehst einen Zuhälter mit Klamotten, geschmackloser als eine abgestandene Flasche Mineralwasser.}
+
+# 15. ENCLAVE DESTROYED (MALE)
+{520}{}{Die Tussi sollte mein Geld lieber haben...}
+{521}{}{Diese Touristen sind lange nicht so drauf, wie ich es gern hätte.}
+{522}{}{Die Schlampe verheimlicht mir besser nichts...}
+{523}{}{Willste 'n bißchen Action?}
+{524}{}{Willste...naß werden?}
+{525}{}{Du findest NIRGENDWO was Besseres.}
+{526}{}{Ich bin so helle, gegen mich sieht Reno dunkel aus.}
+{527}{}{Wenn du die Chips hast, kannste 'nen Vorgeschmack auf den Himmel haben.}
+{528}{}{Brauchste für heute nacht 'nen Freund? Ich besorg dir was Süüüßes.}
+{529}{}{Das hier sind keine Sklaven, sondern Profis, hörste?}
+{530}{}{Die feinsten Damen von ganz New Reno. Nur für dich da...wenn du die Chips hast.}
+{531}{}{Ich hab Frauen, die machen aus dir 'nen richtigen Mann und kosten nur ein paar Chips.}
+{532}{}{Ich hab in meinem Stall die besten Pferdchen.}
+{533}{}{Laß mich für dich sorgen. Ich war zwei Jahre in Folge Zuhälter des Jahres.}
+{534}{}{Ich hab die besten Dirnen in ganz New Reno. Probier sie nur aus, wirst schon sehen.}

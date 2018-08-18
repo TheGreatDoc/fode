@@ -1,0 +1,85 @@
+# 0. LOOK
+{100}{}{Tu vois un immense coffre noir en fer.}
+{101}{}{Tu vois une chose carrée et noire avec un gros nez.}
+
+# 2.  EXAMINE SAFE, CLOSED (WTG, 10)
+{200}{}{Tu vois une immense chose carrée en métal noir avec un nez sur le devant.}
+{201}{}{Tu vois un immense coffre en fer noir, trop lourd pour être transporté. Il y a un cadran de combinaison sur le devant.}
+{202}{}{Bonjour boîte moi }
+{203}{}{ Toi qui ?}
+{204}{}{Lui tordre le nez.}
+{205}{}{Balade-toi}
+{206}{}{Hum. Les numéros inscrits sur ces plaques d'identification permettent peut-être d'ouvrir le coffre...}
+{207}{}{Tourner le cadran et écouter les cliquetis.}
+{208}{}{Tourner le cadran au hasard.}
+{209}{}{Examiner le coffre pour voir s'il n'y a pas de pièges.}
+{210}{}{Ne pas toucher au coffre.}
+
+# 3.  SAFE IS OPEN (WTG, 2, 4, 5, 6, 7, 8)
+{220}{}{On entend un CLAC et le coffre s'ouvre.}
+{221}{}{Le coffre est ouvert.}
+{222}{}{Le nez se met à tourner dans ta main. On dirait qu'il est possible d'ouvrir le devant.}
+{223}{}{On dirait qu'il est possible d'ouvrir le grand carré en métal.}
+{224}{}{Ouvre le devant du carré.}
+{225}{}{Balade-toi}
+{226}{}{Piller le coffre.}
+{227}{}{Ne pas toucher au coffre.}
+
+# 4.  TRAPS, SUCCESS . . . ? (2, 6)
+{235}{}{En y regardant de plus près, tu remarques un fil noir dans la poussière juste au dessous du coffre. En enlevant la poussière, tu te rends compte que le fusible est relié à une charge de dynamite dotée d'un compte à rebours.}
+{236}{}{Hum. Les numéros inscrits sur ces plaques d'identification permettent peut-être d'ouvrir le coffre...}
+{237}{}{Essayer de désarmer le piège.}
+{238}{}{Ne pas toucher au coffre.}
+
+# 5.  CLICKING (2, 5, 6, 8)
+{250}{}{Tu tournes lentement le cadran pendant plusieurs minutes, mais en vain.}
+{251}{}{Hum. Les numéros inscrits sur ces plaques d'identification permettent peut-être d'ouvrir le coffre...}
+{252}{}{Tourner le cadran et écouter les cliquetis.}
+{253}{}{Tourner le cadran au hasard.}
+{254}{}{Ne pas toucher au coffre.}
+
+# 6.  TRAPS . . . ? (2, 6)
+{275}{}{Tu ne trouves aucun piège sur le coffre.}
+{276}{}{Hum. Les numéros inscrits sur ces plaques d'identification permettent peut-être d'ouvrir le coffre...}
+{277}{}{Tourner le cadran et écouter les cliquetis.}
+{278}{}{Tourner le cadran au hasard.}
+{279}{}{Continuer à examiner le coffre pour voir s'il n'y a pas de pièges.}
+{280}{}{Ne pas toucher au coffre.}
+
+# 7.  SPIN RANDOM, SUCCEED (2, 5, 6, 8, 9)
+{290}{}{Tu tournes le bouton... lorsque soudain il y a un CLAC et la porte s'ouvre !}
+{291}{}{Tu tournes le cadran au hasard, lorsque soudain il accepte une combinaison... il y a un CLAC et le coffre s'ouvre !}
+{292}{}{Cooucoou ? Y a quelqu'un ? Y a quelqu'un à l'intérieur ?}
+{293}{}{Arrête de faire ce rictus et enlève ce drap...}
+{294}{}{Ouais, j'ai le contact. . .}
+
+# 8.  SPIN RANDOM, FAIL (2, 5, 6, 8, 9)
+{305}{}{Tu tournes le bouton mais la minuscule porte ne s'ouvre pas !}
+{306}{}{Tu tournes le cadran pendant plusieurs minutes mais rien ne se passe.}
+{307}{}{Bonjour ? Bonjour boîte...}
+{308}{}{Continuer de lui tordre le nez.}
+{309}{}{Balade-toi}
+{310}{}{Hum. Les numéros inscrits sur ces plaques d'identification permettent peut-être d'ouvrir le coffre...}
+{311}{}{Tourner le cadran et écouter les cliquetis.}
+{312}{}{Continuer de tourner le cadran au hasard.}
+{313}{}{Ne pas toucher au coffre.}
+
+# 9.  HELLO? (2, 8, 9)
+{320}{}{La chose ne répond pas.}
+{321}{}{La chose noire carrée ne semble pas te remarquer.}
+{322}{}{La boîte en métal t'ignore.}
+{323}{}{Bonjooooooooour ? Moi. }
+{324}{}{ Toi qui ?}
+{325}{}{Tords-lui le nez}
+{326}{}{Balade-toi}
+
+# 10.  TRAP DISARMED . . . ? (4)
+{340}{}{Avec une précision chirurgicale, tu désarmes le fusible et retires la dynamite sous la poussière. Le piège est maintenant désactivé.}
+{341}{}{Maintenant pour ouvrir ce coffre...}
+{342}{}{Ne pas toucher au coffre.}
+
+# During Combat
+{343}{}{Tu n'as pas le temps de t'occuper du coffre pendant le combat.}
+
+# Safe opening Message
+{344}{}{Tu as forcé le coffre des pillards.}

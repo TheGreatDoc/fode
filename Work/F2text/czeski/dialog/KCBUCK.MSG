@@ -1,0 +1,55 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš kohosi, kdo by mohl být lovec kožešin.}
+{101}{}{Vidíš nìkoho, kdo relaxuje.}
+{102}{}{Vidíš mistniho štamgasta.}
+{103}{}{Vidíš pracujícího, který odpoèívá.}
+{104}{}{Vidíš osobu vychutnávající si svùj nápoj.}
+
+{150}{}{Seš ve špatný krèmì, víš o tom?}
+{151}{}{Nepotøebujem tady nìkoho kdo dìlá potíže.}
+{152}{}{Barbaøi dycky znamenaj potíže.}
+{153}{}{Chlastej tak dlouho, dokud nebudeš tý koøalky úplnì plnej...}
+{154}{}{((mumly, mumly)...sorry, ale táh..ni vodsud (škyt) doprdele...}
+{155}{}{Další z Duntonovic gangu.}
+{156}{}{Na co èumíš?}
+{157}{}{Jenom uhni.}
+{158}{}{Kup nam všem rundu chlastu, nováèku.}
+{159}{}{Doufám, že se tu nepoch...}
+{160}{}{Nevypadáš jako kanibal.}
+{161}{}{Není tady pro tebe místo.}
+{162}{}{V poslední dobì je tady òák moc cizincù...}
+{163}{}{No, aspoò nemáš zuby vybroušený do špice.}
+{164}{}{Seš ze sousedství, co?}
+{165}{}{Myslel sem, že máte všichni skrz nos kost.}
+{166}{}{(dívá se na tebe a vrtí hlavou)}
+{167}{}{(nenápadnì dìlá na kohosi posuòky)}
+{168}{}{Ty seš urèitì zodpovìdnej za mrzaèení a zabíjení brahmín.}
+{169}{}{Jeden z našich lovcù je pohøešovanej, teïko už vím proè.}
+{170}{}{Tohle je urèitì ten velkej lido-brouk co zabíjí brahmíny...}
+{171}{}{Tohle je urèitì ten duch z kaòonu.}
+{172}{}{Nenechte tu toho ducha jen tak procházet, sakra!}
+{173}{}{Bude lepší když necháš naše brahmíny napokoji.}
+{174}{}{Na tebe si dám bacha.}
+
+{201}{}{Je pìkné vidìt tu novou tváø.}
+{202}{}{Myslím, že ti barbaøi nejsou konec koncù tak špatní.}
+{203}{}{Kup nám rundu pití!}
+{204}{}{Pozdrav tuhle RadaRa, a Kulhavýho Jima taky.}
+{205}{}{Moh bys bejt Sulikovo dvojèe.}
+{206}{}{Už jsi se bavil se Sulikem?}
+{207}{}{V poslední dobì jde lov dobøe.}
+{208}{}{Brzo se zmìní poèasí, myslím.}
+{209}{}{Dostala mì lovecká past, jižnì odsaï...}
+{210}{}{Jestli jsi chytrej budeš se od bratrù Duntonovic držet dál.}
+{211}{}{Jestli jsi utahaný, zkus láznì.}
+{212}{}{Nasmìruj se na západ, do Lovecký ètvrti, esi chceš nìco vyrabovat.}
+{213}{}{Vítej pøíteli.}
+{214}{}{Rádi tì tu máme.}
+{215}{}{Klamath je místo pro tebe.}
+{216}{}{Jsme rádi, že tu jsi.}
+{217}{}{(pøipíjí na tebe)}
+{218}{}{(mrkne na tebe)}
+{219}{}{Necestuj v noci.}
+{220}{}{Tam vzadu venku je plno velkejch lido-broukù.}
+{221}{}{Jeden z našich nejlepších lovcù se ztratil.}

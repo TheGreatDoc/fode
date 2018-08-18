@@ -1,0 +1,52 @@
+# Tento soubor pøeloil Petr "Lee" Bulíø.......Level
+{100}{}{Vidíš obèana ve svìtlemodré kombinéze. Vypadá to jako kombinéza obyvatele Vaultu, ale na zádech nemá ádné èíslo.}
+{101}{}{Vidíš pøíruèího koloniálu Darrowa.}
+{102}{}{Vidíš obèana ve svìtlemodré kombinéze. Vypadá to jako kombinéza obyvatele Vaultu, ale na zádech nemá ádné èíslo.}
+{103}{}{::potlesk::}
+{104}{}{To je ten hrdina! Podívej!}
+{105}{}{Na mou duši! To je ten hrdina, tady, ve Vault City!}
+{106}{}{Dobrı den, Kapitáne.}
+{107}{}{A ije Vault City, Kapitáne.}
+{108}{}{Dobrı den, Obèane.}
+{109}{}{A ije Vault City, Obèane.}
+{110}{}{Mutant! Stráe! Stráe!}
+{111}{}{Ghoul! Stráe! Stráe!}
+{112}{}{Potøebuji se podívat na další objednávku zboí z Reddingu.}
+{113}{}{Dneska to jde nìjak pomalu.}
+{114}{}{Zajímalo by mì, jestli u Randal dodìlal ten seznam dodávek.}
+{115}{}{Myslím, e jsem ten seznam zásob dal Randalovi u vèera.}
+{116}{}{Pøinejmenším tahle se práce dìlá v kanceláøi.}
+{117}{}{Sluebníci mají u sebe vìtšinu náøadí. Pøál bych si, aby se o nì trochu lépe starali...}
+{118}{}{Potøebuju dovolenou.}
+{119}{}{Obchodní centrum se na noc zavírá... pøijï ráno. }
+{120}{}{Právì konèíme. Zkus pøijít zítra ráno a otevøeme.}
+{121}{}{Zavíráme. Jestli nìco nutnì potøebuješ, mùeš zkusit obchod venku na pøedmìstí.}
+{122}{}{Mohu vám nìjak pomoci, Kapitán?}
+{123}{}{Mohu vám nìjak pomoci, Obèane?}
+{124}{}{Je mi líto, mohu vám s nìèím pomoci?}
+{125}{}{Sumfin? Doodle-doodle doooooo}
+{126}{}{Vyfiè}
+{127}{}{Co je tohle za místo?}
+{128}{}{Mùu se podívat co máte?}
+{129}{}{Dneska nic, díky.}
+{130}{}{Poèkej tu na chvíli, ano? Pøivedu nìkoho, aby tì vyprovodil.}
+{131}{}{NE JÁ NE JÍT}
+{132}{}{jo jo }
+{133}{}{Jak jistì u víš, na pøedmìstí je obchod. Moná bys mohl zkusit koupit nìco tam. Slyšel jsem, e mají témìø stejnì dobrou nabídku jako my.}
+{134}{}{Uh, díky.}
+{135}{}{Nakupuju si kde chci, jasné?}
+{136}{}{Dík za návštìvu. A ije Vault City, Obèane.}
+{137}{}{Dík za návštìvu. A ije Vault City, Kapitáne.}
+{138}{}{A ije Vault City, Obèane.}
+{139}{}{Dobrı den, Obèane.}
+{140}{}{Obchodní centrum A. Mám na starosti hlavní zásobování, jako náøadí a vìci na opravu. Jmenuju se Darow... úøedník Darrow. Potøebuješ nìco? }
+{141}{}{Tohle je obchodní centrum A... staráme se o náøadí a vìci na opravu pro mìsto. Jsi si jist, e je tohle místo, které jsi hledal?}
+{142}{}{Mùu se podívat co máte?}
+{143}{}{Ano, to je pøesnì ono. Mohu se podívat, co nabízíte?}
+{144}{}{Dneska nic, díky.}
+{145}{}{To si nemyslím. Nashledanou.}
+{146}{}{Hej! Dr se odsud dál!}
+{147}{}{To je ono! Doufám, e si na odchodu!}
+
+{148}{}{Díky.}
+{149}{}{[pokraèování]}

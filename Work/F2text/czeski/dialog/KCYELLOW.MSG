@@ -1,0 +1,37 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš velkého špinavého, žlutohnìdého psa, který se dívá smìrem k tobì.}
+{101}{}{Vidíš zaprášeného, žlutohnìdého psa.}
+
+{110}{}{Vrrrrrr. Haf! Haf! Vrrrrrr....}
+{111}{}{Haf, naf, naf?}
+{112}{}{(Strnule hledíš do psích oèí) Vrrrr! Arrrrrgh! Vrrrrrrrr!}
+{113}{}{Hmm, když tì tak slyším, vsadím se, že nìco chceš.}
+{114}{}{Ty jsi jen hladový, že je to tak, chlapèe ? Poèkej, jestli seženu nìjaké dobré maso,
+ dám ti ho.}
+
+{120}{}{Vrrr! (Pes povyskoèil s vycenìnými zuby smìrem k tobì -- vytrhl ti z ruky maso -- a hluènì
+ ho sežral)}
+{121}{}{Wraf! (Voøech se nadšenì vrhnul na maso, upustil klíè který musel mít pøedtím v tlamì
+ -- a ty jsi ten klíè zvedl)}
+{122}{}{Mmm, dej si}
+{123}{}{Ach, ubohý chlapèe, musel jsi být pìknì hladový. (Poplácal jsi ho po hlavì)}
+
+{130}{}{Vrrr. Haf! Haf!}
+{131}{}{Òaf-Òaf pejsku. He, he.}
+{132}{}{Ahoj, psíku.}
+{133}{}{Promiò, žádný pejsky dnes nekrmím.}
+{134}{}{Jedeš! Vypadni, zatracenej èokle.}
+
+{140}{}{Haf, haf. Haf-Haf!}
+{141}{}{Haf, Haf?}
+{142}{}{Hodnej, hodnej pejsek.}
+{143}{}{Jsi hladový, není to tak chlapèe? Vsadím se, že by sis dal nìjaký masíèko, viï?
+ Podívám se, jestli tu nìco nemám. }
+
+{200}{}{Haff! (pes slintá -- mlask!)}
+{201}{}{Haf-haf}
+{202}{}{òaf}
+{203}{}{Òaf, òaf, òaf}
+{204}{}{(Oddanì na tebe kouká.)}
+{205}{}{Haf!}

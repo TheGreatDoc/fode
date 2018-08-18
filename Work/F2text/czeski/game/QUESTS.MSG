@@ -1,0 +1,267 @@
+#tento soubor pøeloil Somnambulus...somnambulus@hotmail.com
+# Quest descriptons
+#
+#    Please leave space between the areas (like 100 or so)
+#
+
+
+#
+# Arroyo Quests
+#
+{100}{}{Zniè ïábelské rostliny, které vyrostly v Hakuninovì zahradì.}
+{110}{}{Seeò pazourek, aby ti Mynoc mohl nabrousit kopí.}
+{120}{}{Zachraò Nagorova psa Èmoudu, kterı se ztratil v lese.}
+{130}{}{Pøines pro svou vesnici Arroyo GECK.}
+{140}{}{Najdi obchodníka jménem Vic.}
+
+#
+# Den Quests
+#
+{200}{}{Osvoboï Vica z jeho závazku tím, e mu pøineseš rádio z jeho domu v Klamathu a zaplatíš Metzgerovi.}
+{201}{}{Zniè Beckyin destilátor.}
+{202}{}{Dones Smittymu souèástku pro auto.}
+{203}{}{Vra Annì její medailón.}
+{204}{}{Dostaò z Freda peníze, které dluí Becky.}
+{205}{}{Pøines Becky její knihu, kterou pùjèila Derekovi.}
+{206}{}{Dones Smittymu jídlo od Mámy.}
+{207}{}{Lara chce vìdìt jaké zboí je støeeno ve starém kostele.}
+{208}{}{Získej od Metzgera jeho svolení pro válku gangù.}
+{209}{}{Najdi nìjakou slabinu v Tylerovì gangu hlídajícím kostel.}
+{210}{}{Pomoz Laøe s útokem na Tylerùv gang.}
+
+#
+# Klamath Quests
+#
+{300}{}{Pøilo pod destilátorem.}
+{301}{}{Najdi a zachraò lovce jménem RadaR.}
+{302}{}{Ochraò brahmíny.}
+{303}{}{Vyplaš a rozeeò brahmíny.}
+{304}{}{Zabij Krále Krysu.}
+{305}{}{Zachraò Torra.}
+
+#
+# Modoc Quests
+#
+{400}{}{Na farmì severovıchodnì od Modocu se dìje nìco podivného. Prozkoumej to a podej zprávu chlapíkovi jménem Jo.}
+{401}{}{Cornelius ztratil svoje zlaté kapesní hodinky. Najdi je a vra mu je.}
+{402}{}{Farrel po tobì chce, abys našel Corneliovy zlaté kapesní hodinky. Najdi je a pøines je Farrelovi.}
+{403}{}{Jonny se ztratil. Najdi ho a pøiveï ho domù k jeho otci Balthasovi.}
+{404}{}{Jonny je v jeskyních Svìtloplachù. Najdi zpùsob, jak ho vrátit jeho rodièùm.}
+{405}{}{Farrelovi se v jeho zahradì pøemnoili hlodavci. Proveï tam dùkladnou deratizaci.}
+{406}{}{Doruè vzkaz Svìtloplachù Joovi do Modocu.}
+{407}{}{Jo Svìtloplachùm nevìøí. Zjisti, jak to bylo s mrtvolami na farmì Duchù, a vypátrej, co se stalo s Karlem.}
+{408}{}{Jdi do Denu a øekni Karlovi, e se mùe vrátit zpátky domù.}
+
+#
+# Vault City Quests
+#
+{500}{}{Smith nutnì potøebuje pluh. Obstarej mu ho.}
+{501}{}{Doruè Mooreùv kuføík panu Bishopovi do New Rena.}
+{502}{}{Pøines doktoru Troyovi vzorek Jetu.}
+{503}{}{Vyøeš ten problém s jadernou elektrárnou v Gecko.}
+{504}{}{Dones holodisk od Lynette Westinovi do NCR.}
+{505}{}{Zachraò Amandina manela, Joshuu.}
+{506}{}{Seeò pro Lydiin bar pivo a tvrdı alkohol (10 kusù od kadého).}
+{507}{}{Pøines Valerii kleštì (náøadí) a montání klíè.}
+{508}{}{Projdi osm sektorù okolo Gecko a vra se ke Starkovi.}
+{509}{}{Vstup do NCR a podej Starkovi hlášení.}
+
+#
+# Gecko Quests
+#
+{600}{}{Vyøeš ten problém s jadernou elektrárnou v Gecko.}
+{601}{}{Oprav elektrárnu.}
+{602}{}{Zoptimalizuj chod elektrárny.}
+{603}{}{Seeò Skeeterovi soupravu Super náøadí.}
+{604}{}{Dones Skeeterovi tøícestnı plazma-transformér.}
+{605}{}{Najdi Percymu jeho kamaráda ghoula Woodyho. Zkus to v Denu.}
+
+#
+# Broken Hills Quests
+#
+{700}{}{}
+{701}{}{Oprav dùlní èistièku vzduchu.}
+{702}{}{Najdi pohøešované lidi a podej zprávu Marcusovi.}
+{703}{}{Pøekonej Francise v pøetlaèování.}
+{704}{}{Dostaò Mansona a Franca z vìzení.}
+{705}{}{Vyhoï do povìtøí dùlní èistièku vzduchu.}
+{706}{}{Zajisti pro Ericùv dùm vìtší pøídìl elektrické energie.}
+
+#
+# New Reno Quests
+#
+{800}{}{Najdi své ukradené auto.}
+{801}{}{Zjisti, kdo je zodpovìdnı za pøedávkování Richarda Wrighta.}
+{802}{}{     Podezøelı: Poøezanej Jimmy J }
+{803}{}{     Podezøelı: Jules}
+{804}{}{     Podezøelı: Malı Jeíš Mordino}
+{805}{}{     Podezøelı: Renesco}
+{806}{}{Najdi cestu do vojenské základny Sierra.}
+{807}{}{Vypátrej Hezouna Lloyda, vymáèkni z nìj ukradené peníze a udìlej z nìj... exemplární pøíklad.}
+{808}{}{Navštiv Rakeáka Renesca a zinkasuj od nìj poplatek pro Dona Salvatora ($1000).}
+{809}{}{Zúèastni se tajné transakce v poušti.}
+{810}{}{Objev endorfinové bloky pro vırobu antiséra proti Jetu.}
+{811}{}{Zlikviduj destilátor rodiny Wrightù, kterı je ukrytı pod starou eleznièní stanicí.}
+{812}{}{Zabij Westina v NCR. A nesmí to vypadat jako vrada.}
+{813}{}{Odstraò Carlsona v NCR.}
+{814}{}{Pøines sleènì Kitty 10 kouskù èasopisu "Koèièí packa".}
+{815}{}{Seeò pro Eldridgea laserovou pistoli.}
+{816}{}{Doruè Ramirezovi do Stájí balíèek od Velkého Jeíše.}
+{817}{}{Vyinkasuj od Korsièanù poplatek pro Velkého Jeíše Mordina.}
+{818}{}{Zlikviduj Dona Salvatora pro Velkého Jeíše Mordina.}
+
+#
+# Sierra Army Base Quests
+#
+{900}{}{}
+
+#
+# Vault 15 Quests
+# Moved it to 3000 on accedent
+{1000}{}{}
+
+#
+# New California Republic Quests
+#
+{1100}{}{Pøines souèástky/Získej si vstup do Vaultu 15.}
+{1101}{}{"Postarej" se o dùstojníka Jacka.}
+{1102}{}{Absolvuj brahmíní okruh.}
+{1103}{}{Získej od doktora Henryho ty papíry.}
+{1104}{}{Otestuj mutagenní sérum na nìjakém supermutantovi. Zkus to v Broken Hills.}
+{1105}{}{Odstraò Bishopa.}
+{1106}{}{Doruè Westinùv holodisk Lynette do Vault City.}
+{1107}{}{Získej od Rangerù v NCR mapu pro otrokáøe Vortise.}
+{1108}{}{Osvoboï pro Rangery otroky v ohradì otrokáøù.}
+{1109}{}{Doruè Hubologistovu polní zprávu AHS-9 do San Francisca.}
+{1110}{}{Zabij na zakázku od Merka Hubologistu v NCR.}
+{1111}{}{Zastav krádee brahmínù.}
+#
+# Vault 13 Quests
+#
+{1200}{}{Oprav hlavní poèítaè Vaultu 13.}
+{1201}{}{Promluv si s Gorisem.}
+
+#
+# Military Base Quests
+#
+{1300}{}{}
+
+#
+# Redding Quests
+#
+{1400}{}{Vypátrej, kdo poøezal prostitutku.}
+{1401}{}{Najdi èip pro dùlní rypadlo.}
+{1402}{}{Ukonèi hádku v baru.}
+{1403}{}{Zabij "ábáka" Mortona.}
+
+#
+# San Francisco Quests
+#
+{1500}{}{Tanker potøebuje palivo.}
+{1501}{}{Bez souèástky NavComp nebude navigaèní poèítaè fungovat.}
+{1502}{}{Pro vstup k navigaènímu poèítaèi je nutné mít FOB.}
+{1503}{}{Zlikviduj Imperátora Shiù.}
+{1504}{}{Hubologisté chtìjí konstrukèní plány k vertibirdùm. Zkus to v Navarro.}
+{1505}{}{Ukradni Shiùm konstrukèní plány k vertibirdùm.}
+{1506}{}{Hubologisté potøebují palivo pro jejich raketoplán.}
+{1507}{}{Zabij Badgera, aby obyvatelé tankeru pøijali nabídku Hubologistù.}
+{1508}{}{Zlikviduj AHS-9.}
+{1509}{}{Shi chtìjí konstrukèní plány k vertibirdùm. Zkus to v Navarro.}
+{1510}{}{Ukradni Hubologistùm konstrukèní plány k vertibirdùm.}
+{1511}{}{Najdi Badgerovu pøítelkyni, která se ztratila v podpalubí tankeru.}
+{1512}{}{Dragon po tobì chce, abys odstranil Lo Pana - v pìstním souboji.}
+{1513}{}{Lo Pan po tobì chce abys odstranil Dragona - nejlépe v pìstním souboji, pokud to bude moné.}
+{1514}{}{Obstarej Chipovi jeho slezinu.}
+{1515}{}{Získej od Crocketta tvrzenou Energo zbroj.}
+{1516}{}{Pøines Bratrstvu Oceli konstrukèní plány k vertibirdùm.}
+#
+# Navarro Quests
+#
+#1515, ...
+{1600}{}{Osvoboï deathclawa.}
+{1601}{}{Oprav K9.}
+{1602}{}{Získej od velitele základny FOB.}
+
+#
+# The Enclave Quests
+#
+{1700}{}{}
+
+#
+# The Abbey Quests
+#
+{1800}{}{}
+
+#
+# Primitive Tribe Quests
+#
+{1900}{}{}
+
+#
+# EPA Quests
+#
+{2000}{}{}
+
+#
+# Ghost Town Quests
+#
+{2100}{}{}
+
+#
+# Car outta Gas Quests
+#
+{2200}{}{}
+
+#
+# Destroyed Arroyo Quests
+#
+{2300}{}{}
+
+#
+# Toxic Caves Quests
+#
+{2400}{}{}
+
+#
+# Den Slave Run Quests
+#
+{2500}{}{}
+
+#
+# Raiders Quests
+#
+{2600}{}{}
+
+#
+# Desert Encounter Quests
+#
+{2700}{}{}
+
+#
+# Mountain Encounter Quests
+#
+{2800}{}{}
+
+#
+# Ruined City Encounter Quests
+#
+{2900}{}{}
+
+#
+# Coast Encounter Quests
+#
+{3000}{}{}
+
+#
+# Golgotha Quests
+#
+{3100}{}{}
+
+
+#
+# Vault 15 Quests
+#
+{3200}{}{Zachraò Chrissy}
+{3201}{}{Zabij Dariona}
+{3202}{}{Sjednej spojenectví s NCR.}
+{3203}{}{Odevzdej špiónùv holodisk nejvyšším autoritám v NCR.}

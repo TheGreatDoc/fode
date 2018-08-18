@@ -1,0 +1,130 @@
+{100}{}{Tu vois une crapule affichant un demi-sourire.}
+{101}{}{Tu vois Badger.}
+{102}{}{Tu vois une crapule affichant un demi-sourire.}
+{103}{}{:::Il rote bruyamment.:: Qu'est-ce que tu veux ?}
+{104}{}{::rot:::}
+{105}{}{Qui toi ?}
+{106}{}{Qui es-tu ?}
+{107}{}{Peux-tu me parler de ce pétrolier ?}
+{108}{}{Que fais-tu ici ?}
+{109}{}{J'aimerais que tu pirates un ordinateur pour moi.}
+{110}{}{Quel genre de piratage ?}
+{111}{}{Rien. Pas mal ton rot.}
+{112}{}{::Il émet un autre rot guttural.::}
+{113}{}{::Rote plus fort::}
+{114}{}{Dégueulasse.}
+{115}{}{::Il lâche un horrible rot qui défie les cieux en terme de volume et de profondeur0::}
+{116}{}{::Applaudissements::}
+{117}{}{Je suis Badger. J'avais un groupe autrefois. ::soupir:: Ca s'appelait « C'est ici qu'on se consume ». Maintenant je suis informaticien à San Francisco.}
+{118}{}{Oh ! Merci !}
+{119}{}{Quelle sorte de truc informatique fais-tu ?}
+{120}{}{Je parie que ton groupe était naze.}
+{121}{}{C'était bien comme groupe ?}
+{122}{}{Merci. Au revoir.}
+{123}{}{Euh... OK.}
+{124}{}{Au revoir !}
+{125}{}{Tu devrais en parler à Marc ou au Capitaine.}
+{126}{}{Où puis-je trouver Marc?}
+{127}{}{Où puis-je trouver le Capitaine ?}
+{128}{}{Je suis le génie informatique du coin.}
+{129}{}{Quelle sorte de truc informatique fais-tu ?}
+{130}{}{Merci. Au revoir.}
+{131}{}{Ne m'embête pas. ::Il pète.:: J'y travaille, vu ?}
+{132}{}{Très bien, très bien. Mais préviens-moi quand tu auras terminé.}
+{133}{}{Eh bien, disons que je suis spécialiste de la recherche d'informations.}
+{134}{}{Peux-tu rechercher quelques trucs pour moi ?}
+{135}{}{Comment ça ?}
+{136}{}{Ouais, eh ben, va te faire foutre.}
+{137}{}{Hé !}
+{138}{}{Va te faire foutre toi aussi.}
+{139}{}{Et comment donc ! On assurait comme des pros, et puis on se marrait bien ! Notre chanteur, il était... Euh... A voile et à vapeur... Aaron transpirait toujours et tout était toujours de la faute de Todd. Mais c'était bien.}
+{140}{}{Dommage que vous ne soyez plus ensemble. J'aurais aimé vous entendre.}
+{141}{}{Hum. Certainement. J'ai d'autres questions.}
+{142}{}{Je parie que vous étiez nuls.}
+{143}{}{Marc est généralement au bar.}
+{144}{}{Merci. J'ai d'autres questions.}
+{145}{}{Merci. C'est tout.}
+{146}{}{Le Capitaine est généralement sur la passerelle. Monte les escaliers du bar.}
+{147}{}{Merci. J'ai d'autres questions.}
+{148}{}{Merci. C'est tout.}
+{149}{}{Ouais, mais tu vas devoir payer.}
+{150}{}{Combien ?}
+{151}{}{Laisse tomber. Je dois partir.}
+{152}{}{Ca veut dire que je peux trouver les données dont tu as besoin.}
+{153}{}{Peux-tu me rendre un service ?}
+{154}{}{Je vois. Cool. J'ai d'autres questions.}
+{155}{}{Je vois. Merci.}
+{156}{}{Ouais, c'est ça. Bon, je dois m'y remettre.}
+{157}{}{Attends. J'ai encore des questions.}
+{158}{}{Merci. Salut.}
+{159}{}{Je crois que je t'apprécie assez pour faire ça pour toi maintenant. Qui veux-tu que j'aille voir ?}
+{160}{}{Les Hubologistes.}
+{161}{}{Les Shis.}
+{162}{}{Aucun des deux. Une simple vérification.}
+{163}{}{Je suppose que je peux le faire gratuitement puisque tu m'as aidé pour copine. Ca va me prendre un certain temps. Que veux-tu que je fasse ?}
+{164}{}{Les Hubologistes.}
+{165}{}{Les Shis.}
+{166}{}{Aucun des deux. Une simple vérification.}
+{167}{}{Tu vas d'abord devoir me rendre un service. Ma copine s'est perdue dans le pétrolier. Retrouve-la et je t'aiderai.}
+{168}{}{Ok. Salut.}
+{169}{}{Laisse tomber. Salut.}
+{170}{}{C'est plus facile que de voler sa sucette à un bébé. Ils ne me retrouveront jamais. Que veux-tu d'eux ?}
+{171}{}{Formidable. J'ai d'autres questions.}
+{172}{}{Génial. Je vais revenir.}
+{173}{}{Ca va marcher. Ils protègent bien leurs informations, tout comme leurs machines d'ailleurs. Tu veux vraiment que j'essaie de mettre la main dessus ?}
+{174}{}{Eh bien, bonne chance. J'ai d'autres questions.}
+{175}{}{Bonne chance. Je reviendrai plus tard.}
+{176}{}{Hé, trouve ma copine et on en discutera.}
+{177}{}{Très bien, très bien.}
+{178}{}{Elle est morte ? Elle est MORTE ? Comment est-elle morte ? Non, attends... Ne me le dis pas. Accorde-moi quelques heures pour refaire surface.}
+{179}{}{Certainement.}
+{180}{}{Ressaisis-toi, Sparky. On a du boulot.}
+{181}{}{Très bien. Je me sens mieux maintenant.}
+{182}{}{Parfait. J'ai quelque chose à te demander.}
+{183}{}{Tant mieux pour toi. Je ne voulais pas te parler.}
+{184}{}{Merci, vraiment merci. Je ne te remercierai jamais assez de l'avoir sauvée. Qu'est-ce que tu veux ?}
+{185}{}{J'ai quelques questions.}
+{186}{}{Ta reconnaissance me suffit. Au revoir.}
+{187}{}{OK. J'ai infiltré les ordinateurs Shis. Je ne sais pas si je me suis fait repérer. Je pense que la meilleure chose à faire maintenant est de se cacher. Tu veux autre chose ?}
+{188}{}{Oui.}
+{189}{}{Non. Salut.}
+{190}{}{Les Hubologistes. Pas de problème. Tu as besoin d'autre chose ?}
+{191}{}{Oui.}
+{192}{}{Non. Salut.}
+{193}{}{Tu viens de faire une grave erreur. Les Shis et les Hubologistes vont se retourner contre toi par le biais des ordinateurs. Tu n'as plus d'avenir à San Francisco. }
+{194}{}{Je crois que je ferais mieux de te tuer maintenant.}
+
+{195}{}{Laisse-moi quelques heures, le temps de refaire surface.}
+{196}{}{Tu veux que je pirate un ordinateur formaté ? Les informations ont disparu. Ca ne va pas être possible.}
+
+{197}{}{Je vais devoir quitter cet endroit.}
+{198}{}{C'est sympa de te voir.}
+
+{199}{}{Je cherche du carburant.}
+{200}{}{J'ai entendu dire que les Hubologistes avaient du carburant et je peux me connecter à leur ordinateur pour toi.}
+{201}{}{Les Shis ont tout leur carburant dans le coin. Je pourrais infiltrer leur ordinateur central pour toi.}
+{202}{}{Vraiment ?}
+
+{203}{}{Bon sang, mais qu'est-ce que tu veux ?}
+{204}{}{Badger du gang des crapules, je suppose ?}
+{205}{}{C'était la dernière fois que tu déshonorais notre Empereur !}
+{206}{}{Je crois que je vais aller en ville chez Lao Chou acheter des bonbons.}
+{207}{}{Tu parles d'une épreuve juste. Hum...}
+{208}{}{Eh, allume. Je voulais juste des bonbons.}
+
+{209}{}{Peux-tu transférer le carburant de leur vaisseau spatial vers le pétrolier ?}
+{210}{}{Peux-tu te procurer une copie de leurs plans d'hélicos ?}
+{211}{}{Peux-tu transférer le carburant et me trouver les plans ?}
+{212}{}{Oui, j'ai besoin de ce qu'ils possèdent.}
+{213}{}{Non, je vais trouver une autre solution.}
+{214}{}{Très bien, mais ça risque de barder.}
+{215}{}{Peux-tu transférer le carburant de leurs réserves vers le pétrolier ?}
+{216}{}{Tant pis. Je vais m'y prendre autrement.}
+{217}{}{Laisse tomber.}
+{218}{}{Très bien. Recontacte-moi dans un jour ou deux pour en savoir plus.}
+{219}{}{As-tu réussi à te procurer ce que je voulais ?}
+{220}{}{Ouais, j'ai le carburant.}
+{221}{}{Ouais, j'ai les plans des hélicos.}
+{222}{}{Ouais, j'ai le carburant et les plans.}
+{223}{}{Merci beaucoup. Au revoir.}
+

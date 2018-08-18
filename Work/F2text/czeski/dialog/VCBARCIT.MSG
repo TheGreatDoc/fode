@@ -1,0 +1,65 @@
+# Tento soubor pøeloil Radek "Sengaia" Friedrich.......Level
+{100}{}{Vidíš Obèana ve svìtle modré kombinéze. Ta vypadá jako oblek obyvatel Vaultu a na to, e nemá na zádech ádné èíslo.}
+{101}{}{Vidíš Obèana Vault City.}
+{102}{}{Vidíš Obèana ve svìtle modré kombinéze. Ta vypadá jako oblek obyvatel Vaultu a na to, e nemá na zádech ádné èíslo.}
+{103}{}{::plác::}
+{104}{}{To je ten hrdina! Podívejte!}
+{105}{}{Na mou duši! Je tu ten hrdina, tady, ve Vault City!}
+{106}{}{Dobrı den, Kapitáne.}
+{107}{}{A ije Vault City, Kapitáne.}
+{108}{}{Dobrı den, Obèane.}
+{109}{}{A ije Vault City, Obèane.}
+{110}{}{Mutant! Stráe! Stráe!}
+{111}{}{Ghoul! Stráe! Stráe!}
+{112}{}{Jak ses dokázal dostat dovnitø mìsta?}
+{113}{}{Dovolíš, mohu vidìt tvou Denní propustku?}
+{114}{}{Pche. Další venkovan.}
+{115}{}{Zdá se, e èím dál tím víc venkovanù dokáe najít cestu dovnitø do mìsta...}
+{116}{}{Upøímnì doufám, e máš Denní propustku.}
+{117}{}{Poslední dobou u snad dávají Denní propustky opravdu kadému venkovanu...}
+{118}{}{Slyšel jsem o tvıch hrdinskıch èinech. Udìlal jsi poøádnı kus chlapské práce pro Vault City...a pro celı svìt.}
+{119}{}{Tvùj souboj s Enklávou zaujal dokonce i Prvního Obèana.}
+{120}{}{Slyšel jsem, e jsi byl daleko na jihu a u San...Fran...Cisca. Je to fakt pravda?}
+{121}{}{Moná by Vault City *mohlo* pøijímat venkovany. }
+{122}{}{Je to pravda? Opravdu vláda starého svìta vedla poøád válku?}
+{123}{}{Mìl bys zaznamenat své putování v poèítaèi Vault City, aby si o nìm mohli pøeèíst i ostatní.}
+{124}{}{Jsi tu vítán tak dlouho, jak dlouho se mùeš zdret, hrdino.}
+{125}{}{Mìl bys sepsat pìknı, poøádnı seznam svıch hrdinskıch èinù proti Enklávì.}
+{126}{}{*Zív*...echhrm? Ano? Coe to?}
+{127}{}{Je trochu pozdì pro návštìvníky.}
+{128}{}{VÌTŠINA Obèanù bude touto dobou spát.}
+{129}{}{Jestli spím? Ne, u ne.}
+{130}{}{Prosím... vra se ráno. Mám za sebou pernı den s tvoøením zítøejších seznamù.}
+{131}{}{Dobrı den, Kapitáne.}
+{132}{}{A ije Vault City, Kapitáne.}
+{133}{}{Mùu ti dát koblihu, Kapitáne?}
+{134}{}{Nìco není v poøádku, Kapitáne?}
+{135}{}{Snad ti nikdo z tìch hnusnıch venkovanù nedìlá problémy, Kapitáne.}
+{136}{}{Máš nìjaké historky z venkovního svìta, Kapitáne?}
+{137}{}{Dobrı den, Obèane.}
+{138}{}{A ije Vault City, Obèane.}
+{139}{}{Cítím se naprosto skvìle. A ty?}
+{140}{}{Jako Obèan je èástí mıch povinností ve veøejné slubì tvoøení udrovacích seznamù.}
+{141}{}{Strávil jsem vìtšinu dne tvoøením tohoto seznamu pro Prokonzula, pak jsem ho kontroloval. Miluju tvoøení seznamù.}
+{142}{}{Pracuju v Úøadu seznamù. Jako vìtšina z nás. My tady ve Vault City *milujeme* tvoøení seznamù.}
+{143}{}{Vìtšinu dnešního dne jsem strávil aktualizováním toho seznamu pro Úøad seznamù. Byla to kvalitní, poctivá a produktivní práce.}
+{144}{}{Slyšel jsem, e jsi cestoval venkovním svìtem. Jak jsi mohl pøeít mezi tìmi odpornımi venkovany?}
+{145}{}{Ach! Ty jsi novı Obèan. Vítej ve Vault City.}
+{146}{}{Potøebuješ nìjaké místo na pøespání?}
+{147}{}{Rada má na srdci naše zájmy.}
+{148}{}{Musíme se snait udrovat naše milované mìsto v èistotì.}
+{149}{}{Sluebníci? Jo, pouíváme je k podøadnım pracím.}
+{150}{}{Vèerejší zasedání Rady bylo velmi, velmi plodné. Vytvoøili jsme opravdu *hodnì* seznamù. My tady ve Vault City milujeme tvoøení seznamù.}
+{151}{}{Ano?}
+{152}{}{Mohu ti s nìèím pomoci...venkovane?}
+{153}{}{Pardon, øíkal jsi nìco?}
+{154}{}{Já? Dìlám si svou práci. A ty bys mìl asi taky.}
+{155}{}{Mohu vidìt tvou Denní propustku, prosím?}
+{156}{}{Ach... pardon. Málem jsem si tì spletl se sluebníkem.}
+{157}{}{Teï vánì nemám èas klábosit s venkovanem. Odejdi, prosím.}
+{158}{}{Mùete trochu poodstoupit, prosím?}
+{159}{}{Prosím postavte se támhle.}
+{160}{}{Díky sluebníkùm máme víc èasu na dùleité vìci. Hlavnì na tvoøení seznamù.}
+{161}{}{Sluebníci? Jo, pouíváme je k podøadnım pracím.}
+{162}{}{Jo, cítím... teda, vidím, e jsi venkovan.}
+{163}{}{Ty jsi venkovan? Jak rozkošné.}

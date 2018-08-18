@@ -1,0 +1,119 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 D _var p quest_william_truba = 0 #
+6 2030 D _var p quest_william_truba = 1 #
+0 2040 @
+3 3000 None 0 #
+7 3010 @
+4 4000 None 0 #
+5 4010 #
+0 4020 @
+5 5000 None 0 #
+0 5010 R _var p quest_william_truba = 1 R _script quest_server_scripts@william_truba_start 0  #
+0 5020 @
+6 6000 None 0 #
+8 6010 D _item p PID_SMALL_ENERGY_CELL_DE > 50 R _var p quest_william_truba = 2 R _item p PID_BOTTLE_CAPS + 500 R _param p ST_EXPERIENCE + 250 R _script quest_server_scripts@william_truba_1_1 0  #
+0 6020 @
+7 7000 None 0 #
+3 7010 #
+4 7020 D _var p quest_william_truba = 0 #
+0 7030 @
+8 8000 None 0 #
+0 8010 &
+
+[engl]
+{100}{}{William Truba}
+{200}{}{You see: William Truba}
+{210}{}{You see an old man.}
+{1000}{}{Predialogue installations}
+{1010}{}{talky talk}
+{2000}{}{What do you want?}
+{2010}{}{Who are you?}
+{2020}{}{I came here because I need a job.}
+{2030}{}{I got some energy cells for you.}
+{2040}{}{Nothing, just messing around.}
+{3000}{}{Well, as you can see I am just an old man. I was born in little Slovakain village. Seriously, there's nothing more to say.}
+{3010}{}{Let's talk about something else.}
+{4000}{}{Then you are on right adress. Actually I need from you to bring me 50 small energy cells. I am quite interested if my new gun will work.}
+{4010}{}{Okay, but what I will get in reward?}
+{4020}{}{Actually I don't want to lose my time here, bye.}
+{5000}{}{What you will get? Well, I'll give you small reward for it, don't worry.}
+{5010}{}{Okay then. I'll get you some.}
+{5020}{}{No way. I am leaving.}
+{6000}{}{Alright, then give them.}
+{6010}{}{Yes, right here.}
+{6020}{}{No, actually I am still searching for them.}
+{7000}{}{What do you need to know?}
+{7010}{}{Who are you?}
+{7020}{}{I came here because I need a job.}
+{7030}{}{Nothing, just messing around.}
+{8000}{}{Great! Here, take this.}
+{8010}{}{Thank you. Bye!}
+
+[pols]
+{100}{}{William Truba}
+{200}{}{Widzisz Williaba Truba}
+{210}{}{Widzisz starszego mężczyzne.}
+{1000}{}{Predialogue installations}
+{1010}{}{talky talk}
+{2000}{}{Czego chcesz?}
+{2010}{}{Kim jesteś?}
+{2020}{}{Przyszedłem tu, gdyż potrzebuję pracy.}
+{2030}{}{Mam dla ciebie trochę ładunków energetycznych.}
+{2040}{}{Nic, po prostu sobie chodzę.}
+{3000}{}{Hm.. jak widzisz, jestem starym człowiekiem. Pochodzę z małej słowieńskiej wioski.}
+{3010}{}{Pogadajmy o czymś innym.}
+{4000}{}{Jeśli o to chodzi, jesteś pod dobrym adresem. Potrzebuję 50 sztuk ładunków energetycznych.}
+{4010}{}{Dobra, a co jeśli chodzi o nagrodę?}
+{4020}{}{Właściwie, nie mam ochoty na stratę czasu w tym miejscu. Żegnam.}
+{5000}{}{Co dostaniesz? Spokojnie, zadbam o to.}
+{5010}{}{Dobra, zdobęde je.}
+{5020}{}{Nie ma mowy. Wychodzę.}
+{6000}{}{Dobra, daj je.}
+{6010}{}{Proszę bardzo.}
+{6020}{}{Niestety, nadal je szukam.}
+{7000}{}{Co potrzebujesz wiedzieć?}
+{7010}{}{Kim jesteś?}
+{7020}{}{Przychodzę tu, gdyż potrzebuję prace.}
+{7030}{}{Tak tylko przechodzę.}
+{8000}{}{Śwuetnie! Weź to.}
+{8010}{}{Dzieki, do widzenia!}
+
+[russ]
+{100}{}{William Truba}
+{200}{}{You see: William Truba}
+{210}{}{You see an old man.}
+{1000}{}{Predialogue installations}
+{1010}{}{talky talk}
+{2000}{}{What do you want?}
+{2010}{}{Who are you?}
+{2020}{}{I came here because I need a job.}
+{2030}{}{I got some energy cells for you.}
+{2040}{}{Nothing, just messing around.}
+{3000}{}{Well, as you can see I am just an old man. I was born in little Slovakain village. Seriously, there's nothing more to say.}
+{3010}{}{Let's talk about something else.}
+{4000}{}{Then you are on right adress. Actually I need from you to bring me 50 small energy cells. I am quite interested if my new gun will work.}
+{4010}{}{Okay, but what I will get in reward?}
+{4020}{}{Actually I don't want to lose my time here, bye.}
+{5000}{}{What you will get? Well, I'll give you small reward for it, don't worry.}
+{5010}{}{Okay then. I'll get you some.}
+{5020}{}{No way. I am leaving.}
+{6000}{}{Alright, then give them.}
+{6010}{}{Yes, right here.}
+{6020}{}{No, actually I am still searching for them.}
+{7000}{}{What do you need to know?}
+{7010}{}{Who are you?}
+{7020}{}{I came here because I need a job.}
+{7030}{}{Nothing, just messing around.}
+{8000}{}{Great! Here, take this.}
+{8010}{}{Thank you. Bye!}

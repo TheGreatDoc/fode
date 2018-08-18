@@ -1,0 +1,139 @@
+#include "_defines.fos"
+#include "_teams.fos"
+#include "_npc_pids.fos"
+#include "_itempid.fos"
+#include "_macros.fos"
+#include "_ai.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+void _InitGhoulUnderground(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.StatBase[ST_TEAM_ID]=TEAM__GhoulUnderground;
+	npc.ParamBase[PE_GHOUL_FRIEND]=1;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=0;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ShowCritterDist1=Random(6,15);
+	npc.SetEvent(CRITTER_EVENT_ATTACKED,"GhoulAttacked");
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"GhoulEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"GhoulMessage");
+	npc.SetEvent(CRITTER_EVENT_DEAD,"DropItems");
+	switch(Random(1,6))
+		{
+			case 1:
+				npc.AddItem(PID_H_KNIFE_DE,1);
+				break;
+			case 2:
+				npc.AddItem(PID_H_SPEAR_DE,1);
+				break;
+			case 3:
+				npc.AddItem(PID_H_COMBAT_KNIFE_DE,1);
+				break;
+			case 4:
+				npc.AddItem(PID_H_RIPPER_DE,1);
+				break;
+			case 5:
+				npc.AddItem(PID_H_SPIKED_KNUCKLES_DE,1);
+				break;
+			case 6:
+				break;
+		}
+	//if(npc.GetProtoId()>=NPC_PID_Ghoul_Underground_6 && npc.GetProtoId()<=NPC_PID_Ghoul_Underground_7)
+		//{
+			//npc.SetFavoriteItem(SLOT_HAND2,PID_LIGHTED_GHOUL);
+		//}
+	
+}
+
+void GhoulEventShowCritter(Critter &cr, Critter &cr2)
+{
+	if(cr.Cond!=COND_LIFE || cr2.Cond!=COND_LIFE) return;
+	if(cr2.IsNpc())
+	{
+			if(cr2.ParamBase[PE_GHOUL_FRIEND]==0)
+			{
+				AddAttackPlane(cr2,0,cr,false);
+				AddAttackPlane(cr,0,cr2,false);
+			}
+			else
+			{
+			//for friends
+			}
+	}
+	else
+	{
+			if(cr2.ParamBase[PE_GHOUL_FRIEND]==0)
+			{
+			AddAttackPlane(cr,0,cr2,false);
+			}
+			else
+			{
+			//for friends
+			}
+	}
+}
+
+bool GhoulAttacked(Critter& npc, Critter& attacker)
+{
+	if(attacker.StatBase[ST_TEAM_ID]!=TEAM__GhoulUnderground)
+	{
+		npc.SendMessage(130,attacker.Id,MESSAGE_TO_I_SEE);
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,attacker,false);
+		return true;
+	}
+	return false;
+}
+
+void GhoulMessage(Critter& npc, Critter& cr, int num, int val)
+{
+	if(npc.Cond!=COND_LIFE) return;
+	if(num==130)//npc ghoul
+	{
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),false);
+	}
+}
+
+void DropItems(Critter& cr, Critter@ killer)
+{
+	if(cr.GetProtoId()>=NPC_PID_Ghoul_Underground_1 && cr.GetProtoId()<=NPC_PID_Ghoul_Underground_7)
+	{
+		cr.AddItem(PID_BOTTLE_CAPS,Random(3,17));
+		if(Random(0,3)!=3){
+			switch(Random(1,7))
+			{
+				case 1:
+					cr.AddItem(PID_KNIFE_DE,1);
+					break;
+				case 2:
+					cr.AddItem(PID_KNIFE_DE,1);
+					break;
+				case 3:
+					cr.AddItem(PID_COMBAT_KNIFE_DE,1);
+					break;
+				case 4:
+					cr.AddItem(PID_SPEAR_DE,1);
+					break;
+				case 5:
+					cr.AddItem(PID_SHARP_SPEAR_DE,1);
+					break;
+				case 6:
+					cr.AddItem(PID_THROWING_KNIFE_DE,1);
+					break;
+				case 7:
+					cr.AddItem(PID_COMBAT_KNIFE_DE,1);
+					break;
+			}
+		}
+		if(Random(0,100)==50)
+		{
+		//spec items
+		}
+	}
+}

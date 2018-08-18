@@ -1,0 +1,86 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Poèítaèový terminál.}
+{101}{}{Terminál extrahovací jednotky Vault-Tec}
+{102}{}{Nejsi s to pøeèíst text na obrazovce.}
+{103}{}{Vítejte ve Vault-Tec extrahovací jednotce. Pro správnou funkci je tøeba, aby byl pøítomen donor na operaèním sálu - poté vyberte druh a orgán urèený k odejmutí.}
+{104}{}{Vybrat druh}
+{105}{}{Vybrat orgán}
+{106}{}{Konec}
+{107}{}{Eh!}
+{108}{}{Na výbìr je jedna z tìchto možností:
+                         Pes
+                                                                   Koèka
+                                                               Zemní kukaèka
+                                                        Hlodavec
+                                                               Èlovìk (naškrábán na konzoli)}
+{109}{}{}
+{110}{}{}
+{111}{}{}
+{112}{}{}
+{113}{}{}
+{114}{}{Vybrat psa}
+{115}{}{Vybrat koèku}
+{116}{}{Vybrat zemní kukaèku}
+{117}{}{Vybrat hlodavce}
+{118}{}{Vybrat èlovìka}
+{119}{}{Vložit nový druh na konzoli.}
+{120}{}{Konec}
+{121}{}{[V tvé ruce se vyjímá kus ostrého plechu a pomalu zaèínáš uvažovat, co tam naškrábeš.]}
+{122}{}{Vyrýt slovo mutant na konzoli.}
+{123}{}{Vyrýt slovo deathclaw na konzoli}
+{124}{}{Konec}
+{125}{}{Aktuální výbìr:                                                      }
+{126}{}{- druh: }
+{127}{}{- orgán: }
+{128}{}{Vybrat druh}
+{129}{}{Vybrat orgán}
+{130}{}{Provést extrakci.}
+{131}{}{Konec}
+{132}{}{Na výbìr máš jednu z následujících možností:
+                   Srdce
+                                                              Mozek
+                                                              Ledvina
+                                                             Játra
+                                                                   Plíce
+                                                             Appendix
+                                                             Tlusté støevo (naškrábano)}
+{133}{}{}
+{134}{}{}
+{135}{}{}
+{136}{}{}
+{137}{}{}
+{138}{}{}
+{139}{}{}
+{140}{}{Vybrat srdce}
+{141}{}{Vybrat mozek}
+{142}{}{Vybrat ledvinu}
+{143}{}{Vybrat játra}
+{144}{}{Vybrat plíce}
+{145}{}{Vybrat appendix}
+{146}{}{Vybrat tlusté støevo}
+{147}{}{Konec}
+{148}{}{Zvolený donor není pøítomen v místnosti extrakce.}
+{149}{}{Extrakce neúspìšná}
+{150}{}{Extrakce probìhla úspìšnì}
+{151}{}{Extrakce hotova
+                                                 Dìkujeme za použití pøístrojù Vault-Tec. Prosím využijte náš kompletní katalog produktù Vault-Tec pro výbìr pøístrojù.}
+{152}{}{}
+{153}{}{Konec}
+
+{170}{}{èlovìk                                                        }
+{171}{}{pes                                                             }
+{172}{}{koèka                                                         }
+{173}{}{zemní kukaèka                                                }
+{174}{}{hlodavec                                                      }
+{175}{}{mutant                                                        }
+{176}{}{deathclaw                                                     }
+
+{180}{}{mozek}
+{181}{}{srdce}
+{182}{}{ledvina}
+{183}{}{játra}
+{184}{}{plíce}
+{185}{}{appendix}
+{186}{}{tlusté støevo}
+
+{200}{}{ nemùže pøeèíst, co je na monitoru.}

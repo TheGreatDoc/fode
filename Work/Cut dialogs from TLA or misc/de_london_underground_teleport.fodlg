@@ -1,0 +1,51 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 #
+3 1020 D _param p PLAYER_MAIN_FACTION ! 2 D _param p SK_SCIENCE < 85 R _script dialog@r_DevTerminal1 0  @
+2 2000 None 1 #
+0 2010 D _param p PLAYER_MAIN_FACTION = 2 D or D _param p SK_SCIENCE } 85 R _script server_scripts@london_under_teleport 0  #
+0 2020 D _param p PLAYER_MAIN_FACTION ! 2 D _param p SK_SCIENCE < 85 R _param p DAMAGE_RIGHT_ARM = 1 R _script dialog@r_AccessDenied 0  #
+0 2030 @
+3 3000 None 0 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{warunek}
+{1020}{}{brak autoryzacji}
+{2000}{}{ELEKTRONICZNA KONTROLA DOSTEPU DRZWI.
+Procedura identyfikacji...
+Wprowadz ID Imperium:.............}
+{2010}{}{Zaloguj do systemu@@Wpisz haslo}
+{2020}{}{Hmmmy...  78238145 ?@@Hmmmy...  11892815 ?@@Eeeee...  ENTER ?}
+{2030}{}{Wylacz@@Zamknij}
+{3000}{}{ }
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Welcome to the sewer access terminal. Only verified Commonwealth citizens may proceed.}
+{1020}{}{Invalid credentials.}
+{2000}{}{Restricted access. Verificaton required. To proceed, enter your Commonwealth credentials.}
+{2010}{}{Enter password.@@Login.}
+{2020}{}{Um...  78201145?@@I bet it's...  11897515?@@Eeeee... ENTER?}
+{2030}{}{Logout.@@Log off.@@Step away from the terminal.}
+{3000}{}{ }
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Welcome to the sewer access terminal. Only verified Commonwealth citizens may proceed.}
+{1020}{}{Invalid credentials.}
+{2000}{}{Restricted access. Verificaton required. To proceed, enter your Commonwealth credentials.}
+{2010}{}{Enter password.@@Login.}
+{2020}{}{Um...  78201145?@@I bet it's...  11897515?@@Eeeee... ENTER?}
+{2030}{}{Logout.@@Log off.@@Step away from the terminal.}
+{3000}{}{ }

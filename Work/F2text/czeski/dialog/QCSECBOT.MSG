@@ -1,0 +1,5 @@
+#tento soubor pøeložil Marek "MAK" Gøešek
+{100}{}{Vidíš bezpeènostního robota.}
+{101}{}{Vidíš tìžce vyzbrojeného bezpeènostního robota.}
+{102}{}{Vypadá to, že jeden z nich by staèil ke znièení menší jednotky.}
+{103}{}{Nedá ti ani šanci zareagovat.}

@@ -1,0 +1,38 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Gul}
+{210}{}{Widzisz gula.}
+{210}{}{Widzisz dziwna zmutowana postac, z okropnym usmiechem.}
+{210}{}{Widzisz gula. Wydaje sie ze jego skora ma zaraz odpasc.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Jestem zielony?@@Jestem szary?@@Jestem bialy?@@Kogo to obchodzi@@Czasami boli@@Widzisz moj nos?@@Lepiej spojrz na siebie@@Spadaj gladka twarz@@Moge Cie dotknac?@@Czujesz to?@@Cos tu smierdzi@@Nie wiem czemu niektorzy ludzie nas nie lubia@@Juz tak dlugo zyje, ze nawet nie pamietam jak mam na imie@@Bylem kobieta czy mezczyzna?@@Hryyyy hryyyy...@@Agghhh hryyy...@@Hrryyy Hyyyy...@@Ehheee hryyy...@@Hoooghhryyy eheee...@@Hymm Hrryyy...@@Moj kumpel potrafi sobie wyciagnac oko@@Widziales jak potrafie zgiac moj lokiec?@@Widziales Harolda?@@Czasami tu jest tak straszne, ze sam sie boje siebie@@Byles w zaswiatach@@Mow glosniej, kiedys mi sie odrwal palec jak drapalem w uchu. Teraz nie slysze za dobrze@@Najgorsze w byciu gulem jest to ze nie wiem jakiej jestem pluci@@Nie boj sie to tylko mucha@@Nie boj sie to tylko robaki na mojej twarzy@@Wlasciwie to kto ja jestem?@@Kim jestes?@@Wiedziales ze kobiety gule sa ciagle mokre@@Slyszales cos o przeszczepie skory?@@Nigdy nie chcialem byc gulem@@Jestem dumny z tego ze jestem gulem@@Przespisz sie z gulem?@@Wiedziales ze jestes apetyczny?@@Kto jest glodny?@@Jadles kiedys ludzkie mieso?@@Zjadlbys ludzkie mieso@@Wiedziales ze 85 lat temu mialem wlosy do bioder?@@Naprawde nie probowales ludzkiego miesa?@@Moje marzenie? Wydostac sie z tego miejsca@@Moje marzenie? Stosunek seksualny z toba}
+
+[engl]
+{100}{}{Ghoul}
+{210}{}{You see a ghoul.}
+{210}{}{You see a weird mutant thing, with splotchy skin and a ghastly smile.}
+{210}{}{You see a ghoul. Its skin looks like it’s ready to slough off the creature.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Am I green?@@Am I grey?@@Am I white?@@Whooo carresss.@@Sometimes it hurts so bad...@@Seen my nose anywhere?@@Better look at yourself.@@Get lost, smoothskin.@@Can I touch you?@@Can you feel it?@@Something stinks.@@I wish I knew why humans despise us.@@I've lived so long I can't even remember my name.@@Was I a man or a woman?@@Hryyyy hryyyy...@@Agghhh hryyy...@@Hrryyy Hyyyy...@@Ehheee hryyy...@@Hoooghhryyy eheee...@@Hymm Hrryyy...@@My friend can take his own eye out, you know?@@My elbow bends funny.@@Harold who?@@We're not monsters.@@Ever been underground?@@Speak louder, I broke off a finger in my ear.@@Worst thing about this is the lack of fucking.@@I remember when people used to ride on horseback... But then came the great famine and all horses were eaten.@@Damn those pesky flies.@@Maggots in my face?@@Shit... who am I?@@Who are you?@@Ghoul women are always wet, heheh.@@Heard anything about skin transplants?@@I didin't choose to be like this.@@I am proud to be a ghoul.@@Have you ever slept with a ghoul? Kinda squishy, heheheh.@@Did you know that you look delicious?@@Who's hungry?@@Ever eaten human flesh?@@Would you eat human flesh?@@I had long hair, long time ago.@@We're not some freakin' zombies.@@My dream? To get out of this place.@@My dream? A good old-fashioned fucking.}
+
+[russ]
+{100}{}{Ghoul}
+{210}{}{You see a ghoul.}
+{210}{}{You see a weird mutant thing, with splotchy skin and a ghastly smile.}
+{210}{}{You see a ghoul. Its skin looks like it’s ready to slough off the creature.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Am I green?@@Am I grey?@@Am I white?@@Whooo carresss.@@Sometimes it hurts so bad...@@Seen my nose anywhere?@@Better look at yourself.@@Get lost, smoothskin.@@Can I touch you?@@Can you feel it?@@Something stinks.@@I wish I knew why humans despise us.@@I've lived so long I can't even remember my name.@@Was I a man or a woman?@@Hryyyy hryyyy...@@Agghhh hryyy...@@Hrryyy Hyyyy...@@Ehheee hryyy...@@Hoooghhryyy eheee...@@Hymm Hrryyy...@@My friend can take his own eye out, you know?@@My elbow bends funny.@@Harold who?@@We're not monsters.@@Ever been underground?@@Speak louder, I broke off a finger in my ear.@@Worst thing about this is the lack of fucking.@@I remember when people used to ride on horseback... But then came the great famine and all horses were eaten.@@Damn those pesky flies.@@Maggots in my face?@@Shit... who am I?@@Who are you?@@Ghoul women are always wet, heheh.@@Heard anything about skin transplants?@@I didin't choose to be like this.@@I am proud to be a ghoul.@@Have you ever slept with a ghoul? Kinda squishy, heheheh.@@Did you know that you look delicious?@@Who's hungry?@@Ever eaten human flesh?@@Would you eat human flesh?@@I had long hair, long time ago.@@We're not some freakin' zombies.@@My dream? To get out of this place.@@My dream? A good old-fashioned fucking.}

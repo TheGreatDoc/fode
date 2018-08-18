@@ -1,0 +1,3 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Tahle místnost silnì voní døevinou.}

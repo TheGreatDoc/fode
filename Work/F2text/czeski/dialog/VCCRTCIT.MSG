@@ -1,0 +1,18 @@
+# Tento soubor pøeložil Petr "Lee" Bulíø.......Level
+{100}{}{Vidíš Obèana z Vault City.}
+{101}{}{Haló, Obèane.}
+{102}{}{To máme dnes ale pìknì, že?}
+{103}{}{Ta vèerejší schùzka mìstské rady byla velmi produktivní. Udìlali jsme
+ hodnì práce. *Hodnì* seznamù.}
+{104}{}{Nemùžu se doèkat, až se zase dostanu zpátky.}
+{105}{}{Zdravíèko, Obèane.}
+{106}{}{Omluvte mì.}
+{107}{}{Stojíš mi v cestì.}
+{108}{}{Proè nejdeš ven zpátky s ostatními?}
+{109}{}{Mùžeš si držet trochu odstup, prosím?}
+{110}{}{Chvilku tady poèkej.}
+{111}{}{Mìl bys se pohnout.}
+{112}{}{Vypadni odsud.}
+{113}{}{Dej si pozor, nebo zavolám stráže.}
+{114}{}{Sleduju tì.}
+{115}{}{Jsou zvenku, stejnì jako ty...}

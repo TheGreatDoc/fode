@@ -1,0 +1,104 @@
+// Author: cvet
+// Server stuff for radio
+// Client GUI mod v0.3
+
+#include "_macros.fos"
+
+void EditRadioSettings(Critter& player, Item& radio) // Export
+{
+	player.RunClientScript("client_screen_radio@ShowEditScreen",radio.Id,0,0,null,null);
+}
+
+void unsafe_ChangeChannel(Critter& player, int radioId, int radioChannel, int, string@, int[]@)
+{
+	Item@ radio=player.GetItemById(radioId);
+	if(not valid(radio) || not FLAG(radio.Flags,ITEM_RADIO)) return;
+	if(FLAG(radio.RadioFlags,RADIO_DISABLE_SHIFT_CHANNEL)) return;
+
+	radio.RadioChannel=CLAMP(radioChannel,0,0xFFFF);
+	radio.Update();
+}
+
+void unsafe_ChangeActivity(Critter& player, int radioId, int isSend, int, string@, int[]@)
+{
+	Item@ radio=player.GetItemById(radioId);
+	if(not valid(radio) || not FLAG(radio.Flags,ITEM_RADIO)) return;
+
+	if(isSend!=0)
+	{
+		if(not FLAG(radio.RadioFlags,RADIO_DISABLE_SHIFT_SEND))
+		{
+			radio.RadioFlags^=RADIO_DISABLE_SEND;
+			radio.Update();
+		}
+	}
+	else
+	{
+		if(not FLAG(radio.RadioFlags,RADIO_DISABLE_SHIFT_RECV))
+		{
+			radio.RadioFlags^=RADIO_DISABLE_RECV;
+			radio.Update();
+		}
+	}
+}
+
+void unsafe_ChangeBroadcast(Critter& player, int radioId, int broadcastSend, int broadcastRecv, string@, int[]@)
+{
+	Item@ radio=player.GetItemById(radioId);
+	if(not valid(radio) || not FLAG(radio.Flags,ITEM_RADIO)) return;
+
+	// Change send
+	if(not FLAG(radio.RadioFlags,RADIO_DISABLE_SHIFT_BC_SEND))
+	{
+		if(broadcastSend==RADIO_BROADCAST_WORLD || broadcastSend==RADIO_BROADCAST_LOCATION ||
+			broadcastSend==RADIO_BROADCAST_MAP || broadcastSend==RADIO_BROADCAST_ZONE(2) ||
+			broadcastSend==RADIO_BROADCAST_ZONE(5))
+		{
+			radio.RadioBroadcastSend=broadcastSend;
+			radio.Update();
+		}
+	}
+
+	// Change recv
+	if(not FLAG(radio.RadioFlags,RADIO_DISABLE_SHIFT_BC_RECV))
+	{
+		if(broadcastRecv==RADIO_BROADCAST_WORLD || broadcastRecv==RADIO_BROADCAST_LOCATION ||
+			broadcastRecv==RADIO_BROADCAST_MAP || broadcastRecv==RADIO_BROADCAST_ZONE(2) ||
+			broadcastRecv==RADIO_BROADCAST_ZONE(5))
+		{
+			radio.RadioBroadcastRecv=broadcastRecv;
+			radio.Update();
+		}
+	}
+}
+
+void SetInHand(Critter& player, int flags, int broadcastSend, int broadcastRecv)
+{
+	Item@ item=player.GetItem(0,SLOT_HAND1);
+	if(not valid(item)) return;
+
+	SETFLAG(item.Flags,ITEM_RADIO);
+	item.RadioFlags=uint8(flags);
+	item.RadioBroadcastSend=uint8(broadcastSend);
+	item.RadioBroadcastRecv=uint8(broadcastRecv);
+	item.Update();
+}
+
+void UnsetInHand(Critter& player, int, int, int)
+{
+	Item@ item=player.GetItem(0,SLOT_HAND1);
+	if(not valid(item)) return;
+
+	UNSETFLAG(item.Flags,ITEM_RADIO);
+	item.Update();
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+# quick look
+{100}{}{Tu vois un client de casino.}
+
+# examines
+{150}{}{Tu vois un client du casino. Il a l'air fatigué.}
+{151}{}{Tu vois un clientdu casino. Il a une lueur dorée dans les yeux.}
+{152}{}{Tu vois un clientdu casino. Il met ses mains sur son visage.}
+{153}{}{Tu vois un clientdu casino. Il a l'air un peu éméché.}
+{154}{}{Tu vois un clientdu casino. Il te fait un clin d'oeil et s'éloigne en titubant.}
+{155}{}{Tu vois un clientdu casino. Il essaie d'attirer l'attention de la serveuse.}
+{156}{}{Tu vois une cliente du casino. Elle a l'air fatigué.}
+{157}{}{Tu vois une cliente du casino. Elle a une lueur dorée dans les yeux.}
+{158}{}{Tu vois une cliente du casino. Elle met ses mains sur son visage.}
+{159}{}{Tu vois une cliente du casino. Elle a l'air d'être un peu éméchée.}
+{160}{}{Tu vois une cliente du casino. Elle te fait un clin d'oeil, puis s'éloigne en titubant.}
+{161}{}{Tu vois une cliente du casino. Elle essaie d'attirer l'attention du serveur.}
+
+# float
+{202}{}{C'est comme ça qu'on donne une leçon à l'Enclave !}
+
+# POWER ARMOR
+{206}{}{Oh Oh. Dégagez, dégagez.}
+
+# PLAYER IS MADE MAN
+{223}{}{Oh Oh. Dégagez, dégagez.}
+{224}{}{En parlant d'apparence dangereuse...}
+{225}{}{*Gulp*}
+
+# ANY TO PRIZEFIGHTER
+{235}{}{Hé champion ! Super le dernier combat !}
+{236}{}{Combien t'en as mis dehors ?}
+
+# PORN STAR, FEMALE
+{244}{}{Ouah ! Regardez-moi ça !}
+{245}{}{Non mais regardez *ça* !!}
+
+# PORN STAR MALE
+{268}{}{Hé, salut beau gosse.}
+{269}{}{Tu as besoin d'un partenaire pour ton prochain film ?}
+
+# ROBOBRAIN
+{278}{}{C'est une machine à sous robotique ?}
+
+# NORMAL
+{281}{}{Jette les dés.}
+{282}{}{Bébé a besoin d'une nouvelle paire de chaussures...}
+{283}{}{Bon sang ! J'avais réussi à avoir *53* jetons...}
+{284}{}{Est-ce que j'ai déjà utilisé tous mes jetons ?}
+{285}{}{Allez, le 7 !}
+{286}{}{J'ai juste perdu 60 jetons. Et ce, dans les cinq premières minutes.}
+{287}{}{Le 23 rouge ! Le 23 rouge ! Allez... le 23 rouge...!!}
+{288}{}{50 jetons sur le 15 noir...}
+
+# ENCLAVE DESTORYED
+{321}{}{C'est comme ça qu'on donne une leçon à l'Enclave !}
+
+# POWER ARMOR
+{340}{}{Est-ce que je peux frotter ces dés sur ton armure pour me porter chance ?}
+{341}{}{Si tu crois que cette armure m'intimide... et ben t'as raison.}
+
+# MADE MAN
+{353}{}{Est-ce que je te faisais de l'ombre ? Je vais quitter la ville.}
+{354}{}{Ecoute, s'il te plaît... Je ne veux pas de problème.}
+
+# PORN STAR
+{372}{}{J'adoooooore tes films.}
+{373}{}{Bon sang ! Toutes ces courbes !!!}
+
+{503}{}{ !}
+{504}{}{T'es une vedette !!}
+{505}{}{Tu es tellement CHIC !}
+{625}{}{ !}
+{630}{}{T'assures à mort !!}
+{631}{}{Tu es tellement CHIC !}

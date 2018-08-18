@@ -1,0 +1,78 @@
+{100}{}{Un vieil homme.}
+{101}{}{Cornélius.}
+{102}{}{Mis à part l'expression quelque peu perturbée de son visage, il a l'air tout à fait normal.}
+
+{150}{}{Bienvenue à l'Auberge de Rose. Je m'appelle Rose, euh... j'veux dire... Cornélius... c'est moi qui m'occupe de l'Auberge. Qu'est-ce que je peux faire pour vous ?}
+{151}{}{Si c'est vous qui dirigez cette maison, pourquoi l'appelle-t-on l'Auberge de Rose?}
+{152}{}{Je cherche une montre en or.}
+{153}{}{Que faites-vous ici ?}
+{154}{}{Qui est Rose ?}
+{155}{}{Je voudrais une chambre.}
+{156}{}{Des questions ? Est-ce que je vous ai demandé quelque chose moi ? - Je m'appelle Cornélius.}
+{162}{}{Mon vieux, vous avez besoin qu'on s'occupe de vous.}
+{163}{}{Farrel a mis votre montre dans son coffre mural. Allons le pendre.}
+{164}{}{J'ai trouvé votre montre chez Farrel. Vous aviez raison, c'est bien lui le voleur.}
+{165}{}{Je crois qu'un rat très industrieux s'est emparé de votre montre. Je lui ai repris.}
+{166}{}{Bonjour ! On s'est déjà rencontré, non ?}
+{176}{}{Quelqu'un a tué Farrel ! C'était mon meilleur ami !! Toute la ville recherche le meurtrier. Quand on l'aura attrapé, on le lynchera !}
+{177}{}{C'est moi qui l'ai tué. Alors, qu'est ce que vous allez faire maintenant, espèce de vieux fou ?}
+{178}{}{Oh là là ! J'avais pas vu l'heure. Il faut que j'y aille.}
+{179}{}{Rose c'est ma femme. J'ai donné son nom à l'auberge. Vous saviez que j'étais marié ?}
+{180}{}{Puis-je vous poser encore quelques questions ?}
+{181}{}{Alors, pourquoi ne demandez-vous pas à ce porc de Farrel ? Peut-être qu'il vous vendra la montre qu'il m'a volée ! Et maintenant, si ce n'est pas trop vous demander, j'ai beaucoup à faire. Je dois raser la brahmine.}
+{182}{}{Je suis le patron de l'auberge. C'est sûr que sans moi y aurait jamais rien de fait ici. Avez-vous jeté un oeil aux toilettes ? Les plus propres que vous ayez jamais vues. C'est mon travail.}
+{183}{}{Qu'est ce que la propreté des toilettes a à voir avec la direction de cette auberge ?}
+{184}{}{Rose c'est ma femme. Elle s'occupe de la cuisine. Vous trouverez des plats aussi bons nulle part ailleurs. Elle est si belle Rose. Un jour je l'épouserai.}
+{185}{}{Mais, vous venez de me dire que c'est votre femme !!}
+{186}{}{J'ai une chambre. J'y dors. Et vous, vous dormez où ?}
+{187}{}{Je crois que vous n'avez pas compris. Je voudrais une chambre pour la nuit.}
+{188}{}{Il y a pas mal de temps, j'ai oublié quand, mon meilleur ami depuis 30... ou peut-être 40 ans... oh, ça n'a plus d'importance. Ce qui est important, c'est qu'il a volé ma montre de gousset en or, un vrai bijou. Elle a été transmise de père en fils dans ma famille pendant 5, euh, non, 6, euh, je veux dire 4 générations. Je me rappelle bien l'avoir mise sur mon bureau. Et quand j'ai regardé sur la table de la cuisine, elle avait disparu.}
+{189}{}{D'accord, je vais vous ramener votre montre.}
+{190}{}{L'avez-vous cherchée sur votre bureau ?}
+{191}{}{Vous allez m'aider ? C'est fantastique ! Allez mettre une bonne raclée à Farrel et ramenez-moi ma montre. Il l'a probablement bien cachée. N'hésitez pas, retournez toute sa baraque s'il le faut mais trouvez-la.}
+{192}{}{Mais de quoi parlez-vous ?}
+{193}{}{Ecoutez, je ne veux pas me mêler de ça.}
+{194}{}{Tuer Farrel, reprendre la montre... C'est compris ! Je reviens tout de suite.}
+{195}{}{Tuer Farrel ! Qui est-ce qui va tuer Farrel ? C'est mon meilleur ami. Je pendrai moi-même haut et court le vaurien qui essaie de le tuer !}
+{196}{}{J'accepte le boulot et j'entends bien à ce qu'on me paie quand il sera terminé.}
+{197}{}{Je ne peux plus supporter ça. Je m'en vais.}
+{198}{}{Bien sûr que je vais vous payer. Dès que vous aurez fini de nettoyer la grange, venez me voir.}
+{199}{}{J'ai une montre. C'est une montre en or. Je me demande où je l'ai mise...}
+{200}{}{Oui, oui, oui. J'ai regardé dans mon tiroir à chaussettes. Elle n'y est pas non plus.}
+{201}{}{Je continuerai à chercher votre montre pendant que je serai en ville.}
+{202}{}{Il n'est pas question que j'aide un vieux fou de votre genre. Je m'en vais.}
+{203}{}{Je savais que je ne pouvais pas lui faire confiance. Je m'en vais le pendre par les oreilles jusqu'à ce qu'il me rende ma montre !}
+{204}{}{Il n'y a rien ici. Jo le Shérif et moi avons déjà regardé.}
+{206}{}{C'est bien lui ? Je le savais ! Je vais lui donner une leçon qu'il n'oubliera jamais. Vous feriez mieux de rester ici ou vous risquez de prendre des coups.}
+{207}{}{Ma montre ! Qu'est-ce que vous faites avec ma montre ? Rendez-la moi ! [Il t'arrache la montre des mains.] Vous feriez mieux de partir, nous n'aimons pas les voleurs ici.}
+{208}{}{Ca alors, tu parles d'une gratitude ! }
+{209}{}{Avez-vous goûté aux omelettes de Rose ? Elles sont succulentes.}
+{210}{}{J'ai vu Jonny jouer près du puits avec son chien Laddie. Quel gentil garçon !}
+{211}{}{N'allez pas à la ferme perdue si vous avez encore envie de vivre.}
+{212}{}{Miria est une fille bien. Nous avions l'habitude de jouer au docteur quand elle était petite.}
+{213}{}{David est un gentil garçon. Je me demande pourquoi il ne ressemble pas à son père.}
+{214}{}{Un jour, j'étais aux toilettes quand un gros chien a surgi des égouts. J'ai cru mourir de peur.}
+{215}{}{Grisham est un bon gars. Il nous vend des restes pour nourrir la poule géante.}
+{216}{}{N'approchez pas de la basse-cour ! J'ai failli perdre un bras en donnant à manger à cette créature !}
+{217}{}{Les chiens de Rose sont vicieux. Ce que j'fais, je leur jette des bouts de viande et ils font plus attention à moi.}
+{218}{}{Pour moi, Farrel c'est le meilleur ami du monde.}
+{219}{}{Laddie est un chien intelligent. Je lui parle sans arrêt.}
+{220}{}{J'ai entendu dire que Grisham essaie de marier ses enfants. Je me demande si Rose accepterait que j'aie une autre femme.}
+{222}{}{La belote ? Qu'est-ce qu'il est devenu ce jeu ? Bon, je dois partir. On pourra peut-être jouer plus tard.}
+{223}{}{J'AI TROUVE LE MEURTRIER ! IL A AVOUE LE MEURTRE DE FARREL ! ALLONS L'ARRETER !}
+{224}{}{J'AI TROUVE LA MEURTRIERE ! ELLE A AVOUE LE MEURTRE DE FARREL ! ALLONS L'ARRETER !}
+{225}{}{Moi, tuer Farrel.}
+
+{300}{}{[Hmmm... Certains mots semblent le mettre en colère.] Rose... chambre... courir...}
+{301}{}{Ouga.}
+
+{501}{}{J'ai toujours su que vous étiez un voleur.}
+{502}{}{Comment avez-vous pu faire une chose pareille à votre meilleur ami ?}
+{503}{}{Je vais vous tuer !}
+{504}{}{Je vais faire empailler votre tête et la mettre chez moi !}
+
+{550}{}{Il a l'air inquiet.}
+
+{600}{}{Tu as rapporté la montre à Cornélius.}
+{650}{}{Tu as réglé le problème de Cornélius et Farrel.}
+

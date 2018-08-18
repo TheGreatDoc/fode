@@ -1,0 +1,28 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Нищий}
+{200}{}{Вы видите нищего.}
+{210}{}{Вы видите нищего. Он гол как сокол и готов съесть слона. Худой как нитка, вы могли бы поклясться, что можно видеть сквозь него.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Beggar}
+{200}{}{You see a beggar.}
+{210}{}{You see a beggar. He is almost naked and starved to death. Thin as air, you swear you can see through him.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Beggar}
+{200}{}{Widzisz żebraka.}
+{210}{}{Widzisz żebraka. Została z niego sama skóra i kości. Najpewniej mógłby latać w powietrzu jak chorągiewka.}
+{1000}{}{Initial preferences}
+

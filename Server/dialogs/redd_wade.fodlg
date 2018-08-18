@@ -1,0 +1,56 @@
+[comment]
+
+AICERICL! Cndieucotnn? adleliiul celir nedcdnia. Iliaoiacei a dlecciie aldncc anl oneiac? dldlalernu n "_caravan"ir "caravan"
+
+// nnrnon erdrarir
+(0) // erdrari il ir?ciren?
+(1) // di?acen? ddiaiaice, cadiec eiaon diararnu cr?aec ir iodrio erdrarir
+(2) // erdrari aurle cc doienr R
+(3) // erdrari dldlelurlnn? di aeiareo
+(4) // erdrari ir neo?reiie yieroinldl
+(5) // erdrari aiadren? ai ni?ec ircir?lic?
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Бен Вэйд}
+{200}{}{Вы видите человека в комбинезоне.}
+{210}{}{Вы видите Бена Вэйда, начальника каравана Реддинг - Город Убежище.}
+{210}{}{Вы видите человека в костюме Города Убежища.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Ben Vaid}
+{200}{}{You see a man in robe.}
+{210}{}{You see Ben Vaid, caravan leader from Vault City.}
+{210}{}{You see a man in Vault City suit.}
+{1000}{}{Predialogue installations}
+
+[pols]
+{100}{}{Ben Vaid}
+{200}{}{You see a man in robe.}
+{210}{}{You see Ben Vaid, caravan leader from Vault City.}
+{210}{}{You see a man in Vault City suit.}
+{1000}{}{Predialogue installations}
+{100000015}{}{hearts}
+{100000016}{}{diamonds}
+{100000017}{}{clubs}
+{100000018}{}{two}
+{100000019}{}{three}
+{100000020}{}{four}
+{100000021}{}{five}
+{100000022}{}{six}
+{100000023}{}{seven}
+{100000024}{}{eight}
+{100000025}{}{nine}
+{100000026}{}{ten}
+{100000027}{}{Jack}
+{100000028}{}{Queen}
+{100000029}{}{King}
+{100000030}{}{Ace}
+

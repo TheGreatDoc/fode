@@ -1,0 +1,84 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 D _var p mgl_alex = 0 R _var p mgl_alex = 1 #
+4 2020 D _var p mgl_alex } 1 R _var p mgl_alex = 2 #
+5 2030 D _var p mgl_alex = 2 #
+0 2040 @
+3 3000 None 0 #
+2 3010 @
+4 4000 None 0 #
+6 4010 @
+6 5000 None 0 #
+2 5010 @
+5 6000 None 0 #
+2 6010 &
+
+[engl]
+{100}{}{Alexander}
+{200}{}{You see Alexander}
+{210}{}{You see ghoul reactor operator Alexander.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Yeah smoothskin?}
+{2010}{}{Who are you and what are you doing here?}
+{2020}{}{Tell me about reactors.}
+{2030}{}{Where you get that uranium, which you use?}
+{2040}{}{Bye.}
+{3000}{}{I'm Alexander, I'm keeping those 3 babies running. I also make some repairs if it's necessary, especially when there is some radiation leaks - your kind smoothskin, are a bit sensitive for radiation.}
+{3010}{}{I see, tell me more.}
+{4000}{}{RBMK-1000 with reliable generator NRG-15-A. One of latest and finest devices of Old World. Reactors are running on high and medium grade enriched uranium.}
+{4010}{}{Where you learned so much about reactors ?}
+{5000}{}{I used to be one of reactor operators long time ago.}
+{5010}{}{I want to ask you something.}
+{6000}{}{It's from Mine Pit, their enriched uranium is only medium grade.But Mine Pit is only place here where we can get some fuel, so it's our only option.}
+{6010}{}{I want to know more.}
+
+[pols]
+{100}{}{Alexander}
+{200}{}{Widzisz Alexandra}
+{210}{}{Widzisz ghoula Alexandra operatora reaktora.}
+{1000}{}{Instalacja przeddialogu}
+{1010}{}{ }
+{2000}{}{Tak gladkoskory ?}
+{2010}{}{Kim jestes i czym sie tu zajmujesz ?}
+{2020}{}{Opowiedz mi o tych reaktorach}
+{2030}{}{Skad jest uran ktorego uzywacie ?}
+{2040}{}{czesc}
+{3000}{}{Jestem Alexander, utrzymuje te 3 dziecinki w ruchu. Poza tym dokonuje napraw jesli jest potrzeba, przedewszystkim kiedy sa jakies radioaktywne wycieki, Wy gladkoskorzy jestescie troche zbyt delikatni na radiacje.}
+{3010}{}{Rozumiem, powiedz mi wiecej.}
+{4000}{}{Poseidon Energy NR-38-L Mk.IV z niezawodnym generatorem NRG-15-A-L Mk.II. Ostatni i najlepszy mechanizm starego swiata. Reaktory pracuja na wysokim i srednio wzbogaconym uranie.}
+{4010}{}{Gdzie sie nauczyles tak wiele na temat reaktorow ?}
+{5000}{}{Bylem kiedys jednym z operatorow reaktora w Vault 12.}
+{5010}{}{Chce Cie spytac o cos.}
+{6000}{}{To jest z Broken Hills, ich uran jest srednio wzbogacony. Ale Broken Hills jest jedynym miejscem tu w Californii gdzie mozemy dostac paliwo, wiec jest to nasze jedyne wyjscie.}
+{6010}{}{Che sie dowiedziec wiecej.}
+
+[russ]
+{100}{}{Alexander}
+{200}{}{You see Alexander}
+{210}{}{You seeghoul reactor operator Alexander.}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Yeah smoothskin ?}
+{2010}{}{Who are you and what are you doing here ?}
+{2020}{}{Tell me about those reactors}
+{2030}{}{From where is uranium you are runing on ?}
+{2040}{}{bye}
+{3000}{}{I'm Alexander,I'm keeping those 3 babies running. I'm also making some repairs if needed, especialy wheen there is some radiation leak, you smoothskins are bit sensitive to radiation.}
+{3010}{}{I see, tell me more.}
+{4000}{}{Poseidon Energy NR-38-L Mk.IV with reliable generator NRG-15-A-L Mk.II. Latest and finest devices of Old World. Reactors are running on High and medium grade enriched uranium.}
+{4010}{}{Where did you learnt so much about reactors ?}
+{5000}{}{I used to be one of reactor operators at Vault 12.}
+{5010}{}{I want to ask you something.}
+{6000}{}{It's from Broken Hills, their enriched uranium is only medium grade.But Broken Hills is only place here in California where we can get some fuel, so it's our only option.}
+{6010}{}{I want to know more.}
+

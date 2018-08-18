@@ -1,0 +1,127 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Velký pøekvápko -- poøád vypadá jako chlapík v Energo zbroji.}
+{101}{}{Jo, stále je to ještì maník v Energo zbroji.}
+{102}{}{Má na prsou nìjaký znak, ale je jiný, než mají všichni ostatní tady okolo. }
+
+{103}{}{<Saaaakryš> - zbrojnice!}
+
+{104}{}{Co se - <do prdele!>>}
+
+{105}{}{(Takže, tebe posílá serža. Prý, že potøebuješ Energo zbroj. No, ale mám tu už jen jeden urèený pro údržbu. Mohl bych s tím mít problémy, tak si toho važ. Staèí mi to tu jen podepsat.)}
+{106}{}{Uh... Mohl bys to zopakovat?}
+{107}{}{Myslím, že s tím tvým oblekem je nìco v nepoøádku.}
+{108}{}{Jistì, udìlám to.}
+{109}{}{Ale nic. Zapomeò na to.}
+
+{110}{}{Ty jsi ten chlápek, o kterém mi seržant dával hlášku?}
+{111}{}{Opravdu nejsi ten dotyèný èlovìk?}
+{112}{}{Huh?}
+{113}{}{Ano.}
+{114}{}{Ne.}
+
+{115}{}{Kdo jsi? Co tu dìláš?}
+{116}{}{Cože?}
+{117}{}{Uh... Jsem tu novej?}
+{118}{}{Tamtadadaaaa!}
+
+{119}{}{Kdo jsi? Co tu dìláš?}
+{120}{}{Cože?}
+{121}{}{Uh... Jsem tu novej?}
+{122}{}{Tramtadadaaaaa!}
+
+{123}{}{Co tím myslíš? Ten oblek je úplnì v pohodì! Tak podepíšeš ty papíry nebo ne?}
+{124}{}{Nerozumím z toho jedinýmu slovu.}
+{125}{}{Tvùj mikrofon je rozbitej.}
+{126}{}{Jistì, jak si pøeješ.}
+{127}{}{K èertu s tím vším!}
+
+{128}{}{(Nedoslýcháš? Øekl jsem, že ti dám oblek; staèí to tady jenom podepsat.)}
+{129}{}{Pán si rád dìlá srandièky, co? Tak tohle já nemám zapotøebí. Vysvìtlíš si to seržovi sám, proè nemáš uniformu!}
+{130}{}{Huh?}
+{131}{}{Oukej, fajn. Udìlám to.}
+{132}{}{Zapomeò na to, oukej?}
+
+{133}{}{Žádný mikrofon rozbitý není. Slyším tì dobøe. Takže jenom podepiš papíry a mùžeme to považovat za skonèené.}
+{134}{}{Huh?}
+{135}{}{Fajn, tak dobøe!}
+{136}{}{K èemu to chceš? Tohle já nedìlám!}
+
+{137}{}{Oukej, jak s jmenuješ?}
+{138}{}{[Player name]}
+{139}{}{Pisces?}
+{140}{}{Chci Energo zbroj.}
+{141}{}{Swordfish.}
+
+{142}{}{Správnì. Jednotka?}
+{143}{}{Arroyo.}
+{144}{}{Nevím.}
+{145}{}{Docela ujde.}
+{146}{}{42.}
+
+{147}{}{Ten se S nebo s C?}
+{148}{}{Ano.}
+{149}{}{Ne.}
+{150}{}{Nevím.}
+
+{151}{}{Dostaneš to zatracený Energo brnìní teprve až já uznám za vhodný! A teï mi odpovìz na otázku.}
+{152}{}{[Player name]}
+{153}{}{Pisces?}
+{154}{}{Swordfish.}
+
+{155}{}{Arroy - Poèkej sakra! To je to hnízdo co jsme vybrali. Ty jsi zatracenej divoch! Stráže!}
+
+{156}{}{Podívej, ty šašku, nedìlej žádné potíže nebo tì nahlásím k raportu. Takže mi odpovìz na otázku.}
+{157}{}{Arroyo.}
+{158}{}{42.}
+
+{159}{}{Takhle je to! Hezky padej ke svýmu veliteli. Nahlásím tì nahoru. Odchod.}
+
+{160}{}{42-ka, eh? Dobrá jednotka. Oukej. Tady máš vybavení. Odchod, vojáku.}
+
+{161}{}{Jsi hluchej? Jsi ten dotyènej maník nebo ne?}
+{162}{}{Ano.}
+{163}{}{Jako ryba ve vodì.}
+{164}{}{Ne.}
+
+{165}{}{Oukej, ale pohni si. Rychle to sundej a já ti dám nový oblek.}
+{166}{}{Hraješ jen štìk ve velký høe.}
+{167}{}{Huh?}
+{168}{}{Oukej.}
+{169}{}{Ty mì chceš svlíknout? To snad ne!}
+
+{170}{}{Oh, no tak nic.}
+
+{171}{}{Energo zbroj. Dej mi svojí Energo zbroj, ty blbe.}
+{172}{}{Oukej.}
+{173}{}{Obchod je u konce. Nic jiného ti už nedám.}
+{174}{}{Samozøejmì, že pro tebe nìco mám, ty bastarde.}
+
+{175}{}{Oukej, tady je ten oblek. A teï odsud vypadni.}
+
+{176}{}{Ty pablbe; nemáš oblek. Vypadni odsud!}
+
+{177}{}{O èem to k èertu mluvíš? Dej mi ten oblek.}
+{178}{}{OK. Tady je.!}
+{179}{}{Sežer tohle!}
+
+{180}{}{Správnì, Jsi oukej. Jednotka?}
+{181}{}{Arroyo.}
+{182}{}{Nevím.}
+{183}{}{Mám ještì lepší známku.}
+{184}{}{42.}
+
+{185}{}{Jsi hluchej? Kdo jsi?}
+{186}{}{Že bych byl ten novej maník?.}
+{187}{}{Nikdy jsem o nich neslyšel.}
+
+{188}{}{Nováèek, eh? Pøedpokládám, že chceš svoje vybavení. Proè mi nikdy nikdo nic neøekne? Jak se jmenuješ?}
+{189}{}{Huh? Jsi jen malý koleèko ve velkým stroji.}
+{190}{}{[Player name]}
+{191}{}{Ne když vystøelím první!}
+
+{192}{}{Poèkej minutku -- ty nejsi jedním z nás! STRÁŽE!}
+
+{193}{}{Podívej, vojáku, už jsem ti dal všechno tvoje vybavení, takže odtud vypadni.}
+
+{194}{}{Co chceš?}
+{195}{}{Drýým?}

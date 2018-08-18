@@ -1,0 +1,57 @@
+//Drop all and Pick up all unsafe_ functions
+#include "_defines.fos"
+#include "_macros.fos"
+void unsafe_Drop_All(Critter& player, int id, int, int, string@, int[]@) // All exept weared items
+{
+		Critter@ cr=GetCritter(id);
+		Map@ map=cr.GetMap();
+		Item@[] items;
+		if(cr.IsFree() && valid(map) && valid(cr) && cr.GetItems(SLOT_INV,items)>0) //check for empty inv
+		{
+		cr.GetItems(SLOT_INV,items);
+		cr.Animate(0, ANIM2_PICKUP, null, true, true);
+		for(uint i=0,j=items.length();i<j;i++)
+			{
+				if(FLAG(items[i].Flags,ITEM_GAG))
+				{
+					Item@ item = items[i];
+					if(valid(item)) DeleteItem(item);
+					@items[i]=null;
+				}
+				else if(FLAG(items[i].Flags,ITEM_HIDDEN)) @items[i]=null;
+				else if(items[i].GetProtoId()==PID_CANNONM || items[i].GetProtoId()==PID_CANNONF || items[i].GetProtoId()==PID_CANNONL) 
+				{
+					Item@ item = items[i];
+					if(valid(item)) DeleteItem(item);
+					@items[i]=null;
+				}
+			}
+		MoveItems(items,map,cr.HexX,cr.HexY);
+		}
+}
+
+void unsafe_Take_All(Critter& player, int id, int, int, string@, int[]@) //
+{
+		Critter@ cr=GetCritter(id);
+		Map@ map=cr.GetMap();
+		Item@[] items;
+		//int freeWeight = cr.Stat[ ST_CARRY_WEIGHT ] - cr.ItemsWeight();
+		if(cr.IsFree() && valid(map) && valid(cr) && map.GetItems(cr.HexX,cr.HexY,items)>0) // check for empty hex
+		{
+			map.GetItems(cr.HexX,cr.HexY,items);
+			for(uint i=0,j=items.length();i<j;i++)
+				{
+					if(FLAG(items[i].Flags,ITEM_GAG)) continue;
+					else if(FLAG(items[i].Flags,ITEM_HIDDEN)) @items[i]=null;
+					else if(items[i].GetProtoId()==PID_CANNONM || items[i].GetProtoId()==PID_CANNONF || items[i].GetProtoId()==PID_CANNONL) 
+					{
+						Item@ item = items[i];
+						if(valid(item)) DeleteItem(item);
+						@items[i]=null;
+					}
+					MoveItem(items[i],0,cr);
+				}
+			cr.Animate(0, ANIM2_PICKUP, null, true, true);
+			 	
+		}
+}

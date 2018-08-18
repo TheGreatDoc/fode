@@ -1,0 +1,31 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Алкоголик}
+{200}{}{Вы видите пьяницу.}
+{210}{}{Вы видите шатающегося из стороны в сторону пьяного человека в лохмотьях. Лицо его распухло, нос синющий как слива. А аромат рядом с ним такой, что свалит брамина насмерть. Он что-то бормочет про себя и иногда громко поет песни.}
+{210}{}{Вы видите алкаша. Он весьма грязен - кажется, он повалялся в луже, но не особо этим расстроен.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Drunkard}
+{200}{}{You see a drunkard.}
+{210}{}{You see some ragged drunkard staggering from side to side. His face is swollen, his nose looks like a plum. He smells so bad even brahmin wouldn't stand the stench. He is mumbling something and singing loudly from time to time...}
+{210}{}{You see a drunkard. He is very dirty, seems he fell into to some puddle, but he doesn't appear to be upset after all.}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Drunkard}
+{200}{}{Widzisz pijaka.}
+{210}{}{Widzisz obdartego pijaka chwiejącego się z boku na bok. Jego twarz jest spuchnięta, nos wygląda jak śliwka. Śmierdzi gorzej niż braminie gówno. Mamrocze coś pod nosem oraz od czasu do czasu śpiewa...}
+{210}{}{Widzisz pijaka. Jest brudny, wygląda na to, że wpadł do kałuży, na szczęście nie jest tym przejęty.}
+{1000}{}{Initial preferences}
+

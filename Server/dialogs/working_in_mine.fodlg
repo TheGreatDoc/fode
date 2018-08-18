@@ -1,0 +1,46 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+0 2020 R _script server_other_script@dlg_work_in_main 0  #
+0 2030 @
+3 3000 None 0 &
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Do dialogu}
+{2000}{}{Can I help you?}
+{2010}{}{I need work.}
+{2020}{}{I have those resources, I want to sell them.}
+{2030}{}{Nothing, wrong person.}
+{3000}{}{You can gather resources and then sell it to me.}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Do dialogu}
+{2000}{}{What do you need??}
+{2010}{}{I need work.}
+{2020}{}{I have those resources, I want to sell them.}
+{2030}{}{Nothing, wrong person.}
+{3000}{}{You can gather resources and then sell it to me.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Do dialogu}
+{2000}{}{What do you need??}
+{2010}{}{I need work.}
+{2020}{}{I have those resources, I want to sell them.}
+{2030}{}{Nothing, wrong person.}
+{3000}{}{You can gather resources and then sell it to me.}
+

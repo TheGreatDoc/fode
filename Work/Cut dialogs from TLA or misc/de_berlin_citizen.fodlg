@@ -1,0 +1,32 @@
+[comment]
+Michelin-in-game?
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Obywatel Belina}
+{210}{}{Widzisz obywatela miasta Berlin}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hallo@@Please do nicht mich erschie?en!@@Nice Day, nicht wahr?@@Schonen Tag wunsche Ich.@@I want some Sauerkraut.@@Mit Bratwurst und Speck.@@Hmmm... Ja? Was?@@Co tam Jimmy?@@Czlowieku! Precz z lapami@@Jak leci?@@Nie, nie mam zegarka@@Powaznie?@@Nie ma lepszego miejsca, aby zyc@@Tak wiem, Bezpieczne miejsce, ale ciezko sie tu dostac @@Nie mam czasu, spiesze sie do sklepu@@No dawaj!@@Zabawny jestes@@Nie mow nikomu, ale chce sie przylaczyc do NEC@@Nie mow     nikomu, ale chce sie przylaczyc do REF@@Megan?@@Tak, znana takze jako Michelin?@@Nie gadaj z Albertem. Wciska niezle kity ludziom@@Masz fajke?@@Poczestuj petem?@@Masz ognia?@@Hej ty@@Co tak stojisz?@@Nie patrz na mnie.@@Jebany molerat ugryzl mnie w reke@@Moji sasiedzi maja w domu malego deathclawa@@Czasami pojawiaja sie bandyci, ale mamy bardzo dobrych straznikow@@Te psy mnie wkurwiaja@@John?@@To miasto schodzi na psy@@...Dziwki, cpuny, ochleje, rabusie, gwalciciele i teraz ty@@Zawsze chcialem miec auto@@Byles kiedys poza miastem?@@Slyszalem plotki, ze poza miastem nie ma zycia?@@Nie ma zycia poza tym miastem. To prawda?@@Wlasciwie to ja nie wiem co tu robie@@Nie zadawaj glupich pytan@@Witam i... Dowidzenia@@Staram sie przezyc.To cala moja historia@@Historia tego miejsca? Nie mam pojecia@@Nie mam pojecia@@Skad mam wiedziec@@Wlasciwie to kto pyta?@@Slyszysz ptaki?@@Zrobisz cos dla mnie?@@Szukales mnie?@@Mam dosc tych walk w Berlinie@@Wczoraj tuz za miastem spadla wielka rakieta@@Kiedy bylem jeszcze malolat to Berlin byl bardziej niebezpieczny@@Witaj przyjacielu w Berlinie@@Dlaczego przybyles do Berlina?@@Mieszka tu wiele wspanialych ludzi@@Kolejny zwykly dzien w Berlinie...@@Powietrze w Berlinie jest lepsze, czujesz je?@@Jestes z Berlina?}
+
+[engl]
+{100}{}{Berlin citizen}
+{210}{}{You see a citizen of Berlin.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hallo.@@Please do nicht mich erschiessen!@@Nice Day, nicht wahr?@@Verpisst dich.@@I want some Sauerkraut.@@Mit Bratwurst und Speck/@@Hmmm... Ja? Was?@@What's up Jens?@@Hands off man!@@How's it going?@@I don't have a watch.@@Really?@@I wish I could get to Greenpoint, schade.@@It's a safe spot, but hard get to.@@I don't have time, I'm goin' shoppin.@@That's keine Uberraschung.@@You're funny!@@Don't tell nobody but I'm thinkin' about joining the NEC.@@How about we join REF?@@Megan?@@You know Junkers too?@@Und?@@Ja?@@Do you have eine Zigarette?@@Zigaretten?@@Got feuer?@@Berlin, Berlin, uber alles!@@Hey du!@@Why are you standing there?@@Don't look at me.@@That verdammte molerat bit my foot.@@My stupid neighbor keeps eine kleine Todeskralle in his house.@@Sometimes bandits show up, but our guards do a good job.@@These stray dogs piss me off.@@Hans?@@This Stadt goes to the dogs.@@...whores, junkies, drug addicts, robbers, rapists and now you!@@I always wanted ein car.@@Have you ever been out of Bearline?@@I've heard there's no life in the east beyond.@@Reportedly the area beyond is devoid of life. Is it true?@@Actually, I do not know what I'm doing here.@@Don't ask dumme questions.@@Hello and... auf wiedersehen.@@I'm just trying to survive. That's my whole Geschichte@@The history of this place? I don't care about history.@@Deathclaws? You mean Todeskralle?@@Geschichte? Ich habe keine Ahnung.@@I have no clue...@@I have no idea.@@Hey, why are you asking me?@@I can't hear no birds.@@Will you do something for me?@@Looking for me?@@Berlin's had enough of the rioting already.@@Yesterday a large missile exploded near the city.@@Back when I was a little kid, Berlin was a much more dangerous place.@@Welcome my friend, welcome to Berlin!@@Why did you come to Berlin?@@This place is full of scum.@@Rape, murder, thievery... another ordinary day in Berlin.@@Behold the Berlin air. Endure the stench!@@Are you from Berlin?}
+
+[russ]
+{100}{}{Berlin citizen}
+{210}{}{You see a citizen of Berlin.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Hallo.@@Please do nicht mich erschiessen!@@Nice Day, nicht wahr?@@Verpisst dich.@@I want some Sauerkraut.@@Mit Bratwurst und Speck/@@Hmmm... Ja? Was?@@What's up Jens?@@Hands off man!@@How's it going?@@I don't have a watch.@@Really?@@I wish I could get to Greenpoint, schade.@@It's a safe spot, but hard get to.@@I don't have time, I'm goin' shoppin.@@That's keine Uberraschung.@@You're funny!@@Don't tell nobody but I'm thinkin' about joining the NEC.@@How about we join REF?@@Megan?@@You know Junkers too?@@Und?@@Ja?@@Do you have eine Zigarette?@@Zigaretten?@@Got feuer?@@Berlin, Berlin, uber alles!@@Hey du!@@Why are you standing there?@@Don't look at me.@@That verdammte molerat bit my foot.@@My stupid neighbor keeps eine kleine Todeskralle in his house.@@Sometimes bandits show up, but our guards do a good job.@@These stray dogs piss me off.@@Hans?@@This Stadt goes to the dogs.@@...whores, junkies, drug addicts, robbers, rapists and now you!@@I always wanted ein car.@@Have you ever been out of Bearline?@@I've heard there's no life in the east beyond.@@Reportedly the area beyond is devoid of life. Is it true?@@Actually, I do not know what I'm doing here.@@Don't ask dumme questions.@@Hello and... auf wiedersehen.@@I'm just trying to survive. That's my whole Geschichte@@The history of this place? I don't care about history.@@Deathclaws? You mean Todeskralle?@@Geschichte? Ich habe keine Ahnung.@@I have no clue...@@I have no idea.@@Hey, why are you asking me?@@I can't hear no birds.@@Will you do something for me?@@Looking for me?@@Berlin's had enough of the rioting already.@@Yesterday a large missile exploded near the city.@@Back when I was a little kid, Berlin was a much more dangerous place.@@Welcome my friend, welcome to Berlin!@@Why did you come to Berlin?@@This place is full of scum.@@Rape, murder, thievery... another ordinary day in Berlin.@@Behold the Berlin air. Endure the stench!@@Are you from Berlin?}

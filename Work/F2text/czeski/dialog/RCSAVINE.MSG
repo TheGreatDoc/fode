@@ -1,0 +1,70 @@
+# Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš špinavého mue s mastnımi vlasy.}
+{101}{}{Vidíš Savinelliho, správce karavany New Reno - Redding.}
+{102}{}{Vidíš malého svalnatého mue s vlasy svázanımi do copu.}
+{103}{}{Ty jsi tady? Dej si pozor, nebo se mùe stát menší nehoda.}
+{104}{}{Varoval jsem tì. Teï se s tebou musím rozlouèit.}
+{105}{}{Chyte ty èokly ivé!}
+{106}{}{Èokly? Ok, jdeme.}
+{107}{}{Ahoj, já jsem Enrico Savinneli. Starám se o karavanu New Reno - Redding. Pokud sháníš práci tak jsi tu správnì.
+ Potøebuji toti stráe.}
+{108}{}{Ahoj, já jsem Enrico Savinneli. Starám se o karavanu New Reno - Redding. Na kadou jízdu potøebuji stráe, take,
+ pokud budeš mít zájem, se stav 21. tento mìsíc.}
+{109}{}{Co potøebuješ?}
+{110}{}{Bùù-bùù?}
+{111}{}{Chci se nechat nejmout.}
+{112}{}{S èím obchodujete?}
+{113}{}{Proè se èeká a do 21.?}
+{114}{}{To není nic pro mne. Sbohem.}
+{115}{}{Vybrali si špatnou karavanu.}
+{116}{}{Radši se na tuhle karavanu mìli vysrat.}
+{117}{}{Varování pro ostatní, aby si nic nezaèínali s mojí karavanou.}
+{118}{}{Vıbornì, u jsou pod drnem. Teï mùeme jít.}
+{119}{}{Tìhle sráèù je poøád víc a víc.}
+{120}{}{Nejdøív opustíš moji karavanu a pak máš ještì tu drzost se sem vrátit? Vypadni!.}
+{121}{}{Øekl jsem vypadni! Jsi tak blbı, nebo to jen dìláš?}
+{122}{}{Nevadí mi zlodìji... ale jenom ti dobøí. A ty nejsi zrovna jeden z nich. Radil bych ti vypadnout døív, ne se
+ opravdu naštvu.}
+{123}{}{Já e jsem zlodìj? Tak to jsi fakt pøehnal. Sbohem.}
+{200}{}{Roznesu tì na kopytech.}
+{124}{}{U mì fakt sereš. Sbohem.}
+{125}{}{Tak tohle byla ta nejhorší karavana za posledních pár let. Co si myslíš? e razím peníze? Zmiz mi z oèí.}
+{126}{}{Milerád. Na ten tvùj ksicht se nedá dívat. Sbohem.}
+{127}{}{Akorát máte vìtšinou víc štìstí ne ostatní a teï tomu tak nebylo. Sbohem.}
+{128}{}{Co tu, kurva, dìláš? Jdeš si pro vıplatu? Tuhle jízdu jsme ztratili pøíli mnoho vìcí, take ti dám jenom 500$.}
+{129}{}{Poøád lepší tohle neli nic. Sbohem.}
+{130}{}{Ty jeden... Nikdo by neudìlal lepší práci ne já. Sbohem.}
+{131}{}{To je ono. Tahle jízda byla naprosto skvìlá. Tady máš 1500$. Nechceš, jen tak náhodou, s námi jet i pøíštì?}
+{132}{}{Ne, díky. U bych nevydrel déle se dívat na brahmíní prdele. Sbohem.}
+{133}{}{Samozøejmì, uvidíme se pozdìji. Sbohem.}
+{134}{}{Tahle jízda byla maximálnì povedená. Hladká jako dìtská prdelka. Tady máš 1500$ a dalších 200$ za skvìle odvedenou
+ práci.}
+{135}{}{Rád poznávám nìkoho kdo dokáe ocenit moje kvality. Uvidíme se pozdìji. Sbohem.}
+{136}{}{Díky za pøíplatek,Savinelli. Sbohem.}
+{137}{}{Ono tìm špinavcùm zabere hodnì èasu naloit všechno zlato na mojí karavanu. A to nemluvím o vykládání mého
+ prvotøídního zboí. Proto vyráíme a 21. Jestli budeš potøebovat práci, stav se.}
+{138}{}{Musím poèkat ne se naloí zboí, popøípadì se ještì nìjaké musí vyrobit. Nemùu sice chvátat a šidit na kvalitì 
+zboí. Proto vyjídíme a 21. Stav se, jestli budeš potøebovat práci.}
+{139}{}{S èím vlastnì obchodujete?}
+{140}{}{Povìz mi ještì o nìèem jiném.}
+{141}{}{Jasnì, stavím se tu. Sbohem.}
+{142}{}{To sice rád slyším, ale teï stráe zrovna nepotøebuji. Odjídíme a 21. Take se stav, jestli budeš potøebovat
+ práci.}
+{143}{}{Proè a 21.?}
+{144}{}{S èím vlastnì obchodujete?}
+{145}{}{OK, díky. Sbohem.}
+{146}{}{Máš smùlu, jdeš moc pozdì. U máme stránıch dost.}
+{147}{}{Uh, dobøe.}
+{148}{}{Obchodujeme hlavnì s, ehm... no, lékaøskımi potøebami. Ano, s lékaøskımi potøebami z New Rena a vymìòujeme je za
+ Reddingské zlato.}
+{149}{}{Chci se u vás nechat najmout.}
+{150}{}{Povìz mi ještì o nìèem jiném.}
+{151}{}{Ah tak. Sbohem.}
+{153}{}{Jdeš právì vèas, jsme pøipraveni vyrazit. Za povedenou práci dostaneš 1500$. Bereš to?}
+{152}{}{Jdeš právì vèas, jsme pøipraveni vyrazit. Za povedenou práci dostaneš 1500$. Zaplatím ti ale jenom za jedno místo.
+ Víc stráí nepotøebuji. Take, bereš to?}
+{154}{}{Samozøejmì e ano.}
+{155}{}{Rozmyslel jsem si to. Stráce karavany není práce pro mne. Sbohem.}
+{156}{}{Jsi zábavnej šašek, ale u mì unavuješ. Kliï se odsud.}
+{157}{}{Šašek? Sbohem.}
+{158}{}{Grrr! Zabít!}

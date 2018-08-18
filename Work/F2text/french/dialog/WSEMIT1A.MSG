@@ -1,0 +1,14 @@
+{100}{}{Tu ne vois pas comment utiliser cet émetteur.}
+{101}{}{Tu ne vois pas comment contrôler le champ gravitationnel.}
+{102}{}{Tu reçois une décharge électrique du champ gravitationnel affaibli.}
+{103}{}{ reçoit une décharge électrique du champ gravitationnel affaibli.}
+{107}{}{Tu reçois une décharge électrique du champ gravitationnel.}
+{108}{}{ reçoit une décharge électrique du champ gravitationnel.}
+{109}{}{Tu n'arrives pas à diminuer la puissance du champ gravitationnel.}
+{110}{}{ n'arrive pas à diminuer la puissance du champ gravitationnel.}
+{111}{}{Dans le haut-parleur, tu entends : « Attention ! Alerte d'intrusion ! Activation des systèmes de sécurité. »}
+{112}{}{Tu désactives le champ gravitationnel.}
+{113}{}{ désactive le champ gravitationnel.}
+{114}{}{Tu actives le champ gravitationnel.}
+{115}{}{ active le champ gravitationnel.}
+{116}{}{Tu détruis l'émetteur du champ gravitationnel.}

@@ -1,0 +1,40 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+0 2010 &
+
+[pols]
+{100}{}{Prison guard}
+{110}{}{man20.png}
+{200}{}{You see a prison guard. Judging from his bold appearance, this man could kill you with the blink of an eye, hands down, and he looks quite irritated now...}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Welcome to Bounty Hunters Guesthouse, we wish you blah blah blah... awww, fuck this, I'm too old for this shit. Here is your pickaxe, take it and bring me 5 pieces of iron ore and 4 logs of wood. Do not, I repeat, do not fucking come back without those. Now getta work.}
+{2010}{}{Errr?.. Wait...!}
+
+[engl]
+{100}{}{Prison guard}
+{110}{}{man20.png}
+{200}{}{You see a prison guard. Judging from his bold appearance, this man could kill you with the blink of an eye, hands down, and he looks quite irritated now...}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Welcome to Bounty Hunters Guesthouse, we wish you blah blah blah... awww, fuck this, I'm too old for this shit. Here is your pickaxe, take it and bring me 5 pieces of iron ore and 4 logs of wood. Do not, I repeat, do not fucking come back without those. Now getta work.}
+{2010}{}{Errr?.. Wait...!}
+
+[russ]
+{100}{}{Prison guard}
+{110}{}{man20.png}
+{200}{}{You see a prison guard. Judging from his bold appearance, this man could kill you with the blink of an eye, hands down, and he looks quite irritated now...}
+{1000}{}{Predialogue installations}
+{1010}{}{start}
+{2000}{}{Welcome to Bounty Hunters Guesthouse, we wish you blah blah blah... awww, fuck this, I'm too old for this shit. Here is your pickaxe, take it and bring me 5 pieces of iron ore and 4 logs of wood. Do not, I repeat, do not fucking come back without those. Now getta work.}
+{2010}{}{Errr?.. Wait...!}
+

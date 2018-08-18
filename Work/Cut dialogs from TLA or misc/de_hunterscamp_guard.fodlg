@@ -1,0 +1,35 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 &
+
+[pols]
+{100}{}{Man}
+{200}{}{You see man.}
+{210}{}{You see strong man.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}
+
+[engl]
+{100}{}{Man}
+{200}{}{You see man.}
+{210}{}{You see strong man.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}
+
+[russ]
+{100}{}{Man}
+{200}{}{You see man.}
+{210}{}{You see strong man.}
+{1000}{}{Predialogue installations}
+{1010}{}{Say Over Head}
+{2000}{}{Woof woof@@Ghrryyy... wooof!@@Woof@@woof... woof...@@Ghryyy}

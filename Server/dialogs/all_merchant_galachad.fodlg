@@ -1,0 +1,145 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=engl russ pols
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 0 #
+4 2010 #
+0 2020 @
+3 3000 None 0 @
+4 4000 None 0 #
+5 4010 R _var p pid_item_galachad_trade = 4360 #
+5 4020 R _var p pid_item_galachad_trade = 4361 #
+5 4030 R _var p pid_item_galachad_trade = 4362 #
+5 4040 R _var p pid_item_galachad_trade = 4363 #
+5 4050 R _var p pid_item_galachad_trade = 4364 #
+5 4060 R _var p pid_item_galachad_trade = 4365 #
+5 4070 R _var p pid_item_galachad_trade = 4366 #
+5 4080 R _var p pid_item_galachad_trade = 10159 #
+5 4090 R _var p pid_item_galachad_trade = 10160 #
+5 4100 R _var p pid_item_galachad_trade = 10272 #
+5 4110 R _var p pid_item_galachad_trade = 10154 #
+5 4120 R _var p pid_item_galachad_trade = 10273 #
+5 4130 R _var p pid_item_galachad_trade = 10372 #
+5 4140 R _var p pid_item_galachad_trade = 10157 @
+5 5000 dialog@NpcGalachadTraderLex 0 #
+6 5010 D _script dialog@d_NpcGalachadTrader 0  R _script dialog@r_NpcGalachadTrader 0  #
+6 5020 #
+6 5030 D _script dialog@d_NpcGalachadTraderDontHaveMoney 0  @
+6 6000 None 0 #
+4 6010 #
+0 6020 &
+
+[engl]
+{100}{}{Trader}
+{200}{}{You see a Galachad.}
+{210}{}{You see a Galachad. In appearance a typical slyboots.}
+{1000}{}{Initial preferences}
+{1010}{}{---}
+{2000}{}{Do you want to trade? I have great stuff, but if you try anytching stupid, i will kill you.}
+{2010}{}{Let me see what you have.}
+{2020}{}{That's all for today.}
+{3000}{}{Guards! Get him!@@Rip his skin off!@@Thief! Thief!@@Guards! Shoot that bastard!}
+{4000}{}{Chose sometching.
+}
+{4010}{}{Power Armor}
+{4020}{}{Power Armor MKII}
+{4030}{}{A Power Armor}
+{4040}{}{Mech Power Armor I}
+{4050}{}{Mech Power Armor II}
+{4060}{}{Mech Power Armor III}
+{4070}{}{Mech Power Armor IV}
+{4080}{}{DRAGUNOV}
+{4090}{}{DRAGUNOV MKII}
+{4100}{}{Bozar}
+{4110}{}{Gauss}
+{4120}{}{Vindicator Minigun}
+{4130}{}{Gatling Laser}
+{4140}{}{Elephant}
+{5000}{}{It cost @lex price@. Do you want buy?
+}
+{5010}{}{Yes, give me this fast.}
+{5020}{}{No!}
+{5030}{}{I don't have enough money.}
+{6000}{}{Do you need anything else?}
+{6010}{}{Yes show me something else.
+}
+{6020}{}{That's all for today.}
+
+[russ]
+{100}{}{Торговец}
+{200}{}{Вы видите торговца.}
+{210}{}{Вы видите торговца.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+{1010}{}{---}
+{2000}{}{Clerlnl dinidaiarnun??}
+{2010}{}{?ni nre o nla? lnnu?}
+{2020}{}{Ir nlaiai? oarncn.}
+{3000}{}{Iodrir! Ac?nu lai!@@Naldcnl n ilai reodo!@@Ro nu aidtar!@@Iodrir ddcnndlecnl yniai oaetaer!}
+{4000}{}{Chose sometching.
+}
+{4010}{}{Power Armor}
+{4020}{}{Power Armor MKII}
+{4030}{}{A Power Armor}
+{4040}{}{Mech Power Armor I}
+{4050}{}{Mech Power Armor II}
+{4060}{}{Mech Power Armor III}
+{4070}{}{Mech Power Armor IV}
+{4080}{}{DRAGUNOV}
+{4090}{}{DRAGUNOV MKII}
+{4100}{}{Bozar}
+{4110}{}{Gauss}
+{4120}{}{Vindicator Minigun}
+{4130}{}{Gatling Laser}
+{4140}{}{Elephant}
+{5000}{}{It cost @ lex price@. Do you want buy?
+}
+{5010}{}{Yes, give me this fast.}
+{5020}{}{No!}
+{5030}{}{I don't have enough money.}
+{6000}{}{Do you need anything else?}
+{6010}{}{Yes show me something else.
+}
+{6020}{}{That's all for today.}
+
+[pols]
+{100}{}{Trader}
+{200}{}{Widzisz Galachada.}
+{210}{}{Widzisz specyficzn№ postaж kupca. Wygl№da na to, їe chce ciк oskubaж z kaїdego grosza.}
+{1000}{}{Initial preferences}
+{1010}{}{---}
+{2000}{}{Do you want to trade?}
+{2010}{}{Let me see what you have.}
+{2020}{}{That's all for today.}
+{3000}{}{Guards! Get him!@@Rip his skin off!@@Thief! Thief!@@Guards! Shoot that bastard!}
+{4000}{}{Chose sometching.
+}
+{4010}{}{Power Armor}
+{4020}{}{Power Armor MKII}
+{4030}{}{A Power Armor}
+{4040}{}{Mech Power Armor I}
+{4050}{}{Mech Power Armor II}
+{4060}{}{Mech Power Armor III}
+{4070}{}{Mech Power Armor IV}
+{4080}{}{DRAGUNOV}
+{4090}{}{DRAGUNOV MKII}
+{4100}{}{Bozar}
+{4110}{}{Gauss}
+{4120}{}{Vindicator Minigun}
+{4130}{}{Gatling Laser}
+{4140}{}{Elephant}
+{5000}{}{It cost @ lex price@. Do you want buy?
+}
+{5010}{}{Yes, give me this fast.}
+{5020}{}{No!}
+{5030}{}{I don't have enough money.}
+{6000}{}{Do you need anything else?}
+{6010}{}{Yes show me something else.
+}
+{6020}{}{That's all for today.}
+

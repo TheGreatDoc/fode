@@ -1,0 +1,142 @@
+// Author: cvet
+// Radiation generic map
+#include "_macros.fos"
+
+import void AffectRadiation(Critter& cr, int value) from "radiation";
+import void AffectPoison(Critter& cr, int value) from "poison";
+
+#define RADIATION_LOOP        (Random(10000,20000)) // Radiation damage time, in milliseconds
+#define RADIATION_DOSE_MIN    (1)
+#define RADIATION_DOSE_MAX    (5)
+#define FLOATER_DOSE_MIN    (20)
+#define FLOATER_DOSE_MAX    (30)
+
+void _LowRadiation(Map& map, bool firstTime)
+{
+	map.SetLoopTime(0,RADIATION_LOOP);
+	map.SetData(0,RADIATION_DOSE_MIN/2);
+	map.SetData(1,RADIATION_DOSE_MAX/2);
+	map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0");
+}
+
+void _MediumRadiation(Map& map, bool firstTime)
+{
+	map.SetLoopTime(0,RADIATION_LOOP);
+	map.SetData(0,RADIATION_DOSE_MIN);
+	map.SetData(1,RADIATION_DOSE_MAX);
+	map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0");
+}
+
+void _HighRadiation(Map& map, bool firstTime)
+{
+	map.SetLoopTime(0,RADIATION_LOOP);
+	map.SetData(0,RADIATION_DOSE_MIN*2);
+	map.SetData(1,RADIATION_DOSE_MAX*2);
+	map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0");
+}
+
+void _DeadlyRadiation(Map& map, bool firstTime)
+{
+	map.SetLoopTime(0,RADIATION_LOOP);
+	map.SetData(0,RADIATION_DOSE_MIN*10);
+	map.SetData(1,RADIATION_DOSE_MAX*5);
+	map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0");
+}
+
+void _MapLoop0(Map& map)
+{
+	AffectRadiationToAllCritters(map,0);
+	map.SetLoopTime(0,RADIATION_LOOP);
+}
+
+void AffectRadiationToAllCritters(Map& map, int value)
+{
+	if(value==0) value=Random(map.GetData(0),map.GetData(1));
+
+	Critter@[] critters;
+	map.GetCritters(0,FIND_LIFE_AND_KO,critters);
+	for(uint i=0,j=critters.length();i<j;i++) AffectRadiation(critters[i],value);
+}
+
+    void _ReactorRadiation(Map& map, bool firstTime)
+    {
+            map.SetLoopTime(0,RADIATION_LOOP/50);
+            map.SetData(0,RADIATION_DOSE_MIN*200);
+            map.SetData(1,RADIATION_DOSE_MAX*200);
+            map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0RadReactor");
+    }
+     
+    void _MapLoop0RadReactor(Map& map)
+    {
+            AffectRadiationToReactorCritters(map,0);
+            map.SetLoopTime(0,RADIATION_LOOP/20);
+    }
+     
+    void AffectRadiationToReactorCritters(Map& map, int value)
+    {
+            uint minX=98;
+            uint minY=61;
+            uint maxX=118;
+            uint maxY=82;
+     
+            if(value==0) value=Random(map.GetData(0),map.GetData(1));
+     
+            Critter@[] critters;
+            map.GetCritters(0,FIND_LIFE_AND_KO,critters);
+            for(uint i=0,j=critters.length();i<j;i++)
+            {
+                    if(critters[i].HexX>=minX && critters[i].HexX<=maxX && critters[i].HexY>=minY && critters[i].HexY<=maxY)
+                            AffectRadiation(critters[i],value);
+            }
+    }
+
+
+    void _DangerZone(Map& map, bool firstTime)
+    {
+            map.SetLoopTime(0,RADIATION_LOOP*1);
+            map.SetData(0,RADIATION_DOSE_MIN*1);
+            map.SetData(1,RADIATION_DOSE_MAX*1);
+            map.SetData(2,FLOATER_DOSE_MIN/10);
+            map.SetData(3,FLOATER_DOSE_MAX/10);
+            map.SetEvent(MAP_EVENT_LOOP_0,"_MapLoop0DangerZone");
+    }
+     
+    void _MapLoop0DangerZone(Map& map)
+    {
+            AffectRadiationAndPoisonToDangerZoneCritters(map,0,0);
+            map.SetLoopTime(0,RADIATION_LOOP/1);
+    }
+     
+    void AffectRadiationAndPoisonToDangerZoneCritters(Map& map, int value1, int value2)
+    {
+            uint minX=135;
+            uint minY=185;
+            uint maxX=265;
+            uint maxY=277;
+     
+            if(value1==0) value1=Random(map.GetData(0),map.GetData(1));
+            if(value2==0) value2=Random(map.GetData(2),map.GetData(3));
+     
+            Critter@[] critters;
+            map.GetCritters(0,FIND_LIFE_AND_KO,critters);
+            for(uint i=0,j=critters.length();i<j;i++)
+            {
+                    if(critters[i].IsPlayer() && critters[i].HexX>=minX && critters[i].HexX<=maxX && critters[i].HexY>=minY && critters[i].HexY<=maxY)
+
+                    {
+                            AffectRadiation(critters[i],value1);
+                            AffectPoison(critters[i],value2);
+                    }
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+

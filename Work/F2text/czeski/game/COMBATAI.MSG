@@ -1,0 +1,5246 @@
+#tenhle soubor pøeloil Birdman, birdman@post.cz, http://www.mujweb.cz/www/birdman, 0604 540689
+#a dalo mu to kurva práci! Take všechny hlášky jsou TM a kdo je bude pouívat, 
+#s tím si to vyøídí patentovej úøad! Howgh!
+#
+# FALLOUT BATTLECRIES
+# When the Bomb Drops, the real fun begins - So let's get to Work!!!
+#
+# Version 1.0  May 13, 1997  Scott Bennie
+#         1.1  May 14, 1997  Chris Taylor (edits and line number change)
+#         1.2  June 19, 1997 Leonard, Jason, Chris (edits)
+#
+# Version 2.0 July 29, 1998 Feargus Urquhart - modified for Fallout 2, most text has
+# been rearranged, however some lines were still authored by the above people.
+#
+#  READ THIS!! READ THIS!! READ THIS!! READ THIS!!
+#
+#  This new file is different than the old one in that body locations are listed in a generic
+# fashion first and are only listed for particular types of characters.  This is followed by a list
+# of generic characters, which is then followed by the more specific taunts and party member
+# taunts.
+#
+###############################################################
+#
+#                    Generic Body Parts
+#
+###############################################################
+#
+#                     Notes
+#
+#                     00-09 Hit in Head
+#                     10-19 Hit in Left Arm
+#                     20-29 Hit in Right Arm
+#                     30-59 Hit in Torso (Generic Non-Called Shot Hit)
+#                     60-69 Hit in Right Leg
+#                     70-79 Hit in Left Leg
+#                     80-89 Hit in Eyes
+#                     90-99 Hit in Groin
+#
+#                     1000 Wimpy Person
+#                     1100 Normal Person
+#                     1200 Tough Person
+#                     1300 Berserk Person
+#                     1400 Robot
+#                     1500 Primitive
+#                     1600 Ghoul
+#                     1700 Raider (Khan)
+#                     1800 Junkie
+#
+###############################################################
+#
+#
+############################################
+# 1000 Wimpy Person
+############################################
+#
+# target hit in head
+#
+{1000}{}{Mùj ksicht! Mùj ksicht!}
+{1001}{}{Jau! To bolí!}
+{1002}{}{Au! Potøebuju studenı obklad, strašnì to bolí}
+{1003}{}{Moje hlava! Boe, utrhli mi hlavu! }
+{1004}{}{Boje bufa! Tyf mi utrh bufu!}
+{1005}{}{Oskalpovali mnì!}
+{1006}{}{Mùj oblièej je pryè! Oh boe, néééé}
+{1007}{}{Kde mám ucho?!}
+{1008}{}{Proè se všechno kolem mì tak šílenì toèí?}
+{1009}{}{Mùj oblièej! U se na mì nikdy nikdo nepodívá!}
+#
+# target hit in left arm
+#
+{1010}{}{Au, moje ruèièka!}
+{1011}{}{Au!}
+{1012}{}{Zlomili mi ruku! Au!}
+{1013}{}{Jeíši, mám utrenou ruku!}
+{1014}{}{Oh boe, ruku ne!}
+{1015}{}{Nechej mì, prosím, pøestaò.}
+{1016}{}{(Vzlyk, vzlyk)}
+{1017}{}{Mám pøelomenou ruku!}
+{1018}{}{Jak budu teï pracovat? Jak uivím rodinu?}
+{1019}{}{Zlomená! Je zlomená!}
+#
+# target hit in right arm
+#
+{1020}{}{Ou, moje ruka}
+{1021}{}{Ahhhh!}
+{1022}{}{Mùj boe! Moje ruka!}
+{1023}{}{Jak se teï postarám o svou rodinu, kdy mám pravou ruku chromou?}
+{1024}{}{Kost? Boe! Mnì èouhá z ruky kost!}
+{1025}{}{Tolik krve... boe! To teèe ze mì?!}
+{1026}{}{Jeíši Kriste! A to tolik nebolí!}
+{1027}{}{Prsty! Moje prsty! Kde jsou?! Nééééééé!}
+{1028}{}{Právì mi utrhli ruku. Boe. ONI MI UTRHLI RUKU!!!!!}
+{1029}{}{Moje ruka! Ještì e jsem levák!}
+#
+# target hit in torso
+#
+{1030}{}{Jauvajs! To bolelo!}
+{1031}{}{Asi budu zvracet}
+{1032}{}{Au!}
+{1033}{}{Uf!}
+{1034}{}{To bolí!}
+{1035}{}{Nechej mì bıt! }
+{1036}{}{Ohhh, bolest!}
+{1037}{}{Umírám!}
+{1038}{}{Oh Kriste, to strašnì bolí....}
+{1039}{}{Vykrvácím! Pomozte mi nìkdo!}
+{1040}{}{Je po mnì. JE PO MNÌ! Jsem mrtvá liška.}
+{1041}{}{Kriste, za co?}
+{1042}{}{Kdo se teï postará o mou rodinu?}
+{1043}{}{Proè já? Proè?!}
+{1044}{}{Co jsem ti kdy udìlal?}
+{1045}{}{Takhle nechci zemøít!}
+{1046}{}{Udìlám cokoli, jenom mì, prosím tì, nezabíjej!!!}
+{1047}{}{Ah, moje páteø. Plotınky v háji.}
+{1048}{}{Ppoèkej, cco to ze mnì èèouhá?!}
+{1049}{}{Tolik krve!}
+{1050}{}{Cítím se nìjak ospale a zaèíná mi bıt zima.}
+{1051}{}{Jeíši Kriste! Nezabíjej mì, prosíííím!}
+{1052}{}{Nechej mì bıt, já pùjdu pryè, jenom mì nezabíjej!}
+{1053}{}{Kdo se teï postará o mıch jedenáct dìtí?}
+{1054}{}{U mi neubliuj, prosím!}
+{1055}{}{Vdy mì zabiješ!}
+{1056}{}{(Uch, uch) Nemùu dıchat.}
+{1057}{}{Je mi pøíšernì, asi brzo umøu.}
+{1058}{}{Pomozte mi, pomozte míííí!}
+{1059}{}{Oh boe, oh boe, boe...}
+#
+# target hit in right leg
+#
+{1060}{}{Ou, moje noha}
+{1061}{}{Moje koleno!}
+{1062}{}{Au!}
+{1063}{}{Utrhli mi nohu!}
+{1064}{}{Moje koleno! Boe, kost mi èouhá ven!}
+{1065}{}{Nemùu chodit.}
+{1066}{}{Proè to musí tolik bolet?!? Jau jau jau!}
+{1067}{}{Proè necítím nohu? Nohu... Kde je moje noha!.}
+{1068}{}{Mùj kotník! Nemám kotník!}
+{1069}{}{Necítím nohu, proè... ÁÁÁ! Já nemám nohu!}
+#
+# target hit in left leg
+#
+{1070}{}{Ou, moje noha}
+{1071}{}{Moje koleno!}
+{1072}{}{Aaaarrrrggghhh!}
+{1073}{}{U si asi nezatancuju. Smrk.}
+{1074}{}{U nikdy nebudu moct bìet. Jedinì na paraolympiádì.}
+{1075}{}{Necítím nohu, proè?}
+{1076}{}{Kost? Boe, z nohy mi èouhá ven kost! To BOLÍ!}
+{1077}{}{Tolik krve... je úplnì všude.}
+{1078}{}{Lezou ze mnì kosti!}
+{1079}{}{Oh boe! Proè já? Proè já? Jak teï budu chodit?}
+#
+# target hit in eyes
+#
+{1080}{}{AU! Moje oèi!}
+{1081}{}{Mùj oblièej! Moje oèi! Arrrrgh!}
+{1082}{}{Moje oèi!}
+{1083}{}{Oh boe! Nevidím!}
+{1084}{}{Vypíchli mi oko! Oh boe, proè?!!!!}
+{1085}{}{Do oka nééé, prosím, néé.}
+{1086}{}{Nevidím! Nevidím! Néééééé!}
+{1087}{}{Do oka ne, prosím, jenom né do oka.}
+{1088}{}{Nevidím. Nevidím. Teï u mì mùeš zabít, u je mi to jedno.}
+{1089}{}{Kde je moje oko? Tøeba mi ho doktor pøišije zpátky...}
+#
+# target hit in groin
+#
+{1090}{}{Ooooooooo, tam néééé! Ooooooo...}
+{1091}{}{Auuu...To bolííí!}
+{1092}{}{Urp!}
+{1093}{}{Urp! jaùùùùù...}
+{1094}{}{Bolest...to je...bolest...}
+{1095}{}{Bolí, to bolí, ne...}
+{1093}{}{U nikdy nebudu mít dìti.}
+{1094}{}{A Lucinka u bratøíèka nedostane....}
+{1095}{}{Proè zrovna tam? Proè?}
+{1096}{}{To bolí, to bolí!}
+{1097}{}{Musím si na chvíli sednout.}
+{1098}{}{Tak to není fér, takovı rány jsou pøece zakázanı.}
+{1099}{}{Zbabìlèe...auuu....}
+#
+############################################
+# 1100 Normal Person
+############################################
+#
+# target hit in head
+#
+{1100}{}{Zatracenì!}
+{1101}{}{Moje lebka! Co to prasklo?}
+{1102}{}{Mùj ksicht! Mùj ksicht!}
+{1103}{}{Hvìzdièky! A tolik!}
+{1104}{}{Kdo zhasnul, sakra?}
+{1105}{}{Boje fuby! Vyravyf bi fuby!}
+{1106}{}{Hej, já si èešu pìšinku na opaènou stranu.}
+{1107}{}{Ha, ještì e to netrefilo nic dùleitıho.}
+{1108}{}{Uu, moje hlava..}
+{1109}{}{Je mi nìjak divnì.}
+#
+# target hit in left arm
+#
+{1110}{}{Aggghhh! Moje ruka}
+{1111}{}{Moje ruka!}
+{1112}{}{A sakra, to bolí!}
+{1113}{}{Sakra, ta ruka bolí. Ještì e jsem pravák.}
+{1114}{}{A ruka je pryè, hmm. ÁÁÁ!}
+{1115}{}{Mám zlomenou ruku, tadyhle... a tady taky. A tady taky....}
+{1116}{}{Z ruky mi leze kost, arrrrrgghhh.}
+{1117}{}{Nic necítím, ruka mi nìjak zmrtvìla.}
+{1118}{}{Mùete mi nìkdo vrátit ruku, prosíííím?!?}
+{1119}{}{Utrhli mi palec! Utrhli mi palec!}
+#
+# target hit in right arm
+#
+{1120}{}{Aggghhh! Moje ruka}
+{1121}{}{Moje ruka!}
+{1122}{}{Skoro mi utrhli ruku!}
+{1123}{}{Arrrrgh! Pomozte mi najít prsty! Chybí mi dva.. ne, dokonce tøi!}
+{1124}{}{Take ten román u asi nedopíšu...}
+{1125}{}{Mám zlomenou ruku!}
+{1126}{}{Unh, mám vykloubenı rameno, jaujaujau!}
+{1127}{}{Jeíši Kriste! Nikdy by mì nenapadlo, e zaiju takovou bolest!}
+{1128}{}{Do ruky ne, proè do ruky?}
+{1129}{}{To bolí! Moje ruka!}
+#
+# target hit in torso
+#
+{1130}{}{Moje nohy?! Necítím obì nohy!}
+{1131}{}{Uf!}
+{1132}{}{Au!}
+{1133}{}{Uf! Moje ebra}
+{1134}{}{Urgh! Moje bøicho!}
+{1135}{}{Zatracenì! Proklínám tì!!}
+{1136}{}{Argh!}
+{1138}{}{ebro! Mám zlomenı ebro!}
+{1139}{}{Au!!!}
+{1140}{}{Uf!}
+{1143}{}{Kdy to tak bolí, tak je to asi vánı!}
+{1144}{}{Bolí mì u srdce, nemùu dıchat, pomoc!}
+{1145}{}{*Polk* Sakra, proè nemùu dıchat?}
+{1146}{}{Bolí to jak sviòa, pomote mi nìkdo!}
+{1147}{}{Nìco se ve mnì zlomilo, strašnì to bolí!}
+{1148}{}{Au! Nìco se ve mnì pøetrhlo!}
+{1149}{}{Proè to musí bolet tak zatracenì moc?!}
+{1150}{}{Oh boe! Støeva mi lezou ven!}
+{1151}{}{Poøád krvácím, nechce se to zastavit!}
+{1152}{}{Nemùu dıchat a vykašlávám krev. To je asi špatnı, co?}
+{1153}{}{Mám v sobì díru... boe, vidím skrz sebe!}
+{1154}{}{Vidím svı støeva, uh oh.}
+{1155}{}{Mı vnitønosti u nejsou vevnitø. Pomóc!}
+{1156}{}{V plících mi to nìjak syèí a (ech ech, hhh) bublá.}
+{1157}{}{Cítím se divnì ospale...}
+{1158}{}{Asi si na chvilinku lehnu a trochu si odpoèinu.}
+{1159}{}{Zaèíná bıt nìjaká tma...}
+#
+# target hit in right leg
+#
+{1160}{}{Aggghhh! Moje noha}
+{1161}{}{Moje noha!}
+{1162}{}{A koleno je v prdeli}
+{1163}{}{S tancováním je konec.}
+{1164}{}{Moje koleno je pryè, lidi, je fuè!}
+{1165}{}{Kde mám zbytek nohy? Kde se ztratila moje noha?!?!?!}
+{1166}{}{Nemùu chodit, strašnì to bolí!}
+{1167}{}{Trefili mnì! Necítím pravou nohu!}
+{1168}{}{To bolí! Zastavte to nìkdo, to BOLÍ!}
+{1169}{}{Bolest! Ta bolest!}
+#
+# target hit in left leg
+#
+{1170}{}{Aggghhh! Moje noha}
+{1171}{}{Moje noha!}
+{1172}{}{A koleno je v prdeli}
+{1173}{}{Vùbec necítím levou nohu!}
+{1174}{}{Asi si najdu papouška a pásku pøes oko.}
+{1175}{}{A jsem mrzák!}
+{1176}{}{Jak se teï postarám o svoji rodinu?}
+{1177}{}{Kdo si mì teï najme?}
+{1178}{}{Jako kripl nejsem k nièemu. (smrk, smrk)}
+{1179}{}{Moje noha, vùbec jí necítím.}
+#
+# target hit in eyes
+#
+{1180}{}{Aggghhh! Nevidím!}
+{1181}{}{Moje oèi! Moje oèi!}
+{1182}{}{Moje oko! Za to zaplatíš!}
+{1183}{}{Vytrhli mi oko!}
+{1184}{}{Kdo zhasnul?}
+{1185}{}{Moje oko! Aiiieeeee!}
+{1186}{}{Tak tu kníku si u asi nedoètu...}
+{1187}{}{Moje oko, nic nevidím!}
+{1188}{}{Najednou z nièeho nic taková tma?!}
+{1189}{}{Dám cokoli, jenom kdy budu zase vidìt!}
+#
+# target hit in groin
+#
+{1190}{}{Oooooo, mùj rozkrok!}
+{1191}{}{Oooooooooo!}
+{1192}{}{Já...nemùu...auau...}
+{1193}{}{Erg! Pøímo do rodinnıch pokladù!}
+{1194}{}{Bolest, bolest, bolest!}
+{1195}{}{Sakra, to bolí!}
+{1196}{}{A s velkou rodinou je konec.}
+{1197}{}{*unh* rána pod pás.}
+{1198}{}{Eeeeeep!}
+{1199}{}{Ou jé, to bolí!}
+#
+############################################
+# 1200 Tough Person
+############################################
+#
+# target hit in head
+#
+{1200}{}{Au! Ty zmrde!}
+{1201}{}{Zlomils mi nos!}
+{1202}{}{Utrhnu ti hlavu, svinì!}
+{1203}{}{Dostal jsem to do lebky, kurva!}
+{1204}{}{Budeš se muset snait víc, ale ne o moc víc.}
+{1205}{}{Au, za to zaplatíš!}
+{1206}{}{Oh, hele, lítají kolem mì ptáèínkové.}
+{1207}{}{To bolelo. Trochu.}
+{1208}{}{Nìkdo mi tady zkurvil mùj krásnej oblièej. A za to zaplatí.}
+{1209}{}{Po tom zùstane jizva, do prdele.}
+#
+# target hit in left arm
+#
+{1210}{}{Jau, moje ruka.}
+{1211}{}{Nìkdo tady právì udìlal nejvìtší chybu ve svém zatraceném ivotì!}
+{1212}{}{Moje ruka!}
+{1213}{}{Hah, já jsem pravák!}
+{1214}{}{Jedna ruka mi na tvoji vradu staèí.}
+{1215}{}{Ty prsty byly stejnì navíc, nepotøebuju je.}
+{1216}{}{Na tebe mi bohatì staèí jedinı prstík.}
+{1217}{}{Kurvadrát, ten prsten mi bude chybìt. Na prst kašlu, ještì jich pár mám.}
+{1218}{}{Stejnì tì dostanu.}
+{1219}{}{Sviòa. Mám dvì levı ruky, hmm. Nemáte nìkdo jehlu a nit?}
+#
+# target hit in right arm
+#
+{1220}{}{Au, moje ruka}
+{1221}{}{Nìkdo tady právì udìlal nejvìtší chybu ve svém zatraceném ivotì!}
+{1222}{}{Moje ruka!!}
+{1223}{}{Dostanu tì i levièkou.}
+{1224}{}{Ha, já jsem stejnì levák, tupèe.}
+{1225}{}{Chceš mì odzbrojit, co?}
+{1226}{}{Tak tohle mì urèitì nezastaví.}
+{1227}{}{Ještì poøád mi zbıvá druhá ruka, kterou na tebe mùu pouít.}
+{1228}{}{Sakra, to bolelo!}
+{1229}{}{Mmm, po tom zùstane stopa...}
+#
+# target hit in torso
+#
+{1230}{}{Urp!}
+{1231}{}{Uf!}
+{1232}{}{Jauvajs!}
+{1233}{}{Uf, to zlomilo aspoò dvì ebra. Nevadí, mám jich dost!}
+{1234}{}{Ugh! To bolí!}
+{1235}{}{Jauvajs!}
+{1236}{}{Argh!}
+{1237}{}{Oh, asi mám zlomenı ebro!}
+{1238}{}{Au!!! Moje bøicho!}
+{1239}{}{Jo, aspoò mám motivaci.}
+{1240}{}{Teï jsem se nasral!}
+{1241}{}{To se mi nelíbilo!}
+{1242}{}{Do prdele, asi mám prasklou plíci...}
+{1243}{}{Jenom èerv jako ty dává rány jako ty, hovne!}
+{1244}{}{Ty orgány, kterı tvùj útok poškodil, vymìním za tvoje! Pojï sem!}
+{1245}{}{Uau, seš lepší, ne by si jeden myslel. Ale stejnì tì dostanu...}
+{1246}{}{Tohle vùbec nebylo hezkı. Asi tì budu muset nauèit správnım zpùsobùm...}
+{1247}{}{Náhoda, zkus to znovu!}
+{1248}{}{Uvidíme, jak se ti to bude líbit, a ti to vrátím, kreténe!}
+{1249}{}{Asi stárnu. Ono to docela bolelo!}
+{1250}{}{Budeš se muset snait mnohem víc!}
+{1251}{}{Furt funguju dost na to, abych tì dostal levou zadní!}
+{1252}{}{Kousek vedle srdce...}
+{1253}{}{Uau, sem nevìdìl, e v sobì mám tolik krve. Teda, mìl jsem...}
+{1254}{}{Zatracenì to bolí!}
+{1255}{}{Kurva! Ty bastarde!}
+{1256}{}{Máš štìstí, e se to zastavilo o moje kamenné játra. A pak e chlast škodí zdraví...}
+{1257}{}{Jakmile (uf uf) chytnu dech (ech uch) jdu po tobì!}
+{1258}{}{Nìco se ve mnì pøetrhlo!}
+{1259}{}{Za tohle zaplatíš stonásobnì!}
+#
+# target hit in right leg
+#
+{1260}{}{Au, moje noha!}
+{1261}{}{Klidnì mùu sedìt, stejnì tì zabiju!}
+{1262}{}{Moje koleno!}
+{1263}{}{Moje achilovka! Mám pøervanou achilovku!}
+{1264}{}{Aaiiiieeee!!}
+{1265}{}{A je po taneèní kariéøe...}
+{1266}{}{Já tì nauèím trhat mi prsty na noze!}
+{1267}{}{Víš, kolik ta bota stála? Svinì!}
+{1268}{}{Kde mám sakra turniket, teèe to ze mì jak z prasete...}
+{1269}{}{Do psí kundy, ta noha ale bolí! Ještì!}
+#
+# target hit in left leg
+#
+{1270}{}{Au, moje noha!}
+{1271}{}{Klidnì mùu sedìt, stejnì tì zabiju!}
+{1272}{}{Moje koleno!}
+{1273}{}{Budu pár dnu kulhat, super. A teï mi podej nohy a já ti je zaváu na uzel!}
+{1274}{}{Pojï sem, pøece nenecháš chudáèka mrzáèka kulhat za tebou...}
+{1275}{}{Noha v prdeli. Skoro. A o kousek víš a bylo by i po tı prdeli...}
+{1276}{}{To mì sice trochu zpomalí, ale i bez noh bych tì dohnal!}
+{1277}{}{Uau. Levá noha - kaput. Ty - taky kaput!}
+{1278}{}{Mám ještì jednu nohu.}
+{1279}{}{Ha ha ha! To je moje døevìná noha, ty blbèe tupèe omezenèe!}
+#
+# target hit in eyes
+#
+{1280}{}{Nevidím!}
+{1281}{}{Tahle bitka špatnì dopadne. Pro tebe.}
+{1282}{}{Oko! No aspoò se nemusím dívat na ten tvùj hnusnej ksicht!}
+{1283}{}{Nevidím! Nevidím! Jsem jak netopejr!}
+{1284}{}{Ty svinì! Nevidím! Urgrááááááh!}
+{1285}{}{Za tohle ti vyloupnu oèi z hlavy a narvu ti je do prdele!}
+{1286}{}{Mám kurva vyrvanı to zkurvenı oko! A to se mi kurva ani trochu nelíbí!}
+{1287}{}{Do psí kundy, oko mi visí jenom na nervech...}
+{1288}{}{Ještì tì slyším, take si dej bacha!}
+{1289}{}{Opova se ještì jednou šáhnout na moje zasranı oèi, ty rozšlapaná praseèí sraèko!}
+#
+# target hit in groin
+#
+{1290}{}{Oooooo, mùj rozkrok!}
+{1291}{}{To ucítím tak pozítøí, jestli vùbec.}
+{1292}{}{Zbabìlèe!}
+{1293}{}{Urp!}
+{1294}{}{To ti nepomùe! Já mám koule z olova!}
+{1295}{}{Sem si moh myslet, ty kurvo, e tohle zkusíš...}
+{1296}{}{Bavíš se, hajzle?}
+{1297}{}{Za to ti urvu tvoje a nechám tì, a je seereš!}
+{1298}{}{Potøebuju pauzu. A masá pytle...}
+{1299}{}{Sna se víc, na mùj pøístroj se jen tak nechytáš...}
+#
+############################################
+# 1300 Berserk Person
+############################################
+#
+# target hit in head
+#
+{1300}{}{HA! To bude jizvièka! Ještì do nohy, a budu jako ofré!}
+{1301}{}{Nìkdo mì tady zaèíná srát.}
+{1302}{}{Zkus to znovu, blbèe.}
+{1303}{}{Hladina nasranosti narùstá, dej si na mnì pozor!}
+{1304}{}{To cinkání, co slyším, to je tvùj umíráèek, ty zdechlino.}
+{1305}{}{Cha. Jedna jizvièka navíc mì u hnusnìjším neudìlá.}
+{1306}{}{Hm, trefil mì nìkdo, nebo se mi to jenom zdálo?}
+{1307}{}{Fuj, to bylo štìstí, jenom do hlavy.}
+{1308}{}{Nìco mì štíplo?}
+{1309}{}{Ještì mi pár zubù zbıvá, take se sna víc!}
+#
+# target hit in left arm
+#
+{1310}{}{Moje ruka? Jo, byla to moje ruka... nepotøebuju ji.}
+{1311}{}{Dostanu tì jednou rukou, hovne!}
+{1312}{}{Já mám zlomenou ruku, ale tobì zlomím krk, ty mrtvolo.}
+{1313}{}{Mì jen tak lehce nedostaneš!}
+{1314}{}{To byla levá, tupèe.}
+{1315}{}{I s uraenou rukou se ještì dokáu postarat o problémovı sráèe...}
+{1316}{}{Hmm hmm. No levou stejnì nepouívám, take si ji klidnì nech...,}
+{1317}{}{Na hovno mi nìjakı loket!}
+{1318}{}{Do prdele, prstíky pryè...}
+{1319}{}{Ty mì prst, já tobì celou ruku! Pocem!}
+#
+# target hit in right arm
+#
+{1320}{}{Ha, tebe dostanu i levaèkou!}
+{1321}{}{Jenom škrábnutí...}
+{1322}{}{Já mám zlomenou ruku, ale tobì zlomím krk.}
+{1323}{}{Na tebe mi klidnì staèí jediná ruka!}
+{1324}{}{Ukazováèek na maèkání spouštì mi zùstal, take pohoda...}
+{1325}{}{Tu ruku stejnì nepotøebuju...}
+{1326}{}{Škrábnutí. Poškrábals mi kost, svinì!}
+{1327}{}{Kurva to bolí!}
+{1328}{}{To bude tøeba zaštychovat...}
+{1329}{}{Za to ti vyrvu játra. Stejnì potøebuju novı...}
+#
+# target hit in torso
+#
+{1330}{}{Trocha krve, to nic není.}
+{1331}{}{Uf! Za to ti vytrhnu støeva a uškrtím tì s nima!}
+{1332}{}{Au!}
+{1333}{}{Mám rád, kdy to bolí!}
+{1334}{}{Miluju ten zvuk, co vydávaj praskající ebírka!}
+{1335}{}{To nic není!}
+{1336}{}{Arg!}
+{1337}{}{Ou jééé. Jen tak dál!}
+{1338}{}{Líp to neumíš, sráèi?}
+{1339}{}{Biješ se jak malá holèièka!}
+{1340}{}{Nemìla tohle bejt bitka, gumo?}
+{1341}{}{Za hodinu za dvì si toho moná všimnu.}
+{1342}{}{O pár eber víc nebo míò...}
+{1343}{}{Rány do bøicha? HAHAHA! Au au.}
+{1344}{}{Nìkdo se snaí upoutat moji pozornost?}
+{1345}{}{Tebe to bude bolet vo hodnì víc, hovnoroute!}
+{1346}{}{Ty blbá kurvo! Za to tì zabiju!}
+{1347}{}{ÁÁÁ! Bolí! To bolí......   Hahaha, dìlám si srandu!}
+{1348}{}{Krev! Uau! Ta mì rozzuøuje!}
+{1349}{}{Škrábaneèek sem, škrábaneèek tam, taky ti jeden udìlám...}
+{1350}{}{Hm hm. Trochu to píchlo. Nic moc.}
+{1351}{}{Díky, moje záda se teï cítí mnohem líp.}
+{1352}{}{Další šanci u nedostaneš! Krleš!}
+{1353}{}{Okej. Teï já!}
+{1354}{}{Sakra, to skoro bolelo!}
+{1355}{}{Zatracení komáøi...}
+{1356}{}{Nìjak to pálí...}
+{1357}{}{Zaváu si to, ale to u ty budeš zdechlina!}
+{1358}{}{Bylo hùø...}
+{1359}{}{Uvidíme, jak se to bude líbit tobì!}
+#
+# target hit in right leg
+#
+{1360}{}{Miluju zvuk praskajících kostí.}
+{1361}{}{Dostanu tì, i kdy se za tebou budu muset belhat.}
+{1362}{}{Já mám zlomenou nohu, ale tobì zlomím krk.}
+{1363}{}{Do prdele! Necítím nohu...}
+{1364}{}{Nìjakı kulhání mì v ádnım pøípadì nemùe zastavit, kurvadrát!}
+{1365}{}{Svinì! Hovado! Prase! Kurvo! Moje noha!}
+{1366}{}{Mohlo bıt hùø...}
+{1367}{}{A teï si promluvíme o odplatì.}
+{1368}{}{Ta noha byla stejnì o nièem, ve Vault city si nechám pøidìlat novou!}
+{1369}{}{Mám dojem, e si sundám ponoky a pak uvidíme! Nebo ucítíme?}
+#
+# target hit in left leg
+#
+{1370}{}{Miluju zvuk praskajících kostí.}
+{1371}{}{Ještì mám druhou!}
+{1372}{}{Já mám zlomenou nohu, ale tobì zlomím krk, ty mrtvolo.}
+{1373}{}{Stejnì neumím tancovat...}
+{1374}{}{No, sportovní kariéra šla do hajzlu. A ty pudeš za ní!}
+{1375}{}{To tì bude stát *obì* nohy!}
+{1376}{}{Vydrím i horší!}
+{1377}{}{Ukousnu ti nohu! Uvidíš, jakı to je!}
+{1378}{}{A prsty jsou v øiti...}
+{1379}{}{Øíkejte mi pan Pahıl...}
+#
+# target hit in eyes
+#
+{1380}{}{Hej, nevidím?!}
+{1381}{}{Nevidím. Aspoò to bude fér boj.}
+{1382}{}{Moje oèi, do prdele. Kdepak se zakutálely?}
+{1383}{}{Ještì tì slyším!}
+{1384}{}{Ty! Ty! Mám pomrdanı oèi!}
+{1385}{}{Sice tì nevidím, ale to mi nijak nezabrání v tvé vradì!}
+{1386}{}{Za to zaplatíš vlastníma zasranıma oèima!}
+{1387}{}{Má zkurvenı oèi! Ty hovado!}
+{1388}{}{Kurva! Co je se svìtlem?}
+{1389}{}{Oko! No aspoò se nemusím dívat na ten tvùj hnusnej ksicht!}
+#
+# target hit in groin
+#
+{1390}{}{Oof, mùj rozkrok!}
+{1391}{}{Tak to nebylo hezkı, hajzle.}
+{1392}{}{He he, mnì to nevadí, ponìváè mám koule pancéøovanı!}
+{1393}{}{Zkurvenej zbabìlec, to seš.}
+{1394}{}{No jestli to chceš takhle, tak pojï.}
+{1395}{}{Ack!}
+{1396}{}{A kurva! Mám po sexu!}
+{1397}{}{Kurva to bolí.}
+{1398}{}{Bolelo to. Ah! Uau! Já sem toti sado maso!}
+{1399}{}{Dej se na útìk. Za tohle zaplatíš!}
+#
+############################################
+# 1400 Robot
+############################################
+#
+# target hit in CPU
+#
+{1400}{}{Pozor, zaregistrováno selhání CPU!}
+{1401}{}{Pozor! CPU poškozeno! Vıkon procesoru nedostateènı!}
+{1402}{}{Pozor! CPU poškozeno! Zapojuji záloní procesory!}
+#
+# target hit in left manipulator
+#
+{1410}{}{Zaregistrována porucha manipulátoru!}
+{1411}{}{Jednotka zasaena do levého manipulátoru. Vyhodnocuji poškození...}
+{1412}{}{Zásah manipulátoru. Škody minimální, funkènost na 97%.}
+#
+# target hit in right manipulator
+#
+{1420}{}{Zaregistrována porucha manipulátoru!}
+{1421}{}{Jednotka zasaena do pravého manipulátoru. Vyhodnocuji poškození...}
+{1422}{}{Zásah manipulátoru. Škody minimální, funkènost na 97%.}
+#
+# target hit in frame
+#
+{1430}{}{Zásah trupu. Pøepoèítávám parametry poškození...}
+{1431}{}{Zásah trupu. Interní opravnı systém aktivován...}
+{1432}{}{Hlavní struktura pod útokem}
+{1433}{}{Pancíø proraen.}
+{1434}{}{Hlavní struktura pod útokem. Opravuji}
+{1435}{}{Jednotka pod útokem.}
+{1436}{}{Provést bojovı manévr.}
+{1437}{}{Brzzt!}
+{1438}{}{Minimální poškození.}
+{1439}{}{Brzzt!}
+#
+# target hit in right motivator
+#
+{1460}{}{Zaregistrována porucha motivátoru!}
+{1461}{}{Jednotka zasaena do pravého motivátoru. Vyhodnocuji poškození...}
+{1462}{}{Zásah motivátoru. Škody minimální, funkènost na 97%.}
+#
+# target hit in left motivator
+#
+{1470}{}{Zaregistrována porucha motivátoru!}
+{1471}{}{Jednotka zasaena do levého motivátoru. Vyhodnocuji poškození...}
+{1472}{}{Zásah motivátoru. Škody minimální, funkènost na 97%.}
+#
+# target hit in sensors
+#
+{1480}{}{Senzory zasaeny! Senzory zasaeny!}
+{1481}{}{Porucha senzorù! Porucha senzorù!}
+{1482}{}{Senzorickı subsystém poškozen, záloní systém nefunkèní...}
+#
+# target hit in regulator
+#
+{1490}{}{Regulátor zasaen! Porucha!}
+{1491}{}{Regulátor poškozen! Regulátor mimo provoz!}
+{1492}{}{Regulátor poškozen! Pøevádím funkci...}
+#
+#
+############################################
+# 1500 Primitive
+############################################
+#
+# target hit in head
+#
+{1500}{}{V moje hlava moc moc zlejch duchù.}
+{1501}{}{Já slyším mé pøedky, oni volají mnì.}
+{1502}{}{To bude hezká jizva.}
+{1503}{}{Jaùùùvajsss!}
+{1504}{}{Moje hlava hoøet!}
+{1505}{}{To pálí! To pálí!}
+{1506}{}{Bolest!}
+{1507}{}{Tvoje kouzlo silné.}
+{1508}{}{Ty mnì neukradneš duši. Takhle ne.}
+{1509}{}{Tvoje magie mì nezabiješ.}
+#
+# target hit in left arm
+#
+{1510}{}{Pouiju na tebe pravou ruku.}
+{1511}{}{Jedna ruka mi na tebe staèit!}
+{1512}{}{Tvoje bolest bıt ještì vìtší!}
+{1513}{}{Já stejnì tolik prstù nepotøebuju.}
+{1514}{}{Ta ruka byla stejnì moc dlouhá.}
+{1515}{}{Ale ty pøijdeš o obì ruce, slibuju na své pøedky.}
+{1516}{}{Za tohle tì budu zabíjet pomalu.}
+{1517}{}{Jau!}
+{1518}{}{Tolik krve!}
+{1519}{}{Aspoò se mám doma èím pochlubit.}
+#
+# target hit in right arm
+#
+{1520}{}{Zabiju tì levou rukou!}
+{1521}{}{To máš tak mizernou mušku?}
+{1522}{}{Jedna ruka mi na tebe staèí!}
+{1523}{}{Já stejnì tolik prstù nepotøebuju.}
+{1524}{}{Za tohle tì budu zabíjet pomalu.}
+{1525}{}{Ale ty pøijdeš o obì ruce, slibuju na své pøedky.}
+{1526}{}{Ty moji ruku, já tvoji hlavu!}
+{1527}{}{Chceš mì ochromit?}
+{1528}{}{Za to si zatancuju na tvojem hrobì.}
+{1529}{}{Budeš umírat dlouho, dlouho.}
+#
+# target hit in torso
+#
+{1530}{}{Awwwwwg!}
+{1531}{}{Mé vnitønosti hoøí!}
+{1532}{}{Bolí mì bøicho!}
+{1533}{}{Mí duchové mì opouštìjí.}
+{1534}{}{Roztrhli mnì!}
+{1535}{}{A iju dost dlouho na to, abych tì mohl zabít.}
+{1536}{}{Pøedkové mí, pøicházím!}
+{1537}{}{U nikdy neuvidím svou rodnou vesnici...}
+{1538}{}{Zemøu hrdì.}
+{1539}{}{Mí bratøi mì pomstí!}
+{1540}{}{Uff, mám uff vyraenı uff dech.}
+{1541}{}{Vzali mi duši!}
+{1542}{}{Tak ty mi chceš ubliovat?!}
+{1543}{}{Jsem vykuchanı jako brahmín!}
+{1544}{}{Cítím se nedobøe...}
+{1545}{}{Necítím nohy... ještì e tak.}
+{1546}{}{Uaaaam. Já bych spal.}
+{1547}{}{Errrggggg!}
+{1548}{}{Gack! cough, cough.}
+{1549}{}{Jenom vydret, nepøítele musím zabít...}
+{1550}{}{Temnota mì obchází...}
+{1551}{}{Hodina mé smrti se blíí.}
+{1552}{}{Šaman mìl pravdu. U se nevrátím.}
+{1553}{}{Cizák mì zabil...}
+{1554}{}{Jsem mrtvá liška.}
+{1555}{}{Mé vnitønosti! Vrate se!}
+{1556}{}{Nesmím ztratit èest ani ve chvíli smrti.}
+{1557}{}{Proklínám tì! To nemùeš!}
+{1558}{}{Hele, podívejte. Tohle jsem mìl k snídani...}
+{1559}{}{Uf uf, kam se podìl...uf... všechen vzduch?}
+#
+# target hit in right leg
+#
+{1560}{}{Budu se plazit, ale stejnì tì zabiju.}
+{1561}{}{Musím zùstat na nohou, musím...}
+{1562}{}{Stejnì mi neuteèeš!}
+{1563}{}{Ty mì chceš zchromit, zbabìlèe?}
+{1564}{}{Awwwwgg!}
+{1565}{}{Kost? Tak bílá...}
+{1566}{}{Proè nemùu chodit?}
+{1567}{}{Arrrrrrgh.}
+{1568}{}{Unnhhh.}
+{1569}{}{Noha bolí, auauau. AU!}
+#
+# target hit in left leg
+#
+{1570}{}{Budu se plazit, ale stejnì tì zabiju.}
+{1571}{}{Musím zùstat na nohou, musím...}
+{1572}{}{Stejnì mi neuteèeš!}
+{1573}{}{Ty mì chceš zchromit, zbabìlèe?}
+{1574}{}{Awwwwgg!}
+{1575}{}{Kost? Tak bílá...}
+{1576}{}{Nemùu chodit... Oh, to bolí!}
+{1577}{}{Za to ti seeru tvoji nohu!}
+{1578}{}{Ooooo-ouuuuch!}
+{1579}{}{Noha pálí jako v ohni.}
+#
+# target hit in eyes
+#
+{1580}{}{Temnota je všude kolem mne.}
+{1581}{}{Kde jsi?}
+{1582}{}{Aspoò se nemusím dívat na tvùj ošklivı oblièej!}
+{1583}{}{Ještì tì slyším!}
+{1584}{}{Chceš mì oslepit? Zbabìlèe!}
+{1585}{}{Mùj zrak byl ukraden!}
+{1586}{}{Mùeš mi vzít oèi, ale ne mou odvahu!}
+{1587}{}{Pojï blí, a na tebe vidím!}
+{1588}{}{Temnota, temnota! ÁÁÁ!}
+{1589}{}{Kde mám oko, kde je?!?!!!!}
+#
+# target hit in groin
+#
+{1590}{}{U mám stejnì dost mladıch...}
+{1591}{}{Nemáš ádnou èest!}
+{1592}{}{Stejnì to nepouívám.}
+{1593}{}{Svatı duchu, svìt vybuchnul v bolesti!}
+{1594}{}{Fuj! To bolelo! Ty zbabìlèe!}
+{1595}{}{Vysokım, pískavım hláskem--Jauvajs!}
+{1596}{}{Uh, asi si na chvilku sednu...}
+{1597}{}{Ty bastarde - za to tì zabiju pomalu, pomalounku.}
+{1598}{}{Tady nìkdo nemá zdání o cti, co?}
+{1599}{}{Za to tì rozsekám na malinkaté kousíèky, které potom obìtuju duchùm pouštì.}
+#
+#
+############################################
+# 1600 Ghoul
+############################################
+#
+# target hit in head
+#
+{1600}{}{Oh, mùj krásnı oblièej}
+{1601}{}{Bolí mì mozek.}
+{1602}{}{Teï vypadám jako Van Gogh.}
+{1603}{}{Sakra, nos jde do pryè.}
+{1604}{}{Hej! To byl mùj poslední zub!}
+{1605}{}{Oskalpovali mnì!}
+{1606}{}{Radši bych si dal flašku.}
+{1607}{}{Dám ti kousek své mysli. Doslova, jenom si utøu ten kousek mozku z košile.}
+{1608}{}{Sakra, moje oko. Grrrr.}
+{1609}{}{A mi vyhrkly slzy do oka.}
+#
+# target hit in left arm
+#
+{1610}{}{Jsem odzbrojenej!}
+{1611}{}{ÓÓÓ, bolest, bolí bolí.}
+{1612}{}{Ještì mi pár prstù zbıvá.}
+{1613}{}{Na *tebe* mi jeden prst staèí.}
+{1614}{}{Prsty sou v háji. Puè mi pár svejch!}
+{1615}{}{Asi mám vykloubenı rameno. Mùe mi ho dát nìkdo zpátky?}
+{1616}{}{Tak, a tenisová kariéra je v háji. Hmm. Sbohem Wimbledone.}
+{1617}{}{Zmlátím tì svım pahılem, lumpe!}
+{1618}{}{Hej, kde mám prsty? Kde jsou?}
+{1619}{}{Øíkejte mi kapitán Hák. Jenom si ještì musím nìjakı sehnat.}
+#
+# target hit in right arm
+#
+{1620}{}{Mìl jsem uskoèit doleva.}
+{1621}{}{Zlomili mi ruku!}
+{1622}{}{Toho budeš litovat! Do støehu!}
+{1623}{}{Bijou mì! Bijou mì! A jde jim to!}
+{1624}{}{Sbohem Wimbledone. Dám se na šachy.}
+{1625}{}{Sieg H... á, radši nic.}
+{1626}{}{Jsem odzbrojenej!}
+{1627}{}{Na *tebe* mi jeden prst staèí.}
+{1628}{}{Hmm, tak tì xmrti dokopu.}
+{1629}{}{Ta rukavice stála osmdesát babek! To mi zaplatíš!}
+#
+# target hit in torso
+#
+{1630}{}{To jsou *moje* játra! Vra mi je!}
+{1631}{}{Ještì kousek doprava, ahhh, to je lepší.}
+{1632}{}{Gerrk!}
+{1633}{}{Co to tady tak smrdí? Aha, moje støeva.}
+{1634}{}{Dík za tracheotomii, hned se mi líp dıchá.}
+{1635}{}{./~ ...nechal jsem své srdce.../~}
+{1636}{}{Na ebrech jsem lechtivej, nech toho.}
+{1633}{}{Slepı støevo stejnì na nic není.}
+{1634}{}{Au, øíkal ste, e to akorát trochu píchne, doktore?}
+{1635}{}{Arrrgggggh, moje páteø! Vra mi ten obratel!}
+{1636}{}{Moje noha, necítím nohy... ještì e tak.}
+{1637}{}{Šlo to do bøicha, serante. Nechte mì tady....}
+{1638}{}{Plíce jsou pro sráèe.}
+{1639}{}{Hej, já mám ebra! Zatím!}
+#
+# target hit in right leg
+#
+{1660}{}{Au, moje noha!}
+{1661}{}{Za to zaplatíš!}
+{1662}{}{Argh! Ty mì nohu, já tobì krk!}
+{1663}{}{Zatracenì, a mám po taneèních.}
+{1664}{}{A prsty v hajzlu.}
+{1665}{}{Inzerát do avíza: Koupím kvalitní nohu, pøípadnì vymìním za znaènì opotøebovanou.}
+{1666}{}{Moje boty! Jsou celı od krve! GRRRRRRRRRRR!}
+{1667}{}{Hele, mám ostøíhanı nehty.}
+{1668}{}{A to jsem si je pøed hodinkou oholil.}
+{1669}{}{Za to ti ukousnu koleno!}
+#
+# target hit in left leg
+#
+{1670}{}{Moje noha!}
+{1671}{}{Mám zmasakrovanou achilovku!}
+{1672}{}{Jauvajs! Hej! To byla rána pod pás!}
+{1673}{}{Jau, to bolí! Jak by se ti to líbilo, kdybych ti to udìlal já?!}
+{1674}{}{Naplácej mi, maminko. Byl jsem škaredej kluk.}
+{1675}{}{To se zajizví.}
+{1676}{}{Hmm, to je moje krev? Prodám krev, nulka, asi dva litry!}
+{1677}{}{Maršal Malinovskij! Maršal Malinovskij!}
+{1678}{}{Sakra, budu muset kulhat i na druhou nohu.}
+{1679}{}{Ajajajajajáááá jááá mááám nóóóó´hùùù v prdeli.}
+#
+# target hit in eyes
+#
+{1680}{}{Mám krev v oèích, do psí díry!}
+{1681}{}{Moje oko! Za to mi zaplatíš!}
+{1682}{}{Bastarde!}
+{1683}{}{Kdo zhasnul?}
+{1684}{}{Hahaha! To oko bylo sklenìnı!}
+{1685}{}{Prasklo jako pøezrálá tøešnièka, co?}
+{1686}{}{Hele oko! A sakra, to je moje....}
+{1687}{}{Dokáu se orientovat jenom podle zvuku!}
+{1688}{}{Jejky! Moje oko! Moje oko! Dej ho sem!}
+{1689}{}{Oslepili mì. Asi se mì bojí.}
+#
+# target hit in groin
+#
+{1690}{}{Rytíøskı jednání. Fakt.}
+{1691}{}{Jáááááááááááááááááááùùùùùùùùùùùù!!!!!!!!!!!}
+{1692}{}{Uhhhhhhhhh. Uf.}
+{1693}{}{Asi si na chvilku lehnu.}
+{1694}{}{Suspenzor. Musím si poøídit suspenzor.}
+{1695}{}{Hmm, a s mım spoleèenskım ivotem je konec.}
+{1693}{}{Musím si na chvíli sednout. Tak na rok, dva.}
+{1694}{}{Kdyby byly nìjakı ghoulky, byly by na tebe pìknì nasranı.}
+{1695}{}{Ooooh. To bolelo. Dost.}
+{1696}{}{Hele, nebylo to do... Jo, bylo. ÁÁÁ!}
+{1697}{}{Hele, co se to tu kutálí za koule? Moje koule...}
+{1698}{}{Ghoulí varlata, nedá si nìkdo?}
+{1699}{}{U se do snìhu nepodepíšu. Hmm.}
+#
+############################################
+# 1700 Raider (Khan)
+############################################
+#
+# target hit in head
+#
+{1700}{}{Ne do zasranı hlavy, ty kurvo.}
+{1701}{}{Moje... hlava... nìjak... se... motá...}
+{1702}{}{Ugnnn!}
+{1703}{}{Do oblièeje ne! Do oblièeje ne!}
+#
+# target hit in left arm
+#
+{1710}{}{Zmlátím tì i jednou ruko, chcípáku!}
+{1711}{}{Doktor! Mám ruku v pièi! Teda, obraznì øeèeno.}
+{1712}{}{Jau. Ještì e dokáu pouívat obì paøáty.}
+#
+# target hit in right arm
+#
+{1720}{}{Zlomili mi ruku! Teï je to aspoò fér boj!}
+{1721}{}{Doktor! Mám ruku v pièi! Teda, obraznì øeèeno.}
+{1722}{}{Aby sis zachránil prdel, budeš ze mì muset oddìlat víc kouskù ne jenom ruku.}
+#
+# target hit in torso
+#
+{1730}{}{Ahhg! Do bøicha!}
+{1731}{}{Hnrgggg! Nemùu...dıchat...}
+{1732}{}{Mám zlomenı ebro! Za to ti vyrvu tvı! To je fér, ne?}
+{1733}{}{Za...to...zaplatíš...ty...zjebaná...}
+{1734}{}{*Ooooof* Boe tohle nesnáším...}
+{1735}{}{Nggg! Solar plexus!}
+#
+# target hit in right leg
+#
+{1760}{}{Zatracenì! Moje noha!}
+{1761}{}{Na to, abych ti zkopal prdel, nepotøebuju obì nohy.}
+{1762}{}{Na tu nohu budu potøebovat stimpak...}
+{1763}{}{Urggg...noha ... v prdeli...}
+#
+# target hit in left leg
+#
+{1770}{}{Zatracenì! Moje noha!}
+{1771}{}{*Ergg* Z toho budu kulhat, do hajzlu...}
+{1772}{}{Na tu nohu budu potøebovat stimpak...}
+{1773}{}{Urggg...noha ... v prdeli...}
+#
+# target hit in eyes
+#
+{1780}{}{Kurva! Pøímo do oka!}
+{1781}{}{Chceš mi znièit prostorovı vidìní, svinì?}
+{1782}{}{Nevidím... krev... krev v oèích..}
+{1783}{}{Nemusím tì vidìt, najdu si tì po smradu!}
+#
+# target hit in groin
+#
+{1790}{}{Co si o sobì sakra myslíš? e seš v americkım akèním filmu?}
+{1791}{}{Moje koule! Moje ubohı koule! Pojï sem a uvidíme, jak se to bude líbit tvejm.}
+{1792}{}{A moje koule se kutálí....}
+{1793}{}{Dej mi chvilku pokoj, a mùu v klidu umøít.}
+{1794}{}{Sqìlı. Mám je na placku.}
+{1795}{}{Dej mi chvilku, hned se seberu a urvu ti tvı koule.}
+{1796}{}{Sakra! No nic, dìcka sem stejnak neplánoval.}
+#
+############################################
+# 1800 Junkie
+############################################
+#
+# target hit in head
+#
+{1800}{}{Uau. Nìco mì trefilo do kebule.}
+{1801}{}{Praštilo mì nìco do hlavy?}
+{1802}{}{Ngggg}
+{1803}{}{Eštì e sem plnej Jetu. Jinak by to asi bolelo.}
+{1804}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in left arm
+#
+{1810}{}{Hej! Nìkdo mì trefil do ruky!}
+{1811}{}{Hele, moje ruka je jenom pro jehly. Mla do nìèeho jinıho.}
+{1812}{}{Nggggg}
+{1813}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in right arm
+#
+{1820}{}{Hej! Nìkdo mì trefil do ruky!}
+{1821}{}{Hele, moje ruka je jenom pro jehly. Mla do nìèeho jinıho.}
+{1822}{}{Nggggg}
+{1823}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in torso
+#
+{1830}{}{Moje bøicho!}
+{1831}{}{Au! Aùù, moje blbı bøicho! Au!}
+{1832}{}{Hej! Proè mì biješ do bøicha, blbèe?}
+{1833}{}{Okamitì mì pøestaò mlátit do bøicha! Nebo tì pobliju!}
+{1834}{}{Uau. Moje bøicho. Dostalo zásah. Super.}
+{1835}{}{Nrgggg}
+{1836}{}{*hfff*}
+{1837}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in right leg
+#
+{1860}{}{Hej! Nìkdo mì trefil do nohy!}
+{1861}{}{Hej! S tou nohou ještì chodím!}
+{1862}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in left leg
+#
+{1870}{}{Hej! Nìkdo mì trefil do nohy!}
+{1871}{}{Hej! S tou nohou ještì chodím!}
+{1872}{}{Aùùù! Dejte mi nìkdo stimpak! Nebo radši Jet!}
+#
+# target hit in eyes
+#
+{1880}{}{Hmm, to asi nebyla jehla, co mì trefilo do oka...}
+{1881}{}{Hej! S tím okem se koukám!}
+{1882}{}{Moje oèi! Moje oèi! Bolí mì oèi!}
+#
+# target hit in groin
+#
+{1890}{}{Jsem tak vysoko, e to ani necítím. Oh, sakra... cítím!! Au!}
+{1891}{}{*Hurhkkkk*}
+{1892}{}{Kopni mì ještì jednou, okej?}
+{1893}{}{Nghhhhh!}
+{1894}{}{Do rozkroku ne!}
+{1895}{}{Moje genitálie! Moje genitálie!}
+{1896}{}{Mám rád, dy to bolí...}
+{1897}{}{To...bolelo..HODNÌ.}
+{1898}{}{Mùj rozkrok? Dy tam nic nemám?}
+#
+###############################################################
+#
+#                    Generic People
+#
+###############################################################
+#
+#                     Notes
+#
+#                     00-19 Running Away
+#                     20-39 Moving in to Attack
+#                     40-59 Attacking
+#                     60-79 Target being Missed.
+#
+#                     2000 Wimpy Person
+#                     2100 Normal Person
+#                     2200 Tough Person
+#                     2300 Berserk Person
+#                     2400 Guard (Normal)
+#                     2500 Guard (Tough)
+#                     2600 Primitive
+#                     2700 Soldier
+#                     2800 Leader
+#                     2900 Raider (Khan)
+#                     3000 Robot
+#                     3100 Ghoul
+#                     3200 Junkie
+#
+###############################################################
+#
+#
+#
+############################################
+# 2000 Wimpy Person
+############################################
+#
+#  running away
+#
+{2000}{}{Smilování!}
+{2001}{}{Pomote mi nìkdo!}
+{2002}{}{Prosím, pøestaò! Máš bıt pøece kladná postava!}
+{2003}{}{Pomóc!}
+{2004}{}{Aaaaahhhh!}
+{2005}{}{Smilování!}
+{2006}{}{Pomote mi nìkdóóóó!!!}
+{2007}{}{Oh boe! Oh boe, boe...}
+{2008}{}{Jenom mì nazabíjej, prosíííím!}
+{2009}{}{Nezabíjej mì!}
+{2010}{}{Prosím, nebij mì u!}
+{2011}{}{Pomozte mi! Prosím! Pomóóóæ!}
+{2012}{}{Jenom u mi neubliuj...}
+{2013}{}{Prosím, pøestaò mi ubliovat...}
+{2014}{}{Ne, pøestaò! Prosím, ne!}
+{2015}{}{Prosím prosím, nebijte mì u!}
+{2016}{}{U to nevydrím!}
+{2017}{}{Pro lásku boí! Nech mì bıt!}
+{2018}{}{U ne! U ne! Já jdu pryè!}
+{2019}{}{Pomóc! Zabíjejí mì! Pomóc!}
+#
+# moving in to attack
+#
+{2020}{}{Hmm, nechceš si to radši rozmyslet?}
+{2021}{}{Nemám tì rád..}
+{2022}{}{No, mohli jsme se tomu vyhnout, ale kdy jinak nedáš...}
+{2023}{}{Asi se budu muset bránit}
+{2024}{}{Asi se budu muset bránit}
+{2025}{}{No, mohli jsme se tomu vyhnout, ale kdy jinak nedáš...}
+{2026}{}{Prosím tì, nenu mì k tomu...}
+{2027}{}{Oh boe, proè?}
+{2028}{}{Nenávidím násilí...}
+{2029}{}{Kšá! Jdi pryè! Kšá!}
+{2030}{}{Odejdi a já ti neublíím...}
+{2031}{}{Nenu mì k tomu...}
+{2032}{}{Dej si bacha, jsem pìknì nebezpeènej! Fakt! Fakt je to pravda!}
+{2033}{}{Dej si radši pozor! Mám spoustu pøátel!}
+{2034}{}{Jsem vánì nebezpeènej rváè! Radši uteè!}
+{2035}{}{Uh, já na tebe *nechci* útoèit!}
+{2036}{}{Jdi pryè a nikomu se nic nestane!}
+{2037}{}{Nenu mì k tomu. Já nechci nikomu ublíit!}
+{2038}{}{U nechci znovu zabíjet! Prosím, nenu mì k tomu!}
+{2039}{}{Proè to takhle vdycky skonèí?}
+#
+# attacking
+#
+{2040}{}{Tumáš!}
+{2041}{}{Pøíštì si nezaèínej!}
+{2042}{}{Dobøe ti tak, lumpe.}
+{2043}{}{Jak se ti to líbí?}
+{2044}{}{Tumáš!}
+{2045}{}{Ty bestie!}
+{2046}{}{Já to nechci, ale musím...}
+{2047}{}{Jo. Tak, kdo se tady bojí?}
+{2048}{}{Nechci se rvát, ale...}
+{2049}{}{Ty! Ty.... ty!}
+{2050}{}{RRadši si dá-dávej ppozor!}
+{2051}{}{Jsem ozbrojenej a nebezpeènìj rváè! Fakt! Zdrhej!}
+{2052}{}{Hele, ono to nakonec není ani moc tìkı!}
+{2053}{}{Uau! Já to taky umím!}
+{2054}{}{Jsem jak králíèek Duracell! Samá energie!}
+{2055}{}{Jo! Uij si bolest! Svinì!}
+{2056}{}{Jdeš dolù...}
+{2057}{}{Ou jéé. Sem zlej! Sem zlej!}
+{2058}{}{Dostanu tì!}
+{2059}{}{Jsem sqìlej rváè! Dostanu tì!}
+#
+# target being missed
+#
+{2060}{}{Jsem lepší ne vypadám!}
+{2061}{}{Vedle!}
+{2062}{}{Uff, to mohlo bolet!}
+{2063}{}{Fjùùù. Ještì iju!}
+{2064}{}{Hej, to mohlo bolet!}
+{2065}{}{Fjùùù. Ještì iju!}
+{2066}{}{Jsem mrt... ne, já iju!}
+{2067}{}{Jauvajs! To... hej, to bylo vedle!}
+{2068}{}{Neteèe mi nìkde krev?}
+{2069}{}{Vedle? Tomu nemùu uvìøit...}
+{2070}{}{Há, tak ta rána nešla na mì!}
+{2071}{}{Hah, hah. Kup si brejle, hovado!}
+{2072}{}{(Ukazuje ti dlouhı nos) Blbe blbe!}
+{2073}{}{(Ukazuje ti prst)}
+{2074}{}{Nic moc.}
+{2075}{}{Jsi o nièem, nechápu, jak jsem se tì moh bát...}
+{2076}{}{Bylo mi hned jasnı, e se mì nepokoušíš zabít doopravdy.}
+{2077}{}{Fuj, to bylo tìsnì..}
+{2078}{}{Ha ha! Netrefíš mì!}
+{2079}{}{Pøestaò! Skoro mì to trefilo...}
+#
+############################################
+# 2100 Normal Person
+############################################
+#
+#  running away
+#
+{2100}{}{Zaútoè na nìkoho jiného, prosím!}
+{2101}{}{Slituj se nade mnou!}
+{2102}{}{Pomote mi nìkdo!}
+{2103}{}{Prosím, pøestaò! Máš bıt pøece kladná postava!}
+{2104}{}{Nech mì na pokoji!}
+{2105}{}{Kvùli tomu pøece neumøu!}
+{2106}{}{Pøestaò do mì rıpat!}
+{2107}{}{Pomozte mi! Pomóóóóc!}
+{2108}{}{Zabíjejí mì! Pomoc!}
+{2109}{}{Kdo uteèe pøeije!}
+{2110}{}{Já nic nemám! Nech mì ít!}
+{2111}{}{Hej, a u sem udìlal cokoli, omlouváááám se!}
+{2112}{}{Kurva, pièa, do prdele!}
+{2113}{}{Takhle ne!}
+{2114}{}{Já nechci umøít!}
+{2115}{}{Oh boe, ne! Já nechci do pekla!}
+{2116}{}{Mì ne! Zabij tøeba tamtoho, ale mì nech bıt!}
+{2117}{}{Nic jsem neudìlal!}
+{2118}{}{Co máš za problém?}
+{2119}{}{Pomóóóc! Šílenec! Spaste se!}
+#
+# moving in to attack
+#
+{2120}{}{Poèkej, já tì dostanu...}
+{2121}{}{Tak a u toho mám dost. Teï si to slízneš!}
+{2122}{}{Hej ty!}
+{2123}{}{Nikdo tì sem nezval}
+{2124}{}{Tady bordel dìlat nebudeš.}
+{2125}{}{Co si o sobì myslíš?}
+{2126}{}{Nemùeš si sem jen tak pøijít a dìlat, co tì napadne...}
+{2127}{}{Potøebuješ se nauèit dobré zpùsoby!}
+{2128}{}{U tì mám dost...}
+{2129}{}{Ty a ta tvoje banda, všichni skonèíte na høbitovì!}
+{2130}{}{Kdy jinak nedáš...}
+{2131}{}{Nenávidím tì.}
+{2132}{}{Kvùli takovejm kreténùm jako ty stojí ivot za prd...}
+{2133}{}{Potøebuješ lekci. A dostaneš ji!}
+{2134}{}{Potøebuješ naplácat na prdel! Sekerou!}
+{2135}{}{Tohle ti neprojde!}
+{2136}{}{Tohle je poslední den zbytku tvıho ivota!}
+{2137}{}{Zatracenì, u tì mám dost! Pojï sem!}
+{2138}{}{Jsem šílenej vzteky! Pocem! }
+{2139}{}{Vypadni sakra odsaï!}
+#
+# attacking
+#
+{2140}{}{Tos nemìl dìlat...}
+{2141}{}{Starej se pøíštì o sebe}
+{2142}{}{Tohle u nás dìláme chuligánùm!}
+{2143}{}{Ty mutante!}
+{2144}{}{Ty bastarde!}
+{2145}{}{Bude z tebe rádlo pro psy.}
+{2146}{}{To tì nauèí!}
+{2147}{}{Fajn. Kdo chce kam, pomozme mu tam.}
+{2148}{}{Ty zvíøe!}
+{2149}{}{Zaslouil sis to!}
+{2150}{}{Doufám, e tì to bolí!}
+{2151}{}{To tì nauèí...}
+{2152}{}{Pozdravuj v pekle...}
+{2153}{}{Tumáš!}
+{2154}{}{V pekle øekni, e tì posílám já! Dostaneš mnostevní slevu!}
+{2155}{}{U tì mám dost!}
+{2156}{}{Uij si bolest! Je to to poslední, co si uiješ!}
+{2157}{}{Pøíštì u to neudìláš, to se vsaï!}
+{2158}{}{Teï ti dám ránu za všechny ty chudáky, kterés povradil..}
+{2159}{}{Jo! Jen si dej!}
+#
+# target being missed
+#
+{2160}{}{Nejsem špatnej, co?}
+{2161}{}{Vidìl jsem brahmíny chytøejší, ne seš ty...}
+{2162}{}{Fjù!}
+{2163}{}{Vedle jak ta jedle!}
+{2164}{}{Díky, boe.}
+{2165}{}{Vedle! Haha!}
+{2166}{}{No tak teda nic moc...}
+{2167}{}{Haha! Nìco tu smrdíš!}
+{2168}{}{Uf, skoro bylo po mnì!}
+{2169}{}{Uau, sem super!}
+{2170}{}{Mì netrefíš!}
+{2171}{}{ÁÁÁ! Á? Aha! Vedle!}
+{2172}{}{Jo! Vedle jak ta jedle!}
+#
+############################################
+# 2200 Tough Person
+############################################
+#
+#  running away
+#
+{2200}{}{Tohle nemá cenu!}
+{2201}{}{Zabili Kennyho! Parchanti!}
+{2202}{}{Pomote mi nìkdo!}
+{2203}{}{Pøíštì, hade.}
+{2204}{}{Ještì se uvidíme!}
+{2205}{}{Kvùli tomu pøece neumøu!}
+{2206}{}{Nìkdy musíš taky spát. A a jednou usneš, já pøijdu!}
+{2207}{}{Máš štìstí, svinì...}
+{2208}{}{Tohle kolo je tvoje, ale zápas bude mùj!}
+{2209}{}{Tentokrát je vıhra tvoje...}
+{2210}{}{Pøíštì bude zase štìstí na mojí stranì...}
+{2211}{}{Radši zmizím, ale zítra se urèitì stavím!}
+{2212}{}{Beru roha...}
+{2213}{}{Ty mi za to nestojíš...}
+{2214}{}{Do prdele, takovej odpor sem neèekal...}
+{2215}{}{Sakra, èas vzít roha...}
+{2216}{}{Chuj s tebou, já du pryè!}
+{2217}{}{Jsem zlej, ale ty seš horší!}
+{2218}{}{Asta la vista!}
+{2219}{}{Sajonara!}
+#
+# moving in to attack
+#
+{2220}{}{U mi neuteèeš!}
+{2221}{}{Kdo tì sem pustil?}
+{2222}{}{Hej ty!}
+{2223}{}{Takovı jako ty tu nemáme rádi!}
+{2224}{}{Tady bordel dìlat nebudeš.}
+{2225}{}{Co si o sobì myslíš?}
+{2226}{}{Tohle si uiješ! Ale já víc!}
+{2227}{}{Mylsím, e se ti nebude líbit! Ale mì jo!}
+{2228}{}{Uau. U se na to tìším! Pocem!}
+{2229}{}{A tırání zaène! Tvoje!}
+{2230}{}{Zatancujeme si!}
+{2231}{}{V pekle øekni, e tì posílám já! Dostaneš mnostevní slevu!}
+{2232}{}{Asi tì zabiju pomalu...}
+{2233}{}{Vytáhnu ti støeva a pak tì s nima uškrtím! Tìšíš se?}
+{2234}{}{Zajímalo by mnì, jak velkej krávál budeš dìlat, a tì budu kuchat...}
+{2235}{}{Vítej ve vyšší lize, zelenáèi!}
+{2236}{}{U se na tebe tìším!}
+{2237}{}{Doufám, e se budeš aspoò trochu bránit...}
+{2238}{}{Ou jé! Na to èekám u dlouho!}
+{2239}{}{Uvidíme, z èeho vlastnì seš...}
+#
+# attacking
+#
+{2240}{}{Tumáš!}
+{2241}{}{Jak se ti to líbí?}
+{2242}{}{Tohle u nás dìláme chuligánùm!}
+{2243}{}{Chci slyšet, jak ti praskají kosti!}
+{2244}{}{Sbohem!}
+{2245}{}{Tak pojï!}
+{2246}{}{Problémovej sráèi!}
+{2247}{}{Zmlátím tì jak malı dìcko......}
+{2248}{}{Ty zvíøe!}
+{2249}{}{Budeš litovat, e tì tvojì máma nepotratila!}
+{2250}{}{Uij si to...}
+{2251}{}{Jen si dej, zmrde!}
+{2252}{}{Jo, je to fajn, co?}
+{2253}{}{V pekle øekni, e tì posílám já! Dostaneš mnostevní slevu!}
+{2254}{}{Nìjak zpomaluješ èi co?}
+{2255}{}{Takhle se to dìlá!}
+{2256}{}{Budu nìnı...}
+{2257}{}{Jo, kámo, teï to fásneš!}
+{2258}{}{Dej si! Jen si dej!}
+{2259}{}{Miluju chu èerstvı krve!}
+#
+# target being missed
+#
+{2260}{}{Nic moc. Umím to líp..}
+{2261}{}{O nièem..}
+{2262}{}{Jseš obyèejnej sráè..}
+{2263}{}{No teda nic moc, èekal jsem víc..}
+{2264}{}{Mì nedostaneš..}
+{2265}{}{To byl tvùj poslední omyl..}
+{2266}{}{To byla tvoje nejlepší rána?}
+{2267}{}{Hele, já myslel, e tohle má bıt boj!}
+{2268}{}{Pøíštì zkus míøit, vole.}
+{2269}{}{Kreténe. Ale chuj s tebou, teï chcípneš...}
+{2270}{}{Zasraní amatéøi!}
+{2271}{}{První bitva, dìátko?}
+{2272}{}{Ani sem nemusel uhıbat...}
+#
+############################################
+# 2300 Berserk Person
+############################################
+#
+#  running away
+#
+{2300}{}{Prásknul jsem do bot.}
+{2301}{}{Já se vrátím! A se mnou pøíjde... }
+{2302}{}{Pozdìji, blbe!}
+{2303}{}{Byla to sranda, ale já jdu jinam!}
+{2304}{}{Za to zaplatíš! Pozítøí!}
+{2305}{}{Pøíštì si dáme odvetu!}
+{2306}{}{Já se vrátím!}
+{2307}{}{Nìkdy pøíštì---}
+{2308}{}{Já se vrátím, zatím si o mnì nechej zdát pár noèních mùr...}
+{2309}{}{Nudíš mì.}
+{2310}{}{Jdu na pivo, za chvíli sem bek!}
+{2311}{}{Sorry, ale mám schùzku se svejma vobchodníma partnerama....}
+{2312}{}{Musíme si to nìkdy zvopakovat, zatím èau!}
+{2313}{}{Jo, byla to sranda...}
+{2314}{}{Ty vole, to u je tolik hodin?}
+{2315}{}{Bylo to sqìlı, skoro sem se zpotil...}
+{2316}{}{Jdu si do kšeftu koupit pár nábojù a stimù, poèkej chvilku...}
+{2317}{}{Vydr, za minutku jsem zpátky...}
+{2318}{}{Poèkej, skoèím si pro pár kámošù...}
+{2319}{}{Nìkdy pøíštì, tupèe!}
+#
+# moving in to attack
+#
+{2320}{}{Utrhnu ti hlavu a naseru ti do krku!}
+{2321}{}{Èerstvı maso!}
+{2322}{}{Cvièná støelba!}
+{2323}{}{Ušukám tì xmrti!}
+{2324}{}{Utrhnu ti hlavu a naseru ti do krku!}
+{2325}{}{U teï seš mrtvá liška!}
+{2326}{}{Mmm, to se mi bude líbit!}
+{2327}{}{Jak budeš vypadat s urvanım ksichtem? Uvidíme!}
+{2328}{}{Tobì se to asi líbit nebude, ale mnì urèitì jo!}
+{2329}{}{Dneska zdechneš! Na to si vsaï!}
+{2330}{}{V pekle øekni, e tì posílám já! Dostaneš mnostevní slevu!}
+{2331}{}{Miluju zvuk, co vydávaj praskající kosti!}
+{2332}{}{To bude super! U se na tebe tìším!}
+{2333}{}{Tvoje støeva budou vypadat fakt fajn, a je rozloím po zemi!}
+{2334}{}{Hmm, kolik krve máš v sobì? Zmìøíme....}
+{2335}{}{Doufám, e vydríš víc ne ti pøed tebou....}
+{2336}{}{Hmm, tohle bude nuda.}
+{2337}{}{Zabere to jenom chvilinku!}
+{2338}{}{Nehejbej se a budeš to mít aspoò rychlı!}
+{2339}{}{Zdechneš, ale nic si z toho nedìlej. Já jsem holt nejlepší!}
+#
+# attacking
+#
+{2340}{}{Mám tì, zmrde!}
+{2341}{}{Èas na útok! Kamikadze!}
+{2342}{}{Neebrej o ivot. Anebo jo. Stejnì tì zabiju.}
+{2343}{}{Doufám, e chcípneš pomalu.}
+{2344}{}{Nìjakı poslední pøání?}
+{2345}{}{Tumáš!}
+{2346}{}{Chcípni!  Chcípni!  Chcípni!  Chcípni!  Chcípni! }
+{2347}{}{Chcípni! }
+{2348}{}{Trochu si tì otevøu a podívám se dovnitø!}
+{2349}{}{Seš mrtvá liška!}
+{2350}{}{V pekle øekni, e tì posílám já! Dostaneš mnostevní slevu!}
+{2351}{}{Jo! To je sqìlı!}
+{2352}{}{Líbí se mi, jak krvácíš!}
+{2353}{}{Uka, máš v hlavì aspoò kousek mozku?}
+{2354}{}{Hele, jak to støíká!}
+{2355}{}{Narvu ti to tam! Yo!}
+{2356}{}{Ach, to se mi líbí! Asi se z toho udìlám!}
+{2357}{}{Urááááááááá! Zdechni!}
+{2358}{}{Yo, bejby, YOO!}
+{2359}{}{Asta la Vista, Baby.}
+#
+# target being missed
+#
+{2360}{}{Hele, já jsem tady, slepoune!}
+{2361}{}{Uam. Nudíš mì xmrti.}
+{2362}{}{No tak, pøedveï nìco lepšího.}
+{2363}{}{Líp to neumíš?}
+{2364}{}{Kup si brejle, hovado!}
+{2365}{}{Bude to lehèí, ne by si jeden myslel...}
+{2366}{}{Zkus pøíštì míøit, tupèe!}
+{2367}{}{Se nìjak tøepeš nebo co?}
+{2368}{}{Tak tref mì! Dìlej, ty posrané hovado! Tref mì!}
+{2369}{}{Støel mì pøímo tady, do mojí zkurvenı kebule! No tak!}
+{2370}{}{Ach jo. A já se tak tìšil...}
+{2371}{}{Kùrva. Vedle, cipe.}
+{2372}{}{Do psí kundy, to je teda nuda...}
+#
+############################################
+# 2400 Guard (Normal)
+############################################
+#
+#  running away
+#
+{2400}{}{Já mizím!}
+{2401}{}{Tohle byl dost blbej nápad...}
+{2402}{}{Zaútoè si na nìkoho jinıho, okej?}
+{2403}{}{Sakrapes! Baj baj!}
+{2404}{}{Kvùli tomu pøece neumøu!}
+{2405}{}{To je na mnì kapku moc...}
+#
+# moving in to attack
+#
+{2420}{}{Hej ty!}
+{2421}{}{Nauèím tì, jak se chovat ve spoleènosti...}
+{2422}{}{Takovı jako ty tu nemáme rádi!}
+{2423}{}{Èeká tì lekce spoleèenského chování!}
+
+{2424}{}{Èas zaslouit si old...}
+{2425}{}{Jen poèkej...}
+{2426}{}{Proè tady vùbec vopruzuješ? Si myslíš, e seš Madmax nebo co?}
+{2427}{}{Dycinky se najdou kreténi jako ty, co mi poserou celou šichtu...}
+#
+# attacking
+#
+{2440}{}{Tumáš!}
+{2441}{}{Je ti fajn, co?}
+{2442}{}{Radši práskni do bot, dokavad mùeš!}
+{2443}{}{Jak se ti to líbí?}
+{2444}{}{Bì za maminkou!}
+{2445}{}{Vem si to! Všechno! }
+{2446}{}{Uvidíme, z jakejch sraèek seš...}
+{2447}{}{Hovado}
+{2448}{}{Sráèi!}
+{2449}{}{Bude od tebe klid.}
+#
+# target being missed
+#
+{2460}{}{To tì nauèila maminka, tenhleten útok?}
+{2461}{}{Posero! Nemáš na to!}
+{2462}{}{Seš vo nièem, uboáku...}
+{2463}{}{To byl tvùj poslední omyl.}
+{2464}{}{Amatére}
+{2465}{}{To tì nauèili v mateøskı školce, ne?}
+#
+############################################
+# 2500 Guard (Tough)
+############################################
+#
+#  running away
+#
+{2500}{}{Musím zmizet!}
+{2501}{}{Já se vrátím... A se mnou pøijde Bruce Willis!}
+{2502}{}{Dneska mì nezabiješ!}
+{2503}{}{Pozdìji, blbe!}
+{2504}{}{Ještì se uvidíme, nádhero!}
+{2505}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{2520}{}{Seš historie! Mizerná historie!}
+{2521}{}{Èerstvı maso. A brzo mrtvı maso...}
+{2522}{}{Zatancuju si kozáèka na tvım hrobì!}
+{2523}{}{Hej všichni! Cviènı støelby!}
+{2524}{}{Seeru ti játra!}
+{2525}{}{Tohleto si uiju...}
+#
+# attacking
+#
+{2540}{}{Vem si to! Všechno!}
+{2541}{}{Nemusíš se vobtìovat prošením vo slitování. Ale jestli na tom trváš...}
+{2542}{}{Tohle mì dycky bavilo...}
+{2543}{}{Chceš ještì? No? Chceš? Ne? Tak tumáš!!!!}
+{2544}{}{Bude z tebe rádlo pro psy.}
+{2545}{}{Pøíštì nezaèínej, co nedokonèíš... Dost pouèování, teï dokonèím já tebe!}
+{2546}{}{Doufám, e budeš chcípat pomalu...}
+{2547}{}{Jenom jeden z nás ocaï vodejde po svejch...}
+{2548}{}{Chcípni! }
+{2549}{}{Takovı sráèe jako ty si dávám dva tøi xnídani.}
+{2550}{}{Nakrmím s tebou svoji ještìrku. Doufám, e se jí neudìlá blbì...}
+{2551}{}{Poslední vìc, co uvidíš, bude mùj úsmìv...}
+{2552}{}{Tohle je moje oblíbená...}
+#
+# target being missed
+#
+{2560}{}{Srandisto...}
+{2561}{}{Líp to neumíš?}
+{2562}{}{Dìláš to moc jednoduchı!}
+{2563}{}{Loaduj, kámo. Nic jinıho tì nezachrání.}
+{2564}{}{Pomalı, vole.}
+{2565}{}{Blbèe tupèe omezenèe...}
+#
+############################################
+# 2600 Primitive
+############################################
+#
+#  running away
+#
+{2600}{}{Utíkám od Prokletého!}
+{2601}{}{Duchové mi naøídili utéct...}
+{2602}{}{Nepøítel pouívá silnou magii! Utíkáme! Musíme pro šamana!}
+{2603}{}{Temní duchové oni silní tady. Smrt chodí kolem!}
+{2604}{}{Temnota je tady! Pryè!}
+{2605}{}{Temnota mì pøišla pohltit! Pryè! Má duše utíká a já za ní!}
+{2606}{}{Aiiieeeee!!}
+#
+# moving in to attack
+#
+{2620}{}{Pøedkové, veïte mé zbranì do vnitøností mıch nepøátel!}
+{2621}{}{Tvá síla bude brzy má!}
+{2622}{}{Velká bude má sláva u táborovıch ohòù!}
+{2623}{}{Znectím tebe i tvou rodinu!}
+{2624}{}{Jáh! Nabataluk!}
+{2625}{}{Duchové buïte se mnou!}
+{2626}{}{Pojï, zkøííme své zbranì.}
+{2627}{}{Zaènìme!}
+{2628}{}{Ú-Sutóóóó!}
+{2629}{}{Duchové jsou se mnou! A tvùj duch se k nim brzy pøidá!}
+#
+# attacking
+#
+{2640}{}{Tví pøedkové tì opustili.}
+{2641}{}{Tvá poráka mi pøinese velkou èest. Má magie nezná poráku!}
+{2642}{}{Vzdej se hned a já nesním tvé srdce.}
+{2643}{}{Bojuješ odvánì - sním tvou odvahu. Šaman bude zpívat o mém vítìzství.}
+{2644}{}{Vykoupu se v tvé krvi!}
+{2645}{}{Nebojím se tì!}
+{2646}{}{Pøináším ti mír, ztracenı...}
+{2647}{}{Brzy se pøipojíš ke svım pøedkùm. Ucti je a zemøi hrdì.}
+{2648}{}{Temnota se blíí k tvé duši...}
+{2649}{}{Mí pøedkové u èekají na tvou duši!}
+{2650}{}{Má zbraò se napije tvé krve!}
+{2651}{}{Napijme se z poháru bitvy!}
+#
+# target being missed
+#
+{2660}{}{ Tvé oèi jsou zaslepeny nenávistí.}
+{2661}{}{ Tví duchové tì opustili. Nedivím se jim.}
+{2662}{}{ Má magie je silnìjší ne tvoje!}
+{2663}{}{ Díky své magii jsem nesmrtelnı!}
+{2664}{}{ Tvá ivotní síla slábne!}
+{2665}{}{ Strach zabíjí mysl. Tvá je u mrtvá.}
+{2666}{}{ Má váleèná píseò mì ochrání!}
+{2667}{}{ Naše dìti znají umìní boje lépe!}
+{2668}{}{ iješ v míru pøíliš dlouho, neznáš váleèná umìní.}
+{2669}{}{ Všichni tvého kmene jsou takoví slaboši?}
+#
+############################################
+# 2700 Soldier
+############################################
+#
+#  running away
+#
+{2700}{}{Posily? Kde jsou posily?!!!}
+{2701}{}{Z tohohle bude váleènı soud, ale...}
+{2702}{}{Doktora!}
+{2703}{}{Ústup! Ústup!}
+{2704}{}{Stáhnìte se! Strategickı ústup!}
+{2705}{}{Jedna vyhraná bitva neznamená vyhranou válku, take pøíštì...}
+#
+# moving in to attack
+#
+{2720}{}{Tak pojï!}
+{2721}{}{Kupøedu! Bij zabij!}
+{2722}{}{Nauèím tì, jak se chovat ve spoleènosti...}
+{2723}{}{Seš historie! Mizerná historie!}
+{2724}{}{Do útoku!}
+{2725}{}{Sundejte toho sráèe!}
+{2726}{}{K palbì pøipravit!}
+{2727}{}{Zabte je všechny, však si je bùh protøídí!}
+#
+# attacking
+#
+{2740}{}{Tumáš!}
+{2741}{}{A teï tì mám!}
+{2742}{}{A teï chcípneš!}
+{2743}{}{Jak se ti to líbí?}
+{2744}{}{Trochu se pobavíme...}
+{2745}{}{Pøíštì nezaèínej, co nedokonèíš... Dost pouèování, teï dokonèím já tebe!}
+{2746}{}{Pomodli se!}
+{2747}{}{Seš mrtvá liška, kámo. Do boje!}
+{2748}{}{Jak se ti líbí?}
+{2749}{}{Uvidíme se v pekle...}
+#
+# target being missed
+#
+{2760}{}{Potøebuješ trochu potrénovat... hmm, spíš víc ne míò.}
+{2761}{}{Líp to neumíš?}
+{2762}{}{No tak, sráèi. Sna se trochu, a to nemám tak lehkı...}
+{2763}{}{Pøíštì zkus míøit...}
+{2764}{}{Civilista...}
+{2765}{}{Pøíštì to nechej na profesionálech...}
+#
+############################################
+# 2800 Leader
+############################################
+#
+#  running away
+#
+{2800}{}{}
+{2801}{}{}
+{2802}{}{}
+{2803}{}{}
+{2804}{}{}
+{2805}{}{}
+#
+# moving in to attack
+#
+{2820}{}{}
+{2821}{}{}
+{2822}{}{}
+{2823}{}{}
+{2824}{}{}
+{2825}{}{}
+{2826}{}{}
+{2828}{}{}
+#
+# attacking
+#
+{2840}{}{}
+{2841}{}{}
+{2842}{}{}
+{2843}{}{}
+{2844}{}{}
+{2845}{}{}
+{2846}{}{}
+{2847}{}{}
+{2848}{}{}
+{2849}{}{}
+#
+# target being missed
+#
+{2860}{}{}
+{2861}{}{}
+{2862}{}{}
+{2863}{}{}
+{2864}{}{}
+{2865}{}{}
+#
+############################################
+# 2900 Raider
+############################################
+#
+#  running away
+#
+{2900}{}{Zdrháme! Zdrháme! }
+{2901}{}{Ústup!}
+
+{2902}{}{Pøeskupte se!}
+{2903}{}{Ustupte! Ustupte!}
+{2904}{}{Stáhnìte se!}
+{2905}{}{Aaaaghhh!}
+#
+# moving in to attack
+#
+{2920}{}{Zabte to, a je to co je to...}
+{2921}{}{Èerstvı maso. A brzo mrtvı maso...}
+{2922}{}{Zabte je všechny, však si je bùh protøídí...}
+{2923}{}{Ten je mùj!}
+{2924}{}{Ahhhhhhh!}
+{2925}{}{Do útoku!}
+#
+# attacking
+#
+{2940}{}{Uij si poslední sekundy svıho mizernıho ivota...}
+{2941}{}{Krev! Krev! Krev!}
+{2942}{}{Seeru ti srdce!}
+{2943}{}{RAAAAAAARRRR!!}
+{2944}{}{Tvoje zbranì si povìsím na stìnu a z tebe budu mít pøedloku k posteli!}
+{2945}{}{Smrt!}
+{2946}{}{Zabiju si tì! Tìš se!}
+{2947}{}{Z tvı lebky si udìlám krıgl!}
+{2948}{}{Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! }
+{2949}{}{Pozdrav vode mì Satana!}
+{2950}{}{Provrtám tì, parchante!}
+#
+# target being missed
+#
+{2960}{}{Zbyteèná námaha!}
+{2961}{}{Hmm, a já se tak tìšil...}
+{2962}{}{Na mì nemáš, ty hovado!}
+{2963}{}{Já iju dál!}
+{2964}{}{Tvı tìlo je slabouèkı, nehodí se ani do polívky. O tvım mozku si radši ani nebudeme povídat...}
+#
+############################################
+# 3000 Robot
+############################################
+#
+#  running away
+#
+{3000}{}{Zmìna programu: nahrát program ústup}
+{3001}{}{Taktickı plán: Ustoupit. Parametry: Rychle!}
+{3002}{}{Bojová efektivita 1,2 %. Doporuèen ústup.}
+{3003}{}{Taktická analıza hotova. Doporuèen ústup.}
+{3004}{}{Nahrávám únikovı program...}
+{3005}{}{Ústupová sekvence aktivována...}
+#
+# moving in to attack
+#
+{3020}{}{Cíl zamìøen!}
+{3021}{}{Znièit! Znièit!}
+{3022}{}{Humanoid nesmí uniknout!}
+{3023}{}{Znièit vetøelce!}
+{3024}{}{Bojová sekvence aktivována!}
+{3025}{}{Nahrávám bojovı program!}
+#
+# attacking
+#
+{3040}{}{Bojová sekvence aktivována!}
+{3041}{}{Útoèím na cíl!}
+{3042}{}{Zahajuji útoènou sekvenci...}
+{3043}{}{Narušitel musí bıt deaktivován!}
+{3044}{}{Taktickı rozbor hotovı. Útok!}
+{3045}{}{Zahajuji útok!}
+{3046}{}{Cíl bude znièen.}
+{3047}{}{Pravdìpodobnost znièení cíle 87,4576 %.}
+{3048}{}{Cíl musí bıt eliminován!}
+{3049}{}{Ofenzivní program maximální priorita.}
+#
+# target being missed
+#
+{3060}{}{Analıza. Defenzivní program úspìšnı.}
+{3061}{}{Analıza. Útok cíle neefektivní.}
+{3062}{}{Cíl zaútoèil neúspìšnì. }
+{3063}{}{Jednotka nezasaena, útok neúspìšnı...}
+{3064}{}{Útoèné schopnosti cíle pøecenìny, pøepoèítávám...}
+{3065}{}{Analıza. Cíl neúspìšnı ve svém útoku. Sníit bojovou prioritu pro danı cíl...}
+#
+############################################
+# 3100 Ghoul
+############################################
+#
+#  running away
+#
+{3100}{}{Musím odtud vypadnout!}
+{3101}{}{Já se vrátím...A se mnou pøijde Bruce Willis!}
+{3102}{}{Dneska mì nezabiješ!}
+{3103}{}{Pøíštì, normále!}
+{3104}{}{Ještì o mì uslyšíš!}
+{3105}{}{Za to zaplatíš! Pozdìji!}
+{3106}{}{Podruhı umírat nebudu, u poprvı to bylo o nièem!}
+{3107}{}{Noièky zdrhejte! Nesmíte mì zklamat!}
+{3108}{}{To je jenom doèasnej ústup, tak si o sobì moc nemysli.}
+{3109}{}{Uh uh. Èas pro taktickej ústup.}
+{3110}{}{Nìkdy pøíštì... øeknou si a v davu zmizí}
+
+{3111}{}{Zkus si mì chytit, bejval sem šampión na 100 metrù!}
+{3112}{}{Jeiš tolik hodin! Já u musím bìet, mìj se.}
+{3113}{}{Pryè!}
+{3114}{}{Musím si jít pøišít pár odpadlej kouskù, ale pak se vrátím...}
+{3115}{}{Moje starı kosti u toho maj dost.}
+
+{3116}{}{Na tohle jsem u moc starej.}
+{3117}{}{Matka pøíroda je sviòì, ale ty jsi vìtší. Èau!}
+{3118}{}{No mnì u to staèilo, najdi si nìkoho jinıho.}
+{3119}{}{Hej, neutíkej pøede mnou!}
+#
+# moving in to attack
+#
+{3120}{}{Seš historie! Mizerná historie!}
+{3121}{}{Èerstvı maso. A brzo mrtvı maso...}
+{3122}{}{Hovìzí! Pocem, ty vole, a si kousek ukousnu...}
+{3123}{}{Mozkıııı...mozkııı....}
+{3124}{}{Plivni si, kde chceš mít hrob.}
+{3125}{}{Doufám, e ti hlava zùstane v kuse...}
+{3126}{}{More Mozkıııı...mozkııı.....}
+{3127}{}{Doufám, e nejseš policajt. Chci mozeèek!}
+{3128}{}{Budeš potøebovat posily!}
+{3129}{}{Hodilo by se mi pár novejch souèástek. Levá ruka u je nìjak plesnivá...}
+{3130}{}{Bude tatarskej biftek!}
+{3131}{}{Tak pojï, ty sráèi!}
+{3132}{}{Udìlám si z tebe košili!}
+{3133}{}{Vepøovı? Kde jse vepøovı? Támhle je ta svinì!}
+{3134}{}{Mmmm, miluju lidi. Trochu potøít èesnekem a pak podusit...}
+{3135}{}{Vidìls nìjakej film o zombiích? Teï ho zaiješ! Mozkııı.....}
+{3136}{}{U je obìd? Támhle jde hlavní chod!}
+{3137}{}{Dej sem mozek!}
+{3138}{}{Náhradní díly se hodí. Zbytek se seere.}
+{3139}{}{Hele, novej dárce orgánù!}
+#
+# attacking
+#
+{3140}{}{Seš na øadì!}
+{3141}{}{Nemusíš se vobtìovat prošením vo slitování. Ale jestli na tom trváš...}
+{3142}{}{To si vychutnám!}
+{3143}{}{Ohh, to bude bolet!}
+{3144}{}{Èas na sváèu, co?}
+{3145}{}{Seeru ti játra! Doufám, e moc nechlastáš...}
+{3146}{}{Doufám, e budeš chcípat pomalu...}
+{3147}{}{Veèeøe!}
+{3148}{}{Chcípni!}
+{3149}{}{Takovı sráèe jako ty si dávám dva tøi xnídani, nìkdy i k obìdu.}
+{3150}{}{Mòam. Dej mi kousek!}
+{3151}{}{Dej mi kousnout!}
+{3152}{}{Pojï k tatínkovi!}
+{3153}{}{Mám tu nìco pro tebe!}
+{3154}{}{Nehejbej se! Nebude to bolet!}
+{3155}{}{Bude z tebe tajemství šéfkuchaøe!}
+{3156}{}{Chutnáš tak dobøe, jak vypadáš?}
+{3157}{}{Chutnı&vıivnı! Doufám.}
+{3158}{}{Zastav si krvácení, a z tebe nevyteèe všechna šáva.}
+{3159}{}{Poèkej, odkrojím si øízek...}
+#
+# target being missed
+#
+{3160}{}{Mì nemùeš ublíit!}
+
+{3161}{}{A pak e *Ghoulové* sou pomalı...}
+{3162}{}{Vedle, normáku!}
+{3163}{}{Vedle, normáku!}
+{3164}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{3165}{}{Pomalı, vole.}
+{3166}{}{Fajn, a teï si to zkusíme na ostro, okej?}
+{3167}{}{Hele, a šla ta rána vùbec na mnì?}
+{3168}{}{Co to bylo?}
+{3169}{}{Tohle není šaráda...}
+{3170}{}{Na boj se musíš soustøedit.}
+{3171}{}{Blbe! Tady jsem! Kam to míøíš?}
+{3172}{}{Díváš se na mnì?}
+{3173}{}{Zkusíme to ještì jednou?}
+{3174}{}{Ne, ne, ne! Musíš míøit sem!}
+{3175}{}{Na co míøíš, teda jestli vùbec míøíš?}
+{3176}{}{Co je, ty to neumíš?}
+{3177}{}{Dneska to dìláš poprvı, co?}
+{3178}{}{A teï já! Jenome já se trefím!}
+{3179}{}{Líp to neumíš? Tak to seš v tìkım prùseru!}
+#
+############################################
+# 3200 Junkie
+############################################
+#
+#  running away
+#
+{3200}{}{Uau! Musím pro èerstvı zásoby...}
+{3201}{}{Já se vrátím...}
+{3202}{}{Hmm, málo buffautu.}
+{3203}{}{Nemùu se nafetovat, kdy tady chcípnu. Take pryè...}
+{3204}{}{Aj! Nebij mì! Nebij mì!}
+{3205}{}{Tahle halucinace na mì zaèíná bıt trochu moc silná...}
+#
+# moving in to attack
+#
+{3220}{}{Seer to!}
+{3221}{}{V tvım vlastním zájmu doufám, e máš nìjakı stimpaky. Nebo Jet!}
+{3222}{}{Za tvoji zdechlinu dostanu aspoò deset dávek Jetu!}
+{3223}{}{A...tì...chytim...tak...tì...snim...}
+{3224}{}{Moná dy tì zabiju, e mi bude líp? Uvidíme...}
+{3225}{}{Zabiju! Zabiju! Zabiju! Zabiju! Tebe!}
+{3226}{}{Tvoje vrada, to bude jako další dávka!}
+#
+# attacking
+#
+{3240}{}{Seer to!}
+{3241}{}{Zabiju! Zabiju! Zabiju! Zabiju! Tebe!}
+{3242}{}{Chceš? Tumáš!!}
+{3243}{}{Nrrrg}
+{3244}{}{Hajááááá}
+{3245}{}{Zabiju tì pomalu....}
+{3246}{}{Dostanu tì jako lacinou kurvu...}
+#
+# target being missed
+#
+{3260}{}{Blízko, ale vedle. Dej si Jet, pude to líp.}
+{3261}{}{Sem tak vysoko, e se mnì ani nedotkneš!}
+{3262}{}{Kerej z vás to byl?}
+{3263}{}{Uau. Skoro.}
+{3264}{}{Seš víc pod fetem ne já...}
+{3265}{}{Na drogovou halucinaci se biješ pìknì mizernì...}
+#
+###############################################################
+#
+#                   Area People
+#
+###############################################################
+#
+#
+#                     4000  Arroyo
+#                     6000  The Den
+#                     8000  Modoc
+#                     10000  Klamath
+#                     12000  Vault City / Raiders
+#                     14000  Gecko
+#                     16000 Broken Hills
+#                     18000 New Reno
+#                     20000 Sierra Army Depot
+#                     22000 Redding
+#                     24000 NCR
+#                     26000 V13 / V15
+#                     28000 Military Base
+#                     30000 Navarro
+#                     32000 San Fransisco
+#                     34000 The Enclave
+#                     36000 Special (Encounters and Created)
+#
+#                     Note : Some of these people will just have run away, moving to attack, attacking, and getting
+#                                missed.  Others will also have cataloged hit locations.
+#
+###############################################################
+#
+################################################################
+#
+# 10000 Klamath
+#
+#                   10000 Rat God
+#                   10100 Crazed Robot
+#
+###############################################################
+#
+############################################
+# 10000 Rat God
+############################################
+#
+#
+# Moving to Attack
+#
+{10020}{}{Já krrááál krísáááá}
+{10021}{}{Písk! Zzzáábilz dìtí! Dìtí kráál krísá}
+{10022}{}{Krááál érééššš tííí!}
+{10023}{}{Kráál naéré tı!}
+{10024}{}{Krráál bíjéé. Krááál Krísááá!}
+{10025}{}{Bíješ! Krállll Krísá zabíješ!}
+{10026}{}{Kráál zábijééé tì!!! Zábíjé}
+{10027}{}{Hlad, hlad, kráálll hlad! Seere!}
+{10028}{}{Kráál cítí smrad z ty! Ty bojíš kráálll snííí}
+{10029}{}{Dvojohááá krísa, kráál zábijéééé}
+{10030}{}{Zabíj! Zabíj!}
+{10031}{}{Maso! Maso!}
+{10032}{}{Krááál trrrháááá! Krááál!}
+{10033}{}{Pó! Pó ke krááálll!}
+{10034}{}{Krááál trháš dvojnohá!}
+{10035}{}{Král zábij velikej!}
+{10036}{}{Král zábije bezchlupá krys!}
+{10037}{}{Krááál Krıııısa HLAD! Mòam!}
+{10038}{}{Krííísa zábije!}
+#
+# Attacking (Repeat of Moving to Attack)
+#
+{10040}{}{Já krrááál krísáááá}
+{10041}{}{Písk! Zzzáábilz dìtí! Dìtí kráál krísá}
+{10042}{}{Krááál érééššš tííí!}
+{10043}{}{Kráál naéré tı!}
+{10044}{}{Krráál bíjéé. Krááál Krísááá!}
+{10045}{}{Bíješ! Krállll Krísá zabíješ!}
+{10046}{}{Kráál zábijééé tì!!! Zábíjé}
+{10047}{}{Hlad, hlad, kráálll hlad! Seere!}
+{10048}{}{Kráál cítí smrad z ty! Ty bojíš kráálll snííí}
+{10049}{}{Dvojohááá krísa, kráál zábijéééé}
+{10050}{}{Zabíj! Zabíj!}
+{10051}{}{Maso! Maso!}
+{10052}{}{Krááál trrrháááá! Krááál!}
+{10053}{}{Pó! Pó ke krááálll!}
+{10054}{}{Krááál trháš dvojnohá!}
+{10055}{}{Král zábij velikej!}
+{10056}{}{Král zábije bezchlupá krys!}
+{10057}{}{Krááál Krıııısa HLAD! Mòam!}
+{10058}{}{Krííísa zábije!}
+#
+#############################################
+# 10100 Crazed Robot
+############################################
+#
+# Moving to Attack
+#
+{10120}{}{Èíslo pìt ije!}
+{10121}{}{Brrr zzzz vrrrr zzzz}
+{10122}{}{Chyba! Chyba! chıııııııbbbbbbáááááá}
+{10123}{}{Kdo je stvoøitel?}
+{10124}{}{Nelze spoèítat! Nelze spoèítat!}
+{10125}{}{Promiò, Davide.}
+{10126}{}{Tá dy dá dy dá, to je konec!}
+{10127}{}{Pozor, Bille Williamsone! Pozor!}
+{10128}{}{Gort! Klaatu Berada Nictu!}
+{10129}{}{Sssszzzzztt *POP*}
+{10130}{}{Dáte si zmrzlinu, madam?}
+{10131}{}{Ano, pane, pan Šikulka, pane. Ano, pane.}
+{10132}{}{Jsem stoprocentnì funkèní!}
+{10133}{}{Jsme protokolární droid cé tøi pé ó!}
+{10134}{}{Nanoo-nanoo.}
+{10135}{}{Tohle ti nemùu dovolit, Davide.}
+{10136}{}{Neprojdou!}
+{10137}{}{Warování! Warování!}
+{10138}{}{ZZzzzzzzzttt! Sprack!}
+{10139}{}{Ale èíslo pìt je neporazitelné!}
+#
+# Attacking
+#
+{10140}{}{Èíslo pìt ije!}
+{10141}{}{Brrr zzzz vrrrr zzzz}
+{10142}{}{Chyba! Chyba! chıııııııbbbbbbáááááá}
+{10143}{}{Kdo je stvoøitel?}
+{10144}{}{Nelze spoèítat! Nelze spoèítat!}
+{10145}{}{Promiò, Davide.}
+{10146}{}{Tá dy dá dy dá, to je konec!}
+{10147}{}{Pozor, Bille Williamsone! Pozor!}
+{10148}{}{Gort! Klaatu Berada Nictu!}
+{10149}{}{Sssszzzzztt *POP*}
+{10150}{}{Dáte si zmrzlinu, madam?}
+{10151}{}{Ano, pane, pan Šikulka, pane. Ano, pane.}
+{10152}{}{Jsem stoprocentnì funkèní!}
+{10153}{}{Jsme protokolární droid cé tøi pé ó!}
+{10154}{}{Nanoo-nanoo.}
+{10155}{}{Tohle ti nemùu dovolit, Davide.}
+{10156}{}{Neprojdou!}
+{10157}{}{Warování! Warování!}
+{10158}{}{ZZzzzzzzzttt! Sprack!}
+{10159}{}{Ale èíslo pìt je neporazitelné!}
+#
+###############################################################
+#
+# 12000 Vault City / Raiders
+#
+#                   12000 Raider Mercs
+#                   12100 Raider Captain
+#                   12200 Gangster
+#                   12300 Raider (Hit Locations)
+#                   12400 Gangster (Hit Locations)
+#
+###############################################################
+#
+############################################
+# 12000 Raider Mercs
+############################################
+#
+#  running away
+#
+{12000}{}{Tady nezùstanu ani za zlatı hovno...}
+{12001}{}{Ústup!}
+{12002}{}{Èas prásknout do bot...}
+{12003}{}{Rozestupte se!}
+{12004}{}{Ustupte! Ustupte!}
+{12005}{}{Poèkám si na tebe ve Falloutu 3!}
+{12006}{}{Bishop si mùe svoje prachy narvat do prdele...}
+#
+# moving in to attack
+#
+{12020}{}{Cíl zamìøen!}
+{12021}{}{Kryjte mì nìkdo!}
+{12022}{}{Hur-hur-hur! Hur-hur-hur!}
+{12023}{}{Hur-hur-hur! Hur-hur-hur!}
+{12024}{}{Bu bu bu!}
+{12025}{}{Dej svı prdeli pusu na rozlouèenou a pojï sem.}
+{12026}{}{Èas sundat dalšího zkurvence...}
+{12027}{}{Nabij, pal!}
+{12028}{}{Rokenrol!}
+{12029}{}{Heleho! Podívejte se, co za èùráka se nám courá po støelnici! Pal!}
+{12030}{}{Doufám, e máš nìjakı stimpaky, mrtvá liško...}
+{12031}{}{Kontakt!}
+{12032}{}{Narušitel! Narušte ho!}
+{12033}{}{Máme tady narušitele, bando! Natrhnem mu prdel!}
+{12034}{}{Do boje, bando! Zabte tu kurvu!}
+{12035}{}{Bijem a zabijem! Na nì!}
+{12036}{}{Po øadì, chlapci, po øadì! Ten je mùj!}
+{12037}{}{Pozor! Nabít a pal!}
+{12038}{}{Pokropte je trochu!}
+#
+# attacking
+#
+{12040}{}{Sundejte je!}
+{12041}{}{Seš v prdeli, vole.}
+{12042}{}{Kopnu tì do prdele tak, e moji leštìnku na boty budeš cítit v krku ještì pøíští tejden.}
+{12043}{}{::Tak dem! Tak dem! Všechno to tu rozbijem! ::}
+
+{12044}{}{Dostaneš kritickej!}
+{12045}{}{Chceš? Tumáš!! CHCEŠ TROCHU? TUMÁŠ MOC!}
+{12046}{}{Hajááááá!!!}
+{12047}{}{Dej si!}
+{12048}{}{Doufám, e máš nìjakı stimpaky, mrtvá liško...}
+{12049}{}{Dej svı prdeli pusu na rozlouèenou a pojï sem.}
+#
+# target being missed
+#
+{12060}{}{Biješ se jako uøíznutej kokot.}
+{12061}{}{Ha! Vedle, ty psí kundo.}
+{12062}{}{Sem na tebe moc rychlej, blbe?}
+{12063}{}{S takovou brzo zdechneš...}
+{12064}{}{Vo nièem...}
+{12065}{}{Slabej *A* pomalej, jak vidim.}
+#
+############################################
+# 12100 Raider Captain
+############################################
+#
+#  running away
+#
+{12100}{}{Musím zmizet!}
+{12101}{}{Já se vrátím...A ty budeš litovat!}
+{12102}{}{Dneska mì nezabiješ!}
+{12103}{}{Pøíštì, hajzle!}
+{12104}{}{Ještì o mì uslyšíš!}
+{12105}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{12120}{}{Seš historie! Mizerná historie!}
+{12121}{}{Èerstvı maso. A brzo mrtvı maso...}
+{12122}{}{Roztrhám tì na úplnì malinkatı kousíèky!}
+{12123}{}{Všichni do útoku!}
+{12124}{}{Plivni si tam, kde chceš mít hrob.}
+{12125}{}{Zabte je všechny!}
+#
+# attacking
+#
+{12140}{}{Seš na øadì!}
+{12141}{}{Nemusíš se vobtìovat prošením vo slitování. Ale jestli na tom trváš...}
+{12142}{}{To si vychutnám!}
+{12143}{}{Ohh, to bude bolet!}
+{12144}{}{}
+{12145}{}{Seeru ti játra! Doufám, e moc nechlastáš...}
+{12146}{}{Doufám, e budeš chcípat pomalu...}
+{12147}{}{Zabiju!}
+{12148}{}{Chytej!}
+{12149}{}{Takovı sráèe jako ty si dávám dva tøi xnídani, nìkdy i k obìdu.}
+#
+# target being missed
+#
+{12160}{}{Mnì nemùeš ublíit!}
+{12161}{}{}
+{12162}{}{Na tos nikdy nemìl, kriple!}
+{12163}{}{Zkus to ještì jednou, ty hovado.}
+{12164}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{12165}{}{Pomalı, vole.}
+#
+############################################
+# 12200 Gangster (Combat Messages)
+############################################
+#
+#  running away
+#
+{12200}{}{Uf, tahle sraèka na mnì zaèíná bejt kapku moc...}
+{12201}{}{Èas zajít pro zbytek rodiny, na mì je toho moc...}
+{12202}{}{Dostanu tì pøíštì!}
+{12203}{}{Máš štìstí, e mi došly stimpaky...}
+{12204}{}{Mizím, mìj se tu fajn.}
+{12205}{}{Musím rychle sehnat òákı stimpaky...}
+#
+# moving in to attack
+#
+{12220}{}{Škoda, e nejsme u moøe, nasadil bych ti betonovı botky...}
+{12221}{}{A sem mìl fíling, e dneska nikoho nezabiju...}
+{12222}{}{Golgota dostane dalšího vobyvatele...}
+{12223}{}{Asi to budeme muset udìlat po zlym.}
+{12224}{}{Vybiju ti zuby a udìlám si z nich hrací kostky...}
+{12225}{}{Nìkdo si tady hraje se ivotem a mì nìco øíká, e brzo prohraje...}
+{12226}{}{Zabiju tebe, tvoji rodinu, psa i zlatı rybièky!}
+{12227}{}{Musím vynıst vodpadky...}
+{12228}{}{Ach jo, to zas bude robota, kopat ti hrob...}
+#
+# attacking
+#
+{12240}{}{Kopnu tì do prdele tak, e ji budeš nosit jako klobouk...}
+{12241}{}{Štìstìna s tebou dneska není, ejo?}
+{12242}{}{Budu tì mlátit tak dlouho, a budeš eštì hnusnìjší.}
+{12243}{}{Tvoje prdel pude do hrobu. Zbytek ji bude následovat chvilku potom.}
+{12244}{}{Vykopnu ti srdce a pak ho rozšlapu. Tìšíš se?}
+{12245}{}{Škoda e nejni èas. Tvoje kebule by se sqìle vyjímala v mı sbírce. No nic, vemu si aspoò uši...}
+{12246}{}{Ukáu ti, co tady v okolí dìláme z vodpadkama..}
+{12247}{}{Flaknu ti tak, e si budeš myslet, e je zemìtøesení....}
+{12248}{}{U mì nebavíš. Zdechni.}
+{12249}{}{Pozdrav vode mì satanáše...}
+#
+# target being missed
+#
+{12260}{}{Zaèni se snait, nebo skonèíš v nemocnici. V lepším pøípadì...}
+{12261}{}{Biješ se jako dìvka. Mrtvá dìvka.}
+{12262}{}{Hezkı. Hned ti ukáu, jak se to má dìlat správnì.}
+{12263}{}{Seš slepej, nebo blbej? Vobojí co?}
+{12264}{}{Seš na jetu nebo co?}
+{12265}{}{Takhle netrefíš ani vrata vod stodoly...}
+{12266}{}{Nebij do vzduchu, bij do mnì!}
+#
+############################################
+# 12300 Raider (Hit Locations)
+############################################
+#
+# target hit in head
+#
+{12300}{}{Ngggg}
+{12301}{}{Moje... hlava... nìjak... se... motá...}
+{12302}{}{Ugnnn!}
+{12303}{}{Do oblièeje ne! Do oblièeje ne!}
+#
+# target hit in left arm
+#
+{12310}{}{Moje...ruka...moje...krásná...ruka.}
+{12311}{}{Doktor! Mám ruku v pièi! Teda, obraznì øeèeno.}
+{12312}{}{*hffff*}
+#
+# target hit in right arm
+#
+{12320}{}{Prsten? Ustøelili mi prsten!}
+{12321}{}{Doktor! Mám ruku v pièi! Teda, obraznì øeèeno.}
+{12322}{}{No s touhle rukou u baby asi vošahávat nebudu.}
+#
+# target hit in torso
+#
+{12330}{}{Moje bøicho!}
+{12331}{}{Hnrgggg}
+{12332}{}{*hff*}
+{12333}{}{Za...to...zaplatíš...ty...pomrdaná...}
+{12334}{}{*Ooooof*}
+{12335}{}{Nggg! Solar plexus!}
+#
+# target hit in right leg
+#
+{12360}{}{Zatracenì! Moje noha!}
+{12361}{}{*Ergg*}
+{12362}{}{Na tu nohu budu potøebovat stimpak...}
+{12363}{}{Urggg...noha ... v prdeli...}
+#
+# target hit in left leg
+#
+{12370}{}{Zatracenì! Moje noha!}
+{12371}{}{*Ergg*}
+{12372}{}{Na tu nohu budu potøebovat stimpak...}
+{12373}{}{Urggg...noha ... v prdeli...}
+#
+# target hit in eyes
+#
+{12380}{}{Moje oko! Moje krásnı voko!}
+{12381}{}{Chceš mi znièit prostorovı vidìní, svinì?}
+{12382}{}{Nevidím... krev... krev v oèích..}
+#
+# target hit in groin
+#
+{12390}{}{Co si o sobì sakra myslíš? e seš v americkım akèním filmu?}
+{12391}{}{Já nechci bejt tenor! Vyser se na to!}
+{12392}{}{A moje koule se kutálí....}
+{12393}{}{Dej mi chvilku pokoj, a mùu v klidu umøít.}
+{12394}{}{Koule! Moje koule! Do koulí nééé!}
+{12395}{}{Dej mi chvilku, hned se seberu a urvu ti tvı koule.}
+{12396}{}{Blbèe!}
+#
+############################################
+#  12400 Gangster (Hit Locations)
+############################################
+#
+# target hit in head
+#
+{12400}{}{Hlava...nìjak zvoní..... crrrr!}
+{12401}{}{Á! Kurva! To hovado mì oskalpovalo!}
+{12402}{}{Nìjak....blbì...mi...je...asi..budu...blejt}
+{12403}{}{Mùj ksicht! Mùj ksicht!}
+{12404}{}{Au! Kurva, do hlavıııı. Au.}
+{12405}{}{Naposled sem takovou pecku dostal od Toma Tvrïáka....}
+{12406}{}{Eštì jeden pøímej do kebule a sem kaput...}
+{12407}{}{Moje ucho! Svinì! Moje ucho! Vra mi ho!}
+{12408}{}{Co sem to chlastal.....Boe, mnì je blbì...}
+{12409}{}{Nrgggg! Dostal sem to do ksichtu, jauvajs}
+#
+# target hit in left arm
+#
+{12410}{}{Moje ruka! Mám kurva zlomenou kurva ruku!}
+{12411}{}{Doprdele! Do levı ruky! Dostalsemto!}
+{12412}{}{Trefili mì do zasranı paøáty....}
+{12413}{}{Doprdele, paøáta je na hovno. sakra....}
+{12414}{}{Aùùùù! Kurva!}
+{12415}{}{Mám krev po celı ruce!}
+{12416}{}{Moje ruka! Jak mám teï do prdele støílet?}
+{12417}{}{*Nfff*...Skoro mi to urvalo ruku!}
+{12418}{}{*Urkkk*...eštì ...furt...tì...mùu mlátit...druhou ...paøátou!}
+{12419}{}{Na tu ruku bude tøeba stim. Ale nejdøív tì zabiju!}
+#
+# target hit in right arm
+#
+{12420}{}{Moje ruka! Mám kurva zlomenou kurva ruku!}
+{12421}{}{Doprdele! Do pravı ruky! Dostalsemto!}
+{12422}{}{Trefili mì do zasranı paøáty....}
+{12423}{}{Doprdele, paøáta je na hovno. sakra....}
+{12424}{}{Aùùùù! Kurva!}
+{12425}{}{Mám krev po celı ruce!}
+{12426}{}{Moje ruka! Jak mám teï do prdele støílet?}
+{12427}{}{*Nfff*...Skoro mi to urvalo ruku!}
+{12428}{}{Na tu ruku bude tøeba stim. Ale nejdøív tì zabiju!}
+{12429}{}{*Urkkk*...eštì ...furt...tì...mùu mlátit...druhou ...paøátou!}
+#
+# target hit in torso
+#
+{12430}{}{Nemùu....dejchat...}
+{12431}{}{*Oooooffff*}
+{12432}{}{Do prdel... mám vyraenej dech..... uf...}
+{12433}{}{*Unfffff*}
+{12434}{}{Asi.. se mi zlomilo... ebro...}
+{12435}{}{Budu potøebovat pár stimù na bøicho. Po tom, co tì zabiju!}
+{12436}{}{Hezkej zásah. A teï to já polámu VŠECHNY ebra!}
+{12437}{}{Dej mi...moment...a chytím...dech, a pak uvidíš...}
+{12438}{}{*Hrkkk*}
+{12439}{}{Tohle...bylo pìknì...pitomı. Pocem, ukáu ti, jak se to má dìlat!}
+{12440}{}{Vykuchám tì jako øezník prase!}
+{12441}{}{Dostal jsem to do bøicha...}
+{12442}{}{Argghhh! Zkurvysynu....}
+{12443}{}{Šastná ....rána...}
+{12444}{}{*Unnffff*...budu si muset poøídit lepší brnìní...}
+{12445}{}{Mám jenom vykloubenı rameno.... to nic není....pokraèujem....}
+{12446}{}{Tobì polámu úplnì všechny kosti!}
+{12447}{}{Za to ti vytøískám všecky zuby....}
+{12448}{}{Uff, to pálí....}
+{12449}{}{Nemáte nìkdo stimy? Krvácím z bøicha...}
+{12450}{}{Do prdele, ten divoch má ránu jak dímaèka...}
+{12451}{}{Já mám zlomenı ebra, ale ty budeš mít zlomenej krk!}
+{12452}{}{To je všechno? Seš sráè, divochu!}
+{12453}{}{Do bøicha, to nic není...}
+
+{12454}{}{Zatracenì! Slyším praskat ebra...}
+{12455}{}{Ty vole, mì snad praskla páteø...}
+{12456}{}{A teï ti ukáu, jak zabíjíme lidi my!}
+{12457}{}{Kurva! Moje støeva! Vrate se! Zpátky do bøicha!}
+{12458}{}{*Urgggg*...mám pocit...e se mi nìjak...zamíchaly vnitønosti...}
+{12459}{}{Krvácím jak zapíchnutı prase, kurva!}
+#
+# target hit in right leg
+#
+{12460}{}{Mám zlomenou haxnu! Za to ti polámu ksicht!}
+{12461}{}{Z tvı lebky si udìlám pùllitr!}
+{12462}{}{Ah! Do zasranıho kolena ne!}
+{12463}{}{Tobì polámu VOBÌ èéšky!}
+{12464}{}{Do nohy. Hmm. Au....}
+{12465}{}{Máš štìstí, sráèi. Ale to ti nepomùe.}
+{12466}{}{No nic, na tu nohu bude tøeba dávat pár dní pozor...}
+{12467}{}{Do nohy. Hmmm. To ti vrátím!}
+{12468}{}{Na to, abych ti zkopal prdel vobì nohy nepotøebuju. Staèí jedna...}
+{12469}{}{Za tohleto ti urvu nohu a zmlátím tì s ní do bezvìdomí!}
+#
+# target hit in left leg
+#
+{12470}{}{Mám zlomenou haxnu! Za to ti polámu ksicht!}
+{12471}{}{Z tvı lebky si udìlám pùllitr!}
+{12472}{}{Ah! Do zasranıho kolena ne!}
+{12473}{}{Tobì polámu VOBÌ èéšky!}
+{12474}{}{Do nohy. Hmm. Au....}
+{12475}{}{Máš štìstí, sráèi. Ale to ti nepomùe.}
+{12476}{}{No nic, na tu nohu bude tøeba dávat pár dní pozor...}
+{12477}{}{Do nohy. Hmmm. To ti vrátím!}
+{12478}{}{Na to, abych ti zkopal prdel vobì nohy nepotøebuju. Staèí jedna...}
+{12479}{}{Za tohleto ti urvu nohu a zmlátím tì s ní do bezvìdomí!}
+#
+# target hit in eyes
+#
+{12480}{}{Ahhh, do prdele! Kurva pøímo do oka!}
+{12481}{}{Erggg...šastnej zásah, hajzle!}
+{12482}{}{Ten debilní svìt nìjak ztmavnul...}
+{12483}{}{To není nic...co by nedokázala vyléèit...páska pøes voko!}
+{12484}{}{Za tohle ti vypíchnu vobì oèi. Pomalu.}
+{12485}{}{Nevidím! Pomóc! Nevidím!}
+{12486}{}{Nevidím...toèí se mi hlava...}
+{12487}{}{S takovou brzo zdechneš...}
+{12488}{}{Nevidím kurva ani hovno! Kde jsi?! Zabiju tì!}
+{12489}{}{*Hrrkkkk*}
+#
+# target hit in groin
+#
+{12490}{}{*Uhhhnnnnnn*...need...to...lie...down...}
+{12491}{}{Za to slízneš....já ti dám....mlátit mì do koulí...}
+{12492}{}{*Hrkkkk*...}
+{12493}{}{Moje koule, kurva moje koule!}
+{12494}{}{Rán pod pás, svinì!}
+{12495}{}{Pod pás! Ty zmrde!}
+{12496}{}{Nebudu se dívat dolù. Nebudu se dívat dolù!}
+{12497}{}{Poèkej tady! Já si zabìhnu pro Tomma Tvrïáka a ten ti ukáe, co je to fér boj!}
+{12498}{}{Sem vykastrovanej....}
+{12499}{}{*Unnfffff*...Mám pocit...e mám koule a... v aludku....}
+#
+#
+###############################################################
+#
+# 14000         Gecko
+#
+#                    14000  The Brain
+#
+###############################################################
+#
+############################################
+# 14000 The Brain - Combat Messages
+############################################
+#
+#  running away
+#
+{14000}{}{Ber ho, Zomaku!}
+{14001}{}{Nech mì na pokoji!}
+{14002}{}{Pøestaò mì otravovat!}
+{14003}{}{Vy lidi jste všichni stejní...}
+{14004}{}{Tohle je pro tebe jedinı zpùsob, jak jednat s neznámem?}
+{14005}{}{Jednoduché odpovìdi pro jednoduché mysli...}
+{14006}{}{Nemùu uvìøit, e se chováš takhle...}
+{14007}{}{Kšá! Jdi pryè!}
+{14008}{}{To mám z toho, e se bavím s lidma...}
+{14009}{}{Musíš znièit všechno, èemu nerozumíš?}
+#
+# moving in to attack
+#
+{14020}{}{Tohle tì bude bolet mnohem víc ne mne!}
+{14021}{}{Nelíbí se mi to, ale...}
+{14022}{}{Vìtšinou se násilí vyhıbám, ale v tvém pøípadì udìlám vıjimku.}
+{14023}{}{Budu se pak muset umıt...}
+{14024}{}{Pøíšernì zapácháš...}
+{14025}{}{Zùstane po tobì jenom hromada nepoøádku...}
+{14026}{}{Dohnal jsi mì k tomu, èlovìku.}
+{14027}{}{Škoda, skoro jsem k tobì cítil sympatie...}
+{14028}{}{A teï  zemøeš.}
+{14029}{}{Doufal jsem, e k tomuhle nedojde.}
+#
+# attacking
+#
+{14040}{}{A mám tì.}
+{14041}{}{Touche!}
+{14042}{}{En Garde!}
+{14043}{}{Haj-Kí-Bááá!}
+{14044}{}{Dostanu tì!}
+{14045}{}{Vzdej to.}
+{14046}{}{Jsi mrtvìjší ne èeská národní ekonomika!}
+{14047}{}{Haj-jáá!}
+{14048}{}{Docela mì to baví!}
+{14049}{}{Nechte pozemšana mnì! ...... Tohle jsem vdycky chtìl øíct!}
+#
+# target being missed
+#
+{14060}{}{Ha, ty neschopnı dvojnoèe!}
+{14061}{}{Chybí ti obratnost, lidskı èerve.}
+{14062}{}{Co to bylo?}
+{14063}{}{Tohle není šaráda!}
+{14064}{}{Co? Zase ty?}
+{14065}{}{Fakt se snaíš? To je smutné...}
+{14066}{}{Znamená to pro tebe hodnì, trefit se do mne, viï?}
+{14067}{}{Jsem rychlejší, ne by si jeden hloupı èlovìk myslel, co?}
+{14068}{}{Na starou krysu to není špatnı, co?}
+{14069}{}{Zkus to znova. Zase se ti to nepovede.}
+#
+###############################################################
+#
+# 18000         New Reno
+#
+#                    18000  Boxers (Hit Locations)
+#                    18100  Boxers (Combat Messages)
+#
+###############################################################
+#
+############################################
+# 18000 Boxer (Hit Locations)
+############################################
+#
+# target hit in head
+#
+{18000}{}{Do oblièeje ne....}
+{18001}{}{Nffff}
+{18002}{}{To je dobøe, e mùj mozek poškodit nemùeš...}
+#
+# target hit in left arm
+#
+{18010}{}{Nffff}
+{18011}{}{Ernhhh}
+#
+# target hit in right arm
+#
+{18020}{}{Nffff }
+{18021}{}{Ernhhh }
+#
+# target hit in torso
+#
+{18030}{}{Oooof}
+{18031}{}{Nfff}
+{18032}{}{Ernhhh}
+{18033}{}{Hrggg}
+{18034}{}{Zapomnìl jsem se krıt....}
+{18035}{}{ádná bolest, ádná bolest...}
+#
+# target hit in right leg
+#
+{18060}{}{ádnı rány pod pás!}
+{18061}{}{Ty svinì. Do nohy se nesmí!}
+#
+# target hit in left leg
+#
+{18070}{}{ádnı rány pod pás!}
+{18071}{}{Ty svinì. Do nohy se nesmí!}
+#
+# target hit in eyes
+#
+{18080}{}{Míøíš na oèi, jo?}
+{18081}{}{Nfff}
+{18082}{}{Tak, a je po oku tygra...}
+#
+# target hit in groin
+#
+{18090}{}{ádnı rány pod pás!}
+{18091}{}{Mìl jsem si vzít suspenzor...}
+{18092}{}{Za to zaplatíš, ty svinì!}
+#
+############################################
+# 18100 Boxer (Combat Messages)
+############################################
+#
+#  running away
+#
+{18100}{}{Adriano! Adriano!}
+{18101}{}{Je lepší ne Rocky, hajzl....}
+{18102}{}{Dáme si odvetu, ale teï mì nech!}
+{18103}{}{Pùjdu ještì potrénovat...}
+{18104}{}{Mìl jsem si vzít víc práškù...}
+{18105}{}{Jenom si vezmu nìjakı Psycho a hned jsem zpátky...}
+{18106}{}{Èas vypadnout...}
+{18107}{}{Najdu si lehèího protivníka...}
+#
+# moving in to attack
+#
+{18120}{}{Chceš? Tumáš!!}
+{18121}{}{Pùjdeš k zemi!}
+{18122}{}{Rozbiju ti hubu!}
+{18123}{}{Budu tì mlátit, a bude tvùj ksicht ještì hnusnìjší...}
+{18124}{}{Vymlátím ti zuby z huby...}
+{18125}{}{Dostaneš kritickej...}
+{18126}{}{Jdem si vydìlat prachy...}
+{18127}{}{Zmlátím tì jak malı dìcko...}
+#
+# attacking
+#
+{18140}{}{Jdi za tatínkem!}
+{18141}{}{Chceš? Tumáš!}
+{18142}{}{Ernhhh}
+{18143}{}{Hrghhh}
+{18144}{}{Hrggg}
+{18145}{}{Seer to!}
+{18146}{}{Pùjdeš k zemi!}
+{18147}{}{Svinì!}
+{18148}{}{Dostanu tì!}
+{18149}{}{Na odvetu se ani neobtìuj!}
+{18150}{}{Dostaneš kritickej!}
+{18151}{}{Nehejbej se a budeš to mít lehèí!}
+{18152}{}{SUPER... ATOMOVÁ... NIÈÍCÍ... PÌST... }
+{18153}{}{Pøelomím ti pár eber...}
+{18154}{}{Zmlátím tì jak psa...}
+#
+# target being missed
+#
+{18160}{}{Pomalı, vole.}
+{18161}{}{Vedle jak ta jedle...}
+{18162}{}{Já mlátím jak mlátièka, ty mlátíš jak babièka!}
+{18163}{}{Takovej tupec jako ty by netrefil ani vrata od stodoly!}
+{18164}{}{Ha! Nebij do vzduchu, bij do mnì!}
+{18165}{}{Hele, nechceš puèit bílou hùlku?}
+{18166}{}{Ha! Netrefils!}
+{18167}{}{U vidíš dvojitì, co?}
+{18168}{}{To byla tvoje poslední šance!}
+{18169}{}{Biješ se jako malı dìcko!}
+{18170}{}{Sráèi!}
+{18171}{}{Seš blb! Magor! Idiot!}
+{18172}{}{Zmlátím tì jak psa...}
+{18173}{}{Copak, nevíš, do kterıho z nás mlátit?}
+{18174}{}{Víc toho neumíš?}
+{18175}{}{Hmm, tak tohle bude krátkej boj...}
+{18176}{}{Slabej...}
+{18177}{}{Pomalej...}
+#
+###############################################################
+#
+# 26000         V13/V15
+#
+#                    26000  Normal Khan
+#                    26100  Tough Khan
+#
+###############################################################
+#
+############################################
+# 26000 Khan - Normal
+############################################
+#
+#  running away
+{26000}{}{Zdrháme! Zdrháme! }
+{26001}{}{Ústup!}
+{26002}{}{Pøeskupte se!}
+{26003}{}{Ustupte! Ustupte!}
+{26004}{}{Stáhnìte se!}
+{26005}{}{Já mizím!}
+#
+# moving in to attack
+#
+{26020}{}{Zabte to, a je to, co je to...}
+{26021}{}{U teï seš mrtvej, ty mrtvá liško...}
+{26022}{}{Umrdám tì xmrti!}
+{26023}{}{Ten je mùj!}
+{26024}{}{Berte je!}
+{26025}{}{Ty uši se mi líbí. Povìsím si je na krk.}
+#
+# attacking
+#
+{26040}{}{Uij si poslední sekundy svıho mizernıho ivota...}
+{26041}{}{Krev! Krev! Krev!}
+{26042}{}{Seeru ti srdce!}
+{26043}{}{Tohle prostì eru!}
+{26044}{}{Tvoje zbranì si povìsím na stìnu a z tebe budu mít pøedloku k posteli!}
+{26045}{}{Jako hraní dùma nebo kvejka. Akorát lehèí!}
+{26046}{}{Zabiju si tì! Tìš se!}
+{26047}{}{Z tvı lebky si udìlám krıgl!}
+{26048}{}{Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! }
+{26049}{}{Voberu tvou mrtvolu a pak ji hodím na hnojištì!}
+{26050}{}{Provrtám tì, parchante!}
+#
+############################################
+# 26100 Khan - Tough
+############################################
+#
+#  running away
+#
+{26100}{}{Krejte mì, bando!}
+{26101}{}{Ústup!}
+{26102}{}{Pøeskupte se!}
+{26103}{}{Ustupte! Ustupte!}
+{26104}{}{Stáhnìte se!}
+{26105}{}{Ustupte, musíme se dát dohromady!}
+#
+# moving in to attack
+#
+{26120}{}{A bitka zaèíná! Neperte to do nich!}
+{26121}{}{Hele, cviènej cíl!}
+{26122}{}{Neèekej slitování. My sme zkrátka krveíznivı postavièky z poèítaèovı hry.}
+{26123}{}{Ten je mùj!}
+{26124}{}{Do útoku! Kamikadze!}
+{26125}{}{Sranda zaèíná! A ty konèíš!}
+{26126}{}{Zabte ho nìkdo! Nebo e bych to udìlal sám....}
+#
+# attacking
+#
+{26140}{}{Khanové bijou!}
+{26141}{}{Khans rulz, vole! Sme elita!}
+{26142}{}{Sem dokonalej! Ty taky, jenome dokonalı hovno.}
+{26143}{}{Khanové vládnou!}
+{26144}{}{Sme neporazitelní! }
+{26145}{}{Neutíkej! Nevzdávej se! Zabijem tì!}
+{26146}{}{Zabiju si tì! Tìš se!}
+{26147}{}{Z tvejch zubù bude fajn náhrdelník.}
+{26148}{}{Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! Ma-so! }
+{26149}{}{Tvım skaplem si utøu prdel!}
+#
+# target being missed
+#
+{26160}{}{Hezká finta. Eštì se trefit...}
+{26161}{}{Pøíštì zkus míøit na mnì, ne nìkam do prdele...}
+{26162}{}{Sem neznièitelnej!}
+{26163}{}{Na mì nemáš, ty hovado!}
+{26164}{}{Hele, tady ten by potøeboval pauzu, aby se nauèil, jak s tím zacházet...}
+{26165}{}{S tímhle hovadem se bít nebudu! Bije se jak malı dìcko. Mrtvı.}
+{26166}{}{Proè se s tebou tak seru?}
+#
+###############################################################
+#
+# 32000        San Fransisco
+#
+#                    32000  Shi Hit Location Messages
+#                    32100  The Dragon
+#                    32200  Lo Pan
+#                    32300  Chip
+#                    32400  Badger
+#                    32500  Ryan
+#                    32600  Shi Guards
+#                    32700  Elron Hit Locations
+#                    32800  Elron Guards
+#                    32900  Ron Cruz/Nikki Goldman
+#                    33000  OZ-9
+#                    33100  OZ-7
+#                    33200  Hovado (Hit Locations)
+#
+###############################################################
+#
+############################################
+# 32000 Shi Hit Locations
+############################################
+#
+# target hit in head
+#
+{32000}{}{Mùj ksicht! Mùj ksicht!}
+{32001}{}{Mùj skalp!}
+{32002}{}{oooh... moje uši...}
+#
+# target hit in left arm
+#
+{32010}{}{Au, moje ruka!}
+{32011}{}{Au!}
+{32012}{}{Zlomili mi ruku!}
+#
+# target hit in right arm
+#
+{32020}{}{Au, moje ruka!}
+{32021}{}{Wahhhh!}
+{32022}{}{Mùj boe! Moje ruka!}
+#
+# target hit in torso
+#
+{32030}{}{JAU!}
+{32031}{}{Asi omdlím......}
+{32032}{}{Hej! Moje bøicho!}
+{32033}{}{Uffffff!}
+{32034}{}{To bolí!}
+{32035}{}{Zásah do bøicha...}
+{32036}{}{Ohhh, bolest!}
+#
+# target hit in right leg
+#
+{32060}{}{Au, moje noha!}
+{32061}{}{Moje koleno!}
+{32062}{}{Pøímo do artérie!}
+#
+# target hit in left leg
+#
+{32070}{}{Au, moje noha!}
+{32071}{}{::hop... hop::}
+{32072}{}{Aaaarrrrggghhh!}
+#
+# target hit in eyes
+#
+{32080}{}{Nevidím! Ty bastarde!}
+{32081}{}{Mùj oblièej! Moje oèi! Arrrrgh!}
+{32082}{}{Kde jsi? Pomóc!}
+#
+# target hit in groin
+#
+{32090}{}{Ooooooooo, mùj rozkrok! Ooooooo...}
+{32091}{}{Já...já...jau...}
+{32092}{}{::drí se za rozkrok a úpí::}
+{32093}{}{::zvrací::}
+{32094}{}{Nemùu...dıchat...}
+{32095}{}{Bolí, bolí...}
+#
+############################################
+# 32100 The Dragon
+############################################
+#
+#  running away
+#
+{32100}{}{Tvoje kung-fu je lepší ne moje!}
+{32101}{}{Jsi mocnı. Sbohem.}
+{32102}{}{ÁÁ! Zlo triumfuje!}
+{32103}{}{Oh ne...}
+{32104}{}{Zklamal jsem.}
+{32105}{}{Jsem zneuctìn.}
+#
+# moving in to attack
+#
+{32120}{}{Bolí mì to, ale musím na tebe zaútoèit...}
+{32121}{}{Radím ti, uprchni.}
+{32122}{}{Jenom zbabìlci pouívají zbranì.}
+{32123}{}{Uteè dokud mùeš...}
+{32124}{}{Pøiprav se, špatná osobo.}
+{32125}{}{Uteè a já ti neublíím.}
+{32126}{}{Kdy trváš na boji...}
+{32128}{}{Ty si myslíš, e mì mùeš porazit?}
+#
+# attacking
+#
+{32140}{}{Haiiiiiiii-YA!}
+{32141}{}{Banzai!}
+{32142}{}{Kjai! }
+{32143}{}{Haj!}
+{32144}{}{Huh!}
+{32145}{}{Haj áááá!}
+{32146}{}{Hai - ah!}
+{32147}{}{Uka se!}
+{32148}{}{Mongole!}
+{32149}{}{Kop do oka!}
+#
+# target being missed
+#
+{32160}{}{Jenom zbabìlci pouívají zbranì.}
+{32161}{}{Bojíš se opravdového bojovníka?}
+{32162}{}{Tvoje kung-fu je slabé.}
+{32163}{}{Vzdej se!}
+{32164}{}{Tomu øíkáš boj?}
+{32165}{}{Hıbeš se jako tìhotná koala.}
+#
+############################################
+# 32200 Lo Pan
+############################################
+#
+#  running away
+#
+{32200}{}{Hledám holku se zelenıma oèima, nevidìl ji nìkdo?}
+{32201}{}{Ano pane...šek u jsem poslal.}
+{32202}{}{Mám dùleitou schùzku...}
+{32203}{}{Dobøe, prohrál jsem!}
+{32204}{}{Vzdávám se!}
+{32205}{}{Tvoje kung-fu je silnìjší ne moje.}
+#
+# moving in to attack
+#
+{32220}{}{Blesku! Hrome! Zabíjejte pro mnì!}
+{32221}{}{Tvé síly jsou slabé!}
+{32222}{}{Tvé kung-fu mi neublíí!}
+{32223}{}{Jsem neporazitelnı!}
+{32224}{}{Jsem lepší, ne kdy byl Bruce-Lee!}
+{32225}{}{ene se na tebe bouøe!}
+{32226}{}{Uteè, zbabìlèe! Nebo zemøi!}
+{32228}{}{Zabiju tì jedinım úderem!}
+#
+# attacking
+#
+{32240}{}{Kdo je Jack Burton?}
+{32241}{}{Chtìl bych po tobì moc, kdybych si pøál tvoji smrt?}
+{32242}{}{Nezùstaly po tobì doufám ádné dluhy.}
+{32243}{}{Máš problém s oblièejem.}
+{32244}{}{Vytrhnu ti srdce!}
+{32245}{}{Peklo u na tebe èeká!}
+{32246}{}{Pozdrav za mnì své pøedky!}
+{32247}{}{Jsem nesmrtelnı!}
+{32248}{}{Bán-cai!}
+{32249}{}{Hai-YA!}
+#
+# target being missed
+#
+{32260}{}{Cítím se nesmrtelnı!}
+{32261}{}{Sna se víc. Stejnì to nepomùe...}
+{32262}{}{Uf, au, jau. Ta bolest! U mì nebij, prosím!}
+{32263}{}{Ty se vánì neumíš bít!}
+{32264}{}{Tomu øíkáš boj?}
+{32265}{}{::zív::}
+#
+############################################
+# 32300 Chip
+############################################
+#
+#  running away
+#
+{32300}{}{Mám enu a dìti!}
+{32301}{}{Ne! Vdy mám narozeniny!}
+{32302}{}{Jau...moje bøicho...}
+{32303}{}{Zpátky do nemocnice...}
+{32304}{}{Musím...dret tu tepnu... nebo vykrvácím...}
+{32305}{}{Ah, moje játra. Bolí, bolí.}
+#
+# moving in to attack
+#
+{32320}{}{Budu tì muset rozpárat kapesním noíkem.}
+{32321}{}{Zmlátím tì jak malı dìcko...}
+{32322}{}{Snídáš hovna, nebo ti tak z huby smrdí od pøírody?}
+{32323}{}{Nakopu ti prdel, a ti vobìd vycáká ušima.}
+{32324}{}{Rozpáøu tì!}
+{32325}{}{Tak to je konec, kámo. Umøeš.}
+#
+# attacking
+#
+{32340}{}{BUM!}
+{32341}{}{Nakopu ti prdel!}
+{32342}{}{OU JÉÉ!}
+{32343}{}{Jo, bajby, jóóó!}
+{32344}{}{Chceš? Tumáš!}
+{32345}{}{Nehejbej se!}
+{32346}{}{Promíchat, potøepat a zapíchnout!}
+{32347}{}{Hele, to je tvùj ksicht? Hnusnej!}
+{32348}{}{Tak hnusnej ksicht sem eštì nevidìl. Hned s ním nìco udìlám.}
+#
+# target being missed
+#
+{32360}{}{Vedle jak ten smrèek! Ha ha ha}
+{32361}{}{Smrdíš!}
+{32362}{}{Ha ha! Jsem bùh!}
+{32363}{}{Dej mi pusu, zlatíèko, to ti moná pùjde líp.}
+{32364}{}{Musíš míøit! Jinak se do mì netrefíš!}
+{32365}{}{Rozpáøu tì!}
+#
+############################################
+# 32400 Badger
+############################################
+#
+#  running away
+#
+{32400}{}{Oblièej! Do oblièeje ne!}
+{32401}{}{Mám znièenej úèes, ty parchante!}
+{32402}{}{Bastarde! Za to tì sexuálnì zneuiju, e si tejden nesedneš!}
+{32403}{}{Potøebuju vìèí kvér!}
+{32404}{}{Waaaaaaaaaaa!!!}
+{32405}{}{ÁÁÁ! Dostal sem to do prdele!}
+#
+# moving in to attack
+#
+{32420}{}{Budeš si pøát, aby tì tatík nastøíkal mámì na bøicho!}
+{32421}{}{Ty máš prdel tam nahoøe? Jo, sorry, to je tvùj ksicht.}
+{32422}{}{Tak se pøedveï, ty kuse škorpioního hovna!}
+{32423}{}{Nenaser si do kalhot, jinak je ode mne nikdo nekoupí.}
+{32424}{}{Joudo, teï zemøeš!}
+{32425}{}{Udìlám to tak, aby tì to bolelo, jak nejvíc to pùjde!}
+{32426}{}{Mùu ti nejdøív utrhnout koleno?}
+{32428}{}{Tak pojï, holèièko. Uka co máš!}
+#
+# attacking
+#
+{32440}{}{Doufám, e tu ruku nebudeš potøebovat!}
+{32441}{}{Jau, to muselo bolet, co?}
+{32442}{}{Auè tájm!}
+{32443}{}{Miluju vùni krve po ránu...}
+{32444}{}{Teèe z tebe krve jak z prasete...}
+{32445}{}{Bu bu bu ty malá píèo!}
+{32446}{}{Co to z tebe èouhá? }
+{32447}{}{Je to na cestì!}
+{32448}{}{Seer to!!}
+#
+# target being missed
+#
+{32460}{}{Støílíš hùø ne moje máma, a ta je u dva roky mrtvá!}
+{32461}{}{Sráèi. Fuj!}
+{32462}{}{Vra se do LA, ty hovne!}
+{32463}{}{Mám se chvíli nehejbat?}
+{32464}{}{::::prrrrrd::::}
+{32465}{}{Uau, to bylo dobrı...}
+#
+############################################
+# 32500 Ryan
+############################################
+#
+#  running away
+#
+{32500}{}{Kdo uteèe vyhraje!}
+{32501}{}{La la la ... Pomóc!}
+{32502}{}{Ha ha OW!}
+{32503}{}{AT! AT! At at at at at!}
+{32504}{}{Karrramba!}
+{32505}{}{Pomóóóóóc!}
+#
+# moving in to attack
+#
+{32520}{}{Tohle nechceš, ale já ti stejnì dám...}
+{32521}{}{Pojï si, dostaneš!}
+{32522}{}{Chceš? Tumáš! Huh? Huh?}
+{32523}{}{Pojï sem! Znásilním tì!}
+{32524}{}{Seš ÚPLNÌ mrtvá liška!}
+{32525}{}{Poslední chyba v tvım ivotì!}
+{32526}{}{Nìco pro tebe tady mám!}
+#
+# attacking
+#
+{32540}{}{Doufám, e se vod tebe nezašpiním...}
+{32541}{}{::dy da dy da dy dáá dy da dy da dááá la la diskotéka::}
+{32542}{}{Aáj uil áluajs láv jùùùùùùùùùùùù}
+{32543}{}{Nemùem se nìjak domluvit?}
+{32544}{}{Seš ÚPLNÌ mrtvá liška!}
+{32545}{}{Vohni se na chvilku...}
+{32546}{}{Mám pro tebe prezent.}
+{32547}{}{Chceš kousek?}
+{32548}{}{Støílí... A zasahuje!}
+{32549}{}{Co takhle trochu lásky?}
+#
+# target being missed
+#
+{32560}{}{Tak je to správnı!}
+{32561}{}{Tak je to SPRÁVNİ}
+{32562}{}{Ha ha ha!}
+{32563}{}{Nic lepšího neumíš?}
+{32564}{}{Sem nedotknutelnej!}
+{32565}{}{Au! Ha ha...dìlám si srandu.}
+#
+############################################
+# 32600 Shi Guards
+############################################
+#
+#  running away
+#
+{32600}{}{Aiee!}
+{32601}{}{Další øada! Jste na øadì!}
+{32602}{}{Ustupte! Ustupte!}
+{32603}{}{Zdrháme! Zdrháme! }
+{32604}{}{Uteète!}
+#
+# moving in to attack
+#
+{32620}{}{Pøiprav se k zneuctìní.}
+{32621}{}{Pilíøe nebes se otøásají!}
+{32622}{}{... jedovaté šípy letí...}
+{32623}{}{A pøichází øezník!}
+{32624}{}{Varovali jsme tì!}
+{32625}{}{Jeden ex gajdin do popelnice!}
+{32626}{}{Sbohem, mrtvolo...}
+#
+# attacking
+#
+{32640}{}{Nìco pro tebe...}
+{32641}{}{... za maminku ....}
+{32642}{}{... za tatínka ....}
+{32643}{}{... za sestøièku ....}
+{32644}{}{... za babièku!!!}
+{32645}{}{Zmizni!}
+{32646}{}{Chcípni! }
+{32647}{}{Buï sbohem!}
+{32648}{}{Nech mì, a znièím tvou èest!}
+{32649}{}{Tvá pøítomnost mì uráí.}
+#
+# target being missed
+#
+{32660}{}{Záleí na reflexech!}
+{32661}{}{Gajdin! Fuj!}
+{32662}{}{::ach::: Kdy budeme bojovat s nìkım SCHOPNİM?}
+{32663}{}{Uam. Nuda, nuda.}
+{32664}{}{Kdy mì zaèneš bít?}
+{32665}{}{Zaèíná mì to nudit...}
+
+#
+############################################
+# 32700 Elron Hit Locations
+############################################
+#
+# target hit in head
+#
+{32700}{}{Mùj ksicht! Mùj ksicht!}
+{32701}{}{Hvìzdnı otèe! Vyleè mì!}
+{32702}{}{Au! Potøebuju studenı obklad, strašnì to bolí}
+#
+# target hit in left arm
+#
+{32710}{}{Au, moje ruka}
+{32711}{}{Au!}
+{32712}{}{Zlomili mi ruku!}
+#
+# target hit in right arm
+#
+{32720}{}{Au, moje ruka}
+{32721}{}{Wahhhh!}
+{32722}{}{U Hubbella! Moje ruka!}
+#
+# target hit in torso
+#
+{32730}{}{Au! To fakt bolí!}
+{32731}{}{Asi omdlím...}
+{32732}{}{Jauvajs!}
+{32733}{}{Hvìzdnı Otèe! Pomoz mi!}
+{32734}{}{To bolí!}
+{32735}{}{Nech mì bıt!}
+{32736}{}{Ohhh, bolest!}
+#
+# target hit in right leg
+#
+{32760}{}{Au, moje noha!!}
+{32761}{}{Moje koleno!}
+{32762}{}{Au!}
+#
+# target hit in left leg
+#
+{32770}{}{Jau! Moje koleno!}
+{32771}{}{Moje koleno!}
+{32772}{}{Aaaarrrrggghhh!}
+#
+# target hit in eyes
+#
+{32780}{}{Au!! Moje oèi!}
+{32781}{}{Mùj oblièej! Moje oèi! Arrrrgh!}
+{32782}{}{Moje oèi!}
+#
+# target hit in groin
+#
+{32790}{}{Ooooooooo, mùj rozkrok! Ooooooo...}
+{32791}{}{Aùùù...To bolí!!!}
+{32792}{}{Urp!}
+{32793}{}{::gasp::}
+{32794}{}{Nemùu...dıchat...}
+{32795}{}{...dobøe...e...u...jsem...sterilní...}
+#
+############################################
+# 32800 Elron Guards
+############################################
+#
+#  running away
+#
+{32800}{}{Hvìzdnı Otèe! Pomo nám!}
+{32801}{}{Hvìzdnı Otèe! Proè jsi nám nepomohl?}
+{32802}{}{Chci ít, a uvidím Quetzel!}
+{32803}{}{Eeek!}
+{32804}{}{Spaste své duše!}
+{32805}{}{AHS-9! Pomo!}
+#
+# moving in to attack
+#
+{32820}{}{"Upravím" tì tak silnì, e ...}
+{32821}{}{Budu rád, a se zbavíme takovıch jako ty...}
+{32822}{}{Škoda e nezaiješ naši záønou budoucnost...}
+{32823}{}{Nikdy neodmítej Hvìzdného Otce.}
+{32824}{}{Hubbell tì rozdrtí!}
+{32825}{}{Jsme Ozbrojená Pìst Hvìzdného Otce!}
+{32826}{}{Smrt nezasvìcenım!}
+{32828}{}{Ber to jako prohlídku u doktora. Trochu tì proklepu...}
+#
+# attacking
+#
+{32840}{}{Jsi neèisté prase!}
+{32841}{}{Za Hvìzdného Otce!}
+{32842}{}{Za Hubbella!}
+{32843}{}{Za Quetzel!}
+{32844}{}{Za AHS-9!}
+{32845}{}{Zemøi, neèistá osobo!}
+{32846}{}{Znesvìcuješ nás svou pøítomností!}
+{32847}{}{Tohle je za AHS-9!}
+#
+# target being missed
+#
+{32860}{}{Tvoje energie je nezamìøená!}
+{32861}{}{Kdybys byl jedním z nás, zasáhl bys mì!}
+{32862}{}{Tvá energie je neèistá!}
+{32863}{}{Nepokoušej se zasáhnout pravého vìøícího!}
+{32864}{}{Neschopnost, kam se jenom podíváš. Pouze my jsme vyvolení...}
+{32865}{}{Neèistı!}
+#
+############################################
+# 32900 Ron Cruz/Nikki Goldman
+############################################
+#
+#  running away
+#
+{32900}{}{Já jsem pøece filmová hvìzda!}
+{32901}{}{Celebrita prochází, rozejdìte se!}
+{32902}{}{Tohle ve scénáøi nebylo!}
+{32903}{}{Hvìzdnı otèe! Pomoz!}
+{32904}{}{Ale já jsem slavná osobnost!}
+#
+############################################
+# 33000 OZ-9
+############################################
+#
+#  running away
+#
+{33000}{}{Hvìzdnı Otèe! Pomoz mi!}
+{33001}{}{Ne! Mì ne!}
+{33002}{}{Prosím, zabíjej chvíli nìkoho jiného!}
+{33003}{}{Nezabíjej mì! Já jsem AHS-9!}
+{33004}{}{Stráe! Pomozte mi!}
+{33005}{}{Nemùeš mì zabít! Jsem pøíliš dùleitá osobnost!}
+#
+# moving in to attack
+#
+{33020}{}{Mohls bıt jedním z nás, hlupèe.}
+{33021}{}{Hlupáci vdy útoèí na lepší lidi, slepí jsou ve své závisti...}
+{33022}{}{Tvoje neèistost pøímo záøí!}
+{33023}{}{Škoda, e nejsi jedním z nás...Tak tì musíme zabít!}
+{33024}{}{Hvìzdnı Otec tì srazí na kolena!}
+{33025}{}{Nikdy neuvidíš planetu Quetzel.}
+{33026}{}{Jsi zrádce lidské evoluce!}
+{33028}{}{Nehodnı a neèistı!}
+#
+# attacking
+#
+{33040}{}{Mùj dotek tì oèistí!}
+{33041}{}{Dotknu se tì a ty zemøeš!}
+{33042}{}{Ve jménu Hubbella!}
+{33043}{}{Pro vìtší slávu Hvìzdného Otce!}
+{33044}{}{Poci hnìv Hubbella!}
+{33045}{}{Tohle tì zoptimalizuje!}
+#
+# target being missed
+#
+{33060}{}{Hvìzdnı Otec mì zachránil!}
+{33061}{}{Hubbell mì chrání!}
+{33062}{}{Jsi neschopnı dùkaz, e evoluce je nutná. Pøidej se k nám! Nebo radìji zemøi!}
+{33063}{}{Tvoje energie je špatná.}
+{33064}{}{Nedokáeš se soustøedit?}
+#
+############################################
+# 33100 OZ-7
+############################################
+#
+#  running away
+#
+{33100}{}{Hvìzdnı Otèe! Pomoz mi!}
+{33101}{}{Radši bych byl na Quetzelu!}
+{33102}{}{Mì ne! Nezabíjej mì!}
+{33103}{}{Já jsem malá ryba, nech mì bıt!}
+{33104}{}{Já nerozhoduju, já jenom poslouchám rozkazy!}
+{33105}{}{Já nejsem ten, co ho hledáš, já ne!}
+#
+# moving in to attack
+#
+{33120}{}{Radši bych to nedìlal, ale...}
+{33121}{}{Nechceš se radìji vzdát?}
+{33122}{}{Nemùeme se nìjak domluvit?}
+{33123}{}{Kdy AHS-9 øíká, e jsi špatnı, musíš bıt špatnı.}
+{33124}{}{Pro ... um... slávu Hubbellovu!}
+{33125}{}{Boj je špatnı, ale v tomhle pøípadì je asi nutnı...}
+{33126}{}{Nejsem moc dobrı ve vyhroování a èlovìk, co mi píše texty, je momentálnì po opici, take: ZHYÒ!}
+{33128}{}{Omlouvám se, kdybych ti snad ublíil, ale je to nutné!}
+#
+# attacking
+#
+{33140}{}{Pozor!}
+{33141}{}{::zavøel oèi a se zamraèenım vırazem v oblièeji útoèí::}
+{33142}{}{Další útok, u aby to skonèilo...}
+{33143}{}{Kdy uteèeš, budeme to mít všichni jednodušší...}
+{33144}{}{No tak! Uteè!}
+{33145}{}{Kšá! Kšá!}
+{33146}{}{Pøestaò bojovat!}
+{33147}{}{Bu bu bu!}
+{33148}{}{Voníš jako kvìtina?}
+{33149}{}{Pøece se nìjak dohodneme?}
+#
+# target being missed
+#
+{33160}{}{Proè mi chceš ublíit?}
+{33161}{}{Co jsem ti udìlal?}
+{33162}{}{Nemusíme bojovat!}
+{33163}{}{Nechci ti ublíit, prosím pøestaò!}
+{33164}{}{Neubliuj mi! Já ti taky nechci ublíit!}
+{33165}{}{Jsme rozumní dospìlí lidé, nemùeme se nìjak dohodnout?}
+
+############################################
+# 33200 Hovado Hit Locations
+############################################
+#
+# target hit in head
+#
+{33200}{}{Mám zlomenou èelist!}
+{33201}{}{Moje tváø! Au au!}
+{33202}{}{Potom bude jizva, hrome...}
+#
+# target hit in left arm
+#
+{33210}{}{Moje ruka! S tou píšu!}
+{33211}{}{Mùj loket!}
+{33212}{}{Hej! Dávej pozor!}
+#
+# target hit in right arm
+#
+{33220}{}{Ahhh! Aiee! Ahh!}
+{33221}{}{Wahhhh!}
+{33222}{}{Au!  Moje zápìstí!}
+#
+# target hit in torso
+#
+{33230}{}{Dostal jsem to do ledviny!}
+{33231}{}{Mùj ... solar! Nemùu... dıchat!}
+{33232}{}{::kymácí se::}
+{33233}{}{Uffffff!}
+{33234}{}{Tohle opravdu není nutné...}
+{33235}{}{Okej, tohle bolelo.}
+{33236}{}{Ohhh... owwww}
+#
+# target hit in right leg
+#
+{33260}{}{Mùj kotník!}
+{33261}{}{Moje koleno!}
+{33262}{}{Au!}
+#
+# target hit in left leg
+#
+{33270}{}{Oh, moje achilovka! Je pøetrená!}
+{33271}{}{Moje koleno!}
+{33272}{}{Budu kulhat...}
+#
+# target hit in eyes
+#
+{33280}{}{Moje rohovka! Mám ji z oka odtrenou!}
+{33281}{}{Moje oko! Mám znièené oko! Uvìdomuješ si, co to znamená?!}
+{33282}{}{Nevidím! Nevidím!}
+#
+# target hit in groin
+#
+{33290}{}{To...je...ta...nejvìtší...bolest...kterou...}
+{33291}{}{Matko....}
+{33292}{}{::drí se za rozkrok a úpí::}
+{33293}{}{Svatá Matko BOÍ!}
+{33294}{}{Hmmm. Au. Hmmm.}
+{33295}{}{Za chvíli budu v šoku....teï! ÁÁÁ!}
+#
+###############################################################
+#
+# 36000        Special Encounters (Randoms)
+#
+#                   36000 Kaga (Hit Locations)
+#                   36100 Kaga (Combat Messages - Area 1)
+#                   36200 Kaga (Combat Messages - Area 2)
+#                   36300 Kaga (Combat Messages - Area 3)
+#                   36400 Kaga (Combat Messages - Area 4)
+#                   36500 Kaga (Combat Messages - Area 5)
+#                   36600 Super Mutant (Master Army) - Hit Locations
+#                   36700 Super Mutant (Master Army) - Combat Messages
+#                   36800 Bounty Hunters - Combat Messages
+#
+###############################################################
+#
+############################################
+# 36000 Kaga (Hit Locations)
+############################################
+#
+# target hit in head
+#
+{36000}{}{Hoho! Do Kagovy hlavy nìco narazilo!}
+{36001}{}{Au! Hlava bolí mì!}
+{36002}{}{Uf! Kagova hlava jako v ohni jest!}
+#
+# target hit in left arm
+#
+{36010}{}{Moje ruka!}
+{36011}{}{Au! Ještì e je Kaga pravák!}
+{36012}{}{Au!!}
+#
+# target hit in right arm
+#
+{36020}{}{Au, moje ruka}
+{36021}{}{Zlomili mi ruku!}
+{36022}{}{Toho budeš litovat! Do støehu!}
+#
+# target hit in torso
+#
+{36030}{}{(Br...)}
+{36031}{}{Jenom škrábnutí!}
+{36032}{}{Grrr!}
+{36033}{}{Toho budeš litovat! Do støehu!}
+{36034}{}{Nechej toho, dokud se ti daøí!}
+{36035}{}{Dobrá rána. Teï já...}
+#
+# target hit in right leg
+#
+{36060}{}{Au, moje noha!}
+{36061}{}{Za to zaplatíš!}
+{36062}{}{Ah! MOJE NOHA!}
+#
+# target hit in left leg
+#
+{36070}{}{Moje noha!}
+{36071}{}{Unh. Míøíš nìjak nízko!}
+{36072}{}{Do nohy? No to snad ne? Co si o sobì myslíš?}
+#
+# target hit in eyes
+#
+{36080}{}{Mám krev v oèích, do psí díry!}
+{36081}{}{Moje oko! Za to mi zaplatíš!}
+{36082}{}{Bastarde!}
+#
+# target hit in groin
+#
+{36090}{}{Ooooo! Pøestávka, musím si nìco zvednout...}
+{36091}{}{OOOO! Kaga se tenhle útok taky nauèí a pak uvidíš!}
+{36092}{}{Urg! Hej kámo, ty tam dole v gatích? Okej?}
+{36093}{}{To.... vzzzzz. bolelo!}
+{36094}{}{Urp!}
+{36095}{}{Polk!}
+#
+###########################################
+# 36100 Kaga (Combat Messages) Area 1
+# Check for pre attack floats See Kaga.doc
+############################################
+#
+#  running away
+#
+{36100}{}{Ještì se uvidíme!}
+{36101}{}{Já se vrátím...A pak uvidíš!}
+{36102}{}{To je poprvé, co mì nìkdo porazil!}
+{36103}{}{Mám nového koníèka! Dostat tì!}
+{36104}{}{Ještì o mì uslyšíš!}
+{36105}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{36120}{}{Já mìl bıt Vyvolenı! Ne ty!}
+{36121}{}{Arroyo bude litovat, e mì vyhnali!}
+{36122}{}{Pomsta bude MÁ!}
+{36123}{}{Kaga tì pošle do dalšího ivota!}
+{36124}{}{Další Vyvolenı na zabití!}
+#
+# attacking
+#
+{36140}{}{Tvoje maminka ti nepomùe...}
+{36141}{}{To si vychutnám!}
+{36142}{}{Oooo, to muselo bolet!}
+{36143}{}{Tvoji hlavu vezmu zpátky ke Starší!}
+{36144}{}{Seeru ti játra! Doufám, e moc nechlastáš...}
+{36145}{}{Doufám, e nezemøeš tak rychle jako ostatní!}
+{36146}{}{Další Vyvolenı na zabití!}
+{36147}{}{Chcípni! }
+{36148}{}{Øvi. Øvi pro mì.}
+#
+# target being missed
+#
+{36160}{}{Mnì nemùeš ublíit!}
+{36161}{}{Duchové mì ochraòují!}
+{36162}{}{Doufám, e to nebyla tvoje nejlepší rána.}
+{36163}{}{Hahahahaha. Kaga se nemusel ani sehnout!}
+{36164}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{36165}{}{Pomalé, ty uboáku.}
+#
+############################################
+# 36200 Kaga (Combat Messages) Area 2
+# Check for pre attack floats See Kaga.doc
+############################################
+#
+#  running away
+#
+{36200}{}{Ještì se uvidíme!}
+{36201}{}{Já se vrátím...}
+{36202}{}{Nemùeš zabít Kagu Velkolepého!}
+{36203}{}{Máš štìstí! Kaga má ještì další kšeftíky, take pøíštì...}
+{36204}{}{Ty a Kaga se ještì setkáte...}
+{36205}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{36220}{}{A tì zabiju, spálím Arroyo na popel!}
+{36221}{}{Všichni se mì bojí. I ty budeš.}
+{36222}{}{Kaga si tvoji hlavu nechá jako trofej.}
+{36223}{}{Vzdej se a Kaga ti daruje rychlou smrt.}
+#
+# attacking
+#
+{36240}{}{Poci zlost Kagy Ohromného!}
+{36241}{}{Nemusíš se vobtìovat prošením vo slitování. Ale jestli na tom trváš...}
+{36242}{}{To si vychutnám!}
+{36243}{}{OO, Kaga tì skoro lituje...}
+{36244}{}{Tvoji hlavu vezmu zpátky ke Starší!}
+{36245}{}{Vytrhnu ti srdce kapesním noíkem a seeru ho pøed tvıma chladnoucíma oèima!}
+{36246}{}{Doufám, e nezemøeš tak rychle jako ostatní!}
+{36247}{}{Další Vyvolenı na zabití!}
+{36248}{}{Chcípni! }
+{36249}{}{Øvi. Øvi pro mì.}
+#
+# target being missed
+#
+{36260}{}{Mnì nemùeš ublíit!}
+{36261}{}{Duchové mì ochraòují!}
+{36262}{}{Doufám, e to nebyla tvoje nejlepší rána.}
+{36263}{}{Hahahahaha. Kaga se nemusel ani sehnout!}
+{36264}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{36265}{}{Pomalı, uboáku.}
+#
+############################################
+# 36300 Kaga (Combat Messages) Area 3
+# Check for pre attack floats See Kaga.doc
+############################################
+#
+#  running away
+#
+{36300}{}{Tohle zaèíná bıt nepøíjemnı zlozvyk...}
+{36301}{}{Kaga potøebuje ještì trochu potrénovat, tak tøi ètyøi levely...}
+{36302}{}{Já se vrátím. A pak tì zabiju, jako e se Kaga Dokonalı jmenuju!}
+{36303}{}{Máš štìstí! Kaga má ještì další kšeftíky, take pøíštì...}
+{36304}{}{Ty a Kaga se ještì setkáte...}
+{36305}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{36320}{}{Kaga a Vyvolenı se opìt setkávají...}
+{36321}{}{Skonèeme to...}
+{36322}{}{Budeš litovat, e tvá ubohá tìlesná schránka vùbec zaslechla jméno Kaga!}
+{36323}{}{Mé schopnosti se od našeho posledního setkání znìkolikanásobily!}
+#
+# attacking
+#
+{36340}{}{Poci zlost Kagy Ohromného!}
+{36341}{}{To si vychutnám!}
+{36342}{}{OO, Kaga tì skoro lituje...}
+{36343}{}{Tvoji hlavu vezmu zpátky ke Starší!}
+{36344}{}{Vytrhnu ti srdce kapesním noíkem a seeru ho pøed tvıma chladnoucíma oèima!}
+{36345}{}{Doufám, e nezemøeš tak rychle jako ostatní!}
+{36346}{}{Další Vyvolenı na zabití!}
+{36347}{}{Chcípni! }
+{36348}{}{Øvi. Øvi pro mì.}
+#
+# target being missed
+#
+{36360}{}{Mnì nemùeš ublíit!}
+{36361}{}{Duchové mì ochraòují!}
+{36362}{}{Doufám, e to nebyla tvoje nejlepší rána.}
+{36363}{}{Hahahahaha. Kaga se nemusel ani sehnout!}
+{36364}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{36365}{}{Pomalı, uboáku.}
+#
+############################################
+# 36400 Kaga (Combat Messages) Area 4
+# Check for pre attack floats See Kaga.doc
+############################################
+#
+#  running away
+#
+{36400}{}{Tohle zaèíná bıt nepøíjemnı zlozvyk...}
+{36401}{}{Kaga potøebuje ještì trochu potrénovat, tak tøi ètyøi levely...}
+{36402}{}{Kagu ještì uvidíš, na to si vsaï!}
+{36403}{}{Máš štìstí! Kaga má ještì další kšeftíky, take pøíštì...}
+{36404}{}{Ty a Kaga se ještì setkáte...}
+{36405}{}{Za to zaplatíš! Pozdìji!}
+#
+# moving in to attack
+#
+{36420}{}{Vyvolenı se nikdy nevrátí do Arroya!}
+{36421}{}{Kaga tì rozdrtí!}
+{36422}{}{Kaga necítí strach!}
+{36423}{}{Kaga tì nauèí nové triky, které zná...}
+#
+# attacking
+#
+{36440}{}{Poci zlost Kagy Ohromného!}
+{36441}{}{Nehıbej se, a se Kaga trefí kriticky.}
+{36442}{}{To si vychutnám!}
+{36443}{}{OO, Kaga tì skoro lituje...}
+{36444}{}{Tvoji hlavu vezmu zpátky ke Starší!}
+{36445}{}{Vytrhnu ti srdce kapesním noíkem a seeru ho pøed tvıma chladnoucíma oèima!}
+{36446}{}{Doufám e nezemøeš tak rychle, jako ostatní!}
+{36447}{}{Další Vyvolenı na zabití!}
+
+{36448}{}{Chcípni! }
+{36449}{}{Øvi. Øvi pro mì.}
+#
+# target being missed
+#
+{36460}{}{Mnì nemùeš ublíit!}
+{36461}{}{Duchové mì ochraòují!}
+{36462}{}{Doufám, e to nebyla tvoje nejlepší rána.}
+{36463}{}{Hahahahaha. Kaga se nemusel ani sehnout!}
+{36464}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{36465}{}{Pomalı, uboáku.}
+#
+############################################
+# 36500 Kaga (Combat Messages) Area 5
+# Check for pre attack floats See Kaga.doc
+############################################
+#
+#  running away
+#
+{36500}{}{}
+{36501}{}{}
+{36502}{}{}
+{36503}{}{}
+{36504}{}{}
+{36505}{}{}
+#
+# moving in to attack
+#
+{36520}{}{Kaga u je pøipravenı. Zemøeš, Vyvolenı.}
+{36521}{}{Pro Kagu nejsi protivník.}
+{36522}{}{Kaga ukonèí tvou pou.}
+{36523}{}{Budeš Kagovi chybìt.}
+#
+# attacking
+#
+{36540}{}{Poci zlost Kagy Ohromného!}
+{36541}{}{Kaga bude slavnı, tvá smrt ho proslaví v celé zemi...}
+{36542}{}{To si vychutnám!}
+{36543}{}{OO, Kaga tì skoro lituje...}
+{36544}{}{Tvoji hlavu vezmu zpátky ke Starší!}
+{36545}{}{A zde konèí Vyvolenı...}
+{36546}{}{Kaga tì teï musí zabít...}
+{36547}{}{Chcípni! }
+{36548}{}{Øvi. Øvi pro mì.}
+#
+# target being missed
+#
+{36560}{}{Mnì nemùeš ublíit!}
+{36561}{}{Duchové mì ochraòují!}
+{36562}{}{Doufám, e to nebyla tvoje nejlepší rána.}
+{36563}{}{Hahahahaha. Kaga se nemusel ani sehnout!}
+{36564}{}{Nemùeš mì zabít, nejdøív se musíš trefit...}
+{36565}{}{Pomalı, uboáku.}
+#
+#
+############################################
+# 36600 Super Mutant (Master Army) - Hit Locations
+############################################
+#
+# target hit in head
+#
+{36600}{}{Ahhhgh! Mùj oblièej!}
+{36601}{}{Mùj oblièej! Budeš trpìt!}
+{36602}{}{Ahhhgh! Roztrhám tì na kousky!}
+#
+# target hit in left arm
+#
+{36610}{}{Ahhhgh!}
+{36611}{}{Au! Málem jsi mì poranil!}
+{36612}{}{Ahhhgh! Za to ti zlomím krk!}
+#
+# target hit in right arm
+#
+{36620}{}{Ahhhgh!}
+{36621}{}{Au! Málem jsi mì poranil!}
+{36622}{}{Ahhhgh! Za to ti zlomím krk!}
+#
+# target hit in torso
+#
+{36630}{}{Uf!}
+{36631}{}{Grrr!}
+{36632}{}{Za to tì zabiju!}
+{36633}{}{Nemùeš mi ublíit, kdy z tebe bude mrtvola!}
+{36634}{}{Smìju se tvım slabouèkım útokùm!}
+{36635}{}{Oh!}
+{36636}{}{Zabiju! }
+{36637}{}{Grrr! Zaèínáš mì zlobit!}
+{36638}{}{Agh!}
+{36639}{}{Tohle ti vrátím i s úroky!}
+{36640}{}{Uf!}
+{36641}{}{Jauvajs!}
+{36642}{}{Hmm, s tebou budou problémy...}
+{36643}{}{Grr! Na tvoji smrt se u tìším!}
+{36644}{}{Mùeš mì zranit, ale vyhrát nemùeš!}
+{36645}{}{Au! Nebyl dobrı nápad dotıkat se mì!}
+#
+# target hit in right leg
+#
+{36660}{}{Ahhhgh! Moje noha}
+{36661}{}{Tomu øíkáš bolest? Smìju se!}
+{36662}{}{Ahhhgh! Za to ti zlomím krk!}
+#
+# target hit in left leg
+#
+{36670}{}{Ahhhgh! Moje noha}
+{36671}{}{Tomu øíkáš bolest? Smìju se!}
+{36672}{}{Ahhhgh! Za to ti zlomím krk jako vìtvièku!}
+#
+# target hit in eyes
+#
+{36680}{}{Ahhhgh! Mizernı èlovìku! Jsem slepı!}
+{36681}{}{Ahhhgh! Bolest! Bolest! Já ji nemohu cítit!}
+{36682}{}{Ahhhgh! Budu tì muèit mnoho dnù!}
+#
+# target hit in groin
+
+{36690}{}{To je lidská slabost!}
+{36691}{}{Tomu øíkáš bolest? Smìju se!}
+{36692}{}{Jsi idiot, èlovìèe! My jsme nadøazená rasa!}
+{36693}{}{Proè mì mlátíš na tomhle místì?}
+{36694}{}{Budu ti ubliovat a muèit tì, dlouho, dlouho...}
+{36695}{}{Proè mì mlátíš na tomhle místì?}
+#
+############################################
+# 36600 Super Mutant (Master Army) - Combat Messages
+############################################
+#
+#  running away
+#
+{36700}{}{Uteète!}
+{36701}{}{Mì nezabiješ!}
+{36702}{}{Já se vrátím!}
+{36703}{}{Mí pøátelé tì dostanou!}
+{36704}{}{Za to zaplatíš! Zítra!}
+{36705}{}{My jsme Vyvolení, nadøazená rasa! Ty zhyneš!}
+#
+# moving in to attack
+#
+{36720}{}{Tvá smrt pøichází!}
+{36721}{}{Ti, kdo obtìují Vyvolené, u nikoho obtìovat nebudou!}
+{36722}{}{Lidské zbranì mi neublíí! Já jsem nadøazenı, ty lidskı èerve!}
+{36723}{}{Budeš trpìt! Trpìt! Moc!}
+{36724}{}{Kdy bojuju, zabíjím! Tebe zabiju pomalu!}
+{36725}{}{Kdo je tak pitomı, e nás chce obtìovat? Zemøi!}
+{36726}{}{Vidím nepøítele! Zdrtím je ve své pìsti!}
+{36727}{}{Budeš trpìt! Trpìt! Moc!}
+#
+# attacking
+#
+{36740}{}{Nyní zemøeš, èerve!}
+{36741}{}{U tì nikdo nezachrání!}
+{36742}{}{Dám ti bolest! Dám ti jí mnoho! Budeš trpìt dokonce ivota, celou hodinu!}
+{36743}{}{Nyní zemøeš, èerve! Bolestivou smrtí!}
+{36744}{}{Zemøi, lidskı èerve! Zemøi!}
+{36745}{}{Nyní zemøeš, èerve! Zemøeš bolestivou smrtí!}
+{36746}{}{Uij si bolest, nic jiného ti nezùstane!}
+{36747}{}{Rozdrtím tì!}
+{36748}{}{S Vyvolenımi bojovat nemùeš! Rozdrtíme tì jako komára!}
+{36749}{}{Zemøi, èlovìèe! Zemøi, dokud mùeš!}
+#
+# target being missed
+#
+{36760}{}{Proè se snaíš? Odpor je zbyteènı!}
+{36761}{}{Lidé jsou slaboši!}
+{36762}{}{Nemáš ádnou sílu!}
+{36763}{}{Ha ha! Chceš, abych zemøel smíchy, èerve?}
+{36764}{}{To byl útok?}
+{36765}{}{My jsme Vyvolení, èerve!}
+#
+############################################
+# 36800 Bounty Hunter - Combat Messages
+############################################
+#
+#  running away
+#
+{36800}{}{Teï vím, proè tì chtìjí}
+{36801}{}{Já se vrátím!}
+{36802}{}{Ještì o mnì uslyšíš!}
+{36803}{}{Hodní chlapci by mìli vyhrát, sakra...}
+{36804}{}{Hele, proè si o tom nepromluvíme...}
+{36805}{}{Máma mìla pravdu. Pøi téhle práci by èlovìk mohl pøijít o ivot...}
+{36806}{}{Asi zaènu farmaøit...}
+{36807}{}{Kvùli nìjaké pitomì odmìnì pøece neumøu}
+{36808}{}{Prosím, nech mì bıt!}
+{36809}{}{Nemùeme to vyøešit nìjak jinak?}
+{36810}{}{Nezabíjej mì, mám rodinu!}
+{36811}{}{Jsou za tebe hezkı peníze, ale mrtvej si je neuiju...}
+{36812}{}{Jsi bezcitnı vrah!}
+{36813}{}{Zatracenì! U jsem pøišel o víc, ne kolik za tebe dostanu!}
+{36814}{}{Takhle to pøece nemùe skonèit!}
+{36815}{}{Pomote mi nìkdo!}
+{36816}{}{Já bych mìl lovit tebe}
+{36817}{}{Mám peníze! Nech mì bıt a dám ti je!}
+{36818}{}{Do pekla se mi zrovna nechce, take tì nechám konkurenci}
+{36819}{}{Sakra, seš lepší, ne mi øekli}
+#
+# moving in to attack
+#
+{36820}{}{Víš, jak dlouho jsem tì hledal?}
+{36821}{}{Odmìna je za MRTVOLU!}
+{36822}{}{Vzdej se a budeš mít rychlou smrt!}
+{36823}{}{Stopuju tì u nìkolik dnù!}
+{36824}{}{Prachy z odmìny za tvojí hlavu se mi rozhodnì budou hodit....}
+{36825}{}{Utrhnu ti hlavu!}
+{36826}{}{Tvoje hlava má slušnou cenu!}
+{36827}{}{Uiju si tvoji smrt. Jsi hnus, nemáš právo na ivot!}
+{36828}{}{Myslíš si, e ti zabíjení nevinnıch projde?}
+{36829}{}{Odpad jako ty si zaslouí co nejpomalejší smrt}
+{36830}{}{Pøiprav se na smrt!}
+{36831}{}{Pošlu tì pøímo do pekla!}
+{36832}{}{Za tvoji kebuli je poøádná odmìna!}
+{36833}{}{Neber to osobnì, ale zabiju tì!}
+{36834}{}{Další den, další vrah!}
+{36835}{}{Zaplatíš za své zloèiny!}
+{36836}{}{Prı rád zabíjíš nevinné. Zkus to se mnou!}
+{36837}{}{Uvidíme, jestli za tebe není odmìna zbyteènì vysoká.}
+{36838}{}{Oko za oko, zub za zub. A ivot za ivot!}
+{36839}{}{Víš, e za tvoji mrtvolu je vìtší odmìna ne za ivolu?}
+#
+# attacking
+#
+{36840}{}{Zabíjení není tak jednoduchı, kdy se protivník brání, co?}
+{36841}{}{Vyzkoušej si tohle!}
+{36842}{}{Staèí mi tvoje hlava, zbytek si klidnì nech!}
+{36843}{}{Není to taková sranda, jako kdy støílíš po dìtech, co?}
+{36844}{}{Odmìna je moje!}
+{36845}{}{Odmìna za tebe je zbyteènì vysoká. Nevadí.}
+{36846}{}{Bude tì to bolet mnohem víc ne mnì!}
+{36847}{}{Miluju svou práci!}
+{36848}{}{Myslím, e to je zkrátka tvùj osud. Kdo s èím zachází, s tím také schází!}
+{36849}{}{Podíváme se, co v tobì je...}
+{36850}{}{Volej maminku, pošlu tì do pekla za ní!}
+{36851}{}{Tady máš dáreèek od lidí, které jsi zavradil!}
+{36852}{}{Myslíš si, e máš štìstí? Vyzkoušíme to!}
+{36853}{}{Chytej}
+{36854}{}{Chcípni! }
+{36855}{}{Bez slitování!}
+{36856}{}{Zaèni se modlit.}
+{36857}{}{Je mi líto, e tì musím zabít.... jenom kecám!}
+{36858}{}{Pøiprav se, zemøeš!}
+{36859}{}{Doufám, e máš poslední vùli!}
+#
+# target being missed
+#
+{36860}{}{Uau! Pozor, skoro se mì to dotklo!}
+{36861}{}{Hej! To mì skoro trefilo!}
+{36862}{}{Pomohlo by ti, kdybych na sebe nakreslil terè?}
+{36863}{}{Hmm, to šlo na míle vedle...}
+{36864}{}{Promiò, ale ta rána, ta šla na mnì?}
+{36865}{}{Ten kámen, co to dostal, nebyl ani ozbrojenej!}
+{36866}{}{Doufám, e tohle nebyla tvoje nejlepší rána!}
+{36867}{}{Bude to lehèí, ne jsem si myslel.}
+{36868}{}{Radši to polo, nebo si ublííš!}
+{36869}{}{Ha! Vedle!}
+{36870}{}{Blízko, ale poøád je to moc daleko.}
+{36871}{}{Pøíštì zkus míøit!}
+{36872}{}{Moje mám má lepší mušku ne ty!}
+{36873}{}{Ruce se ti musí poøádnì tøást, kdy jdou tvoje rány takhle vedle!}
+{36874}{}{No tak to byla rána od boku.}
+{36875}{}{Ani jsem nemusel uhıbat...}
+{36876}{}{Potøebuješ potrénovat...}
+{36877}{}{Tohle byla fatální chyba...}
+{36878}{}{Buï mám štìstí, nebo seš neschopnej!}
+{36879}{}{Nejbezpeènìjší místo je pøímo pøed tebou, mám takovej dojem.}
+#
+###############################################################
+#
+#                    Party Members
+#
+###############################################################
+#
+#                     Notes
+#
+#                     00-09 Hit in Head
+#                     10-19 Hit in Left Arm
+#                     20-29 Hit in Right Arm
+#                     30-59 Hit in Torso (Generic Non-Called Shot Hit)
+#                     60-69 Hit in Right Leg
+#                     70-79 Hit in Left Leg
+#                     80-89 Hit in Eyes
+#                     90-99 Hit in Groin
+#                     00-19 Running Away
+#                     20-39 Moving in to Attack
+#                     40-59 Attacking
+#                     60-79 Target being Missed
+#
+#                     40000 Sulik **
+#                     40400 Vic
+#                     40800 Cassidy **
+#                     41200 Lenny **
+#                     41600 Marcus **
+#                     42000 Myron **
+#                     42400 Davin
+#                     42800 Miria
+#                     43200 Laddie
+#                     43600 Cyberdog
+#                     44000 Robo-Brain (Idiot/Chimp) **
+#                     44400 Robo-Brain (Human/Cybernetic) **
+#                     44800 Goris **
+#
+###############################################################
+#
+############################################
+# 40000 Sulik
+############################################
+#
+# target hit in head
+#
+{40000}{}{Duchové chtíti ven, ou hlava bolí bolí!}
+{40001}{}{Tma nìjak brzo pøicházeti...}
+{40002}{}{Ó, hezká jizva na ksichtu mém}
+{40003}{}{O, Dìdek Kostìj skoro zlomená vod tı šupa!}
+{40004}{}{Hah, Dìdek Kostìj chytil ránu!}
+{40005}{}{Sulik nepotøebuješ zuba}
+{40006}{}{Sulik eštì jedno ucho míti, to jemu staèí!}
+{40007}{}{Dìdek Kostìj vypadnul! Kde Dìdek?}
+{40008}{}{Slyšeti zvonìní ducha taky?}
+{40009}{}{Ho ho! Hvìzdièka! Moc hvìzdièka!}
+#
+# target hit in left arm
+#
+{40010}{}{Moje kost ona bílá?}
+{40011}{}{Zbraò poøád pouitelná i s jedna ruka, haha!}
+{40012}{}{Jedna ruka pro mu staèiti!}
+{40013}{}{Unngg.}
+{40014}{}{To nebolet. Moc ne.}
+{40015}{}{Sulik, on myslel, neubliovat moc. Teï ale chtít krev!}
+{40016}{}{Sulik nikdy nemìti rád levá ruka.}
+{40017}{}{Teï já a my uvidìti, jak tobì líbiti se bez ruka! }
+{40018}{}{Sulik nelíbiti, e ty na ruku mu šahati! My a já nakopati tobì prdel!}
+{40019}{}{Oho, velká jizzzva na ruka teï!}
+#
+# target hit in right arm
+#
+{40020}{}{A teï my a já urvati tvoje ruka!}
+{40021}{}{Malá bratšíèek od krysa snaiti se více, Sulik necítil nic!}
+{40022}{}{Sulik on zvìdavá, komár píchnul? Dìdek Kostìj øíkati, e oni v jinou dobu roèní tady...}
+{40023}{}{My necítila bolest...zatím}
+{40024}{}{Uh, oh. Sulik necítiti prsta.}
+{40025}{}{Dìdek Kostìj on øíkati my a já silní!}
+{40026}{}{Jdi domù a nemla nás do ruka znovu!}
+{40027}{}{Do ruky pouze a jenom zbabìlci mlátìjí!}
+{40028}{}{Ty poraniti ruka, kterou my chtìli killnout ty....}
+{40029}{}{Na tebe nám jedna ruka bóhatì staèiti}
+#
+# target hit in torso
+#
+{40030}{}{Uf!}
+{40031}{}{Vzduch potvor on nìjak špatnì do bøicha chodí. Èím to?}
+{40032}{}{My cítiti unavená a ospalá...}
+{40033}{}{Oh, my a já jako krevní konzerva! Teèe z nás! A moc!}
+{40034}{}{Dìdek Kostìj on øíkati to tobì neprojde!}
+{40035}{}{My a já ne tak lehcí k zabití, hoho!}
+{40036}{}{Necítíme bolest z rány této.}
+{40037}{}{Duchové oni dìlati nás silná!}
+{40038}{}{Hoho, ty zlomiti mi srdce!}
+{40039}{}{Sulik míti stejnì krve moc....}
+{40040}{}{My mysleti, e s ty my mír nemíti...}
+{40041}{}{Nóhy, oni jakoby ani nebyly, my a já necítiti nóhy!}
+{40042}{}{Tìko dıchati nám, vzduch nìjaká øídká....}
+{40043}{}{My mysleti, toto ono moc nedobré...}
+{40044}{}{Dìdek Kostìj øíkati, ta vìcièka co èouhati ze Sulik, to játro...}
+{40045}{}{Jìšterák my jedli na snídanì, on chtíti ven!}
+{40046}{}{Nám líbiti se vnitønosti na správném místì, ne kdy oni èouhati ven!}
+{40047}{}{Na to my si nikdy nezvykati, nerat toto, nene. I Dìdek Kostìj povídati...}
+{40048}{}{Dìdek Kostìj øíkati, duhové, oni nás zatím ještì nechtít...}
+{40049}{}{Ty udìlati špatná vìc nám a mì. My vrátime ti...}
+{40050}{}{My a já u zaiti horší vìc, ne toto škrábnutí na páteø....}
+{40051}{}{My nechtìti, aby èervená téci z nás!  Šaman! Šaman!}
+{40052}{}{Ty zranila nás, my vrátiti zpìt!}
+{40053}{}{Aiiiiiieeeeee!}
+{40054}{}{Uf Uf! Sulik nelíbila!  Šaman! Šaman!}
+{40055}{}{Duch temnoty u sedìti na ramenì našem, ale on nedostala nás...}
+{40056}{}{Nebe tak jasné nyní...}
+{40057}{}{Dìdek Kostìj nenechati umøít Sulik.}
+{40058}{}{My cítiti nìjak divnì. Zima táhne do bøich, jakto?}
+{40059}{}{Hoho! My a já mìti díru v bøich! Super!}
+#
+# target hit in right leg
+#
+{40060}{}{My u asi nedìlati taneèek pro ducha. Hloupé toto.}
+{40061}{}{Ho, ty hnusná chlap, ty utrhnouti Sulik palec na noze! Díky, Sulik míti kuøíví oko tam!}
+{40062}{}{Noha nás páleti, ale nevadila. My nikam nespìchati!}
+{40063}{}{Kdy my a já zakopnouti, boleti to víc, ne od ty!}
+{40064}{}{My potøebovati jedná noha, by mohli zavraditi tebe, ty hnusobo!}
+{40065}{}{Sulik nemohla choditi, take my a já chytiti tebe a ty nás nosit!}
+{40066}{}{My uvidìti brzo, jak TY ráda máš kulháni, ty gvá-zí-mó-dó!}
+{40067}{}{Oh, to boleti nás. Trochu.}
+{40068}{}{Aaaaiiiiieeeeeee!}
+{40069}{}{Potøebovala silnája medicína na nohu. Šaman! Šaman!}
+#
+# target hit in left leg
+#
+{40070}{}{My a já kulhati? Sulik udìlati berla z tvıch kostìjí!}
+{40071}{}{Kde medicína, kdy Sulik potøebuje? Šaman! Šaman!}
+{40072}{}{Sulik utrhné tvoji nohu! Ty uijeti si toto!}
+{40073}{}{Kost v noha stejnì bílá jako Dìdek Kostìj? Sulik nevìdìti...}
+{40074}{}{Noha ona bolela nás teïkonc. Hmmpfff. Bolest, ona jenom pocit.}
+{40075}{}{To nebıti hezká vìca udìlati moja noha!}
+{40076}{}{Dìdek Kostìj teï poslati bolest do TVOJE noha!}
+{40077}{}{My nekulhati, i kdyby ty nám celá noha urvati! A i kdyby to, my vezmeme tvoji noha!}
+{40078}{}{My chtìla bıt skákavá mu. Hmmm.}
+{40079}{}{Ty chtìla nechati naši nohu na památku? Ty neíti dosta dlouha, aby uila to!}
+#
+# target hit in eyes
+#
+{40080}{}{Bıti tma teïkonc. }
+{40081}{}{My tì ještì slyšeti!}
+{40082}{}{Dìdek Kostìj on vidìti tì a návádìt mì a nás na ty jako rádár!}
+{40083}{}{Ty vzíti oko, Sulik vzíti ivot!}
+{40084}{}{Ty vypicnouti oko Sulik. Boleti nás. GRRRRRRRRRRRR!}
+{40085}{}{Hah, Sulik oèi DVÌ má!}
+{40086}{}{My poøád vidìti ty v naší mysli!}
+{40087}{}{Teï my mnohem silnìjší ne si ty kdy dokázati pøedstavit, chlape!}
+{40088}{}{Ho, teï mi vidìti líp ne gdy pøedtíma! Díky, kámo!}
+{40089}{}{Dìdek Kostìj, on stejnì vidìti líp ne Sulik.}
+#
+# target hit in groin
+#
+{40090}{}{Unnh!}
+{40091}{}{My teï íti v enskája chatrè...}
+{40092}{}{Aaiiiiiiiiieeeeeeee!}
+{40093}{}{My a já u stejnì dìtí dost.}
+{40094}{}{Och, naše eny, oni nešastné moc, kdy Sulik vrátiti se zpìt...}
+{40095}{}{Ty zbabìlá skunx! Ty trefiti Sulik do koula! GR! URÁÁ!}
+{40096}{}{Ty míøiti na velkej cíl. Ne divu, e ty trefil. Sulik vybavenej. Byl.}
+{40097}{}{Dìdek Kostìj on øíka, ty závidìti Sulik jeho vybavení.}
+{40098}{}{Oh, díky, Sulik s ena nebyl dlouho a hórmóna u bouøiti mu se.}
+{40099}{}{My a já potøebovati medicína. Moc medicína. Šaman!}
+#
+#  running away-Note: All of these can be 30 lines long (no more than 400 total lines for the NPC)
+#
+{40100}{}{Sulik vrátiti se hnet, jak on sehnati vìtšíja kvér!}
+{40101}{}{Sulikova maik slabá...}
+{40102}{}{Zlá magia moc silná...}
+{40103}{}{Pøedkové ona varovati Sulik a Sulik poslouchá!}
+{40104}{}{Sulik míti dùleitá schùzka nìkde jinde. Ty vyøídila problém s moje tisková mlufèí...}
+{40105}{}{Sulik musela jíti hned.}
+{40106}{}{Sulik potøebovala na záchod, hned se vrátiti.}
+{40107}{}{Sulik zmásti nepøítele pøedstíranıma ústupama.}
+{40108}{}{Sulik jíti pro pomoc.}
+{40109}{}{Utíkala!}
+{40110}{}{Sulik mysleti, tenhle fajt nemíti cena. Ratši zajíti pro saldáty, oni bojovala za Sulik...}
+{40111}{}{Sulik míti špatná fíling, on radši prásk do bot!}
+{40112}{}{Sulik ještì pøijíti!}
+{40113}{}{Sulik potøebovati pauza.}
+{40114}{}{Sulik hlídati, aby nikdo neutekla.}
+{40115}{}{Sulik postupuje vzad!}
+{40116}{}{Sulik chlapù nebojeti, ale toto oni zlá zlá démon!}
+{40117}{}{Sulik nebojovati zlá démona máskovaná jako chlap!}
+{40118}{}{Sulik ztratiti šastná Geko packa, museti nájít!}
+{40119}{}{Sulik nìco zapomìti, muset najít!}
+#
+# moving in to attack
+#
+{40120}{}{Jou, káma, cítiš rytm?}
+{40121}{}{My máme sílu!}
+{40122}{}{My a já u nás teï silná magie!}
+{40123}{}{Dìdek Kostìj cítiti tvoje strach!}
+{40124}{}{My a já serati tvoje srce!}
+{40125}{}{My cítiti tvoje strach, ty skunx!}
+{40126}{}{Sulik zpívati bojová song!}
+{40127}{}{Duchové, oni teï hlídati nás!}
+{40128}{}{My podíváme jak ty padnouti na zem a vypoustiti ducha!}
+{40129}{}{Tebe èekati dlouhá cesta!}
+{40130}{}{Staré kosti serati tvoje duch!}
+{40131}{}{Sulik další trofej brzo míti!}
+{40132}{}{Pojïa k nám, chlape!}
+{40133}{}{My a já namaèkáme tebe do delé! Mòam!}
+{40134}{}{My a já rozlámati tì na kousíèka! Moc kousíèka, moc malinkej kousíèka!}
+{40135}{}{My pøinášíme ti moc bolest!}
+{40136}{}{De bolest pøicházeti pro ty, káma!}
+{40137}{}{Sulik inkarnace Smrtì! Sulik Smr pro ty si jde!}
+{40138}{}{Ty raèi utíkala jako nìkdo, kdo rychle umí utíkati, protoe jinak Sulik dostati tì!}
+{40139}{}{My a já pøipravená. Zabíjeti, trhati hlava nepøátel a poírat jejich duša!}
+#
+# attacking
+#
+{40140}{}{My rozdrtila ty na masokostní mouèka!}
+{40141}{}{Dìdek øíkati nakopati ti prdel, e ty hovna plivati budeš!}
+{40142}{}{Dìdek milovati zvuk, co ony kosti dìlati, kdy po nich Sulik hopsati!}
+{40143}{}{Dìdek Kostìj pomáhati Sulik! Bij zabij!}
+{40144}{}{Duchové, oni pomáhati mì a nám!}
+{40145}{}{Ty a já, my brzo dívala na krvotrysk!}
+{40146}{}{Dìdek Kostìj on smutná! Já mu udìlati kámo z tvoje kosti!}
+{40147}{}{Dìdek Kostìj øíkati, Sulik, toho hajzl tøeba vykuchati!}
+{40148}{}{My a já zaèínati tanec bolesti! Ty pøidáš k nám?}
+{40149}{}{Sulik jítí tancovati! Na tvoje hlava!}
+{40150}{}{Sulik teï moc moc zlá! Grrrr! Urrrrá! Krleš!}
+{40151}{}{Dìdek zajímavá, jakou bravu krev z tebe má!}
+{40152}{}{U-Suthuuuuu!}
+{40153}{}{My umejeme ruce v tvojí krev!}
+{40154}{}{My dostati chua na èerstvá maso! Dìkovati ty zastavila u nás!}
+{40155}{}{Ty chtíti taneèek s já a Dìdek Kostìj?}
+{40156}{}{My tuná tancovati! Hoj hoj!}
+{40157}{}{My pøipravená k sadistická masakra!}
+{40158}{}{My dostati chua na tvùj krev!}
+{40159}{}{Dìdek Kostìj øíkati: Sulik, zabij! A já Sulik øíkati: Zabíti! Krleš!}
+#
+# target being missed
+#
+{40160}{}{My a já silná maije!}
+{40161}{}{My bezpeèná od tupoun tady, jojo.}
+{40162}{}{Sulik silná maik má!}
+{40163}{}{My a já nejlepèí maika!}
+{40164}{}{Ty netrefiti nás. Ty debilita na dvojech noiškách!}
+{40165}{}{Dìdek Kostìj on udìlala ty netrefiti Sulik! Ha!}
+{40166}{}{Ty útoèiti jako malá dìátka. Sulik ráda dìátka. Na paprice.}
+{40167}{}{To rána na nás, nebo na nìkoho jiného?}
+{40168}{}{Ty míøiti na nás? Hrmpf, ty kecati jako Sulik tchıòa.}
+{40169}{}{Ty potøebovati více moc svatá tráva. A stejnì se netrefiti.}
+{40170}{}{My šastná ty netrefiti nás. Za to zabíti hnedkonc.}
+{40171}{}{Ty taky zmatená z toho co ty dìlati?}
+{40172}{}{Ty radši na cvíèáka trénovati, blboò}
+{40173}{}{Huh? Co to bıti za finta? Sulik neznati!}
+{40174}{}{Hi hi, ty velká komik.}
+{40175}{}{My mysleti ty radši myši chytati, tam ty šanca na pøeít míti.}
+{40176}{}{Dìdek Kostìj zajímati, paèemu zlá lida oni blbá jak pantok.}
+{40178}{}{My zajímati, jestli ty zkusiti jednou ještì?}
+{40179}{}{My mysleti, ty blbìjšá ne vypadati, ale Dìdek Kostìj øíkati, taková blbec ani neegzistovati.}
+#
+############################################
+# 40800 Old Man Cassidy
+############################################
+#
+# target hit in head
+#
+{40800}{}{*Nffff*}
+{40801}{}{*Hrkkk*...Dostal...do hlavy...tady...}
+{40802}{}{*Nfff* skoro...mi...*nfff*...to urvalo kebuli...}
+{40803}{}{Hlava...bolí...jako...prase...}
+{40804}{}{Skoro...skoro mì to dostalo...kebule...se mi toèí...}
+{40805}{}{Nemùu...odpadnout...zùstanu pøi vìdomí...}
+{40806}{}{Eštì jedna rána do šišky a je po mnì....}
+{40807}{}{Ještì, e mám v kebuli tu eleznou destièku, jinak by bylo po mnì...}
+#
+# target hit in left arm
+#
+{40810}{}{Zatracenì! V tøetím roce mì na tom samym místì poøezal jeden divoch.}
+{40811}{}{*Hrkkkk* Levá ...ruka bolí jako prase...}
+{40812}{}{Levá ruka...je na nic...}
+{40813}{}{Mám pocit, e mi to zlomilo...ruku...}
+{40814}{}{Necítím...levou ruku...}
+{40815}{}{*Nfff*...hezkej pokus...ale moje paøáta...chytila horší...}
+{40816}{}{*Nfff*...jenom ruka...je to jenom moje ruka...}
+{40817}{}{*Nfff*...další...zatracená rána do ruky...}
+{40818}{}{Pøišel jsem o svoji zatracenou ruku...}
+#
+# target hit in right arm
+#
+{40820}{}{Zatracenì! Do tı ruky jsem dostal kulku v roce jedna!}
+{40821}{}{*Hrkkkk*...pravá ruka...je na nic...}
+{40822}{}{*Nfff*...hezkej pokus...ale moje paøáta...chytila horší...}
+{40823}{}{Asi mám zlomenou ruku...}
+{40824}{}{Necítím...pravou ruku....}
+{40825}{}{*Nfff*...jenom ruka...je to jenom moje ruka...}
+{40826}{}{Budu...potøebovat....nìjakou lepší... ochranu na ...ruce...}
+{40827}{}{*Nfff*...další...zatracená rána do ruky...}
+{40828}{}{Pøišel jsem o svoji zatracenou ruku...}
+#
+# target hit in torso
+#
+{40830}{}{*Hrrrk*}
+{40831}{}{*Hrkkk*...skoro jsem pøišel o støeva...}
+{40832}{}{Asi mám roztøíštìnı ebro. Dvì...}
+{40833}{}{*Nffff*...zùstanu pøi vìdomí...srce buší...}
+{40834}{}{Nemùu...odpadnout...musím zùstat pøi vìdomí...}
+{40835}{}{Sakra, rána do hrudi...}
+{40836}{}{Otevøelo to tu starou ránu do hrudi...}
+{40837}{}{Bud potøebovat pár dalších štychù na hrudníku...}
+{40838}{}{*Unffff*...vyrazilo...mi to dech...}
+{40839}{}{*Hrkkk*...zatracenì...rána do hrudi...zatracenì...chytá mì srdce...}
+{40840}{}{Jen dıchej, Cassidy...je to akorát rána do hrudi...}
+{40841}{}{*Nfffff*...to mi nìjak...rozhodilo vnitønosti...}
+{40842}{}{Støepina...v hrudníku...zachytila nejhorší...}
+{40843}{}{Budu...*hrkkk*...potøebovat...silnìjší...brnìní... na hrudi...}
+{40844}{}{*Unfffff*}
+{40845}{}{*Unffff* Další...zatracená rána do hrudi...}
+{40846}{}{*Nfff* Potøebuju pomoc...Dostal jsem to do hrudi...je to zlı...}
+{40847}{}{Nemá nìkdo stimy?! Dostal jsem to do bøicha!}
+{40848}{}{*Unnffff* To zlomilo ebro...nebo dvì...}
+{40849}{}{*Nfff*}
+{40850}{}{*Hrkkkk*}
+{40851}{}{Rána do hrudi...srdce buší...}
+{40852}{}{*Hrnnn*...bøicho bude...potøebovat pár štychù...}
+{40853}{}{Asi mám...propíchnutou plíci...}
+{40854}{}{Ignoruj bolest, Cassidy...je to jenom rána do srdce...dr se...}
+{40855}{}{*Urkkkk* to chytilo...srdce...buší...}
+{40856}{}{Servalo mi to trochu masa z ramene...}
+{40857}{}{*Unnnffff*...aludek...}
+{40858}{}{Praskla mi páteø...}
+{40859}{}{Prasklo mi ebro...}
+#
+# target hit in right leg
+#
+{40860}{}{Zatracenì! Do tı nohy jsem to u dostal, v pìtadevadesátım!}
+{40861}{}{*Nfff*...hezkej...pokus...ale moje hnáta u zaila horší.}
+{40862}{}{To mi otevøelo starou ránu pod kolenem...}
+{40863}{}{Budu muset pøenıst váhu na levou...}
+{40864}{}{*Nffff*...pravá noha...na nic...}
+{40865}{}{Nemùu...necítím...pravou nohu...}
+{40866}{}{*Nfff*...další...zatracená díra v noze...}
+{40867}{}{A koleno je v prdeli, sakra...}
+#
+# target hit in left leg
+#
+{40870}{}{Zatracenì! Do tı nohy jsem to u dostal, v šestadevadesátım!}
+{40871}{}{*Nfff*...hezkej...pokus...ale moje hnáta u zaila horší.}
+{40872}{}{To mi otevøelo starou ránu pod kolenem...}
+{40873}{}{Budu muset pøenıst váhu na pravou...}
+{40874}{}{*Nffff*...levá noha...na nic...}
+{40875}{}{Nemùu...necítím...levou nohu...}
+{40876}{}{*Nff*...další...zatracená díra v noze...}
+{40877}{}{A koleno je v prdeli, sakra...}
+#
+# target hit in eyes
+#
+{40880}{}{*Hrrrkkk*}
+{40881}{}{*Hrnnn*...moje...oko...}
+{40882}{}{Dostals...jenom...*Nfff*...jedno moje oko. *Hrkkk* Já si vezmu obì tvoje....}
+{40883}{}{Moje oko....nevidím}
+{40884}{}{Nemùu...vidím rudì...}
+{40885}{}{Nemusím...vidìt...abych...tì mohl...zabít}
+{40886}{}{To bylo sklenìnı voko...}
+#
+# target hit in groin
+#
+{40890}{}{Trefil mì do koulí. Tak to je novej trik, fakt.}
+{40891}{}{Zatracenì, dostal jsi moje rodinné klenoty!}
+{40892}{}{ádnı rány pod pás!}
+{40893}{}{Mùj pták u zail horší...}
+{40894}{}{Tref mì tam ještì jednou a já tì zabiju dvakrát!}
+{40895}{}{*Hrrrkkk*}
+{40896}{}{*Nffff*}
+{40897}{}{Budu si muset poøídit suspenzor...}
+{40898}{}{Na koule mi nešahej, bastarde!}
+{40899}{}{*Hrrrkk...zahrajeme si... kulièky...?!}
+#
+#  running away
+#
+{40900}{}{Èas na starej dobrej strategickej ústup...}
+{40901}{}{To je naposled, co jdu do boje s tak slabım brnìním.}
+{40902}{}{Pøíštì to schytáš, zmrde...}
+{40903}{}{Pøíštì si vezmu zasranej raketomet... a víc stimù.}
+{40904}{}{Kdybych tak byl jenom vo dvacet let mladší, tenhle fajt bych zvládnul...}
+{40905}{}{Pìknì mì zøídili, bastardi...}
+{40906}{}{Další koma u bych ve svejch letech nezvládnul, take pryè...}
+{40907}{}{Ta hlavní finta, jak pøeít, je vìdìt, kdy vzít nohy na ramena....}
+{40908}{}{Nepøeil bych tak dlouho, kdybych nevìdìl, e obèas je tøeba prásknout do bot...}
+{40909}{}{Jdu se nìkam schovat, bude bouøka...}
+{40910}{}{Poèkej, musím popadnout druhej dech...}
+{40911}{}{Ta zatracená váleèná rána se zase otevøela...}
+{40912}{}{Sorry, kámo, ale u toho víc nevydrím...}
+#
+# moving in to attack
+#
+{40920}{}{Máš tak deset vteøin na vodhození zbranì a zvednutí paøátù do vzduchu...}
+{40921}{}{Vypadá to, e jdeme z boje do boje...}
+{40922}{}{Èas napravit další omyl matky pøírody...}
+{40923}{}{Atomovky vás mìly vyhladit všechny...}
+{40924}{}{Zkopu ti tu tvoji prdel do bezvìdomí}
+{40925}{}{Zasranej zkurvysynu}
+{40926}{}{*Huf*...Já asi...*Huf*...potøebuju...*Huf*.... víc akèních bodù.}
+{40927}{}{S takovou brzo zdechneš...}
+{40928}{}{U teï seš mrtvej zkurvysyn, kdy ses rozhodl dát se s náma do boje...}
+{40929}{}{A teï ti Cassidy ukáe, jak se to dìlá u nás doma...}
+#
+# attacking
+#
+{40940}{}{Škoda, e to nepøeiješ, jinak bych tì tuhle fintu nauèil...}
+{40941}{}{Vybiju ti zuby a udìlám si z nich hrací kostky...}
+{40942}{}{Není ti nic, co by nedokázal vyléèit kritickej do oka.}
+{40943}{}{Zabiju tì, pak tì oivím a pak si to zase zvopáknem...}
+{40944}{}{Mám tvı èíslo, ty buzerante...}
+{40945}{}{Seš mrtvá liška...}
+{40946}{}{Podìlanej zkurvysyn. To seš ty.}
+{40947}{}{Dej si, posero.}
+{40948}{}{Máš moc sádla, pùjè mi nìjakı.}
+{40949}{}{Nejsme zvyklí bojovat s nìkım, kdo se brání, co?}
+{40950}{}{Není nad pár otevøenıch zlomenin, aby si jeden uvìdomil, jakej je ivot...}
+{40951}{}{Nemìj péèi, budu tvoji vdovu oprašovat za tebe, a tady nebudeš...}
+{40952}{}{Myslím, e poøádnej vıprask ti jenom prospìje...}
+{40953}{}{Je èas zbavit tì té mizérie, které øíkáš ivot...}
+{40954}{}{Tak, teï trochu proèistíme lidskej genom vod odpadu...}
+{40955}{}{Doufám, e u máš vybranej flek na hrob...}
+{40956}{}{Jestli chceš zdechnout, seš na správnım místì.}
+{40957}{}{Namelu tì na karbenátky...}
+{40958}{}{Jsem tvoje nejhorší noèní mùra, kámo.}
+{40959}{}{Jediná rána a hned uvidíš. Nebo spíš neuvidíš...}
+#
+# target being missed
+#
+{40960}{}{Fakt. Pes, kerej štìká, nekouše...}
+{40961}{}{Dneska ne, kámo.}
+{40962}{}{Seš pomalejší ne tıden zdechlá elva.}
+{40963}{}{Máš písek v oku nebo co?}
+{40964}{}{Ty míøíš, já zabíjím.}
+{40965}{}{Na tos nikdá nemìl...}
+{40966}{}{Aha, tak ty seš blbej *A* slepej!}
+{40967}{}{Netrefils mì jenom vo pùl metra!}
+{40968}{}{Seš slepej jako krtek...}
+{40969}{}{Nìjak ti to míøení nejde. Pøíštì se trefíš do vlastní kebule}
+{40970}{}{Sakra, já jsem zkamenìlina, a stejnì míøím líp ne ty!}
+{40971}{}{Je to blbı, e TY nemùeš pouít funkci LOAD, co?}
+{40972}{}{Au au, to by mì asi bolelo, kdybys mì teda trefil.}
+{40973}{}{Dám ti radu: pøíštì zkus trefit cíl, na kterı míøíš!}
+{40974}{}{Skoro...Vo kilometr do leva, a bude to fajn.}
+{40975}{}{Vedle jak ten smrèek...}
+{40976}{}{Druhou šanci nedostaneš.}
+{40977}{}{Pomalej posera, asi má prdel slepenou zaschlejma hovnama...}
+{40978}{}{Asi ti bude muset Cassidy ukázat, jak to dìláme u nás ve mìstì.}
+{40979}{}{Asi by sis mìl najmout ochranku, jestli chceš bojovat takhle dál...}
+#
+############################################
+# 41200 Lenny
+############################################
+#
+# target hit in head
+#
+{41200}{}{Bolí mì hlava.}
+{41201}{}{Bla bla ble? Aha, tady je ten kousek mozku, co mi vypadnul...}
+{41202}{}{Do hlavy? Jo do, hlavy. Au.}
+{41203}{}{Vidím hvìzdièky.}
+{41204}{}{Ach boe, asi jsem pøišel o zbytek vlasù...}
+{41205}{}{Hele, to mì mohlo zabít!}
+{41206}{}{Uf, tìsnì. Málem jsem mìl tøetí oko.}
+{41207}{}{Tys mi pomaèkal tváø!}
+{41208}{}{Tumáš, vem si kousek mojí mysli.}
+{41209}{}{Uh, oh. Nic si nepamatuju!}
+#
+# target hit in left arm
+#
+{41210}{}{Sbohem, mùj skvìlı bekhende...}
+{41211}{}{Hah, hah. Špatná ruka, gumo!}
+{41212}{}{Ack! To bolelo!}
+{41213}{}{Doktora! Oh, to jsem vlastnì já! Heh, heh.}
+{41214}{}{ta ruka mi stejnì na nic nebyla.}
+{41215}{}{Jau!}
+{41216}{}{Odzbrojili mì!}
+{41217}{}{Na tebe mi staèí jeden prst!}
+{41218}{}{A palec jde do háje...}
+{41219}{}{U jsem mìl tu ruku stejnì skoro celou uhnilou.}
+#
+# target hit in right arm
+#
+{41220}{}{No, take s tenisem to moc dobøe nevidím.}
+{41221}{}{Ouvej, to bolelo.}
+{41222}{}{Odzbrojili mì!}
+{41223}{}{Tak, a kuleèník u si asi nezahraju.}
+{41224}{}{Na kurtu jsem asi skonèil. Druhı Lendl u ze mì nebude...}
+{41225}{}{A moje skvìlé podání u asi nikdo neuvidí.}
+{41226}{}{Mám zlomené zápìstí!}
+{41227}{}{Ten praskavı zvuk asi znamená nìco nedobrého...}
+{41228}{}{Dával jsem pøednost pøedchozímu uspoøádání kostí v mé ruce...}
+{41229}{}{Zatracenì, zase o prst míò.}
+#
+# target hit in torso
+#
+{41230}{}{Doktora! Potøebuju...Oh, to jsem já. Oops.}
+{41231}{}{Mám ebro. Na zemi.}
+{41232}{}{Arrrg! Moje bøicho!}
+{41233}{}{A mùj mìchıø je dìravej.}
+{41234}{}{Heh, heh, Proletìlo to skrz, nic jsem necítil.}
+{41235}{}{Lékaøi, uzdrav se!}
+{41236}{}{Uh, oh, to byla váná rána.}
+{41237}{}{Hej, máme tady krvácení! A jsem to já!}
+{41238}{}{Chce nìkdo vidìt nìco z mé anatomie?}
+{41239}{}{Nic nedokáe jednoho rozzuøit, jako kdy pøijde o dva metry støev.}
+{41240}{}{Abys pochopil ivot, musíš vyjebat se smrtí. Mnì se to teï podaøilo...}
+{41241}{}{Arrrrrrgh! Moje páteø.}
+{41242}{}{Jo, tohle je docela dobrı zpùsob, jak ztrácet pøebyteèná kila.}
+{41243}{}{Moje nohy, necítím nohy!}
+{41244}{}{Najednou se udìlalo nìjak chladno...}
+{41245}{}{Další zatracená jizva...}
+{41246}{}{Tak tohle jsem opravdu nepotøeboval...}
+{41247}{}{Ach jo, zase si budu muset sešívat kùi...}
+{41248}{}{Kdyby moje orgány u dávno nebyly naloené v lihu v laborce, bolelo by mì to.}
+{41249}{}{Sakra, díra. Musím ji ucpat, ne mi tam nalezou mouchy.}
+{41250}{}{Do prdele Chytil jsem mravence!}
+{41251}{}{Netušil jsem, e jsem tak vyschlı.}
+{41252}{}{Zatracenì, nemùete mi nìkdo pùjèit kus obvazu? Nìco ze mì leze...}
+{41253}{}{(Uch kuch, vzzzzzzz)}
+{41254}{}{Vstupní rána, vıstupní rána, hurá, mám kompletní sadu!}
+{41255}{}{Zatracenì, mùete mi øíkat pan Cedník...}
+{41256}{}{Hmm, stejnì jsem potøeboval poškrábat.}
+{41257}{}{Utrhli mi bradavku!!!!!!}
+{41258}{}{Ne dík, tam u jsem se holil...}
+{41259}{}{Lepší ne liposukce!}
+#
+# target hit in right leg
+#
+{41260}{}{Ta noha stejnì za nic nestála.}
+{41261}{}{Øíkejte mi Kulhoun.}
+{41262}{}{Teï potøebuju ještì papouška a pásku pøes oko.}
+{41263}{}{Hele, ono to ještì neodpadlo všechno?}
+{41264}{}{Ach jo, kulhám ještì víc...}
+{41265}{}{Ty prsty stejnì nepotøebuju...}
+{41266}{}{Tak, tenhle starı ghoul u si moc nezatancuje...}
+{41267}{}{Koleno koleno, kdo chce koleno?}
+{41268}{}{Hmmm, moná se to ještì bude dát pøišít...}
+{41269}{}{Ne! Moje krásné koené boty!}
+#
+# target hit in left leg
+#
+{41270}{}{Hmm, se stepováním mám utrum.}
+{41271}{}{Ta noha stejnì u skoro odpadla sama.}
+{41272}{}{Díky za tu nohu. U mi ji stejnì proírala gangréna.}
+{41273}{}{Hej, teï budu kulhat!}
+{41274}{}{Hm hm. To byla sice døevìná noha, ale stejnì to bolelo...}
+{41275}{}{Pùjèí mi nìkdo kus prkna a pár høebíkù, a se mùu stlouct dohromady?}
+{41276}{}{Ha, na co je mi èéška!}
+{41277}{}{A palec jde do háje...}
+{41278}{}{Jau, moje noha! Kde je?}
+{41279}{}{Necítím nohu!}
+#
+# target hit in eyes
+#
+{41280}{}{Poøídím si pásku na oko a mùete mi øíkat Nick Dangerous.}
+{41281}{}{Arrrr, kámo, a mi vyhrkly slzy do oka.}
+{41282}{}{Oko, joj, moje oko!}
+{41283}{}{Kdo zhasnul?}
+{41284}{}{Mám na tobì oko, vrátíš mi ho?}
+
+{41285}{}{Stejnì mám lepší sluch ne zrak!}
+{41286}{}{Ha, to bylo moje sklenìné oko!}
+{41287}{}{Oko za oko!}
+{41288}{}{Matko? Je nìjak tma...}
+{41289}{}{Moje oko! Teï je na øadì tvoje oko!}
+#
+# target hit in groin
+#
+{41290}{}{Kdyby mi nìjaké koule zbyly, asi bych se zlobil...}
+{41291}{}{U se do snìhu nepodepíšu. Hmm.}
+{41292}{}{Ghoulí varlata, nedá si nìkdo?}
+{41293}{}{A je ze mì tenor...}
+{41294}{}{Ou-jej!}
+{41295}{}{Jouvej auvej!}
+{41296}{}{Ghoulice stejnì nejsou, take mi to zas tak nevadilo...}
+{41297}{}{Tak tohle rozhodnì nabouralo mùj styl...}
+{41298}{}{Z bıka na vola jedinou ránou...}
+{41299}{}{Hmm, mám skvìlou kvalifikaci jako harémovı stráce...}
+#
+#  running away
+#
+{41300}{}{Uh, oh, moje pavouèí smysly mì varují....}
+{41301}{}{Zatracenì, mají kryptonit. Mizím!}
+{41302}{}{Nikdo mi neøekl, e to bude tak nebezpeèné!}
+{41303}{}{Coe, oni jsou ozbrojení?}
+{41304}{}{Uteètéééééé!}
+{41305}{}{Kdo uteèe vyhraje!}
+{41306}{}{Útoèím!!!!!!}
+{41307}{}{Moje superschopnosti jsou proti tìmto protivníkùm neúèinné!}
+{41308}{}{Uh, sorry, ale mám sjednanou schùzku kvùli toho konì...}
+{41309}{}{Hned jsem zpátky, neèekejte na mì...}
+{41310}{}{Ne, ne, ne. Jdìte napøed, já vás dohoním...}
+{41311}{}{Sorry, ale musím na terapii. Èau.}
+{41312}{}{A potom jsme šli dovnitø do toho obrovského králíka a pak...}
+{41313}{}{Jeíši Kriste! Uteète!}
+{41314}{}{Pro lásku boí, dostaòte mì odtud!}
+{41315}{}{Prosím, nechte mì ít!}
+{41316}{}{Oh, prosím, prosím, prosím, prosím.}
+{41317}{}{Noièky zdrhejte! Nesmíte mì zklamat!}
+{41318}{}{Kapitán opouští loï poslední, ale já nejsem kapitán!}
+{41319}{}{Nohy na ramena!}
+#
+# moving in to attack
+#
+{41320}{}{Mám z toho nìjakı špatnı pocit...}
+{41321}{}{Mùj pavouèí smysl cinká na poplach...}
+{41322}{}{Je to jenom králík...}
+{41323}{}{Jak velké to má zuby?}
+{41324}{}{Jo, u by mìli bıt strachy bez sebe!}
+{41325}{}{Pozor, já u jdu!}
+{41326}{}{Pøipravenej, nebo ne, já letím na tebe!}
+{41327}{}{Lenny zachraòuje!}
+{41328}{}{Vute fotiše! Louíme kuálíky!}
+{41329}{}{Nejsem si jistı, jestli je to dobrı nápad.}
+{41330}{}{Jdi napøed, já tì budu krıt zezadu.}
+{41331}{}{Nevím, vypadá to docela nebezpeènì...}
+{41332}{}{Jste si jistí, e je to opravdu nezbytné?}
+{41333}{}{No, kdy to jinak nejde.}
+{41334}{}{Nevím nevím,jestli se pro takové vìci hodím...}
+{41335}{}{Hej, jeden by se mohl takhle docela vánì zranit, take pozor..}
+{41336}{}{Není tady jinı zpùsob, jak to vyøešit?}
+{41337}{}{Nemùeme se nìjak domluvit?}
+{41338}{}{Tady bude nìkdo zranìnı. Nejspíš já...}
+{41339}{}{Øeknìte mi, a budu moct otevøít oèi...}
+#
+# attacking
+#
+{41340}{}{Hai-kıbáá!}
+{41341}{}{Støílí a zasahuje!}
+{41342}{}{...a davy šílí!}
+{41343}{}{Tøeste se strachy, mocnı Lennyman pøichází!}
+{41344}{}{Jo, a kdo je tady teï tvrïák, ha?}
+{41345}{}{Dostaneš ji!}
+{41346}{}{Oivím tì!}
+{41347}{}{Zbiju tì, ty sráèi!}
+{41348}{}{Na *šílenıho* Lennyho si nikdo dovolovat nebude!}
+{41349}{}{Radši se na to vykašli, nebo uvidíš...}
+{41350}{}{Dokázal jsem to! Já to vánì dokázal!}
+{41351}{}{Ty mì nenávidíš, ty mì fakt nenávidíš!}
+{41352}{}{Haj-jáá!}
+{41353}{}{Tak, a teï tì nauèím!}
+{41354}{}{Ou jééé!}
+{41355}{}{Tumáš!}
+{41356}{}{Dej si ještì!}
+{41357}{}{Bifff!!}
+{41358}{}{Prásk!!}
+{41359}{}{Bumbác!!}
+#
+# target being missed
+#
+{41360}{}{Heh, heh, zmátl jsem tì.}
+{41361}{}{Uf, to bylo tìsné.}
+{41362}{}{Hej, dávej si pozor, málem jsem to dostal!}
+{41363}{}{Oj jej!}
+{41364}{}{U ha hah ah ha!}
+{41365}{}{Vedle!}
+{41366}{}{Ano!}
+{41367}{}{Kup si brejle, hovado!}
+{41368}{}{Tos neèekal, co?}
+{41369}{}{Ha Ha! Nestíháš!}
+{41370}{}{Tenhle starej ghoul je na tebe kapku moc, co?}
+{41371}{}{Vypadáš tvrdì. Jenom vypadáš.}
+{41372}{}{Co to bylo?}
+{41373}{}{Tohle není ádná šaráda!}
+{41374}{}{Musíš se soustøedit. Síla je s tebou.}
+{41375}{}{Hele, to snad dokáeš líp i ty, ne?}
+{41376}{}{Oh, zkus to znovu.}
+{41377}{}{Líp to neumíš? Fakt? Uf, u jsem se zaèínal bát.}
+{41378}{}{Dej do toho srdce...}
+{41379}{}{Ty se vùbec nesnaíš!}
+#
+############################################
+# 41600 Marcus
+############################################
+#
+# target hit in head
+#
+{41600}{}{Oooh, mùj mozek.}
+{41601}{}{Dobrı boe!}
+{41602}{}{Moje hlava.}
+{41603}{}{Zail jsem horší....}
+{41604}{}{Tomu øíkáš zásah?}
+{41605}{}{Ty si teda troufáš!}
+{41606}{}{Tak, a s fér hrou jsem skonèil...}
+{41607}{}{faj. Tak dobøe. Zemøeš.}
+{41608}{}{Ay-yi-yi!}
+{41609}{}{Supermutantí hlava je odolnìjší, ne vypadá!}
+#
+# target hit in left arm
+#
+{41610}{}{Jauvajs!}
+{41611}{}{Mùj loket!}
+{41612}{}{Hihi! Lechtá!}
+{41613}{}{Hmm, nìco se ve mnì zlomilo?}
+{41614}{}{Okay, tohle u není sranda.}
+{41615}{}{Mùj biceps!}
+{41616}{}{Mùj triceps!}
+{41617}{}{Au, moje zápìstí!}
+{41618}{}{Jestli u nebudu moct psát na stroji, zabiju tì!}
+{41619}{}{Hej! Tou rukou píšu!}
+#
+# target hit in right arm
+#
+{41620}{}{Au, moje ruka, tou støílím!.}
+{41621}{}{Mùj loket!}
+{41622}{}{Matko boí!}
+{41623}{}{Pøi tréninku jsem dostal horší!}
+{41624}{}{To mìlo bolet?}
+{41625}{}{Hmm, píchla mì vèela...}
+{41626}{}{Asi jsem se nìkde škrábnul....}
+{41627}{}{Jauvajs! Zatracenì!}
+{41628}{}{Mùj biceps!}
+{41629}{}{Mùj triceps!}
+#
+# target hit in torso
+#
+{41630}{}{Matko boí!}
+{41631}{}{Pøi tréninku jsem dostal horší!}
+{41632}{}{Hm, škrábanec.}
+{41633}{}{Jauvajs! Zatracenì!}
+{41634}{}{Uf!}
+{41635}{}{Moje játra!}
+{41636}{}{aludek mám jako na vodì.}
+{41637}{}{Nech mì, a to tu laskavost oplatím.}
+{41638}{}{U toho mám DOST!}
+{41639}{}{Poøád se bavíš?}
+{41640}{}{Nech toho!}
+{41641}{}{Fakt si myslíš, e jsi tvrïák?}
+{41642}{}{Násilí nikdy nic nevyøeší.}
+{41643}{}{Au!}
+{41644}{}{Nech toho.}
+{41645}{}{Tak, a víc u ti nedovolím.}
+{41646}{}{Já nejsem veselej mutant. Teï jsem zuøivej mutant!}
+{41647}{}{Au! Nech toho.}
+{41648}{}{Boe! Mùj aludek!}
+{41649}{}{Mùj ... solar! Nemùu... dıchat!}
+{41650}{}{Mùj apendix!}
+{41651}{}{Trochu ní a byl bych sterilní.}
+{41652}{}{Fakt jsi mì nasral!}
+{41653}{}{Zatracenì, ledvinu ne!}
+{41654}{}{Ty malej skunku...}
+{41655}{}{Pøestaò mi ubliovat!}
+{41656}{}{To byla velká chyba...}
+{41657}{}{:: uffffff::}
+{41658}{}{Vyrazili mi dech, svinì!}
+{41659}{}{Za tohle mi zaplatíš!}
+#
+# target hit in right leg
+#
+{41660}{}{Asi budu kulhat...}
+{41661}{}{Ooh, moje stehno.}
+{41662}{}{Moje koleno!}
+{41663}{}{Øekl jsem nech toho!}
+{41664}{}{Asi tì poskáèu!}
+{41665}{}{Oh, moje nemocná noha!}
+{41666}{}{Hmm, teï bude dost tìké, zkopat ti tu tvoji prdel, ale já to zvládnu.}
+{41667}{}{Au!}
+{41668}{}{Hej!}
+{41669}{}{Idiote!}
+#
+# target hit in left leg
+#
+{41670}{}{Matko....!}
+{41671}{}{Moje koleno!}
+{41672}{}{Mùj kotník!}
+{41673}{}{Moje lıtko!}
+{41674}{}{Do prdele!}
+{41675}{}{Zatracenì!}
+{41676}{}{A bude jizva...}
+{41677}{}{Au!}
+{41678}{}{Zasranej normál...}
+{41679}{}{Hej!}
+#
+# target hit in eyes
+#
+{41680}{}{Aaah!}
+{41681}{}{Nevidím! Nevidím!}
+{41682}{}{Moje duhovka!}
+{41683}{}{Moje rohovka!}
+{41684}{}{Arrr!}
+{41685}{}{Doktora!}
+{41686}{}{Podejte mi pásku na oko!}
+{41687}{}{Moje oko! Kde je?}
+{41688}{}{Moje víèko! Jak teï budu mrkat na holky?}
+{41689}{}{Au, sakra, au, do oka, sakra.}
+#
+# target hit in groin
+#
+{41690}{}{Do prdele! A teï jsem sterilní!}
+{41691}{}{Aieeeeeeeee!}
+{41692}{}{Moje varlata!}
+{41693}{}{Oh... boe...}
+{41694}{}{Au. Au. AU!}
+{41695}{}{Bolí, bolí...}
+{41696}{}{Bolest... bolest...}
+{41697}{}{::popadá dech::}
+{41698}{}{To...bolí...}
+{41699}{}{Oh,to bolelo!}
+#
+#  running away
+#
+{41700}{}{Seru na vás kluci, já jdu dom..}
+{41701}{}{Nikdy by mì nenapadlo, e pøijde den, kdy...}
+{41702}{}{Pitomı ::mumly mumly::}
+{41703}{}{Strategickı ustup! Pryè!}
+{41704}{}{Jsem nasranej mutant!}
+{41705}{}{V ústupu není nic neèestného.}
+{41706}{}{Ouva. Pryè!}
+{41707}{}{Doprdele. Musím si odskoèit.}
+{41708}{}{Tohle není správné!}
+{41709}{}{Vezmem to zezadu!}
+{41710}{}{Ústup! Ustupte!}
+{41711}{}{Tak pojïte, vy sráèi! Ale nìkam jinam!}
+{41712}{}{Vypadnìme odtud!}
+{41713}{}{Noièky, nezklamte mì!}
+{41714}{}{Bohové... kdyby mì tak vidìli ostatní mutantové...}
+{41715}{}{::Zatøásl hlavou a dal se na útìk::}
+{41716}{}{Nikdy jsem neutíkal. No, všechno je jednou poprvé.}
+{41717}{}{Asi stárnu.}
+{41718}{}{Co to sakra dìlám?}
+{41719}{}{A jdu na to...}
+#
+# moving in to attack
+#
+{41720}{}{Mám tu pro tebe nìco, mrtvolo! Ratatata!}
+{41721}{}{Chceš? Tumáš!}
+{41722}{}{Zkoušíš vysrat se špatnım chlapem, mrtvolo!}
+{41723}{}{To si vychutnám!...}
+{41724}{}{Nohy, ruce, hlava... všechno ti to narvu do prdele.}
+{41725}{}{Sehni se, kámo...}
+{41726}{}{Tohle bude sranda.}
+{41727}{}{Øiokop pøichází na scénu! Spas se, kdo mùeš!}
+{41728}{}{Idioti! Uteète!}
+{41729}{}{No tak! Uteè!}
+{41730}{}{Nenu mì k tomu!}
+{41731}{}{Na tebe je škoda plıtvat nábojema, zabiju tì holejma rukama!}
+{41732}{}{Ale do prdele? Vypadá to, e jsi v podsile! To jako e my máme pøesilu!}
+{41733}{}{A problém pøichází. Jakı problém? Tvùj problém!}
+{41734}{}{Další záøez na pabu? S takovou si budu muset brzo poøídit novou!}
+{41735}{}{Radši zdrhej, sráèi.}
+{41736}{}{Zbrani, seznam se s nepøítelem. Nepøíteli? Tohle je moje zbraò, seznamte se.}
+{41737}{}{Teï si pøedstav ten pocit, jakej budeš mít, kdy ti tuhle pìst narvu do krku!}
+{41738}{}{Tohle tì bude bolet, na to si vsaï!}
+{41739}{}{Tohle tì bude bolet mnohem víc ne mnì.}
+#
+# attacking
+#
+{41740}{}{Tak... tady... MÁŠ!}
+{41741}{}{Jako za starıch èasù.}
+{41742}{}{Hlavo, potkej prdel.}
+{41743}{}{Zdechni hovnocuce!}
+{41744}{}{Proè si nelehneš a nezdechneš?}
+{41745}{}{Vzdáváš se? Pozdì!}
+{41746}{}{Padni, sráèi!}
+{41747}{}{Uij si to, ty dìátko.}
+{41748}{}{Líbí se ti to?}
+{41749}{}{Chceš víc?}
+{41750}{}{A u je to tady!}
+{41751}{}{Nìkteøí jsou nepouèitelní.}
+{41752}{}{Obèas mì násilí nudí.}
+{41753}{}{Máš pøíbuzné?}
+{41754}{}{Kdy ti naposled nìkdo naplácal na prdel?}
+{41755}{}{Chris Avellone tì miluje!}
+{41756}{}{Pojï sem, a tì mùu obejmout.}
+{41757}{}{Dej si, kámo..}
+{41758}{}{Pozdrav ode mì Svatıho Petra!}
+{41759}{}{Jedna pìst, druhá pìst, do hlavy se nechcou vlézt...}
+#
+# target being missed
+#
+{41760}{}{Líp to neumíš?}
+{41761}{}{Dej mi vìdìt, kdy se mám zaèít bát.}
+{41762}{}{Další.}
+{41763}{}{O nièem.}
+{41764}{}{bzzt! A je to vedle!}
+{41765}{}{Vzdej to, kámo.}
+{41766}{}{Zív.}
+{41767}{}{Amatére.}
+{41768}{}{Nic si z toho nedìlej, uèenej z nebe nespad.}
+{41769}{}{Jen vydr, moná se ti to jednou podaøí.}
+{41770}{}{U? Aha, zase vedle.}
+{41771}{}{Dal bych si pivo, je tu nìjaká nuda.}
+{41772}{}{ádnı vzrušení?}
+{41773}{}{Oh! jo tak ty míøíš na MNE!}
+{41774}{}{Takovı trefy, to si musíš trénovat, ne?}
+{41775}{}{Dík, zkus to znovu.}
+{41776}{}{Tohle není ono.}
+{41777}{}{::dívá se na hodinky a zívá::}
+{41778}{}{Není tohle násilí zbyteèné?}
+{41779}{}{Nemùeme se nìjak domluvit?}
+#
+############################################
+# 42000 Myron
+############################################
+#
+# target hit in head
+#
+{42000}{}{ignoruj  bolest v hlavì ignoruj  bolest v hlavì }
+{42001}{}{Aighh! Mám krev po celém oblièeji! Pomóc! Stimpak! Pomóc!}
+{42002}{}{MOJE HLAVA! MOJE HLAVA! DOSTAL JSEM TO DO HLAVY! Pomóc! Pomóc!}
+{42003}{}{Oooooooh. A pár inteligenèních bodù šlo do vìènıch loviš.}
+{42004}{}{To v moji ruce, není to kousek mojeho mozku?}
+{42005}{}{Kam zmizelo moje ucho?}
+{42006}{}{Ooooh! Moje první rána do hlavy! Nikdy bych....au. Aùùùù. JAUUUUUU!.}
+{42007}{}{Hej! Co dìlá moje ucho na zemi?!}
+{42008}{}{Buï jsem to dostal do hlavy, nebo mám nejhorší migrénu za posledních deset let.}
+{42009}{}{Mùj oblièej! Mùj pøekrásnı oblièej!}
+#
+# target hit in left arm
+#
+{42010}{}{ignoruj  bolest v ruce ignoruj  bolest v ruce }
+{42011}{}{Aighh! Mám krev na ruce! Všude! Pomóc! Stimpak! Pomóc!}
+{42012}{}{MOJE RUKA! DOSTAL JSEM TO DO RUKY! Pomóc! Pomóc!}
+{42013}{}{Do levé ruky ne! To je moje silnìjší! }
+{42014}{}{Do ruky ne! Rosie! Rosie Palmerová! Øekni nìco, dìvèe!!}
+{42015}{}{Aighhh! Konec s onanií...}
+{42016}{}{Aieeee! Necítím levou ruku!}
+{42017}{}{*Urkkk*...levá ruka..jakoby hoøela...}
+#
+# target hit in right arm
+#
+{42020}{}{ignoruj  bolest v ruce ignoruj  bolest v ruce }
+{42021}{}{Aighh! Mám krev na ruce! Všude!  Pomóc! Stimpak! Pomóc!}
+{42022}{}{MOJE RUKA! DOSTAL JSEM TO DO RUKY! Pomóc! Pomóc!}
+{42023}{}{Do ruky ne! Rosie! Rosie Palmerová! Øekni nìco, dìvèe!!}
+{42024}{}{Aighhh! Konec s onanií...}
+{42025}{}{Aieeee! necítím pravou ruku!}
+{42026}{}{*Urkkk*...pravá ruka..jakoby hoøela...}
+{42027}{}{Do pravé ruky ne! Co teï budu dìlat, kdy nechytím nikde ádnou kurvu?}
+#
+# target hit in torso
+#
+{42030}{}{ignoruj  bolest v hrudníku ignoruj  bolest v hrudníku}
+{42031}{}{Mùj kapesní protektor!}
+{42032}{}{*Unfff*...hej...to...byla moje ...poslední èistá košile!}
+{42033}{}{Aighh! Mám krev po celém bøiše! Pomóc! Stimpak! Pomóc!}
+{42034}{}{MOJE HRUÏ! DOSTAL JSEM TO DO HRUDI! Pomóc! Pomóc!}
+{42035}{}{*Urkkk*...hrudník...jakoby hoøel...}
+{42036}{}{Co ksakru dìlá všechna ta krev na mojem hrudníku...*urkkk*}
+{42037}{}{*Unfff* Vyrazils... mi...dech...}
+{42038}{}{Jestli mám rozbitou kalkulaèku, tak tì zabiju, hazjle!}
+{42039}{}{Hmm, to prasknutí, to znìlo, jako kdyby nìkdo zlomil nekomu páteø... ufff}
+{42040}{}{Doufám, e támhleto není moje játro..}
+{42041}{}{Tak TAKHLE vypadají moje vnitønosti?}
+{42042}{}{Eštì...e...mám...DVÌ...plíce...}
+{42043}{}{Na co mám ksakru tu díru v hrudníku?}
+{42044}{}{Moje muná hruï! Mùj zjebanı hrudník!}
+{42045}{}{Myslím, e moje bøicho je odteï konkávní.}
+{42046}{}{Aieeeee! Moje bøicho! My spleeeen!}
+{42047}{}{Další játro? Kolik zjebanejch játer ještì mám?!}
+{42048}{}{Právì se mi zdálo, e mì nìkdo trefil do bøicha...uh-oh.}
+{42049}{}{Z té díry jdou krvavé bublinky. Opovate se mi øíkat Bublifuk!}
+{42050}{}{Doufám, e to netrefilo srdce. Moment...ne, netrefilo.}
+{42051}{}{Skvìlı. Víc krve. Teèe mi po bøiše. Kurva sqìlı.}
+{42052}{}{Omluvte mì, musím vykrvácet.}
+{42053}{}{Není nad poøádnou ránu do hrudi, kdy si chceš uít ivota...}
+{42054}{}{To praskaly moje ebra?}
+{42055}{}{Ughhh...Mám takovı pocit, jakoby mi foukalo do aludku...uh-oh.}
+{42056}{}{Kde se ksakru vzala ta ïoura v mım bøiše?}
+{42057}{}{*Hrrkkkk*...Podejte...mi...nìkdo...lékárnièku...}
+{42058}{}{No...ten gejzír krve, kterı mi støíká z hrudì, nejspíš znamená, e mám vysokı tlak.}
+{42059}{}{}
+#
+# target hit in right leg
+#
+{42060}{}{ignoruj bolest v noze ignoruj bolest v noze}
+{42061}{}{Aighh! Nohu mám celou zkrvavenou! Pomóc! Stimpak! Pomóc!}
+{42062}{}{MOJE NOHA! MOJE NOHA! DOSTAL JSEM TO DO NOHY! Pomóc! Pomóc!}
+{42063}{}{Aieeeee! Necítím pravou nohu!}
+{42064}{}{Aùùùù! Moje koleno!}
+{42065}{}{*Urkkk*...pravá noha...jakoby hoøela...}
+{42066}{}{Oh ne! To byla moje noha! Néééééé!}
+{42067}{}{Musím k ortopedovi!}
+{42068}{}{Aighh! A noha je pryè. Budu se muset odplazit.}
+#
+# target hit in left leg
+#
+{42070}{}{ignoruj bolest v noze ignoruj bolest v noze}
+{42071}{}{Aighh!  Nohu mám celou zkrvavenou! Pomóc! Stimpak! Pomóc!}
+{42072}{}{MOJE NOHA! MOJE NOHA! DOSTAL JSEM TO DO NOHY!  Pomóc! Pomóc!}
+{42073}{}{Aieeee! Necítím pravou nohu!}
+{42074}{}{Aùùùù! Moje koleno!}
+{42075}{}{*Urkkk*...pravá noha...jakoby hoøela...}
+{42076}{}{Oh ne! To byla moje noha! Néééééé!}
+{42077}{}{Musím k ortopedovi!}
+{42078}{}{Aighh! A noha je pryè. Budu se muset odplazit.}
+#
+# target hit in eyes
+#
+{42080}{}{Ty-ty-ty! Hazjle! Do oka! Do oka! Do oka ne!}
+{42081}{}{Moje oko! Moje oko! Pomóc! Pomóc!}
+{42082}{}{Aighh! Nevidím! Pomóc! Stimpak! Pomóc!}
+{42083}{}{MOJE OKO! MOJE OKO!}
+{42084}{}{Nevidím! A to nemám z masturbace!}
+{42085}{}{Aùùùù! Moje oko! Moje oko!}
+{42086}{}{Aieeeee! Dostal jsem to do oka! Podívejte si mi na to nìkdo!}
+{42087}{}{Moje oko krvácí! Do prdele!}
+{42088}{}{Skvìlı. U tak jsem mizernı støelec, ale tohle...}
+{42089}{}{Hele, ta kulièka, co kolem proletìla, nebylo to moje oko?}
+#
+# target hit in groin
+#
+{42090}{}{ignoruj bolest v koulích ignoruj bolest v koulích}
+{42091}{}{Do koulí ne!}
+{42092}{}{Aiiieeee! Dostal jsem to do ptáka!}
+{42093}{}{Byl jsem Bobbitizován!}
+{42094}{}{prosím a mám koule v poøádku prosím a mám koule v poøádku prosím a mám koule v poøádku }
+{42095}{}{Pomóc! Dostal jsem to do koulí! Pomóc!}
+{42096}{}{A se ta bolest z mıch koulí dostane do mozku, budu potøebovat aspoò patnáct stimpakù!}
+{42097}{}{Moje péro! Malej Myrone...øekni nìco, kámo! Øekni nìco!}
+{42098}{}{Bud muset do sexšopu. Pro robertka...}
+{42099}{}{Hele, já mám mlátit lidi do koulí! Nepøedpokládá se, e to nìkdo udìlá mnì!}
+#
+#  running away
+#
+{42100}{}{A jsme v prdeli!}
+{42101}{}{A jsme pìknì v øiti!}
+{42102}{}{Game over, kámo! Game over!}
+{42103}{}{Do prdele! Já mizím!}
+{42104}{}{Nebij mì! Nebij mì!}
+{42105}{}{Aieeeee! Zdrhám! Zdrhám!}
+{42106}{}{Tyhle boje jsou mnohem zábavnìjší z vìtší vzdálenosti!}
+{42107}{}{Hej všichni, dejte mi prachy, já pùjdu zajistit ústupovou cestu!}
+{42108}{}{Bì na nìj! Já tì kryju! Fakt!}
+{42109}{}{Támhle! Tam se taky bojuje, já to tam zvládnu sám!}
+{42110}{}{Musím odsud sakra vypadnout!}
+{42111}{}{Nech mì bıt! Já mám hemofílii!}
+{42112}{}{Nebij me! Neubliuj mi!}
+{42113}{}{Ten boj je zajímavı, musím si ho prohlídnout z vìtší dálky...}
+{42114}{}{Mìl jsem si vzít svùj sprej proti astma. Moná by se mi hodil.}
+{42115}{}{Aieeeeee!}
+{42116}{}{vypadni vypadni vypadni vypadni vypadni vypadni vypadni }
+{42117}{}{Noièky nezklamte mì!}
+#
+# moving in to attack
+#
+{42120}{}{Naposled jsem se rval na základce.}
+{42121}{}{Jsem hned za tebou!}
+{42122}{}{Hlídám ti záda!}
+{42123}{}{Tyhle boje jsou podle mì lepší z vìtší vzdálenosti...}
+{42124}{}{Asi si to obhlídnu z vìtší vzdálenosti.}
+{42125}{}{Raknról! A u to znamená cokoli!}
+{42126}{}{Utrhnu ti hlavu a pak... sakra, zapomnìl jsem, jak je to dál!}
+{42127}{}{Tak hele: Utrhnu ti krk a naseru do hlavy... do prdele, zase špatnì!}
+{42128}{}{Dostanu tì, pùjdeš k zemi jako zdechlá kurva!}
+{42129}{}{Kryje mì nìkdo? Kdokoli?}
+{42130}{}{Hiiiiiyaaaaaa!!!}
+{42131}{}{Puste mì na nì! Puste mì na nì!}
+{42132}{}{Myron! To je tvrïák!}
+{42133}{}{Ty roky AD&D mì nauèili pár vìcí o odvaze. S nìèím takovım nechci mít nic spoleèného!}
+#
+# attacking
+#
+{42140}{}{Brzo padneš!}
+{42141}{}{Máš s tím nìjakı zkušenosti? Ne?}
+{42142}{}{Seer to!}
+{42143}{}{Myslíš, e máš dneska šastnej den, debile?}
+{42144}{}{Vidìl jsem DeNira, jak to dìlal v jednom starım filmu...}
+{42145}{}{Pùjdeš k zemi jako nìjaká kurva!}
+{42146}{}{Er...Tumáš!}
+{42147}{}{Er...Dej si!}
+{42148}{}{Chceš Myrona? Jo? Tak tumáš! Jo!}
+{42149}{}{Kreje mì nìkdo? Kdokoli?}
+{42150}{}{Máš štìstí, e mám deset kilo podváhu. Jinak u by z tebe u byla mrtvá liška!}
+{42151}{}{prosím zdechni prosím zdechni prosím zdechni }
+{42152}{}{Pracuju tvrdì, bojuju...no, vlastnì, tak tvrdì nepracuju. Ser na to a dej si.}
+{42153}{}{Tyhle boje jsou podle mì zábavnìjší z vìtší dálky, tak kilometr, dva!}
+{42154}{}{Stejnì si poøád myslím, e bych mìl bojovat z vìtší dálky. }
+{42155}{}{Polib mi prdel, kámo.}
+{42156}{}{Poøád tomu nemùu uvìøit, e jsem se dostal do bitky.}
+{42157}{}{Rval jsem se naposledy na základce.}
+{42158}{}{Ukousnul sis víc, ne mùeš spolknout!.}
+{42159}{}{Chcípni!  Uh, prosím?}
+#
+# target being missed
+#
+{42160}{}{Sakrapes! Baj baj!}
+{42161}{}{Aieeeee...oh, poèkej, to bylo vedle. Tak na ten øev zapomeò}
+{42162}{}{Nic! Vedle!}
+{42163}{}{To bylo TÌSNÌ vedle...}
+{42164}{}{Mùe mi nìkdo pomoct, prosím?!}
+{42165}{}{Asi jsem si støíknul do textilu.}
+
+{42166}{}{Pomóc! To mì skoro dostalo!}
+{42167}{}{Neubliuj mi! Neubliuj mi!}
+{42168}{}{Neútoè na mnì! Neútoè na mnì!}
+{42169}{}{jsem moc mladı abych zemøel jsem moc mladı abych zemøel jsem moc mladı abych zemøel }
+{42170}{}{Prosím, útoè na nìkoho jiného. Prosím, útoè na nìkoho jiného.}
+{42171}{}{Uau. Uhnul jsem.}
+{42172}{}{Hej! Chceš mì zabít, pitomèe?}
+{42173}{}{Ne! Ne! Hej, poèkej! To bylo vedle?!}
+{42174}{}{budu potøebovat èistı spoïáry.}
+{42175}{}{Nemùem si o tom promluvit?}
+{42176}{}{Ha! Netrefils ty hovne!}
+{42177}{}{Ups! Vedle!}
+#
+############################################
+# 44000 Robo-Brain (Idiot/Chimp)
+############################################
+#
+# target hit in head
+#
+{44000}{}{Bzzzt!}
+#
+# target hit in left arm
+#
+{44010}{}{Zzzzzzt!}
+#
+# target hit in right arm
+#
+{44020}{}{Fizzzzzzzzt!}
+#
+# target hit in torso
+#
+{44030}{}{Buzzzzz!}
+#
+# target hit in right leg
+#
+{44060}{}{Pfffft!}
+#
+# target hit in left leg
+#
+{44070}{}{Mfffffft!}
+#
+# target hit in eyes
+#
+{44080}{}{Zot!}
+#
+# target hit in groin
+#
+{44090}{}{Zaaap!}
+#
+#  running away
+#
+{44100}{}{BA - NÁ - NY}
+{44101}{}{Jdu zpátky do dungle}
+#
+# moving in to attack
+#The chimpanzee and abnormal brain will not attack
+#
+############################################
+# 44400 Robo-Brain (Human/Cybernetic)
+############################################
+#
+# target hit in Brain Casing
+#
+{44400}{}{Mozková schránka poškozena!}
+{44401}{}{Detekován prùraz v mozkové schránce}
+{44402}{}{Úroveò vıivnıch tekutin klesá!}
+{44403}{}{Mozkové spojení má poruchu, datovı prùtok 91 procent a klesá}
+{44404}{}{Mozková aktivita doèasnì pøerušena}
+{44405}{}{EEG stagnuje}
+{44406}{}{Interní senzory vykazují minoritní poškození mozku}
+{44407}{}{Detekuji trhlinu v mozkové schránce}
+{44408}{}{Tlak biogelu klesá. Hrozí vıpadek!}
+#
+# target hit in left manipulator
+#
+{44410}{}{Levı extender zasaen}
+{44411}{}{Levı manipulátor poškozen}
+{44412}{}{Kontroluji poškození levého manipulátoru}
+{44413}{}{Manipulátor doèasnì vyøazen z funkce!}
+#
+# target hit in right manipulator
+#
+{44420}{}{Senzory zaregistrovaly poškození pravého manipulátoru!}
+{44421}{}{Porucha serva v manipulátoru}
+{44422}{}{Mechanismus rotátoru v manipulátoru poškozen}
+{44423}{}{Opravné systémy hlásí poruchu v pravém retraktoru}
+#
+# target hit in frame
+#
+{44430}{}{Aktivuji opravnou sekvenci }
+{44431}{}{Automatickı gyroskop zasaen. Pøepoèítávám parametry}
+{44432}{}{Hydraulickı tlak klesá. Únik z nádre 2B!}
+{44433}{}{Sekundární relé poškozeny a vyøazeny z èinnosti. Pøepoèítávám parametry pro primární relé}
+{44434}{}{Primární datovı interface poškozen, aktivuji záloní systémy}
+{44435}{}{Váná porucha motivátoru, nutná oprava v dílnì}
+{44436}{}{Porucha systému! Porucha systému!}
+{44437}{}{Fluktuace v energetickém okruhu! Záloní baterie zapojeny.}
+{44438}{}{Integrita trupu kompromitována! Vnitøní obvody bez ochrany!}
+{44439}{}{Energetickı èlánek poškozen, funkèní na 75% kapacity}
+#
+# target hit in right motivator
+#
+{44460}{}{Pravı motivátor zasaen, škody minimální}
+{44461}{}{Pravı kloub poškozen}
+{44462}{}{Pravé ovládací kolo poškozeno}
+{44463}{}{Pravı pás mimo provoz}
+#
+# target hit in left motivator
+#
+{44470}{}{Levı motivátor zasaen, škody minimální}
+{44471}{}{Levı kloub poškozen}
+{44472}{}{Levé ovládací kolo poškozeno}
+{44473}{}{Levı pás mimo provoz}
+#
+# target hit in the sensors
+#
+{44480}{}{Optické relé poškozeno, aktivuji nouzové senzory}
+{44481}{}{Èoèky hlavního senzoru poškozeny. Pøepínám na infraèervené senzory}
+{44482}{}{Obrazovı scanner poškozen, datové rozlišení 54 procent}
+{44483}{}{Zamìøovací systém poškozen. Automatické zamìøování vypojeno}
+#
+# target hit in regulator
+#
+{44490}{}{Regulátor zasaen, hladina kapalin klesá!}
+{44491}{}{Zaregistrováno poškození regulátoru}
+{44492}{}{Regulátor vyøazen, aktivuji záloní systémy}
+#
+#  running away
+#
+{44500}{}{Aktivuji program pro pøeití}
+{44501}{}{Analıza nepøátel dokonèena. Doporuèenı útoènı plán: Ústup!}
+{44502}{}{Vracím se do továrny na opravy}
+{44503}{}{Evakuaèní protokol iniciován!}
+{44504}{}{Bojová analıza dokonèena, doporuèen ústup}
+{44505}{}{Ustupuji}
+{44506}{}{Úhybné manévry!}
+{44507}{}{Opouštím nepøátelské teritorium}
+#
+# moving in to attack
+#
+{44520}{}{Analyzuji nepøítele}
+{44521}{}{Pøesun do útoèné pozice}
+{44522}{}{Cíl zamìøen}
+{44523}{}{Vypoèítávám stupeò nebezpeèí cíle}
+{44524}{}{Pøepínám na bojovı mód}
+{44525}{}{Cíl pro terminaci selektován}
+{44526}{}{Skenuji sílu nepøítele. Útoèím}
+{44527}{}{Mìním pozici pro optimální palebnou linii}
+{44528}{}{Pøesunuji se do palebné pozice}
+#
+# attacking
+#
+{44540}{}{Bojovı mód aktivován }
+{44541}{}{Útoènı vzor Omega iniciován }
+{44542}{}{Vyøazuji nepøátelskou entitu}
+{44543}{}{Zahajuji útoènou sekvenci...}
+{44544}{}{Pozitivní zamìøení na cíl}
+{44545}{}{Útoèím na cíl!}
+{44546}{}{Optimální vzdálenost od cíle dosaena}
+{44547}{}{Pøezkoumávám bojové schopnosti}
+{44548}{}{Zahajuji útok! }
+{44549}{}{Eliminuji nebezpeèí}
+#
+# target being missed
+#
+{44560}{}{Cíl minul}
+{44561}{}{Senzory indikují nulové poškození}
+{44562}{}{Negativní poškození. Stupeò nebezpeènosti cíle degradován}
+{44563}{}{Nepøítel minul}
+{44564}{}{Úhybnı manévr efektivní na 100 procent}
+{44565}{}{Nepøátelskı útok neefektivní, poškození jednotky 0 procent}
+{44566}{}{Nepøátelská entita minula}
+#
+############################################
+# 44800 Goris
+############################################
+#
+# target hit in head
+#
+{44800}{}{Mám tvrdou lebku, ale stejnì to bolelo.}
+{44801}{}{Mám to ale zatracenì silnou kocovinu.}
+{44802}{}{Umph. Do hlavy né, blbe!}
+{44803}{}{Já tì asi taky zaènu mlátit do hlavy!}
+{44804}{}{Arrrgh! Zemìtøesení?}
+#
+# target hit in left arm
+#
+{44810}{}{Zabiju tì druhou rukou!}
+{44811}{}{Na to, abych ti zkazil plány na veèer, nepotøebuju obì ruce!}
+{44812}{}{Tuhle ruku stejnì nepouívám.}
+{44813}{}{Au! Hodil by se kousek obvazu...}
+{44814}{}{Jedna ruka dole, druhá do boje!}
+#
+# target hit in right arm
+#
+{44820}{}{Hej, teï jsem tì s touhle rukou chtìl vykuchat!}
+
+{44821}{}{Zatracená paøáta, bolí...}
+{44822}{}{Takové tıpky jako seš ty zvládám jedinou rukou.}
+{44823}{}{Pravá ruka... arrgh!}
+{44824}{}{Trefils mì do ruky. A já ti tvoji urvu!}
+#
+# target hit in torso
+#
+{44830}{}{Umf...nemùu...dıchat...}
+{44831}{}{Hmmm, mám pocit, e mi chybí pár eber...}
+{44832}{}{Jau! Nesnáším rány do bøicha...}
+{44833}{}{Arg! Bolí mì hrudník!}
+{44834}{}{Na kozy mi nešahej!}
+{44835}{}{To je boj, nebo se jenom snaíš upoutat moji pozornost?}
+{44836}{}{Nezapomeò mì upozornit, kdy by to mìlo bolet, a nezapomenu øvát...}
+{44837}{}{To tì nauèila maminka, co?}
+{44838}{}{Oh ta bolest (zív). Prosím, nebij mì u.}
+{44839}{}{Tomu øíkáš zásah? Já ti ukáu, jak se to má dìlat!}
+{44840}{}{Za to ti zkopu prdel do krychlièky!}
+{44841}{}{Uau! To píchlo! Jako u doktora!}
+{44842}{}{Kvùli tomuhle jsem odešel z Vaultu?}
+{44843}{}{Uaaaam. Asi budu potøebovat dovolenou, zaèínáš mì unavovat...}
+{44844}{}{Jau! To bolelo, ty idiote.}
+{44845}{}{Ani jsem to necítil...}
+{44846}{}{Kde je stimpak, kdy ho potøebuju? No nic, napiju se aspoò tvojí krve...}
+{44847}{}{Jakmile se zase budu moct hıbat, dostaneš pár facek...}
+{44848}{}{Na mì bolest nepùsobí! Já jsem deathclaw, Dráp smrti!}
+{44849}{}{Tvùj ksicht bude brzo vypadat jako místo, kde nìjakou dobu táboøili medvìdi...}
+#
+# target hit in right leg
+#
+{44860}{}{Sqìlı. Budu jedinej deathclaw na svìte, kterej kulhá...}
+{44861}{}{Jauvajs! Moje noha...}
+{44862}{}{Za tohle ti utrhnu tvoji nohu...}
+{44863}{}{Ta noha mi bude chybìt...}
+{44864}{}{Nepotøebuju obì nohy na to, abych z tebe udìlal tatarskı biftek...}
+#
+# target hit in left leg
+#
+{44870}{}{Sqìlı. Do nohy. Auau. Máš radost?}
+{44871}{}{Zatracenì! Noha...}
+{44872}{}{Do nohy ne, u tak nemùu poøádnì bìhat...}
+{44873}{}{Já mám chromou nohu, ale z tebe bude úplnı kripl, a s tebou skonèím!}
+{44874}{}{Arrgh! To koleno bolí!}
+#
+# target hit in eyes
+#
+{44880}{}{Nevidím!}
+{44881}{}{Do oèí ne!}
+{44882}{}{Krev...v oèích... nevidím!}
+{44883}{}{Nevidím tì, ale smrdíš dost na to, abych se mohl orientovat jenom po èichu...}
+{44884}{}{Hmm, kde jen mám ty brejle...}
+#
+# target hit in groin
+#
+{44890}{}{Do koulí,.to je dost zbabìlı úder. Ještì,m e nejsem èlovìk!}
+{44891}{}{ádnı...rány...pod...pás!}
+{44892}{}{Tohle je pìknì sprostı! Co kdybych ti udìlal já?}
+{44893}{}{NESNÁŠÍM! Tohle zkrátka nesnáším!}
+{44894}{}{Jau jau. Ještì, e moje pohlavní orgány jen tak nepoškodíš. Ale tebe já poškodím hned!}
+#
+#  running away
+#
+{44900}{}{Berem roha!}
+{44901}{}{Jdu pryè!}
+{44902}{}{Ústup!}
+{44903}{}{Ustupte! Ustupte!}
+{44904}{}{Mizím pryè!}
+{44905}{}{Noièky nezklamte mì!}
+{44906}{}{Uhnìte, já beru roha!}
+{44907}{}{Já neutíkám, to je strategickı ústup!}
+{44908}{}{U mì to tu sere! Mìním vzduch!}
+{44909}{}{Musím se odsud dostat!}
+#
+# moving in to attack
+#
+{44920}{}{Pojï sem, a ti mùu jednu fláknout!}
+{44921}{}{Seš moje nová hraèka!}
+{44922}{}{Buï ty nebo já... a já hlasuju pro tebe!}
+{44923}{}{To je tvùj pohøeb, srágoro!}
+{44924}{}{Pojï sem a jednu slízneš!}
+{44925}{}{Pøiprav se potkat svoji zkázu!}
+{44926}{}{Rozluè se se ivotem. Jdu ukonèit tvoji mizérii.}
+{44927}{}{Bude tì to bolet! U se tìšíš?}
+{44928}{}{Sranda zaèíná! A ty konèíš!}
+{44929}{}{Do boje! Krleš!}
+{44930}{}{Bij zabij!}
+{44931}{}{Èas natáhnou pracku a pøitáhnout si novou hraèku...}
+{44932}{}{Do boje! Anihilujte je!}
+{44933}{}{Spadnu na tebe jako tuna tìch hranatejch vìci, co si z nich dìlají lidi domy!}
+{44934}{}{Rozcvièka? To jsem si pøál!}
+{44935}{}{Jdeme na to osobnì, ne? Krleš!!!!!}
+{44936}{}{Velkej hajzl jde do boje!}
+{44937}{}{Útoèím!}
+{44938}{}{Zamìøeno na cíl! Urrrráááááááááá!}
+{44939}{}{Jako blesk, kámo, jako blesk! Urráááááá!}
+#
+# attacking
+#
+{44940}{}{Ublíím ti...moc!}
+{44941}{}{Tohle tì bude bolet mnohem víc ne mnì!}
+{44942}{}{Nedìlej ostatním, co nechceš, aby dìlali tobì!}
+{44943}{}{Jestli máš nìjakej kousek, kterı tì ještì nebolí, tak ten bude další!}
+{44944}{}{Kontaktní sporty. Miluju je!}
+{44945}{}{Jak se jmenuješ? A mùu navštívit tvoji rodinu...}
+{44946}{}{Víš co v angliètinì znamená to slovo 'death'? SMRT!}
+{44947}{}{Je lepší dávat ne brát!}
+{44948}{}{Doufám, e si to uíváš aspoò tak jako já!}
+{44949}{}{Bolelo to? Jestli ne, tak se postarám, aby pøíštì ano!}
+{44950}{}{Ajajaj! Nìco z tebe teèe!}
+{44951}{}{Budeš potøebovat víc ne hromadu stimpakù, a s tebou skonèím!}
+{44952}{}{Doufám, e máš zdravotní pojištìní. Budeš ho potøebovat!}
+{44953}{}{Tady bum, támhle bum, všude je to bumbumbum!}
+{44954}{}{Nezajímá mì, kdo si zaèal. Já to dokonèím!}
+{44955}{}{Miluju zvuk co vydává maso, dy ho trháš na kousíèky. Ty ne?}
+{44956}{}{Jenom se procvièuju, to poøádnı teprv pøijde!}
+{44957}{}{Jenom si brousím drápy. Nevadí ti to doufám?}
+{44958}{}{Hups! Doufám, e tenhle kousek nepotøebuješ!}
+{44959}{}{Kdy padneš na zem a zaèneš prosit, moná tì nechám bıt!}
+#
+# target being missed
+#
+{44960}{}{Pomohlo by ti, kdybych se chvíli nehıbal?}
+{44961}{}{Brejle. Fakt bys mìl investovat do poøádnıch brejlí!}
+{44962}{}{Mám si na sebe nakreslit terè?}
+{44963}{}{Proè míøíš támhle, kdy jsem tady?}
+{44964}{}{Doufám, e si nemyslíš, e mì to trefilo, co?}
+{44965}{}{Jak se ti podaøilo netrefit nìco tak velkıho, jako jsem já?}
+{44966}{}{Ha! Argh grrnnngh thppppt! (Deathclawí nechápavı vıkøik)}
+{44967}{}{Jsem malej, ale šikovnej, co?}
+{44968}{}{Buï rád, e to nevidìla tvoje máma.}
+{44969}{}{Mìl bys uvaovat o poøádném a pravidelném tréninku. Teda pokud dneska pøeiješ.}
+{44970}{}{Och, to je trapné. Neboj, nikomu to na tebe neøeknu.}
+{44971}{}{Hmm, take ty seš vycvièenej minout cíl?}
+{44972}{}{To nasere, co?}
+{44973}{}{Nebreè. Pøíštì se trefíš.}
+{44974}{}{Uau, jen tak dál! Jak to dìláš?}
+{44975}{}{Tohle byl krásnı pøíklad netrefení se do cíle.}
+{44976}{}{Mám se k tobì otoèit zády? Pomohlo by ti to?}
+{44977}{}{Snaíš se mì usmát xmrti?}
+{44978}{}{Ovívej mì ještì, prosím!}
+{44979}{}{Netrefils mì nebo co.}
+#
+############################################
+# 50000 None (Body Messages)
+############################################
+#
+# target hit in head
+#
+{50000}{}{}
+#
+# target hit in left arm
+#
+{50010}{}{}
+#
+# target hit in right arm
+#
+{50020}{}{}
+#
+# target hit in torso
+#
+{50030}{}{}
+#
+# target hit in right leg
+#
+{50060}{}{}
+#
+# target hit in left leg
+#
+{50070}{}{}
+#
+# target hit in eyes
+#
+{50080}{}{}
+#
+# target hit in groin
+#
+{50090}{}{}
+#
+############################################
+# 50100 None (Combat Messages)
+############################################
+#
+#  running away
+#
+{50100}{}{}
+#
+# moving in to attack
+#
+{50120}{}{}
+#
+# attacking
+#
+{50140}{}{}
+#
+# target being missed
+#
+{50160}{}{}
+#
+###############################################################
+#
+#	Added After Localized text sent.
+#
+###############################################################
+#
+############################################
+# 60000 Cyberdog (Combat Messages)
+############################################
+#
+#  running away
+#
+{60000}{}{Útoènı subsystém vyøazen z èinnosti.}
+#
+# moving in to attack
+#
+{60020}{}{Útoènı subsystém inicializován.}
+#
+# attacking
+#
+{60040}{}{Vrrr. Cvak. Klik. Haf!}
+{60041}{}{Arg! Klik. Haf!}
+#
+# target being missed
+#
+{60060}{}{Útoèná akce - Neúspìšná.}
+#

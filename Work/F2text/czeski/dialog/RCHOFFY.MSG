@@ -1,0 +1,92 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš statného, podsaditého mue s krátkımi, hustımi vlasy.}
+{101}{}{Vidíš Jamese Hoffyho, správce karavan.}
+{102}{}{Vidíš zjizveného statného mue s vypoèítavım pohledem.}
+{103}{}{Pojï, pojï. Vypadni!}
+{104}{}{Tady není dobroèinné centrum. Vypadni.}
+{105}{}{Kdo tì pustil z domu?}
+{106}{}{Heh?}
+{107}{}{Ty si nezaslouíš ani nadávku.}
+{108}{}{Pojï sem. A teï odsud vypadni.}
+{109}{}{Nemám èas na debily.}
+{110}{}{Slyšel jsem e jsi mìl problém s nìjakou karavanou. Nic si z toho nedìlej, to se stává. Nesmí se to ale stát
+ pravidlem.}
+{111}{}{Slyšel jsem e jsi u pracoval na karavanì. To je dobøe. Máme vdycky místo pro dobré stráe.}
+{112}{}{Kdo jsi?}
+{113}{}{Je nìjaká karavana pøipravena vyrazit?}
+{114}{}{Kam všechny ty karavany odsud jezdí?}
+{115}{}{Dìje se nìco zajímavého ve mìstì?}
+{116}{}{Neslyšel jsi o vìci zvané Garden of Eden Creation Kit?}
+{117}{}{Moc hezké øeèi. Sbohem.}
+{118}{}{Nazdar, já jsem James Hoffy. Ale lidi mi vìtšinou øíkají Jimmy. Starám se o všechny místní karavany.}
+{119}{}{Co potøebuješ, kámo?}
+{120}{}{Je nìjaká karavana pøipravena vyrazit?}
+{121}{}{Kam všechny ty karavany odsud jezdí?}
+{122}{}{Dìje se nìco zajímavého ve mìstì?}
+{123}{}{Neslyšel jsi o vìci zvané Garden of Eden Creation Kit?}
+{124}{}{Jenom jdu kolem, Jimmy. Sbohem.}
+{125}{}{To nevím. Karavanu tu potkáš vdycky 1., 11. a 21. kadı mìsíc. Dobøe se to pamatuje. Pokud ale sháníš pøesnìjší
+ informace, mìl by ses zeptat nìkoho z øidièù.  Vdycky kdy pøijede nìjaká nová karavana, její vùdce vztyèí svùj stan
+ jinì od mého zámku. Máme to pìknì zavedené, co?}
+{126}{}{Tvého zámku? A ten je kde?}
+{127}{}{Jasnì, díky. U za nimi jdu. Sbohem.}
+{128}{}{Posíláme karavany na tøi vzdálená místa. Vyváíme zlato do Vault City, nìjaké vyváíme do New Rena a
+ dokonce obchodujeme i s tìmi zavšivenımi bastardy z NCR .}
+{129}{}{Co mi mùeš øíct o Vault City?}
+{130}{}{Co mi mùeš øíct o New Renu?}
+{131}{}{Co mi mùeš øíct o NCR?}
+{132}{}{Povìz mi ještì o nìèem jiném.}
+{133}{}{To je vše, co jsem potøeboval vìdìt. Díky a sbohem.}
+{134}{}{Víš vùbec co to znamená dùm? Vyrostl jsi snad ve stanu èi co?}
+{135}{}{Vlastnì, Já jsem vyrostl...}
+{136}{}{U jsem od tebe slyšel dost, zatracenı magore. Sbohem.}
+{137}{}{Ach ano. Tím se všechno vysvìtluje. Heh, heh.}
+{138}{}{Teï kdy se to všechno vysvìtlilo, nech mì zeptat se na nìco jiného.}
+{139}{}{Jo, to jsem rád. Sbohem.}
+{140}{}{Vault City? (Jimmy si pohrdavì odplivnul) Ok, povím ti o tom šmejdskım mìstì. O mìstì otrokáøù. Vymìòují léky
+ a jiné jejich kraviny za naše skvìlé zlato. Ještì jsem tam u nich nebyl a nikdy bych tam ani bıt nechtìl. Jak ty lidi znám,
+ urèitì mají hnusné neupravené domy a ulice plné odpadkù. Ale jestli tam pøece jenom chceš, karavana vyjídí kadı první den
+ v mìsíci.}
+{141}{}{Co víš o New Renu?}
+{142}{}{Co mi mùeš øíct o NCR?}
+{143}{}{Díky. Povìz mi ještì o nìèem jiném.}
+{144}{}{Díky, víc u vìdìt nepotøebuji. Sbohem.}
+{145}{}{To je poøádné mìsto. Klidnì se o tom mùeš pøesvìdèit na tvojí zbrani, urèitì je odtamtud. New Reno je mìsto rvaèek
+ a pøestøelek. Kdyby všechny tamní rodiny alespoò trošku spolupracovali, bylo by New Reno to nejsilnìjší mìsto na celém
+ širém svìtì. Pokud se tam chceš podívat, karavanu tu uvidíš 21. kadı mìsíc.}
+{146}{}{Co víš o Vault City?}
+{147}{}{Co mi mùeš øíct o NCR?}
+{148}{}{Díky. Povìz mi ještì o nìèem jiném.}
+{149}{}{Díky, víc u vìdìt nepotøebuji. Sbohem.}
+{150}{}{New California Republic je to úplnì nejdebilnìjší mìsto, které znám. Poøád se jenom chlubí tìma svıma brahmínama a
+ jsou tak blbí jako oni. Myslí si o sobì e jsou páni všeho a taky se tak chovají. Jestli se tam i pøesto chceš podívat, 
+karavana tu staví 11.}
+{151}{}{Co víš o Vault City?}
+{152}{}{Co mi mùeš øíct o New Renu?}
+{153}{}{Díky. Povìz mi ještì o nìèem jiném.}
+{154}{}{Díky, víc u vìdìt nepotøebuji. Sbohem.}
+{155}{}{Garden of Eden Creation Kit? Nejsem si sice úplnì jist, ale myslím e tu ádnı nemáme. Radši se zkus zeptat v 
+nìjakém vaultu. Tam by ti snad mìli vyhovìt.}
+{156}{}{Samozøejmì e se v nìjakém zeptám. Teï bych se ale rád na nìco zeptal tebe.}
+{157}{}{Díky za tip. Sbohem.}
+{158}{}{Jo, slyšel jsem e se našel nìkdo kdo chce dojít do starého Wanamingo dolu pro nìjakou souèástku.}
+{159}{}{Slyšel jsem e šerif našel nìkoho, kdo za nìj dìlá špinavou práci.}
+{160}{}{Nic zvláštního se nedìje. Jenom se poøád dokola tìí a nakládá a tìí...}
+{161}{}{Ten nìkdo jsem náhodou já. Jsou snad nìjaké problémy?}
+{162}{}{Nìkdo v tomhle zavšiveném mìstì udrovat poøádek musí.}
+{163}{}{Povìz mi ještì o nìèem.}
+{164}{}{To opravdu není moc zajímavé. Sbohem.}
+{165}{}{Ne, ádné problémy. Jenom pár takovıch politickıch drobností.}
+{166}{}{Co tím myslíš?}
+{167}{}{Hmm, sbohem.}
+{168}{}{No, ten dùl, kterému dáš souèástku na tom bude dobøe. Moc dobøe. Tak dobøe, e ten druhı dùl zcela jistì zkrachuje.}
+{169}{}{A...?}
+{170}{}{Tomu se øíká kapitalismus, pøíteli. Sbohem.}
+{171}{}{Take kdy dáš tu souèástku dolu Kokoweef, zaène se ve mìstì objevovat více a více Jetu. Kdy ten šastnı bude Dan
+ McGrew z dolu Morningstar, budeme tu moci vídat hodnì vyvrhelù z NCR. Ale tak u jde ivot, nìkdo vyhrává a nìkdo zase musí
+ prohrát.}
+{172}{}{Ale kdy nic neudìlám, nevyhraje nikdo. Povìz mi ještì o nìèem jiném.}
+{173}{}{Správnì. tak u to na svìtì chodí. Sbohem.}
+{174}{}{V tom máš naprostou pravdu, kámo. Naprostou.}
+{175}{}{Povìz mi ještì o nìèem jiném.}
+{176}{}{U se zase musím vrátit ke své práci. Sbohem.}

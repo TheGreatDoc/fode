@@ -1,0 +1,19 @@
+#include "_macros.fos"
+#include "_itempid.fos"
+#include "_msgstr.fos"
+
+bool BaseLocationMapUse(Critter &cr, Scenery &sc, int skill, Item@ it)
+{
+	if(skill!=-1) return false;
+	if(@it!=null) return false;
+	if(cr.IsKnownLoc(true,cr.GetMap().GetLocation().Id))
+	{
+		cr.Say(SAY_NETMSG,"You already have this location marked on Your map.");
+	}
+	else
+	{
+		cr.SetKnownLoc(true,cr.GetMap().GetLocation().Id);
+		cr.Say(SAY_NETMSG,"Location marked on Your map.");
+	}
+	return true;
+}

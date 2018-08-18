@@ -1,0 +1,8 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#uprava by Birdman, Birdman@post.cz, http://www.mujweb.cz/www/birdman, 0604 540689
+
+
+{100}{}{Vidíš velkého bílého tvora. Nìco mezi krtkem a krysou.}
+{101}{}{Vidíš Krále Krysu.}
+{102}{}{Vidíš velkého albínovitého tvora, jakéhosi køíence krtka a krysy, s nadmìrne velkou hlavou. Má pìnu u tlamy.}
+{103}{}{Král Krysa zemøel! A ije král!}

@@ -1,0 +1,134 @@
+// Author: rifleman17
+// РЎРѕР±РёСЂР°С‚РµР»СЊ РјСѓСЃРѕСЂР°
+// РєР°Р¶РґС‹Рµ NEXT_SEARCH_TIME СЃРѕР±РёСЂР°РµС‚ РїСЂРµРґРјРµС‚С‹ РЅР° РєР°СЂС‚Рµ  РІ СЂР°РґРёСѓСЃРµ 5*PE РѕС‚ РґРѕРјР°С€РЅРµР№ РїРѕР·РёС†РёРё
+// РµСЃР»Рё РЅР° РєР°СЂС‚Рµ РµСЃС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ, СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Р№ РЅР° EntireHex'e СЃ РЅРѕРјРµСЂРѕРј ENTIRE_CONTAINER, РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЃРѕР±РµСЂРµС‚ РІСЃРµ РїСЂРµРґРјРµС‚С‹, РёРґРµС‚ РёС… СЃРєР»Р°РґС‹РІР°С‚СЊ РІ СЌС‚РѕС‚ РєРѕРЅС‚РµР№РЅРµСЂ
+// Р’РЅРёРјР°РЅРёРµ! РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ ST_VAR0 РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ РІСЂРµРјРµРЅРё СЃР»РµРґСѓСЋС‰РµРіРѕ РїРѕРёСЃРєР°
+// Р·Р°РЅСЏС‚С‹ СЃРѕР±С‹С‚РёСЏ: CRITTER_EVENT_IDLE, CRITTER_EVENT_PLANE_END
+
+#include "_macros.fos"
+
+#define NEXT_SEARCH_TIME                (REAL_MINUTE(5))
+#define ENTIRE_CONTAINER                (87)
+#define PUT_ITEMS_PRIORITY              (178)
+
+import bool AddPickPlane(Critter& npc, uint priority, Item@ item, uint useItemId, bool toOpen) from "npc_planes";
+
+void _CollectorInit(Critter& cr, bool firstTime)
+{
+	cr.SetEvent(CRITTER_EVENT_IDLE, "_CollectorIdle");
+	cr.SetEvent(CRITTER_EVENT_PLANE_END, "_CollectorPlaneEnd");
+	cr.StatBase[ST_VAR0] = __FullSecond + NEXT_SEARCH_TIME;
+}
+
+void _CollectorIdle(Critter& cr)
+{
+	if(uint(cr.Stat[ST_VAR0]) < __FullSecond)
+	{
+		SearchForItems(cr);
+		cr.StatBase[ST_VAR0] = __FullSecond + NEXT_SEARCH_TIME; // РЎР»РµРґСѓСЋС‰РёР№ РїРѕРёСЃРє
+	}
+	else
+	{
+		MoveItemsToContainer(cr);
+	}
+}
+
+
+void MoveItemsToContainer(Critter& cr) // РЎРєР»Р°РґС‹РІР°РµС‚ РІСЃРµ РїСЂРµРґРјРµС‚С‹ РёР· РёРЅРІРµРЅС‚Р°СЂСЏ РІ РєРѕРЅС‚РµР№РЅРµСЂ
+{
+	Item@[] items;
+	Item@[] containers;
+	Map@ map = cr.GetMap();
+	if(cr.GetItems(SLOT_INV, items) > 0 && valid(map))
+	{
+		uint entires = map.CountEntire(ENTIRE_CONTAINER);
+		if(entires > 0)
+		{
+			uint16 hx = 0;
+			uint16 hy = 0;
+			if (map.GetEntireCoords(ENTIRE_CONTAINER, Random(0, entires-1), hx, hy))
+			{
+				if(map.GetItems(hx, hy, containers) > 0)
+				{
+					for(uint i = 0, l = containers.length(); i < l; i++)
+					{
+						if(containers[i].GetType() == ITEM_TYPE_CONTAINER)
+						{
+							AddPickPlane(cr, PUT_ITEMS_PRIORITY, containers[i], 0, true);
+							return;
+						}
+					}
+					@containers; 
+				}
+				
+			}
+		}
+		// РµСЃР»Рё РЅРµС‚ СЃРїРµС†РєРѕРЅС‚РµР№РЅРµСЂР°, РєР»Р°РґРµРј РІ Р±Р»РёР¶Р°Р№С€РёР№
+		map.GetItemsByType(ITEM_TYPE_CONTAINER, containers);
+		uint distMin = map.GetWidth();
+		uint distCur = 0;
+		int ind = -1;
+		for(int i = 0, l=containers.length(); i < l; i++)
+		{
+			distCur = map.GetPathLength(cr.HexX, cr.HexY, containers[i].HexX, containers[i].HexY, 1);
+			if(distCur > 0 && distMin > distCur)
+			{
+				distMin = distCur;
+				ind = i;
+			}
+		}
+		if(ind >= 0)
+		{
+			AddPickPlane(cr, PUT_ITEMS_PRIORITY, containers[ind], 0, true);
+		}
+	}	
+	
+}
+
+void SearchForItems(Critter& cr) // РџРѕРёСЃРє РїСЂРµРґРјРµС‚РѕРІ, РІР°Р»СЏСЋС‰РёС…СЃСЏ РЅР° РєР°СЂС‚Рµ
+{
+	Map@ map = cr.GetMap(); // РљР°СЂС‚Р° СЃ РєСЂРёС‚С‚РµСЂРѕРј, РЅР° РєРѕС‚РѕСЂРѕР№ Р±СѓРґРµРј РёСЃРєР°С‚СЊ РІРµС‰Рё
+	if(!valid(map))
+		return;
+	Item@[] items;
+	if(map.GetItems(cr.HexX, cr.HexY, cr.Stat[ST_PERCEPTION]*5, 0, items) == 0)
+		return;
+	int type;
+	Item@ item;
+	for(uint i = 0, l = items.length(); i < l; i++)
+	{
+		@item = items[i];
+		if(valid(item))
+		{
+			if(FLAG(item.Flags,ITEM_GAG)) 
+				continue;
+			type = item.GetType();
+			if(type >= ITEM_TYPE_ARMOR && type <= ITEM_TYPE_KEY && map.GetPathLength(cr, item.HexX, item.HexY, 0) > 0)
+				AddPickPlane(cr, 0, item, 0, true);
+		}
+	}
+}
+
+int _CollectorPlaneEnd(Critter& cr, NpcPlane& plane, int reason, Critter@ someCr, Item@ someItem)
+{
+	if(plane.Type == AI_PLANE_PICK && plane.Priority == PUT_ITEMS_PRIORITY)
+	{
+		Map@ map = cr.GetMap();
+		Item@ cont = map.GetItem(plane.Pick_HexX, plane.Pick_HexY, plane.Pick_Pid);
+		if(valid(cont) && reason == REASON_SUCCESS && cont.GetType() == ITEM_TYPE_CONTAINER)
+		{
+			Item@[] items;
+			if(cr.GetItems(SLOT_INV, items) > 0)
+				MoveItems(items, cont, 0);
+				
+		}
+	}
+	return PLANE_RUN_GLOBAL;
+}
+
+
+void AddCollector(Critter& cr, int, int, int)
+{
+		Critter@ npc = cr.GetMap().AddNpc(1, cr.HexX, cr.HexY, 3, null, null, null);
+		npc.SetScript("_CollectorInit");
+}

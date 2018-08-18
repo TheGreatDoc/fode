@@ -1,0 +1,4 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Tahle osoba vypadá, že je mrtvá.}
+{101}{}{Vypadá to, že tihle lidé by mohli být zavraždìni.}
+{102}{}{Je ti jich líto.}

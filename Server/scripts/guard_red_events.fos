@@ -1,0 +1,184 @@
+//Wyі№cznie eventy dla guardуw REF do include
+//Only events to include
+// PLAYER_MAIN_FACTION 1-red, 2-blue, 0-none
+#include "_teams.fos"
+#include "_npc_pids.fos"
+#define FactionId ParamBase[DREAM_PLAYER_MAIN_FACTION]
+
+/*/////////need imports////////////////////////////////
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddWalkPlane(Critter& npc, uint priority, uint16 hexX, uint16 hexY, uint8 dir, bool run, uint cut) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId) from "npc_planes";
+*//////////////////////////////////////////////////////
+
+void _RedGuardInit(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.ParamBase[PLAYER_MAIN_FACTION]=1;
+	npc.StatBase[ST_TEAM_ID]=TEAM_RED;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_NO_PUSH] =1;
+	npc.ShowCritterDist1=Random(46,66);
+	npc.SetEvent(CRITTER_EVENT_ATTACKED,"RedAttacked");
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_SMTH_DROP_ITEM,"GuardRedDropItem");
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"RedMessage");
+	if(pid==5101 || pid==5102)
+	{
+		npc.AddItem(PID_AK47_NORMAL1_DE,1);
+	}
+	else if(pid==5103 || pid==5104)
+	{
+		
+	}
+	else if(pid==4101)
+	{
+		npc.StatBase[ST_MAX_LIFE]=Random(450,550);
+		npc.StatBase[ST_CURRENT_HP] = npc.Stat[ST_MAX_LIFE];
+	}
+}
+
+void _RedGuardInit2(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	npc.ParamBase[PLAYER_MAIN_FACTION]=1;
+	npc.StatBase[ST_TEAM_ID]=TEAM_RED;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.ModeBase[MODE_NO_DROP]=1;
+	npc.ModeBase[MODE_NO_LOOT]=1;
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_NO_PUSH] =1;
+	npc.ShowCritterDist1=50;
+	npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"ULSEventShowCritter");
+	npc.SetEvent(CRITTER_EVENT_SMTH_DROP_ITEM,"GuardRedDropItem");
+	npc.SetEvent(CRITTER_EVENT_IDLE,"walk_RedGuardInit2");
+	npc.SetEvent(CRITTER_EVENT_MESSAGE,"RedMessage");
+	if(pid==NPC_PID_guardRED || pid==NPC_PID_guardwRED)
+	{
+		npc.AddItem(PID_AK47_NORMAL1_DE,1);
+	}
+}
+
+void walk_RedGuardInit2(Critter& npc)
+{
+	AddWalkPlane(npc, 0, 228, 298, 2, false, 1);
+}
+
+void GuardRedDropItem(Critter& npc, Critter& fromCr, Item& item)
+{
+	if(fromCr.IsPlayer()&&npc.IsLife())
+	{
+		uint pid = item.GetProtoId();
+		if(pid==PID_ACTIVE_PLASTIC_EXPLOSIVE||pid==PID_ACTIVE_MINE||pid==PID_ACTIVE_DYNAMITE)
+		{
+			AddAttackPlane(npc, 0, fromCr,true);
+		}
+	}
+}
+
+void GuardRedSmthAttack(Critter& npc, Critter& fromCrit, Critter& target)
+{
+	if((fromCrit.StatBase[ST_TEAM_ID]!=TEAM_Guard || fromCrit.StatBase[ST_TEAM_ID]!=TEAM_RED)  && !npc.CheckEnemyInStack(fromCrit.Id))
+	{
+		npc.AddEnemyInStack(fromCrit.Id);
+		AddAttackPlane(npc,0,fromCrit,true);
+	}
+	//doszczegуіowaж Teams
+	if((fromCrit.StatBase[ST_TEAM_ID]==TEAM_Guard || fromCrit.StatBase[ST_TEAM_ID]==TEAM_RED) && fromCrit.CheckEnemyInStack(target.Id) && !npc.CheckEnemyInStack(target.Id))
+	{
+		npc.AddEnemyInStack(target.Id);
+		AddAttackPlane(npc,0,target,true);
+	}
+}
+
+void RefRemoveGuard(Critter& cr, Critter@ killer)
+{
+	//set delete npc after 120 second time event
+	CreateTimeEvent(__FullSecond+REAL_SECOND(180),"e_RefRemoveGuard",cr.Id,true); 
+}
+
+//time event
+uint e_RefRemoveGuard(uint[]@ id)
+{
+	Critter@ cr=GetCritter(id[0]);
+	DeleteNpc(cr);
+	return 0;
+}
+
+void ULSEventShowCritter(Critter &cr, Critter &cr2)
+{
+	if(cr2.IsNpc())
+	{
+		if(cr2.ParamBase[PLAYER_MAIN_FACTION]!=cr.ParamBase[PLAYER_MAIN_FACTION])
+		{
+			if(cr2.ParamBase[PLAYER_MAIN_FACTION]!=0)
+			{
+				AddAttackPlane(cr2,0,cr,true);
+				AddAttackPlane(cr,0,cr2,true);
+			}
+			else
+			{
+			//dla neutralnych
+			}
+		}
+	}
+	else
+	{
+		if((cr2.ParamBase[PLAYER_MAIN_FACTION]!=cr.ParamBase[PLAYER_MAIN_FACTION] || cr2.ParamBase[REPUTATION_RED]<-500)&& cr2.ParamBase[SCOUT_MAIN_FACTION]==0)
+		{
+			if(cr2.ParamBase[PLAYER_MAIN_FACTION]!=0)
+			{
+			AddAttackPlane(cr,0,cr2,true);
+			}
+			else
+			{
+				//neutralni
+				if(cr2.ParamBase[REPUTATION_RED]<-400)
+				{
+					AddAttackPlane(cr,0,cr2,true);
+				}
+			}
+		}
+	}
+}
+
+void RedMessage(Critter& npc, Critter& cr, int num, int val)
+{
+	if(npc.Cond!=COND_LIFE || GetCrittersDistantion(npc, cr)>60) return;
+	switch(num){
+	case 124://npc red
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	case 999://all
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+	case 998://all
+		npc.DropPlanes();
+		npc.ClearEnemyStack();
+		break;
+	case 995://red
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	case 994://red
+		npc.DropPlanes();
+		npc.ClearEnemyStack();
+		break;
+	}
+}
+
+bool RedAttacked(Critter& npc, Critter& attacker)
+{
+	if(attacker.StatBase[ST_TEAM_ID]!=TEAM_RED)
+	{
+		npc.SendMessage(124,attacker.Id,MESSAGE_TO_ALL_ON_MAP);
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,attacker,true);
+		return true;
+	}
+	return false;
+}

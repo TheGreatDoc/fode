@@ -1,0 +1,90 @@
+#tento soubor pøeloil Somnambulus - somnambulus@hotmail.com, http://www.geocities.com/Area51/Vault/4193/
+{100}{}{Vidíš malého, udìlaného horníka s kudrnatımi èernımi vlasy.}
+{101}{}{Vidíš Caminetta, vıtrníka z dolu Kokoweef.}
+{102}{}{Vidíš malého, zavalitého mue s èernımi kudrnatımi vlasy.}
+{103}{}{Caminetto, jsou všichni horníci z Kokoweef jen psi co nekoušou?}
+{104}{}{Ja ti ukáu kam máš jít, Rouhavá Betty.}
+{105}{}{Ty bys nedokázal ukázat nic ani kdybys na to mìl mapu.}
+{106}{}{Ale to jen proto, e se k tobì nechci moc pøibliovat.}
+{107}{}{Moc si lichotíš ty zakrslíku.}
+{108}{}{Vdy ty bys byla šastná kdybys mìla takového zakrslíka a nemusela sis tam cpát
+ vrtaèku jako to normálnì dìláš.}
+{109}{}{No ta vrtaèka to aspoò vydrí dıl ne tøicet sekund.}
+{110}{}{Není divu, e jsou vrtáky u Morningstaru vìènì zlámanı.}
+{111}{}{Já ti ukáu jak je lámu ale pouiju na to pìsti!}
+{112}{}{Tvoje pìsti? To není potøeba. Staèí tvùj odìr z pusy, zlato. Zkus si taky nìkdy
+ vyèistit zuby.}
+{113}{}{Nechápu jak ty to mùeš cítit pøes ten oblak svıho vlastního smradu.}
+{114}{}{Smrad? Jen pohled na tebe mi pùsobí mnohem vìtší bolest.}
+{115}{}{Ty nevíš o bolesti vùbec nic, ale já ti o ní dám pár lekcí.}
+{116}{}{Ty mnì?}
+{117}{}{Jo, správnì. Tvoje máma na to asi zapomnìla.}
+{118}{}{Teï zaèneš mluvit o mojí mámì? To není moc originální.}
+{119}{}{Jo, originálnìjší bude, kdy ti udìlám novı ksicht. Na ten starı u se nedá koukat.}
+{120}{}{Ty? A kde na to vezmeš lidi?}
+{121}{}{Vystaèím si sama. Vsadím se, e my z Morningstaru vás rozneseme levou zadní.}
+{122}{}{Nemyslím. Tady vládne Kokoweef. Mìl bych tì o tom pouèit.}
+{123}{}{To se ti bude tìko dìlat, kdy budeš v bezvìdomí.}
+{124}{}{Myslíš, e budeš mít takové štìstí, huh?}
+{125}{}{Na to abych tì zadupala do podlahy, nepotøebuju štìstí.}
+{126}{}{No, tlustá jsi na to dost, to je fakt. Uh oh, u se bojím.}
+{127}{}{Tak se uka anebo sklapni ty skrèku.}
+{128}{}{Tak jen pojï ty imbecile.}
+{129}{}{A kdo teï doufá, e bude mít kliku?}
+{130}{}{U toho mám dost, za tohle tì vynesu v zubech.}
+{131}{}{Zatracenì kdo to na nás èumí?}
+{132}{}{To je nìkdo novı. Hej tohle je soukromá záleitost! Tak nás vynech!}
+{133}{}{Pro jednou s tebou musím souhlasit. Vodpal!}
+{134}{}{To je ono. Strè všechny zatracenı horníky v zatracenım Reddingu za møíe.}
+{135}{}{Nejsi trochu zbyteènì nervózní?}
+{136}{}{Jen jsme se trochu bavili. Nech nás na pokoji.}
+{137}{}{Do toho co jsme dìlali ti je houby.}
+{138}{}{Zatracenì vypadni odsud.}
+{139}{}{Pust mì odsud.}
+{140}{}{Hej, pust mì ven.}
+{141}{}{Jsem nevinnı.}
+{142}{}{Nic jsem neudìlal}
+{143}{}{Šerif? Oh strachy jsem se poèùral...}
+{144}{}{O co ti sakra jde?}
+{145}{}{Nedovolím vám, abyste se navzájem pomlátili.}
+{146}{}{Jen se dívám, co se tu dìje.}
+{147}{}{Já a moji hoši dáme tìmhle chudákùm z Morningstar malièkou lekci. A zaèneme támhle s Rouhavou Betty.}
+{148}{}{Proè? Jak to zaèalo?}
+{149}{}{To vidím. Jene já ti to nedovolím. Koukej rychle zabrzdit.}
+{150}{}{U nás nebaví èichat jejich smrady v našem baru.}
+{151}{}{Tohle mi nepøijde jako dobrı dùvod. Nenechám vás, abyste se pomlátili.}
+{152}{}{No dobøe, to vypadá jako vánı dùvod. Nebudu vás rušit. Hodnì štìstí.}
+{153}{}{Oh opravdu? A jakpak nás zastavíš?}
+{154}{}{Prvního, kdo udeøí, zabiju.}
+{155}{}{No, nejdøív vás mile poádám. Potom vytáhnu bouchaèku a budu èekat kdo první mi dá šanci
+ trochu se pocvièit ve støelbì.}
+{156}{}{Šerif mì poádal o pomoc do doby ne bude mít zdravou nohu. Dal jsem mu svoje slovo, e tu bude klid.}
+{157}{}{No dobøe...kvùli šerifovi svoje hochy moná uklidním}
+{158}{}{Díky. Doufal jsem, e se na to budeš dívat stejnì. Sbohem.}
+{159}{}{Co si o sobì vlastnì myslíš ty napudrovanej kovboji. Tvùj pøidrzlej tón se mi setsakramentsky nezamlouvá.}
+{160}{}{Nemusí se ti líbit. Buï se mnou pùjdeš do basy dobrovolnì nebo tu zbude jen tvoje mrtvola. Je to na tobì.}
+{161}{}{Oh, promiò. Opravdu jsem nechtìl bıt tak nezdvoøilı. Radši u pùjdu. Mìjte se.}
+{162}{}{V poøádku, v poøádku. Pùjdu s tebou, kdy zavøeš i Betty. To je fér nebo ne?}
+{163}{}{Nejsi zrovna v situaci, kdy si mùeš klást podmínky.}
+{164}{}{To není špatnı nápad. Kdy mezi vámi budou møíe tak snad trochu vychladnete.
+ Hnìte sebou, vy dva.}
+{165}{}{Na to nemáš. Nemyslím, e bys nás dostal, ani by nìkdo nepøišel k úrazu. Myslíš, e se to šerifovi bude líbit?}
+{166}{}{No, to asi ne.}
+{167}{}{To je mi jedno. Nebude to moje krev co tu poteèe.}
+{168}{}{Dostals mì. Okej, Pùjdu s tebou. (k ostatním) Jdìte zpátky na šachtu, hoši.
+ Uvidíme se zítra.}
+{169}{}{Skvìlá volba, pane.}
+{170}{}{Nemìj obavy, beru Betty s sebou a bude ti tam dìlat spoleènost. Je to tak, Betty?}
+{171}{}{Takhle to nepùjde hrdino. Jen se do toho zkus míchat a my všichni
+ s tebou zametem.}
+{172}{}{No tak to vás budu muset zavøít oba.}
+{173}{}{No tak to vás budu muset odprásknout oba.}
+{174}{}{Hmm, myslám, e mì zrovna teï potøebujou jinde ve mìstì. Budu muset jít. Sbohem.}
+{175}{}{To se vsaï. Tak proè se za ním nevrátíš a neøekneš mu, e se s tim nedalo nic dìlat?}
+{176}{}{Tak dost. U mám tìch tvıch kecù právì akorát. Poslední vızva. Pojï v klidu se mnou nebo z tebe nadìlám kousky
+ do polívky.}
+{177}{}{Moná to udìlám. Nechci nikomu ublíit. Sbohem.}
+{178}{}{No dobøe, myslím, e poznáme, kdy to u nemá cenu - správnì, Betty? (ona pøikyvuje) Dostals nás. Jdeme s tebou
+ šerife.}
+{179}{}{Tak se mi to líbí.}
+{180}{}{Ne. U je pozdì. Udìlám z vás obou rádlo pro psy. }

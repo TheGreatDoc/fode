@@ -1,0 +1,64 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+4 2020 #
+0 2030 @
+3 3000 None 0 #
+2 3010 @
+4 4000 None 0 #
+2 4010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Level 2, Laboratory 5
+Object: M21 "Molerat"}
+{2010}{}{General infomations}
+{2020}{}{Origin}
+{2030}{}{Exit}
+{3000}{}{It's aggressive creature, covered with brown fur. It seems to live in packs. Usually molerats can be spotted in caves and tunnels which are their natural environment, but sometimes they leave them for hunting. Molerats has bad eyesight, but great smell and hear abilities compensates them that weakness. }
+{3010}{}{Back}
+{4000}{}{Molerat seems to be mutated combination of mole and rat. We detected  some FEV activities in molerats DNA. It seems like molerat is a crossbreed of radiated mutated rats and moles mated in FEV presence, which makes their size unnatural.}
+{4010}{}{Back}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Poziom 2, Laboratorium 5
+Obejkt: M21- "Molerat"}
+{2010}{}{glowne informacje}
+{2020}{}{pochodzenie.}
+{2030}{}{wyjscie}
+{3000}{}{zazawyczaj agresywne stworzenie z brazowym owlosieniem. Wyglada na to ze zyje w stadach. Zazwyczaj mieszkaja w jaskiniach i norach, ktore opuszczaja wylacznie by polowac. Maja zly wzrok, lecz doskonaly wech. }
+{3010}{}{powrot}
+{4000}{}{Zdaje sie byc mieszanka kreta i szczura. Wykrylismy pewne sygnaly FEV. Prawdopodobnie to wina radioaktywnie zmutowanych szczurow ktore pokryly krety w rezultacie ta krzyzowka byla potem zmutowana przez FEV do obecnych rozmiarow.}
+{4010}{}{powrot}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Level 2, Laboratory 5
+Obejct: M21- "Molerat"}
+{2010}{}{general info}
+{2020}{}{origin.}
+{2030}{}{exit}
+{3000}{}{usually agressive creature with brown hair. Seems to be living in packs. Usually lives in caves and tunnels, which leaves only for hunting. Has bad vision, but great smell. }
+{3010}{}{back}
+{4000}{}{Seems to be mutated combination of mole and rat. We detected  some FEV signs. It seems by radiation mutated rats and moles mated and result of this crossbreeding was then mutated by FEV to it's current size.}
+{4010}{}{back}
+

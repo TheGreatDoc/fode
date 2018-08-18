@@ -1,0 +1,56 @@
+#tento soubor pøeložil Somnambulus...somnambulus@hotmail.com
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used in LOADSAVE.C
+#
+# (These MUST match "text message" enumeration on the top of LOADSAVE.C)
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+
+# System
+{100}{}{NAÈÍST HRU}              # Titles
+{101}{}{SLOT PRO RYCHLÉ NAHRÁNÍ}
+{102}{}{ULOŽIT HRU}
+{103}{}{SLOT PRO RYCHLÉ ULOŽENÍ}
+{104}{}{OK}
+{105}{}{ZRUŠIT}
+{106}{}{Chyba pøi nahrávání uložených her!} # Line 1
+{107}{}{Adresáø pro uloženou pozici:}    # Line 2
+{108}{}{Neexistuje nebo je poškozen.} # Line 3
+{109}{}{ULOŽIT HRU}
+{110}{}{NAÈÍST HRU}
+{111}{}{- PRÁZDNÝ -}
+{112}{}{- POŠKOZENÁ POZICE -}
+{113}{}{- STARÁ VERZE -}
+{114}{}{Prázdný.}
+{115}{}{Chyba!}
+{116}{}{Stará verze.}
+{117}{}{LEDEN}                                 # Months
+{118}{}{ÚNOR}
+{119}{}{BØEZEN}
+{120}{}{DUBEN}
+{121}{}{KVÌTEN}
+{122}{}{ÈERVEN}
+{123}{}{ÈERVENEC}
+{124}{}{SRPEN}
+{125}{}{ZÁØÍ}
+{126}{}{ØÍJEN}
+{127}{}{LISTOPAD}
+{128}{}{PROSINEC}
+{129}{}{Level}
+{130}{}{POPIS}
+{131}{}{Pozice už existuje, pøepsat?}
+{132}{}{Chyba pøi ukládání pozice!}             # Line 1
+{133}{}{Není možné hru uložit.}              # Line 2
+{134}{}{Chyba pøi nahrávání hry!}            # Line 1
+{135}{}{Není možné hru nahrát.}              # Line 2
+{136}{}{Pozice je ze starší verze.}
+{137}{}{Mapa}
+
+{140}{}{Hra uložena.}
+{141}{}{Hra nahrána.}
+#
+# Demo versions only
+#
+{200}{}{Sorry, ale v demo verzi } # 1
+{201}{}{není možné ukládat ani naèítat.}         # 2

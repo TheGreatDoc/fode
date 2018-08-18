@@ -1,0 +1,11 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Vidíš houfnici typu SIAD-BG.}
+{101}{}{I když už má své nejlepší roky za sebou, stejnì si myslíš, že by se ještì dala použít. Jenom teï nìkde sehnat náboj.}
+{102}{}{Tak. Odpalovací mechanismus je zajištìn. Teï zrovna pøed tebou stojí dvoutunové tìžítko.}
+
+{200}{}{Houfnice je už nabita.}
+{201}{}{Nemùžeš nabít houfnici.}
+
+{210}{}{Vypálil si z houfnice na dveøe, z tìch už ale teï moc není.}
+{211}{}{Houfnice nemá co vystøelit. Tak jak chceš støílet?}
+{212}{}{Vypálil jsi z houfnice.}

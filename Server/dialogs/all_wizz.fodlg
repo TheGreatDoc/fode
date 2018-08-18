@@ -1,0 +1,46 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 D _param p PLAYER_PROFESSION = 0 D _var p de_quest_medic_test = -1 R _script quest_server_scripts@medic_test_start 0  #
+0 2020 @
+3 3000 None 1 #
+0 3010 &
+
+[engl]
+{100}{}{Wizz}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{What can I do for ya' wastelander?}
+{2010}{}{I'd like to learn about medicine.}
+{2020}{}{Just passing by.}
+{3000}{}{Mmmm... okay then. Come back with 10 super stimpacks and we'll start.}
+{3010}{}{On my way.}
+
+[pols]
+{100}{}{Wizz}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Co moge dla Ciebie zrobic przybyszu?}
+{2010}{}{Chcialbym sie nauczyc medycyny.}
+{2020}{}{Tylko przechodze.}
+{3000}{}{Mmmm... ok w takim razie. Wroc z 10 super stimpakami i zaczniemy nauke.}
+{3010}{}{Zrozumialem.}
+
+[russ]
+{100}{}{Wizz}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{What can I do for ya' wastelander?}
+{2010}{}{I'd like to learn about medicine.}
+{2020}{}{Just passing by.}
+{3000}{}{Mmmm... okay then. Come back with 10 super stimpacks and we'll start.}
+{3010}{}{On my way.}
+

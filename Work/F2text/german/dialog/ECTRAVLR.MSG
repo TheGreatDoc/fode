@@ -1,0 +1,62 @@
+{100}{}{Ein Reisender.}
+{101}{}{Sei gegrüßt, Reisender.}
+{102}{}{Ich hab mich verirrt. Kannst du mir helfen?}
+{103}{}{Wohin willst du?}
+{104}{}{Was machst du?}
+{105}{}{Agh.}
+{106}{}{Ich weiß nicht so recht. Ich bin hier selbst ziemlich neu und war bisher erst in den
+ folgenden Gegenden.}
+{107}{}{New Reno}
+{108}{}{Bunkerstadt}
+{109}{}{Redding}
+{110}{}{Den}
+{111}{}{San Francisco}
+{112}{}{Neue Kalifornische Republik}
+{113}{}{Ein verlassenes Bergwerk.}
+{114}{}{Nein, da war ich schon. Trotzdem danke.}
+{115}{}{New Reno - das ist 'ne tolle Stadt. Spaß, Jet und Glücksspiel. Was das Herz begehrt! Ich
+ zeig dir, wo du hin mußt.}
+{116}{}{Danke.}
+{117}{}{Bunkerstadt - 'ne Stadt voller Idioten. Wenn du zufällig einen Finger zuviel hast,
+ behandeln die dich wie 'ne Mißgeburt. War zwar selbst noch nie da, aber ich weiß, wo's liegt.}
+{118}{}{Danke.}
+{119}{}{Redding...ich weiß nicht viel drüber, außer daß es eine alte Bergwerksstadt ist. Liegt
+ im Norden, umgeben von den gefährlichsten Bergen, die du je gesehn hast.}
+{120}{}{Danke.}
+{121}{}{An deiner Stelle würd ich Den fernbleiben. Diese Stadt zieht den Pöbel aus der gesamten
+ Region wie ein Magnet an. Ich zeig dir, wo's liegt, aber du solltest wirklich nicht hingehn.}
+{122}{}{Danke.}
+{123}{}{San Francisco. Hm...alles, was ich weiß, ist, daß die Leute dort seltsam sind. Liegt an
+ der Küste.}
+{124}{}{Danke.}
+{125}{}{Die Neue Kalifornische Republik...ja, da ist's wirklich schön. Ich würd dort selbst gern
+ eines Tages leben. Saubere, nette Menschen und wirklich ordentlich gepflegt. Liegt direkt hier
+ auf deiner Karte.}
+{126}{}{Danke.}
+{127}{}{Ja, vor kurzem kam ich an einem verlassenen Bergwerk vorbei. Ich wollt dort ein oder zwei
+ Tage bleiben, aber dann tauchten Wölfe auf und ich dachte, ich verschwind mal lieber. Schade
+ irgendwie. Ich hatte den Eindruck, daß die Bergleute den Ort in Panik verlassen haben. Sie
+ ließen einiges zurück. Nachdem ich dort eh nicht mehr hin will, kann ich dir ja zeigen, wo's
+ liegt.}
+{128}{}{Danke.}
+{129}{}{Ach...ist mir eigentlich ziemlich egal. Ich wollt nur irgendwann mal rumreisen - tja und
+ hier bin ich.}
+{130}{}{Vielleicht kannst du mir ja helfen. Ich find den Weg nicht.}
+{131}{}{Was machst du?}
+{132}{}{War nett, mit dir zu quatschen.}
+{133}{}{Ich halt mich mit Gelegenheitsarbeiten über Wasser. Aber die meiste Zeit reise ich
+ einfach nur.}
+{134}{}{Vielleicht kannst du mir ja helfen. Ich find den Weg nicht.}
+{135}{}{Wohin willst du?}
+{136}{}{War nett, mit dir zu quatschen.}
+{137}{}{Ich sollte jetzt wirklich los. War nett, mit dir zu plaudern.}
+{138}{}{Vielleicht sehn wir uns ja mal wieder.}
+{139}{}{Ich möcht vor Einbruch der Dunkelheit in der nächsten Stadt sein. Da sollt ich jetzt wohl
+ besser los.}
+{140}{}{Ich würd mich mal auf den Weg machen.}
+{141}{}{Überfall!}
+{142}{}{Heutzutage kann man wirklich niemand trauen.}
+{143}{}{Du hast das ungeschriebene Gesetz der Reisenden gebrochen.}
+{144}{}{Zeit, zu gehen.}
+{145}{}{Ich bin schon viel zu lange hier.}
+{146}{}{Ich muß jetzt weiter.}

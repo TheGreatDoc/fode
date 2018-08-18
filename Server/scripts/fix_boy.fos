@@ -1,0 +1,239 @@
+// Author: cvet, rifleman17
+#include "_macros.fos"
+#include "_msgstr.fos"
+
+#define FIX_SUCCESS         (FIXBOY_DEFAULT)
+#define FIX_FAIL            (FIXBOY_DEFAULT^FIXBOY_ALLOW_CRAFT)
+
+
+// Усложненный крафт
+// - для отображения в пипбое требуется знание рецепта
+// - для производства необходимо находиться рядом со специальным станком
+// - у станка может задаваться таймаут на последующее использование. Таймаут сохраняется в AnyData. Создается также тайм эвент на очистку AnyData
+// - если на карте несколько одинаковых станков и у них указан таймаут - у него будет общее значение.
+
+/* У прессов для производства аммуниции и токарных станков есть по несколько изображений, но используется один прототип,
+   чтобы не добавлять лишние проверки в скрипт - просто переключайтесь между изображениями через параметр PicMap
+   в маппере, название кадра будет то же самое, меняется только цифра в конце.
+   Сейчас доступно по два варианта для станков:
+   art\scenery\manufact_ammo1.fofrm
+   art\scenery\manufact_ammo2.fofrm
+   art\scenery\manufact_lathe1.fofrm
+   art\scenery\manufact_lathe2.fofrm
+*/
+
+// Проверка, что рядом с игроком находится станок для производства того или иного итема
+// pidWorkbench - код прототипа элемента Scenery, который играет роль станка
+// radius - максимальное расстояние до станка, в котором должен находиться игрок
+bool CheckWorkbenchNearPlayer(Critter & player, int pidWorkbench, int radius)
+{
+	Map @ map = player.GetMap();
+	if(!valid(map)) return false;
+	return (map.GetSceneries(player.HexX, player.HexY, radius, pidWorkbench, null)>0);
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//	Desert Europe
+//
+
+
+
+//Just to skip an error
+void _UseWorkbench(Item& item, bool firstTime)
+{
+}
+
+//When someone sue a workbench (if script added to pid)
+bool _UseWorkbench(Critter& player, Scenery& scenery, int skill, Item@ item)
+{
+	if(skill == SKILL_PICK_ON_GROUND)
+	{		
+		uint16 pid = scenery.ProtoId;
+		Item@ workbench;
+		
+		//Get workbench
+		switch(pid)
+		{
+		//Furnance
+			case PID_BLACKSMITH_FURNANCE_I :
+				if(player.CountItem(PID_BLACKSMITH_FURNANCE_I) == 0)
+					@workbench = player.AddItem(PID_BLACKSMITH_FURNANCE_I, 1);
+				break;
+			case PID_BLACKSMITH_FURNANCE_II :
+				if(player.CountItem(PID_BLACKSMITH_FURNANCE_I) == 0)
+				@workbench = player.AddItem(PID_BLACKSMITH_FURNANCE_I, 1);
+				break;
+			case PID_BLACKSMITH_FURNANCE_III :
+				if(player.CountItem(PID_BLACKSMITH_FURNANCE_I) == 0)
+					@workbench = player.AddItem(PID_BLACKSMITH_FURNANCE_I, 1);
+				break;
+			case PID_SMALL_BLACKSMITH_FURNANCE_ :
+				if(player.CountItem(PID_BLACKSMITH_FURNANCE_I) == 0)
+					@workbench = player.AddItem(PID_BLACKSMITH_FURNANCE_I, 1);
+				break;
+				
+		//workbench standard
+			case PID_WORK_BENCH_I :
+				if(player.CountItem(PID_WORK_BENCH_I) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_I, 1);
+				break;
+		/*	case PID_WORK_BENCH_II :
+				if(player.CountItem(PID_WORK_BENCH_I) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_I, 1);
+				break;
+			case PID_WORK_BENCH_III :
+				if(player.CountItem(PID_WORK_BENCH_I) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_I, 1);
+				break;
+			case PID_WORK_BENCH_IV :
+				if(player.CountItem(PID_WORK_BENCH_I) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_I, 1);
+				break;*/
+				
+		//workbench standard ammo
+			case PID_WORK_BENCH_V :
+				if(player.CountItem(PID_WORK_BENCH_V) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_V, 1);
+				break;
+		/*	case PID_WORK_BENCH_VI :
+				if(player.CountItem(PID_WORK_BENCH_V) == 0)
+					@workbench = player.AddItem(PID_WORK_BENCH_V, 1);
+				break;*/
+				
+		//workbench specific
+			case PID_PRODUCTION_MACHINE_I :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_I) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_I, 1);
+				break;
+			case PID_PRODUCTION_MACHINE_II :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_II) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_II, 1);
+				break;
+			case PID_PRODUCTION_MACHINE_III :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_III) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_III, 1);
+				break;
+			case PID_PRODUCTION_MACHINE_IV :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_IV) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_IV, 1);
+				break;
+			case PID_PRODUCTION_MACHINE_V :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_V) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_V, 1);
+				break;
+			case PID_PRODUCTION_MACHINE_VI :
+				if(player.CountItem(PID_PRODUCTION_MACHINE_VI) == 0)
+					@workbench = player.AddItem(PID_PRODUCTION_MACHINE_VI, 1);
+				break;
+				
+			default :
+				break;
+		}
+		
+		//Put item at the end of inventory and ..
+		//Add magic hidden item on ground
+		if(valid(workbench))
+		{
+			workbench.SortValue = 65000;//at the end of inventory
+			//SETFLAG(workbench.Flags, ITEM_HIDDEN);
+			workbench.PicInv = uint16(-1);
+			workbench.Update();
+			
+			Map@ map = player.GetMap();
+			Item@ hidden_item;
+			if(CheckWorkbenchNearPlayer(player, pid, 1))
+			{
+				@hidden_item = map.GetItem(player.HexX, player.HexY, PID_HIDDEN_NEAR_WORKBENCH);//if one already exit (will not)
+				if(!valid(hidden_item))
+					@hidden_item = map.AddItem(player.HexX, player.HexY, PID_HIDDEN_NEAR_WORKBENCH, 1);//add hidden item where player is
+			}
+			
+			//Get event to know when player go away from magic item on ground
+			hidden_item.SetEvent( ITEM_EVENT_WALK, "_playerGoAwayFromWorkbench");
+		}
+		
+		//open fixboy screen
+		player.ShowScreen(SCREEN_FIXBOY, 0, "");
+	}
+	else
+	{
+		player.SayMsg(SAY_NETMSG,TEXTMSG_GAME,STR_USE_NOTHING);
+	}
+
+	return true;
+}
+
+//When player go away from a workbench(=>hidden item on ground)
+void _playerGoAwayFromWorkbench(Item& item, Critter& crit, bool entered, uint8 dir)
+{
+	if(entered == false)
+	{
+		RemoveWorkbenchFromPlayer(crit);	//remove workbench from inventory
+		DeleteItem(item);					//delete hidden item
+	}
+}
+
+
+//List of workbench by type
+uint[] list_workbench = 
+{
+	PID_BLACKSMITH_FURNANCE_I,   // metals
+	PID_BLACKSMITH_FURNANCE_II,
+	PID_BLACKSMITH_FURNANCE_III,
+	PID_SMALL_BLACKSMITH_FURNANCE_,
+	PID_WORK_BENCH_I,            // SG BG EW armors (low/middle)
+	PID_WORK_BENCH_II,
+	PID_WORK_BENCH_III,
+	PID_WORK_BENCH_IV,
+	PID_WORK_BENCH_V,            // Ammo
+	PID_WORK_BENCH_VI,
+	PID_PRODUCTION_MACHINE_I,    // armors
+	PID_PRODUCTION_MACHINE_II,   // sg
+	PID_PRODUCTION_MACHINE_III,  // bg
+	PID_PRODUCTION_MACHINE_IV,   // ew
+	PID_PRODUCTION_MACHINE_V,    //electro & damaging weapon
+	PID_PRODUCTION_MACHINE_VI    // rad guns
+};
+
+
+//Remove workbench from inventory
+void RemoveWorkbenchFromPlayer(Critter& player)
+{
+	for(uint i = 0, len = list_workbench.length(); i < len; i++)
+	{
+		Item@ item = player.GetItem(list_workbench[i], SLOT_INV);
+		if(valid(item)) DeleteItem(item);
+	}
+	
+}
+
+
+
+
+/* Not used for now */
+/*
+//fix check for PID_BLACKSMITH_FURNANCE_I
+int fix_NeedBlackSmithFurnace(Critter& player, int state, CraftItem& craft)
+{
+	return fix_Workbench(player, PID_BLACKSMITH_FURNANCE_I, state);
+}
+
+//Generic check for workbench
+uint fix_Workbench(Critter & player, int pidWorkbench, int state)
+{
+	//if(state==FIXBOY_LIST){}
+	if(state==FIXBOY_BUTTON)
+	{
+		if(!CheckWorkbenchNearPlayer(player, pidWorkbench, DEFAULT_RADIUS))
+		{
+			//player.SayMsg(SAY_NETMSG,TEXTMSG_TEXT, STR_NO_WORKBENCH);
+			player.Say(SAY_NETMSG,"Need workbench");
+			return FIX_FAIL;
+		}
+	}
+	//if(state==FIXBOY_CRAFT){}
+	return FIX_SUCCESS;
+}
+*/

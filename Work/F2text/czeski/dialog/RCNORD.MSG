@@ -1,0 +1,26 @@
+#Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš mírnì shrbeného svalnatého mue.}
+{101}{}{Vidíš Nordinga, úøedníka z NCR.}
+{102}{}{Vidíš mírnì shrbeného svalnatého mue s malou pleškou na temeni.}
+{103}{}{Za opuštìní karavany nedostaneš zaplaceno.}
+{104}{}{Z karavany se ztratila spousta vìcí. Nejsem tu proto, abych platil zlodìji. Je mi líto.}
+{105}{}{Zlodìj? Já e jsem zlodìj? Tak mi polib prdel. Sbohem.}
+{106}{}{Brzy budeš litovat, e jsi mi nezaplatil. Sbohem.}
+{107}{}{Nemùu ti zaplatit za tohovou katastrofickou jízdu. Neèekej ode mne nic.}
+{108}{}{Ty zkurvenej bastarde! Ty budeš litovat. Sbohem.}
+{109}{}{Prostì máte poøád štìstí. Jednou jste ho nemìli a ty seš hned nasranej. Sbohem.}
+{110}{}{Tohle nebyla zrovna dvakrát vınosná jízda. Nedám ti víc ne 500$.}
+{111}{}{Poøád je lepší dostat málo, neli nic.}
+{112}{}{Ty jedno prase zkurv... Nikdo by neudìlal lepší práci ne já. Teï jsi mne opravdu nasral. Sbohem.}
+{113}{}{To nebylo vùbec špatné. Tady máš 1500$. Nevím sice, kdy seeneme nìkoho nového na øízení karavany, ale mùeš pro 
+nás pracovat dál.}
+{114}{}{Ne, díky. Nemám chu se déle dívat na brahmíní prdele. Sbohem.}
+{115}{}{To není špatnı nápad. Uvidíme se pozdìji. Sbohem.}
+{116}{}{To byla dobrá jízda, a na tu ztrátu Stanwella. Je ho škoda, byl to dobrı chlap. Tady máš 100$ a 50$ navíc, co je 
+Stanwellùv podíl.}
+{117}{}{Koneènì nìkdo, kdo dokáe ocenit moje kvality. Uvidíme se pozdìji, snad. Sbohem.}
+{118}{}{Nikdy nepohrdnu penìzi navíc. Díky a sbohem.}
+{119}{}{Kdybys byl v NCR, u dávno bys byl za møíemi a odpracovával by sis cestu ven. Mìl bys bıt rád, e tì Stanwell vzal a nešoup tì tam. To byla jeho osudová chyba.}
+{120}{}{Ok?}
+{121}{}{Stanwell nemusel zemøít. Je ho škoda. Jsem Nording. Zaplatím ti, co ti dluíme, jen co tì nalistuji.}
+{122}{}{Uh, díky.}

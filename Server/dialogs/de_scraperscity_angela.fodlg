@@ -1,0 +1,97 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+6 2010 D _var p Scrapers_City_Angela_Bring_Food = 0 D _item p PID_BOX_OF_NOODLES ! 0 D or D _var p Scrapers_City_Angela_Bring_Food = 0 D _item p PID_IGUANA_ON_A_STICK ! 0 D or D _var p Scrapers_City_Angela_Bring_Food = 0 D _item p PID_MEAT_ON_A_STICK ! 0 D or D _var p Scrapers_City_Angela_Bring_Food = 0 D _item p PID_MEAT_JERKY ! 0 D or D _var p Scrapers_City_Angela_Bring_Food = 0 D _item p PID_COOKED_MEAT ! 0 R _script dialog@r_Food_For_Karma 0  #
+3 2020 #
+65507 2030 D _param p ST_KARMA < 0 #
+0 2040 D _param p ST_KARMA > 0 D _var p Scrapers_City_Angela_Bring_Food < 0 #
+0 2050 D _param p ST_KARMA > 0 D _var p Scrapers_City_Angela_Bring_Food = 0 @
+3 3000 None 1 #
+0 3010 D _param p ST_KARMA < 0 #
+0 3020 D _param p ST_KARMA > 0 #
+4 3030 @
+4 4000 None 1 #
+0 4010 R _var p Scrapers_City_Angela_Bring_Food = 0 #
+0 4020 D _param p ST_KARMA < 0 #
+0 4030 D _param p ST_KARMA > 0 @
+6 5000 None 1 &
+
+[pols]
+{100}{}{Angela}
+{110}{}{woman3.png}
+{200}{}{Widzisz Angele.}
+{210}{}{Widzisz piekna i mloda blond dziewczyna w srednim wieku.}
+{1000}{}{Predialogue installations}
+{1010}{}{Answer text}
+{2000}{}{Ohh... czesc. W czym moge ci pomoc?}
+{2010}{}{Mam dla ciebie troche rzeczy o ktorych mowilas.}
+{2020}{}{Mozesz mi powiedziec kim jestes i czym sie tu zajmujesz?}
+{2030}{}{Mozesz sie rozebrac i zrobic mi loda.}
+{2040}{}{Chyba w niczym.}
+{2050}{}{Wpadlem sie tylko przywitac.}
+{3000}{}{Nazywam sie Angela i zajmuje sie zbiorka zywnosci dla osob potrzebujacych. Pomagamy tutaj z mezem innym mieszkancom. Czasem jest ciezko ale na szczescie dzieki sponsorom i pomocy innych mozemy wciaz funkcjonowac.}
+{3010}{}{A tam pierdolisz...}
+{3020}{}{Odwalasz dobra robote. Oby tak dalej. Powodzenia.}
+{3030}{}{Moze moge jakos pomoc?}
+{4000}{}{Oczywiscie, kazda najmniejsza pomoc bedzie dla nas wielkim darem. Mozesz przynosic nam: Paczki makaronu, pieczone iguany, miesa na patyku, szarpane kawalki miesa i gotowane miesa.
+Niestety nie mozemy ci zaplacic ale na pewno satysfakcja z pomagania bedzie dla ciebie najwieksza zaplata.}
+{4010}{}{Tak, oczywiscie to zaden problem. Postaram sie cos przyniesc jak bede mial.}
+{4020}{}{Chyba zartujesz? Za darmo mam ci przynosic zarcie dla bandy nierobow? Nie ma szans...}
+{4030}{}{Wiesz co musze to jeszcze przemyslec. Chwilowo sam jestem potrzebujacy.}
+{5000}{}{Naprawde?
+To cudownie ! Dziekuje w imieniu wszystkich potrzebujacych.}
+
+[engl]
+{100}{}{Angela}
+{110}{}{woman3.png}
+{200}{}{You see Angela.}
+{210}{}{You see a blonde, middle-aged woman.}
+{1000}{}{Predialogue installations}
+{1010}{}{Answer text}
+{2000}{}{Oh.. Dzien dobry! Can I help you?}
+{2010}{}{I've got some of the things you were talking about.}
+{2020}{}{What do you do here?}
+{2030}{}{You can get down and suck my cock.}
+{2040}{}{I guess not.}
+{2050}{}{Just came to say hi.}
+{3000}{}{My name is Angela, me and my husband are organizing a relief effort for those poor starved people. It's pretty tough, we barely manage to get anything, hardly anyone believes in charity these days, niestety.}
+{3010}{}{Bullshit...}
+{3020}{}{You're doing a great job. Now, if you excuse me...}
+{3030}{}{Can I help you somehow?}
+{4000}{}{Sure you can, slodziaku! Any food will do - noodles, iguanas, meatsticks or just plain meat, processed or not... Mind this is a charity effort, so we won't pay you anything, helping those in need should be enough reward, nie?}
+{4010}{}{Yes, it will be enough. I'll try to fetch you some food.}
+{4020}{}{Are you kidding? Helping for free? What a joke.}
+{4030}{}{You know, I actually could use some help with that myself. Maybe some other time.}
+{5000}{}{Really?
+It's wonderful! Thank you on behalf of all the needy.}
+[russ]
+{100}{}{Angela}
+{110}{}{woman3.png}
+{200}{}{You see Angela.}
+{210}{}{You see a blonde, middle-aged woman.}
+{1000}{}{Predialogue installations}
+{1010}{}{Answer text}
+{2000}{}{Oh.. Dzien dobry! Can I help you?}
+{2010}{}{I've got some of the things you were talking about.}
+{2020}{}{What do you do here?}
+{2030}{}{You can get down and suck my cock.}
+{2040}{}{I guess not.}
+{2050}{}{Just came to say hi.}
+{3000}{}{My name is Angela, me and my husband are organizing a relief effort for those poor starved people. It's pretty tough, we barely manage to get anything, hardly anyone believes in charity these days, niestety.}
+{3010}{}{Bullshit...}
+{3020}{}{You're doing a great job. Now, if you excuse me...}
+{3030}{}{Can I help you somehow?}
+{4000}{}{Sure you can, slodziaku! Any food will do - noodles, iguanas, meatsticks or just plain meat, processed or not... Mind this is a charity effort, so we won't pay you anything, helping those in need should be enough reward, nie?}
+{4010}{}{Yes, it will be enough. I'll try to fetch you some food.}
+{4020}{}{Are you kidding? Helping for free? What a joke.}
+{4030}{}{You know, I actually could use some help with that myself. Maybe some other time.}
+{5000}{}{Really?
+It's wonderful! Thank you on behalf of all the needy.}

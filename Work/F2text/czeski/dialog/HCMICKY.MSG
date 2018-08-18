@@ -1,0 +1,48 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš malého èilého gentlemana.}
+{101}{}{To je hledaè pokladù Micky.}
+{102}{}{Tento velmi malı mu vypadá pøátelsky a stateènì. Rozhlíí se kolem a hledá lesklé pøedmìty.}
+{103}{}{Zdravíèko, pøíteli! Nevidìl jsi nìjaké cennosti nebo zajímavé kovy leet nìkde kolem?}
+{104}{}{Ještì jednou vítám tvoji malièkost. Chtìl bych zase najít nìjakı ten poklad?}
+{105}{}{Tak chtìlo by to vyzvednout nìjakej poklad? Jsem nejlepší z nejlepších!}
+{106}{}{Dneska ádnej poklad.}
+{107}{}{No jo Potøeboval bych tvojí pomoc.}
+{108}{}{Kdo.. Ty?}
+{109}{}{Sbohem.}
+{110}{}{Ne, dneska ne. Jsem na stopì nìèemu velkému. Co ti øíká Štìchovickı poklad, dám ti vìdìt a bude èas.}
+{111}{}{No tak dobrá, myslím e bys mohl bıt dobrı partner pro nìco, co bychom nazvali, "dobrodruství Indiana Jonese.".}
+{112}{}{Jak se jmenuješ?}
+{113}{}{Nevadí.}
+{114}{}{Já? Jsem Micky, nejlepší hledaè pokladù v Broken Hills a širokém okolí.}
+{115}{}{Hlídaèèè?}
+{116}{}{Tak si to uij.}
+{117}{}{Hledaè pokladù?}
+{118}{}{Zajímavé. Pìknı den pøeji.}
+{119}{}{Neøíkej, e jsi o mì nikdy neslyšel! Copak ti jako malému nevyprávìli pohádky o rychlım Mickym? O jeho vítìznıch bitvách, neuvìøitelnıch rvaèkách a bájeènıch chlastaèkách?}
+{120}{}{Ne.}
+{121}{}{Je mi líto, opravdu ne.}
+{122}{}{Tak to jsi o hodnì pøišel. Moná e jednou, a budu mít èas ti o tom povím.}
+{123}{}{Perfektní.}
+{124}{}{Budu èekat se zatajenım dechem.}
+{125}{}{No, asi bych nemìl bıt tak pøekvapenı. Naše spoleènost Hledaèù pokladù u byla zatracena pøed léty. Všechno to strádání, smrt a boj o pøeití, zanechalo následky na všech dobrodruzích. Kadopádnì dej mi vìdìt, jestli nìco bude.}
+{126}{}{Jasòaèka.}
+{127}{}{Budeš první na seznamu.}
+{128}{}{Vánì?! To je skvìlé! Co to bude? Zlato? Cennosti? Ztracené artefakty?}
+{129}{}{Móc pìniz.}
+{130}{}{Nefadit.}#schválnì
+{131}{}{Podle všeho pìknej balík penìz. Dost na to ít a do smrti v pøepychu.}
+{132}{}{No moná, e se na chvíli ještì udìlám sám pro sebe.}
+{133}{}{Wow! Tak to je pøesnì to, na co jsem èekal. Tak co, budeme paráci. Øeknìme fifty fifty?}
+{134}{}{Jo!}
+{135}{}{Ne. Sbohem}
+{136}{}{Oh, tvùj problém.}
+{137}{}{No kdy o tom tak pøemıšlím, moná to ještì chvíli zvládnu sám.}
+{138}{}{Vıbornì! Tak jakı je pøíbìh, kde jsou špatòáci a co po mì chceš?}
+{139}{}{Pojï se mnou na temné místo.}
+{140}{}{Na to se dá øíct jen to, e jsi strávil trochu èasu v jeskyních.}
+{141}{}{Jak bájeèné! Jen mi udej správnı smìr!}
+{142}{}{Poklad a tady u nás?}
+{143}{}{No, ještì si nejsem jistı. Øíkal jsem, e chci najít poklad nìkde tady.}
+{144}{}{Co? Kousek odsud? Ha! Kdopak ti øekl takovou pitomost. Já znám kadı zákoutí a skrıše v Broken Hills, prolezl jsem celı tohle mìsto a nikde jsem nenašel ani prd. Tomu fakt moc nevìøím.}
+{145}{}{Mooc špatné. Sbohem.}
+{146}{}{Tak to je zlé. Jdu hledat další znaèky. Sbohem.}

@@ -1,0 +1,412 @@
+// Author: cvet
+#include "_macros.fos"
+
+#ifdef __CLIENT
+#define Critter CritterCl
+#define Item ItemCl
+#endif
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Call on something critter want move item from one slot to another.
+// Return true to allow transaction, false to disallow.
+// Function must exist on server and client side.
+bool critter_check_move_item(Critter& cr, Item& item, uint8 toSlot, Item@ itemSwap)
+{
+	uint8 fromSlot = item.CritSlot;
+	
+	// Drop
+	if( toSlot == SLOT_GROUND )
+		return true;
+
+	// If busy, then allow only hands item swapping
+	bool handsSwap = ((fromSlot == SLOT_HAND1 && toSlot == SLOT_HAND2) || (fromSlot == SLOT_HAND2 && toSlot == SLOT_HAND1));
+    if(valid(itemSwap) && !handsSwap)
+        return false;
+
+	// Weapon animation
+    if(toSlot == SLOT_HAND1)
+	{
+		if(item.GetType() == ITEM_TYPE_WEAPON && !IsCritterAnim1(cr.CrType, item.Proto.Weapon_Anim1))
+			return false;
+	}
+
+	// Armor animation
+    if(toSlot == SLOT_ARMOR)
+	{
+		if(item.GetType() != ITEM_TYPE_ARMOR)
+			return false;
+		if(item.Proto.Slot != SLOT_INV)
+			return false;
+		if(!IsCritterCanArmor(cr.CrType))
+			return false;
+	}
+
+	// Custom slot checks
+    if(toSlot > SLOT_ARMOR)
+	{
+		if(toSlot != item.Proto.Slot)
+			return false;
+	}
+
+	// Allow moving
+	return true;
+}
+
+#ifdef __SERVER
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Call on critter item moved.
+void critter_move_item(Critter& cr, Item& item, uint8 fromSlot)
+{
+	uint8 toSlot=item.CritSlot;
+		// implants access
+		if(toSlot==SLOT_SLOT_C && cr.ParamBase[ST_SLOT_C]==0) cr.MoveItem(item.Id,item.GetCount(),fromSlot);
+		else if(toSlot==SLOT_SLOT_B && cr.ParamBase[ST_SLOT_B]==0) cr.MoveItem(item.Id,item.GetCount(),fromSlot);
+		else if(toSlot==SLOT_SLOT_A && cr.ParamBase[ST_SLOT_A]==0) cr.MoveItem(item.Id,item.GetCount(),fromSlot);
+		else if(toSlot==SLOT_HEAD && cr.ParamBase[ST_SLOT_HEAD]==0) cr.MoveItem(item.Id,item.GetCount(),fromSlot);
+
+	uint8 weaponMode=0;
+	ProtoItem @ weapon1=cr.GetSlotProto(SLOT_HAND1,weaponMode);
+	ProtoItem @ weapon2=cr.GetSlotProto(SLOT_HAND2,weaponMode);
+	//First Hand slot
+	if(fromSlot==SLOT_HAND1 || toSlot==SLOT_HAND1)
+	{
+		uint perk1=0;
+		uint perk2=0;
+		uint perk3=0;
+		uint perk4=0;
+		uint perk5=0;
+		uint perk_legendary=0;
+		//bonus sections depends on Weapon PID
+		if(toSlot==SLOT_HAND1 && item.GetType() == ITEM_TYPE_WEAPON)
+		{
+			perk1=weapon1.Weapon_Perk1;
+			perk2=weapon1.Weapon_Perk2;
+			perk3=weapon1.Weapon_Perk3;
+			perk4=weapon1.Weapon_Perk4;
+			perk5=weapon1.Weapon_Perk5;
+			perk_legendary=weapon1.Weapon_Perk6;
+			if(item.Val5>999)
+			{
+				cr.ParamBase[perk1]+=1;
+			}
+			if(item.Val5>1999) 
+			{
+				cr.ParamBase[perk2]+=1;
+			}
+			if(item.Val5>2999) 
+			{
+				cr.ParamBase[perk3]+=1;
+			}
+			if(item.Val5>3999) 
+			{
+				cr.ParamBase[perk4]+=1;
+			}
+			if(item.Val5>4999) 
+			{
+				cr.ParamBase[perk5]+=1;
+			}
+			if(item.Val5>5999) 
+			{
+				cr.ParamBase[perk_legendary]+=1;
+			}
+		}
+		if(fromSlot==SLOT_HAND1 && item.GetType() == ITEM_TYPE_WEAPON) //deleting perks if but downs weapon and write exp value from critter param to item. Also set it to 0 to critter.
+		{
+			
+			for(uint i=300; i<380; i++) cr.ParamBase[i]=0;
+			
+			//сделать определённый диапазон перков для оружия, отдельный для брони, отдельный для вещей. Удалять перки по типу предмета по диапазону ID.
+			
+			//item.Val5=cr.ParamBase[ST_WEAPON_EXP];
+			//cr.ParamBase[ST_WEAPON_EXP]=0;
+		}
+		
+	}
+
+	
+	//Head (spec) slot type=ITEM_TYPE_HEAD
+	//if(item.GetType()==ITEM_TYPE_HEAD && (fromSlot==SLOT_HEAD || toSlot==SLOT_HEAD))
+	//{
+	//}
+	//Implant slot C (BLUE)
+	//else if(item.GetType()==ITEM_TYPE_HEAD && (fromSlot==SLOT_SLOT_C || toSlot==SLOT_SLOT_C))
+	//{	
+	//}
+	//Implant slot B (GREEN)
+	//else if(item.GetType()==ITEM_TYPE_HEAD && (fromSlot==SLOT_SLOT_B || toSlot==SLOT_SLOT_B))
+	//{
+	//}
+	//Implant slot A (RED)
+//	else if(item.GetType()==ITEM_TYPE_HEAD && (fromSlot==SLOT_SLOT_A || toSlot==SLOT_SLOT_A))
+//	{
+//	}
+		
+	// Armor changing
+	
+	if(item.GetType()==ITEM_TYPE_ARMOR && (fromSlot==SLOT_ARMOR || toSlot==SLOT_ARMOR))
+	{
+		speedboost(cr);
+		if(GetCritterAnimType(cr.CrType)!=ANIM_TYPE_3D)
+		{
+			// Default dude
+			bool isMale=(cr.Stat[ST_GENDER]==GENDER_MALE);
+			uint crType=cr.Stat[ST_BASE_CRTYPE];
+			if(crType==0) crType=(isMale?CRTYPE_DEFAULT_M:CRTYPE_DEFAULT_F);
+			if(toSlot==SLOT_ARMOR) crType=(isMale?item.Proto.Armor_CrTypeMale:item.Proto.Armor_CrTypeFemale);
+
+			// Long hair dude redirects
+			if(cr.Stat[ST_BASE_CRTYPE]==CRTYPE_LHD_JUMPSUIT && isMale)
+			{
+				crType=CRTYPE_LHD_JUMPSUIT;
+				if(toSlot==SLOT_ARMOR)
+				{
+					crType=item.Proto.Armor_CrTypeMale;
+					if(crType==CRTYPE_DW_LEATHER_ARMOR_M) crType=CRTYPE_LHD_LEATHER_ARMOR;
+					else if(crType==CRTYPE_DW_LEATHER_JACKET_M) crType=CRTYPE_LHD_LEATHER_JACKET;
+					else if(crType==CRTYPE_DW_METAL_ARMOR_M) crType=CRTYPE_LHD_METAL_ARMOR;
+				}
+			}
+
+			if(cr.CrType!=crType) cr.ChangeCrType(crType);
+		}
+
+	// Armor modifiers
+		// Also look Armor perk validation in critter_init
+		int sign=(toSlot==SLOT_ARMOR?int(1):-1);
+		switch(item.Proto.Armor_Perk)
+		{
+		case ARMOR_PERK_SMALL_GUNS:
+			cr.ParamBase[SK_SMALL_GUNS]+=50*sign;
+			break;
+		case ARMOR_PERK_BIG_GUNS:
+			cr.ParamBase[SK_BIG_GUNS]+=50*sign;		
+			break;
+		case ARMOR_PERK_ENERGY_WEAPONS:
+			cr.ParamBase[SK_ENERGY_WEAPONS]+=50*sign;
+			break;
+		case ARMOR_PERK_UNARMED:
+			cr.ParamBase[SK_UNARMED]+=50*sign;
+			break;
+		case ARMOR_PERK_THROWING:
+			cr.ParamBase[SK_THROWING]+=50*sign;
+			break;
+		case ARMOR_PERK_FIRST_AID:
+			cr.ParamBase[SK_FIRST_AID]+=50*sign;
+			break;
+		case ARMOR_PERK_DOCTOR:
+			cr.ParamBase[SK_DOCTOR]+=50*sign;
+			break;
+		case ARMOR_PERK_SNEAK:
+			cr.ParamBase[SK_SNEAK]+=50*sign;
+			break;
+		case ARMOR_PERK_LOCKPICK:
+			cr.ParamBase[SK_LOCKPICK]+=50*sign;
+			break;
+		case ARMOR_PERK_STEAL:
+			cr.ParamBase[SK_STEAL]+=50*sign;
+			break;
+		case ARMOR_PERK_TRAPS:
+			cr.ParamBase[SK_TRAPS]+=50*sign;
+			break;
+		case ARMOR_PERK_SCIENCE:
+			cr.ParamBase[SK_SCIENCE]+=50*sign;
+			break;
+		case ARMOR_PERK_REPAIR:
+			cr.ParamBase[SK_REPAIR]+=50*sign;
+			break;
+		case ARMOR_PERK_SPEECH:
+			cr.ParamBase[SK_SPEECH]+=50*sign;
+			break;
+		case ARMOR_PERK_BARTER:
+			cr.ParamBase[SK_BARTER]+=50*sign;
+			break;
+		case ARMOR_PERK_GAMBLING:
+			cr.ParamBase[SK_GAMBLING]+=50*sign;
+			break;
+		case ARMOR_PERK_OUTDOORSMAN:
+			cr.ParamBase[SK_OUTDOORSMAN]+=50*sign;
+			break;
+		case ARMOR_PERK_STRENGTH:
+			cr.ParamBase[ST_STRENGTH]+=1*sign;
+			break;
+		case ARMOR_PERK_PERCEPTION:
+			cr.ParamBase[ST_PERCEPTION]+=1*sign;
+			break;
+		case ARMOR_PERK_ENDURANCE:
+			cr.ParamBase[ST_ENDURANCE]+=1*sign;
+			break;
+		case ARMOR_PERK_CHARISMA:
+			cr.ParamBase[ST_CHARISMA]+=1*sign;
+			break;
+		case ARMOR_PERK_INTELLECT:
+			cr.ParamBase[ST_INTELLECT]+=1*sign;
+			break;
+		case ARMOR_PERK_AGILITY:
+			cr.ParamBase[ST_AGILITY]+=1*sign;
+			break;
+		case ARMOR_PERK_LUCK:
+			cr.ParamBase[ST_LUCK]+=1*sign;
+			break;
+		case ARMOR_PERK_RAD1:
+			cr.ParamBase[ST_RADIATION_RESISTANCE_EXT]+=30*sign;
+			break;
+		case ARMOR_PERK_RAD2:
+			cr.ParamBase[ST_RADIATION_RESISTANCE_EXT]+=50*sign;
+			break;		
+		case ARMOR_PERK_RAD3:
+			cr.ParamBase[ST_RADIATION_RESISTANCE_EXT]+=80*sign;
+			break;
+		case ARMOR_PERK_PERC2:
+			cr.ParamBase[ST_PERCEPTION]+=2*sign;
+			break;
+		case ARMOR_PERK_WEIGHT1:
+			cr.ParamBase[ST_CARRY_WEIGHT]+=25*sign;
+			break;
+		case ARMOR_PERK_WEIGHT2:
+			cr.ParamBase[ST_CARRY_WEIGHT]+=35*sign;
+			break;
+		case ARMOR_PERK_AP:
+			cr.ParamBase[ST_ACTION_POINTS]+=2*sign;
+			break;
+		case ARMOR_PERK_SEQUENCE:
+			cr.ParamBase[ST_SEQUENCE]+=20*sign;
+			break;
+		case ARMOR_PERK_ADVENCED:
+			cr.ParamBase[ST_STRENGTH]+=2*sign;
+			cr.ParamBase[ST_RADIATION_RESISTANCE_EXT]+=50*sign;break;
+		case ARMOR_PERK_PA:
+			cr.ParamBase[ST_STRENGTH]+=3*sign;
+			cr.ParamBase[ST_RADIATION_RESISTANCE_EXT]+=65*sign;
+			break;	
+		case ARMOR_PERK_MECH:
+			cr.ParamBase[ST_STRENGTH]+=3*sign;
+			cr.ParamBase[MODE_NO_DROP]+=1*sign;
+			cr.ParamBase[ST_ACTION_POINTS_EXT]-=1*sign;
+			break;	
+		case ARMOR_PERK_LEATHER_JACKET:
+			cr.ParamBase[ST_CHARISMA]+=1*sign;
+			cr.ParamBase[ST_AGILITY]+=1*sign;
+			break;	
+		case ARMOR_PERK_CHARISMA2:
+			cr.ParamBase[ST_CHARISMA]+=2*sign;
+			break;
+		case ARMOR_PERK_MECH2:
+			cr.ParamBase[ST_STRENGTH]+=3*sign;
+			cr.ParamBase[MODE_NO_DROP]+=1*sign;
+			break;
+		case ARMOR_PERK_REF:
+			cr.ParamBase[PLAYER_MAIN_FACTION]=2*sign;
+			break;
+		case ARMOR_PERK_MECH_UNARMED:
+			if(cr.ParamBase[SK_BIG_GUNS]<100) 
+			{
+				cr.ParamBase[SK_BIG_GUNS]+=100*sign;
+				cr.ParamBase[ST_STRENGTH]+=3*sign;
+				cr.ParamBase[MODE_NO_DROP]+=1*sign;
+			}
+			else if((cr.ParamBase[SK_BIG_GUNS]>=100) && (cr.ParamBase[SK_BIG_GUNS]<200))
+			{
+				cr.ParamBase[SK_BIG_GUNS]+=50*sign;
+				cr.ParamBase[ST_STRENGTH]+=3*sign;
+				cr.ParamBase[MODE_NO_DROP]+=1*sign;
+			}
+			else if(cr.ParamBase[SK_BIG_GUNS]>=200)
+				cr.ParamBase[ST_STRENGTH]+=3*sign;
+				cr.ParamBase[MODE_NO_DROP]+=1*sign;
+			break;
+		//case ARMOR_PERK_SPEC10:
+		//	cr.StatBase[]+=*sign;
+		//	break;
+		default:
+			break;
+		}
+		cr.StatBase[ST_CURRENT_ARMOR_PERK]=(toSlot==SLOT_ARMOR?item.Proto.Armor_Perk:0);
+		
+		if(fromSlot==SLOT_ARMOR && toSlot!=0xFF && (item.GetProtoId()==PID_MECHSUITG1 || item.GetProtoId()==PID_MECHSUITG2 || item.GetProtoId()==PID_MECHSUITB1 || item.GetProtoId()==PID_MECHSUITB2 || item.GetProtoId()==PID_MECHSUITD1)) {
+			cr.DeleteItem(PID_CANNONM,1);
+			cr.DeleteItem(PID_CANNONF,1);
+			cr.DeleteItem(PID_CANNONL,1);
+			cr.DeleteItem(PID_CANNONSP,1);
+			Map @map=cr.GetMap();
+			if(@map==null) DeleteItem(item);
+			else MoveItem(item,1,map,cr.HexX,cr.HexY);			
+		}
+		
+		if(fromSlot==SLOT_ARMOR && toSlot==0xFF && (item.GetProtoId()==PID_MECHSUITG1 || item.GetProtoId()==PID_MECHSUITG2 || item.GetProtoId()==PID_MECHSUITB1 || item.GetProtoId()==PID_MECHSUITB2 || item.GetProtoId()==PID_MECHSUITD1)) {
+			cr.DeleteItem(PID_CANNONM,1);
+			cr.DeleteItem(PID_CANNONF,1);
+			cr.DeleteItem(PID_CANNONL,1);
+			cr.DeleteItem(PID_CANNONSP,1);
+		}
+	}
+
+	if((fromSlot==SLOT_HAND1 || fromSlot==SLOT_HAND2) && toSlot!=SLOT_HAND1  && toSlot!=SLOT_HAND2 && toSlot==0xFF && (item.GetProtoId()==PID_CANNONM || item.GetProtoId()==PID_CANNONF || item.GetProtoId()==PID_CANNONL || item.GetProtoId()==PID_CANNONSP))
+	{
+		DeleteItem(item);
+	}
+	if((fromSlot==SLOT_HAND1 || fromSlot==SLOT_HAND2) && toSlot!=SLOT_HAND1  && toSlot!=SLOT_HAND2 && toSlot!=0xFF && (item.GetProtoId()==PID_CANNONM || item.GetProtoId()==PID_CANNONF || item.GetProtoId()==PID_CANNONL || item.GetProtoId()==PID_CANNONSP))
+	{
+		cr.MoveItem(item.Id,item.GetCount(),fromSlot);
+	}
+			// Slot modifiers
+// SLOT_PERK_MIRROR_SHADES // +1 charisma
+// SLOT_PERK_COSMETIC_CASE // +1 charisma to female
+// SLOT_PERK_MOTION_SENSOR // +20 outdoorsman
+// SLOT_PERK_STEALTH_BOY   // +20 sneak
+	speedboost(cr);
+}
+
+
+//Speed boost bonus for runing. 1 is 0,5%
+void speedboost(Critter& cr)
+{
+	if(cr.IsPlayer())
+	{
+	uint current_weight; 										//Get current weight count
+	uint skill=cr.Skill[SK_UNARMED];							//Get Unarmed skill count
+	uint bonus=skill/6; 										//50 max(25%)
+	current_weight = cr.ItemsWeight(); 							//Get count to var
+	uint penalty=(current_weight / 5000);						//Weight penalty 1 for every 5kg(0,5% every 5kg)
+	Item@ CitterArmor = cr.GetItem(0,SLOT_ARMOR);				//Get critter armor indentifier
+	if (!valid(CitterArmor))	 								//Bluesute with no armor
+	{	
+		cr.StatBase[ST_RUN_TIME]=200-bonus+penalty;
+		if(cr.StatBase[ST_RUN_TIME] > 200) cr.StatBase[ST_RUN_TIME]=200;
+		return;
+	}
+	
+	if( (CitterArmor.GetProtoId()== PID_LEATHER_JACKET_DE) ||  (CitterArmor.GetProtoId()== PID_LEATHER_ARMOR_DE) ||  (CitterArmor.GetProtoId()== PID_LEATHER_ARMOR_MK_II_DE) || (CitterArmor.GetProtoId()== PID_CURED_LEATHER_ARMOR_DE) || (CitterArmor.GetProtoId()== PID_LEATHER_GECKO_DE) )
+	{	
+		bonus+=10;												//Additional bonus for Leather Armors 10 pts (5%)
+	}
+		
+	if( ( CitterArmor.GetProtoId() == PID_METAL_ARMOR_DE ) || ( CitterArmor.GetProtoId() == PID_METAL_ARMOR_MK_II_DE ) || ( CitterArmor.GetProtoId() == PID_TESLA_ARMOR_DE ) )
+	{	
+		penalty+=20;											//Additional penalty for Metal Armors 20 pts (10%)
+	}
+		
+	if( ( CitterArmor.GetProtoId() == PID_CA_1 ) || ( CitterArmor.GetProtoId() == PID_CA_2 ) || ( CitterArmor.GetProtoId() == PID_CA_3 ) || ( CitterArmor.GetProtoId() == PID_CA_4 ) || ( CitterArmor.GetProtoId() == PID_CA_5 ) || ( CitterArmor.GetProtoId() == PID_CA_6 ) || ( CitterArmor.GetProtoId() == PID_CA_7 ) || ( CitterArmor.GetProtoId() == PID_CA_8 ) || ( CitterArmor.GetProtoId() == PID_CA_9 ) || ( CitterArmor.GetProtoId() == PID_CA_10 ) || ( CitterArmor.GetProtoId() == PID_CA_11 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_1 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_2 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_3 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_4 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_5 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_6 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_7 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_8 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_9 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_10 ) || ( CitterArmor.GetProtoId() == PID_CAMKII_11 ) || ( CitterArmor.GetProtoId() == PID_THERMAL_CA ) || ( CitterArmor.GetProtoId() == PID_REACTIV_CA ) || ( CitterArmor.GetProtoId() == PID_NEC_CA ) || ( CitterArmor.GetProtoId() == PID_ULS_CA ) ) 
+	{	
+		penalty+=30;											//Additional penalty for Combat Armors 30 pts (15%)
+	}
+		
+	if( (CitterArmor.GetProtoId()== PID_PA) || (CitterArmor.GetProtoId()== PID_PAMKII) || (CitterArmor.GetProtoId()== PID_APA) ) 
+	{
+		penalty+=200; 											//Additional penalty for Power Armors 200 pts (100%)
+	}
+
+	if( (CitterArmor.GetProtoId()== PID_MECHSUITG1) || (CitterArmor.GetProtoId()== PID_MECHSUITG2) || (CitterArmor.GetProtoId()== PID_MECHSUITB1) || (CitterArmor.GetProtoId()== PID_MECHSUITB2) || (CitterArmor.GetProtoId()== PID_MECHSUITD1) || (CitterArmor.GetProtoId()== PID_ENVIRONMENTAL_DE) ) 
+	{
+		penalty+=200; 											//Additional penalty for Mech Armors, Enviromental Armor 200 pts (100%)
+	}
+	
+	cr.StatBase[ST_RUN_TIME]=200-bonus+penalty;					//Formula
+	
+	if(cr.StatBase[ST_RUN_TIME] > 200) 
+	{	
+		cr.StatBase[ST_RUN_TIME]=200;							//Return to minimum
+	}
+	}
+}
+
+#endif

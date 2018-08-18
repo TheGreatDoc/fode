@@ -1,0 +1,59 @@
+#tento soubor pøeloil Marek "MAK" Gøešek
+{100}{}{Vidíš osobu ve vylepšeném brnìní.}
+{101}{}{Vidíš vojáka Enklávy.}
+{102}{}{Vidíš osobu obleèenou ve velmi zdokonaleném brnìní.}
+{103}{}{Kdo tam?}
+{104}{}{Jdi!}
+{105}{}{Na co èumíš?}
+{106}{}{Dej si odchod!}
+{107}{}{Neloudej se.}
+{108}{}{Pùjdeš do hlášení.}
+{109}{}{Vra se zpátky do práce.}
+{110}{}{Máš povolení pro tuto oblast?}
+{111}{}{Tady nemáš co dìlat, chlape.}
+{112}{}{Pokraèuj.}
+{113}{}{Zapnout.}
+{114}{}{Toto není cvièení, opakuji, toto není cvièení!}
+{115}{}{Uveïte v chod ochranné procedury.}
+{116}{}{Dostaò se do klidové zóny. Hned!}
+{117}{}{Dostali jsme se do nebezpeèné situace.}
+{118}{}{Radši se nìkam schovej.}
+{119}{}{Ty jsi neslyšel alarm?}
+{120}{}{Krysy nebo toxiny, fakt super den.}
+{121}{}{V nìkterıch dnech se ani nevyplatí vylézat z postele.}
+{122}{}{Všechny inspekce jsou jen na parádu.}
+{123}{}{Mám rád svou práci.}
+{124}{}{Neslyšels nìco?}
+{125}{}{Strašnì mì bolej nohy.}
+{126}{}{Slyšel si u o té nové sekretáøce?}
+{127}{}{Nic se tu rozhodnì nestane.}
+{128}{}{Pøál sem si, aby se stalo nìco vzrušujícího.}
+{129}{}{Slyšel sem, e viceprezident má dost malou autoritu.}
+{130}{}{Nespíš, e ne?}
+{131}{}{Funkènost rádia ovìøena. Ovìøeno , ovìøeno. Slyšíte mì?}
+{132}{}{(Zíííív)}
+{133}{}{Hej, pokerová párty je dnes veèer. Cítím, e dnes budu mít štìstí.}
+{134}{}{Všichni zùstaòte v pohotovosti.}
+{135}{}{Zùstaò ostraitı.}
+{136}{}{Toto není cvièení.}
+{137}{}{Odveïte civilisty do bezpeèí.}
+{138}{}{Zkontroluj obvody.}
+{139}{}{Všechny jednotky hlaste pozici.}
+{140}{}{Jsou blízko, cítím to.}
+{141}{}{Lidi, zùstaòte klidní.}
+{142}{}{Máme tady práci.}
+{143}{}{Samozøejmì, šéfe.}
+{144}{}{Ano, pane.}
+{145}{}{Sekce B, vše v poøádku.}
+{146}{}{Koridor je prázdnı.}
+{147}{}{Vracím se na sluební místo.}
+{148}{}{Tım Bravo hlaste se.}
+{149}{}{Tım Gamma hlaste se.}
+{150}{}{(Zpívá si): Jsi moje máma, moje máma, kterou já mám navìky rád...}
+{151}{}{Fajn, která svinì mi pøilepila vıkaèku do vlasù?}
+{152}{}{Docela bych i nìco zbaštil.}
+{153}{}{(Zpívá si): Jednoho letního veèera na návsi pod starou lípou, otevøel hospodskı Antonín Kuèera soudeèek s pípou...}
+{154}{}{Kontrola zvuku, 1-2-3-4, v poøádku.}
+{155}{}{Na druhém podlaí vše v poøádku.}
+{156}{}{Sektor 7, prázdnı.}
+{157}{}{Podlaí prázdné.}

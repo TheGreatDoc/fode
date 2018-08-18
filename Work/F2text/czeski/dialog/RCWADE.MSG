@@ -1,0 +1,65 @@
+# Tento soubor pøeloil Jiøí "Markus" Petrù - jpe@iol.cz
+{100}{}{Vidíš mue v kombinéze.}
+{101}{}{Vidíš Bena Weda, vùdce karavany Redding - Vault City.}
+{102}{}{Vidíš mue obleèeného v pøiléhavé kombinéze.}
+{103}{}{Ty máš tu drzost po tom všem ještì pøijít zpìt? Tak zase odejdi, pro mì u nikdy pracovat nebudeš.}
+{104}{}{Jdi mi z oèí.}
+{105}{}{Jdeme do nich!}
+{106}{}{Jasnì, jdeme!}
+{107}{}{Nazdar, jmenuji se Ben. Ben Wade. Jsem vùdcem karavany Redding - Vault City. Dnes odjídíme, ale ještì ne se tak stane, musím sehnat pár stráí.}
+{108}{}{Nazdar, jmenuji se Ben . Ben Wade. Jsem vùdcem karavany Redding - Vault City. Pøed kadım vıjezdem sháníme stráe.
+ Odjídíme prvního, take se stav, budeš-li mít zájem.}
+{109}{}{Co ještì potøebuješ?}
+{110}{}{Bùù-bùù?}
+{111}{}{Chci se u vás nechat najmout.}
+{112}{}{S èím vlastnì obchodujete?}
+{113}{}{Proè s odjezdem èekáte a do prního?}
+{114}{}{To není nic pro mne. Sbohem.}
+{115}{}{Nikdy to nebıvá moc lehké.}
+{116}{}{Ha! Mìli si to rozmyslet døív, ne se vrhli na mou karavanu.}
+{117}{}{Ještì e jsi jel s námi.}
+{118}{}{Chudáèci... Na litování je u ale pozdì.}
+{119}{}{Pustiny u nejsou tak bezpeèné jak bıvaly.}
+{120}{}{Ty nejsi ádná strá, ty jsi hotovej vùl. Kliï se mi z oèí, srabe.}
+{121}{}{Opustil jsi karavanu, opus i mne.}
+{122}{}{Nejsi nic jiného ne zlodìj. Svùj podíl sis u nakradl, take tu u nemáš co dìlat.}
+{123}{}{Zlodìj? To sis dovolil pøíliš. Odcházím, sbohem.}
+{124}{}{Však ty budeš brzy litovat, e jsi mne vyhodil. Sbohem.}
+{125}{}{Kdyby ses vìnoval svojí práci a hlídal mojí karavanu, urèitì bych pro tebe nìjaké ty chechtáky našel. Jenome platí pravidlo "jak si usteleš, tak si také lehneš", co znamená, e nedostaneš nic .}
+{126}{}{Ty jeden bastarde, za to zaplatíš. Sbohem.}
+{127}{}{Vìtšinou míváte více štìstí ne rozumu. Dnes se karta obrátila a takhle to dopadlo. Sbohem.}
+{128}{}{To byla špatná cesta. Nemùu ti dát více, ne tìhle 500$. Je mi líto.}
+{129}{}{Poøád lepší ne nedostat nic. Díky a sbohem.}
+{130}{}{Ty hajzle! Nikdo by neudìlal lepší práci ne já a... Toho budeš litovat. Sbohem.}
+{131}{}{Tahle karavana byla úspìšná. Tady máš svıch 1000$. Rád jsem s tebou pracoval a doufám, e tì tu ještì nìkdy uvidím.}
+{132}{}{Nemusíš doufat. Déle bych se u na ty brahmíní prdele dívat nevydrel. Sbohem.}
+{133}{}{Samozøejmì e mì tu uvidíš. Ale zatím sbohem.}
+{134}{}{Pane jo! To byla vıborná jízda. Tady máš 1000$ a dalších 200$ za skvìlou práci. Ty jsi dítì štìstìny. Urèitì s námi
+ musíš jet i pøíštì.}
+{135}{}{Rád poznávám nìkoho kdo dokáe ocenit snahu. Díky a sbohem.}
+{136}{}{Díky, vdycky rád dostávám peníze navíc. Ale teï u musím jít. Sbohem.}
+{137}{}{To se tìko vysvìtluje. Pøednì to závisí na dobì, za kterou se podaøí naloit maximum zlata. A i kdy nejsem horník,
+ vím témìø jistì e to zabere více ne tøi tıdny. Proto vyráíme a prvního. }
+{138}{}{No, nevím to sice zcela jistì, ale to shánìní a nakládání lékaøskıch potøeb zabere zhruba tøi tıdny.
+ Teprve potom mùeme vyrazit. Stav se, pokud budeš mít zájem o práci.}
+{139}{}{S èím vlastnì obchodujete?}
+{140}{}{Povìz mi ještì o nìèem jiném.}
+{141}{}{U musím jít. Uvidíme se prvního. Sbohem.}
+{142}{}{Je mi líto, ale jdeš na to pøíliš brzo. Tahle karavana nebude ještì pár dní pøipravena vyrazit. Stav se a prvního.}
+{143}{}{Proè a prvního?}
+{144}{}{S èím vlastnì obchodujete?}
+{145}{}{Ah tak. Uvidíme se pozdìji. Sbohem.}
+{146}{}{Je mi líto kámo, ale u máme stránıch dost.}
+{147}{}{Uh, dobøe.}
+{148}{}{Ve Vault City nabíráme plnı náklad lékaøskıch potøeb a poté ho v Reddingu vymìòujeme za zlato.}
+{149}{}{To zní zajímavì. Chci se u vás nechat najmout.}
+{150}{}{Povìz mi ještì o nìèem jiném.}
+{151}{}{U musím jít. Sbohem.}
+{152}{}{Jdeš právì vèas, za pár hodin vyráíme. Za práci dostaneš 1000$. Sháním u ale jenom jednoho stráce, take ti
+ zaplatím jenom za jednu osobu. Bereš to? }
+{153}{}{Jdeš právì vèas, za pár hodin vyráíme. Za práci dostaneš 1000$. Bereš to?}
+{154}{}{Samozøejmì e to beru.}
+{155}{}{Je mi líto, ale rozmyslel jsem si to. Nechci bıt strácem karavany. Sbohem.}
+{156}{}{Za den bys dostal tøi teplá jídla, pokud myslíš tohle. Teï mi jdi z oèí, idiote.}
+{157}{}{Oooo? Sbohem.}
+{158}{}{Arrrrr! Zabít!}

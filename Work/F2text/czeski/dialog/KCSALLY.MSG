@@ -1,0 +1,144 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#corrected by birdman, birdman@post.cz, http://www.mujweb.cz/www/birdman
+#############################################################
+#  Message File: KCsally.msg                                #
+#                                                           #
+#       Body Type:                                          #
+#       Combat AI: Flee                                     #
+#       Weapons: None                                       #
+#       HP:                                                 #
+#       Skills to note: Barter 75                           #
+#  Log:                                                     #
+#                                                           #
+#  Created: January 15, 1998                                #
+#                                                           #
+#  Updated:                                                 #
+#############################################################
+
+#############################################################
+#  The following lines are for describing the NPC when      #
+#  glanced and and examined.                                #
+#############################################################
+
+{100}{}{Vidíš baculatou starší enu s velkım nosem.}
+{101}{}{Vidíš Nosatou Sally, majitelku lázni.}
+
+#############################################################
+#  The following lines are for the dialog which the NPC     #
+#  says. This will be disorganized because of the Design    #
+#  Tool.                                                    #
+#############################################################
+
+{200}{}{Dobrı den, jmenuji se Sally Duntonová. Hmm, èím mohu slouit?}
+{201}{}{Gurk?}
+{202}{}{Já chceš lulat}
+{203}{}{Ug? (zavrtìt hlavou)}
+{204}{}{Hmm, tak se mi zdá, e tu ze mì nìkdo dìlá idiota. Ale nìkoho takového tu nepotøebuju. A teï,
+ vypadni. Bì, bì.}
+{205}{}{Já vím e jsi barbar a tak, ale tohle jsou láznì a ne nìjaká chıše. Odejdi po svıch,
+ ne tì vyhodím!}
+{206}{}{No, moji hoši u vynášeli nìjaké smetí, ale koukám, e to nejhorší tu ještì zùstalo. Nemùu uvìøit,
+ e tebe by tu zapomnìli. Tak a teï...nechci tì tady. Vypadni.}
+
+{210}{}{Jmenuji se Sally Duntonová, ale hodnì lidí mi øíká Nosatá Sally. Jsem majitelka tìchto
+ lázni. Nezùstáváme jen u klasickıch koupelí, ale nabízíme mnoho specialit a také obsluhu dle vıbìru.}
+{211}{}{Jaké druhy specialit a obsluh tu máte?}
+{212}{}{No, paní Sally, já si chci dát klasickou koupel. Nebyla by s bublinkama?}
+{213}{}{Hmm, vlastnì nemám o podobné vìci zájem.}
+
+{220}{}{Jmenuji se 'Nosatá Sally' Duntonová a jsem majitelka tìchto lázní. Obávám se, e u
+ máme dostatek dìvèat na obsluhu. Jinak jsi v poøádku?}
+{221}{}{Jsem tu kvùli koupeli.}
+{222}{}{Mám ráda, kdy mne oblékají eny.}
+{223}{}{Jéé, a já zrovna hledala práci jako lázeòská obsluha.}
+{224}{}{Myslím, e tohle stejnì nebylo to, co jsem hledala.}
+{225}{}{Omlouvám se, e jsem nemohla pomoci. Ještì se tu uka.}
+
+{230}{}{Jestli hledáš koupel bez obsluhy, mùeš zkusit hospody U Bucknerové nebo U Zlatého geckona. Ale
+ pochybuji, e to bude tak pøíjemné, jako u nás.}
+{231}{}{Dìkuji, paní Nosatá. Zkusím nìco z toho. Nashle.}
+{232}{}{Nevím co mì to napadlo; dám si pochopitelnì nìco ze specialit.}
+
+{240}{}{Dobrá take speciální koupel. Takové koupele si úètujeme podle toho, kolik èasu stráví dívka se zákazníkem,
+ a jaké speciality mu poskytne.}
+{241}{}{Máte na mysli, e budu mít k dispozici opravdovou dívèinu? Tak to beru!}
+{242}{}{Myslím, e tohle není nic pro mì; radìji pùjdu.}
+{243}{}{Myslím, e ceny by bylo lepší posuzovat podle vzhledu a figury obsluhy.}
+
+{250}{}{Koupele, které mùeme nabídnout jsou následující: Praní Šatù Rukou na Tìle, Zbìné Omytí Celého Tìla, a
+ nakonec, Velkolepı Èistící Servis, provádìnı pøekrásnou a talentovanou Jenny, nedávno vyškolenou
+ tìmi nejlepšími v Denu.}
+{251}{}{Myslím, e si dám Praní Šatù Rukou na Tìle; co to stojí?}
+{252}{}{Jako dobrı nápad mi pøipadá Zbìné Omytí Celého Tìla; kolik by to stálo?}
+{253}{}{Pøekrásná a talentovaná? Velkolepı Èistící Servis? Tak o tomhle chci vìdìt víc.}
+{254}{}{Kdy se koupu, nesnesu, aby se na mì pøitom kdokoliv díval; pùjdu.}
+{255}{}{Mohu míchat nìkteré druhy koupelí?}
+{256}{}{Co kdybyste mi dala slevu?}
+
+{260}{}{Ne, musíš si prostì jednu koupel vybrat, ale vdy sem mùeš znovu zajít -- obvykle
+ po krátkém odpoèinku.}
+{261}{}{Vyjmenujte mi ještì ty druhy koupelí.}
+{262}{}{Jestli si nemohu urèit svoji vlastní koupel, dle svého pøání, nemám zájem; a odcházím.}
+
+{270}{}{Dobrá, pro nìkoho tak pøitalivého, jako jsi ty, to bude za pouhıch $25.}
+{271}{}{$25? To je skvìlá cena; To beru.}
+{272}{}{Hmm, povìzte mi ještì o dalších druzích koupelí.}
+{273}{}{Moná, e to teï nepotøebuji. Pùjdu.}
+
+{280}{}{Hmm, zdá se, e nejprve potøebuješ opravdovou koupel; take to dìlá $35.}
+{281}{}{$35? To se mi zdá ponìkud pøehnané -- ale co... nebudu šetøit. Beru to.}
+{282}{}{Jaké máte další nabídky?}
+{283}{}{Dìkuji, ale myslím, e se podívám jinde.}
+{284}{}{$35 je ponìkud pøíliš; vdy za tu cenu, se dá koupit dobøe stavìná brahmína, nemyslíte?}
+
+{290}{}{Myslím, e kterákoliv z našich dívek by byla celá šastná, kdyby ti mohla dát dùkladné Omytí. Radši budu hlídat èas, a si mùu
+bıt jistá, e to bylo jenom zbìné Omytí (chichi). Take, Zbìné Omytí Celého Tìla tì bude stát $55.}
+{291}{}{To zní dobøe. Zde je $55.}
+{292}{}{Hmm, jaké jsou ty další nabídky?}
+{293}{}{Dìkuji, ale myslím, e za tohle ty peníze teda neutratím.}
+
+{300}{}{Ty napøed potøebuješ opravdu vydrhnout celé tìlo; znáte vy barbaøi vùbec mıdlo? Mno dobrá, budì tì
+ stát rovnıch $70 tohle zbìné omytí... ale jsem si jistá, e se ti to bude líbit.}
+{301}{}{Ouva, $70! To se mi zdá hodnì. Ale snad se mi to opravdu bude líbit. Zkusím to.}
+{302}{}{Jaké jsou ty další nabídky?}
+{303}{}{Konec koncù, proè tu platit za nìjakou koupel? Odcházím}
+
+{310}{}{Dobrá, jsem si jistá, e nìkdo takovı zkušenì vypadající jako jsi ty, si Velkolepı Èistící Servis s hezkou Jenny
+ opravdu uije. Mùeš to mít za pouhıch $125.}
+{311}{}{U se nemohu té speciality s Jenny doèkat. Zde je $125.}
+{312}{}{Jaké e jsou ty další nabídky?}
+{313}{}{Nemyslím si, e dám $125 jenom za svoji údrbu. Radìji pùjdu, ne se
+ dostanu do problémù.}
+
+{320}{}{Hmm, pochybuji, e by Jenny vzala nìkoho v takovém stavu, v jakém jsi ty. Nejprve potøebuješ - a teï bez legrace - dùkladnì vykartáèovat. (jen pro sebe: Co takhle Gerda? To by šlo.) Take, vèetnì pøed-vykartáèování a pak s Velkolepım Èistícím Servisem to budeš mít za pouhıch $185.}
+{321}{}{Dohromady Gerda a Jenny? To je perfektní! Tady je $185.}
+{322}{}{A není náhodou Gerda ta tlustá, kníratá uklízeèka? Radìji mi øekni ty ostatní nabídky.}
+{323}{}{Myslím, e tolik si teï nemohu dovolit. Radìji pùjdu.}
+{324}{}{Gerda je ta vyraná muatka, e? Tak nìco takového nemám zapotøebí. Radìji u odcházím.}
+
+{330}{}{To je dobrá volba, jestli nemáš zrovna moc penì nebo èasu.}
+
+{340}{}{Myslím, e si to opravdu vychutnáš. }
+
+{350}{}{Mám dojem, e a zkusíš koupel s Jenny, nebudeš u nikdy chtít jinak.}
+
+{360}{}{Nebudeme tu probírat tyhle vìci. Zkus si promluvit s mımi syny, Chuckem a Buckem Duntonovımi.
+ Slyšela jsem, e to jejich brahmíní stádo je u nìkterıch lidí velmi oblíbené.}
+{361}{}{Nemáš dost penìz. Pøijdi, a budeš mít èím zaplatit.}
+{362}{}{Zdá se mi, e máš moc velkı oèi. Zkrátka - nemùeš chtít nìco, na co nemáš. Asi budeš muset zatím
+ zùstat u klasického mytí.}
+{363}{}{Jsem si jista, e kterıkoliv z mıch synù by ti v tomto jistì rád pomohl. Ale kadopádnì bys sem mìla zajít pozdìji; vìtšina dívek, která stráví nìjakı èas s mımi chlapci, potøebuje koupel opravdu nutnì.}
+
+{370}{}{Zase zpátky, co? Èím to jen je, e se ti lidé neudrí chvíli v èistotì (chicht).}
+{371}{}{Jen se tu tak rozhlíím; nepotøebuji koupel.}
+{372}{}{Øeknìte mi jaké máte druhy koupelí.}
+{373}{}{Mohu, jako èastı návštìvník, dostat slevu?}
+
+{380}{}{Hmm víš, není zrovna vhodná finanèní situace na slevy. Jen tak tak, e dobøe zaplatím svá dìvèata.}
+{381}{}{Tak dobrá, jestli nemohu dostat slevu, pùjdu.}
+{382}{}{Myslím, e jste mi to dostateènì vysvìtila. Øeknete mi, jaké nabízíte koupele?}
+
+{390}{}{Pøedevším musíš vìdìt, e koupele jsou pro jednotlivce a ne skupiny. Rozhodni se podlé svého, tví pøátelé pak mohou kdykoliv pøijít sami.}
+{391}{}{Ok.}
+
+{400}{}{Nepotøebujeme tu takové tıpky.}

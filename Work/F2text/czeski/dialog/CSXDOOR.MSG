@@ -1,0 +1,3 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Na ty dveøe potøebuješ klíè, abys je mohl otevøít.}
+{101}{}{Používáš klíè a dveøe odemykáš.}

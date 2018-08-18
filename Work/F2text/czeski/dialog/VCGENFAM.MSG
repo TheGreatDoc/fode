@@ -1,0 +1,72 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv, ale nemá vzadu žádné èíslo.}
+{101}{}{Vidíš Obèana Vault City.}
+{102}{}{Vidíš Obèana v jasnì modrém obleku. Ten oblek vypadá podobnì jako Zakladatelùv, ale nemá vzadu žádné èíslo.}
+{103}{}{::tlesk::}
+{104}{}{To je hrdina! Podívejte!}
+{105}{}{Úžasné! To je hrdina, zde, ve Vault City!}
+{106}{}{Dobrý den, kapitáne.}
+{107}{}{Vault City má vždy navrch, kapitáne.}
+{108}{}{Zùstanete na veèeøi, kapitáne?}
+{109}{}{Dobrý den, Obèane.}
+{110}{}{Vault City má vždy navrch, Obèane.}
+{111}{}{Zùstanete na veèeøi?}
+{112}{}{Mutant! Stráže! Stráže!}
+{113}{}{Ghoul! Stráže! Stráže!}
+{114}{}{Oèistìte si prosím obuv, než vstoupíte do domu.}
+{115}{}{Omlouvám se, pozvete mne dál?}
+{116}{}{Mohu vám pomoci?}
+{117}{}{Mohl by ses nauèit aspoò základním zpùsobùm, venkovane.}
+{118}{}{Typické pro venkovany, valí se sem jak...}
+{119}{}{Slyšel jsem o vašich stateèných èinech. Je to velká služba pro Vault City... a celý svìt.}
+{120}{}{Tvùj... boj proti Enklávì zaujal dokonce i První Obèanku.}
+{121}{}{Slyšel jsem, že vaše cesty vedly velmi daleko. Až kamsi na jih do San... Fran... Ciska. Je to pravda?}
+{122}{}{Snad by Vault City *mohlo* pøivítat venkovany.}
+{123}{}{Je to pravda? Že starý svìt byl ovládán neustálou hrozbou války?}
+{124}{}{Sepište poznatky svého cestování do hlavního poèítaèe Vault City, aby si i další generace mohly o nich èíst.}
+{125}{}{Vítej a mùžeš zùstat jak dlouho chceš, hrdino.}
+{126}{}{Sepište své hrdinské èiny proti Enklávì do hezkého, pøehledného seznamu.}
+{127}{}{*Zív*... hrmnnn? Ano? Co je to?}
+{128}{}{Je ponìkud pozdì pro návštìvníky.}
+{129}{}{MNOHO Obèanù v tuto dobu spí.}
+{130}{}{Spí? Ne, ještì ne.}
+{131}{}{Prosím... pøijïte ráno. Musím na zítra zhotovit velký seznam.}
+{132}{}{Dobrý den, kapitáne.}
+{133}{}{Vault City má vždy navrch, kapitáne.}
+{134}{}{Zùstanete na veèeøi, kapitáne? Náš sluha dìlá výborný guláš.}
+{135}{}{Máte rád nìjaké peèivo, kapitáne?}
+{136}{}{Nìco v nepoøádku, kapitáne?}
+{137}{}{Doufám, že žádný z tìch špinavých venkovanù nebude obtìžovat, kapitáne.}
+{138}{}{Potøebujete vzít nìjaké jídlo svým strážím, kapitáne?}
+{139}{}{Dobrý den, Obèane.}
+{140}{}{Vault City má vždy navrch, Obèane.}
+{141}{}{Je vaší obèanskou povinností zavést a udržovat poøádek.}
+{142}{}{Prosím zùstaòte na veèeøi, Obèane. Náš sluha dìlá výborný guláš.}
+{143}{}{Strávil jsem vìtšinu dne vytváøením seznamù pro prokonsula, a pak jejich ovìøováním. Miluji tuhle práci.}
+{144}{}{Pracuji v Seznamovém Úøadu. Mnoho ostatních také. My zde ve Vault City *milujeme* vytváøení seznamù.}
+{145}{}{Strávil jsem vìtšinu dne upravováním seznamù pro Seznamový Úøad. Je to dobrá, poèestná a výnosná práce.}
+{146}{}{Slyšel jsem, že vaše cesty skuteènì vedly po celém svìtì. Jak vám bylo, mezi tìmi všemi špinavými venkovany?}
+{147}{}{Och! Vy jste nový Obèan. Vítejte ve Vault City.}
+{148}{}{Zatímco tu budete, potøebujete nìjaké místo k pobytu?}
+{149}{}{Rada bere v potaz naše zájmy.}
+{150}{}{Musíme udržovat naše pøekrásné mìsto v èistotì.}
+{151}{}{Každá rodina dostane byt v obecním domì.}
+{152}{}{Mìsto nás zaopatøuje vším, co mùžeme potøebovat.}
+{153}{}{Sluhové? Och, užíváme je takové ty podøadnìjší práce.}
+{154}{}{Hmmmm. Potøebuji sluhu, aby mi pomohl s nìèím ve skladišti...}
+{155}{}{Až sluha skonèí, mìl by vytrhat plevel na zahradì...}
+{156}{}{Tohle vèerejší zasedání rady bylo velmi užiteèné. Udìlali jsme *mnoho* seznamù. My ve Vault City totiž milujeme vytváøení seznamù.}
+{157}{}{Ano?}
+{158}{}{Promiòte, mohu vám pomoci?}
+{159}{}{Bývá zvykem, než vstoupíte nìkomu do bytu, se napøed otázat.}
+{160}{}{Oèistìte si prosím obuv, než vstoupíte do domu.}
+{161}{}{Omlouvám se, pozvete mne dál?}
+{162}{}{Mohu vám pomoci?}
+{163}{}{Vy outsideøi byste se mohli nauèit aspoò základním zpùsobùm.}
+{164}{}{Mìsto nás zaopatøuje vším, co mùžeme potøebovat.}
+{165}{}{Sluhové? Och, užíváme je na takové ty podøadnìjší práce.}
+{166}{}{Hmmmm. Potøebuji sluhu, aby mi pomohl s nìèím ve skladišti...}
+{167}{}{Až sluha skonèí, mìl by vytrhat plevel na zahradì...}
+{168}{}{Ano, cítím...eh, vidím, že nejsi Obèan. Venkovan, že?}
+{169}{}{Ty nejsi Obèan? Venkovan? Jak otøesné.}

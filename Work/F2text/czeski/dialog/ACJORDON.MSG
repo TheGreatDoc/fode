@@ -1,0 +1,10 @@
+#tento soubor pøeložil Miskot...mhoferek@telecom.cz
+{100}{}{Vidíš Jordana - jako obvykle si pohrává se svým kopím.}
+{101}{}{Vidíš Jordana - jako obvykle si pohrává se svým kopím.}
+{102}{}{Hodnì štìstí!  Musím se vrátit ke svému tréninku.}
+{103}{}{Ahoj, Vyvolený.  Vidím, že potøebuješ malý trénink.  Mùžu ti pomoct?}
+{104}{}{No jistì.}
+{105}{}{Ne, díky.}
+{106}{}{Bude to chvilku trvat.}
+{107}{}{Nauèil jsem tì všechno, co já sám vím o boji s oštìpem.}
+{108}{}{Díky, Jordane - myslím, že mi to v budoucnu hodnì pomùže.}

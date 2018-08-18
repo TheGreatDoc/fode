@@ -1,0 +1,660 @@
+#include "_client_defines.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+#include "factions.fos"
+#include "buffer_h.fos"
+
+#ifdef __SERVER
+void unsafe_SendFactionData(Critter& cr, int, int, int, string@, int[]@)
+{
+	if(cr.ParamBase[PLAYER_FACTION]==0) return;
+	if(!IsAnyData("FACTIONS["+cr.ParamBase[PLAYER_FACTION]+"]")) 
+	{
+		Log("Brak żądanych danych");
+		return;
+	}
+	array<int> data;
+	GetAnyData("FACTIONS["+cr.ParamBase[PLAYER_FACTION]+"]",data);
+    Buffer@ buf = NewBuffer();
+    buf << cr.Name << cr.Id << data;
+    cr.RunClientScript( "client_screen_faction@GetFactionData", 0, 0, 0, null, buf.AsInt32() );
+}
+#endif
+
+#ifdef __CLIENT
+#include "client_gui_h.fos"
+
+import void AttachTabsToScreen(int screen) from "client_scripts";
+import void UpdatePipBoyPosition(int x, int y) from "client_scripts";
+import void GetPipBoyPosition(int &x, int &y) from "client_scripts";
+import int[]@ GetIniValues2(string& iniKey, int[]@ defaultValues) from "ini_parser";
+
+IGUIElementTextOpt@ FactionInvitationNameOpt;
+IGUIElementButtonOpt@ FactionInvitationJoinButtonOpt;
+IGUIElementButtonOpt@ FactionInvitationCancelButtonOpt;
+
+IGUIElementTextOpt@ FactionNameOpt;
+IGUIElementTextOpt@ FactionRankOpt;
+IGUIElementTextOpt@ FactionPlayerNameTextOpt;
+IGUIElementEditBoxOpt@ FactionPlayerNameEditBoxOpt;
+IGUIElementButtonOpt@ FactionCreateButtonOpt;
+IGUIElementTextOpt@ FactionCreateTextOpt;
+IGUIElementButtonOpt@ FactionLeaveButtonOpt;
+IGUIElementTextOpt@ FactionLeaveTextOpt;
+IGUIElementButtonOpt@ FactionPlayersButtonOpt;
+IGUIElementTextOpt@ FactionPlayersTextOpt;
+IGUIElementButtonOpt@ FactionInviteButtonOpt;
+IGUIElementTextOpt@ FactionInviteTextOpt;
+IGUIElementButtonOpt@ FactionKickButtonOpt;
+IGUIElementTextOpt@ FactionKickTextOpt;
+IGUIElementButtonOpt@ FactionPromoteButtonOpt;
+IGUIElementTextOpt@ FactionPromoteTextOpt;
+IGUIElementButtonOpt@ FactionDemoteButtonOpt;
+IGUIElementTextOpt@ FactionDemoteTextOpt;
+IGUIElementEditBoxOpt@ FactionCreateEditBoxOpt;
+IGUIElementEditBoxOpt@ FactionLeaveEditBoxOpt;
+IGUIElementTextOpt@ LeaveConfirmNameOpt;
+IGUIElementButtonOpt@ LeaveTrueButtonOpt;
+IGUIElementButtonOpt@ LeaveCancelButtonOpt;
+IGUIElementTextOpt@ FactionDataTextFund;
+IGUIElementButtonOpt@ FactionAddFundsButtonOpt;
+IGUIElementTextOpt@ FactionAddFundsTextOpt;
+IGUIElementEditBoxOpt@ FactionAddFundsEditBoxOpt;
+
+int[] positions;
+
+class InvitationJoinButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Join",0,0,0,null,null);
+		FactionInvitationNameOpt.setVisible(false);
+		FactionInvitationJoinButtonOpt.Hide();
+		FactionInvitationCancelButtonOpt.Hide();
+	}
+}
+
+class InvitationCancelButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		FactionInvitationNameOpt.setVisible(false);
+		FactionInvitationJoinButtonOpt.Hide();
+		FactionInvitationCancelButtonOpt.Hide();
+	}
+}
+
+class CreateButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		FactionCreateEditBoxOpt.Text("");
+		FactionCreateEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		ShowScreen(CLIENT_SCREEN_FACTION_CREATE,0,0,0);
+	}
+}
+
+class LeaveButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		if(GetChosen().ParamBase[PLAYER_FACTION_RANK]==4)
+		{
+			FactionLeaveEditBoxOpt.Text("");
+			FactionLeaveEditBoxOpt.setFocused(true);
+			HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+			ShowScreen(CLIENT_SCREEN_FACTION_LEAVE,0,0,0);
+		}
+		else
+		{
+			ShowLeaveConfimationScreen();
+			HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		}
+	}
+}
+
+class PlayersButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Players",0,0,0,null,null);
+	}
+}
+
+class InviteButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Invite",0,0,0,FactionPlayerNameEditBoxOpt.getText(),null);
+	}
+}
+
+class KickButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Kick",0,0,0,FactionPlayerNameEditBoxOpt.getText(),null);
+	}
+}
+
+class PromoteButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Promote",0,0,0,FactionPlayerNameEditBoxOpt.getText(),null);
+	}
+}
+
+class DemoteButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Demote",0,0,0,FactionPlayerNameEditBoxOpt.getText(),null);
+	}
+}
+
+class AddFundsButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		FactionAddFundsEditBoxOpt.Text("");
+		FactionAddFundsEditBoxOpt.setFocused(true);
+		HideScreen(CLIENT_SCREEN_FACTION,0,0,0);
+		ShowScreen(CLINET_SCREEN_FACTION_ADD_FUNDS,0,0,0);
+	}
+}
+
+class AddFundsButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=FactionAddFundsEditBoxOpt.getText();
+		int capscount=0;
+		StrToInt(str,capscount);
+		if(capscount<=0) return;
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_AddFactionFunds",capscount,0,0,null,null);
+		HideScreen(CLINET_SCREEN_FACTION_ADD_FUNDS,0,0,0);
+		ShowFactionScreen();
+	}
+}
+
+
+
+class CreateButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @factionName=FactionCreateEditBoxOpt.getText();
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Create", 0,0,0, factionName,null);
+		HideScreen(CLIENT_SCREEN_FACTION_CREATE,0,0,0);
+	}
+}
+
+class LeaveButtonClass2 : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		string @str=FactionLeaveEditBoxOpt.getText();
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Leave",0,0,0,str,null);
+		HideScreen(CLIENT_SCREEN_FACTION_LEAVE,0,0,0);
+	}
+}
+
+class FactionScreenClass : IGUIScreenCallbackMove
+{
+	void OnMove(int x, int y)
+	{
+		UpdatePipBoyPosition(x,y);
+	}
+}
+
+class LeaveTrueButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("faction_server_scripts@unsafe_Leave",0,0,0,null,null);
+		LeaveConfirmNameOpt.setVisible(false);
+		LeaveTrueButtonOpt.Hide();
+		LeaveCancelButtonOpt.Hide();
+	}
+}
+
+class LeaveCancelButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		LeaveConfirmNameOpt.setVisible(false);
+		LeaveTrueButtonOpt.Hide();
+		LeaveCancelButtonOpt.Hide();
+	}
+}
+
+void InitFactionScreen()
+{
+	positions=GetIniValues2("FactionInvitationNameOpt",null);
+	@FactionInvitationNameOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_LRED2, FT_BORDERED)
+      .TextBoxSize(505,10)
+	  .Visible(false);
+	
+	InvitationJoinButtonClass InvitationJoinButton;
+	positions=GetIniValues2("FactionInvitationJoinButtonOpt",null);
+	@FactionInvitationJoinButtonOpt=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0],positions[1])
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000302), FONT_FAT, COLOR_GREEN,COLOR_LGREEN,0)
+		.ClickableZone(37,19)
+		.CallbackMouseClick(InvitationJoinButton);
+	FactionInvitationJoinButtonOpt.Hide();
+	
+	InvitationCancelButtonClass InvitationCancelButton;
+	positions=GetIniValues2("FactionInvitationCancelButtonOpt",null);
+	@FactionInvitationCancelButtonOpt=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0],positions[1])
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000303), FONT_FAT, COLOR_RED,COLOR_LRED,0)
+		.ClickableZone(58,19)
+		.CallbackMouseClick(InvitationCancelButton);
+	FactionInvitationCancelButtonOpt.Hide();
+	
+	FactionScreenClass FactionScreen;
+	GUI_CreateScreen(CLIENT_SCREEN_FACTION,"faction.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1)
+				.CallbackMove(FactionScreen);
+	
+	positions=GetIniValues2("FactionText1",null);
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000304), positions[0], positions[1])
+	  .TextOptions(FONT_SPECIAL, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(505,10);
+	
+	positions=GetIniValues2("FactionNameOpt",null);
+	@FactionNameOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000305)+":  No faction", positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN)
+      .TextBoxSize(200,10);
+	
+	positions=GetIniValues2("FactionRankOpt",null);
+	@FactionRankOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000306)+":  ", positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN)
+      .TextBoxSize(200,10);
+	  
+	@FactionDataTextFund=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000369)+":  ", positions[0], positions[1]+10)
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN)
+      .TextBoxSize(200,10);
+	
+	positions=GetIniValues2("FactionPlayerNameTextOpt",null);
+	@FactionPlayerNameTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000307)+":", positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN)
+      .TextBoxSize(120,10);
+	
+	positions=GetIniValues2("FactionPlayerNameEditBoxOpt",null);
+	@FactionPlayerNameEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_FACTION,positions[0],positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("faction_editbox.png");
+	
+	positions=GetIniValues2("FactionCreateButtonOpt",null);
+	CreateButtonClass CreateButton;
+	@FactionCreateButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000308), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CreateButton);
+	
+	positions=GetIniValues2("FactionCreateTextOpt",null);
+	@FactionCreateTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000309), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_GREEN, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionLeaveButtonOpt",null);
+	LeaveButtonClass LeaveButton;
+	@FactionLeaveButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000310), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(LeaveButton);
+	
+	positions=GetIniValues2("FactionLeaveTextOpt",null);
+	@FactionLeaveTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000311), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionPlayersButtonOpt",null);
+	PlayersButtonClass PlayersButton;
+	@FactionPlayersButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000312), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(PlayersButton);
+	
+	positions=GetIniValues2("FactionPlayersTextOpt",null);
+	@FactionPlayersTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000313), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionInviteButtonOpt",null);
+	InviteButtonClass InviteButton;
+	@FactionInviteButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000314), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(InviteButton);
+	
+	positions=GetIniValues2("FactionInviteTextOpt",null);
+	@FactionInviteTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000315), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionKickButtonOpt",null);
+	KickButtonClass KickButton;
+	@FactionKickButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000316), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(KickButton);
+	
+	positions=GetIniValues2("FactionKickTextOpt",null);
+	@FactionKickTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000317), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionPromoteButtonOpt",null);
+	PromoteButtonClass PromoteButton;
+	@FactionPromoteButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000318), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(PromoteButton);
+	
+	positions=GetIniValues2("FactionPromoteTextOpt",null);
+	@FactionPromoteTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000319), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	
+	positions=GetIniValues2("FactionDemoteButtonOpt",null);
+	DemoteButtonClass DemoteButton;
+	@FactionDemoteButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000320), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(DemoteButton);
+	
+	positions=GetIniValues2("FactionDemoteTextOpt",null);
+	@FactionDemoteTextOpt=
+	GUI_AddText(CLIENT_SCREEN_FACTION,GetMsgStr(TEXTMSG_GAME,3000000321), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_DARK, FT_CENTERY)
+      .TextBoxSize(300,20);
+	  
+	positions=GetIniValues2("FactionAddFundsButtonOpt",null);
+	AddFundsButtonClass AddFundsButton;
+	@FactionAddFundsButtonOpt=
+	GUI_AddButton(CLIENT_SCREEN_FACTION, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000371), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(AddFundsButton);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_FACTION_CREATE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	positions=GetIniValues2("Text3000000327",null);
+	GUI_AddText(CLIENT_SCREEN_FACTION_CREATE,GetMsgStr(TEXTMSG_GAME,3000000327), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	positions=GetIniValues2("FactionCreateEditBoxOpt",null);
+	@FactionCreateEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_FACTION_CREATE,positions[0],positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(false)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	positions=GetIniValues2("Button2Faction",null);
+	CreateButtonClass2 CreateButton2;
+	GUI_AddButton(CLIENT_SCREEN_FACTION_CREATE, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000308), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(CreateButton2);
+	
+	GUI_CreateScreen(CLIENT_SCREEN_FACTION_LEAVE,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	positions=GetIniValues2("Text3000000324",null);
+	GUI_AddText(CLIENT_SCREEN_FACTION_LEAVE,GetMsgStr(TEXTMSG_GAME,3000000324), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	positions=GetIniValues2("Text3000000325",null);
+	GUI_AddText(CLIENT_SCREEN_FACTION_LEAVE,GetMsgStr(TEXTMSG_GAME,3000000325), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	positions=GetIniValues2("FactionLeaveEditBoxOpt",null);
+	@FactionLeaveEditBoxOpt=
+	GUI_AddEditBox(CLIENT_SCREEN_FACTION_LEAVE,positions[0],positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	positions=GetIniValues2("LeaveButton2Faction",null);
+	LeaveButtonClass2 LeaveButton2;
+	GUI_AddButton(CLIENT_SCREEN_FACTION_LEAVE, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000310), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(LeaveButton2);
+	
+	GUI_CreateScreen(CLINET_SCREEN_FACTION_ADD_FUNDS,"s_window.png")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	positions=GetIniValues2("Text3000000327",null);
+	GUI_AddText(CLINET_SCREEN_FACTION_ADD_FUNDS,GetMsgStr(TEXTMSG_GAME,3000000370), positions[0], positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,10);
+	
+	positions=GetIniValues2("FactionCreateEditBoxOpt",null);
+	@FactionAddFundsEditBoxOpt=
+	GUI_AddEditBox(CLINET_SCREEN_FACTION_ADD_FUNDS,positions[0],positions[1])
+		.TextOptions(FONT_FALLOUT, COLOR_GREEN, 0)
+		.EditBoxSize(240,10)
+		.NumericMode(false)
+		.Margins(3,0,3,0)
+		.BackgroundPic("editbox.png");
+	
+	positions=GetIniValues2("Button2Faction",null);
+	AddFundsButtonClass2 AddFundsButton2;
+	GUI_AddButton(CLINET_SCREEN_FACTION_ADD_FUNDS, positions[0],positions[1])
+		.UpPic("bigOFF.png")
+		.DownPic("bigON.png")
+		.Text(GetMsgStr(TEXTMSG_GAME,3000000371), FONT_FAT, COLOR_DWHITE)
+		.TextShift(0, -1, 0, -1)
+		.CallbackMouseClick(AddFundsButton2);
+	
+	
+	AttachTabsToScreen(CLIENT_SCREEN_FACTION);
+	
+	positions=GetIniValues2("LeaveConfirmNameOpt",null);
+	@LeaveConfirmNameOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"", positions[0],positions[1])
+	  .TextOptions(FONT_FALLOUT, COLOR_LGRAY, FT_BORDERED)
+      .TextBoxSize(505,10)
+	  .Visible(false);
+	positions=GetIniValues2("LeaveTrueButtonOpt",null);
+	LeaveTrueButtonClass LeaveTrueButton;
+	@LeaveTrueButtonOpt=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0],positions[1])
+		.Text("OK", FONT_FAT, COLOR_GREEN,COLOR_LGREEN,0)
+		.ClickableZone(37,19)
+		.CallbackMouseClick(LeaveTrueButton);
+	LeaveTrueButtonOpt.Hide();
+	
+	positions=GetIniValues2("LeaveCancelButtonOpt",null);
+	LeaveCancelButtonClass LeaveCancelButton;
+	@LeaveCancelButtonOpt=
+	GUI_AddButton(CLIENT_MAIN_SCREEN_GAME, positions[0],positions[1])
+		.Text("NO", FONT_FAT, COLOR_RED,COLOR_LRED,0)
+		.ClickableZone(58,19)
+		.CallbackMouseClick(LeaveCancelButton);
+	LeaveCancelButtonOpt.Hide();
+}
+
+void ShowFactionInvitationScreen(string message)
+{
+	int faction_name_end_index=-1;
+	for(uint i=0; i<message.length(); i++)
+	{
+		if(message[i]=="*")
+		{
+			faction_name_end_index=i;
+			break;
+		}
+	}
+	if(faction_name_end_index!=-1)
+	{
+		string faction_name=substring(message,0,faction_name_end_index);
+		int faction_id=-1;
+		StrToInt(substring(message,faction_name_end_index+1,message.length()-faction_name_end_index-1),faction_id);
+		if(faction_id!=-1)
+		{
+			FactionInvitationNameOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000300)+" "+faction_name+" "+GetMsgStr(TEXTMSG_GAME,3000000301)+".");
+			FactionInvitationNameOpt.setVisible(true);
+			FactionInvitationJoinButtonOpt.Show();
+			FactionInvitationCancelButtonOpt.Show();
+		}
+	}
+}
+
+void updateFactionsScreen(string[]& factionsNames)
+{
+	FACTIONS.resize(0);
+	for(uint i = 0; i < factionsNames.length(); i++) {
+		FACTIONS.insertLast(factionsNames[i]);
+	}
+}
+
+void ShowFactionScreen()
+{
+	RunServerScriptUnsafe("client_screen_faction@unsafe_SendFactionData",0,0,0,null,null);
+	FactionNameOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000305)+":  "+FACTIONS[GetChosen().ParamBase[PLAYER_FACTION]]);
+	FactionRankOpt.setText(GetMsgStr(TEXTMSG_GAME,3000000306)+":  "+(GetChosen().ParamBase[PLAYER_FACTION]!=0 ?
+									  FACTION_RANKS[GetChosen().ParamBase[PLAYER_FACTION_RANK]] : " "));
+	
+	FactionPlayerNameTextOpt.setVisible(false);
+	FactionPlayerNameEditBoxOpt.setVisible(false);
+	FactionCreateButtonOpt.Hide();
+	FactionCreateTextOpt.setVisible(false);
+	FactionLeaveButtonOpt.Hide();
+	FactionLeaveTextOpt.setVisible(false);
+	FactionPlayersButtonOpt.Hide();
+	FactionPlayersTextOpt.setVisible(false);
+	FactionInviteButtonOpt.Hide();
+	FactionInviteTextOpt.setVisible(false);
+	FactionKickButtonOpt.Hide();
+	FactionKickTextOpt.setVisible(false);
+	FactionPromoteButtonOpt.Hide();
+	FactionPromoteTextOpt.setVisible(false);
+	FactionDemoteButtonOpt.Hide();
+	FactionDemoteTextOpt.setVisible(false);
+	if(GetChosen().ParamBase[PLAYER_FACTION]==0) //no faction
+	{
+		FactionCreateButtonOpt.Show();
+		FactionCreateTextOpt.setVisible(true);
+	}
+	else
+	{
+		FactionLeaveButtonOpt.Show();
+		FactionLeaveTextOpt.setVisible(true);
+		if(GetChosen().ParamBase[PLAYER_FACTION_RANK]>=1) //member +
+		{
+			FactionPlayersButtonOpt.Show();
+			FactionPlayersTextOpt.setVisible(true);
+		}
+		if(GetChosen().ParamBase[PLAYER_FACTION_RANK]>=2) //specialist +
+		{
+			FactionPlayerNameTextOpt.setVisible(true);
+			FactionPlayerNameEditBoxOpt.setVisible(true);
+			FactionPlayerNameEditBoxOpt.Text("");
+			FactionPlayerNameEditBoxOpt.setFocused(true);
+			FactionInviteButtonOpt.Show();
+			FactionInviteTextOpt.setVisible(true);
+		}
+		if(GetChosen().ParamBase[PLAYER_FACTION_RANK]>=3) //vice-leader +
+		{
+			FactionKickButtonOpt.Show();
+			FactionKickTextOpt.setVisible(true);
+			FactionPromoteButtonOpt.Show();
+			FactionPromoteTextOpt.setVisible(true);
+			FactionDemoteButtonOpt.Show();
+			FactionDemoteTextOpt.setVisible(true);
+		}
+	}
+	int x=0,y=0;
+	GetPipBoyPosition(x,y);
+	SetScreenPos(CLIENT_SCREEN_FACTION,x,y);
+	ShowScreen(CLIENT_SCREEN_FACTION,0,0,0);
+}
+
+void ShowLeaveConfimationScreen()
+{
+			LeaveConfirmNameOpt.setText("Leave faction? Are you sure?");
+			LeaveConfirmNameOpt.setVisible(true);
+			LeaveTrueButtonOpt.Show();
+			LeaveCancelButtonOpt.Show();
+}
+
+
+void GetFactionData( int, int, int, string@, int[]@ data )
+{
+    string name = "";
+    uint id = 0;
+	array<int> fdata;
+    Buffer@ buff = NewBuffer( data );
+    buff >> name >> id >> fdata;
+	FactionDataTextFund.setText(GetMsgStr(TEXTMSG_GAME,3000000369)+": " + fdata[1]);
+	if(fdata[1]<3000) FactionDataTextFund.TextColor(COLOR_LRED2);
+	else FactionDataTextFund.TextColor(COLOR_GREEN);
+}
+#endif

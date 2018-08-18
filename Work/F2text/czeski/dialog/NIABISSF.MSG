@@ -1,0 +1,75 @@
+#tenhle soubor pøeloil Birdman - birdman@post.cz, http://get.to/birdman
+# 0.  LOOK, CLOSED (WTG)
+{100}{}{Ve zdi vidíš sejf na èíselnou kombinaci. Je zavøenı.}
+
+# 1.  LOOK, OPEN (WTG)
+{150}{}{Ve zdi vidíš sejf na èíselnou kombinaci. Je otevøenı.}
+
+# 2.  EXAMINE SAFE, CLOSED (WTG)
+{200}{}{(Ve zdi jsou malı dvíøka... hódnì malı. Tam musí ít móc moc malej èlovìk! tam ije! Uprostøed dvíøek je klika s èísilkama..)}
+{000}{}{(Prozkoumáváš sejf. Je pevnì umístìnı ve zdi a má kombinaèní èíselník.)}
+{000}{}{Zaukat na dveøe}
+{000}{}{Otoèit klikou}
+{000}{}{Odejdi}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej náhodnì èíselníkem.}
+{000}{}{Prozkoumej sejf, jestli není zaminovanı.}
+{000}{}{Nechej sejf bıt.}
+
+# 3.  SAFE IS OPEN (WTG, 7)
+{220}{}{(Je slyšet KLIK-CVAK a sejf je otevøenı.)}
+{000}{}{(Sejf je otevøenı.)}
+{000}{}{(Dvíøka se otvírají. Uvnitø malinkıho domeèku je fákt tma. A tìsno.)}
+{000}{}{(Dveøe jsou otevøenı! Uvnitø je to tmavı a malı.)}
+{000}{}{Podívej se, jestli tam nìkdo není}
+{000}{}{Odejdi}
+{000}{}{Vyber sejf.}
+{000}{}{Nechej sejf bıt.}
+
+# 5.  CLICKING (2, 5, 6, 8)
+{240}{}{Pomalu nìkolikrát otáèíš èíselníkem, ale nic z toho není.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej náhodnì èíselníkem.}
+{000}{}{Prozkoumej sejf, jestli není zaminovanı.}
+{000}{}{Nechej sejf bıt.}
+
+# 6.  TRAPS . . . ? (2, 6, 8)
+{260}{}{(ádné pasti nenalezeny.)}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej náhodnì èíselníkem.}
+{000}{}{Prozkoumej sejf, jestli není zaminovanı.}
+{000}{}{Nechej sejf bıt.}
+
+# 7.  SPIN RANDOM, SUCCEED (2, 5, 6, 8, 9)
+{270}{}{Pomalu otáèíš klikou, kdy je najednou slyšet KLIK-CVAK. Dvíøka se otevøely!}
+{000}{}{Náhodnì otáèíš èíselníkem, kdy je najednou slyšet KLIK-CVAK. Sejf je otevøenı.}
+{000}{}{Haló? Halóóóóó? Nìkdo dóma?}
+{000}{}{Jo, já na to mám...}
+
+# 8.  SPIN RANDOM, FAIL (2, 5, 6, 8, 9)
+{280}{}{(Otáèíš klikou, ale malinkı dvíøka se nechcou otevøít!)}
+{000}{}{Pár minut trávíš otáèením èíselníku, ale ádnı vısledek se nedostavil.}
+{000}{}{Zaukat na dveøe}
+{000}{}{Otoèit klikou}
+{000}{}{Odejdi}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej èíselníkem a poslouchej cvakání.}
+{000}{}{Otáèej náhodnì èíselníkem.}
+{000}{}{Prozkoumej sejf, jestli není zaminovanı.}
+{000}{}{Nechej sejf bıt.}
+
+# 9.  HELLO? (2, 8, 9)
+{300}{}{(Nikoho neslyšíš a nikde nevidíš zvonek. Asi není nikdo doma.)}
+{000}{}{(Nikdo nejde otevøít.)}
+{000}{}{(Zaèíná tì bolet ruka.)}
+{000}{}{(Jestli je nìkdo doma, nechce otevøít.)}
+{000}{}{ukej dál na dveøe}
+{000}{}{Otoè klikou}
+{000}{}{Odejdi}

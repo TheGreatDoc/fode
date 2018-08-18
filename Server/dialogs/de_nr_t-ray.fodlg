@@ -1,0 +1,244 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+Dialog kupowania auta, auto jezeli jest miejsce respi sie punkcie respa samochodow w danym miescie. Dlatego moze byc to jakas malo lokacja z obstawa np. gasstation. Moze ona sie tez powtarzac, niema z tym problemu.
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 0 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+10 2020 R _script car_buy@r_CheckCar 1 0 #
+30 2030 #
+40 2040 R _script car_buy@r_CopyKey 1 0 #
+0 2050 @
+3 3000 car_buy@dlg_PrepareBuy 1 #
+3 3010 R _script car_buy@r_BuyHummer 1 0 #
+3 3020 R _script car_buy@r_BuyBuggy 1 0 #
+3 3030 R _script car_buy@r_BuyScout 1 0 #
+3 3040 R _script car_buy@r_BuyHighwayman 1 0 #
+3 3050 R _script car_buy@r_BuyHunchback 1 0 #
+3 3060 R _script car_buy@r_BuyToddler 1 0 #
+3 3070 R _script car_buy@r_BuyCruiser 1 0 #
+0 3080 @
+5 4000 None 1 @
+6 5000 None 1 @
+7 6000 None 1 #
+0 6010 @
+8 7000 None 1 #
+0 7010 @
+10 8000 car_buy@dlg_SellCar 1 #
+11 8010 R _script car_buy@r_SellCar 1 0 #
+0 8020 @
+11 9000 None 1 @
+30 10000 None 1 #
+31 10010 R _script car_buy@r_CheckCar 1 0 #
+32 10020 R _script car_buy@r_CheckCar 1 0 #
+33 10030 R _script car_buy@r_CheckCar 1 0 #
+65505 10040 @
+31 11000 car_buy@dlg_Fuel 1 #
+39 11010 R _script car_buy@r_DoFuel 1 0 #
+37 11020 #
+0 11030 @
+32 12000 car_buy@dlg_Wear 1 #
+39 12010 R _script car_buy@r_DoWear 1 0 #
+37 12020 #
+65505 12030 @
+33 13000 car_buy@dlg_Bio 1 #
+39 13010 R _script car_buy@r_DoBio 1 0 #
+37 13020 #
+65505 13030 @
+37 14000 None 1 @
+38 15000 None 1 @
+39 16000 None 1 @
+40 17000 None 1 @
+100 18000 None 1 @
+101 19000 None 1 @
+102 20000 None 1 @
+103 21000 None 1 &
+
+[engl]
+{100}{}{Rick Butler}
+{110}{}{man29.png}
+{200}{}{You see a nice-looking middle-aged men... oh no, wait. You see Rick Butler.}
+{210}{}{You see a nice-looking middle-aged men. He looks like someone important.}
+{210}{}{You see Rick Butler. He looks good in those jeans.}
+{210}{}{You see Rick Butler. He's flexing his muscles from time to time, humming something.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Hi! My name is Rick Butler, and this is my workshop. I buy, sell, repair and modify cars here. I can help you out, if you have money of course. Also, I can make a copy of any key for a mere 1000 coins.}
+{2010}{}{What units do you have in stock?}
+{2020}{}{I'd like to sell my car.}
+{2030}{}{What else can you offer?}
+{2040}{}{Make me a copy of this key.}
+{2050}{}{Sorry, I'll visit you later.}
+{3000}{}{Well, here's my current offer: Hummer for @lex hummer@, Buggy for @lex buggy@, Scout for @lex scout@, Highwayman for @lex highwayman@, Hunchback for @lex hunchback@, Toddler for @lex toddler@ and a Cruiser for @lex cruiser@.}
+{3010}{}{I'd like a Hummer.}
+{3020}{}{I'll take a Buggy.}
+{3030}{}{I think I'll go for a Scout.}
+{3040}{}{Highwayman is what I need.}
+{3050}{}{Hunchback.}
+{3060}{}{I'll buy a Toddler.}
+{3070}{}{A Cruiser will suit me just fine.}
+{3080}{}{No, maybe next time.}
+{4000}{}{No money - no car. Don't waste my time.}
+{5000}{}{The garage is full, come back when there's some free space.}
+{6000}{}{Here's the key, your car is waiting in the garage. If you'd like to repair or modify it, you're welcome to visit me again.}
+{6010}{}{That's it! Bye.}
+{7000}{}{Here's the key, the car is waiting for you in the garage. If you'd like to repair or modify it, you're always welcome here.}
+{7010}{}{That's it. Bye.}
+{8000}{}{For your piece of junk I'll give you... @lex sell_cost@ coins.}
+{8010}{}{Deal.}
+{8020}{}{Are you mad? I'm not selling it.}
+{9000}{}{Excellent. Make this beauty feel good!}
+{10000}{}{I can refuel, repair, or modify the engine so she'll be able to run on spirit.}
+{10010}{}{I'd like to fuel up my car.}
+{10020}{}{Repair my car.}
+{10030}{}{Spirit-drinkin' engine you say? Just the thing I need.}
+{10040}{}{Ok, I'll keep that in my mind.}
+{11000}{}{Refueling will cost you @lex fuel_cost@ coins.}
+{11010}{}{Okay.}
+{11020}{}{I don't have enough money.}
+{11030}{}{I'll come back next time.}
+{12000}{}{Repair will cost you @lex wear_cost@ coins.}
+{12010}{}{Deal! Fix it.}
+{12020}{}{Nope. Too expensive.}
+{12030}{}{Next time, I think.}
+{13000}{}{Modification will cost you @lex bio_cost@ coins.}
+{13010}{}{No problem, start the working.}
+{13020}{}{Ooops... I forgot my money.}
+{13030}{}{No, not today.}
+{14000}{}{What? No money? It's not my problem, we're not Red fucking Cross.@@Don't bother me if you don't have money.@@Are you tryin' to make a fool outta me?}
+{15000}{}{There's no need for that.}
+{16000}{}{Done.}
+{17000}{}{One moment... Let's see... And now... Let's try this... Done! here, take it.}
+{18000}{}{Sorry, have important work to do now, come here later.}
+{19000}{}{Take the key in your hand, I can't understand what car are you talking about.}
+{20000}{}{I can't see your car, park it somewhere near.}
+{21000}{}{Take the key in your hand.}
+
+[pols]
+{100}{}{Rick Butler}
+{110}{}{man29.png}
+{200}{}{You see a nice-looking middle-aged men... oh no, wait. You see Rick Butler.}
+{210}{}{You see a nice-looking middle-aged men. Looks like someone important here.}
+{210}{}{You see Rick Butler. He looks good in those jeans.}
+{210}{}{You see Rick Butler. He's flexing his muscles from time to time, humming something.}
+{1000}{}{Initial preferences}
+{1010}{}{2}
+{2000}{}{Hi! My name is Rick Butler, this is my workshop. I buy, sell, repair and modify cars here. I can help, if you have money, of course. Also I can make a copy of any key for 1000 coins.}
+{2010}{}{What units do you have in stock?}
+{2020}{}{I'd like to sell my car.}
+{2030}{}{What else can you offer to me?}
+{2040}{}{Make a copy of this key.}
+{2050}{}{Sorry, I'll visit you later.}
+{3000}{}{I can offer You: Hummer for @lex hummer@, Buggy for @lex buggy@, Scout for @lex scout@, Highwayman for @lex highwayman@, Hunchback for @lex hunchback@, Toddler for @lex toddler@, Cruiser for @lex cruiser@.}
+{3010}{}{I'll buy Hummer.}
+{3020}{}{I'll buy Buggy.}
+{3030}{}{I'll buy Scout.}
+{3040}{}{I'll buy Highwayman.}
+{3050}{}{I'll buy Hunchback.}
+{3060}{}{I'll buy Toddler.}
+{3070}{}{I'll buy Cruiser.}
+{3080}{}{No, maybe next time.}
+{4000}{}{No money - no car. Come back when you have some cash.}
+{5000}{}{The garage is full of cars at the moment, come back when there is some free space.}
+{6000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{6010}{}{That's it! Bye.}
+{7000}{}{Here's the key, car is waiting for you in the garage. If you'd like to repair or modify it, you're welcome.}
+{7010}{}{That's it. Bye.}
+{8000}{}{For your piece of junk I'll give you @lex sell_cost@ coins.}
+{8010}{}{Deal.}
+{8020}{}{Are you nuts? I'm not selling it.}
+{9000}{}{Excellent. Hey guys, make this beauty feel good! [Throws keys to the garage]}
+{10000}{}{Refuel, repair, modify engine. After modification this engine will eat even spirit.}
+{10010}{}{I'd like to fuel up my car.}
+{10020}{}{Repair my car.}
+{10030}{}{Spirit-friendly engine is exactly what I need.}
+{10040}{}{Ok, I'll keep that in my mind.}
+{11000}{}{Refuel will cost you @lex fuel_cost@ coins.}
+{11010}{}{Okay.}
+{11020}{}{I don't have enough money.}
+{11030}{}{I'll come back next time.}
+{12000}{}{Repair will cost you @lex wear_cost@ coins.}
+{12010}{}{Deal! Fix it.}
+{12020}{}{Nope. Too expensive.}
+{12030}{}{Next time, I think.}
+{13000}{}{Modify will cost you @lex bio_cost@ coins.}
+{13010}{}{No problem, start the work.}
+{13020}{}{Ooops... I forgot my money in the car.}
+{13030}{}{No, not today.}
+{14000}{}{What? No money? It's not my problem, we're not Red Cross.@@Don't bother me if you don't have money.@@It's better for you to find money first.}
+{15000}{}{There's no need for that.}
+{16000}{}{Done.}
+{17000}{}{One moment... Let's see... And now... Let's try this... Done! here, take it.}
+{18000}{}{Sorry, have important work to do now, come here later.}
+{19000}{}{Take the key in your hand, I can't understand what car are you talking about.}
+{20000}{}{I can't see your car, park it here.}
+{21000}{}{Take the key in your hand.}
+
+[russ]
+{100}{}{Т-рей}
+{110}{}{man29.png}
+{200}{}{Вы видите приятно выглядящего негра... ер, нет, подождите. Вы видите Т-Рея.}
+{210}{}{Вы видите мускулистого негра в толстых очках, жидкой бородкой и он стоит приосанившись.}
+{210}{}{Вы видите Т-Рея. Он хорошо выглядит в джинсах.}
+{210}{}{Вы видите Т-Рея. Он изредка поигрывает мускулами, бормоча себе что-то под нос.}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+{1010}{}{2}
+{2000}{}{Ddcaln. Eli? ciaon Nc Dle, ? oic?ci ynie ernnldneie.
+Cricertnu eodele, ddiarcle, dleiinie c eiacocerocle rani. Lnec lnnu aliuac, ni ? e naice oneoare.
+Nre cl eiao nalernu eidct eet?r cr 1000 eiiln.}
+{2010}{}{Erecl radlarnu lnnu a irec?cc?}
+{2020}{}{? oinle au ddiarnu ranieiaceu.}
+{2030}{}{Erecl lul oneoac au iercuarlnl?}
+{2040}{}{Nalere er eil eidct eet?cer.}
+{2050}{}{Ccacic, creao a adoaie drc.}
+{3000}{}{Eiao ddlaeiccnu: Oreeld cr @lex hummer@, Araac cr @lex buggy@, Neron cr @lex scout@, Orealeli cr @lex highwayman@.}
+{3010}{}{Dieodrt Oreeld.}
+{3020}{}{Dieodrt Araac.}
+{3030}{}{Dieodrt Neron.}
+{3040}{}{Dieodrt Orealeeli.}
+{3050}{}{I'll buy Hunchback.}
+{3060}{}{I'll buy Toddler.}
+{3070}{}{I'll buy Cruiser.}
+{3080}{}{Iln, dicreoe a adoaie drc.}
+{4000}{}{Iln alila - iln errciu. Ddcoiac ere irealru iociot noeeo.}
+{5000}{}{Nle?rn an? ernnldner? c nni?ier cracnr errcirec, ileoar diaiairnu, diaieac eiaar aoaon naiaiaiul elnnr.}
+{6000}{}{Aldcc eet?, errcir caln nla? a ernnldneie. Lnec dindlaolnn? dleiin cec eiacoceroc?, ni iadruren?.}
+{6010}{}{Ni, ?ni irai. Dier.}
+{7000}{}{Aldcc eet?, errcir caln nla? nirdocc, ir nni?iel. Lnec dindlaolnn? dleiin cec eiacoceroc?, ni iadruren?.}
+{7010}{}{Ni, ?ni irai. Dier.}
+{8000}{}{Cr nait ee??o ? are @lex sell_cost@ eiiln.}
+{8010}{}{Di doere.}
+{8020}{}{Il, nre alei il diealn, dieao dicuo dieodrnle? di naiaid?call.}
+{9000}{}{Inec?ii. Ye, dla?nr, iddcoiaoenl yniai eii?! [Ecarln eet?c a ernnldneot]}
+{10000}{}{Crddraer, dleiin, nre cl eicle nalernu eiacoceroct aaccer, ?ni au ii eia drainrnu il nieuei ir ecedidlrenidro, ii c ir ndcdniie.}
+{10010}{}{? oinle au crddracnun?.}
+{10020}{}{Di?cicnl eit errcio.}
+{10030}{}{Aci-aacarnleu celiii ni, ?ni eil irai.}
+{10040}{}{Dii?nii, aoao celnu aacao.}
+{11000}{}{Crddraer iaiealnn? nlal a @lex fuel_cost@ eiiln.}
+{11010}{}{Io arare, crd?ac ocl eit errcieo.}
+{11020}{}{O eli? iln nnieuei alila.}
+{11030}{}{Creao a adoaie drc.}
+{12000}{}{Di?cier iaiealnn? nlal a @lex wear_cost@ eiiln.}
+{12010}{}{Eli? onndrcarln, ?cic.}
+{12020}{}{Yni eil il di erderio.}
+{12030}{}{Iln, dicreoe a adoaie drc.}
+{13000}{}{Eialdiccroc? nlal iaiealnn? a @lex bio_cost@ eiiln.}
+{13010}{}{Alc ddiaele, ir?cirenl.}
+{13020}{}{Erclnn? aliuac craue a errcil.}
+{13030}{}{Iln, il nlaiai?.}
+{14000}{}{?ni? Iln alila? Io yni il eic ddiaeleu, eu non il aerainaidcnleuiinnut cricerlen?.@@Drc iln alila, ni il?lai eli? inaelernu.@@Aliuac nir?rer ireac.}
+{15000}{}{Nai? errcir il iocarlnn? a ynie.}
+{16000}{}{Ainiai.}
+{17000}{}{Iaio eciono... Nre... Nldldu nre... R nldldu ain nre... Anl, ainiai, aldcc.}
+{18000}{}{Ccacic, o eli? ndi?iul aler, diaieac diccl.}
+{19000}{}{Aicuec eet? a doeo, r ni ? il diicert i ereie errcil caln dl?u.}
+{20000}{}{?ni-ni il acaii naile errciec, diaaiic ll ir nni?ieo.}
+{21000}{}{Aicuec eet? a doeo.}
+

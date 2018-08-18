@@ -1,0 +1,64 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 1 #
+3 2010 #
+4 2020 #
+0 2030 @
+3 3000 None 1 #
+2 3010 @
+4 4000 None 1 #
+2 4010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories 
+Level 2, Laboratory 3
+Object: M8 "Centaur"}
+{2010}{}{General informations}
+{2020}{}{Origin}
+{2030}{}{Exit}
+{3000}{}{Huge, aggressive creatures. Their appearance depends on animals used to create M8. Most common M8's have pink, human-like skinand six legs, similar to human hands. Many  "tentacles" from downside and  two heads - one human and  one dog-like. M8 seems to be very vulnerable for electricity and heat. Usually that spiece coexist with "M9" and sometimes even with "super mutants".}
+{3010}{}{Back}
+{4000}{}{All M8's are result of FEV experiments made by someone called "Master".  It seems like human and some animal or animals were keeped close to each other and exposed for extremely high doses of FEV virus. In result FEV mutated their DNA and merge their bodies into one.}
+{4010}{}{Back}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Poziom 2, Labolatorium 3
+Obejkt: M8- "Centaur"}
+{2010}{}{glowne informacje}
+{2020}{}{pochodzenie.}
+{2030}{}{wyjscie}
+{3000}{}{wielka, agresywna istota . Ich postawa zalezy od zwierzat uzytych do stworzenia M8. wiekszosc M8's ma rozowa skore, podobna do ludzkiej, 6 nog bardzo podobnych do ludzkich ramion. Cos jak macki od spodu i 2 glowy jedna ludzka i jedna psia. M8 sa bardzo wrazliwe na prad i wysoka temperature. M8 czasami zyja z M9 i czasami nawet z "super mutantami".}
+{3010}{}{powrot}
+{4000}{}{wszystkie M8 sa wynikiem eksperymentu FEV wykonanego przez kogos nazywanego "master".  wyglada na to ze czlowiek i jakies zwierze lub zwierzeta byly narazone na wielka doze wirusa FEV. FEV zmutowal ich DNA przez co ich ciala przeistoczyly sie w te istoty.}
+{4010}{}{back}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Mendel Genetic Laboratories
+Level 2, Laboratory 3
+Obejct: M8- "Centaur"}
+{2010}{}{general info}
+{2020}{}{origin.}
+{2030}{}{exit}
+{3000}{}{huge, agressive creatures. their apperance depends on animals used to create M8. most common M8's have pink, human like skin, 6 legs very similar to human hands. Many something like "tentacles" from downside and  2 heads one human one dog-like. M8 Appears to be very sensitive to electricity and heat. M8 sometimes live with M9s and sometimes even with "super mutants".}
+{3010}{}{back}
+{4000}{}{all M8's are result of FEV experiments made by someone called "master".  it seems human and some animal or animals were closely to each other exposed to large doses of FEV virus. FEV then mutated their DNA and caused their bodies to merge into one creature.}
+{4010}{}{back}
+

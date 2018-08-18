@@ -1,0 +1,15 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Tohle mìsto vypadá zajímavì. Lepší je mít sebou zbraò.}
+{200}{}{Díky tvé pomoci Laøin gang zvítìzil.}
+{300}{}{Podaøilo se ti ze zálohy pøepadnout Laøin gang.}
+{400}{}{Objevuješ Beckynin destilaèní pøístroj. Frankieho to bude jistì zajímat.}
+{500}{}{Beckynin destilaèní pøístroj byl znièen.}
+{600}{}{Frankie byl vykoupen od Becky.}
+{700}{}{Máš za sebou svùj první 'hon na otroky'.}
+{800}{}{Splácíš Rebecce Fredùv dluh.}
+{900}{}{Vracíš Rebece knihu.}
+{1000}{}{Annin amulet se dostal tam, kam patøí.}
+{1100}{}{Prokecáváš si cestu dovnitø kostela.}
+{1200}{}{Smitty dostal svoje jídlo.}
+{1300}{}{Nacházíš slabinu v Tylerovì gangu.}
+{1400}{}{Máš plán útoku pro Laøin gang.}

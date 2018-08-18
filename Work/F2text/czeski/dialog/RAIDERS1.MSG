@@ -1,0 +1,4 @@
+#tento soubor pøeložil Raptor...xraptor.@email.cz
+{100}{}{Došel jsi k jeskyni otevírající se na úboèí jednoho z kopcù.}
+{101}{}{Došel jsi ke skupinì roztrhaných chatrèí. Uprostøed nich je stará studna se žebøíkem vedoucím kamsi dolu.}
+{102}{}{Zlomil jsi moc banditù. Tento kraj si mùže oddechnout.}

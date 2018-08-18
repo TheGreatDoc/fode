@@ -1,0 +1,3 @@
+{100}{}{Tu dois normalement utiliser ça sur un SuperMutant.}
+{101}{}{Tu gagnes }
+{102}{}{ points d'expérience pour avoir utilisé le sérum mutagénique.}

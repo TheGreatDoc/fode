@@ -1,0 +1,39 @@
+//Client GUI Players menu
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+IGUIScreenOpt @PlayersItemMenuOpt;
+uint PlayersMenuPointedItemId;
+
+class MercPickUpButtonClass : IGUIElementCallbackMouseClick
+{
+	void OnMouseClick(int id, int click)
+	{
+		RunServerScriptUnsafe("players_menu_server_scripts@unsafe_MercPickUp",PlayersMenuPointedItemId,0,0,null,null);
+		HideScreen(CLIENT_SCREEN_PLAYERS_ITEM_MENU,0,0,0);
+	}
+}
+
+void InitPlayersItemMenu()
+{
+	@PlayersItemMenuOpt=
+	GUI_CreateScreen(CLIENT_SCREEN_PLAYERS_ITEM_MENU,"automap.frm")
+                .CanMove(true)
+                .Modal(false)
+                .Multiinstance(false)
+				.SizeByMultipleImages(0,0);
+	
+	GUI_AddText(CLIENT_SCREEN_PLAYERS_ITEM_MENU,"Players menu\nItem", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_SAND, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(120,20);
+	
+	MercPickUpButtonClass MercPickUpButton;
+	GUI_AddButton(CLIENT_SCREEN_PLAYERS_ITEM_MENU, 0,25)
+		.UpPic("prfsldof.frm")
+		.DownPic("prfsldon.frm")
+		.ClickableZone(130,10)
+		.Text("Merc PICK UP", FONT_FALLOUT, COLOR_GREEN, COLOR_LGRAY, FT_BORDERED|FT_CENTERX)
+		.CallbackMouseClick(MercPickUpButton);
+}

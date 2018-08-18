@@ -1,0 +1,60 @@
+#tento soubor pøeložil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš ghoula s oholenou hlavou.}
+{101}{}{Vidíš Jeremyho, ghoula, jenž má na starost zásoby.}
+{102}{}{Vidíš vysokého, hubeného ghoula, který vypadá velmi zamìstnanì.}
+
+{110}{}{Dobrý den. Jmenuji se Jeremy. Jsem tady správcem kabinetu všech energetických zásob. Mám na starosti  všechny naše zásoby ve skladu.}
+{111}{}{Dobrý den ještì jednou. Pøicházíš navštívit kabinet všech energetických zásob, nebo jen potøebuješ nìco ze skladu?}
+{112}{}{Všechny energetický co?}
+{113}{}{Potøebuju nìco ze skladu.}
+{114}{}{Nepotøebuju nic. Jen se rozhlížím. Nashle.}
+
+{120}{}{Dobrá, když chceš nìco ze skladu, potøebuješ vyplnìnou žádanku. Máš vyplnìnou žádanku?}
+{121}{}{Ano, mám. Tady je.}
+{122}{}{Uh, ne nemám. Kde dostanu formuláø na vyplnìní?}
+
+{130}{}{No, je to asi ono, v poøádku. Co potøebuješ?}
+{131}{}{Potøebuju tøícestný plasma-transformer.}
+{132}{}{Potøebuju tøícestný plasma-transformer. Chceš vìdìt, na co ho potøebuju?}
+{133}{}{Potøebuju mosaznej boxer.}
+
+{140}{}{Myslím, že mám právì jeden tady v kabinetì. O, ano. Tady je.}
+{141}{}{Hmm, to není poslední model, ale musím ho vzít. Díky. Nashle.}
+
+{150}{}{Nechci to vùbec vìdìt. Myslím, že jeden tu mám právì tady v tomto kabinetì. O, ano. Tady je.}
+{151}{}{Hmm, není to zrovna poslední model, ale vezmu si ho. Díky. Nashle.}
+
+{160}{}{Nemùžu ti teï pomoct. Mám moc práce.}
+{161}{}{Vidíš, je to všechno o materiálu.}
+{162}{}{Vidíš, je to všechno o nápadech.}
+{163}{}{Vidíš, je to všechno o slovech.}
+{164}{}{Vidíš, je to všechno o Natas.}
+{165}{}{Vidíš, je to všechno o holohlavých opicích.}
+{166}{}{Vidíš, je to všechno o tajemstvích.}
+{167}{}{Vidíš, je to všechno o marketingu.}
+
+{170}{}{Ok, možná ne všechny energetický. Ale je to zatracenì dost dùležitý. Co chceš?}
+{171}{}{Potøebuju nìco ze skladu.}
+{172}{}{Uh, nic. Jenom se rozhlížím kolem. Nashle.}
+
+{180}{}{Nemùžu vìøit, jaké nesnáze tady teï zpùsobují.}
+{181}{}{Nejsou hloupý, že pøichází, co?}
+{182}{}{Nechoïte do šachty reaktoru.}
+{183}{}{Uh, mám spoustu práce, než abych ti právì teï èetl povídku.}
+{184}{}{Pokraèujte v chùzi... jdìte rovnì. Je to takovej hezoun.}
+
+{190}{}{Co potøebuješ? No, tady je na to èekací listina. Potøebuješ nìco jiného?}
+{191}{}{Uh, myslím, že zùstanu u tøícestnýho plazma-transformeru.}
+{192}{}{Zatracenì. Ne, nic jinýho nebudu potøebovat. Budu se už muset vrátit. Nashle.}
+
+{200}{}{Hmm, ty nejsi Skeeterùv pøítel, že ne? On se mì vždycky snaží pøemluvit, abych mu dal cenný zásoby. Potom jenom ten materiál roztrhá a rozbije. Nevìøil bych ani, že umí opravit toustovaè.}
+{201}{}{No, ve skuteènosti jsem to sehnal pro Skeetera.}
+{202}{}{Skeeter je kdo? Jenom potøebuju tuhle souèástku donést do kontrolní místnosti reaktoru, abych opravil ten... Hej, podívej! Není támhle krysa?}
+{203}{}{Nevím, co se chystají udìlat s tou vìcí. Já ji jenom vyzvedávám.}
+
+{210}{}{Mìl jsem to oèekávat. Jak jen Skeeter sehnal nìkoho, kdo mu schválil vydání té souèástky? Já jen, aby teï nic nevyhodil do vzduchu. Ale dobrá. To není moje starost, pøedpokládám.}
+{211}{}{Uh, souèástka? Potøebuju teï vyzvednout.}
+
+{220}{}{No, jednu by si mohl dostat buï od Harolda v usedlosti nebo pøímo tady v hlavní kontrolní místnosti reaktoru od Festuse. Je mi jedno, od koho ji seženeš, pokud ji seženeš. Žádná vyplnìná Autorizaèní žádanka, žádná souèástka -- tak to funguje.}
+{221}{}{Už jsi sehnal Atorizaèní žádanku? Abych ti mohl dát nìjakou souèástku, musím nejdøív dostat od tebe žádanku.}
+{222}{}{Oh, ok. No, radìji pùjdu jednu sehnat. Nashle.}

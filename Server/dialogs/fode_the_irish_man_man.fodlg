@@ -1,0 +1,74 @@
+[comment]
+
+
+[data]
+lang=engl russ pols
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p quest_the_irish_man = 0 #
+2 1020 D _var p quest_the_irish_man = 3 #
+2 1030 D _var p quest_the_irish_man = 2 #
+3 1040 D _var p quest_the_irish_man = 1 @
+2 2000 None 0 @
+3 3000 None 1 #
+4 3010 R _var p quest_the_irish_man = 2 R _script quest_server_scripts@the_irish_man_1_2 0  #
+65507 3020 R _script quest_server_scripts@the_irish_man_1_2 0  #
+65507 3030 R _script quest_server_scripts@the_irish_man_1_2 0  @
+4 4000 None 1 #
+0 4010 #
+65507 4020 &
+
+[engl]
+{100}{}{Drunk man}
+{200}{}{You see: Man}
+{210}{}{You see an drunk man.}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest}
+{1020}{}{done quest}
+{1030}{}{just talked with him}
+{1040}{}{accepted quest, got to talk with him}
+{2000}{}{Buy me a drink or get the fuck out!@@Why does everythink keep spinning?@@I need another beer...@@Helloooo, handsooome.@@**coughes** uh, just thought I had to puke...@@I am feeling fucking awesome.@@Weeeeeee}
+{3000}{}{What the fuck are you lookin' at?}
+{3010}{}{Your wife is worried about you. She sent me to bring you back home to her.}
+{3020}{}{Your ugly face, motherfucker!}
+{3030}{}{I stabbed your wife, and you're next.}
+{4000}{}{Huh? Ah, yeah, alright. Thank you kiddo, tell her I come back later sometime.}
+{4010}{}{Whatever you say.}
+{4020}{}{You know what? Fuck you. :-)}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest}
+{1020}{}{doen quest}
+{1030}{}{just talked with him}
+{1040}{}{accepted quest, got to talk with him}
+{2000}{}{Buy me a drink or get the fuck out!@@Why does everythink keep spinning?@@I need another beer...@@Helloooo, handsooome.@@**coughes** uh, just thought I had to puke...@@I am feeling fucking awesome.@@Weeeeeee}
+{3000}{}{What the fuck are you lookin' at?}
+{3010}{}{Your wife is worried about you. She sent me to bring you back home to her.}
+{3020}{}{Your ugly face, motherfucker!}
+{3030}{}{I stabbed your wife, and you're next.}
+{4000}{}{Huh? Ah, yeah, alright. Thank you kiddo, tell her I come back later sometime.}
+{4010}{}{Whatever you say.}
+{4020}{}{You know what? Fuck you. :-)}
+
+[pols]
+{100}{}{Pijany czіowiek}
+{200}{}{Widzisz: Mężczyznę}
+{210}{}{Widziesz totalnie naprutego faceta.}
+{1000}{}{Predialogue installations}
+{1010}{}{no quest}
+{1020}{}{done quest}
+{1030}{}{just talked with him}
+{1040}{}{accepted quest, got to talk with him}
+{2000}{}{Kup mi drinka albo spierdalaj!@@Wow, czemu wszystko wiruje?@@Piwaaa@@Czeeeść, przystojniaku.@@Hyk, będę rzygał@@Czuje się zajebiście.@@Jeeee}
+{3000}{}{Na co się kurwa gapisz?}
+{3010}{}{Twoja żona niepokoi się o ciebie. Przyszedłem w tej sprawie.}
+{3020}{}{Pierdol się, krzyworyjna kurwo!}
+{3030}{}{Zajebałem twoją żonę, ty jesteś następny.}
+{4000}{}{He? A, tak. Powiedz jej, że niedługo wrócę.}
+{4010}{}{Co tylko powiesz.}
+{4020}{}{Wiesz co? Pierdol się.}
+

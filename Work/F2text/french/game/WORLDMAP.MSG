@@ -1,0 +1,1390 @@
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+# Text labels and messages used by town and world map
+#
+# ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+#
+
+#
+# Town map entry-point selection names
+#
+# Format:
+#	city type.
+#	Up to 10 selection names
+#
+# Arroyo
+{200}{}{Pont}
+{201}{}{Village}
+{202}{}{Temple}
+{203}{}{Désert}
+#
+# Den
+{210}{}{Quartier des affaires 1}
+{211}{}{Quartier des affaires 2}
+{212}{}{Quartier résidentiel 1}
+#
+# Klamath
+{220}{}{Centre ville}
+{221}{}{Centre commercial}
+{222}{}{Grottes aux rats}
+{223}{}{Grottes piégées}
+{224}{}{Pâturages}
+{225}{}{Canyon}
+#
+# Modoc
+{230}{}{Rue principale}
+{231}{}{Auberge}
+{232}{}{Pâturages des brahmines de Grisham}
+{233}{}{Jardin de Farrel}
+{234}{}{En bas des toilettes}
+{235}{}{Hôtel de ville}
+#
+# Vault City
+{240}{}{Entrée}
+{241}{}{Centre ville}
+{242}{}{Conseil}
+#
+# Gecko
+{250}{}{Campement}
+{251}{}{Centrale}
+{252}{}{Dépotoir}
+{253}{}{Tunnels}
+#
+# Broken Hills
+{260}{}{Collines Brisées 1}
+#
+# New Reno
+{270}{}{New Reno 1}
+{271}{}{New Reno 2}
+{272}{}{New Reno 3}
+{273}{}{New Reno 4}
+{274}{}{A l'entrecôte}
+{275}{}{Golgotha}
+{276}{}{Etables}
+{277}{}{Ring de boxe}
+#
+# Sierra Army Base
+{280}{}{Champ de bataille}
+{281}{}{Entrepôt niveau 1 : Personnel}
+{282}{}{Entrepôt niveau 2 : Quai de stockage}
+{283}{}{Entrepôt niveau 3 : Labo de robotique}
+{284}{}{Entrepôt niveau 4 : Labo de recherche biologique}
+#
+# Vault 15
+{290}{}{Entrée est}
+{291}{}{Squatters}
+{292}{}{Squatters}
+{293}{}{Abri 15}
+#
+# New California Republic
+{300}{}{Bazar}
+{301}{}{Conseil}
+{302}{}{Centre ville}
+{303}{}{Conseil}
+{304}{}{Ranch de Westin}
+{305}{}{Pâturages}
+#
+# Vault 13
+{310}{}{Entrée}
+{311}{}{Abri 13}
+#
+# Military Base
+{320}{}{Entrée}
+{321}{}{Niveau 1}
+{322}{}{Niveau 2}
+{323}{}{Niveau 3}
+{324}{}{Niveau 4}
+#
+# Redding
+{330}{}{Entrée de la mine}
+#
+# San Francisco
+{340}{}{Error:Blank}
+#
+# Navarro
+{350}{}{Navarro}
+#
+# The Enclave
+{360}{}{Error:Blank}
+#
+# Abbey
+{370}{}{Error:Blank}
+#
+# Primitive Tribe
+{380}{}{Error:Blank}
+#
+# Environmental Protection Agency
+{390}{}{Error:Blank}
+#
+# Modoc: Ghost Town Sub-Area
+{400}{}{La Ferme perdue}
+{401}{}{Caverne principale}
+{402}{}{Lac souterrain}
+#
+# Car Out of Gas
+{410}{}{Voiture en panne}
+#
+# Destroyed Arroyo
+{420}{}{Pont détruit}
+#
+# Klamath Toxic Caves
+{430}{}{Grottes toxiques}
+#
+# Den Slave Runs
+{440}{}{Fuite des esclaves de La Fosse}
+# New Reno: Golgatha
+{450}{}{Golgotha}
+
+
+#
+# Terrain type names for world map hover button
+#
+{1000}{}{Désert}
+{1001}{}{Montagnes}
+{1002}{}{Ville}
+{1003}{}{Côte}
+{1004}{}{Inconnu}  # Unknown/visited city
+
+
+# Misc messages
+{1500}{}{Tu as gagné 10 000 points d'expérience !}
+{1501}{}{Ruines}
+{1502}{}{La voiture est à cours d'énergie.}
+{1503}{}{C'est une voiture. On dirait qu'elle est en panne.}
+
+
+
+#
+# Worldmap Encounter messages
+#
+
+{2998}{}{Tu rencontres :}
+{2999}{}{Veux-tu rencontrer :}
+
+# Encounter Table 0
+{3000}{}{un groupe de pillards.}
+{3001}{}{des radscorpions.}
+{3002}{}{des rats géants.}
+{3003}{}{un groupe de marchands.}
+{3004}{}{<Spécial>}
+
+# Encounter Table 1
+{3050}{}{un groupe de pillards.}
+{3051}{}{des mantes.}
+{3052}{}{un groupe de geckos.}
+{3053}{}{un groupe de taupes.}
+{3054}{}{un groupe de radscorpions.}
+{3055}{}{un groupe de rats géants.}
+{3056}{}{un groupe de marchands.}
+{3057}{}{<Spécial>}
+
+# Encounter Table 2
+{3100}{}{un groupe de pillards.}
+{3101}{}{un groupe de radscorpions.}
+{3102}{}{un groupe de rats géants.}
+{3103}{}{un groupe de marchands.}
+{3104}{}{<Spécial>}
+
+# Encounter Table 3
+{3150}{}{un groupe de pillards.}
+
+# Encounter Table 4
+{3200}{}{un groupe de pillards.}
+
+# Encounter Table 5
+{3250}{}{un groupe de pillards.}
+
+# Encounter Table 6
+{3300}{}{Une expédition guerrière.}
+{3301}{}{Un groupe de cannibales.}
+{3302}{}{Un groupe de plantes à spores et quelques geckos argentés.}
+{3303}{}{Un groupe de geckos argentés.}
+{3304}{}{Un groupe de scorpions.}
+{3305}{}{Un groupe de plantes à spores.}
+{3306}{}{Un groupe de rats-cochons.}
+{3307}{}{Un groupe de rats.}
+{3308}{}{Un groupe de chasseurs de cannibales.}
+{3309}{}{Un groupe de nomades affrontant une expédition guerrière.}
+{3310}{}{Un groupe de chasseurs affrontant des scorpions.}
+{3311}{}{Un groupe de rats-cochons affrontant des geckos argentés.}
+{3312}{}{Un groupe de radscorpions affrontant des geckos argentés.}
+{3313}{}{Un groupe de rats affrontant des rats-cochons.}
+{3314}{}{Un groupe de chasseurs.}
+{3315}{}{Un groupe de nomades.}
+{3316}{}{Un homme gardant un pont.}
+{3317}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 7
+{3350}{}{Décharge de déchets toxiques}
+{3351}{}{Un chien solitaire.}
+{3352}{}{Un troupeau de brahmines.}
+{3353}{}{Une expédition guerrière.}
+{3354}{}{Un groupe de cannibales.}
+{3355}{}{Un groupe de plantes à spores et quelques geckos argentés.}
+{3356}{}{Un groupe de geckos argentés.}
+{3357}{}{Un groupe de scorpions.}
+{3358}{}{Un groupe de plantes à spores.}
+{3359}{}{Un groupe de rats-cochons.}
+{3360}{}{Un groupe de rats.}
+{3361}{}{Un groupe de chasseurs combattant des cannibales.}
+{3362}{}{Un groupe de nomades affrontant une expédition guerrière.}
+{3363}{}{Un groupe de chasseurs affrontant des scorpions.}
+{3364}{}{Un groupe de rats-cochons affrontant des geckos argentés.}
+{3365}{}{Un groupe de radscorpions affrontant des geckos argentés.}
+{3366}{}{Un groupe de rats affrontant des rats-cochons.}
+{3367}{}{Un groupe de chasseurs.}
+{3368}{}{Un groupe de nomades.}
+{3369}{}{Les restes d'une baleine.}
+{3370}{}{Une pierre tombale géante.}
+{3371}{}{Une navette écrasée.}
+{3372}{}{Un portail de garde.}
+{3373}{}{Les Chevaliers de la Table Ronde.}
+{3374}{}{Un homme des bois en fer-blanc}
+{3375}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 8
+{3400}{}{Une expédition guerrière.}
+{3401}{}{Un groupe de cannibales.}
+{3402}{}{Un groupe de plantes à spores et quelques geckos argentés.}
+{3403}{}{Un groupe de geckos argentés.}
+{3404}{}{Un groupe de scorpions.}
+{3405}{}{Un groupe de plantes à spores.}
+{3406}{}{Un groupe de rats-cochons.}
+{3407}{}{Un groupe de rats.}
+{3408}{}{Un groupe de chasseurs combattant des cannibales.}
+{3409}{}{Un groupe de nomades affrontant une expédition guerrière.}
+{3410}{}{Un groupe de chasseurs affrontant des scorpions.}
+{3411}{}{Un groupe de rats-cochons affrontant des geckos argentés.}
+{3412}{}{Un groupe de radscorpions affrontant des geckos argentés.}
+{3413}{}{Un groupe de rats affrontant des rats-cochons.}
+{3414}{}{Un groupe de chasseurs.}
+{3415}{}{Un groupe de nomades.}
+
+# Encounter Table 9
+{3450}{}{Décharge de déchets toxiques}
+{3451}{}{Un chien solitaire.}
+{3452}{}{Un troupeau de brahmines.}
+{3453}{}{Une bande de parias.}
+{3454}{}{Un groupe d'âmes saintes.}
+{3455}{}{Des geckos et des taupes.}
+{3456}{}{Des geckos attaquant une famille de radscorpions.}
+{3457}{}{Des geckos argentés se cachant parmi les plantes à spores.}
+{3458}{}{Des geckos.}
+{3459}{}{Des radscorpions se cachant dans les plantes à spores.}
+{3460}{}{Des plantes à spores.}
+{3461}{}{Une famille de radscorpions.}
+{3462}{}{Un groupe de taupes.}
+{3463}{}{Une horde de geckos argentés affrontant des taupes.}
+{3464}{}{Une expédition guerrière attaquant une bande de nomades.}
+{3465}{}{Une bande de parias attaquant une bande de nomades.}
+{3466}{}{Un groupe de saints repoussant une expédition guerrière.}
+{3467}{}{Une horde de radscorpions tendant une embuscade à une famille de taupes.}
+{3468}{}{Une bande de nomades}
+{3469}{}{Les restes d'une baleine.}
+{3470}{}{Une pierre tombale géante.}
+{3471}{}{Une navette écrasée.}
+{3472}{}{Un portail de garde.}
+{3473}{}{Les Chevaliers de la Table Ronde.}
+{3474}{}{Un homme des bois en fer-blanc}
+{3475}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 10
+{3500}{}{Une bande de parias.}
+{3501}{}{Un groupe d'âmes saintes.}
+{3502}{}{Des geckos et des taupes.}
+{3503}{}{Des geckos attaquant une famille de radscorpions.}
+{3504}{}{Des geckos argentés se cachant parmi les plantes à spores.}
+{3505}{}{Des geckos.}
+{3506}{}{Des radscorpions se cachant dans les plantes à spores.}
+{3507}{}{Des plantes à spores.}
+{3508}{}{Une famille de radscorpions.}
+{3509}{}{Un groupe de taupes.}
+{3510}{}{Une horde de geckos argentés affrontant des taupes.}
+{3511}{}{Une expédition guerrière attaquant une bande de nomades.}
+{3512}{}{Une bande de parias attaquant une bande de nomades.}
+{3513}{}{Un groupe de saints repoussant une expédition guerrière.}
+{3514}{}{Une horde de radscorpions tendant une embuscade à une famille de taupes.}
+{3515}{}{Une bande de nomades}
+{3516}{}{Un homme gardant un pont.}
+{3517}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 11
+{3550}{}{Une horde de geckos dorés et une famille de radscorpions.}
+{3551}{}{Des bandits.}
+{3552}{}{Un groupe de SDF.}
+{3553}{}{Une horde de geckos dorés.}
+{3554}{}{Une famille de radscorpions.}
+{3555}{}{Des plantes à spores.}
+{3556}{}{Des bandits attaqués par des geckos dorés.}
+{3557}{}{Des fermiers se défendant contre des geckos.}
+{3558}{}{Des fermiers repoussant des geckos dorés.}
+{3559}{}{Des trappeurs affrontant des geckos dorés.}
+{3560}{}{Des trappeurs repoussant des bandits.}
+{3561}{}{Un groupe de trappeurs maîtrisant des geckos.}
+{3562}{}{Des bandits tendant une embuscade à des SDF.}
+{3563}{}{Des SDF massacrant des fermiers.}
+{3564}{}{Des bandits attaquant des fermiers.}
+{3565}{}{Des fermiers repoussant des scorpions.}
+{3566}{}{Des trappeurs affrontant des scorpions.}
+{3567}{}{Des trappeurs attaquant des rats-cochons.}
+{3568}{}{Des fermiers éliminant une infestation de rats-cochons.}
+{3569}{}{Des fermiers.}
+{3570}{}{Un groupe de trappeurs.}
+
+# Encounter Table 12
+{3600}{}{Une horde de geckos dorés et une famille de radscorpions.}
+{3601}{}{Des bandits.}
+{3602}{}{Un groupe de sans-abri.}
+{3603}{}{Une horde de geckos dorés.}
+{3604}{}{Une famille de radscorpions.}
+{3605}{}{Des plantes à spores.}
+{3606}{}{Des bandits attaqués par des geckos dorés.}
+{3607}{}{Des fermiers se défendant contre des geckos.}
+{3608}{}{Des fermiers repoussant des geckos dorés.}
+{3609}{}{Des trappeurs affrontant des geckos dorés.}
+{3610}{}{Des trappeurs repoussant des bandits.}
+{3611}{}{Un groupe de trappeurs maîtrisant des geckos.}
+{3612}{}{Des bandits tendant une embuscade à des SDF.}
+{3613}{}{Des SDF massacrant des fermiers.}
+{3614}{}{Des bandits attaquant des fermiers.}
+{3615}{}{Des fermiers repoussant des scorpions.}
+{3616}{}{Des trappeurs affrontant des scorpions.}
+{3617}{}{Des trappeurs attaquant des rats-cochons.}
+{3618}{}{Des fermiers éliminant une infestation de rats-cochons.}
+{3619}{}{Des fermiers.}
+{3620}{}{Un groupe de trappeurs.}
+{3621}{}{Un homme gardant un pont.}
+{3622}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 13
+{3650}{}{Décharge de déchets toxiques}
+{3651}{}{Un chien solitaire.}
+{3652}{}{Un troupeau de brahmines.}
+{3653}{}{Un marchand et des gardes.}
+{3654}{}{Des trappeurs.}
+{3655}{}{Des bandits attaquant un groupe de marchands.}
+{3656}{}{Des bandits tendant une embuscade à des trappeurs.}
+{3657}{}{Une famille de radscorpions attaquant un groupe de marchands.}
+{3658}{}{Des trappeurs essayant d'attraper des radscorpions.}
+{3659}{}{Un groupe de radscorpions.}
+{3660}{}{Une famille de taupes.}
+{3661}{}{Des bandits.}
+{3662}{}{Une bande de trappeurs essayant d'attraper des geckos dorés.}
+{3663}{}{Des scorpions affrontant des geckos dorés.}
+{3664}{}{Des scorpions attaquant des taupes et des rats-cochons.}
+{3665}{}{Des trappeurs et un groupe de marchands repoussant des bandits.}
+{3666}{}{Des geckos dorés.}
+{3667}{}{Des trappeurs affrontant des taupes et des rats-cochons.}
+{3668}{}{Un groupe de marchands repoussant des taupes et des rats-cochons.}
+{3669}{}{Les restes d'une baleine.}
+{3670}{}{Une pierre tombale géante.}
+{3671}{}{Une navette écrasée.}
+{3672}{}{Un portail de garde.}
+{3673}{}{Les Chevaliers de la Table Ronde.}
+{3674}{}{Un homme des bois en fer-blanc}
+{3675}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 14
+{3700}{}{Décharge de déchets toxiques}
+{3701}{}{Un chien solitaire.}
+{3702}{}{Un troupeau de brahmines.}
+{3703}{}{Une bande de bandits de grand chemin.}
+{3704}{}{Une bande de voleurs.}
+{3705}{}{Une bande de voleurs et de bandits de grands chemin.}
+{3706}{}{Des geckos dorés et des radscorpions.}
+{3707}{}{Une famille de geckos dorés.}
+{3708}{}{Une famille de taupes.}
+{3709}{}{Un grand groupe de radscorpions.}
+{3710}{}{Une grosse infestation de plantes à spores.}
+{3711}{}{Une bande de voleurs s'expliquant avec des bandits de grand chemin.}
+{3712}{}{Un groupe de marchands repoussant des bandits de grand chemin.}
+{3713}{}{Un groupe de marchands repoussant des voleurs.}
+{3714}{}{Un groupe de marchands repoussant des radscorpions.}
+{3715}{}{Un groupe de geckos dorés se battant contre des radscorpions.}
+{3716}{}{Un marchand et des gardes.}
+{3717}{}{Les restes d'une baleine.}
+{3718}{}{Une pierre tombale géante.}
+{3719}{}{Une navette écrasée.}
+{3720}{}{Un portail de garde.}
+{3721}{}{Les Chevaliers de la Table Ronde.}
+{3722}{}{Un homme des bois en fer-blanc}
+{3723}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 15
+{3750}{}{Une bande de bandits de grand chemin.}
+{3751}{}{Une bande de voleurs.}
+{3752}{}{Une bande de voleurs et de bandits de grands chemin.}
+{3753}{}{Des geckos dorés et des radscorpions.}
+{3754}{}{Une famille de geckos dorés.}
+{3755}{}{Une famille de taupes.}
+{3756}{}{Un grand groupe de radscorpions.}
+{3757}{}{Une grosse infestation de plantes à spores.}
+{3758}{}{Une bande de voleurs s'expliquant avec des bandits de grand chemin.}
+{3759}{}{Un groupe de marchands repoussant des bandits de grand chemin.}
+{3760}{}{Un groupe de marchands repoussant des voleurs.}
+{3761}{}{Un groupe de marchands repoussant des radscorpions.}
+{3762}{}{Un groupe de geckos dorés se battant contre des radscorpions.}
+{3763}{}{Un marchand et des gardes.}
+{3764}{}{Un homme gardant un pont.}
+{3765}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 16
+{3800}{}{Décharge de déchets toxiques}
+{3801}{}{Un chien solitaire.}
+{3802}{}{Un troupeau de brahmines.}
+{3803}{}{Un groupe de marchands d'esclaves et d'esclaves.}
+{3804}{}{Un groupe de bandits de grand chemin.}
+{3805}{}{Une bande de voleurs.}
+{3806}{}{Des geckos dorés se cachant dans une formation épaisse de plantes à spores.}
+{3807}{}{Une horde de radscorpions et des taupes.}
+{3808}{}{Une horde de radscorpions.}
+{3809}{}{Un groupe de taupes.}
+{3810}{}{Une bande de voleurs tendant une embuscade à un groupe de bandits de grand chemin.}
+{3811}{}{Un groupe de marchands d'esclaves tentant de réduire quelques personnes à l'esclavage.}
+{3812}{}{Un groupe d'esclavagistes et d'esclaves repoussant des voleurs.}
+{3813}{}{Des esclavagistes et des esclaves repoussant des geckos dorés.}
+{3814}{}{Des radscorpions assaillant une rave-party.}
+{3815}{}{Une rave-party.}
+{3816}{}{Les restes d'une baleine.}
+{3817}{}{Une pierre tombale géante.}
+{3818}{}{Une navette écrasée.}
+{3819}{}{Un portail de garde.}
+{3820}{}{Les Chevaliers de la Table Ronde.}
+{3821}{}{Un homme des bois en fer-blanc}
+{3822}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 17
+{3850}{}{Un groupe de marchands d'esclaves et d'esclaves.}
+{3851}{}{Un groupe de bandits de grand chemin.}
+{3852}{}{Une bande de voleurs.}
+{3853}{}{Des geckos dorés se cachant dans une formation épaisse de plantes à spores.}
+{3854}{}{Une horde de radscorpions et des taupes.}
+{3855}{}{Une horde de radscorpions.}
+{3856}{}{Un groupe de taupes.}
+{3857}{}{Une bande de voleurs tendant une embuscade à un groupe de bandits de grand chemin.}
+{3858}{}{Un groupe de marchands d'esclaves tentant de réduire quelques personnes à l'esclavage.}
+{3859}{}{Un groupe d'esclavagistes et d'esclaves repoussant des voleurs.}
+{3860}{}{Des esclavagistes et des esclaves repoussant des geckos dorés.}
+{3861}{}{Des radscorpions assaillant une rave-party.}
+{3862}{}{Une rave-party.}
+{3863}{}{Un homme gardant un pont.}
+{3864}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 18
+{3900}{}{Des bandits de grand chemin et des voleurs.}
+{3901}{}{Des bandits de grand chemin dirigeant des geckos dorés.}
+{3902}{}{Une grande horde de geckos dorés.}
+{3903}{}{Des scorpions se cachant dans les plantes à spores.}
+{3904}{}{Des voleurs affrontant des scorpions.}
+{3905}{}{Une horde de radscorpions se battant contre des voleurs.}
+{3906}{}{Un groupe de marchands attaqués par des bandits de grand chemin.}
+{3907}{}{Un groupe de marchands pris dans une embuscade par des voleurs.}
+{3908}{}{Des bandits de grand chemin attaqués par des plantes à spores.}
+{3909}{}{Un groupe de marchands.}
+{3910}{}{Un homme gardant un pont.}
+{3911}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 19
+{3950}{}{Des bandits de grand chemin.}
+{3951}{}{Des voleurs.}
+{3952}{}{Des SDF.}
+{3953}{}{Des geckos dorés et des mantes.}
+{3954}{}{Des brahmines sauvages.}
+{3955}{}{Des scorpions.}
+{3956}{}{Des contrebandiers attaqués par des bandits de grand chemin.}
+{3957}{}{Des bandits de grand chemin attaqués par des sans-abri.}
+{3958}{}{Des contrebandiers et des fermiers.}
+{3959}{}{Des mantes attaquant des fermiers.}
+{3960}{}{Des contrebandiers se battant contre des fermiers.}
+{3961}{}{Des brahmines repoussant des mantes.}
+{3962}{}{Des mantes attaquant des taupes.}
+{3963}{}{Des contrebandiers.}
+{3964}{}{Des fermiers.}
+{3965}{}{Un homme gardant un pont.}
+{3966}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 20
+{4000}{}{Des bandits de grand chemin suivant une piste avec des chiens sauvages.}
+{4001}{}{Des voleurs en train de faire des fouilles avec des chiens sauvages.}
+{4002}{}{Une bande de voleurs.}
+{4003}{}{Une bande de bandits de grand chemin.}
+{4004}{}{Une nuée de mantes infestant des plantes à spores.}
+{4005}{}{Une horde de chiens sauvages parmi des plantes à spores.}
+{4006}{}{Une horde de mantes.}
+{4007}{}{Une horde de chiens sauvages.}
+{4008}{}{Des voleurs repoussant des chiens sauvages.}
+{4009}{}{Une caravane attaquée par des chiens sauvages.}
+{4010}{}{Une caravane tombant dans une embuscade de voleurs.}
+{4011}{}{Une caravane tombant dans une embuscade de bandits de grand chemin.}
+{4012}{}{Une caravane.}
+{4013}{}{Un homme gardant un pont.}
+{4014}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 21
+{4050}{}{Décharge de déchets toxiques}
+{4051}{}{Un chien solitaire.}
+{4052}{}{Un troupeau de brahmines.}
+{4053}{}{Des bandits de grand chemin suivant une piste avec des chiens sauvages.}
+{4054}{}{Des voleurs en train de faire des fouilles avec des chiens sauvages.}
+{4055}{}{Une bande de voleurs.}
+{4056}{}{Une bande de bandits de grand chemin.}
+{4057}{}{Une nuée de mantes infestant des plantes à spores.}
+{4058}{}{Une horde de chiens sauvages parmi des plantes à spores.}
+{4059}{}{Une horde de mantes.}
+{4060}{}{Une horde de chiens sauvages.}
+{4061}{}{Des voleurs repoussant des chiens sauvages.}
+{4062}{}{Une caravane attaquée par des chiens sauvages.}
+{4063}{}{Une caravane tombant dans une embuscade de voleurs.}
+{4064}{}{Une caravane tombant dans une embuscade de bandits de grand chemin.}
+{4065}{}{Une caravane.}
+{4066}{}{Les restes d'une baleine.}
+{4067}{}{Une pierre tombale géante.}
+{4068}{}{Une navette écrasée.}
+{4069}{}{Un portail de garde.}
+{4070}{}{Les Chevaliers de la Table Ronde.}
+{4071}{}{Un homme des bois en fer-blanc}
+{4072}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 22
+{4100}{}{Des geckos dorés.}
+{4101}{}{Une horde de mantes.}
+{4102}{}{Des radscorpions.}
+{4103}{}{Des brahmines sauvages.}
+{4104}{}{Un marchand et des gardes se battant contre des geckos dorés.}
+{4105}{}{Une nuée de mantes massacrant une bande de marchands.}
+{4106}{}{Une nuée de mantes attaquant des brahmines sauvages.}
+{4107}{}{Des radscorpions dévorant des mantes.}
+{4108}{}{Des radscorpions massacrant des brahmines sauvages.}
+{4109}{}{Un marchand et des gardes.}
+{4110}{}{Un homme gardant un pont.}
+{4111}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 23
+{4150}{}{Décharge de déchets toxiques}
+{4151}{}{Un chien solitaire.}
+{4152}{}{Un troupeau de brahmines.}
+{4153}{}{Des geckos dorés.}
+{4154}{}{Une horde de mantes.}
+{4155}{}{Des radscorpions.}
+{4156}{}{Des brahmines sauvages.}
+{4157}{}{Un marchand et des gardes se battant contre des geckos dorés.}
+{4158}{}{Une nuée de mantes massacrant une bande de marchands.}
+{4159}{}{Une nuée de mantes attaquant des brahmines sauvages.}
+{4160}{}{Des radscorpions dévorant des mantes.}
+{4161}{}{Des radscorpions massacrant des brahmines sauvages.}
+{4162}{}{Un marchand et des gardes.}
+{4163}{}{Les restes d'une baleine.}
+{4164}{}{Une pierre tombale géante.}
+{4165}{}{Une navette écrasée.}
+{4166}{}{Un portail de garde.}
+{4167}{}{Les Chevaliers de la Table Ronde.}
+{4168}{}{Un homme des bois en fer-blanc}
+{4169}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 24
+{4200}{}{Décharge de déchets toxiques}
+{4201}{}{Un chien solitaire.}
+{4202}{}{Un troupeau de brahmines.}
+{4203}{}{Des taupes mutantes.}
+{4204}{}{Des rats-cochons mutants.}
+{4205}{}{Des plantes à spores.}
+{4206}{}{Un ermite et des chiens se battant contre des taupes mutantes.}
+{4207}{}{Un ermite repoussant des chiens sauvages.}
+{4208}{}{Un ermite repoussant des rats-cochons mutants.}
+{4209}{}{Un ermite et des chiens affrontant des taupes mutantes.}
+{4210}{}{Des taupes mutantes affrontant des rats-cochons mutants.}
+{4211}{}{Des taupes mutantes affrontant des plantes à spores.}
+{4212}{}{Des rats-cochons mutants affrontant des chiens sauvages.}
+{4213}{}{Un ermite.}
+{4214}{}{Les restes d'une baleine.}
+{4215}{}{Une pierre tombale géante.}
+{4216}{}{Une navette écrasée.}
+{4217}{}{Un portail de garde.}
+{4218}{}{Les Chevaliers de la Table Ronde.}
+{4219}{}{Un homme des bois en fer-blanc}
+{4220}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 25
+{4250}{}{Des taupes mutantes.}
+{4251}{}{Des rats-cochons mutants.}
+{4252}{}{Des plantes à spores.}
+{4253}{}{Un ermite et des chiens se battant contre des taupes mutantes.}
+{4254}{}{Un ermite repoussant des chiens sauvages.}
+{4255}{}{Un ermite repoussant des rats-cochons mutants.}
+{4256}{}{Un ermite et des chiens affrontant des taupes mutantes.}
+{4257}{}{Des taupes mutantes affrontant des rats-cochons mutants.}
+{4258}{}{Des taupes mutantes affrontant des plantes à spores.}
+{4259}{}{Des rats-cochons mutants affrontant des chiens sauvages.}
+{4260}{}{Un ermite.}
+{4261}{}{Un homme gardant un pont.}
+{4262}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 26
+{4300}{}{Une bande d'esclavagistes et des chiens sauvages.}
+{4301}{}{Une bande de marchands d'esclaves.}
+{4302}{}{Des geckos dorés.}
+{4303}{}{Une horde de chiens sauvages.}
+{4304}{}{Une patrouille et des chiens maîtrisant des esclavagistes}
+{4305}{}{Une bande d'esclavagistes repoussant des geckos dorés.}
+{4306}{}{Une patrouille affrontant des esclavagistes.}
+{4307}{}{Une patrouille se battant contre des geckos dorés.}
+{4308}{}{Une patrouille repoussant des chiens sauvages.}
+{4309}{}{Une patrouille.}
+{4310}{}{Un homme gardant un pont.}
+{4311}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 27
+{4350}{}{Décharge de déchets toxiques}
+{4351}{}{Un chien solitaire.}
+{4352}{}{Un troupeau de brahmines.}
+{4353}{}{Une bande d'esclavagistes et des chiens sauvages.}
+{4354}{}{Une bande de marchands d'esclaves.}
+{4355}{}{Des geckos dorés.}
+{4356}{}{Une horde de chiens sauvages.}
+{4357}{}{Une patrouille et des chiens maîtrisant des esclavagistes}
+{4358}{}{Une bande d'esclavagistes repoussant des geckos dorés.}
+{4359}{}{Une patrouille affrontant des esclavagistes.}
+{4360}{}{Une patrouille se battant contre des geckos dorés.}
+{4361}{}{Une patrouille repoussant des chiens sauvages.}
+{4362}{}{Une patrouille.}
+{4363}{}{Les restes d'une baleine.}
+{4364}{}{Une pierre tombale géante.}
+{4365}{}{Une navette écrasée.}
+{4366}{}{Un portail de garde.}
+{4367}{}{Les Chevaliers de la Table Ronde.}
+{4368}{}{Un homme des bois en fer-blanc}
+{4369}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 28
+{4400}{}{Un tas de pilleurs de poubelles.}
+{4401}{}{Des goules pilleuses de poubelles.}
+{4402}{}{Un ramassis de foldingues.}
+{4403}{}{Des goules foldingues.}
+{4404}{}{Des geckos.}
+{4405}{}{Une horde de chiens sauvages.}
+{4406}{}{Une famille de radscorpions.}
+{4407}{}{Un ramassis de rats-cochons mutants.}
+{4408}{}{Une horde de rats mutants.}
+{4409}{}{Des pilleurs de poubelles affrontant un ramassis de foldingues.}
+{4410}{}{Des goules pilleuses de poubelles repoussant des foldingues}
+{4411}{}{Des geckos affrontant des foldingues.}
+{4412}{}{Des rats mutants infestant des goules pilleuses de poubelles.}
+{4413}{}{Un homme gardant un pont.}
+{4414}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 29
+{4450}{}{Décharge de déchets toxiques}
+{4451}{}{Un chien solitaire.}
+{4452}{}{Un troupeau de brahmines.}
+{4453}{}{Un tas de pilleurs de poubelles.}
+{4454}{}{Des goules pilleuses de poubelles.}
+{4455}{}{Un ramassis de foldingues.}
+{4456}{}{Des goules foldingues.}
+{4457}{}{Des geckos.}
+{4458}{}{Une horde de chiens sauvages.}
+{4459}{}{Une famille de radscorpions.}
+{4460}{}{Un ramassis de rats-cochons mutants.}
+{4461}{}{Une horde de rats mutants.}
+{4462}{}{Des pilleurs de poubelles affrontant un ramassis de foldingues.}
+{4463}{}{Des goules pilleuses de poubelles repoussant des foldingues}
+{4464}{}{Des geckos affrontant des foldingues.}
+{4465}{}{Des rats mutants infestant des goules pilleuses de poubelles.}
+{4466}{}{Les restes d'une baleine.}
+{4467}{}{Une pierre tombale géante.}
+{4468}{}{Une navette écrasée.}
+{4469}{}{Un portail de garde.}
+{4470}{}{Les Chevaliers de la Table Ronde.}
+{4471}{}{Un homme des bois en fer-blanc}
+{4472}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 30
+{4500}{}{Des cannibales.}
+{4501}{}{Des sauvages.}
+{4502}{}{Une expédition guerrière.}
+{4503}{}{des parias.}
+{4504}{}{Une famille de radscorpions.}
+{4505}{}{Des taupes.}
+{4506}{}{Des pêcheurs repoussant des cannibales.}
+{4507}{}{Des cannibales se battant contre des sauvages.}
+{4508}{}{Des radscorpions attaquant des sauvages.}
+{4509}{}{Des pêcheurs.}
+
+# Encounter Table 31
+{4550}{}{Décharge de déchets toxiques}
+{4551}{}{Un chien solitaire.}
+{4552}{}{Un troupeau de brahmines.}
+{4553}{}{Des cannibales.}
+{4554}{}{Des parias.}
+{4555}{}{Des sauvages.}
+{4556}{}{Une expédition guerrière.}
+{4557}{}{Des geckos se cachant dans des plantes à spores.}
+{4558}{}{Des geckos et des radscorpions.}
+{4559}{}{Des geckos.}
+{4560}{}{Des radscorpions se cachant dans des plantes à spores.}
+{4561}{}{Des scorpions.}
+{4562}{}{Des geckos attaquant des parias.}
+{4563}{}{Des geckos agressant des sauvages.}
+{4564}{}{Des radscorpions se battant contre des cannibales.}
+{4565}{}{Des radscorpions attaquant un ermite.}
+{4566}{}{Un ermite.}
+{4567}{}{Les restes d'une baleine.}
+{4568}{}{Une pierre tombale géante.}
+{4569}{}{Une navette écrasée.}
+{4570}{}{Un portail de garde.}
+{4571}{}{Les Chevaliers de la Table Ronde.}
+{4572}{}{Un homme des bois en fer-blanc}
+{4573}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 32
+{4600}{}{Des cannibales.}
+{4601}{}{Des parias.}
+{4602}{}{Des sauvages.}
+{4603}{}{Une expédition guerrière.}
+{4604}{}{Des geckos se cachant dans des plantes à spores.}
+{4605}{}{Des geckos et des radscorpions.}
+{4606}{}{Des geckos.}
+{4607}{}{Des radscorpions se cachant dans des plantes à spores.}
+{4608}{}{Des scorpions.}
+{4609}{}{Des geckos attaquant des parias.}
+{4610}{}{Des geckos agressant des sauvages.}
+{4611}{}{Des radscorpions se battant contre des cannibales.}
+{4612}{}{Des radscorpions attaquant un ermite.}
+{4613}{}{Un ermite.}
+{4614}{}{Un homme gardant un pont.}
+{4615}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 33
+{4650}{}{Décharge de déchets toxiques}
+{4651}{}{Un chien solitaire.}
+{4652}{}{Un troupeau de brahmines.}
+{4653}{}{Une caravane de la Fosse.}
+{4654}{}{Des bandits de grand chemin et des voleurs.}
+{4655}{}{Des bandits de grand chemin.}
+{4656}{}{Des voleurs.}
+{4657}{}{Une caravane de Redding repoussant des bandits de grand chemin.}
+{4658}{}{Une caravane de New Reno repoussant des voleurs.}
+{4659}{}{Une caravane de la Fosse repoussant des bandits de grand chemin.}
+{4660}{}{Des voleurs tendant une embuscade à une caravane.}
+{4661}{}{Une caravane de la Fosse attaquant une caravane de la Cité de l'Abri.}
+{4662}{}{Des bandits de grand chemin se battant contre des voleurs.}
+{4663}{}{Une caravane de la Cité de l'Abri.}
+{4664}{}{Une caravane de la Fosse.}
+{4665}{}{Les restes d'une baleine.}
+{4666}{}{Une pierre tombale géante.}
+{4667}{}{Une navette écrasée.}
+{4668}{}{Un portail de garde.}
+{4669}{}{Les Chevaliers de la Table Ronde.}
+{4670}{}{Un homme des bois en fer-blanc}
+{4671}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 34
+{4700}{}{Une caravane de la Fosse.}
+{4701}{}{Des bandits de grand chemin et des voleurs.}
+{4702}{}{Des bandits de grand chemin.}
+{4703}{}{Des voleurs.}
+{4704}{}{Une caravane de Redding repoussant des bandits de grand chemin.}
+{4705}{}{Une caravane de New Reno repoussant des voleurs.}
+{4706}{}{Une caravane de la Fosse repoussant des bandits de grand chemin.}
+{4707}{}{Des voleurs tendant une embuscade à une caravane.}
+{4708}{}{Une caravane de la Fosse attaquant une caravane de la Cité de l'Abri.}
+{4709}{}{Des bandits de grand chemin se battant contre des voleurs.}
+{4710}{}{Une caravane de la Cité de l'Abri.}
+{4711}{}{Une caravane de la Fosse.}
+{4712}{}{Un homme gardant un pont.}
+{4713}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 35
+{4750}{}{Décharge de déchets toxiques}
+{4751}{}{Un chien solitaire.}
+{4752}{}{Un troupeau de brahmines.}
+{4753}{}{Des geckos et des loups.}
+{4754}{}{Des fraudeurs}
+{4755}{}{Des loups.}
+{4756}{}{Des geckos.}
+{4757}{}{Des prospecteurs se battant contre des fraudeurs.}
+{4758}{}{Des trappeurs se battant contre des geckos.}
+{4759}{}{Des contrebandiers se battant contre des loups.}
+{4760}{}{Des colons se battant contre des fraudeurs.}
+{4761}{}{Des colons repoussant des loups.}
+{4762}{}{Des contrebandiers.}
+{4763}{}{Des trappeurs.}
+{4764}{}{Des prospecteurs.}
+{4765}{}{Les restes d'une baleine.}
+{4766}{}{Une pierre tombale géante.}
+{4767}{}{Une navette écrasée.}
+{4768}{}{Un portail de garde.}
+{4769}{}{Les Chevaliers de la Table Ronde.}
+{4770}{}{Un homme des bois en fer-blanc}
+{4771}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 36
+{4800}{}{Des geckos et des loups.}
+{4801}{}{Des fraudeurs}
+{4802}{}{Des loups.}
+{4803}{}{Des geckos.}
+{4804}{}{Des prospecteurs se battant contre des fraudeurs.}
+{4805}{}{Des trappeurs se battant contre des geckos.}
+{4806}{}{Des contrebandiers se battant contre des loups.}
+{4807}{}{Des colons se battant contre des fraudeurs.}
+{4808}{}{Des colons repoussant des loups.}
+{4809}{}{Des contrebandiers.}
+{4810}{}{Des trappeurs.}
+{4811}{}{Des prospecteurs.}
+{4812}{}{Un homme gardant un pont.}
+{4813}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 37
+{4850}{}{Une horde de loups et des taupes.}
+{4851}{}{Des radscorpions et des loups.}
+{4852}{}{Des taupes mutantes et des radscorpions}
+{4853}{}{Une horde de geckos.}
+{4854}{}{Une horde de loups.}
+{4855}{}{Une horde de taupes mutantes.}
+{4856}{}{Une horde de radscorpions}
+{4857}{}{Une horde de loups et des geckos.}
+{4858}{}{Des taupes mutantes affrontant des geckos.}
+{4859}{}{Des taupes affrontant des radscorpions.}
+{4860}{}{Un homme gardant un pont.}
+{4861}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 38
+{4900}{}{Une bande de pillards.}
+{4901}{}{Des loups.}
+{4902}{}{Une caravane repoussant des pillards.}
+{4903}{}{Une caravane repoussant des pillards.}
+{4904}{}{Une caravane repoussant des pillards.}
+{4905}{}{Une caravane repoussant des pillards.}
+{4906}{}{Une caravane.}
+{4907}{}{Une caravane.}
+{4908}{}{Une caravane.}
+{4909}{}{Une caravane.}
+{4910}{}{Un homme gardant un pont.}
+{4911}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 39
+{4950}{}{Décharge de déchets toxiques}
+{4951}{}{Un chien solitaire.}
+{4952}{}{Un troupeau de brahmines.}
+{4953}{}{Une bande de pillards.}
+{4954}{}{Des loups.}
+{4955}{}{Une caravane repoussant des pillards.}
+{4956}{}{Une caravane repoussant des pillards.}
+{4957}{}{Une caravane repoussant des pillards.}
+{4958}{}{Une caravane repoussant des pillards.}
+{4959}{}{Une caravane.}
+{4960}{}{Une caravane.}
+{4961}{}{Une caravane.}
+{4962}{}{Une caravane.}
+{4963}{}{Les restes d'une baleine.}
+{4964}{}{Une pierre tombale géante.}
+{4965}{}{Une navette écrasée.}
+{4966}{}{Un portail de garde.}
+{4967}{}{Les Chevaliers de la Table Ronde.}
+{4968}{}{Un homme des bois en fer-blanc}
+{4969}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 40
+{5000}{}{Une bande de pillards menant des loups.}
+{5001}{}{Des plantes à spores et des loups.}
+{5002}{}{Une bande de pillards.}
+{5003}{}{Une horde de loups.}
+{5004}{}{Une horde de radscorpions.}
+{5005}{}{Une horde de loups affrontant des pillards.}
+{5006}{}{Un homme gardant un pont.}
+{5007}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 41
+{5050}{}{Décharge de déchets toxiques}
+{5051}{}{Un chien solitaire.}
+{5052}{}{Un troupeau de brahmines.}
+{5053}{}{Une bande de pillards menant des loups.}
+{5054}{}{Des plantes à spores et des loups.}
+{5055}{}{Une bande de pillards.}
+{5056}{}{Une horde de loups.}
+{5057}{}{Une horde de radscorpions.}
+{5058}{}{Une horde de loups affrontant des pillards.}
+{5069}{}{Les restes d'une baleine.}
+{5070}{}{Une pierre tombale géante.}
+{5071}{}{Une navette écrasée.}
+{5072}{}{Un portail de garde.}
+{5073}{}{Les Chevaliers de la Table Ronde.}
+{5074}{}{Un homme des bois en fer-blanc}
+{5075}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 42
+{5100}{}{Décharge de déchets toxiques}
+{5101}{}{Un chien solitaire.}
+{5102}{}{Un troupeau de brahmines.}
+{5103}{}{Une patrouille de l'Enclave.}
+{5104}{}{Les restes d'une baleine.}
+{5105}{}{Une pierre tombale géante.}
+{5106}{}{Une navette écrasée.}
+{5107}{}{Un portail de garde.}
+{5108}{}{Les Chevaliers de la Table Ronde.}
+{5109}{}{Un homme des bois en fer-blanc}
+{5110}{}{Les villageois mal lavés chassant le facteur.}
+{5111}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 43
+{5150}{}{Une patrouille de l'Enclave.}
+{5151}{}{Un homme gardant un pont.}
+{5152}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 44
+{5200}{}{Une patrouille de l'Enclave.}
+
+# Encounter Table 45
+{5250}{}{Décharge de déchets toxiques}
+{5251}{}{Un chien solitaire.}
+{5252}{}{Un troupeau de brahmines.}
+{5253}{}{Des aliens et des griffemorts}
+{5254}{}{Une armée de flotteurs et de centaures.}
+{5255}{}{Des geckos de feu.}
+{5256}{}{Une grande horde d'aliens.}
+{5257}{}{Des griffemorts.}
+{5258}{}{Des geckos de feu.}
+{5259}{}{Des aliens.}
+{5260}{}{Une horde de centaures.}
+{5261}{}{Une nuée de flotteurs.}
+{5262}{}{Les restes d'une baleine.}
+{5263}{}{Une pierre tombale géante.}
+{5264}{}{Une navette écrasée.}
+{5265}{}{Un portail de garde.}
+{5266}{}{Les Chevaliers de la Table Ronde.}
+{5267}{}{Un homme des bois en fer-blanc}
+{5268}{}{Les villageois mal lavés chassant le facteur.}
+{5269}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 46
+{5300}{}{Des aliens et des griffemorts}
+{5301}{}{Une armée de flotteurs et des centaures.}
+{5302}{}{Des geckos de feu.}
+{5303}{}{Une grande horde d'aliens.}
+{5304}{}{Des griffemorts.}
+{5305}{}{Des geckos de feu.}
+{5306}{}{Des aliens.}
+{5307}{}{Une horde de centaures.}
+{5308}{}{Une nuée de flotteurs.}
+{5309}{}{Un homme gardant un pont.}
+{5310}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 47
+{5350}{}{Des aliens et des griffemorts}
+{5351}{}{Une armée de flotteurs et des centaures.}
+{5352}{}{Des geckos de feu.}
+{5353}{}{Une grande horde d'aliens.}
+{5354}{}{Des griffemorts.}
+{5355}{}{Des geckos de feu.}
+{5356}{}{Des aliens.}
+{5357}{}{Une horde de centaures.}
+{5358}{}{Une nuée de flotteurs.}
+
+# Encounter Table 48
+{5400}{}{Décharge de déchets toxiques}
+{5401}{}{Un chien solitaire.}
+{5402}{}{Un troupeau de brahmines.}
+{5403}{}{Une horde de geckos de feu.}
+{5404}{}{Une horde de geckos de feu.}
+{5405}{}{Une grande horde de geckos dorés.}
+{5406}{}{Les restes d'une baleine.}
+{5407}{}{Une pierre tombale géante.}
+{5408}{}{Une navette écrasée.}
+{5409}{}{Un portail de garde.}
+{5410}{}{Les Chevaliers de la Table Ronde.}
+{5411}{}{Un homme des bois en fer-blanc}
+{5412}{}{Les villageois mal lavés chassant le facteur.}
+{5413}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 49
+{5450}{}{Une horde de geckos de feu.}
+{5451}{}{Une horde de geckos de feu.}
+{5452}{}{Une grande horde de geckos dorés.}
+{5453}{}{Un homme gardant un pont.}
+{5454}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 50
+{5500}{}{Une horde de geckos de feu.}
+{5501}{}{Une horde de geckos de feu.}
+{5502}{}{Une grande horde de geckos dorés.}
+
+# Encounter Table 51
+{5550}{}{Décharge de déchets toxiques}
+{5551}{}{Un chien solitaire.}
+{5552}{}{Un troupeau de brahmines.}
+{5553}{}{Une horde de griffemorts.}
+{5554}{}{Une horde de geckos de feu.}
+{5555}{}{Une caravane repoussant des griffemorts.}
+{5556}{}{Une caravane repoussant des griffemorts.}
+{5557}{}{Une caravane repoussant des geckos de feu.}
+{5558}{}{Une caravane repoussant des geckos de feu.}
+{5559}{}{Une caravane.}
+{5560}{}{Une caravane.}
+{5561}{}{Une caravane.}
+{5562}{}{Une caravane.}
+{5563}{}{Les restes d'une baleine.}
+{5564}{}{Une pierre tombale géante.}
+{5565}{}{Une navette écrasée.}
+{5566}{}{Un portail de garde.}
+{5567}{}{Les Chevaliers de la Table Ronde.}
+{5568}{}{Un homme des bois en fer-blanc}
+{5569}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 52
+{5600}{}{Une horde de griffemorts.}
+{5601}{}{Une horde de geckos de feu.}
+{5602}{}{Une caravane repoussant des griffemorts.}
+{5603}{}{Une caravane repoussant des griffemorts.}
+{5604}{}{Une caravane repoussant des geckos de feu.}
+{5605}{}{Une caravane repoussant des geckos de feu.}
+{5606}{}{Une caravane.}
+{5607}{}{Une caravane.}
+{5608}{}{Une caravane.}
+{5609}{}{Une caravane.}
+{5610}{}{Un homme gardant un pont.}
+{5611}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 53
+{5650}{}{Décharge de déchets toxiques}
+{5651}{}{Un chien solitaire.}
+{5652}{}{Un troupeau de brahmines.}
+{5653}{}{Des yakuzas.}
+{5654}{}{Un gang.}
+{5655}{}{Une horde de loups.}
+{5656}{}{Des truands affrontant des yakuzas.}
+{5657}{}{Des truands affrontant un gang.}
+{5658}{}{Des truands.}
+{5659}{}{Un voyageur.}
+{5660}{}{Les restes d'une baleine.}
+{5661}{}{Une pierre tombale géante.}
+{5662}{}{Une navette écrasée.}
+{5663}{}{Un portail de garde.}
+{5664}{}{Les Chevaliers de la Table Ronde.}
+{5665}{}{Un homme des bois en fer-blanc}
+{5666}{}{Les villageois mal lavés chassant le facteur.}
+{5667}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 54
+{5700}{}{Des yakuzas.}
+{5701}{}{Un gang.}
+{5702}{}{Une horde de loups.}
+{5703}{}{Des truands affrontant des yakuzas.}
+{5704}{}{Des truands affrontant un gang.}
+{5705}{}{Des truands.}
+{5706}{}{Un voyageur.}
+{5707}{}{Un homme gardant un pont.}
+{5708}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 55
+{5750}{}{Des yakuzas.}
+{5751}{}{Un gang.}
+{5752}{}{Une horde de loups.}
+{5753}{}{Des truands affrontant des yakuzas.}
+{5754}{}{Des truands affrontant un gang.}
+{5755}{}{Des truands.}
+{5756}{}{Un voyageur.}
+
+# Encounter Table 56
+{5800}{}{Décharge de déchets toxiques}
+{5801}{}{Un chien solitaire.}
+{5802}{}{Un troupeau de brahmines.}
+{5803}{}{Une bande de renégats et des loups.}
+{5804}{}{Une bande de renégats.}
+{5805}{}{Une horde de loups.}
+{5806}{}{Une horde de radscorpions.}
+{5807}{}{Une forêt de plantes à spores.}
+{5808}{}{Une patrouille de l'Unité affrontant des renégats.}
+{5809}{}{Une patrouille de l'Unité affrontant des loups.}
+{5810}{}{Une patrouille de l'Unité.}
+{5811}{}{Les restes d'une baleine.}
+{5812}{}{Une pierre tombale géante.}
+{5813}{}{Une navette écrasée.}
+{5814}{}{Un portail de garde.}
+{5815}{}{Les Chevaliers de la Table Ronde.}
+{5816}{}{Un homme des bois en fer-blanc}
+{5817}{}{Les villageois mal lavés chassant le facteur.}
+
+# Encounter Table 57
+{5850}{}{Une bande de renégats et des loups.}
+{5851}{}{Une bande de renégats.}
+{5852}{}{Une horde de loups.}
+{5853}{}{Une horde de radscorpions.}
+{5854}{}{Une forêt de plantes à spores.}
+{5855}{}{Une patrouille de l'Unité affrontant des renégats.}
+{5856}{}{Une patrouille de l'Unité affrontant des loups.}
+{5857}{}{Une patrouille de l'Unité.}
+{5858}{}{Un homme gardant un pont.}
+{5859}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 58
+{5900}{}{Une bande de mercenaires.}
+{5901}{}{Des racoleurs.}
+{5902}{}{Un troupeau de griffemorts.}
+{5903}{}{Un lot de geckos de feu.}
+{5904}{}{Un paquet d'aliens.}
+{5905}{}{Hubologues affrontant des mercenaires.}
+{5906}{}{Des Hubologues repoussant des racoleurs.}
+{5907}{}{Des Hubologues.}
+
+# Encounter Table 59
+{5950}{}{Une bande de mercenaires.}
+{5951}{}{Des racoleurs.}
+{5952}{}{Un troupeau de griffemorts.}
+{5953}{}{Un lot de geckos de feu.}
+{5954}{}{Un paquet d'aliens.}
+{5955}{}{Hubologues affrontant des mercenaires.}
+{5956}{}{Des Hubologues repoussant des racoleurs.}
+{5957}{}{Des Hubologues.}
+{5958}{}{Un homme gardant un pont.}
+{5959}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 60
+{6000}{}{Une bande de mercenaires.}
+{6001}{}{Des racoleurs.}
+{6002}{}{Un troupeau de griffemorts.}
+{6003}{}{Un lot de geckos de feu.}
+{6004}{}{Un paquet d'aliens.}
+{6005}{}{Hubologues affrontant des mercenaires.}
+{6006}{}{Des Hubologues repoussant des racoleurs.}
+{6007}{}{Des Hubologues.}
+
+# Encounter Table 61
+{6050}{}{Décharge de déchets toxiques}
+{6051}{}{Un chien solitaire.}
+{6052}{}{Un troupeau de brahmines.}
+{6053}{}{Une bande de mercenaires.}
+{6054}{}{Des racoleurs.}
+{6055}{}{Un troupeau de griffemorts.}
+{6056}{}{Un lot de geckos de feu.}
+{6057}{}{Un paquet d'aliens.}
+{6058}{}{Hubologues affrontant des mercenaires.}
+{6059}{}{Des Hubologues repoussant des racoleurs.}
+{6060}{}{Des Hubologues.}
+{6061}{}{Les restes d'une baleine.}
+{6062}{}{Une pierre tombale géante.}
+{6063}{}{Une navette écrasée.}
+{6064}{}{Un portail de garde.}
+{6065}{}{Les Chevaliers de la Table Ronde.}
+{6066}{}{Un homme des bois en fer-blanc}
+{6067}{}{Les villageois mal lavés chassant le facteur.}
+{6068}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 62
+{6100}{}{Décharge de déchets toxiques}
+{6101}{}{Un chien solitaire.}
+{6102}{}{Un troupeau de brahmines.}
+{6103}{}{Une bande de mercenaires.}
+{6104}{}{Une horde de griffemorts.}
+{6105}{}{Une horde de geckos de feu.}
+{6106}{}{Un paquet d'aliens.}
+{6107}{}{Une caravane repoussant des mercenaires.}
+{6108}{}{Une caravane repoussant des mercenaires.}
+{6109}{}{Une caravane repoussant des geckos de feu.}
+{6110}{}{Une caravane repoussant des aliens.}
+{6111}{}{Une caravane.}
+{6112}{}{Une caravane.}
+{6113}{}{Les restes d'une baleine.}
+{6114}{}{Une pierre tombale géante.}
+{6115}{}{Une navette écrasée.}
+{6116}{}{Un portail de garde.}
+{6117}{}{Les Chevaliers de la Table Ronde.}
+{6118}{}{Un homme des bois en fer-blanc}
+{6119}{}{Les villageois mal lavés chassant le facteur.}
+{6120}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 63
+{6150}{}{Une bande de mercenaires.}
+{6151}{}{Une horde de griffemorts.}
+{6152}{}{Une horde de geckos de feu.}
+{6153}{}{Un paquet d'aliens.}
+{6154}{}{Une caravane repoussant des mercenaires.}
+{6155}{}{Une caravane repoussant des mercenaires.}
+{6156}{}{Une caravane repoussant des geckos de feu.}
+{6157}{}{Une caravane repoussant des aliens.}
+{6158}{}{Une caravane.}
+{6159}{}{Une caravane.}
+
+# Encounter Table 64
+{6200}{}{Décharge de déchets toxiques}
+{6201}{}{Un chien solitaire.}
+{6202}{}{Un troupeau de brahmines.}
+{6203}{}{Une patrouille de l'Enclave.}
+{6204}{}{Les restes de l'armée du Maître.}
+{6205}{}{Une horde de Griffemorts.}
+{6206}{}{Une horde de mantes.}
+{6207}{}{Les restes d'une baleine.}
+{6208}{}{Une pierre tombale géante.}
+{6209}{}{Une navette écrasée.}
+{6210}{}{Un portail de garde.}
+{6211}{}{Les Chevaliers de la Table Ronde.}
+{6212}{}{Un homme des bois en fer-blanc}
+{6213}{}{Les villageois mal lavés chassant le facteur.}
+{6214}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 65
+{6250}{}{Une patrouille de l'Enclave.}
+{6251}{}{Les restes de l'armée du Maître.}
+{6252}{}{Une horde de Griffemorts.}
+{6253}{}{Une horde de mantes.}
+{6254}{}{Un homme gardant un pont.}
+{6255}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 66
+{6300}{}{Décharge de déchets toxiques}
+{6301}{}{Un chien solitaire.}
+{6302}{}{Un troupeau de brahmines.}
+{6303}{}{Une caravane repoussant les restes de l'armée du Maître.}
+{6304}{}{Une caravane repoussant les restes de l'armée du Maître.}
+{6305}{}{Une caravane repoussant des griffemorts.}
+{6306}{}{Une caravane.}
+{6307}{}{Une caravane.}
+{6308}{}{Une caravane.}
+{6309}{}{Les restes d'une baleine.}
+{6310}{}{Une pierre tombale géante.}
+{6311}{}{Une navette écrasée.}
+{6312}{}{Un portail de garde.}
+{6313}{}{Les Chevaliers de la Table Ronde.}
+{6314}{}{Un homme des bois en fer-blanc}
+{6315}{}{Les villageois mal lavés chassant le facteur.}
+{6316}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 67
+{6350}{}{Une caravane repoussant les restes de l'armée du Maître.}
+{6351}{}{Une caravane repoussant les restes de l'armée du Maître.}
+{6352}{}{Une caravane repoussant des griffemorts.}
+{6353}{}{Une caravane.}
+{6354}{}{Une caravane.}
+{6355}{}{Une caravane.}
+{6356}{}{Un homme gardant un pont.}
+{6357}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 68
+{6400}{}{Une horde de loups.}
+{6401}{}{Une horde de mantes.}
+{6402}{}{Une famille de radscorpions.}
+{6403}{}{Un homme gardant un pont.}
+{6404}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 69
+{6450}{}{Décharge de déchets toxiques}
+{6451}{}{Un chien solitaire.}
+{6452}{}{Un troupeau de brahmines.}
+{6453}{}{Une horde de loups.}
+{6454}{}{Une horde de mantes.}
+{6455}{}{Une famille de radscorpions.}
+{6456}{}{Les restes d'une baleine.}
+{6457}{}{Une pierre tombale géante.}
+{6458}{}{Une navette écrasée.}
+{6459}{}{Un portail de garde.}
+{6460}{}{Les Chevaliers de la Table Ronde.}
+{6461}{}{Un homme des bois en fer-blanc}
+{6462}{}{Les villageois mal lavés chassant le facteur.}
+{6463}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 70
+{6500}{}{Décharge de déchets toxiques}
+{6501}{}{Un chien solitaire.}
+{6502}{}{Un troupeau de brahmines.}
+{6503}{}{Une bande de maraudeurs.}
+{6504}{}{Une horde de loups.}
+{6505}{}{Une horde de radscorpions.}
+{6506}{}{Une caravane repoussant des maraudeurs.}
+{6507}{}{Une caravane repoussant des maraudeurs.}
+{6508}{}{Une caravane repoussant des loups.}
+{6509}{}{Une caravane repoussant des radscorpions.}
+{6510}{}{Une caravane.}
+{6511}{}{Une caravane.}
+{6512}{}{Une caravane.}
+{6513}{}{Une caravane.}
+{6514}{}{Un voyageur.}
+{6515}{}{Les restes d'une baleine.}
+{6516}{}{Une pierre tombale géante.}
+{6517}{}{Une navette écrasée.}
+{6518}{}{Un portail de garde.}
+{6519}{}{Les Chevaliers de la Table Ronde.}
+{6520}{}{Un homme des bois en fer-blanc}
+{6521}{}{Les villageois mal lavés chassant le facteur.}
+{6522}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 71
+{6550}{}{Une bande de maraudeurs.}
+{6551}{}{Une horde de loups.}
+{6552}{}{Une horde de radscorpions.}
+{6553}{}{Une caravane repoussant des maraudeurs.}
+{6554}{}{Une caravane repoussant des maraudeurs.}
+{6555}{}{Une caravane repoussant des loups.}
+{6556}{}{Une caravane repoussant des radscorpions.}
+{6557}{}{Une caravane.}
+{6558}{}{Une caravane.}
+{6559}{}{Une caravane.}
+{6560}{}{Une caravane.}
+{6561}{}{Un voyageur.}
+{6562}{}{Un homme gardant un pont.}
+{6563}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 72
+{6600}{}{Un détachement de l'armée du Maître.}
+{6601}{}{Une bande de maraudeurs.}
+{6602}{}{Des commandos repoussant une escouade de l'armée du Maître.}
+{6603}{}{Des commandos affrontant des maraudeurs.}
+{6604}{}{Des fermiers repoussant une partie de l'armée du Maître.}
+{6605}{}{Des fermiers repoussant des maraudeurs.}
+{6606}{}{Un détachement de commandos RNC.}
+{6607}{}{Des fermiers.}
+{6608}{}{Un homme gardant un pont.}
+{6609}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 73
+{6650}{}{Décharge de déchets toxiques}
+{6651}{}{Un chien solitaire.}
+{6652}{}{Un troupeau de brahmines.}
+{6653}{}{Un détachement de l'armée du Maître.}
+{6654}{}{Une bande de maraudeurs.}
+{6655}{}{Des commandos repoussant une escouade de l'armée du Maître.}
+{6656}{}{Des commandos affrontant des maraudeurs.}
+{6657}{}{Des fermiers repoussant une partie de l'armée du Maître.}
+{6658}{}{Des fermiers repoussant des maraudeurs.}
+{6659}{}{Un détachement de commandos RNC.}
+{6660}{}{Des fermiers.}
+{6661}{}{Les restes d'une baleine.}
+{6662}{}{Une pierre tombale géante.}
+{6663}{}{Une navette écrasée.}
+{6664}{}{Un portail de garde.}
+{6665}{}{Les Chevaliers de la Table Ronde.}
+{6666}{}{Un homme des bois en fer-blanc}
+{6667}{}{Les villageois mal lavés chassant le facteur.}
+{6668}{}{Le café des Illusions Perdues.}
+
+# Encounter Table 74
+{6700}{}{Les restes de l'armée du Maître affrontant des taupes mutantes.}
+{6701}{}{Restes de l'armée du Maître.}
+{6702}{}{Une horde de mantes.}
+{6703}{}{Une horde de taupes mutantes.}
+{6704}{}{Une horde de radscorpions.}
+{6705}{}{Un homme gardant un pont.}
+{6706}{}{Les chevaliers de la Table Ronde affrontant un rat.}
+
+# Encounter Table 75
+{6750}{}{Décharge de déchets toxiques}
+{6751}{}{Un chien solitaire.}
+{6752}{}{Un troupeau de brahmines.}
+{6753}{}{Les restes de l'armée du Maître affrontant des taupes mutantes.}
+{6754}{}{Restes de l'armée du Maître.}
+{6755}{}{Une horde de mantes.}
+{6756}{}{Une horde de taupes mutantes.}
+{6757}{}{Une horde de radscorpions.}
+{6758}{}{Les restes d'une baleine.}
+{6759}{}{Une pierre tombale géante.}
+{6760}{}{Une navette écrasée.}
+{6761}{}{Un portail de garde.}
+{6762}{}{Les Chevaliers de la Table Ronde.}
+{6763}{}{Un homme des bois en fer-blanc}
+{6764}{}{Les villageois mal lavés chassant le facteur.}
+{6765}{}{Le café des Illusions Perdues.}
+
+
+
+26
+
+
+

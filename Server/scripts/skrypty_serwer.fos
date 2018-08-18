@@ -1,0 +1,64 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+
+import bool GetFreeHex(Map& map, uint radius, uint16& hx, uint16& hy) from "caravan";
+import void r_AddMerc2Player(Critter & player, Critter @ npc) from "merc";
+
+// Dialog result
+// Rocket Launcher
+void r_AddMercenary_RL(Critter& player, Critter@ npc)
+{
+	Map @mapa = player.GetMap();
+	if(@mapa!=null)
+	{
+		uint16 hX = player.HexX;
+		uint16 hY = player.HexY;
+		GetFreeHex(mapa, 1, hX, hY);
+		Critter@ merc = mapa.AddNpc(NPC_PID_Wastelander_1,  hX, hY, player.Dir,null,null,null);
+		merc.AddItem(PID_ROCKET_LAUNCHER_DE,1);
+		r_AddMerc2Player(player, merc);
+		merc.Say(SAY_NORM_ON_HEAD, "Say no more, I'll get the things done quickly..");
+		merc.ParamBase[MODE_UNLIMITED_AMMO]=1;
+		merc.MercBase[MERC_DELETE_ON_DEAD] = 1;
+	}
+}
+// Avanger Minigun
+void r_AddMercenary_AM(Critter& player, Critter@ npc)
+{
+	Map @mapa = player.GetMap();
+	if(@mapa!=null)
+	{
+		uint16 hX = player.HexX;
+		uint16 hY = player.HexY;
+		GetFreeHex(mapa, 1, hX, hY);
+		Critter@ merc = mapa.AddNpc(NPC_PID_Wastelander_1,  hX, hY, player.Dir,null,null,null);
+		merc.AddItem(PID_AVENGER_MINIGUN_DE,1);
+		r_AddMerc2Player(player, merc);
+		merc.Say(SAY_NORM_ON_HEAD, "Say no more, I'll get the things done quickly..");
+		merc.ParamBase[MODE_UNLIMITED_AMMO]=1;
+		merc.MercBase[MERC_DELETE_ON_DEAD] = 1;
+	}
+}
+// Dog
+void r_AddMercenary_dog(Critter& player, Critter@ npc)
+{
+	Map @mapa = player.GetMap();
+	if(@mapa!=null)
+	{
+		uint16 hX = player.HexX;
+		uint16 hY = player.HexY;
+		GetFreeHex(mapa, 1, hX, hY);
+		Critter@ merc = mapa.AddNpc(NPC_PID_Wastelander_1,  hX, hY, player.Dir,null,null,null);
+		r_AddMerc2Player(player, merc);
+		merc.Say(SAY_NORM_ON_HEAD, "Woof woof");
+		merc.MercBase[MERC_DELETE_ON_DEAD] = 1;
+	}
+}
+
+#include "_dialogs.fos"
+bool s_Terminal(Critter& player, Scenery& terminal, int skill, Item@ item)
+{
+	if(player.IsPlayer() && skill==-1 && not valid(item)) RunDialog(player,21003,terminal.HexX,terminal.HexY,false);
+	return true;
+}

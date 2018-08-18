@@ -1,0 +1,24 @@
+#include "_client_defines.fos"
+#include "_defines.fos"
+#include "_macros.fos"
+#include "client_gui_h.fos"
+
+import void InitBaryScreen() from "client_screen_hex";
+
+string[]KEY_STR={"escape","1","2","3","4","5","6","7","8","9","0","minus","equals","backspace","tab","q","w","e","r","t","y","u","i","o","p","[","]","enter","ctrll","a","s","d","f","g","h","j","k","l","semicolon","apostrophe","grave","lshift","backslash","z","x","c","v","b","n","m","comma","period","slash","rshift","multiply","altl","space","capital","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","numlock","scrolllock"};
+int[]KEY_DIK={DIK_ESCAPE,DIK_1,DIK_2,DIK_3,DIK_4,DIK_5,DIK_6,DIK_7,DIK_8,DIK_9,DIK_0,DIK_MINUS,DIK_EQUALS,DIK_BACK,DIK_TAB,DIK_Q,DIK_W,DIK_E,DIK_R,DIK_T,DIK_Y,DIK_U,DIK_I,DIK_O,DIK_P,DIK_LBRACKET,DIK_RBRACKET,DIK_RETURN,DIK_LCONTROL,DIK_A,DIK_S,DIK_D,DIK_F,DIK_G,DIK_H,DIK_J,DIK_K,DIK_L,DIK_SEMICOLON,DIK_APOSTROPHE,DIK_GRAVE,DIK_LSHIFT,DIK_BACKSLASH,DIK_Z,DIK_X,DIK_C,DIK_V,DIK_B,DIK_N,DIK_M,DIK_COMMA,DIK_PERIOD,DIK_SLASH,DIK_RSHIFT,DIK_MULTIPLY,DIK_LMENU,DIK_SPACE,DIK_CAPITAL,DIK_F1,DIK_F2,DIK_F3,DIK_F4,DIK_F5,DIK_F6,DIK_F7,DIK_F8,DIK_F9,DIK_F10,DIK_NUMLOCK,DIK_SCROLL};
+
+
+uint8 GetHotkey(string& iniKey, uint8 defaultValue) // Export
+{
+	AppendIfaceIni("..\\hotkeys.ini");
+	string@ str = GetIfaceIniStr(iniKey);
+	if(@str == null || str == "") return defaultValue;
+	//Message(str);
+	if(KEY_STR.length()!=KEY_DIK.length()) return defaultValue;
+	for(uint i=0; i<KEY_STR.length(); ++i)
+	{
+		if(str==KEY_STR[i]) return KEY_DIK[i];
+	}
+		return defaultValue;
+}

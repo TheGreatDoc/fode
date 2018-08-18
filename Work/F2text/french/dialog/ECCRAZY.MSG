@@ -1,0 +1,5 @@
+{100}{}{Tu vois quelqu'un foldingue.}
+{101}{}{Miam... cerveaux.}
+{102}{}{Envoie plus d'aventuriers.}
+{103}{}{Arhgrrrrrrrghhhhh}
+{104}{}{Faire arrêter la douleur.}

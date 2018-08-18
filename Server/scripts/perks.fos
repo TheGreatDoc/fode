@@ -1,0 +1,89 @@
+// Author: cvet
+#ifdef __CLIENT // Macro defined in client_main.fos
+#define Critter CritterCl
+#endif
+
+#include "_macros.fos"
+
+#ifndef __CLIENT
+import int NextLevelNeedExp(Critter& cr)  from "parameters";
+#endif
+
+
+bool PerkCheck(Critter& cr, uint perk) // Export
+{
+#define PROCESS_PERK0 #(perk,range,level) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level)
+#define PROCESS_PERK1 #(perk,range,level,demand0) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level && demand0)
+#define PROCESS_PERK2 #(perk,range,level,demand0,demand1) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level && demand0 && demand1)
+#define PROCESS_PERK3 #(perk,range,level,demand0,demand1,demand2) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level && demand0 && demand1 && demand2)
+#define PROCESS_PERK4 #(perk,range,level,demand0,demand1,demand2,demand3) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level && demand0 && demand1 && demand2 && demand3)
+#define PROCESS_PERK5 #(perk,range,level,demand0,demand1,demand2,demand3,demand4) case perk: return(cr.ParamBase[perk]<range && cr.ParamBase[ST_LEVEL]>=level && demand0 && demand1 && demand2 && demand3 && demand4)
+	switch(perk)
+	{
+	// Perks
+	PROCESS_PERK1(PE_AWARENESS,           1, 3, cr.ParamBase[ST_PERCEPTION]>=5    );
+	PROCESS_PERK1(PE_GAIN_STRENGTH,       5, 3, cr.ParamBase[ST_STRENGTH]<10      );
+	PROCESS_PERK1(PE_GAIN_PERCEPTION,     5, 3, cr.ParamBase[ST_PERCEPTION]<10    );
+	PROCESS_PERK1(PE_GAIN_ENDURANCE,      5, 3, cr.ParamBase[ST_ENDURANCE]<10     );
+	PROCESS_PERK1(PE_GAIN_CHARISMA,       5, 3, cr.ParamBase[ST_CHARISMA]<10      );
+	PROCESS_PERK1(PE_GAIN_INTELLIGENCE,   5, 3, cr.ParamBase[ST_INTELLECT]<10     );
+	PROCESS_PERK1(PE_GAIN_AGILITY,        5, 3, cr.ParamBase[ST_AGILITY]<10       );
+	PROCESS_PERK1(PE_GAIN_LUCK,           5, 3, cr.ParamBase[ST_LUCK]<10          );
+	default: break;
+	}
+	return false;
+}
+
+#ifndef __CLIENT
+void PerkUp(Critter& cr, uint perk) // Export
+{
+#define PERKUP_STAT #(param,val) cr.StatBase[param]val
+#define PERKUP_SKILL #(param,val) cr.SkillBase[param]val; if(cr.SkillBase[param]>MAX_SKILL_VAL) cr.SkillBase[param]=MAX_SKILL_VAL
+	switch(perk)
+	{
+	// Perks
+	case PE_AWARENESS: /*Examining a target shows hitpoints, weapon and ammunition count*/ break;
+	case PE_GAIN_STRENGTH: PERKUP_STAT(ST_STRENGTH,+=1); break;
+	case PE_GAIN_PERCEPTION: PERKUP_STAT(ST_PERCEPTION,+=1); break;
+	case PE_GAIN_ENDURANCE: PERKUP_STAT(ST_ENDURANCE,+=1); break;
+	case PE_GAIN_CHARISMA: PERKUP_STAT(ST_CHARISMA,+=1); break;
+	case PE_GAIN_INTELLIGENCE: PERKUP_STAT(ST_INTELLECT,+=1); break;
+	case PE_GAIN_AGILITY: PERKUP_STAT(ST_AGILITY,+=1); break;
+	case PE_GAIN_LUCK: PERKUP_STAT(ST_LUCK,+=1); break;
+	default: break;
+	}
+}
+
+void PerkDown(Critter& cr, uint perk) // Export
+{
+#define PERKDOWN_STAT #(param,val) cr.StatBase[param]val
+#define PERKDOWN_SKILL #(param,val) cr.SkillBase[param]val; if(cr.SkillBase[param]<-MAX_SKILL_VAL) cr.SkillBase[param]=-MAX_SKILL_VAL
+	switch(perk)
+	{
+	// Perks
+	case PE_AWARENESS: break;
+	case PE_GAIN_STRENGTH: PERKDOWN_STAT(ST_STRENGTH,-=1); break;
+	case PE_GAIN_PERCEPTION: PERKDOWN_STAT(ST_PERCEPTION,-=1); break;
+	case PE_GAIN_ENDURANCE: PERKDOWN_STAT(ST_ENDURANCE,-=1); break;
+	case PE_GAIN_CHARISMA: PERKDOWN_STAT(ST_CHARISMA,-=1); break;
+	case PE_GAIN_INTELLIGENCE: PERKDOWN_STAT(ST_INTELLECT,-=1); break;
+	case PE_GAIN_AGILITY: PERKDOWN_STAT(ST_AGILITY,-=1); break;
+	case PE_GAIN_LUCK: PERKDOWN_STAT(ST_LUCK,-=1); break;
+	default: break;
+	}
+}
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

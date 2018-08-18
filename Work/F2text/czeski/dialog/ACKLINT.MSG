@@ -1,0 +1,26 @@
+#tento soubor pøeloil Miskot...mhoferek@telecom.cz
+{100}{}{Vidíš Klinta, èlena tvého kmene.}
+{101}{}{Vidíš Klinta.}
+{102}{}{Vidíš mladíka s velmi vyvinutou muskulaturou. Má bezelstnı pohled malého dítìte.}
+{103}{}{Á, to je }
+{104}{}{. Zdravím tì. Zatím máš ale stále pøed sebou zkoušku od Starší. Dokud ji nesplníš, nemùu tì pustit zpátky.}
+{105}{}{Uh...}
+{106}{}{Chci jít zpátky do vesnice.}
+{107}{}{Chci se tì na nìco zeptat.}
+{108}{}{Dobrá, dobrá, jdu udìlat tu pitomou zkoušku.}
+{109}{}{(povzdech) }
+{110}{}{. Ty jít chrám. Ty sloit zkouška. Ty nejít zpìt sem, dokud nesloit zkouška. Poslechnout Starší! Jít!}
+{111}{}{Já jít.}
+{112}{}{Promiò }
+{113}{}{, ale nemùu tì pustit. Jestli se chceš vrátit do vesnice, mùeš to udìlat jen tak, e projdeš zkouškou v chrámu za tebou.}
+{114}{}{Vidím. Tak já teda jdu.}
+{115}{}{Mùu se tì alespoò na nìco zeptat?}
+{116}{}{Taky tì mùu nakopat do zadku a jednoduše odtud odejít.}
+{117}{}{Promiò, ale na tvé otázky neznám odpovìdi. Slo zkoušku od Starší a proka svou schopnost vést a spasit naše lidi.}
+{118}{}{Tak dobrá.}
+{119}{}{Tím totemem, kterı blokuje cestu, mùou pohnout jen dva lidé. ádnı èlovìk to sám nedokáe. A já nemám v úmyslu ti pomoct, dokud nesloíš chrámovou zkoušku.}
+{120}{}{A...aha. Je mi to jasnı.}
+{121}{}{Zdravím, Vyvolenı! Rád tì vidím. Mùu ti nìjak poslouit?}
+{122}{}{Já øíct ahoj. To vše.}
+{123}{}{Jenom se s tebou chci rozlouèit. Brzy kvùli mému poslání opustím vesnici.}
+{124}{}{Nech tì duchové našich pøedkù ochraòují, Vyvolenı. Pøeji ti na tvé vıpravì jen to nejlepší.}

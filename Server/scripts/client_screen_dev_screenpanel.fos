@@ -1,0 +1,66 @@
+//Client GUI DEV Panel
+
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "time.fos"
+
+IGUIElementTextOpt@ DEVTextOpt;
+IGUIElementTextOpt@ DEVTextWorldMapOpt;
+
+class DEVTextCallback : IGUIElementCallbackMouseMove  
+{
+	uint16 hx;
+	uint16 hy;
+	void OnMouseMove(int x, int y)
+	{
+		CritterCl @cr = GetMonitorCritter(x,y);
+		ItemCl @it = GetMonitorItem(x,y);
+		GetMonitorHex(x,y,hx,hy);
+		
+		DEVTextOpt.setText("DEV Panel - "+GetChosen().Name+"\n");
+		DEVTextOpt.setText("Is Not Visible? - "+GetChosen().ParamBase[CRITER_VISIBLE]+"\n");
+		DEVTextOpt.setText(DEVTextOpt.getText()+"Hex info\n{\n Position: "+hx+" : "+hy+"\n");
+		if(@cr!=null)
+		{
+			DEVTextOpt.setText(DEVTextOpt.getText()+" Critter ID: "+cr.Id+"\n");
+			DEVTextOpt.setText(DEVTextOpt.getText()+" Critter Proto ID: "+cr.Pid+"\n");
+		}
+		if(@it!=null)
+		{
+			DEVTextOpt.setText(DEVTextOpt.getText()+" Item ID: "+it.Id+"\n");
+			DEVTextOpt.setText(DEVTextOpt.getText()+" Item Proto ID: "+it.GetProtoId()+"\n");
+		}
+		DEVTextOpt.setText(DEVTextOpt.getText()+"}\n");
+   }
+}
+
+class DEVTextWorldMapCallback : IGUIElementCallbackMouseMove  
+{
+	void OnMouseMove(int x, int y)
+	{
+		if(@GetChosen()!=null)
+		{
+			DEVTextWorldMapOpt.setText("DEV Panel - "+GetChosen().Name+"\n");
+			if(@DEVTextWorldMapOpt.getText()!=null) DEVTextWorldMapOpt.setText(DEVTextWorldMapOpt.getText()+"World map\n");
+		}
+   }
+}
+
+void InitDEVScreenPanel()
+{
+	DEVTextCallback text;
+	DEVTextWorldMapCallback textWorldMap;
+	
+	@DEVTextOpt = GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED)
+      .AbsolutePosition(0,0) 
+      .TextBoxSize(300,100)
+      .CallbackMouseMove(text);
+	
+	@DEVTextWorldMapOpt = GUI_AddText(CLIENT_MAIN_SCREEN_GLOBAL_MAP,"", 0, 0)
+	  .TextOptions(FONT_FALLOUT, COLOR_LGREEN, FT_BORDERED)
+      .AbsolutePosition(0,0) 
+      .TextBoxSize(300,100)
+      .CallbackMouseMove(textWorldMap);
+}

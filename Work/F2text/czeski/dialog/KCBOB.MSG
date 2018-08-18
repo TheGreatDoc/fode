@@ -1,0 +1,182 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš staršího mue s nepìstìnımi vousy a velkım èervenım nosem.}
+{101}{}{Vidíš Whiskey Boba.}
+
+{110}{}{Tìší mne, jmenuju se Whiskey Bob. A jak ty, he?}
+{111}{}{Máš nìjakı podivnì pøihlouplı kukuè. Jmenuju se Bob, Whiskey Bob -- a jak ty?}
+{112}{}{Whisklı Job? Hue, hue?}
+{113}{}{Nablejskanı nos (he, he)}
+{114}{}{Já bıt }
+{115}{}{Jít pryè}
+
+{120}{}{No, nevyzaøuje z tebe pøíliš mnoho moudrosti, he? Dobrá, kadopádnì jsem si s tebou hezky popovídal. A tak dlouho.}
+{121}{}{Srdíèko, ty mi lámeš srdce ještì ne promluvíš. Moná bych tì nìkdy mohl
+ vzít do Lovecké ètvrti a ukázat ti své úlovky (he, he). Èau, zajíèku.}
+
+{130}{}{Dobrá, šéfe. Moná se tu v okolí ještì setkáme. Nashle.}
+{131}{}{No, doufám, e se ještì nìkdy uvidíme, fešando. Èau.}
+
+{140}{}{Hele, jestli tu nejsi kvùli drinku, tak rovnou vypadni.}
+{141}{}{Hele, myslím, e bude lepší trávit èas u Sally v lázních ne ho tu ztrácet s tebou. A teï odejdi.}
+
+{150}{}{Tìší mne cizinèe, jmenuju se Whiskey Bob. A ty?}
+{151}{}{Jmenuju se }
+{152}{}{. Tìší mì, e tì poznávám, Whiskey Bobe.}
+{153}{}{Já jsem }
+{154}{}{. Co nového ve mìstì?}
+{155}{}{Myslím, e nepotøebuješ znát mé jméno.}
+
+{160}{}{Vdycky si rád s nìkım sednu a popovídám u dobrého drinku. Viï e mi koupíš drink? Mluvení mi tak vysouší
+ jazyk.}
+{161}{}{Jistì, Bobe. Nebudu pøece škudlit.}
+{162}{}{To ti teï nemùu dopøát.}
+{163}{}{Nechci ti kupovat pití, Whiskey Bobe.}
+{164}{}{S pøezdívkou jako je ta tvoje, Whiskey Bobe, bys mìl rozdávat pití spíš ty.}
+
+{170}{}{Díky za pití, kamaráde. A teï, kdy jsem si trochu provlhèil hrdlo, cítím e se s tebou mùu podìlit
+ o svùj malı problém. Kdoví -- moná, e mi s tím pomùeš?}
+{171}{}{Mmm, mám teï pøíliš mnoho práce. Myslím, e ti nemohu pomoci.}
+{172}{}{A s èím ti mám jako pomoci?}
+{173}{}{Jestli to nezabere moc èasu, tak myslím, e pomùu. Za urèitı poplatek, samozøejmì.}
+{174}{}{Myslím, e ti mohu pomoci, pokud to nebude moc nebezpeèné.}
+{175}{}{Stalo se tu v poslední dobì nìco mimoøádného?}
+
+{180}{}{Vypadá to, e tvé penìence došla šáva. Nemáš dost penìz na Bobùv drink.}
+{181}{}{[DÁLE]}
+
+{190}{}{Dobrá, tak podívej. Mám takovou malou vedlejší èinnost a potøeboval bych pomoci s údrbou. Jedná se o
+ naèerno udrovanı destilátor za mìstem a ve kterém potøebuju èas od èasu doplnit palivo. Jeliko mì však geckon pochroumal
+ nohu, nestaèím se tam dobelhat a palivo doplnit. A to je celı problém. Take se tì ptám - pùjdeš za mne
+ doplnit palivo? Dám ti $50.}
+{191}{}{To nezní špatnì -- povìz mi víc.}
+{192}{}{Myslím, e nemám zájem. Sorry, Whiskey Bobe.}
+
+{200}{}{Tak tedy, nezabere ti to pøíliš mnoho èasu a ani to není zas tak moc nebezpeèné. Opravdu. Chceš
+ o tom slyšet víc nebo ne?}
+{201}{}{OK, jen smìle do toho a povìz mi to.}
+{202}{}{Myslím, e mi to staèí. Nashle.}
+
+{210}{}{Tak to mi staèí. Jsi pìknı podvodník. A to nemùeš nijak popøít... podívej, tady je nìjakı chlast. Jako dùkaz dostateèné. Teï to
+ pùjdu vyøešit na patøièná místa.}
+
+{220}{}{Vše co musíš udìlat je, najít malou chatrè jinì od mìsta. Jdi dovnitø a pøilo nìjaké døíví
+ do destilátoru. Pak se vra zpátky a já ti dám tvé peníze. Ale potøebuji to provést nejpozdìji do
+ pøíštího dne, nebo se mi ta pøedpøipravená dávka zkazí.}
+{221}{}{Tohle vypadá velice snadì. OK, jdu na to.}
+{222}{}{Tak s tímhle nechci nic mít. Sorry, Bobe.}
+{223}{}{$50 se mi za takovouhle práci zdá dost málo.}
+
+{230}{}{Udìláš to? Bezvadnı. Pamatuj, je tøeba to provést rychle nebo se mi to zkazí. Díky.
+ Brzy se uvidíme.}
+{231}{}{Bez problémù, Bobe. Uvidíme se. }
+{232}{}{Pomùu, kdy to jde. Ale nejprve, povìz mi co se v poslední dobì událo ve mìstì.}
+
+{240}{}{Dobrá, jsi zkušenej obchodník, to se nedá poøít. OK, nabízím ti $65. Udìláš to?}
+{241}{}{Dobrej pokus, ale $50 je maximum co ti mùu dát. Hernajs, fakt ti nemùu dát víc. }
+{242}{}{OK, udìlám to.}
+{243}{}{Za takovou almunu to dìlat nebudu. Mùj èas je daleko draší.}
+
+{250}{}{Zdravím tì. Zpátky za Whiskey Bobem, co? Jdeš si popovídat o chlastu,
+ obchodu a tak?}
+{251}{}{Ahoj dìvèe. Pøišla sis zase popovídat s Whiskey Bobem o chlastu, obchodu a tak? Pojï si mi sednout na klín! (he, he) Dítì moje.}
+{252}{}{Jistì, Bobe - povìz mi o chlastu a obchodu.}
+{253}{}{Myslím, e od poslednì toho mám dost.}
+
+{260}{}{Tak, hotovo? Pøiloeno? No, nepoèítal jsem, e to u budeš mít. Tak tam zajdi, udìlej to a vra
+ se zase za mnou.}
+
+{270}{}{Nìkdo našel a rozmlátil mùj destilátor! A ty jsi jediná osoba, které jsem o tom øekl. Proboha proè? Kdybych tak byl
+ mladší, více plnı síly, dal bych ti lekci na jakou se nedá zapomenout! Ztra se mi z oèí
+ ty zasranej podvodníku!}
+
+{280}{}{Dobrá, dìkuji ti za doplnìní paliva v mém destilátoru. Tady je tvıch $50.
+ Máš nìjaké otázky na které mohu odpovìdìt?}
+{281}{}{Díky. A teï musím splnit na èem jsme se ujednali -- no byla øeè o $65. Tady máš svı
+ peníze. Nìjaké otázky na které mohu odpovìdìt?}
+{282}{}{Ano. Povìz mi poslední novinky.}
+{283}{}{Ne díky, Bobe. Myslím, e o všem u vím.}
+
+{290}{}{Všechny vìci, o kterıch ti povím, se tu udály nedávno. Take: Kdosi nám tu zabíjí brahmíny, dále je tu Tajemnı duch, obrovské krysy, a ztracení lidé. Slyšel jsem dokonce fámy, e Den je vyrabovanı.}
+{291}{}{Øekni mi víc o tìch brahmínách.}
+{292}{}{Øekni mi víc o Tajemném duchovi.}
+{293}{}{Obrovské krysy? Tak o tomhle chci slyšet víc.}
+{294}{}{den? (brloh, doupì, pelech) Jakı den?}
+{295}{}{Ztracení lidé? Øekni mi víc.}
+{296}{}{Chci se zeptat na nìco jiného. Neslyšel jsi náhodou nìkdy o vìci zvané Garden of Eden
+ Creation Kit?}
+{297}{}{Myslím, e více u slyšet nepotøebuji.}
+{298}{}{No jistì, Bobe, a teï ti povím neuvìøitelnou historku o tom, jak jeden známı chytil obrovskou rybu v dešovém sudu.}
+
+{310}{}{Díky za pomoc s destilátorem. A se mi zahojí má zranìná noha, budu schopen udrovat oheò sám. Máš nìjaké otázky na starıho parda, jako jsem já?}
+{311}{}{Dobrá, zajímaly by mne nìjaké drby co se v poslední dobì povídají.}
+{312}{}{Myslím, e zrovna nepotøebuji ádné informace, Bobe.}
+
+{320}{}{Øíká se, e tvorové, co jsou velcí jako dospìlı mu, mající na sobì jakısi brouèí krunıø, zabíjejí v noci hroznım zpùsobem naše brahmíny. Všechny co najdeme mají rozpáraná torza... a vytrhaná støeva se válí všude kolem.}
+{321}{}{To zní dìsivì.}
+
+{330}{}{Pár lidí u vidìlo tyhle brouky, ale nejlíp ze všech je vidìl Torr, syn paní Bucknerové. To, co vidìl tìma svıma hloupıma oèima, jej vydìsilo natolik, e u se s ním o tìchto vìcech nedá rozumnì mluvit.}
+{331}{}{Neuvìøitelné! Mám další otázky.}
+{332}{}{To mi myslím staèí, na-nashledanou.}
+
+{340}{}{Máme tu kaòon na západ od mìsta. Pøed nìkolika mìsíci z nìho vycházelo jasné svìtlo. Nejprve poøád, pak tu a tam a nakonec, jakési dìsivé kvílivé zvuky. Brahmíny, co se tam zatoulali, se u nevrátili. A kadı se tam bál chodit.}
+{341}{}{Hmm, jistì to musí znamenat zlobu Tajemného ducha. Ké byste mìli schopného šamana. Povìz mi zase nìco jiného.}
+{342}{}{Tohle mi zatím staèí. Asi pùjdu chvíli pøemıšlet o tom, co jsi mi právì øekl. Nashle.}
+
+{350}{}{Dobrá, tedy nìco o Lovecké ètvrti, západnì od centra. Je tam jedna èást, co je úplnì zamoøená krysami. Odtam bych se drel dál, mohlo by se stát, e tì ty krysy dostanou. Øíká se, e tam je jedna velká, co vede všechny ostatní. Dokonce tam nìkteøí lovci u nechtìjí zùstat. Prı je to pøíliš
+ nebezpeèné.}
+{351}{}{Lovci vypuzeni krysami? Hmm, povìz mi radìji o nìèem jiném.}
+{352}{}{Bojím se krys. Hmm, a tohle musí bıt jinaèí, vìtší krysy, ne u nás doma. To mi staèí.
+ Na-nashledanou.}
+
+{360}{}{Ne 'den,' - 'Den.' Nikde nenajdeš takové doupì plné násilností a nièemností. A teï, co o nìm
+ vím? No, v kadém pøípadì, je to drsné místo, nìkolik dní cesty na jih od Klamathu. Za peníze tam dostaneš
+ cokoliv... dokonce i otroky. Ale je tøeba mít se na pozoru -- hodnì lidí tam je vybaveno
+ nebezpeènımi zbranìmi. Myslím, e naše mìsteèko je jimi zatím opomíjeno, aèkoliv; mìli by to s námi celkem snadné.}
+{361}{}{Hmm, myslím, e tady je bezpeèno; ale stejnì... umím se o sebe postarat. Ještì se chci zeptat na pár
+ dalších vìcí.}
+{362}{}{To mi zatím staèí, Whiskey Bobe. Nashle.}
+
+{370}{}{Nedávno, jsme tu mìli hned dva pøípady ztracení lidí. Obchodníka, Vic se jmenuje, kterı se specializoval
+ na pøedváleèné zboí, a jednoho z našich nejlepších lovcù koešin.}
+{371}{}{Povìz mi více o tom obchodníkovi...jak jsi øíkal, e se... Vic?}
+{372}{}{Chci vìdìt více o tom lovci.}
+{373}{}{Chci se zeptat na nìco jiného.}
+{374}{}{To by prozatím bylo vše. Nashle, Whiskey Bobe.}
+
+{380}{}{Dobrá. Vic by docela dobrı èlovìk. Nerad se pøíliš zatìoval drobnım obchodem, a tak se specializoval
+ na drahé pøed-váleèné vìci, které chodil prodávat do Denu -- anebo to šel podomnì nabízet stupidním barbarùm
+ jako náboenské artefakty (uchichtne se pro sebe). Oh, bez uráky. Kadopádnì, u jsem ho pìknı èásek nevidìl.
+ Co jsem od nìj slyšel naposled bylo, e jde prodat nìjaké zboí kamsi na jih. Snad myslel Den.}
+{381}{}{Jak je to s tím ztracenım lovcem koešin?}
+{382}{}{Chci se zeptat na nìco jiného, Bobe.}
+{383}{}{Díky, asi pùjdu popøemıšlet o tom co jsi mi øekl. Nashle, Whiskey Bobe.}
+
+{390}{}{Správná osoba, která by ti mohla øíct nejvíc o ztraceném lovci je asi paní Bucknerová. Ona a RadaR to spolu u nìjakı èásek táhli. Jednou se vydal nìkam na sever, hledat jeskyni Zlatıch geckonù a od té doby ho nikdo nevidìl.
+ To je vše co ti o tom mùu øíct.}
+{391}{}{Jak je to s tím ztracenım obchodníkem?}
+{392}{}{Hmm, zajímavé. Povìz mi ještì nìco.}
+{393}{}{Tohle by zatím staèilo. Nashle, Whiskey Bobe.}
+
+{400}{}{Nic mi nevykládej! To doplnìní paliva bylo pøíliš pozdì. Díky tobì, je má poslední
+ dávka whisky je znièena! U od tebe nikdy nic nechci a doufám, e nikdo jinı
+ také ne, kazisvìte.}
+{401}{}{Ale já... snad na to bylo víc èasu, ne?}
+{402}{}{Myslím, e by to chutnalo poøád stejnì. A u by se vèas pøiloilo nebo ne.}
+{403}{}{Ten tvùj likér chutná beztak jako psí chcanky.}
+{404}{}{Zdá se, e oheò nedodal dostateènou teplotu pro správnou fermetaci.}
+
+{410}{}{Nechci poslouchat tvoje trapnı vımluvy. Ztra se mi z oèí! Ale øeknu ti jednu vìc; kadému tu povím jak prolhaná a mrzká jsou tvá slova.}
+
+{420}{}{Garden of Eden Creation Kit? Mám takovı dojem, e jsem nìco takového vidìl na jedné stránce jakéhosi starého katalogu, kdy jsem si na chvíli sedl a prohlíel ho. Ale nic víc u o tom nevím.}
+{421}{}{Opravdu? Chci vidìt ten katalog.}
+
+{430}{}{Ehm, (rozpaky) Tenhle druh papíru jsem pouíval na jistı druh ehm... èinnosti, jestli víš, co tím myslím.}
+{431}{}{Èinnosti? Och, ty myslíš... Já osobnì preferuji staré noviny. No dobrá, nedá se nic dìlat. Povìz mi nìco jiného.}
+{432}{}{Sakra, taková pøíleitost! Tak tohle mì hodnì zklamalo. Nashle, Bobe.}
+
+{500}{}{Zdravíèko, èím mohu slouit?}
+{501}{}{Tak co je tu nového?}
+{502}{}{Nic, díky.}
+
+{550}{}{Bob nevypadá, e by s tebou chtìl mluvit.}

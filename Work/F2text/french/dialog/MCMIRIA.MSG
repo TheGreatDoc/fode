@@ -1,0 +1,143 @@
+{100}{}{Oh là là! Une très belle femme, très séduisante et bien faite.}
+{101}{}{Miria}
+{102}{}{C'est pas si sûr, mais elle fait bien du 90-60-90.}
+
+{150}{}{Salope !}
+{151}{}{Comment oses-tu revenir ici !}
+
+{152}{}{C'est répugnant !}
+{153}{}{J'espère que vous êtes heureux ensemble.}
+
+# Node 0
+{154}{}{Bien le bonjour à toi. Je m'appelle Miria.}
+{155}{}{Ça me fait tellement plaisir de vous revoir. Alors, que puis-je faire pour TOI maintenant ?}
+{156}{}{Qu'est-ce que vous faites dans ces parages ?}
+{157}{}{Que pouvez-vous me dire sur l'abattoir ?}
+{158}{}{As-tu des informations intéressantes ?}
+{159}{}{Waouh ! Houba !}
+
+# Node 2
+{160}{}{Si je ne m'ennuyais pas autant, je vous dirais non. Alors, posez-les vos questions.}
+
+# Node 10
+{164}{}{On dit que Farrel a volé la montre.}
+{165}{}{Pourquoi Farrel aurait-il volé cette montre ?}
+{166}{}{Farrel n'est-il pas le meilleur ami de Cornélius ?}
+{167}{}{J'ai besoin d'entendre d'autres rumeurs.}
+
+# Node 11
+{168}{}{Parce que les gens pauvres ont tendance à voler pour joindre les deux bouts. Farrel est vraiment tombé dans la misère. Cela pourrait expliquer comment il a pu acheter de nouveaux outils peu après la disparition de la montre de Cornélius.}
+{170}{}{J'ai encore quelques questions...}
+
+# Node 12
+{171}{}{Oui, ces deux-là s'entendaient comme des larrons en foire. C'est bien pour ça que je soupçonne Farrel d'avoir volé la montre. Qui d'autre que lui aurait pu s'introduire aussi facilement pour voler cette montre ?}
+
+# Node 13
+{174}{}{Je n'ai rien à dire. Ma famille dirige l'abattoir. Des gens des quatre coins du pays apportent leurs brahmines pour les faire abattre. Une fois que c'est fait et que la viande a été préparée, nous la vendons aux marchands qui eux la vendent aux commerçants des villes. Si vous voulez mon avis, moi je trouve tout ça très ennuyeux.}
+
+# Node 14
+{176}{}{Mais alors vous êtes au bon endroit ! Cette ville est tellement monotone, il n'y a rien d'autre à faire que des commérages ici et ...[Elle continue de parler pendant un moment avant tu puisses en placer une.]}
+{177}{}{Qu'est-ce que vous voulez savoir d'autre ?}
+{178}{}{Que savez-vous sur la montre qu'on a volé à Cornélius ?}
+{179}{}{Vous avez dit quelque chose à propos de Rose.}
+{180}{}{Qu'est ce que c'est que cette histoire de brahmine mutante ?}
+{181}{}{Parlez-moi de Davin.}
+{182}{}{Allez, parlons d'autre chose.}
+
+# Node 15
+{183}{}{Ah ! Rose. La proprio de l'Auberge. Bon, mais je ne vous ai rien dit, hein ! D'abord, vous êtes-vous jamais demandé pourquoi son poulailler est si bien protégé ? Elle prétend que c'est pour protéger ses poules des prédateurs. Mais à y regarder de plus près, vous jureriez qu'elle cherche plutôt à enfermer quelque chose au lieu de l'empêcher d'entrer. Et en plus, a-t-on jamais vu des poules qui pondent des œufs de six kilos !}
+{184}{}{Qu'est-ce que vous avez d'autres comme ragot ?}
+
+# Node 16
+{186}{}{C'est très étrange, mais j'ai entendu dire que certains éleveurs prétendent que de temps à autre une brahmine donne naissance à un veau qui n'a qu'une seule tête ! C'est pas bizarre ça !}
+
+# Node 17
+{189}{}{Il fait partie de la famille. Je ne colporte pas de rumeurs sur ma propre famille.}
+
+# Node 18
+{192}{}{Qui moi ? Je fais des petits boulots ici et là. Il n'y a pas grand chose à dire, vraiment. [Elle vous regarde en battant des cils.]}
+{193}{}{J'aimerais vraiment mieux vous connaître.}
+{194}{}{Vous avez raison. Nous avons assez parlé. C'est ça que vous attendez alors, allons-y, passons à un peu d'action !}
+
+# Node 19
+{196}{}{Ça me touche beaucoup. Personne n'essaie jamais de mieux me connaître. Tout ce qu'ils veulent c'est du cul, du cul, du cul ! J'en ai marre de cette bestialité ! Je suis tellement contente que vous soyez différent des autres.}
+{197}{}{Sale pute ! J'ai bien cru que vous étiez différent.}
+{198}{}{Vous savez, je suis quelqu'un d'ordinaire. Pourquoi mes amis disent-ils : «}
+{199}{}{ , tu es cool parce que tu es dans la norme, ordinaire quoi. » Voilà, la norme, l'ordinaire, c'est moi.}
+{200}{}{Eh bien, je n'ai jamais connu quelqu'un d'aussi intéressant que vous.}
+
+# Node 20
+{202}{}{Un peu d'action ? Qu'est-ce que vous sous-entendez ?}
+{203}{}{Tu sais très bien de quoi je parle, baby. Toi tu sais ce que tu veux. [Tu souris et tu commences à te déshabiller.]}
+{204}{}{Je m'excuse, je n'avais pas du tout l'intention de sous-entendre quoi que ce soit.}
+
+# Node 21
+{205}{}{Comment osez-vous m'insulter ? Laissez-moi vous dire que je suis très difficile pour choisir ceux qui entrent dans mon lit. Pourquoi croyez-vous que j'ai couché avec seulement 10 ou 20 personnes ce mois-ci ?! Je crois bien que cette conversation est ter-mi-née !}
+
+# Node 22
+{206}{}{Quelle déception ! Vous êtes donc comme les autres alors ?}
+
+# Node 23
+{208}{}{Non, je ne crois pas. Allez, j'en ai marre de cette conversation. Au revoir.}
+
+# Node 24
+{209}{}{[Elle rougit.] Arrêtez, vous m'embarrassez terriblement. Vous êtes la douceur incarnée. Pourquoi ne venez-vous pas vous asseoir à côté de moi ?}
+{210}{}{Je crois que cela va trop loin. Ne pouvons-nous pas seulement bavarder ?}
+{211}{}{J'ai bien cru que vous ne le demanderiez jamais. Alors pourquoi ne pas nous mettre à l'aise ?}
+{212}{}{Géniale, toi au moins tu sais c'que tu veux !}
+{213}{}{Vous n'êtes qu'une petite pute hein ?}
+
+# Node 25
+{214}{}{Je n'en peux plus. Ton corps est si parfait. [Elle arrache ses vêtements, puis les tiens, et puis...]}
+{215}{}{[Ta vie ne sera jamais plus la même.]}
+
+# Node 26
+{216}{}{Il vaudrait mieux que ça ne soit pas ce que je pense.}
+{217}{}{Aoooga !}
+{218}{}{Hein ?}
+
+# Node 27
+{219}{}{Oui ! C'est bien ce que je pensais ! C'est drôle comme la palabre du Neanderthal et le bavardage civilisé sont semblables sur ce point. [Tu ne l'as même pas vu venir... Mais c'est sûr, la marque rouge imprimée sur ton visage par une main vigoureuse disparaîtra un jour ou l'autre.]}
+
+# rape script dialog
+{250}{}{Papa, au secours ! Fais-le partir !}
+{251}{}{Allez, va-t-en !}
+{260}{}{Papa, au secours ! Fais-la partir !}
+
+# wedding script dialog
+{400}{}{Papa !}
+{401}{}{Uh oh !}
+{402}{}{C'est bien mon cas !}
+
+{410}{}{Euh...}
+{411}{}{Uhhh... Continue s'il te plaît...}
+{412}{}{Je n'ai jamais...}
+{413}{}{Um... moi oui !}
+
+{450}{}{Uhhh, je crois que tu devrais parler avec mon père.}
+
+{500}{}{Génial, je suppose que ça veut dire qu'il faut que je dirige ce merdier.}
+
+# in party dialog
+{1000}{}{Qu'allons nous faire maintenant, mon coeur ?}
+{1001}{}{Qu'allons nous faire maintenant, mon chou ?}
+{1002}{}{Qu'allons nous faire maintenant, mon canard ?}
+{1003}{}{Qu'allons nous faire maintenant, mon amour ?}
+{1004}{}{Qu'allons nous faire maintenant, ma petite fesse en sucre ?}
+{1005}{}{Non, non, non... Pas à ce type de distance ! Il faut que tu restes un peu en arrière quand on se déplace.}
+{1006}{}{Eh, cool, relax, tu me laisses juste un peu d'espace quand on se balade.}
+{1007}{}{Je vais encore essayer, moules à gaufres. Mais c'est pas facile de « nous » trouver des sorties dans ce désert.}
+{1008}{}{Mes oignons, c'est tes oignons.}
+{1009}{}{OK, la douceur, mais il faut qu'on s'arrête à l'armure ?}
+{1010}{}{Les armes blanches comme les couteaux, ça m'excite, mais je peux aussi me servir d'armes comme une mitraillette en un rien
+ de temps s'il le faut. Mais, il faut pas s'attendre à ce que je touche quoi que ce soit.}
+{1020}{}{Il faut qu'on parle de la distance qui nous sépare.}
+{1100}{}{Je suis parfaitement d'attaque, prêt à partir.}
+{1200}{}{Il ne me reste même pas une égratignure.}
+{1300}{}{Je suis presque guéri, mais j'aimerais bien revenir me faire soigner à l'occasion.}
+{1400}{}{Je me suis soigné autant que j'ai pu, mais je suis encore pas mal esquinté.}
+{1500}{}{Non mon chou, je veux venir avec toi.}
+{1600}{}{Tu as raison, je le range.}
+{1700}{}{}
+{1800}{}{OK, j'ai besoin de rester près de toi.}
+{1900}{}{Mais alors je ne serai pas tout près de toi.}

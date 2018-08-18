@@ -1,0 +1,28 @@
+-------------------PIDs INFO-------------------
+
+1-799			- original SDK items
+700 - 799		- Ammo_de
+880 - 999		- CARS
+1101 - 2000		- FREE
+4051 - 4276		- crafting_de
+4300 - 4499		- combat_armors_de
+4810 - 4899		- normal_armors_de
+4900 - 4949		- old new scenery
+4950 - 5000		- New Grid
+6806 - 6899		- New WALL
+6900 - 7599		- misc_de // NO FREE
+7600 - 7699		- implants RGB & spec.item
+7700-7800 & 7900-8000	- dynamic_de
+7833-7899		- BROKEN PID. DOES NOT WORK
+8900 - 8999		- mountains_de (also some pids 7300-7350)
+9000 - 10000		- misc_de (za wyjatkiem 3 jakis przedmiotow: 9054 - szlam, 9504 ,9623 - Scotty)
+10001-10550		- bronie_de
+10551 - 10559		- bronie "hidden" dla ghouli, mutków etc
+10600 - 11350		- FREE
+11800 < X
+
+----------------
+FREE
+---------------- 
+7065
+7083

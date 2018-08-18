@@ -1,0 +1,47 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 @
+3 3000 None 0 #
+0 3010 &
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{MGL Lockdown Control 
+Current: Open 
+Status: Online}
+{2010}{}{Initiate lockdown.}
+{3000}{}{Access denied.}
+{3010}{}{Exit}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{Blokowanie kontroli pradu MGL: Otwarte
+status: polaczono}
+{2010}{}{Inicjowanie blokowania.}
+{3000}{}{Odmowa dostepu.}
+{3010}{}{wyjscie}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{ }
+{2000}{}{MGL Lockdown control
+current: Open
+status: on-line}
+{2010}{}{Initiate lockdown.}
+{3000}{}{Access Denied.}
+{3010}{}{exit}
+

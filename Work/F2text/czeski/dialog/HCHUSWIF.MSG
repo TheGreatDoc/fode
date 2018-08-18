@@ -1,0 +1,29 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš dost špinavého mutanta.}
+{101}{}{Je obleèený ve žlutém tílku a na nìm má špinavé trièko s knoflíky. Vypadá, že na nìco èeká.}
+{102}{}{Vidíš nepøíjemnou starou mutantku.}
+{103}{}{Je obleèená v potøísnìné zástìøe. Taky má rùžové natáèky ve vlasech.}
+{104}{}{Kde je mùj smažený brahmíní piroh, ženská?!}
+{105}{}{Doufám, že ti zas neujede ruka s pepøem ty megero!}
+{106}{}{Kdes byla poslední noc?!}
+{107}{}{Kde je mùj èasopis? Kde je Koèièí Packa? Zasejc jsi ho vyhodila, že jo?}
+{108}{}{**Pšššššt**}
+{109}{}{Vachy øíkal, že by pro mì pøíští mìsíc mohl mít práci.}
+{110}{}{Tady je bordel jak v tanku! Kdy se chystáš uklízet, štìkno?}
+{111}{}{Ženská, ty máš chytrou leda tak klapaèku!}
+{112}{}{Miluju tì, prcinko.}
+{113}{}{Chceš jednoho facáka, krávo?}
+
+{140}{}{Udìlej si svùj vlastní hrnec pirohù, ty línej zadku!}
+{141}{}{...(huhly) dám mu tolik pepøe, kolik budu chtít (huhly)... }
+{142}{}{Prát u mìstské studny tvoje spodky, jako vždycky!}
+{143}{}{Na co potøebuješ to svinstvo, když máš mì?!}
+{144}{}{Øíkala jsem ti, abys nejedl ty leguány-na-špejli! Otevøi okno! Fuj!}
+{145}{}{Dobrá, jakmile vypadneš z baráku, dám se do toho!}
+{146}{}{Tehdy, až mi zaèneš projevovat nìjakou úctu, ty šupáku!}
+{147}{}{Nìkdo v tomhle baráku musí mít rozum!}
+{148}{}{Já tebe taky, kládièko.}
+{149}{}{Nechci nic, co má cokoliv spoleèného s tvojí prackou!}
+
+{200}{}{Co k èertu chceš? Zmiz z mýho bytu, rùžovouši.}
+{201}{}{Pøísahám, že jednoho dne se seberu a zmizím odsud. A jsem moc zvìdavá, co si tady ten línej zadek potom sám poène.}

@@ -1,0 +1,30 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+#include "_defines.fos"
+
+IGUIElementTextOpt @ParamPlayerTextOpt;
+
+void InitParamScreen()
+{
+	GUI_CreateScreen(CLIENT_SCREEN_PARAM,"window.png")
+				.Modal(false)
+				.Multiinstance(false)
+				.SizeByMultipleImages(1,1);
+	
+	@ParamPlayerTextOpt = GUI_AddText(CLIENT_SCREEN_PARAM,"Stats:", 25,28)
+		.TextBoxSize(480,435);
+}
+
+void DisplayParamInfo(int cr_id)
+{
+	ShowScreen(CLIENT_SCREEN_PARAM,0,0,0);
+	ParamPlayerTextOpt.setText("");
+	RunServerScriptUnsafe("dev_server_scripts@unsafe_displaycritterparams",cr_id,0,0,null,null);
+	
+}
+
+void ResultCritterParams(int, int, int, string@ result, int[]@)
+{
+	ParamPlayerTextOpt.setText(result);
+}

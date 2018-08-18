@@ -1,0 +1,22 @@
+# Tento soubor pøeloil Petr "Lee" Bulíø.......Level
+{100}{}{Vidíš jednu z mnoha špinavıch existencí.}
+{101}{}{Nevypadá to, e by tenhle èlovìk byl v ivotì nìjak zvláš úspìšnı.}
+{102}{}{Jo, na co èumíš?}
+{103}{}{Hezkı den...pro nìkoho.}
+{104}{}{Bıt tebou, tak bych se tady okolo moc nemotal.}
+{105}{}{Pøál bych si, abych se mohl dostat do mìsta.}
+{106}{}{Kde je ten dolar, co sem mìl...?}
+{107}{}{Hezkı kozy.}
+{108}{}{Hezké místo... kdy se tu udrí poøádek.}
+{109}{}{Ostatnì, poøád ještì nejsem venku v pustinì...}
+{110}{}{Hejbej se.}
+{111}{}{Peníze docházejí...}
+{112}{}{Mìl bys zmizet, slyšels?}
+{113}{}{Jdi mi z oèí.}
+{114}{}{Jsi stejnej hajzl jako oni.}
+{115}{}{Zpátky.}
+{116}{}{Pokraèuj.}
+{117}{}{Nech si to pro sebe.}
+{118}{}{Lidi jako ty tady nepotøebujeme.}
+{119}{}{Brána je támhle. Zkus se vypaøit.}
+{120}{}{Pouštní odpad...}

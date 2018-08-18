@@ -1,0 +1,214 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#corrected by birdman@post.cz
+{100}{}{Vidíš upøímnì se dívající, zdatnou mladou enu se zamraèenım oblièejem.}
+{101}{}{Vidíš Maidu Bucknerovou, dceru paní Bucknerové.}
+{102}{}{Vidíš upøímnì se dívající, zdatnou mladou enu. Ohlíí se po tobì a na tváøi se jí zraèí
+ nevrlost.}
+
+{200}{}{Opravdu jsi mne rozhnìval. U vás, burany, nemohu ani vystát. A teï vypadni.
+ Barbaøi blbí, phe! (mumly mumly) ...neschopní, nièemní, líní...}
+{201}{}{Rozèiluješ mì ještì více ne Sulik! Nemám èas si s tebou vykládat. Jdi pryè.}
+{202}{}{U vás barbary nemohu ani vystát. Sbohem.}
+{203}{}{Hroznì lituji, e jsem se na tebe tak rozèilovala. Jen jsem nebyla obeznámena s dùvodem tvého pobytu zde. Aspoò vidíš, jak to v ivotì
+ chodí. (úsmìv)}
+{204}{}{Kruci, opravdu se ti omlouvám. Teï u vím, e jsem øádnì neznala barbary. Mùeš mi to
+ odpustit?}
+{205}{}{Jen nevím jak se správnì chovat, kdy je poblí nìkdo tak atraktivní jako ty. Vdycky znervózním
+ poblí krásné eny. Prosím, pøijmi moji omluvu.}
+{206}{}{Pøipadáš mi krásná a kultivovaná. árlila jsem na tebe. Odpus mi to, prosím.
+ Musím se ještì moc uèit, od en jako jsi ty.}
+
+{210}{}{Nazdárek, jmenuji se Maida Bucknerová. Pomáhám své matce s touhle hospodou - U Bucknerové. Mohu ti s nìèím pomoci?}
+{211}{}{Ungh?}
+{212}{}{Já }
+{213}{}{Eh? U Bucknerové?}
+
+{220}{}{Hmm - vidím, e tu nìkdo nestíhá sledovat, co øíkám. Proè si nejdeš radìji
+ popovídat s mım bratrem Torrem? Je malièko pomalejší a jeho rychlost uvaování ti jistì bude vyhovovat. Nashle.}
+
+{230}{}{Jmenuji se Maida Bucknerová; mám na starosti obchodování a prodej nápojù. Netoleruju ádné domorodce,
+ kteøí tu jen tak postávají a flákají se. Take jednej opatrnì, nebo skonèíš jako Sulik.
+ Co tedy chceš?}
+{231}{}{Jmenuji se Maida Bucknerová; mám na starosti obchodování a prodej nápojù. Co pro tebe mohu udìlat, pøíteli?}
+{232}{}{Zdravím tì, mùj dobrı pøíteli.}
+{233}{}{S èím ti mohu bıt nápomocna?}
+{234}{}{Jen buï nadále více zdvoøilı. Co chceš dìlat? S èím ti
+ mohu pomoci?}
+{235}{}{Mám na tebe pár otázek.}
+{236}{}{Hledám jen nìjaké místo, kde si chvíli odpoèinout.}
+{237}{}{Potøebuju koupit pár vìcí.}
+{238}{}{Chci nìco k pití.}
+{239}{}{Domnívám se, e nepotøebuji nic. Nashle.}
+
+{240}{}{Otázek, jo? Nue dáme se do nich. Povídání s tebou, mì zdruje od rozdìlané
+ práce.}
+{241}{}{Otázky? Nue, pusme se do nich.}
+{242}{}{Slyšela jsi nìkdy o vìci zvané Garden of Eden Creation Kit?}
+{243}{}{Povìz mi o Sulikovi.}
+{244}{}{Povìz mi o nìèem v Klamathu.}
+{245}{}{Jsou tu poblí nìjaká další mìsta?}
+{246}{}{Myslím, e to je prozatím všechno. Nashle}
+
+{250}{}{Moje matka se stará o pokoje. O tomhle si musíš promluvit s ní.}
+{251}{}{Okey, dìkuji. Ale je tu ještì nìco, co chci vìdìt.}
+{252}{}{Pùjdu se jí na to zeptat. Nashle.}
+
+{260}{}{Chceš obchodovat? Pokud máš, vdycky ráda koupím kvalitní geckonské kùe, a dávám za nì
+ dobrou cenu.}
+{261}{}{Chceš nìco koupit? Dobrá. Ale doufám, e máš na zaplacení i nìco jiného, ne geckonské kùe; tìch máme
+ momentálnì pøebytek.}
+{262}{}{Ano, chci s tebou obchodovat.}
+{263}{}{Momentálnì mne více zajímá nìco jiného.}
+{264}{}{Domnívám se, e teï obchodovat nepotøebuji. Nashle.}
+
+{270}{}{Znám pouze jednu cestu jak vytvoøit rajskou zahradu. A to - tvrdou prací. Ovšem, to je právì to,
+ s èím si vy, barbaøi, moc nerozumíte, e? No, a to je ten rozdíl mezi kultivovanım svìtem
+ a vámi samımi.}
+{271}{}{Uh, snad. Øekni mi ještì o nìèem jiném.}
+{272}{}{Jéé, vidím, e se musím hodnì uèit od vás, kultivovanıch. Jednou chci bıt velmi kultivovanı.}
+{273}{}{Kultivovaní? Myslíte si, e jste kultivovaní, kdy ijete v takovıch vyhoøelıch rozpadlinách mìsta, z doby
+ pøedváleèné? Povìz mi radìji o nìèem jiném.}
+{274}{}{Myslím, e to mi zatím staèí. Nashle.}
+
+{280}{}{A teï, je ještì nìco, co pro tebe mohu udìlat?}
+{281}{}{Po nìjakı èas nepotøebujeme geckonské kùe. Je nìco jiného, co pro tebe mohu udìlat?}
+{282}{}{No vlastnì, chci nìco jiného... chci obchodovat.}
+{283}{}{Máte pøíliš draho. Nejste zrovna levní. Pojïme mluvit o nìèem jiném.}
+{284}{}{Jsi tvrdá obchodnice, ale férová. Povìz mi o nìèem jiném.}
+{285}{}{To by zatím bylo vše. Nashle.}
+
+{290}{}{Poblí je pouze pár dalších mìst. Redding, daleko na jihozápad, a Den
+ nìkolik dní na jih. Ale bıt tebou, do Denu nechodím.}
+{291}{}{Proè nemám chodit do Denu?}
+{292}{}{Víš nìco o kmenech v okolí?}
+{293}{}{Díky za informace. Povìz mi o nìèem jiném.}
+{294}{}{To by bylo prozatím vše. Nashle.}
+
+{300}{}{Hmm, ale prosím, nepoèítej mìsta o kterıch jsem ti povìdìla, mezi kmeny. Tak tedy - myslím, e nìkde na severozápadì
+ jsou skupiny divokıch kmenù -- a pak, daleko na jihozápad, je Sulikùv kmen.}
+{301}{}{Tak to je dobrı. Tak mùj kmen se nepoèítá mezi mìsta, a pøitom øíkáš pøed-váleènım rozvalinám mìsta. Pojïme
+ mluvit o nìèem jiném.}
+{302}{}{Oh, tak ty iješ ve MÌSTÌ, okey... ale já pøece nemùu za to, odkud pocházím. Øekni mi
+ o nìèem jiném.}
+{303}{}{Povìz mi o Sulikovi.}
+{304}{}{Co víš o Denu?}
+{305}{}{Zajímavé. Chci se ještì na nìco zeptat.}
+
+{310}{}{Den není zrovna nejvhodnìjší místo, kam jít. Dokonce tam zotroèují takové hloupé bezbranné barbary jako jsi ty. Leí asi tıden
+ cesty na jih, ale mnoho lidí, kteøí tam šli se u nikdy nevrátili zpìt.}
+{311}{}{Povìz mi o místních kmenech.}
+{312}{}{A není náhodou Sulik tvùj otrok? Nebo ho chováš jako domácí zvíøe?}
+{313}{}{Zajímavé. Ještì se chci na nìco zeptat.}
+
+{320}{}{Sulik je barbar, kterı si zde odpracovává svùj dluh, zpùsobenı vlastní hloupostí. Není
+ otrok. Tady v Klamathu nemáme otroky.}
+{321}{}{Odpracovává svùj dluh? Co tím myslíš?}
+
+{330}{}{Podívej, Sulik to tu jeden veèer ponìkud pøehnal s chlastem. Došlo to tak daleko, e
+ mu nìjak pøeskoèilo a zaèal nièit náš majetek. Škody co tu zpùsobil, se vyšplhaly na $500. A tak si to tu
+ musí odpracovat.}
+{331}{}{Proè zaèal tak vyvádìt?}
+
+{340}{}{Øíkal e zjistil, e jeho sestra byla unesena otrokáøi. Ale moc víc o tom
+ nevím. Jestli chceš vìdìt víc, musíš se ho zeptat. Kadopádnì zde zùstane do té doby, dokud si neodpracuje co tu znièil.}
+{341}{}{Kolik si ještì musí odpracovat?}
+
+{350}{}{Dìlá to nìco kolem $350. Kdyby nebyl tak línı a neschopnı, u by byl dávno hotov.
+ Neodejde odsud, dokud mi plnì neodpracuje škody.}
+{351}{}{To je hodnì penìz. Myslím, e si tu pobude pìknì dlouho.}
+
+{360}{}{No, snad je pomalı, ale co se mu naøídí, to udìlá. (zadumanì se dívá)...
+(vytrena z pøemıšlení) Tak u by to tlachání snad staèilo; potøebuješ ještì nìco?}
+{361}{}{Mám nìjaké otázky.}
+{362}{}{Co kdyby nìkdo za Sulika zaplatil škody?}
+{363}{}{To je prozatím vše. Nashle.}
+
+{370}{}{Nevím, proè by nìkdo chtìl platit jeho dluh, ale co by ne? Dìlá to rovnıch $350.
+ Ale nedìlala bych to -- dostane se z jednoho problému, a zase spadne do druhého.}
+{371}{}{Nelíbí se mi, e je tady dren takovım fanatikem, jako jsi ty. Chci za nìj zaplatit škody.}
+{372}{}{Jistì je šastnı, e tu mùe pro tebe pracovat, ale pøesto ho chci odtud dostat. Myslím,
+ e by se nikomu nelíbilo bıt zde zavøenı.}
+{373}{}{Myslím to s ním dobøe, ale beztak nemám tolik penìz nazbyt. Nashle.}
+
+{380}{}{Nu, nebudu ti v tom bránit. Jestli chceš opravdu zaplatit co tu natropil...Tak si myslím, e všichni
+ barbaøi táhnou za jeden provaz.}
+{381}{}{Ano, chci. Mám dost penìz na splacení dluhu.}
+{382}{}{Snad je to pøíliš moc. Asi to nakonec pøece jen nezaplatím. Nashle.}
+
+{390}{}{Musíš bıt blázen. Jsem skuteènì ráda, e ten zatracenı (vzlyk) barbar (vzlyk) bude (vzlyk, vzlyk)
+ pryè. (vzlyk)}
+{391}{}{(vzlyk) Tak je to vıhodné pro obì strany, jeden idiotskı bratr zachraòuje druhého idiotského (vzlyk) divocha. Nebude mi
+ ani trochu chybìt.}
+{392}{}{Zdá se mi to, anebo ti bude Sulik opravdu chybìt? Ale on tì obèas pøijde
+ navštívit, urèitì. A teï, ještì nìco potøebuji.}
+{393}{}{Myslím, e Sulik se tìší a bude od tebe co nejdál pryè.}
+{394}{}{Díky; myslím, e u pùjdu.}
+
+{400}{}{Zpátky, co? Doufám, e se staráš o Sulika. Myslím, e je ztracenı, kdy mu teï neøíkám
+ co má dìlat.}
+{401}{}{Jsem zpátky, protoe nìco potøebuji.}
+{402}{}{To víš, tak dobøe jako ty, kdy tu byl u tebe, se o nìj nestarám, ale dìlám co mùu.}
+
+{420}{}{Asi bude lepší, kdy se zeptáš mámy, co se dìje ve mìstì.}
+{421}{}{Asi bude lepší, kdy se zeptáš mámy, co se dìje ve mìstì. Nevíš nìco o mém bratrovi Torrovi? Zdá
+ se, e utekl z domu, a máme o nìj starost.}
+{422}{}{OK, pùjdu si o tom promluvit s paní Bucknerovou. Ale ještì se chci na nìco zeptat.}
+{423}{}{Ne, o tvém bratrovi Torrovi nic nevím. Dám ti vìdìt, kdyby ano. Mám ještì nìjaké otázky,
+ prosím.}
+
+{430}{}{Dìkuji ti za nalezení mého bratra, Torra. Máma i já jsme se u hodnì strachovaly. Mohu pro tebe nìco udìlat?}
+{431}{}{Znovu ti dìkuji za nalezení mého bratra. Co pro tebe mohu udìlat?}
+{432}{}{Rád jsem pomohl Torra najít.}
+{433}{}{Rád jsem pomohl Torra najít, ale myslím, e momentálnì nic nepotøebuji. Nashle.}
+{434}{}{Rád pomáhám. Moná bys mi za to mohla projevit laskavost
+ a propustit Sulika?}
+
+{440}{}{Nevíš nìco o mém bratrovi Torrovi? Pøišli jsem kvùli nìmu o vìtší mnoství brahmín a máma ho pìknì seøvala. A kvùli tomu
+ utekl.}
+{441}{}{A jejej, a nevíš kam by tak mohl jít?}
+{442}{}{Je mi líto, kdy to tak poslouchám, ale teï potøebuji informace o nìèem jiném.}
+
+{450}{}{Nevím jistì kam by mohl jít, ale domnívám se, e utekl nìkam do kaòonu.
+ Poøád o nìm tak mluvil.}
+{451}{}{Kaòon? Jakı kaòon?}
+
+{460}{}{No, na vıchod odsud, tu máme kaòon kam chodíme pást brahmíny. A Torr vyprávìl neuvìøitelné historky
+ o lido-broucích pocházejících právì odtamtud. Øíkal, e tito obrovští lido-brouci zabíjejí naše brahmíny. Strašil pøedevším
+ sám sebe, tìmi bláznivımi historkami.}
+{461}{}{Zní to, e by to postrašilo kadého.}
+
+{470}{}{Myslím, e se by do toho kaòonu mìl nìkdo zajít podívat. Mohl by tak tøeba ukázat svoji stateènost. Jistì se najde
+ nìkdo kdo by ho pùjde najít, ...ne si ten blázínek ublíí.}
+{471}{}{Moná... zkusím se po nìm podívat.}
+{472}{}{Opravdu se omlouvám. Nejsem na to vhodnı typ. Jistì je v poøádku. Teï potøebuji nìjaké informace.}
+{473}{}{Bùhví kam tvùj blbej bratr šel -- proè si ho víc nehlídáte? Teï potøebuji nìjaké informace.}
+
+{480}{}{Budu ti moc vdìèná, jestli pùjdeš hledat mého bratra.}
+{481}{}{Pùjdu ho hledat.}
+{482}{}{Omlouvám se, ale na podobné akce nemám dost èasu. Nashle.}
+
+{500}{}{Díky moc. Beru zpìt všechno co jsem øíkala o barbarech. Prosím, najdi mi
+ mého bratra.}
+{501}{}{Najdu ho; s tím klidnì poèítej.}
+
+{510}{}{Našel jsi u mého bratra? Doufám, e se mu nic nestalo.}
+
+{520}{}{Nìco k pití? Ochutnej tuhle sklenku Bucknerovic Nejlepšího. Bude to za $5.}
+{521}{}{Oh... dobré pivo. A pìknì silnı.}
+{522}{}{Chci koupit rundu kadému tady v hospodì. Musím se pøece nìjak uvést. Jsem }
+{523}{}{ z Arroya.}
+{524}{}{Myslím, e piva u mám dost. Snad nìjaké informace.}
+
+{530}{}{Pití pro kadého. Ty, ty - ty jsi nìjakı boháè? Bude to za $30.}
+{531}{}{Snaím se jen zapadnout. A teï, mohu dostat nìjaké informace?}
+{532}{}{No, nakonec... radìji si koupím jen pro sebe.}
+{533}{}{Myslím, e se prozatím spokojím jen s nìjakımi informacemi.}
+
+{540}{}{Vypadá to, e nemáš dost penìz. }
+{541}{}{Uh, dobrá, tak aspoò nìjaké ty informace.}
+{542}{}{Oh, snad pøijdu pozdìji, a budu mít víc. Nashle.}
+
+{550}{}{Jsem skuteènì ráda, e ten zatracenı (vzlyk) barbar (vzlyk) bude (vzlyk, vzlyk)
+ pryè. (vzlyk)}
+
+{600}{}{[DÁLE]}

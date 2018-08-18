@@ -1,0 +1,21 @@
+#tento soubor pøeloil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš mutanta s lehce zkalenım zrakem.}
+{101}{}{Vidíš Elma, zpitého mutanta.}
+{102}{}{Vidíš mutanta, kterı na tebe jen s obtíemi upøel zrak.}
+{103}{}{Au, moje bolavá hlava.}
+{104}{}{Proè se vdycky musím vzbudit ve vìzení?}
+{105}{}{Zastavte nìkdo tu místnost, a se netoèí...}
+{106}{}{Øekl bych, e budu blejt.}
+{107}{}{Dobrı boe, slyš mùj pláè! Ooh, moje hlava...}
+{108}{}{Pssssst! Prosím! Psssst!}
+{109}{}{Kdo mi sebral stín?}
+{110}{}{Tenhle chlast šmakuje jako Marcusovy chcanky.}
+{111}{}{Nemáš nìjakı chlast?}
+{112}{}{Pøíteli, ízním.}
+{113}{}{Likérek...jeden bourbon, jednu skotskou, a pivo, a .. a naráz jsem ve vìzení.}
+{114}{}{Neukazuj mi jídlo, pryè s tím.}
+{115}{}{..nechoï do rohu, ...trochu sem tam nablil.}
+{116}{}{Pøíteli ...další noc s chlastem.}
+{117}{}{Chceš se prát? Sotva se drím na nohou.}
+{118}{}{::kolísá:: ::vrávorá::}
+{119}{}{Jsi mùj pøítel, cizinèe!}

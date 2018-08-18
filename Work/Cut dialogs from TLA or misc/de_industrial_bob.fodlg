@@ -1,0 +1,207 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Industrial_Bob_Repair_PA < 100 #
+20 1020 D _var p Industrial_Bob_Repair_PA = 100 @
+2 2000 None 1 #
+12 2010 D _var p Industrial_Bob_Repair_PA = 80 D _item p PID_TECHNICAL_MANUAL ! 0 R _script quest_server_scripts@technical_manual_80_to_100 0  R _item p PID_TECHNICAL_MANUAL - 1 #
+3 2020 D _var p Industrial_Bob_Repair_PA = -1 #
+0 2030 @
+3 3000 None 1 #
+5 3010 D _item p PID_PA = 0 D _item p PID_PAMKII = 0 D _item p PID_APA = 0 #
+4 3020 D _item p PID_PA ! 0 D or D _item p PID_PAMKII ! 0 D or D _item p PID_APA ! 0 #
+65505 3030 #
+15 3040 @
+4 4000 None 1 #
+6 4010 #
+0 4020 @
+5 5000 None 1 #
+6 5010 #
+0 5020 @
+6 6000 None 1 #
+7 6010 R _script quest_server_scripts@technical_manual_start 0  #
+0 6020 @
+7 7000 None 1 #
+9 7010 #
+8 7020 @
+8 8000 None 1 #
+0 8010 @
+9 9000 None 1 #
+10 9010 #
+11 9020 @
+10 10000 None 1 #
+11 10010 #
+7 10020 @
+11 11000 None 1 @
+12 12000 None 1 #
+13 12010 @
+13 13000 None 1 @
+15 14000 None 1 @
+20 15000 None 1 #
+21 15010 D _script repair@dlg_d_PrepareRepair 0  #
+0 15020 D _item p PID_PA = 0 D _item p PID_APA = 0 D _item p PID_PAMKII = 0 #
+0 15030 @
+21 16000 repair@dlg_PriceRepair 1 #
+22 16010 R _script repair@dlg_r_repair_pa 0  #
+0 16020 @
+22 17000 None 1 @
+100 18000 None 1 &
+
+[pols]
+{100}{}{'Szybki' Bob}
+{110}{}{ghoul2.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{after book quest}
+{2000}{}{Witaaam w moim warszztacie gladkoooskory. Cooo sprawaadza cie tuuu do mniee?@@Taaak?@@Haalloo?}
+{2010}{}{Mam dla ciebie Instrukcje Naprawy Pancerza Wspomaganego !}
+{2020}{}{Kim jestes?}
+{2030}{}{Wpadlem sie tylko przywitac.@@Przechodzilem obok i wpadlem sie przywitac.@@Tylko sprawdzam czy sie jeszcze trzymasz.@@ Sorry, pomylka.}
+{3000}{}{Jeeestem Booby... aaleee tutaj... do mnie mooowia Szzzybki... nie wieeem czeemuu.}
+{3010}{}{Sluchaj bo mam pewien problem. Czy znasz sie moze na naprawach pancerzy wspomaganych?}
+{3020}{}{Czy mozesz pomoc mi naprawic moj Pancerz Wspomagany?}
+{3030}{}{Ciekawe...@@Interesujace...}
+{3040}{}{Moze dlatego ze mowisz bardzo szybko ze ledwo nadazam ze sluchaniem?}
+{4000}{}{Nieeeech zoobacze... Hmmmy... Maaasz baaardzo nieetypoowy mooodel... aaale jeeestem w staanie goo naaaprawic...}
+{4010}{}{Tak? To swietnie a mozesz sie nim zajac?}
+{4020}{}{Tylko tyle chcialem wiedziec.}
+{5000}{}{Aaa czzzy szczur zzzna sie naaa kaaanalaaach?...
+oczzzywisscie zee tak... chyyyba.}
+{5010}{}{To swietnie! mam do naprawy jeden ale samemu sobie nie poradze.  Jestes wstanie sie tym zajac?}
+{5020}{}{Aha... dobrze wiedziec. Narazie}
+{6000}{}{Taak... ale potrzeeebuje Instruuukcje Naaprawy Paaanceeerza Wspomaa gaaaneeego}
+{6010}{}{Instrukcje naprawy pancerza wspomaganego?}
+{6020}{}{Maybe another time.}
+{7000}{}{Taak}
+{7010}{}{Tak?}
+{7020}{}{Skad go wezme?}
+{8000}{}{Jaak bym wieeedzial... too... byyym siee niee pyytal.}
+{8010}{}{Ok,dzieki. Jak znajde to dam znac.}
+{9000}{}{Taaak...}
+{9010}{}{Taaaak?}
+{9020}{}{Niee?}
+{10000}{}{Tak?}
+{10010}{}{Taaak?}
+{10020}{}{Nie?}
+{11000}{}{Niee...}
+{12000}{}{Okeyyy... Zaabieram sie doo czyyytania. Jaak skooncze wrooc doo mniee z paaancerzeem...}
+{12010}{}{Mam nadzieje ze skonczysz w tym roku...@@Boje sie spytac ile ci to zajmie...}
+{13000}{}{Juzz skoonczyleeem}
+{14000}{}{Chyyba taaak...}
+{15000}{}{Czzeess... Maasz dlaaa mnie doo naapraawy jakis paanceerzyk wspoomagaaany?}
+{15010}{}{Tak, mam pancerz o ktorym mowilem. Zerknij na niego i powiedz ile bedzie kosztowac mnie jego naprawa.}
+{15020}{}{Niestety nie ale jak tylko cos bedzie to wpadne tu.}
+{15030}{}{Wpadlem sie tylko przywitac ze starym przyjaciel.}
+{16000}{}{Nieee jeeest az taak zlee... czeesci do naaaprawy beeeda kooosztowac tyyylko @lex price@ .@@Naaaprawa beedziee kooosztowac @lex price@ .}
+{16010}{}{OK, trzymaj kase.}
+{16020}{}{Akurat nie mam tutaj tyle. Ale wroce jak nazbieram.}
+{17000}{}{Skooonczylem...
+Twooj paancerz jesst jaak noowyy.}
+{18000}{}{Aale... nie maasz tyyyle kaasy@@Jaaaka kaase?}
+
+[engl]
+{100}{}{'Quick' Bob}
+{110}{}{ghoul2.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{after book quest}
+{2000}{}{Wwweeeeeeeelcommme to myyyyy woooorkshooop, smoooothssskiiinnn. Whaaat briiiings youu heeere?@@Yeesss?@@Helloooo?}
+{2010}{}{I brought you a repair manual on the T-51b Power Armor.}
+{2020}{}{Who are you?}
+{2030}{}{Just dropping by to say "hi."@@I was in the area and decided to pay you a visit.@@Just checking how you're holding up.@@Whoops, sorry.}
+{3000}{}{Myyyy naaaame isss Bob... buuut heeere... theeeey caaall meeee Speeeedyy Gonzaaaaless... nooooo ideeea whyyy.}
+{3010}{}{Listen, I have a problem. Do you know anything about repairing Power Armors?}
+{3020}{}{Can you help me fix my Power Armor?}
+{3030}{}{That's curious...@@Interesting...}
+{3040}{}{Gee whiz, I don't know. Could it perhaps be because of the extraordinary speed at which you talk?}
+{4000}{}{Leeeeeeet meeee sseeee... Yeeessssss... Yooouur aaarrmoooor iisss a raaaare maaake... buuuut I shouuuuld beeee aabllle toooo fiiiix iiiit aallll riiiight.}
+{4010}{}{Really? That's great. Will you do it for me?}
+{4020}{}{That's all I wanted to know, thanks.}
+{5000}{}{Dooooessss aaa rraaat knoooow hiiisssss waaaayyy aarrooounnd theee ssseewweeerrssss? Oooobvviooussslllyyyy... I thiiinnnnnk.}
+{5010}{}{Excellent! I have one that I need fixed, but I lack the expertise to do it myself. Can you handle it?}
+{5020}{}{That's good to know. I'll see you around.}
+{6000}{}{Yyyeeeeessssssss... buuuut I neeeed aaa rrreeeepaaaairrrr mmmmaaannnnuuualllll ooooon theeeee Teeee fffffiiifffffftyyyyy-onnne beeeeee Poooowwweeerrr Aaarrrrmmmooorrrr.}
+{6010}{}{A repair manual on the T-51b Power Armor?}
+{6020}{}{Maybe another time.}
+{7000}{}{Yyyyeeeessssss.}
+{7010}{}{Yes?}
+{7020}{}{Where can I get hold of one of those?}
+{8000}{}{Iiiiiiiiffff I knnnneeeew... I'd geeeet iiit myyysssseeellllffff.}
+{8010}{}{All right then. If I find it, I'll let you know.}
+{9000}{}{Yyyeeeesss...}
+{9010}{}{Yyyyeeeesss?}
+{9020}{}{Nnnnooooo?}
+{10000}{}{Yes?}
+{10010}{}{Yeessss?}
+{10020}{}{No?}
+{11000}{}{Nnooo...}
+{12000}{}{Goooood... wwwheeennnnn I aaam doooooooooonne reeeeadinnnng, coooommmme baaaackkk toooo mmmmeeee wwwiiiithh theeeee aaarrmmoooorrrrr.}
+{12010}{}{Here's to hoping you'll manage to finish reading this year...@@I dread to think how long this could take...}
+{13000}{}{I'mmmm dooooonneeee.}
+{14000}{}{I thiiiinnnk ssssoooo...}
+{15000}{}{Hhhiiii... gooot annny Poooowwweeerrr Aaarrrrmmmooorrrrs yyooouuu nnneeed rreeepaaairrred?}
+{15010}{}{Yeah, I've got the armor I told you about right here. How much will the repair set me back?.}
+{15020}{}{Not at the moment, but when I have one, I'll be sure to bring it here.}
+{15030}{}{Just checking on my old friend.}
+{16000}{}{Iiiit'sss nnnooot toooo baaaad... theeee paarrrtsss wwiillll cooossst yyyouuuu ooonnlllyyy @lex price@ .@@Theee wwwooorrkkmmaaaannnsshiiip cooosst wwwiillll beee @lex price@ .}
+{16010}{}{Fair enough, here's the money.}
+{16020}{}{I don't have enough money. I'll check back with you later.}
+{17000}{}{Dooooonnne. Yyyyooouurrr arrrmmmmooorr iissss aaassss gooood aassss nnnew.}
+{18000}{}{Buuuut... yyyooou dooonnn't haaavvve enooughh mmooonneeyyy.@@Whaaaat mmmooonneeyyy?}
+
+[russ]
+{100}{}{'Quick' Bob}
+{110}{}{ghoul2.png}
+{1000}{}{Predialogue installations}
+{1010}{}{first talk}
+{1020}{}{after book quest}
+{2000}{}{Wwweeeeeeeelcommme to myyyyy woooorkshooop, smoooothssskiiinnn. Whaaat briiiings youu heeere?@@Yeesss?@@Helloooo?}
+{2010}{}{I brought you a repair manual on the T-51b Power Armor.}
+{2020}{}{Who are you?}
+{2030}{}{Just dropping by to say "hi."@@I was in the area and decided to pay you a visit.@@Just checking how you're holding up.@@Whoops, sorry.}
+{3000}{}{Myyyy naaaame isss Bob... buuut heeere... theeeey caaall meeee Speeeedyy Gonzaaaaless... nooooo ideeea whyyy.}
+{3010}{}{Listen, I have a problem. Do you know anything about repairing Power Armors?}
+{3020}{}{Can you help me fix my Power Armor?}
+{3030}{}{That's curious...@@Interesting...}
+{3040}{}{Gee whiz, I don't know. Could it perhaps be because of the extraordinary speed at which you talk?}
+{4000}{}{Leeeeeeet meeee sseeee... Yeeessssss... Yooouur aaarrmoooor iisss a raaaare maaake... buuuut I shouuuuld beeee aabllle toooo fiiiix iiiit aallll riiiight.}
+{4010}{}{Really? That's great. Will you do it for me?}
+{4020}{}{That's all I wanted to know, thanks.}
+{5000}{}{Dooooessss aaa rraaat knoooow hiiisssss waaaayyy aarrooounnd theee ssseewweeerrssss? Oooobvviooussslllyyyy... I thiiinnnnnk.}
+{5010}{}{Excellent! I have one that I need fixed, but I lack the expertise to do it myself. Can you handle it?}
+{5020}{}{That's good to know. I'll see you around.}
+{6000}{}{Yyyeeeeessssssss... buuuut I neeeed aaa rrreeeepaaaairrrr mmmmaaannnnuuualllll ooooon theeeee Teeee fffffiiifffffftyyyyy-onnne beeeeee Poooowwweeerrr Aaarrrrmmmooorrrr.}
+{6010}{}{A repair manual on the T-51b Power Armor?}
+{6020}{}{Maybe another time.}
+{7000}{}{Yyyyeeeessssss.}
+{7010}{}{Yes?}
+{7020}{}{Where can I get hold of one of those?}
+{8000}{}{Iiiiiiiiffff I knnnneeeew... I'd geeeet iiit myyysssseeellllffff.}
+{8010}{}{All right then. If I find it, I'll let you know.}
+{9000}{}{Yyyeeeesss...}
+{9010}{}{Yyyyeeeesss?}
+{9020}{}{Nnnnooooo?}
+{10000}{}{Yes?}
+{10010}{}{Yeessss?}
+{10020}{}{No?}
+{11000}{}{Nnooo...}
+{12000}{}{Goooood... wwwheeennnnn I aaam doooooooooonne reeeeadinnnng, coooommmme baaaackkk toooo mmmmeeee wwwiiiithh theeeee aaarrmmoooorrrrr.}
+{12010}{}{Here's to hoping you'll manage to finish reading this year...@@I dread to think how long this could take...}
+{13000}{}{I'mmmm dooooonneeee.}
+{14000}{}{I thiiiinnnk ssssoooo...}
+{15000}{}{Hhhiiii... gooot annny Poooowwweeerrr Aaarrrrmmmooorrrrs yyooouuu nnneeed rreeepaaairrred?}
+{15010}{}{Yeah, I've got the armor I told you about right here. How much will the repair set me back?.}
+{15020}{}{Not at the moment, but when I have one, I'll be sure to bring it here.}
+{15030}{}{Just checking on my old friend.}
+{16000}{}{Iiiit'sss nnnooot toooo baaaad... theeee paarrrtsss wwiillll cooossst yyyouuuu ooonnlllyyy @lex price@ .@@Theee wwwooorrkkmmaaaannnsshiiip cooosst wwwiillll beee @lex price@ .}
+{16010}{}{Fair enough, here's the money.}
+{16020}{}{I don't have enough money. I'll check back with you later.}
+{17000}{}{Dooooonnne. Yyyyooouurrr arrrmmmmooorr iissss aaassss gooood aassss nnnew.}
+{18000}{}{Buuuut... yyyooou dooonnn't haaavvve enooughh mmooonneeyyy.@@Whaaaat mmmooonneeyyy?}
+

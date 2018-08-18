@@ -1,0 +1,8 @@
+{100}{}{Tu vois un distributeur de Nuka-cola et tu te demandes s'il marche encore.}
+{101}{}{[tchink tchink klonk... pshiii]}
+{102}{}{Tu attrapes une canette tiède de Nuka-cola.}
+{103}{}{Mmmmmmhh !}
+{104}{}{Tu évites la canette de Nuka-cola.}
+{105}{}{ évite la canette de Nuka-cola avec habileté.}
+{106}{}{La machine ne semble plus avoir de canettes.}
+

@@ -1,0 +1,18 @@
+#tento soubor prelozil Patrik "GENIE" Lipina
+{100}{}{Poèítaèový terminál.}
+{101}{}{Vypadá pøesnì jako bezpeènostní terminál.}
+{102}{}{Nemùžeš pøeèíst text na obrazovce.}
+{103}{}{Skynet - Bezpeènostní systémy
+                                    Pøístup odepøen}
+{104}{}{}
+{105}{}{Konec}
+{106}{}{Chyba!
+                                                                 Program nenalezen
+                                              Prosím, restartujte}
+{107}{}{}
+{108}{}{}
+{109}{}{Konec}
+
+
+{200}{}{ nemùže rozeznat text na monitoru.}
+{300}{}{Vypadá to, že v poèítaèi je nìjaký obranný mechanismus.}

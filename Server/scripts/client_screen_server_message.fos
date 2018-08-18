@@ -1,0 +1,42 @@
+#include "_client_defines.fos"
+#include "client_gui_h.fos"
+#include "_colors.fos"
+
+IGUIElementTextOpt @ServerMessageTextOpt;
+IGUIElementTextOpt @ServerMessageGlobalMapTextOpt;
+IGUIElementTextOpt @ServerMessageInfoRewardTextOpt;
+IGUIElementTextOpt @ServerMessageInfoKilledTextOpt;
+
+uint ServerMessageDissappearTime=0;
+uint ServerNoteDissappearTime=0;
+
+void InitServerMessageScreen()
+{
+	@ServerMessageTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",__ScreenWidth/2-150,100)
+	  .TextOptions(FONT_FALLOUT, COLOR_SM, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,500)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	@ServerMessageGlobalMapTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GLOBAL_MAP,"",__ScreenWidth/2-150,100)
+	  .TextOptions(FONT_FALLOUT, COLOR_SM, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,500)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	
+	@ServerMessageInfoRewardTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",__ScreenWidth/2-200,100)
+	  .TextOptions(FONT_FALLOUT, COLOR_BLUE, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(300,500)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+	  
+	@ServerMessageInfoKilledTextOpt=
+	GUI_AddText(CLIENT_MAIN_SCREEN_GAME,"",__ScreenWidth/2-200,100)
+	  .TextOptions(FONT_BIG, COLOR_BLUE, FT_BORDERED|FT_CENTERX)
+      .TextBoxSize(400,600)
+	  .AbsolutePosition(true)
+	  .Visible(false);
+}

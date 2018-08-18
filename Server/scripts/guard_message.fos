@@ -1,0 +1,72 @@
+#include "_defines.fos"
+#include "_npc_pids.fos"
+#include "_macros.fos"
+#include "_itempid.fos"
+#include "npc_planes.fos"
+#include "_teams.fos"
+#define FactionId ParamBase[DREAM_PLAYER_MAIN_FACTION]
+import void GuardsKillPlayerWhoAttack(Critter& player) from "guardskillplayer";
+
+void GuardMessage(Critter& npc, Critter& cr, int num, int val)
+{
+	if(npc.Cond!=COND_LIFE) return;
+	switch(num){
+	case 124://npc red
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	case 999://all
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+	case 994://red
+		npc.DropPlanes();
+		npc.ClearEnemyStack();
+		break;
+	case 995://red
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	case 996://red
+		npc.DropPlanes();
+		npc.ClearEnemyStack();
+		break;
+	case 997://red
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	case 998://all
+		npc.DropPlanes();
+		npc.ClearEnemyStack();
+		break;
+	
+	
+	}
+}
+
+
+void _GuardSmthDropItem( Critter& npc, Critter& fromCr, Item& item )
+{
+    if( fromCr.IsPlayer() && npc.IsLife() )
+    {
+        uint pid = item.GetProtoId();
+        if( pid == PID_ACTIVE_PLASTIC_EXPLOSIVE || pid == PID_ACTIVE_MINE || pid == PID_ACTIVE_DYNAMITE )
+        {
+            AddAttackPlane( npc, 0, fromCr );
+        }
+    }
+}
+
+bool _GuardsAttacked(Critter& npc, Critter& attacker)
+{
+	if(attacker.StatBase[ST_TEAM_ID]!=TEAM_Guard)
+	{
+		npc.SendMessage(124,attacker.Id,MESSAGE_TO_ALL_ON_MAP);
+		_NpcEraseAllPlanesAttack(npc);
+		AddAttackPlane(npc,0,attacker,true);
+		return true;
+	}
+	return false;
+}
+
+
+

@@ -1,0 +1,39 @@
+#tento soubor pøeloil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš mue v kovové zbroji.}
+{101}{}{Vidíš Joshuu.}
+{102}{}{Vidíš mue, jen má na sobì kovovou zbroj se záøící pøezkou, na které jsou odznaky.}
+{103}{}{Ahoj,}
+{104}{}{. Jmenuji se Joshua. Co pro tebe mohu udìlat?}
+{105}{}{Jak víš jméno?}
+{106}{}{Jak víš, jak se jmenuju?}
+{107}{}{Tvoje poslední èiny k nám pøitáhly pozornost. Jedni mluví a druzí poslouchají a slova jsou slyšet všude kolem. Ale dobøe si pamatuj - jsi pouze malá rybka v oceánu plném ralokù, }
+{108}{}{.}
+{109}{}{Co to znamená?}
+{110}{}{Co tím myslíš?}
+{111}{}{Øeknìme, e jsi nové "dítì na sídlišti" a nevíš, co se dìje v sousedství. Zaèínáš se teprve rozhlíet. Avšak vìz, e se to rozroste mnohem víc ne v pouhı jeden úkol...}
+{112}{}{Pokraèuj.}
+{113}{}{Pokraèuj, poslouchám.}
+{114}{}{Pro teï jsem ji øekl dosti. Myslím, e bude lépe, kdy se vrátíš ke své práci.}
+{115}{}{Poèkej, potøebuji se zeptat na otázku.}
+{116}{}{Poèkej, potøebuji ti poloit nìjaké otázky.}
+{117}{}{Dobøe, máš povolenu jednu otázku. Co to bude?}
+{118}{}{Víš, kde najdu GECK?}
+{119}{}{Víš, kde najdu Vault 13?}
+{120}{}{Sháním obchodníka Vica. Kde ho najdu?}
+{121}{}{Víš, kde se dá najít GECK?}
+{122}{}{Víš, kde se nachází Vault 13?}
+{123}{}{Potøebuji sehnat obchodníka jménem Vic. Nevíš, kde je?}
+{124}{}{GECK bylo standardní vybavení pro všechny Vaulty. Jestli mi pamì dobøe slouí, tak byly pouívány pro Vaulty urèené k pøestavbì civilizace. Mohu pouze pøedpokládat, e jeden by se mohl nalézat v nìjakém dosud neotevøeném Vaultu. Hodnì štìstí.}
+{125}{}{Díky.}
+{126}{}{Slyšel jsem mnoho pøíhod o Vaultu 13 a v ádné z nich nebylo ani slovo o tom, kde se nachází. Hodnì štìstí.}
+{127}{}{Díky.}
+{128}{}{Vic má co do èinìní s Cechem otrokáøù. Tam ho moná najdeš. Hodnì štìstí.}
+{129}{}{Poèkej! Kde najdu ten Cech?}
+{130}{}{Vic má co do èinìní s Cechem otrokáøù. Tam ho moná najdeš. Hodnì štìstí.}
+{131}{}{U nemám nic, co bych ti øekl.}
+{132}{}{. Dobøe... Jistì máš za sebou dlouho cestu vıvoje, od obyèejného domorodce. Doporuèuji ti navštívit naši kanceláø v New Californian Republic. Tøeba to oceníš. A teï, kdy dovolíš...}
+{133}{}{U nemám nic, co bych ti øekl.}
+{134}{}{Poèkej...}
+{135}{}{To je soukromá kanceláø.}
+{136}{}{Tam pro tebe nic není.}
+{137}{}{Tohle je soukromé vlastnictví, tak odejdi.}

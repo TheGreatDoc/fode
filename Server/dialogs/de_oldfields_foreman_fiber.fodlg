@@ -1,0 +1,89 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Old_Fields_Gordon_Job = -1 #
+3 1020 D _var p Old_Fields_Gordon_Job = 0 #
+4 1030 D _var p Old_Fields_Gordon_Job = 1 #
+7 1040 D _var p Old_Fields_Gordon_Job = 2 @
+2 2000 None 1 @
+3 3000 None 1 #
+6 3010 R _item p PID_KNIFE_DE + 1 R _script dialog@r_ToPlantationF 0  R _var p Old_Fields_Gordon_Job = 1 #
+0 3020 @
+4 4000 None 1 #
+5 4010 D _item p PID_FIBERS ! 0 R _item p PID_KNIFE_DE - 1 R _script dialog@r_fibers_tabaco 0  R _script dialog@r_FromPlantationF 0  R _var p Old_Fields_Gordon_Job = 0 #
+8 4020 D _item p PID_FIBERS = 0 R _item p PID_KNIFE_DE - 1 R _script dialog@r_FromPlantationF 0  R _var p Old_Fields_Gordon_Job = 0 #
+0 4030 @
+5 5000 None 1 #
+0 5010 @
+6 6000 None 1 @
+7 7000 None 1 @
+8 8000 None 1 &
+
+[pols]
+{100}{}{Foreman fibers field}
+{1000}{}{Predialogue installations}
+{1010}{}{no job}
+{1020}{}{have job}
+{1030}{}{work on field}
+{1040}{}{have debt}
+{2000}{}{Nie mam teraz czasu na rozmowe.@@Nie widzisz ze pracuje?@@Gadaj z bossem jak szukasz pracy.@@Lepiej juz idz bo jak boss zobaczy ze znow gadam w pracy to potraci mi dniowke@@Jesli cie to interesuje to Boss szuka pracownikow.}
+{3000}{}{W czym ci pomoc?@@ Czego...@@ Cos potrzebujesz?@@Nie widzisz ze jestem zajety?@@O co chodzi?}
+{3010}{}{Jestem od Gordona. Przyszedlem pracowac przy zbiorach.@@Ja w sprawie pracy przy zbiorach.}
+{3020}{}{Sory pomylka.}
+{4000}{}{Juz skonczyles?@@ Widze ze nienapracowales sie...@@Przy takiej normie zbiorow nie zarobisz na zycie.}
+{4010}{}{Chcialbym juz zakonczyc prace. O to co zebralem.}
+{4020}{}{Jakos nie mam sily dzisiaj zbierac. Jednak zrezygnuje z pracy.}
+{4030}{}{W sumie niewazne...}
+{5000}{}{Niewiele tego... no ale coz. Oto twoja zaplata.@@Widze ze masz w tym wprawe. Oto twoja zaplata@@Ok, trzymaj kase.}
+{5010}{}{Dzieki}
+{6000}{}{No to do roboty.@@Nie stoj tak tylko pracuj.@@Do dziela mistrzu.}
+{7000}{}{Boss czeka na kase.@@Boss pytal o ciebie. Chodzi o jakas kase.@@Masz kase dla bossa?}
+{8000}{}{Cienias...@@Cipka...@@Co... bola raczki?@@Boli glowka?@@Nieprzyzwyczajony do roboty?@@Dwie lewe rece?@@Juz sie nabawiles odciskow?@@Tak sadzilem ze nie nadajesz sie do tej pracy.@@Nie zawracaj mi wiecej dupy.@@Ale sie narobiles...}
+
+[engl]
+{100}{}{Foreman fibers field}
+{1000}{}{Predialogue installations}
+{1010}{}{no job}
+{1020}{}{have job}
+{1030}{}{work on field}
+{1040}{}{have debt}
+{2000}{}{I've no time to talk right now.@@Can't you see I'm busy?@@You need a job, you talk to the boss.@@ You'd better go now. If the boss catches me chatting it up with you, it'll just give him another reason not to pay me.@@Not sure if you're interested, but the boss is always looking for new workers.}
+{3000}{}{What can I help you with?@@What is it?@@Anything you need?@@I'm a busy man.@@What's going on?}
+{3010}{}{Gordon sent me. I'm here to help with the harvest.@@I'm the new worker.}
+{3020}{}{Whoops, sorry!}
+{4000}{}{Are you done yet?@@Be careful not to overwork yourself, slacker.@@You need to work harder, or else you won't even be able to make ends meet.}
+{4010}{}{I'm calling it a day. Here's what I've got.}
+{4020}{}{I'm too tired to work today, sorry.}
+{4030}{}{Nevermind.}
+{5000}{}{That's not much, but it'll have to do for now. Here's your money@@Nice job. Here's you money.@@All right, here's your money.}
+{5010}{}{Thanks.}
+{6000}{}{Time to get busy.@@Less loitering around, more working.@@Come on, show me what you're made of!}
+{7000}{}{The boss wants his cash back.@@The boss has been asking around about you. I think it has something to do with the money he lent you.@@Ready to pay the boss back?}
+{8000}{}{Weakling...@@Pussy...@@What's the matter? Are your hands hurting?@@What was that? A *headache*?@@Not used to working in the field, city boy?@@All thumbs, eh?@@Got any blisters yet?@@You're no farm boy material, I knew that right from the start.@@Quit pestering me.@@Be careful not to overwork yourself...}
+
+[russ]
+{100}{}{Foreman fibers field}
+{1000}{}{Predialogue installations}
+{1010}{}{no job}
+{1020}{}{have job}
+{1030}{}{work on field}
+{1040}{}{have debt}
+{2000}{}{I've no time to talk right now.@@Can't you see I'm busy?@@You need a job, you talk to the boss.@@ You'd better go now. If the boss catches me chatting it up with you, it'll just give him another reason not to pay me.@@Not sure if you're interested, but the boss is always looking for new workers.}
+{3000}{}{What can I help you with?@@What is it?@@Anything you need?@@I'm a busy man.@@What's going on?}
+{3010}{}{Gordon sent me. I'm here to help with the harvest.@@I'm the new worker.}
+{3020}{}{Whoops, sorry!}
+{4000}{}{Are you done yet?@@Be careful not to overwork yourself, slacker.@@You need to work harder, or else you won't even be able to make ends meet.}
+{4010}{}{I'm calling it a day. Here's what I've got.}
+{4020}{}{I'm too tired to work today, sorry.}
+{4030}{}{Nevermind.}
+{5000}{}{That's not much, but it'll have to do for now. Here's your money@@Nice job. Here's you money.@@All right, here's your money.}
+{5010}{}{Thanks.}
+{6000}{}{Time to get busy.@@Less loitering around, more working.@@Come on, show me what you're made of!}
+{7000}{}{The boss wants his cash back.@@The boss has been asking around about you. I think it has something to do with the money he lent you.@@Ready to pay the boss back?}
+{8000}{}{Weakling...@@Pussy...@@What's the matter? Are your hands hurting?@@What was that? A *headache*?@@Not used to working in the field, city boy?@@All thumbs, eh?@@Got any blisters yet?@@You're no farm boy material, I knew that right from the start.@@Quit pestering me.@@Be careful not to overwork yourself...}

@@ -1,0 +1,80 @@
+{100}{}{Tu vois un technicien.}
+{101}{}{Tu vois un technicien de l'Enclave.}
+{102}{}{Tu vois un type qui porte une blouse de laboratoire. Il a l'air confiant et sûr de lui.}
+
+{103}{}{Oui, soldat ?}
+{104}{}{Moi pas ici depuis longtemps. Moi vouloir poser question.}
+{105}{}{Moi juste dire bonjour. Moi partir maintenant.}
+{106}{}{Je viens d'arriver ici et j'essaie de me familiariser avec la base. Puis-je te poser quelques questions ?}
+{107}{}{Je disais juste bonjour. A bientôt.}
+
+{108}{}{Bien sûr. J'ai quelques minutes.}
+{109}{}{En quoi puis-je t'être utile ?}
+{110}{}{Quoi être ici ?}
+{111}{}{Quoi être ton travail ?}
+{112}{}{Où base principale de l'Enclave ?}
+{113}{}{Moi chercher plans hélicos. Où moi trouver ?}
+{114}{}{Moi chercher explosif. Où moi trouver ?}
+{115}{}{Moi chercher centrale. Où moi trouver ?}
+{116}{}{Où bureau du Commandant ?}
+{117}{}{Moi partir maintenant.}
+{118}{}{Où suis-je ici ?}
+{119}{}{Quel travail fais-tu ici ?}
+{120}{}{Où se situe la base principale de l'Enclave ?}
+{121}{}{J'ai besoin de jeter un oeil sur les plans des hélicos. Où puis-je les trouver ?}
+{122}{}{Stocke-t-on des explosifs sur cette base ?}
+{123}{}{Peux-tu me dire où se trouve la centrale ?}
+{124}{}{Où est le bureau du Commandant de la base ?}
+{125}{}{Rien. Il faut que j'y aille.}
+
+{126}{}{Ici, c'est la tour de contrôle. D'ici, on peut contrôler les mouvements des hélicos.}
+{127}{}{Moi comprendre. Moi demander encore.}
+{128}{}{D'accord. J'ai encore quelques questions.}
+
+{129}{}{Je suis un technicien informatique, première classe. Je m'occupe de la maintenance de la liaison avec l'ordinateur central en bas.}
+{130}{}{Heu... ouais.}
+{131}{}{Bien. Continue à faire du bon boulot.}
+
+{132}{}{Ne viens-tu pas de là ?}
+{133}{}{Heu... non, moi venir du nord.}
+{134}{}{Non, en fait, je viens du nord.}
+
+{135}{}{Oh... Je ne savais pas qu'on avait un avant-poste là-bas. Bon, la base principale est au large de la côte de San Francisco.}
+{136}{}{Comment faire pour aller là-bas ?}
+{137}{}{Hum... Comment va-t-on là-bas ?}
+
+{138}{}{Par hélico, bien sûr. C'est le seul moyen, sauf si tu as un bateau ; c'est trop loin pour y aller à la nage.}
+{139}{}{Merci.}
+{140}{}{Merci.}
+
+{141}{}{Les plans des hélicos... Je ne vois pas pourquoi tu as besoin de savoir ça. Je te conseille de parler aux gens de la maintenance, à côté.}
+{142}{}{Ok.}
+{143}{}{Compris.}
+
+{144}{}{Tu dois aller à l'armurerie pour ça.}
+{145}{}{Moi essayer là-bas.}
+{146}{}{Entendu.}
+
+{147}{}{Tu devrais aller au bureau des communications et utiliser l'ascenseur là-bas. Quand tu sors, traverse la rue et c'est le premier bâtiment à ta gauche.}
+{148}{}{Compris.}
+{149}{}{Très bien.}
+
+{150}{}{Tu peux prendre cet ascenseur, là, aller en bas, tourner à gauche, descendre le hall et tu tomberas dessus.}
+{151}{}{Merci.}
+{152}{}{Génial. Merci}
+
+{153}{}{As-tu perdu la tête pour te promener sans uniforme ? Mets-toi en tenue !}
+{154}{}{Si le sergent te voit sans uniforme, tu vas te faire incendier.}
+{155}{}{Qu'est-ce que tu fais sans uniforme ?}
+
+{156}{}{Bon dieu !! Nous sommes envahis ! Alerte !!!}
+{157}{}{Des envahisseurs ! Appelez la garde !}
+{158}{}{Gardes ! Il y a des envahisseurs dans le bureau des communications !}
+
+{159}{}{Qu'est-ce qui se passe ? On nous attaque ?}
+{160}{}{Pourquoi une alerte ? Qu'est-ce qui se passe ?}
+{161}{}{Mais qu'est-ce qui se passe, bon dieu ?}
+
+{162}{}{Je ne suis qu'un technicien, ne me tue pas !}
+{163}{}{Je ne me suis pas engagé pour combattre, je suis juste un technicien !}
+{164}{}{C'est une blouse de labo, pas une armure ! J'me tire d'ici !}

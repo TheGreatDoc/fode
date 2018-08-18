@@ -1,0 +1,94 @@
+#tento soubor pøeložil Somnambulus - somnambulus@hotmail.com, http://www.geocities.com/Area51/Vault/4193/
+{100}{}{Vidíš statnì vypadající hlídku, která si tì prohlíží.}
+{101}{}{Vidíš jednoho z Ascortiho strážcù.}
+{102}{}{Vidíš strážce bedlivì sledujícího okolní lidi.}
+{103}{}{Dej ty pracky pryè.}
+{104}{}{Ta tvoje chamtivost tì bude nìco stát.}
+{105}{}{Nauè se aspoò nìco o trochu líp než tohle.}
+{106}{}{Myslíš že s tím mùžeš jen tak odejít?}
+{107}{}{Teï už tu nic neutratíš, milánku.}
+{108}{}{Za tuhle práci by mel být zvláštní pøíplatek.}
+{109}{}{A já jsem zrovna pøemýšlel o tom jak se nudím. Díky cizinèe.}
+{110}{}{A veèírek zaèíná.}
+{111}{}{To je teda ztroskotanec. }
+{112}{}{Ještì by sis mohl myslet, že to nìkdo umí líp než ty.}
+{113}{}{Jo taky jsem se právì zaèínal nudit.}
+{114}{}{Jó! Zábava zaèíná!}
+{115}{}{Tancuj!.}
+{116}{}{Pøipraven k tanci?}
+{117}{}{Ó ano, rozbal to, drsòáku.}
+{118}{}{Rád se podívám jak vypadají tvoje vnitønosti.}
+{119}{}{Jsem fakt rád, že nebudu muset uklízet ten svinèík, co tu nadìlají tvoje støeva.}
+{120}{}{Už týden jsem nezažil poøádnou rvaèku.}
+{121}{}{Ó ano, ó aaanoo!}
+{122}{}{Jde to dobøe.}
+{123}{}{Nepokoušej se ojebávat zákazníky.}
+{124}{}{Teï uvidíš co obnášejí kompletní služby.}
+{125}{}{Nemùžeš napadnout hosty a pak klidnì odejít.}
+{126}{}{Tohle není to pravé místo, kamarádíèku.}
+{127}{}{Žáné vyrušování se netrpí.}
+{128}{}{Hrál jsi o svùj život a prohrál jsi.}
+{129}{}{Vypadá to, že tohle jsi podìlal.}
+{130}{}{Za vyprovokování rvaèky z tebe teï nadìlám kousky do polívky.}
+{131}{}{Ty smrade jeden.}
+{132}{}{Nemùžeš udìlat tohle a chtít to pøežít.}
+{133}{}{Nastal èas vyøadit tvùj vzorek z genofondu lidstva}
+{134}{}{Mìl bys to umìt líp.}
+{135}{}{Je mi líto, že k tomu muselo dojít.}
+{136}{}{Ty ubožáku.}
+{137}{}{Tady bude klid.}
+{138}{}{Vìø nám, nás to bolí víc než tebe.}
+{139}{}{Je èas platit, pøíteli.}
+{140}{}{Øíkal jsem ti neklepat. Škoda, žes neposlouchal.}
+{141}{}{Teï na tebe budeme ale opravdu oškliví.}
+{142}{}{Tohle bude opravdu bolet...ale tebe.}
+{143}{}{Radši zastrè tu pistolku, kamarádíèku.}
+{144}{}{Nechceme tu žádné problémy, pøíteli. Dej to pryè.}
+{145}{}{Radši dej tu vìcièku pryè.}
+{146}{}{Nech to pìknì v pouzdøe, milánku.}
+{147}{}{Dej tu zbraò pryè.}
+{148}{}{Radši koukej rychle vychladnout.}
+{149}{}{Dokud jsi tady, tak drž svoje ruèièky pìknì daleko od svých bouchaèek.}
+{150}{}{Schovej tu zbraò, pøítelíèku.}
+{151}{}{Lituju, ale musím vás požádat, abyste odložil Vaši zbraò.}
+{152}{}{Dej pryè tu zbraò. Chceme tu klid.}
+{153}{}{Nestojíme tu o žádné problémy.}
+{154}{}{Hraj férovì.}
+{155}{}{Zklidni se laskavì.}
+{156}{}{Vypadni.}
+{157}{}{Tady není nic zajímavého k vidìní.}
+{158}{}{Mìj se fajn.}
+{159}{}{Vítejte u Ascortiho.}
+{160}{}{Hraj v klídku a pohodì.}
+{161}{}{Mìj se fajn.}
+{162}{}{U Ascortiho vyhrává každý.}
+{163}{}{No a potom jim povídám: dejte ty ruce pryè z mýho....}
+{164}{}{Nemùžu uvìøit, že nìkdo mùže být tak blbej, aby se po tom válel.}
+{165}{}{Jupíí, jestli jsem nìkdy vidìl opravdovýho zelenáèe, tak je to tenhle.}
+{166}{}{Chlape, já se ale tak skvìle necejtím.}
+{167}{}{To je jeden z Ascortiho nej zákazníkù.}
+{168}{}{Psst, dávej bacha, šéf se na nás kouká.}
+{169}{}{Podívej, bylo úplnì stejné, jako už nejmíò dvacetkrát pøedtím....}
+{170}{}{Z toho Geckového koláèe mì pálí žáha.}
+{171}{}{Minulou noc pozdì v noci?}
+{172}{}{Z toho musíš mít asi poøádnou kocovinu, co?}
+{173}{}{Porušení pravidel, porušení pravidel.}
+{174}{}{Nemùžeš pøijít do našeho mìsta a tohle tu vyvádìt.}
+{175}{}{Nemùžeš tu dìlat takovéhle blbosti.}
+{176}{}{Lidi jako jsi ty tu nepotøebujeme.}
+{177}{}{Nìkdo s tebou bude muset vytøít podlahu.}
+{178}{}{V tomhle mìstì nìco smrdí a já myslím, že jsi to ty.}
+{179}{}{Cejtím nìjaký hovno... aha tady jsi.}
+{180}{}{Vypadni z našeho mìsta, hajzle.}
+{181}{}{Už pìknì dlouho jsem nenakopl nìèí lebku.}
+{182}{}{Za tohle se teï podívám, jak umíš krvácet.}
+{183}{}{Opravdu sis myslel, že si toho nevšimnu?}
+{184}{}{Nemùžu vìøit, že si dovoluješ dìlat takovouhle kravinu pøímo pøed mýma oèima.}
+{185}{}{Uh, promiò. VYKOPNÌTE TOHLE HOVNO VEN!}
+{186}{}{Pøestaò blbnout s tìma dveøma, ty idiote.}
+{187}{}{Co to dìláš?}
+{188}{}{Jéžiškriste, už ani ty zlodìji nemají dneska žádnou úroveò. }
+{189}{}{Vypadni od tìch dveøí.}
+{190}{}{Už na ty dveøe znova nesahej.}
+{191}{}{Vypadni od tìch dveøí.}
+{192}{}{Už na ty dveøe znova nesahej.}

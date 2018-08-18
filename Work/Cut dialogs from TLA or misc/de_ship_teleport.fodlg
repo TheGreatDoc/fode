@@ -1,0 +1,55 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 @
+2 2000 None 0 #
+3 2010 #
+0 2020 @
+3 3000 None 0 #
+0 3010 D _item p PID_BOTTLE_CAPS } 100 R _script dialog@r_TeleportToMap 0  #
+0 3020 &
+
+[engl]
+{100}{}{Ship captain}
+{110}{}{man1.png}
+{210}{}{You see a filthy, withered man.}
+{210}{}{You see the captain, he's missing a few teeth.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Oy there, stranger. Need a boat to the other side of the ol' channel?@@Hey there, mate. Wanna get across the channel?}
+{2010}{}{Yeah.@@Sure I do.@@Go on...}
+{2020}{}{No, not now. @@Not interested, thanks.}
+{3000}{}{O'rite, gimme 100 coins.@@Need 100 coins there, lad.@The fee is 100 coins.}
+{3010}{}{Okay, here you go.@@Here's 100 coins, let's get goin'.}
+{3020}{}{I don't have enough, sorry.@@Maybe some other time.@@Uh, I forgot I something, see you later.}
+
+[pols]
+{100}{}{Kapitan Statku}
+{110}{}{man1.png}
+{210}{}{Facet w њrednim wieku. Prawdopodobnie niema kilku zкbуw.@@Wygl№da na kapitana.}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj. Jestes zainteresowany transportem na druga strone?@@Niech zgadnк... Musisz dostaж siк na drug№ stronк?}
+{2010}{}{Tak}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Koszt to 100 kapsli.@@Dawaj 100 kapsli}
+{3010}{}{Prosze.@@O to 100 kapsli.}
+{3020}{}{Nie mam tyle.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{1010}{}{Start}
+{2000}{}{Witaj.Jestes zainteresowany transportem na druga strone}
+{2010}{}{Tak}
+{2020}{}{Nie, dziekuje}
+{3000}{}{Koszt to 100 kapsli.@@Dawaj 100 kapsli}
+{3010}{}{Prosze.@@O to 100 kapsli.}
+{3020}{}{Nie mam tyle.}
+

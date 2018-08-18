@@ -1,0 +1,54 @@
+[comment]
+
+
+[data]
+lang=engl pols russ
+
+[dialog]
+&
+1 1000 None 1 @
+2 2000 None 0 #
+65506 2010 #
+65506 2020 #
+0 2030 &
+
+[engl]
+{100}{}{Barter}
+{200}{}{You see: a merchant.}
+{210}{}{You see a merchant.}
+{220}{}{You see: a merchant.}
+{230}{}{You see an unconscious doctor.}
+{240}{}{You see: Dead doctor.}
+{250}{}{You see a dead doctor.}
+{260}{}{You see: Dead doctor.}
+{270}{}{You see a dead doctor.}
+{1000}{}{Predialogue installations}
+{2000}{}{How may I help you?@@Do you wanna trade?@@Interested in my wares?@@You wanna make some business?@@Want to go get down to business?@@You in for some tradin'?@@Interested in a small barter?}
+{2010}{}{I want to trade with you.}
+{2020}{}{Show me what you got.}
+{2030}{}{Nevermind.}
+
+[pols]
+{100}{}{Barter}
+{200}{}{Widzisz sprzedawcę.}
+{210}{}{Widzisz sprzedawcę.}
+{220}{}{Widzisz sprzedawcę}
+{230}{}{Widzisz nieprzytomnego doktora.}
+{240}{}{Widzisz nieżywego doktora.}
+{250}{}{Widzisz nieżywego doktora.}
+{260}{}{Widzisz nieżywego doktora.}
+{270}{}{Widzisz nieżywego doktora.}
+{1000}{}{Predialogue installations}
+{2000}{}{Mogę w czymś pomóc?}
+{2010}{}{Chciałbym pohandlować.}
+{2020}{}{Pokaż swoje towary.}
+{2030}{}{Nieważne.}
+
+[russ]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+{2000}{}{How may I help you?}
+{2010}{}{I want to trade some with you.}
+{2020}{}{Show me what you got.}
+{2030}{}{Nevermind.}
+

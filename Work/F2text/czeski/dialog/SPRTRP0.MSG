@@ -1,0 +1,18 @@
+#tento soubor prelozil MAG2
+#
+{100}{}{Vidíš vyvýšené místo. Vypadá to jako èást nìjaké pasti.}
+
+# NPC name prepends this line
+{101}{}{ vidí vyvýšené místo. Vypadá to jako souèást nìjaké pasti.}
+
+{102}{}{Vidíš vyvýšené místo.}
+
+# NPC name prepends this line
+{103}{}{ uvidìl vyvýšené místo.}
+
+{104}{}{Tvou neopatrností se aktivovala past a jen tak tak se vyhýbáš støele, která vyletìla ze zdi.}
+
+# NPC name prepends this line
+{105}{}{ svou neopatrností aktivoval past a jen tak tak se vyhnul støele, která vyletìla ze zdi.}
+
+{106}{}{Vidíš vyvýšené místo. Nevypadá nebezpeènì.}

@@ -1,0 +1,35 @@
+{100}{}{Tu vois un enfant.}
+{101}{}{Un enfant.}
+{102}{}{C'est un enfant qui ressemble aux autres enfants.}
+{103}{}{Tu as l'air méchant.}
+{104}{}{Ne me fais pas de mal, d'accord ?}
+{105}{}{Qu'est-ce que tu as aux yeux ?}
+{106}{}{C'est ça un gaijin ?}
+{107}{}{Qu'est-ce que t'es ?}
+{108}{}{Est-ce qu'il y a des gens qui t'aiment bien ?}
+{109}{}{Tu ne vas pas faire de mal à ma maman et à mon papa, hein ?}
+{110}{}{Je vais jouer.}
+{111}{}{Ha ha ! Binoclard !}
+{112}{}{Neu-neu à l'horizon ! Neu-neu à l'horizon !}
+{113}{}{::les yeux des enfants s'écarquillent au passage de Marcus::}
+{114}{}{Ca c'est un grand monsieur vert.}
+{115}{}{Pourquoi le monsieur porte une jupe ?}
+{116}{}{Cet homme veut ressembler à une fille ?}
+{117}{}{Ahhhh ! Tribale !}
+{118}{}{Hé, m'sieur ! Tu as un os dans le nez !}
+{119}{}{Ahhhh ! Un zombie !}
+{120}{}{Maman, est-ce que cet homme est contagieux ?}
+{121}{}{Ah le gentil chien ! Bon toutou !}
+{122}{}{Ahhhh ! Un monstre !}
+{123}{}{Attention, le neu-neu pot de colle !}
+{124}{}{C'est ta maman ?}
+{125}{}{A l'aide ! Il y a un robot derrière moi !}
+{126}{}{A l'aide ! Il y a un robot derrière moi !}
+{127}{}{Il fait chaud là-dedans ? Coucou ? Tu m'entends ?}
+{128}{}{Qui es-tu ? Tu es un être humain ?}
+{129}{}{Tu es drôlement grand.}
+{130}{}{Whoaaaaaah !}
+{131}{}{Ne me fais pas mal !}
+{132}{}{::en pleurant::}
+{133}{}{Au secours, maman !}
+

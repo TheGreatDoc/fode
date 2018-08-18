@@ -1,0 +1,37 @@
+#tento soubor pøeložil Vachy - http://vachy.moje.cz
+{100}{}{Vidíš zchøadlého starého ghoula.}
+{101}{}{Vidíš jednoho z mnoha starých ghoulù.}
+{102}{}{Už jsem moc unavený.}
+{103}{}{Už jsem unaven èekáním, èekáním na NÍ.}
+{104}{}{Kdy pùjdu do hajan?}
+{105}{}{Co to tady smrdí! Jéje, to jsem asi já.}
+{106}{}{Už jsou 4 hodiny? Chci veèeøi!}
+{107}{}{Wow, už jsem si hodnì dlouho nesundal svojí umìlou nohu!}
+{108}{}{Nevidìl nìkdo moje zuby?}
+{109}{}{Kde je moje jídlo?}
+{110}{}{SMRT! To je to, na co èekám! Tady jsem!}
+{111}{}{Ahoj, Billy! Jsem rád, že ses na mì pøišel podívat.}
+{112}{}{Pøipadám si jako alien.}
+{113}{}{A hele, mùj šourek!}
+{114}{}{Nemá nìkdo náhodou moje plíny?}
+{115}{}{Mám tolik vìdomostí, co bych chtìl pøedat, ale necítím se na to.}
+{116}{}{Ghoulové už nejsou co bejvali... ach!}
+{117}{}{Žádná oucta... nikdo už nikoho nerespektuje.}
+{118}{}{Pamatuji ještì Seta...}
+{119}{}{Jakpak se asi má starej Jed v Gecku.}
+{120}{}{Máš rád mutanty? Já jo.}
+{121}{}{Mám rád brambory! Miluju je smažené a miluju je jako kaši!}
+{122}{}{Mám hlad!}
+{123}{}{Chtìl bych tady mít kytièku.}
+{124}{}{Nerad chodím na procházky.}
+{125}{}{Stejnì tomu starýmu dolu brzo dojde uran.}
+{126}{}{Že nejsi z Vault City?}
+{127}{}{Pamatuju ještì bitvy, co se udály v Necropolis... to ale bylo...}
+{128}{}{Povìz mi jak se dostat do Vault...}
+{129}{}{...co jsem to øíkal?}
+{130}{}{::zív::}
+{131}{}{::prrrrrd::}
+{132}{}{Už nemám co bych øekl!}
+{133}{}{Potøebuju si dát dvacet.}
+{134}{}{Je mi zima a všude kolem jsou vlci.}
+{135}{}{Psi pøestanou vyplazovat jazyky pøesnì v tý hodinì co umøou!}

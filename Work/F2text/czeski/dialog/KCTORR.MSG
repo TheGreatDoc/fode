@@ -1,0 +1,155 @@
+#Pøeloil birdman@post.cz, http://www.mujweb/cz/www/birdman, 0604 540689
+{100}{}{Vidíš velkého mue pokrytého prachem. Na tváøi má mírnì pøipitomìlı vıraz.}
+{101}{}{Vidíš Torra Bucknera, mìstského prosáèka.}
+{102}{}{Vidíš velkého, svalnatého mue ve špinavém obleèení, pokrytého špínou a prachem. Na tváøi má pøipitomìlı úsmìv.}
+
+{110}{}{Ty zlá! Ty biješ Torr. Ty pryè deš hned!}
+{111}{}{Bì zlá osobá! Nebiješ Torr.}
+{112}{}{Jaùù! Pryè jdeš!}
+{113}{}{Nebij Torr u víc.}
+{114}{}{Torr hodná. Nebij Torr}
+{115}{}{Torr zranìná. Zlej chlap! Zlej chlap pryè di!}
+
+{120}{}{Pomoz Torr! (Pomo mi prosím tì. Je tady nìjaké stvoøení, které mi zabraòuje v útìku z tohoto místa.)}
+{121}{}{Pomoz Torr!}
+{122}{}{ Torr pomohla. (Jdu  ti pomoct, jenom ještì chvilku vydr!)}
+{123}{}{Pomùu ti, Torre.}
+
+{130}{}{Písk písk zlá! Pomohla Torr! (Dej si pozor na Ducha, kterı chodí! Promluvíme si, a mì odsud dostaneš..)}
+{131}{}{Písk Písk! Ack! Duch zlá! Zlá! Pomohla Torr! Torr pryè chceti!}
+{132}{}{Ook Torr. (To je rozumné, Torre. Vypadneme odtud..)}
+{133}{}{Promluvíme si pozdìji, teï odtud musíme vypadnout.}
+
+{140}{}{Já seš Torr (Jsem Torr. Mùu ti nìjak pomoct?)}
+{141}{}{Já seš Torr}
+{142}{}{Ty Torr (Ahoj, Torre. Mám na tebe pár otázek.)}
+{143}{}{Rád tì poznávám, Torre. Nestalo se tady v poslední dobì nìco zajímavého?}
+
+{150}{}{Já hlídkovala bù bù pøede broukachlapama (Hlídám brahmíní stádo naší rodiny pøed zuøivımi noèními útoky,
+ které provádìjí dvounohé bytosti pokryté chitinovım pancíøem, kterım øíkám Brouèí Lidé.)}
+{151}{}{Já hlídkovala bù bù pøede broukachlapama.}
+{152}{}{Chlapobrouka? (Brouèí lidé? No, to zní jako vıstinı název pro to, cos mi právì popsal. Povìz mi o nich víc.)}
+{153}{}{Broukachlapama?}
+
+{160}{}{Broukochlap kradla bùbù dy noc. Torr strach! Pomohla Torr? (No, jak jsem øekl, mají noèní stravovací návyky.Urèitì by se mi hodila
+nìjaká pomoc pøi hlídání. Pomùeš mi zabít Brouèí Lidi, kteøí by se dostali blízko k brahmínám?)}
+{161}{}{Broukochlap kradla bùbù dy noc. Torr strach! Pomohla Torr?}
+{162}{}{Pomohla Torr na bùbù. (Jistì, pomùu ti zabránit uchvácení brahmín tvé rodiny tìmito Brouèími lidmi.)}
+{163}{}{Broukouchlapo oni zlá. Nepomohla Torr. (Hmm, nemyslím, e by ti má pomoc teï k nìèemu byla. Ale pøeju ti s nimi hodnì štìstí. 
+Nashledanou..)}
+{164}{}{Uh...jistì, Torre. Pomùu ti ohlídat brahmíny}
+{165}{}{Nemùu (vrtíš hlavou) ti s tím pomoct. Sbohem.}
+{166}{}{Obchoïák znala Torr? (Ne se tam vydáme, Torre, nevíš nìco o obchodníkovi, kterı ije tady ve mìstì?}
+
+{170}{}{Ty pomohla Torr. Pole bùbù (ukazuje na vıchod) tmavá. (usmívá se) (Díky za pomoc. Dnes v noci ji opravdu budu potøebovat.)}
+{171}{}{Ty pomohla Torr. Pole bùbù (ukazuje na vıchod) tmavá. (usmívá se)}
+{172}{}{ pomohla Torr. (Pomùu ti. Setkáme se na pastvinì pøi západu slunce.)}
+{173}{}{Torr? (Pomùu ti hlídat brahmíny, ale chci se tì ještì na pár vìcí zeptat.)}
+{174}{}{Pomùu ti hlídat brahmíny. Setkáme se na pastvinì pøi západu slunce.}
+{175}{}{Dnes v noci ti nemùu pomoct hlídat brahmíny, Torre. Nashle.}
+
+{180}{}{Torr øekla? (Co chceš vìdìt, pøíteli?)}
+{181}{}{ tady! (Povìz mi nìco o tom, co se tady dìje.)}
+{182}{}{ Chrrrrr. Ouk? (Potøebuju místo k pøespání.)}
+{183}{}{Chceš! (ukazuješ na vìci)(Kde mùu obchodovat?)}
+{184}{}{GGG ek? (Slyšels nìkdy o vìci zvané GECK?)}
+{185}{}{Šla Torr. (To mi zatím staèí, Torre.)}
+
+{190}{}{Ook! Broukochlap, bár-bár Sulika, Radar chybíš. (No, tak je tady ten mùj problém s Brouèími lidmi, pak je tady barbar Sulik,
+ kterı si u mámy odpracovává dluh -- mám dojem, e je do nìj sestra zamilovaná. A mámin pøítel, chlápek jménem Radar, se ztratil nìkde na západì.
+ V poslední dobì je tady nìjak ivo.)}
+{191}{}{Torr? (Dìje se toho tady spousta. Ještì se tì chci na nìco zeptat.)}
+{192}{}{Ook! (Tolik informací mi prozatím staèí. Nashledanou.)}
+
+{200}{}{Chrrrr? Torr Chrrrr. (No, mùeš pøespat u mnì. Zadarmo, pochopitelnì.)}
+{201}{}{Torr Chrrrrrrr? (Necháš mì u sebe pøespat? To je od tebe opravdu milé, hned toho vyuiju, u skoro spím. Díky.)}
+{202}{}{Chrrrrr? (Teï se mi zrovna nechce spát, ale díky za nabídku, moná ji vyuiju pozdìji.
+Ale mám na tebe ještì pár otázek..)}
+{203}{}{Chrrr Ne Torr. (Teï momentálnì spánek nepotøebuju, ale díky za nabídku. Nashledanou, Torre..)}
+
+{210}{}{Buckner! Zlátág nene(Myslím, e nejlepší ceny budeš mít u nás, Bucknerù. U Zlatého Gecka se ti jenom vysmìjí.)}
+{211}{}{Uckner? (Díky, nakoupím tam. Ale teï se tì ještì chci zeptat....)}
+{212}{}{Zlátág nene. (Dobrá rada. Ale teï stejnì nic nepotøebuju. Nashledanou.)}
+
+{220}{}{GGGék? Vic Gék! (Take hledáš GECK? Ty byly døíve ve vaultech, ne? Nevím, kde by se dalo nìco takového sehnat,
+ ale pokud to nìkdo ví, bude to obchodník Vic. Specializuje se na pøedváleèné zboí. ije v severovıchodní èásti Klamathu.)}
+{221}{}{Gék Vic?  (Díky, zeptám se Vica. Ale ještì se tì chci zeptat...)}
+{222}{}{Gék Vic, okej! (Díky, zajdu za ním. Nashledanou.)}
+
+{229}{}{Torr ráda }
+{230}{}{. Torr dìkovala. Broukochlap fuj fuj, nenechala brokouchlap papat bùbù! (Dìkuju ti za pomoc, z tìhle brouèích lidí mi bìhá mráz po zádech.
+Doufám, e u o ádné další brahmíny nepøijdeme.)}
+{231}{}{. Torr dìkovala. Broukochlap fuj fuj, nenechala brokouchlap papat bùbù!}
+{232}{}{Torr. (Kdy jsme tu dva, tak nám urèitì ádnou brahmínu nevezmou.)}
+{233}{}{Doufám, e zabráníme tìm vìcem v útoèení na tvé bùbù. Teda brahmíny. Nemyslím, e by si nìco zkusili, kdy jsme tu oba dva.}
+{234}{}{Vlastnì tì jdu varovat. Támhle, na druhé stranì skály, je nìkolik Brouèích lidí! Pohlídám bùbù za tebe a ty utíkej pro pomoc!}
+
+{240}{}{Ook? pomohla bùbù pomohla Torr? Ne broukochlap! Broukochla zlá! (Pomùeš mi bránit brahmíny pøed útokem
+Brouèích lidí?)}
+{241}{}{Ook? pomohla bùbù pomohla Torr? Ne broukochlap! Broukochla zlá!}
+{242}{}{ pomohla bùbù pomohla Torr (Ano, jdu ti pomoct bránit brahmíny proti brouèím lidem. Pokud tu budeme oba, nedostanou
+ani jeden kus!)}
+{243}{}{Ne pomoc. (Promiò, ale já tudy jenom procházím. Nemùu ti pomoct. Sbohem.)}
+{244}{}{Uh, ano; Jdu ti pomoct bránit brahmíny - bùbù- pøed brouèími lidmi.}
+{245}{}{Vlastnì tì jdu varovat. Támhle, na druhé stranì skály, je nìkolik Brouèích lidí! Pohlídám bùbù za tebe a ty utíkej pro pomoc!}
+{246}{}{Sorry, Torre. Mám moc práce na to, abych tady stál s bandou brahmín, a u mají dvì nebo ètyøi nohy.}
+
+{249}{}{Torr miluješ }
+{250}{}{. Torr miluješ máma. Torr miluješ táta. (Jsem opravdu rád, e jsi mì zachránil. U jsem myslel, e to nepøeiju.)}
+{251}{}{. Torr miluješ máma. Torr miluješ táta.}
+{252}{}{Torr dobrá. (To nic nebylo, urèitì bys udìlal to samé pro mì. Ale chci se tì na nìco zeptat.)}
+{253}{}{Torr heh, heh, heh. (No, vypadals fakt srandovnì, hlídanı robotem. Dej si pøíštì víc pozor. Sbohem.)}
+{254}{}{Torre, buï opatrnìjší, dobøe? Sbohem, Torre.}
+{255}{}{Nemáš ani páru, co ti øíkám, co? Ty stupidní kreténe. Kvùli tobì bylo málem bylo po mnì. Sbohem.}
+
+{260}{}{Broukochlapa zlej. Tor bojíš.}
+{261}{}{Torr vidìla brouhochlap bác bác bùbù!}
+{262}{}{Bùbù bolíš!}
+{263}{}{Brokochlapi chodíš z kaòona!}
+{264}{}{Torr vidíš mrtvej broukopchlap.}
+{265}{}{Heh heh heh.}
+{266}{}{Leonard?}
+{267}{}{Duntoni zlá.}
+{268}{}{Maso mòam.}
+{269}{}{Torr silná.}
+{270}{}{Ook?}
+{271}{}{Zugzug.}
+{272}{}{Blabla?}
+{273}{}{Aroo?}
+{274}{}{Torr musíš lulu}
+{275}{}{AHoj.}
+{276}{}{Èau.}
+{277}{}{Torr!}
+
+{279}{}{Torr vidíš }
+{280}{}{! (Vítej, pøíteli. Mùu ti s nìèím pomoct?)}
+{281}{}{ vídíš Torr! (No, vlastnì se tì chci zeptat na pár vìcí.)}
+{282}{}{Torr, ahój. (Rád tì zase vidím, Torre, ale jenom procházím. Mìj se.)}
+
+{300}{}{Torr jdeš pro pómoc! (Torr zmizel v temnotì a nechal tì s bùbù, teda s brahmínami.)}
+{301}{}{Brouka mrtvej. Bùbù v pezbéèi. Torr dìkovala.}
+
+{400}{}{Ty pomohla Torr. Bùbù na pole (ukazuje na vıchod) támhle teï. (usmívá se) (Díky za pomoc, opravdu ji budu potøebovat.)}
+{401}{}{Ty pomohla Torr. Bùbù na pole (ukazuje na vıchod) támhle teï. (usmívá se)}
+{402}{}{ Pomohla Torr. (Pùjdu s tebou na pastvinu na vıchod od mìsta.)}
+{404}{}{Pomùu ti ohlídat brahmíny, Torre.}
+{405}{}{Teï ti s hlídáním nemùu pomoct, Torre.}
+
+{500}{}{Nebij bùbù.}
+{501}{}{Torr pomohla bùbù.}
+{502}{}{Zlej enská! Zlej! Nebij bùbù!}
+{503}{}{Jdeš pryè, zlej chlape!}
+{504}{}{Zlej enská! Zlej! Deš pryè!}
+{505}{}{Zlej chlap, zlej! Nebij bùbù!}
+{506}{}{Nebij Torrova bùbù!!}
+{507}{}{Torr jdeš zachránila bùbù!}
+
+{600}{}{Torr, dìkovala. Torr teï okej. Ty jdeš.}
+
+{700}{}{Óbchoïák? V Klmath? Ik v Den. (Obchodník tady v Klamathu? No, Vic tady prodává staroitnosti.
+ Momentálnì není ve mìstì. Myslím, e obchoduje v Denu, to je na jih odtud.)}
+{701}{}{Groo! (Dìkuju ti, Torre. Tak, co jsi to øíkal o tìch predátorech?}
+{702}{}{Grok! Torr! (Mnohokrát ti dìkuji, Torre. Bohuel musím odejít, ale pøeju ti hodnì štìsti 
+ ve tvém dalším chovu dobytka. Nashledanou, pøíteli Torre.)}
+
+{800}{}{Torr byl zachránìn.}

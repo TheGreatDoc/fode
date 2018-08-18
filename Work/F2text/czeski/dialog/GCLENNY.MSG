@@ -1,0 +1,269 @@
+#tento soubor pøeloil Mawerick - mawerick@mybox.cz, http://rpg.game-star.cz
+{100}{}{Vidíš obzvláštì malého, staršího ghoula.}
+{101}{}{Vidíš Lennyho, Haroldova asistenta.}
+{102}{}{Vidíš malého, staršího ghoula. Vypadá zamyšlenì.}
+
+{110}{}{Dobrı den, jmenuju se Lenny. J´jak ti mohu p´pomoct?}
+{111}{}{Je´ještì je´jednou dobrı den. J´jak ti mohu p´pomoct?}
+{112}{}{Vím, e jsi potomek Zakladatele. Víš, jednou jsem Zakladatele potkal.}
+{113}{}{Dobrı den. N´nemùu se p´pøestat d´divit, j´jak moc jsi p´podobnı Zakladatelovi. Co, co p´pro t´tebe mùu u´udìlat?}
+{114}{}{Dìdu? Kecáš.}
+{115}{}{Co tady dìláš?}
+{116}{}{Jsem zranìnı. Pomùeš mi?}
+{117}{}{Jeden mùj pøítel je ranìnı. Mùeš mu pomoct?}
+{118}{}{Moji pøátelé jsou ranìní. Pomùeš jim?}
+{119}{}{Lenny, u jsi nìkdy slyšel o nìèem jako je GECK?}
+{120}{}{Ty jsi potkal mého pøedka?}
+{121}{}{Jen se rozhlíím kolem. Nashle.}
+{122}{}{Mùeš zajistit ošetøení.}
+
+{125}{}{Ano. Co potøebuješ?}
+{126}{}{Myslím, e právì teï nepotøebuju nic.}
+
+{130}{}{M´mìl jsi o´odejít z v´vaší v´vesnice. J´jdi t´teï d´domù.}
+{131}{}{Domù? Nashle.}
+
+{140}{}{M´mìl b´bys j´jít d´domù.}
+{141}{}{N´nemùu si n´na t´tebe udìlat è´èas.}
+{142}{}{T'táhni. Jdi pryè!}
+
+{150}{}{G'GECK? Slyšel jsem, e jedna taková byla ve Vault City. Aspoò je to jediná, o které jsem kdy slyšel.}
+{151}{}{Jsem zranìn. Pomùeš mi?}
+{152}{}{Jedem mùj pøítel je ranìnı. Pomùeš mu?}
+{153}{}{Mùj pøedek, Zakladatel, øíkal, e Vault 13 nám jedno dluí. Musím to najít.}
+{154}{}{Myslím, e je to všechno, co potøebuju vìdìt. Nashle.}
+
+{160}{}{Pøevánì p´pomáhám H'haroldovi. K´kdy se lidé zraní, p´pomáhám j´jim.}
+{161}{}{S èím pomáháš Haroldovi?}
+{162}{}{Dovol abych se tì zeptal na nìco jiného.}
+{163}{}{Umíš léèit zranìní?}
+{164}{}{Jsem zranìn. Pomùeš mi?}
+{165}{}{Jeden mùj pøítel je zranìnı. Pomùeš mu?}
+{166}{}{Budu na to pamatovat, a budu zranìnı. Díky. Nashle.}
+
+{170}{}{U´uka mi to. M´myslím, ´e t´ti p´pomùu.}
+{171}{}{Bude mì to nìco stát?}
+{172}{}{Díky, Lenny. Dovol mi, abych se tì zeptal na nìco jiného.}
+{173}{}{Díky, Lenny. Nashle.}
+{174}{}{P´pomùu ti. A´ale b´bude tì t´to s´stát $30. Z´za materiál.}
+{175}{}{Myslím, e teï tvojí pomoc nepotøebuju. Nashle.}
+
+{180}{}{Tvùj p´pøítel by m´mohl p´potøebovat m´malou p´pomoc. M´mùu mu p´pomoct.}
+{181}{}{V´vypadá to, jako kdybyste se d´dostali do p´problémù. M´mùu Vám pomoci.}
+{182}{}{Bude mì to nìco stát?}
+{183}{}{Díky Lenny. Dovol mi, abych se tì zeptal na nìco jiného.}
+{184}{}{Díky Lenny. Nashle.}
+{185}{}{T´tvùj p´pøítel je z´zranìn. N´naprvím ho z´za $30. P´poøebuju p´peníze na m´materiál.}
+{186}{}{Co s'ste to lidi v'vyvádìli. V´vypadat j´jako ty, l'léèil bych se. M´musím ti naúètovat za uzdravení kadého $60 .}
+{187}{}{T´tvùj p´pøítel mi p´pøipadá ok.}
+
+{190}{}{Ve skuteènosti jsem n´nepotkal Z'zakladatele. Ale vidìl jsem ho. Jednou. }
+{191}{}{Ty jsi vidìl Zakladatele? Kde?}
+{192}{}{Oh, aha. Mám kam jít, mám vìci k zabíjení. Nashle.}
+
+{200}{}{P´pøed V´válkou jsem b´byl lékaøem.}
+{201}{}{Pøed válkou? Ale to muselo bıt skoro pøed 160 lety.}
+{202}{}{Oh; to to vysvìtluje. Díky. Nashle.}
+
+{210}{}{T´to je pravda. Zdá se, e radiace n´nám g´ghoulùm p´prodlouila ivot. Samozøejmì, témìø všechno ostatní znièila.}
+{211}{}{Znièila?}
+{212}{}{Zdá se, e všechno má své pro i proti. Nashle.}
+
+{220}{}{A´ano. Vypadáme j´jako vošukanı buzíci. N´nemáme ´ádnou kùi, šmankote.}
+{221}{}{Myslím, e u jsi mìl lepší dny.}
+{222}{}{Jako grupa, urèitì nejste ty z nejkrásnìjších na planetì. Nashle.}
+
+{230}{}{J´jak jen jsi mohl tohle øíct. V´vymìnil bych v´všechny ty roky za to, a´abych byl z´zase n´normální èlovìk.}
+{231}{}{Radìji v to nedoufat, domnívám se.}
+{232}{}{Vsadím se, e bys to udìlal. Nashle.}
+
+{240}{}{Kdyby se ti b´blázni ve Vault City p´podìlili o jejich medicínskou technologii, jsem si jistı, e bychom p´potlaèili r´radiaci a sami sebe vyléèili.}
+{241}{}{Oni vám nepomùou?}
+{242}{}{Myslím, e u jsem slyšel dost. Nashle.}
+
+{250}{}{U´u jsi b´byl ve Vault City? P´potom mi tedy m´mùeš øíct, co si m´myslíš o šancích, e ti náboenskı fanatici nám pomùou. T´to asi døív zamrzne p´peklo.}
+{251}{}{Je mi líto, e to slyším, ale myslím, e máš pravdu. Mùu se zeptat na nìco jiného.}
+{252}{}{Je mi to líto. Nashle.}
+
+{260}{}{N´ne. ´ivot je p´pøíliš krátkı -- heh, heh -- no, pro v´vìtšinu lidí -- krátkı ale sladkı ivot. Víš co? Je to nesmyslné mít ivot dlouhı.}
+{261}{}{Díky Lenny.}
+
+{270}{}{B´bylo t´to pøed mnoha lety. Na místì jménem N'necropolis. Mnoho z nás g'ghoulù tam ilo.
+ Jednou jsem vidìl, jak nìkdo bìí mìstem.}
+{271}{}{Bìí?}
+{272}{}{Myslím, e u mám dost tvıch mlhavıch vzpomínek. Nashle.}
+
+{280}{}{Ano, bìet. Jak vidíš, my ghoulové u nemùeme moc bìhat. Tak, kdy jsem je vidìl, vìdìl jsem, e to jsou nìjací odjinud. Bìely, tak blízko mì, e jsem se jich mohl témìø dotknout. Ké bych se tak pøipojil k Zakladateli....}
+{281}{}{Ty jsi se chtìl pøipojit k mım prapøedkùm?}
+{282}{}{Jo, pochybuju, e by mí pøedkové vzali mezi sebe takovou bezmasou zrùdu, jako jsi ty. Nashle.}
+{283}{}{Uh, strašnì rád bych slyšel ten pøíbìh celı, ale mám nìco na práci. Nashle.}
+
+{290}{}{Ano. M´mìl jsem šanci na ivot, ale zahodil jsem ji.}
+{291}{}{Co tím myslíš?}
+{292}{}{To jsou ty zlomy. Nashle.}
+
+{300}{}{P´pozdìji, jsem se d´doslechl, e Zakladatel opravil náš vodní systém. Z'zakladatel nás zachránil -- nás všechny. Rozumíš? Nezáleelo mu na tom, e jsme ghoulové. Pro jednou to nevadilo.
+ B´byly jsem znovu lidé. Hodnı záchrany.}
+{301}{}{Moji pøedkové byli zakladateli našeho rodu. Tuto památku mají moji lidé v úctì.}
+{302}{}{Jde mi jen o jedno, zachránit mùj rod. Ostatní a se starají sami o sebe. Nashle.}
+
+{310}{}{Pozdìji, slyšel jsem, e Zakladatel znièil zdroj armády m´mutantù. Z'zakladatel nás všechny zachránil. Èlovìk a ghoul stejnì... mohl jsem se toho zúèastnit, ale ztratil jsem odvahu. Nikdy jsem si to neodpustil.}
+{311}{}{Jdu ve šlépìjích mıch pøedkù. Chceš další šanci? Pùjdeš se mnou?}
+{312}{}{Jsem si jist, e ta práce, co tu mezi ghouly dìláš má cenu a smysl. Jsem rád, e jsem slyšel o mıch pøedcích. Mùu se na nìco zeptat?}
+{313}{}{Nìkde hluboko uvnitø jsou mnozí lidé zbabìlci. Není to nic, za co by se bylo tøeba stydìt. Jsi jenom slabı. Nashle.}
+{314}{}{Èasto není pravá cesta zøejmá. My všichni tu máme svùj zvláštní cíl. Díky za to, e jsi mi povìdìl o mıch pøedcích. Nashle.}
+
+{320}{}{Jsem š´šastnìjší, ne b´brahmínní bık na pastvinì-plné krav! B´bude mi ctí se k tobì p´pøipojit.
+ M´moná jsem starı a nemùu se p´pohybovat p´pøíliš rychle, alespoò ne moc dlouho, ale urèitì ti mùu píchnout, kdy to budeš p´potøebovat.}
+{321}{}{Jsem rád, e se ke mì mùeš pøipojit. Jsem si jistı, e se tvoje léèitelské schopnosti budou hodit.}
+{322}{}{Hmm, pro takového starce, jako jsi ty, by to mohlo bıt pøíliš obtíné. Radìji bys mìl zùstat tady. Je mi líto. Nashle.}
+
+{330}{}{Mám tady práci. N´nemùu jít s tebou.}
+{331}{}{V´vùbec n´nejsi jako tvoji pøedci. Z´znevauješ jejich p´památku.}
+{332}{}{M´musíš se o ´ivotì ještì m´moc uèit. N´nelíbí se mi, co jsi se a dosud d´dozvìdìl.}
+{333}{}{Je mi líto, e se nemùeš ke mì pøidat.}
+{334}{}{Jeez, myslíš, e kus hnijícího masa, jako ty by dostal šanci dostat se z tıhle mìstskı umpy.}
+
+{340}{}{P´pomáhám H'haroldovi øídit mìsto. J´je to vdycky dost p´papírování.}
+{341}{}{Co jsi øíkal, e tady ještì dìláš?}
+{342}{}{Myslím, e je to všechno, co jsem chtìl pro tuhle chvíli vìdìt. Nashle.}
+
+{350}{}{N´nemìl jsi dost p´penìz... a´ale stejnì  jsem tì z toho d´dostal. P´prostì n´nemùu vidìt, kdy lidi t´trpí.}
+{351}{}{Nemùu ti dost podìkovat, Lenny. Avšak potøebuju ještì nìjaké informace.}
+{352}{}{Díky, Lenny. Jsem tvùj dluník. Nashle.}
+{360}{}{Je tu t´tolik l´lidí. U n´nepotøebuješ moji p´pomoc. H´hodnì štìstí.}
+
+{370}{}{Nikdy jsem si n´nemyslel, e se d´doèkám d´dne, kdy se b´budu stydìt, e jsem souèástí toho co dìláš. Ty znevauješ památku Zakladatele. Sbohem.}
+{371}{}{Jak víš, m´myslel jsem, e to b´bude hezkı p´putovat s t´tebou. Ale jsi j´jenom nevrlı a t´tvrdohlavı jako brahmínní bık s kaktusem na prdeli. A ani n´nesmrdíš o moc l´lépe. Sbohem.}
+{372}{}{Je mi líto, e odcházíš, Lenny.}
+{373}{}{Mùeš to zaøídit, jo? Mnoo, radši bys mìl odtáhnout s tou svojí na pùl shnilou prdelí nebo si to rozmyslím a dám ti ochutnat mojí kulku.}
+{374}{}{*Burp* Jo, cokoliv. Hádám, e máš nìco jiného na práci, ne trávit všechen svùj volnı èas vzpomínkami na to, jaké to bylo mít kùi, která nevypadá jako tøi mìsíce stará mrtvola na silnici
+ v èervenci. Vypadni odtud, ty zkurvenı monstrum.}
+{375}{}{Ok.}
+
+{380}{}{C´co chceš abych u´udìlal?}
+{381}{}{Lenny, vím, e to ve skuteènosti jenom zkoušíš. Ale jdi mi z cesty.}
+{382}{}{Potøebuju, abys bojoval jinak, Lenny.}
+{383}{}{Potøebuju, abys tu poèkal.}
+{384}{}{Doktore, uzdrav se sám.}
+{385}{}{Potøebuju nìjakou léèbu Lenny.}
+{386}{}{Potøebuju, abys tady uzdravil nìkteré z mıch pøátel.}
+{387}{}{Potøebuju, abys nás uzdravil.}
+{388}{}{Jak to dìláš, veteráne?}
+{389}{}{Teï u od tebe nic dalšího nepotøebuju, Lenny.}
+
+{400}{}{Chceš, abych b´bojoval j´jinak?}
+{401}{}{Chci, abys zmìnil rozestupy.}
+{402}{}{Chci, abys pouil svojí nejlepší zbraò.}
+{403}{}{Chci, abys pouil svoje nejlepší brnìní.}
+{404}{}{Chci, abys bojoval jinak.}
+{405}{}{Nevadí.}
+
+{410}{}{J´jak d´daleko chceš, abych byl? Víš, je pro mì tìké dosáhnout.}
+{411}{}{Chci, abys stál jenom kousek ode mne.}
+{412}{}{Chci, abys udroval polovièní vzdálenost.}
+{413}{}{Chci, abys udroval velkou vzdálenost.}
+{414}{}{Potøebuju, abys šel na prùzkum.}
+{415}{}{Nevadí.}
+{420}{}{C´co chceš, abych u´udìlal?}
+{421}{}{Chci, abys pro teï bojoval defenzivnì.}
+{422}{}{Potøebuju, abys bojoval normálnì.}
+{423}{}{Potøebuju, abys bojoval agresivnì.}
+{424}{}{Nevadí.}
+
+{430}{}{M´myslím, e n´nemùeš nauèit starıho psa n´novım kouskùm. Co takhle k´kop.}
+{431}{}{N´nezdá se mi, e to chápu.}
+{432}{}{Ok.}
+
+{440}{}{Oh, Ok. B´budu tady èekat, dokud se n´nevrátíš. D´dej mi šanci, abych dal o´odpoèinou svım bolavım k´kloubùm.}
+{441}{}{Ty to zvládneš, Lenny. Nashle.}
+{442}{}{Mìl bys tu poèkat. Jo a ještì jedna vìc...}
+{443}{}{Nevadí.}
+
+{450}{}{Ch´chystám se o´opatøit si v´vìtší p´pušku.}
+{451}{}{Vem si svojí nejlepší zbraò, Lenny.}
+{461}{}{Vem na sebe svoje nejlepší brnìní, Lenny.}
+{462}{}{Lenny, potom co si oblékneš sve nejlepší brnìní, je tu ještì nìco jiného, co od tebe potøebuju.}
+{463}{}{Nevadí.}
+
+{470}{}{To je d´dobrı nápad. Divil jsem se, kdy jsme s tím pøestali. U´urèitì se zraním.}
+{471}{}{M´mìl bys mì n´nechat p´podívat se na t´tvoje r´rány.}
+{472}{}{Zdá se, e nìkdo potøebuje, abych ho znovu vyléèil.}
+{473}{}{Jdi a uzdrav se sám.}
+{474}{}{Uzdrav se sám, a potom je tu ještì nìco jiného, co poøebuju, abys udìlal.}
+{475}{}{Jdi a uzdrav mì, prosím.}
+{476}{}{Uzdrav mì, a potom je tu ještì nìco jiného, co potøebuju, abys udìlal.}
+{477}{}{Jdi a uzdrav nás.}
+{478}{}{Uzdrav nás,  a potom je tu ještì nìco jiného, co potøebuju, abys udìlal.}
+{479}{}{Nevadí.}
+
+{480}{}{N´nemohu to u´udìlat. N´nejsem ve skuteènosti ádnı zvìd.}
+{481}{}{Oh, ok. Nevadí.}
+
+{490}{}{P´pøilepím se t´tìsnì k tobì.}
+{491}{}{Teï stùj blízko, Lenny.}
+{492}{}{Stùj blízko, a je tu nìco jiného, co potøebuju, abys taky udìlal.}
+{493}{}{Nevadí.}
+
+{500}{}{H´hádám, e n´nechceme tolik z´zlehèovat c´cíl huh?}
+{501}{}{Nebuï tak blízko, Lenny. Chci je pøinutit, aby pracovali na tom, aby nás zasáhli.}
+{502}{}{Nepøibliuj se tolik. Je tu ještì nìco jiného, co od tebe taky potøebuju.}
+{503}{}{Nevadí.}
+
+{510}{}{Ok, b´budu stát o t´trochu d´dál. V´vypadá to, jakoby by tì lidi chtìli p´pøevánì z´zabít.}
+{511}{}{Potøebuju, abys ses drel zpátky pro tvojí vlastní bezpeènost. S tím, jak smrdíš, se nedá absolutnì nic dìlat.}
+{512}{}{Pøed tím, ne vyrazíme, potøebuju abys pro mì ještì nìco udìlal.}
+{513}{}{Nevadí.}
+
+{520}{}{Dával jsem na sebe dobrej pozor po celé ty roky.}
+{521}{}{Jenom potøebuju, abys byl opatrnı, kdy se dostaneme do boje.}
+{522}{}{Chci se ujistit, e se ti nic nestane. Sakra, jsi staroitnost. Ještì jedna vìc, aèkoliv...}
+{523}{}{Nevadí.}
+
+{530}{}{Jedinı zpùsob jak to udìlat.}
+{531}{}{Jenom bojuj, tak jak jsi zvyklí, a mìli bychom bıt v pohodì.}
+{532}{}{Uvolni se a normálnì bojuj. Ještì jedna vìc...}
+{533}{}{Nevadí.}
+
+{540}{}{N´nemùu to udìlat. B'bojování je právì všechno, co tyhle s'staré k'kosti po svém rodu zdìdili.}
+{541}{}{OK. Nevadí.}
+
+{1000}{}{C´co ch´chceš, abych u´udìlal?}
+
+{1100}{}{B´bude mi fajn.}
+{1200}{}{Mám malé z´zranìní, ale mùu jít d´dál.}
+{1300}{}{To je d´dobrı nápad. D´divil jsem se, kdy jsme s tím p´pøestali. Urèitì jsem z´zranìnı.}
+{1400}{}{Teï potøebuju uzdravit nebo u´umøu.}
+
+{1500}{}{Oh, ok. P´poèkám tady, dokud se n´nevrátíš. D´dej mi šanci, abych d´dal odpoèinout svım b´bolavım k´kloubùm.}
+
+{1600}{}{Ok.}
+
+{1700}{}{N´nalepím se t´tìsnì k tobì.}
+{1800}{}{Hádám, e nechceme pøíliš zlehèovat c´cíl huh?}
+{1900}{}{Ok, budu s´stát o t´trochu d´dál. Z´zdá se, jakoby tì lidi pøevánì chtìli z´zabít.}
+
+{2000}{}{Je tu t´tak moc l´lidí. U moji p´pomoc n´nepotøebuješ. H´hodnì štìstí.}
+{2100}{}{Nikdy jsem si n´nemyslel, e se d´doèkám d´dne, kdy se b´budu stydìt, e jsem souèástí toho co dìláš. Ty znevauješ památku Zakladatele. Sbohem.}
+{2200}{}{N´nebyl jsem si j´jistı , e se v´vrátíš.}
+
+{2300}{}{Co je celou tu dobu s úprkem?}
+{2301}{}{Oh, promiò. Jdu ti z cesty.}
+{2302}{}{Rychle, rychle, rychle. OK, klídek, u jdu. Sorry, nechtìl jsem se ti plést do cesty.}
+{2303}{}{Je mi líto, nemùu se pohybovat rychleji. Pùjdu ti z cesty.}
+{2304}{}{Oh, ok, uhnu ti z cesty.}
+{2305}{}{Jen se odtud vypotácím.}
+{2306}{}{Nechci ti pøekáet.}
+{2307}{}{Oh, promiò.}
+
+{3000}{}{Moc špatnıch vìcí se dìjí kolem tebe. Odcházím, ne se mi nìco stane.}
+{3001}{}{Nebudu pomáhat vrahovi dìtí. Sbohem.}
+{3002}{}{Tvoje posedlost po krvi mì dìsí. U s tebou nejdu.}
+{3003}{}{Nechci mít nic spoleèného s otrokáøem. Sbohem.}
+{3004}{}{Jsi zrádce! Znièil jsi naší elektrárnu. Nepomùu ti.}
+{3005}{}{N´nechci m´mít s t´tebou nic s´spoleèného.}
+
+{4000}{}{Dobrá, ale urèitì tady nechci zùstat v téhle høe sám.}
+{4001}{}{V poøádku, kdy myslíš, e je to opravdu dobrı nápad.}
+{4002}{}{Nerad pouívám zbranì, pokud nemusím, ale pøedpokládám, e bych umìl pouít nù, myslím. Umím pouít pistoli, alespoò jsem to kdysi umìl. Kdybych opravdu musel, myslím, e bych umìl pouít samopal. Jenom kdyby nedìlaly takovı rámus. Jsem léèitel, ne bojovník.}
+{4003}{}{Sakra, doufám, e to nebudu potøebovat.}

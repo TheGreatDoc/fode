@@ -1,0 +1,297 @@
+// Author: Grzegorz "Atom" Jagiella
+// This file is public domain.
+#include "xml_h.fos"
+
+// Xml API attached at the end of this file.
+
+#define TARGET_FILE		"example.xml"
+
+void tmain()
+{
+	XmlDocument@ doc=NewXmlDocument(TARGET_FILE);
+	doc.LoadFile(XML_ENCODING_UNKNOWN);
+	if(doc.Error())
+	{
+		Log("Could not load "+TARGET_FILE);
+		return;
+	}
+
+	XmlElement@ root=doc.RootElement();
+
+	// Xml Iterator
+	for(XmlIt it(root,"child");!it.IsNull();++it)
+		Log(it.v().FirstChild().Value());
+
+	// Children and attributes
+	XmlElement@ elem=root.FirstChildElement("elem");
+	Log(elem.Attribute("param1"));
+	Log(elem.Attribute("param2"));
+
+	// Xml Handle
+	XmlHandle h(root);
+	XmlText@ n=h.FirstChild("subroot").FirstChild("subchild").FirstChild("subelement").FirstChild().ToText();
+	Log(n.Value());
+}
+
+//////////////////////////////////
+// Xml API and class interfaces //
+//////////////////////////////////
+
+/*
+
+XmlDocument@ ::NewXmlDocument(string&inout);
+
+class XmlText
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+	bool CDATA() const;
+};
+
+class XmlNode
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+};
+
+class XmlUnknown
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+};
+
+class XmlAttribute
+{
+	string@ Name() const;
+	string@ Value() const;
+	int IntValue() const;
+	double DoubleValue() const;
+	XmlAttribute@ Next() const;
+	XmlAttribute@ Previous() const;
+	bool opEquals(const XmlAttribute&in) const;
+	int opCmp(const XmlAttribute&in) const;
+};
+
+class XmlComment
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+};
+
+class XmlDeclaration
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+	string@ Version();
+	string@ Encoding();
+	string@ Standalone();
+};
+
+class XmlElement
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+	string@ Attribute(string&inout) const;
+	string@ Attribute(string&inout, int&inout) const;
+	string@ Attribute(string&inout, double&inout) const;
+	XmlAttributeQuery QueryIntAttribute(string&inout, int&inout);
+	XmlAttributeQuery QueryUnsignedAttribute(string&inout, uint&inout);
+	XmlAttributeQuery QueryBoolAttribute(string&inout, bool&inout);
+	XmlAttributeQuery QueryDoubleAttribute(string&inout, double&inout);
+	XmlAttributeQuery QueryFloatAttribute(string&inout, float&inout);
+	XmlAttribute@ FirstAttribute() const;
+	XmlAttribute@ LastAttribute() const;
+	string@ GetText() const;
+};
+
+class XmlDocument
+{
+	string@ Value() const;
+	XmlNode@ Parent() const;
+	XmlNode@ FirstChild() const;
+	XmlNode@ FirstChild(string&inout) const;
+	XmlNode@ LastChild() const;
+	XmlNode@ LastChild(string&inout) const;
+	XmlNode@ LastChild(XmlNode@) const;
+	XmlNode@ IterateChildren(string&inout, XmlNode@) const;
+	XmlNode@ PreviousSibling() const;
+	XmlNode@ PreviousSibling(string&inout) const;
+	XmlNode@ NextSibling() const;
+	XmlNode@ NextSibling(string&inout) const;
+	XmlElement@ NextSiblingElement() const;
+	XmlElement@ NextSiblingElement(string&inout) const;
+	XmlElement@ FirstChildElement() const;
+	XmlElement@ FirstChildElement(string&inout) const;
+	XmlNodeType Type() const;
+	XmlDocument@ GetDocument() const;
+	XmlDocument@ ToDocument() const;
+	XmlElement@ ToElement() const;
+	XmlComment@ ToComment() const;
+	XmlUnknown@ ToUnknown() const;
+	XmlText@ ToText() const;
+	XmlDeclaration@ ToDeclaration() const;
+	bool LoadFile(XmlEncoding);
+	XmlElement@ RootElement() const;
+	bool Error() const;
+	string@ ErrorDesc() const;
+	int ErrorRow() const;
+	int ErrorCol() const;
+};
+
+enum XmlNodeType
+{
+	XML_DOCUMENT,
+	XML_ELEMENT,
+	XML_COMMENT,
+	XML_UNKNOWN,
+	XML_TEXT,
+	XML_DECLARATION,
+	XML_TYPECOUNT
+};
+
+enum XmlAttributeQuery
+{
+	XML_SUCCESS,
+	XML_NO_ATTRIBUTE,
+	XML_WRONG_TYPE
+};
+
+enum XmlEncoding
+{
+	XML_ENCODING_UNKNOWN,
+	XML_ENCODING_UTF8,
+	XML_ENCODING_LEGACY
+};
+*/

@@ -1,0 +1,31 @@
+[comment]
+Arrc eieelinrdcc / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 0 &
+
+[russ]
+{100}{}{Самогонщик}
+{200}{}{Вы видите самогонщика.}
+{210}{}{Вы видите слегка подвыпившего мужчину. Он проверяет содержимое своих сумок и иногда раздается звон стеклянной тары.}
+{210}{}{Вы видите самогонщика. Интересно как его зовут - Трус, Балбес или Бывалый?}
+{1000}{}{Ddlaacreiaiaul onnriiaec}
+
+[engl]
+{100}{}{Bootlegger}
+{200}{}{You see a bootlegger.}
+{210}{}{You see a slightly drunk man. He is checking his bags, sometimes you can hear some glass clanking.}
+{210}{}{You see a bootlegger. You wonder what is his name - Ivan, Roman or Rasputin?}
+{1000}{}{Initial preferences}
+
+[pols]
+{100}{}{Bootlegger}
+{200}{}{widzisz Bootlegger.}
+{210}{}{widzisz z lekka podpitego mezczyzne. Sprawdza on zawartosc swoich toreb i czasem rozbrzmiewa dzwiek szklanego opakowania.}
+{210}{}{widzisz Bootlegger. Ciekawie jak go {je}
+{1000}{}{Prieddialogowyje instalowania}
+

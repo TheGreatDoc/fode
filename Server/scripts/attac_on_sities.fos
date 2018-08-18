@@ -1,0 +1,83 @@
+#include "_macros.fos"
+#define TIME_SPAWN (__FullSecond + REAL_MINUTE(5))
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+uint[] sities = {MAP_lighttown, MAP_deathmine };
+
+void AttacInit()
+{
+GameVar@ Attac = GetGlobalVar(GVAR_attac_on_sities);
+Attac = 0;
+CreateTimeEvent(TIME_SPAWN, "e_StartAttac", 0, false);
+}
+
+uint e_StartAttac(uint[]@ values)
+{
+uint mapId = 1;//sities[Random(0,sities.length()-1)];
+Map@ map = GetMap(mapId);
+if(!valid(map)) return 0;
+for(uint i=0,j=4;i<j;i++)
+	{
+		uint16 HeX=0;
+		uint16 HeY=0;
+		map.GetEntireCoords(222,i,HeX,HeY);
+		int[] params={ST_REPLICATION_TIME, -1, ST_TEAM_ID, 8};
+		switch(mapId)
+		{
+		case MAP_lighttown:
+			for(uint i=0,j=(Random(1,2));i<j;i++)
+			{
+				Critter @ raider = map.AddNpc( 36, HeX, HeY, Random(0,5), params, null, "_RaiderInit");
+				Critter @ raider1 = map.AddNpc( 38, HeX, HeY, Random(0,5), params, null, "_RaiderInit1");
+			}
+			break;
+		case MAP_deathmine:
+			for(uint i=0,j=(Random(1,2));i<j;i++)
+			{
+				Critter@ raider=map.AddNpc(36, HeX, HeY, Random(0,5),params,null,"_RaiderInit");
+				Critter@ raider1=map.AddNpc(38, HeX, HeY, Random(0,5),params,null,"_RaiderInit1");
+			}	
+			break;
+		}
+		
+	}
+return 0;
+}
+
+void _RaiderInit(Critter& raider, bool firstTime)
+{
+raider.SetEvent(CRITTER_EVENT_SHOW_CRITTER, "_ShowCritter");
+raider.SetEvent(CRITTER_EVENT_DEAD, "_DeadR");
+	_CritAddItem (raider, 23, 1);
+	_CritAddItem (raider, 36, 250);
+raider.SkillBase[SK_SMALL_GUNS]=300; 
+}
+
+void _RaiderInit1(Critter& raider, bool firstTime)
+{
+raider.SetEvent(CRITTER_EVENT_SHOW_CRITTER, "_ShowCritter");
+raider.SetEvent(CRITTER_EVENT_DEAD, "_DeadR");
+raider.SkillBase[SK_SMALL_GUNS]=300;
+raider.SkillBase[SK_THROWING] = 200; 
+	_CritAddItem (raider, 23, 1);
+	_CritAddItem (raider, 26, 20);
+}
+
+void _ShowCritter(Critter& raider, Critter& cr)
+{
+if(cr.Stat[ST_TEAM_ID]==8) return;
+raider.AddEnemyInStack(cr.Id);
+AddAttackPlane(raider, 0, cr.Id, true);
+}
+
+void _DeadR(Critter& raider, Critter@ killer)
+{
+Map@ map = raider.GetMap();
+// if(Random(1,2)==1) map.AddItem(raider.HexX, raider.HexY, 40, Random(1,2)); // Loss items
+DeleteNpc(raider);
+	if(valid(killer))
+	{
+	GameVar@ var = GetGlobalVar(GVAR_attac_on_sities);
+	var += 1;
+	}
+}

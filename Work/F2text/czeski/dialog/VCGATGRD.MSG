@@ -1,0 +1,120 @@
+#tento soubor prelozil RadaR - rd@zbrojovka.com
+#
+{100}{}{Vidíš jednoho ze strácù brány do Vault City.}
+{101}{}{Vidíš pozornì se rozhlíející strá. Má na sobì kovovou zbroj a je vyzbrojenı poøádnou brokovnicí.}
+{102}{}{Hej! Jdi odsud!}
+{103}{}{U jednou jsme tì varovali...}
+{104}{}{Hleïme! To je ten, co porazil Enklávu. Otevøte bránu.}
+{105}{}{Dobrı den, kapitáne.}
+{106}{}{Pane. Rádi vás vidíme, pane.}
+{107}{}{Pane, ano, pane!}
+{108}{}{Vault City má vdy navrch, kapitáne.}
+{109}{}{Promiò, Obèane, ale ghoulové nemají vstup do Vault City povolen.}
+{110}{}{Promiò, Obèane, ale mutanti nemají vstup do Vault City povolen.}
+{111}{}{Bude lepší, kdy se tenhle ghoul bude dret od brány dál. A hned.}
+{112}{}{Bude lepší, kdy se tenhle mutant bude dret od brány dál. A hned.}
+{113}{}{Dobrı den, Obèane.}
+{114}{}{Pìkné tì vidìt, Obèane.}
+{115}{}{Vault City má vdy navrch, Obèane.}
+{116}{}{Odejdi odsud.}
+{117}{}{Ztra se.}
+{118}{}{Máš problém? Nebo chceš nìjakı zaèít?}
+{119}{}{Nechci ti ublíit.}
+{120}{}{Mùeš vstoupit. Pokraèuj.}
+{121}{}{Dobrı den, cestovateli.}
+{122}{}{Vítej zpátky.}
+{123}{}{Tvùj boj proti Enklávì zaujal dokonce i První Obèanku.}
+{124}{}{Slyšel jsem, e tvé cesty vedly a na jih do San Franciska. Je to pravda?}
+{125}{}{Je to pravda, e v U.S. byl ještì poøád bojovı stav?}
+{126}{}{Katalogizuj své cesty do hlavního poèítaèe Vault City.}
+{127}{}{Mùeš ve Vault City zùstat tak dlouho, jak je libo.}
+{128}{}{Sepiš své èiny proti Enklávì a zaveï je na rozesílací server.}
+{129}{}{ádnım ghoulùm není vstup do Vault City povolen. Vezmi tuhle... vìc odsud. Hned.}
+{130}{}{ádnım mutantùm není vstup do Vault City povolen. Vezmi tuhle... vìc odsud. Hned.}
+{131}{}{Zùstaò stát, pøíteli. Nikomu není dovoleno pokraèovat odsud dál bez øádného oprávnìní.}
+{132}{}{Øádná opa-oprá-vna?}
+{133}{}{Belhat se pryè.}
+{134}{}{Øádné oprávnìní?}
+{135}{}{Pak tedy nic.}
+{136}{}{Vypadá to jako bychom tu mìli další obì vnìjšího zkaeného svìta... podívej, ty postienej... radìji se odsud ztra ne se nìco stane, jasnı?}
+{137}{}{MY NE ODEJÍT!}
+{138}{}{Belhat se pryè.}
+{139}{}{Ano, "øádné oprávnìní."}
+{140}{}{Jestli se chceš dostat do Vault City, musíš si promluvit s Wallacem, hlavou Celního úøadu. Mùe ti vydat Denní propustku.}
+{141}{}{A kde najdu Wallaceho?}
+{142}{}{Denní propustka? Co je to?}
+{143}{}{Okej, díky.}
+{144}{}{Wallace je hned tady v Celním úøadu napravo. }
+{145}{}{Radìji u zase jdi. Nemám èas si povídat s cizinci.}
+{146}{}{Co to je Denní propustka?}
+{147}{}{Díky za váš èas. Nashle.}
+{148}{}{Denní propustka ti umoní dostat se dovnitø mìsta...tøeba jestli tam potøebuješ obchodovat. }
+{149}{}{Radìji u zase jdi. Nemám èas si povídat s cizinci.}
+{150}{}{Kde mohu najít Wallaceho?}
+{151}{}{Díky za tvùj èas. Nashle.}
+{152}{}{Pro vstup do mìsta potøebuješ Denní propustku.}
+{153}{}{Proka se Denní propustkou a mùeš jít dovnitø.}
+{154}{}{Dr se od té brány dál.}
+{155}{}{ádné lelkování.}
+{156}{}{Máš Denní propustku?}
+{157}{}{Ne, nemám.}
+{158}{}{Ne, ale já jsem Obèan.}
+{159}{}{Jak se *opovauješ* mne zdrovat?! Já jsem Obèan! Tady mám na to papíry!}
+{160}{}{Obèan, jo? Uka ty papíry.}
+{161}{}{Ehm... nemám je zrovna u sebe.}
+{162}{}{Okej, tady jsou.}
+{163}{}{Uh, bylo tím spíš myšleno - jake mohu získat Obèanství?}
+{164}{}{Omlouváme se ti Obèane. Nechtìli jsme tì urazit. Mùeš vstoupit.}
+{165}{}{Tak dobrá.}
+{166}{}{Podívej se, "Obèane," potøebuješ Denní propustku, jinak ani krok, jasnı? A nezkoušej u ádnı triky.}
+{167}{}{(Odejít.)}
+{168}{}{Hmmm... vypadá to v poøádku. Podivné, nevzpomínám si, e bych tì tu nìkdy pøedtím vidìl.}
+{169}{}{Asi bys mìl bıt pozornìjší. Mám schùzku s První Obèankou, oèekává mne.}
+{170}{}{Doufám, e napøíštì si mne u budeš pamatovat.}
+{171}{}{Nue ano, mám Obèanství ve všech vaultech.}
+{172}{}{Nejspíš jsme se museli minout. Je dobøe, e nyní u se známe.}
+{173}{}{Jake? Podívej, nevím kdo jsi, ale rozhodnì ne Obèan. Dej mi ty papíry a zmiz odsud. Pokud se chceš dostat dovnitø, zajdi si za Wallacem, získej Denní propustku, a pak se mùeme spolu bavit.}
+{174}{}{Chceš vidìt ty papíry? Tak si pro nì pojï!}
+{175}{}{Kde mohu najít Wallaceho?}
+{176}{}{V poøádku. Nashle.}
+{177}{}{Dobrá, v poøádku, mùeš vstoupit. Vault City má vdy navrch, Obèane.}
+{178}{}{Ó, ano... Vault City má vdy navrch, Obèane.}
+{179}{}{Díky.}
+{180}{}{Denní propustku, prosím.}
+{181}{}{Tady je.}
+{182}{}{Nepotøebuji Denní propustku. Jsem Obèan.}
+{183}{}{Jenom se dívám, jak se vám vede.}
+{184}{}{U nemám èas si s tebou klábosit. Odejdi pryè.}
+{185}{}{Dobrá, dobrá. Jenom se snaím o trochu zdvoøilosti...}
+{186}{}{(Odejít.)}
+{187}{}{V poøádku. Avšak pøedtím ne vstoupíš, ti musíme prohlédnout vìci.}
+{188}{}{Eh, okej.}
+{189}{}{Proè?}
+{190}{}{Tak to nic. Zapomeò na to.}
+{191}{}{Zùstaò stát. ádnım cizincùm není povoleno vstupovat do Vault City po soumraku.}
+{192}{}{Ale já mám Denní propustku.}
+{193}{}{Ale já jsem Obèan.}
+{194}{}{Omlouvám se. Pùjdu zase dál.}
+{195}{}{Och, tak teï jsi zase Obèan, jo? Zrovna jako poslednì? Dej mi ty "papíry Obèanství" a zmiz odsud.}
+{196}{}{Chceš ty papíry? Tak si pro nì pojï!}
+{197}{}{V poøádku, v poøádku.}
+{198}{}{Jdi si promluvit s Wallacem, hlavou Celního úøadu. A teï odejdi.}
+{199}{}{Okej. Nashle.}
+{200}{}{Heleï, máš DENNÍ propustku. A pøipadá ti snad, e je teï den? Odejdi.}
+{201}{}{Okej, okej.}
+{202}{}{Obèas nìkteøí "vykukové" zkoušejí do Vault City propašovat alkohol nebo návykové drogy: Buffout, Jet, Psycho,
+ Mentats...a podobné vìci.}
+{203}{}{Aha, chápu. Prosím, mùeš mne prohledat.}
+{204}{}{Zapomeò na to. Tak nutnì zase do Vault City nepotøebuji.}
+{205}{}{Promiò, ale s vìcmi co neseš, tì do Vault City pustit nemùu. Drogy a alkohol nejsou ve Vault
+ City pøípustné. Zbav se toho a pak pøijï, okej?}
+{206}{}{Okej.}
+{207}{}{V poøádku, nic nepøípustného. Mùeš vstoupit.}
+{208}{}{Díky.}
+{209}{}{Jo. Tady}
+{210}{}{Nashleee}
+{211}{}{Oh... (Chvíli si to prohlíí, pak pokrèí rameny.) }
+{212}{}{Ou-ki.}
+{213}{}{Ne-e. Páápáá}
+{214}{}{Dob-rá}
+{215}{}{Jo.}

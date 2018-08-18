@@ -1,0 +1,25 @@
+[comment]
+
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 None 1 &
+
+[russ]
+{100}{}{Хейт}
+{200}{}{Капрал Хейт.}
+{200}{}{Вы видите капрала Хейта.}
+{210}{}{Вы видите капрала Хейта. Это начальник патруля Рейнджеров НКР.}
+{1000}{}{Predialogue installations}
+
+[engl]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+
+[pols]
+{100}{}{none}
+{1000}{}{Predialogue installations}
+

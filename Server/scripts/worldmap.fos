@@ -1,0 +1,2843 @@
+#include "_macros.fos"
+#include "_teams.fos"
+#include "_bags.fos"
+#include "entire.fos"
+
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import void GenerateItems(Map& map, Critter@[]@  grp) from "encounter_items";
+import void GenerateCavernEncounter(Map@ map, Critter@[]@ critters) from "cave_mobs";
+
+#define ZONE_COUNT_X                           (51)
+#define ZONE_COUNT_Y                           (30)
+#define ZONE_LENGTH                            (50)
+
+#define STR_VIEW                               (10000010) // {10000010}{}{Вы наткнулись на @lex who@.}
+#define STR_VIEW_WITH_PLAYER                   (10000011) // {10000011}{}{Вы наткнулись на @lex who@ и @lex player@.}
+#define STR_VIEW_WITH_PLAYERS                  (10000012) // {10000012}{}{Вы наткнулись на @lex who@ и банду @lex player@.}
+#define STR_VIEW_ONLY_PLAYER                   (10000013) // {10000013}{}{Вы наткнулись на @lex player@.}
+#define STR_VIEW_ONLY_PLAYERS                  (10000014) // {10000014}{}{Вы наткнулись на банду @lex player@.}
+#define STR_QUESTION                           (10000020) // {10000020}{}{Вы хотите увидеть @lex who@?}
+#define STR_QUESTION_WITH_PLAYER               (10000021) // {10000021}{}{Вы хотите увидеть @lex who@ и @lex player@?}
+#define STR_QUESTION_WITH_PLAYERS              (10000022) // {10000022}{}{Вы хотите увидеть @lex who@ и банду @lex player@?}
+#define STR_QUESTION_ONLY_PLAYER               (10000023) // {10000023}{}{Вы хотите увидеть @lex player@?}
+#define STR_QUESTION_ONLY_PLAYERS              (10000024) // {10000024}{}{Вы хотите увидеть банду @lex player@?}
+
+#define ENCOUNTER_OBJECT_NONE                  (0)
+#define ENCOUNTER_OBJECT_CRITTER               (1)
+#define ENCOUNTER_OBJECT_ITEM                  (2)
+
+#define CHECK_RANDOM                           (0)
+#define CHECK_PARAM                            (1)
+#define CHECK_LVAR                             (2)
+#define CHECK_GVAR                             (3)
+#define CHECK_HOUR                             (4)
+#define CHECK_LVAR_ANY                         (5)
+#define CHECK_PARAM_ANY                        (6)
+#define ASSIGN_LVAR                            (10)
+
+#define ACTION_NONE                            (0)
+#define ACTION_FIGHTING                        (1) // Combined with Ambush
+
+#define TERRAIN_Desert                         (0)
+#define TERRAIN_Mountain                       (1)
+#define TERRAIN_City                           (2)
+#define TERRAIN_Coast                          (3)
+#define TERRAIN_Water                          (4)
+
+#define FILL_No_Fill                           (0)
+#define FILL_Fill_W                            (1)
+
+// Encounter frequency percentages
+#define CHANCE_Forced                          (100) // This shouldn't change
+#define CHANCE_Frequent                        (38) // Was 9/3d6
+#define CHANCE_Common                          (22) // Was 8/3d6
+#define CHANCE_Uncommon                        (12) // Was 6/3d6
+#define CHANCE_Rare                            (4) // Was 5/3d6
+#define CHANCE_None                            (0) // This shouldn't change
+
+#define POSITION_NONE                          (0)
+#define POSITION_SURROUNDING                   (1) // NIE UZYWAC BUGGED ( DONT USE )
+#define POSITION_HUDDLE                        (2) //
+#define POSITION_WEDGE                         (3)
+#define POSITION_CONE                          (4)
+#define POSITION_DOUBLE_LINE                   (5)
+#define POSITION_STRAIGHT_LINE                 (6)
+
+uint[][] PositionDirs={
+	{0}, // POSITION_NONE
+// Steps Path 1       Path 2
+	{1, 4,3,2,1,0,5, 2,3,4,5,0,1}, // POSITION_SURROUNDING
+	{1, 5,0,1,2,3,4, 1,0,5,4,3,2}, // POSITION_HUDDLE
+	{1, 4,           2}, // POSITION_WEDGE
+	{1, 5,           1}, // POSITION_CONE
+	{2, 1,2,         4,5}, // POSITION_DOUBLE_LINE
+	{2, 1,2,         4,5} // POSITION_STRAIGHT_LINE
+};
+
+#define GROUP_Player                           (uint(-1))
+#define GROUP_DE_PLANTS						(0)
+#define GROUP_DE_RATS						(1)
+#define GROUP_DE_PIGRATS					(2)
+#define GROUP_DE_RATS_PIGRATS				(3)
+#define GROUP_DE_MOLERATS					(4)
+#define GROUP_DE_WHITE_MOLERATS				(5)
+#define GROUP_DE_SMALL_RADSCORPIONS			(6)
+#define GROUP_DE_BIG_RADSCORPIONS			(7)
+#define GROUP_DE_SMALL_BIG_RADSCORPIONS		(8)
+#define GROUP_DE_MANTIS						(9)
+#define GROUP_DE_ANTS						(10)
+#define GROUP_DE_DOGS						(11)
+#define GROUP_DE_SILVER_GECKOS				(12)
+#define GROUP_DE_GOLDEN_GECKOS				(13)
+#define GROUP_DE_FIRE_GECKOS				(14)
+#define GROUP_DE_FLOATERS					(15)
+#define GROUP_DE_CENTAURS					(16)
+#define GROUP_DE_FLOATERS_CENTAURS			(17)
+#define GROUP_DE_ALIENS						(18)
+#define GROUP_DE_SMALL_DEATHCLAWS			(19)
+#define GROUP_DE_BIG_DEATHCLAWS				(20)
+#define GROUP_DE_SMALL_BIG_DEATHCLAWS		(21)
+#define GROUP_DE_GHOULS						(22)
+#define GROUP_DE_BLUE						(23)
+#define GROUP_DE_RED						(24)
+#define GROUP_DE_DISTRICT_SCOUTS			(25)
+#define GROUP_DE_SACRED_MILITIA				(26)
+#define GROUP_DE_FURRY_WARRIOR				(27)
+#define GROUP_DE_OLD_VILLAGE_GUARDS			(28)
+#define GROUP_DE_LIGHT_TOWN_SOLDIERS		(29)
+#define GROUP_DE_SCRAPERS_POLICE			(30)
+#define GROUP_DE_BOUNTY_HUNTERS				(31)
+#define GROUP_DE_DEATHMINE_SCOUTS			(32)
+#define GROUP_DE_MUTANTS					(33)
+#define GROUP_DE_ROBOTS						(34)
+#define GROUP_DE_MUTANTS_RED				(35)
+#define GROUP_DE_ROBOTS_BLUE				(36)
+#define GROUP_DE_CARAVAN_MOSCOW				(37)
+#define GROUP_DE_CARAVAN_LONDON				(38)
+#define GROUP_DE_CARAVAN_DISTRICT_X			(39)
+#define GROUP_DE_CARAVAN_SCRAPERS_CITY		(40)
+#define GROUP_DE_WHITE_ALIENS				(41)
+#define GROUP_DE_GREY_DEATHCLAWS			(42)
+#define GROUP_DE_CRAZY_GHOULS				(43)
+#define GROUP_DE_BRAHMINS					(44)
+#define GROUP_DE_BANDITS					(45)
+#define GROUP_DE_NEC_RECRUITS				(46)
+#define GROUP_DE_NEC_SOLDIERS 				(47)
+#define GROUP_DE_NEC_VETERANS				(48)
+#define GROUP_DE_REF_RECRUITS				(49)
+#define GROUP_DE_REF_SOLDIERS				(50)
+#define GROUP_DE_REF_VETERANS				(51)
+#define GROUP_DE_FURYTOWNPATROL  			(52)
+#define GROUP_DE_UNDERKINGSGANG  			(53)
+#define GROUP_DE_GREENPOINTSCOUTS			(54)
+#define GROUP_DE_BEARLINEDEF				(55)
+#define GROUP_DE_HOMELESS        			(56)
+#define GROUP_DE_MINERS						(57)
+#define GROUP_DE_SUPERMUTANTS				(58)
+#define GROUP_DE_SCRATCHERS					(59)
+#define GROUP_DE_REF_ARMY					(60)
+#define GROUP_DE_NEC_ARMY					(61)
+#define GROUP_DE_MUTANTS_GHOULS		      	(62)
+#define GROUP_DE_TERRORIST               	(63)
+#define GROUP_DE_GANG                       (64)
+#define GROUP_DE_NECREB_WEAK                (65)
+#define GROUP_DE_NECREB_STRONGE             (66)
+#define GROUP_DE_REFREB_STRONGE             (67)
+#define GROUP_DE_REFREB_WEAK                (68)
+#define GROUP_DE_CARAVAN_FURRY              (69)
+#define GROUP_DE_CARAVAN_DEATHMINE          (70)
+#define GROUP_DE_CARAVAN_OLD_VILLAGE        (71)
+#define GROUP_DE_CARAVAN_OLD_FIELDS          (72)
+#define GROUP_DE_CARAVAN_SCRAPERS           (73)
+#define GROUP_DE_CARAVAN_BEARLINE           (74)
+
+#define GROUP_MAX							(75)
+
+
+#define TABLE_OTHER                             (0) //Fallout 1 encounter tables, not in use
+#define TABLE_MOSCOW							(1)
+#define TABLE_LONDON							(2)
+#define TABLE_WINDY_ROADS						(3)
+#define TABLE_DISTRICT_X						(4)
+#define TABLE_OLD_FIELDS						(5)
+#define TABLE_DARK_WATERS						(6)
+#define TABLE_FURY_TOWN							(7)
+#define TABLE_OLD_VILLAGE 						(8)
+#define TABLE_LIGHT_TOWN						(9)
+#define TABLE_TRAIN_STATION						(10)
+#define TABLE_SCRAPERS_CITY						(11)
+#define TABLE_BEAR_LINE							(12)
+#define TABLE_DEATH_MAIN						(13)
+#define TABLE_MUTANT_BASE						(14)
+#define TABLE_NIGHTS_CITY						(15)
+#define TABLE_ROBOTS_BASE						(16)
+#define TABLE_BASE_RED							(17)
+#define TABLE_BASE_BLUE							(18)
+#define TABLE_EXP_FLATERS_CENTAURS				(19)
+#define TABLE_EXP_MOLERATS						(20)
+#define TABLE_EXP_SCORPIONS						(21)
+#define TABLE_EXP_ALIENS						(22)
+#define TABLE_EXP_ROBO_MUT						(23)
+#define TABLE_EXP_RATS							(24)
+#define TABLE_EXP_BANDITS						(25)
+#define TABLE_RAD_LINE							(26)
+
+#define TABLE_ZONE0_0                       (27)
+#define TABLE_ZONE0_1                       (28)
+#define TABLE_ZONE0_2                       (29)
+#define TABLE_ZONE0_3                       (30)
+#define TABLE_ZONE0_4                       (31)
+#define TABLE_ZONE0_5                       (32)
+#define TABLE_ZONE0_6                       (33)
+#define TABLE_ZONE0_7                       (34)
+#define TABLE_ZONE0_8                       (35)
+#define TABLE_ZONE0_9                       (36)
+#define TABLE_ZONE0_10                      (37)
+#define TABLE_ZONE0_11                      (38)
+#define TABLE_ZONE0_12                      (39)
+#define TABLE_ZONE0_13                      (40)
+#define TABLE_ZONE0_14                      (41)
+#define TABLE_ZONE0_15                      (42)
+#define TABLE_ZONE0_16                      (43)
+#define TABLE_ZONE0_17                      (44)
+#define TABLE_ZONE0_18                      (43)
+#define TABLE_ZONE0_19                      (45)
+#define TABLE_ZONE0_20                      (46)
+#define TABLE_ZONE0_21                      (47)
+#define TABLE_ZONE0_22                      (48)
+#define TABLE_ZONE0_23                      (49)
+#define TABLE_ZONE0_24                      (50)
+#define TABLE_ZONE0_25                      (51)
+#define TABLE_ZONE0_26                      (52)
+#define TABLE_ZONE0_27                      (53)
+#define TABLE_ZONE0_28                      (54)
+#define TABLE_ZONE0_29                     (55)
+
+#define TABLE_ZONE1_0                       (56)
+#define TABLE_ZONE1_1                       (57)
+#define TABLE_ZONE1_2                       (58)
+#define TABLE_ZONE1_3                       (59)
+#define TABLE_ZONE1_4                       (60)
+#define TABLE_ZONE1_5                       (61)
+#define TABLE_ZONE1_6                       (62)
+#define TABLE_ZONE1_7                       (63)
+#define TABLE_ZONE1_8                       (64)
+#define TABLE_ZONE1_9                       (65)
+#define TABLE_ZONE1_10                      (66)
+#define TABLE_ZONE1_11                      (67)
+#define TABLE_ZONE1_12                      (68)
+#define TABLE_ZONE1_13                      (69)
+#define TABLE_ZONE1_14                      (70)
+#define TABLE_ZONE1_15                      (71)
+#define TABLE_ZONE1_16                      (72)
+#define TABLE_ZONE1_17                      (73)
+#define TABLE_ZONE1_18                      (74)
+#define TABLE_ZONE1_19                      (75)
+#define TABLE_ZONE1_20                      (76)
+#define TABLE_ZONE1_21                      (77)
+#define TABLE_ZONE1_22                      (78)
+#define TABLE_ZONE1_23                      (79)
+#define TABLE_ZONE1_24                      (80)
+#define TABLE_ZONE1_25                      (81)
+#define TABLE_ZONE1_26                      (82)
+#define TABLE_ZONE1_27                      (83)
+#define TABLE_ZONE1_28                      (84)
+#define TABLE_ZONE1_29                      (85)
+
+#define TABLE_ZONE2_0                       (86)
+#define TABLE_ZONE2_1                       (87)
+#define TABLE_ZONE2_2                       (88)
+#define TABLE_ZONE2_3                       (89)
+#define TABLE_ZONE2_4                       (90)
+#define TABLE_ZONE2_5                       (91)
+#define TABLE_ZONE2_6                       (92)
+#define TABLE_ZONE2_7                       (93)
+#define TABLE_ZONE2_8                       (94)
+#define TABLE_ZONE2_9                       (95)
+#define TABLE_ZONE2_10                      (96)
+#define TABLE_ZONE2_11                      (97)
+#define TABLE_ZONE2_12                      (98)
+#define TABLE_ZONE2_13                      (99)
+#define TABLE_ZONE2_14                      (100)
+#define TABLE_ZONE2_15                      (101)
+#define TABLE_ZONE2_16                      (102)
+#define TABLE_ZONE2_17                      (103)
+#define TABLE_ZONE2_18                      (104)
+#define TABLE_ZONE2_19                      (105)
+#define TABLE_ZONE2_20                      (106)
+#define TABLE_ZONE2_21                      (107)
+#define TABLE_ZONE2_22                      (108)
+#define TABLE_ZONE2_23                      (109)
+#define TABLE_ZONE2_24                      (110)
+#define TABLE_ZONE2_25                      (111)
+#define TABLE_ZONE2_26                      (112)
+#define TABLE_ZONE2_27                      (113)
+#define TABLE_ZONE2_28                      (114)
+#define TABLE_ZONE2_29                      (115)
+
+#define TABLE_ZONE3_0                       (116)
+#define TABLE_ZONE3_1                       (117)
+#define TABLE_ZONE3_2                       (118)
+#define TABLE_ZONE3_3                       (119)
+#define TABLE_ZONE3_4                       (120)
+#define TABLE_ZONE3_5                       (121)
+#define TABLE_ZONE3_6                       (122)
+#define TABLE_ZONE3_7                       (123)
+#define TABLE_ZONE3_8                       (124)
+#define TABLE_ZONE3_9                       (125)
+#define TABLE_ZONE3_10                      (126)
+#define TABLE_ZONE3_11                      (127)
+#define TABLE_ZONE3_12                      (128)
+#define TABLE_ZONE3_13                      (129)
+#define TABLE_ZONE3_14                      (130)
+#define TABLE_ZONE3_15                      (131)
+#define TABLE_ZONE3_16                      (132)
+#define TABLE_ZONE3_17                      (133)
+#define TABLE_ZONE3_18                      (134)
+#define TABLE_ZONE3_19                      (135)
+#define TABLE_ZONE3_20                      (136)
+#define TABLE_ZONE3_21                      (137)
+#define TABLE_ZONE3_22                      (138)
+#define TABLE_ZONE3_23                      (139)
+#define TABLE_ZONE3_24                      (140)
+#define TABLE_ZONE3_25                      (141)
+#define TABLE_ZONE3_26                      (142)
+#define TABLE_ZONE3_27                      (143)
+#define TABLE_ZONE3_28                      (144)
+#define TABLE_ZONE3_29                      (145)
+
+#define TABLE_ZONE4_0                       (146)
+#define TABLE_ZONE4_1                       (147)
+#define TABLE_ZONE4_2                       (148)
+#define TABLE_ZONE4_3                       (149)
+#define TABLE_ZONE4_4                       (150)
+#define TABLE_ZONE4_5                       (151)
+#define TABLE_ZONE4_6                       (152)
+#define TABLE_ZONE4_7                       (153)
+#define TABLE_ZONE4_8                       (154)
+#define TABLE_ZONE4_9                       (155)
+#define TABLE_ZONE4_10                      (156)
+#define TABLE_ZONE4_11                      (157)
+#define TABLE_ZONE4_12                      (158)
+#define TABLE_ZONE4_13                      (159)
+#define TABLE_ZONE4_14                      (160)
+#define TABLE_ZONE4_15                      (161)
+#define TABLE_ZONE4_16                      (162)
+#define TABLE_ZONE4_17                      (163)
+#define TABLE_ZONE4_18                      (164)
+#define TABLE_ZONE4_19                      (165)
+#define TABLE_ZONE4_20                      (166)
+#define TABLE_ZONE4_21                      (167)
+#define TABLE_ZONE4_22                      (168)
+#define TABLE_ZONE4_23                      (169)
+#define TABLE_ZONE4_24                      (170)
+#define TABLE_ZONE4_25                      (171)
+#define TABLE_ZONE4_26                      (172)
+#define TABLE_ZONE4_27                      (173)
+#define TABLE_ZONE4_28                      (174)
+#define TABLE_ZONE4_29                      (175)
+
+#define TABLE_ZONE5_0                       (176)
+#define TABLE_ZONE5_1                       (177)
+#define TABLE_ZONE5_2                       (178)
+#define TABLE_ZONE5_3                       (179)
+#define TABLE_ZONE5_4                       (180)
+#define TABLE_ZONE5_5                       (181)
+#define TABLE_ZONE5_6                       (182)
+#define TABLE_ZONE5_7                       (183)
+#define TABLE_ZONE5_8                       (184)
+#define TABLE_ZONE5_9                       (185)
+#define TABLE_ZONE5_10                      (186)
+#define TABLE_ZONE5_11                      (187)
+#define TABLE_ZONE5_12                      (188)
+#define TABLE_ZONE5_13                      (189)
+#define TABLE_ZONE5_14                      (190)
+#define TABLE_ZONE5_15                      (191)
+#define TABLE_ZONE5_16                      (192)
+#define TABLE_ZONE5_17                      (193)
+#define TABLE_ZONE5_18                      (194)
+#define TABLE_ZONE5_19                      (195)
+#define TABLE_ZONE5_20                      (196)
+#define TABLE_ZONE5_21                      (197)
+#define TABLE_ZONE5_22                      (198)
+#define TABLE_ZONE5_23                      (199)
+#define TABLE_ZONE5_24                      (200)
+#define TABLE_ZONE5_25                      (201)
+#define TABLE_ZONE5_26                      (202)
+#define TABLE_ZONE5_27                      (203)
+#define TABLE_ZONE5_28                      (204)
+#define TABLE_ZONE5_29                      (205)
+
+#define TABLE_ZONE6_0                       (206)
+#define TABLE_ZONE6_1                       (207)
+#define TABLE_ZONE6_2                       (208)
+#define TABLE_ZONE6_3                       (209)
+#define TABLE_ZONE6_4                       (210)
+#define TABLE_ZONE6_5                       (211)
+#define TABLE_ZONE6_6                       (212)
+#define TABLE_ZONE6_7                       (213)
+#define TABLE_ZONE6_8                       (214)
+#define TABLE_ZONE6_9                       (215)
+#define TABLE_ZONE6_10                      (216)
+#define TABLE_ZONE6_11                      (217)
+#define TABLE_ZONE6_12                      (218)
+#define TABLE_ZONE6_13                      (219)
+#define TABLE_ZONE6_14                      (220)
+#define TABLE_ZONE6_15                      (221)
+#define TABLE_ZONE6_16                      (222)
+#define TABLE_ZONE6_17                      (223)
+#define TABLE_ZONE6_18                      (224)
+#define TABLE_ZONE6_19                      (225)
+#define TABLE_ZONE6_20                      (226)
+#define TABLE_ZONE6_21                      (227)
+#define TABLE_ZONE6_22                      (228)
+#define TABLE_ZONE6_23                      (229)
+#define TABLE_ZONE6_24                      (230)
+#define TABLE_ZONE6_25                      (231)
+#define TABLE_ZONE6_26                      (232)
+#define TABLE_ZONE6_27                      (233)
+#define TABLE_ZONE6_28                      (234)
+#define TABLE_ZONE6_29                      (235)
+
+#define TABLE_ZONE7_0                       (236)
+#define TABLE_ZONE7_1                       (237)
+#define TABLE_ZONE7_2                       (238)
+#define TABLE_ZONE7_3                       (239)
+#define TABLE_ZONE7_4                       (240)
+#define TABLE_ZONE7_5                       (241)
+#define TABLE_ZONE7_6                       (242)
+#define TABLE_ZONE7_7                       (243)
+#define TABLE_ZONE7_8                       (244)
+#define TABLE_ZONE7_9                       (245)
+#define TABLE_ZONE7_10                      (246)
+#define TABLE_ZONE7_11                      (247)
+#define TABLE_ZONE7_12                      (248)
+#define TABLE_ZONE7_13                      (249)
+#define TABLE_ZONE7_14                      (250)
+#define TABLE_ZONE7_15                      (251)
+#define TABLE_ZONE7_16                      (252)
+#define TABLE_ZONE7_17                      (253)
+#define TABLE_ZONE7_18                      (254)
+#define TABLE_ZONE7_19                      (255)
+#define TABLE_ZONE7_20                      (256)
+#define TABLE_ZONE7_21                      (257)
+#define TABLE_ZONE7_22                      (258)
+#define TABLE_ZONE7_23                      (259)
+#define TABLE_ZONE7_24                      (260)
+#define TABLE_ZONE7_25                      (261)
+#define TABLE_ZONE7_26                      (262)
+#define TABLE_ZONE7_27                      (263)
+#define TABLE_ZONE7_28                      (264)
+#define TABLE_ZONE7_29                      (265)
+
+#define TABLE_ZONE8_0                       (266)
+#define TABLE_ZONE8_1                       (267)
+#define TABLE_ZONE8_2                       (268)
+#define TABLE_ZONE8_3                       (269)
+#define TABLE_ZONE8_4                       (270)
+#define TABLE_ZONE8_5                       (271)
+#define TABLE_ZONE8_6                       (272)
+#define TABLE_ZONE8_7                       (273)
+#define TABLE_ZONE8_8                       (274)
+#define TABLE_ZONE8_9                       (275)
+#define TABLE_ZONE8_10                      (276)
+#define TABLE_ZONE8_11                      (277)
+#define TABLE_ZONE8_12                      (278)
+#define TABLE_ZONE8_13                      (279)
+#define TABLE_ZONE8_14                      (280)
+#define TABLE_ZONE8_15                      (281)
+#define TABLE_ZONE8_16                      (282)
+#define TABLE_ZONE8_17                      (283)
+#define TABLE_ZONE8_18                      (284)
+#define TABLE_ZONE8_19                      (285)
+#define TABLE_ZONE8_20                      (286)
+#define TABLE_ZONE8_21                      (287)
+#define TABLE_ZONE8_22                      (288)
+#define TABLE_ZONE8_23                      (289)
+#define TABLE_ZONE8_24                      (290)
+#define TABLE_ZONE8_25                      (291)
+#define TABLE_ZONE8_26                      (292)
+#define TABLE_ZONE8_27                      (293)
+#define TABLE_ZONE8_28                      (294)
+#define TABLE_ZONE8_29                      (295)
+
+#define TABLE_ZONE9_0                       (296)
+#define TABLE_ZONE9_1                       (297)
+#define TABLE_ZONE9_2                       (298)
+#define TABLE_ZONE9_3                       (299)
+#define TABLE_ZONE9_4                       (300)
+#define TABLE_ZONE9_5                       (301)
+#define TABLE_ZONE9_6                       (302)
+#define TABLE_ZONE9_7                       (303)
+#define TABLE_ZONE9_8                       (304)
+#define TABLE_ZONE9_9                       (305)
+#define TABLE_ZONE9_10                      (306)
+#define TABLE_ZONE9_11                      (307)
+#define TABLE_ZONE9_12                      (308)
+#define TABLE_ZONE9_13                      (309)
+#define TABLE_ZONE9_14                      (310)
+#define TABLE_ZONE9_15                      (311)
+#define TABLE_ZONE9_16                      (312)
+#define TABLE_ZONE9_17                      (313)
+#define TABLE_ZONE9_18                      (314)
+#define TABLE_ZONE9_19                      (315)
+#define TABLE_ZONE9_20                      (316)
+#define TABLE_ZONE9_21                      (317)
+#define TABLE_ZONE9_22                      (318)
+#define TABLE_ZONE9_23                      (319)
+#define TABLE_ZONE9_24                      (320)
+#define TABLE_ZONE9_25                      (321)
+#define TABLE_ZONE9_26                      (322)
+#define TABLE_ZONE9_27                      (323)
+#define TABLE_ZONE9_28                      (324)
+#define TABLE_ZONE9_29                      (325)
+
+#define TABLE_ZONE10_0                      (326)
+#define TABLE_ZONE10_1                      (327)
+#define TABLE_ZONE10_2                      (328)
+#define TABLE_ZONE10_3                      (329)
+#define TABLE_ZONE10_4                      (330)
+#define TABLE_ZONE10_5                      (331)
+#define TABLE_ZONE10_6                      (332)
+#define TABLE_ZONE10_7                      (333)
+#define TABLE_ZONE10_8                      (334)
+#define TABLE_ZONE10_9                      (335)
+#define TABLE_ZONE10_10                     (336)
+#define TABLE_ZONE10_11                     (337)
+#define TABLE_ZONE10_12                     (338)
+#define TABLE_ZONE10_13                     (339)
+#define TABLE_ZONE10_14                     (340)
+#define TABLE_ZONE10_15                     (341)
+#define TABLE_ZONE10_16                     (342)
+#define TABLE_ZONE10_17                     (343)
+#define TABLE_ZONE10_18                     (344)
+#define TABLE_ZONE10_19                     (345)
+#define TABLE_ZONE10_20                     (346)
+#define TABLE_ZONE10_21                     (347)
+#define TABLE_ZONE10_22                     (348)
+#define TABLE_ZONE10_23                     (349)
+#define TABLE_ZONE10_24                     (350)
+#define TABLE_ZONE10_25                     (351)
+#define TABLE_ZONE10_26                     (352)
+#define TABLE_ZONE10_27                     (353)
+#define TABLE_ZONE10_28                     (354)
+#define TABLE_ZONE10_29                     (355)
+
+#define TABLE_ZONE11_0                      (356)
+#define TABLE_ZONE11_1                      (357)
+#define TABLE_ZONE11_2                      (358)
+#define TABLE_ZONE11_3                      (359)
+#define TABLE_ZONE11_4                      (360)
+#define TABLE_ZONE11_5                      (361)
+#define TABLE_ZONE11_6                      (362)
+#define TABLE_ZONE11_7                      (363)
+#define TABLE_ZONE11_8                      (364)
+#define TABLE_ZONE11_9                      (365)
+#define TABLE_ZONE11_10                     (366)
+#define TABLE_ZONE11_11                     (367)
+#define TABLE_ZONE11_12                     (368)
+#define TABLE_ZONE11_13                     (369)
+#define TABLE_ZONE11_14                     (370)
+#define TABLE_ZONE11_15                     (371)
+#define TABLE_ZONE11_16                     (372)
+#define TABLE_ZONE11_17                     (373)
+#define TABLE_ZONE11_18                     (374)
+#define TABLE_ZONE11_19                     (375)
+#define TABLE_ZONE11_20                     (376)
+#define TABLE_ZONE11_21                     (377)
+#define TABLE_ZONE11_22                     (378)
+#define TABLE_ZONE11_23                     (379)
+#define TABLE_ZONE11_24                     (380)
+#define TABLE_ZONE11_25                     (381)
+#define TABLE_ZONE11_26                     (382)
+#define TABLE_ZONE11_27                     (383)
+#define TABLE_ZONE11_28                     (384)
+#define TABLE_ZONE11_29                     (385)
+
+#define TABLE_ZONE12_0                      (386)
+#define TABLE_ZONE12_1                      (387)
+#define TABLE_ZONE12_2                      (388)
+#define TABLE_ZONE12_3                      (389)
+#define TABLE_ZONE12_4                      (390)
+#define TABLE_ZONE12_5                      (391)
+#define TABLE_ZONE12_6                      (392)
+#define TABLE_ZONE12_7                      (393)
+#define TABLE_ZONE12_8                      (394)
+#define TABLE_ZONE12_9                      (395)
+#define TABLE_ZONE12_10                     (396)
+#define TABLE_ZONE12_11                     (397)
+#define TABLE_ZONE12_12                     (398)
+#define TABLE_ZONE12_13                     (399)
+#define TABLE_ZONE12_14                     (400)
+#define TABLE_ZONE12_15                     (401)
+#define TABLE_ZONE12_16                     (402)
+#define TABLE_ZONE12_17                     (403)
+#define TABLE_ZONE12_18                     (404)
+#define TABLE_ZONE12_19                     (405)
+#define TABLE_ZONE12_20                     (406)
+#define TABLE_ZONE12_21                     (407)
+#define TABLE_ZONE12_22                     (408)
+#define TABLE_ZONE12_23                     (409)
+#define TABLE_ZONE12_24                     (410)
+#define TABLE_ZONE12_25                     (411)
+#define TABLE_ZONE12_26                     (412)
+#define TABLE_ZONE12_27                     (413)
+#define TABLE_ZONE12_28                     (414)
+#define TABLE_ZONE12_29                     (415)
+
+#define TABLE_ZONE13_0                      (416)
+#define TABLE_ZONE13_1                      (417)
+#define TABLE_ZONE13_2                      (418)
+#define TABLE_ZONE13_3                      (419)
+#define TABLE_ZONE13_4                      (420)
+#define TABLE_ZONE13_5                      (421)
+#define TABLE_ZONE13_6                      (422)
+#define TABLE_ZONE13_7                      (423)
+#define TABLE_ZONE13_8                      (424)
+#define TABLE_ZONE13_9                      (425)
+#define TABLE_ZONE13_10                     (426)
+#define TABLE_ZONE13_11                     (427)
+#define TABLE_ZONE13_12                     (428)
+#define TABLE_ZONE13_13                     (429)
+#define TABLE_ZONE13_14                     (430)
+#define TABLE_ZONE13_15                     (431)
+#define TABLE_ZONE13_16                     (432)
+#define TABLE_ZONE13_17                     (433)
+#define TABLE_ZONE13_18                     (434)
+#define TABLE_ZONE13_19                     (435)
+#define TABLE_ZONE13_20                     (436)
+#define TABLE_ZONE13_21                     (437)
+#define TABLE_ZONE13_22                     (438)
+#define TABLE_ZONE13_23                     (439)
+#define TABLE_ZONE13_24                     (440)
+#define TABLE_ZONE13_25                     (441)
+#define TABLE_ZONE13_26                     (442)
+#define TABLE_ZONE13_27                     (443)
+#define TABLE_ZONE13_28                     (444)
+#define TABLE_ZONE13_29                     (445)
+
+#define TABLE_ZONE14_0                      (446)
+#define TABLE_ZONE14_1                      (447)
+#define TABLE_ZONE14_2                      (448)
+#define TABLE_ZONE14_3                      (449)
+#define TABLE_ZONE14_4                      (450)
+#define TABLE_ZONE14_5                      (451)
+#define TABLE_ZONE14_6                      (452)
+#define TABLE_ZONE14_7                      (453)
+#define TABLE_ZONE14_8                      (454)
+#define TABLE_ZONE14_9                      (455)
+#define TABLE_ZONE14_10                     (456)
+#define TABLE_ZONE14_11                     (457)
+#define TABLE_ZONE14_12                     (458)
+#define TABLE_ZONE14_13                     (459)
+#define TABLE_ZONE14_14                     (460)
+#define TABLE_ZONE14_15                     (461)
+#define TABLE_ZONE14_16                     (462)
+#define TABLE_ZONE14_17                     (463)
+#define TABLE_ZONE14_18                     (464)
+#define TABLE_ZONE14_19                     (465)
+#define TABLE_ZONE14_20                     (466)
+#define TABLE_ZONE14_21                     (467)
+#define TABLE_ZONE14_22                     (468)
+#define TABLE_ZONE14_23                     (469)
+#define TABLE_ZONE14_24                     (470)
+#define TABLE_ZONE14_25                     (471)
+#define TABLE_ZONE14_26                     (472)
+#define TABLE_ZONE14_27                     (473)
+#define TABLE_ZONE14_28                     (474)
+#define TABLE_ZONE14_29                     (475)
+
+#define TABLE_ZONE15_0                      (476)
+#define TABLE_ZONE15_1                      (477)
+#define TABLE_ZONE15_2                      (478)
+#define TABLE_ZONE15_3                      (479)
+#define TABLE_ZONE15_4                      (480)
+#define TABLE_ZONE15_5                      (481)
+#define TABLE_ZONE15_6                      (482)
+#define TABLE_ZONE15_7                      (483)
+#define TABLE_ZONE15_8                      (484)
+#define TABLE_ZONE15_9                      (485)
+#define TABLE_ZONE15_10                     (486)
+#define TABLE_ZONE15_11                     (487)
+#define TABLE_ZONE15_12                     (488)
+#define TABLE_ZONE15_13                     (489)
+#define TABLE_ZONE15_14                     (490)
+#define TABLE_ZONE15_15                     (491)
+#define TABLE_ZONE15_16                     (492)
+#define TABLE_ZONE15_17                     (493)
+#define TABLE_ZONE15_18                     (494)
+#define TABLE_ZONE15_19                     (495)
+#define TABLE_ZONE15_20                     (496)
+#define TABLE_ZONE15_21                     (497)
+#define TABLE_ZONE15_22                     (498)
+#define TABLE_ZONE15_23                     (499)
+#define TABLE_ZONE15_24                     (500)
+#define TABLE_ZONE15_25                     (501)
+#define TABLE_ZONE15_26                     (502)
+#define TABLE_ZONE15_27                     (503)
+#define TABLE_ZONE15_28                     (504)
+#define TABLE_ZONE15_29                     (505)
+
+#define TABLE_ZONE16_0                      (506)
+#define TABLE_ZONE16_1                      (507)
+#define TABLE_ZONE16_2                      (508)
+#define TABLE_ZONE16_3                      (509)
+#define TABLE_ZONE16_4                      (510)
+#define TABLE_ZONE16_5                      (511)
+#define TABLE_ZONE16_6                      (512)
+#define TABLE_ZONE16_7                      (513)
+#define TABLE_ZONE16_8                      (514)
+#define TABLE_ZONE16_9                      (515)
+#define TABLE_ZONE16_10                     (516)
+#define TABLE_ZONE16_11                     (517)
+#define TABLE_ZONE16_12                     (518)
+#define TABLE_ZONE16_13                     (519)
+#define TABLE_ZONE16_14                     (520)
+#define TABLE_ZONE16_15                     (521)
+#define TABLE_ZONE16_16                     (522)
+#define TABLE_ZONE16_17                     (523)
+#define TABLE_ZONE16_18                     (524)
+#define TABLE_ZONE16_19                     (525)
+#define TABLE_ZONE16_20                     (526)
+#define TABLE_ZONE16_21                     (527)
+#define TABLE_ZONE16_22                     (528)
+#define TABLE_ZONE16_23                     (529)
+#define TABLE_ZONE16_24                     (530)
+#define TABLE_ZONE16_25                     (531)
+#define TABLE_ZONE16_26                     (532)
+#define TABLE_ZONE16_27                     (533)
+#define TABLE_ZONE16_28                     (534)
+#define TABLE_ZONE16_29                     (535)
+
+#define TABLE_ZONE17_0                      (536)
+#define TABLE_ZONE17_1                      (537)
+#define TABLE_ZONE17_2                      (538)
+#define TABLE_ZONE17_3                      (539)
+#define TABLE_ZONE17_4                      (540)
+#define TABLE_ZONE17_5                      (541)
+#define TABLE_ZONE17_6                      (542)
+#define TABLE_ZONE17_7                      (543)
+#define TABLE_ZONE17_8                      (544)
+#define TABLE_ZONE17_9                      (545)
+#define TABLE_ZONE17_10                     (546)
+#define TABLE_ZONE17_11                     (547)
+#define TABLE_ZONE17_12                     (548)
+#define TABLE_ZONE17_13                     (549)
+#define TABLE_ZONE17_14                     (550)
+#define TABLE_ZONE17_15                     (551)
+#define TABLE_ZONE17_16                     (552)
+#define TABLE_ZONE17_17                     (553)
+#define TABLE_ZONE17_18                     (554)
+#define TABLE_ZONE17_19                     (555)
+#define TABLE_ZONE17_20                     (556)
+#define TABLE_ZONE17_21                     (557)
+#define TABLE_ZONE17_22                     (558)
+#define TABLE_ZONE17_23                     (559)
+#define TABLE_ZONE17_24                     (560)
+#define TABLE_ZONE17_25                     (561)
+#define TABLE_ZONE17_26                     (562)
+#define TABLE_ZONE17_27                     (563)
+#define TABLE_ZONE17_28                     (564)
+#define TABLE_ZONE17_29                     (565)
+
+#define TABLE_ZONE18_0                      (566)
+#define TABLE_ZONE18_1                      (567)
+#define TABLE_ZONE18_2                      (568)
+#define TABLE_ZONE18_3                      (569)
+#define TABLE_ZONE18_4                      (570)
+#define TABLE_ZONE18_5                      (571)
+#define TABLE_ZONE18_6                      (572)
+#define TABLE_ZONE18_7                      (573)
+#define TABLE_ZONE18_8                      (574)
+#define TABLE_ZONE18_9                      (575)
+#define TABLE_ZONE18_10                     (576)
+#define TABLE_ZONE18_11                     (577)
+#define TABLE_ZONE18_12                     (578)
+#define TABLE_ZONE18_13                     (579)
+#define TABLE_ZONE18_14                     (580)
+#define TABLE_ZONE18_15                     (581)
+#define TABLE_ZONE18_16                     (582)
+#define TABLE_ZONE18_17                     (583)
+#define TABLE_ZONE18_18                     (584)
+#define TABLE_ZONE18_19                     (585)
+#define TABLE_ZONE18_20                     (586)
+#define TABLE_ZONE18_21                     (587)
+#define TABLE_ZONE18_22                     (588)
+#define TABLE_ZONE18_23                     (589)
+#define TABLE_ZONE18_24                     (590)
+#define TABLE_ZONE18_25                     (591)
+#define TABLE_ZONE18_26                     (592)
+#define TABLE_ZONE18_27                     (593)
+#define TABLE_ZONE18_28                     (594)
+#define TABLE_ZONE18_29                     (595)
+
+#define TABLE_ZONE19_0                      (596)
+#define TABLE_ZONE19_1                      (597)
+#define TABLE_ZONE19_2                      (598)
+#define TABLE_ZONE19_3                      (599)
+#define TABLE_ZONE19_4                      (600)
+#define TABLE_ZONE19_5                      (601)
+#define TABLE_ZONE19_6                      (602)
+#define TABLE_ZONE19_7                      (603)
+#define TABLE_ZONE19_8                      (604)
+#define TABLE_ZONE19_9                      (605)
+#define TABLE_ZONE19_10                     (606)
+#define TABLE_ZONE19_11                     (607)
+#define TABLE_ZONE19_12                     (608)
+#define TABLE_ZONE19_13                     (609)
+#define TABLE_ZONE19_14                     (610)
+#define TABLE_ZONE19_15                     (611)
+#define TABLE_ZONE19_16                     (612)
+#define TABLE_ZONE19_17                     (613)
+#define TABLE_ZONE19_18                     (614)
+#define TABLE_ZONE19_19                     (615)
+#define TABLE_ZONE19_20                     (616)
+#define TABLE_ZONE19_21                     (617)
+#define TABLE_ZONE19_22                     (618)
+#define TABLE_ZONE19_23                     (619)
+#define TABLE_ZONE19_24                     (620)
+#define TABLE_ZONE19_25                     (621)
+#define TABLE_ZONE19_26                     (622)
+#define TABLE_ZONE19_27                     (623)
+#define TABLE_ZONE19_28                     (624)
+#define TABLE_ZONE19_29                     (625)
+
+#define TABLE_ZONE20_0                      (626)
+#define TABLE_ZONE20_1                      (627)
+#define TABLE_ZONE20_2                      (628)
+#define TABLE_ZONE20_3                      (629)
+#define TABLE_ZONE20_4                      (630)
+#define TABLE_ZONE20_5                      (631)
+#define TABLE_ZONE20_6                      (632)
+#define TABLE_ZONE20_7                      (633)
+#define TABLE_ZONE20_8                      (634)
+#define TABLE_ZONE20_9                      (635)
+#define TABLE_ZONE20_10                     (636)
+#define TABLE_ZONE20_11                     (637)
+#define TABLE_ZONE20_12                     (638)
+#define TABLE_ZONE20_13                     (639)
+#define TABLE_ZONE20_14                     (640)
+#define TABLE_ZONE20_15                     (641)
+#define TABLE_ZONE20_16                     (642)
+#define TABLE_ZONE20_17                     (643)
+#define TABLE_ZONE20_18                     (644)
+#define TABLE_ZONE20_19                     (645)
+#define TABLE_ZONE20_20                     (646)
+#define TABLE_ZONE20_21                     (647)
+#define TABLE_ZONE20_22                     (648)
+#define TABLE_ZONE20_23                     (649)
+#define TABLE_ZONE20_24                     (650)
+#define TABLE_ZONE20_25                     (651)
+#define TABLE_ZONE20_26                     (652)
+#define TABLE_ZONE20_27                     (653)
+#define TABLE_ZONE20_28                     (654)
+#define TABLE_ZONE20_29                     (655)
+
+#define TABLE_ZONE21_0                      (656)
+#define TABLE_ZONE21_1                      (657)
+#define TABLE_ZONE21_2                      (658)
+#define TABLE_ZONE21_3                      (659)
+#define TABLE_ZONE21_4                      (660)
+#define TABLE_ZONE21_5                      (661)
+#define TABLE_ZONE21_6                      (662)
+#define TABLE_ZONE21_7                      (663)
+#define TABLE_ZONE21_8                      (664)
+#define TABLE_ZONE21_9                      (665)
+#define TABLE_ZONE21_10                     (666)
+#define TABLE_ZONE21_11                     (667)
+#define TABLE_ZONE21_12                     (668)
+#define TABLE_ZONE21_13                     (669)
+#define TABLE_ZONE21_14                     (670)
+#define TABLE_ZONE21_15                     (671)
+#define TABLE_ZONE21_16                     (672)
+#define TABLE_ZONE21_17                     (673)
+#define TABLE_ZONE21_18                     (674)
+#define TABLE_ZONE21_19                     (675)
+#define TABLE_ZONE21_20                     (676)
+#define TABLE_ZONE21_21                     (677)
+#define TABLE_ZONE21_22                     (678)
+#define TABLE_ZONE21_23                     (679)
+#define TABLE_ZONE21_24                     (680)
+#define TABLE_ZONE21_25                     (681)
+#define TABLE_ZONE21_26                     (682)
+#define TABLE_ZONE21_27                     (683)
+#define TABLE_ZONE21_28                     (684)
+#define TABLE_ZONE21_29                     (685)
+
+#define TABLE_ZONE22_0                      (686)
+#define TABLE_ZONE22_1                      (687)
+#define TABLE_ZONE22_2                      (688)
+#define TABLE_ZONE22_3                      (689)
+#define TABLE_ZONE22_4                      (690)
+#define TABLE_ZONE22_5                      (691)
+#define TABLE_ZONE22_6                      (692)
+#define TABLE_ZONE22_7                      (693)
+#define TABLE_ZONE22_8                      (694)
+#define TABLE_ZONE22_9                      (695)
+#define TABLE_ZONE22_10                     (696)
+#define TABLE_ZONE22_11                     (697)
+#define TABLE_ZONE22_12                     (698)
+#define TABLE_ZONE22_13                     (699)
+#define TABLE_ZONE22_14                     (700)
+#define TABLE_ZONE22_15                     (701)
+#define TABLE_ZONE22_16                     (702)
+#define TABLE_ZONE22_17                     (703)
+#define TABLE_ZONE22_18                     (704)
+#define TABLE_ZONE22_19                     (705)
+#define TABLE_ZONE22_20                     (706)
+#define TABLE_ZONE22_21                     (707)
+#define TABLE_ZONE22_22                     (708)
+#define TABLE_ZONE22_23                     (709)
+#define TABLE_ZONE22_24                     (710)
+#define TABLE_ZONE22_25                     (711)
+#define TABLE_ZONE22_26                     (712)
+#define TABLE_ZONE22_27                     (713)
+#define TABLE_ZONE22_28                     (714)
+#define TABLE_ZONE22_29                     (715)
+
+#define TABLE_ZONE23_0                      (716)
+#define TABLE_ZONE23_1                      (717)
+#define TABLE_ZONE23_2                      (718)
+#define TABLE_ZONE23_3                      (719)
+#define TABLE_ZONE23_4                      (720)
+#define TABLE_ZONE23_5                      (721)
+#define TABLE_ZONE23_6                      (722)
+#define TABLE_ZONE23_7                      (723)
+#define TABLE_ZONE23_8                      (724)
+#define TABLE_ZONE23_9                      (725)
+#define TABLE_ZONE23_10                     (726)
+#define TABLE_ZONE23_11                     (727)
+#define TABLE_ZONE23_12                     (728)
+#define TABLE_ZONE23_13                     (729)
+#define TABLE_ZONE23_14                     (730)
+#define TABLE_ZONE23_15                     (731)
+#define TABLE_ZONE23_16                     (732)
+#define TABLE_ZONE23_17                     (733)
+#define TABLE_ZONE23_18                     (734)
+#define TABLE_ZONE23_19                     (735)
+#define TABLE_ZONE23_20                     (736)
+#define TABLE_ZONE23_21                     (737)
+#define TABLE_ZONE23_22                     (738)
+#define TABLE_ZONE23_23                     (739)
+#define TABLE_ZONE23_24                     (740)
+#define TABLE_ZONE23_25                     (741)
+#define TABLE_ZONE23_26                     (742)
+#define TABLE_ZONE23_27                     (743)
+#define TABLE_ZONE23_28                     (744)
+#define TABLE_ZONE23_29                     (745)
+
+#define TABLE_ZONE24_0                      (746)
+#define TABLE_ZONE24_1                      (747)
+#define TABLE_ZONE24_2                      (748)
+#define TABLE_ZONE24_3                      (749)
+#define TABLE_ZONE24_4                      (750)
+#define TABLE_ZONE24_5                      (751)
+#define TABLE_ZONE24_6                      (752)
+#define TABLE_ZONE24_7                      (753)
+#define TABLE_ZONE24_8                      (754)
+#define TABLE_ZONE24_9                      (755)
+#define TABLE_ZONE24_10                     (756)
+#define TABLE_ZONE24_11                     (757)
+#define TABLE_ZONE24_12                     (758)
+#define TABLE_ZONE24_13                     (759)
+#define TABLE_ZONE24_14                     (760)
+#define TABLE_ZONE24_15                     (761)
+#define TABLE_ZONE24_16                     (762)
+#define TABLE_ZONE24_17                     (763)
+#define TABLE_ZONE24_18                     (764)
+#define TABLE_ZONE24_19                     (765)
+#define TABLE_ZONE24_20                     (766)
+#define TABLE_ZONE24_21                     (767)
+#define TABLE_ZONE24_22                     (768)
+#define TABLE_ZONE24_23                     (769)
+#define TABLE_ZONE24_24                     (770)
+#define TABLE_ZONE24_25                     (771)
+#define TABLE_ZONE24_26                     (772)
+#define TABLE_ZONE24_27                     (773)
+#define TABLE_ZONE24_28                     (774)
+#define TABLE_ZONE24_29                     (775)
+
+#define TABLE_ZONE25_0                      (776)
+#define TABLE_ZONE25_1                      (777)
+#define TABLE_ZONE25_2                      (778)
+#define TABLE_ZONE25_3                      (779)
+#define TABLE_ZONE25_4                      (780)
+#define TABLE_ZONE25_5                      (781)
+#define TABLE_ZONE25_6                      (782)
+#define TABLE_ZONE25_7                      (783)
+#define TABLE_ZONE25_8                      (784)
+#define TABLE_ZONE25_9                      (785)
+#define TABLE_ZONE25_10                     (786)
+#define TABLE_ZONE25_11                     (787)
+#define TABLE_ZONE25_12                     (788)
+#define TABLE_ZONE25_13                     (789)
+#define TABLE_ZONE25_14                     (790)
+#define TABLE_ZONE25_15                     (791)
+#define TABLE_ZONE25_16                     (792)
+#define TABLE_ZONE25_17                     (793)
+#define TABLE_ZONE25_18                     (794)
+#define TABLE_ZONE25_19                     (795)
+#define TABLE_ZONE25_20                     (796)
+#define TABLE_ZONE25_21                     (797)
+#define TABLE_ZONE25_22                     (798)
+#define TABLE_ZONE25_23                     (799)
+#define TABLE_ZONE25_24                     (800)
+#define TABLE_ZONE25_25                     (801)
+#define TABLE_ZONE25_26                     (802)
+#define TABLE_ZONE25_27                     (803)
+#define TABLE_ZONE25_28                     (804)
+#define TABLE_ZONE25_29                     (805)
+
+#define TABLE_ZONE26_0                      (806)
+#define TABLE_ZONE26_1                      (807)
+#define TABLE_ZONE26_2                      (808)
+#define TABLE_ZONE26_3                      (809)
+#define TABLE_ZONE26_4                      (810)
+#define TABLE_ZONE26_5                      (811)
+#define TABLE_ZONE26_6                      (812)
+#define TABLE_ZONE26_7                      (813)
+#define TABLE_ZONE26_8                      (814)
+#define TABLE_ZONE26_9                      (815)
+#define TABLE_ZONE26_10                     (816)
+#define TABLE_ZONE26_11                     (817)
+#define TABLE_ZONE26_12                     (818)
+#define TABLE_ZONE26_13                     (819)
+#define TABLE_ZONE26_14                     (820)
+#define TABLE_ZONE26_15                     (821)
+#define TABLE_ZONE26_16                     (822)
+#define TABLE_ZONE26_17                     (823)
+#define TABLE_ZONE26_18                     (824)
+#define TABLE_ZONE26_19                     (825)
+#define TABLE_ZONE26_20                     (826)
+#define TABLE_ZONE26_21                     (827)
+#define TABLE_ZONE26_22                     (828)
+#define TABLE_ZONE26_23                     (829)
+#define TABLE_ZONE26_24                     (830)
+#define TABLE_ZONE26_25                     (831)
+#define TABLE_ZONE26_26                     (832)
+#define TABLE_ZONE26_27                     (833)
+#define TABLE_ZONE26_28                     (834)
+#define TABLE_ZONE26_29                     (835)
+
+#define TABLE_ZONE27_0                      (836)
+#define TABLE_ZONE27_1                      (837)
+#define TABLE_ZONE27_2                      (838)
+#define TABLE_ZONE27_3                      (839)
+#define TABLE_ZONE27_4                      (840)
+#define TABLE_ZONE27_5                      (841)
+#define TABLE_ZONE27_6                      (842)
+#define TABLE_ZONE27_7                      (843)
+#define TABLE_ZONE27_8                      (844)
+#define TABLE_ZONE27_9                      (845)
+#define TABLE_ZONE27_10                     (846)
+#define TABLE_ZONE27_11                     (847)
+#define TABLE_ZONE27_12                     (848)
+#define TABLE_ZONE27_13                     (849)
+#define TABLE_ZONE27_14                     (850)
+#define TABLE_ZONE27_15                     (851)
+#define TABLE_ZONE27_16                     (852)
+#define TABLE_ZONE27_17                     (853)
+#define TABLE_ZONE27_18                     (854)
+#define TABLE_ZONE27_19                     (855)
+#define TABLE_ZONE27_20                     (856)
+#define TABLE_ZONE27_21                     (857)
+#define TABLE_ZONE27_22                     (858)
+#define TABLE_ZONE27_23                     (859)
+#define TABLE_ZONE27_24                     (860)
+#define TABLE_ZONE27_25                     (861)
+#define TABLE_ZONE27_26                     (862)
+#define TABLE_ZONE27_27                     (863)
+#define TABLE_ZONE27_28                     (864)
+#define TABLE_ZONE27_29                     (865)
+
+#define TABLE_ZONE28_0                      (866)
+#define TABLE_ZONE28_1                      (867)
+#define TABLE_ZONE28_2                      (868)
+#define TABLE_ZONE28_3                      (869)
+#define TABLE_ZONE28_4                      (870)
+#define TABLE_ZONE28_5                      (871)
+#define TABLE_ZONE28_6                      (872)
+#define TABLE_ZONE28_7                      (873)
+#define TABLE_ZONE28_8                      (874)
+#define TABLE_ZONE28_9                      (875)
+#define TABLE_ZONE28_10                     (876)
+#define TABLE_ZONE28_11                     (877)
+#define TABLE_ZONE28_12                     (878)
+#define TABLE_ZONE28_13                     (879)
+#define TABLE_ZONE28_14                     (880)
+#define TABLE_ZONE28_15                     (881)
+#define TABLE_ZONE28_16                     (882)
+#define TABLE_ZONE28_17                     (883)
+#define TABLE_ZONE28_18                     (884)
+#define TABLE_ZONE28_19                     (885)
+#define TABLE_ZONE28_20                     (886)
+#define TABLE_ZONE28_21                     (887)
+#define TABLE_ZONE28_22                     (888)
+#define TABLE_ZONE28_23                     (889)
+#define TABLE_ZONE28_24                     (890)
+#define TABLE_ZONE28_25                     (891)
+#define TABLE_ZONE28_26                     (892)
+#define TABLE_ZONE28_27                     (893)
+#define TABLE_ZONE28_28                     (894)
+#define TABLE_ZONE28_29                     (895)
+
+#define TABLE_ZONE29_0                      (896)
+#define TABLE_ZONE29_1                      (897)
+#define TABLE_ZONE29_2                      (898)
+#define TABLE_ZONE29_3                      (899)
+#define TABLE_ZONE29_4                      (900)
+#define TABLE_ZONE29_5                      (901)
+#define TABLE_ZONE29_6                      (902)
+#define TABLE_ZONE29_7                      (903)
+#define TABLE_ZONE29_8                      (904)
+#define TABLE_ZONE29_9                      (905)
+#define TABLE_ZONE29_10                     (906)
+#define TABLE_ZONE29_11                     (907)
+#define TABLE_ZONE29_12                     (908)
+#define TABLE_ZONE29_13                     (909)
+#define TABLE_ZONE29_14                     (910)
+#define TABLE_ZONE29_15                     (911)
+#define TABLE_ZONE29_16                     (912)
+#define TABLE_ZONE29_17                     (913)
+#define TABLE_ZONE29_18                     (914)
+#define TABLE_ZONE29_19                     (915)
+#define TABLE_ZONE29_20                     (916)
+#define TABLE_ZONE29_21                     (917)
+#define TABLE_ZONE29_22                     (918)
+#define TABLE_ZONE29_23                     (919)
+#define TABLE_ZONE29_24                     (920)
+#define TABLE_ZONE29_25                     (921)
+#define TABLE_ZONE29_26                     (922)
+#define TABLE_ZONE29_27                     (923)
+#define TABLE_ZONE29_28                     (924)
+#define TABLE_ZONE29_29                     (925)
+
+#define TABLE_ZONE30_0                      (926)
+#define TABLE_ZONE30_1                      (927)
+#define TABLE_ZONE30_2                      (928)
+#define TABLE_ZONE30_3                      (929)
+#define TABLE_ZONE30_4                      (930)
+#define TABLE_ZONE30_5                      (931)
+#define TABLE_ZONE30_6                      (932)
+#define TABLE_ZONE30_7                      (933)
+#define TABLE_ZONE30_8                      (934)
+#define TABLE_ZONE30_9                      (935)
+#define TABLE_ZONE30_10                     (936)
+#define TABLE_ZONE30_11                     (937)
+#define TABLE_ZONE30_12                     (938)
+#define TABLE_ZONE30_13                     (939)
+#define TABLE_ZONE30_14                     (940)
+#define TABLE_ZONE30_15                     (941)
+#define TABLE_ZONE30_16                     (942)
+#define TABLE_ZONE30_17                     (943)
+#define TABLE_ZONE30_18                     (944)
+#define TABLE_ZONE30_19                     (945)
+#define TABLE_ZONE30_20                     (946)
+#define TABLE_ZONE30_21                     (947)
+#define TABLE_ZONE30_22                     (948)
+#define TABLE_ZONE30_23                     (949)
+#define TABLE_ZONE30_24                     (950)
+#define TABLE_ZONE30_25                     (951)
+#define TABLE_ZONE30_26                     (952)
+#define TABLE_ZONE30_27                     (953)
+#define TABLE_ZONE30_28                     (954)
+#define TABLE_ZONE30_29                     (955)
+
+#define TABLE_ZONE31_0                      (956)
+#define TABLE_ZONE31_1                      (957)
+#define TABLE_ZONE31_2                      (958)
+#define TABLE_ZONE31_3                      (959)
+#define TABLE_ZONE31_4                      (960)
+#define TABLE_ZONE31_5                      (961)
+#define TABLE_ZONE31_6                      (962)
+#define TABLE_ZONE31_7                      (963)
+#define TABLE_ZONE31_8                      (964)
+#define TABLE_ZONE31_9                      (965)
+#define TABLE_ZONE31_10                     (966)
+#define TABLE_ZONE31_11                     (967)
+#define TABLE_ZONE31_12                     (968)
+#define TABLE_ZONE31_13                     (969)
+#define TABLE_ZONE31_14                     (970)
+#define TABLE_ZONE31_15                     (971)
+#define TABLE_ZONE31_16                     (972)
+#define TABLE_ZONE31_17                     (973)
+#define TABLE_ZONE31_18                     (974)
+#define TABLE_ZONE31_19                     (975)
+#define TABLE_ZONE31_20                     (976)
+#define TABLE_ZONE31_21                     (977)
+#define TABLE_ZONE31_22                     (978)
+#define TABLE_ZONE31_23                     (979)
+#define TABLE_ZONE31_24                     (980)
+#define TABLE_ZONE31_25                     (981)
+#define TABLE_ZONE31_26                     (982)
+#define TABLE_ZONE31_27                     (983)
+#define TABLE_ZONE31_28                     (984)
+#define TABLE_ZONE31_29                     (985)
+
+#define TABLE_ZONE32_0                      (986)
+#define TABLE_ZONE32_1                      (987)
+#define TABLE_ZONE32_2                      (988)
+#define TABLE_ZONE32_3                      (989)
+#define TABLE_ZONE32_4                      (990)
+#define TABLE_ZONE32_5                      (991)
+#define TABLE_ZONE32_6                      (992)
+#define TABLE_ZONE32_7                      (993)
+#define TABLE_ZONE32_8                      (994)
+#define TABLE_ZONE32_9                      (995)
+#define TABLE_ZONE32_10                     (996)
+#define TABLE_ZONE32_11                     (997)
+#define TABLE_ZONE32_12                     (998)
+#define TABLE_ZONE32_13                     (999)
+#define TABLE_ZONE32_14                     (1000)
+#define TABLE_ZONE32_15                     (1001)
+#define TABLE_ZONE32_16                     (1002)
+#define TABLE_ZONE32_17                     (1003)
+#define TABLE_ZONE32_18                     (1004)
+#define TABLE_ZONE32_19                     (1005)
+#define TABLE_ZONE32_20                     (1006)
+#define TABLE_ZONE32_21                     (1007)
+#define TABLE_ZONE32_22                     (1008)
+#define TABLE_ZONE32_23                     (1009)
+#define TABLE_ZONE32_24                     (1010)
+#define TABLE_ZONE32_25                     (1011)
+#define TABLE_ZONE32_26                     (1012)
+#define TABLE_ZONE32_27                     (1013)
+#define TABLE_ZONE32_28                     (1014)
+#define TABLE_ZONE32_29                     (1015)
+
+#define TABLE_ZONE33_0                      (1016)
+#define TABLE_ZONE33_1                      (1017)
+#define TABLE_ZONE33_2                      (1018)
+#define TABLE_ZONE33_3                      (1019)
+#define TABLE_ZONE33_4                      (1020)
+#define TABLE_ZONE33_5                      (1021)
+#define TABLE_ZONE33_6                      (1022)
+#define TABLE_ZONE33_7                      (1023)
+#define TABLE_ZONE33_8                      (1024)
+#define TABLE_ZONE33_9                      (1025)
+#define TABLE_ZONE33_10                     (1026)
+#define TABLE_ZONE33_11                     (1027)
+#define TABLE_ZONE33_12                     (1028)
+#define TABLE_ZONE33_13                     (1029)
+#define TABLE_ZONE33_14                     (1030)
+#define TABLE_ZONE33_15                     (1031)
+#define TABLE_ZONE33_16                     (1032)
+#define TABLE_ZONE33_17                     (1033)
+#define TABLE_ZONE33_18                     (1034)
+#define TABLE_ZONE33_19                     (1035)
+#define TABLE_ZONE33_20                     (1036)
+#define TABLE_ZONE33_21                     (1037)
+#define TABLE_ZONE33_22                     (1038)
+#define TABLE_ZONE33_23                     (1039)
+#define TABLE_ZONE33_24                     (1040)
+#define TABLE_ZONE33_25                     (1041)
+#define TABLE_ZONE33_26                     (1042)
+#define TABLE_ZONE33_27                     (1043)
+#define TABLE_ZONE33_28                     (1044)
+#define TABLE_ZONE33_29                     (1045)
+
+#define TABLE_ZONE34_0                      (1046)
+#define TABLE_ZONE34_1                      (1047)
+#define TABLE_ZONE34_2                      (1048)
+#define TABLE_ZONE34_3                      (1049)
+#define TABLE_ZONE34_4                      (1050)
+#define TABLE_ZONE34_5                      (1051)
+#define TABLE_ZONE34_6                      (1052)
+#define TABLE_ZONE34_7                      (1053)
+#define TABLE_ZONE34_8                      (1054)
+#define TABLE_ZONE34_9                      (1055)
+#define TABLE_ZONE34_10                     (1056)
+#define TABLE_ZONE34_11                     (1057)
+#define TABLE_ZONE34_12                     (1058)
+#define TABLE_ZONE34_13                     (1059)
+#define TABLE_ZONE34_14                     (1060)
+#define TABLE_ZONE34_15                     (1061)
+#define TABLE_ZONE34_16                     (1062)
+#define TABLE_ZONE34_17                     (1063)
+#define TABLE_ZONE34_18                     (1064)
+#define TABLE_ZONE34_19                     (1065)
+#define TABLE_ZONE34_20                     (1066)
+#define TABLE_ZONE34_21                     (1067)
+#define TABLE_ZONE34_22                     (1068)
+#define TABLE_ZONE34_23                     (1069)
+#define TABLE_ZONE34_24                     (1070)
+#define TABLE_ZONE34_25                     (1071)
+#define TABLE_ZONE34_26                     (1072)
+#define TABLE_ZONE34_27                     (1073)
+#define TABLE_ZONE34_28                     (1074)
+#define TABLE_ZONE34_29                     (1075)
+
+#define TABLE_ZONE35_0                      (1076)
+#define TABLE_ZONE35_1                      (1077)
+#define TABLE_ZONE35_2                      (1078)
+#define TABLE_ZONE35_3                      (1079)
+#define TABLE_ZONE35_4                      (1080)
+#define TABLE_ZONE35_5                      (1081)
+#define TABLE_ZONE35_6                      (1082)
+#define TABLE_ZONE35_7                      (1083)
+#define TABLE_ZONE35_8                      (1084)
+#define TABLE_ZONE35_9                      (1085)
+#define TABLE_ZONE35_10                     (1086)
+#define TABLE_ZONE35_11                     (1087)
+#define TABLE_ZONE35_12                     (1088)
+#define TABLE_ZONE35_13                     (1089)
+#define TABLE_ZONE35_14                     (1090)
+#define TABLE_ZONE35_15                     (1091)
+#define TABLE_ZONE35_16                     (1092)
+#define TABLE_ZONE35_17                     (1093)
+#define TABLE_ZONE35_18                     (1094)
+#define TABLE_ZONE35_19                     (1095)
+#define TABLE_ZONE35_20                     (1096)
+#define TABLE_ZONE35_21                     (1097)
+#define TABLE_ZONE35_22                     (1098)
+#define TABLE_ZONE35_23                     (1099)
+#define TABLE_ZONE35_24                     (1100)
+#define TABLE_ZONE35_25                     (1101)
+#define TABLE_ZONE35_26                     (1102)
+#define TABLE_ZONE35_27                     (1103)
+#define TABLE_ZONE35_28                     (1104)
+#define TABLE_ZONE35_29                     (1105)
+
+#define TABLE_ZONE36_0                      (1106)
+#define TABLE_ZONE36_1                      (1107)
+#define TABLE_ZONE36_2                      (1108)
+#define TABLE_ZONE36_3                      (1109)
+#define TABLE_ZONE36_4                      (1110)
+#define TABLE_ZONE36_5                      (1111)
+#define TABLE_ZONE36_6                      (1112)
+#define TABLE_ZONE36_7                      (1113)
+#define TABLE_ZONE36_8                      (1114)
+#define TABLE_ZONE36_9                      (1115)
+#define TABLE_ZONE36_10                     (1116)
+#define TABLE_ZONE36_11                     (1117)
+#define TABLE_ZONE36_12                     (1118)
+#define TABLE_ZONE36_13                     (1119)
+#define TABLE_ZONE36_14                     (1120)
+#define TABLE_ZONE36_15                     (1121)
+#define TABLE_ZONE36_16                     (1122)
+#define TABLE_ZONE36_17                     (1123)
+#define TABLE_ZONE36_18                     (1124)
+#define TABLE_ZONE36_19                     (1125)
+#define TABLE_ZONE36_20                     (1126)
+#define TABLE_ZONE36_21                     (1127)
+#define TABLE_ZONE36_22                     (1128)
+#define TABLE_ZONE36_23                     (1129)
+#define TABLE_ZONE36_24                     (1130)
+#define TABLE_ZONE36_25                     (1131)
+#define TABLE_ZONE36_26                     (1132)
+#define TABLE_ZONE36_27                     (1133)
+#define TABLE_ZONE36_28                     (1134)
+#define TABLE_ZONE36_29                     (1135)
+
+#define TABLE_ZONE37_0                      (1136)
+#define TABLE_ZONE37_1                      (1137)
+#define TABLE_ZONE37_2                      (1138)
+#define TABLE_ZONE37_3                      (1139)
+#define TABLE_ZONE37_4                      (1140)
+#define TABLE_ZONE37_5                      (1141)
+#define TABLE_ZONE37_6                      (1142)
+#define TABLE_ZONE37_7                      (1143)
+#define TABLE_ZONE37_8                      (1144)
+#define TABLE_ZONE37_9                      (1145)
+#define TABLE_ZONE37_10                     (1146)
+#define TABLE_ZONE37_11                     (1147)
+#define TABLE_ZONE37_12                     (1148)
+#define TABLE_ZONE37_13                     (1149)
+#define TABLE_ZONE37_14                     (1150)
+#define TABLE_ZONE37_15                     (1151)
+#define TABLE_ZONE37_16                     (1152)
+#define TABLE_ZONE37_17                     (1153)
+#define TABLE_ZONE37_18                     (1154)
+#define TABLE_ZONE37_19                     (1155)
+#define TABLE_ZONE37_20                     (1156)
+#define TABLE_ZONE37_21                     (1157)
+#define TABLE_ZONE37_22                     (1158)
+#define TABLE_ZONE37_23                     (1159)
+#define TABLE_ZONE37_24                     (1160)
+#define TABLE_ZONE37_25                     (1161)
+#define TABLE_ZONE37_26                     (1162)
+#define TABLE_ZONE37_27                     (1163)
+#define TABLE_ZONE37_28                     (1164)
+#define TABLE_ZONE37_29                     (1165)
+
+#define TABLE_ZONE38_0                      (1166)
+#define TABLE_ZONE38_1                      (1167)
+#define TABLE_ZONE38_2                      (1168)
+#define TABLE_ZONE38_3                      (1169)
+#define TABLE_ZONE38_4                      (1170)
+#define TABLE_ZONE38_5                      (1171)
+#define TABLE_ZONE38_6                      (1172)
+#define TABLE_ZONE38_7                      (1173)
+#define TABLE_ZONE38_8                      (1174)
+#define TABLE_ZONE38_9                      (1175)
+#define TABLE_ZONE38_10                     (1176)
+#define TABLE_ZONE38_11                     (1177)
+#define TABLE_ZONE38_12                     (1178)
+#define TABLE_ZONE38_13                     (1179)
+#define TABLE_ZONE38_14                     (1180)
+#define TABLE_ZONE38_15                     (1181)
+#define TABLE_ZONE38_16                     (1182)
+#define TABLE_ZONE38_17                     (1183)
+#define TABLE_ZONE38_18                     (1184)
+#define TABLE_ZONE38_19                     (1185)
+#define TABLE_ZONE38_20                     (1186)
+#define TABLE_ZONE38_21                     (1187)
+#define TABLE_ZONE38_22                     (1188)
+#define TABLE_ZONE38_23                     (1189)
+#define TABLE_ZONE38_24                     (1190)
+#define TABLE_ZONE38_25                     (1191)
+#define TABLE_ZONE38_26                     (1192)
+#define TABLE_ZONE38_27                     (1193)
+#define TABLE_ZONE38_28                     (1194)
+#define TABLE_ZONE38_29                     (1195)
+
+#define TABLE_ZONE39_0                      (1196)
+#define TABLE_ZONE39_1                      (1197)
+#define TABLE_ZONE39_2                      (1198)
+#define TABLE_ZONE39_3                      (1199)
+#define TABLE_ZONE39_4                      (1200)
+#define TABLE_ZONE39_5                      (1201)
+#define TABLE_ZONE39_6                      (1202)
+#define TABLE_ZONE39_7                      (1203)
+#define TABLE_ZONE39_8                      (1204)
+#define TABLE_ZONE39_9                      (1205)
+#define TABLE_ZONE39_10                     (1206)
+#define TABLE_ZONE39_11                     (1207)
+#define TABLE_ZONE39_12                     (1208)
+#define TABLE_ZONE39_13                     (1209)
+#define TABLE_ZONE39_14                     (1210)
+#define TABLE_ZONE39_15                     (1211)
+#define TABLE_ZONE39_16                     (1212)
+#define TABLE_ZONE39_17                     (1213)
+#define TABLE_ZONE39_18                     (1214)
+#define TABLE_ZONE39_19                     (1215)
+#define TABLE_ZONE39_20                     (1216)
+#define TABLE_ZONE39_21                     (1217)
+#define TABLE_ZONE39_22                     (1218)
+#define TABLE_ZONE39_23                     (1219)
+#define TABLE_ZONE39_24                     (1220)
+#define TABLE_ZONE39_25                     (1221)
+#define TABLE_ZONE39_26                     (1222)
+#define TABLE_ZONE39_27                     (1223)
+#define TABLE_ZONE39_28                     (1224)
+#define TABLE_ZONE39_29                     (1225)
+
+#define TABLE_ZONE40_0                      (1226)
+#define TABLE_ZONE40_1                      (1227)
+#define TABLE_ZONE40_2                      (1228)
+#define TABLE_ZONE40_3                      (1229)
+#define TABLE_ZONE40_4                      (1230)
+#define TABLE_ZONE40_5                      (1231)
+#define TABLE_ZONE40_6                      (1232)
+#define TABLE_ZONE40_7                      (1233)
+#define TABLE_ZONE40_8                      (1234)
+#define TABLE_ZONE40_9                      (1235)
+#define TABLE_ZONE40_10                     (1236)
+#define TABLE_ZONE40_11                     (1237)
+#define TABLE_ZONE40_12                     (1238)
+#define TABLE_ZONE40_13                     (1239)
+#define TABLE_ZONE40_14                     (1240)
+#define TABLE_ZONE40_15                     (1241)
+#define TABLE_ZONE40_16                     (1242)
+#define TABLE_ZONE40_17                     (1243)
+#define TABLE_ZONE40_18                     (1244)
+#define TABLE_ZONE40_19                     (1245)
+#define TABLE_ZONE40_20                     (1246)
+#define TABLE_ZONE40_21                     (1247)
+#define TABLE_ZONE40_22                     (1248)
+#define TABLE_ZONE40_23                     (1249)
+#define TABLE_ZONE40_24                     (1250)
+#define TABLE_ZONE40_25                     (1251)
+#define TABLE_ZONE40_26                     (1252)
+#define TABLE_ZONE40_27                     (1253)
+#define TABLE_ZONE40_28                     (1254)
+#define TABLE_ZONE40_29                     (1255)
+
+#define TABLE_ZONE41_0                      (1256)
+#define TABLE_ZONE41_1                      (1257)
+#define TABLE_ZONE41_2                      (1258)
+#define TABLE_ZONE41_3                      (1259)
+#define TABLE_ZONE41_4                      (1260)
+#define TABLE_ZONE41_5                      (1261)
+#define TABLE_ZONE41_6                      (1262)
+#define TABLE_ZONE41_7                      (1263)
+#define TABLE_ZONE41_8                      (1264)
+#define TABLE_ZONE41_9                      (1265)
+#define TABLE_ZONE41_10                     (1266)
+#define TABLE_ZONE41_11                     (1267)
+#define TABLE_ZONE41_12                     (1268)
+#define TABLE_ZONE41_13                     (1269)
+#define TABLE_ZONE41_14                     (1270)
+#define TABLE_ZONE41_15                     (1271)
+#define TABLE_ZONE41_16                     (1272)
+#define TABLE_ZONE41_17                     (1273)
+#define TABLE_ZONE41_18                     (1274)
+#define TABLE_ZONE41_19                     (1275)
+#define TABLE_ZONE41_20                     (1276)
+#define TABLE_ZONE41_21                     (1277)
+#define TABLE_ZONE41_22                     (1278)
+#define TABLE_ZONE41_23                     (1279)
+#define TABLE_ZONE41_24                     (1280)
+#define TABLE_ZONE41_25                     (1281)
+#define TABLE_ZONE41_26                     (1282)
+#define TABLE_ZONE41_27                     (1283)
+#define TABLE_ZONE41_28                     (1284)
+#define TABLE_ZONE41_29                     (1285)
+
+#define TABLE_ZONE42_0                      (1286)
+#define TABLE_ZONE42_1                      (1287)
+#define TABLE_ZONE42_2                      (1288)
+#define TABLE_ZONE42_3                      (1289)
+#define TABLE_ZONE42_4                      (1290)
+#define TABLE_ZONE42_5                      (1291)
+#define TABLE_ZONE42_6                      (1292)
+#define TABLE_ZONE42_7                      (1293)
+#define TABLE_ZONE42_8                      (1294)
+#define TABLE_ZONE42_9                      (1295)
+#define TABLE_ZONE42_10                     (1296)
+#define TABLE_ZONE42_11                     (1297)
+#define TABLE_ZONE42_12                     (1298)
+#define TABLE_ZONE42_13                     (1299)
+#define TABLE_ZONE42_14                     (1300)
+#define TABLE_ZONE42_15                     (1301)
+#define TABLE_ZONE42_16                     (1302)
+#define TABLE_ZONE42_17                     (1303)
+#define TABLE_ZONE42_18                     (1304)
+#define TABLE_ZONE42_19                     (1305)
+#define TABLE_ZONE42_20                     (1306)
+#define TABLE_ZONE42_21                     (1307)
+#define TABLE_ZONE42_22                     (1308)
+#define TABLE_ZONE42_23                     (1309)
+#define TABLE_ZONE42_24                     (1310)
+#define TABLE_ZONE42_25                     (1311)
+#define TABLE_ZONE42_26                     (1312)
+#define TABLE_ZONE42_27                     (1313)
+#define TABLE_ZONE42_28                     (1314)
+#define TABLE_ZONE42_29                     (1315)
+
+#define TABLE_ZONE43_0                      (1316)
+#define TABLE_ZONE43_1                      (1317)
+#define TABLE_ZONE43_2                      (1318)
+#define TABLE_ZONE43_3                      (1319)
+#define TABLE_ZONE43_4                      (1320)
+#define TABLE_ZONE43_5                      (1321)
+#define TABLE_ZONE43_6                      (1322)
+#define TABLE_ZONE43_7                      (1323)
+#define TABLE_ZONE43_8                      (1324)
+#define TABLE_ZONE43_9                      (1325)
+#define TABLE_ZONE43_10                     (1326)
+#define TABLE_ZONE43_11                     (1327)
+#define TABLE_ZONE43_12                     (1328)
+#define TABLE_ZONE43_13                     (1329)
+#define TABLE_ZONE43_14                     (1330)
+#define TABLE_ZONE43_15                     (1331)
+#define TABLE_ZONE43_16                     (1332)
+#define TABLE_ZONE43_17                     (1333)
+#define TABLE_ZONE43_18                     (1334)
+#define TABLE_ZONE43_19                     (1335)
+#define TABLE_ZONE43_20                     (1336)
+#define TABLE_ZONE43_21                     (1337)
+#define TABLE_ZONE43_22                     (1338)
+#define TABLE_ZONE43_23                     (1339)
+#define TABLE_ZONE43_24                     (1340)
+#define TABLE_ZONE43_25                     (1341)
+#define TABLE_ZONE43_26                     (1342)
+#define TABLE_ZONE43_27                     (1343)
+#define TABLE_ZONE43_28                     (1344)
+#define TABLE_ZONE43_29                     (1345)
+
+#define TABLE_ZONE44_0                      (1346)
+#define TABLE_ZONE44_1                      (1347)
+#define TABLE_ZONE44_2                      (1348)
+#define TABLE_ZONE44_3                      (1349)
+#define TABLE_ZONE44_4                      (1350)
+#define TABLE_ZONE44_5                      (1351)
+#define TABLE_ZONE44_6                      (1352)
+#define TABLE_ZONE44_7                      (1353)
+#define TABLE_ZONE44_8                      (1354)
+#define TABLE_ZONE44_9                      (1355)
+#define TABLE_ZONE44_10                     (1356)
+#define TABLE_ZONE44_11                     (1357)
+#define TABLE_ZONE44_12                     (1358)
+#define TABLE_ZONE44_13                     (1359)
+#define TABLE_ZONE44_14                     (1360)
+#define TABLE_ZONE44_15                     (1361)
+#define TABLE_ZONE44_16                     (1362)
+#define TABLE_ZONE44_17                     (1363)
+#define TABLE_ZONE44_18                     (1364)
+#define TABLE_ZONE44_19                     (1365)
+#define TABLE_ZONE44_20                     (1366)
+#define TABLE_ZONE44_21                     (1367)
+#define TABLE_ZONE44_22                     (1368)
+#define TABLE_ZONE44_23                     (1369)
+#define TABLE_ZONE44_24                     (1370)
+#define TABLE_ZONE44_25                     (1371)
+#define TABLE_ZONE44_26                     (1372)
+#define TABLE_ZONE44_27                     (1373)
+#define TABLE_ZONE44_28                     (1374)
+#define TABLE_ZONE44_29                     (1375)
+
+#define TABLE_ZONE45_0                      (1376)
+#define TABLE_ZONE45_1                      (1377)
+#define TABLE_ZONE45_2                      (1378)
+#define TABLE_ZONE45_3                      (1379)
+#define TABLE_ZONE45_4                      (1380)
+#define TABLE_ZONE45_5                      (1381)
+#define TABLE_ZONE45_6                      (1382)
+#define TABLE_ZONE45_7                      (1383)
+#define TABLE_ZONE45_8                      (1384)
+#define TABLE_ZONE45_9                      (1385)
+#define TABLE_ZONE45_10                     (1386)
+#define TABLE_ZONE45_11                     (1387)
+#define TABLE_ZONE45_12                     (1388)
+#define TABLE_ZONE45_13                     (1389)
+#define TABLE_ZONE45_14                     (1390)
+#define TABLE_ZONE45_15                     (1391)
+#define TABLE_ZONE45_16                     (1392)
+#define TABLE_ZONE45_17                     (1393)
+#define TABLE_ZONE45_18                     (1394)
+#define TABLE_ZONE45_19                     (1395)
+#define TABLE_ZONE45_20                     (1396)
+#define TABLE_ZONE45_21                     (1397)
+#define TABLE_ZONE45_22                     (1398)
+#define TABLE_ZONE45_23                     (1399)
+#define TABLE_ZONE45_24                     (1400)
+#define TABLE_ZONE45_25                     (1401)
+#define TABLE_ZONE45_26                     (1402)
+#define TABLE_ZONE45_27                     (1403)
+#define TABLE_ZONE45_28                     (1404)
+#define TABLE_ZONE45_29                     (1405)
+
+#define TABLE_ZONE46_0                      (1406)
+#define TABLE_ZONE46_1                      (1407)
+#define TABLE_ZONE46_2                      (1408)
+#define TABLE_ZONE46_3                      (1409)
+#define TABLE_ZONE46_4                      (1410)
+#define TABLE_ZONE46_5                      (1411)
+#define TABLE_ZONE46_6                      (1412)
+#define TABLE_ZONE46_7                      (1413)
+#define TABLE_ZONE46_8                      (1414)
+#define TABLE_ZONE46_9                      (1415)
+#define TABLE_ZONE46_10                     (1416)
+#define TABLE_ZONE46_11                     (1417)
+#define TABLE_ZONE46_12                     (1418)
+#define TABLE_ZONE46_13                     (1419)
+#define TABLE_ZONE46_14                     (1420)
+#define TABLE_ZONE46_15                     (1421)
+#define TABLE_ZONE46_16                     (1422)
+#define TABLE_ZONE46_17                     (1423)
+#define TABLE_ZONE46_18                     (1424)
+#define TABLE_ZONE46_19                     (1425)
+#define TABLE_ZONE46_20                     (1426)
+#define TABLE_ZONE46_21                     (1427)
+#define TABLE_ZONE46_22                     (1428)
+#define TABLE_ZONE46_23                     (1429)
+#define TABLE_ZONE46_24                     (1430)
+#define TABLE_ZONE46_25                     (1431)
+#define TABLE_ZONE46_26                     (1432)
+#define TABLE_ZONE46_27                     (1433)
+#define TABLE_ZONE46_28                     (1434)
+#define TABLE_ZONE46_29                     (1435)
+
+#define TABLE_ZONE47_0                      (1436)
+#define TABLE_ZONE47_1                      (1437)
+#define TABLE_ZONE47_2                      (1438)
+#define TABLE_ZONE47_3                      (1439)
+#define TABLE_ZONE47_4                      (1440)
+#define TABLE_ZONE47_5                      (1441)
+#define TABLE_ZONE47_6                      (1442)
+#define TABLE_ZONE47_7                      (1443)
+#define TABLE_ZONE47_8                      (1444)
+#define TABLE_ZONE47_9                      (1445)
+#define TABLE_ZONE47_10                     (1446)
+#define TABLE_ZONE47_11                     (1447)
+#define TABLE_ZONE47_12                     (1448)
+#define TABLE_ZONE47_13                     (1449)
+#define TABLE_ZONE47_14                     (1450)
+#define TABLE_ZONE47_15                     (1451)
+#define TABLE_ZONE47_16                     (1452)
+#define TABLE_ZONE47_17                     (1453)
+#define TABLE_ZONE47_18                     (1454)
+#define TABLE_ZONE47_19                     (1455)
+#define TABLE_ZONE47_20                     (1456)
+#define TABLE_ZONE47_21                     (1457)
+#define TABLE_ZONE47_22                     (1458)
+#define TABLE_ZONE47_23                     (1459)
+#define TABLE_ZONE47_24                     (1460)
+#define TABLE_ZONE47_25                     (1461)
+#define TABLE_ZONE47_26                     (1462)
+#define TABLE_ZONE47_27                     (1463)
+#define TABLE_ZONE47_28                     (1464)
+#define TABLE_ZONE47_29                     (1465)
+
+#define TABLE_ZONE48_0                      (1466)
+#define TABLE_ZONE48_1                      (1467)
+#define TABLE_ZONE48_2                      (1468)
+#define TABLE_ZONE48_3                      (1469)
+#define TABLE_ZONE48_4                      (1470)
+#define TABLE_ZONE48_5                      (1471)
+#define TABLE_ZONE48_6                      (1472)
+#define TABLE_ZONE48_7                      (1473)
+#define TABLE_ZONE48_8                      (1474)
+#define TABLE_ZONE48_9                      (1475)
+#define TABLE_ZONE48_10                     (1476)
+#define TABLE_ZONE48_11                     (1477)
+#define TABLE_ZONE48_12                     (1478)
+#define TABLE_ZONE48_13                     (1479)
+#define TABLE_ZONE48_14                     (1480)
+#define TABLE_ZONE48_15                     (1481)
+#define TABLE_ZONE48_16                     (1482)
+#define TABLE_ZONE48_17                     (1483)
+#define TABLE_ZONE48_18                     (1484)
+#define TABLE_ZONE48_19                     (1485)
+#define TABLE_ZONE48_20                     (1486)
+#define TABLE_ZONE48_21                     (1487)
+#define TABLE_ZONE48_22                     (1488)
+#define TABLE_ZONE48_23                     (1489)
+#define TABLE_ZONE48_24                     (1490)
+#define TABLE_ZONE48_25                     (1491)
+#define TABLE_ZONE48_26                     (1492)
+#define TABLE_ZONE48_27                     (1493)
+#define TABLE_ZONE48_28                     (1494)
+#define TABLE_ZONE48_29                     (1495)
+
+#define TABLE_ZONE49_0                      (1496)
+#define TABLE_ZONE49_1                      (1497)
+#define TABLE_ZONE49_2                      (1498)
+#define TABLE_ZONE49_3                      (1499)
+#define TABLE_ZONE49_4                      (1500)
+#define TABLE_ZONE49_5                      (1501)
+#define TABLE_ZONE49_6                      (1502)
+#define TABLE_ZONE49_7                      (1503)
+#define TABLE_ZONE49_8                      (1504)
+#define TABLE_ZONE49_9                      (1505)
+#define TABLE_ZONE49_10                     (1506)
+#define TABLE_ZONE49_11                     (1507)
+#define TABLE_ZONE49_12                     (1508)
+#define TABLE_ZONE49_13                     (1509)
+#define TABLE_ZONE49_14                     (1510)
+#define TABLE_ZONE49_15                     (1511)
+#define TABLE_ZONE49_16                     (1512)
+#define TABLE_ZONE49_17                     (1513)
+#define TABLE_ZONE49_18                     (1514)
+#define TABLE_ZONE49_19                     (1515)
+#define TABLE_ZONE49_20                     (1516)
+#define TABLE_ZONE49_21                     (1517)
+#define TABLE_ZONE49_22                     (1518)
+#define TABLE_ZONE49_23                     (1519)
+#define TABLE_ZONE49_24                     (1520)
+#define TABLE_ZONE49_25                     (1521)
+#define TABLE_ZONE49_26                     (1522)
+#define TABLE_ZONE49_27                     (1523)
+#define TABLE_ZONE49_28                     (1524)
+#define TABLE_ZONE49_29                     (1525)
+
+#define TABLE_ZONE50_0                      (1526)
+#define TABLE_ZONE50_1                      (1527)
+#define TABLE_ZONE50_2                      (1528)
+#define TABLE_ZONE50_3                      (1529)
+#define TABLE_ZONE50_4                      (1530)
+#define TABLE_ZONE50_5                      (1531)
+#define TABLE_ZONE50_6                      (1532)
+#define TABLE_ZONE50_7                      (1533)
+#define TABLE_ZONE50_8                      (1534)
+#define TABLE_ZONE50_9                      (1535)
+#define TABLE_ZONE50_10                     (1536)
+#define TABLE_ZONE50_11                     (1537)
+#define TABLE_ZONE50_12                     (1538)
+#define TABLE_ZONE50_13                     (1539)
+#define TABLE_ZONE50_14                     (1540)
+#define TABLE_ZONE50_15                     (1541)
+#define TABLE_ZONE50_16                     (1542)
+#define TABLE_ZONE50_17                     (1543)
+#define TABLE_ZONE50_18                     (1544)
+#define TABLE_ZONE50_19                     (1545)
+#define TABLE_ZONE50_20                     (1546)
+#define TABLE_ZONE50_21                     (1547)
+#define TABLE_ZONE50_22                     (1548)
+#define TABLE_ZONE50_23                     (1549)
+#define TABLE_ZONE50_24                     (1550)
+#define TABLE_ZONE50_25                     (1551)
+#define TABLE_ZONE50_26                     (1552)
+#define TABLE_ZONE50_27                     (1553)
+#define TABLE_ZONE50_28                     (1554)
+#define TABLE_ZONE50_29                     (1555)
+
+#define TABLE_MAX                         (1556)
+                                             
+class CCheck                                 
+{
+	uint Type;
+	uint Index;
+	uint8 Operator;
+	int Value;
+
+	CCheck()
+	{
+		Type=0;
+		Index=0;
+		Operator=0;
+		Value=0;
+	}
+
+	void Set(uint type, uint index, uint8 operator, int value)
+	{
+		Type=type;
+		Index=index;
+		Operator=operator;
+		Value=value;
+	}
+}
+
+class CEncounterObject
+{
+	uint ObjectType;
+	uint16 Pid; // Proto id
+	uint DialogId;
+	string ScriptName;
+	uint DistanceLength; // Distance from players
+	CEncounterObject@[] Childs; // Items in inventory or container
+	CCheck[] Checks;
+	// Only for critter
+	uint RatioValue;
+	bool IsDead;
+	// Only for item
+	uint Minimum;
+	uint Maximum;
+	uint InvSlot;
+
+	CEncounterObject()
+	{
+		ObjectType=0;
+		Pid=0;
+		DialogId=0;
+		ScriptName="";
+		DistanceLength=0;
+		RatioValue=0;
+		IsDead=false;
+		Minimum=0;
+		Maximum=0;
+		InvSlot=0;
+	}
+
+	CEncounterObject@ NewCheck(uint type, uint index, uint8 operator, int value)
+	{
+		Checks.grow(1);
+		Checks.last().Set(type,index,operator,value);
+		return this;
+	}
+
+	CEncounterObject@ Dialog(uint dialog){DialogId=dialog; return this;}
+	CEncounterObject@ Script(string& script){ScriptName=script; return this;}
+	CEncounterObject@ Distance(uint distance){DistanceLength=distance; return this;}
+	CEncounterObject@ CheckRandom(int value){NewCheck(CHECK_RANDOM,0,0,value); return this;}
+	CEncounterObject@ CheckParam(uint index, uint8 operator, int value){NewCheck(CHECK_PARAM,index,operator,value); return this;}
+	CEncounterObject@ CheckParamAny(uint index, uint8 operator, int value){NewCheck(CHECK_PARAM_ANY,index,operator,value); return this;}
+	CEncounterObject@ CheckLVar(uint index, uint8 operator, int value){NewCheck(CHECK_LVAR,index,operator,value); return this;}
+	CEncounterObject@ CheckLVarAny(uint index, uint8 operator, int value){NewCheck(CHECK_LVAR_ANY,index,operator,value); return this;}
+	CEncounterObject@ CheckGVar(uint index, uint8 operator, int value){NewCheck(CHECK_GVAR,index,operator,value); return this;}
+	CEncounterObject@ CheckHour(uint8 operator, int value){NewCheck(CHECK_HOUR,0,operator,value); return this;}
+	CEncounterObject@ Ratio(uint ratio){RatioValue=ratio; return this;}
+	CEncounterObject@ Dead(bool dead){IsDead=dead; return this;}
+	CEncounterObject@ Slot(uint slot){InvSlot=slot; return this;}
+
+	CEncounterObject@ AddItem(uint16 pid, uint min, uint max, uint slot)
+	{
+		CEncounterObject new_child;
+		Childs.insertLast(@new_child);
+		new_child.Pid=pid;
+		new_child.Minimum=min;
+		new_child.Maximum=max;
+		new_child.InvSlot=slot;
+		return this;
+	}
+}
+
+class CEncounterGroup
+{
+	uint TeamNum;
+	uint Position;
+	uint Spacing;
+	uint Distance;
+	CEncounterObject[] Objects;
+
+	CEncounterGroup()
+	{
+		TeamNum=0;
+		Position=0;
+		Spacing=0;
+		Distance=0;
+	}
+
+	CEncounterObject@ NewObject()
+	{
+		Objects.grow(1);
+		return Objects.last();
+	}
+
+	CEncounterObject@ AddCritter(uint16 pid)
+	{
+		CEncounterObject@ obj=NewObject();
+		obj.ObjectType=ENCOUNTER_OBJECT_CRITTER;
+		obj.Pid=pid;
+		return obj;
+	}
+
+	CEncounterObject@ AddItem(uint16 pid)
+	{
+		CEncounterObject@ obj=NewObject();
+		obj.ObjectType=ENCOUNTER_OBJECT_ITEM;
+		obj.Pid=pid;
+		return obj;
+	}
+}
+
+class CEncounter
+{
+	uint Chance;
+	uint StrNum;
+	uint16 LocPid;
+	bool IsSpecial;
+	uint[] Groups;
+	uint[] RatioMin;
+	uint[] RatioMax;
+	uint[] Actions;
+	CCheck[] Checks;
+
+	CEncounter()
+	{
+		Chance=0;
+		StrNum=0;
+		LocPid=0;
+		IsSpecial=false;
+	}
+
+	CEncounter@ AddGroup(uint group, uint ratioMin, uint ratioMax)
+	{
+		Groups.grow(1);
+		RatioMin.grow(1);
+		RatioMax.grow(1);
+		Groups.last()=group;
+		RatioMin.last()=ratioMin;
+		RatioMax.last()=ratioMax;
+		return this;
+	}
+
+	CEncounter@ Fighting(uint fromGroup, uint toGroup)
+	{
+		Actions.insertLast(fromGroup);
+		Actions.insertLast(toGroup);
+		Actions.insertLast(ACTION_FIGHTING);
+		return this;
+	}
+
+	CEncounter@ NewCheck(uint type, uint index, uint8 operator, int value)
+	{
+		Checks.grow(1);
+		Checks.last().Set(type,index,operator,value);
+		return this;
+	}
+
+	CEncounter@ LocationPid(uint16 locationPid){LocPid=locationPid; return this;}
+	CEncounter@ Special(bool special){IsSpecial=special; return this;}
+	CEncounter@ CheckRandom(int value){NewCheck(CHECK_RANDOM,0,0,value); return this;}
+	CEncounter@ CheckParam(uint index, uint8 operator, int value){NewCheck(CHECK_PARAM,index,operator,value); return this;}
+	CEncounter@ CheckParamAny(uint index, uint8 operator, int value){NewCheck(CHECK_PARAM_ANY,index,operator,value); return this;}
+	CEncounter@ CheckLVar(uint index, uint8 operator, int value){NewCheck(CHECK_LVAR,index,operator,value); return this;}
+	CEncounter@ CheckLVarAny(uint index, uint8 operator, int value){NewCheck(CHECK_LVAR_ANY,index,operator,value); return this;}
+	CEncounter@ CheckGVar(uint index, uint8 operator, int value){NewCheck(CHECK_GVAR,index,operator,value); return this;}
+	CEncounter@ CheckHour(uint8 operator, int value){NewCheck(CHECK_HOUR,0,operator,value); return this;}
+	CEncounter@ AssignLVar(uint index, uint8 operator, int value){NewCheck(ASSIGN_LVAR,index,operator,value); return this;}
+}
+
+class CEncounterTable
+{
+	uint16[] LocationPids;
+	CEncounter[] Encounters;
+
+	void AddLocationPid(uint16 locationPid)
+	{
+		LocationPids.insertLast(locationPid);
+	}
+
+	CEncounter@ AddEncounter(uint chance, uint strNum)
+	{
+		Encounters.grow(1);
+		Encounters.last().Chance=chance;
+		Encounters.last().StrNum=strNum;
+		return @Encounters.last();
+	}
+}
+
+class CZone
+{
+	int Difficulty;
+	uint Terrain;
+	uint MorningChance;
+	uint AfternoonChance;
+	uint NightChance;
+	CEncounterTable@ Table;
+
+	CZone()
+	{
+		Difficulty=0;
+		Terrain=0;
+		MorningChance=0;
+		AfternoonChance=0;
+		NightChance=0;
+		@Table=null;
+	}
+}
+
+CEncounterGroup[] EncounterGroups(GROUP_MAX);
+CEncounterTable[] EncounterTables(TABLE_MAX);
+CZone@[] WorldmapGround(ZONE_COUNT_X*ZONE_COUNT_Y);
+CZone@[] WorldmapWater(ZONE_COUNT_X*ZONE_COUNT_Y);
+
+//
+// Zone
+//
+
+void SetZone(uint zx, uint zy, uint table, int difficulty, uint terrain, uint morningChance, uint afternoonChance, uint nightChance)
+{
+	CZone@ zone=CZone();
+	@zone.Table=EncounterTables[table];
+	zone.Difficulty=difficulty;
+	zone.Terrain=terrain;
+	zone.MorningChance=morningChance;
+	zone.AfternoonChance=afternoonChance;
+	zone.NightChance=nightChance;
+
+	if(terrain!=TERRAIN_Water)
+		@WorldmapGround[zy*ZONE_COUNT_X+zx]=zone;
+	else
+		@WorldmapWater[zy*ZONE_COUNT_X+zx]=zone;
+}
+
+void SetZone(uint zx, uint zy, uint table, int difficulty, uint terrain, uint chance)
+{
+	SetZone(zx,zy,table,difficulty,terrain,chance,chance,chance);
+}
+
+//
+// Tables
+//
+
+void AddTableToAllTables(CEncounterTable& globalTable)
+{
+	for(uint i=0;i<TABLE_MAX;i++)
+	{
+		if(i!=TABLE_OTHER && i!=TABLE_OTHER)
+		{
+			CEncounterTable@ table=EncounterTables[i];
+
+			for(uint j=0;j<globalTable.LocationPids.length();j++)
+			{
+				table.LocationPids.grow(1);
+				table.LocationPids.last()=globalTable.LocationPids[j];
+			}
+
+			for(uint j=0;j<globalTable.Encounters.length();j++)
+			{
+				table.Encounters.grow(1);
+				table.Encounters.last()=globalTable.Encounters[j];
+			}
+		}
+	}
+}
+
+//
+// Checks
+//
+
+bool CheckCompare(int val1, uint8 operator, int val2)
+{
+	if(operator=='>') return val1>val2;
+	if(operator=='<') return val1<val2;
+	if(operator=='=') return val1==val2;
+	Log("Unknown operator.");
+	return false;
+}
+
+bool CheckCompareAnyParam(CCheck& check, Critter@[]& critters)
+{
+	for(uint i=0,j=critters.length();i<j;i++)
+	{
+		if(CheckCompare(critters[i].Param[check.Index],check.Operator,check.Value))
+			return true;
+	}
+	return false;
+}
+
+bool CheckCompareAnyVar(CCheck& check, Critter@[]& critters)
+{
+	for(uint i=0,j=critters.length();i<j;i++)
+	{
+		GameVar@ lvar=GetLocalVar(check.Index, critters[i].Id);
+		if(valid(lvar))
+		{
+			if(CheckCompare(lvar.GetValue(), check.Operator, check.Value))
+				return true;
+		}
+	}
+	return false;
+}
+
+void CheckAssignVar(GameVar& val1, uint8 operator, int val2)
+{
+	if(operator=='=') val1=val2;
+	else if(operator=='+') val1+=val2;
+	else if(operator=='-') val1-=val2;
+	else if(operator=='*') val1*=val2;
+	else if(operator=='/') val1/=val2;
+	else Log("Unknown operator.");
+}
+
+bool CheckChecks(CCheck[]& checks, Critter@[]& critters)
+{	
+	bool checkOk = false;
+	for(int i=0,j=checks.length();i<j;i++)
+	{
+		CCheck@ check=checks[i];
+		switch(check.Type)
+		{
+		case CHECK_RANDOM: if(Random(1,100)>check.Value) return false; break;
+		case CHECK_HOUR: if(not CheckCompare(__Hour,check.Operator,check.Value)) return false; break;
+		case CHECK_PARAM: for(uint i=0,j=critters.length();i<j;i++) if(not CheckCompare(critters[i].Param[check.Index],check.Operator,check.Value)) return false; break;
+		case CHECK_PARAM_ANY: if(not CheckCompareAnyParam(check, critters)) return false; break;
+		case CHECK_LVAR:
+			// Log("Checking var"+check.Index);
+			for(uint i=0,j=critters.length();i<j;i++)
+			{
+				GameVar@ lvar=GetLocalVar(check.Index,critters[i].Id);
+				if(not valid(lvar))
+				{
+					// Log("Local var not found.");
+					return false;
+				}
+				// Log("Var val"+lvar.GetValue()+"cr id");
+				if(not CheckCompare(lvar.GetValue(),check.Operator,check.Value)) return false;
+			}
+			break;
+		case CHECK_LVAR_ANY: if(not CheckCompareAnyVar(check, critters)) return false; break;
+		case CHECK_GVAR:
+			{
+				GameVar@ gvar=GetGlobalVar(check.Index);
+				if(not valid(gvar))
+				{
+					// Log("Global var not found.");
+					return false;
+				}
+				if(not CheckCompare(gvar.GetValue(),check.Operator,check.Value)) return false;
+			}
+			break;
+		default:
+			continue;
+		}
+	}
+	return true;
+}
+
+void AssignChecks(CCheck[]& checks, Critter@[]& critters)
+{
+	for(int i=0,j=checks.length();i<j;i++)
+	{
+		CCheck@ check=checks[i];
+		if(check.Type==ASSIGN_LVAR)
+		{
+			for(uint i=0,j=critters.length();i<j;i++)
+			{
+				GameVar@ lvar=GetLocalVar(check.Index,critters[i].Id);
+				CheckAssignVar(lvar,check.Operator,check.Value);
+			}
+		}
+	}
+}
+
+//
+// Stored founded encounters
+//
+
+#define FOUNDED_ENCOUNTER_LIVE_TIME       (REAL_MINUTE(30)) // 30 real minutes
+class CFoundedEncounter
+{
+	uint Index;
+	uint16[] LocationPids;
+	CEncounter@ Encounter;
+	bool IsGenerated;
+	uint FullSecond;
+	uint PositionX;
+	uint PositionY;
+	uint OwnerId;
+	bool OwnerGroup;
+	bool TurnBased;
+	uint LocationId;
+	bool IsWater;
+	uint16 StartHexX;
+	uint16 StartHexY;
+	bool[] DirBusy;
+	uint AskChance;
+
+	CFoundedEncounter()
+	{
+		Index=0;
+		@Encounter=null;
+		IsGenerated=false;
+		FullSecond=0;
+		PositionX=0;
+		PositionY=0;
+		OwnerId=0;
+		OwnerGroup=false;
+		TurnBased=false;
+		LocationId=0;
+		IsWater=false;
+		StartHexX=0;
+		StartHexY=0;
+		DirBusy.resize(6);
+	}
+}
+
+CFoundedEncounter[] FoundedEncounters(1000);
+uint FoundedEncountersLastIndex=0;
+
+CFoundedEncounter@ CreateFoundedEncounter(bool isWater, uint x, uint y, CEncounter@ encounter, uint16[]& locationPids, uint ownerId, bool ownerGroup)
+{
+	for(int i=0,j=FoundedEncounters.length();i<j;i++)
+	{
+		CFoundedEncounter@ ge=FoundedEncounters[i];
+		if(ge.Index==0 || __FullSecond-ge.FullSecond>=FOUNDED_ENCOUNTER_LIVE_TIME+REAL_MINUTE(1))
+		{
+			FoundedEncountersLastIndex++;
+			ge.Index=FoundedEncountersLastIndex;
+			ge.LocationPids=locationPids;
+			@ge.Encounter=encounter;
+			ge.IsGenerated=false;
+			ge.FullSecond=__FullSecond;
+			ge.PositionX=x;
+			ge.PositionY=y;
+			ge.OwnerId=ownerId;
+			ge.OwnerGroup=ownerGroup;
+			ge.LocationId=0;
+			ge.IsWater=isWater;
+			for(uint k=0;k<6;k++) ge.DirBusy[k]=false;
+			return ge;
+		}
+	}
+
+	// Grow buffer and refind
+	FoundedEncounters.resize(FoundedEncounters.length()*2);
+	return CreateFoundedEncounter(isWater,x,y,encounter,locationPids,ownerId,ownerGroup);
+}
+
+CFoundedEncounter@ GetFoundedEncounter(uint index)
+{
+	for(int i=0,j=FoundedEncounters.length();i<j;i++)
+	{
+		CFoundedEncounter@ ge=FoundedEncounters[i];
+		if(ge.Index==index) return ge;
+	}
+	return null;
+}
+
+CFoundedEncounter@ GetNearFoundedEncounter(bool isWater, Critter@[]@ group, uint x, uint y, uint radius)
+{
+	int combatMode=group[0].Mode[MODE_DEFAULT_COMBAT];
+	for(int i=0,j=FoundedEncounters.length();i<j;i++)
+	{
+		CFoundedEncounter@ ge=FoundedEncounters[i];
+		if(ge.Index==0) continue;
+		if(ge.TurnBased && combatMode==COMBAT_MODE_REAL_TIME) continue;
+		if(not ge.TurnBased && combatMode==COMBAT_MODE_TURN_BASED) continue;
+		if(ge.IsWater!=isWater) continue;
+		if(__FullSecond-ge.FullSecond>=FOUNDED_ENCOUNTER_LIVE_TIME) continue;
+		if(not ge.IsGenerated) continue;
+		if(valid(ge.Encounter) && ge.Encounter.IsSpecial && not CheckChecks(ge.Encounter.Checks,group)) continue;
+		if(uint(sqrt(float(POW2(ge.PositionX-x)+POW2(ge.PositionY-y))))>radius) continue;
+		if(group[0].Id==ge.OwnerId) continue;
+		if(not valid(GetLocation(ge.LocationId))) continue;
+
+		return ge;
+	}
+	return null;
+}
+
+uint GetFreeDir(bool[]& dirBysy)
+{
+	// Try find random
+	uint dir=Random(0,5);
+	if(not dirBysy[dir])
+	{
+		dirBysy[dir]=true;
+		return dir;
+	}
+
+	// Try find any free
+	for(uint i=0;i<6;i++)
+	{
+		if(not dirBysy[i])
+		{
+			dirBysy[i]=true;
+			return i;
+		}
+	}
+
+	// Any busy
+	return Random(0,5);
+}
+
+void RotatePosition(uint toDir, uint[]& positionsDirs)
+{
+	for(uint i=1,j=positionsDirs.length();i<j;i++) // Skip Steps
+	{
+		positionsDirs[i]+=toDir;
+		if(positionsDirs[i]>5) positionsDirs[i]-=6;
+	}
+}
+
+void MovePositionPoint(Map& map, uint16& pointX, uint16& pointY, uint[]& positionDirs, uint pathIndex, uint count, uint spacing)
+{
+	uint steps=positionDirs[0];
+	uint pathLen=(positionDirs.length()-1)/2;
+	count*=steps;
+	count%=pathLen;
+	if(steps>1)
+	{
+		for(uint i=0;i<spacing;i++)
+		{
+			for(uint j=0;j<steps;j++)
+			{
+				uint dir=positionDirs[1+pathLen*pathIndex+count+j];
+				map.MoveHexByDir(pointX,pointY,dir,1);
+			}
+		}
+	}
+	else
+	{
+		uint dir=positionDirs[1+pathLen*pathIndex+count];
+		map.MoveHexByDir(pointX,pointY,dir,spacing);
+	}
+}
+
+void ParseEncounterObject(CEncounterObject@ obj, Map@ map, uint16 posX, uint16 posY, uint8 reversDir, Critter@[]& crittersGrouop, uint teamId)
+{
+	if(obj.ObjectType==ENCOUNTER_OBJECT_CRITTER)
+	{
+		if(not map.IsHexPassed(posX,posY)) return;
+
+		int[] items;
+		if(obj.Childs.length()>0)
+		{
+			for(uint i=0,j=obj.Childs.length();i<j;i++)
+			{
+				CEncounterObject@ child=obj.Childs[i];
+				uint count=Random(child.Minimum,child.Maximum);
+				if(count>0)
+				{
+					items.insertLast(child.Pid);
+					items.insertLast(count);
+					items.insertLast(child.InvSlot);
+				}
+			}
+		}
+
+		int[] params={ST_DIALOG_ID,obj.DialogId,ST_BAG_ID,BAG_Empty,ST_TEAM_ID,teamId,ST_REPLICATION_TIME,-1};
+		Critter@ npc=map.AddNpc(obj.Pid,posX,posY,reversDir,params,items,obj.ScriptName);
+		if(not valid(npc)) return;
+
+		if(obj.IsDead)
+		{
+			npc.ToDead(Random(0,1)==0?ANIM2_DEAD_FRONT:ANIM2_DEAD_BACK,null);
+		}
+		else
+		{
+			crittersGrouop.insertLast(@npc);
+		}
+	}
+	else if(obj.ObjectType==ENCOUNTER_OBJECT_ITEM)
+	{
+		Item@ item=map.AddItem(posX,posY,obj.Pid,1);
+		if(not valid(item)) return;
+
+		if(obj.Childs.length()>0 && item.GetType()==ITEM_TYPE_CONTAINER)
+		{
+			for(uint i=0,j=obj.Childs.length();i<j;i++)
+			{
+				CEncounterObject@ child=obj.Childs[i];
+				uint count=Random(child.Minimum,child.Maximum);
+				if(count>0) item.AddItem(child.Pid,count,0);
+			}
+		}
+	}
+	else
+	{
+		Log("Unknown object type<"+obj.ObjectType+">.");
+	}
+}
+
+void ActionFighting(Critter@[]& npcL, Critter@[]& npcR)
+{
+	for(int i=0,j=npcL.length();i<j;i++)
+	{
+		Critter@ nl=npcL[i];
+		bool nlIsNpc=nl.IsNpc();
+		for(int k=0,l=npcR.length();k<l;k++)
+		{
+			Critter@ nr=npcR[k];
+			if(nlIsNpc)
+			{
+				AddAttackPlane(nl,0,nr,true);
+				nl.AddEnemyInStack(nr.Id);
+				nl.Wait(Random(4000,5000));
+			}
+			if(nr.IsNpc())
+			{
+				AddAttackPlane(nr,0,nl,true);
+				nr.AddEnemyInStack(nl.Id);
+				nr.Wait(Random(4000,5000));
+			}
+		}
+	}
+}
+
+Map@ GenerateEncounter(CFoundedEncounter@ fe, Critter@[]@ critters)
+{
+	CEncounter@ encounter=fe.Encounter;
+	uint16 locPid=(valid(encounter)?encounter.LocPid:0);
+	if(locPid==0) locPid=fe.LocationPids[Random(0,fe.LocationPids.length()-1)];
+
+	fe.LocationId=CreateLocation(locPid,fe.PositionX,fe.PositionY,null);
+	if(fe.LocationId==0)
+	{
+		Log("CreateLocation fail, location pid<"+locPid+">.");
+		return null;
+	}
+
+	Location@ location=GetLocation(fe.LocationId);
+	if(not valid(location))
+	{
+		Log("GetLocation fail.");
+		return null;
+	}
+	GameVar@ isEncounter = GetLocalVar(LLVAR_is_encounter, fe.LocationId);
+	if(valid(isEncounter))
+	{
+		isEncounter = 1;
+	}
+	// Генерация итемов на всех картах энкаунтера
+	for(uint i=0,l=location.GetMapCount();i<l;i++)
+	{
+		Map@ m=location.GetMapByIndex(i);
+		if(valid(m))
+		{
+			GenerateItems(m,critters);
+			if(i>0)
+			{
+				GenerateCavernEncounter(m,critters);
+			}
+		}
+	}
+
+	Map@ map=location.GetMapByIndex(0);
+	if(not valid(map))
+	{
+		Log("GetMapByIndex fail.");
+		return null;
+	}
+
+	uint16 startX=0,startY=0;
+	if(not map.GetEntireCoords(0,0,startX,startY))
+	{
+		Log("Default entire not found.");
+		return null;
+	}
+	fe.StartHexX=startX;
+	fe.StartHexY=startY;
+
+	if(not valid(encounter)) // Empty map
+	{
+		fe.IsGenerated=true;
+		return map;
+	}
+
+	Critter@ leader=critters[0];
+	Critter@[][] crittersGrouops(encounter.Groups.length());
+
+	for(uint i=0,j=encounter.Groups.length();i<j;i++)
+	{
+		uint groupNum=encounter.Groups[i];
+
+		if(groupNum==GROUP_Player)
+		{
+			Critter@[]@ crGroup=crittersGrouops[i];
+			crGroup.resize(critters.length());
+			for(uint k=0,l=critters.length();k<l;k++) @crGroup[k]=critters[k];
+			continue;
+		}
+
+		if(groupNum>=GROUP_MAX)
+		{
+			Log("Invalid group number.");
+			continue;
+		}
+
+		CEncounterGroup@ group=EncounterGroups[groupNum];
+		uint ratio=Random(encounter.RatioMin[i],encounter.RatioMax[i]);
+
+		uint distance=group.Distance;
+		if(distance==0) distance=7+leader.Stat[ST_PERCEPTION]+leader.Perk[PE_CAUTIOUS_NATURE]*3;
+
+		uint teamId=group.TeamNum;
+		if(teamId==0) teamId=TEAM_Mob0+i;
+
+		uint position=group.Position;
+		uint spacing=group.Spacing;
+		if(position==POSITION_SURROUNDING) spacing=leader.Stat[ST_PERCEPTION]+leader.Perk[PE_CAUTIOUS_NATURE]*3;
+
+		uint[] positionDirs=PositionDirs[position];
+		uint steps=positionDirs[0];
+		uint dirsCount=0;
+
+		uint freeDir=GetFreeDir(fe.DirBusy);
+		if(freeDir!=0) RotatePosition(freeDir,positionDirs);
+		uint reversDir=freeDir+3;
+		if(reversDir>5) reversDir-=6;
+
+		// Get start point for group
+		uint16[] pointX={startX,startY};
+		uint16[] pointY={startX,startY};
+		if(position!=POSITION_NONE)
+		{
+			uint16 hx=pointX[0],hy=pointY[0];
+			map.MoveHexByDir(pointX[0],pointY[0],freeDir,position!=POSITION_SURROUNDING?distance:spacing);
+			map.GetHexCoord(hx,hy,pointX[0],pointY[0],0.0f,0); // Check for barrier
+			pointX[1]=pointX[0];
+			pointY[1]=pointY[0];
+			MovePositionPoint(map,pointX[1],pointY[1],positionDirs,1,0,spacing);
+		}
+
+		for(uint k=0,l=group.Objects.length();k<l;k++)
+		{
+			CEncounterObject@ obj=group.Objects[k];
+
+			if(not CheckChecks(obj.Checks,critters)) continue;
+
+			uint otherDistance=obj.DistanceLength;
+			uint count=obj.RatioValue*ratio/100;
+			if(count==0) count=1;
+
+			uint16 oldPosX=startX,oldPosY=startY;
+			for(uint n=0;n<count;n++)
+			{
+				uint16 posX,posY;
+				if(otherDistance>0 || position==POSITION_NONE)
+				{
+					posX=startX+Random(-5,5);
+					posY=startY+Random(-5,5);
+					map.MoveHexByDir(posX,posY,freeDir,otherDistance>0?otherDistance:distance);
+				}
+				else
+				{
+					uint pathIndex=dirsCount%2;
+					posX=pointX[pathIndex]+(position==POSITION_SURROUNDING?Random(-3,0):0);
+					posY=pointY[pathIndex]+(position==POSITION_SURROUNDING?Random(-3,0):0);
+					MovePositionPoint(map,pointX[pathIndex],pointY[pathIndex],positionDirs,pathIndex,dirsCount,spacing);
+					dirsCount++;
+				}
+
+				map.GetHexCoord(oldPosX,oldPosY,posX,posY,0.0f,0); // Check for barrier
+				oldPosX=posX;
+				oldPosY=posY;
+				ParseEncounterObject(obj,map,posX,posY,reversDir,crittersGrouops[i],teamId);
+			}
+		}
+	}
+
+	for(uint i=0,j=encounter.Actions.length();i<j;i+=3)
+	{
+		uint fromGroup=encounter.Actions[i];
+		uint toGroup=encounter.Actions[i+1];
+		uint action=encounter.Actions[i+2];
+
+		if(action==ACTION_FIGHTING && fromGroup<crittersGrouops.length() && toGroup<crittersGrouops.length())
+			ActionFighting(crittersGrouops[fromGroup],crittersGrouops[toGroup]);
+	}
+
+	fe.IsGenerated=true;
+	return map;
+}
+
+//
+// Imports
+//
+// void FindEncounter(Critter@[]@ critters, uint zx, uint zy) return foundedEncounterIndex
+// bool InviteToEncounter(uint foundedEncounterIndex, Critter@[]@ critters) invite critters to encounter
+// void WorldmapInit() call on start server
+
+/*const int[] ScanOffsX={-1,0,1,-1,0,1,-1,0,1};
+const int[] ScanOffsY={-1,0,1,-1,0,1,-1,0,1};
+void ScanZone(Critter& cr, uint zx, uint zy)
+{
+	uint zoneX=cr.WorldX/__GlobalMapZoneLength;
+	uint zoneY=cr.WorldY/__GlobalMapZoneLength;
+
+	cr.SetFog(zoneX,zoneY,FOG_NONE);
+	cr.SetFog(zoneX-1,zoneY-1,FOG_SELF);
+	cr.SetFog(zoneX  ,zoneY-1,FOG_SELF);
+	cr.SetFog(zoneX+1,zoneY-1,FOG_SELF);
+	cr.SetFog(zoneX-1,zoneY  ,FOG_SELF);
+	cr.SetFog(zoneX+1,zoneY  ,FOG_SELF);
+	cr.SetFog(zoneX-1,zoneY+1,FOG_SELF);
+	cr.SetFog(zoneX  ,zoneY+1,FOG_SELF);
+	cr.SetFog(zoneX+1,zoneY+1,FOG_SELF);
+
+	for(int ox=-1;ox<2;ox++)
+	{
+		for(int oy=-1;oy<2;oy++)
+		{
+
+		}
+	}
+}*/
+
+void FindEncounter(Critter@[]& group, Item@ car, uint x, uint y, uint& encounterDescriptor, bool& waitForAnswer, bool empty)
+{
+	encounterDescriptor=0;
+	waitForAnswer=false;
+
+	uint zx=x/ZONE_LENGTH;
+	uint zy=y/ZONE_LENGTH;
+	if(zx>=ZONE_COUNT_X || zy>=ZONE_COUNT_Y)
+	{
+		//Log("Invalid zones coordinates."); in faction mod size is greather than ZONE_COUNT_X, ZONE_COUNT_Y.
+		return;
+	}
+
+	bool isWater=(GetGlobalMapRelief(x,y)==0);
+	int walkType=(valid(car)?car.Proto.Car_MovementType:GM_WALK_GROUND);
+	bool walkWaterOrFly=(walkType==GM_WALK_WATER || walkType==GM_WALK_FLY);
+	if(walkType==GM_WALK_GROUND && isWater) return;
+
+	CZone@ zone=(isWater?WorldmapWater[zy*ZONE_COUNT_X+zx]:WorldmapGround[zy*ZONE_COUNT_X+zx]);
+	if(not valid(zone)) return;
+	Critter@ leader=group[0];
+	
+	Log("Access:" + leader.GetAccess());
+	// If he is logged as a GameMaster then we avoid the encounter. TESTERS HAVE ENCOUNTERS.
+	if(leader.GetAccess() >= ACCESS_MODER) return;
+
+	// Create empty map
+	if(empty)
+	{
+		CFoundedEncounter@ fe=CreateFoundedEncounter(isWater,x,y,null,zone.Table.LocationPids,leader.Id,group.length()>1);
+		if(not valid(fe)) return;
+		waitForAnswer=false;
+		encounterDescriptor=fe.Index;
+		return;
+	}
+
+	// Check chance
+	uint chance;
+	if(IS_MORNING(__Hour)) chance=zone.MorningChance;
+	if(IS_AFTERNOON(__Hour)) chance=zone.AfternoonChance;
+	else chance=zone.NightChance;
+	if(uint(Random(1,100))>chance) return;
+
+	// Try find already founded encounter
+	CFoundedEncounter@ feAlready=GetNearFoundedEncounter(isWater,group,x,y,ZONE_LENGTH*3);
+	if(valid(feAlready))
+	{
+		int outdoorsman=leader.Skill[SK_OUTDOORSMAN];
+		outdoorsman=CLAMP(outdoorsman,6,300);
+		
+		Critter@ fecr=GetCritter(feAlready.OwnerId);
+		int outdoorsmanfe=fecr.Skill[SK_OUTDOORSMAN]+zone.Difficulty;
+		outdoorsmanfe=CLAMP(outdoorsmanfe,6,275);
+		
+		if(outdoorsman>outdoorsmanfe || walkWaterOrFly)
+		{
+			uint8 say=feAlready.TurnBased?SAY_ENCOUNTER_TB:SAY_ENCOUNTER_RT;
+			if(valid(feAlready.Encounter))
+			{
+				leader.SayMsg(say,TEXTMSG_GM,feAlready.OwnerGroup?STR_QUESTION_WITH_PLAYERS:STR_QUESTION_WITH_PLAYER,"$who @msg gm "+feAlready.Encounter.StrNum+"@$player"+GetPlayerName(feAlready.OwnerId));
+			}
+			else
+			{
+				leader.SayMsg(say,TEXTMSG_GM,feAlready.OwnerGroup?STR_QUESTION_ONLY_PLAYERS:STR_QUESTION_ONLY_PLAYER,"$player"+GetPlayerName(feAlready.OwnerId));
+			}
+			waitForAnswer=true;
+
+			if(not walkWaterOrFly)
+			{
+				//if(leader.Skill[SK_OUTDOORSMAN]<=95) leader.StatBase[ST_EXPERIENCE]+=100-leader.Skill[SK_OUTDOORSMAN]-zone.Difficulty;
+				//else leader.StatBase[ST_EXPERIENCE]+=5-zone.Difficulty;
+			}
+		}
+
+		for(uint i=0,j=group.length();i<j;i++) group[i].Say(SAY_FLASH_WINDOW,"");
+		encounterDescriptor=feAlready.Index;
+		return;
+	}
+
+	// Try find new encounter
+	int luck=0;
+	for(uint i=0,j=group.length();i<j;i++) luck+=group[i].Stat[ST_LUCK];
+	luck/=group.length();
+
+	int roll=Random(0,100)+luck-5+2*leader.Perk[PE_EXPLORER]+leader.Perk[PE_RANGER]+leader.Perk[PE_SCOUT];
+	if(roll<0) roll=0;
+	int maxRoll=0;
+
+	CEncounter[]@ encounters=zone.Table.Encounters;
+	CEncounter@[] encountersThru(encounters.length());
+	for(uint i=0,j=encounters.length();i<j;i++)
+	{
+		CEncounter@ enc=encounters[i];
+		if(CheckChecks(enc.Checks,group))
+		{
+			maxRoll+=enc.Chance;
+			@encountersThru[i]=encounters[i];
+		}
+		else
+		{
+			@encountersThru[i]=null;
+		}
+	}
+
+	roll=roll*maxRoll/100;
+	for(uint i=0,j=encountersThru.length();i<j;i++)
+	{
+		CEncounter@ enc=encountersThru[i];
+
+		if(not valid(enc)) continue;
+		if(uint(roll)>enc.Chance && i<j-1)
+		{
+			roll-=enc.Chance;
+			continue;
+		}
+
+		CFoundedEncounter@ fe=CreateFoundedEncounter(isWater,x,y,enc,zone.Table.LocationPids,leader.Id,group.length()>1);
+		if(not valid(fe)) return;
+
+		int outdoorsman=leader.Skill[SK_OUTDOORSMAN]+zone.Difficulty;
+		outdoorsman=CLAMP(outdoorsman,6,95);
+		if(outdoorsman>=Random(1,100) || walkWaterOrFly)
+		{
+			leader.SayMsg(SAY_ENCOUNTER_ANY,TEXTMSG_GM,STR_QUESTION,"$who @msg gm "+enc.StrNum+"@");
+			waitForAnswer=true;
+
+			if(not walkWaterOrFly)
+			{
+				if(leader.Skill[SK_OUTDOORSMAN]<=95) leader.StatBase[ST_EXPERIENCE]+=100-leader.Skill[SK_OUTDOORSMAN]-zone.Difficulty;
+				else leader.StatBase[ST_EXPERIENCE]+=5-zone.Difficulty;
+			}
+		}
+
+		for(uint i=0,j=group.length();i<j;i++) group[i].Say(SAY_FLASH_WINDOW,"");
+		encounterDescriptor=fe.Index;
+		break;
+	}
+}
+
+void InviteToEncounter(Critter@[]& group, Item@ car, uint encounterDescriptor, int combatMode, uint& mapId, uint16& hexX, uint16& hexY, uint8& dir)
+{
+	mapId=0;
+
+	CFoundedEncounter@ fe=GetFoundedEncounter(encounterDescriptor);
+	if(not valid(fe))
+	{
+		Log("GetFoundedEncounter fail.");
+		return;
+	}
+
+	bool isGenerated=fe.IsGenerated;
+	Map@ map=null;
+	if(isGenerated)
+	{
+		Location@ location=GetLocation(fe.LocationId);
+		if(not valid(location))
+		{
+			// Log("Location not found.");
+			return;
+		}
+
+		@map=location.GetMapByIndex(0);
+	}
+	else
+	{
+		@map=GenerateEncounter(fe,group);
+	}
+
+	if(not valid(map))
+	{
+		Log("Map not found.");
+		return;
+	}
+
+	if(not isGenerated && combatMode==COMBAT_MODE_TURN_BASED) //|| (combatMode==COMBAT_MODE_ANY && Random(0,1)==0)))
+	{
+		map.SetTurnBasedAvailability(true);
+		fe.TurnBased=true;
+	}
+
+	Critter@ leader=group[0];
+	mapId=map.Id;
+	hexX=fe.StartHexX;
+	hexY=fe.StartHexY;
+	if(isGenerated)
+	{
+		if(valid(car))
+		{
+			// Place critters near his car
+			hexX=uint16(-1);
+			hexY=uint16(-1);
+		}
+		//RESP IN ENCO WITH OTHER PLAYERS
+		else
+		{
+			dir=GetFreeDir(fe.DirBusy);
+			map.MoveHexByDir(hexX,hexY,dir,leader.Stat[ST_PERCEPTION]*2+leader.Perk[PE_CAUTIOUS_NATURE]*4);
+			dir+=3;
+			if(dir>5) dir-=6;
+		}
+	}
+	else
+	{
+		if(valid(car))
+		{
+			// Place critters near his car
+			hexX=uint16(-1);
+			hexY=uint16(-1);
+		}
+
+		dir=Random(0,5);
+	}
+
+	if(isGenerated || valid(fe.Encounter))
+	{
+		for(uint i=0,j=group.length();i<j;i++)
+		{
+			Critter@ cr=group[i];
+			if(not isGenerated)
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GM,STR_VIEW,"$who @msg gm "+fe.Encounter.StrNum+"@");
+			else if(valid(fe.Encounter))
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GM,fe.OwnerGroup?STR_VIEW_WITH_PLAYERS:STR_VIEW_WITH_PLAYER,"$who @msg gm "+fe.Encounter.StrNum+"@$player"+GetPlayerName(fe.OwnerId));
+			else
+				cr.SayMsg(SAY_NETMSG,TEXTMSG_GM,fe.OwnerGroup?STR_VIEW_ONLY_PLAYERS:STR_VIEW_ONLY_PLAYER,"$player"+GetPlayerName(fe.OwnerId));
+		}
+	}
+	if(valid(fe.Encounter)) AssignChecks(fe.Encounter.Checks,group);
+}
+
+uint GetGlobalMapRelief(uint x, uint y)
+{
+	// Used low four bits of image
+	// Zero is water
+	return GetImageColor(IMAGE_RELIEF,x,y)&0xF;
+}
+
+void WorldmapInit()
+{
+	LoadImage(IMAGE_RELIEF,"relief_tla.png",1,PT_SERVER_MAPS);
+
+#include "worldmap_init.fos"
+}

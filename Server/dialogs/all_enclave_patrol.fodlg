@@ -1,0 +1,25 @@
+[comment]
+Ваши комментарии / Your comments.
+
+[data]
+lang=russ engl pols
+
+[dialog]
+&
+1 1000 NOT_ANSWER_CLOSE_DIALOG 0&
+3 3000 NOT_ANSWER_BEGIN_BATTLE 0&
+
+[russ]
+{100}{}{Патрульный Анклава}
+{1000}{}{Преддиалоговые установки}
+{3000}{}{Spierdalaj.@@Spieprzaj.@@Chuj ci w dupк.@@Wypierdalaj suko.@@Idz piprzyж Wichure.}
+
+[engl]
+{100}{}{Enclave Patrol}
+{1000}{}{Initial preferences}
+{3000}{}{Get the fuck out.@@Get out.@@What.@@U again?...@@Go Fuck youself.}
+
+[pols]
+{100}{}{Enclave Patrol}
+{1000}{}{Initial preferences}
+{3000}{}{Czego tu.@@Lepiej nie pokazuj mi się na oczy.@@Wyjazd.@@Wynocha.@@Idz pieprzyć Wichure.}

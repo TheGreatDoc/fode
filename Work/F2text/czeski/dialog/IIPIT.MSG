@@ -1,0 +1,5 @@
+# tenhle fajl pøelouskal: Mýval (myval@writeme.com). Naposledy editováno: 31/05/1999
+{100}{}{Propadáš dírou do jeskyní pod tebou.}
+{101}{}{Vidíš díru v podlaží jeskynì.}
+{102}{}{ vidí díru v podlaží jeskynì.}
+{103}{}{Vidíš díru v podlaží jeskynì.}

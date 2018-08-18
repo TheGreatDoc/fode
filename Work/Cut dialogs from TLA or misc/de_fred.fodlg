@@ -1,0 +1,138 @@
+[comment]
+
+
+[data]
+lang=engl germ pols russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _var p Fred_the_fool = 0 #
+9 1020 D _var p Fred_the_fool = 1 @
+2 2000 None 0 #
+3 2010 #
+3 2020 @
+3 3000 None 0 #
+4 3010 #
+8 3020 @
+4 4000 None 0 #
+8 4010 #
+5 4020 D _item p PID_DE_FRUIT_1 > 0 @
+5 5000 None 0 #
+6 5010 R _item p PID_BOTTLE_CAPS + 10 R _item p PID_DE_FRUIT_1 - 1 R _var p Fred_the_fool = 1 #
+6 5020 R _item p PID_BOTTLE_CAPS + 100 R _item p PID_DE_FRUIT_1 - 1 R _param p ST_KARMA - 10 R _var p Fred_the_fool = 1 #
+6 5030 R _item p PID_DE_FRUIT_1 - 1 R _param p ST_KARMA + 10 R _var p Fred_the_fool = 1 #
+7 5040 @
+6 6000 None 0 #
+0 6010 @
+7 7000 None 0 @
+8 8000 None 0 @
+9 9000 None 0 &
+
+[engl]
+{100}{}{Fred}
+{200}{}{You see: Fred}
+{210}{}{You see the town's idiot.}
+{1000}{}{Predialogue installations}
+{1010}{}{I like turtles.}
+{1020}{}{But i like porn more.}
+{2000}{}{Huh? Ah! Face new! Me Fred. Meeting you, nice! (He takes your hand and shakes it continuously)}
+{2010}{}{Hello Fred. My name is @pname@, nice to meet you too. Please stop shaking my hand.}
+{2020}{}{Stop shaking my hand, retard.}
+{3000}{}{Ok. Fred stopping. Fred has a question.}
+{3010}{}{What question?}
+{3020}{}{I don't care. (Leave)}
+{4000}{}{Fred hungry. New friend have food?}
+{4010}{}{No I don't.}
+{4020}{}{Yeah, I have some fruit right here..}
+{5000}{}{Can Fred have? Fred have money!}
+{5010}{}{10 caps and it's yours to eat.}
+{5020}{}{Sure, 100 caps and it's yours.}
+{5030}{}{You can have it for free.}
+{5040}{}{No you can't.}
+{6000}{}{Fred happy! Fred thanks new friend!}
+{6010}{}{It's @pname@, and it's no problem.}
+{7000}{}{Fred sad. Fred go now.}
+{8000}{}{*sniff*}
+{9000}{}{Hello friend!@@Hello@@Fred hello friend@@Hello@Hello friend!@@Hello friend!}
+
+[germ]
+{100}{}{Fred}
+{200}{}{Du siehst: Fred}
+{210}{}{Du siehst den Dorftrottel.}
+{1000}{}{Predialogue installations}
+{1010}{}{i like turtles}
+{1020}{}{but i like porn more}
+{2000}{}{Huh? Ah! Gesicht neu! Ich Fred. Nett kennen lernen dich! (Er nimmt deine Hand und schuttelt sie stetig)}
+{2010}{}{Hallo Fred. Mein Name ist @pname@. Freut mich dich kennen zu lernen, aber bitte hor auf meine Hand zu schutteln.}
+{2020}{}{Hor auf meine Hand zu schutteln.}
+{3000}{}{Ok. Fred aufhoren. Fred Frage.}
+{3010}{}{Welche Frage?}
+{3020}{}{Mir egal. (Geh)}
+{4000}{}{Fred hungrig. Neuer Freund haben Essen?}
+{4010}{}{Nein hab ich nicht.}
+{4020}{}{Ja, ich habe eine Frucht dabei...}
+{5000}{}{Kann Fred haben? Fred haben Geld!}
+{5010}{}{Sicher, fur 10 Deckel ist Sie dein.}
+{5020}{}{Sicher, fur 100 Deckel ist Sie dein.}
+{5030}{}{Du kannst Sie umsonst haben.}
+{5040}{}{Nein kannst du nicht.}
+{6000}{}{Fred glucklich! Dank neuer Freund!}
+{6010}{}{Es ist @pname@. Keine Ursache.}
+{7000}{}{Fred traurig. Fred jetzt gehen.}
+{8000}{}{*schnief*}
+{9000}{}{Hallo Freund!@@Hallo@@Fred gru?en Freund@@Hallo@Hallo Freund!@@Hallo Freund!}
+
+[pols]
+{100}{}{Fred}
+{200}{}{You see: Fred}
+{210}{}{You see the idiot of the town.}
+{1000}{}{Predialogue installations}
+{1010}{}{i like turtles}
+{1020}{}{but i like porn more}
+{2000}{}{Huh? Ah! Face new! Me Fred. Nice meeting you! (He takes your hand and shakes it continuous)}
+{2010}{}{Hello Fred. My name is @pname@, it's nice to meet you too. But please stop shaking my hand.}
+{2020}{}{Stop shaking my hand.}
+{3000}{}{Ok. Fred stoping. Fred question.}
+{3010}{}{What question?}
+{3020}{}{I don't care. (Leave)}
+{4000}{}{Fred hungry. New friend have food?}
+{4010}{}{No I don't.}
+{4020}{}{Yeah, I have a fruit right here..}
+{5000}{}{Can Fred have? Fred have money!}
+{5010}{}{Sure, for 10 caps it's yours.}
+{5020}{}{Sure, for 100 caps it's yours.}
+{5030}{}{You can have it for free.}
+{5040}{}{No you can't.}
+{6000}{}{Fred happy! Thank new friend!}
+{6010}{}{It's @pname@, and it's no problem.}
+{7000}{}{Fred sad. Fred go now.}
+{8000}{}{*snif*}
+{9000}{}{Hello friend!@@Hello@@Fred hello friend@@Hello@Hello friend!@@Hello friend!}
+
+[russ]
+{100}{}{Fred}
+{200}{}{You see: Fred}
+{210}{}{You see the idiot of the town.}
+{1000}{}{Predialogue installations}
+{1010}{}{i like turtles}
+{1020}{}{but i like porn more}
+{2000}{}{Huh? Ah! Face new! Me Fred. Nice meeting you! (He takes your hand and shakes it continuous)}
+{2010}{}{Hello Fred. My name is @pname@, it's nice to meet you too. But please stop shaking my hand.}
+{2020}{}{Stop shaking my hand.}
+{3000}{}{Ok. Fred stoping. Fred question.}
+{3010}{}{What question?}
+{3020}{}{I don't care. (Leave)}
+{4000}{}{Fred hungry. New friend have food?}
+{4010}{}{No I don't.}
+{4020}{}{Yeah, I have a fruit right here..}
+{5000}{}{Can Fred have? Fred have money!}
+{5010}{}{Sure, for 10 caps it's yours.}
+{5020}{}{Sure, for 100 caps it's yours.}
+{5030}{}{You can have it for free.}
+{5040}{}{No you can't.}
+{6000}{}{Fred happy! Thank new friend!}
+{6010}{}{It's @pname@, and it's no problem.}
+{7000}{}{Fred sad. Fred go now.}
+{8000}{}{*snif*}
+{9000}{}{Hello friend!@@Hello@@Fred hello friend@@Hello@Hello friend!@@Hello friend!}

@@ -1,0 +1,5 @@
+{100}{}{Tu vois un drôle de truc près du champ gravitationnel.}
+{101}{}{Tu vois un émetteur de champ gravitationnel.}
+{102}{}{C'est le mur le plus étrange que tu aies jamais vu.}
+{103}{}{C'est un émetteur alimentant le champ gravitationnel.}
+{104}{}{L'émetteur émet un bruit strident et explose.}

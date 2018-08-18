@@ -1,0 +1,67 @@
+#tento soubor pøeloil Marek "MAK" Gøešek
+{100}{}{Vidíš vojáka ve vylepšeném brnìní Enklávy.}
+{101}{}{Vidíš seranta Granita.}
+{102}{}{Vidíš vojáka se serantskımi vılokami na ramenou.}
+{103}{}{***Jdem zabít toho blázna.}
+{104}{}{***Jasnì, já du první!}
+{105}{}{***Zamkni a nalo. Jdeme!}
+{106}{}{***Pøipraven na bitku.}
+{107}{}{***Odprásknem toho hajzla!}
+{108}{}{***Zastøel ho.}
+{109}{}{***Mùeme jít.}
+{110}{}{***Pøipraven na bitku!}
+{111}{}{***Já toho parchanta voddìlám!}
+{112}{}{***Idioty nezabíjím.}
+{113}{}{***Mùeš jít.}
+{114}{}{***Nic sem nevidìl.}
+{115}{}{***To nejsou ty droidi, které hledáme.}
+{116}{}{***Hni se.}
+{117}{}{***U mì to zabíjení unavuje.}
+{118}{}{***No tak jdem!}
+{119}{}{***Buï v klidu mladej.}
+{120}{}{***Dávej tam na sebe pozor, mutantíku.}
+{121}{}{***Hodnì štìstí, mutante. Budeš ho potøebovat.}
+{122}{}{Stùj! Co tady dìláš?}
+{123}{}{Snaím se dostat ke svım lidem.}
+{124}{}{To není tvoje vìc.}
+{125}{}{Nemám èas na tvé otázky.}
+{126}{}{Kdo jsi?}
+{127}{}{Podívej, vidíš to vztekající se monstrum? To je agent Horrigan. Èeká na ty, kteøí odtud chtìjí zdrhnout.}
+{128}{}{A co je zaè?}
+{129}{}{Myslím, e se mılíš. Tady je všechno moje vìc. A teï mi sakra øekni, co tady dìláš?}
+{130}{}{Snaím se dostat zpátky na svou loï a chci odtud se svımi lidmi uprchnout.}
+{131}{}{No, myslím, e bys udìlal lépe, kdyby sis èas našel.}
+{132}{}{Proè? Co tím myslíš?}
+{133}{}{Øíkám, e nemám èas! Ale na to abych tì zabil si èas najdu!}
+{134}{}{Dìlej jak chceš, ale pak neøíkej, e sem tì nevaroval.}
+{135}{}{Nevaroval? Pøed èím?}
+{136}{}{Fajn, varoval si mì. Je èas zemøít ty enklávskı bastarde.}
+{137}{}{Je to geneticky upravené monstrum. Byl vytvoøen jako prezidentùv
+ ochránce. Je to stroj na zabíjení. A je víc ne stroj.}
+{138}{}{To vypadá jako dost špatná zpráva.}
+{139}{}{Zabil jsem u horší, ne je on. Za chvíli po nìm zùstane jenom další záøez v pabì.}
+{140}{}{Huh, u se celı tøesu. A teï u dr hubu.}
+{141}{}{To jo. A moná horší, ne si myslíš. Je tady, aby se vypoøádal s takovıma, jako seš ty. Je tvrdı, rychlı a nejdøív støílí a potom a se ptá. Vidìl jsem, co udìlal mutantùm, jako jsi ty, a moc pìknì to teda nevypadalo.}
+{142}{}{Já NEJSEM mutant.....a...uh, co s nimi teda dìlá?}
+{143}{}{Nerad o tom mluvím. Mám z toho noèní mùry. Øeknìme jen,
+ e to naèervenalé, èím jsou tady pokryté zdi, není jen rez.}
+{144}{}{To vypadá, e mi nastanou tìké èasy, mám-li kolem nìj projít.}
+{145}{}{Hehe, tak to byla myšlenka dne. Fakt tì lituji, pøíteli.}
+{146}{}{Lituješ mì? Mìl bys radìji litovat sám sebe. Hlavní poèítaè øídící reaktor se teï docela hezky smaí ve vlastní šávì a poèítám, e se kadou chvíli rozteèe. Všichni jste u prakticky mrtví, pokud...}
+{147}{}{Nepotøebuji tvoji lítost. Potøebuji jen, aby si zemøel!!!}
+{148}{}{Mám ještì nìco na práci. V kadém pøípadì vy všichni jste prakticky mrtví. Zkuste si tìch posledních pár minut, co ještì budete na této zemi, dobøe uít. Páááèko.}
+{149}{}{Pokud co?!?}
+{150}{}{Pokud mi nepomùete dostat se pøes Horrigana na moji loï.}
+{151}{}{Ale nic. Nemám èas na pokec. Mìj se.}
+{152}{}{Dobrej pokus, ale pár vìcí tu nesedí. Jestli je reaktor znièenı, jak øíkáš, tak jakto, e stále svítí svìtla? Co? Pøíštì zkus pøijít s nìjakou lepší historkou, he he.}
+{153}{}{To jsou "nouzová" svìtla. Podívej, byl jsem v místnosti s centrálním poèítaèem a øíkám ti, e není jen pokaenı, ale je celı ZNIÈENİ. A kvùli té tvé podezíravosti tu všichni zemøeme, pokud ovšem...}
+{154}{}{Nemám èas se s tebou o tom hádat. Doufejte jen, e jste všichni dobøí plavci. Páááèko.}
+{155}{}{Pøestaò mi tu povídat pohádky. Jsou k smíchu. Vím, teda spíše si myslím, e by si mohl vydret déle ne minutu, ne ti Horrigan ustøelí palici. Byl by to novı rekord, hehe. Pøeji ti hodnì štìstí mutante, hehe.}
+{156}{}{Sakra, ty jsi, ale "šlechetnı". Nejprve se, ale budu muset na nìkom trochu zahøát. A myslím, e to bude na tvojí jednotce!}
+{157}{}{Radìji by sis mìl pøát, aby to tvoje brnìní ve vodì plavalo. Páááèko.}
+{158}{}{To zní férovì. Nemùu mluvit za všechny, ale já a moje jednotka udìláme maximum, abysme ti pomohli odprásknout tu zrùdu Horrigana. Neutopíme se tady pøece jako nìjaké krysy.}
+{159}{}{Vıbornì. Jdeme na nìj. A pak odtud musíme rychle vypadnout.}
+{160}{}{Serant Granit z EB jednotky.}
+{161}{}{Z EB jednotky?}
+{162}{}{Bezpeènostní jednotka Enklávy. "Obvykle" jsme odpovìdní za poøádek v urèité oblasti.}
+{163}{}{Jo, aha. A co myslíš tím "obvykle"?}

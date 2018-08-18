@@ -1,0 +1,4 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Plazmová vìž.}
+{101}{}{Mk II plazmová vìž.}
+{102}{}{Nápis na vìži varuje, že neodborné zacházení s ní znamená ve vìtšinì pøípadù smrt.}

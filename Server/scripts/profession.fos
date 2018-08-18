@@ -1,0 +1,12 @@
+string []PROFESSION=
+{
+	"no profesion",
+	"Bounty Hunter",
+	"Scout",
+	"Paramedic",
+	"Assasin",
+	"Soldier",
+	"Cannibal"
+};
+
+

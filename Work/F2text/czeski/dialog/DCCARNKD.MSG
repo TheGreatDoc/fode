@@ -1,0 +1,14 @@
+#tento soubor pøeložil Mawerick - megaboy@iol.cz, http://rpg.game-star.cz
+{100}{}{Vidíš dítì vykøikující reklamní slogany.}
+{101}{}{Toto dítì, jak se ukazuje, je placeno za to, aby propagovalo urèitý druh turistické atrakce.}
+
+#// Hawking floats
+{500}{}{Uvidíte Tajemnou mumii!}
+{501}{}{Uvidíte starobylý skvost!}
+{502}{}{Nefalšovaná mumie, právì teï!}
+{503}{}{Uvidíte Egyptského prince!}
+{504}{}{Uvidíte Královnu Nilu!}
+{505}{}{Vstupte do skuteèného domu hrùz!}
+{506}{}{Záhada Podsvìtí vynesena na svìtlo svìta!}
+{507}{}{Pøijïte, pøijïte všichni!}
+{508}{}{Životní pøíležitost!}

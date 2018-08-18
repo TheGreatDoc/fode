@@ -1,0 +1,12 @@
+#tenhle soubor pøeložil Birdman - birdman@post.cz, http://get.to/birdman
+{100}{}{V rakvi leží tìlo starého muže. Má proøíznuté hrdlo.}
+
+{101}{}{Pritchardovo tìlo leží v pevné døevìné rakvi. Vypadá to, že mu nìkdo proøíznul hrdlo.}
+
+{150}{}{Prohledáváš Pritchardovoa tìlo. Po kapsách nic nemá. Když mu ale sundáváš boty, padl ti do oka drobný detail. Podpatek na levé botì je volný. Cvak. Škub. Po chvilce zápasu se podpatek vzdal a upadl. Ve volném prostoru nacházíš pomaèkanou mapu, která ukazuje lokaci zvanou "A.S.S.". Zapisuješ si pozici do PipBoye.}
+
+{200}{}{Na náhrobním kameni je nápis: "Zde leží Sam Pritchard: Byl tak užvanìnej, že jsme mu museli udìlat druhou hubu."}
+
+{250}{}{Nalezen Pritchardùv hrob ... a mapa k Armádnímu skladu Sierra.}
+{255}{}{Hmmm... Mám stopu.}
+{256}{}{Hmmm... dóbøe že mam pápírek. Hajzelpejpr už néjni.}

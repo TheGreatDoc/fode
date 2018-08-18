@@ -1,0 +1,73 @@
+#tento soubor pøeloil Marek "MAK" Gøešek
+{100}{}{Vidíš zamraèenou osobu obleèenou v uniformì pouívané ve vaultu.}
+{101}{}{Vidíš vìznì z Vaultu 13.}
+{102}{}{Vidíš pobledlou osobu obleèenou v uniformì z Vaultu 13.}
+{103}{}{Vidíš èlena tvého domorodého kmenu.}
+{104}{}{Vidíš svého dobrého pøítele z tvého domorodého kmenu.}
+{105}{}{Vidíš èleny tvého domorodého kmenu...nevypadají pøíliš dobøe.}
+{106}{}{Toto místo je strašnì zchátralé a plesnivé.}
+{107}{}{Myslím, e slyším oceán.}
+{108}{}{Mluvil si u s Martinem Frobisherem?}
+{109}{}{Mìl by sis promluvit s Martinem.}
+{110}{}{Martin je náš mluvèí, mìl by sis s ním promluvit.}
+{111}{}{Pan Frobisher je zavøenı v první cele.}
+{112}{}{Ani tu nemají ádné zábavné kazety.}
+{113}{}{ádám o povolení promluvit si s nìkım o kvalitì jídla.}
+{114}{}{No paráda, teï se nás snaí zastrašit nìjakım hrubiánem.}
+{115}{}{Utekl jsi?}
+{116}{}{Jak ses dostal ven?}
+{117}{}{Pøipadá mi, jako bys byl Vyvolenı.}
+{118}{}{Ty jsi - ty jsi Vyvolenı?}
+{119}{}{Musíš si promluvit s naší Starší.}
+{120}{}{Starší øíká, e nás máš zachránit!}
+{121}{}{U jsi mluvil se Starší?}
+{122}{}{Starší je zavøená v první cele. Musíš si s ní promluvit.}
+{123}{}{Promluv si se Starší.}
+{124}{}{Osvoboï nás!}
+{125}{}{Dostaò nás odtud.}
+{126}{}{Nemohu odtud.}
+{127}{}{Touím po tom, abych aspoò ještì jednou ucítil vítr ve tváøi.}
+{128}{}{Osvoboï nás, Vyvolenı!}
+{129}{}{Vyvolenı je tady!}
+{130}{}{Uvolni nás!}
+{131}{}{Udìlej vše, co ti Starší øekne.}
+{132}{}{Zmizme, ne se ti ïáblové vrátí zpátky!}
+{133}{}{Prosím, pomo nám.}
+{134}{}{Díky bohu, Vyvolenı pøišel na poslední chvíli.}
+{135}{}{Pomo nám }
+{136}{}{Pus nás }
+{137}{}{Jsi zde, }
+{138}{}{Víš co máš dìlat, tak to udìlej!}
+{139}{}{Spìchej!}
+{140}{}{Dostaò nás odtud.}
+{141}{}{Vypni elektriku!}
+{142}{}{Pus nás.}
+{143}{}{Bì a dostaò nás odtud!}
+{144}{}{Prosíííím, pomoz nám!}
+{145}{}{Jsi naše poslední nadìje!}
+{146}{}{Prosím, u to moc dlouho nevydrím.}
+{147}{}{U nechci ádné prášky. Ne, ne. Neeeeeeee!}
+{148}{}{Svatí duchové, ochraòte nás!}
+{149}{}{Kde jsou Svatí duchové, kdy je potøebujeme?}
+{150}{}{Pomo nám!}
+{151}{}{Pus nás!}
+{152}{}{Chci se vrátit domù.}
+{153}{}{Prvnì sucho a teï toto.}
+{154}{}{Konec lékaøskıch testù, KONEC!}
+{155}{}{Nemohu utéct! Zdi jsou všude kolem mì!}
+{156}{}{(Ach, ach)}
+{157}{}{Nech mé lidi odejít!}
+{158}{}{Starší nás odtud dostane.}
+{159}{}{Èím jsme se provinili vùèi tìmto ïábelskım duchùm?}
+{160}{}{Nemohu se ji o vše dále starat.}
+{161}{}{Kde je Martin?}
+{162}{}{Toto není vault.}
+{163}{}{Dostaò nás odtud!}
+{164}{}{Ahoj? Ahoooooj!}
+{165}{}{Trvám na tom, abych byl propuštìn.}
+{166}{}{Já jsem obèanem Spojenıch státù a ádám o zdùvodnìní obvinìní vùèi mì.}
+{167}{}{Puste mì ven.}
+{168}{}{Toto je strašnì únavné.}
+{169}{}{U ádné testy. U bych je nevydrel.}
+{170}{}{Nemohou nás tu dret navdy.}
+{171}{}{Válka ještì neskonèila?}

@@ -1,0 +1,769 @@
+#include "quests.fos"
+#include "_defines.fos"
+#include "_vars.fos"
+#include "_maps.fos"
+#include "_macros.fos"
+
+#define MATT_PROTO_ID		(24)
+#define TOM_PROTO_ID		(52)
+
+import void _CritterInit(Critter & cr, bool firstTime) from "heavy_guarded_map";
+import bool ChangeTurnBaseInMap(Map@ map) from "dev_server_scripts";
+import void _GuardInit(Critter& guard, bool firstTime) from "guards";
+import bool AddAttackPlane(Critter& npc, uint priority, Critter& target, bool run) from "npc_planes";
+import bool AddAttackPlane(Critter& npc, uint priority, uint critId, bool run) from "npc_planes";
+
+class WEAPON
+{
+	int PID_WEAPON;
+	int PID_AMMO;
+	int Count;
+	WEAPON(int weapon_pid, int ammo_pid, int ammo_count)
+	{
+		PID_WEAPON=weapon_pid;
+		PID_AMMO=ammo_pid;
+		Count=ammo_count;
+	}
+};
+
+void unsafe_GetQuestProgress(Critter& cr, int, int, int, string@, int[]@)
+{
+	string message;
+	bool first_time=true;
+	for(uint i=0; i<QUESTS.length(); i++)
+	{
+		GameVar @quest_progress=GetLocalVar(QUESTS[i].lvar,cr.Id);
+		if(@quest_progress==null) continue;
+		if(first_time)
+		{
+			message+=quest_progress.GetValue();
+			first_time=false;
+		}
+		else message+=" "+quest_progress.GetValue();
+	}
+	cr.Say(SAY_QUEST_PROGRESS,message);
+}
+
+void warm_up_start(Critter @cr)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_warm_up,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_warm_up) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void warm_up_0_30(Critter @cr)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_warm_up,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=30;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_warm_up) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void small_favor_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_small_favor,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_small_favor) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void medic_test_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_medic_test,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_medic_test) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void medic_test_0_to_100(Critter &cr, Critter @npc)
+{
+	//to do: take 10 super stimpaks
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_medic_test,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_medic_test) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New update",null);
+}
+
+void first_military_step_red_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_first_military_red,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_first_military_red) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void first_military_step_red_0_to_30(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_first_military_red,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=30;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_first_military_red) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void first_military_step_red_30_to_80(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_first_military_red,cr.Id);
+	if(quest_progress.GetValue()!=30) return;
+	quest_progress=80;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_first_military_red) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void first_military_step_red_80_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_first_military_red,cr.Id);
+	if(quest_progress.GetValue()!=80) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_first_military_red) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +200 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=200;
+}
+
+void brahmin_skin_perk_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_brahmin_perk_npc,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_brahmin_perk_npc) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void brahmin_skin_perk_0_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_brahmin_perk_npc,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_brahmin_perk_npc) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +100 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=100;
+}
+
+void geckon_skin_perk_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_gecko_perk,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_gecko_perk) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void geckon_skin_perk_0_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_gecko_perk,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_gecko_perk) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +100 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=100;
+}
+
+void first_quest_blue_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_nec_start,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_nec_start) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void first_quest_blue_0_to_30(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_nec_start,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=30;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_nec_start) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void first_quest_blue_30_to_80(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_nec_start,cr.Id);
+	if(quest_progress.GetValue()!=30) return;
+	quest_progress=80;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_nec_start) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update +50 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=50;
+}
+
+void first_quest_blue_80_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_de_quest_nec_start,cr.Id);
+	if(quest_progress.GetValue()!=80) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_de_quest_nec_start) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +100 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=100;
+}
+
+void the_little_tom_0_to_1(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void the_little_tom_1_to_1(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	GameVar @quest_location=GetLocalVar(LVAR_quest_the_little_tom_progress_loc,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	if(quest_location.GetValue()!=0) return;
+	
+	quest_progress=15;
+	int quest_index=-1;
+	//odkrycie lokalizacji
+	
+	int WorldX=740;
+	int WorldY=970;
+	uint locId=0;
+	
+	locId=CreateLocation(LOCATION_THE_LITTLE_TOM, WorldX, WorldY, null);
+	quest_location=locId;
+	Location@ loc = GetLocation(locId);
+	Map@ map =loc.GetMapByIndex(0);
+    cr.SetKnownLoc(true,locId);
+	Critter@[] npcs;
+	if(map.GetCritters(0,FIND_ALL|FIND_ONLY_NPC,npcs)>0)
+	{
+		for(uint i=0,ii=npcs.length();i<ii;i++)
+		{
+			Critter@ npc=npcs[i];
+			if(npc.GetProtoId()==MATT_PROTO_ID) 
+			{
+				npc.StatBase[ST_VAR5]=cr.Id;
+				_NpcMattInit(npc,false);
+			}
+			else if(npc.GetProtoId()==TOM_PROTO_ID)
+			{
+				npc.StatBase[ST_VAR5]=cr.Id;
+				_NpcTomInit(npc,false);
+			}
+			else
+			{
+				npc.StatBase[ST_VAR5]=cr.Id;
+				_CritterInit(npc, false);
+				//dla pozostaіych npc
+			}
+		}
+	}
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void the_little_tom_1_to_4(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress2,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=100;
+	int quest_index=-1;
+	GameVar @quest_progress2=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	quest_progress2=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress2) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +300 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=300;
+	CreateTimeEvent(__FullSecond+REAL_SECOND(100),"e_RemoveSpawnedCritter",npc.Id,true);
+}
+
+void the_little_tom_1_to_5(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=50;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update - kill Matt",null);
+}
+
+void the_little_tom_1_to_5_2(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	quest_progress=80;
+	int quest_index=-1;
+	GameVar @thelittletom=GetLocalVar(LVAR_quest_the_little_tom,cr.Id);
+	thelittletom=5;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update +300 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=300;
+}
+
+void _NpcTheLittleTomGuards(Critter& npc, bool firstTime)
+{
+	uint pid=npc.GetProtoId();
+	
+}
+
+void _NpcMattInit(Critter& npc, bool firstTime)
+{
+	//konfigurowanie postaci Matta
+	uint pid=npc.GetProtoId();
+	npc.ModeBase[MODE_NO_STEAL]=1;
+	npc.ModeBase[MODE_UNLIMITED_AMMO]=1;
+	npc.StatBase[ST_MAX_LIFE]=190;
+	npc.StatBase[ST_CURRENT_HP]=npc.StatBase[ST_MAX_LIFE];
+	npc.StatBase[ST_ACTION_POINTS]=10;
+	
+	npc.StatBase[ST_DIALOG_ID]=40210;
+	npc.ShowCritterDist1=Random(30,40);
+	npc.AddItem(PID_AK47_NORMAL1_DE,1);
+	npc.SetEvent(CRITTER_EVENT_DEAD,"DeadMattCritter");
+}
+
+void _NpcTomInit(Critter& npc, bool firstTime)
+{
+	//konfigurowanie postaci Toma
+	uint pid=npc.GetProtoId();
+	npc.ModeBase[MODE_NO_WALK]=1;
+	npc.ShowCritterDist1=0;
+	npc.SetEvent(CRITTER_EVENT_DEAD,"DeadTomCritter");
+}
+
+void DeadMattCritter(Critter &cr, Critter @cr2)
+{
+	Critter@ cr3=GetCritter(cr.StatBase[ST_VAR5]);
+	if(!valid(cr3)) return;
+	the_little_tom_1_to_5_2(cr3,cr);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(180),"e_RemoveSpawnedCritter",cr.Id,true);
+}
+
+void DeadTomCritter(Critter &cr, Critter @cr2)
+{
+	Critter@ cr3=GetCritter(cr.StatBase[ST_VAR5]);
+	if(!valid(cr3)) return;
+	GameVar @quest_ending=GetLocalVar(LVAR_quest_the_little_tom,cr3.Id);
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	quest_ending=8;
+	quest_progress=80;
+	the_little_tom_5_to_end(cr3,cr);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(180),"e_RemoveSpawnedCritter",cr.Id,true);
+}
+
+uint e_RemoveSpawnedCritter(uint[]@ id)
+{
+	Critter@ cr=GetCritter(id[0]);
+	if(!valid(cr)) return 0;
+	Location@ loc=cr.GetMap().GetLocation();
+	DeleteNpc(cr);
+	if(!valid(loc)) return 0;
+
+	if(cr.GetProtoId()==TOM_PROTO_ID)
+	{
+		DeleteLocation(loc.Id);
+	}
+	
+	return 0;
+}
+
+uint e_RemoveTheLittleTomLocationCritter(uint[]@ id)
+{
+	Critter@ cr=GetCritter(id[0]);
+	GameVar @quest_location=GetLocalVar(LVAR_quest_the_little_tom_progress_loc,cr.Id);
+	Location@ loc=GetLocation(quest_location.GetValue());
+	if(!valid(loc)) return 0;
+	else DeleteLocation(loc.Id);
+	return 0;
+}
+
+void the_little_tom_5_to_end(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_little_tom_progress,cr.Id);
+	if(quest_progress.GetValue()!=80) return;
+	quest_progress=100;
+	GameVar @quest_ending=GetLocalVar(LVAR_quest_the_little_tom,cr.Id);
+	GameVar @quest_progress2=GetLocalVar(LVAR_quest_the_little_tom_progress2,cr.Id);
+	CreateTimeEvent(__FullSecond+REAL_SECOND(8),"e_RemoveTheLittleTomLocationCritter",cr.Id,true);
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_little_tom_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done",null);
+	switch(quest_ending.GetValue())
+	{
+		case 5:
+			cr.StatBase[ST_EXPERIENCE]+=600;
+			break;
+		case 6:
+			quest_progress=-1;
+			quest_progress2=100;
+			break;
+		case 7:
+			cr.StatBase[ST_EXPERIENCE]+=600;
+			break;
+		case 8:
+			quest_progress=-1;
+			quest_progress2=100;
+			break;
+		case 9:
+			quest_progress=-1;
+			quest_progress2=100;
+			break;
+		default: break;
+	}
+}
+
+void the_irish_man_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_irish_man_progress,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_irish_man_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void the_irish_man_1_2(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_irish_man_progress,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=50;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_irish_man_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void the_irish_man_2_3(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_the_irish_man_progress,cr.Id);
+	if(quest_progress.GetValue()!=50) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_the_irish_man_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +200 experience ",null);
+	cr.StatBase[ST_EXPERIENCE]+=200;
+}
+
+
+void william_truba_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_william_truba_progress,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_william_truba_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void william_truba_1_1(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_william_truba_progress,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_william_truba_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +250 experience",null);
+}
+
+void thomas_wensdin_tool(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_bring_tool_recieve_hunting_rifle_progress,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_bring_tool_recieve_hunting_rifle_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void thomas_wensdin_tool_done(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_quest_william_truba_progress,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_quest_william_truba_progress) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +200 experience",null);
+}
+
+//BOUNTY HUNTER QUEST
+void bounty_hunters_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void bounty_hunters_0_to_30(Critter &cr, Critter @npc, int turnbase)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	GameVar @quest_location=GetLocalVar(LVAR_Hunters_Camp_Canibal_Camp,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	if(quest_location.GetValue()!=0) return;
+	
+	quest_progress=30;
+	int quest_index=-1;
+	//odkrycie lokalizacji
+	
+	int WorldX=1105;
+	int WorldY=665;
+	uint locId=0;
+	
+	locId=CreateLocation(LOCATION_CANIBAL_CAMP, WorldX, WorldY, null);
+	quest_location=locId;
+	Location@ loc = GetLocation(locId);
+	Map@ map =loc.GetMapByIndex(0);
+    cr.SetKnownLoc(true,locId);
+	if(turnbase==1) ChangeTurnBaseInMap(map);
+	Critter@[] npcs;
+	WEAPON []SPAW_WEAPON={
+			//WEAPON(weapon pid,ammo pid, ilosc ammo)
+			WEAPON(PID_MP5_DE,PID_9AP_DE,90),
+			WEAPON(PID_FLAMER_DE,PID_FLAMETHROWER_FUEL_DE,30),
+			WEAPON(PID_10MM_SMG_DE,PID_10MM_JHP_DE,70),
+			WEAPON(PID_REM870_DE,PID_44_MAGNUM_JHP_DE,50),
+			WEAPON(PID_223_PISTOL_DE,PID_223_FMJ_DE,40),
+			WEAPON(PID_RIPPER_DE,PID_SMALL_ENERGY_CELL_DE,40),
+			WEAPON(PID_COMBAT_SHOTGUN_DE,PID_SHOTGUN_SHELLS_DE,50),
+			WEAPON(PID_DESERT_EAGLE_EXT_MAG_DE,PID_44_MAGNUM_JHP_DE,35),
+			WEAPON(PID_COMBAT_KNIFE_DE,PID_700_NITRO_EXPRESS_DE,5),
+			WEAPON(PID_SPEAR_DE,PID_HNADV_DE,5),
+			WEAPON(PID_COLT2K1_DE,PID_45_CALIBER_AMMO_DE,50)
+	};
+	int roll=Random(0, SPAW_WEAPON.length()-1);
+	if(map.GetCritters(0,FIND_ALL|FIND_ONLY_NPC,npcs)>0)
+	{
+		for(uint i=0,ii=npcs.length();i<ii;i++)
+		{
+			roll=Random(0, SPAW_WEAPON.length()-1);
+			Critter@ npc=npcs[i];
+			npc.StatBase[ST_VAR5]=cr.Id;
+			npc.StatBase[ST_VAR6]=0;
+			_GuardInit(npc, false);
+			npc.SetEvent(CRITTER_EVENT_SHOW_CRITTER_1,"CanibalEventShowCritter");
+			npc.SetEvent(CRITTER_EVENT_ATTACKED,"CanibalAttacked");
+			npc.SetEvent(CRITTER_EVENT_MESSAGE,"CanibalMessage");
+			npc.SetEvent(CRITTER_EVENT_DEAD,"CanibalDead");
+			npc.SkillBase[SK_SMALL_GUNS] = 130;
+			npc.SkillBase[SK_UNARMED] = 90;
+			npc.ModeBase[MODE_NO_STEAL]=1;
+			npc.AddItem(SPAW_WEAPON[roll].PID_WEAPON,1);
+			npc.AddItem(SPAW_WEAPON[roll].PID_AMMO,(SPAW_WEAPON[roll].Count));
+			npc.StatBase[ST_REPLICATION_TIME]=-1;
+			//dla wszytskich npc
+		}
+	}
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void bounty_hunters_30_to_50(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	if(quest_progress.GetValue()!=30) return;
+	quest_progress=50;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void bounty_hunters_50_to_70(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	if(quest_progress.GetValue()!=50) return;
+	quest_progress=70;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void bounty_hunters_30_to_80(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	if((quest_progress.GetValue()<30) || (quest_progress.GetValue()>70)) return;
+	quest_progress=80;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) 
+	{
+		cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+		uint[] values={npc.Id,cr.Id};
+		CreateTimeEvent(__FullSecond+REAL_SECOND(900),"e_RemoveCanibalLocation",values,true);
+	}
+}
+
+uint e_RemoveCanibalLocation(uint[]@ id)
+{
+	Critter@ cr=GetCritter(id[0]);
+	if(valid(cr)) {
+		Location@ loc=cr.GetMap().GetLocation();
+		DeleteNpc(cr);
+		if(!valid(loc)) return 0;
+		DeleteLocation(loc.Id);
+	}
+	else
+	{
+		Critter@ player=GetCritter(id[1]);
+		GameVar @quest_location=GetLocalVar(LVAR_Hunters_Camp_Canibal_Camp,cr.Id);
+		DeleteLocation(quest_location.GetValue());		
+	}
+	return 0;
+}
+
+void bounty_hunters_80_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Hunters_Camp,cr.Id);
+	if(quest_progress.GetValue()!=80) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Hunters_Camp) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +1500 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=1500;
+}
+
+void CanibalEventShowCritter(Critter &cr, Critter &cr2)
+{
+	if(cr2.IsPlayer())
+	{
+		if(cr.StatBase[ST_VAR6]==1)
+		{
+			AddAttackPlane(cr,0,cr2,true);
+		}
+	}
+}
+
+bool CanibalAttacked(Critter& npc, Critter& attacker)
+{
+	if(attacker.IsPlayer())
+	{
+		npc.StatBase[ST_VAR6]=1;
+		npc.SendMessage(543,attacker.Id,MESSAGE_TO_ALL_ON_MAP);
+		AddAttackPlane(npc,0,attacker,true);
+		return true;
+	}
+	return false;
+}
+
+
+void CanibalMessage(Critter& npc, Critter& cr, int num, int val)
+{
+	if(npc.Cond!=COND_LIFE || GetCrittersDistantion(npc, cr)>20) return;
+	switch(num){
+	case 543://npc message
+		npc.StatBase[ST_VAR6]=1;
+		AddAttackPlane(npc,0,uint(val),true);
+		break;
+	}
+}
+
+void CanibalDead(Critter& canibal, Critter@ killer)
+{
+	Map@ map=canibal.GetMap();
+	if(!valid(map)) return;
+	Critter@ player=GetCritter(canibal.StatBase[ST_VAR5]);
+	Critter@[] npcs;
+	if(map.GetCritters(0,FIND_LIFE_AND_KO|FIND_ONLY_NPC,npcs)<=0)
+	{
+		if(!valid(player)) return;
+		bounty_hunters_30_to_80(player, canibal);
+	}
+}
+
+
+//	"Find a book Technical Manual T-51b"
+void technical_manual_start(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Industrial_Bob_Repair_PA,cr.Id);
+	if(quest_progress.GetValue()!=-1) return;
+	quest_progress=0;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Industrial_Bob_Repair_PA) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"New quest",null);
+}
+
+void technical_manual_0_to_30(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Industrial_Bob_Repair_PA,cr.Id);
+	if(quest_progress.GetValue()!=0) return;
+	quest_progress=30;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Industrial_Bob_Repair_PA) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update",null);
+}
+
+void technical_manual_30_to_80(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Industrial_Bob_Repair_PA,cr.Id);
+	if(quest_progress.GetValue()!=30) return;
+	quest_progress=80;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Industrial_Bob_Repair_PA) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest update +500 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=500;
+}
+
+void technical_manual_80_to_100(Critter &cr, Critter @npc)
+{
+	GameVar @quest_progress=GetLocalVar(LVAR_Industrial_Bob_Repair_PA,cr.Id);
+	if(quest_progress.GetValue()!=80) return;
+	quest_progress=100;
+	int quest_index=-1;
+	for(uint i=0; i<QUESTS.length(); i++)
+		if(QUESTS[i].lvar==LVAR_Industrial_Bob_Repair_PA) {quest_index=i;break;}
+	if(quest_index!=-1) cr.RunClientScript("client_main@AddQuestNotificationMsgStr",quest_index,quest_progress.GetValue(),0,"Quest done +1000 experience",null);
+	cr.StatBase[ST_EXPERIENCE]+=1000;
+}

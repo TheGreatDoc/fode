@@ -1,0 +1,85 @@
+[comment]
+
+
+[data]
+lang=pols engl russ
+
+[dialog]
+&
+1 1000 None 1 #
+2 1010 D _item p PID_WOOD = 0 #
+3 1020 D _item p PID_WOOD } 13 #
+4 1030 D _item p PID_WOOD { 13 #
+5 1040 D _item p PID_PA = 0 @
+2 2000 None 0 #
+0 2010 R _script dialog@r_TeleportIsland 0  #
+0 2020 @
+3 3000 None 0 #
+0 3010 R _script dialog@r_TeleportIsland 0  R _item p PID_PA - 5 R _item p PID_BUFFOUT - 20 @
+4 4000 None 0 #
+0 4010 R _script dialog@r_TeleportIsland 0  #
+5 4020 D _item p PID_WOOD } 10 D _param p ST_STRENGTH { 3 D _item p PID_PA < 1 D _item p PID_BUFFOUT = 0 @
+5 5000 None 0 #
+0 5010 R _item p PID_PA + 1 R _item p PID_BUFFOUT + 1 &
+
+[pols]
+{100}{}{Dziwny nieznajomy}
+{110}{}{man15.png}
+{210}{}{Gdyby nie te obdarte ubranie wygladal by na kogos inteligentnego.}
+{1000}{}{Predialogue installations}
+{1010}{}{brak drewna}
+{1020}{}{dobra ilosc drewna}
+{1030}{}{za malo drewna}
+{1040}{}{za maly udzwig}
+{2000}{}{Widze ze ciebie tez wyslali na wyspe za kare ale to sie dobrze sklada mam mozliwosc ucieczki ale potrzebuje jeszcze 13 kawalkow drewna do ukonczenia tratwy. Tu masz siekierke, chyba niemusze ci mowic co masz nia zrobic?}
+{2010}{}{Ok, juz sie zabieram.}
+{2020}{}{Nie, dzieki. Moze pozniej sie za to wezme a narazie chce sobie odpoczac.}
+{3000}{}{Widze ze masz juz wystarczajaca ilosc drewna, wspaniale!}
+{3010}{}{Tak...}
+{4000}{}{Jesli chcesz sie wydostac z wyspy potrzebujesz jeszcze wiecej drewna na budowe tratwy. Wroc jak zbierzesz 13 kawalkow.}
+{4010}{}{Eeeeh... Ok}
+{4020}{}{Tylko mam maly problem bo nie mam sily zebrac tyle drewna.}
+{5000}{}{Hmmyy... No dobra pozycze ci na chwile moj pancerz wspomagany nie jest w najlpeszej kondycji po tym jak tu wyladowalem ale bedzie ci lzej i udzwigniesz wiecej. Prawie zapomniaіem... weџ ten suplement, usprawni prace twoich miкњni.}
+{5010}{}{OK, fantastycznie!}
+
+[engl]
+{100}{}{Weird stranger}
+{110}{}{man15.png}
+{210}{}{{Closer observation shows some sparks of intelligence, despite his unkempt appearance.}
+{1000}{}{Predialogue installations}
+{1010}{}{brak drewna}
+{1020}{}{dobra ilosc drewna}
+{1030}{}{za malo drewna}
+{1040}{}{za maly udzwig}
+{2000}{}{Ah, another exile! What crime did you commit? Heck, no matter, if you'll help me out we both might have a chance of escaping this place. I need about thirteen logs of wood to complete the raft. Here, have this hatchet, it's simple but It'll be enough. You know whatta do right?}
+{2010}{}{Yeah, I know what to do.}
+{2020}{}{Nah, I need some rest. Maybe later.}
+{3000}{}{I see you have enough wood, good job!}
+{3010}{}{Yeah...}
+{4000}{}{Damn, if you really wanna get out of this island we need more wood! Come back when you'll have thirteen logs, as I said before.}
+{4010}{}{Eeeeh... Ok...}
+{4020}{}{Man, I just can't carry all that wood, I'm not some supermutant you know?}
+{5000}{}{Hmm ... Okay, I'll lend my old power armor for a while. It's seen better days, but It'll still augment your strenght. Oh yeah, and maybe take those pills, they'll help ya too.}
+{5010}{}{Okay, great!}
+
+
+[russ]
+{100}{}{Weird stranger}
+{110}{}{man15.png}
+{210}{}{{Closer observation shows some sparks of intelligence, despite his unkempt appearance.}
+{1000}{}{Predialogue installations}
+{1010}{}{brak drewna}
+{1020}{}{dobra ilosc drewna}
+{1030}{}{za malo drewna}
+{1040}{}{za maly udzwig}
+{2000}{}{Ah, another exile! What crime did you commit? Heck, no matter, if you'll help me out we both might have a chance of escaping this place. I need about thirteen logs of wood to complete the raft. Here, have this hatchet, it's simple but It'll be enough. You know whatta do right?}
+{2010}{}{Yeah, I know what to do.}
+{2020}{}{Nah, I need some rest. Maybe later.}
+{3000}{}{I see you have enough wood, good job!}
+{3010}{}{Yeah...}
+{4000}{}{Damn, if you really wanna get out of this island we need more wood! Come back when you'll have thirteen logs, as I said before.}
+{4010}{}{Eeeeh... Ok...}
+{4020}{}{Man, I just can't carry all that wood, I'm not some supermutant you know?}
+{5000}{}{Hmm ... Okay, I'll lend my old power armor for a while. It's seen better days, but It'll still augment your strenght. Oh yeah, and maybe take those pills, they'll help ya too.}
+{5010}{}{Okay, great!}
+

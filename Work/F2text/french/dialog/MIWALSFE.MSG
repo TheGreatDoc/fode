@@ -1,0 +1,9 @@
+{100}{}{Tu vois : un coffre-fort mural.}
+
+{110}{}{Le coffre-fort est verrouillé.}
+
+{200}{}{ réussit à ouvrir le coffre-fort mural.}
+{201}{}{ réussit à verrouiller le coffre-fort mural.}
+
+{210}{}{ ne parvient pas à verrouiller le coffre-fort mural.}
+{211}{}{ ne parvient pas à ouvrir le coffre-fort mural.}
